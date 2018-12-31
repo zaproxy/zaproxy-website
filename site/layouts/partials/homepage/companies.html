@@ -10,13 +10,16 @@
           <p class="small">{{ . }}</p>
         {{ end }}
       </div>
-      <div class="companies__illustration"></div>
+      <div class="companies__illustration">
+        {{ partial "svg/homepage/companies/building-hug.svg" }}
+
+      </div>
     </div>
 
     <div class="companies__logos">
       {{ range .logos }}
         <div class="companies__logo-item">
-          {{ . }}
+         <img src="/img/home/companies/{{ . }}.png" />
         </div>
       {{ end }}
     </div>

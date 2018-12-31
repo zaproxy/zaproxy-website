@@ -18,6 +18,10 @@ ul {
 }
 
 .site-header {
+  border-bottom: solid 1px var(--blue-border);
+}
+
+.site-header .wrapper {
   height: 90px;
 }
 
@@ -92,6 +96,10 @@ button, .button {
 
 .jc-sb {
   justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
 }
 /*
   You can use import statements to include partials:
