@@ -1,7 +1,7 @@
 <section>
   <div class="wrapper">
     {{ with .Site.Data.homepage.companies }}
-    <div class="companies">
+    <div class="companies flex">
       <div class="companies__content">
         <h3>{{.title}}</h3>
         <p>{{ .description }}</p>
@@ -10,13 +10,13 @@
           <p class="small">{{ . }}</p>
         {{ end }}
       </div>
-      <div class="companies__illustration">
+      <div class="companies__illustration no-shrink">
         {{ partial "svg/homepage/companies/building-hug.svg" }}
 
       </div>
     </div>
 
-    <div class="companies__logos">
+    <div class="companies__logos flex ai-c jc-sa py-70">
       {{ range .logos }}
         <div class="companies__logo-item">
          <img src="/img/home/companies/{{ . }}.png" />

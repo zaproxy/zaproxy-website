@@ -30,6 +30,20 @@
   height: 276px;
 }
 
+.hompage-quotes {
+  text-align: center;
+  color: #fff;
+}
+
+.companies__illustration {
+  min-width: 387px;
+  flex-shrink: 0;
+}
+
+.companies__logos img {
+  max-width: 240px;
+}
+
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 

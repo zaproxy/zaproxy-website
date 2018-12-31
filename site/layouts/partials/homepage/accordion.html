@@ -7,11 +7,11 @@
         <div class="homepage-accordion__item__title">
           <h4 class="text--blue">{{ .Title }}</h4>
         </div>
-        <div class="homepage-accordion__item__content">
+        <div class="homepage-accordion__item__content jc-sb">
           <div class="homepage-accordion__item__content-text">
           {{ .Content }}
           </div>
-          <div class="homepage-accordion__item__content-image">
+          <div class="homepage-accordion__item__content-image no-shrink">
               {{ $svg := (printf "%s%s" "svg/homepage/accordion/" .Params.image) }}
               {{partial  $svg }}
           </div>

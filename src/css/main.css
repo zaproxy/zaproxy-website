@@ -98,8 +98,20 @@ button, .button {
   justify-content: space-between;
 }
 
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
 .ai-c {
   align-items: center;
+}
+
+.no-shrink {
+  flex-shrink: 0;
 }
 /*
   You can use import statements to include partials:
