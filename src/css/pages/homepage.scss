@@ -6,6 +6,32 @@
   text-align: center;
 }
 
+.homepage-key-features__item, .hompage-personas__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homepage-key-features__item-icon {
+  width: 85px;
+  height: 85px;
+}
+
+.hompage-persona__icon {
+  width: 100px;
+  height: 100px;
+}
+
+.homepage-accordion__item__content {
+  display: flex;
+}
+
+.homepage-accordion__item__content-image {
+  width: 396px;
+  height: 276px;
+}
+
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 @import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
+
 

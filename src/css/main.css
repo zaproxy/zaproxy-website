@@ -13,6 +13,17 @@
 @import 'type';
 @import 'spacing';
 
+.site-header {
+  height: 90px;
+}
+
+.header-social li {
+  width: 18px;
+  height: 18px;
+  margin-right: 18px;
+}
+
+
 button, .button {
   display: inline-block;
   min-width: 157px;
@@ -48,6 +59,10 @@ button, .button {
 
 .flex {
   display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
 }
 /*
   You can use import statements to include partials:

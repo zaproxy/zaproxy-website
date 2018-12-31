@@ -1,15 +1,15 @@
 title: Key Featues
 description: ZAP is designed from the ground up as a tool that can be easily used by everybody - across functions, skill levels and geography.
 features:
-  - icon: bolt
+  - icon: bolt.svg
     label: Ease of Use
     text: ZAP is built with an intuitive user interface and a clean and functional layout. We want you to enjoy using ZAP and access as much of its rich functionality as possible.
-  - icon: devices
+  - icon: devices.svg
     label: ZAP is highly adaptable
     text: It can be installed cross platform and runs on Windows, Mac OS & Linux. ZAP can also be configured to work with mobile applications.
-  - icon: puzzle
+  - icon: puzzle.svg
     label: ZAP is extensible
     text: A comprehensive selection of free ZAP marketplace addons can be easily integrated to widen functionality.
-  - icon: refresh
+  - icon: cycle.svg
     label: Powerful RestAPI
     text: ZAP provides a powerful REST Application Programming Interface (API) that can be used to access and configure ZAP programmatically.  ZAP also offers the ability to explore and perform security scanning of external APIs.

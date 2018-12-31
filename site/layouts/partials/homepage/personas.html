@@ -1,9 +1,10 @@
-<div class="hompage-personas">
+<section class="hompage-personas py-70">
   <div class="wrapper grid grid__three-col">
   {{ range .Site.Data.homepage.personas.personaItems }}
     <div class="hompage-personas__item pt-30 px-30 card">
       <div class="hompage-persona__icon">
-          {{ $icon := (printf "%s%s" "svg/homepage/" .icon ) }}
+          {{ $svg := (printf "%s%s" "svg/homepage/personas/" .icon) }}
+          {{partial  $svg }}
       </div>
       <h4>{{ .title }}</h4>
       <p class="paragraph-small">{{ .text }}</p>
@@ -12,4 +13,4 @@
     </div>
   {{ end }}
   </div>
-</div>
+</section>
