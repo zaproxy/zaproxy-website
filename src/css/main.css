@@ -1,32 +1,74 @@
-/*
-  You can use import statements to include partials:
- */
-@import 'imports/reset.css';
+:root {
+  --blue: #4389FF;
+  --blue-dark: #00549E;
+  --blue-light: #BBDEFB;
+  --blue--lightest: #F4FAFF;
+  --blue-border: #DCEAFF;
+  --orange: #FFA400;
 
-/*
-  Or add your statements here:
- */
-body {
-  font-size: calc(10px + 1vmin);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #282c34;
-  color: white;
 }
 
-a {
-  color: pink;
+
+
+@import 'type';
+@import 'spacing';
+
+button, .button {
+  display: inline-block;
+  min-width: 157px;
+  padding: 0 1rem;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
   text-decoration: none;
 }
 
-.content {
-  padding: 0 32px;
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.button--blue {
+  background: var(--blue);
+}
+
+.button--orange {
+  background: var(--orange);
+}
+
+.bg--blue-lightest {
+  background: var(--blue--lightest);
+}
+
+.bg--blue-gradient {
+  background: linear-gradient(var(--blue-dark), var(--blue));
+}
+
+.flex {
+  display: flex;
+}
+/*
+  You can use import statements to include partials:
+ */
+@import 'pages/homepage.scss';
+
+
+.grid {
+  display: grid;
+  grid-column-gap: 60px;
+}
+
+.grid__three-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid__four-col {
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+}
+
+
+.card {
+  border: solid 1px var(--blue-border);
 }

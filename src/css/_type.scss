@@ -1,0 +1,41 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 44pt;
+}
+
+h2 {
+  font-size: 30pt;
+}
+
+h3 {
+  font-size: 30pt;
+  margin-bottom: 30px;
+  color: var(--blue-dark);
+}
+
+h4 {
+  font-size: 22pt;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 22pt;
+  font-weight: 500;
+  line-height: 30pt;
+  margin-bottom: 20px;
+}
+
+.paragraph-small {
+  font-size: 18pt;
+}
+
+.text--blue {
+  color: var(--blue);
+}
+
+.text--blue-dark {
+  color: var(--blue-dark);
+}

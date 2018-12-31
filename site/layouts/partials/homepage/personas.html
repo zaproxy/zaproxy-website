@@ -1,0 +1,15 @@
+<div class="hompage-personas">
+  <div class="wrapper grid grid__three-col">
+  {{ range .Site.Data.homepage.personas.personaItems }}
+    <div class="hompage-personas__item pt-30 px-30 card">
+      <div class="hompage-persona__icon">
+          {{ $icon := (printf "%s%s" "svg/homepage/" .icon ) }}
+      </div>
+      <h4>{{ .title }}</h4>
+      <p class="paragraph-small">{{ .text }}</p>
+
+      <a href="" class="button button--orage button--round">></a>
+    </div>
+  {{ end }}
+  </div>
+</div>

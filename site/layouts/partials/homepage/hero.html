@@ -1,0 +1,32 @@
+<section>
+  <div class="hompage-hero__wrapper wrapper" >
+      <div class="glide">
+        <div class="glide-track" data-glide-el="track">
+          <div class="glide__slides">
+          {{ range .Site.Data.homepage.hero.heroItems }}
+          <div class="hompage-hero__item flex glide__slide">
+            <div class="hompage-hero__item-content">
+              <hgroup {{ if .subheadOnTop }}class="test"{{ end }}>
+                <h1>{{ .headline }}</h1>
+                <h2>{{ .subhead }}</h2>
+              </hgroup>
+
+              <a href="" class="button button--blue">See ZAP in action</a>
+              <a href="" class="button button--orange">Download now</a>
+            </div>
+            <div class="hompage-hero__item-image">
+                {{ $svg := (printf "%s%s" "svg/homepage/" .image ) }}
+                {{ partial $svg }}
+            </div>
+          </div>
+          {{ end }}
+          </div>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        {{ range $index, $el := .Site.Data.homepage.hero.heroItems }}
+            <button class="glide__bullet" data-glide-dir="={{$index}}"></button>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>

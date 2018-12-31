@@ -1,0 +1,11 @@
+<section>
+    <div class="wrapper">
+        {{ $headless := .Site.GetPage "homepage/accordion" }}
+        {{ $reusablePages := $headless.Resources.Match "*" }}
+        {{ range $reusablePages }}
+             <h4 class="text--blue">{{ .Title }}</h4>
+            {{ .Content }}
+        {{ end }}
+
+    </div>
+  </section>

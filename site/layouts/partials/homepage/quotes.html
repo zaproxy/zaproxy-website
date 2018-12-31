@@ -1,0 +1,10 @@
+<div class="hompage-quotes bg--blue-gradient py-70">
+  <div class="wrapper">
+    {{ range .Site.Data.homepage.quotes.items }}
+    <div class="hompage-quotes__item">
+        <blockquote class="mb-40">{{ .quote }}</blockquote>
+        <blockquote class="mb-40">{{ .by }}</blockquote>
+    </div>
+    {{ end }}
+  </div>
+</div>

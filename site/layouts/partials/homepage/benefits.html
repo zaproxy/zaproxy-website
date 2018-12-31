@@ -1,0 +1,10 @@
+<section>
+  <div class="wrapper grid grid__three-col card p-30">
+    {{ range .Site.Data.homepage.benefits }}
+    <div class="homepage-benefit">
+      <h4 class="text--blue"> ✅ {{.label }} </h4>
+      <p class="paragraph-small">{{ .text }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>

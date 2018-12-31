@@ -1,0 +1,6 @@
+- label: Secure Software Development Lifecycle
+  text: ZAP can be integrated into the software development lifecycle (SDLC) to allow continuous security testing for vulnerabilities. ZAP can support the extension of secure DevOps practices to application security practices.
+- label: Decrease Time-to-Fix
+  text: By integrating security into the SDLC, detection of issues can be discovered quickly or before the application is put online. Issues can be found, reported and fixed swiftly.
+- label: Reduced Cost of Fixing
+  text: Reducing the average time-to-fix maximizes productivity and supports successful deployment of robust applications.

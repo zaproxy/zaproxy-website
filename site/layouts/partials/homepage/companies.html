@@ -1,0 +1,25 @@
+<section>
+  <div class="wrapper">
+    {{ with .Site.Data.homepage.companies }}
+    <div class="companies">
+      <div class="companies__content">
+        <h3>{{.title}}</h3>
+        <p>{{ .description }}</p>
+
+        {{ range .text}}
+          <p class="small">{{ . }}</p>
+        {{ end }}
+      </div>
+      <div class="companies__illustration"></div>
+    </div>
+
+    <div class="companies__logos">
+      {{ range .logos }}
+        <div class="companies__logo-item">
+          {{ . }}
+        </div>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</section>
