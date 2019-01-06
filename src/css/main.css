@@ -179,35 +179,7 @@ ul {
 /*
   You can use import statements to include partials:
  */
+ @import 'components/accordion';
+ @import 'components/slider';
  @import 'pages/homepage.scss';
-
-
- @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
- /* //@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme"; */
- .glide-track {
-   overflow: hidden;
- }
-.glide__bullets {
-  display: inline-flex;
-  margin-top: 40px;
-}
-
-.glide__bullet {
-  background-color: var(--blue-light);
-  box-shadow: none;
-  width: 13px;
-  height: 13px;
-  padding: 0;
-  margin-right: 18px;
-  border-radius: 50%;
-  border: none;
-  transition: all 150ms ease;
-  cursor: pointer;
-}
-
-.glide__bullet--active {
-  background-color: var(--blue);
-}
-
-@import "node_modules/badger-accordion/dist/badger-accordion.scss";
 
