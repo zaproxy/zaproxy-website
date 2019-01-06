@@ -44,6 +44,11 @@ ul {
   color: var(--blue-dark);
   font-weight: bold;
   text-decoration: none;
+  transition: all 100ms ease;
+}
+
+.site-header nav a:hover {
+  color: var(--orange);
 }
 
 .header-social li {
@@ -203,3 +208,6 @@ ul {
 .glide__bullet--active {
   background-color: var(--blue);
 }
+
+@import "node_modules/badger-accordion/dist/badger-accordion.scss";
+
