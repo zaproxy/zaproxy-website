@@ -9,9 +9,18 @@
 }
 
 
-
+@import 'reset';
 @import 'type';
 @import 'spacing';
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 ul {
   list-style-type: none;
@@ -21,8 +30,20 @@ ul {
   border-bottom: solid 1px var(--blue-border);
 }
 
+
 .site-header .wrapper {
   height: 90px;
+}
+
+.site-header nav {
+  margin-right: 10px;
+}
+
+.site-header nav a {
+  margin-right: 30px;
+  color: var(--blue-dark);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .header-social li {
@@ -57,7 +78,7 @@ ul {
 }
 
 
-button, .button {
+.button {
   display: inline-block;
   min-width: 157px;
   padding: 0 1rem;
@@ -82,6 +103,13 @@ button, .button {
   background: var(--orange);
 }
 
+.button--arrow-link {
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
 .bg--blue-lightest {
   background: var(--blue--lightest);
 }
@@ -89,6 +117,7 @@ button, .button {
 .bg--blue-gradient {
   background: linear-gradient(var(--blue-dark), var(--blue));
 }
+
 
 .flex {
   display: flex;
@@ -110,13 +139,17 @@ button, .button {
   align-items: center;
 }
 
+.fd-c {
+  flex-direction: column;
+}
+
+.fd-cr {
+  flex-direction: column-reverse;
+}
+
 .no-shrink {
   flex-shrink: 0;
 }
-/*
-  You can use import statements to include partials:
- */
-@import 'pages/homepage.scss';
 
 
 .grid {
@@ -135,4 +168,38 @@ button, .button {
 
 .card {
   border: solid 1px var(--blue-border);
+}
+
+
+/*
+  You can use import statements to include partials:
+ */
+ @import 'pages/homepage.scss';
+
+
+ @import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+ /* //@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme"; */
+ .glide-track {
+   overflow: hidden;
+ }
+.glide__bullets {
+  display: inline-flex;
+  margin-top: 40px;
+}
+
+.glide__bullet {
+  background-color: var(--blue-light);
+  box-shadow: none;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin-right: 18px;
+  border-radius: 50%;
+  border: none;
+  transition: all 150ms ease;
+  cursor: pointer;
+}
+
+.glide__bullet--active {
+  background-color: var(--blue);
 }

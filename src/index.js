@@ -6,4 +6,9 @@ import Glide from '@glidejs/glide'
 // Say hello
 console.log("🦊 Hello! Edit me in src/index.js");
 
-new Glide('.glide').mount()
+const glide = new Glide('.glide', {
+  autoplay: 4000
+
+})
+
+glide.mount()

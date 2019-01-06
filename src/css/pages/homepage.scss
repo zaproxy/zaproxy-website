@@ -1,19 +1,28 @@
-.hompage-hero__item-image {
-  width: 300px;
-}
 
 .homepage-key-features  {
   text-align: center;
 }
 
 .homepage-key-features__item, .hompage-personas__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
+.hompage-personas {
+  border-top: solid 1px var(--blue-border);
+}
+.hompage-personas__item:hover {
+  background: var(--blue);
+
+  h4, p {
+    color: #fff;
+  }
+}
+
+
 .homepage-key-features__item-icon {
   width: 85px;
   height: 85px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hompage-persona__icon {
@@ -44,8 +53,6 @@
   max-width: 240px;
 }
 
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
 
 
 
