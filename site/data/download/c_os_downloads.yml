@@ -1,0 +1,26 @@
+title: Zap 2.6.0
+table:
+  - name: Windows (64) Installer
+    size: 117mb
+    link:
+  - name: Windows (32) Installer
+    size: 117mb
+    link:
+  - name: Linux Installer
+    size:
+    link:
+  - name: Linux Package
+    size:
+    link:
+  - name: Mac OS/X Installer
+    size:
+    link:
+  - name: Cross Platform Package
+    size:
+    link:
+info:
+  - This contains the core set of functionality, and you can add more functionality at any time via the [Zap Marketplace](zap/marketplace).
+  - The Windows and Linux versions require Java 7 or higher to run.
+  - The installers are built using a [multi-platform installer builder](link 2).
+  - The Mac OS version includes Java 8 - you can use the Linux or Cross Platform versions if you do not want to download this.
+  - For more information about this release see the [release notes](link 3).

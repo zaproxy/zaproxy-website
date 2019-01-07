@@ -1,0 +1,36 @@
+@import "node_modules/badger-accordion/dist/badger-accordion.scss";
+
+.accordion__item__title {
+  button {
+    height: 44px;
+    font-size: 22px;
+    color: var(--blue);
+    border: none;
+    background: none;
+
+    &.-ba-is-active {
+      color: var(--orange);
+    }
+  }
+
+  &:not(:first-child) {
+    border-top: solid 1px var(--blue-border);
+  }
+}
+
+.accordion__item__arrow {
+  background: var(--blue-dark);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.accordion__item__content {
+  display: flex;
+}
+
+.accordion__item__content-image {
+  width: 396px;
+  height: 276px;
+}

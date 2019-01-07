@@ -1,0 +1,31 @@
+<section class="py-70">
+  <div class="wrapper">
+      <dl class="accordion__item js-badger-accordion homepage__accordion">
+    {{ $headless := .Site.GetPage "homepage/accordion" }}
+    {{ $reusablePages := $headless.Resources.Match "*" }}
+    {{ range $reusablePages }}
+
+        <dt class="accordion__item__title">
+            <button class="js-badger-accordion-header flex ai-c">
+              <div class="accordion__item__arrow flex jc-c">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.33 28.43" width="6px"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1.5 1.5l12.71 12.71L1.5 26.93"/></svg>
+              </div>
+              {{ .Title }}
+            </button>
+        </dt>
+        <dd class="badger-accordion__panel js-badger-accordion-panel">
+          <div class="accordion__item__content jc-sb js-badger-accordion-panel-inner">
+              <div class="accordion__item__content-text">
+              {{ .Content }}
+              </div>
+              <div class="accordion__item__content-image no-shrink">
+                  {{ $svg := (printf "%s%s" "svg/homepage/accordion/" .Params.image) }}
+                  {{partial  $svg }}
+              </div>
+            </div>
+        </dd>
+
+    {{ end }}
+  </dl>
+  </div>
+  </section>

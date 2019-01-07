@@ -1,0 +1,22 @@
+<section class="bg--blue-lightest py-70">
+  <div class="wrapper homepage-key-features ">
+    {{ with .Site.Data.homepage.keyFeatures }}
+      <h3>{{.title}}</h3>
+      <p>{{ .description }}</p>
+    <div class="grid grid__four-col mt-70">
+      {{ range .features}}
+        <div class="homepage-key-features__item">
+          <div class="homepage-key-features__item-icon mb-30">
+            {{ $svg := (printf "%s%s" "svg/homepage/features/" .icon) }}
+            {{partial  $svg }}
+          </div>
+          <h4 class="text--blue-dark"> {{ .label }}</h4>
+          <p class="paragraph-small">{{ .text }}</p>
+        </div>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <a href="" class="button button--orange">Take the Zap Tour</a>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+
+.homepage-key-features  {
+  text-align: center;
+}
+
+.homepage-key-features__item, .hompage-personas__item {
+  text-align: center;
+}
+.hompage-personas {
+  border-top: solid 1px var(--blue-border);
+}
+.hompage-personas__item:hover {
+  background: var(--blue);
+
+  h4, p {
+    color: #fff;
+  }
+}
+
+
+.homepage-key-features__item-icon {
+  width: 85px;
+  height: 85px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hompage-persona__icon {
+  width: 100px;
+  height: 100px;
+}
+
+.hompage-quotes {
+  text-align: center;
+  color: #fff;
+}
+
+.companies__illustration {
+  min-width: 387px;
+  flex-shrink: 0;
+}
+
+.companies__logos img {
+  max-width: 240px;
+}
+
+.homepage__accordion {
+  .accordion__item__title {
+    padding: 10px 0;
+  }
+  ol {
+    font-weight: bold;
+    font-size: 18pt;
+    padding-left: 1.5em;
+    line-height: 30pt;
+  }
+
+  p {
+    font-size: 18pt;
+  }
+}

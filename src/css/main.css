@@ -1,32 +1,189 @@
-/*
-  You can use import statements to include partials:
- */
-@import 'imports/reset.css';
+:root {
+  --blue: #4389FF;
+  --blue-dark: #00549E;
+  --blue-light: #BBDEFB;
+  --blue--lightest: #F4FAFF;
+  --blue-border: #DCEAFF;
+  --orange: #FFA400;
 
-/*
-  Or add your statements here:
- */
-body {
-  font-size: calc(10px + 1vmin);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-    'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: #282c34;
-  color: white;
 }
 
-a {
-  color: pink;
+
+@import 'reset';
+@import 'type';
+@import 'spacing';
+
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.site-header {
+  border-bottom: solid 1px var(--blue-border);
+}
+
+
+.site-header .wrapper {
+  height: 90px;
+}
+
+.site-header nav {
+  margin-right: 10px;
+}
+
+.site-header nav a {
+  margin-right: 30px;
+  color: var(--blue-dark);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 100ms ease;
+}
+
+.site-header nav a:hover {
+  color: var(--orange);
+}
+
+.header-social li {
+  width: 18px;
+  height: 18px;
+  margin-right: 18px;
+}
+
+.site-footer {
+  background: var(--blue-dark);
+  color: #fff;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.footer-social li {
+  width: 47px;
+  height: 47px;
+  margin-right: 28px;
+  border-radius: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social svg {
+  width: 28px;
+  height: 28px;
+}
+
+
+.button {
+  display: inline-block;
+  min-width: 157px;
+  padding: 0 1rem;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
   text-decoration: none;
 }
 
-.content {
-  padding: 0 32px;
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
 }
+
+.button--blue {
+  background: var(--blue);
+}
+
+.button--orange {
+  background: var(--orange);
+}
+
+.button--arrow-link {
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.bg--blue-lightest {
+  background: var(--blue--lightest);
+}
+
+.bg--blue-gradient {
+  background: linear-gradient(var(--blue-dark), var(--blue));
+}
+
+
+.flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+.fd-cr {
+  flex-direction: column-reverse;
+}
+
+.no-shrink {
+  flex-shrink: 0;
+}
+
+
+.grid {
+  display: grid;
+  grid-column-gap: 60px;
+}
+
+.grid__two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid__three-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid__four-col {
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+}
+
+
+.card {
+  border: solid 1px var(--blue-border);
+}
+
+
+/*
+  You can use import statements to include partials:
+ */
+ @import 'components/accordion';
+ @import 'components/slider';
+ @import 'pages/homepage.scss';
+

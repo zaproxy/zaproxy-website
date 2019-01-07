@@ -1,0 +1,15 @@
+heroItems:
+  - headline: OWASP Zed Attack Proxy
+    subhead: One of the world’s most popular free security tools, actively maintained by hundreds of international volunteers. Top Rated Security Tool 2014, 2015, 2016 – Toolswatch.org
+    image: hero-illustration-1.svg
+    imageSize: 290
+
+  - headline: Detect and fix vulnerabilities before hackers find and exploit them.
+    subhead: OWASP Zed Attack Proxy
+    image: hero-illustration-2.svg
+    imageSize: 534
+
+  - headline: World-class web application testing tool without a price tag.
+    subhead: OWASP Zed Attack Proxy
+    image: hero-illustration-3.svg
+    imageSize: 294

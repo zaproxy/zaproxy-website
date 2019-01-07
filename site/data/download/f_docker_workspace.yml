@@ -1,0 +1,21 @@
+column_1:
+  - items:
+    - title: Docker
+      subtitle: There are 3 Docker images available
+      info:
+        - the 2.6.0 release [zap2docker-stable](zap2docker-stable)
+        - the latest weekly release [zap2docker-weekly](zap2docker-weekly)
+        - the very latest source code [zap2docker-live](zap2docker-live)
+        - See [Docker]( see docker) for more details.
+    - title: Linux Repos
+      info:
+        - We now also have official [ZAP Linux Repos](lunx repo)
+column_2:
+  - items:
+    - title: ZAP Workspace
+      info:
+        - You can now import ZAP projects into Eclipse using just one URL.
+        - See the [Building page](building page) for details about this and information about other IDEs.
+    - title: Homebrew Cask
+      info:
+        - On Mac OS X you can also install ZAP using [Homebrew Cask](home brew)

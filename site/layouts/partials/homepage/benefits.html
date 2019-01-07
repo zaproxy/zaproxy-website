@@ -1,0 +1,13 @@
+<section>
+  <div class="wrapper grid grid__three-col card p-30">
+    {{ range .Site.Data.homepage.benefits }}
+    <div class="homepage-benefit">
+      <h4 class="text--blue">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.24 23.18" width="30px"><title>check</title><g id="Layer_2" data-name="Layer 2"><g id="GRAPHICS"><polygon points="11.51 23.18 0 11.97 4.12 7.84 11.51 14.92 26.11 0 30.24 4.13 11.51 23.18 11.51 23.18" style="fill:#ffa400"/></g></g></svg>
+        {{.label }}
+    </h4>
+      <p class="paragraph-small">{{ .text }}</p>
+    </div>
+    {{ end }}
+  </div>
+</section>
