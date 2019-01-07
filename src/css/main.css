@@ -162,6 +162,10 @@ ul {
   grid-column-gap: 60px;
 }
 
+.grid__two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
 .grid__three-col {
   grid-template-columns: 1fr 1fr 1fr;
 }

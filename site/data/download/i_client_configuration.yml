@@ -1,0 +1,11 @@
+title: Client Configuration
+items:
+  - icon: android.svg
+    text: Setting up Zap for Android
+    link:
+  - icon: apple.svg
+    text: Setting up Zap for iPad
+    link:
+  - icon: client.svg
+    text: Seeting up Zap for Client Application
+    link:

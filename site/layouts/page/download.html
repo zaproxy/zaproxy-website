@@ -1,0 +1,228 @@
+{{ define "main" }}
+  <section class="bg--blue-gradient">
+    <div class="wrapper py-70">
+    {{ with .Site.Data.download.a_header }}
+      <h1>{{ .title }}</h1>
+        <ul class="link__list">
+          {{ range .links }}
+            <li>
+              <a href="{{ .link }}"> {{ .label }} </a>,
+            </li>
+          {{ end }}
+      </ul>
+    {{ end }}
+  </div>
+  </section>
+
+  <section class="bg--blue-lightest">
+    <div class="wrapper py-70">
+      {{ with .Site.Data.download.b_details }}
+        <div class="grid grid__two-col">
+          <div>
+            <h3>{{ .title }}</h3>
+
+            {{ range .details }}
+              <div class="flex">
+                <div class="circle-arrow"></div>
+                <div>
+                  <p> {{ . | markdownify }}</p>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+          <div>
+            {{ .illustration }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+
+  <section>
+      <div class="wrapper py-70">
+        {{ with .Site.Data.download.c_os_downloads }}
+          <h3>{{ .title }}</h3>
+          <table>
+            <tbody>
+              {{ range .table }}
+                <tr>
+                  <td>{{ .name }}</td>
+                  <td>{{ .size }}</td>
+                  <td><a href="{{ .link }}" class="button button--orange">Download</a></td>
+                </tr>
+              {{ end }}
+
+            </tbody>
+          </table>
+
+          <ul>
+              {{ range .info }}
+                <li> {{ . | markdownify }} </li>
+              {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+  </section>
+
+  <section class="bg--blue-lightest">
+    <div class="wrapper py-70">
+        {{ with .Site.Data.download.d_core }}
+          <h3>{{ .title }}</h3>
+          <table>
+              <tbody>
+                {{ range .table }}
+                  <tr>
+                    <td>{{ .name }}</td>
+                    <td>{{ .size }}</td>
+                    <td><a href="{{ .link }}" class="button button--orange">Download</a></td>
+                  </tr>
+                {{ end }}
+
+              </tbody>
+            </table>
+
+            <ul>
+                {{ range .info }}
+                  <li> {{ . | markdownify }} </li>
+                {{ end }}
+            </ul>
+
+        {{ end }}
+    </div>
+  </section>
+
+  <section>
+    <div class="wrapper py-70">
+        {{ with .Site.Data.download.e_weekly }}
+        <h3>{{ .title }}</h3>
+        <table>
+            <tbody>
+              {{ range .table }}
+                <tr>
+                  <td>{{ .name }}</td>
+                  <td>{{ .size }}</td>
+                  <td><a href="{{ .link }}" class="button button--orange">Download</a></td>
+                </tr>
+              {{ end }}
+
+            </tbody>
+          </table>
+
+          <ul>
+              {{ range .info }}
+                <li> {{ . | markdownify }} </li>
+              {{ end }}
+          </ul>
+
+        {{ end }}
+    </div>
+  </section>
+
+<section class="bg--blue-lightest">
+  <div class="wrapper py-70">
+    <div class="grid grid__two-col">
+
+      {{ with .Site.Data.download.f_docker_workspace }}
+        <div>
+        {{ range .column_1 }}
+          {{ range .items }}
+            <div>
+              <h3>{{ .title }}</h3>
+              <strong>{{ .subtitle }}</strong>
+              <ul>
+              {{ range .info }}
+
+                <li>{{ . | markdownify}}</li>
+
+              {{ end }}
+            </ul>
+            </div>
+          {{ end }}
+
+        {{ end }}
+        </div>
+        <div>
+        {{ range .column_2 }}
+        {{ range .items }}
+        <div>
+          <h3>{{ .title }}</h3>
+            <strong>{{ .subtitle }}</strong>
+          <ul>
+          {{ range .info }}
+
+              <li>{{ . | markdownify}}</li>
+
+          {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+        {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrapper py-70">
+
+  {{ with .Site.Data.download.g_latest }}
+    <h3>{{ .title }}</h3>
+
+    <ul>
+        {{ range .info }}
+          <li> {{ . | markdownify }} </li>
+        {{ end }}
+    </ul>
+
+  {{ end }}
+  </div>
+</section>
+
+<section class="bg--blue-gradient">
+  <div class="wrapper py-70">
+      {{ with .Site.Data.download.h_installation }}
+        <div class="grid grid__four-col">
+          {{ range .steps }}
+            <div class="install-step">
+              <div class="install-step__icon">
+                 {{ .step }}
+              </div>
+              <p>
+                {{ .text }}
+              </p>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+  </div>
+</section>
+
+<section>
+    <div class="wrapper py-70">
+        {{ with .Site.Data.download.i_client_configuration }}
+          <h3>{{ .title }}</h3>
+          <div class="grid grid__three-col">
+            {{ range .items }}
+              <div class="card">
+                <div class="client-configure__icon">
+                  {{ .icon }}
+                </div>
+                <div class="client-configure__text">
+                    <h4>{{ .text }}</h4>
+                </div>
+
+                <div class="arrow-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.33 28.43" width="6px"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1.5 1.5l12.71 12.71L1.5 26.93"/></svg>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+    </div>
+  </section>
+
+{{ end }}
+
+

@@ -1,0 +1,10 @@
+title: ZAP 2.6.0 Core
+table:
+  - name: Cross Platform Package
+    size:
+    link:
+info:
+- This contains the minimal set of functionality to get you started and is ideal for people new to ZAP.
+- You can add more functionality at any time via the [ZAP Marketplace](marketplace).
+- It is cross platform (Mac OS X, Linux, and Windows) but does not include any installers.
+- It requires Java 7 or higher to run.

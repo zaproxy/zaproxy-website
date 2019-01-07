@@ -1,0 +1,9 @@
+title: Latest Versions
+info:
+- We maintain a page containing XML with links to the latest ZAP release files
+- You can use this to automatically pull down the latest ZAP release for the platform you need.
+- ZAP uses similar URLs when checking for updates.
+- These are version specific and define the add-on on the ZAP Marketplace for that release stream.
+- The 2.6 release stream uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.6.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.6.xml)
+- The development code uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-dev.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-dev.xml)
+- At the moment these files are the same, but it does allow us to maintain different versions of add-ons for different versions of ZAP, if we need to support this in the future.
