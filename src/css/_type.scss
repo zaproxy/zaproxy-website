@@ -6,21 +6,21 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-h1 {
+h1, .as-h1 {
   font-size: 44pt;
 }
 
-h2 {
+h2, .as-h2 {
   font-size: 30pt;
 }
 
-h3 {
+h3, .as-h3 {
   font-size: 30pt;
   margin-bottom: 30px;
   color: var(--blue-dark);
 }
 
-h4 {
+h4, .as-h4 {
   font-size: 22pt;
   margin-bottom: 30px;
 }
@@ -46,4 +46,16 @@ p {
 
 .text--blue-light {
   color: var(--blue-light);
+}
+
+.text--white {
+  color: white
+}
+
+.text--orange {
+  color: var(--orange);
+}
+
+.ta-c {
+  text-align: center;
 }

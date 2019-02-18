@@ -185,11 +185,15 @@
       {{ with .Site.Data.download.h_installation }}
         <div class="grid grid__four-col">
           {{ range .steps }}
-            <div class="install-step">
-              <div class="install-step__icon">
-                 {{ .step }}
+            <div class="install-step ta-c">
+              <div class="install-step__icon flex jc-c ai-c mb-40">
+                {{ $svg := (printf "%s%s" "svg/download/" .icon ) }}
+                {{ partial $svg }}
+
+                <div class="install-step__icon-number as-h3 text--white">{{ .step }}</div>
+
               </div>
-              <p>
+              <p class="text--white">
                 {{ .text }}
               </p>
             </div>
@@ -200,21 +204,23 @@
 </section>
 
 <section>
-    <div class="wrapper py-70">
+    <div class="wrapper py-70 ta-c">
         {{ with .Site.Data.download.i_client_configuration }}
           <h3>{{ .title }}</h3>
-          <div class="grid grid__three-col">
+          <div class="grid grid__three-col client-configure">
             {{ range .items }}
-              <div class="card">
+              <div class="card ta-c p-40 flex fd-c ai-c">
                 <div class="client-configure__icon">
-                  {{ .icon }}
+                  {{ $svg := (printf "%s%s" "svg/download/" .icon ) }}
+                  {{ partial $svg }}
+
                 </div>
                 <div class="client-configure__text">
-                    <h4>{{ .text }}</h4>
+                    <h4 class="text--orange my-30">{{ .text }}</h4>
                 </div>
 
                 <div class="arrow-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.33 28.43" width="6px"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1.5 1.5l12.71 12.71L1.5 26.93"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Artboard 28</title><circle cx="12" cy="12" r="11" fill="none" stroke="#00549e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><path fill="none" stroke="#00549e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.8 8.28L14.52 12l-3.72 3.72"/></svg>
                 </div>
               </div>
             {{ end }}

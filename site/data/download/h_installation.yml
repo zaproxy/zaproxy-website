@@ -1,10 +1,14 @@
 title:  Installation
 steps:
   - step: 1
+    icon: pie-1.svg
     text: Launch the installation wizard by double clicking on the downloaded executable file
   - step: 2
+    icon: pie-2.svg
     text: Read the License agreement and click 'Accept' to continue the installation
   - step: 3
+    icon: pie-3.svg
     text: Select 'Standard' or 'Custom' installation
   - step: 4
+    icon: pie-4.svg
     text: Click 'Finish' to exit set up

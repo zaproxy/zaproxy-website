@@ -186,4 +186,4 @@ ul {
  @import 'components/accordion';
  @import 'components/slider';
  @import 'pages/homepage.scss';
-
+ @import 'pages/download.scss';
