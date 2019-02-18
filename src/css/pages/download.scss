@@ -44,3 +44,17 @@
 .client-configure__icon {
   width: 45px;
 }
+
+
+.download-table {
+  td {
+    border-bottom: solid 1px var(--blue-border);
+    padding: 10px 0;
+  }
+
+  td:first-child {
+    color: var(--blue);
+    font-size: 22pt;
+    font-weight: bold;
+  }
+}

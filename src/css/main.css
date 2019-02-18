@@ -29,6 +29,17 @@ ul {
 .bullet-list {
   list-style-type: disc;
   padding-left: 1em;
+  font-size: 18pt;
+  color: #2A303A;
+}
+
+.bullet-list li {
+  margin-bottom: 1.25rem;
+}
+
+.bullet-list a {
+  color: var(--orange);
+  text-decoration: none;
 }
 
 table {

@@ -23,7 +23,8 @@
 
             {{ range .details }}
               <div class="flex">
-                <div class="circle-arrow"></div>
+                <div class="circle-arrow mr-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px"><title>Asset 1</title><g data-name="Layer 2"><circle cx="15" cy="15" r="15" fill="#4389ff"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12.72 8.64L19.07 15l-6.35 6.36"/></g></svg></div>
                 <div>
                   <p> {{ . | markdownify }}</p>
                 </div>
@@ -44,7 +45,7 @@
       <div class="wrapper py-70">
         {{ with .Site.Data.download.c_os_downloads }}
           <h3>{{ .title }}</h3>
-          <table>
+          <table class="download-table">
             <tbody>
               {{ range .table }}
                 <tr>
@@ -70,7 +71,7 @@
     <div class="wrapper py-70">
         {{ with .Site.Data.download.d_core }}
           <h3>{{ .title }}</h3>
-          <table>
+          <table class="download-table">
               <tbody>
                 {{ range .table }}
                   <tr>
@@ -97,7 +98,7 @@
     <div class="wrapper py-70">
         {{ with .Site.Data.download.e_weekly }}
         <h3>{{ .title }}</h3>
-        <table>
+        <table class="download-table">
             <tbody>
               {{ range .table }}
                 <tr>
