@@ -7,3 +7,4 @@ info:
 - The 2.6 release stream uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.6.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.6.xml)
 - The development code uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-dev.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-dev.xml)
 - At the moment these files are the same, but it does allow us to maintain different versions of add-ons for different versions of ZAP, if we need to support this in the future.
+illustration:  version-bot.svg

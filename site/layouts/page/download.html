@@ -1,12 +1,12 @@
 {{ define "main" }}
   <section class="bg--blue-gradient">
-    <div class="wrapper py-70">
+    <div class="wrapper py-70 download-header">
     {{ with .Site.Data.download.a_header }}
-      <h1>{{ .title }}</h1>
+      <h1 class="text--white mb-30">{{ .title }}</h1>
         <ul class="link__list">
           {{ range .links }}
             <li>
-              <a href="{{ .link }}"> {{ .label }} </a>,
+              <a href="{{ .link }}" class="text--orange as-h4"> {{ .label }} </a>,
             </li>
           {{ end }}
       </ul>
@@ -31,7 +31,8 @@
             {{ end }}
           </div>
           <div>
-            {{ .illustration }}
+              {{ $svg := (printf "%s%s" "svg/download/" .illustration ) }}
+              {{ partial $svg }}
           </div>
         </div>
       {{ end }}
@@ -56,7 +57,7 @@
             </tbody>
           </table>
 
-          <ul>
+          <ul class="bullet-list">
               {{ range .info }}
                 <li> {{ . | markdownify }} </li>
               {{ end }}
@@ -82,7 +83,7 @@
               </tbody>
             </table>
 
-            <ul>
+            <ul class="bullet-list">
                 {{ range .info }}
                   <li> {{ . | markdownify }} </li>
                 {{ end }}
@@ -109,7 +110,7 @@
             </tbody>
           </table>
 
-          <ul>
+          <ul class="bullet-list">
               {{ range .info }}
                 <li> {{ . | markdownify }} </li>
               {{ end }}
@@ -130,7 +131,7 @@
             <div>
               <h3>{{ .title }}</h3>
               <strong>{{ .subtitle }}</strong>
-              <ul>
+              <ul class="bullet-list">
               {{ range .info }}
 
                 <li>{{ . | markdownify}}</li>
@@ -148,7 +149,7 @@
         <div>
           <h3>{{ .title }}</h3>
             <strong>{{ .subtitle }}</strong>
-          <ul>
+          <ul class="bullet-list">
           {{ range .info }}
 
               <li>{{ . | markdownify}}</li>
@@ -168,13 +169,25 @@
   <div class="wrapper py-70">
 
   {{ with .Site.Data.download.g_latest }}
-    <h3>{{ .title }}</h3>
 
-    <ul>
-        {{ range .info }}
-          <li> {{ . | markdownify }} </li>
-        {{ end }}
-    </ul>
+    <div class="flex">
+      <div class="col-2-3">
+          <h3>{{ .title }}</h3>
+          <ul class="bullet-list">
+              {{ range .info }}
+                <li> {{ . | markdownify }} </li>
+              {{ end }}
+          </ul>
+
+      </div>
+
+      <div class="col-1-3">
+          {{ $svg := (printf "%s%s" "svg/download/" .illustration ) }}
+          {{ partial $svg }}
+      </div>
+    </div>
+
+
 
   {{ end }}
   </div>

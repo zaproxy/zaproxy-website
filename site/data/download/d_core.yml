@@ -1,7 +1,7 @@
 title: ZAP 2.6.0 Core
 table:
   - name: Cross Platform Package
-    size:
+    size: 32mb
     link:
 info:
 - This contains the minimal set of functionality to get you started and is ideal for people new to ZAP.

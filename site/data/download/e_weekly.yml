@@ -1,7 +1,7 @@
 title: ZAP Weekly
 table:
   - name: Weekly Cross Platform Package
-    size:
+    size: 279mb
     link:
 info:
 - We generate weekly releases of ZAP from the `develop` branch, typically every Monday.

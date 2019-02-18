@@ -1,3 +1,25 @@
+.download-header {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+  }
+
+  li {
+    display: inline-block;
+    color: var(--orange);
+
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
 
 .install-step__icon {
   position: relative;
