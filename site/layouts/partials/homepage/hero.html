@@ -1,11 +1,11 @@
 <section class="py-70">
-  <div class="hompage-hero__wrapper wrapper" >
+  <div class="homepage-hero__wrapper wrapper" >
       <div class="glide">
         <div class="glide-track" data-glide-el="track">
           <div class="glide__slides">
           {{ range .Site.Data.homepage.hero.heroItems }}
-          <div class="hompage-hero__item flex glide__slide">
-            <div class="hompage-hero__item-content">
+          <div class="homepage-hero__item flex glide__slide">
+            <div class="homepage-hero__item-content">
               <hgroup class="flex fd-c mb-40">
                 <h1>{{ .headline }}</h1>
                 <h2>{{ .subhead }}</h2>
@@ -14,7 +14,7 @@
               <a href="" class="button button--blue">See ZAP in action</a>
               <a href="/download" class="button button--orange">Download now</a>
             </div>
-            <div class="hompage-hero__item-image">
+            <div class="homepage-hero__item-image">
                 {{ $svg := (printf "%s%s" "svg/homepage/hero/" .image ) }}
                 {{ partial $svg .}}
             </div>

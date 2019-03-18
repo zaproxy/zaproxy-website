@@ -3,13 +3,13 @@
   text-align: center;
 }
 
-.homepage-key-features__item, .hompage-personas__item {
+.homepage-key-features__item, .homepage-personas__item {
   text-align: center;
 }
-.hompage-personas {
+.homepage-personas {
   border-top: solid 1px var(--blue-border);
 }
-.hompage-personas__item:hover {
+.homepage-personas__item:hover {
   background: var(--blue);
 
   h4, p {
@@ -25,12 +25,12 @@
   margin-right: auto;
 }
 
-.hompage-persona__icon {
+.homepage-persona__icon {
   width: 100px;
   height: 100px;
 }
 
-.hompage-quotes {
+.homepage-quotes {
   text-align: center;
   color: #fff;
 }
@@ -57,5 +57,21 @@
 
   p {
     font-size: 18pt;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .homepage-hero__item {
+    flex-direction:  column-reverse;
+    align-items: center;
+  }
+
+  .homepage-hero__item-content {
+    width: 90%;
+  }
+
+  .homepage-hero__item-image {
+    width: 80%;
+    text-align: center;
   }
 }
