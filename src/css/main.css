@@ -200,6 +200,14 @@ table {
   grid-template-columns:  1fr 1fr 1fr 1fr;
 }
 
+.col-1-3 {
+  width: 33.33333%
+}
+.col-2-3 {
+  width: 66.66666%
+}
+
+
 @media screen and (max-width: 1150px) {
   .grid__four-col {
     grid-template-columns: 1fr 1fr;
@@ -217,17 +225,26 @@ table {
   .grid__two-col {
     grid-template-columns: 1fr;
   }
+
+  .col-1-3, .col-2-3 {
+    width: 100%;
+  }
+
+  .latest-versions {
+    flex-direction: column;
+  }
+
+  .column-svg {
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 
-
-
-
-
-.col-1-3 {
-  width: 33.33333%
-}
-.col-2-3 {
-  width: 66.66666%
+@media screen and (max-width: 500px) {
+  .column-svg {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 
