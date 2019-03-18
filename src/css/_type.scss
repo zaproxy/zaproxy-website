@@ -1,3 +1,5 @@
+
+
 body {
   font-family: 'Quicksand', sans-serif;
 }
@@ -7,33 +9,33 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 h1, .as-h1 {
-  font-size: 44pt;
+  font-size: 3.66665rem;
 }
 
 h2, .as-h2 {
-  font-size: 30pt;
+  font-size: 2.5rem;
 }
 
 h3, .as-h3 {
-  font-size: 30pt;
+  font-size: 2.5rem;
   margin-bottom: 30px;
   color: var(--blue-dark);
 }
 
 h4, .as-h4 {
-  font-size: 22pt;
+  font-size: 1.8333rem;
   margin-bottom: 30px;
 }
 
-p {
-  font-size: 22pt;
+p, blockquote  {
+  font-size: 1.8333rem;
   font-weight: 500;
-  line-height: 30pt;
+  line-height: 2.5rem;
   margin-bottom: 20px;
 }
 
-.paragraph-small {
-  font-size: 18pt;
+p.small {
+  font-size: 1.5rem;
 }
 
 .text--blue {
