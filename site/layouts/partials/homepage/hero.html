@@ -8,7 +8,11 @@
             <div class="homepage-hero__item-content">
               <hgroup class="flex fd-c mb-40">
                 <h1>{{ .headline }}</h1>
-                <h2>{{ .subhead }}</h2>
+                <h2>
+                  {{ .subhead }}
+                  <span class="small-text">{{ .quote_source | markdownify }}</span>
+                </h2>
+
               </hgroup>
 
               <a href="" class="button button--blue">See ZAP in action</a>

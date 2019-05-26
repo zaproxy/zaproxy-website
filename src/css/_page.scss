@@ -10,6 +10,10 @@ ul {
   list-style-type: none;
 }
 
+a {
+  color: var(--orange);
+}
+
 .bullet-list {
   list-style-type: disc;
   padding-left: 1em;

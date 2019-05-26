@@ -78,6 +78,12 @@
   }
 }
 
+.homepage-hero__item:not(:first-child) {
+  hgroup {
+    flex-direction: column-reverse;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .homepage-hero__item {
     flex-direction:  column-reverse;
@@ -91,5 +97,9 @@
   .homepage-hero__item-image {
     width: 80%;
     text-align: center;
+
+    svg {
+      max-width: 100%;
+    }
   }
 }
