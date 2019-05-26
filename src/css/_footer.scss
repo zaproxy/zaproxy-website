@@ -1,0 +1,24 @@
+.site-footer {
+  background: var(--blue-dark);
+  color: #fff;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.footer-social li {
+  width: 47px;
+  height: 47px;
+  margin-right: 28px;
+  border-radius: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social svg {
+  width: 28px;
+  height: 28px;
+}

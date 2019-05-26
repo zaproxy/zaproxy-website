@@ -58,3 +58,10 @@
     font-weight: bold;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .column-svg {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

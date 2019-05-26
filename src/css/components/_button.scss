@@ -1,0 +1,26 @@
+.button {
+  display: inline-block;
+  min-width: 157px;
+  padding: 0 1rem;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button--blue {
+  background: var(--blue);
+}
+
+.button--orange {
+  background: var(--orange);
+}
+
+.button--arrow-link {
+  min-width: 60px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}

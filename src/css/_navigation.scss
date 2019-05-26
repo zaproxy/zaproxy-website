@@ -1,0 +1,50 @@
+.site-header {
+  border-bottom: solid 1px var(--blue-border);
+}
+
+.site-header .wrapper {
+  height: 90px;
+}
+
+.site-header nav {
+  margin-right: 10px;
+}
+
+.site-header nav a {
+  margin-right: 30px;
+  color: var(--blue-dark);
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 100ms ease;
+}
+
+.site-header nav a:hover {
+  color: var(--orange);
+}
+
+.header-social li {
+  width: 18px;
+  height: 18px;
+  margin-right: 18px;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+@media screen and (max-width: 825px) {
+  .header-social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-content {
+    display: none;
+  }
+}
