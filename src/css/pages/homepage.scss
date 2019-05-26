@@ -62,6 +62,22 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .companies {
+    flex-direction: column-reverse;
+
+    .companies__illustration {
+      align-self: center;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    svg {
+      width: 50%;
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .homepage-hero__item {
     flex-direction:  column-reverse;
