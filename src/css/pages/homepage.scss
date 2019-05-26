@@ -5,9 +5,11 @@
 
 .homepage-key-features__item, .homepage-personas__item {
   text-align: center;
+  transition: background 100ms ease;
 }
 .homepage-personas {
   border-top: solid 1px var(--blue-border);
+
 }
 .homepage-personas__item:hover {
   background: var(--blue);
