@@ -13,6 +13,10 @@
 }
 
 @import 'reset';
+@import 'components/button';
+@import 'components/card';
+@import 'components/accordion';
+@import 'components/slider';
 @import 'type';
 @import 'spacing';
 @import 'page';
@@ -20,10 +24,6 @@
 @import 'layout';
 @import 'navigation';
 @import 'footer';
-@import 'components/button';
-@import 'components/card';
-@import 'components/accordion';
-@import 'components/slider';
 @import 'pages/homepage.scss';
 @import 'pages/download.scss';
 
