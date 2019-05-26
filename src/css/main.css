@@ -149,6 +149,10 @@ table {
   background: linear-gradient(var(--blue-dark), var(--blue));
 }
 
+.bolt-header {
+  background: url('/img/bolt-header.png') no-repeat calc(100% - 100px) calc(100% + 100px), linear-gradient(var(--blue-dark), var(--blue));
+}
+
 
 .flex {
   display: flex;
