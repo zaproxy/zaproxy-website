@@ -1,0 +1,40 @@
+{{ $stopwords := (slice "again" "and" "in" "is" "no" "or" "this" "well" "yes" "if" "of" "be" "to" "he" "at" "the" "a" "an" "on" "it" "so" "on" "but" "for" "with" "as" "are") }}
+{ "results": [
+{{- $pages := (where .Site.RegularPages ".Params.noindex" "ne" true) -}}
+{{- $lastindex := (sub (len $pages) 1) -}}
+{{- range $index, $page := $pages -}}
+    {{ $scratch := newScratch }}
+    {{- $content := (.Content | plainify | lower) -}}
+    {{- $content := (replaceRE "\"" "" $content) -}}
+    {{- $content := (replaceRE "&ldquo;" "" $content) -}}
+    {{- $content := (replaceRE "&rdquo;" "" $content) -}}
+    {{- $content := (replaceRE "&lt;" "" $content) -}}
+    {{- $content := (replaceRE "&gt;" "" $content) -}}
+    {{- $content := (replaceRE "&[a-z]+;" "" $content) -}}
+    {{- $content := (replaceRE "\n+" " " $content) -}}
+    {{- $content := (replaceRE "\r+" " " $content) -}}
+    {{- $content := (replaceRE "\t+" " " $content) -}}
+    {{- $content := (replaceRE " +" " " $content) }}
+    {{- $content := (replaceRE "[^a-zA-Z0-9: ]+" "" $content) -}}
+    {{- $content := (trim $content " ") }}
+    {{- $words := (split $content " ") -}}
+    {{- $keywords := (split ((print (.Title | lower )  " " (delimit (cond (eq (.Param "tags") nil) (slice "") (.Param "tags")) " ") ) | lower ) " " | uniq | sort | jsonify) -}}
+
+    {
+    "url": "{{ .Permalink }}",
+    "title": "{{ .Title }}",
+    "keywords": {{ $keywords }},
+    "tags": {{ .Param "tags" | jsonify }},
+    "summary": {{ .Summary | jsonify }},
+    "content": "{{- range $words -}}
+    {{- $word := (.) -}}
+    {{- if and (not (in ($scratch.Get "seenwords") $word)) (ne (substr $word 0 1) $word) (not (in $stopwords $word)) -}}
+        {{- print $word " " -}}
+    {{- end -}}
+    {{ $scratch.Add "seenwords" (slice $word) }}
+    {{- end -}}"
+    }
+    {{- $scratch.Delete "seenwords" -}}
+    {{- if ne $lastindex $index }},{{ end }}
+{{ end }}
+]}

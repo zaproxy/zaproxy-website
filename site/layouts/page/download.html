@@ -3,7 +3,7 @@
     <div class="wrapper py-70 download-header">
     {{ with .Site.Data.download.a_header }}
       <h1 class="text--white mb-30">{{ .title }}</h1>
-        <ul class="link__list">
+        <ul class="link__list no-list-style">
           {{ range .links }}
             <li>
               <a href="{{ .link }}" class="text--orange as-h4"> {{ .label }} </a>,
@@ -50,8 +50,10 @@
               {{ range .table }}
                 <tr>
                   <td>{{ .name }}</td>
-                  <td>{{ .size }}</td>
-                  <td><a href="{{ .link }}" class="button button--orange">Download</a></td>
+                  <td><code>{{ .size }}</code></td>
+                  <td>
+                    <a track-click="download.stable.{{ .name }}" href="{{ .link }}" class="button button--orange">Download</a>
+                  </td>
                 </tr>
               {{ end }}
 
@@ -76,8 +78,10 @@
                 {{ range .table }}
                   <tr>
                     <td>{{ .name }}</td>
-                    <td>{{ .size }}</td>
-                    <td><a href="{{ .link }}" class="button button--orange">Download</a></td>
+                    <td><code>{{ .size }}</code></td>
+                    <td>
+                      <a track-click="download.core.{{ .name }}" href="{{ .link }}" class="button button--orange">Download</a>
+                    </td>
                   </tr>
                 {{ end }}
 
@@ -103,8 +107,8 @@
               {{ range .table }}
                 <tr>
                   <td>{{ .name }}</td>
-                  <td>{{ .size }}</td>
-                  <td><a href="{{ .link }}" class="button button--orange">Download</a></td>
+                  <td><code>{{ .size }}</code></td>
+                  <td><a track-click="download.weekly.{{ .name }}" href="{{ .link }}" class="button button--orange">Download</a></td>
                 </tr>
               {{ end }}
 
@@ -219,7 +223,7 @@
   </div>
 </section>
 
-<section>
+<section style="display:none">
     <div class="wrapper py-70 ta-c">
         {{ with .Site.Data.download.i_client_configuration }}
           <h3>{{ .title }}</h3>

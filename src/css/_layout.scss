@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.on-sm-block {
+  display: block;
+}
+
 .jc-sb {
   justify-content: space-between;
 }
@@ -30,7 +34,6 @@
   flex-shrink: 0;
 }
 
-
 .grid {
   display: grid;
   grid-column-gap: 60px;
@@ -48,11 +51,18 @@
   grid-template-columns:  1fr 1fr 1fr 1fr;
 }
 
-.col-1-3 {
-  width: 33.33333%
+// Generate the various grid widths
+$grid_widths: 2 3 4 5 6 8;
+@each $size in $grid_widths  {
+  @for $i from 1 through ($size - 1) {
+    .col-#{$i}-#{$size} {
+      width:  percentage($i  / $size);
+    }
+  }
 }
-.col-2-3 {
-  width: 66.66666%
+
+.d-ib {
+  display: inline-block;
 }
 
 @media screen and (max-width: 1150px) {
@@ -85,6 +95,23 @@
     width: 50%;
     margin: 0 auto;
   }
+}
 
 
+@media screen and (max-width: 650px) {
+  .on-sm-stack {
+    flex-direction: column;
+  }
+
+  .on-sm-full {
+    width: 100%;
+    margin: 0;
+  }
+  .on-sm-hide {
+    display: none;
+  }
+
+  .on-sm-rp{
+    padding: 0;
+  }
 }

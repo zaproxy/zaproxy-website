@@ -8,17 +8,17 @@
             <div class="homepage-hero__item-content">
               <hgroup class="flex fd-c mb-40">
                 <h1>{{ .headline }}</h1>
-                <h2>
+                <h2 class="on-sm-hide">
                   {{ .subhead }}
                   <span class="small-text">{{ .quote_source | markdownify }}</span>
                 </h2>
 
               </hgroup>
 
-              <a href="" class="button button--blue">See ZAP in action</a>
+              <a href="/tour" class="button button--blue">See ZAP in action</a>
               <a href="/download" class="button button--orange">Download now</a>
             </div>
-            <div class="homepage-hero__item-image">
+            <div class="homepage-hero__item-image ml-40">
                 {{ $svg := (printf "%s%s" "svg/homepage/hero/" .image ) }}
                 {{ partial $svg .}}
             </div>

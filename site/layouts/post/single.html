@@ -1,0 +1,54 @@
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<div class="wrapper py-70" data-kind="{{ .Kind }}">
+    <div class="flex latest-versions">
+      <article class="col-2-3 pr-30 content single-post">
+          <h1 class="post-title">{{ .Title }}</h1>
+          <main class="post-content">
+            {{ .Content }}
+          </main>
+          <div class="next-content">
+              {{ with .PrevInSection }}
+                <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+              {{ end }}
+              {{ with .NextInSection }}
+                <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+              {{ end }}
+          </div>
+      </article>
+      <aside class="col-1-3">
+        <section class="post-meta">
+          <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
+          <h5 id="wordcount"> {{ .WordCount }} Words </h5>
+          {{ if isset .Params "authors" }}
+
+          <div class="post-authors">
+            <h4>Authors</h4>
+            {{ range $name := .Params.authors }}
+            {{ $author := index $.Site.Data.authors $name }}
+              <section class="post-author-single flex p-10">
+              {{ if $author }}
+                <div class="col-1-5">
+                  <img class="author-picture" src="{{ $author.picture }}" />
+                </div>
+                <div class="author-name col-4-5">
+                  {{ $author.name }}
+                  <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">{{ $author.twitter }}</a>
+                </div>
+              {{ else }}
+                <div class="col-1-5">
+                  <img class="author-picture" src="x" />
+                </div>
+                <div class="author-name col-4-5">{{ $name }}</div>
+              {{ end }}
+              </section>
+            
+          {{ end }}
+          </div>
+          {{ end }}          
+        </section>
+      </aside>
+    </div>
+</div>
+{{ end }}
+

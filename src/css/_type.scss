@@ -1,23 +1,39 @@
 
 
 body {
+  color: #444;
+  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'Arimo', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6em;
+  // font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  // line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+
+@media screen and (max-width: 650px) {
+}
+
+h1, h2,h3,h4,h5,h6 {
   font-family: 'Quicksand', sans-serif;
+  line-height: 1em;
 }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 
 h1, .as-h1 {
-  font-size: 3.66665rem;
+  font-size: 3.1rem;
 }
 
 h2, .as-h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
 }
 
 h3, .as-h3 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   margin-bottom: 30px;
   color: var(--blue-dark);
 }
@@ -25,17 +41,22 @@ h3, .as-h3 {
 h4, .as-h4 {
   font-size: 1.8333rem;
   margin-bottom: 30px;
+  color: var(--blue-dark);
+}
+
+h5, .as-h5 {
+  font-size: 1.5333rem;
+  margin-bottom: 30px;
+  color: var(--blue-dark);
+
 }
 
 p, blockquote  {
-  font-size: 1.8333rem;
-  font-weight: 500;
-  line-height: 2.5rem;
   margin-bottom: 20px;
 }
 
 p.small, .small-text {
-  font-size: 1.5rem;
+  font-size: 1.0rem;
 }
 
 .text--blue {
@@ -60,4 +81,51 @@ p.small, .small-text {
 
 .ta-c {
   text-align: center;
+}
+
+
+li {
+  line-height: 1.4;
+}
+
+
+ul {
+  li::before {
+    content: "\2022"; 
+    color: var(--blue-dark);
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+  }
+}
+
+.no-list-style {
+  li::before {
+    content: '';
+    display: none;
+  }
+}
+
+
+nav {
+  font-family: 'Quicksand', sans-serif;
+}
+
+nav li::before  {
+  content: '';
+}
+
+pre {
+  background: #eee;
+  padding:20px;
+  overflow: scroll;
+}
+
+
+
+@media screen and (max-width: 650px) {
+  h1, .as-h1 {
+    font-size: 2.8rem;
+  }
 }

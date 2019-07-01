@@ -3,11 +3,23 @@
   text-align: center;
 }
 
-.homepage-key-features__item, .homepage-personas__item {
+.homepage-key-features__item, 
+.homepage-personas__item {
   text-align: center;
-  transition: background 100ms ease;
+  font-size: 1.2em;
+  transition: background 200ms ease;
 }
+
+.homepage-personas__item {
+}
+
+.homepage-quotes__item {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .homepage-personas {
+  
   border-top: solid 1px var(--blue-border);
 
 }
@@ -52,14 +64,39 @@
   }
   ol {
     font-weight: bold;
-    font-size: 18pt;
+    font-size: 1.2rem;
     padding-left: 1.5em;
     line-height: 30pt;
   }
 
   p {
-    font-size: 18pt;
+    font-size: 1.2rem;
   }
+}
+
+.quote-logo {
+  margin-bottom: -50px;
+  position: relative;
+  z-index: 2;
+}
+.quote-bubble {
+  background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+.quote-bubble:after{
+  content: '';
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid rgba(255,255,255,0.1);
+  position: absolute;
+  bottom: -20px;
+  left: calc(50% - 20px);
 }
 
 @media screen and (max-width: 900px) {
@@ -103,3 +140,19 @@
     }
   }
 }
+
+
+
+@media screen and (max-width: 650px) {
+  .homepage-personas__item {
+    a {
+      margin-top: 20px;
+    }
+  }
+
+  .glide__slide {
+    height: auto;
+  }
+}
+
+

@@ -1,5 +1,19 @@
-{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<article class="content">
-  <main>{{- .Content -}}</main>
-</article>
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+<section class="wrapper flex py-70 on-sm-stack" data-kind="{{ .Kind }}">
+  <article class="col-3-4 on-sm-full">
+    <main>{{- .Content -}}</main>
+  </article>
+  <aside class="col-1-4 ml-30 p-20 on-sm-full" style="border:solid 2px red">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus dui, venenatis non dictum ac, pulvinar eu libero. Nulla nec quam non arcu blandit bibendum. Donec mollis suscipit augue quis imperdiet. Aenean lobortis rutrum interdum. Duis ultrices eu felis nec dignissim. Mauris et imperdiet nunc, et pulvinar lectus. Nam eu orci nec enim egestas semper. Cras non ex id lacus malesuada facilisis sed vitae neque. Mauris finibus erat accumsan, facilisis nunc quis, laoreet ipsum. Morbi vulputate augue sed quam mollis, malesuada consequat augue ultricies. Ut gravida aliquam lacinia. Maecenas a nisl mauris. Aenean elit mauris, tincidunt at magna eget, rutrum cursus ante.
+  </aside>
+</section>
 {{ end }}
+

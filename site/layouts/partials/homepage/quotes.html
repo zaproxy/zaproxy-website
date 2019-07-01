@@ -5,8 +5,8 @@
     </div>
     {{ range .Site.Data.homepage.quotes.items }}
     <div class="homepage-quotes__item">
-        <blockquote class="mb-40">{{ .quote }}</blockquote>
-        <blockquote class="mb-40 text--blue-light">{{ .by }}</blockquote>
+        <blockquote class="mb-40 quote-bubble">{{ .quote }}</blockquote>
+        <blockquote class="mb-20 text--blue-light">{{ .by }}</blockquote>
     </div>
     {{ end }}
   </div>

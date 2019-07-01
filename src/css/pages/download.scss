@@ -57,6 +57,18 @@
     font-size: 22pt;
     font-weight: bold;
   }
+
+  
+}
+
+@media screen and (max-width: 650px) {
+  .download-table td:nth-child(2) {
+    display: none;
+  }
+
+  .download-header ul {
+    max-width: none;
+  }
 }
 
 @media screen and (max-width: 500px) {

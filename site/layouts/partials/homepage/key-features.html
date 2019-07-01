@@ -2,7 +2,7 @@
   <div class="wrapper homepage-key-features ">
     {{ with .Site.Data.homepage.keyFeatures }}
       <h3>{{.title}}</h3>
-      <p>{{ .description }}</p>
+      <p class="">{{ .description }}</p>
     <div class="grid grid__four-col mt-70">
       {{ range .features}}
         <div class="homepage-key-features__item">
@@ -17,6 +17,6 @@
     </div>
     {{ end }}
 
-    <a href="" class="button button--orange">Take the Zap Tour</a>
+    <a href="/tour" class="button button--orange">Take the Zap Tour</a>
   </div>
 </section>

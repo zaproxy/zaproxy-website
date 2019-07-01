@@ -1,5 +1,6 @@
 <section>
-  <div class="wrapper grid grid__three-col card p-30">
+  <div class="wrapper card br-def">
+    <div class="pt-30 px-20 grid grid__three-col">
     {{ range .Site.Data.homepage.benefits }}
     <div class="homepage-benefit">
       <h4 class="text--blue">
@@ -9,5 +10,6 @@
       <p class="small">{{ .text }}</p>
     </div>
     {{ end }}
+    </div>
   </div>
 </section>

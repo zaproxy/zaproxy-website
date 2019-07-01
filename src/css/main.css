@@ -5,18 +5,25 @@
   --blue--lightest: #F4FAFF;
   --blue-border: #DCEAFF;
   --orange: #FFA400;
+  --orange-dark: rgb(191, 132, 22);;
 
   --bp-small: 480px;
   --bp-med: 950px;
   --bp-large: 1100px;
+  --radius: 4px;
+  --grey-light: #eee;
+  --breakpoint-mobile: 650px;
 
 }
+
+
 
 @import 'reset';
 @import 'components/button';
 @import 'components/card';
 @import 'components/accordion';
 @import 'components/slider';
+@import 'components/prism.css';
 @import 'type';
 @import 'spacing';
 @import 'page';
@@ -24,8 +31,10 @@
 @import 'layout';
 @import 'navigation';
 @import 'footer';
+@import 'form.scss';
+@import 'effects.scss';
 @import 'pages/homepage.scss';
 @import 'pages/download.scss';
-
+@import 'pages/blog.scss';
 
 

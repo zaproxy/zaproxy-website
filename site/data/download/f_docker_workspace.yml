@@ -3,9 +3,9 @@ column_1:
     - title: Docker
       subtitle: There are 3 Docker images available
       info:
-        - the 2.6.0 release [zap2docker-stable](zap2docker-stable)
-        - the latest weekly release [zap2docker-weekly](zap2docker-weekly)
-        - the very latest source code [zap2docker-live](zap2docker-live)
+        - the 2.8.0 release [zap2docker-stable](https://hub.docker.com/r/owasp/zap2docker-stable/)
+        - the latest weekly release [zap2docker-weekly](https://hub.docker.com/r/owasp/zap2docker-weekly/)
+        - the very latest source code [zap2docker-live](https://hub.docker.com/r/owasp/zap2docker-live/)
         - See [Docker]( see docker) for more details.
     - title: Linux Repos
       info:

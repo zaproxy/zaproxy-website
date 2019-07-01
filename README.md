@@ -1,14 +1,28 @@
-# Victor Hugo
+# ZAP Website
 
-**A Hugo boilerplate for creating truly epic websites**
+## Todos
+In order of importance
 
-This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
+- Video for ZAP tour
+- Finish setting up Google Analytics for downloads
+- Figure out what to put in sidebar
+- Vette text for misspellings
+- Test site on real mobile device
+- Setup Github action for building
+- Figure out how post dates work for hiding content
+- Finish up search
 
-Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+## Hugo
 
-## Usage
+### Helpful Links
+- https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/
+- https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/
+- https://gist.github.com/sebz/efddfc8fdcb6b480f567
+- https://en.jeffprod.com/blog/2018/build-your-own-hugo-website-search-engine/
+
+
+### Usage
 
 ### :exclamation: Prerequisites
 
@@ -113,4 +127,4 @@ You can also click this button:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
 
-## Enjoy!! 😸
+

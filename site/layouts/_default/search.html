@@ -1,0 +1,102 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+<section class="wrapper py-70" data-kind="{{ .Kind }}">
+  <article class="content single-default">
+    <form>
+      <input type="text" name="q" id="search-filter" placeholder="Search ..." />
+      <button type="button" id="search-trigger">Search</button>
+    </form>
+    
+    <main id="search-results"></main>
+    <script>
+      let params = new URLSearchParams(window.location.search);
+      let query = params.get('q') || false;
+      let searchFor = () => {};
+      let idx;
+      let documents = [];
+      fetch('/search/index.json')
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(data) {
+
+          idx = lunr(function () {
+              this.ref('url');
+              this.field('title', { boost: 3});
+              this.field('keywords');
+              this.field('tags', { boost: 2 });
+              this.field('content');
+              this.metadataWhitelist = ['position']
+
+              documents = data.results.reduce((aggr, doc) => {
+                aggr[doc.url] = doc;
+                return aggr;
+              }, {})
+              
+              data.results.forEach(function (doc) {
+                this.add(doc)
+              }, this);
+            });
+
+            if (query) {
+              searchFor(query);
+            }
+            console.log(idx);
+            console.log()
+        });
+      
+        function renderResult(result, tmpl) {
+          let doc = documents[result.ref];
+          let clone = document.importNode(tmpl.content, true);
+          clone.querySelector("[data-title]").textContent = doc.title;
+          clone.querySelector("[data-url]").setAttribute("href", doc.url);
+          clone.querySelector("[data-summary]").textContent = doc.summary;
+
+          console.log(result);
+          console.log(clone)
+          return clone;
+        }
+
+   
+      document.addEventListener('DOMContentLoaded', function() {
+        searchFor = function (value) {
+          let nodes = idx.search(value).map(result => {
+            results.append(renderResult(result, template));
+          });
+        }
+
+
+        let template = document.querySelector('#search-entry');
+        let results = document.getElementById('search-results');
+        let filter = document.getElementById('search-filter');
+        document.getElementById('search-trigger').addEventListener('click', function() {
+          results.innerHTML = "";
+
+          searchFor(filter.value);
+          
+        });
+        filter.addEventListener('change', function() {
+          console.log(idx.search(filter.value))
+        });
+      }, false);
+
+    </script>
+    <template id="search-entry">
+      <article>
+      <h2 data-title set="innerText">Example</h2>
+      <a data-url set="href" href="#">More</a>
+      <ul data-tags></ul>
+      <div data-summary></div>
+      </article>
+    </template>
+  </article>
+</section>
+{{ end }}
+

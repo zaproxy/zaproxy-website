@@ -2,6 +2,10 @@
   background: var(--blue--lightest);
 }
 
+.bg--blue {
+  background: var(--blue);
+}
+
 .bg--blue-gradient {
   background: linear-gradient(var(--blue-dark), var(--blue));
 }

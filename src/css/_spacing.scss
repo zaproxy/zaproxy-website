@@ -1,62 +1,52 @@
-.mr-20 {
-  margin-right: 20px;
-}
-.mb-30 {
-  margin-bottom: 30px;
-}
+// Generate spacing for each size
+@each $size in 10 20 30 40 70  {
+  .p-#{$size} {
+    padding: #{$size}px;
+  }
 
-.mb-40 {
-  margin-bottom: 40px;
-}
+  .px-#{$size} {
+    padding-left: #{$size}px;
+    padding-right:  #{$size}px;
+  }
+  .mx-#{$size} {
+    margin-left: #{$size}px;
+    margin-right:  #{$size}px;
+  }
 
-.mb-60 {
-  margin-bottom: 60px;
-}
+  .py-#{$size} {
+    padding-top: #{$size}px;
+    padding-bottom: #{$size}px;
+  }
+  .my-#{$size} {
+    margin-top: #{$size}px;
+    margin-bottom: #{$size}px;
+  }
 
-.mb-70 {
-  margin-bottom: 70px;
-}
+  .pr-#{$size} {
+    padding-right: #{$size}px;
+  }
+  .mr-#{$size} {
+    margin-right: #{$size}px;
+  }
 
-.mt-60 {
-  margin-top: 60px;
-}
+  .pl-#{$size} {
+    padding-left: #{$size}px;
+  }
+  .ml-#{$size} {
+    margin-left: #{$size}px;
+  }
 
-.mt-70 {
-  margin-top: 70px;
-}
+  .pt-#{$size} {
+    padding-top: #{$size}px;
+  }
+  .mt-#{$size} {
+    margin-top: #{$size}px;
+  }
 
-.my-30 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.p-30 {
-  padding: 30px;
-}
-
-.p-40 {
-  padding: 40px;
-}
-
-.pt-30 {
-  padding-top: 30px;
-}
-
-.px-30 {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.py-20 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.py-70 {
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
-.pr-70 {
-  padding-right: 70px;
+  .mb-#{$size} {
+    margin-bottom: #{$size}px;
+  }
+  .pb-#{$size} {
+    padding-bottom: #{$size}px;
+  }
 }

@@ -33,10 +33,24 @@
   height: 18px;
 }
 
-.hamburger {
+.hamburger-icon {}
+.hamburger-icon,
+.hamburger-click {
   display: none;
 }
 
+.hamburger-icon:hover {
+  transform: scale(1.1);
+}
+
+.hamburger-click {
+  cursor: pointer;
+  opacity: 0.0;
+  z-index: 2;
+  position: absolute;
+  top: 36px;
+  right: 40px;
+}
 
 @media screen and (max-width: 825px) {
   .header-social {
@@ -44,12 +58,49 @@
   }
 }
 
+input {
+  cursor: pointer;
+  z-index: 2;
+
+}
+
+
+
 @media screen and (max-width: 650px) {
-  .hamburger {
+  .hamburger-icon,
+  .hamburger-click {
     display: block;
   }
 
-  .nav-content {
+  input:checked ~ #primary-menu {
+    transform: none;
+  }
+  
+
+  #cta-download {
     display: none;
+  }
+
+  #primary-menu{
+    -webkit-transform: none;
+    transform: none;
+    background: red;
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 90px;
+    left: 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    margin: 0px;
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    z-index: 10;
+
+  
+    transform-origin: 0% 0%;
+    transform: translate(-120%, 0%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
 }

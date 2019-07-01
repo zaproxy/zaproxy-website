@@ -1,0 +1,31 @@
+{{ define "main" }}
+<section class="bolt-header">
+    <div class="wrapper py-70 download-header"></div>
+</section>
+  <div class="wrapper py-70">
+      <div class="flex latest-versions">
+        <div class="col-2-3 pr-30">
+            {{ range .Pages }}
+            <article class="blog-post-preview">
+              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <section class="summary">{{ .Summary }}</section>
+              Summary?
+              {{ .Params.tags | jsonify }}
+              {{ $taxonomy := "tags" }}
+                <ul>
+                  {{ range $index, $tag := .Params.tags }}
+                      <li>
+                        HEY
+                        <a href="?">{{ $tag | urlize }}</a>
+                      </li>
+                  {{- end -}}
+                </ul>
+            </article>
+          {{ end }}
+        </div>
+        <div class="col-1-3">
+          {{ block "sidebar" . }}{{ partial "blog/sidebar" . }}{{end}}
+        </div>
+      </div>
+  </div>
+{{ end }}

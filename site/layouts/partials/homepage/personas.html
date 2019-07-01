@@ -1,7 +1,7 @@
 <section class="homepage-personas py-70">
-  <div class="wrapper grid grid__three-col">
+  <div class="wrapper grid grid__three-col on-sm-rp">
   {{ range .Site.Data.homepage.personas.personaItems }}
-    <div class="homepage-personas__item pt-30 px-30 card flex jc-sb ai-c fd-c">
+    <div class="homepage-personas__item pt-30 px-30 card flex jc-sb ai-c fd-c br-def">
       <div class="homepage-persona__icon mb-30">
           {{ $svg := (printf "%s%s" "svg/homepage/personas/" .icon) }}
           {{partial  $svg }}
@@ -9,7 +9,7 @@
       <h4 class=>{{ .title }}</h4>
       <p class="paragraph-small">{{ .text }}</p>
 
-      <a href="" class="button button--orange button--arrow-link mt-60 mb-30 flex jc-c">
+      <a href="{{ .link }}" class="button button--orange button--arrow-link mt-60 mb-30 flex jc-c">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.33 28.43" width="20px "><path fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3" d="M1.5 1.5l12.71 12.71L1.5 26.93"/></svg>
       </a>
     </div>
