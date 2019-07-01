@@ -3,6 +3,7 @@
 ## Todos
 In order of importance
 
+- Fill out README with instructions for content
 - Video for ZAP tour
 - Finish setting up Google Analytics for downloads
 - Figure out what to put in sidebar
