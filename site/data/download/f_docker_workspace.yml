@@ -6,16 +6,16 @@ column_1:
         - the 2.8.0 release [zap2docker-stable](https://hub.docker.com/r/owasp/zap2docker-stable/)
         - the latest weekly release [zap2docker-weekly](https://hub.docker.com/r/owasp/zap2docker-weekly/)
         - the very latest source code [zap2docker-live](https://hub.docker.com/r/owasp/zap2docker-live/)
-        - See [Docker]( see docker) for more details.
+        - See [Docker](https://hub.docker.com/) for more details.
     - title: Linux Repos
       info:
-        - We now also have official [ZAP Linux Repos](lunx repo)
+        - We now also have official [ZAP Linux Repos](https://snapcraft.io/zaproxy)
 column_2:
   - items:
     - title: ZAP Workspace
       info:
         - You can now import ZAP projects into Eclipse using just one URL.
-        - See the [Building page](building page) for details about this and information about other IDEs.
+        - See the [Building page](https://github.com/zaproxy/zaproxy/wiki/Building) for details about this and information about other IDEs.
     - title: Homebrew Cask
       info:
-        - On Mac OS X you can also install ZAP using [Homebrew Cask](home brew)
+        - On Mac OS X you can also install ZAP using [Homebrew Cask](https://formulae.brew.sh/cask/owasp-zap)
