@@ -52,7 +52,7 @@
                   <td>{{ .name }}</td>
                   <td><code>{{ .size }}</code></td>
                   <td>
-                    <a track-click="download.stable.{{ .name }}" href="{{ .link }}" class="button button--orange">Download</a>
+                    <a track-event="download.stable.{{ .id }}" href="{{ .link }}" class="button button--orange">Download</a>
                   </td>
                 </tr>
               {{ end }}
@@ -80,7 +80,7 @@
                     <td>{{ .name }}</td>
                     <td><code>{{ .size }}</code></td>
                     <td>
-                      <a track-click="download.core.{{ .name }}" href="{{ .link }}" class="button button--orange">Download</a>
+                      <a track-event="download.core.{{ .id }}" href="{{ .link }}" class="button button--orange">Download</a>
                     </td>
                   </tr>
                 {{ end }}
@@ -108,7 +108,7 @@
                 <tr>
                   <td>{{ .name }}</td>
                   <td><code>{{ .size }}</code></td>
-                  <td><a track-click="download.weekly.{{ .name }}" href="{{ .link }}" class="button button--orange">Download</a></td>
+                  <td><a track-event="download.weekly.{{ .id }}" href="{{ .link }}" class="button button--orange">Download</a></td>
                 </tr>
               {{ end }}
 

@@ -1,6 +1,7 @@
 title: ZAP Weekly
 table:
   - name: Weekly Cross Platform Package
+    id: cp-p
     size: 279mb
     link:
 info:
