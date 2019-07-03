@@ -2,14 +2,14 @@ personaItems:
   - title: I am New to Security
     text: If you are new to security testing then ZAP has you very much in mind. Making application security accessible and actionable is a key part of ZAP's mission.
     icon: new.svg
-    link: /tour/
+    link: /tour/?iam=new
   
   - title: I am a Developer/ QA Tester
     text: If you are a Developer or QA Tester, ZAP can help you test your applications for vulnerabilities each time you change code so you can deliver secure applications.
     icon: dev.svg
-    link: /tour/
+    link: /tour/?iam=dev-qa
   
   - title: I am a Penetration Tester
     text: If you are a Penetration Tester, ZAP is a powerful addition to your toolchain with seamless integration and constant updates from the ZAP Community.
     icon: tester.svg
-    link: /tour/
+    link: /tour/?iam=sec
