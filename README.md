@@ -6,13 +6,39 @@ In order of importance
 - Fill out README with instructions for content
 - Video for ZAP tour
 - Finish setting up Google Analytics for downloads
-- Figure out what to put in sidebar
 - Vette text for misspellings
 - Test site on real mobile device
 - Setup Github action for building
 - Figure out how post dates work for hiding content
 - Finish up search
 
+## Development
+To work on the website you'll need to have either node.js or Docker installed.
+
+### Docker
+The suggested setup for development is using the Docker.
+
+```sh
+# Build image
+docker build -t zaproxy-website .
+
+# Start container with image of zaproxy-website
+docker run -it -v $(pwd)/site:/app/site \
+    -v $(pwd)/src:/app/src -p 3000:3000 zaproxy-website npm run preview
+```
+### Dependancies
+For development, the site heavily depends on node.js for utilities that build the front-end CSS & JavaScript. The entrypoint for modifying the site JavaScript is `src/index.js` which gets transpiled & packed up with the babel & webpack packages.
+
+```sh
+# Check for associated vulns
+npm audit
+
+# Check for packages
+npm outdated
+
+# Update a package
+npm update @babel/core
+```
 
 ## Hugo
 
