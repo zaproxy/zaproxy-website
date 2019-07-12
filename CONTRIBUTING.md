@@ -6,8 +6,8 @@ please read the [code of conduct](CODE_OF_CONDUCT.md).
 ## Setup
 
 ```sh
-$ git clone https://github.com/netlify/victor-hugo
-$ cd victor-hugo
+$ git clone https://github.com/zaproxy/zaproxy-website
+$ cd zaproxy-website
 $ npm install
 ```
 
@@ -45,5 +45,5 @@ We actively welcome your pull requests.
 
 ## License
 
-By contributing to Victor-Hugo, you agree that your contributions will be licensed
+By contributing to zaproxy-website, you agree that your contributions will be licensed
 under its [MIT license](LICENSE).
