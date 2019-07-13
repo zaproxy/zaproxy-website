@@ -9,30 +9,28 @@
 
   <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Istok+Web|Open+Sans:400,700|Rubik&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap" rel="stylesheet">
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-
+  {{ if not .Site.BuildDrafts }}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-33398574-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-33398574-4');
+  </script>
+  {{ end }}
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
 </head>
-
 <body>
-
   {{ block "header" . }}{{ partial "header" . }}{{end}}
-
   {{ block "main" . }}{{end}}
-
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}
     <script src="{{ relURL . }}"></script>
   {{ end }}
 </body>
-
 </html>
