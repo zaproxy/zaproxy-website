@@ -13,7 +13,7 @@ In order of importance
 - Finish up search
 
 ## Development
-To work on the website you'll need to have either node.js or Docker installed.
+To work on the website you'll need to have either node.js or Docker installed. In your development environment  `npm run preview` will start up a webpack-dev-server on port 3000 for development which will hot-reload the site as file changes are detected.
 
 ### Docker
 The suggested setup for development is using the Docker.
@@ -42,60 +42,8 @@ npm update @babel/core
 
 ## Hugo
 
-### Helpful Links
-- https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/
-- https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/
-- https://gist.github.com/sebz/efddfc8fdcb6b480f567
-- https://en.jeffprod.com/blog/2018/build-your-own-hugo-website-search-engine/
-
-
-### Usage
-
-### :exclamation: Prerequisites
-
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
-
-Next step, clone this repository and run:
-
-```bash
-npm install
-```
-
-This will take some time and will install all packages necessary to run Victor Hugo and its tasks.
-
-### :construction_worker: Development
-
-While developing your website, use:
-
-```bash
-npm start
-```
-
-or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
-
-```bash
-npm run preview
-```
-
-Then visit http://localhost:3000/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
-
-### :package: Static build
-
-To build a static version of the website inside the `/dist` folder, run:
-
-```bash
-npm run build
-```
-
-To get a preview of posts or articles not yet published, run:
-
-```bash
-npm run build:preview
-```
-
-See [package.json](package.json#L8) for all tasks.
-
-## Structure
+### Structure
+https://gohugo.io/getting-started/directory-structure/
 
 ```
 |--site                // Everything in here will be built with hugo
@@ -110,30 +58,88 @@ See [package.json](package.json#L8) for all tasks.
 |  |--index.js         // index.js is the webpack entry for your css & js assets
 ```
 
-## Basic Concepts
+#### Content
+For adding & modifying content the place to be is  `site/content/`. Content is written in the form of markdown files with YAML headers including details about the post such as title, date & template. The name of the file is tranformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. Additioanlly, any folder structure you create in that directory will be reflected in the sites' url heirarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`. 
 
-You can read more about Hugo's template language in their documentation here:
+For organization you also have the option of encapsulating the content of a post in a directory. If a post a number of images or other assets related to it, it's more organizatiosn to include those assets with the post instead of putting them all in the assets directory. For example instead of having `site/content/download.md`, you could have `site/content/download/index.md` & all the related images would also live in the `download` directory.
 
-https://gohugo.io/templates/overview/
+#### Layouts
+Creating content is an important piece of the puzzle & is directly connected to layouts for rendering HTML. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
 
-The most useful page there is the one about the available functions:
+For generic pages & posts, the lookup resolution works great, but sometimes you have pages that requires custom layouts, such as the download page. In those cases, you can specifiy the layout in the content markdown file & it will lookup the template.
 
-https://gohugo.io/templates/functions/
+This is what `site/content/download.md` currently looks like which resolves to the template found `site/layouts/page/download.html`.
 
+```---
+type: page
+layout: download
+---
+```
+
+
+- https://gohugo.io/templates/introduction/
+- https://gohugo.io/templates/lookup-order/
+
+#### Data
+Data that is shared across the site lives in `site/data/`. For example, a list of all the site authors is an example of a piece of data you would reference across numerous places on the site. You can create `site/data/authors.yaml`.
+
+```yaml
+---
+- name: 'Simon Bennets'
+  picture: 'https://pbs.twimg.com/profile_images/2186782633/simonbennetts2_400x400.jpg'
+  twitter: '@psiinon'
+  is_core: true
+
+- name: 'David Scrobonia'
+  picture: 'https://pbs.twimg.com/profile_images/1132029219876347904/FYA3rHRq_400x400.png'
+  twitter: '@david_scrobonia'
+  is_core: true
+```
+
+Later, in the templates, you would reference that data & the template would render.
+```html
+{{ range $author := $.Site.Data.authors }}
+    <section class="post-author-single flex p-10">
+      <div class="col-1-5">
+        <img class="author-picture" src="{{ $author.picture }}" />
+      </div>
+      <div class="author-name col-4-5">
+        {{ $author.name }}
+        <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">{{ $author.twitter }}</a>
+      </div>
+    </section>
+{{ end }}
+```
+https://gohugo.io/templates/data-templates/
+
+
+#### Frontend Assets
+##### Static
 For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there.
-
-Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
+use the `site/static` folder. Images, font-files, etc, all go there. sFiles in the static folder end up in the web root. So a file called `site/static/favicon.ico`
 will end up being available as `/favicon.ico` and so on...
 
+##### CSS/SCSS
+All the CSS is written in SCSS ("Sassy CSS") with all the files in `src/css/` with `src/css/main.css` being the entrypoint, defining main variables & importing the needed styles.
+
+Styles are separated by broad category, component and page specific styles. For example, if you need to change the typography across the entire site, `src/css/_type.scss` is the file to edit.
+
+##### JavaScript
 The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
 
-You can use **ES6** and use both relative imports or import libraries from npm.
+You can use **ES6** and use both relative imports or import libraries from npm. Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
 
-Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and
-minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
+### Basic Concepts
 
-## Environment variables
+You can read more about Hugo's template language in their documentation below. 
+The most useful page there is the one about the available functions.
+
+- https://gohugo.io/templates/overview/
+- https://gohugo.io/templates/functions/
+
+
+
+### Environment variables
 
 To separate the development and production _- aka build -_ stages, all gulp tasks run with a node environment variable named either `development` or `production`.
 
@@ -142,3 +148,10 @@ You can access the environment variable inside the theme files with `getenv "NOD
     {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
 
 All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
+
+### Helpful Links
+- https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/
+- https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/
+- https://gist.github.com/sebz/efddfc8fdcb6b480f567
+- https://en.jeffprod.com/blog/2018/build-your-own-hugo-website-search-engine/
+
