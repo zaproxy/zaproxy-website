@@ -3,9 +3,7 @@
 ## Todos
 In order of importance
 
-- Fill out README with instructions for content
 - Video for ZAP tour
-- Finish setting up Google Analytics for downloads
 - Vette text for misspellings
 - Test site on real mobile device
 - Setup Github action for building
@@ -26,8 +24,9 @@ docker build -t zaproxy-website .
 docker run -it -v $(pwd)/site:/app/site \
     -v $(pwd)/src:/app/src -p 3000:3000 zaproxy-website npm run preview
 ```
-### Dependancies
-For development, the site heavily depends on node.js for utilities that build the front-end CSS & JavaScript. The entrypoint for modifying the site JavaScript is `src/index.js` which gets transpiled & packed up with the babel & webpack packages.
+
+### Dependencies
+For development, the site heavily depends on node.js for utilities that build the front-end CSS & JavaScript. The entrypoint for modifying the site JavaScript is `src/index.js` which gets transpiled using babel & packed up with webpack packages.
 
 ```sh
 # Check for associated vulns
@@ -50,6 +49,7 @@ https://gohugo.io/getting-started/directory-structure/
 |  |--content          // Pages and collections - ask if you need extra pages
 |  |--data             // YAML data files with any data for use in examples
 |  |--layouts          // This is where all templates go
+|  |  |--_default      // This is where the default layouts live
 |  |  |--partials      // This is where includes live
 |  |  |--index.html    // The index page
 |  |--static           // Files in here ends up in the public folder
@@ -59,12 +59,42 @@ https://gohugo.io/getting-started/directory-structure/
 ```
 
 #### Content
-For adding & modifying content the place to be is  `site/content/`. Content is written in the form of markdown files with YAML headers including details about the post such as title, date & template. The name of the file is tranformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. Additioanlly, any folder structure you create in that directory will be reflected in the sites' url heirarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`. 
+For adding & modifying content the place to be is  `site/content/`. Content is written in the form of markdown files with YAML headers including details about the post such as title, date & layout. The name of the file is tranformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. Additioanlly, any folder structure you create in that directory will be reflected in the sites' url heirarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`. 
 
-For organization you also have the option of encapsulating the content of a post in a directory. If a post a number of images or other assets related to it, it's more organizatiosn to include those assets with the post instead of putting them all in the assets directory. For example instead of having `site/content/download.md`, you could have `site/content/download/index.md` & all the related images would also live in the `download` directory.
+**Sample**  
+```markdown
+---
+type: page
+title: Get Involved
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et dui ligula. 
+Donec semper ex at molestie scelerisque. In sodales bibendum leo, vitae porttitor
+est viverra at. Phasellus tincidunt enim ac rutrum convallis. Duis at tellus a
+erat consequat fringilla. Ut augue leo, blandit vel d
+
+## Mauris
+```
+
+You can also use `hugo` commands to create the yaml content files.
+
+```sh
+# Move to site directory
+cd site/
+
+# Create generic content file
+hugo new contributing.md
+
+# Create a content file using the site/archetypes/blog.md template
+hugo new blog/$(date -v +7d '+%Y-%m-%d')-learning-zap-api/index.md
+```
+
+For keeping content organized you also have the option of encapsulating the content of a post in a directory. If a post has a number of images or other assets related to it, it is much cleaner to include those assets with the post instead of putting them all in the assets directory. For example instead of having `site/content/download.md`, you could have `site/content/download/index.md` & all the post's related images would also live in that same `download` directory.
+
+##### Blog
 
 #### Layouts
-Creating content is an important piece of the puzzle & is directly connected to layouts for rendering HTML. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
+For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
 
 For generic pages & posts, the lookup resolution works great, but sometimes you have pages that requires custom layouts, such as the download page. In those cases, you can specifiy the layout in the content markdown file & it will lookup the template.
 
@@ -75,7 +105,6 @@ type: page
 layout: download
 ---
 ```
-
 
 - https://gohugo.io/templates/introduction/
 - https://gohugo.io/templates/lookup-order/
@@ -116,7 +145,7 @@ https://gohugo.io/templates/data-templates/
 #### Frontend Assets
 ##### Static
 For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there. sFiles in the static folder end up in the web root. So a file called `site/static/favicon.ico`
+use the `site/static` folder. Images, font-files, etc, all go there. Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
 will end up being available as `/favicon.ico` and so on...
 
 ##### CSS/SCSS
@@ -124,10 +153,15 @@ All the CSS is written in SCSS ("Sassy CSS") with all the files in `src/css/` wi
 
 Styles are separated by broad category, component and page specific styles. For example, if you need to change the typography across the entire site, `src/css/_type.scss` is the file to edit.
 
+https://sass-lang.com/documentation/syntax
+
 ##### JavaScript
 The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
 
 You can use **ES6** and use both relative imports or import libraries from npm. Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
+
+- https://babeljs.io/
+- https://webpack.js.org/
 
 ### Basic Concepts
 
