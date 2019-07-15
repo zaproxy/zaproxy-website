@@ -39,14 +39,24 @@ npm outdated
 npm update @babel/core
 ```
 
+### Building
+
+```
+./bin/build.sh
+cp -r ./dist/ ../zaproxy-website-builds
+cd ../zaproxy-website-builds
+git push origin staging
+```
+
 ## Hugo
+*Generically speaking, the term post & page can be used interchangeably, the exception is when content types are defined (`type: post`)*
 
 ### Structure
 https://gohugo.io/getting-started/directory-structure/
 
 ```
 |--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
+|  |--content          // Posts and collections - ask if you need extra posts
 |  |--data             // YAML data files with any data for use in examples
 |  |--layouts          // This is where all templates go
 |  |  |--_default      // This is where the default layouts live
@@ -59,7 +69,7 @@ https://gohugo.io/getting-started/directory-structure/
 ```
 
 #### Content
-For adding & modifying content the place to be is  `site/content/`. Content is written in the form of markdown files with YAML headers including details about the post such as title, date & layout. The name of the file is tranformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. Additioanlly, any folder structure you create in that directory will be reflected in the sites' url heirarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`. 
+For adding & modifying content the place to be is  `site/content/`. Content is written in the form of markdown files with YAML headers including details about the post such as title, date & layout. The name of the file is tranformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. Additionally, any folder structure you create in that directory will be reflected in the sites' url heirarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`. 
 
 **Sample**  
 ```markdown
@@ -96,7 +106,7 @@ For keeping content organized you also have the option of encapsulating the cont
 #### Layouts
 For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
 
-For generic pages & posts, the lookup resolution works great, but sometimes you have pages that requires custom layouts, such as the download page. In those cases, you can specifiy the layout in the content markdown file & it will lookup the template.
+For generic  posts, the lookup resolution works great, but sometimes you have posts that requires custom layouts, such as the downloads page. In those cases, you can specifiy the layout in the content markdown file & it will lookup the template.
 
 This is what `site/content/download.md` currently looks like which resolves to the template found `site/layouts/page/download.html`.
 
@@ -151,7 +161,7 @@ will end up being available as `/favicon.ico` and so on...
 ##### CSS/SCSS
 All the CSS is written in SCSS ("Sassy CSS") with all the files in `src/css/` with `src/css/main.css` being the entrypoint, defining main variables & importing the needed styles.
 
-Styles are separated by broad category, component and page specific styles. For example, if you need to change the typography across the entire site, `src/css/_type.scss` is the file to edit.
+Styles are separated by broad category, component and post specific styles. For example, if you need to change the typography across the entire site, `src/css/_type.scss` is the file to edit.
 
 https://sass-lang.com/documentation/syntax
 
