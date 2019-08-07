@@ -101,7 +101,31 @@ hugo new blog/$(date -v +7d '+%Y-%m-%d')-learning-zap-api/index.md
 
 For keeping content organized you also have the option of encapsulating the content of a post in a directory. If a post has a number of images or other assets related to it, it is much cleaner to include those assets with the post instead of putting them all in the assets directory. For example instead of having `site/content/download.md`, you could have `site/content/download/index.md` & all the post's related images would also live in that same `download` directory.
 
-##### Blog
+##### New Content
+For adding new categories of content such as addons or wiki entries follow the pattern below using addons as an example
+
+- Create the content directory `mkdir -p site/content/addons/{images,icons}`
+- If there IS NOT  a lot of media within that section, copy images into the images directory
+- If the content IS media heavy, insteading of creating a single markdown file per post, create a directory with the post name 
+  - `site/content/addons/active-scan-rules/images/`
+- If there is sub pages of content, then you will also need to create the directories that reflect the content structure
+  - For example for Access Control Context Options you would use one of the structures depending on the depth of the content
+    - `site/content/addons/access-control/context-options/_index.md`
+    - `site/content/addons/access-control/context-options.md`
+- When you create entries that, include a type in the header
+
+
+###### Sample
+`site/content/addons/active-scan-rules.md`
+
+```
+---
+title: "Active Scan Rules"
+type: addon
+status: alpha
+icon: 
+---
+```
 
 #### Layouts
 For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 

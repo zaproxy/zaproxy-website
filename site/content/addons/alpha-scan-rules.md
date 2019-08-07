@@ -1,7 +1,7 @@
 ---
 title: "Active Scan Rules"
 type: addon
-stability: alpha
+status: alpha
 icon: 
 ---
 
