@@ -41,7 +41,7 @@ optional add-ons that you have installed.
 Look in the zap.log file to see if any errors have been logged. This is either
 in the directory you specified via the '-dir' [command
 line](https://github.com/zaproxy/zap-core-help/wiki/HelpCmdline) option or in
-the [default directory](FAQconfig) if you didnt specify one.
+the [default directory](faq/what-is-the-default-directory-that-zap-uses/) if you didnt specify one.
 
 If there are error messages that appear to indicate a Java memory problem then
 try increasing the memory available via the appropriate command line script
