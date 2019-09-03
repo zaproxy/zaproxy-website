@@ -15,12 +15,12 @@ There are 3 options on Windows:
     * OWASP 
       * Zed Attack Proxy 
         * `ZAP <version>`
-  3. Via the 'zap.bat' command line script in the [installation directory](FAQinstall)
+  3. Via the 'zap.bat' command line script in the [installation directory](faq/where-is-zap-installed/)
 
 ##  Linux
 
 On Linux theres just a 'zap.sh' script in the [installation
-directory](FAQinstall), although you can create a desktop icon manually as
+directory](faq/where-is-zap-installed/), although you can create a desktop icon manually as
 well.
 
 ##  Mac OS
