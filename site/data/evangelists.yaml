@@ -1,0 +1,565 @@
+---
+- name: Simon Bennetts
+  email: psiinon@gmail.com
+  twitter: psiinon
+  linkedin: http://www.linkedin.com/profile/view?id=46196399
+  locations: UK / Worldwide / Remote
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ZAP Project Lead
+  links: >
+    Slides and videos linked off 
+    <a href="https://www.owasp.org/index.php/User:Simon_Bennetts"
+    rel="nofollow">OWASP profile</a> - feel free to rip these off ;)
+
+- name: Yvan Boily
+  email: yvanboily@gmail.com
+  twitter: ygjb
+  locations: Canada
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ZAP Enthusiast
+  links: <a href="https://boily.me" rel="nofollow">Webpage</a>
+
+- name: Adam Baso
+  twitter: dr0ptp4kt
+  locations: SF Bay Area
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: <a href="https://www.youtube.com/watch?v=z9gEH-EqNFo#t=0" rel="nofollow">Video</a>
+
+- name: Duane L. Blanchard
+  email: info@foolioninfosec.com
+  twitter: FooLionInfoSec
+  locations: Pacific Northwest
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: SOURCE Seattle, SJSU Cyber Bootcamp, USCC, Black Lodge Research, ...
+
+- name: Zakaria Rachid
+  email: badzack@gmail.com
+  twitter: zackhimself
+  linkedin: http://www.linkedin.com/profile/view?id=297569442
+  locations: France
+  language: French, English, Arabic
+  has_talks: Y
+  has_training: ''
+  notes: ''
+  links: <a href="http://4sec.fr/" rel="nofollow">Homepage</a>
+
+- name: Mauro Risonho de Paula Assumpção
+  email: mauro.risonho@gmail.com
+  twitter: firebitsbr
+  linkedin: http://br.linkedin.com/pub/mauro-risonho-de-paula-assump%C3%A7%C3%A3o/b/b06/225
+  locations: Brazil, Latin America
+  language: Portuguese
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: <a href="http://www.slideshare.net/firebits" rel="nofollow">Slideshare</a>
+
+- name: Amro Alolaqi
+  email: amro@owasp.org
+  twitter: Amro_AlOlaqi
+  linkedin: http://www.linkedin.com/in/iamro
+  locations: Gulf Cooperation Council
+  language: English, Arabic
+  has_talks: Y
+  has_training: ''
+  notes: ''
+  links: >
+    Talks linked off <a href="https://www.owasp.org/index.php/User:Amro_Ahmed"
+    rel="nofollow">OWASP profile</a>
+
+- name: Kim Carter
+  email: kim.carter@owasp.org
+  twitter: binarymist
+  linkedin: https://www.linkedin.com/in/carterkim/
+  locations: NZ / Worldwide / Remote
+  language: English
+  has_talks: <a href="https://binarymist.io/talk/" rel="nofollow">Y</a>
+  has_training: <a href="https://binarymist.io/project/service-development-team-security-training/"
+    rel="nofollow">Y</a>
+  notes: >
+    Co-founder of <a href="https://chcon.nz" rel="nofollow">CHCon</a>, Creator
+    of <a href="http://purpleteam-labs.com" rel="nofollow">purpleteam</a>, 
+    <a href="https://binarymist.io/publication/#4"
+    rel="nofollow">Host for Software Engineering Radio</a>
+  links: >
+    published author of many <a href="https://binarymist.io/publication/kims-selected-publications/"
+    rel="nofollow">InfoSec books</a>
+
+- name: Dan Cornell
+  email: dan@denimgroup.com
+  twitter: danielcornell
+  linkedin: http://www.linkedin.com/profile/view?id=3976642
+  locations: USA / Remote
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: OWASP New Zealand chapter leader
+  links: >
+    <a href="https://binarymist.io/talk/" rel="nofollow">Public Talks and Workshops</a>
+
+- name: Adrien de Beaupre
+  email: adriendb@gmail.com
+  twitter: adriendb
+  linkedin: http://www.linkedin.com/profile/view?id=2047540
+  locations: Canada
+  language: English, French
+  has_talks: Y
+  has_training: Y
+  notes: SANS teacher
+  links: SANS Sec542 course
+
+- name: Mateo Martínez
+  email: mateomar@gmail.com
+  locations: Latin America
+  language: Spanish, English
+  has_talks: Y
+  has_training: ''
+  notes: ''
+  links: ''
+
+- name: Malik Mesellem
+  email: malik@itsecgames.com 
+  twitter: MME_IT" 
+  linkedin: http://www.linkedin.com/in/malikmesellem
+  locations: Belgium / Remote
+  language: English, Dutch
+  has_talks: Y
+  has_training: Y
+  notes: >
+    Founder of <a href="http://www.mmeit.be/bwapp/" rel="nofollow">bWAPP</a>
+  links: 'Training: Attacking &amp; Defending Web Apps with bWAPP'
+
+- name: Mark Goodwin
+  twitter: mr_goodwin
+  locations: UK
+  language: English
+  has_talks: Y
+  has_training: ''
+  notes: ''
+  links: ''
+
+- name: Ben Walther
+  email: ben.walther@gmail.com
+  linkedin: http://www.linkedin.com/profile/view?id=7188457
+  locations: Los Angeles area
+  language: English
+  has_talks: Y
+  has_training: ''
+  notes: ''
+  links: ''
+
+- name: Johanna Curiel
+  locations: Netherlands, Caribbean
+  language: Dutch, Spanish,English, Papiamento
+  has_talks: Y
+  has_training: Y
+  notes: OWASP ZAP -creating add ons / Playing with Fuzzer
+  links: ''
+
+- name: Mennouchi Islam Azeddine
+  email: azeddine.mennouchi@owasp.org 
+  twitter: Aleisec
+  linkedin: http://www.linkedin.com/pub/islam-azeddine-mennouchi/48/109/512
+  locations: Algeria
+  language: English, Arabic , French
+  has_talks: Y
+  has_training: Y
+  notes: OWASP Algeria
+  links: dzwebdays(Blida,Constantine,Algiers) , OWASP Algeria meeting , OWASP Sudan,
+    Bside Algiers
+
+- name: Russ McRee
+  email: russ@holisticinfosec.org 
+  twitter: holisticinfosec
+  linkedin: http://www.linkedin.com/in/russmcree
+  locations: USA / Remote
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: toolsmith author, infosec tools evangelist
+  links: >
+    <a href="https://holisticinfosec.org/research-mainmenu-45/22-research/193-owasp-top-10-tools-tactics" rel="nofollow">OWASP Top 10 tools, tactics</a> 
+    presented at SANSFIRE, <code>SecureWorld</code>, 
+    ISSA International, etc.
+
+- name: Azzeddine Ramrami
+  email: azzeddine.ramrami@owasp.org
+  linkedin: http://fr.linkedin.com/pub/azzeddine-ramrami/5/b7a/107/
+  locations: Morocco, France and Ivory Coast
+  language: English, French
+  has_talks: Y
+  has_training: ''
+  notes: French Translation for ZAP
+  links: <a href="http://2013.owasp.in/" rel="nofollow">http://2013.owasp.in/</a>
+
+- name: Ahmed M Neil
+  email: Ahmed.neil@owasp.org
+  linkedin: http://www.linkedin.com/pub/ahmed-m-neil/38/590/73
+  locations: Egypt, Worldwide
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: ''
+
+- name: Jerome Athias
+  email: athiasjerome@gmail.com 
+  twitter: JA25000 
+  linkedin: http://www.linkedin.com/profile/view?id=13732623
+  locations: Middle East
+  language: English, French
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: <a href="http://www.frhack.org" rel="nofollow">http://www.frhack.org</a>
+
+- name: Michael Coates
+  email: michael.coates@owasp.org 
+  twitter: _mwc
+  linkedin: http://www.linkedin.com/profile/view?id=8374308
+  locations: Bay Area
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: OWASP Chairman
+  links: ''
+
+- name: Aaron Guzman
+  email: aaron.guzman@owasp.org 
+  twitter: scriptingxss
+  locations: Los Angeles area
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: ''
+- name: Florencio Cano Gabarda
+  email: fcano@seinhe.com 
+  twitter: florenciocano
+  linkedin: http://www.linkedin.com/in/florenciocano
+  locations: Spain
+  language: English, Spanish
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: >
+    Talk: <a href="http://youtu.be/nznEmm3Uud8" rel="nofollow">Fuzzing browsers
+    with Peach Fuzzer</a>
+
+- name: David Epler
+  email: dcepler@dcepler.net 
+  twitter: dcepler
+  linkedin: http://www.linkedin.com/in/davidepler
+  locations: Washington, DC Area
+  language: English
+  has_talks: Y
+  has_training: ''
+  notes: ''
+  links: ''
+
+- name: Mordecai Kraushar
+  email: mordecai.kraushar@owasp.org
+  linkedin: http://www.linkedin.com/in/mkraushar
+  locations: USA
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: OWASP project leader for vicnum
+  links: >
+    talks and slide share at <a href="http://www.slideshare.net/mkraushar/vicnumdescription"
+    rel="nofollow">http://www.slideshare.net/mkraushar/vicnumdescription</a>
+
+- name: Jonathan Fernández
+  email: jonathan.fernandez04@gmail.com
+  linkedin: http://www.linkedin.com/pub/jonathan-fernandez-jimenez/3b/368/5ba
+  locations: Latin America
+  language: Spanish, English
+  has_talks: Y
+  has_training: N
+  notes: Spanish Tranlation for ZAP
+  links: ''
+
+- name: Yuho Kameda
+  email: tyoisu@gmail.com 
+  twitter: yuhokameda 
+  linkedin: http://www.linkedin.com/profile/view?id=204870400
+  locations: Japan
+  language: English, Japanese
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: >
+    <a href="https://www.owasp.org/index.php/AppSecAsiaPac2014#tab=TRAINING_SESSIONS" rel="nofollow">Training Session in AppSecAPAC</a>, <a href="https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit" rel="nofollow">OWASP Japanese Manual</a>
+
+- name: Chetan Karande
+  email: chetan.karande@owasp.org 
+  twitter: karande_c
+  inkedin: http://http://www.linkedin.com/pub/chetan-karande/3a/b66/478
+  locations: USA
+  language: English
+  has_talks: Y
+  has_training: N
+  notes: ''
+  links: <a href="https://speakerdeck.com/ckarande/top-overlooked-security-threats-to-node-dot-js-web-applications"
+    rel="nofollow">Previous talks</a>
+
+- name: Minoru Sakai
+  email: minosky@gmail.com 
+  twitter: _Minsky_
+  inkedin: http://www.linkedin.com/profile/view?id=132440245
+  locations: Japan
+  language: Japanese
+  has_talks: Y
+  has_training: Y
+  notes: <a href="https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit"
+    rel="nofollow">Supervision OWASP Japanese Manual</a>
+  links: <a href="http://appsecapac.org/2014/training/pentesting-using-owasp-zap/"
+    rel="nofollow">Previous training</a>
+
+- name: Serg Belokamen
+  email: serg@owasp.org 
+  twitter: sergicles 
+  linkedin: https://www.linkedin.com/in/sergb
+  locations: Melbourne, Australia
+  language: English, Russian
+  has_talks: Y
+  has_training: Y
+  notes: OWASP chapter lead, application security designer/architect
+  links: <a href="http://sergbelokamen.com" rel="nofollow">http://sergbelokamen.com</a> <a href="http://bugcrowd.com" rel="nofollow">http://bugcrowd.com</a>
+
+- name: Derek Armstrong
+  email: derek.v.armstrong@gmail.com 
+  twitter: dsplice 
+  linkedin: http://www.linkedin.com/profile/view?id=13816412
+  locations: Canada
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ZAP Enthusiast, Malware Researcher
+  links: SANS SEC504 Mentor
+
+- name: Marudhamaran Gunasekaran
+  email: gmaran23@gmail.com
+  locations: India
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: Application developer, web application security enthusiast
+  links: >
+    <a href="http://renouncedthoughts.wordpress.com/" rel="nofollow">Blog</a>, <a href="http://vimeo.com/gmaran23" rel="nofollow">Talks - Vimeo Channel</a>
+
+- name: Dan Billing
+  email: thetestdoctor@gmail.com 
+  twitter: thetestdoctor 
+  linkedin: https://www.linkedin.com/in/danielbilling
+  locations: UK / Europe
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: '<a href="http://thetestdoctor.wordpress.com/" rel="nofollow">Blog: The Test
+    Doctor</a>'
+
+- name: Jess Vermont
+  email: jess.vermont.stl@gmail.com
+  locations: American Midwest (Missouri, Kansas, Illinois, etc)
+  language: English
+  has_talks: Y
+  has_training: N
+  notes: ZAP Focus – extensibility of ZAP; ZAP for general Web App Sec usage/pen testing/vulnerability
+    detection
+  links: ''
+
+- name: Yassia Savadogo
+  email: yassias@yahoo.fr 
+  twitter: yassias 
+  linkedin: https://www.linkedin.com/profile/view?id=35974704
+  locations: Burkina Faso
+  language: French
+  has_talks: Y
+  has_training: Y
+  notes: Network Security
+  links: ''
+
+- name: Ammar Hassan Brohi
+  email: brohiammar@gmail.com
+  linkedin: http://pk.linkedin.com/pub/ammarbrohi
+  locations: All Pakistan
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ZAP as Swiss Army Knife
+  links: ''
+
+- name: Marcin Kopeć
+  email: marcin.jan.kopec@gmail.com 
+  linkedin: https://www.linkedin.com/in/mkopec
+  locations: Poland
+  language: Polish and English
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: ''
+
+- name: Sumanth Damarla
+  email: damarla.sumanth@gmail.com 
+  twitter: Sumanth_Damarla 
+  linkedin: https://www.linkedin.com/in/sumanthdamarla" rel="nofollow">
+  locations: India / Remote
+  language: English, Hindi, Telugu
+  has_talks: Y
+  has_training: Y
+  notes: ZAP Evangelist at FOSSASIA
+  links: <a href="https://wiki.mozilla.org/Security/Mentorships/MWoS/2014/OWASP_ZAP_AMF_Support"
+    rel="nofollow">MWOS AMF Support project</a>
+
+- name: kunal Relan
+  email: pentesterkunal@live.com 
+  twitter: kunal_relan 
+  linkedin: https://www.linkedin.com/profile/view?id=266070324
+  locations: India / Remote
+  language: English, Hindi
+  has_talks: Y
+  has_training: Y
+  notes: ZAP Evangelist,Mozilla Delhi/NCR Security lead and Information Security researcher
+  links: <a href="https://reps.mozilla.org/e/webmaker-and-security-workshop-at-niit-university"
+    rel="nofollow">Web Security Workshop</a>
+
+- name: Robert Kerby
+  email: beardedwanderer@zoho.com
+  locations: USA / Southwest / Rocky Mountains / Remote
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ''
+  links: ''
+
+- name: Jonathan Claudius
+  email: claudijd@yahoo.com 
+  twitter: claudijd
+  locations: USA / Remote / Worldwide
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: ZAP Evangelist
+  links: <a href="https://blog.rubidus.com/" rel="nofollow">blog</a>
+
+- name: Omer Levi Hevroni
+  email: omerlh@gmail.com 
+  twitter: omerlh
+  locations: Israel / Remote / Worldwide
+  language: English / Hebrew
+  has_talks: Y
+  has_training: Y
+  notes: ZAP Evangelist
+  links: <a href="https://omerlh.info/" rel="nofollow">Personal Site with previous
+    talks</a>
+
+- name: Chhagan Lal Mathuriya
+  email: clmathuriya@gmail.com 
+  twitter: clmathuriya 
+  linkedin: https://www.linkedin.com/profile/view?id=clmathuriya
+  locations: Bangalore, India
+  language: English, Hindi
+  has_talks: Y
+  has_training: Y
+  notes: I Have worked on Automated Security Testing usig ZAP
+  links: <a href="https://github.com/clmathuriya/">My Github Page</a>
+
+- name: Amit Kulkarni
+  email: amitskulkarni@gmail.com 
+  linkedin: https://www.linkedin.com/profile/view?id=amtoya
+  locations: Perth, Australia
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: Automated Security Testing using ZAP
+  links: <a href="https://github.com/AmitKulkarni9">My Github Page</a>
+
+- name: Sanket Mishra
+  email: sanket.altruist@gmail.com 
+  linkedin: https://www.linkedin.com/in/sanket-mishra-04a71a7a/
+  locations: Boston, US
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: Experience with OWASP ZAP Automated Testing
+  links: ''
+
+- name: Mohammed A. Imran
+  email: imran.mohammed@owasp.org
+  twitter: secfigo
+  linkedin: https://www.linkedin.com/in/secfigo/
+  locations: Singapore / Remote / Worldwide
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: OWASP DevSecOps Studio and DevSlop Project Leader
+  links: <a href="https://www.teachera.io/devsecops-course/" rel="nofollow">Practical
+    DevSecOps Course </a>
+
+- name: Raul Siles
+  email: raulsiles+ZAP@gmail.com 
+  twitter: raulsiles 
+  linkedin: https://www.linkedin.com/in/raulsiles
+  locations: Spain / Worldwide / Remote
+  language: Spanish, English
+  has_talks: Y
+  has_training: Y
+  notes: Web-app &amp; mobile pen-tester, ZAP Contributor, SANS Instructor
+  links: >
+    <a href="https://www.dinosec.com/en/lab.html" rel="nofollow">DinoSec's Lab</a>, SANS SEC542 &amp; SEC575
+
+- name: Mohammad Febri Ramadlan
+  email: mohammadfebrir@gmail.com 
+  twitter: mohammadfebri_r 
+  linkedin: https://www.linkedin.com/in/mohammadfebriramadlan/
+  locations: Indonesia / Southeast Asia
+  language: English
+  has_talks: Y
+  has_training: N
+  notes: ZAP for Penetration Testing and Automation Testing
+  links: <a href="https://www.slideshare.net/MohammadFebri1/owasp-risk-rating-management-project"
+    rel="nofollow">Slides</a>
+
+- name: Takanori Matsumoto
+  email: nilfigo@gmail.com 
+  twitter: nilfigo 
+  linkedin: https://www.linkedin.com/in/takanori-matsumoto-02026ba6/
+  locations: Japan
+  language: Japanese
+  has_talks: Y
+  has_training: Y
+  notes: ZAP for Penetration Testing and Automation Testing
+  links: <a href="https://speakerdeck.com/security_testing_workshop" rel="nofollow">Slides</a>
+
+- name: Marek Šottl
+  email: sottlmarek@gmail.com 
+  linkedin: https://www.linkedin.com/in/marek-%C5%A1ottl-bb25164a/
+  locations: Central Europe - Czech Republic
+  language: English, Czech
+  has_talks: Y
+  has_training: Y
+  notes: Specialties - SSDLC, Pentesting, DevSecOps and Cloud
+  links: ''
+
+- name: Gowtham Sundar
+  email: gowu.karthik@gmail.com 
+  twitter: gowsundar 
+  linkedin: https://www.linkedin.com/in/gowtham-sundar-6669b380/
+  locations: Chennai, India
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: Exploring Security Automation with ZAP
+  links: <a href="https://medium.com/@gowsundar" rel="nofollow">blog</a>
