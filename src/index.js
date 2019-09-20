@@ -9,6 +9,15 @@ new BadgerAccordion(".js-badger-accordion", {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
+  // Basic attempt to obfuscate emails
+  Array.from(document.querySelectorAll("[data-mail]")).map(function(el) {
+    el.addEventListener("mouseover", function(evt) {
+      const data = el.getAttribute("data-mail");
+      el.setAttribute("href", "mailto:" + atob(data));
+      el.removeAttribute("data-mail");
+    }, {once: true});
+  });
+
   Array.from(document.querySelectorAll("[track-event]")).map((el) => {
     el.addEventListener("click", function(e) {
       e.preventDefault();
@@ -23,11 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
           eventLabel: label,
         });
       }
-
       // Timeout to give time for the event can be tracked
       setTimeout(() => {
         window.location = el.href;
       }, 400);
-    })
+    });
   });
 });
