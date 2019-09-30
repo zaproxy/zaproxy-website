@@ -222,4 +222,5 @@ All tasks starting with _build_ set the environment variable to `production` - t
 - https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/
 - https://gist.github.com/sebz/efddfc8fdcb6b480f567
 - https://en.jeffprod.com/blog/2018/build-your-own-hugo-website-search-engine/
-
+- https://github.com/vjeantet/hugo-theme-docdock
+- https://harmstyler.me/posts/2019/how-to-pass-variables-to-a-partial-template-in-hugo/

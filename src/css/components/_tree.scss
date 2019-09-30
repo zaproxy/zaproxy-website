@@ -1,0 +1,36 @@
+.tree-branch {
+    display: none;
+  }
+  
+  .tree-branch-active {
+  
+    .tree-branch {
+      display: block;
+    }
+  }
+  
+  .tree-active > a {
+    font-weight: bold;
+  }
+  
+  .tree-menu {
+    ul {
+      padding: 0 0 0 16px;
+    }
+  }
+  
+.is-filtering {
+  li {
+    display: none;
+  }
+
+  .tree-branch-filter {
+    display: block;
+  }
+
+  .tree-filter-match{ 
+    display: block;
+    > a {
+    }
+  }
+}

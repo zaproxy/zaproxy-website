@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="bolt-header">
+    <div class="wrapper py-70 download-header"></div>
+</section>
+  <div class="wrapper py-70">
+      <div class="flex latest-versions">
+          <div class="col-1-4">
+              {{ block "sidebar" . }}
+                {{ partial "tree" (dict "root" . "dir" "/content/userguide/desktop/")  }}
+              {{end}}
+            </div>
+        <div class="col-3-4 pl-30 pb-30 guide-content">
+          {{ partial "crumbs" . }}
+          {{ .Content }}
+        </div>
+        
+      </div>
+  </div>
+{{ end }}

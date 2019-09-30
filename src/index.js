@@ -18,6 +18,47 @@ document.addEventListener("DOMContentLoaded", function() {
     }, {once: true});
   });
 
+  function clearFilter(menu) {
+    menu.classList.remove("is-filtering");
+    Array.from(menu.getElementsByTagName('li')).map(function(el) {
+      el.classList.remove("tree-filter-match");
+    });
+    Array.from(menu.getElementsByTagName('ul')).map(function(el) {
+     el.classList.remove("tree-branch-filter");
+    });
+  }
+
+  function applyFilter(menu, filter) {
+    menu.classList.add("is-filtering");
+    Array.from(menu.getElementsByTagName('li')).map(function(el) {
+      const text = el.textContent.toLowerCase();
+      if (text.indexOf(filter) !== -1) {
+        el.classList.add("tree-filter-match");
+      } else {
+        el.classList.remove("tree-filter-match");
+      }
+    });
+    Array.from(menu.getElementsByTagName('ul')).map(function(el) {
+      const text = el.textContent.toLowerCase();
+
+      if (text.indexOf(filter) !== -1) {
+        el.classList.add("tree-branch-filter");
+      } else {
+        el.classList.remove("tree-branch-filter");
+      }
+    });
+  }
+
+  document.querySelector('[data-tree-filter]').addEventListener("change", function(e) {
+    const filter = e.target.value.toLowerCase();
+    const menu = e.target.nextElementSibling;
+    if (filter.length > 1) {
+      applyFilter(menu, filter);
+    } else {
+      clearFilter(menu);
+    }
+  });
+
   Array.from(document.querySelectorAll("[track-event]")).map((el) => {
     el.addEventListener("click", function(e) {
       e.preventDefault();
