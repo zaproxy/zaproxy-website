@@ -1,0 +1,91 @@
+baseurl: "/"
+languageCode: "en-us"
+languageLang: "en"
+title: "OWASP ZAP"
+enableEmoji: true
+
+taxonomies:
+  tag: "tags"
+
+# Menu
+menu:
+  nav:
+    - name:  "Home"
+      URL:  "/"
+      weight:  1
+
+    - name:  "Zap Tour"
+      URL: /tour/
+      weight:  2
+
+    - name:  Get Involved
+      URL: /get-involved/
+      weight:  3
+
+    - name: Evangelists
+      URL: /evangelists/
+      parent: "Get Involved"
+      weight: 1
+
+    - name:  "Support"
+      URL:  /support/
+      weight:  4
+
+    - name: FAQ
+      URL: /faq/
+      parent: "Support"
+      weight: 1
+
+    - name: User Guide
+      URL: /userguide/desktop/
+      parent: "Support"
+      weight: 2
+
+    - name: Addons
+      URL: /addons/
+      parent: "Support"
+      weight: 3
+
+
+  footer: 
+    - name:  "Home"
+      URL:  "/"
+      weight:  1
+
+    - name:  "Zap Tour"
+      URL:  "tour"
+      weight:  2
+
+    - name:  "Get Involved"
+      URL:  get-involved
+      weight:  3
+
+    - name: Evangelists
+      URL: evangelists
+      parent: "Get Involved"
+      weight: 1
+
+    - name:  "Support"
+      URL:  /support
+      weight:  4
+
+    - name: FAQ
+      URL: /faq
+      parent: "Support"
+      weight: 1
+
+    - name: User Guide
+      URL: /userguide/desktop/
+      parent: "Support"
+      weight: 2
+
+    - name: Addons
+      URL: /addons
+      parent: "Support"
+      weight: 3
+
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds:  ["RSS", "taxonomy", "taxonomyTerm"]

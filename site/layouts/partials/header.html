@@ -10,17 +10,30 @@
         </div>
         <input class="hamburger-click" type="checkbox" />
         <ul id="primary-menu" class="flex">
+          {{ $currentPage := . }}
           {{ range .Site.Menus.nav }}
-          <li>
-            <a class="" href="{{ .URL }}" title="{{ .Name }} page">
-              {{ .Name }}
-            </a>
-          </li>
+            {{ if .HasChildren }}
+              <li class="{{ if $currentPage.HasMenuCurrent "nav" . }}active{{ end }}">
+                <a  href="{{ .URL }}" title="{{ .Name }} page">
+                  {{ .Name }}
+                </a>
+                <ul class="sub-menu">
+                  {{ range .Children }}
+                  <li class="{{ if $currentPage.IsMenuCurrent "nav" . }}active{{ end }}">
+                      <a href="{{ .URL }}">{{ .Name }}</a>
+                      </li>
+                  {{ end }}
+                </ul>
+              </li>
+            {{ else }}
+              <li class="{{ if $currentPage.IsMenuCurrent "nav" . }}active{{ end }}">
+                  <a href="{{ .URL }}" title="{{ .Name }} page">
+                  {{ .Name }}
+                </a>
+              </li>
+            {{ end }}
           {{ end }}
         </ul>
-
-        
-
       </nav>
       <a id="cta-download" href="/download" class="button button--orange">Dowload</a>
       <div class="social-links header-social">
