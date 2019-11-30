@@ -2,3 +2,7 @@ node_modules/
 dist/
 site/data/webpack.json
 .DS_Store
+
+# Eclipse files
+*.settings
+*.project
