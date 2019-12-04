@@ -13,9 +13,9 @@
       <input type="text" name="q" id="search-filter" placeholder="Search ..." />
       <button type="button" id="search-trigger">Search</button>
     </form>
-    
     <main id="search-results"></main>
     <script>
+      (function() {
       let params = new URLSearchParams(window.location.search);
       let query = params.get('q') || false;
       let searchFor = () => {};
@@ -26,7 +26,6 @@
           return response.json();
         })
         .then(function(data) {
-
           idx = lunr(function () {
               this.ref('url');
               this.field('title', { boost: 3});
@@ -48,19 +47,15 @@
             if (query) {
               searchFor(query);
             }
-            console.log(idx);
-            console.log()
         });
       
-        function renderResult(result, tmpl) {
+        function renderResult(result, tmpl, query) {
+          let cleaned = stripHtml(query);
           let doc = documents[result.ref];
           let clone = document.importNode(tmpl.content, true);
           clone.querySelector("[data-title]").textContent = doc.title;
           clone.querySelector("[data-url]").setAttribute("href", doc.url);
           clone.querySelector("[data-summary]").textContent = doc.summary;
-
-          console.log(result);
-          console.log(clone)
           return clone;
         }
 
@@ -68,25 +63,28 @@
       document.addEventListener('DOMContentLoaded', function() {
         searchFor = function (value) {
           let nodes = idx.search(value).map(result => {
-            results.append(renderResult(result, template));
+            results.append(renderResult(result, template, value));
           });
-        }
-
+        } 
 
         let template = document.querySelector('#search-entry');
         let results = document.getElementById('search-results');
         let filter = document.getElementById('search-filter');
+
+        if (query) {
+          filter.value = query;
+        }
+      
         document.getElementById('search-trigger').addEventListener('click', function() {
           results.innerHTML = "";
-
           searchFor(filter.value);
-          
         });
+
         filter.addEventListener('change', function() {
-          console.log(idx.search(filter.value))
+          idx.search(filter.value);
         });
       }, false);
-
+    })();
     </script>
     <template id="search-entry">
       <article>
