@@ -1,0 +1,36 @@
+<table class="table market-table">
+    <thead  align="left">
+    <tr>
+        <th style="width: 50%">Name</th>
+        <th style="width: 10%;">Version</th>
+        <th style="width: 10%;">Status</th>
+        <th style="width: 15%">Author</th>
+        <th style="width: 15%">Last Updated</th>
+    </tr>
+    </thead>
+    {{ range $addon := $.Site.Data.addons }}
+    <tr>
+        <td>
+            {{with $addon.link }}
+            <a href="{{ $addon.link}}">{{ $addon.name }}</a>
+            {{else}}
+            <span style="text-decoration: underline;">{{ $addon.name }}</span>
+            {{end}}
+            <br>
+            {{ $addon.description }}
+        </td>
+        <td align="center">
+            {{ $addon.version }}
+        </td>
+        <td >
+            {{ $addon.status }}
+        </td>
+        <td>
+            {{ $addon.author }}
+        </td>
+        <td align="center">
+            {{ $addon.date }}
+        </td>
+    </tr>
+    {{ end }}
+</table>

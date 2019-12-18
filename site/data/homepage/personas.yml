@@ -7,9 +7,9 @@ personaItems:
   - title: Automate with ZAP
     text: ZAP provides powerful APIs for security automation. Check out the automation docs to start automating!
     icon: dev.svg
-    link: https://www.zaproxy.org/docs/api/
+    link: /docs/api/
 
   - title: ZAP Marketplace
-    text: ZAP marketplace contains addons that have been contributed by the community. Check out how you can extend ZAP with the addons!
+    text: ZAP marketplace contains add-ons that have been contributed by the community. Check out how you can extend ZAP with the add-ons!
     icon: tester.svg
     link: https://github.com/zaproxy/zap-extensions/wiki
