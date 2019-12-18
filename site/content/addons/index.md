@@ -10,4 +10,4 @@ If you are using the latest version of ZAP then you can browse and download add-
 
 You can also import the add-ons that you have downloaded manually via the "File / Load Add-on File..." menu option in the ZAP desktop.
 
-{{% addon %}}
+{{% addons %}}
