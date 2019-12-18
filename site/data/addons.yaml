@@ -407,46 +407,6 @@
   date: 2018-02-08
   version: 1
 
-- name: JxBrowser (core)
-  description: An embedded browser based on Chromium, you must also install the relevant platform specific add-on
-  author: ZAP Dev Team
-  status: alpha
-  link:
-  date: 2019-06-07
-  version: 14
-
-- name: JxBrowser (Linux 64)
-  description: An embedded browser based on Chromium, Linux 64 specific
-  author: ZAP Dev Team
-  status: alpha
-  link:
-  date: 2019-06-07
-  version: 12
-
-- name: JxBrowser (Mac OS)
-  description: An embedded browser based on Chromium, Mac OS specific
-  author: ZAP Dev Team
-  status: alpha
-  link:
-  date: 2019-06-07
-  version: 12
-
-- name: JxBrowser (Windows)
-  description: An embedded browser based on Chromium, Windows specific
-  author: ZAP Dev Team
-  status: alpha
-  link:
-  date: 2019-06-07
-  version: 12
-
-- name: JxBrowser (Windows 64bits)
-  description: An embedded browser based on Chromium, Windows 64bits specific
-  author: ZAP Dev Team
-  status: alpha
-  link:
-  date: 2019-06-07
-  version: 5
-
 - name: Python Scripting
   description: Allows Python to be used for ZAP scripting - templates included
   author: ZAP Dev Team
