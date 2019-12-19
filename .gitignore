@@ -6,3 +6,6 @@ site/data/webpack.json
 # Eclipse files
 *.settings
 *.project
+
+# Build folders
+build-*
