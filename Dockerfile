@@ -7,7 +7,6 @@ COPY .babelrc \
     package.json \
     postcss.config.js \
     renovate.json \
-    resources \
     webpack.common.js \
     webpack.dev.js \
     webpack.prod.js \ 
