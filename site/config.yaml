@@ -14,8 +14,8 @@ menu:
       URL:  "/"
       weight:  1
 
-    - name:  "Zap Tour"
-      URL: /tour/
+    - name:  "ZAP in Ten"
+      URL: /zap-in-ten/
       weight:  2
 
     - name:  Get Involved
@@ -52,7 +52,7 @@ menu:
       URL:  "/"
       weight:  1
 
-    - name:  "Zap Tour"
+    - name:  "ZAP in Ten"
       URL:  "tour"
       weight:  2
 
