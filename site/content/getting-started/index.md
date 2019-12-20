@@ -4,9 +4,11 @@ tags:
 - tutorial
 ---
 
-This document is intended to serve as a basic introduction for using OWASP’s Zed Attack Proxy (ZAP) tool to perform security testing, even if you don’t have a background in security testing. To that end, some security testing concepts and terminology is included but this document is not intended to be a comprehensive guide to either ZAP or security testing.
+### Overview
 
-See [Useful Links](#user-content-useful-links) for additional resources and information on ZAP.
+This guide is intended to serve as a basic introduction for using ZAP to perform security testing, even if you don’t have a background in security testing. To that end, some security testing concepts and terminology is included but this document is not intended to be a comprehensive guide to either ZAP or security testing.
+
+It is also available as a [pdf](https://github.com/zaproxy/zaproxy/releases/download/v2.8.0/ZAPGettingStartedGuide-2.8.pdf) to make it easier to print.
 
 ### Security Testing Basics
 Software security testing is the process of assessing and testing a system to discover security risks and vulnerabilities of the system and its data. There is no universal terminology but for our purposes, we define assessments as the analysis and discovery of vulnerabilities without attempting to actually exploit those vulnerabilities. We define testing as the discovery and attempted exploitation of vulnerabilities.
@@ -20,7 +22,7 @@ Security testing is often broken out, somewhat arbitrarily, according to either 
 
 Note that risk assessment, which is commonly listed as part of security testing, is not included in this list. That is because a risk assessment is not actually a test but rather the analysis of the perceived severity of different risks (software security, personnel security, hardware security, etc.) and any mitigation steps for those risks.
 
-### More About Penetration Testing
+#### More About Penetration Testing
 Penetration Testing (pentesting) is carried out as if the tester was a malicious external attacker with a goal of breaking into the system and either stealing data or carrying out some sort of denial-of-service attack.
 
 Pentesting has the advantage of being more accurate because it has fewer false positives (results that report a vulnerability that isn’t actually present), but can be time-consuming to run.
@@ -29,7 +31,7 @@ Pentesting is also used to test defence mechanisms, verify response plans, and c
 
 Automated pentesting is an important part of continuous integration validation. It helps to uncover new vulnerabilities as well as regressions for previous vulnerabilities in an environment which quickly changes, and for which the development may be highly collaborative and distributed.
 
-### The Pentesting Process
+#### The Pentesting Process
 Both manual and automated pentesting are used, often in conjunction, to test everything from servers, to networks, to devices, to endpoints. This document focuses on web application or web site pentesting.
 
 Pentesting usually follows these stages:
@@ -38,7 +40,7 @@ Pentesting usually follows these stages:
 -   **Attack** – The tester attempts to exploit the known or suspected vulnerabilities to prove they exist.
 -   **Report** – The tester reports back the results of their testing, including the vulnerabilities, how they exploited them and how difficult the exploits were, and the severity of the exploitation.
 
-### Pentesting Goals
+##### Pentesting Goals
 The ultimate goal of pentesting is to search for vulnerabilities so that these vulnerabilities can be addressed. It can also verify that a system is not vulnerable to a known class or specific defect; or, in the case of vulnerabilities that have been reported as fixed, verify that the system is no longer vulnerable to that defect.
 
 ### Introducing ZAP
@@ -56,28 +58,26 @@ ZAP provides functionality for a range of skill levels – from developers, to t
 
 Because ZAP is open-source, the source code can be examined to see exactly how the functionality is implemented. Anyone can volunteer to work on ZAP, fix bugs, add features, create pull requests to pull fixes into the project, and author add-ons to support specialized situations.
 
-For more information, see the [Zed Attack Proxy Project Page](https://www.owasp.org/index.php/ZAP).
-
 As with most open source projects, donations are welcome to help with costs for the projects. You can find a donate button on the owasp.org page for ZAP at [https://www.owasp.org/index.php/ZAP](https://www.owasp.org/index.php/ZAP).
 
 ### Install and Configure ZAP
 ZAP has installers for Windows, Linux, and Mac OS/X. There are also Docker images available on the download site listed below.
 
-### Install ZAP
-The first thing to do is install ZAP on the system you intend to perform pentesting on. Download the appropriate installer from ZAP’s download location [Download](/download/) or from [Github](https://github.com/zaproxy/zaproxy/wiki/Downloads) and execute the installer.
+##### Install ZAP
+The first thing to do is install ZAP on the system you intend to perform pentesting on. Download the appropriate installer from the [Download](/download/) page.
 
 Note that ZAP requires Java 8+ in order to run. The Mac OS/X installer includes an appropriate version of Java but you must install Java 8+ separately for Windows, Linux, and Cross-Platform versions. The Docker versions do not require you to install Java.
 
-Once the installation is complete, launch ZAP and read the license terms. Click Agree if you accept the terms, and ZAP will finish installing, then ZAP will automatically start.
+Once the installation is complete, launch ZAP and read the license terms. Click **Agree** if you accept the terms, and ZAP will finish installing, then ZAP will automatically start.
 
-### Persisting a Session
+##### Persisting a Session
 When you first start ZAP, you will be asked if you want to persist the ZAP session. By default, ZAP sessions are always recorded to disk in a HSQLDB database with a default name and location. If you do not persist the session, those files are deleted when you exit ZAP.
 
 If you choose to persist a session, the session information will be saved in the local database so you can access it later, and you will be able to provide custom names and locations for saving the files.
 
 {{< img "images/zap-persist-session.png" >}}
 
-For now, select No, I do not want to persist this session at this moment in time, then click Start. The ZAP sessions will not be persisted for now.
+For now, select **No, I do not want to persist this session at this moment in time**, then click **Start**. The ZAP sessions will not be persisted for now.
 
 ### ZAP Desktop UI
 The ZAP Desktop UI is composed of the following elements:
@@ -91,25 +91,25 @@ The ZAP Desktop UI is composed of the following elements:
 
 {{< img "images/zap-full-screen.png" >}}
 
-While using ZAP, you can click Help on the Menu Bar or press F1 to access context-sensitive help from the ZAP Desktop User Guide. It is also available [online](https://github.com/zaproxy/zap-core-help/wiki).
+While using ZAP, you can click **Help** on the Menu Bar or press F1 to access context-sensitive help from the ZAP Desktop User Guide. It is also available [online](/docs/desktop/ui/).
 
-For more information about the UI, see [ZAP UI Overview](https://github.com/zaproxy/zap-core-help/wiki/HelpUiOverview) in the ZAP online documentation.
+For more information about the UI, see [ZAP UI Overview](/docs/desktop/ui/overview) in the ZAP online documentation.
 
 ZAP also supports a powerful API and command line functionality, both of which are beyond the scope of this guide.
 
-IMPORTANT: You should only use ZAP to attack an application you have permission to test with an active attack. Because this is a simulation that acts like a real attack, actual damage can be done to a site’s functionality, data, etc. If you are worried about using ZAP, you can prevent it from causing harm (though ZAP’s functionality will be significantly reduced) by switching to safe mode.
+**IMPORTANT**: You should only use ZAP to attack an application you have permission to test with an active attack. Because this is a simulation that acts like a real attack, actual damage can be done to a site’s functionality, data, etc. If you are worried about using ZAP, you can prevent it from causing harm (though ZAP’s functionality will be significantly reduced) by switching to safe mode.
 
-To switch ZAP to safe mode, click the arrow on the mode dropdown on the main toolbar to expand the dropdown list and select Safe Mode.
+To switch ZAP to safe mode, click the arrow on the mode dropdown on the main toolbar to expand the dropdown list and select **Safe Mode**.
 
-### Running an Automated Scan
+##### Running an Automated Scan
 The easiest way to start using ZAP is via the Quick Start tab. Quick Start is a ZAP add-on that is included automatically when you installed ZAP.
 
 To run a Quick Start Automated Scan :
 
-1.  Start ZAP and click the Quick Start tab of the Workspace Window.
+1.  Start ZAP and click the **Quick Start** tab of the Workspace Window.
 2.  Click the large Automated Scan button.
-3.  In the URL to attack text box, enter the full URL of the web application you want to attack.
-4.  Click the Attack
+3.  In the **URL to attack** text box, enter the full URL of the web application you want to attack.
+4.  Click the **Attack**
 
 {{< img "images/zap-qstart-autoscan.png" >}}
 
@@ -126,22 +126,26 @@ ZAP will passively scan all of the requests and responses proxied through it. So
 
 Active scanning, however, attempts to find other vulnerabilities by using known attacks against the selected targets. Active scanning is a real attack on those targets and can put the targets at risk, so do not use active scanning against targets you do not have permission to test.
 
-### Interpret Your Test Results
+##### Interpret Your Test Results
 As ZAP spiders your web application, it constructs a map of your web applications’ pages and the resources used to render those pages. Then it records the requests and responses sent to each page and creates alerts if there is something potentially wrong with a request or response.
 
-#### See Explored Pages
-To examine a tree view of the explored pages, click the Sites tab in the Tree Window. You can expand the nodes to see the individual URLs accessed.
+##### See Explored Pages
+To examine a tree view of the explored pages, click the **Sites** tab in the Tree Window. You can expand the nodes to see the individual URLs accessed.
 
-#### View Alerts and Alert Details
+##### View Alerts and Alert Details
 The left-hand side of the Footer contains a count of the Alerts found during your test, broken out into risk categories. These risk categories are:
 
-TODO
+- <img style="vertical-align:middle" src="getting-started/images/flag-red.png"> &nbsp;&nbsp;&nbsp; High
+- <img style="vertical-align:middle" src="getting-started/images/flag-orange.png"> &nbsp;&nbsp;&nbsp; Medium
+- <img style="vertical-align:middle" src="getting-started/images/flag-yellow.png"> &nbsp;&nbsp;&nbsp; Low
+- <img style="vertical-align:middle" src="getting-started/images/flag-blue.png"> &nbsp;&nbsp;&nbsp; Informational
+- <img style="vertical-align:middle" src="getting-started/images/flag-green.png"> &nbsp;&nbsp;&nbsp; False Positive
 
 To view the alerts created during your test:
 
-1.  Click the Alerts tab in the Information Window.
+1.  Click the **Alerts** tab in the Information Window.
 2.  Click each alert displayed in that window to display the URL and the vulnerability detected in the right side of the Information Window.
-3.  In the Workspace Windows, click the Response tab to see the contents of the header and body of the response. The part of the response that generated the alert will be highlighted.
+3.  In the Workspace Windows, click the **Response** tab to see the contents of the header and body of the response. The part of the response that generated the alert will be highlighted.
 
 ### Exploring an Application Manually
 The passive scanning and automated attack functionality is a great way to begin a vulnerability assessment of your web application but it has some limitations. Among these are:
@@ -161,9 +165,9 @@ You can quickly and easily launch browsers that are pre-configured to proxy thro
 
 To Manually Explore your application:
 
-1.  Start ZAP and click the Quick Start tab of the Workspace Window.
+1.  Start ZAP and click the **Quick Start** tab of the Workspace Window.
 2.  Click the large Manual Explore button.
-3.  In the URL to explore text box, enter the full URL of the web application you want to explore.
+3.  In the **URL to explore** text box, enter the full URL of the web application you want to explore.
 4.  Select the browser you would like to use
 5.  Click the **Launch Browser**
 
@@ -194,34 +198,29 @@ The desktop also makes heavy use of context sensitive right click options, so ri
 ### The ZAP Marketplace
 The ZAP desktop has a plugin architecture which means that new functionality can be added dynamically.
 
-An online marketplace provides a wide range of ZAP add-ons which add many additional features to ZAP.
+An [online marketplace](/addons) provides a wide range of ZAP add-ons which add many additional features to ZAP.
 
-The marketplace can be accessed via the ‘Manage Add-ons’ button on the toolbar:
+The marketplace can be accessed from within ZAP via the ‘Manage Add-ons’ button on the toolbar:
 
 {{< img "images/zap-screenshot-browse-addons.png" >}}
 
 All of the add-ons on the marketplace are completely free.
+
 
 ### Automation
 ZAP is an ideal tool to use in automation with libraries for Java, Python, Node.js PHP, Ruby & more!
 
 It can be run in headless mode and has a powerful API which allows you to control nearly all of the features available via the ZAP desktop.
 
-For more details see the [ZAP wiki](https://github.com/zaproxy/zaproxy/wiki/ApiDetails).
+For more details see the [API Documentation](/docs/api).
 
 
 ### Learn More About ZAP
-Now that you are familiar with a few basic capabilities of ZAP, you can learn more about ZAP’s capabilities and how to use them from ZAP’s [Desktop User Guide](https://github.com/zaproxy/zap-core-help/wiki). The User Guide provides step-by-step instructions, references for the API and command-line programming, instructional videos, and tips and tricks for using ZAP.
+Now that you are familiar with a few basic capabilities of ZAP, you can learn more about ZAP’s capabilities and how to use them from ZAP’s [Desktop User Guide](/docs/desktop/). The User Guide provides step-by-step instructions, references for the API and command-line programming, instructional videos, and tips and tricks for using ZAP.
 
 Additional links are also available via the ‘Learn More’ button on the Quick Start top screen:
 
-The page links to both local resources (if available) and online content. Additional links are included below.
+{{< img "images/zap-qstart-learnmore.png" >}}
 
-### Useful Links
-- [OWASP Zed Attack Proxy Project](https://www.owasp.org/index.php/ZAP) – ZAP’s main project page
-- [OWASP ZAP Wiki](https://github.com/zaproxy/zaproxy/wiki) – The ZAP Wiki
-- [OWASP ZAP](https://github.com/zaproxy/zap-core-help/wiki) - [Desktop](https://github.com/zaproxy/zap-core-help/wiki) 
-- [User Guide](https://github.com/zaproxy/zap-core-help/wiki) - The ZAP Desktop User Guide
-- [OWASP ZAP Hot Keys](https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsKeyboard) - The list of ZAP hotkeys
-- [ZAP Users Group](https://groups.google.com/group/zaproxy-users) – Google group for ZAP users
-- [ZAP Developers Group](https://groups.google.com/group/zaproxy-develop) – Google group for developers and contributors to ZAP
+The screen links to both local resources (if available) and online content.
+
