@@ -1,32 +1,37 @@
-title: Zap 2.8.0
+title: ZAP 2.8.0
 table:
   - name: Windows (64) Installer
     id: win-64-i
-    size: 117mb
-    link:
+    size: 176 MB
+    link: https://github.com/zaproxy/zaproxy/releases/download/v2.8.0/ZAP_2_8_0_windows.exe
   - name: Windows (32) Installer
     id: win-32-i
-    size: 117mb
-    link:
+    size: 75 MB
+    link: https://github.com/zaproxy/zaproxy/releases/download/v2.8.0/ZAP_2_8_0_windows-x32.exe
   - name: Linux Installer
     id: nix-i
-    size:
-    link:
+    size: 135 MB
+    link: https://github.com/zaproxy/zaproxy/releases/download/v2.8.0/ZAP_2_8_0_unix.sh
   - name: Linux Package
     id: nix-p
-    size:
-    link:
-  - name: Mac OS/X Installer
+    size: 133 MB
+    link: https://github.com/zaproxy/zaproxy/releases/download/v2.8.1/ZAP_2.8.1_Linux.tar.gz
+  - name: MacOS Installer
     id: osx-i
-    size:
-    link:
+    size: 173 MB
+    link: https://github.com/zaproxy/zaproxy/releases/download/v2.8.0/ZAP_2.8.0.dmg
   - name: Cross Platform Package
     id: cp-p
-    size:
-    link:
+    size: 321 MB
+    link: https://github.com/zaproxy/zaproxy/releases/download/v2.8.0/ZAP_2.8.0_Crossplatform.zip
+  - name: Core Cross Platform Package
+    id: cp-c
+    size: 32 MB
+    link: https://github.com/zaproxy/zaproxy/releases/download/v2.8.0/ZAP_2.8.0_Core.zip
 info:
-  - This contains the core set of functionality, and you can add more functionality at any time via the [Zap Marketplace](https://github.com/zaproxy/zap-extensions).
-  - The Windows and Linux versions require Java 7 or higher to run.
+  - Most of the files contain the default set of functionality, and you can add more functionality at any time via the [ZAP Marketplace](/addons).
+  - The core package contains the minimal set of functionality you need to get you started.
+  - The Windows and Linux versions require Java 8 or higher to run.
+  - The macOS version includes Java 8 - you can use the Linux or Cross Platform versions if you do not want to download this.
   - The installers are built using a [multi-platform installer builder](https://github.com/zaproxy/zaproxy/blob/develop/BUILDING.md).
-  - The Mac OS version includes Java 8 - you can use the Linux or Cross Platform versions if you do not want to download this.
   - For more information about this release see the [release notes](https://github.com/zaproxy/zap-core-help/wiki/HelpReleases2_8_0).

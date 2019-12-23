@@ -1,56 +1,42 @@
 {{ define "main" }}
   <section class="bolt-header">
-    <div class="wrapper py-70 download-header">
+    <div class="wrapper py-20 download-header">
     {{ with .Site.Data.download.a_header }}
       <h1 class="text--white mb-30">{{ .title }}</h1>
-        <ul class="link__list no-list-style">
-          {{ range .links }}
-            <li>
-              <a href="{{ .link }}" class="text--orange as-h4"> {{ .label }} </a>,
-            </li>
-          {{ end }}
-      </ul>
     {{ end }}
   </div>
   </section>
 
   <section class="bg--blue-lightest">
-    <div class="wrapper py-70">
+    <div class="wrapper py-20">
       {{ with .Site.Data.download.b_details }}
-        <div class="grid grid__two-col">
-          <div>
-            <h3>{{ .title }}</h3>
-
-            {{ range .details }}
-              <div class="flex">
-                <div class="circle-arrow mr-20">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px"><title>Asset 1</title><g data-name="Layer 2"><circle cx="15" cy="15" r="15" fill="#4389ff"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12.72 8.64L19.07 15l-6.35 6.36"/></g></svg></div>
-                <div>
-                  <p> {{ . | markdownify }}</p>
-                </div>
+        <div>
+          {{ range .details }}
+            <div class="flex">
+              <div class="circle-arrow mr-20">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30px"><title>Asset 1</title><g data-name="Layer 2"><circle cx="15" cy="15" r="15" fill="#4389ff"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12.72 8.64L19.07 15l-6.35 6.36"/></g></svg></div>
+              <div>
+                <p> {{ . | markdownify }}</p>
               </div>
-            {{ end }}
-          </div>
-          <div class="column-svg">
-              {{ $svg := (printf "%s%s" "svg/download/" .illustration ) }}
-              {{ partial $svg }}
-          </div>
+            </div>
+          {{ end }}
         </div>
       {{ end }}
     </div>
   </section>
 
-
   <section>
-      <div class="wrapper py-70">
+      <div class="wrapper py-20">
         {{ with .Site.Data.download.c_os_downloads }}
-          <h3>{{ .title }}</h3>
+          <h2>{{ .title }}</h2>
+
           <table class="download-table">
             <tbody>
               {{ range .table }}
                 <tr>
                   <td>{{ .name }}</td>
-                  <td><code>{{ .size }}</code></td>
+                  <td style="text-align:right"><code>{{ .size }}</code></td>
+                  <td>&nbsp;&nbsp;&nbsp;&nbsp; </td>
                   <td>
                     <a track-event="download.stable.{{ .id }}" href="{{ .link }}" class="button button--orange">Download</a>
                   </td>
@@ -69,18 +55,44 @@
       </div>
   </section>
 
+<section class="bg--blue-gradient">
+  <div class="wrapper py-20">
+  <div>
+      {{ with .Site.Data.download.h_installation }}
+        <div class="grid grid__four-col">
+          {{ range .steps }}
+            <div class="install-step ta-c">
+              <div class="install-step__icon flex jc-c ai-c mb-40">
+                {{ $svg := (printf "%s%s" "svg/download/" .icon ) }}
+                {{ partial $svg }}
+
+                <div class="install-step__icon-number as-h3 text--white">{{ .step }}</div>
+
+              </div>
+              <p class="text--white">
+                {{ .text }}
+              </p>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+      </div>
+  </div>
+</section>
+
   <section class="bg--blue-lightest">
-    <div class="wrapper py-70">
-        {{ with .Site.Data.download.d_core }}
+    <div class="wrapper py-20">
+        {{ with .Site.Data.download.d_docker }}
           <h3>{{ .title }}</h3>
           <table class="download-table">
               <tbody>
                 {{ range .table }}
                   <tr>
                     <td>{{ .name }}</td>
-                    <td><code>{{ .size }}</code></td>
+                    <td>{{ .notes }}</td>
+                    <td><code>{{ .cmd }}</code></td>
                     <td>
-                      <a track-event="download.core.{{ .id }}" href="{{ .link }}" class="button button--orange">Download</a>
+                      <a track-event="download.core.{{ .id }}" href="{{ .link }}" class="button button--orange">Docker Hub Page</a>
                     </td>
                   </tr>
                 {{ end }}
@@ -99,7 +111,7 @@
   </section>
 
   <section>
-    <div class="wrapper py-70">
+    <div class="wrapper py-20">
         {{ with .Site.Data.download.e_weekly }}
         <h3>{{ .title }}</h3>
         <table class="download-table">
@@ -125,11 +137,12 @@
     </div>
   </section>
 
+
 <section class="bg--blue-lightest">
-  <div class="wrapper py-70">
+  <div class="wrapper py-20">
     <div class="grid grid__two-col">
 
-      {{ with .Site.Data.download.f_docker_workspace }}
+      {{ with .Site.Data.download.f_others }}
         <div>
         {{ range .column_1 }}
           {{ range .items }}
@@ -171,7 +184,8 @@
 </section>
 
 <section>
-  <div class="wrapper py-70">
+  <div class="wrapper py-20">
+  <a name="latest-versions"></a> 
 
   {{ with .Site.Data.download.g_latest }}
 
@@ -200,31 +214,8 @@
   </div>
 </section>
 
-<section class="bg--blue-gradient">
-  <div class="wrapper py-70">
-      {{ with .Site.Data.download.h_installation }}
-        <div class="grid grid__four-col">
-          {{ range .steps }}
-            <div class="install-step ta-c">
-              <div class="install-step__icon flex jc-c ai-c mb-40">
-                {{ $svg := (printf "%s%s" "svg/download/" .icon ) }}
-                {{ partial $svg }}
-
-                <div class="install-step__icon-number as-h3 text--white">{{ .step }}</div>
-
-              </div>
-              <p class="text--white">
-                {{ .text }}
-              </p>
-            </div>
-          {{ end }}
-        </div>
-      {{ end }}
-  </div>
-</section>
-
 <section style="display:none">
-    <div class="wrapper py-70 ta-c">
+    <div class="wrapper py-20 ta-c">
         {{ with .Site.Data.download.i_client_configuration }}
           <h3>{{ .title }}</h3>
           <div class="grid grid__three-col client-configure">

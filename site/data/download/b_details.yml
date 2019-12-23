@@ -1,7 +1,5 @@
 title: Download ZAP
 details:
-  - __ZAP needs to be installed on the system__ you intend to perform penetration testing on.
+  - __Checksums__ for all of the ZAP downloads are maintained on the [2.8.0 Release Page](https://github.com/zaproxy/zaproxy/releases/tag/v2.8.0) and in the relevant [version files](/download#latest-versions).
   - __As with all software we strongly recommend__ that ZAP is only installed and used on operating systems and JREs that are fully patched and actively maintained.
-  - __ZAP can explore and effectively interrogate__ APIs. ZAP understands JSON, HTML and XML formats and once configured can explore APIs with ease.
-illustration: download-arms.svg
-
+  

@@ -1,0 +1,24 @@
+title: Docker
+table:
+  - name: Stable
+    id: dc-s
+    notes: The standard release
+    cmd: docker pull owasp/zap2docker-stable
+    link: https://hub.docker.com/r/owasp/zap2docker-stable/
+  - name: Bare
+    id: dc-b
+    notes: Minimal release, ideal for CI
+    cmd: docker pull owasp/zap2docker-bare
+    link: https://hub.docker.com/r/owasp/zap2docker-bare/
+  - name: Weekly
+    id: dc-w
+    notes: Updated every week
+    cmd: docker pull owasp/zap2docker-weekly
+    link: https://hub.docker.com/r/owasp/zap2docker-weekly/
+  - name: Live
+    id: dc-w
+    notes: The very latest source code
+    cmd: docker pull owasp/zap2docker-live
+    link: https://hub.docker.com/r/owasp/zap2docker-live/
+info:
+- See [Docker](https://github.com/zaproxy/zaproxy/wiki/Docker) for more information.
