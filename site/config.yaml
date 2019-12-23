@@ -18,9 +18,13 @@ menu:
       URL: /zap-in-ten/
       weight:  2
 
+    - name:  Documentation
+      URL: /docs/
+      weight:  3
+
     - name:  Get Involved
       URL: /get-involved/
-      weight:  3
+      weight:  4
 
     - name: Evangelists
       URL: /evangelists/
