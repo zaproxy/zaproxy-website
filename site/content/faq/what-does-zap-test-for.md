@@ -2,6 +2,7 @@
 title: "What does ZAP test for?"
 type: faq
 category: General Questions
+weight: 2
 ---
 
 ZAP supports both [active](https://github.com/zaproxy/zap-core-

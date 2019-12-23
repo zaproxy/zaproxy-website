@@ -2,6 +2,7 @@
 title: "Why are there missing History Ids?"
 type: faq
 category: Detailed Questions
+weight: 7
 ---
 
 When you proxy via ZAP you will often see that some of the Ids in the History

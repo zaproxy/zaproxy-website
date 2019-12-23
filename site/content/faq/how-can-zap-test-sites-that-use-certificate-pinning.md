@@ -2,6 +2,7 @@
 title: "How can ZAP test sites that use certificate pinning?"
 type: faq
 category: Detailed Questions
+weight: 7
 ---
 
 Certificate pinning (also known as [Public Key

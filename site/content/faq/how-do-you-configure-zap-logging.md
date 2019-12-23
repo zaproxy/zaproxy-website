@@ -2,6 +2,7 @@
 title: "How do you configure ZAP logging?"
 type: faq
 category: Howtos
+weight: 4
 ---
 
 ZAP logs to a file called "zap.log" in the ZAP ['home'

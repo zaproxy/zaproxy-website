@@ -2,6 +2,7 @@
 title: "Where is ZAP installed?"
 type: faq
 category: General Questions
+weight: 2
 ---
 
 ZAP is installed in different places depending on the OS:

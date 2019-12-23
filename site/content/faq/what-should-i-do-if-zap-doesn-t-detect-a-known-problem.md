@@ -2,6 +2,7 @@
 title: "What should I do if ZAP doesn't detect a known problem?"
 type: faq
 category: Scanning
+weight: 3
 ---
 
 If ZAP fails to detect a known problem then please let us know!

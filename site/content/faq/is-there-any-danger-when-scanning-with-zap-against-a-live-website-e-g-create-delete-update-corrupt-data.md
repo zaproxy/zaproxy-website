@@ -2,6 +2,7 @@
 title: "Is there any danger when scanning with ZAP against a live website (e.g. create/delete/update/corrupt data)?"
 type: faq
 category: Scanning
+weight: 3
 ---
 
 

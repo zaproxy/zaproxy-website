@@ -2,6 +2,7 @@
 title: "Where does ZAP put its logs?"
 type: faq
 category: General Questions
+weight: 2
 ---
 
 ZAP logs to a file called "zap.log" in the ZAP ['home'

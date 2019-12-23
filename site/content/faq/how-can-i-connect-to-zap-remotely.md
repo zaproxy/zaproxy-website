@@ -1,7 +1,8 @@
 ---
 title: "How can I connect to ZAP remotely?"
 type: faq
-category: General Questions
+category: Networking
+weight: 4
 ---
 
 

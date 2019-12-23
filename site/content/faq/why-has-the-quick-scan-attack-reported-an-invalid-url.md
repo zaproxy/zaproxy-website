@@ -2,6 +2,7 @@
 title: "Why has the Quick Scan Attack reported an invalid URL?"
 type: faq
 category: Detailed Questions
+weight: 7
 ---
 
 If the Quick Start Attack fails with the message:

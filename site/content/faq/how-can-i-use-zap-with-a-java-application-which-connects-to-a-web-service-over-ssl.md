@@ -1,7 +1,8 @@
 ---
 title: "How can I use ZAP with a Java application which connects to a web service over SSL?"
 type: faq
-category: Howtos
+category: Networking
+weight: 4
 ---
 
 

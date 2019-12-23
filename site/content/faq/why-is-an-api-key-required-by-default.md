@@ -2,6 +2,7 @@
 title: "Why is an API key required by default?"
 type: faq
 category: API
+weight: 7
 ---
 
 Since version 2.4.1 ZAP has required an API key by default in order to invoke

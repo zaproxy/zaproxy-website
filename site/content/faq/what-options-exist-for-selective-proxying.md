@@ -1,7 +1,8 @@
 ---
 title: "What options exist for selective proxying?"
 type: faq
-category: Detailed Questions
+category: Networking
+weight: 4
 ---
 
 There are a number of ways to accomplish selective proxying.

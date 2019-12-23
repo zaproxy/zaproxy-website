@@ -2,6 +2,7 @@
 title: "Can ZAP be used to test mobile apps?"
 type: faq
 category: Technologies Supported
+weight: 7
 ---
 
 Yes, see these videos from

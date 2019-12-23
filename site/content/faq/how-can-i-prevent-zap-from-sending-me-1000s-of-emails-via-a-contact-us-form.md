@@ -2,6 +2,7 @@
 title: "How can I prevent ZAP from sending me 1000s of emails via a 'Contact Us' form?"
 type: faq
 category: Scanning
+weight: 3
 ---
 
 

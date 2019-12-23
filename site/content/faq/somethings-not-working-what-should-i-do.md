@@ -2,6 +2,7 @@
 title: "Somethings not working. What should I do?"
 type: faq
 category: Troubleshooting
+weight: 1
 ---
 
 Somethings not working as you expect with ZAP, and you're not sure if its a
@@ -32,9 +33,8 @@ This can be accessed via the 'Help / OWASP ZAP User Guide' menu, the help
 button on the right hand side of the top toolbar, via help buttons on
 individual dialogs or via the F1 key (which is context dependant).
 
-The main help file is also available [online](https://github.com/zaproxy/zap-
-core-help/wiki/HelpIntro), although this will not include the help for
-optional add-ons that you have installed.
+The main help file is also available [online](https://github.com/zaproxy/zap-core-help/wiki/HelpIntro), 
+although this will not include the help for optional add-ons that you have installed.
 
 ###  Check the log file
 
@@ -56,10 +56,7 @@ you.
 
 ###  Ask on irc
 
-Some of the ZAP developers hang out on
-[irc.mozilla.org](https://chat.mibbit.com/?url=irc%3A%2F%2Firc.mozilla.org%2F%23websectools)
-in #websectools which you can access via that link or your favourite irc
-client.
+Many of ZAP contributors hang out on the [freenode](https://freenode.net/) [#zaproxy](https://webchat.freenode.net/#zaproxy) channel which you can access via that link or your favourite irc client.
 
 ###  Ask on twitter
 

@@ -2,6 +2,7 @@
 title: "Where can I ask ZAP related questions?"
 type: faq
 category: General Questions
+weight: 2
 ---
 
 ###  User Guide
@@ -27,6 +28,5 @@ best place for questions about extending ZAP using scripting.
 
 ###  IRC
 
-For more interaction you can also join the [Mozilla #websectools irc
-channel](irc://irc.mozilla.org/websectools) which is where many of the ZAP
-core contributors hang out.
+
+For more interaction you can also join the [freenode](https://freenode.net/) [#zaproxy](https://webchat.freenode.net/#zaproxy) channel which is where many of the ZAP core contributors hang out.

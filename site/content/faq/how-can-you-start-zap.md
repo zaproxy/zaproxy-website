@@ -2,6 +2,7 @@
 title: "How can you start ZAP?"
 type: faq
 category: Howtos
+weight: 4
 ---
 
 Again, this depends on the OS:
