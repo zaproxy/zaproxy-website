@@ -1,48 +1,22 @@
 {{ define "main" }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">Frequently Asked Questions</h1>
+  </div>
+</section>
 {{ $section := .Site.GetPage "section" .Section }}
 <div class="wrapper py-70" data-kind="{{ .Kind }}">
+    <h2>{{ .Title }}</h2>
     <div class="flex">
-      <article class="col-2-3 pr-30 content single-post">
+      <article class="pr-30 content single-post">
           <div class="breadcrumbs">
               <a href="/faq">FAQ</a> &gt;
               <a href="/faq#cat-{{ .Params.category | urlize }}">{{ .Params.category }}</a>
           </div>
-          <h1 class="post-title">{{ .Title }}</h1>
           <main class="post-content">
             {{ .Content }}
           </main>
       </article>
-      <aside class="col-1-3">
-        <section class="post-meta">
-          <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-          <h5 id="wordcount"> {{ .WordCount }} Words </h5>
-          {{ if isset .Params "authors" }}
-
-          <div class="post-authors">
-            <h4>Authors</h4>
-            {{ range $name := .Params.authors }}
-            {{ $author := index $.Site.Data.authors $name }}
-              <section class="post-author-single flex p-10">
-              {{ if $author }}
-                <div class="col-1-5">
-                  <img class="author-picture" src="{{ $author.picture }}" />
-                </div>
-                <div class="author-name col-4-5">
-                  {{ $author.name }}
-                  <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">{{ $author.twitter }}</a>
-                </div>
-              {{ else }}
-                <div class="col-1-5">
-                  <img class="author-picture" src="x" />
-                </div>
-                <div class="author-name col-4-5">{{ $name }}</div>
-              {{ end }}
-              </section>
-          {{ end }}
-          </div>
-          {{ end }}          
-        </section>
-      </aside>
     </div>
 </div>
 {{ end }}
