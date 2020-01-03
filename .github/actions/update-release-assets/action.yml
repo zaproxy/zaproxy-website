@@ -1,0 +1,24 @@
+name: 'Update Release'
+description: 'Update release assets by name'
+inputs:
+  release_name:
+    description: 'Name of the release you want to update'
+    required: true
+  asset_path:
+    description: 'Local path of asset'
+    required: true
+  asset_name:
+    description: 'Name for release asset'
+    required: true
+
+outputs:
+  id: 
+    description: The id of the release
+  html_url:
+    description: Url for html
+  upload_url:
+    description: Url for uploading
+
+runs:
+  using: 'node12'
+  main: 'action.js'
