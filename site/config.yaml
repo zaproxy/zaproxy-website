@@ -37,15 +37,15 @@ menu:
       weight:  1
 
     - name:  "ZAP in Ten"
-      URL:  "tour"
+      URL:  /zap-in-ten/
       weight:  2
 
     - name:  "Get Involved"
-      URL:  get-involved
+      URL:  /get-involved/
       weight:  3
 
     - name:  "Support"
-      URL:  /support
+      URL:  /support/
       weight:  4
 
 # RSS, categories and tags disabled for an easy start
