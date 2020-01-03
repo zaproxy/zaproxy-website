@@ -35,21 +35,6 @@ menu:
       URL:  /support/
       weight:  4
 
-    - name: FAQ
-      URL: /faq/
-      parent: "Support"
-      weight: 1
-
-    - name: User Guide
-      URL: /userguide/desktop/
-      parent: "Support"
-      weight: 2
-
-    - name: Addons
-      URL: /addons/
-      parent: "Support"
-      weight: 3
-
 
   footer: 
     - name:  "Home"
@@ -72,22 +57,6 @@ menu:
     - name:  "Support"
       URL:  /support
       weight:  4
-
-    - name: FAQ
-      URL: /faq
-      parent: "Support"
-      weight: 1
-
-    - name: User Guide
-      URL: /userguide/desktop/
-      parent: "Support"
-      weight: 2
-
-    - name: Addons
-      URL: /addons
-      parent: "Support"
-      weight: 3
-
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
