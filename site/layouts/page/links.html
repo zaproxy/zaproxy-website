@@ -10,6 +10,9 @@
 
   <section>
     <div class="wrapper py-70">
+      {{ if .Params.header }}
+        <h5>{{ .Params.header }}</h5>
+      {{ end }}
       {{ with .Params }}
         <div>
           {{ range .links }}
@@ -22,6 +25,9 @@
             </div>
           {{ end }}
         </div>
+      {{ end }}
+      {{ if .Params.footer }}
+        <h5>{{ .Params.footer }}</h5>
       {{ end }}
     </div>
   </section>

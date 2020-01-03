@@ -26,11 +26,6 @@ menu:
       URL: /get-involved/
       weight:  4
 
-    - name: Evangelists
-      URL: /evangelists/
-      parent: "Get Involved"
-      weight: 1
-
     - name:  "Support"
       URL:  /support/
       weight:  4
@@ -48,11 +43,6 @@ menu:
     - name:  "Get Involved"
       URL:  get-involved
       weight:  3
-
-    - name: Evangelists
-      URL: evangelists
-      parent: "Get Involved"
-      weight: 1
 
     - name:  "Support"
       URL:  /support
