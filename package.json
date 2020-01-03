@@ -68,6 +68,8 @@
     "natives": "1.1.6"
   },
   "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/github": "^2.0.0",
     "@glidejs/glide": "^3.4.1"
   }
 }
