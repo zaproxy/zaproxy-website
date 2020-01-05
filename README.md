@@ -1,15 +1,5 @@
 # ZAP Website
 
-## Todos
-In order of importance
-
-- Video for ZAP tour
-- Vette text for misspellings
-- Test site on real mobile device
-- Setup Github action for building
-- Figure out how post dates work for hiding content
-- Finish up search
-
 ## Development
 To work on the website you'll need to have either node.js or Docker installed. In your development environment  `npm run preview` will start up a webpack-dev-server on port 3000 for development which will hot-reload the site as file changes are detected.
 
