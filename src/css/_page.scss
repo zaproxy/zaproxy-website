@@ -69,3 +69,12 @@ article {
   border-radius: var(--radius);
   border: solid 4px #eee;
 }
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: var(--footer-height);
+}
