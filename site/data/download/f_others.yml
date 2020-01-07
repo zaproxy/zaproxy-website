@@ -2,7 +2,7 @@ column_1:
   - items:
     - title: Linux Repos
       info:
-        - The official [ZAP Linux Repos](https://snapcraft.io/zaproxy)
+        - The official [ZAP Linux Repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=owasp-zap)
     - title: Snapcraft
       info:
         - On Linux systems you can use [Snapcraft](https://snapcraft.io/zaproxy).
