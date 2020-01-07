@@ -1,6 +1,10 @@
 .site-footer {
   background: var(--blue-dark);
   color: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-height);
 }
 
 .site-footer a {

@@ -26,12 +26,16 @@
   {{ end }}
 </head>
 <body>
+<div id="page-container">
+ <div id="content-wrap">
   {{ block "header" . }}{{ partial "header" . }}{{end}}
   {{ block "main" . }}{{end}}
+ </div>
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}
     <script src="{{ relURL . }}"></script>
   {{ end }}
+</div>
 </body>
 </html>
