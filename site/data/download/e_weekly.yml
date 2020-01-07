@@ -2,8 +2,8 @@ title: ZAP Weekly
 table:
   - name: Weekly Cross Platform Package
     id: cp-p
-    size: 279 MB
-    link:
+    size: 116 MB
+    link: https://github.com/zaproxy/zaproxy/releases/download/w2020-01-07/ZAP_WEEKLY_D-2020-01-07.zip
 info:
 - We generate weekly releases of ZAP from the [develop](https://github.com/zaproxy/zaproxy) branch, typically every Monday.
 - These are just intended for people who want to use all of the features we've added since the last 'full' release but don't want the hassle of building ZAP from the source code.
