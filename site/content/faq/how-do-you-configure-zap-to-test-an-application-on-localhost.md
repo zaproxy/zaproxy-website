@@ -1,7 +1,8 @@
 ---
 title: "How do you configure ZAP to test an application on localhost?"
 type: faq
-category: Howtos
+category: Networking
+weight: 4
 ---
 
 

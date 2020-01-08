@@ -2,6 +2,7 @@
 title: "Why am I getting blank ZAP windows on Linux?"
 type: faq
 category: Desktop UI
+weight: 7
 ---
 
 Java has problems with 'non standard' window managers.

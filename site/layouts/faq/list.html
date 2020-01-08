@@ -18,7 +18,8 @@
                 {{- if ne $lastindex $index }},{{ end }}
                 {{- end -}}]
             </script>
-            {{  range .Pages.GroupByParam "category" }}
+            {{ range .Pages.GroupBy "Weight"}}
+            {{ range .Pages.GroupByParam "category" }}
             <section data-category="{{ .Key | urlize }}">
               <h2 id="cat-{{ .Key | urlize }}">{{ .Key }}</h2>
               <ul>              
@@ -30,6 +31,7 @@
               </ul>
             </section>
 
+          {{ end }}
           {{ end }}
         </div>
         <div class="col-1-3">

@@ -2,6 +2,7 @@
 title: "What 'calls home' does ZAP make?"
 type: faq
 category: General Questions
+weight: 2
 ---
 
 ZAP makes a limited set of 'calls home', typically via bitly.com URLs.

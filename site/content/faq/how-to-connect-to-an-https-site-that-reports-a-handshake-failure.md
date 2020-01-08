@@ -1,7 +1,8 @@
 ---
 title: "How to connect to an HTTPS site that reports a handshake failure?"
 type: faq
-category: Howtos
+category: Networking
+weight: 4
 ---
 
 

@@ -2,6 +2,7 @@
 title: "How do you add a script to ZAP from the command line?"
 type: faq
 category: Howtos
+weight: 4
 ---
 
 You can set any of the ZAP configuration file values via the command line, the

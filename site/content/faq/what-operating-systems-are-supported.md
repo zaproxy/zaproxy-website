@@ -2,6 +2,7 @@
 title: "What operating systems are supported?"
 type: faq
 category: Technologies Supported
+weight: 7
 ---
 
 ZAP should run on all operating systems that support Java 8 - it can even run

@@ -2,6 +2,7 @@
 title: "How do I report a False Negative?"
 type: faq
 category: Scanning
+weight: 3
 ---
 
 False Negatives are where ZAP fails to identify an issue when it should.
@@ -16,8 +17,7 @@ know how your application responded to each one.
 
 Ideally we would like a ZAP unit test which reproduces the problem. An example
 of one of these is
-[TestCrossSiteScriptV2UnitTest.java](https://github.com/zaproxy/zap-
-extensions/blob/master/test/org/zaproxy/zap/extension/ascanrules/TestCrossSiteScriptV2UnitTest.java)
+[TestCrossSiteScriptV2UnitTest.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/test/java/org/zaproxy/zap/extension/ascanrules/TestCrossSiteScriptV2UnitTest.java)
 However these are not easy for non programmers to write.
 
 An alternative is to record a Zest script of the rule that you think should
@@ -57,6 +57,9 @@ If the script contains sensitive information then prior to performing 'Select
 All':
 
   1. Find the relevant strings in the Zest requests or responses
+
   2. Highlight them
+
   3. Right click and select 'Redact text...'
+
   4. Press 'Save'. If you leave the default 'Apply to all current requests' box checked then you will only need to do this once per string.

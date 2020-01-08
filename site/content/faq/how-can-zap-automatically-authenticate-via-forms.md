@@ -2,6 +2,7 @@
 title: "How can ZAP automatically authenticate via forms?"
 type: faq
 category: Howtos
+weight: 4
 ---
 
 ZAP supports form based authentication, and can automatically

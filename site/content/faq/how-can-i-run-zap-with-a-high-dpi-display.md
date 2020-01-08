@@ -2,6 +2,7 @@
 title: "How can I run ZAP with a high DPI display?"
 type: faq
 category: Desktop UI
+weight: 7
 ---
 
 

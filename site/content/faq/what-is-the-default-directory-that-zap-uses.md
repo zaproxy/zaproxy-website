@@ -2,6 +2,7 @@
 title: "What is the default directory that ZAP uses?"
 type: faq
 category: General Questions
+weight: 2
 ---
 
 The default directory that ZAP uses depends on the OS.

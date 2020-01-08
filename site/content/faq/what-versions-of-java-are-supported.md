@@ -2,6 +2,7 @@
 title: "What versions of Java are supported?"
 type: faq
 category: General Questions
+weight: 2
 ---
 
 

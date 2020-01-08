@@ -2,6 +2,7 @@
 title: "How do I see what version of an add-on/extension I have installed?"
 type: faq
 category: Detailed Questions
+weight: 7
 ---
 
 There are three ways to do this:

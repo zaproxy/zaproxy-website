@@ -2,6 +2,7 @@
 title: "How do you find out what key to use to set a config value on the command line?"
 type: faq
 category: Howtos
+weight: 4
 ---
 
 

@@ -2,6 +2,7 @@
 title: "Fonts in ZAP look bad on my system - what should I do?"
 type: faq
 category: Desktop UI
+weight: 7
 ---
 
 

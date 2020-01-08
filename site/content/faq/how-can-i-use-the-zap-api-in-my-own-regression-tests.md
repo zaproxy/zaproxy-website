@@ -2,6 +2,7 @@
 title: "How can I use the ZAP API in my own regression tests?"
 type: faq
 category: API
+weight: 7
 ---
 
 

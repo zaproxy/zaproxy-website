@@ -2,6 +2,7 @@
 title: "How can you use ZAP to scan APIs?"
 type: faq
 category: API
+weight: 7
 ---
 
 
