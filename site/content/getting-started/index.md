@@ -135,11 +135,7 @@ To examine a tree view of the explored pages, click the **Sites** tab in the Tre
 ##### View Alerts and Alert Details
 The left-hand side of the Footer contains a count of the Alerts found during your test, broken out into risk categories. These risk categories are:
 
-- <img style="vertical-align:middle" src="getting-started/images/flag-red.png"> &nbsp;&nbsp;&nbsp; High
-- <img style="vertical-align:middle" src="getting-started/images/flag-orange.png"> &nbsp;&nbsp;&nbsp; Medium
-- <img style="vertical-align:middle" src="getting-started/images/flag-yellow.png"> &nbsp;&nbsp;&nbsp; Low
-- <img style="vertical-align:middle" src="getting-started/images/flag-blue.png"> &nbsp;&nbsp;&nbsp; Informational
-- <img style="vertical-align:middle" src="getting-started/images/flag-green.png"> &nbsp;&nbsp;&nbsp; False Positive
+{{< img "images/alert-icons.png" >}} 
 
 To view the alerts created during your test:
 
