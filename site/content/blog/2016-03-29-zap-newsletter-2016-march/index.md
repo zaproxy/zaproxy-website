@@ -14,16 +14,6 @@ authors:
 Welcome to the March newsletter, read on for some really good news, details of the new site level stats ZAP now supports and an introduction to
 scripting.  
   
-**Table of Contents:**  
-
-  * News
-  * New / Improved Add-ons 
-  * New Features 
-  * Tutorial: Introduction to Scripting 
-  * Upcoming Talks and Training
-  * Feedback
-  * Next Month...
-
 ##  News
 
 The big new this month is that ZAP was voted the **TOP** free/open source security tool for 2015 by Toolswatch readers:
@@ -112,7 +102,7 @@ relevant tabs with the green plus sign.
 
 ### Scripts tab
 
-{{< img "images/Scripts-script-tab.png" "Alt title" >}}  
+{{< img "images/Scripts-script-tab.png" >}}  
 The Scripts tab shows all of the scripts available in a tree view.  
 There are 2 nodes under the top 'Scripting' node:
 
@@ -143,7 +133,7 @@ them.
 
 ### Script Console tab
 
-{{< img "images/Scripts-console-tab.png" "Alt title" >}}  
+{{< img "images/Scripts-console-tab.png" >}}  
 When you select a script in the Scripts tree then it is displayed in the Script Console.  
 For most scripting languages this is where you will edit it, the only exception to this is Zest which is displayed graphically in the Scripts
 tab. At the top of this tab is a toolbar that allows you to Run the script displayed and Stop it if it is running. Note that not all scripts can
@@ -177,12 +167,9 @@ scripts>
 
 ##  Upcoming Talks and Training
 
-ZAP will be featured in the OWASP Pune Chapter Meeting on March 31st in Pune (not surprisingly): [https://docs.google.com/forms/d
-/1uIbCJ8kF5xMeIB-C9_jvwvfEdex_Vly8CRU87Bupsws/viewform?c=0&w=1](https://docs.google.com/forms/d/1uIbCJ8kF5xMeIB-
-C9_jvwvfEdex_Vly8CRU87Bupsws/viewform?c=0&w=1)  
+ZAP will be featured in the OWASP Pune Chapter Meeting on March 31st in Pune (not surprisingly): [https://docs.google.com/forms/d/1uIbCJ8kF5xMeIB-C9_jvwvfEdex_Vly8CRU87Bupsws/viewform?c=0&w=1](https://docs.google.com/forms/d/1uIbCJ8kF5xMeIB-C9_jvwvfEdex_Vly8CRU87Bupsws/viewform?c=0&w=1)  
   
-**Adrian Winckles** will be demoing ZAP at the SecureCambridge Cyber Security Technology Showcase on April 5th in Cambridge: <http
-://isc2chapter-eastofengland.co.uk/>  
+**Adrian Winckles** will be demoing ZAP at the SecureCambridge Cyber Security Technology Showcase on April 5th in Cambridge: <http://isc2chapter-eastofengland.co.uk/>  
   
 **Azzedine RAMRAMI and Sebastien Gioria** will be demoing ZAP in their 'Securing your application with OpenSource tools' at Devoxx France on
 April 22nd in Paris: <http://cfp.devoxx.fr/2016/talk/HNE-6288/Securiser_son_developpement_avec_10_outils_open-source>  

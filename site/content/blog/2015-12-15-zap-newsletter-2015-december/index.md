@@ -15,18 +15,6 @@ authors:
 Welcome to the second ZAP Newsletter.  
 And apologies for the delay - 2.4.3 took longer than expected, and last week I was away at a Mozilla work week.  
   
-**Table of Contents:**  
-
-  * News
-  * New / Improved Add-ons 
-  * New Features 
-  * Tutorial: Break Points 
-  * 3rd Party Tool: ThreadFix 
-  * Upcoming Talks and Training
-  * Featured Contributor: Yuho Kameda 
-  * Feedback
-  * Next Month...
-
 ##  News
 
 The big news is that ZAP 2.4.3 is now available to [download](https://github.com/zaproxy/zaproxy/wiki/Downloads)  

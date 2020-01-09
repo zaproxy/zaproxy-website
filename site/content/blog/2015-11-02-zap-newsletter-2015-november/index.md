@@ -16,21 +16,8 @@ Welcome to the first monthly ZAP newsletter.
 We plan to cover pretty much anything ZAP related in these newsletters, including newly created or updated add-ons, new features just
 implemented and 3rd party tools.  
 We also encourage contributions from people like yourself - see the last section for details.  
-Oh, and please let us know what you think of this newsletter via the [Feedback Form](https://docs.google.com/forms/d/1_XaettHPjLOD56AbSlui67gk-
-771yJ_xfd7w2lSEdXw/viewform?usp=send_form)!  
+Oh, and please let us know what you think of this newsletter via the [Feedback Form](https://docs.google.com/forms/d/1_XaettHPjLOD56AbSlui67gk-771yJ_xfd7w2lSEdXw/viewform?usp=send_form)!  
   
- **Table of Contents:**  
-
-  * News
-  * New / Improved Add-ons 
-  * New Features 
-  * Tutorial: Check for Updates 
-  * 3rd Party Tool: BDD-Security 
-  * Upcoming Talks and Training
-  * Featured Contributor: Kingthorin 
-  * Feedback
-  * Next Month...
-
 ##  News
 
 The big news this month is that we will be releasing **ZAP 2.4.3** very soon, ie hopefully in the first week of November. This will be an
@@ -81,8 +68,7 @@ between specific times, which is useful if the application has since changed.
 
 ##  New Features
 
-The following new features have been implemented are available in the weekly releases: <https://github.com/zaproxy/zaproxy/wiki/Downloads#zap-
-weekly>  
+The following new features have been implemented are available in the weekly releases: <https://github.com/zaproxy/zaproxy/wiki/Downloads#zap-weekly>  
   
 
 ###  Updating Add-ons from the Command Line
@@ -90,7 +76,7 @@ weekly>
 The ZAP command line has been enhanced to support updating add-ons.  
 There are 2 new options:  
 
-  * -addoninstall <addon> Install the specified add-on from the ZAP Marketplace
+  * -addoninstall `<addon>` Install the specified add-on from the ZAP Marketplace
   * -addonupdate Update all changed add-ons from the ZAP Marketplace
 
 These options take effect before other command line options such as ‘-quickurl’ so that add-ons will be installed and updated before attacking a
@@ -156,7 +142,8 @@ All new add-ons start off as alpha and only progress to beta and release after s
 The Check for Updates component is the way you can keep your copy of ZAP up to date.  
 You can configure it via the “Check for Updates” Options screen:  
   
-![](//4.bp.blogspot.com/-fMkI3o-T39w/VjNoP7wzkDI/AAAAAAAAAdk/vhCO51Gv078/s640/ZAP%2BCFU%2BOptions%2B2015-10-30%2B13%253A52%253A38.png)  
+{{< img "images/zap-cfu-options.png" >}}
+
 The following options are available:  
   
 **Check for Updates on start up**  
@@ -203,9 +190,8 @@ you have any questions on how it works then just ask on the [ZAP Developers Grou
 _Each month we plan to cover a 3rd party tool that is related to ZAP in some way. These tools can be open source, closed source, free or
 commercial._  
 This month we’re covering BDD-Security, ℅ Stephen de Vries ([@stephendv](https://twitter.com/stephendv))  
-  
-![](https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fwww.continuumsecurity.net%2Fimages%2Fbdd-security-
-logo-small.png&container=blogger&gadget=a&rewriteMime=image%2F*)  
+
+{{< img "images/bdd-security.png" >}}
   
 BDD-Security is a security testing framework that takes the principles of Behaviour Driven Development (BDD) and applies them to security
 testing. It aims to solve two key problems:  
