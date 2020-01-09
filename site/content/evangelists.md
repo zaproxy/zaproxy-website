@@ -6,7 +6,7 @@ The following people are happy to give free ZAP talks and/or training in their r
 
 To contact all evangelists please use the [zaproxy-evangelists](https://groups.google.com/group/zaproxy-evangelists) group.
 
-{{% evangelists %}}
+{{< evangelists >}}
 
 **Most ZAP evangelists will travel to give talks or training provided expenses are covered.**
 
