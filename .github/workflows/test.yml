@@ -1,8 +1,7 @@
 name: Test site - pull_request
 
 on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+  pull_request: {}
 
 jobs:
   build:
