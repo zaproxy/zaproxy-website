@@ -27,6 +27,7 @@ jobs:
           git clone https://github.com/zaproxy/zap-api-docs
           cd zap-api-docs
           git pull
+          gem install bundler
           bundler install
           bundle exec middleman build --clean
           cp -rf ./build/ ../dist/docs/api
