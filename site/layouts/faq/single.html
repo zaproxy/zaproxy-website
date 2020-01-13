@@ -5,14 +5,14 @@
   </div>
 </section>
 {{ $section := .Site.GetPage "section" .Section }}
-<div class="wrapper py-70" data-kind="{{ .Kind }}">
+<div class="wrapper py-20" data-kind="{{ .Kind }}">
+    <div class="breadcrumbs">
+        <a href="/faq/">FAQ</a> &gt;
+        <a href="/faq/#cat-{{ .Params.category | urlize }}">{{ .Params.category }}</a>
+    </div>
     <h2>{{ .Title }}</h2>
     <div class="flex">
       <article class="pr-30 content single-post">
-          <div class="breadcrumbs">
-              <a href="/faq/">FAQ</a> &gt;
-              <a href="/faq/#cat-{{ .Params.category | urlize }}">{{ .Params.category }}</a>
-          </div>
           <main class="post-content">
             {{ .Content }}
           </main>

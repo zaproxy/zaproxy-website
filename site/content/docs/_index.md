@@ -19,7 +19,4 @@ links:
     link: /faq/
     desc: Frequently Asked Questions 
 
-  - name: 'Blog Posts'
-    link: /blog/
-    desc: The ZAP blog 
 ---
