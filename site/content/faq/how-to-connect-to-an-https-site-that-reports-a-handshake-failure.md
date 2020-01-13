@@ -10,8 +10,7 @@ First of all try checking the 'Enable unsafe SSL/TLS renegotiation' checkbox
 in the Certificate Options screen and trying again.
 
 Second check if you've enabled SSLv2Hello in the outbound connection options:
-<https://github.com/zaproxy/zap-core-
-help/wiki/HelpUiDialogsOptionsConnection>. If so, disable SSLv2Hello and
+<https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsConnection>. If so, disable SSLv2Hello and
 reload the content to see if the issue is resolved.
 
 If this doesn't help and an HTTPS site reports a handshake failure then try
@@ -47,14 +46,12 @@ automatically using the JRE from the system:
 Java 8 users note you may encounter SSLHandshakeException, on sites that
 support RC4 ciphers. More info
 [here](https://github.com/zaproxy/zaproxy/issues/1892#issuecomment-139906996),
-and [here](http://stackoverflow.com/questions/32009083/javax-net-ssl-
-sslhandshakeexception-handshake-failure-when-using-jmeter-with-ss).
+and [here](http://stackoverflow.com/questions/32009083/javax-net-ssl-sslhandshakeexception-handshake-failure-when-using-jmeter-with-ss).
 Solution(s): Disable RC4 on the server.
 
 If you're in a corporate or business environment that normally requires the
 use of an Enterprise proxy you can have ZAP use it as well via the [Options :
-Connections screen](https://github.com/zaproxy/zap-core-
-help/wiki/HelpUiDialogsOptionsConnection). If ZAP can't actually get to the
+Connections screen](https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsConnection). If ZAP can't actually get to the
 destination (because use of the corporate proxy is required) this can
 sometimes manifest as an SSL/TLS negotiation failure.
 

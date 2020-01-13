@@ -24,8 +24,7 @@ of Java should solve this problem, e.g.:
 If you can only use Java 8 on Windows 10 then you can set the compatibility
 settings:
 
-![image](https://user-
-images.githubusercontent.com/3179932/45785579-c6a12080-bc64-11e8-92c4-9860a1437c4e.png)
+![image](https://user-images.githubusercontent.com/3179932/45785579-c6a12080-bc64-11e8-92c4-9860a1437c4e.png)
 
 On Linux you can try editing the zap.sh file to include the java command line
 option like:
