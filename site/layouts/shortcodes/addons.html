@@ -8,28 +8,28 @@
         <th style="width: 15%">Last Updated</th>
     </tr>
     </thead>
-    {{ range $addon := $.Site.Data.addons }}
+    {{ range sort $.Site.Data.addons "name" }}
     <tr>
         <td>
-            {{with $addon.link }}
-            <a href="{{ $addon.link}}">{{ $addon.name }}</a>
+            {{if .link }}
+            <a href="{{ .link }}">{{ .name }}</a>
             {{else}}
-            <span style="text-decoration: underline;">{{ $addon.name }}</span>
+            <span style="text-decoration: underline;">{{ .name }}</span>
             {{end}}
             <br>
-            {{ $addon.description }}
+            {{ .description }}
         </td>
         <td align="center">
-            {{ $addon.version }}
+            {{ .version }}
         </td>
         <td >
-            {{ $addon.status }}
+            {{ .status }}
         </td>
         <td>
-            {{ $addon.author }}
+            {{ .author }}
         </td>
         <td align="center">
-            {{ $addon.date }}
+            {{ .date }}
         </td>
     </tr>
     {{ end }}
