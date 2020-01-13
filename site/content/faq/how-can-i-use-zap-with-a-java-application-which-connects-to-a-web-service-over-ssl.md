@@ -7,8 +7,7 @@ weight: 4
 
 
 You'll need to [generate a dynamic root CA
-certificate](https://github.com/zaproxy/zap-core-
-help/wiki/HelpUiDialogsOptionsDynsslcert).
+certificate](https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsDynsslcert).
 
 Export it into a file.
 

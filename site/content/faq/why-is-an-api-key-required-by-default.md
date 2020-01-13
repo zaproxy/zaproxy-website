@@ -11,8 +11,7 @@ required by default in order to invoke any of the API operations. This is a
 security feature to prevent malicious sites from invoking the ZAP API. ZAP
 Version 2.6.0 also introduced additional security options. All of the API
 security options, including the API key, can be found in the [API Options
-screen](https://github.com/zaproxy/zap-core-
-help/wiki/HelpUiDialogsOptionsApi).
+screen](https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsApi).
 
 You can also set the API key from the command line using an option like:
 
