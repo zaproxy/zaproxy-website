@@ -125,7 +125,7 @@ Modifiers:
   * Data Driven Content which identify URL paths that represent data - these can be used to tell ZAP that specific pages are generated from database content and can so be treated the same
   * Structural Parameters which identify parameters that represent application structure instead of user data - these can be used to allow ZAP to correctly represent 'single page applications'
 
-For more details see the relevant section in the [User Guide](https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsStructmods).  
+For more details see the relevant section in the [User Guide](/docs/desktop/start/features/structmods/).  
   
 
 ### Context: Technology

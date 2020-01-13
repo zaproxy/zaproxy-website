@@ -33,14 +33,13 @@ This can be accessed via the 'Help / OWASP ZAP User Guide' menu, the help
 button on the right hand side of the top toolbar, via help buttons on
 individual dialogs or via the F1 key (which is context dependant).
 
-The main help file is also available [online](https://github.com/zaproxy/zap-core-help/wiki/HelpIntro), 
+The main help file is also available [online](/docs/desktop/), 
 although this will not include the help for optional add-ons that you have installed.
 
 ###  Check the log file
 
 Look in the zap.log file to see if any errors have been logged. This is either
-in the directory you specified via the '-dir' [command
-line](https://github.com/zaproxy/zap-core-help/wiki/HelpCmdline) option or in
+in the directory you specified via the '-dir' [command line](/docs/desktop/cmdline/) option or in
 the [default directory](faq/what-is-the-default-directory-that-zap-uses/) if you didnt specify one.
 
 If there are error messages that appear to indicate a Java memory problem then

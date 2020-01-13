@@ -68,7 +68,7 @@ Options:
 ###  Scan Rules
 
   
-By default the script will use a [Scan Policy](https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsScanpolicy) tuned for APIs.  
+By default the script will use a [Scan Policy](/docs/desktop/start/features/scanpolicy/) tuned for APIs.  
 This disables rules that are focused on client side (e.g. browser) issues, such as the ones for detecting Cross Site Scripting, and also adds 2
 additional rules that are implemented as scripts:  
 
@@ -78,7 +78,7 @@ additional rules that are implemented as scripts:
 You can change which rules are run and how failures are reported using a configuration file. This allows you to tune the scanning script to meet
 your requirements for each of your APIs.  
 To generate a configuration file use the ‘-g’ option. This will create a file which includes all of the [active](https://github.com/zaproxy/zap-
-core-help/wiki/HelpStartConceptsAscan) and [passive](https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsPscan) scan rules available:
+core-help/wiki/HelpStartConceptsAscan) and [passive](/docs/desktop/start/features/pscan/) scan rules available:
 <https://github.com/zaproxy/zaproxy/wiki/ZAP-API-Scan#configuration-file>. You can edit this file using a text editor.  
 Changing a passive rule will only affect how failures are reported, but changing an active rule to IGNORE will prevent the rule from running.
 This is to reduce the overall scan time – passive rules are very quick while active rules can take a significant amount of time.  

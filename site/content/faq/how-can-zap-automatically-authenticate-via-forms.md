@@ -15,15 +15,15 @@ Via the UI:
 
   1. Explore your app while proxying through ZAP
   2. Login using a valid username and password
-  3. Define a [Context](https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsContexts), eg by right clicking the top node of your app in the Sites tab and selecting ["Include in Context"](https://github.com/zaproxy/zap-core-help/wiki/HelpUiTabsSites#include-in-context)
+  3. Define a [Context](/docs/desktop/start/features/contexts/), eg by right clicking the top node of your app in the Sites tab and selecting ["Include in Context"](/docs/desktop/ui/tabs/sites/#include-in-context)
   4. Find the 'Login request' in the Sites or History tab
-  5. Right click it and select ["Flag as Context"](https://github.com/zaproxy/zap-core-help/wiki/HelpUiTabsSites#flag-as-context) / " Form-based Auth Login request"
+  5. Right click it and select ["Flag as Context"](/docs/desktop/ui/tabs/sites/#flag-as-context) / " Form-based Auth Login request"
   6. Check that the Username and Password parameters are set correctly - they almost certainly wont be!
   7. Find a string in a response which can be used to determine if the user is logged in or not
   8. Highlight this string, right click and select "Flag as Context" / " Logged in/out Indicator" as relevant - you only need to set one of these, not both
   9. Double click on the relevant Context node and navigate to the "Users" page - check the user details are correct, add any other users you want to use and enable them all
   10. Navigate to the Context "Forced User" page and make sure the user you want to test is selected
-  11. The ![](https://github.com/zaproxy/zap-core-help/wiki/images/fugue/forcedUserOff.png) "[Forced User Mode disabled - click to enable](https://github.com/zaproxy/zap-core-help/wiki/HelpUiTltoolbar#--forced-user-mode-on--off)" button should now be enabled
+  11. The ![](/docs/desktop/images/fugue/forcedUserOff.png) "[Forced User Mode disabled - click to enable](/docs/desktop/ui/tltoolbar/#--forced-user-mode-on--off)" button should now be enabled
   12. Pressing this button in will cause ZAP to resend the authentication request whenever it detects that the user is no longer logged in, ie by using the 'logged in' or 'logged out' indicator.
 
 Via the API the process is the same but using the API calls:
@@ -56,4 +56,4 @@ record a [Zest](https://github.com/zaproxy/zap-core-help/wiki/HelpAddonsZestZest
 
 Links:
 
-  * Help Concept: [Authentication](https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsAuthentication)
+  * Help Concept: [Authentication](/docs/desktop/start/features/authentication/)
