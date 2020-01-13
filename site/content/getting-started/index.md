@@ -194,7 +194,7 @@ The desktop also makes heavy use of context sensitive right click options, so ri
 ### The ZAP Marketplace
 The ZAP desktop has a plugin architecture which means that new functionality can be added dynamically.
 
-An [online marketplace](/addons) provides a wide range of ZAP add-ons which add many additional features to ZAP.
+An [online marketplace](/addons/) provides a wide range of ZAP add-ons which add many additional features to ZAP.
 
 The marketplace can be accessed from within ZAP via the ‘Manage Add-ons’ button on the toolbar:
 
