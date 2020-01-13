@@ -52,9 +52,7 @@ access your application then look at the requests in the History tab:
   * If there is a login request then look at the requests and response and see if you can work out why the login failed - you may need to change the request or even make multiple requests
 
 If you need to make multiple requests to login then the best option is to
-record a [Zest](https://github.com/zaproxy/zap-core-
-help/wiki/HelpAddonsZestZest) authentication script and to test this in
-isolation first.
+record a [Zest](https://github.com/zaproxy/zap-core-help/wiki/HelpAddonsZestZest) authentication script and to test this in isolation first.
 
 Links:
 

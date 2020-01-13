@@ -5,9 +5,7 @@ category: General Questions
 weight: 2
 ---
 
-ZAP supports both [active](https://github.com/zaproxy/zap-core-
-help/wiki/HelpStartConceptsAscan) and [passive](https://github.com/zaproxy
-/zap-core-help/wiki/HelpStartConceptsPscan) scanning.
+ZAP supports both [active](https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsAscan) and [passive](https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsPscan) scanning.
 
 By default ZAP comes with the following 'release' quality rules:
 
