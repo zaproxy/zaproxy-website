@@ -10,7 +10,7 @@
     </thead>
     {{ range sort $.Site.Data.addons "name" }}
     <tr>
-        <td>
+        <td id="addon-{{ .id }}">
             {{if .link }}
             <a href="{{ .link }}">{{ .name }}</a>
             {{else}}
