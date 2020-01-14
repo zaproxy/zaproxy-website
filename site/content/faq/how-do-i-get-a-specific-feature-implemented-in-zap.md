@@ -31,5 +31,4 @@ We, the ZAP core team, will do our best to support anyone who wants to
 contribute to ZAP. We often spend more time helping other people implement a
 feature than it would take us to implement it ourselves. We do this because we
 want to encourage people to get involved in ZAP, and we think its a good
-investment in our time. It doesnt matter to us why people want to get involved
-- if its just because someone else is paying them then thats fine.
+investment in our time. It doesnt matter to us why people want to get involved - if its just because someone else is paying them then thats fine.

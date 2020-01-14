@@ -5,4 +5,4 @@ category: General Questions
 weight: 2
 ---
 
-See <https://github.com/zaproxy/zap-core-help/wiki/HelpCmdline>
+Refer to [command line help page](/docs/desktop/cmdline/).

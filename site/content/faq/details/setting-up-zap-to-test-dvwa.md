@@ -79,31 +79,31 @@ function extractInputFieldValue(page, fieldName) {
 ```
 
 * Create "DVWA" context (or edit the "Default Context"):
-  * Context Name: `DVWAv1.9` <br>
-  * In "Include in Context" panel add: `\Qhttp://localhost/DVWA\E.*` <br>
-  * In "Exclude from Context" panel add:  <br>
-`\Qhttp://localhost/DVWA/login.php\E` <br>
-`\Qhttp://localhost/DVWA/logout.php\E` <br>
-`\Qhttp://localhost/DVWA/setup.php\E` <br>
-  * In "Authentication" panel, choose "Script-Based Authentication" [3], select the "DVWA" authentication script, load it and fill the fields: <br>
-Login URL: `http://localhost/DVWA/login.php` <br>
-CSRF Field: `user_token` <br>
-POST Data: `username={%username%}&password={%password%}&Login=Login&user_token={%user_token%}` <br>
-Logged in: `\Q<a href="logout.php">Logout</a>\E`  <br>
-Logged Out: `(?:Location: [./]*login\.php)|(?:\Q<form action="login.php" method="post">\E)` <br>
-  * In "Users" panel, add the user: <br>
-User Name: `Administrator` <br>
-Username: `admin` <br>
-Password: `password` <br>
-  * Close the dialogue. <br>
+  * Context Name: `DVWAv1.9` 
+  * In "Include in Context" panel add: `\Qhttp://localhost/DVWA\E.*` 
+  * In "Exclude from Context" panel add:  
+`\Qhttp://localhost/DVWA/login.php\E` 
+`\Qhttp://localhost/DVWA/logout.php\E` 
+`\Qhttp://localhost/DVWA/setup.php\E` 
+  * In "Authentication" panel, choose "Script-Based Authentication" [3], select the "DVWA" authentication script, load it and fill the fields: 
+Login URL: `http://localhost/DVWA/login.php` 
+CSRF Field: `user_token` 
+POST Data: `username={%username%}&password={%password%}&Login=Login&user_token={%user_token%}` 
+Logged in: `\Q<a href="logout.php">Logout</a>\E`  
+Logged Out: `(?:Location: [./]*login\.php)|(?:\Q<form action="login.php" method="post">\E)` 
+  * In "Users" panel, add the user: 
+User Name: `Administrator` 
+Username: `admin` 
+Password: `password` 
+  * Close the dialogue. 
 
-* Verify authentication is working, create seed for the spider and configure DVWA: <br>
-  * Enable "Force User Mode" [4] and access the main page (e.g. "http://localhost/DVWA") while proxying through ZAP, cookies should be disabled in the browser; It should show the main page thus the authentication is working and the spider has a seed; <br>
-  * Access "http://localhost/DVWA/security.php" and change the "Security Level" to "low"; <br>
-  * Disable the "Forced User Mode" (no longer needed). <br>
-  * Exclude from the context the following URLs, to prevent the spider from changing the "Security Level" and the password: <br>
-`\Qhttp://localhost/DVWA/security.php\E` <br>
-`\Qhttp://localhost/DVWA/vulnerabilities/csrf\E.*` <br>
+* Verify authentication is working, create seed for the spider and configure DVWA: 
+  * Enable "Force User Mode" [4] and access the main page (e.g. "http://localhost/DVWA") while proxying through ZAP, cookies should be disabled in the browser; It should show the main page thus the authentication is working and the spider has a seed; 
+  * Access "http://localhost/DVWA/security.php" and change the "Security Level" to "low"; 
+  * Disable the "Forced User Mode" (no longer needed). 
+  * Exclude from the context the following URLs, to prevent the spider from changing the "Security Level" and the password: 
+`\Qhttp://localhost/DVWA/security.php\E` 
+`\Qhttp://localhost/DVWA/vulnerabilities/csrf\E.*` 
 
 With the context and authentication set up, it's possible to spider/scan as user.
 

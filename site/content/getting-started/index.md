@@ -8,7 +8,7 @@ tags:
 
 This guide is intended to serve as a basic introduction for using ZAP to perform security testing, even if you don’t have a background in security testing. To that end, some security testing concepts and terminology is included but this document is not intended to be a comprehensive guide to either ZAP or security testing.
 
-It is also available as a [pdf](https://github.com/zaproxy/zaproxy/releases/download/v2.8.0/ZAPGettingStartedGuide-2.8.pdf) to make it easier to print.
+It is also available as a [pdf](/pdf/ZAPGettingStartedGuide-2.8.pdf) to make it easier to print.
 
 ### Security Testing Basics
 Software security testing is the process of assessing and testing a system to discover security risks and vulnerabilities of the system and its data. There is no universal terminology but for our purposes, we define assessments as the analysis and discovery of vulnerabilities without attempting to actually exploit those vulnerabilities. We define testing as the discovery and attempted exploitation of vulnerabilities.
@@ -91,9 +91,9 @@ The ZAP Desktop UI is composed of the following elements:
 
 {{< img "images/zap-full-screen.png" >}}
 
-While using ZAP, you can click **Help** on the Menu Bar or press F1 to access context-sensitive help from the ZAP Desktop User Guide. It is also available [online](/docs/desktop/ui/).
+While using ZAP, you can click **Help** on the Menu Bar or press F1 to access context-sensitive help from the ZAP Desktop User Guide. It is also available [online](/docs/desktop/).
 
-For more information about the UI, see [ZAP UI Overview](/docs/desktop/ui/overview) in the ZAP online documentation.
+For more information about the UI, see [ZAP UI Overview](/docs/desktop/ui/) in the ZAP online documentation.
 
 ZAP also supports a powerful API and command line functionality, both of which are beyond the scope of this guide.
 
@@ -135,11 +135,7 @@ To examine a tree view of the explored pages, click the **Sites** tab in the Tre
 ##### View Alerts and Alert Details
 The left-hand side of the Footer contains a count of the Alerts found during your test, broken out into risk categories. These risk categories are:
 
-- <img style="vertical-align:middle" src="getting-started/images/flag-red.png"> &nbsp;&nbsp;&nbsp; High
-- <img style="vertical-align:middle" src="getting-started/images/flag-orange.png"> &nbsp;&nbsp;&nbsp; Medium
-- <img style="vertical-align:middle" src="getting-started/images/flag-yellow.png"> &nbsp;&nbsp;&nbsp; Low
-- <img style="vertical-align:middle" src="getting-started/images/flag-blue.png"> &nbsp;&nbsp;&nbsp; Informational
-- <img style="vertical-align:middle" src="getting-started/images/flag-green.png"> &nbsp;&nbsp;&nbsp; False Positive
+{{< img "images/alert-icons.png" >}} 
 
 To view the alerts created during your test:
 
@@ -198,7 +194,7 @@ The desktop also makes heavy use of context sensitive right click options, so ri
 ### The ZAP Marketplace
 The ZAP desktop has a plugin architecture which means that new functionality can be added dynamically.
 
-An [online marketplace](/addons) provides a wide range of ZAP add-ons which add many additional features to ZAP.
+An [online marketplace](/addons/) provides a wide range of ZAP add-ons which add many additional features to ZAP.
 
 The marketplace can be accessed from within ZAP via the ‘Manage Add-ons’ button on the toolbar:
 

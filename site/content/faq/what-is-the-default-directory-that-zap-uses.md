@@ -7,8 +7,7 @@ weight: 2
 
 The default directory that ZAP uses depends on the OS.
 
-Note that you can override this using the -dir [command
-line](https://github.com/zaproxy/zap-core-help/wiki/HelpCmdline) option.
+Note that you can override this using the -dir [command line](/docs/desktop/cmdline/) option.
 
 ##  Windows 7 / 8
 

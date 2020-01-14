@@ -12,10 +12,11 @@ Again, this depends on the OS:
 There are 3 options on Windows:
 
   1. Via the desktop icon (assuming you selected this option during installation)
-  2. Via the 'Start' menu: * All Programs 
-    * OWASP 
-      * Zed Attack Proxy 
-        * `ZAP <version>`
+  2. Via the 'Start' menu:
+    * All Programs 
+      * OWASP 
+        * Zed Attack Proxy 
+          * `ZAP <version>`
   3. Via the 'zap.bat' command line script in the [installation directory](faq/where-is-zap-installed/)
 
 ##  Linux

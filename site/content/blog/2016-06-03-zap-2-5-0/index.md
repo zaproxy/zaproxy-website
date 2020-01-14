@@ -50,7 +50,7 @@ cover all of it.
 ZAP now maintains a wide range of statistics which can be invaluable for understanding what is really happening when interacting with large
 applications.  
 These are available via the API and can also be sent to a Statsd server.  
-For more information see <https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsStats>  
+For more information see the [Stats help page](/docs/desktop/start/features/stats/).  
   
 
 ###  Docker
