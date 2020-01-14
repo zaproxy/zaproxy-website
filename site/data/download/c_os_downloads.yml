@@ -34,4 +34,4 @@ info:
   - The Windows and Linux versions require Java 8 or higher to run.
   - The macOS version includes Java 8 - you can use the Linux or Cross Platform versions if you do not want to download this.
   - The installers are built using a [multi-platform installer builder](https://github.com/zaproxy/zaproxy/blob/develop/BUILDING.md).
-  - For more information about this release see the [release notes](https://github.com/zaproxy/zap-core-help/wiki/HelpReleases2_8_0).
+  - For more information about this release see the [release notes](/docs/desktop/releases/2.8.0/).

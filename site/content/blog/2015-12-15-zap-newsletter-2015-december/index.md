@@ -126,7 +126,7 @@ intercept the next request or response), the ‘Submit and continue’ button (w
 the ‘Bin’ button which will drop the message.  
   
 By default the global break point affects all messages - you can change it to just apply to messages that are [in
-scope](https://github.com/zaproxy/zap-core-help/wiki/HelpStartConceptsScope) via the options.  
+scope](/docs/desktop/start/features/scope/) via the options.  
   
 You may find that some applications continually make requests, making it difficult to find and intercept the one you are interested in.  
 If you encounter this situation then you can use custom break points.  

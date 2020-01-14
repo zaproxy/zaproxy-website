@@ -21,7 +21,7 @@ The bitly URL resolves to the relevant version file in the zap-admin github
 repo, eg [ZapVersions-2.8.xml](https://github.com/zaproxy/zap-admin/blob/master/ZapVersions-2.8.xml)
 
 This check will be done at most once per day and can be disabled via the
-Desktop UI [Check for Updates Options](https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsCheckforupdates) screen.
+Desktop UI [Check for Updates Options](/docs/desktop/ui/dialogs/options/checkforupdates/) screen.
 
 ###  Browser Launch Start Page
 

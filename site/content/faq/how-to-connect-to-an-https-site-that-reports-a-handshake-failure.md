@@ -9,8 +9,8 @@ weight: 4
 First of all try checking the 'Enable unsafe SSL/TLS renegotiation' checkbox
 in the Certificate Options screen and trying again.
 
-Second check if you've enabled SSLv2Hello in the outbound connection options:
-<https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsConnection>. If so, disable SSLv2Hello and
+Second check if you've enabled SSLv2Hello in the outbound [connection
+options](/docs/desktop/ui/dialogs/options/connection/). If so, disable SSLv2Hello and
 reload the content to see if the issue is resolved.
 
 If this doesn't help and an HTTPS site reports a handshake failure then try
@@ -51,7 +51,7 @@ Solution(s): Disable RC4 on the server.
 
 If you're in a corporate or business environment that normally requires the
 use of an Enterprise proxy you can have ZAP use it as well via the [Options :
-Connections screen](https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsConnection). If ZAP can't actually get to the
+Connections screen](/docs/desktop/ui/dialogs/options/connection/). If ZAP can't actually get to the
 destination (because use of the corporate proxy is required) this can
 sometimes manifest as an SSL/TLS negotiation failure.
 

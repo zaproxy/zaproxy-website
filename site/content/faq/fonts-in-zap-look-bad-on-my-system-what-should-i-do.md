@@ -11,7 +11,7 @@ This seems to come up on various Linux distros from time to time. For example:
 
 The following suggestions may let you work past the issue.
 
-  1. Try starting ZAP from the [command line](https://github.com/zaproxy/zap-core-help/wiki/HelpCmdline) instead of starting it from a shortcut (such as a Plasma/KDE button, dock icon, etc.)
+  1. Try starting ZAP from the [command line](/docs/desktop/cmdline/) instead of starting it from a shortcut (such as a Plasma/KDE button, dock icon, etc.)
   2. Try adding the following to `/etc/environment`:
 
     

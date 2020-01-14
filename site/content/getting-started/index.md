@@ -91,9 +91,9 @@ The ZAP Desktop UI is composed of the following elements:
 
 {{< img "images/zap-full-screen.png" >}}
 
-While using ZAP, you can click **Help** on the Menu Bar or press F1 to access context-sensitive help from the ZAP Desktop User Guide. It is also available [online](/docs/desktop/ui/).
+While using ZAP, you can click **Help** on the Menu Bar or press F1 to access context-sensitive help from the ZAP Desktop User Guide. It is also available [online](/docs/desktop/).
 
-For more information about the UI, see [ZAP UI Overview](/docs/desktop/ui/overview) in the ZAP online documentation.
+For more information about the UI, see [ZAP UI Overview](/docs/desktop/ui/) in the ZAP online documentation.
 
 ZAP also supports a powerful API and command line functionality, both of which are beyond the scope of this guide.
 

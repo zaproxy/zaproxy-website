@@ -10,7 +10,7 @@ You should make sure that you understand the potential vulnerability being repor
 
 Please [report](https://github.com/zaproxy/zaproxy/issues/new?labels=bug&template=Bug_report.md) any false positives that you identify supplying as much information as you can, while obfuscating any sensitive information. This will help us improve ZAP.
 
-Many scan rules support [Alert Thresholds](https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsScanpolicy#threshold) and specific [Rule Configuration options](https://github.com/zaproxy/zap-core-help/wiki/HelpUiDialogsOptionsRuleconfig) which allow you to configure some of the conditions under which alerts are reported. Check the help for the relevant rule - this is included with ZAP and is also available [online](https://github.com/zaproxy/zap-extensions/wiki).
+Many scan rules support [Alert Thresholds](/docs/desktop/ui/dialogs/scanpolicy/#threshold) and specific [Rule Configuration options](/docs/desktop/ui/dialogs/options/ruleconfig/) which allow you to configure some of the conditions under which alerts are reported. Check the help for the relevant rule - this is included with ZAP and is also available [online](https://github.com/zaproxy/zap-extensions/wiki).
 
 If you are using ZAP manually then you can double click alerts in the desktop UI and change the confidence level to False Positive.
 
