@@ -40,7 +40,7 @@ although this will not include the help for optional add-ons that you have insta
 
 Look in the zap.log file to see if any errors have been logged. This is either
 in the directory you specified via the '-dir' [command line](/docs/desktop/cmdline/) option or in
-the [default directory](faq/what-is-the-default-directory-that-zap-uses/) if you didnt specify one.
+the [default directory](/faq/what-is-the-default-directory-that-zap-uses/) if you didnt specify one.
 
 If there are error messages that appear to indicate a Java memory problem then
 try increasing the memory available via the appropriate command line script

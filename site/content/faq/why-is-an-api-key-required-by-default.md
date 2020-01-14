@@ -29,4 +29,4 @@ can disable it via the UI or via the command line option:
 
 By default ZAP will now also only allow connections from the local machine. To
 connect to ZAP remotely see the FAQ: [How can I connect to ZAP
-remotely?](faq/how-can-i-connect-to-zap-remotely/)
+remotely?](/faq/how-can-i-connect-to-zap-remotely/)
