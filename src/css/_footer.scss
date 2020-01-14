@@ -26,3 +26,12 @@
   width: 28px;
   height: 28px;
 }
+
+@media screen and (max-width: 825px) {
+  .site-footer {
+    display: none;
+  }
+  .footer-social {
+    display: none;
+  }
+}
