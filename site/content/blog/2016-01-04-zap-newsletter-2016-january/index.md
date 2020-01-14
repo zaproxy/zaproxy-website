@@ -22,11 +22,11 @@ Steve Springett ([@stevespringett](https://twitter.com/stevespringett)) has impl
 forwards, so please have a play with it and get in touch with Steve and/or myself if you might be interested in keeping it going. Don't worry if
 you don't know much about the ZAP side of things, we can help with that!  
   
-A new release of the ZAP jenkins plugin is now available. You can download it here : <https://wiki.jenkins-
-ci.org/display/JENKINS/ZAProxy+Plugin>.  
+A new release of the ZAP jenkins plugin is now available. You can download it here : 
+<https://wiki.jenkins-ci.org/display/JENKINS/ZAProxy+Plugin>.  
 This release implements the form based authentication method and fixes some issues.  
   
-![](https://lh6.googleusercontent.com/proxy/-slZid1Luv_Fzl9i_1r7qniCTrJ1UsYr70AdKr3OdKJ_Dw0GHUL17JWXVqtFiiqAk4oS83mhnfs2eX0NtSdd4OKSXuFUQSonFS4TyXVYaKIG=s0-d)
+{{< img "images/zapbot.png" >}}
 
 Do you want to know things like:
 
@@ -44,8 +44,8 @@ _This section details add-ons that have been added or significantly updated sinc
 Add-ons are available to download and install within ZAP.  
 Just click on the ‘Manage Add-ons’ toolbar button and select the Marketplace tab:  
   
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-extensions/images/zap-screenshot-browse-addons.png)  
-  
+![](/img/zap-screenshot-browse-addons.png)
+
 Note that all add-ons on the Marketplace are completely free and open source and anyone can publish add-ons to it - see the [zap-extensions
 wiki](https://github.com/zaproxy/zap-extensions/wiki/AddOnDevelopment) for details.  
   
@@ -67,7 +67,7 @@ dub this the XCOLD Info Leak ( **X** - **C** hr **O** me **L** ogger- **D** ata)
 It all started rather innocently when an item in the [Firefox 43 release notes](https://www.mozilla.org/en-US/firefox/43.0/releasenotes/) caught
 my eye:  
 
-{{< img "images/firefox-43.png" >}}  
+{{< img "images/firefox-43.png" >}}
 
 With my penetration tester hat on all I could think was: “Huh? What? I can get server logs in a client? Sweet, I can think of all sorts of Low
 to Pwned scenarios … Yay!”  
@@ -88,58 +88,16 @@ Basically it boils down as follows:
 
 Curious to see if this was already in Production use I headed over to Shodan, to see what there was to see. The following images are courtesy of
 Shodan, [via www.shodan.io](http://www.shodan.io) .  
-  
-![](https://lh6.googleusercontent.com/qwbW5iJ258xy4yQSidnFGN-
-nYlkmtkcIYqUR3BHWFtlIgB0MsHjdEjZoPTDn3czOQav4GgWsqnRMPzcHsFRPJdFTPcJ4iAdLJYw7HCuoRDSTvFBSteXLj0uwXkqf10TNVbl0x_oN)  
+
+{{< img "images/shodan1.png" >}}
+
 Ok so X-ChromeLogger-Data is in use. Not extensively but the numbers are increasing. The image here is from 2015-12-29, I had previously poked
 around on this topic around the 18th. Though I don’t remember the specific number I’d previously queried there seems to have been an increase in
 a short period and over the holidays.  
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-![](https://lh3.googleusercontent.com/HysgifbZH6qamxlltS1H5dSDSR87ePpVgUhby8PtFzi7VQVtvOotUuunippaenbYxxPRFokl9cwbkKp7D_uylgeKe-
-lb3_OVNdDIKDRKj8Cz6RVCAl42ZE_q4yOYXB47_m9DWUks)  
+{{< img "images/shodan2.png" >}}
   
 It also seems that X-ChromePhp-Data is in use to a much lesser extent. So off I go to see what kind of data people might be exposing.  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
 Keep in mind the following findings are based on public data, I’m not revealing anything here that the site(s) haven’t already revealed to the
 world.  
@@ -149,36 +107,30 @@ Below I’ve just copied the Base64 encoded header values from the Shodan result
   
 _Alternative 1_ : Proxy your shodan result browsing through ZAP, select the base64 string and use the “Encode/Decode/Hash” context menu:  
   
+{{< img "images/zap-xcold-1.png" >}}
   
-![](https://lh4.googleusercontent.com/7duKh55kYroX-
-CWy4XAN0E0rfeGJtXIUT63B35fqv7gTaEi8rCzxcudYihLBMDRXWk8f5cKkA6BQCy0s3fCbTogzHR9jLSGblt3BGl2IaGpAR7jhhnB455QN3ebzNLcTtL3yfPEv)  
-  
-  
-![](https://lh3.googleusercontent.com/6ESzUNUtoKiaUQToOZfVr3xHiJdqIsou2n0FIa_N4Cm9wYo0eWs0OhEgiVsAF3vtzRp_fwzdvn82qe7_pKXoHcYQEp_yUFb1uXQa3bbCQaVo8
--VVfgZiv_-ebUbivAVIqM_lEOfj)  
+{{< img "images/zap-xcold-2.png" >}}
   
 _Alternative 2_ : You could also pop the dev tools console (F12) and do a atob(“”); and hit enter. For example atob(“ZW5jb2RlIHRoaXM=”); returns
 encode this. I used the online service below since the dev tools console doesn’t line wrap :(  
   
 Picking the first X-ChromePhp-Data shodan result I got the following:  
-![](https://lh6.googleusercontent.com/VO0dtDNMIZzLdowbzON6FYkwd9AbRdobWkxAGgG_GMqp8oJlK3e5n7aVSv_dvfXBggZjcqpPCRTJ6t6KC_Pa4yAB0F858Iq_DBEPSfM3chQuol54e8rXOgBmbyp1ND273SECkjRF)
+{{< img "images/zap-xcold-3.png" >}}
 Ok not terribly revealing, however it does give the entire disk location of AppController.php. Might be able to leverage that in other attacks
 or use the knowledge to social engineer something.  
   
 Here’s another example that’s really verbose, note Undefined index: admin references:  
-![](https://lh3.googleusercontent.com/zS-
-deYBgYhMewxEReVxltt4bqNgzikvCjtCNiEVVb9tlU5M2PbsD15_WC2MQaJ2dUcjCeKCZpTDMW__9U87SxziaBDoa2R9nEawy67mU7H2QPBHl6Trfjc-RZ3LGZjKGKsFZzl3z)  
+{{< img "images/zap-xcold-4.png" >}}
   
 Here’s another, note the failures in processing various tokens, PREBODY, and HTTP_USER_AGENT. Those details might lead a pentester to another
 useful finding such as UA specific response or UA injection of some sort.  
-![](https://lh6.googleusercontent.com/I61qBz7TQWtFTIlgBFALh4hIGwONtCqq9TWRoK6ZBS7astFb1uu_Raj24kkgT62ww86fUQyoxJxCPVBN8Gp43L46uyXXxVi7vk-
-CIHB2ahzqjrcUkYHhg9MceX6Z1O-_wn6EEKqk) Here’s one that appears to be a WordPress plugin:  
-![](https://lh6.googleusercontent.com/KxJwzpHPkVwK1Khza1qMBYczdm277aqQ75RRtskCjI-t2yHnJ5xC2Mli32M-
-z24ROhXlRIrUg0Me2V0VxNCd314LU8vBKdeddmOckBhNd05r6A61LAk4ixAISjvs76bifNcSeM7_) Here’s what seems to be a windows host running some WordPress
-gallery:  
-![](https://lh4.googleusercontent.com/MazThh3B80XbiE724KGi73e3GXlwtZ3Rj2c1mrSL0LPUNC9D_5C_3SDF9RlSZfPWEeyVHYQT15dc1FCuqU-
-KVpHXpngHsW3pOw4M5-2a4oSr3s_zQylLaq9-lx8N5d6rMYrpTKoq) To top it off, here’s an example leaking raw SQL details:  
-![](https://lh3.googleusercontent.com/CLUX4zSSOjpbYhfRAhlXbmFP3rKMV9gZ5ZATOkfb2Gk0WUC4tS7YLKwoPip0dZPRGCSA4KFtqSzdjIwOmEICGBkLngCeZSAsaepWe_wWRCBilTPaQ2KPubP5bbmT5Anf2RlJOlhr)
+{{< img "images/zap-xcold-5.png" >}}
+{{< img "images/zap-xcold-6.png" >}}
+
+Here’s what seems to be a windows host running some WordPress gallery:
+{{< img "images/zap-xcold-7.png" >}}
+{{< img "images/zap-xcold-8.png" >}}
+  
 I guess that’s enough examples. As you can see a ton of information is and can be leaked via this functionality.  
   
 While the benefits to a developer are obvious I would suggest that the following considerations or implementation choices be made if using the
@@ -207,7 +159,7 @@ OWASP-Ottawa-20160125.pdf>
 
 _Each month we introduce you to one of the many ZAP contributors._  
   
-![](//2.bp.blogspot.com/-7E149TLrNSg/VoqAUkQGYzI/AAAAAAAAAfU/SthFUAcO528/s320/pbrito%2Bfrom%2B2016-01-04%2B14-20-26.png) 
+{{< img "images/pbrito.png" >}}
 
 **Q: Who are you?**
 

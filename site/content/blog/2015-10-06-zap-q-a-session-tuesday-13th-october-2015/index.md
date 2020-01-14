@@ -16,16 +16,15 @@ Please leave feedback via this [Google Form](https://docs.google.com/forms/d/1Kx
   
 Some links to resources mentioned in the session or related to the questions:  
 
-  * [The DOM XSS add-on](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsDomxssDomxss) * 
-  * [The Context Alert Filters add-on](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAlertFiltersAlertFilter) * 
-  * [The Revisit Add-on](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsRevisitRevisit) * 
-  * [The Access Control add-on](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAccessControlConcepts) * 
-  * [The vulnerabilities detected by ZAP](faq/what-does-zap-test-for/)
-  * [How to set up form based authentication](faq/how-can-zap-automatically-authenticate-via-forms/)
-  * [The community-scripts repo](https://github.com/zaproxy/community-scripts)
-
+* [The DOM XSS add-on](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsDomxssDomxss)
+* [The Context Alert Filters add-on](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAlertFiltersAlertFilter)
+* [The Revisit Add-on](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsRevisitRevisit) 
+* [The Access Control add-on](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAccessControlConcepts) 
+* [The vulnerabilities detected by ZAP](faq/what-does-zap-test-for/)
+* [How to set up form based authentication](faq/how-can-zap-automatically-authenticate-via-forms/)
+* [The community-scripts repo](https://github.com/zaproxy/community-scripts)
 * Note that you can download add-ons from within ZAP via the [Marketplace](https://github.com/zaproxy/zap-extensions/wiki).  
-  
+
   
 The original announcement is below for reference:  
   
