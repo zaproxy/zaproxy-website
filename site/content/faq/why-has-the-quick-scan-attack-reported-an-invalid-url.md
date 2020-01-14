@@ -29,5 +29,5 @@ using the Quick Start Attack button was successful.
 ##  HTTPS Sites
 
 Are sometimes impacted by items covered in the [SSL
-FAQ](faq/how-to-connect-to-an-https-site-that-reports-a-handshake-failure/) resulting in
+FAQ](/faq/how-to-connect-to-an-https-site-that-reports-a-handshake-failure/) resulting in
 failures when using Quick Scan.

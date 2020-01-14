@@ -13,9 +13,9 @@ else has volunteered.
 
 However you can help :)
 
-[Get in touch](get-involved/) with us if you want to translate ZAP into another
+[Get in touch](/get-involved/) with us if you want to translate ZAP into another
 language, we'd love to hear from you!
 
 Note that new language files may be available after a new ZAP release has been
-made available. Check the [ZAP Marketplace](addons/) to see if there is a new version of
+made available. Check the [ZAP Marketplace](/addons/) to see if there is a new version of
 "Core Language Files" add-on that includes your language.
