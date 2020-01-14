@@ -30,8 +30,7 @@ And apologies for the delay - 2.4.3 took longer than expected, and last week I w
 ##  News
 
 The big news is that ZAP 2.4.3 is now available to [download](https://github.com/zaproxy/zaproxy/wiki/Downloads)  
-This is a development and bugfix release, for more details of all of the changes see the [release notes](https://github.com/zaproxy/zap-core-
-help/wiki/HelpReleases2_4_3).  
+This is a development and bugfix release, for more details of all of the changes see the [release notes](/docs/desktop/releases/2.4.3/).  
   
 In other news, you can now buy ZAP stickers on [StickerMule](https://www.stickermule.com/uk/user/1070684077/stickers)  
 We don't make any money from these stickers - they are just for promoting ZAP:)  
@@ -115,8 +114,7 @@ pressing it will change the colour to red and means that all requests and respon
 core-help/images/16/105r.png) Break on all requests - the icon turns red when active  
 ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/106.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-
 core-help/images/16/106r.png) Break on all responses - the icon turns red when active  
-All break point options are configured via the [Options/Breakpoints screen](https://github.com/zaproxy/zap-core-
-help/wiki/HelpUiDialogsOptionsBreakpoints).  
+All break point options are configured via the [Options/Breakpoints screen](/docs/desktop/ui/dialogs/options/breakpoints/).  
   
 Once a break point is hit the request or response that was intercepted is displayed in the ‘Break’ tab:  
 ![](//3.bp.blogspot.com/-b66w6TrApTE/VnAN-G5Z5hI/AAAAAAAAAew/8laBgXmCf5Y/s640/Break%2Btab%2BScreenshot%2Bfrom%2B2015-12-15%2B12-53-54.png)  

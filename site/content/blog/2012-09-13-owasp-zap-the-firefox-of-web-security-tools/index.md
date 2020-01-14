@@ -39,7 +39,7 @@ some other tools. There are many security tools that are open source but are sti
 can see how these products work it is often difficult to change them or influence their direction. Anyone can get involved with the ZAP
 development – once someone has shown that they can produce good quality code and conform to ZAP guidelines then they can get commit access!
 There are plenty of opportunities for non coders to get involved too – testing, documentation, training videos, translating – all contributions
-are welcomed and [credited](http://code.google.com/p/zaproxy/wiki/HelpCredits).  
+are welcomed and [credited](/docs/desktop/credits/).  
 
 ##  An Extensible platform for testing web applications
 
