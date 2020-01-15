@@ -19,7 +19,7 @@ But you can also download and install:
   * [Alpha Active Scan Rules](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAscanrulesAlphaAscanalpha)
   * [Alpha Passive Scan Rules](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsPscanrulesAlphaPscanalpha)
 
-from the [ZAP Marketplace](https://github.com/zaproxy/zap-extensions/wiki).
+from the [ZAP Marketplace](/addons/).
 
 And there are also these scripts in the [community
 scripts](https://github.com/zaproxy/community-scripts) repo:

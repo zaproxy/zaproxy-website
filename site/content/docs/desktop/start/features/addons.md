@@ -36,8 +36,8 @@ To make an add-on available to ZAP it must be in one of the following locations:
 
 ## See also
 
-|   |                                            |                                       |
-|---|--------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)           | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/)  | provided by ZAP                       |
-|   | https://github.com/zaproxy/zap-extensions/ | to browse the add-ons online          |
+|   |                                           |                                       |
+|---|-------------------------------------------|---------------------------------------|
+|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
+|   | [Marketplace](/addons/)                   | to browse the add-ons online          |
