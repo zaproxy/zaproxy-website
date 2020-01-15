@@ -230,57 +230,70 @@ California in Santa Monica on January 25 9:00am-5:00pm: <http://sched.co/4Ouf>
 ##  Featured Contributor: Kingthorin
 
 _And each month we plan to introduce you to one of the many ZAP contributors._  
- **Q: Who are you?  
-A: **Rick (aka [Kingthorin](https://github.com/kingthorin)). AppSec guy, breaker of things.  
+**Q: Who are you?**
+
+**A:** Rick (aka [Kingthorin](https://github.com/kingthorin)). AppSec guy, breaker of things.  
   
- **Q: Where are you based?  
-A: **Canada!  
+**Q: Where are you based?**
+
+**A:** Canada!  
   
- **Q: What do you do in your day job?  
-A: **In my day job I break stuff: I do Vulnerability Assessment and Penetration Testing. Developers or SysAdmins having a bad day is generally a
+**Q: What do you do in your day job?**
+
+**A:** In my day job I break stuff: I do Vulnerability Assessment and Penetration Testing. Developers or SysAdmins having a bad day is generally a
 good day for me.  
   
-**Q: Why do you contribute to ZAP?  
-A: **It's different from my day job. I spend all day figuring out how other people's systems and apps are or can be broken. Contributing to ZAP
+**Q: Why do you contribute to ZAP?**
+
+**A:** It's different from my day job. I spend all day figuring out how other people's systems and apps are or can be broken. Contributing to ZAP
 gives me a chance to build something. The contrast is nice to have, plus it forces me to grow in different ways and see technology from a
 different angle.  
   
- **Q: How do you contribute to ZAP?  
-A: **I do some development work, take part in the user and dev forums. Ask lots of questions, rock the boat (a little ;).  
+**Q: How do you contribute to ZAP?**
+
+**A:** I do some development work, take part in the user and dev forums. Ask lots of questions, rock the boat (a little ;).  
   
- **Q: What would you like to contribute in the future?  
-A: **Hmmmm that's an interesting question. I have ideas for a few different extensions that I haven't had time to tackle yet. Hopefully in late
+**Q: What would you like to contribute in the future?**
+
+**A:** Hmmmm that's an interesting question. I have ideas for a few different extensions that I haven't had time to tackle yet. Hopefully in late
 2015 or sometime in 2016 I'll talk myself into tackling those.  
   
- **Q: What do you like about the ZAP community?  
-A: **Everyone is supportive and encouraging!  
+**Q: What do you like about the ZAP community?**
+
+**A:** Everyone is supportive and encouraging!  
   
- **Q: What do you get out of contributing?  
-A: **I get to make a great Open Source tool do things I can use in my day job, and help others to do things they need in their jobs. It also
+**Q: What do you get out of contributing?**
+
+**A:** I get to make a great Open Source tool do things I can use in my day job, and help others to do things they need in their jobs. It also
 forces me to learn about things like Git/Github, and simple web development tasks in generating content for ZAP PoC testing, etc. Of course it
 helps me learn about Java and software development itself.  
   
- **Q: Do you have any advice for people who would like to contribute to ZAP?  
-A: **Just do it! Jump in with both feet, deep end of the pool. There's no time like the present. People here will help you, support you,
+**Q: Do you have any advice for people who would like to contribute to ZAP?**
+
+**A:** Just do it! Jump in with both feet, deep end of the pool. There's no time like the present. People here will help you, support you,
 encourage you, and in a good way (a great way) challenge you. There are so many ways you can contribute -[ Community
 Scripts](https://github.com/zaproxy/community-scripts/), fixing or enhancing code based on[ issue
 tracker](https://github.com/zaproxy/zaproxy/issues) on Github (or your own ideas), developing your own[ extensions](https://github.com/zaproxy
 /zap-extensions), writing tutorials, making training videos, etc.  
   
- **Q: Do you contribute to any other open source projects?  
-A: **I've also contributed to the[ OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project) and[
+**Q: Do you contribute to any other open source projects?**
+
+**A:** I've also contributed to the[ OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project) and[
 OSSTMM](http://www.isecom.org/research/osstmm.html) in the past. As for other Open Source software projects, no yet, though because of ZAP I
 have plans and a few ideas floating around the back of my head.  
   
- **Q: What do you do outside of work?  
-A: **Outside of work I like camping, gaming (I started playing WoW on day one of release and still play), geocaching, and cooking.  
+**Q: What do you do outside of work?**
+
+**A:** Outside of work I like camping, gaming (I started playing WoW on day one of release and still play), geocaching, and cooking.  
   
- **Q: What do you [most] dislike about the ZAP development?  
-A: **There really isn't much I dislike about it. Most of the things I dislike on are my side of the equation. Not having enough time and not
+**Q: What do you [most] dislike about the ZAP development?**
+
+**A:** There really isn't much I dislike about it. Most of the things I dislike on are my side of the equation. Not having enough time and not
 actually being a Java dev.  
   
- **Q: What do you think could be done [a lot] better?  
-A: **From my point of view: The one thing I think we need to get better at is promoting scanners Alpha > Beta > Release.  
+**Q: What do you think could be done [a lot] better?**
+
+**A:** From my point of view: The one thing I think we need to get better at is promoting scanners Alpha > Beta > Release.  
   
 Sadly I don't have any ideas for solutions, but it would be really nice if we could somehow gather stats or get users to provide feedback on
 usage, false positives, etc. I often wonder if we have 100s or 1000s of users, how often they use ZAP (everyday, every project, every

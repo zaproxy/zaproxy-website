@@ -21,8 +21,8 @@ addresses to connect to the ZAP API using:
     -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
 
 You will also need to set or disable the API key - see the FAQ: [Why is an API
-key required by default?](faq/why-is-an-api-key-required-by-default/)
+key required by default?](/faq/why-is-an-api-key-required-by-default/)
 
 If you still have problems connecting then look in the `zap.log` file for any
 error messages as per the FAQ: [Somethings not working - what should I
-do?](faq/somethings-not-working-what-should-i-do/)
+do?](/faq/somethings-not-working-what-should-i-do/)

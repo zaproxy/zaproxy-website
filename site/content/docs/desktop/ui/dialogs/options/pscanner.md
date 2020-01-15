@@ -11,9 +11,8 @@ weight: 23
 This screen allows you to configure the [passive
 scanner](/docs/desktop/start/features/pscan/).
 
-## Configuration option explanation
+## Configuration Options
 
-|                                                                                                                                                                                                                       Configuration Options                                                                                                                                                                                                                        ||||
 |                         Field                         |                                                                                                                                                Details                                                                                                                                                 |  Default   |                                       Config File                                       |
 |-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-----------------------------------------------------------------------------------------|
 | Only scan messages in scope                           | Sets whether or not the passive scan should be performed only on messages that are [in scope](/docs/desktop/start/features/scope/).                                                                                                                                                                    | Deselected | Key: `pscans.scanOnlyInScope` Values: `true` or `false`                                 |

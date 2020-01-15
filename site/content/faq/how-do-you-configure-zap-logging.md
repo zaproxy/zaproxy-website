@@ -6,7 +6,7 @@ weight: 4
 ---
 
 ZAP logs to a file called "zap.log" in the ZAP ['home'
-directory](faq/what-is-the-default-directory-that-zap-uses/).
+directory](/faq/what-is-the-default-directory-that-zap-uses/).
 
 The logging is configured by the
 [log4j.properties](https://github.com/zaproxy/zaproxy/blob/develop/src/xml/log4j.properties)

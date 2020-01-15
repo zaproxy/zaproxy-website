@@ -13,7 +13,7 @@ authors:
 
 ZAP 2.5.0 is now available: <https://github.com/zaproxy/zaproxy/wiki/Downloads>  
   
-This release contains a large number of enhancements and fixes which are detailed in the release notes: <https://github.com/zaproxy/zap-core-help/wiki/HelpReleases2_5_0>  
+This release contains a large number of enhancements and fixes which are detailed in the [release notes](/docs/desktop/releases/2.5.0/).  
   
 
 ###  API changes
