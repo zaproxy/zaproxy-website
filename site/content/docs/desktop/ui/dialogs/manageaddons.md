@@ -28,7 +28,7 @@ You can install any of the add-ons listed - typically add-ons are dynamically ad
 ## Manual loading
 
 When working in a disconnected environment, you may want to manually download and install an add-on.   
-All add-ons in the marketplace can be downloaded from the release page on [GitHub](https://github.com/zaproxy/zap-extensions/releases). Downloaded add-ons can be loaded to ZAP via the [File](/docs/desktop/ui/tlmenu/file/) menu.
+All add-ons in the marketplace can be downloaded from the [Marketplace page](/addons/). Downloaded add-ons can be loaded to ZAP via the [File](/docs/desktop/ui/tlmenu/file/) menu.
 
 ## Accessed via
 
