@@ -58,26 +58,22 @@ The following new add-ons have been recently released:
 
 ###  DOM XSS - Alpha
 
-An Active Scan rule for detecting DOM XSS vulnerabilities.  
+An Active Scan rule for [detecting DOM XSS](/docs/desktop/addons/dom-xss-active-scan-rule/) vulnerabilities.  
 It launches browser windows and sends attack payloads to all of the relevant DOM elements.  
-<https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsDomxssDomxss>  
   
 
 ###  Context Alert Filters - Alpha
 
-Context Alert Filters allow you to automatically override the risk levels of any alerts raised by the active and passive scan rules within a
-context.  
-<https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAlertFiltersAlertFilter>  
+[Context Alert Filters](/docs/desktop/addons/alert-filters/) allow you to automatically override the risk levels of any alerts raised by the active and passive scan rules within a context.  
   
 
 ###  Revisit - Alpha
 
 Have you ever wanted to be able to browse an application you tested with ZAP at a specific time, perhaps when you dont have access to it, or
 after its been changed in some way? If so then this add-on is for you!  
-The add-on allows you to instruct ZAP to return content from the ZAP history between specified dates rather than forwarding the requests to the
+The [add-on](/docs/desktop/addons/revisit/) allows you to instruct ZAP to return content from the ZAP history between specified dates rather than forwarding the requests to the
 site. This allows you to apparently browse and use a website that you no longer have access to. It also allows you to see what it looked like at
 between specific times, which is useful if the application has since changed.  
-<https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsRevisitRevisit>  
 
 ##  New Features
 

@@ -48,13 +48,13 @@ Just click on the ‘Manage Add-ons’ toolbar button and select the Marketplace
 Note that all add-ons on the Marketplace are completely free and open source and anyone can publish add-ons to it - see the [zap-extensions
 wiki](https://github.com/zaproxy/zap-extensions/wiki/AddOnDevelopment) for details.  
   
-New versions of the [Active scan rules (beta)](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAscanrulesBetaAscanbeta) and SAML add-
+New versions of the [Active scan rules (beta)](/docs/desktop/addons/active-scan-rules-beta/) and SAML add-
 ons have been released - these include security fixes so if you use them then please update them asap.  
   
 And a new version of the Wappalyzer (technology detection) add-on has been released which includes the latest changes from the Wappalyzer
 project (<https://wappalyzer.com/>)  
   
-A new [Community Scripts](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsCommunityScriptsCommunityScripts) add-on has been released.
+A new [Community Scripts](/docs/desktop/addons/community-scripts/) add-on has been released.
 This is a packaged version of the community-scripts repo (<https://github.com/zaproxy/community-scripts>) which is a collection of ZAP scripts
 that anyone can easily contribute to. Please contribute any scripts you create for your own use using pull requests!  
 Also note that version 1 of this add-on contained a bug which can result in your ZAP configuration being lost, so if you downloaded that one

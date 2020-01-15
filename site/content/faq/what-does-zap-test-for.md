@@ -9,15 +9,15 @@ ZAP supports both [active](/docs/desktop/start/features/ascan/) and [passive](/d
 
 By default ZAP comes with the following 'release' quality rules:
 
-  * [Release Active Scan Rules](https://github.com/zaproxy/zap-core-help/wiki/HelpAddonsAscanrulesAscanrules)
-  * [Release Passive Scan Rules](https://github.com/zaproxy/zap-core-help/wiki/HelpAddonsPscanrulesPscanrules)
+  * [Release Active Scan Rules](/docs/desktop/addons/active-scan-rules/)
+  * [Release Passive Scan Rules](/docs/desktop/addons/passive-scan-rules/)
 
 But you can also download and install:
 
-  * [Beta Active Scan Rules](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAscanrulesBetaAscanbeta)
-  * [Beta Passive Scan Rules](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsPscanrulesBetaPscanbeta)
-  * [Alpha Active Scan Rules](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAscanrulesAlphaAscanalpha)
-  * [Alpha Passive Scan Rules](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsPscanrulesAlphaPscanalpha)
+  * [Beta Active Scan Rules](/docs/desktop/addons/active-scan-rules-beta/)
+  * [Beta Passive Scan Rules](/docs/desktop/addons/passive-scan-rules-beta/)
+  * [Alpha Active Scan Rules](/docs/desktop/addons/active-scan-rules-alpha/)
+  * [Alpha Passive Scan Rules](/docs/desktop/addons/passive-scan-rules-alpha/)
 
 from the [ZAP Marketplace](https://github.com/zaproxy/zap-extensions/wiki).
 

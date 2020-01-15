@@ -4,7 +4,7 @@
   description: Adds a set of tools for testing access control in web applications.
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAccessControlConcepts
+  link: /docs/desktop/addons/access-control-testing/
   date: 2018-11-02
   version: 5
 
@@ -13,7 +13,7 @@
   description: Allows you to automate the changing of alert risk levels.
   author: ZAP Dev Team
   status: release
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAlertFiltersAlertFilter
+  link: /docs/desktop/addons/alert-filters/
   date: 2019-09-30
   version: 9
 
@@ -22,7 +22,7 @@
   description: Allows you to generate reports for alerts you specify in pdf or odt format
   author: Talsoft SRL
   status: beta
-  link:
+  link: /docs/desktop/addons/report-alert-generator/
   date: 2017-11-27
   version: 14
 
@@ -31,7 +31,7 @@
   description: A simple extension to view all notes in one pane.
   author: David Vassallo
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAllinonenotesAllinonenotes
+  link: /docs/desktop/addons/all-in-one-notes/
   date: 2019-06-18
   version: 1
 
@@ -40,7 +40,7 @@
   description: Adds support for AMF messages
   author: ZAP Dev Team
   status: alpha
-  link:
+  link: /docs/desktop/addons/amf-support/
   date: 2017-11-28
   version: 2
 
@@ -49,7 +49,7 @@
   description: The release quality Active Scanner rules
   author: ZAP Dev Team
   status: release
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_ascanrules
+  link: /docs/desktop/addons/active-scan-rules/
   date: 2019-06-07
   version: 33
 
@@ -58,7 +58,7 @@
   description: The alpha quality Active Scanner rules
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAscanrulesAlphaAscanalpha
+  link: /docs/desktop/addons/active-scan-rules-alpha/
   date: 2019-10-31
   version: 26
 
@@ -67,7 +67,7 @@
   description: The beta quality Active Scanner rules
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAscanrulesBetaAscanbeta
+  link: /docs/desktop/addons/active-scan-rules-beta/
   date: 2019-07-11
   version: 26
 
@@ -85,7 +85,7 @@
   description: Records logged in/out statistics for all contexts in scope.
   author: ZAP Core Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAuthstatsAuthStats
+  link: /docs/desktop/addons/authentication-statistics/
   date: 2017-11-28
   version: 1
 
@@ -94,7 +94,7 @@
   description: Provides a BeanShell Console
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsBeanshellBeanshell
+  link: /docs/desktop/addons/bean-shell/
   date: 2017-11-27
   version: 6
 
@@ -103,7 +103,7 @@
   description: Adds an option to render HTML responses like a browser
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsBrowserViewBrowserView
+  link: /docs/desktop/addons/browser-view/
   date: 2017-11-28
   version: 5
 
@@ -112,7 +112,7 @@
   description: Forced browsing of files and directories using code from the OWASP DirBuster tool
   author: ZAP Dev Team
   status: beta
-  link:
+  link: /docs/desktop/addons/forced-browse/
   date: 2019-06-07
   version: 8
 
@@ -121,7 +121,7 @@
   description: Bug Tracker extension.
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsBugtrackerBugtracker
+  link: /docs/desktop/addons/bug-tracker/
   date: 2017-11-28
   version: 2
 
@@ -130,7 +130,7 @@
   description: Allows the user to view a call graph of the selected resources
   author: Colm O'Flaherty
   status: alpha
-  link: addons/alpha/callgraph
+  link: /docs/desktop/addons/call-graph/
   date: 2017-11-28
   version: 4
 
@@ -139,7 +139,7 @@
   description: Fingerprint web applications
   author: ZAP Dev Team
   status: alpha
-  link:
+  link: /docs/desktop/addons/wafp-extension/
   date: 2017-11-28
   version: 2
 
@@ -148,7 +148,7 @@
   description: Includes request and response data in XML reports and provides the ability to upload reports directly to a Code Dx server
   author: Code Dx, Inc.
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsCodedxCodedx
+  link: /docs/desktop/addons/code-dx/
   date: 2019-08-23
   version: 8
 
@@ -157,7 +157,7 @@
   description: Useful ZAP scripts written by the ZAP community.
   author: ZAP Community
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsCommunityScriptsCommunityScripts
+  link: /docs/desktop/addons/community-scripts/
   date: 2018-06-19
   version: 8
 
@@ -166,7 +166,7 @@
   description: Ability to add, edit or remove payloads that are used i.e. by active scanners
   author: ZAP Core Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsCustompayloadsCustompayloads
+  link: /docs/desktop/addons/custom-payloads/
   date: 2019-10-31
   version: 0.9.0
 
@@ -175,7 +175,7 @@
   description: New HTML report module allows users to customize report content.
   author: Chienli Ma
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsCustomreportCustomreport
+  link: /docs/desktop/addons/custom-report/
   date: 2019-08-30
   version: 5
 
@@ -184,7 +184,7 @@
   description: Displays a dialog showing the differences between 2 requests or responses. It uses diffutils and diff_match_patch
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_diff
+  link: /docs/desktop/addons/diff/
   date: 2019-06-07
   version: 9
 
@@ -193,7 +193,7 @@
   description: List of directory names to be used with "Forced Browse" add-on.
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/directory-list-v1.0/
   date: 2017-11-27
   version: 3
 
@@ -202,7 +202,7 @@
   description: Lists of directory names to be used with "Forced Browse" add-on.
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/directory-list-v2.3/
   date: 2017-11-27
   version: 3
 
@@ -211,7 +211,7 @@
   description: Lists of lower case directory names to be used with "Forced Browse" add-on.
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/directory-list-v2.3-lc/
   date: 2017-11-27
   version: 3
 
@@ -220,7 +220,7 @@
   description: DOM XSS Active scanner rule
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsDomxssDomxss
+  link: /docs/desktop/addons/dom-xss-active-scan-rule/
   date: 2019-06-12
   version: 9
 
@@ -229,7 +229,7 @@
   description: Report Export module that allows users to customize content and export in a desired format.
   author: Goran Sarenkapa - JordanGS
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsExportreportExportreport
+  link: /docs/desktop/addons/export-report/
   date: 2019-06-24
   version: 6
 
@@ -238,7 +238,7 @@
   description: This Form Handler Add-on allows a user to define field names and values to be used in a form's fields. Fields can be added, modified, enabled, and deleted for use in form fields.
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsFormhandlerFormHandlerHelp
+  link: /docs/desktop/addons/form-handler/
   date: 2018-10-26
   version: 2
 
@@ -247,7 +247,7 @@
   description: Advanced fuzzer for manual testing
   author: ZAP Dev Team
   status: beta
-  link:
+  link: /docs/desktop/addons/fuzzer/
   date: 2019-06-07
   version: 11
 
@@ -256,7 +256,7 @@
   description: FuzzDB files which can be used with the ZAP fuzzer
   author: ZAP Dev Team
   status: release
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_fuzzdb
+  link: /docs/desktop/addons/fuzzdb-files/
   date: 2019-06-27
   version: 5
 
@@ -265,7 +265,7 @@
   description: FuzzDB web backdoors which can be used with the ZAP fuzzer
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/fuzzdb-web-backdoors/
   date: 2019-06-27
   version: 1
 
@@ -274,7 +274,7 @@
   description: A short Getting Started with ZAP Guide
   author: ZAP Dev Team
   status: release
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_gettingStarted
+  link: /docs/desktop/addons/getting-started-guide/
   date: 2019-06-07
   version: 10
 
@@ -283,7 +283,7 @@
   description: Allows Groovy to be used for ZAP scripting - templates included
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsGroovyIntro
+  link: /docs/desktop/addons/groovy-support/
   date: 2018-04-19
   version: 2
 
@@ -292,7 +292,7 @@
   description: English version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  link:
+  link: /docs/desktop/
   date: 2019-06-07
   version: 9
 
@@ -382,7 +382,7 @@
   description: Allows you to highlight strings in the request and response tabs.
   author: ZAP Dev Team
   status: alpha
-  link:
+  link: /docs/desktop/addons/highlighter/
   date: 2018-05-30
   version: 7
 
@@ -391,7 +391,7 @@
   description: Displays HTTPS configuration information.
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsHttpsinfoHttpsinfo
+  link: /docs/desktop/addons/https-info/
   date: 2019-04-26
   version: 12
 
@@ -400,7 +400,7 @@
   description: Display information from ZAP in browser.
   author: ZAP Dev Team
   status: beta
-  link:
+  link: /docs/desktop/addons/hud/
   date: 2019-11-25
   version: 0.8.0
 
@@ -409,7 +409,7 @@
   description: Image Location and Privacy Passive Scanner
   author: Veggiespam and the ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsImagelocationscannerImagelocationscanner
+  link: /docs/desktop/addons/image-location-and-privacy-scanner/
   date: 2018-02-27
   version: 1
 
@@ -418,7 +418,7 @@
   description: Allows you to import log files from ModSecurity and files previously exported from ZAP
   author: ZAP Dev Team
   status: alpha
-  link:
+  link: /docs/desktop/addons/log-file-importer/
   date: 2017-11-28
   version: 4
 
@@ -427,7 +427,7 @@
   description: Adds an option to import a file of URLs. The file must be plain text with one URL per line.
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsImporturlsImportUrls
+  link: /docs/desktop/addons/import-urls/
   date: 2019-06-07
   version: 6
 
@@ -436,7 +436,7 @@
   description: Invoke external applications passing context related information such as URLs and parameters
   author: ZAP Dev Team
   status: beta
-  link:
+  link: /docs/desktop/addons/invoke-applications/
   date: 2018-02-19
   version: 9
 
@@ -445,7 +445,7 @@
   description: Allows Ruby to be used for ZAP scripting - templates included
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsJrubyJruby
+  link: /docs/desktop/addons/ruby-scripting/
   date: 2017-11-27
   version: 6
 
@@ -454,7 +454,7 @@
   description: Adds a view that shows JSON messages nicely formatted
   author: Juha Kivekäs
   status: alpha
-  link:
+  link: /docs/desktop/addons/json-view/
   date: 2018-02-08
   version: 1
 
@@ -463,7 +463,7 @@
   description: Allows Python to be used for ZAP scripting - templates included
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsJythonJython
+  link: /docs/desktop/addons/python-scripting/
   date: 2018-05-08
   version: 10
 
@@ -472,7 +472,7 @@
   description: ZAP Online menu items
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/online-menu/
   date: 2017-11-27
   version: 6
 
@@ -481,7 +481,7 @@
   description: Imports and spiders OpenAPI definitions.
   author: ZAP Core Team plus Joanna Bona, Nathalie Bouchahine, Artur Grzesica, Mohammad Kamar, Markus Kiss, Michal Materniak and Marcin Spiewak
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsOpenapiOpenapi
+  link: /docs/desktop/addons/openapi-support/
   date: 2019-12-02
   version: 14
 
@@ -490,7 +490,7 @@
   description: Supports the Mozilla Plug-n-Hack standard.
   author: ZAP Dev Team
   status: beta
-  link: https://developer.mozilla.org/en-US/docs/Plug-n-Hack
+  link: /docs/desktop/addons/plug-n-hack/
   date: 2017-11-27
   version: 11
 
@@ -499,7 +499,7 @@
   description: Allows to port scan a target server
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsPortscanConcepts
+  link: /docs/desktop/addons/port-scan/
   date: 2017-11-27
   version: 8
 
@@ -508,7 +508,7 @@
   description: The release quality Passive Scanner rules
   author: ZAP Dev Team
   status: release
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_pscanrules
+  link: /docs/desktop/addons/passive-scan-rules/
   date: 2019-06-07
   version: 24
 
@@ -517,7 +517,7 @@
   description: The alpha quality Passive Scanner rules
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsPscanrulesAlphaPscanalpha
+  link: /docs/desktop/addons/passive-scan-rules-alpha/
   date: 2019-07-11
   version: 25
 
@@ -526,7 +526,7 @@
   description: The beta quality Passive Scanner rules
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsPscanrulesBetaPscanbeta
+  link: /docs/desktop/addons/passive-scan-rules-beta/
   date: 2019-11-19
   version: 20
 
@@ -535,7 +535,7 @@
   description: Provides a tab which allows you to quickly test a target application
   author: ZAP Dev Team
   status: release
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_quickstart
+  link: /docs/desktop/addons/quick-start/
   date: 2019-06-07
   version: 26
 
@@ -544,7 +544,7 @@
   description: Allows to test Regular Expressions
   author: ZAP Dev Team
   status: alpha
-  link:
+  link: /docs/desktop/addons/regular-expression-tester/
   date: 2019-06-20
   version: 1
 
@@ -553,7 +553,7 @@
   description: Easy way to replace strings in requests and responses.
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsReplacerReplacer
+  link: /docs/desktop/addons/replacer/
   date: 2018-10-26
   version: 7
 
@@ -562,7 +562,7 @@
   description: Request numbered panel.
   author: Surikato
   status: alpha
-  link:
+  link: /docs/desktop/addons/requester/
   date: 2018-10-15
   version: 3
 
@@ -571,7 +571,7 @@
   description: Show hidden fields and enable disabled fields
   author: ZAP Dev Team
   status: release
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_reveal
+  link: /docs/desktop/addons/reveal/
   date: 2017-11-27
   version: 2
 
@@ -580,7 +580,7 @@
   description: Revisit a site at any time in the past using the session history
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsRevisitRevisit
+  link: /docs/desktop/addons/revisit/
   date: 2017-11-28
   version: 3
 
@@ -589,7 +589,7 @@
   description: Detect, Show, Edit, Fuzz SAML requests
   author: ZAP Dev Team
   status: alpha
-  link:
+  link: /docs/desktop/addons/saml-support/
   date: 2019-08-30
   version: 8
 
@@ -598,7 +598,7 @@
   description: Allows to save content of HTTP messages as binary
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/save-raw-message/
   date: 2017-11-27
   version: 4
 
@@ -607,7 +607,7 @@
   description: Allows to save content of HTTP messages as XML
   author: thatsn0tmysite
   status: alpha
-  link:
+  link: /docs/desktop/addons/save-xml-message/
   date: 2018-05-30
   version: 0.0.1
 
@@ -616,7 +616,7 @@
   description: Supports all JSR 223 scripting languages
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_scripts
+  link: /docs/desktop/addons/script-console/
   date: 2019-06-07
   version: 25
 
@@ -625,7 +625,7 @@
   description: WebDriver provider and includes HtmlUnit browser
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/selenium/
   date: 2019-06-07
   version: 15.0.0
 
@@ -634,7 +634,7 @@
   description: Gives the possibility of defining a sequence of requests to be scanned.
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsSequenceSequence
+  link: /docs/desktop/addons/sequence-scanner/
   date: 2017-11-28
   version: 5
 
@@ -643,7 +643,7 @@
   description: Allows you to spider sites that make heavy use of JavaScript using Crawljax
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/ajax-spider/
   date: 2019-06-07
   version: 23.0.0
 
@@ -652,7 +652,7 @@
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
   author: Andrea Pompili (Yhawke)
   status: beta
-  link:
+  link: /docs/desktop/addons/advanced-sqlinjection-scanner/
   date: 2019-06-07
   version: 13
 
@@ -661,7 +661,7 @@
   description: Allows you to view Server-Sent Events (SSE) communication.
   author: ZAP Dev Team
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsSseIntroduction
+  link: /docs/desktop/addons/server-sent-events/
   date: 2017-11-28
   version: 9
 
@@ -670,7 +670,7 @@
   description: SVN Digger files which can be used with ZAP forced browsing
   author: ZAP Dev Team
   status: beta
-  link:
+  link: /docs/desktop/addons/svn-digger-files/
   date: 2017-11-27
   version: 3
 
@@ -679,7 +679,7 @@
   description: Display ZAP Tips and Tricks
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_tips
+  link: /docs/desktop/addons/tips-and-tricks/
   date: 2019-06-07
   version: 6
 
@@ -688,7 +688,7 @@
   description: Provides a tab which allows to quickly debug a TLS/SSL connection
   author: P.M.J. Roth
   status: alpha
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsTlsdebugTlsdebug
+  link: /docs/desktop/addons/tls-debug/
   date: 2018-10-15
   version: 3
 
@@ -697,7 +697,7 @@
   description: Allows you to generate and analyze pseudo random tokens, such as those used for session handling or CSRF protection
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsTokengenTokengen
+  link: /docs/desktop/addons/token-generator/
   date: 2019-07-15
   version: 13
 
@@ -706,7 +706,7 @@
   description: Tools to add functionality to the tree view.
   author: Carl Sampson
   status: beta
-  link:
+  link: /docs/desktop/addons/treetools/
   date: 2017-11-27
   version: 7
 
@@ -715,7 +715,7 @@
   description: ASP/JSF ViewState Decoder and Editor
   author: Calum Hutton
   status: alpha
-  link:
+  link: /docs/desktop/addons/viewstate/
   date: 2017-11-28
   version: 1
 
@@ -724,7 +724,7 @@
   description: list vulnerabilities from known databases
   author: ZAP Dev Team
   status: alpha
-  link:
+  link: /docs/desktop/addons/vulncheck/
   date: 2017-11-28
   version: 1
 
@@ -733,7 +733,7 @@
   description: Technology detection using Wappalyzer
   author: ZAP Dev Team
   status: alpha
-  link: https://www.wappalyzer.com/
+  link: /docs/desktop/addons/technology-detection/
   date: 2019-10-02
   version: 14
 
@@ -742,7 +742,7 @@
   description: Linux WebDrivers for Firefox and Chrome.
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/linux-webdrivers/
   date: 2019-10-23
   version: 13
 
@@ -751,7 +751,7 @@
   description: MacOS WebDrivers for Firefox and Chrome.
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/macos-webdrivers/
   date: 2019-10-23
   version: 13
 
@@ -760,7 +760,7 @@
   description: Windows WebDrivers for Firefox and Chrome.
   author: ZAP Dev Team
   status: release
-  link:
+  link: /docs/desktop/addons/windows-webdrivers/
   date: 2019-10-23
   version: 13
 
@@ -769,7 +769,7 @@
   description: Allows you to inspect WebSocket communication.
   author: ZAP Dev Team
   status: release
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_websockets
+  link: /docs/desktop/addons/websockets/
   date: 2019-07-23
   version: 20
 
@@ -778,7 +778,7 @@
   description: A graphical security scripting language, ZAPs macro language on steroids
   author: ZAP Dev Team
   status: beta
-  link: https://github.com/zaproxy/zap-extensions/wiki/AddOn_zest
+  link: /docs/desktop/addons/zest/
   date: 2019-06-07
   version: 29
 
