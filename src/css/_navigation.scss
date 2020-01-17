@@ -34,8 +34,8 @@
 }
 
 .header-social svg {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 
 .hamburger-icon {}
@@ -101,7 +101,9 @@ input {
 
 }
 
-
+.download-button {
+  margin-top: 4px;
+}
 
 @media screen and (max-width: 825px) {
   .hamburger-icon,
