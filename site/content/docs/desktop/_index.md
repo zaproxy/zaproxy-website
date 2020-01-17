@@ -14,7 +14,7 @@ cascade:
 Welcome to the The OWASP Zed Attack Proxy (ZAP) Desktop User Guide.  
 
 This is available both as context sensitive help within ZAP and online at
-https://www.zaproxy.org/docs/desktop/
+[https://www.zaproxy.org/docs/desktop/](/docs/desktop/)
 
 ZAP is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.
 

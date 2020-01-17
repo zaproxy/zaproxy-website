@@ -144,7 +144,7 @@ will cause the following headers to be added to every request ZAP makes:
   AnotherHeader: abcdefghi  
 You can specify as many headers as you need to by using incrementing indexes.  
   
-This functionality is provided by the [Replacer](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsReplacerReplacer) add-on included by
+This functionality is provided by the [Replacer](/docs/desktop/addons/replacer/) add-on included by
 default with ZAP. It is very powerful and can do much more than just inject new header values, so if you need to manipulate the requests ZAP
 makes in other ways then this could be a very good option for you.  
   

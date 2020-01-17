@@ -119,11 +119,11 @@ regex matches against the URL, request header, request body, response header or 
 You can have as many custom break points as you need - they are listed in the ‘Break Points’ tab from where they can be enabled, disabled,
 edited or deleted.  
   
-Break points are not restricted to HTTP(S) traffic - they are also supported for [websockets](https://github.com/zaproxy/zap-core-help/wiki/HelpAddonsWebsocketTab#breakpoints) and [client side messages](https://github.com/zaproxy/zap-core-help/wiki/HelpAddonsPlugnhackClientstab). Both of these also support custom break points via buttons on the tool bars for the respective tabs.  
+Break points are not restricted to HTTP(S) traffic - they are also supported for [websockets](/docs/desktop/addons/websockets/tab/#breakpoints) and [client side messages](/docs/desktop/addons/plug-n-hack/clientstab/). Both of these also support custom break points via buttons on the tool bars for the respective tabs.  
   
 If custom break points still don’t provide you with enough flexibility then you can trigger break points from within proxy scripts.  
 Calling msg.setForceIntercept(true) in either of the proxyRequest(msg) or proxyResponse(msg) functions will trigger the break point, and this
-will work in any text based scripting language. [Zest](https://github.com/zaproxy/zap-core-help/wiki/HelpAddonsZestZest) (which is graphically
+will work in any text based scripting language. [Zest](/docs/desktop/addons/zest/) (which is graphically
 based) also includes a ‘break’ action statement that has the same effect.  
 Being able to trigger break points via scripts means that you can trigger them for exactly the conditions you are interested in, however complex
 they might be.  

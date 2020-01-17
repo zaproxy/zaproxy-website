@@ -49,10 +49,10 @@ Just click on the ‘Manage Add-ons’ toolbar button and select the Marketplace
 Note that all add-ons on the Marketplace are completely free and open source and anyone can publish add-ons to it - see the [zap-extensions
 wiki](https://github.com/zaproxy/zap-extensions/wiki/AddOnDevelopment) for details.  
   
-The [Selenium](https://github.com/zaproxy/zap-core-help/wiki/HelpAddonsSeleniumIntro) add-on has been updated to include the latest version of
+The [Selenium](/docs/desktop/addons/selenium/) add-on has been updated to include the latest version of
 the selenium jar - this fixes problems with the latest version of Firefox so update asap.  
   
-The [Passive scan rules - alpha](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsPscanrulesAlphaPscanalpha) have been updated to
+The [Passive scan rules - alpha](/docs/desktop/addons/passive-scan-rules-alpha/) have been updated to
 include a new scanner for identifying info leaks via X-ChromeLogger-Data or X-ChromePhp-Data. See the special feature below.  
   
 

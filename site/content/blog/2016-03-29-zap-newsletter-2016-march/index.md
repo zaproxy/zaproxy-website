@@ -37,8 +37,7 @@ A new version of the Zest add-on has been published which included a significant
 add-on which includes the latest Selenium release that ensures Firefox doesn't visit the 'first run' page every time it is started.  
   
 The Alert Filters add-on has also been updated with various bug fixes and has been promoted to beta status. This add-on allows you to configure
-rules which automatically change the level at which alerts are raised for specific contexts. For more details see the [help
-pages](https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAlertFiltersAlertFilter) This add-on is included with the weekly releases and
+rules which automatically change the level at which alerts are raised for specific contexts. For more details see the [help pages](http://localhost:3000/docs/desktop/addons/alert-filters/). This add-on is included with the weekly releases and
 may well be included by default in future full releases.  
   
 
@@ -158,8 +157,7 @@ build up your own libraries of scripts and even manage them in a central place u
 
 The Community Scripts repo is a collection of ZAP scripts written by the community, ie people like you :)  
 It lives on github: <https://github.com/zaproxy/community-scripts> and, not surprisingly, is structured so that it can be added as a script
-directory via the Script Options. It is also available as an add-on on the ZAP Marketplace: <https://github.com/zaproxy/zap-
-extensions/wiki/HelpAddonsCommunityScriptsCommunityScripts>  
+directory via the Script Options. It is also available as [an add-on](/docs/desktop/addons/community-scripts/) on the ZAP Marketplace.  
   
 Hopefully that gives you an overview of the scripting support in ZAP. Future tutorials will go into scripting in more detail. In the meantime if
 you have any questions about ZAP scripting then we have a dedicated group where you can ask them: <https://groups.google.com/group/zaproxy-
