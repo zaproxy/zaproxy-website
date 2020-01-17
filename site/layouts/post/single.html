@@ -3,24 +3,30 @@
 <div class="wrapper py-70" data-kind="{{ .Kind }}">
     <div class="flex latest-versions">
       <article class="col-2-3 pr-30 content single-post">
+          <div class="breadcrumbs">
+              <a href="/blog">The ZAP Blog</a>
+          </div>
+
           <h1 class="post-title">{{ .Title }}</h1>
           <main class="post-content">
             {{ .Content }}
           </main>
           <div class="next-content">
               {{ with .PrevInSection }}
-                <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+                Prev: <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
               {{ end }}
               {{ with .NextInSection }}
-                <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+                Next: <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
               {{ end }}
           </div>
       </article>
       <aside class="col-1-3">
         <section class="post-meta">
           <h4 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h4>
-          <h5 id="wordcount"> {{ .WordCount }} Words </h5>
           {{ if isset .Params "authors" }}
+
+          <h4>Table of Contents</h4>
+          {{ .TableOfContents }}
 
           <div class="post-authors">
             <h4>Authors</h4>
@@ -44,6 +50,7 @@
               </section>
           {{ end }}
           </div>
+          <h5 id="wordcount"> {{ .WordCount }} Words </h5>
           {{ end }}          
         </section>
       </aside>

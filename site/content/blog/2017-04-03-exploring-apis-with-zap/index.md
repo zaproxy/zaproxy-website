@@ -2,7 +2,7 @@
 title: "Exploring APIs with ZAP"
 type: post
 tags:
-- TODO
+- API
 date: "2017-04-03"
 authors:
     - simon
@@ -24,7 +24,7 @@ In order to import the API definitions you will need to add the relevant add-ons
   
 To do this via the UI:  
   
-{{< img "images/Manage-addons.png" "Alt title" >}}  
+{{< img "images/Manage-addons.png" >}}  
 
   1. Click on the ‘Manage Add-ons’ button
   2. Select the ‘Marketplace’ tab
@@ -33,7 +33,7 @@ To do this via the UI:
     * OpenAPI Support
     * SOAP Scanner
 
-{{< img "images/Marketplace.png" "Alt title" >}}  
+{{< img "images/Marketplace.png" >}}  
   
   
 To install them via the command line is even easier - just start ZAP with the command line flags: “-addoninstall soap -addoninstall openapi”  
@@ -52,12 +52,12 @@ These add-ons add the following items under the ‘Tools’ menu:
   * Import an OpenAPI definition from the local file system
   * Import an OpenAPI definition from a URL
 
-{{< img "images/Tools-menu.png" "Alt title" >}}  
+{{< img "images/Tools-menu.png" >}}  
 These menu items will open new dialogs which will allow you to specify the relevant file or URL to import.  
   
 When the definitions have been imported they will be shown in the Sites tree:  
   
-{{< img "images/Openapi-import.png" "Alt title" >}}  
+{{< img "images/Openapi-import.png" >}}  
   
 
 ##  Importing via the API
@@ -65,8 +65,8 @@ When the definitions have been imported they will be shown in the Sites tree:
 Both add-ons support importing API definitions from URLs and local files.  
 You can try these out via the API Web UI:  
   
-{{< img "images/web-api-openapi.png" "Alt title" >}}  
-{{< img "images/web-api-soap.png" "Alt title" >}} Using the [Java API](https://github.com/zaproxy/zap-api-java) client this can be done with
+{{< img "images/web-api-openapi.png" >}}  
+{{< img "images/web-api-soap.png" >}} Using the [Java API](https://github.com/zaproxy/zap-api-java) client this can be done with
 calls like:  
   
 ```java

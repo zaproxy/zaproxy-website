@@ -2,7 +2,7 @@
 title: "Scanning APIs with ZAP"
 type: post
 tags:
-- TODO
+- API
 date: "2017-06-19"
 authors:
     - simon

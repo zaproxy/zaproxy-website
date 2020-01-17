@@ -21,8 +21,7 @@ We do already have some release quality unit tests in the corresponding test pac
   * [org.zaproxy.zap.extension.pscanrules](https://github.com/zaproxy/zap-extensions/tree/master/test/org/zaproxy/zap/extension/pscanrules)
 
 These can be used as a basis of the new tests. Unit tests should be included for real issues (true positives) as well as false positives.  
-For details of how passive scan rules work see the blog post: [Hacking ZAP #3 Passive Scan Rules](https://zaproxy.blogspot.com/2014/04/hacking-
-zap-3-passive-scan-rules.html)  
+For details of how passive scan rules work see the blog post: [Hacking ZAP #3 Passive Scan Rules](https://zaproxy.blogspot.com/2014/04/hacking-zap-3-passive-scan-rules.html)  
   
 We have raised issues for all of the release and beta quality passive scan rules that do not have unit tests, and assigned a bounty on them in
 Bounty Source. The bounties vary based on the amount of work we expect will be required. We will increase the bounties paid if the pull request

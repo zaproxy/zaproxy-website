@@ -9,22 +9,10 @@ authors:
     - simon
 ---
 
-
 ##  Introduction
 
 Welcome to a slightly delayed February newsletter - we were holding on for some expected news that will now have to wait until next time ;)  
   
-**Table of Contents:**  
-
-  * News
-  * New / Improved Add-ons 
-  * Tutorial: Contexts 
-  * 3rd Party Tool: Faraday 
-  * Upcoming Talks and Training
-  * Featured Contributor: Johanna Curiel
-  * Feedback
-  * Next Month...
-
 ##  News
 
 We have started another [user questionnaire](https://docs.google.com/forms/d/1-k-vcj_sSxlil6XLxCFade-m-IQVeE2h9gduA-2ZPPA/viewform). We ran one
@@ -33,8 +21,7 @@ please fill it in.
   
 Both OWASP and Mozilla will be applying to take part in Google Summer of Code this year. ZAP has greatly benefited from students taking part in
 this via both of these organizations, and we’re hoping at least one will be accepted so that we can take part again. If you have any suggestions
-for suitable projects or anything else to contribute then please join the [discussion](https://groups.google.com/d/msg/zaproxy-
-develop/4Pro0YpO7B8/d9naWJkFEQAJ) on the Dev group.  
+for suitable projects or anything else to contribute then please join the [discussion](https://groups.google.com/d/msg/zaproxy-develop/4Pro0YpO7B8/d9naWJkFEQAJ) on the Dev group.  
   
 
 ##  New / Improved Add-ons
@@ -68,20 +55,21 @@ Contexts are a way to group sets of related URLs together. You can use contexts 
 those applications that you want to handle in non-default ways. Contexts allow you to define extra properties associated with those URLs so that
 ZAP can handle them more effectively. They are displayed at the top of the Sites and can be imported and exported using the buttons on the Sites
 toolbar.  
-{{ < img "images/Contexts1.png" "Alt title" >}}  
+{{< img "images/Contexts1.png" >}}
 For this tutorial we will be using the BodgeIt Store, a simple vulnerable web application available from <https://github.com/psiinon/bodgeit>,
 but you can use any application that uses authentication.  
   
 You need to access the target application before you can add it to a Context, so open the BodgeIt home page in your browser while proxying
-through ZAP. Find the BodgeIt top node in the Sites tree, right click it and 'Include in Context -> Default Context'. {{< img
-"images/Context%2B-%2Badd%2Bto%2Bdefault.png" "Alt title" >}} The Session Contexts Dialog will be displayed, which is part of the Session
+through ZAP. Find the BodgeIt top node in the Sites tree, right click it and 'Include in Context -> Default Context'. 
+{{< img "images/Context-add-to-default.png" >}}
+The Session Contexts Dialog will be displayed, which is part of the Session
 Properties dialog and is where you can define all of the properties associated with each context. The 'bodgeit' node and all of the nodes
 underneath it will now have been added to the 'Default Context'.  
 Note that you can define as many contexts as you need.  
   
 All details about a context are defined in the session properties. You can access these at any time by double clicking on the relevant context
 or by pressing the 'Session Properties' button on the main toolbar.  
-{{< img "images/Context%2B-%2Bsession%2Bprops.png" "Alt title" >}}  
+{{< img "images/Context-session-props.png" >}}  
   
 
 ### Context: Top Page
@@ -96,7 +84,8 @@ scope.
 
 ### Context: Include In / Exclude From Context
 
-{{< img "images/Context%2B-%2Binclude.png" "Alt title" >}} The first 2 child pages allow you to define the URLs that are included in the
+{{< img "images/Context-include.png" >}} 
+The first 2 child pages allow you to define the URLs that are included in the
 context. This is done using regular expressions (regexes). The easiest way to include any leaf nodes and subtrees is to use the 'Include in
 Context' and 'Exclude from Context' right click options in the Sites and History tabs. However if you need to define more complex regexes then
 you will need to do this manually using theses screens. Always double check the nodes that are included by verifying that the target icons are
@@ -146,7 +135,8 @@ depth on authentication.
 In the BodgeIt store register a new user. BodgeIt will automatically log this user in, so logout and login again as we want the login request
 and not the registration request.  
 Identify the login POST request in the History tab, right click it and select 'Flag as Context-> Default Context: Form-based Auth Login Request'  
-{{< img "images/Contexts%2Bflag%2Bauth.png" "Alt title" >}} You will now be shown the Context Authentication page, which you will need to tweak.  
+{{< img "images/Contexts-flag-auth.png" >}} 
+You will now be shown the Context Authentication page, which you will need to tweak.  
   
 The Login Form Target URL and Login Request POST Data should be filled in correctly. However at least one of the Username or Password parameter
 fields will need changing - they should be:
@@ -162,8 +152,9 @@ not both. You can configure these manually, but it’s easier and safer to use t
   * Look at the response, find and highlight the HTML which defines the Login link
   * Right click the highlighted text and select "Flag as Context -> Default Context: Authentication Logged-out indicator"
 
-{{< img "images/Context%2Bflag%2Bloogged%2Bout.png" "Alt title" >}} You will now be shown the Context Authentication page again with the Logged-
-out regex pattern correctly defined. {{< img "images/Contexts%2Bauth.png" "Alt title" >}} ZAP now understands how he BodgeIt authentication
+{{< img "images/Context-flag-logged-out.png" >}} You will now be shown the Context Authentication page again with the Logged-out regex pattern correctly defined. 
+{{< img "images/Contexts-auth.png" >}}
+ ZAP now understands how he BodgeIt authentication
 works, but it will need to know about at least one user before you can make use of this. You can configure that using the next screen.  
   
 
@@ -171,8 +162,9 @@ works, but it will need to know about at least one user before you can make use 
 
 This page allows you to define as many users as you need for testing. If your application supports roles you should define at least one user for
 each role. You will need to fill in the correct authentication details for each user. ZAP will have automatically added the one used in the
-authentication request you specified, you just need to make sure it is enabled. {{< img "images/Contexts%2Busers.png" "Alt title" >}}  
-  
+authentication request you specified, you just need to make sure it is enabled. 
+{{< img "images/Contexts-users.png" >}}  
+
 
 ### Context: Forced User
 
@@ -180,7 +172,7 @@ The forced user mode allows you to force a specific user to be used for all requ
 user mode is switched on and off via an icon on the main toolbar. It will be disabled until all of the necessary configuration has been made.
 For this example select the user you previously registered with ZAP. Once you have saved the dialog you should see that the Forced User mode
 button is now enabled.  
-{{< img "images/Contexts%2B-%2Bforceduser.png" "Alt title" >}}  
+{{< img "images/Contexts-forceduser.png" >}}  
 Before enabling it make sure that you have logged out of BodgeIt. Then click the button to enable Forced User mode and click on one of the links
 in BodgeIt. You should see that you are now logged in - ZAP will have authenticated as that user in the background.  
   
@@ -208,7 +200,7 @@ you to automatically test your applications access control.
 
 ##  3rd Party Tool: Faraday
 
-{{< img "images/image03.png" "Alt title" >}}  
+{{< img "images/image03.png" >}}  
 **Faraday** is an **Integrated Multi-User Pentest Environment** that’s principal goal is to map and leverage information you generate in real-
 time. Named after the British scientist Michael Faraday who was famous for his meticulous note taking (as well as the Faraday cage), our tool
 tries to emulate his rule of systematically recording everything.  
@@ -218,7 +210,7 @@ skills. The idea isn’t to change a security professional’s workflow but to g
 easily documented and used to gain greater insights for a security team.  
   
 With 50+ supported tools Faraday is the connective tissue that brings together your different tools and team members to increase efficiency and
-analysis of your security engagements. {{ < img "images/image02.png" "Alt title" >}}  
+analysis of your security engagements. {{ < img "images/image02.png" >}}  
 The ZAP plugin recognizes information such as Hosts, Interfaces, Services, Vulnerabilities and send this to Faraday. With only a copy of a
 report, all this information is available in Faraday for all the members of your team.  
   
@@ -226,23 +218,23 @@ report, all this information is available in Faraday for all the members of your
 
   1. Open OWASP ZAP and start a attack, wait for the attack to finish.
   2. Go to Report menu => Generate XML report…
-{{< img "images/image00.png" "Alt title" >}}
+{{< img "images/image00.png" >}}
 
   3. Save the report with any name.
   4. Open Faraday and copy that report to $HOME/.faraday/report/$WORKSPACE where $WORKSPACE is the active workspace name in Faraday.
   5. Ready! All information is loaded now
 
-{{< img "images/image05.png" "Alt title" >}} Here, you can see the “Tree Hosts” showing you information of a report of OWASP ZAP.  
-Hosts, interfaces, Services, Notes and how many vulnerabilities have been loaded. {{< img "images/image04.png" "Alt title" >}} You can see more
+{{< img "images/image05.png" >}} Here, you can see the “Tree Hosts” showing you information of a report of OWASP ZAP.  
+Hosts, interfaces, Services, Notes and how many vulnerabilities have been loaded. {{< img "images/image04.png" >}} You can see more
 information about vulnerabilities found: Name, Description, Severity, References ( URLs, CVE and CWE), Path, and more. If you like web
-interfaces more than QT interface, Faraday has one! {{< img "images/image07.png" "Alt title" >}} Here you can see the same information as in the
+interfaces more than QT interface, Faraday has one! {{< img "images/image07.png" >}} Here you can see the same information as in the
 QT interface , but you here you can work with the information. Group vulnerabilities by a field, show or not a field, show details about a
 vulnerability, edit or delete one, and download all the data such as CSV file. Also, Faraday greatly speeds up the time needed for a security
 engagement by simplifying vulnerability adjustments with severity classifications (CVSS standards supported).  
   
 However, too much information can get confusing… Faraday has a dashboard with a summary of the active workspace for a more general overview of
-your project. {{< img "images/image01.png" "Alt title" >}} Faraday comes in three flavors, a free community version that can be downloaded on
-our [Github](https://github.com/infobyte/faraday) and a pro and enterprise version. {{< img "images/image06.png" "Alt title" >}} In the
+your project. {{< img "images/image01.png" >}} Faraday comes in three flavors, a free community version that can be downloaded on
+our [Github](https://github.com/infobyte/faraday) and a pro and enterprise version. {{< img "images/image06.png" >}} In the
 Professional and Corporate editions you have role differentiation, different workspaces., workspace comparisons, tags, webshells, graphic
 customization (Corporate) and one-click report generation which typically has been the bane of security teams.  
   
@@ -268,58 +260,71 @@ Unconference on May 19th in Bucharest: <http://itakeunconf.com/sessions/securing
 
 _Each month we introduce you to one of the many ZAP contributors._  
   
-[{{< img "images/Johanna.jpg" "Alt title" >}}](https://2.bp.blogspot.com/-l6E_e0Vfzko/VsX3zS3scCI/AAAAAAAAAgE/ZAVM7LLtoeA/s1600/Johanna.jpg)  
-**Q: Who are you?  
-A: ** Johanna Curiel (aka [@jctechno](https://twitter.com/jctechno)), Software & Security Engineer.  
+[{{< img "images/Johanna.jpg" >}}](https://2.bp.blogspot.com/-l6E_e0Vfzko/VsX3zS3scCI/AAAAAAAAAgE/ZAVM7LLtoeA/s1600/Johanna.jpg)  
+**Q: Who are you?**
+
+**A:** Johanna Curiel (aka [@jctechno](https://twitter.com/jctechno)), Software & Security Engineer.  
   
-**Q: Where are you based?  
-A: ** Curacao, Dutch Caribbean  
+**Q: Where are you based?**
+
+**A:** Curacao, Dutch Caribbean
   
-**Q: What do you do in your day job?  
-A: ** I work as a programmer and pen tester part-time. At the moment I'm also working on cyber security research.  
+**Q: What do you do in your day job?**
+
+**A:** I work as a programmer and pen tester part-time. At the moment I'm also working on cyber security research.  
   
-**Q: Why do you contribute to ZAP?  
-A: ** Because I use it in my work. It's a tool with some wonderful features that work even better than many commercial tools in the same
+**Q: Why do you contribute to ZAP?**
+
+**A:** Because I use it in my work. It's a tool with some wonderful features that work even better than many commercial tools in the same
 category. Also I have learned many things from using ZAP and understanding its programming core and architecture.  
   
-**Q: How do you contribute to ZAP?  
-A: ** Sporadically. Promoting it as pen testing tool, instruction videos, participating as mentor, working on documentation, testing and
+**Q: How do you contribute to ZAP?**
+
+**A:** Sporadically. Promoting it as pen testing tool, instruction videos, participating as mentor, working on documentation, testing and
 reporting issues.  
 _Editors note: Johanna has also been helping with applying for grants - more on that in a future newsletter ;)_  
   
-**Q: What would you like to contribute in the future?  
-A: ** I have been working on an some add-ons, but I have not publicise them. I really would like to get more into creating add-ons and ZEST
+**Q: What would you like to contribute in the future?**
+
+**A:** I have been working on an some add-ons, but I have not publicise them. I really would like to get more into creating add-ons and ZEST
 scripts and publicise them to the community.  
   
-**Q: What do you like about the ZAP community?  
-A: ** ZAP has great contributors, all working to help improve ZAP in different ways. It is amazing what a group of people can reach when they
+**Q: What do you like about the ZAP community?**
+
+**A:** ZAP has great contributors, all working to help improve ZAP in different ways. It is amazing what a group of people can reach when they
 work towards a goal with the guidance of a great leader.  
   
-**Q: What do you get out of contributing?  
-A: ** Most important is that I use ZAP in my work. ZAP is for free and open source, with some incredible features that I use it in my pen
+**Q: What do you get out of contributing?**
+
+**A:** Most important is that I use ZAP in my work. ZAP is for free and open source, with some incredible features that I use it in my pen
 testing and research. ZAP is the best free proxy available and by contributing you also give something back to help and keep ZAP developing and
 improving. ZAP has helped me understand security vulnerabilities much better.  
   
-**Q: Do you have any advice for people who would like to contribute to ZAP?  
-A: ** There are many ways you can contribute, whether promoting it, documentation, translating , coding, testing. Start with something small
+**Q: Do you have any advice for people who would like to contribute to ZAP?**
+
+**A:** There are many ways you can contribute, whether promoting it, documentation, translating , coding, testing. Start with something small
 that you enjoy doing. Take your time to learn ZAP and find out where your skills can help best.  
   
-**Q: Do you contribute to any other open source projects?  
-A: ** Yes. I do contribute to other open source initiatives , specially those ones I would like to see grow and develop further.  
+**Q: Do you contribute to any other open source projects?**
+
+**A:** Yes. I do contribute to other open source initiatives , specially those ones I would like to see grow and develop further.  
   
-**Q: What do you do outside of work?  
-A: ** I live in the Caribbean so it's quite nice weather most of the time. I like windsurfing with my daughter , swimming, BBQ and traveling.  
+**Q: What do you do outside of work?**
+
+**A:** I live in the Caribbean so it's quite nice weather most of the time. I like windsurfing with my daughter , swimming, BBQ and traveling.  
   
-**Q: What do you [most] dislike about the ZAP development?  
-A: ** I think ZAP is one of the easiest open source software to join development. There is a lot of documentation available to new developers
+**Q: What do you [most] dislike about the ZAP development?**
+
+**A:** I think ZAP is one of the easiest open source software to join development. There is a lot of documentation available to new developers
 wanting to get involved. I like the way the code has been structured and with the add-on concept it makes it even easier to experiment on your
 own, so I have nothing to dislike about. But as a developer if you think to be a serious contributor , you will need to invest some serious time
 to understand the code and start development, this is a quite common barrier to all new developer contributors.  
   
-**Q: What do you think could be done [a lot] better?  
-A: ** I would like to see more instruction videos or documentation on how to use ZAP with more complex features and writing ZEST scripts . There
+**Q: What do you think could be done [a lot] better?**
+
+**A:** I would like to see more instruction videos or documentation on how to use ZAP with more complex features and writing ZEST scripts . There
 is a lot already published on youtube but ZAP has had an amazing development the last years that most of the videos are outdated.  
-  
+
 
 ##  Feedback
 

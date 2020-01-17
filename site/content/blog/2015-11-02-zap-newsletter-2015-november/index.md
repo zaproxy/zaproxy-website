@@ -16,21 +16,8 @@ Welcome to the first monthly ZAP newsletter.
 We plan to cover pretty much anything ZAP related in these newsletters, including newly created or updated add-ons, new features just
 implemented and 3rd party tools.  
 We also encourage contributions from people like yourself - see the last section for details.  
-Oh, and please let us know what you think of this newsletter via the [Feedback Form](https://docs.google.com/forms/d/1_XaettHPjLOD56AbSlui67gk-
-771yJ_xfd7w2lSEdXw/viewform?usp=send_form)!  
+Oh, and please let us know what you think of this newsletter via the [Feedback Form](https://docs.google.com/forms/d/1_XaettHPjLOD56AbSlui67gk-771yJ_xfd7w2lSEdXw/viewform?usp=send_form)!  
   
- **Table of Contents:**  
-
-  * News
-  * New / Improved Add-ons 
-  * New Features 
-  * Tutorial: Check for Updates 
-  * 3rd Party Tool: BDD-Security 
-  * Upcoming Talks and Training
-  * Featured Contributor: Kingthorin 
-  * Feedback
-  * Next Month...
-
 ##  News
 
 The big news this month is that we will be releasing **ZAP 2.4.3** very soon, ie hopefully in the first week of November. This will be an
@@ -77,8 +64,7 @@ between specific times, which is useful if the application has since changed.
 
 ##  New Features
 
-The following new features have been implemented are available in the weekly releases: <https://github.com/zaproxy/zaproxy/wiki/Downloads#zap-
-weekly>  
+The following new features have been implemented are available in the weekly releases: <https://github.com/zaproxy/zaproxy/wiki/Downloads#zap-weekly>  
   
 
 ###  Updating Add-ons from the Command Line
@@ -86,7 +72,7 @@ weekly>
 The ZAP command line has been enhanced to support updating add-ons.  
 There are 2 new options:  
 
-  * -addoninstall <addon> Install the specified add-on from the ZAP Marketplace
+  * -addoninstall `<addon>` Install the specified add-on from the ZAP Marketplace
   * -addonupdate Update all changed add-ons from the ZAP Marketplace
 
 These options take effect before other command line options such as ‘-quickurl’ so that add-ons will be installed and updated before attacking a
@@ -152,7 +138,8 @@ All new add-ons start off as alpha and only progress to beta and release after s
 The Check for Updates component is the way you can keep your copy of ZAP up to date.  
 You can configure it via the “Check for Updates” Options screen:  
   
-![](//4.bp.blogspot.com/-fMkI3o-T39w/VjNoP7wzkDI/AAAAAAAAAdk/vhCO51Gv078/s640/ZAP%2BCFU%2BOptions%2B2015-10-30%2B13%253A52%253A38.png)  
+{{< img "images/zap-cfu-options.png" >}}
+
 The following options are available:  
   
 **Check for Updates on start up**  
@@ -199,9 +186,8 @@ you have any questions on how it works then just ask on the [ZAP Developers Grou
 _Each month we plan to cover a 3rd party tool that is related to ZAP in some way. These tools can be open source, closed source, free or
 commercial._  
 This month we’re covering BDD-Security, ℅ Stephen de Vries ([@stephendv](https://twitter.com/stephendv))  
-  
-![](https://images-blogger-opensocial.googleusercontent.com/gadgets/proxy?url=http%3A%2F%2Fwww.continuumsecurity.net%2Fimages%2Fbdd-security-
-logo-small.png&container=blogger&gadget=a&rewriteMime=image%2F*)  
+
+{{< img "images/bdd-security.png" >}}
   
 BDD-Security is a security testing framework that takes the principles of Behaviour Driven Development (BDD) and applies them to security
 testing. It aims to solve two key problems:  
@@ -240,57 +226,70 @@ California in Santa Monica on January 25 9:00am-5:00pm: <http://sched.co/4Ouf>
 ##  Featured Contributor: Kingthorin
 
 _And each month we plan to introduce you to one of the many ZAP contributors._  
- **Q: Who are you?  
-A: **Rick (aka [Kingthorin](https://github.com/kingthorin)). AppSec guy, breaker of things.  
+**Q: Who are you?**
+
+**A:** Rick (aka [Kingthorin](https://github.com/kingthorin)). AppSec guy, breaker of things.  
   
- **Q: Where are you based?  
-A: **Canada!  
+**Q: Where are you based?**
+
+**A:** Canada!  
   
- **Q: What do you do in your day job?  
-A: **In my day job I break stuff: I do Vulnerability Assessment and Penetration Testing. Developers or SysAdmins having a bad day is generally a
+**Q: What do you do in your day job?**
+
+**A:** In my day job I break stuff: I do Vulnerability Assessment and Penetration Testing. Developers or SysAdmins having a bad day is generally a
 good day for me.  
   
-**Q: Why do you contribute to ZAP?  
-A: **It's different from my day job. I spend all day figuring out how other people's systems and apps are or can be broken. Contributing to ZAP
+**Q: Why do you contribute to ZAP?**
+
+**A:** It's different from my day job. I spend all day figuring out how other people's systems and apps are or can be broken. Contributing to ZAP
 gives me a chance to build something. The contrast is nice to have, plus it forces me to grow in different ways and see technology from a
 different angle.  
   
- **Q: How do you contribute to ZAP?  
-A: **I do some development work, take part in the user and dev forums. Ask lots of questions, rock the boat (a little ;).  
+**Q: How do you contribute to ZAP?**
+
+**A:** I do some development work, take part in the user and dev forums. Ask lots of questions, rock the boat (a little ;).  
   
- **Q: What would you like to contribute in the future?  
-A: **Hmmmm that's an interesting question. I have ideas for a few different extensions that I haven't had time to tackle yet. Hopefully in late
+**Q: What would you like to contribute in the future?**
+
+**A:** Hmmmm that's an interesting question. I have ideas for a few different extensions that I haven't had time to tackle yet. Hopefully in late
 2015 or sometime in 2016 I'll talk myself into tackling those.  
   
- **Q: What do you like about the ZAP community?  
-A: **Everyone is supportive and encouraging!  
+**Q: What do you like about the ZAP community?**
+
+**A:** Everyone is supportive and encouraging!  
   
- **Q: What do you get out of contributing?  
-A: **I get to make a great Open Source tool do things I can use in my day job, and help others to do things they need in their jobs. It also
+**Q: What do you get out of contributing?**
+
+**A:** I get to make a great Open Source tool do things I can use in my day job, and help others to do things they need in their jobs. It also
 forces me to learn about things like Git/Github, and simple web development tasks in generating content for ZAP PoC testing, etc. Of course it
 helps me learn about Java and software development itself.  
   
- **Q: Do you have any advice for people who would like to contribute to ZAP?  
-A: **Just do it! Jump in with both feet, deep end of the pool. There's no time like the present. People here will help you, support you,
+**Q: Do you have any advice for people who would like to contribute to ZAP?**
+
+**A:** Just do it! Jump in with both feet, deep end of the pool. There's no time like the present. People here will help you, support you,
 encourage you, and in a good way (a great way) challenge you. There are so many ways you can contribute -[ Community
 Scripts](https://github.com/zaproxy/community-scripts/), fixing or enhancing code based on[ issue
 tracker](https://github.com/zaproxy/zaproxy/issues) on Github (or your own ideas), developing your own[ extensions](https://github.com/zaproxy
 /zap-extensions), writing tutorials, making training videos, etc.  
   
- **Q: Do you contribute to any other open source projects?  
-A: **I've also contributed to the[ OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project) and[
+**Q: Do you contribute to any other open source projects?**
+
+**A:** I've also contributed to the[ OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project) and[
 OSSTMM](http://www.isecom.org/research/osstmm.html) in the past. As for other Open Source software projects, no yet, though because of ZAP I
 have plans and a few ideas floating around the back of my head.  
   
- **Q: What do you do outside of work?  
-A: **Outside of work I like camping, gaming (I started playing WoW on day one of release and still play), geocaching, and cooking.  
+**Q: What do you do outside of work?**
+
+**A:** Outside of work I like camping, gaming (I started playing WoW on day one of release and still play), geocaching, and cooking.  
   
- **Q: What do you [most] dislike about the ZAP development?  
-A: **There really isn't much I dislike about it. Most of the things I dislike on are my side of the equation. Not having enough time and not
+**Q: What do you [most] dislike about the ZAP development?**
+
+**A:** There really isn't much I dislike about it. Most of the things I dislike on are my side of the equation. Not having enough time and not
 actually being a Java dev.  
   
- **Q: What do you think could be done [a lot] better?  
-A: **From my point of view: The one thing I think we need to get better at is promoting scanners Alpha > Beta > Release.  
+**Q: What do you think could be done [a lot] better?**
+
+**A:** From my point of view: The one thing I think we need to get better at is promoting scanners Alpha > Beta > Release.  
   
 Sadly I don't have any ideas for solutions, but it would be really nice if we could somehow gather stats or get users to provide feedback on
 usage, false positives, etc. I often wonder if we have 100s or 1000s of users, how often they use ZAP (everyday, every project, every

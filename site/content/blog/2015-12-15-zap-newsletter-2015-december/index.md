@@ -15,18 +15,6 @@ authors:
 Welcome to the second ZAP Newsletter.  
 And apologies for the delay - 2.4.3 took longer than expected, and last week I was away at a Mozilla work week.  
   
-**Table of Contents:**  
-
-  * News
-  * New / Improved Add-ons 
-  * New Features 
-  * Tutorial: Break Points 
-  * 3rd Party Tool: ThreadFix 
-  * Upcoming Talks and Training
-  * Featured Contributor: Yuho Kameda 
-  * Feedback
-  * Next Month...
-
 ##  News
 
 The big news is that ZAP 2.4.3 is now available to [download](https://github.com/zaproxy/zaproxy/wiki/Downloads)  
@@ -48,8 +36,7 @@ Just click on the ‘Manage Add-ons’ toolbar button and select the Marketplace
   
 ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-extensions/images/zap-screenshot-browse-addons.png)  
   
-Note that all add-ons on the Marketplace are completely free and open source and anyone can publish add-ons to it - see the [zap-extensions
-wiki](https://github.com/zaproxy/zap-extensions/wiki/AddOnDevelopment) for details.  
+Note that all add-ons on the Marketplace are completely free and open source and anyone can publish add-ons to it - see the [zap-extensions wiki](https://github.com/zaproxy/zap-extensions/wiki/AddOnDevelopment) for details.  
   
 Many add-ons have been updated in ZAP 2.4.3, but in most cases these have been for relatively minor enhancements and bug fixes.  
 The add-ons that have had significant changes include:  
@@ -100,8 +87,7 @@ _This section will teach you more about a different ZAP feature every month, sta
 ZAP in an intercepting proxy, which means that you can intercept and change anything that is proxied through ZAP.  
 In order to tell ZAP that you want to intercept requests or responses you need to use break points.  
 Break points are controlled using the following buttons on the main toolbar:  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/152.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-
-core-help/images/16/151.png) Break on all requests and responses - the icon turns red when active  
+![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/152.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/151.png) Break on all requests and responses - the icon turns red when active  
 ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/143.png) Submit and step to the next request or response  
 ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/131.png) Submit and continue to the next break point  
 ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/150.png) Bin the request or response  
@@ -110,10 +96,8 @@ core-help/images/16/151.png) Break on all requests and responses - the icon turn
 The easiest option is the ‘global’ break point which you can set using the ‘break’ button (the green ball). Initially it will be green -
 pressing it will change the colour to red and means that all requests and responses will now be intercepted. You can change the toolbar to show
 2 break buttons - one for requests and one for responses - this was the only option in older versions of ZAP:  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/105.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-
-core-help/images/16/105r.png) Break on all requests - the icon turns red when active  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/106.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-
-core-help/images/16/106r.png) Break on all responses - the icon turns red when active  
+![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/105.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/105r.png) Break on all requests - the icon turns red when active  
+![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/106.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/106r.png) Break on all responses - the icon turns red when active  
 All break point options are configured via the [Options/Breakpoints screen](/docs/desktop/ui/dialogs/options/breakpoints/).  
   
 Once a break point is hit the request or response that was intercepted is displayed in the ‘Break’ tab:  
@@ -150,8 +134,7 @@ they might be.
 _Each month we plan to cover a 3rd party tool that is related to ZAP in some way. These tools can be open source, closed source, free or
 commercial._  
 This month we’re covering ThreadFix, ℅ Dan Cornell ([@danielcornell](https://twitter.com/danielcornell))  
-![ThreadFix](https://lh5.googleusercontent.com/proxy/9vZbRUBvyELqarXikdZlbDjpKR-8SxRcYo3TagoCP5Mm0XcbsJ5nHFvmd4
--_l2Xon3yw6kmIarvAT2Em8cGLG5QBW2w2Gws4N2HPOWYYgb6DMsg7cxEzFuv7JqvSCju-Y1I=s0-d)  
+{{< img "images/threadfix.png" >}}
 ThreadFix is an application vulnerability management platform that allows organizations to create a consolidated view of their applications and
 vulnerabilities, prioritize application risk decisions based on data, and then translate vulnerabilities to developers in the tools they’re
 already using.  
@@ -193,7 +176,8 @@ _And each month we plan to introduce you to one of the many ZAP contributors._
   * Name: [亀田 勇歩](https://www.owasp.org/index.php/User:Yuho_Kameda) (aka ykame) [@yuhokameda](https://twitter.com/yuhokameda/)
   * Based: Japan
 
-![Yuho Kameda](https://lh5.googleusercontent.com/proxy/lW3WZQxDDXOcWH8uPpcQVUK531xV182TGkBIRw43knBbUXdCoKkSjfs=s0-d)  
+{{< img "images/yuho1.jpg" >}}
+  
 **About my activities (job)**  
 I am a security engineer in Japan.  
   
@@ -224,14 +208,14 @@ Mainly, I am working activity of ZAP about the three points.
   * good publicity of ZAP.
   * presentation and hands-on session of ZAP in Japan.
 
-![Yuho Kameda demonstrating ZAP](https://lh4.googleusercontent.com/proxy/CngS3KwAFxuqUyJ_AfwA2Of0Uiz-KCQ6T3arcEVceo7A6rNHV-8s7mU=s0-d)  
+{{< img "images/yuho2.jpg" >}}
   
 **My contribute to ZAP (until)**  
 My activity mainly spread ZAP knowledge in Japan. There is [OWASP Japan Local Chapter](https://www.owasp.org/index.php/Japan) in Japan.  
 Mainly, I introduce ZAP in OWASP Japan. In other, I made [Japanese ZAP
 Manual](https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit). OWASP Japan released this manual on web site.  
 I recognized to be used ZAP on many users in Japan. I am so happy to be able to contribute.  
-![OWASP ZAP Hands-On](https://lh6.googleusercontent.com/proxy/YLxwfCIuQ72VhHeiCUafBWC5g6Q6GbpdrW86Fn0VwQz-ccaIy8Zq2Q4=s0-d)  
+{{< img "images/yuho3.jpg" >}}
   
 **My contribute to ZAP (from now on)**  
 I continue to spread activity. And then, I will go ahead with translate of ZAP. I want everybody to know that ZAP is easy to use. I'd like to
