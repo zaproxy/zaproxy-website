@@ -125,6 +125,13 @@
   }
 }
 
+.homepage-hero__item-content {
+  h2 {
+    font-size: 1.8rem;
+    line-height: 1.2em;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .homepage-hero__item {
     flex-direction:  column-reverse;
