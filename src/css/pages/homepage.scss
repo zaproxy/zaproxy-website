@@ -11,6 +11,10 @@
 }
 
 .homepage-personas__item {
+  text-decoration: none;
+  p {
+    color: var(--grey-medium);
+  }
 }
 
 .homepage-quotes__item {
