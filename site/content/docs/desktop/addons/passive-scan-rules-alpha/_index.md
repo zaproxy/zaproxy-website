@@ -22,9 +22,9 @@ Latest code: [ExampleFilePassiveScanner.java](https://github.com/zaproxy/zap-ext
 
 ## Base64 Disclosure
 
-* **ASP.NET ViewState Disclosure:**An ASP.NET ViewState was disclosed by the application/web server
-* **ASP.NET ViewState Integrity:**The application does not use a Message Authentication Code (MAC) to protect the integrity of the ASP.NET ViewState, which can be tampered with by a malicious client
-* **Base64 Disclosure:**Base64 encoded data was disclosed by the application/web server
+* **ASP.NET ViewState Disclosure:** An ASP.NET ViewState was disclosed by the application/web server
+* **ASP.NET ViewState Integrity:** The application does not use a Message Authentication Code (MAC) to protect the integrity of the ASP.NET ViewState, which can be tampered with by a malicious client
+* **Base64 Disclosure:** Base64 encoded data was disclosed by the application/web server
 
 Latest code: [Base64Disclosure.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/Base64Disclosure.java)
 
