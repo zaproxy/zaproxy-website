@@ -19,4 +19,8 @@ links:
     link: /faq/
     desc: Frequently Asked Questions 
 
+  - name: 'ZAPping the OWASP Top 10'
+    link: /docs/guides/zapping-the-top-10
+    desc: a guide mapping Top 10 items to ZAP functionality that can assist IT security personnel
+
 ---
