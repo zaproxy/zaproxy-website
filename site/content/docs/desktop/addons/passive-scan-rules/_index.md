@@ -56,7 +56,7 @@ Latest code: [ContentTypeMissingScanner.java](https://github.com/zaproxy/zap-ext
 
 ## Cookie HttpOnly
 
-Ensures that as cookies are set they are flagged HttpOnly. The HttpOnly flag indicates to browsers that the cookie being set should be acted upon by client side script (such as JavaScript).
+Ensures that as cookies are set they are flagged HttpOnly. The HttpOnly flag indicates to browsers that the cookie being set should not be acted upon by client side script (such as JavaScript).
 
 Latest code: [CookieHttpOnlyScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CookieHttpOnlyScanner.java)
 
