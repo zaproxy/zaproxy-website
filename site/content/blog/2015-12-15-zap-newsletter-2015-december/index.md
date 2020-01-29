@@ -34,7 +34,7 @@ _This section details add-ons that have been added or significantly updated sinc
 Add-ons are available to download and install within ZAP.  
 Just click on the ‘Manage Add-ons’ toolbar button and select the Marketplace tab:  
   
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-extensions/images/zap-screenshot-browse-addons.png)  
+![](/img/zap-screenshot-browse-addons.png)  
   
 Note that all add-ons on the Marketplace are completely free and open source and anyone can publish add-ons to it - see the [zap-extensions wiki](https://github.com/zaproxy/zap-extensions/wiki/AddOnDevelopment) for details.  
   
@@ -87,17 +87,17 @@ _This section will teach you more about a different ZAP feature every month, sta
 ZAP in an intercepting proxy, which means that you can intercept and change anything that is proxied through ZAP.  
 In order to tell ZAP that you want to intercept requests or responses you need to use break points.  
 Break points are controlled using the following buttons on the main toolbar:  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/152.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/151.png) Break on all requests and responses - the icon turns red when active  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/143.png) Submit and step to the next request or response  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/131.png) Submit and continue to the next break point  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/150.png) Bin the request or response  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/break_add.png) Add a custom HTTP break point  
+![](/docs/desktop/images/16/152.png) / ![](/docs/desktop/images/16/151.png) Break on all requests and responses - the icon turns red when active  
+![](/docs/desktop/images/16/143.png) Submit and step to the next request or response  
+![](/docs/desktop/images/16/131.png) Submit and continue to the next break point  
+![](/docs/desktop/images/16/150.png) Bin the request or response  
+![](/docs/desktop/images/16/break_add.png) Add a custom HTTP break point  
   
 The easiest option is the ‘global’ break point which you can set using the ‘break’ button (the green ball). Initially it will be green -
 pressing it will change the colour to red and means that all requests and responses will now be intercepted. You can change the toolbar to show
 2 break buttons - one for requests and one for responses - this was the only option in older versions of ZAP:  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/105.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/105r.png) Break on all requests - the icon turns red when active  
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/106.png) / ![](https://raw.githubusercontent.com/wiki/zaproxy/zap-core-help/images/16/106r.png) Break on all responses - the icon turns red when active  
+![](/docs/desktop/images/16/105.png) / ![](/docs/desktop/images/16/105r.png) Break on all requests - the icon turns red when active  
+![](/docs/desktop/images/16/106.png) / ![](/docs/desktop/images/16/106r.png) Break on all responses - the icon turns red when active  
 All break point options are configured via the [Options/Breakpoints screen](/docs/desktop/ui/dialogs/options/breakpoints/).  
   
 Once a break point is hit the request or response that was intercepted is displayed in the ‘Break’ tab:  

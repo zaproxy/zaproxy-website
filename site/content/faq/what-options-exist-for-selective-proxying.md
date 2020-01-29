@@ -17,21 +17,19 @@ There are a number of ways to accomplish selective proxying.
 
 ####  3 - Via a PAC (Proxy Auto-Config) File
 
-  * You can create your own PAC (Proxy Auto-Config) file and dynamically set proxying as you need, then point your browser at it on your harddrive using the `file:///` scheme. For example:
-
-```
-    function FindProxyForURL(url, host) { 
-        if (shExpMatch(host, "*.example.org")) { 
-            return "PROXY localhost:8080"; //Use ZAP for *.example.org
-        } 
-        // Go directly to the WWW for everything else 
-        return "DIRECT"; 
+  * You can create your own PAC (Proxy Auto-Config) file and dynamically set proxying as you need, then point your browser at it on your harddrive using the `file:///` scheme. For example:  
+```js
+function FindProxyForURL(url, host) {
+    if (shExpMatch(host, "*.example.org")) {
+        return "PROXY localhost:8080"; //Use ZAP for *.example.org
     }
+    // Go directly to the WWW for everything else
+    return "DIRECT";
+}
 ```
-
-![Firefox PAC
-example](https://raw.githubusercontent.com/wiki/zaproxy/zaproxy/images/firefox_pac.png)
+  ![Firefox PAC example](/img/faq/firefox_pac.png)
 
 ####  4 - Set "No Proxy For" in Your Browser
 
-  * Most modern browsers allow users to specify domains or networks for which the traffic should not be proxied. ![Firefox No Proxy For example](https://raw.githubusercontent.com/wiki/zaproxy/zaproxy/images/ff_no_proxy_for.png)
+  * Most modern browsers allow users to specify domains or networks for which the traffic should not be proxied.  
+  ![Firefox No Proxy For example](/img/faq/ff_no_proxy_for.png)

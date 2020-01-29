@@ -18,7 +18,7 @@ You may need to look at the source of various components to make sure the spider
 
 For example use the Firefox 'right click' 'Inspect Element' for this, but you can also use the ZAP Response tab or the View Source in your browser of choice.
 The login button is defined as:
-```
+```html
 <div class="v-button v-widget primary v-button-primary" role="button" tabindex="0">
 <span class="v-button-wrap"><span class="v-button-caption">Sign In</span></span></div>
 ```
