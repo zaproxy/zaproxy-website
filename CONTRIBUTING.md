@@ -1,7 +1,7 @@
 # CONTRIBUTING
 
 Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+please read the [code of conduct](https://github.com/zaproxy/.github/blob/master/.github/CODE_OF_CONDUCT.md).
 
 ## Setup
 
