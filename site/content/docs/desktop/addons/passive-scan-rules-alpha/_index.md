@@ -16,7 +16,7 @@ The following alpha quality passive scan rules are included in this add-on:
 ## An example passive scan rule which loads data from a file
 
 This implements an example passive scan rule that loads strings from a file that the user can edit.  
-For more details see: http://zaproxy.blogspot.co.uk/2014/04/hacking-zap-3-passive-scan-rules.html
+For more details see: [Hacking ZAP Part 3: Passive Scan Rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/).
 
 Latest code: [ExampleFilePassiveScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanner.java)
 
@@ -43,7 +43,7 @@ Latest code: [CacheableScanner.java](https://github.com/zaproxy/zap-extensions/b
 ## Example Passive Scanner: Denial of Service
 
 This implements a very simple example passive scan rule.  
-For more details see: http://zaproxy.blogspot.co.uk/2014/04/hacking-zap-3-passive-scan-rules.html
+For more details see: [Hacking ZAP Part 3: Passive Scan Rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/).
 
 Latest code: [ExampleSimplePassiveScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanner.java)
 

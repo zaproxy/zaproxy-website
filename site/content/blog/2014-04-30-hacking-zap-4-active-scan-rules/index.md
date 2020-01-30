@@ -9,8 +9,7 @@ authors:
     - simon
 ---
 Welcome to a [series of blog posts](https://github.com/zaproxy/zaproxy/wiki/Development) aimed at helping you “hack the ZAP source code”.  
-The previous post in this series is: [Hacking ZAP #3 - Passive scan rules](http://zaproxy.blogspot.co.uk/2014/04/hacking-zap-3-passive-scan-
-rules.html)  
+The previous post in this series is: [Hacking ZAP #3 - Passive scan rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/)  
   
 Active scan rules are another relatively simple way to enhance ZAP. Active scan rules attack the server, and therefore are only run when
 explicitly invoked by the user. You should only use active scan rules against applications that you have permission to attack.  

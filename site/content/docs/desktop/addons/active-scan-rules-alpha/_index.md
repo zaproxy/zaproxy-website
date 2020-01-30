@@ -16,7 +16,7 @@ The following alpha quality active scan rules are included in this add-on:
 ## An example active scan rule which loads data from a file
 
 This implements an example active scan rule that loads strings from a file that the user can edit.  
-For more details see: [Hacking ZAP Part 4: Active Scan Rules.](http://zaproxy.blogspot.co.uk/2014/04/hacking-zap-4-active-scan-rules.html)
+For more details see: [Hacking ZAP Part 4: Active Scan Rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/).
 
 Latest code: [ExampleFileActiveScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleFileActiveScanner.java)
 
@@ -36,7 +36,7 @@ Latest code: [EnvFileScanner.java](https://github.com/zaproxy/zap-extensions/blo
 ## Example Active Scanner: Denial of Service
 
 This implements a very simple example active scan rule.  
-For more details see: [Hacking ZAP Part 4: Active Scan Rules.](http://zaproxy.blogspot.co.uk/2014/04/hacking-zap-4-active-scan-rules.html)
+For more details see: [Hacking ZAP Part 4: Active Scan Rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/).
 
 Latest code: [ExampleSimpleActiveScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleSimpleActiveScanner.java)
 

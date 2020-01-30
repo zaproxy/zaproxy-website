@@ -72,6 +72,5 @@ project to people who might otherwise never have known about it or bothered to t
 
 ZAP is open source, and will stay open source. You will never have to pay for a ‘pro’ version. However we have no problem with people developing
 and selling closed source add-ons to ZAP. If you think you can make money from selling ZAP add-ons then go for it.  
-The next post in this [series](http://code.google.com/p/zaproxy/wiki/Development#Hacking_ZAP) is: [Hacking ZAP #2 - Getting started
-](http://zaproxy.blogspot.co.uk/2014/03/hacking-zap-2-getting-started.html)
+The next post in this [series](http://code.google.com/p/zaproxy/wiki/Development#Hacking_ZAP) is: [Hacking ZAP #2 - Getting started](/blog/2014-03-20-hacking-zap-2-getting-started/)
 

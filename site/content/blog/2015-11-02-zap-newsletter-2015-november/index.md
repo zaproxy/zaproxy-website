@@ -23,8 +23,8 @@ Oh, and please let us know what you think of this newsletter via the [Feedback F
 The big news this month is that we will be releasing **ZAP 2.4.3** very soon, ie hopefully in the first week of November. This will be an
 enhancement and bug fix release, and as always we recommend you update asap.  
   
-In other news, I ran the first online ZAP Q&A; session last month. You can listen to a recording of it here:
-<http://zaproxy.blogspot.com/2015/10/zap-q-session-tuesday-13th-octobr-2015.html>  
+In other news, I ran the first online ZAP Q&A; session last month. You can listen to a recording of it
+[here](/blog/2015-10-06-zap-q-a-session-tuesday-13th-october-2015/).  
 If you do listen to it then please fill out the feedback form linked off that page.  
   
 
