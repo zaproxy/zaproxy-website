@@ -92,7 +92,7 @@ Latest code: [TestPathTraversal.java](https://github.com/zaproxy/zap-extensions/
 
 ## Remote File Include
 
-This rule submits a series of requests with external URLs as parameter values and looks for a match between the the response body and the title of the page hosted at those URLs. If there is a match between the expected string and the response body, and the header returned a status code of 200, an alert is raised and the scanner returns immediately.
+This rule submits a series of requests with external URLs as parameter values and looks for a match between the response body and the title of the page hosted at those URLs. If there is a match between the expected string and the response body, and the header returned a status code of 200, an alert is raised and the scanner returns immediately.
 
 Latest code: [TestRemoteFileInclude.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/TestRemoteFileInclude.java)
 

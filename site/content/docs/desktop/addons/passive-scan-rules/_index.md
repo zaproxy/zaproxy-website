@@ -132,7 +132,7 @@ Latest code: [InformationDisclosureInURL.java](https://github.com/zaproxy/zap-ex
 
 ## Information Disclosure: Referrer
 
-Identifies the existence of sensitive details within the the Referrer header field of HTTP requests (this may include parameters, document names, directory names, etc.).
+Identifies the existence of sensitive details within the Referrer header field of HTTP requests (this may include parameters, document names, directory names, etc.).
 
 Latest code: [InformationDisclosureReferrerScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/InformationDisclosureReferrerScanner.java)
 

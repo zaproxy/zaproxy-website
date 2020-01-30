@@ -13,7 +13,7 @@ highlighted in either the [Sites tab](/docs/desktop/ui/tabs/sites/) or the
 
 Pull downs allow you to select different [Views](/docs/desktop/ui/views/) for the Response header and body.  
 
-Note that images are only shown the the [History tab](/docs/desktop/ui/tabs/history/)
+Note that images are only shown in the [History tab](/docs/desktop/ui/tabs/history/)
 if the 'Enable Image in History' flag in the [View menu](/docs/desktop/ui/tlmenu/view/) is selected.
 
 ## Right click menu
