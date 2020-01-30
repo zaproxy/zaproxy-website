@@ -467,6 +467,15 @@
   date: 2018-05-08
   version: 10
 
+- id: neonmarker
+  name: Neonmarker
+  description: Colors history table items based on tags
+  author: Juha Kivekäs, Kingthorin
+  status: alpha
+  link: /docs/desktop/addons/neonmarker/
+  date: 2020-01-02
+  version: 1.1.0
+
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
