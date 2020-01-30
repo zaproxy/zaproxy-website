@@ -12,7 +12,7 @@ proxy via ZAP and ignore certificate warnings, making it much easier for people 
 who want to use ZAP with a variety of browsers. You can install and use Browser Launch right now via the ZAP Marketplace, which can be accessed
 via the 'Manage Add-ons' button in ZAP:  
   
-![](https://github.com/zaproxy/zap-extensions/wiki/images/zap-screenshot-browse-addons.png)  
+![](/img/zap-screenshot-browse-addons.png)  
   
 just 'Check for Updates':  
 {{< img "images/Check-for-updates.png" >}}  

@@ -35,7 +35,7 @@ case;)_
 Add-ons are available to download and install within ZAP.  
 Just click on the ‘Manage Add-ons’ toolbar button and select the Marketplace tab:  
   
-![](https://raw.githubusercontent.com/wiki/zaproxy/zap-extensions/images/zap-screenshot-browse-addons.png)  
+![](/img/zap-screenshot-browse-addons.png)  
   
 Note that all add-ons on the Marketplace are completely free and open source and anyone can publish add-ons to it - see the [zap-extensions
 wiki](https://github.com/zaproxy/zap-extensions/wiki/AddOnDevelopment) for details.  
