@@ -208,7 +208,7 @@ API to perform spidering, scanning and re-sending of captured requests. The othe
 to navigate the application and submit forms. Combining these two components means that it's possible to mimic the behaviour of a security
 analyst and any test cases that they could perform manually, can now be recorded using JBehave + WebDriver + ZAP.  
   
-![](//3.bp.blogspot.com/-Nch4bYnZVNo/VjNkmWRCSmI/AAAAAAAAAdU/SoRU5UiZMpM/s640/Screen%2BShot%2B2015-10-27%2Bat%2B07.05.34.png)  
+![BDD-Security test case](images/bdd-test-case.png)  
   
 More information including a getting started guide can be found at: <http://www.continuumsecurity.net/bdd-intro.html>  
   

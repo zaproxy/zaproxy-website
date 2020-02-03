@@ -36,7 +36,7 @@ This extension allows you to switch between sessions on the fly as follows:
   6. Both sessions will be active, so you can switch between then using ZAP without having to do anything in your browser
 
   
-![](//2.bp.blogspot.com/-KZT5VfbZmLY/UMX0dZBi5HI/AAAAAAAAAG4/BUlMNZFfUK8/s640/ZAP-screenshot-sessions-tab.png)  
+![HTTP Sessions tab](images/ZAP-screenshot-sessions-tab.png)  
 Note that  the session awareness applies to all of the other ZAP tools, like the spider and active scanner, so you can easily run these tools in
 different sessions.  
   
@@ -67,7 +67,7 @@ The current version of ZAP only managed to discover 10% of the links in the [wiv
 can see the next Ajax spider is much more effective:  
   
   
-![](//2.bp.blogspot.com/-CxhilUbAeCY/UMX0fJKC3-I/AAAAAAAAAHE/PfMZlLHZPbo/s640/wivit-ajax-spider.png)  
+![72% coverage with AJAX Spider](images/wivet-ajax-spider.png)  
 
 ##  WebSockets support
 
@@ -81,8 +81,7 @@ And as with HTTP based messages, ZAP can also intercept WebSocket messages and a
 Not only that, but he also integrated the ZAP fuzzer, so you can fuzz WebSockets messages as well using all of the fuzzing payloads included in
 ZAP from projects like JBroFuzz and fuzzdb. And of course you can easily add your own fuzzing files.  
   
-[![](//4.bp.blogspot.com/-6LPe7o3MaBk/UMX0eXMYf6I/AAAAAAAAAG8/hwTGAMG4G6U/s640/ZAP-screenshot-
-websockets.PNG)](//4.bp.blogspot.com/-6LPe7o3MaBk/UMX0eXMYf6I/AAAAAAAAAG8/hwTGAMG4G6U/s1600/ZAP-screenshot-websockets.PNG)  
+[![WebSockets in ZAP](images/ZAP-screenshot-websockets-thumbnail.png)](images/ZAP-screenshot-websockets.png)  
   
 As far as I'm aware, this means that currently ZAP has better WebSockets support than any other security tool out there. So if you are
 performing a pentest on a app that uses WebSockets then you really need to use ZAP.  

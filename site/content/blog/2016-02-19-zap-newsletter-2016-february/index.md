@@ -260,7 +260,7 @@ Unconference on May 19th in Bucharest: <http://itakeunconf.com/sessions/securing
 
 _Each month we introduce you to one of the many ZAP contributors._  
   
-[{{< img "images/Johanna.jpg" >}}](https://2.bp.blogspot.com/-l6E_e0Vfzko/VsX3zS3scCI/AAAAAAAAAgE/ZAVM7LLtoeA/s1600/Johanna.jpg)  
+{{< img "images/Johanna.jpg" >}}  
 **Q: Who are you?**
 
 **A:** Johanna Curiel (aka [@jctechno](https://twitter.com/jctechno)), Software & Security Engineer.  

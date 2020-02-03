@@ -101,7 +101,7 @@ pressing it will change the colour to red and means that all requests and respon
 All break point options are configured via the [Options/Breakpoints screen](/docs/desktop/ui/dialogs/options/breakpoints/).  
   
 Once a break point is hit the request or response that was intercepted is displayed in the ‘Break’ tab:  
-![](//3.bp.blogspot.com/-b66w6TrApTE/VnAN-G5Z5hI/AAAAAAAAAew/8laBgXmCf5Y/s640/Break%2Btab%2BScreenshot%2Bfrom%2B2015-12-15%2B12-53-54.png)  
+![Break Tab](images/break-tab.png)  
 You can change anything you like in the Break tab, you can even change binary data using the Hex views.  
 The intercepted message will stay in the Break tab until you press either the ‘Submit and step’ button (which will submit the message and
 intercept the next request or response), the ‘Submit and continue’ button (which will submit the message and unset the global break point) or
@@ -113,7 +113,7 @@ scope](/docs/desktop/start/features/scope/) via the options.
 You may find that some applications continually make requests, making it difficult to find and intercept the one you are interested in.  
 If you encounter this situation then you can use custom break points.  
 There is a button on the main toolbar for custom HTTP break points, this launches the custom HTTP break point dialog:  
-![](//2.bp.blogspot.com/-FiXSI8ylST4/VnAU2avsLnI/AAAAAAAAAfA/6kV61w3g_PQ/s320/Custom%2Bhttp%2Bbreakpoint%2B2015-12-15%2B13-23-51.png)  
+![HTTP Breakpoint Dialog](images/custom-http-breakpoint.png)  
 This dialog allows you to create a custom HTTP break point that will only be hit when specific conditions are met. You can perform exact or
 regex matches against the URL, request header, request body, response header or response body.  
 You can have as many custom break points as you need - they are listed in the ‘Break Points’ tab from where they can be enabled, disabled,
