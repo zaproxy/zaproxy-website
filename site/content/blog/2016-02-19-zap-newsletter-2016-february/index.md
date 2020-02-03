@@ -101,7 +101,7 @@ By default ZAP assumes that URLs are of the form:
 
   * https://www.example.com/page?p1=v1&p2=v2
 
-In this case the URL Key Value Pair Separator is **' &'** and the the URL Key Value Separator is **'='**  
+In this case the URL Key Value Pair Separator is **' &'** and the URL Key Value Separator is **'='**  
 If (for example) part of an application you are testing uses URLs of the form:
 
   * https://www.example.com/page?p1:v1;p2:v2

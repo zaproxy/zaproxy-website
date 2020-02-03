@@ -28,5 +28,5 @@ Note that you must be using the latest version of ZAP (currently 2.8.0) and at l
 Version 2.8.0 does support Java 7, but this functionality requires Java 8. It’s worth noting that the next full release of ZAP will also require
 Java 8 as a minimum.  
   
-If you have any problems or questions about this new feature then please head over the the [ZAP User Group](https://groups.google.com/group/zaproxy-users).
+If you have any problems or questions about this new feature then please head over to the [ZAP User Group](https://groups.google.com/group/zaproxy-users).
 
