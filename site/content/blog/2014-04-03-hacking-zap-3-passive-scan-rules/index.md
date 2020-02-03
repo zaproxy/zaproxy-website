@@ -10,8 +10,7 @@ authors:
 ---
 Welcome to a [series of blog posts](https://github.com/zaproxy/zaproxy/wiki/Development#Hacking_ZAP) aimed at helping you “hack the ZAP source
 code”.  
-The previous post in this series is: [Hacking ZAP #2 - Getting Started](http://zaproxy.blogspot.co.uk/2014/03/hacking-zap-2-getting-
-started.html)  
+The previous post in this series is: [Hacking ZAP #2 - Getting Started](/blog/2014-03-20-hacking-zap-2-getting-started/)  
   
 One of the easiest ways to enhance ZAP is to write new passive scan rules.  
 Passive scan rules are used to warn the user of potential vulnerabilities that can be detected passively - they are not allowed to make any new
@@ -171,5 +170,5 @@ It also uses it when it downloads add-ons from the ZAP Marketplace, and adding y
 remove your rules dynamically.  
   
 A future post will cover how to contribute your code back to the ZAP community and progress it from alpha to beta and then release status.  
-The next post in this series is: [Hacking ZAP #4: Active scan rules](http://zaproxy.blogspot.co.uk/2014/04/hacking-zap-4-active-scan-rules.html)
+The next post in this series is: [Hacking ZAP #4: Active scan rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/)
 

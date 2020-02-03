@@ -10,7 +10,7 @@ authors:
 ---
 Welcome to a [series of blog posts](http://code.google.com/p/zaproxy/wiki/Development?ts=1394453042&updated=Development#Hacking_ZAP) aimed at
 helping you “hack the ZAP source code”.  
-The previous post in this series is: [Hacking ZAP #1 - Why should you?](http://zaproxy.blogspot.com/2014/03/hacking-zap-1-why-should-you.html)  
+The previous post in this series is: [Hacking ZAP #1 - Why should you?](/blog/2014-03-10-hacking-zap-1-why-should-you/)  
   
 In order to change the ZAP source code you will need to set up a development environment.  
   
@@ -136,6 +136,5 @@ We will cover all of these components (and more) in more detail in a future post
 If you have any questions about ZAP development then please ask them on the [ZAP Developer](http://groups.google.com/group/zaproxy-develop)
 group.  
   
-The next post in this series is: [Hacking ZAP #3: Passive scan rules](http://zaproxy.blogspot.co.uk/2014/04/hacking-zap-3-passive-scan-
-rules.html)
+The next post in this series is: [Hacking ZAP #3: Passive scan rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/)
 

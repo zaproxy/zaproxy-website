@@ -7,7 +7,7 @@ date: "2017-06-19"
 authors:
     - simon
 ---
-The previous ZAP blog post explained how you could [Explore APIs with ZAP](https://zaproxy.blogspot.com/2017/04/exploring-apis-with-zap.html).  
+The previous ZAP blog post explained how you could [Explore APIs with ZAP](/blog/2017-04-03-exploring-apis-with-zap/).  
 This blog post goes one step further, and explains how you can both explore and perform security scanning of APIs using ZAP from the command
 line.  
 This allows you to easily automate the scanning of your APIs.  
