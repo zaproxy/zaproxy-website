@@ -11,10 +11,16 @@
     {{ range sort $.Site.Data.addons "name" }}
     <tr>
         <td id="addon-{{ .id }}">
-            {{if .link }}
-            <a href="{{ .link }}">{{ .name }}</a>
+            {{if .infoUrl }}
+            <a href="{{ .infoUrl }}">{{ .name }}</a>
             {{else}}
             <span style="text-decoration: underline;">{{ .name }}</span>
+            {{end}}
+            {{if .repoUrl }}
+            <a class="no-border" title="Repository" href="{{ .repoUrl }}" target="_blank" rel="noopener noreferrer"><img alt="Repository" src="/img/addons/source.png" /></a>
+            {{end}}
+            {{if .downloadUrl }}
+            <a class="no-border" title="Download" href="{{ .downloadUrl }}" target="_blank" rel="noopener noreferrer"><img alt="Download" src="/img/addons/download.png" /></a>
             {{end}}
             <br>
             {{ .description }}

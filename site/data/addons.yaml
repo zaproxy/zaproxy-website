@@ -4,7 +4,9 @@
   description: Adds a set of tools for testing access control in web applications.
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/access-control-testing/
+  infoUrl: /docs/desktop/addons/access-control-testing/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/accessControl-alpha-5.zap
   date: 2018-11-02
   version: 5
 
@@ -13,16 +15,20 @@
   description: Allows you to automate the changing of alert risk levels.
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/alert-filters/
-  date: 2019-09-30
-  version: 9
+  infoUrl: /docs/desktop/addons/alert-filters/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v10/alertFilters-release-10.zap
+  date: 2020-01-17
+  version: 10
 
 - id: alertReport
   name: Report alert generator
   description: Allows you to generate reports for alerts you specify in pdf or odt format
   author: Talsoft SRL
   status: beta
-  link: /docs/desktop/addons/report-alert-generator/
+  infoUrl: /docs/desktop/addons/report-alert-generator/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/alertReport-beta-14.zap
   date: 2017-11-27
   version: 14
 
@@ -31,7 +37,9 @@
   description: A simple extension to view all notes in one pane.
   author: David Vassallo
   status: alpha
-  link: /docs/desktop/addons/all-in-one-notes/
+  infoUrl: /docs/desktop/addons/all-in-one-notes/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/allinonenotes-v1/allinonenotes-alpha-1.zap
   date: 2019-06-18
   version: 1
 
@@ -40,7 +48,9 @@
   description: Adds support for AMF messages
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/amf-support/
+  infoUrl: /docs/desktop/addons/amf-support/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/amf-alpha-2.zap
   date: 2017-11-28
   version: 2
 
@@ -49,34 +59,42 @@
   description: The release quality Active Scanner rules
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/active-scan-rules/
-  date: 2019-06-07
-  version: 33
+  infoUrl: /docs/desktop/addons/active-scan-rules/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v34/ascanrules-release-34.zap
+  date: 2020-01-17
+  version: 34
 
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha quality Active Scanner rules
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/active-scan-rules-alpha/
-  date: 2019-10-31
-  version: 26
+  infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v27/ascanrulesAlpha-alpha-27.zap
+  date: 2019-12-16
+  version: 27
 
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta quality Active Scanner rules
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/active-scan-rules-beta/
-  date: 2019-07-11
-  version: 26
+  infoUrl: /docs/desktop/addons/active-scan-rules-beta/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v27/ascanrulesBeta-beta-27.zap
+  date: 2019-12-16
+  version: 27
 
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to generate endpoints that can be used for penetration testing.
   author: Secure Decisions (Matthew DeLetto)
   status: alpha
-  link:
+  infoUrl: https://github.com/secdec/attack-surface-detector-zap/wiki
+  repoUrl: https://github.com/secdec/attack-surface-detector-zap/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/attacksurfacedetector-alpha-1.1.4.zap
   date: 2019-03-07
   version: 1.1.4
 
@@ -85,7 +103,9 @@
   description: Records logged in/out statistics for all contexts in scope.
   author: ZAP Core Team
   status: alpha
-  link: /docs/desktop/addons/authentication-statistics/
+  infoUrl: /docs/desktop/addons/authentication-statistics/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/authstats-alpha-1.zap
   date: 2017-11-28
   version: 1
 
@@ -94,7 +114,9 @@
   description: Provides a BeanShell Console
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/bean-shell/
+  infoUrl: /docs/desktop/addons/bean-shell/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/beanshell-beta-6.zap
   date: 2017-11-27
   version: 6
 
@@ -103,7 +125,9 @@
   description: Adds an option to render HTML responses like a browser
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/browser-view/
+  infoUrl: /docs/desktop/addons/browser-view/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/browserView-alpha-5.zap
   date: 2017-11-28
   version: 5
 
@@ -112,16 +136,20 @@
   description: Forced browsing of files and directories using code from the OWASP DirBuster tool
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/forced-browse/
-  date: 2019-06-07
-  version: 8
+  infoUrl: /docs/desktop/addons/forced-browse/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v9/bruteforce-beta-9.zap
+  date: 2020-01-17
+  version: 9
 
 - id: bugtracker
   name: Bug Tracker
   description: Bug Tracker extension.
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/bug-tracker/
+  infoUrl: /docs/desktop/addons/bug-tracker/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/bugtracker-alpha-2.zap
   date: 2017-11-28
   version: 2
 
@@ -130,7 +158,9 @@
   description: Allows the user to view a call graph of the selected resources
   author: Colm O'Flaherty
   status: alpha
-  link: /docs/desktop/addons/call-graph/
+  infoUrl: /docs/desktop/addons/call-graph/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/callgraph-alpha-4.zap
   date: 2017-11-28
   version: 4
 
@@ -139,7 +169,9 @@
   description: Fingerprint web applications
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/wafp-extension/
+  infoUrl: /docs/desktop/addons/wafp-extension/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/cmss-alpha-2.zap
   date: 2017-11-28
   version: 2
 
@@ -148,7 +180,9 @@
   description: Includes request and response data in XML reports and provides the ability to upload reports directly to a Code Dx server
   author: Code Dx, Inc.
   status: alpha
-  link: /docs/desktop/addons/code-dx/
+  infoUrl: /docs/desktop/addons/code-dx/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/codedx-v8/codedx-alpha-8.zap
   date: 2019-08-23
   version: 8
 
@@ -157,16 +191,20 @@
   description: Useful ZAP scripts written by the ZAP community.
   author: ZAP Community
   status: alpha
-  link: /docs/desktop/addons/community-scripts/
-  date: 2018-06-19
-  version: 8
+  infoUrl: /docs/desktop/addons/community-scripts/
+  repoUrl: https://github.com/zaproxy/community-scripts/
+  downloadUrl: https://github.com/zaproxy/community-scripts/releases/download/v9/communityScripts-alpha-9.zap
+  date: 2020-01-30
+  version: 9
 
 - id: custompayloads
   name: Custom Payloads
   description: Ability to add, edit or remove payloads that are used i.e. by active scanners
   author: ZAP Core Team
   status: alpha
-  link: /docs/desktop/addons/custom-payloads/
+  infoUrl: /docs/desktop/addons/custom-payloads/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.9.0/custompayloads-alpha-0.9.0.zap
   date: 2019-10-31
   version: 0.9.0
 
@@ -175,7 +213,9 @@
   description: New HTML report module allows users to customize report content.
   author: Chienli Ma
   status: alpha
-  link: /docs/desktop/addons/custom-report/
+  infoUrl: /docs/desktop/addons/custom-report/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/customreport-v5/customreport-alpha-5.zap
   date: 2019-08-30
   version: 5
 
@@ -184,25 +224,31 @@
   description: Displays a dialog showing the differences between 2 requests or responses. It uses diffutils and diff_match_patch
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/diff/
-  date: 2019-06-07
-  version: 9
+  infoUrl: /docs/desktop/addons/diff/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/diff-v10/diff-beta-10.zap
+  date: 2020-01-17
+  version: 10
 
 - id: directorylistv1
   name: Directory List v1.0
   description: List of directory names to be used with "Forced Browse" add-on.
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/directory-list-v1.0/
-  date: 2017-11-27
-  version: 3
+  infoUrl: /docs/desktop/addons/directory-list-v1.0/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/directorylistv1-v4/directorylistv1-release-4.zap
+  date: 2020-01-17
+  version: 4
 
 - id: directorylistv2_3
   name: Directory List v2.3
   description: Lists of directory names to be used with "Forced Browse" add-on.
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/directory-list-v2.3/
+  infoUrl: /docs/desktop/addons/directory-list-v2.3/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/directorylistv2_3-release-3.zap
   date: 2017-11-27
   version: 3
 
@@ -211,7 +257,9 @@
   description: Lists of lower case directory names to be used with "Forced Browse" add-on.
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/directory-list-v2.3-lc/
+  infoUrl: /docs/desktop/addons/directory-list-v2.3-lc/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/directorylistv2_3_lc-release-3.zap
   date: 2017-11-27
   version: 3
 
@@ -220,7 +268,9 @@
   description: DOM XSS Active scanner rule
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/dom-xss-active-scan-rule/
+  infoUrl: /docs/desktop/addons/dom-xss-active-scan-rule/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v9/domxss-alpha-9.zap
   date: 2019-06-12
   version: 9
 
@@ -229,7 +279,9 @@
   description: Report Export module that allows users to customize content and export in a desired format.
   author: Goran Sarenkapa - JordanGS
   status: alpha
-  link: /docs/desktop/addons/export-report/
+  infoUrl: /docs/desktop/addons/export-report/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exportreport-v6/exportreport-alpha-6.zap
   date: 2019-06-24
   version: 6
 
@@ -238,7 +290,9 @@
   description: This Form Handler Add-on allows a user to define field names and values to be used in a form's fields. Fields can be added, modified, enabled, and deleted for use in form fields.
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/form-handler/
+  infoUrl: /docs/desktop/addons/form-handler/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/formhandler-alpha-2.zap
   date: 2018-10-26
   version: 2
 
@@ -247,16 +301,20 @@
   description: Advanced fuzzer for manual testing
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/fuzzer/
-  date: 2019-06-07
-  version: 11
+  infoUrl: /docs/desktop/addons/fuzzer/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v12/fuzz-beta-12.zap
+  date: 2020-01-17
+  version: 12
 
 - id: fuzzdb
   name: FuzzDB files
   description: FuzzDB files which can be used with the ZAP fuzzer
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/fuzzdb-files/
+  infoUrl: /docs/desktop/addons/fuzzdb-files/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v5/fuzzdb-release-5.zap
   date: 2019-06-27
   version: 5
 
@@ -265,25 +323,31 @@
   description: FuzzDB web backdoors which can be used with the ZAP fuzzer
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/fuzzdb-web-backdoors/
-  date: 2019-06-27
-  version: 1
+  infoUrl: /docs/desktop/addons/fuzzdb-web-backdoors/
+  repoUrl: https://github.com/zaproxy/fuzzdb-web-backdoors/
+  downloadUrl: https://github.com/zaproxy/fuzzdb-web-backdoors/releases/download/v2/fuzzdbwebbackdoors-release-2.zap
+  date: 2020-01-30
+  version: 2
 
 - id: gettingStarted
   name: Getting Started with ZAP Guide
   description: A short Getting Started with ZAP Guide
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/getting-started-guide/
-  date: 2019-06-07
-  version: 10
+  infoUrl: /docs/desktop/addons/getting-started-guide/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v11/gettingStarted-release-11.zap
+  date: 2020-01-17
+  version: 11
 
 - id: groovy
   name: Groovy Scripting
   description: Allows Groovy to be used for ZAP scripting - templates included
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/groovy-support/
+  infoUrl: /docs/desktop/addons/groovy-support/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/groovy-alpha-2.zap
   date: 2018-04-19
   version: 2
 
@@ -292,16 +356,20 @@
   description: English version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  link: /docs/desktop/
-  date: 2019-06-07
-  version: 9
+  infoUrl: /docs/desktop/
+  repoUrl: https://github.com/zaproxy/zap-core-help/
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help-v10/help-release-10.zap
+  date: 2020-01-17
+  version: 10
 
 - id: help_bs_BA
   name: Help - Bosnian
   description: Bosnian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_bs_BA-alpha-9.zap
   date: 2018-02-08
   version: 9
 
@@ -310,7 +378,9 @@
   description: Spanish version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_es_ES-release-9.zap
   date: 2018-02-08
   version: 9
 
@@ -319,7 +389,9 @@
   description: Filipino version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_fil_PH-alpha-2.zap
   date: 2018-02-08
   version: 2
 
@@ -328,7 +400,9 @@
   description: French version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_fr_FR-alpha-9.zap
   date: 2018-02-08
   version: 9
 
@@ -337,7 +411,9 @@
   description: Indonesian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: beta
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_id_ID-beta-2.zap
   date: 2018-02-08
   version: 2
 
@@ -346,7 +422,9 @@
   description: Japanese version of the ZAP help file.
   author: ZAP Crowdin Team
   status: beta
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_ja_JP-beta-9.zap
   date: 2018-02-08
   version: 9
 
@@ -355,7 +433,9 @@
   description: Portuguese, Brazilian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_pt_BR-release-10.zap
   date: 2018-02-08
   version: 10
 
@@ -364,7 +444,9 @@
   description: Turkish version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_tr_TR-release-1.zap
   date: 2018-02-08
   version: 1
 
@@ -373,7 +455,9 @@
   description: Chinese Simplified version of the ZAP help file.
   author: ZAP Crowdin Team
   status: beta
-  link:
+  infoUrl:
+  repoUrl: 
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_zh_CN-beta-2.zap
   date: 2018-02-08
   version: 2
 
@@ -382,7 +466,9 @@
   description: Allows you to highlight strings in the request and response tabs.
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/highlighter/
+  infoUrl: /docs/desktop/addons/highlighter/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/highlighter-alpha-7.zap
   date: 2018-05-30
   version: 7
 
@@ -391,7 +477,9 @@
   description: Displays HTTPS configuration information.
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/https-info/
+  infoUrl: /docs/desktop/addons/https-info/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v12/httpsInfo-alpha-12.zap
   date: 2019-04-26
   version: 12
 
@@ -400,16 +488,20 @@
   description: Display information from ZAP in browser.
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/hud/
-  date: 2019-11-25
-  version: 0.8.0
+  infoUrl: /docs/desktop/addons/hud/
+  repoUrl: https://github.com/zaproxy/zap-hud/
+  downloadUrl: https://github.com/zaproxy/zap-hud/releases/download/v0.10.0/hud-beta-0.10.0.zap
+  date: 2020-02-04
+  version: 0.10.0
 
 - id: imagelocationscanner
   name: Image Location and Privacy Scanner
   description: Image Location and Privacy Passive Scanner
   author: Veggiespam and the ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/image-location-and-privacy-scanner/
+  infoUrl: /docs/desktop/addons/image-location-and-privacy-scanner/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/imagelocationscanner-beta-1.zap
   date: 2018-02-27
   version: 1
 
@@ -418,7 +510,9 @@
   description: Allows you to import log files from ModSecurity and files previously exported from ZAP
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/log-file-importer/
+  infoUrl: /docs/desktop/addons/log-file-importer/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/importLogFiles-alpha-4.zap
   date: 2017-11-28
   version: 4
 
@@ -427,25 +521,31 @@
   description: Adds an option to import a file of URLs. The file must be plain text with one URL per line.
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/import-urls/
-  date: 2019-06-07
-  version: 6
+  infoUrl: /docs/desktop/addons/import-urls/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/importurls-v7/importurls-beta-7.zap
+  date: 2020-01-17
+  version: 7
 
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such as URLs and parameters
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/invoke-applications/
-  date: 2018-02-19
-  version: 9
+  infoUrl: /docs/desktop/addons/invoke-applications/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/invoke-v10/invoke-beta-10.zap
+  date: 2020-01-17
+  version: 10
 
 - id: jruby
   name: Ruby scripting
   description: Allows Ruby to be used for ZAP scripting - templates included
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/ruby-scripting/
+  infoUrl: /docs/desktop/addons/ruby-scripting/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/jruby-beta-6.zap
   date: 2017-11-27
   version: 6
 
@@ -454,7 +554,9 @@
   description: Adds a view that shows JSON messages nicely formatted
   author: Juha Kivekäs
   status: alpha
-  link: /docs/desktop/addons/json-view/
+  infoUrl: /docs/desktop/addons/json-view/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/jsonview-alpha-1.zap
   date: 2018-02-08
   version: 1
 
@@ -463,7 +565,9 @@
   description: Allows Python to be used for ZAP scripting - templates included
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/python-scripting/
+  infoUrl: /docs/desktop/addons/python-scripting/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/jython-beta-10.zap
   date: 2018-05-08
   version: 10
 
@@ -472,7 +576,9 @@
   description: Colors history table items based on tags
   author: Juha Kivekäs, Kingthorin
   status: alpha
-  link: /docs/desktop/addons/neonmarker/
+  infoUrl: /docs/desktop/addons/neonmarker/
+  repoUrl: https://github.com/kingthorin/neonmarker
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/neonmarker-alpha-1.1.0.zap
   date: 2020-01-02
   version: 1.1.0
 
@@ -481,25 +587,31 @@
   description: ZAP Online menu items
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/online-menu/
-  date: 2017-11-27
-  version: 6
+  infoUrl: /docs/desktop/addons/online-menu/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/onlineMenu-v7/onlineMenu-release-7.zap
+  date: 2020-01-17
+  version: 7
 
 - id: openapi
   name: OpenAPI Support
   description: Imports and spiders OpenAPI definitions.
   author: ZAP Core Team plus Joanna Bona, Nathalie Bouchahine, Artur Grzesica, Mohammad Kamar, Markus Kiss, Michal Materniak and Marcin Spiewak
-  status: alpha
-  link: /docs/desktop/addons/openapi-support/
-  date: 2019-12-02
-  version: 14
+  status: beta
+  infoUrl: /docs/desktop/addons/openapi-support/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v15/openapi-beta-15.zap
+  date: 2020-01-17
+  version: 15
 
 - id: plugnhack
   name: Plug-n-Hack Configuration
   description: Supports the Mozilla Plug-n-Hack standard.
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/plug-n-hack/
+  infoUrl: /docs/desktop/addons/plug-n-hack/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/plugnhack-beta-11.zap
   date: 2017-11-27
   version: 11
 
@@ -508,7 +620,9 @@
   description: Allows to port scan a target server
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/port-scan/
+  infoUrl: /docs/desktop/addons/port-scan/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/portscan-beta-8.zap
   date: 2017-11-27
   version: 8
 
@@ -517,43 +631,53 @@
   description: The release quality Passive Scanner rules
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/passive-scan-rules/
-  date: 2019-06-07
-  version: 24
+  infoUrl: /docs/desktop/addons/passive-scan-rules/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v26/pscanrules-release-26.zap
+  date: 2020-01-17
+  version: 26
 
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha quality Passive Scanner rules
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/passive-scan-rules-alpha/
-  date: 2019-07-11
-  version: 25
+  infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v26/pscanrulesAlpha-alpha-26.zap
+  date: 2019-12-16
+  version: 26
 
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta quality Passive Scanner rules
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/passive-scan-rules-beta/
-  date: 2019-11-19
-  version: 20
+  infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v21/pscanrulesBeta-beta-21.zap
+  date: 2019-12-16
+  version: 21
 
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/quick-start/
-  date: 2019-06-07
-  version: 26
+  infoUrl: /docs/desktop/addons/quick-start/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v28/quickstart-release-28.zap
+  date: 2020-02-04
+  version: 28
 
 - id: regextester
   name: Regular Expression Tester
   description: Allows to test Regular Expressions
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/regular-expression-tester/
+  infoUrl: /docs/desktop/addons/regular-expression-tester/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/regextester-v1/regextester-alpha-1.zap
   date: 2019-06-20
   version: 1
 
@@ -562,16 +686,20 @@
   description: Easy way to replace strings in requests and responses.
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/replacer/
-  date: 2018-10-26
-  version: 7
+  infoUrl: /docs/desktop/addons/replacer/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v8/replacer-beta-8.zap
+  date: 2020-01-17
+  version: 8
 
 - id: requester
   name: Requester
   description: Request numbered panel.
   author: Surikato
   status: alpha
-  link: /docs/desktop/addons/requester/
+  infoUrl: /docs/desktop/addons/requester/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/requester-alpha-3.zap
   date: 2018-10-15
   version: 3
 
@@ -580,16 +708,20 @@
   description: Show hidden fields and enable disabled fields
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/reveal/
-  date: 2017-11-27
-  version: 2
+  infoUrl: /docs/desktop/addons/reveal/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reveal-v3/reveal-release-3.zap
+  date: 2020-01-17
+  version: 3
 
 - id: revisit
   name: Revisit
   description: Revisit a site at any time in the past using the session history
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/revisit/
+  infoUrl: /docs/desktop/addons/revisit/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/revisit-alpha-3.zap
   date: 2017-11-28
   version: 3
 
@@ -598,7 +730,9 @@
   description: Detect, Show, Edit, Fuzz SAML requests
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/saml-support/
+  infoUrl: /docs/desktop/addons/saml-support/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saml-v8/saml-alpha-8.zap
   date: 2019-08-30
   version: 8
 
@@ -607,43 +741,53 @@
   description: Allows to save content of HTTP messages as binary
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/save-raw-message/
-  date: 2017-11-27
-  version: 4
+  infoUrl: /docs/desktop/addons/save-raw-message/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saverawmessage-v5/saverawmessage-release-5.zap
+  date: 2020-01-17
+  version: 5
 
 - id: savexmlmessage
   name: Save XML Message
   description: Allows to save content of HTTP messages as XML
   author: thatsn0tmysite
   status: alpha
-  link: /docs/desktop/addons/save-xml-message/
-  date: 2018-05-30
-  version: 0.0.1
+  infoUrl: /docs/desktop/addons/save-xml-message/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/savexmlmessage-v0.1.0/savexmlmessage-alpha-0.1.0.zap
+  date: 2020-01-17
+  version: 0.1.0
 
 - id: scripts
   name: Script Console
   description: Supports all JSR 223 scripting languages
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/script-console/
-  date: 2019-06-07
-  version: 25
+  infoUrl: /docs/desktop/addons/script-console/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v26/scripts-beta-26.zap
+  date: 2020-01-17
+  version: 26
 
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/selenium/
-  date: 2019-06-07
-  version: 15.0.0
+  infoUrl: /docs/desktop/addons/selenium/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.1.0/selenium-release-15.1.0.zap
+  date: 2020-01-17
+  version: 15.1.0
 
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/sequence-scanner/
+  infoUrl: /docs/desktop/addons/sequence-scanner/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/sequence-alpha-5.zap
   date: 2017-11-28
   version: 5
 
@@ -652,16 +796,20 @@
   description: Allows you to spider sites that make heavy use of JavaScript using Crawljax
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/ajax-spider/
-  date: 2019-06-07
-  version: 23.0.0
+  infoUrl: /docs/desktop/addons/ajax-spider/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.1.0/spiderAjax-release-23.1.0.zap
+  date: 2020-01-17
+  version: 23.1.0
 
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
   author: Andrea Pompili (Yhawke)
   status: beta
-  link: /docs/desktop/addons/advanced-sqlinjection-scanner/
+  infoUrl: /docs/desktop/addons/advanced-sqlinjection-scanner/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sqliplugin-v13/sqliplugin-beta-13.zap
   date: 2019-06-07
   version: 13
 
@@ -670,7 +818,9 @@
   description: Allows you to view Server-Sent Events (SSE) communication.
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/server-sent-events/
+  infoUrl: /docs/desktop/addons/server-sent-events/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/sse-alpha-9.zap
   date: 2017-11-28
   version: 9
 
@@ -679,7 +829,9 @@
   description: SVN Digger files which can be used with ZAP forced browsing
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/svn-digger-files/
+  infoUrl: /docs/desktop/addons/svn-digger-files/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/svndigger-beta-3.zap
   date: 2017-11-27
   version: 3
 
@@ -688,16 +840,20 @@
   description: Display ZAP Tips and Tricks
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/tips-and-tricks/
-  date: 2019-06-07
-  version: 6
+  infoUrl: /docs/desktop/addons/tips-and-tricks/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tips-v7/tips-beta-7.zap
+  date: 2020-01-17
+  version: 7
 
 - id: tlsdebug
   name: TLS Debug
   description: Provides a tab which allows to quickly debug a TLS/SSL connection
   author: P.M.J. Roth
   status: alpha
-  link: /docs/desktop/addons/tls-debug/
+  infoUrl: /docs/desktop/addons/tls-debug/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/tlsdebug-alpha-3.zap
   date: 2018-10-15
   version: 3
 
@@ -706,7 +862,9 @@
   description: Allows you to generate and analyze pseudo random tokens, such as those used for session handling or CSRF protection
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/token-generator/
+  infoUrl: /docs/desktop/addons/token-generator/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tokengen-v13/tokengen-beta-13.zap
   date: 2019-07-15
   version: 13
 
@@ -715,7 +873,9 @@
   description: Tools to add functionality to the tree view.
   author: Carl Sampson
   status: beta
-  link: /docs/desktop/addons/treetools/
+  infoUrl: /docs/desktop/addons/treetools/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/treetools-beta-7.zap
   date: 2017-11-27
   version: 7
 
@@ -724,7 +884,9 @@
   description: ASP/JSF ViewState Decoder and Editor
   author: Calum Hutton
   status: alpha
-  link: /docs/desktop/addons/viewstate/
+  infoUrl: /docs/desktop/addons/viewstate/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/viewstate-alpha-1.zap
   date: 2017-11-28
   version: 1
 
@@ -733,7 +895,9 @@
   description: list vulnerabilities from known databases
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/vulncheck/
+  infoUrl: /docs/desktop/addons/vulncheck/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/vulncheck-alpha-1.zap
   date: 2017-11-28
   version: 1
 
@@ -742,52 +906,64 @@
   description: Technology detection using Wappalyzer
   author: ZAP Dev Team
   status: alpha
-  link: /docs/desktop/addons/technology-detection/
-  date: 2019-10-02
-  version: 14
+  infoUrl: /docs/desktop/addons/technology-detection/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v16/wappalyzer-alpha-16.zap
+  date: 2020-01-27
+  version: 16
 
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/linux-webdrivers/
-  date: 2019-10-23
-  version: 13
+  infoUrl: /docs/desktop/addons/linux-webdrivers/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v16/webdriverlinux-release-16.zap
+  date: 2020-01-17
+  version: 16
 
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/macos-webdrivers/
-  date: 2019-10-23
-  version: 13
+  infoUrl: /docs/desktop/addons/macos-webdrivers/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v15/webdrivermacos-release-15.zap
+  date: 2020-01-17
+  version: 15
 
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/windows-webdrivers/
-  date: 2019-10-23
-  version: 13
+  infoUrl: /docs/desktop/addons/windows-webdrivers/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v16/webdriverwindows-release-16.zap
+  date: 2020-01-17
+  version: 16
 
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
   author: ZAP Dev Team
   status: release
-  link: /docs/desktop/addons/websockets/
-  date: 2019-07-23
-  version: 20
+  infoUrl: /docs/desktop/addons/websockets/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v21/websocket-release-21.zap
+  date: 2020-01-17
+  version: 21
 
 - id: zest
   name: Zest - Graphical Security Scripting Language
   description: A graphical security scripting language, ZAPs macro language on steroids
   author: ZAP Dev Team
   status: beta
-  link: /docs/desktop/addons/zest/
-  date: 2019-06-07
-  version: 29
+  infoUrl: /docs/desktop/addons/zest/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v32/zest-beta-32.zap
+  date: 2020-01-24
+  version: 32
 
