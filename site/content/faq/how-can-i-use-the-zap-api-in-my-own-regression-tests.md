@@ -12,14 +12,13 @@ Note that this answer is very basic and WILL need to be improved ;)
 
 You need to have installed Java and ZAP.
 
-To launch ZAP from a java program you can do something like:
+To launch ZAP from a Java program you can do something like:
 
-    
-    
-    ProcessBuilder pb = new ProcessBuilder("/home/myuser/fullpath/ZAP_1.3.0/zap.sh");  // full path to script, use zap.bat on Windows
-    pb.directory(new File("/home/myuser/fullpath/ZAP_1.3.0/"));  // directory ZAP script in
-    Process p = pb.start();
-    
+```Java
+ProcessBuilder pb = new ProcessBuilder("/home/myuser/fullpath/ZAP 2.9.0/zap.sh");  // full path to script, use zap.bat on Windows
+pb.directory(new File("/home/myuser/fullpath/ZAP 2.9.0/"));  // directory where the script is in
+Process p = pb.start();
+```
 
 Note that this will bring up the full UI, which is useful for initial testing.
 To launch it in the background pass "-daemon" as an argument to the script.

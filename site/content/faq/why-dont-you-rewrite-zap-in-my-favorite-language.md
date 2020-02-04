@@ -14,17 +14,17 @@ Firstly, do you really need ZAP rewritten?
 
 ZAP supports all of the [JSR 223](https://www.jcp.org/en/jsr/detail?id=223)
 scripting languages, so you can already extend ZAP in a very wide range of
-scripting languages, including JavaScript, Jython and Jruby.
+scripting languages, including JavaScript, Jython, and Jruby.
 
 Secondly, even if you think you need it rewritten, most ZAP users don't really
-care what language its written in, they are more concerned about its
+care what language it's written in, they are more concerned about its
 functionality.
 
 ZAP is a complex cross platform product that contains well over 1 million
 lines of code.
 
 Java is _a_ (note, not 'the') good choice for complex cross platform projects,
-as can be seen by the number of commercial security tools written in java.
+as can be seen by the number of commercial security tools written in Java.
 There are quite a few other languages that could also be suitable. However the
 majority of ZAP developers know Java better than any other language. And a
 small subset of potential users will object to any specific technology, be it

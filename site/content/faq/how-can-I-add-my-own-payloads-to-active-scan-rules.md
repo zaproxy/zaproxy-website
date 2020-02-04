@@ -5,9 +5,9 @@ category: Scanning
 weight: 3
 ---
 
-ZAP doesnt just throw a load of payloads at a target to see what happens :)
+ZAP doesn't just throw a load of payloads at a target to see what happens :)
 
-The payloads are targetted based on the responses to other payloads so that it hopefully zeros in on specific vulnerabilities.
+The payloads are targeted based on the responses to other payloads so that it hopefully zeros in on specific vulnerabilities.
 
 However there a various options:
 

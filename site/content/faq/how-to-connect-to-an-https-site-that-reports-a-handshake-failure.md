@@ -17,8 +17,8 @@ If this doesn't help and an HTTPS site reports a handshake failure then try
 installing the 'Java Cryptography Extension (JCE) Unlimited Strength
 Jurisdiction Policy Files':
 
-  * Java 8 : <http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html>
-  * Java 9 : Should not require the JCE Policy Files, per [JDK 9 Readme](http://www.oracle.com/technetwork/java/javase/terms/readme/jdk9-readme-3852447.html#jce) (as reviewed 20171212):
+  * Java 8 : <https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html>
+  * Java 9 : Should not require the JCE Policy Files, per [JDK 9 Readme](https://www.oracle.com/technetwork/java/javase/terms/readme/jdk9-readme-3852447.html#jce) (as reviewed 20171212):
 
 > The default JCE policy files bundled in this Java Runtime Environment allow
 for "unlimited" cryptographic strengths.
@@ -31,22 +31,21 @@ to start ZAP with an installed JRE from the command line, or you can edit
 out the statement shown below(as of version 2.5.0), the script will launch
 automatically using the JRE from the system:
 
-    
-    
-    #if [ "$OS" = "Darwin" ]; then
-    #  if [ -e ../PlugIns/jre*/Contents/Home/bin/java ]; then
-    #    pushd ../PlugIns/jre*/Contents/Home/bin > /dev/null
-    #    JAVA_PATH=`pwd -P`
-    #    PATH="$JAVA_PATH:$PATH"
-    #    popd > /dev/null
-    #  fi
-    #fi
-    
+```bash
+#if [ "$OS" = "Darwin" ]; then
+#  if [ -e ../PlugIns/jre*/Contents/Home/bin/java ]; then
+#    pushd ../PlugIns/jre*/Contents/Home/bin > /dev/null
+#    JAVA_PATH=`pwd -P`
+#    PATH="$JAVA_PATH:$PATH"
+#    popd > /dev/null
+#  fi
+#fi
+```
 
 Java 8 users note you may encounter SSLHandshakeException, on sites that
 support RC4 ciphers. More info
 [here](https://github.com/zaproxy/zaproxy/issues/1892#issuecomment-139906996),
-and [here](http://stackoverflow.com/questions/32009083/javax-net-ssl-sslhandshakeexception-handshake-failure-when-using-jmeter-with-ss).
+and [here](https://stackoverflow.com/questions/32009083/javax-net-ssl-sslhandshakeexception-handshake-failure-when-using-jmeter-with-ss).
 Solution(s): Disable RC4 on the server.
 
 If you're in a corporate or business environment that normally requires the

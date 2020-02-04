@@ -8,7 +8,7 @@ weight: 2
 We rely on people like yourself to translate ZAP into other languages.
 
 If your language is not available then it means that we, the developers,
-unfortunately dont speak your language well enough to translate it and no one
+unfortunately don't speak your language well enough to translate it and no one
 else has volunteered.
 
 However you can help :)

@@ -5,7 +5,7 @@ category: Troubleshooting
 weight: 1
 ---
 
-Somethings not working as you expect with ZAP, and you're not sure if its a
+Somethings not working as you expect with ZAP, and you're not sure if it's a
 bug or a misunderstanding of how ZAP works.
 
 The following steps may well help:
@@ -39,7 +39,7 @@ The User Guide is also available [online](/docs/desktop/).
 
 Look in the zap.log file to see if any errors have been logged. This is either
 in the directory you specified via the '-dir' [command line](/docs/desktop/cmdline/) option or in
-the [default directory](/faq/what-is-the-default-directory-that-zap-uses/) if you didnt specify one.
+the [default directory](/faq/what-is-the-default-directory-that-zap-uses/) if you didn't specify one.
 
 If there are error messages that appear to indicate a Java memory problem then
 try increasing the memory available via the [JVM options](/docs/desktop/ui/dialogs/options/jvm/).

@@ -19,21 +19,20 @@ The keys are a dot notation of the XML used in the config.xml file.
 
 One way to find out which value you need to change is:
 
-  1. Start ZAP with a clean directory, eg * ./zap.sh -dir test1
+  1. Start ZAP with a clean directory, e.g. `./zap.sh -dir test1`
   2. Close ZAP
-  3. Start ZAP with another clean directory, eg * ./zap.sh -dir test2
+  3. Start ZAP with another clean directory, e.g. `./zap.sh -dir test2`
   4. Set the option you want to know the key of
   5. Close ZAP
-  6. Diff the 2 config files: * diff test1/config.xml test2/config.xml
+  6. Diff the 2 config files: `diff test1/config.xml test2/config.xml`
   7. Work out the XML hierarchy of the item that has changed
   8. Convert that to dot notation
 
 For example, the default scanner strength level is in:
 
-    
-    
-    <scanner><strength>MEDIUM</strength></scanner>
-    
+```XML
+<scanner><strength>MEDIUM</strength></scanner>
+```
 
 Which in dot notation is:
 

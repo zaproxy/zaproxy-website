@@ -14,7 +14,7 @@ Sites that use certificate pinning will typically not be loaded in your
 browser if you are proxying it through ZAP.
 
 In Firefox you can change the
-[About:config](http://kb.mozillazine.org/About:config) pref:
+[about:config](https://support.mozilla.org/en-US/kb/about-config-editor-firefox) pref:
 'security.cert_pinning.enforcement_level' to '0' or '1'
 
 The levels supported are:

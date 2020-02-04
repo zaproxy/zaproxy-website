@@ -30,11 +30,11 @@ the amount of logging performed:
     
 
 Logging can be selectively enabled using a [Stand Alone script](/docs/desktop/addons/script-console/#script-types) while ZAP is
-running (the examples below are Javascript scripts):
+running (the example below is a JavaScript script):
 
-    
-    
-    // The following will enable DEBUG logging for the API
-    org.apache.log4j.Logger.getLogger("org.zaproxy.zap.extension.api.API").setLevel(org.apache.log4j.Level.DEBUG);
-    // The following will enable DEBUG logging for the SessionFixation scanner
-    org.apache.log4j.Logger.getLogger("org.zaproxy.zap.extension.ascanrulesBeta.SessionFixation").setLevel(org.apache.log4j.Level.DEBUG);
+```JavaScript
+// The following will enable DEBUG logging for the API
+org.apache.log4j.Logger.getLogger("org.zaproxy.zap.extension.api.API").setLevel(org.apache.log4j.Level.DEBUG);
+// The following will enable DEBUG logging for the SessionFixation scanner
+org.apache.log4j.Logger.getLogger("org.zaproxy.zap.extension.ascanrulesBeta.SessionFixation").setLevel(org.apache.log4j.Level.DEBUG);
+```
