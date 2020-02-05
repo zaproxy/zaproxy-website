@@ -23,6 +23,8 @@ repo, eg [ZapVersions-2.8.xml](https://github.com/zaproxy/zap-admin/blob/master/
 This check will be done at most once per day and can be disabled via the
 Desktop UI [Check for Updates Options](/docs/desktop/ui/dialogs/options/checkforupdates/) screen.
 
+Since ZAP 2.9.0 the check for updates is also done when running in daemon mode.
+
 ###  Browser Launch Start Page
 
 By default the Quick Start add-on makes one request to see if there is a new
@@ -36,7 +38,7 @@ This will be discontinued from ZAP 2.8.0
 
 ###  ZAP News
 
-Starting from ZAP 2.8.0 the Quick Start add-on will make one request to see if
+Starting from ZAP 2.8.0 the Quick Start add-on makes one request to see if
 there is any new ZAP news.
 
 The bitly URL resolves to the relevant quick start file in the zap-admin
@@ -44,10 +46,9 @@ github repo, eg [2.8.xml](https://github.com/zaproxy/zap-admin/blob/master/files
 
 ##  Silent Mode
 
-Starting from ZAP 2.8.0 a new '-silent' command line option will be added that
-will prevent ZAP from making any 'calls home'.
+Starting from ZAP 2.8.0 the '-silent' command line option can be used to prevent ZAP from making any 'calls home'.
 
 Note that some third party add-ons may not obey the '-silent' option.
 
-This FAQ will be updated to detail any of the add-ons in the ZAP Marketplace
+This FAQ will be updated to detail any of the add-ons in the [ZAP Marketplace](/addons/)
 that fall into this category.

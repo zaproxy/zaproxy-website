@@ -14,7 +14,7 @@ Many scan rules support [Alert Thresholds](/docs/desktop/ui/dialogs/scanpolicy/#
 
 If you are using ZAP manually then you can double click alerts in the desktop UI and change the confidence level to False Positive.
 
-If you are automating ZAP and the relevant scan rule does not support a suitable threshold level then you can use [Context Alert Filters](/docs/desktop/addons/alert-filters/) to change alerts that match specific criteria to have a confidence level of False Positive.
+If you are automating ZAP and the relevant scan rule does not support a suitable threshold level then you can use [Alert Filters](/docs/desktop/addons/alert-filters/) to change alerts that match specific criteria to have a confidence level of False Positive.
 
 The [packaged scans](https://github.com/zaproxy/zaproxy/wiki/Packaged-Scans) also support regex expressions in the [configuration file](https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan#configuration-file) which allow you to ignore alerts for the URLs you specify.
 

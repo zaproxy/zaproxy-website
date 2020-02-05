@@ -26,18 +26,7 @@ Via the UI:
   11. The ![](/docs/desktop/images/fugue/forcedUserOff.png) "[Forced User Mode disabled - click to enable](/docs/desktop/ui/tltoolbar/#--forced-user-mode-on--off)" button should now be enabled
   12. Pressing this button in will cause ZAP to resend the authentication request whenever it detects that the user is no longer logged in, ie by using the 'logged in' or 'logged out' indicator.
 
-Via the API the process is the same but using the API calls:
-
-  1. [context/includeInContext](https://github.com/zaproxy/zaproxy/wiki/ApiGen_context)
-  2. [authentication/setAuthenticationMethod](https://github.com/zaproxy/zaproxy/wiki/ApiGen_authentication)
-
-  * `authMethodName : formBasedAuthentication`
-  * `authMethodConfigParams : loginUrl=http://example.com/login.html&loginRequestData=username%3D%7B%25username%25%7D%26password%3D%7B%25password%25%7D`
-    1. [authentication/setLoginIndicator](https://github.com/zaproxy/zaproxy/wiki/ApiGen_authentication) or `setLogoutIndicator`
-    2. [forcedUser/setForcedUserModeEnabled](https://github.com/zaproxy/zaproxy/wiki/ApiGen_forcedUser)
-
-The values for authMethodConfigParams parameters must be URL encoded, in this
-case loginRequestData is `username={%username%}&password={%password%}`
+The [API documentation](/docs/api/#form-based-authentication) explains the above process using the ZAP API.
 
 ##  Diagnosing problems
 

@@ -33,8 +33,7 @@ This can be accessed via the 'Help / OWASP ZAP User Guide' menu, the help
 button on the right hand side of the top toolbar, via help buttons on
 individual dialogs or via the F1 key (which is context dependant).
 
-The main help file is also available [online](/docs/desktop/), 
-although this will not include the help for optional add-ons that you have installed.
+The User Guide is also available [online](/docs/desktop/).
 
 ###  Check the log file
 
@@ -43,8 +42,7 @@ in the directory you specified via the '-dir' [command line](/docs/desktop/cmdli
 the [default directory](/faq/what-is-the-default-directory-that-zap-uses/) if you didnt specify one.
 
 If there are error messages that appear to indicate a Java memory problem then
-try increasing the memory available via the appropriate command line script
-for your platform.
+try increasing the memory available via the [JVM options](/docs/desktop/ui/dialogs/options/jvm/).
 
 ###  Ask on the ZAP User Group
 
