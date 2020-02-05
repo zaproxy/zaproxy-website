@@ -28,7 +28,7 @@
   <section>
       <div class="wrapper py-20">
         {{ with .Site.Data.download.c_os_downloads }}
-          <h2>{{ .title }}</h2>
+          <h2 id="main">{{ .title }}</h2>
 
           <table class="download-table">
             <tbody>
@@ -83,7 +83,7 @@
   <section class="bg--blue-lightest">
     <div class="wrapper py-20">
         {{ with .Site.Data.download.d_docker }}
-          <h3>{{ .title }}</h3>
+          <h3 id="docker">{{ .title }}</h3>
           <table class="download-table">
               <tbody>
                 {{ range .table }}
@@ -113,7 +113,7 @@
   <section>
     <div class="wrapper py-20">
         {{ with .Site.Data.download.e_weekly }}
-        <h3>{{ .title }}</h3>
+        <h3 id="weekly">{{ .title }}</h3>
         <table class="download-table">
             <tbody>
               {{ range .table }}
