@@ -5,8 +5,6 @@ category: Technologies Supported
 weight: 7
 ---
 
-# Vaadin Guideance
-
 The information in this FAQ is based on details from: 
 [This user group thread](https://groups.google.com/forum/#!topic/zaproxy-users/wXAX_5MmIxA)
 

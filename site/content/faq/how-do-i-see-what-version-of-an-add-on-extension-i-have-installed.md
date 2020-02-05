@@ -7,20 +7,20 @@ weight: 7
 
 There are three ways to do this:
 
-##  1 - Via the Marketplace
+###  1 - Via the Marketplace
 
   1. Click the Marketplace button in the main toolbar:  
   ![Marketplace Toolbar Button](/img/zap-screenshot-browse-addons.png)
-  2. The Installed tab now displays a column including the current version. This adds clarity if/when an update is available as the hover text displays the details for the update:  
+  2. The Installed tab now displays a column including the current version. This adds clarity if/when an update is available as the bottom panel displays the details for the update:  
   ![Installed add-on version column](/img/faq/installedAddonVersion.png)
 
-##  2 - Via the Help Menu
+###  2 - Via the Help Menu
 
   1. From the Help menu select "Support Info..."
   2. Copy the entire contents or find the specific add-on you're interested in.  
   ![Support Info... add-on version info](/img/faq/supportAddonVersion.png)
 
-##  3 - Via the CLI
+###  3 - Via the CLI
 
   1. `zap.bat -suppinfo` or `zap.sh -suppinfo` will produce output similar to:
 

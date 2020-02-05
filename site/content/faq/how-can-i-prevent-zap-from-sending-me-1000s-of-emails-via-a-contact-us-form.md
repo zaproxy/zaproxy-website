@@ -27,9 +27,9 @@ The best option is to make sure that ZAP does not submit the relevant form(s)
 in the first place, or that you execute the tests in a non-production
 environment.
 
-You can configure both the spider and active scanner to not submit any forms,
+You can configure both the [spider](/docs/desktop/ui/dialogs/options/spider/) and [active scanner](/docs/desktop/ui/dialogs/options/ascaninput/) to not submit any forms,
 but that will significantly reduce the effectiveness of these tools.
 
 The best option is to explicitly exclude those pages from the spider and
 active scanner or from ZAP as a whole via 'exclusions' - these can be accessed
-via the right click 'Exclude from' menu or the Session Properties dialog.
+via the right click 'Exclude from' menu or the [Session Properties dialog](/docs/desktop/ui/dialogs/session/).

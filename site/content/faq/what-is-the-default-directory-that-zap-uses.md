@@ -39,4 +39,4 @@ Note that you can override this using the -dir [command line](/docs/desktop/cmdl
 
 ##  Weekly releases
 
-Note that for weekly releases "_D" is appended to the above directory.
+Note that for weekly releases `_D` is appended to the above directory. Development builds also use this directory.

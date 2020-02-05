@@ -5,9 +5,11 @@ category: General Questions
 weight: 2
 ---
 
-ZAP supports both [active](/docs/desktop/start/features/ascan/) and [passive](/docs/desktop/start/features/pscan/) scanning.
+ZAP supports:
+ - HTTP [active](/docs/desktop/start/features/ascan/) and [passive](/docs/desktop/start/features/pscan/) scanning.
+ - WebSockets [passive](/docs/desktop/addons/websockets/pscanrules/) scanning.
 
-By default ZAP comes with the following 'release' quality rules:
+By default ZAP comes with the following (HTTP) 'release' quality rules:
 
   * [Release Active Scan Rules](/docs/desktop/addons/active-scan-rules/)
   * [Release Passive Scan Rules](/docs/desktop/addons/passive-scan-rules/)
@@ -18,6 +20,9 @@ But you can also download and install:
   * [Beta Passive Scan Rules](/docs/desktop/addons/passive-scan-rules-beta/)
   * [Alpha Active Scan Rules](/docs/desktop/addons/active-scan-rules-alpha/)
   * [Alpha Passive Scan Rules](/docs/desktop/addons/passive-scan-rules-alpha/)
+  * [Advanced SQLInjection Active Scan Rule](/docs/desktop/addons/advanced-sqlinjection-scanner/)
+  * [DOM XSS Active Scan Rule](/docs/desktop/addons/dom-xss-active-scan-rule/)
+  * [Image Location and Privacy Scanner](/docs/desktop/addons/image-location-and-privacy-scanner/)
 
 from the [ZAP Marketplace](/addons/).
 

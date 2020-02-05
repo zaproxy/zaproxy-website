@@ -26,7 +26,7 @@ also seen sites blocking ZAP scans based on the request signature.
 In the latter case scanning the sites using a proxied request rather than
 using the Quick Start Attack button was successful.
 
-##  HTTPS Sites
+### HTTPS Sites
 
 Are sometimes impacted by items covered in the [SSL
 FAQ](/faq/how-to-connect-to-an-https-site-that-reports-a-handshake-failure/) resulting in

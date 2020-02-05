@@ -6,7 +6,7 @@ weight: 4
 ---
 
 
-The ZAP command line allows you to set individual values as follows:
+The [ZAP command line](/docs/desktop/cmdline/) allows you to set individual values as follows:
 
     
     
