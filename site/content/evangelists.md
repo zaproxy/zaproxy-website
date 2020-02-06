@@ -12,6 +12,6 @@ To contact all evangelists please use the [zaproxy-evangelists](https://groups.g
 
 Anyone can be a ZAP Evangelist - you just need to feel comfortable talking about ZAP.
 
-Please post your details to the [ZAP Evangelists](https://groups.google.com/d/msg/zaproxy-develop/H-hcMTJ4aQ4/ZY5aVwYAC1EJ) thread on the ZAP Developer Group.
+Please submit a pull request adding your details to [evangelists.yaml](https://github.com/zaproxy/zaproxy-website/blob/master/site/data/evangelists.yaml) or post your details to the [ZAP Evangelists](https://groups.google.com/d/msg/zaproxy-develop/H-hcMTJ4aQ4/ZY5aVwYAC1EJ) thread on the ZAP Developer Group.
 
 You can also post to the above thread for advice and guidance on giving ZAP talks or training, or contact Simon directly.
