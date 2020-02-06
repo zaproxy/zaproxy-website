@@ -524,3 +524,14 @@
   has_talks: Y
   has_training: Y
   notes: ZAP Enthusiast. <a href="https://rickyvanrijn.nl/" rel="nofollow">blog</a>
+
+- name: Caleb Kinney 	
+  email: cak@cak.codes 
+  twitter: OptionalValue
+  linkedin: https://www.linkedin.com/in/calebk/
+  locations: Maryland, USA / Remote
+  language: English
+  has_talks: Y
+  has_training: Y
+  notes: AppSec, Automation / ZAP API, Bug Bounty. <a href="https://github.com/cak" rel="nofollow">GitHub</a>
+  
