@@ -1,9 +1,7 @@
 ---
-title: "ZAP Newsletter  2015 November"
+title: "ZAP Newsletter - 2015 November"
 type: post
-draft: true
 tags:
-- TODO
 date: "2015-11-02"
 authors:
     - simon
@@ -20,10 +18,10 @@ Oh, and please let us know what you think of this newsletter via the [Feedback F
   
 ##  News
 
-The big news this month is that we will be releasing **ZAP 2.4.3** very soon, ie hopefully in the first week of November. This will be an
+The big news this month is that we will be releasing **ZAP 2.4.3** very soon, i.e. hopefully in the first week of November. This will be an
 enhancement and bug fix release, and as always we recommend you update asap.  
   
-In other news, I ran the first online ZAP Q&A; session last month. You can listen to a recording of it
+In other news, I ran the first online ZAP Q&A session last month. You can listen to a recording of it
 [here](/blog/2015-10-06-zap-q-a-session-tuesday-13th-october-2015/).  
 If you do listen to it then please fill out the feedback form linked off that page.  
   
@@ -56,16 +54,15 @@ It launches browser windows and sends attack payloads to all of the relevant DOM
 
 ###  Revisit - Alpha
 
-Have you ever wanted to be able to browse an application you tested with ZAP at a specific time, perhaps when you dont have access to it, or
-after its been changed in some way? If so then this add-on is for you!  
+Have you ever wanted to be able to browse an application you tested with ZAP at a specific time, perhaps when you don't have access to it, or
+after it's been changed in some way? If so then this add-on is for you!  
 The [add-on](/docs/desktop/addons/revisit/) allows you to instruct ZAP to return content from the ZAP history between specified dates rather than forwarding the requests to the
 site. This allows you to apparently browse and use a website that you no longer have access to. It also allows you to see what it looked like at
 between specific times, which is useful if the application has since changed.  
 
 ##  New Features
 
-The following new features have been implemented are available in the weekly releases: <https://github.com/zaproxy/zaproxy/wiki/Downloads#zap-weekly>  
-  
+The following new features have been implemented are available in the [weekly](/download/#weekly) releases:
 
 ###  Updating Add-ons from the Command Line
 
@@ -77,7 +74,6 @@ There are 2 new options:
 
 These options take effect before other command line options such as ‘-quickurl’ so that add-ons will be installed and updated before attacking a
 target application.  
-  
 
 ###  Data Driven Content
 
@@ -85,20 +81,20 @@ ZAP has been enhanced to add the concept of ‘data driven content’ - path ele
 application.  
 For example, these 3 URLs represent the same page but with different data:  
 
-  * https://www.example.com/app/company1/p1?ddd=eee 
-  * https://www.example.com/app/company2/p1?ddd=fff 
-  * https://www.example.com/app/company3/p1?ddd=ggg 
+  * `https://www.example.com/app/company1/p1?ddd=eee`
+  * `https://www.example.com/app/company2/p1?ddd=fff`
+  * `https://www.example.com/app/company3/p1?ddd=ggg`
 
 By default ZAP will represent them as three separate leaf nodes:  
 
-  * https://www.example.com 
-    * app 
-      * company1 
-        * GET:p1(ddd) 
-      * company2 
-        * GET:p1(ddd) 
-      * company3 
-        * GET:p1(ddd) 
+  * `https://www.example.com`
+    * `app`
+      * `company1`
+        * `GET:p1(ddd)`
+      * `company2`
+        * `GET:p1(ddd)`
+      * `company3`
+        * `GET:p1(ddd)`
 
 This is a problem because ZAP will now attack all 3 pages when it only needs to attack one of them.  
 In this case attacking the same page 3 times is not a big problem, but if you have hundreds or thousands of pages like this then the default
@@ -108,10 +104,10 @@ The 'company' nodes are 'data driven content' - URL parameters that contain data
 You can now define data driven content by adding the application to a Context and then configuring them via the Context Structure page.  
 Once you have done this the pages will be correctly represented as 1 leaf node:  
 
-  * https://www.example.com 
-    * app 
-      * «company» 
-        * GET:p1(ddd) 
+  * `https://www.example.com`
+    * `app`
+      * `«company»`
+        * `GET:p1(ddd)`
 
 The characters « and » are used to indicate that this is a 'special' node and the node name (in this case 'company') can be set by you to
 indicate what that node represents.  
@@ -171,14 +167,13 @@ included in this request is the version of ZAP you are running - we need this to
 suitable for you.  
 The Bitly URL resolves to an XML file on GitHub which gives full details of the latest ZAP release and the add-ons available for the release you
 are using.  
-The current file is: <https://github.com/zaproxy/zap-admin/blob/master/ZapVersions-2.4.xml>  
+The current file ~~is~~ was: <https://github.com/zaproxy/zap-admin/blob/master/ZapVersions-2.4.xml>  
 All downloads are served over HTTPS and are checked against the hash included in the XML file.  
   
 ZAP will not install any add-ons downloaded over HTTP or which do not match the specified hash.  
   
-The Check for Updates code is in the zaproxy
-[org.zaproxy.zap.extension.autoupdate](https://github.com/zaproxy/zaproxy/tree/develop/src/org/zaproxy/zap/extension/autoupdate) package - if
-you have any questions on how it works then just ask on the [ZAP Developers Group](http://groups.google.com/group/zaproxy-develop).  
+The Check for Updates code is in the zaproxy [org.zaproxy.zap.extension.autoupdate](https://github.com/zaproxy/zaproxy/tree/develop/zap/src/main/java/org/zaproxy/zap/extension/autoupdate) package - if
+you have any questions on how it works then just ask on the [ZAP Developers Group](https://groups.google.com/group/zaproxy-develop).  
   
 
 ##  3rd Party Tool: BDD-Security
@@ -196,7 +191,7 @@ integration/deployment pipeline?
 How to define the security requirements of a web application so that they are visible and useful to developers and don't become out of date as
 the application grows?  
   
-By using a BDD framework like JBehave ([www.jbehave.org](http://www.jbehave.org/)), we can write automated acceptance tests for security in a
+By using a BDD framework like [JBehave](https://jbehave.org/), we can write automated acceptance tests for security in a
 natural language syntax that is understood by all members of a technical team: developers, operations, security, QA and business analysts. At
 the same time these tests can be run as if they were normal JUnit tests and included in a build pipeline, allowing the test owners to decide on
 the passing and failing criteria for each test. The framework includes a default “baseline” set of tests which are broadly applicable to a range
@@ -210,17 +205,17 @@ analyst and any test cases that they could perform manually, can now be recorded
   
 ![BDD-Security test case](images/bdd-test-case.png)  
   
-More information including a getting started guide can be found at: <http://www.continuumsecurity.net/bdd-intro.html>  
+More information including a getting started guide can be found at: <https://iriusrisk.com/open-source/>  
   
 
 ##  Upcoming Talks and Training
 
 **Bill Matthews** will be giving a hands on ZAP session titled “OWASP ZAP: From zero to hero” at the EUROstar Software Testing Conference in
 Maastricht on November 5th 10:45-11:30:  
-<http://conference.eurostarsoftwaretesting.com/conference/social/test-lab/>  
+<https://conference.eurostarsoftwaretesting.com/conference/social/test-lab/>  
   
  **Aaron Guzman** will be running a training session titled "Web Pentesting Using OWASP Tools" (which will, of course, include ZAP) at AppSec
-California in Santa Monica on January 25 9:00am-5:00pm: <http://sched.co/4Ouf>  
+California in Santa Monica on January 25 9:00am-5:00pm: <https://sched.co/4Ouf>  
   
 
 ##  Featured Contributor: Kingthorin
@@ -261,21 +256,19 @@ different angle.
 **Q: What do you get out of contributing?**
 
 **A:** I get to make a great Open Source tool do things I can use in my day job, and help others to do things they need in their jobs. It also
-forces me to learn about things like Git/Github, and simple web development tasks in generating content for ZAP PoC testing, etc. Of course it
+forces me to learn about things like Git/GitHub, and simple web development tasks in generating content for ZAP PoC testing, etc. Of course it
 helps me learn about Java and software development itself.  
   
 **Q: Do you have any advice for people who would like to contribute to ZAP?**
 
 **A:** Just do it! Jump in with both feet, deep end of the pool. There's no time like the present. People here will help you, support you,
-encourage you, and in a good way (a great way) challenge you. There are so many ways you can contribute -[ Community
-Scripts](https://github.com/zaproxy/community-scripts/), fixing or enhancing code based on[ issue
-tracker](https://github.com/zaproxy/zaproxy/issues) on Github (or your own ideas), developing your own[ extensions](https://github.com/zaproxy
-/zap-extensions), writing tutorials, making training videos, etc.  
+encourage you, and in a good way (a great way) challenge you. There are so many ways you can contribute - [Community Scripts](https://github.com/zaproxy/community-scripts/),
+fixing or enhancing code based on [issue tracker](https://github.com/zaproxy/zaproxy/issues) on GitHub (or your own ideas), developing your own [add-ons](https://github.com/zaproxy/zap-extensions),
+writing tutorials, making training videos, etc.  
   
 **Q: Do you contribute to any other open source projects?**
 
-**A:** I've also contributed to the[ OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project) and[
-OSSTMM](http://www.isecom.org/research/osstmm.html) in the past. As for other Open Source software projects, no yet, though because of ZAP I
+**A:** I've also contributed to the [OWASP Testing Guide](https://www.owasp.org/index.php/OWASP_Testing_Project) and [OSSTMM](http://www.isecom.org/research/osstmm.html) in the past. As for other Open Source software projects, no yet, though because of ZAP I
 have plans and a few ideas floating around the back of my head.  
   
 **Q: What do you do outside of work?**
@@ -311,7 +304,7 @@ Let us know what you would like to see using the above feedback form.
 If you would like to write content for the newsletter then please get in touch - anything ZAP related, such as talks / training you are giving,
 a 3rd party tool you develop or maybe an add-on you’d like to explain in more detail.  
 And we’re also looking for one or more editors for the ZAP newsletter - you don't need any detailed ZAP knowledge, just a bit of time each month
-you can dedicate to chasing up people for content and bashing it into something that reads better than this one :P Think thats you? Get in
+you can dedicate to chasing up people for content and bashing it into something that reads better than this one :P Think that's you? Get in
 touch!  
   
 Simon Bennetts (ZAP Project Lead)  

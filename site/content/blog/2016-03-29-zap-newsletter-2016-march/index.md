@@ -1,8 +1,7 @@
 ---
-title: "ZAP Newsletter  2016 March"
+title: "ZAP Newsletter - 2016 March"
 type: post
 tags:
-- TODO
 date: "2016-03-29"
 authors:
     - simon
@@ -17,13 +16,13 @@ scripting.
 ##  News
 
 The big new this month is that ZAP was voted the **TOP** free/open source security tool for 2015 by Toolswatch readers:
-<http://www.toolswatch.org/2016/02/2015-top-security-tools-as-voted-by-toolswatch-org-readers/>  
+<https://www.toolswatch.org/2016/02/2015-top-security-tools-as-voted-by-toolswatch-org-readers/>  
 This is the second time we've come top and is a great validation of what we are doing. Thank you to all of you who voted for us!  
   
 Other important news is that ZAP is taking part in the Google Summer of Code (GSoC) 2016. For those of you who don't know, GSoC pays students to
 work on open source projects over the summer, and we've had key ZAP features like WebSockets, the Ajax Spider and Access Control testing
 implement by GSoC students.  
-The deadline for submissions has just passed and we've had 9 ZAP proposals. We'll evaluate those asap, but we dont currently know how many slots
+The deadline for submissions has just passed and we've had 9 ZAP proposals. We'll evaluate those asap, but we don't currently know how many slots
 OWASP (and ZAP) will actually get so fingers crossed!  
   
 And in other breaking news, CommonSense Media have just published a Information Security Primer for Evaluating Educational Software which makes
@@ -45,29 +44,29 @@ may well be included by default in future full releases.
 
 _This section details enhancements that have been made to the core and are available in the latest weekly release._  
 The traditional spider has been updated so that you can constrain it to a subtree when using it via the UI or API. For example this means that
-with this option if you start spidering from https://www.example.com/app1 you can be sure that it wont explore any other apps under
-https://www.example.com/ - without this option it will explore anything in that domain it finds links to.  
+with this option if you start spidering from `https://www.example.com/app1` you can be sure that it won't explore any other apps under
+`https://www.example.com/` - without this option it will explore anything in that domain it finds links to.  
   
 ZAP now records a range of site based statistics, including:
 
-  * Response codes, eg 
+  * Response codes, e.g. 
     * stats.code.200
     * stats.code.302
-  * Content types, eg 
+  * Content types, e.g. 
     * stats.contentType.text/css
     * stats.contentType.text/html;charset=utf-8
-  * Tags (some of which are built in but can also be user defined), eg 
+  * Tags (some of which are built in but can also be user defined), e.g. 
     * stats.tag.Password
     * stats.tag.Hidden
     * Anticsrf tokens generated
     * stats.acsrf.anticsrf
-  * Response times (using a logarithmic scale) eg 
+  * Response times (using a logarithmic scale) e.g. 
     * stats.responseTime.1
     * stats.responseTime.2
     * stats.responseTime.4
     * stats.responseTime.8
     * stats.responseTime.16
-  * Authentication information, eg 
+  * Authentication information, e.g. 
     * stats.auth.success
     * stats.auth.failure
     * stats.auth.state.loggedin
@@ -81,12 +80,12 @@ ZAP has scanned a large site.
 ##  Tutorial: Introduction to Scripting
 
 _This section teaches you more about a different ZAP feature every month._  
-There is an almost infinite range of web applications and so its not possible for any tool to build in support for all of the strange things you
-will encounter. As ZAP is an open source project you can change the source code to handle anything you like. However this isnt always practical
+There is an almost infinite range of web applications and so it's not possible for any tool to build in support for all of the strange things you
+will encounter. As ZAP is an open source project you can change the source code to handle anything you like. However this isn't always practical
 - ZAP is a large and complex project and even if you understand the code base very well, firing up an IDE to rewrite ZAP every time you
 encounter something strange is definitely not ideal.  
 Fortunately ZAP has powerful scripting capabilities, and ZAP scripts can access all of the code and data structures.  
-There are so many aspect to ZAP scripting that one tutorial wont be enough, so we're going to start with an overview.  
+There are so many aspect to ZAP scripting that one tutorial won't be enough, so we're going to start with an overview.  
   
 Scripting support is included in all ZAP releases, but if you want to use scripting in the 'core' version then you will really need to download
 the Script Console and Zest add-ons from the marketplace.  
@@ -155,25 +154,24 @@ build up your own libraries of scripts and even manage them in a central place u
 
 ### Community Scripts repo
 
-The Community Scripts repo is a collection of ZAP scripts written by the community, ie people like you :)  
+The Community Scripts repo is a collection of ZAP scripts written by the community, i.e. people like you :)  
 It lives on github: <https://github.com/zaproxy/community-scripts> and, not surprisingly, is structured so that it can be added as a script
 directory via the Script Options. It is also available as [an add-on](/docs/desktop/addons/community-scripts/) on the ZAP Marketplace.  
   
 Hopefully that gives you an overview of the scripting support in ZAP. Future tutorials will go into scripting in more detail. In the meantime if
-you have any questions about ZAP scripting then we have a dedicated group where you can ask them: <https://groups.google.com/group/zaproxy-
-scripts>
+you have any questions about ZAP scripting then we have a dedicated group where you can ask them: <https://groups.google.com/group/zaproxy-scripts>
 
 ##  Upcoming Talks and Training
 
 ZAP will be featured in the OWASP Pune Chapter Meeting on March 31st in Pune (not surprisingly): [https://docs.google.com/forms/d/1uIbCJ8kF5xMeIB-C9_jvwvfEdex_Vly8CRU87Bupsws/viewform?c=0&w=1](https://docs.google.com/forms/d/1uIbCJ8kF5xMeIB-C9_jvwvfEdex_Vly8CRU87Bupsws/viewform?c=0&w=1)  
   
-**Adrian Winckles** will be demoing ZAP at the SecureCambridge Cyber Security Technology Showcase on April 5th in Cambridge: <http://isc2chapter-eastofengland.co.uk/>  
+**Adrian Winckles** will be demoing ZAP at the SecureCambridge Cyber Security Technology Showcase on April 5th in Cambridge: <https://www.isc2chapter-eastofengland.co.uk/>  
   
 **Azzedine RAMRAMI and Sebastien Gioria** will be demoing ZAP in their 'Securing your application with OpenSource tools' at Devoxx France on
-April 22nd in Paris: <http://cfp.devoxx.fr/2016/talk/HNE-6288/Securiser_son_developpement_avec_10_outils_open-source>  
+April 22nd in Paris: <https://cfp.devoxx.fr/2016/talk/HNE-6288/Securiser_son_developpement_avec_10_outils_open-source>  
   
-**Sumanth Damarla** ([@Sumanth_Damarla](http://www.twitter.com/Sumanth_Damarla)) will be giving a talk: "Securing Web @ZAP" at the I T.A.K.E
-Unconference on May 19th in Bucharest: <http://itakeunconf.com/sessions/securing-web-zap/>  
+**Sumanth Damarla** ([@Sumanth_Damarla](https://www.twitter.com/Sumanth_Damarla)) will be giving a talk: "Securing Web @ZAP" at the I T.A.K.E
+Unconference on May 19th in Bucharest: <https://itakeunconf.com/sessions/securing-web-zap/>  
   
 
 ##  Feedback
@@ -189,7 +187,7 @@ Let us know what you would like to see using the above feedback form.
 If you would like to write content for the newsletter then please get in touch - anything ZAP related, such as talks / training you are giving,
 a 3rd party tool you develop or maybe an add-on you'd like to explain in more detail.  
 And we're also looking for one or more editors for the ZAP newsletter - you don't need any detailed ZAP knowledge, just a bit of time each month
-you can dedicate to chasing up people for content and bashing it into something that reads better than this one :P Think thats you? Get in
+you can dedicate to chasing up people for content and bashing it into something that reads better than this one :P Think that's you? Get in
 touch!  
   
 Simon Bennetts (ZAP Project Lead)  
