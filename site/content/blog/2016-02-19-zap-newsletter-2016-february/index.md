@@ -1,9 +1,7 @@
 ---
-title: "ZAP Newsletter  2016 February"
+title: "ZAP Newsletter - 2016 February"
 type: post
-draft: true
 tags:
-- TODO
 date: "2016-02-19"
 authors:
     - simon
@@ -35,8 +33,7 @@ Just click on the ‘Manage Add-ons’ toolbar button and select the Marketplace
 Note that all add-ons on the Marketplace are completely free and open source and anyone can publish add-ons to it - see the [zap-extensions
 wiki](https://github.com/zaproxy/zap-extensions/wiki/AddOnDevelopment) for details.  
   
-New versions of the [Active scan rules (beta)](/docs/desktop/addons/active-scan-rules-beta/) and SAML add-
-ons have been released - these include security fixes so if you use them then please update them asap.  
+New versions of the [Active scan rules (beta)](/docs/desktop/addons/active-scan-rules-beta/) and SAML add-ons have been released - these include security fixes so if you use them then please update them asap.  
   
 And a new version of the Wappalyzer (technology detection) add-on has been released which includes the latest changes from the Wappalyzer
 project (<https://wappalyzer.com/>)  
@@ -74,7 +71,7 @@ or by pressing the 'Session Properties' button on the main toolbar.
 
 ### Context: Top Page
 
-The top page of each context allows you to specify the name and description. It also allows you to define if this context is 'in scope', ie they
+The top page of each context allows you to specify the name and description. It also allows you to define if this context is 'in scope', i.e. they
 are part of the system that you are testing at any specific time. All nodes that are in scope are shown with a 'target' icon on them in the
 Sites tree. You can also switch Contexts in and out of scope by right clicking them in the Contexts tree. You can choose to spider or scan all
 of the contexts that are in scope with one command. You can also use the 'Protected mode' - this will only allow you to attack nodes that are in
@@ -99,14 +96,14 @@ structure of all of the sites you visit. It is very important that ZAP correctly
 otherwise it will not be able to attack them correctly.  
 By default ZAP assumes that URLs are of the form:
 
-  * https://www.example.com/page?p1=v1&p2=v2
+  * `https://www.example.com/page?p1=v1&p2=v2`
 
-In this case the URL Key Value Pair Separator is **' &'** and the URL Key Value Separator is **'='**  
+In this case the URL Key Value Pair Separator is **`&`** and the URL Key Value Separator is **`=`**  
 If (for example) part of an application you are testing uses URLs of the form:
 
-  * https://www.example.com/page?p1:v1;p2:v2
+  * `https://www.example.com/page?p1:v1;p2:v2`
 
-then you should define those URLs to be part of a context and change the separators in this screen to **':'** and **';'**.  
+then you should define those URLs to be part of a context and change the separators in this screen to **`:`** and **`;`**.  
   
 Structural Modifiers are controls which change how ZAP represents the structure of the application. There are currently 2 types of Structural
 Modifiers:
@@ -188,7 +185,7 @@ dialogs.
 ### Context: Session Management
 
 This page allows you to manage the way in which Session Management is being done for the Context. After selecting the Session Management Method
-type, the options that need to be configured depend on the Session Management Method. For most applications you probably wont need to change
+type, the options that need to be configured depend on the Session Management Method. For most applications you probably won't need to change
 anything on this page.  
   
 
@@ -201,8 +198,7 @@ you to automatically test your applications access control.
 ##  3rd Party Tool: Faraday
 
 {{< img "images/image03.png" >}}  
-**Faraday** is an **Integrated Multi-User Pentest Environment** that’s principal goal is to map and leverage information you generate in real-
-time. Named after the British scientist Michael Faraday who was famous for his meticulous note taking (as well as the Faraday cage), our tool
+**Faraday** is an **Integrated Multi-User Pentest Environment** that’s principal goal is to map and leverage information you generate in real-time. Named after the British scientist Michael Faraday who was famous for his meticulous note taking (as well as the Faraday cage), our tool
 tries to emulate his rule of systematically recording everything.  
   
 With more than 10 years in the industry, we have learned over here at Infobyte that pentesters and security teams have unique toolsets and
@@ -210,7 +206,7 @@ skills. The idea isn’t to change a security professional’s workflow but to g
 easily documented and used to gain greater insights for a security team.  
   
 With 50+ supported tools Faraday is the connective tissue that brings together your different tools and team members to increase efficiency and
-analysis of your security engagements. {{ < img "images/image02.png" >}}  
+analysis of your security engagements. {{< img "images/image02.png" >}}  
 The ZAP plugin recognizes information such as Hosts, Interfaces, Services, Vulnerabilities and send this to Faraday. With only a copy of a
 report, all this information is available in Faraday for all the members of your team.  
   
@@ -234,7 +230,7 @@ engagement by simplifying vulnerability adjustments with severity classification
   
 However, too much information can get confusing… Faraday has a dashboard with a summary of the active workspace for a more general overview of
 your project. {{< img "images/image01.png" >}} Faraday comes in three flavors, a free community version that can be downloaded on
-our [Github](https://github.com/infobyte/faraday) and a pro and enterprise version. {{< img "images/image06.png" >}} In the
+our [GitHub](https://github.com/infobyte/faraday) and a pro and enterprise version. {{< img "images/image06.png" >}} In the
 Professional and Corporate editions you have role differentiation, different workspaces., workspace comparisons, tags, webshells, graphic
 customization (Corporate) and one-click report generation which typically has been the bane of security teams.  
   
@@ -250,10 +246,10 @@ More information can be found at:
 ##  Upcoming Talks and Training
 
 **Dan Billing** ([@TheTestDoctor](https://twitter.com/TheTestDoctor)) will be holding "The Test Doctor’s Proxy Surgery" at the TestBash Workshop
-Day on March 10th in Brighton: <http://www.ministryoftesting.com/training-events/testbash-brighton-2016/testbash-workshop-day/>  
+Day on March 10th in Brighton: <https://www.ministryoftesting.com/training-events/testbash-brighton-2016/testbash-workshop-day/>  
   
-**Sumanth Damarla** ([@Sumanth_Damarla](http://www.twitter.com/Sumanth_Damarla)) will be giving a talk: "Securing Web @ZAP" at the I T.A.K.E
-Unconference on May 19th in Bucharest: <http://itakeunconf.com/sessions/securing-web-zap/>  
+**Sumanth Damarla** ([@Sumanth_Damarla](https://www.twitter.com/Sumanth_Damarla)) will be giving a talk: "Securing Web @ZAP" at the I T.A.K.E
+Unconference on May 19th in Bucharest: <https://itakeunconf.com/sessions/securing-web-zap/>  
   
 
 ##  Featured Contributor: Johanna Curiel
@@ -311,7 +307,7 @@ that you enjoy doing. Take your time to learn ZAP and find out where your skills
   
 **Q: What do you do outside of work?**
 
-**A:** I live in the Caribbean so it's quite nice weather most of the time. I like windsurfing with my daughter , swimming, BBQ and traveling.  
+**A:** I live in the Caribbean so it's quite nice weather most of the time. I like windsurfing with my daughter , swimming, BBQ and travelling.  
   
 **Q: What do you [most] dislike about the ZAP development?**
 
@@ -339,7 +335,7 @@ Let us know what you would like to see using the above feedback form.
 If you would like to write content for the newsletter then please get in touch - anything ZAP related, such as talks / training you are giving,
 a 3rd party tool you develop or maybe an add-on you’d like to explain in more detail.  
 And we’re also looking for one or more editors for the ZAP newsletter - you don't need any detailed ZAP knowledge, just a bit of time each month
-you can dedicate to chasing up people for content and bashing it into something that reads better than this one :P Think thats you? Get in
+you can dedicate to chasing up people for content and bashing it into something that reads better than this one :P Think that's you? Get in
 touch!  
   
 Simon Bennetts (ZAP Project Lead)  

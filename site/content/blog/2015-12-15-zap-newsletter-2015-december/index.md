@@ -1,9 +1,7 @@
 ---
-title: "ZAP Newsletter  2015 December"
+title: "ZAP Newsletter - 2015 December"
 type: post
-draft: true
 tags:
-- TODO
 date: "2015-12-15"
 authors:
     - simon
@@ -17,10 +15,10 @@ And apologies for the delay - 2.4.3 took longer than expected, and last week I w
   
 ##  News
 
-The big news is that ZAP 2.4.3 is now available to [download](https://github.com/zaproxy/zaproxy/wiki/Downloads)  
+The big news is that ZAP 2.4.3 is now available to [download](/download/#main).  
 This is a development and bugfix release, for more details of all of the changes see the [release notes](/docs/desktop/releases/2.4.3/).  
   
-In other news, you can now buy ZAP stickers on [StickerMule](https://www.stickermule.com/uk/user/1070684077/stickers)  
+In other news, ~~you can now buy ZAP stickers on StickerMule~~ (UPDATE: no longer available).  
 We don't make any money from these stickers - they are just for promoting ZAP:)  
 If you’re a ZAP contributor then you can get one for free (just ping me first) and if you’re getting a load for a ZAP talk or training session
 then get in touch as well - we’ll do our best to help cover the costs.  
@@ -157,7 +155,7 @@ security analysts to set a baseline level of scheduled scans and allows developm
 More information can be found at:
 
   * ThreadFix GitHub site: <https://github.com/denimgroup/threadfix>
-  * ThreadFix homepage: <http://www.threadfix.org/>
+  * ThreadFix homepage: <https://threadfix.it/>
 
 ![](https://raw.githubusercontent.com/wiki/denimgroup/threadfix/img/plugin_downloads/plugin_downloads_01.png)  
   
@@ -165,7 +163,7 @@ More information can be found at:
 ##  Upcoming Talks and Training
 
 **Aaron Guzman** will be running a training session titled "Web Pentesting Using OWASP Tools" (which will, of course, include ZAP) at AppSec
-California in Santa Monica on January 25 9:00am-5:00pm: <http://sched.co/4Ouf>  
+California in Santa Monica on January 25 9:00am-5:00pm: <https://sched.co/4Ouf>  
   
 
 ##  Featured Contributor: Yuho Kameda
@@ -212,8 +210,7 @@ Mainly, I am working activity of ZAP about the three points.
   
 **My contribute to ZAP (until)**  
 My activity mainly spread ZAP knowledge in Japan. There is [OWASP Japan Local Chapter](https://www.owasp.org/index.php/Japan) in Japan.  
-Mainly, I introduce ZAP in OWASP Japan. In other, I made [Japanese ZAP
-Manual](https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit). OWASP Japan released this manual on web site.  
+Mainly, I introduce ZAP in OWASP Japan. In other, I made [Japanese ZAP Manual](https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit). OWASP Japan released this manual on web site.  
 I recognized to be used ZAP on many users in Japan. I am so happy to be able to contribute.  
 {{< img "images/yuho3.jpg" >}}
   
@@ -249,7 +246,7 @@ Let us know what you would like to see using the above feedback form.
 If you would like to write content for the newsletter then please get in touch - anything ZAP related, such as talks / training you are giving,
 a 3rd party tool you develop or maybe an add-on you’d like to explain in more detail.  
 And we’re also looking for one or more editors for the ZAP newsletter - you don't need any detailed ZAP knowledge, just a bit of time each month
-you can dedicate to chasing up people for content and bashing it into something that reads better than this one :P Think thats you? Get in
+you can dedicate to chasing up people for content and bashing it into something that reads better than this one :P Think that's you? Get in
 touch!  
   
 Simon Bennetts (ZAP Project Lead)  
