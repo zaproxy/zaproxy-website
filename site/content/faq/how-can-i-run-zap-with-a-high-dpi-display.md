@@ -6,7 +6,7 @@ weight: 7
 ---
 
 
-If ZAP is displayed in a really tiny window then its probably because you have
+If ZAP is displayed in a really tiny window then it's probably because you have
 a high DPI display.
 
 The solution is easy - use Java 9+
@@ -26,7 +26,7 @@ settings:
 
 ![Windows Settings High-DPI](/img/faq/windows-settings-high-dpi.png)
 
-On Linux you can try editing the zap.sh file to include the java command line
+On Linux you can try editing the zap.sh file to include the Java command line
 option like:
 
     

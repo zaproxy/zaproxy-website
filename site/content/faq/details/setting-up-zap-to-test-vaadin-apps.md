@@ -20,7 +20,7 @@ The login button is defined as:
 <div class="v-button v-widget primary v-button-primary" role="button" tabindex="0">
 <span class="v-button-wrap"><span class="v-button-caption">Sign In</span></span></div>
 ```
-So its a div. Great. Why use HTML conventions when you can do anything you like? ;)
+So it's a div. Great. Why use HTML conventions when you can do anything you like? ;)
 Anyway, this means that the default elements (a, button, input) won't be enough, so in Options / AJAX Spider uncheck 'Click default elements only (a, button, input)'. This might actually be enough to make it all work.
 However for me the loading time looked like it was over 1 second, so I increased the Options / AJAX Spider 'Event' and 'Reload' wait times.
 

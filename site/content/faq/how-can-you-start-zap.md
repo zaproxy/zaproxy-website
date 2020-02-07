@@ -21,7 +21,7 @@ There are 3 options on Windows:
 
 ###  Linux
 
-On Linux theres just a 'zap.sh' script in the [installation
+On Linux there's just a 'zap.sh' script in the [installation
 directory](/faq/where-is-zap-installed/), although you can create a desktop icon manually as
 well.
 

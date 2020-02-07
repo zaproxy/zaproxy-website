@@ -24,8 +24,8 @@ An alternative is to record a Zest script of the rule that you think should
 have detected the problem scanning the relevant URL:
 
 Find the relevant URL in the Sites (or History) tree. This must correspond to
-the request that is actually vulnerable, ie it must have the same method (GET,
-PUT etc) and the correct parameter names. If you cant find it then there is a
+the request that is actually vulnerable, i.e. it must have the same method (GET,
+PUT etc) and the correct parameter names. If you can't find it then there is a
 problem exploring your application. This could be the way you are using ZAP or
 a problem with ZAP itself and is out of scope for this FAQ.
 
@@ -41,7 +41,7 @@ a problem with ZAP itself and is out of scope for this FAQ.
 
   6. Click 'Start Scan'. You should now see one or more requests in the 'Active Scan' tab.
 
-  7. Select all of the requests in the 'Active Scan' tab, eg by clicking the first, then clicking the last with the shift key pressed.
+  7. Select all of the requests in the 'Active Scan' tab, e.g. by clicking the first, then clicking the last with the shift key pressed.
 
   8. Right click and select 'Add to Zest Script -> New Zest Script...'
 

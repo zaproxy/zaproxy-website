@@ -22,5 +22,5 @@ location of a JRE and the Zaproxy CA cert is exported to
      $ keytool -importcert -keystore $JAVA_HOME/lib/security/cacerts -file ~/owasp_zap_root_ca.cer -alias owasp_zap_root_ca
     
 
-When you run your application you'll need to make sure its using ZAP as a
+When you run your application you'll need to make sure it's using ZAP as a
 proxy.

@@ -20,7 +20,7 @@ create/modify/delete data.
 
 So the only really safe thing is proxying and passive scanning, the other 2
 could cause problems and could be considered illegal if you perform them on
-apps you dont have permission to test.
+apps you don't have permission to test.
 
 ZAP supports a 'safe' [mode](/docs/desktop/start/features/modes/) which will only allow you to do safe things,
 as well as a 'protected' mode which only allows you to attack sites that you
