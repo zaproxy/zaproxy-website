@@ -1,14 +1,12 @@
 ---
 title: "OWASP ZAP – the Firefox of web security tools"
 type: post
-draft: true
 tags:
-- TODO
 date: "2012-09-13"
 authors:
     - simon
 ---
-The [OWASP Zed Attack Proxy](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project) (otherwise known as ZAP) is a free security tool
+The OWASP Zed Attack Proxy (otherwise known as ZAP) is a free security tool
 which you can use to find security vulnerabilities in web applications. My name is Simon Bennetts, and I am the ZAP Project Leader; there is
 also an international group of volunteers who develop and support it. Future posts on this blog will describe the features that ZAP provides and
 how you can use them, but this post will concentrate on the philosophy behind ZAP. Some of the ideals that have driven ZAP are listed below and
@@ -19,8 +17,6 @@ will be expanded upon in the rest of this post:
   * provide an extensible platform for testing
   * designed to be easy to use
   * raise the bar for other security tools 
-
-  
 
 ##  Helping users learn about Application Security
 
@@ -47,7 +43,7 @@ In addition to improving the core feature set for ZAP, we are working to ensure 
 or addons, which can easily be added to existing ZAP releases. This means that new features can be added dynamically without having to wait for
 full ZAP releases, and also means that we can accommodate features that will only appeal to a small subset of our users. The ZAP community is
 very supportive of people who want to learn about coding or security, and we have just benefited from 3 students producing excellent
-enhancements to ZAP as part of the [Google Summer of Code](http://code.google.com/p/zaproxy/wiki/GSoC2012).  
+enhancements to ZAP as part of the [Google Summer of Code](https://github.com/zaproxy/zaproxy/wiki/GSoC2012).  
 
 ##  Ease of use as a design goal
 
@@ -68,14 +64,12 @@ fact we welcome such reuse as it will provide the following benefits:
   * broadens the availability of effective security tools
   * allows feature parity across tools which will drive innovation and competition
 
-  
-
 ##  Conclusion
 
 In conclusion, ZAP is a free, open-source community developed tool aimed at making the online world more secure. Anyone can get involved
 developing the core engine, or by creating addons which have full access to the core functionality. And that will probably sound vaguely
-familiar as its very close to the philosophy behind Mozilla Firefox.  
-Its why I’m working for Mozilla as a security automation engineer, and the justification for this blog’s title:) If you have any interest in
+familiar as it's very close to the philosophy behind Mozilla Firefox.  
+It's why I’m working for Mozilla as a security automation engineer, and the justification for this blog’s title:) If you have any interest in
 application security then you should download ZAP and try it out. And if you would like to learn more, or help to make ZAP better then please
 get in touch with me.  
   

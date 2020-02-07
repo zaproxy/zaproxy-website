@@ -1,8 +1,7 @@
 ---
-title: "Announcing the Official ZAP Jenkins Plugin"
+title: "Announcing the ZAP Jenkins Plugin"
 type: post
 tags:
-- TODO
 date: "2016-11-22"
 authors:
     - jordan
@@ -55,9 +54,8 @@ We plan to extend the authentication method to allow authenticated AJAX
 Spider Scans and support HTTP/NTLM Authentication. To further the continuous integration process, we will be adding Build Management tools in
 the near future which will allow you to set the thresholds that will determine a builds pass or failure. But we’re not stopping here, we will be
 continuously advancing our API to meet the needs of community requests for the Jenkins Plugin.  
-We will work with our community, taking advice and feedback to improve and support this plugin in the short and long term.  
-ZAP is, as it always has been; [one of the largest open source security software](https://github.com/zaproxy/zaproxy#justification). As such
-this plugin follows in its footsteps. We hope it will become one of your favorite additions into your development lifecycle.  
+We will work with our community, taking advice and feedback to improve and support this plugin in the short and long term.  We hope it will become
+one of your favorite additions into your development lifecycle.  
 We hope to expand this project and open it to community involvement, we welcome you; the community members to help us maintain and improve the
 plugin and we thank you for your continued support.  
 Documentation: See the [Wiki](https://wiki.jenkins-ci.org/display/JENKINS/zap+plugin) for more details.  

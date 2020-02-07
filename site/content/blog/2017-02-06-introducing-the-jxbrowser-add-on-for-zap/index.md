@@ -2,7 +2,6 @@
 title: "Introducing the JxBrowser add-on for ZAP"
 type: post
 tags:
-- TODO
 date: "2017-02-06"
 authors:
     - simon
