@@ -37,7 +37,7 @@ To do this via the UI:
   
   
 To install them via the command line is even easier - just start ZAP with the command line flags: “-addoninstall soap -addoninstall openapi”  
-Eg:  
+e.g.:  
 
 ```sh
 ./zap.sh -addoninstall soap -addoninstall openapi
@@ -124,8 +124,8 @@ including the active scanner and fuzzer.
   
 Note that the SOAP Scanner add-on also adds 2 additional scan rules that specifically target SOAP and XML URLs:  
 
-  * Action Spoofing : <http://www.ws-attacks.org/index.php/SOAPAction_Spoofing>
-  * XML Injection : <http://www.ws-attacks.org/index.php/XML_Injection>
+  * Action Spoofing : <https://www.ws-attacks.org/index.php/SOAPAction_Spoofing>
+  * XML Injection : <https://www.ws-attacks.org/index.php/XML_Injection>
 
   
   

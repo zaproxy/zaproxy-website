@@ -43,7 +43,7 @@ The script has a number of command line options that allow it to be tuned to you
 
 ```
 Usage: zap-api-scan.py -t <target> -f <format> [options]  
-    -t target         target API definition, OpenAPI or SOAP, local file or URL, eg https://www.example.com/openapi.json  
+    -t target         target API definition, OpenAPI or SOAP, local file or URL, e.g. https://www.example.com/openapi.json  
     -f format         either openapi or soap  
 Options:  
     -c config_file    config file to use to INFO, IGNORE or FAIL warnings  
@@ -60,7 +60,7 @@ Options:
     -l level          minimum level to show: PASS, IGNORE, INFO, WARN or FAIL, use with -s to hide example URLs  
     -n context_file   context file which will be loaded prior to scanning the target  
     -p progress_file  progress file which specifies issues that are being addressed  
-    -s                short output format - dont show PASSes or example URLs  
+    -s                short output format - don't show PASSes or example URLs  
     -z zap_options ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"  
 ```
   
@@ -100,13 +100,13 @@ For example the options:
   -config formhandler.fields.field\\(1\\).enabled=true  
 ```
 Will supply the following values to the named fields:  
-  username -> test@example.com  
-  phone -> 012345678  
+  `username` -> `test@example.com`  
+  `phone` -> `012345678`  
 Support for specifying values for APIs defined using SOAP is also planned – if you need this then get in touch with the ZAP development team and
 we will do our best to prioritize this.  
   
 Note that as these are ZAP command line options you will need to specify them to the script using the -z script option.  
-If you need to specify lots of options then you can put them all in a property file, eg called options.prop  
+If you need to specify lots of options then you can put them all in a property file, e.g. called options.prop  
 You can then run the API scan using a command like:  
 
 ```
@@ -140,8 +140,8 @@ For example the options:
   -config replacer.full_list\\(1\\).replacement=abcdefghi  
 ```
 will cause the following headers to be added to every request ZAP makes:  
-  Authorization: 123456789  
-  AnotherHeader: abcdefghi  
+  `Authorization: 123456789`  
+  `AnotherHeader: abcdefghi`  
 You can specify as many headers as you need to by using incrementing indexes.  
   
 This functionality is provided by the [Replacer](/docs/desktop/addons/replacer/) add-on included by

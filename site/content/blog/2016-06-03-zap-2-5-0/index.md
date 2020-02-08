@@ -2,16 +2,13 @@
 title: "ZAP 2.5.0"
 type: post
 tags:
-- TODO
 date: "2016-06-03"
 authors:
     - simon
 ---
 
 
-##
-
-ZAP 2.5.0 is now available: <https://github.com/zaproxy/zaproxy/wiki/Downloads>  
+ZAP 2.5.0 is [now available](/download/#main).  
   
 This release contains a large number of enhancements and fixes which are detailed in the [release notes](/docs/desktop/releases/2.5.0/).  
   

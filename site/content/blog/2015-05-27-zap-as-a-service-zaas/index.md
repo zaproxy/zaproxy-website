@@ -1,15 +1,13 @@
 ---
 title: "ZAP as a Service (ZaaS)"
 type: post
-draft: true
 tags:
-- TODO
 date: "2015-05-27"
 authors:
     - simon
 ---
 At OWASP AppSec EU in Amsterdam this year I announced ZAP as a Service (ZaaS).  
-The slides are [here](http://www.slideshare.net/psiinon/owasp-2015-06appseceuzap24) and the video will hopefully be available soon.  
+The slides are [here](https://www.slideshare.net/psiinon/owasp-2015-06appseceuzap24) and the video will hopefully be available soon.  
   
 The idea behind this development is to enhance ZAP so that it can be run in a ‘server’ mode.  
 This is different to the current ‘daemon’ mode in that it will be designed to be a long running, highly scalable, distributed service accessed
@@ -21,20 +19,20 @@ However I decided to announce this as a future direction in order to stimulate d
   
 And I want to stress that it is _not_ a replacement for ‘desktop’ ZAP (as I’ve started calling it).  
 Desktop ZAP is an important focus for us, and it is the way we expect most people to use ZAP for the foreseeable future.  
-Instead its just a different way of running ZAP - theres going to be a lot of common code between desktop ZAP and ZaaS.  
+Instead it's just a different way of running ZAP - there's going to be a lot of common code between desktop ZAP and ZaaS.  
   
 So how will ZaaS differ from desktop ZAP?  
   
 
 ###  Database
 
-The current HSQLDB is good for a desktop application as it requires no installation, but its not suitable for ZaaS.  
+The current HSQLDB is good for a desktop application as it requires no installation, but it's not suitable for ZaaS.  
 In 2.4.0 we introduced a database independence layer so that alternative implementations can be supported, although the only implementation was
 the current hard coded HSQLDB option.  
-In the trunk theres now a generic SQL implementation, in which all of the SQL statements have been extracted into property files.  
+In the `develop` branch there's now a generic SQL implementation, in which all of the SQL statements have been extracted into property files.  
 In theory any SQL db should be supportable, and working implementations of both HSQLDB and MySQL are provided.  
-Although MySQL is intended for daemon or ZaaS modes theres no reason why it cant also be used for the desktop, and in fact thats one of the
-options thats been tested.  
+Although MySQL is intended for daemon or ZaaS modes there's no reason why it can't also be used for the desktop, and in fact that's one of the
+options that's been tested.  
 Details of how to configure ZAP to use MySQL will be posted on the ZAP Developer Group soon.  
 One important aspect that has not been implemented yet is the ability to support multiple database instances in order to better segregate data.  
   
@@ -45,7 +43,7 @@ While desktop ZAP uses the database very heavily, it still builds up some big da
 quickly to user events, such as scrolling through a long list.  
 Structures like the Sites tree and History table are held in memory and will constantly grow.  
 This is no good for a long running service, which is why we have introduced a ‘low memory’ option. When this option is used ZAP components that
-support it will not build up any significant data structures in memory, and those that dont support it will not be enabled.  
+support it will not build up any significant data structures in memory, and those that don't support it will not be enabled.  
 This has been implemented for most of the core, but some of the add-ons (including some key active scan rules) still need to be changed.  
 Again, details of how to configure ZAP to use the low memory option will be posted on the ZAP Developer Group soon.  
   
@@ -102,7 +100,7 @@ professionals not directly connected with the project.
 One key thing that will not change between Desktop ZAP and ZaaS is the license.  
 ZaaS with be released under Apache V2, which means that anyone can use it for anything they like.  
 You will be able to set up a ZaaS instance for your company, and if you want to you could even set up ZaaS as an online service and charge money
-for it - thats completely permissible!  
+for it - that's completely permissible!  
   
 
 ###  Development process
@@ -112,7 +110,7 @@ As mentioned at the start of this post, this announcement is to stimulate discus
 We are not able to give any idea of a possible release date for ZaaS at this stage, however we will aim to implement features in a way that
 ensures they can be used even without the full ZaaS solution.  
   
-We will be using the [ZAP Development group](http://groups.google.com/group/zaproxy-develop) for all of the ZaaS related discussions - please
+We will be using the [ZAP Development group](https://groups.google.com/group/zaproxy-develop) for all of the ZaaS related discussions - please
 join in!  
   
 

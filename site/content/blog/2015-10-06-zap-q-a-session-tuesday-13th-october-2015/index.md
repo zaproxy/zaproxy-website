@@ -1,14 +1,12 @@
 ---
 title: "ZAP Q&A Session - Tuesday 13th October 2015"
 type: post
-draft: true
 tags:
-- TODO
 date: "2015-10-06"
 authors:
     - simon
 ---
-**The first online ZAP Q &A Session was held on Tuesday 13th October.**  
+**The first online ZAP Q&A Session was held on Tuesday 13th October.**  
   
 You can listen to a recording of the session [here](https://soundcloud.com/simon-bennetts/2015-10-13-owasp-zap-qa).  
   
@@ -16,23 +14,24 @@ Please leave feedback via this [Google Form](https://docs.google.com/forms/d/1Kx
   
 Some links to resources mentioned in the session or related to the questions:  
 
-* [The DOM XSS add-on](/docs/desktop/addons/dom-xss-active-scan-rule/) * 
-* [The Context Alert Filters add-on](/docs/desktop/addons/alert-filters/) * 
-* [The Revisit Add-on](/docs/desktop/addons/revisit/) * 
-* [The Access Control add-on](/docs/desktop/addons/access-control-testing/) * 
+* [The DOM XSS add-on](/docs/desktop/addons/dom-xss-active-scan-rule/)
+* [The Context Alert Filters add-on](/docs/desktop/addons/alert-filters/)
+* [The Revisit Add-on](/docs/desktop/addons/revisit/)
+* [The Access Control add-on](/docs/desktop/addons/access-control-testing/)
 * [The vulnerabilities detected by ZAP](/faq/what-does-zap-test-for/)
 * [How to set up form based authentication](/faq/how-can-zap-automatically-authenticate-via-forms/)
 * [The community-scripts repo](https://github.com/zaproxy/community-scripts)
-* Note that you can download add-ons from within ZAP via the [Marketplace](/addons/).  
+
+Note that you can download add-ons from within ZAP via the [Marketplace](/addons/).  
   
 The original announcement is below for reference:  
   
 **Do you have questions you would like answered about OWASP ZAP?**  
   
-If so then you'll want to attend the ZAP Q &A; Session with Simon Bennetts, the ZAP project lead, on **Tuesday 13th October, 16:00 - 17:00 BST**
-([see in your timezone](http://www.timeanddate.com/worldclock/fixedtime.html?msg=OWASP+ZAP+Q%26A&iso=20151013T16&p1=136&ah=1))  
+If so then you'll want to attend the ZAP Q&A Session with Simon Bennetts, the ZAP project lead, on **Tuesday 13th October, 16:00 - 17:00 BST**
+([see in your timezone](https://www.timeanddate.com/worldclock/fixedtime.html?msg=OWASP+ZAP+Q%26A&iso=20151013T16&p1=136&ah=1))  
 ****  
-[**https://global.gotomeeting.com/join/531638173**](https://global.gotomeeting.com/join/531638173)\- toll-free numbers given below.  
+[**https://global.gotomeeting.com/join/531638173**](https://global.gotomeeting.com/join/531638173) - toll-free numbers given below.  
   
 You can either ask questions during the session or submit them in advance via twitter to [@psiinon](https://twitter.com/psiinon)  
   
@@ -41,7 +40,7 @@ The meeting will be recorded for those who cannot attend.
 This is the first time we'll have tried such a session, but if it proves useful then we may make this a regular event.  
   
 Please note that this session is probably not the best forum for detailed support questions.  
-For those please use the [ZAP User Group](http://groups.google.com/group/zaproxy-users).  
+For those please use the [ZAP User Group](https://groups.google.com/group/zaproxy-users).  
   
 Simon Bennetts  
   
