@@ -1,0 +1,30 @@
+# This file is automatically updated by zaproxy/zap-admin repo.
+---
+- name: Windows (64) Installer
+  id: win-64-i
+  size: 94 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2_9_0_windows.exe
+- name: Windows (32) Installer
+  id: win-32-i
+  size: 94 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2_9_0_windows-x32.exe
+- name: Linux Installer
+  id: nix-i
+  size: 94 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2_9_0_unix.sh
+- name: Linux Package
+  id: nix-p
+  size: 92 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2.9.0_Linux.tar.gz
+- name: MacOS Installer
+  id: osx-i
+  size: 125 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2.9.0.dmg
+- name: Cross Platform Package
+  id: cp-p
+  size: 108 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2.9.0_Crossplatform.zip
+- name: Core Cross Platform Package
+  id: cp-c
+  size: 35 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2.9.0_Core.zip

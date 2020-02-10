@@ -1,3 +1,4 @@
+# This file is automatically updated by zaproxy/zap-admin repo.
 ---
 - id: accessControl
   name: Access Control Testing

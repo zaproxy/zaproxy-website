@@ -27,12 +27,12 @@
 
   <section>
       <div class="wrapper py-20">
-        {{ with .Site.Data.download.c_os_downloads }}
+        {{ with .Site.Data.download.c_main }}
           <h2 id="main">{{ .title }}</h2>
 
           <table class="download-table">
             <tbody>
-              {{ range .table }}
+              {{ range $.Site.Data.download.c_main_files }}
                 <tr>
                   <td>{{ .name }}</td>
                   <td style="text-align:right"><code>{{ .size }}</code></td>
@@ -116,7 +116,7 @@
         <h3 id="weekly">{{ .title }}</h3>
         <table class="download-table">
             <tbody>
-              {{ range .table }}
+              {{ range $.Site.Data.download.e_weekly_files }}
                 <tr>
                   <td>{{ .name }}</td>
                   <td><code>{{ .size }}</code></td>
