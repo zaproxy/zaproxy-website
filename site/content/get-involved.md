@@ -28,6 +28,10 @@ links:
     link: https://github.com/zaproxy/zaproxy/blob/develop/CONTRIBUTING.md
     desc: lots more details on how you can get involved 
 
+  - name: 'Student Hall of Fame'
+    link: /student-hall-of-fame/
+    desc: Students who have made significant contributions to ZAP 
+
   - name: 'Bug Bounty'
     link: https://bugcrowd.com/owaspzap
     desc: for reporting any vulnerabilities 
