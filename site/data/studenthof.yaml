@@ -54,12 +54,30 @@
   links: >
     <a href="https://manosmagnus.github.io/posts/websocket-passive-scan-using-scripts-with-zap/" rel="nofollow">Blog</a>
 
-- name:  Ryan Wehe, Christopher Laguna, Rian Franey
+- name:  Ryan Wehe
+  email: 
+  twitter: 
+  linkedin: https://www.linkedin.com/in/ryanwehe/
+  program: MWoS
+  title: Form handling (team project)
+  date: 2016 Winter
+  links: <a href="https://wiki.mozilla.org/Security/Automation/Winter_Of_Security_2016/ZAP_Form_Handling">Wiki</a>
+
+- name:  Christopher Laguna
   email: 
   twitter: 
   linkedin: 
   program: MWoS
-  title: Form handling
+  title: Form handling (team project)
+  date: 2016 Winter
+  links: <a href="https://wiki.mozilla.org/Security/Automation/Winter_Of_Security_2016/ZAP_Form_Handling">Wiki</a>
+
+- name:  Rian Franey
+  email: 
+  twitter: 
+  linkedin: 
+  program: MWoS
+  title: Form handling (team project)
   date: 2016 Winter
   links: <a href="https://wiki.mozilla.org/Security/Automation/Winter_Of_Security_2016/ZAP_Form_Handling">Wiki</a>
 
