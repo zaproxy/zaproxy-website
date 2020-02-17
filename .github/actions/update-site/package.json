@@ -1,0 +1,21 @@
+{
+  "name": "update-website",
+  "version": "1.0.0",
+  "description": "Update the website with a pull request",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+    "package": "ncc build index.js -o dist"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.0",
+    "@actions/exec": "^1.0.1",
+    "@actions/github": "^1.1.0",
+    "@actions/glob": "^0.1.0",
+    "@actions/io": "^1.0.1",
+    "@octokit/rest": "^16.43.1"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.20.5"
+  }
+}
