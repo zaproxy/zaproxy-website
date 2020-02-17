@@ -8,7 +8,7 @@ const io = require('@actions/io')
 const { Octokit } = require("@octokit/rest")
 
 async function git(dir, args, options) {
-  return exec.exec('git', args, { ...{ cwd: dir, silent: true }, ...options })
+  return exec.exec('git', args, { ...{ cwd: dir }, ...options })
 }
 
 function getRequiredInput(name) {
@@ -53,7 +53,10 @@ async function run() {
     await deleteSiteContents(websiteDir)
     await copy(`${sourceDir}/dist/*`, websiteDir)
 
-    const code = await git(websiteDir, ['diff-index', '--quiet', 'HEAD'], { ignoreReturnCode: true })
+    core.info('Checking for changes...')
+    await git(websiteDir, ['add', '.'])
+    const code = await git(websiteDir, ['diff-index', '--cached', '--quiet', 'HEAD', '--'], { ignoreReturnCode: true })
+    core.info(`Result: ${code}`)
     if (code === 0) {
       return
     }
@@ -82,20 +85,27 @@ async function run() {
       pullId = pulls.data[0].id
     }
 
-    const gitHubBaseUrl = `https://${user}:${authToken}@github.com`
+    const gitHubBaseUrl = 'https://github.com'
     const title = 'Update site content'
     const body = `From:\n${owner}/${repo}@${github.context.sha}`
     const commitMessage = `${title}\n\n${body}`
 
-    await git(websiteDir, ['config', 'user.name', user])
-    await git(websiteDir, ['config', 'user.email', email])
+    core.info('Setting user configs...')
+    await git(websiteDir, ['config', '--local', 'user.name', user])
+    await git(websiteDir, ['config', '--local', 'user.email', email])
+    const authHeader = `Authorization: Basic ${Buffer.from(`${user}:${authToken}`).toString('base64')}`
+    await git(websiteDir, ['config', '--local', `http.${gitHubBaseUrl}/.extraheader`, authHeader], { silent: true })
+    core.info('Changing remote...')
     await git(websiteDir, ['remote', 'set-url', 'origin', `${gitHubBaseUrl}/${user}/${websiteRepoName}`])
+    core.info('Checking out branch...')
     await git(websiteDir, ['checkout', '-b', branch])
-    await git(websiteDir, ['add', '.'])
+    core.info('Committing...')
     await git(websiteDir, ['commit', '-sm', commitMessage])
+    core.info('Pushing...')
     await git(websiteDir, ['push', '-f', 'origin', branch])
 
     if (pullId) {
+      core.info('Updating pull request...')
       await octokit.pulls.update({
         owner: owner,
         repo: websiteRepoName,
@@ -103,6 +113,7 @@ async function run() {
         body: body,
       })
     } else {
+      core.info('Creating pull request...')
       await octokit.pulls.create({
         ...pullRequestParams,
         title: title,
