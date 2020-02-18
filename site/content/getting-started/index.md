@@ -2,6 +2,7 @@
 title: "Getting Started"
 tags:
 - tutorial
+EditableContent: true
 ---
 
 ### Overview
