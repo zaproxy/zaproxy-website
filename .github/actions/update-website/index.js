@@ -24,10 +24,13 @@ async function deleteSiteContents(dir) {
   const ignore = ['.git', 'CNAME', 'docs/', 'docs/api/'].map(p => `!${dir}/${p}`)
   const globber = await glob.create(contents.concat(ignore).join('\n'), { implicitDescendants: false })
   const files = await globber.glob()
+  core.info(`Deleting ${files.length} old files from ${dir}`)
   for (const file of files) {
     if (isDirectory(file)) {
-      io.rmRF(file)
+      core.debug(`Removing directory ${file}`)
+      await io.rmRF(file)
     } else {
+      core.debug(`Removing file ${file}`)
       fs.unlinkSync(file);
     }
   }
@@ -36,8 +39,10 @@ async function deleteSiteContents(dir) {
 async function copy(from, to) {
   const globber = await glob.create(from, { implicitDescendants: false })
   const files = await globber.glob()
+  core.info(`Copying ${files.length} files from ${from} to ${to}`)
   for (const file of files) {
-    io.cp(file, to, { recursive: true })
+    core.debug(`Copying ${file} to ${to}`)
+    await io.cp(file, to, { recursive: true })
   }
 }
 
