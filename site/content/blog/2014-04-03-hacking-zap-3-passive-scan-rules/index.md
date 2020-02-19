@@ -1,14 +1,13 @@
 ---
 title: "Hacking ZAP #3 - Passive scan rules"
 type: post
-draft: true
 tags:
-- TODO
+ - hacking
 date: "2014-04-03"
 authors:
     - simon
 ---
-Welcome to a [series of blog posts](https://github.com/zaproxy/zaproxy/wiki/Development#Hacking_ZAP) aimed at helping you “hack the ZAP source
+Welcome to a [series of blog posts](https://github.com/zaproxy/zaproxy/wiki/Development#hacking-zap) aimed at helping you “hack the ZAP source
 code”.  
 The previous post in this series is: [Hacking ZAP #2 - Getting Started](/blog/2014-03-20-hacking-zap-2-getting-started/)  
   
@@ -18,157 +17,132 @@ requests or manipulate the requests or responses in any way.
 They typically run against all of the requests and responses that flow through ZAP.  
 Passive rules run in separate background thread so that they have as little effect on performance as possible.  
   
-You can write passive scan rules dynamically using scripts, as we will see later in this series, but even then its very useful to understand
+You can write passive scan rules dynamically using scripts, as we will see later in this series, but even then it's very useful to understand
 some of the concepts and the underlying classes available to you.  
 
 ##  Where to start
 
-The easiest way to get started is to rip off an existing rule.  
-Passive scan rules can be found in 3 locations in the [zap-extensions](https://github.com/zaproxy/zap-extensions/) project, depending on their
-status:  
+The easiest way to get started is to rip off an existing rule. The passive scan rules can be found in 3 add-ons in the
+[zap-extensions](https://github.com/zaproxy/zap-extensions/) project, depending on their status:  
 
-  * Release quality:  [master/src/org/zaproxy/zap/extension/pscanrules](https://github.com/zaproxy/zap-extensions/tree/master/src/org/zaproxy/zap/extension/pscanrules)
-  * Beta quality:        [branches/beta/src/org/zaproxy/zap/extension/pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/beta/src/org/zaproxy/zap/extension/pscanrulesBeta)
-  * Alpha quality:      [branches/alpha/src/org/zaproxy/zap/extension/pscanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/alpha/src/org/zaproxy/zap/extension/pscanrulesAlpha)
+  * Release quality:  [addOns/pscanrules](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules)
+  * Beta quality:       [addOns/pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta)
+  * Alpha quality:     [addOns/pscanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha)
 
-There are also some simple examples that we will examine in more detail.  
-These are all in the alpha branch.  
+There are also some simple examples that we will examine in more detail. These are all in the `pscanrulesAlpha` add-on.  
 
 ##  The main classes
 
-The following classes are key to implementing passive scan rules  
+The following classes are key to implementing passive scan rules.  
   
-[PluginPassiveScanner](https://github.com/zaproxy/zaproxy/blob/develop/src/org/zaproxy/zap/extension/pscan/PluginPassiveScanner.java) \- this is
-the class that all passive rules must extend. There are 2 key methods that you will need to implement:  
-public void scanHttpRequestSend(HttpMessage msg, int id) This is called for every request. All details of the request are available via the
-'msg' parameter, as detailed below.  
-  
-public void scanHttpResponseReceive(HttpMessage msg, int id, Source source) This is called for every response. All details of the request and
-response are available via the 'msg' parameter, as detailed below. The response is also available as a DOM structure via the ‘source’ parameter.  
-  
+[`PluginPassiveScanner`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/zaproxy/zap/extension/pscan/PluginPassiveScanner.java) - this is
+the class that all passive rules must extend. There are 2 key methods that you will need to implement:
+ - `scanHttpRequestSend(HttpMessage msg, int id)` - This is called for every request. All details of the request are available via the
+`msg` parameter, as detailed below.  
+ - `scanHttpResponseReceive(HttpMessage msg, int id, Source source)` - This is called for every response. All details of the request and
+response are available via the `msg` parameter, as detailed below. The response is also available as a DOM structure via the `source` parameter.
+
 You can implement one or both of these methods depending on your requirements. You can examine any part of the request and response in order to
 find potential vulnerabilities, but you must not change anything.  
   
-If you find a potential vulnerability then you can raise it via the method: PassiveScanThread.raiseAlert(int id, Alert alert)  
+If you find a potential vulnerability then you can raise it via the method: `PassiveScanThread.raiseAlert(int id, Alert alert)`  
   
-An [HttpMessage](https://github.com/zaproxy/zaproxy/blob/develop/src/org/parosproxy/paros/network/HttpMessage.java) is passed in to both of the
-‘scan’ methods. This class has methods that allow you to access all aspects of the request and response, although the latter is obviously only
-available in scanHttpResponseReceive. Some examples include:
+An [`HttpMessage`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/network/HttpMessage.java) is passed in to both of the
+`scan` methods. This class has methods that allow you to access all aspects of the request and response, although the latter is obviously only
+available in `scanHttpResponseReceive`. Some examples include:
 
-  * msg.getRequestHeader().getMethod();
-  * msg.getRequestHeader().getHttpCookies();
-  * msg.getRequestHeader().getHeaders();
-  * msg.getRequestHeader().getContentLength();
-  * msg.getRequestBody().toString();
-  * msg.getResponseHeader().getHeaders();
-  * msg.getResponseHeader().getStatusCode();
-  * msg.getResponseBody().toString();
+  * `msg.getRequestHeader().getMethod()`
+  * `msg.getRequestHeader().getHttpCookies()`
+  * `msg.getRequestHeader().getHeaders()`
+  * `msg.getRequestHeader().getContentLength()`
+  * `msg.getRequestBody().toString()`
+  * `msg.getResponseHeader().getHeaders()`
+  * `msg.getResponseHeader().getStatusCode()`
+  * `msg.getResponseBody().toString()`
 
-  
-  
-A [Source](http://jericho.htmlparser.net/docs/javadoc/net/htmlparser/jericho/Source.html) parameter is passed into scanHttpResponseReceive -
+A [`Source`](http://jericho.htmlparser.net/docs/javadoc/net/htmlparser/jericho/Source.html) parameter is passed into `scanHttpResponseReceive` -
 this is a DOM representation of the response generated by the [Jericho](http://jericho.htmlparser.net/) HTML parser. See the Jericho
 [documentation](http://jericho.htmlparser.net/docs/javadoc/index.html) or the other scan rules for examples of how to access DOM elements.  
   
-The [Alert](https://github.com/zaproxy/zaproxy/blob/develop/src/org/parosproxy/paros/core/scanner/Alert.java) class is used to represent
+The [`Alert`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/core/scanner/Alert.java) class is used to represent
 potential vulnerabilities. It supports the following fields:
 
-  * pluginId        Used to identify the scanner, especially useful via the ZAP API 
-  * name           The summary displayed to the user
-  * risk              An indication of how serious the issue is:
-    * Alert.RISK_INFO               Informational (its not really a vulnerability)
-    * Alert.RISK_LOW               A low level vulnerability
-    * Alert.RISK_MEDIUM          A medium level vulnerability
-    * Alert.RISK_HIGH               A high level vulnerability
-  * reliability      An indication of how likely this is a real problem:
-    * Alert.FALSE_POSITIVE    Should not be used - this is for the user to set
-    * Alert.SUSPICIOUS            A lower level of confidence
-    * Alert.WARNING                 A higher level of confidence
-  * description  A more detailed description
-  * uri                The URI affected
-  * param          The name of the vulnerable parameter, if relevant
-  * attack          The attack string used (not relevant for passive vulnerabilities)
-  * otherInfo      Information that doesnt readily fit into any of the other fields
-  * solution       Information about how to prevent the vulnerability
-  * reference    A list of URLs giving more information about this type of vulnerability (separated by newline characters)
-  * evidence     A string present in the request or response which can be used as evidence of the vulnerability - this will be highlighted when the related request or response is displayed
-  * cweId          The [CWE](https://cwe.mitre.org/) id
-  * wascId        The [WASC Threat Classification](http://www.webappsec.org/projects/threat/) id
-
-  
+  * `pluginId`      Used to identify the scanner, especially useful via the ZAP API 
+  * `name`              The summary displayed to the user
+  * `risk`              An indication of how serious the issue is:
+    * `Alert.RISK_INFO`             Informational (it's not really a vulnerability)
+    * `Alert.RISK_LOW`               A low risk vulnerability
+    * `Alert.RISK_MEDIUM`         A medium risk vulnerability
+    * `Alert.RISK_HIGH`             A high risk vulnerability
+  * `confidence`       An indication of how likely this is a real problem:
+    * `Alert.CONFIDENCE_FALSE_POSITIVE`     Should not be used - this is for the user to set
+    * `Alert.CONFIDENCE_LOW`                           A lower level of confidence
+    * `Alert.CONFIDENCE_MEDIUM`                     A medium level of confidence
+    * `Alert.CONFIDENCE_HIGH`                         A higher level of confidence
+    * `Alert.CONFIDENCE_USER_CONFIRMED`     Should not be used - this is for the user to set
+  * `description`   A more detailed description
+  * `uri`                   The URI affected
+  * `param`               The name of the vulnerable parameter, if relevant
+  * `attack`             The attack string used (not relevant for passive vulnerabilities)
+  * `otherInfo`       Information that doesn't readily fit into any of the other fields
+  * `solution`         Information about how to prevent the vulnerability
+  * `reference`       A list of URLs giving more information about this type of vulnerability (separated by newline characters)
+  * `evidence`         A string present in the request or response which can be used as evidence of the vulnerability - this will be highlighted when the related request or response is displayed
+  * `cweId`               The [CWE](https://cwe.mitre.org/) id
+  * `wascId`             The [WASC Threat Classification](http://www.webappsec.org/projects/threat/) id
 
 ##  Simple example
 
-The [ExampleSimplePassiveScanner](https://github.com/zaproxy/zap-
-extensions/blob/alpha/src/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanner.java) class implements a very simple passive
-scan rule. As you will see, it just raises an alert randomly, so it isnt of any practical use. However it does demonstrate a couple of useful
+The [`ExampleSimplePassiveScanner`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanner.java) class implements a very simple passive
+scan rule. As you will see, it just raises an alert randomly, so it isn't of any practical use. However it does demonstrate a couple of useful
 features:  
   
-It uses the [Vulnerabilities](https://github.com/zaproxy/zaproxy/blob/develop/src/org/zaproxy/zap/model/Vulnerabilities.java) class to get the
+It uses the [`Vulnerabilities`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/zaproxy/zap/model/Vulnerabilities.java) class to get the
 name, description, solution and references. This class loads vulnerability details from the
-[vulnerabilities.xml](https://github.com/zaproxy/zaproxy/blob/develop/src/lang/vulnerabilities.xml) files included with ZAP. There are actually
-a set of vulnerabilities.xml files as it is internationalized, so ZAP will read the localized version for the language the user has selected,
+[`vulnerabilities.xml`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/resources/org/zaproxy/zap/resources/vulnerabilities.xml) files included with ZAP. There are actually
+a set of `vulnerabilities.xml` files as it is internationalized, so ZAP will read the localized version for the language the user has selected,
 defaulting back to English for any phrases that have not been translated. This is therefore a quick and easy way to fill in these details, as
 long as the relevant vulnerability is included in that file.  
   
-It also uses the [log4j](http://logging.apache.org/log4j/) Logger class to output debug messages. This is the recommended way of outputting such
+It also uses the [log4j](https://logging.apache.org/log4j/) `Logger` class to output debug messages. This is the recommended way of outputting such
 messages.  
   
-Note that the pluginId needs to be unique across all active and passive scan rules. The master list of ids is
-[scanners.md](https://github.com/zaproxy/zaproxy/blob/develop/docs/scanners.md).
+Note that the `pluginId` needs to be unique across all active and passive scan rules. The master list of ids is in the
+[scanners.md](https://github.com/zaproxy/zaproxy/blob/develop/docs/scanners.md) file.
 
 ##  File based example
 
-  
-The [ExampleFilePassiveScanner](https://code.google.com/p/zap-
-extensions/source/browse/branches/alpha/src/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanner.java) class implements a
-slightly more complex passive scan rule. In this case it reads in a set of strings from a configuration file and checks for their presence in
+The [`ExampleFilePassiveScanner`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanner.java) class implements a
+slightly more complex passive scan rule. In this case it reads in a set of strings from a [configuration file](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/zapHomeFiles/xml/example-pscan-file.txt) and checks for their presence in
 the response. It could also use hardcoded strings, but the advantage of the approach taken is that a knowledgeable user could manually edit the
-file to meet their requirement.  The build process handles the file deployment, as described later.  
+file to meet their requirement.  
+(ZAP automatically extracts the files located in the `zapHomeFiles` directory into a directory underneath the ZAP user directory.)  
   
 This class also demonstrates a couple of other features:  
   
-Instead of using the Vulnerabilities class the code uses Constant.messages.getString(str) All of the strings used in this way are defined in the
-[Messages.properties](https://github.com/zaproxy/zap-
-extensions/tree/alpha/src/org/zaproxy/zap/extension/pscanrulesAlpha/resources/Messages.properties) file. If you are just implementing the rule
+Instead of using the `Vulnerabilities` class the code uses `Constant.messages.getString(str)`. All of the strings used in this way are defined in the
+[Messages.properties](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesAlpha/src/main/resources/org/zaproxy/zap/extension/pscanrulesAlpha/resources/Messages.properties) file. If you are just implementing the rule
 for your own benefit then you can hardcode the strings if you want, but internationalizing them is very simple and saves having to go back and
-change you code if you want to have your rule included in the ZAP Marketplace.  
+change your code if you want to have your rule included in the ZAP Marketplace.  
   
-The code also makes use of the getLevel() method. This returns an AlertThreshold class which indicates how strictly you should check for
+The code also makes use of the `getAlertThreshold()` method. This returns an `AlertThreshold` which indicates how strictly you should check for
 vulnerabilities. The threshold returned can be one of:
 
-  * LOW:         This indicates you should report more potential vulnerabilities, which might mean more false positives
-  * MEDIUM:   This is the default level
-  * HIGH:         This indicates you should report fewer potential vulnerabilities, which might mean more false negatives
+  * `LOW`:         This indicates you should report more potential vulnerabilities, which might mean more false positives
+  * `MEDIUM`:   This is the default level
+  * `HIGH`:       This indicates you should report fewer potential vulnerabilities, which might mean more false negatives
 
 You do not have to use the threshold - especially as it might not be relevant for the vulnerability you are testing for, but it is also a useful
-way for the user to tune how the rules work and so its worth using if you can.
+way for the user to tune how the rules work and so it's worth using if you can.
 
 ##  Building and deploying
 
-  
-All ZAP add-ons are build using [Apache Ant](http://ant.apache.org/). For the alpha passive scan rules the build file is:
-[branches/alpha/build/build.xml](https://github.com/zaproxy/zap-extensions/blob/alpha/build/build.xml) All you need to do is run the deploy-
-pscanrulesAlpha target and the relevant add-on will be built and copied to the correct location, assuming you have a ZAP core project called
-‘zaproxy’. If you want to deploy to a different location then you can change it at the top of the file.  
-ZAP automatically extracts the files specified in the manifest into a directory underneath the ZAP user directory.  
-An knowledgeable user can manually edit these files and any changes will take affect when ZAP is restarted.  
+The alpha passive active scan rules add-on build file is [addOns/pscanrulesAlpha/pscanrulesAlpha.gradle.kts](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/pscanrulesAlpha.gradle.kts). All you need to do is run the Gradle task `:addOns:pscanrulesAlpha:copyZapAddOn` in the `zap-extensions` project and the relevant add-on will be built and copied to the correct location, assuming you have a ZAP core project called `zaproxy`. If you want to deploy to a different location then you can use the command line argument `--into=/path/to/copy/into/`.  
 
-##  Updating the help and manifest
+##  Updating the help
 
-  
-There are a couple more things that you can do to finish off a new rule.  
-  
-The first is to add a short description of the rule to the help file: [pscanalpha.html](https://github.com/zaproxy/zap-
-extensions/tree/alpha/src/org/zaproxy/zap/extension/pscanrulesAlpha/resources/help/contents/pscanalpha.html)  
+To finish off a new rule you should add a short description of the rule to the help file: [pscanalpha.html](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesAlpha/src/main/javahelp/org/zaproxy/zap/extension/pscanrulesAlpha/resources/help/contents/pscanalpha.html)  
 This is not really necessary unless you want to publish your rules.  
   
-The second is to include the new class along with any files it uses in the add-on manifest: [ZapAddOn.xml](https://github.com/zaproxy/zap-
-extensions/tree/alpha/src/org/zaproxy/zap/extension/pscanrulesAlpha/ZapAddOn.xml) ZAP uses this file to identify any files that need to be
-extracted.  
-It also uses it when it downloads add-ons from the ZAP Marketplace, and adding your classes and files in here will allow ZAP to add, update and
-remove your rules dynamically.  
-  
 A future post will cover how to contribute your code back to the ZAP community and progress it from alpha to beta and then release status.  
-The next post in this series is: [Hacking ZAP #4: Active scan rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/)
 
