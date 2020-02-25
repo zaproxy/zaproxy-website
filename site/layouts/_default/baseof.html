@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-
-  {{ template "_internal/twitter_cards.html" . }}
-  {{ template "_internal/opengraph.html" . }}
+  {{ if .Params.addSocialPreview }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ template "_internal/opengraph.html" . }}
+  {{ end }}
 
   <title>{{ block "title" . }}{{ .Site.Title }}{{ if .Data.Title }} &ndash; {{ .Data.Title }}{{ end }}{{ end }}</title>
 
