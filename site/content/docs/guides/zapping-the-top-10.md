@@ -1,10 +1,16 @@
 ---
 title: "ZAPping the OWASP Top 10"
+description: "This document gives an overview of the automatic and manual components provided by OWASP Zed Attack Proxy (ZAP) that are recommended for testing each of the OWASP Top Ten Project 2017 risks."
+images:
+- https://www.zaproxy.org/img/docs/guides/OWASP-Top-10.png
+tags: 
+- top10
+- guide
 type: page
 date: "2020-01-30"
 ---
 
-This document gives an overview of the automatic and manual components provided by the OWASP Zed Attack Proxy Project (ZAP) that are recommended for testing each of the OWASP Top Ten Project 2017 risks.
+This document gives an overview of the automatic and manual components provided by OWASP Zed Attack Proxy (ZAP) that are recommended for testing each of the OWASP Top Ten Project 2017 risks.
 
 Note that the [OWASP Top Ten Project](https://owasp.org/www-project-top-ten/) risks cover a wide range of underlying vulnerabilities, some of which are not really possible to test for in a completely automated way. 
 If a completely automated tool claims to protect you against the full OWASP Top Ten then you can be sure they are being ‘economical with the truth’!
