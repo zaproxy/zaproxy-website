@@ -7,6 +7,11 @@ enableEmoji: true
 taxonomies:
   tag: "tags"
 
+params:
+  EditContent:
+    BaseUrl: https://github.com/zaproxy/zaproxy-website/blob/master/site/content/
+    Label: Edit on GitHub
+
 # Menu
 menu:
   nav:

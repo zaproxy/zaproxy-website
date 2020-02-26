@@ -1,0 +1,8 @@
+{{ if .Params.EditableContent | and .File }}
+{{ $baseUrl := .Params.EditBaseUrl | default .Site.Params.EditContent.BaseUrl }}
+{{ $filePath := .Params.EditFilePath | default .File.Path }}
+{{ $label := .Params.EditLabel | default .Site.Params.EditContent.Label }}
+  <div class="ml-10">
+    <a href="{{ $baseUrl }}{{ $filePath }}">{{ $label }}</a>
+  </div>
+{{ end }}
