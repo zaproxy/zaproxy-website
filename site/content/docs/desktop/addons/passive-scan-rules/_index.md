@@ -62,7 +62,7 @@ Latest code: [CookieHttpOnlyScanner.java](https://github.com/zaproxy/zap-extensi
 
 ## Cookie - Loosely Scoped
 
-Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. www.nottrusted.com, or loosely scoped to a parent domain e.g. nottrusted.com. In the latter case, any subdomain of nottrusted.com can access the cookie. Loosely scoped cookies are common in mega-applications like google.com and live.com.
+Cookies can be scoped by domain or path. This check is only concerned with domain scope.The domain scope applied to a cookie determines which domains can access it. For example, a cookie can be scoped strictly to a subdomain e.g. `www.nottrusted.com`, or loosely scoped to a parent domain e.g. `nottrusted.com`. In the latter case, any subdomain of `nottrusted.com` can access the cookie. Loosely scoped cookies are common in mega-applications like `google.com` and `live.com`.
 
 Latest code: [CookieLooselyScopedScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CookieLooselyScopedScanner.java)
 
