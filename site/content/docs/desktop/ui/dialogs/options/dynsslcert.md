@@ -25,7 +25,7 @@ To establish a SSL protected session from you (your browser),
 ZAP is using it's own certificate. This is the one you can create.
 Every certificate created by ZAP will be signed for the same
 server name. In the example above, ZAP will create a certificate
-for the server's name "www.example.com". This way, your browser
+for the server's name `www.example.com`. This way, your browser
 will do regular SSL encryption.
 
 ## ZAP Root CA certificate
