@@ -8,6 +8,7 @@ tags:
 - guide
 type: page
 date: "2020-01-30"
+addSocialPreview: true
 ---
 
 This document gives an overview of the automatic and manual components provided by OWASP Zed Attack Proxy (ZAP) that are recommended for testing each of the OWASP Top Ten Project 2017 risks.
