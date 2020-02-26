@@ -2388,9 +2388,10 @@ async function run() {
       state: 'open'
     })
 
-    let pullId
+    let pullNumber
     if (pulls.data.length !== 0) {
-      pullId = pulls.data[0].id
+      pullNumber = pulls.data[0].number
+      core.info(`Found existing pull request: #${pullNumber}`)
     }
 
     const gitHubBaseUrl = 'https://github.com'
@@ -2412,12 +2413,12 @@ async function run() {
     core.info('Pushing...')
     await git(websiteDir, ['push', '-f', 'origin', branch])
 
-    if (pullId) {
+    if (pullNumber) {
       core.info('Updating pull request...')
       await octokit.pulls.update({
         owner: owner,
         repo: websiteRepoName,
-        pull_number: pullId,
+        pull_number: pullNumber,
         body: body,
       })
     } else {
