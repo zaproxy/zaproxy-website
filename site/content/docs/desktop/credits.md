@@ -154,7 +154,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 
 ## ZAP Localization
 
-ZAP localization is organized via <https://crowdin.net/project/owasp-zap>   
+ZAP localization is organized via <https://crowdin.com/project/owasp-zap>   
 
 |   |                      |                                                                                                                                                                                                                                                                                                                                                                                          |
 |---|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
