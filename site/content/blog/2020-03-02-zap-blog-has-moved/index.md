@@ -26,3 +26,4 @@ We are planning a whole series of new blog posts - if you want to be notified wh
 * Follow [@zaproxy](https://twitter.com/zaproxy) on Twitter
 * Join the [ZAP User Group](https://groups.google.com/group/zaproxy-users)
 
+If you have any comments or questions about this then please post them to this [ZAP User Group thread](https://groups.google.com/d/msg/zaproxy-users/QCP-yg4_cy8/eZS5sQFKCQAJ). 
