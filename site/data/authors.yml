@@ -1,5 +1,5 @@
 simon:
-  name: 'Simon Bennetts'
+  name: Simon Bennetts
   picture: /img/authors/simon-bennetts_400x400.jpg
   twitter: '@psiinon'
   is_core: true
@@ -11,8 +11,8 @@ ricardo:
   is_core: true
 
 thorin:
-  name: Thorin Oakenshield
-  picture:
+  name: Rick Mitchell
+  picture: /img/authors/rick-mitchell_400x400.jpg
   twitter: '@kingthorin_rm'
   is_core: true
 
@@ -22,10 +22,9 @@ david:
   twitter: '@david_scrobonia'
   is_core: true
 
-  
+
 jordan:
-  name: 'Jordan GS'
+  name: Jordan GS
   picture: 
   twitter: 
   is_core: false
-  
