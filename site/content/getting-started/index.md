@@ -59,7 +59,7 @@ ZAP provides functionality for a range of skill levels – from developers, to t
 
 Because ZAP is open-source, the source code can be examined to see exactly how the functionality is implemented. Anyone can volunteer to work on ZAP, fix bugs, add features, create pull requests to pull fixes into the project, and author add-ons to support specialized situations.
 
-As with most open source projects, donations are welcome to help with costs for the projects. You can find a donate button on the owasp.org page for ZAP at [https://www.owasp.org/index.php/ZAP](https://www.owasp.org/index.php/ZAP).
+As with most open source projects, donations are welcome to help with costs for the projects. You can find a donate button on the owasp.org page for ZAP at [https://owasp.org/www-project-zap/](https://owasp.org/www-project-zap/).
 
 ### Install and Configure ZAP
 ZAP has installers for Windows, Linux, and Mac OS/X. There are also Docker images available on the download site listed below.

@@ -41,5 +41,5 @@ ZAP is a fork of the open source variant of the [Paros Proxy](/docs/desktop/paro
 
 |   |                                                                           |
 |---|---------------------------------------------------------------------------|
-|   | [ZAP homepage](https://www.owasp.org/index.php/ZAP)                       |
+|   | [OWASP ZAP homepage](https://owasp.org/www-project-zap/)                  |
 |   | [Wikipedia entry for proxies](https://en.wikipedia.org/wiki/Proxy_server) |
