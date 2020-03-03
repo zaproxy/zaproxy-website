@@ -1,5 +1,9 @@
 ---
 title: Student Hall of Fame
+description: The following students have completed non trivial projects which have significantly improved ZAP. For which they have our sincere thanks! Check them out.
+images:
+- https://www.zaproxy.org/img/student-hall-of-fame/zapbot-trophy.png
+addSocialPreview: true
 ---
 
 The following students have completed projects which have significantly improved ZAP.
