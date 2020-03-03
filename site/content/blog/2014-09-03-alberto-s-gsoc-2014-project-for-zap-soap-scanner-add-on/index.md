@@ -4,7 +4,7 @@ type: post
 tags:
 date: "2014-09-03"
 authors:
-    - simon
+    - alberto
 ---
 Hello everybody, my name is Alberto Verza, a 23 year student from Spain, and this summer I have participated in [Google Summer of Code 2014](https://www.google-melange.com/archive/gsoc/2014/orgs/owasp). My
 project was the SOAP Scanner add-on for ZAP, in which I worked during all the Program. Let me explain you the features it includes.  

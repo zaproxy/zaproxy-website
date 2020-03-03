@@ -22,9 +22,14 @@ david:
   twitter: '@david_scrobonia'
   is_core: true
 
-
 jordan:
   name: Jordan GS
+  picture: 
+  twitter: 
+  is_core: false
+
+alberto:
+  name: Alberto Verza
   picture: 
   twitter: 
   is_core: false
