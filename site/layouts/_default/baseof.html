@@ -8,6 +8,9 @@
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
   {{ end }}
+  {{ range .AlternativeOutputFormats -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
 
   <title>{{ block "title" . }}{{ .Site.Title }}{{ if .Data.Title }} &ndash; {{ .Data.Title }}{{ end }}{{ end }}</title>
 
