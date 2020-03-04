@@ -2,7 +2,7 @@ name: Update Website
 
 on:
   push:
-    branch:
+    branches:
     - master
 
 jobs:
