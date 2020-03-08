@@ -33,3 +33,9 @@ alberto:
   picture: 
   twitter: 
   is_core: false
+
+diogo:
+  name: Diogo Silva
+  picture:
+  twitter: '@Dimiresi'
+  is_core: false
