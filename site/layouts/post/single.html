@@ -33,20 +33,21 @@
             {{ range $name := .Params.authors }}
             {{ $author := index $.Site.Data.authors $name }}
               <section class="post-author-single flex p-10">
-              {{ if $author }}
                 <div class="col-1-5">
+                  {{ if $author.picture }}
                   <img class="author-picture" src="{{ $author.picture }}" />
+                  {{ end }}
                 </div>
                 <div class="author-name col-4-5">
-                  {{ $author.name }}
-                  <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">{{ $author.twitter }}</a>
+                  {{ if $author.name }}
+                    {{ $author.name }}
+                  {{ else }}
+                    {{ $name }}
+                  {{ end }}
+                  {{ if $author.twitter }}
+                  <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">@{{ $author.twitter }}</a>
+                  {{ end }}
                 </div>
-              {{ else }}
-                <div class="col-1-5">
-                  <img class="author-picture" src="x" />
-                </div>
-                <div class="author-name col-4-5">{{ $name }}</div>
-              {{ end }}
               </section>
           {{ end }}
           </div>
