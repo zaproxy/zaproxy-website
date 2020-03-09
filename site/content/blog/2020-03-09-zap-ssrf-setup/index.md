@@ -45,7 +45,7 @@ If you want to have a valid HTTPS certificate you can run some reverse proxy on 
 ssh -N -R 9999:localhost:38193 myUser@something.mydomain.org
 ```
 
-__Troubleshot__:
+### Troubleshoot:
 - open the ports on the firewall
 - make shure you allow port forwarding on the server ssh config `/etc/ssh/sshd_config`:
     ```
@@ -56,4 +56,4 @@ __Troubleshot__:
     ```
 
 ## Conclusion
-While other vulnerability scanners like Burp Suite have an external server ([Collaborator](https://portswigger.net/burp/documentation/collaborator)) which facilitate reception of requests from the “victim” server, ZAP still lacks that functionality. Luckily it can be obtained with this easy trick. This solution still lacks the ability to log DNS requests that can be used for out of band (OOB) tests, which may be necessary when the “victim” app/system blocks outbound HTTP/HTTPS connections.
+While other vulnerability scanners like Burp Suite have an external server ([Collaborator](https://portswigger.net/burp/documentation/collaborator)) which facilitate reception of requests from the target server, ZAP still lacks that functionality. Luckily it can be obtained with this easy trick. This solution still lacks the ability to log DNS requests that can be used for out of band (OOB) tests, which may be necessary when the target app/system blocks outbound HTTP/HTTPS connections.
