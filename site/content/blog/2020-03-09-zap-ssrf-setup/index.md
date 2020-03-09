@@ -47,7 +47,7 @@ ssh -N -R 9999:localhost:38193 myUser@something.mydomain.org
 
 ### Troubleshoot:
 - open the ports on the firewall
-- make shure you allow port forwarding on the server ssh config `/etc/ssh/sshd_config`:
+- make sure you allow port forwarding on the server ssh config `/etc/ssh/sshd_config`:
     ```
     ...
     AllowTcpForwarding yes
