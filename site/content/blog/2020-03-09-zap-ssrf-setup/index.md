@@ -45,7 +45,7 @@ If you want to have a valid HTTPS certificate you can run some reverse proxy on 
 ssh -N -R 9999:localhost:38193 myUser@something.mydomain.org
 ```
 
-### Troubleshot:
+### Troubleshoot:
 - open the ports on the firewall
 - make shure you allow port forwarding on the server ssh config `/etc/ssh/sshd_config`:
     ```
