@@ -1,25 +1,25 @@
 simon:
   name: Simon Bennetts
   picture: /img/authors/simon-bennetts_400x400.jpg
-  twitter: '@psiinon'
+  twitter: psiinon
   is_core: true
 
 ricardo:
   name: Ricardo 
   picture: 
-  twitter: '@thc202'
+  twitter: thc202
   is_core: true
 
 thorin:
   name: Rick Mitchell
   picture: /img/authors/rick-mitchell_400x400.jpg
-  twitter: '@kingthorin_rm'
+  twitter: kingthorin_rm
   is_core: true
 
 david:
   name: David Scrobonia
   picture: /img/authors/david-scrobonia_400x400.png
-  twitter: '@david_scrobonia'
+  twitter: david_scrobonia
   is_core: true
 
 jordan:
@@ -37,5 +37,5 @@ alberto:
 diogo:
   name: Diogo Silva
   picture:
-  twitter: '@Dimiresi'
+  twitter: Dimiresi
   is_core: false
