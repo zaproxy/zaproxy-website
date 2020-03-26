@@ -51,6 +51,8 @@ place to ask questions about using ZAP. All of the ZAP developers are on the
 user group as are many knowledgeable ZAP users who may also be able to help
 you.
 
+Be aware that lots of webapps do weird and wonderful things, often in bizarre ways. We can't second guess them, so when asking for help you'll need to give us sanitized examples to help us figure out what's going on.
+
 ###  Ask on irc
 
 Many of ZAP contributors hang out on the [freenode](https://freenode.net/) [#zaproxy](https://webchat.freenode.net/#zaproxy) channel which you can access via that link or your favourite irc client.
