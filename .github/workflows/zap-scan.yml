@@ -5,7 +5,7 @@ on:
 jobs:
   zap_scan:
     runs-on: ubuntu-latest
-    name: Scan ZAProxy website
+    name: Scan ZAP website
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -16,3 +16,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://www.zaproxy.org/'
+          rules_file_name: '.github/workflows/rules.tsv'
