@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron:  '*/10 * * * *'
+    - cron:  '*/15 * * * *'
 
 jobs:
   zap_scan:
@@ -15,4 +15,4 @@ jobs:
         uses: zaproxy/action-baseline@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          target: 'https://www.example.com/'
+          target: 'https://www.zaproxy.org/'
