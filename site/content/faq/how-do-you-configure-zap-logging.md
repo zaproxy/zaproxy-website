@@ -14,27 +14,25 @@ file in the same directory.
 
 By default the 'main' logging levels are set to "INFO" by these 2 lines:
 
-    
-    
-    log4j.logger.org.parosproxy.paros=INFO
-    log4j.logger.org.zaproxy.zap=INFO
-    
+{{< terminal "log4j.properties" >}}
+log4j.logger.org.parosproxy.paros=INFO
+log4j.logger.org.zaproxy.zap=INFO
+{{< /terminal >}}
 
 Changing these to "DEBUG" (and restarting ZAP) will _significantly_ increase
 the amount of logging performed:
 
-    
-    
-    log4j.logger.org.parosproxy.paros=DEBUG
-    log4j.logger.org.zaproxy.zap=DEBUG
-    
+{{< terminal "log4j.properties" >}}
+log4j.logger.org.parosproxy.paros=DEBUG
+log4j.logger.org.zaproxy.zap=DEBUG
+{{< /terminal >}}
 
 Logging can be selectively enabled using a [Stand Alone script](/docs/desktop/addons/script-console/#script-types) while ZAP is
 running (the example below is a JavaScript script):
 
-```JavaScript
+{{< terminal "enable_debug_logging.js" >}}
 // The following will enable DEBUG logging for the API
 org.apache.log4j.Logger.getLogger("org.zaproxy.zap.extension.api.API").setLevel(org.apache.log4j.Level.DEBUG);
 // The following will enable DEBUG logging for the SessionFixation scanner
 org.apache.log4j.Logger.getLogger("org.zaproxy.zap.extension.ascanrulesBeta.SessionFixation").setLevel(org.apache.log4j.Level.DEBUG);
-```
+{{< /terminal >}}

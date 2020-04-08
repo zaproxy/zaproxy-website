@@ -18,12 +18,13 @@ The script, zap-api-scan.py is included in the [Weekly](https://hub.docker.com/r
 [Live](https://hub.docker.com/r/owasp/zap2docker-live/) ZAP Docker images, it will also be included in the next
 [Stable](https://hub.docker.com/r/owasp/zap2docker-stable/) image.  
   
-To use the API scanning script you just need to use the commands:  
-```bash
+To use the API scanning script you just need to use the commands:
+{{< terminal "owasp/zap2docker-weekly zap-api-scan.py" >}}
 docker pull owasp/zap2docker-weekly  
 docker run -t owasp/zap2docker-weekly zap-api-scan.py -t \  
     https://www.example.com/openapi.json -f openapi  
-```
+{{< /terminal >}}
+
 By default the script:  
 
   1. Imports the API definition supplied
@@ -38,10 +39,9 @@ escape data that has been originally entered via a user.
 
 ###  Command Line Options
 
-  
 The script has a number of command line options that allow it to be tuned to your requirements:  
 
-```
+{{< terminal "zap-api-scan.py" >}}
 Usage: zap-api-scan.py -t <target> -f <format> [options]  
     -t target         target API definition, OpenAPI or SOAP, local file or URL, e.g. https://www.example.com/openapi.json  
     -f format         either openapi or soap  
@@ -62,8 +62,7 @@ Options:
     -p progress_file  progress file which specifies issues that are being addressed  
     -s                short output format - don't show PASSes or example URLs  
     -z zap_options ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"  
-```
-  
+{{< /terminal >}}
 
 ###  Scan Rules
 
@@ -91,14 +90,15 @@ therefore will not exercise enough of the code. For example a username of “tes
 email address.  
 For APIs defined using OpenAPI/Swagger you can specify the values you want ZAP to use via ZAP command line options.  
 For example the options:  
-```
-  -config formhandler.fields.field\\(0\\).fieldId=username \  
-  -config formhandler.fields.field\\(0\\).value=test@example.com \  
-  -config formhandler.fields.field\\(0\\).enabled=true \  
-  -config formhandler.fields.field\\(1\\).fieldId=phone \  
-  -config formhandler.fields.field\\(1\\).value=012345678 \  
-  -config formhandler.fields.field\\(1\\).enabled=true  
-```
+{{< terminal "ZAP command line options" >}}
+-config formhandler.fields.field\\(0\\).fieldId=username \  
+-config formhandler.fields.field\\(0\\).value=test@example.com \  
+-config formhandler.fields.field\\(0\\).enabled=true \  
+-config formhandler.fields.field\\(1\\).fieldId=phone \  
+-config formhandler.fields.field\\(1\\).value=012345678 \  
+-config formhandler.fields.field\\(1\\).enabled=true  
+{{< /terminal >}}
+
 Will supply the following values to the named fields:  
   `username` -> `test@example.com`  
   `phone` -> `012345678`  
@@ -109,11 +109,11 @@ Note that as these are ZAP command line options you will need to specify them to
 If you need to specify lots of options then you can put them all in a property file, e.g. called options.prop  
 You can then run the API scan using a command like:  
 
-```
+{{< terminal "zap-api-scan.py" >}}
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-api-scan.py \  
     -t https://www.example.com/openapi.json -f openapi \  
     -z "-configfile /zap/wrk/options.prop"  
-```
+{{< /terminal >}}
 The `"-v $(pwd):/zap/wrk/:rw"` is a Docker option which maps the current working directory to a folder called /zap/wrk in the Docker instance.  
   
 
@@ -125,7 +125,7 @@ For mechanisms that use header values we recommend that you obtain suitable toke
 then tell ZAP to use them via another set of command line options.  
 For example the options:  
 
-```
+{{< terminal "ZAP command line options" >}}
   -config replacer.full_list\\(0\\).description=auth1 \  
   -config replacer.full_list\\(0\\).enabled=true \  
   -config replacer.full_list\\(0\\).matchtype=REQ_HEADER \  
@@ -138,7 +138,8 @@ For example the options:
   -config replacer.full_list\\(1\\).matchstr=AnotherHeader \  
   -config replacer.full_list\\(1\\).regex=false \  
   -config replacer.full_list\\(1\\).replacement=abcdefghi  
-```
+{{< /terminal >}}
+
 will cause the following headers to be added to every request ZAP makes:  
   `Authorization: 123456789`  
   `AnotherHeader: abcdefghi`  

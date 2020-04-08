@@ -1,0 +1,13 @@
+<div class="window">
+    <div class="titlebar">
+      {{ .Get 0 }}
+    </div>
+    <div class="terminal">
+      <ul>
+        {{ range split .Inner "\n" }}
+        {{ $line := replace . " " "&nbsp;" }}
+        <li>{{ printf "%s" $line | safeHTML }}</li>
+        {{ end }}  
+      </ul>
+    </div>
+  </div>
