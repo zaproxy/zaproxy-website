@@ -21,7 +21,7 @@ Furthermore having security integrated into your CI/CD pipeline (DevSecOps) will
 developing the application. To cater to this need ZAP provides a baseline scan feature to find common security faults in 
 a web application without doing any active attacks. 
 
-Furthermore, [GitHub Actions](https://github.com/features/actions) makes it easier to automate how to scan and secure 
+[GitHub Actions](https://github.com/features/actions) makes it easier to automate how to scan and secure 
 web applications at scale. Actions let you write scripts that are triggered based on certain events in your GitHub repo 
 such as — creating a new issue, pushing a commit, or on a scheduled basis. This makes it convenient and easy to automate security testing and to run ZAP scans 
 without involving any of your own infrastructures. The ZAP baseline action is available in the GitHub Marketplace under 
@@ -68,7 +68,8 @@ application and make it available via a headless browser so ZAP can access the s
 
 By default, baseline scan reports all alerts as WARNings but you can specify a config file that can change any rules to FAIL or IGNORE.
 The following shows a sample rules file. Create the `rules.tsv` file inside your repository (example: inside `.zap` folder) and make sure to update the action 
-file with the relative path to the rule file.
+file with the relative path to the rule file. Also, you can supply additional baseline [command-line options](https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan) 
+via the `cmd_options` parameter. For example passing `-a` as a command-line argument will include the alpha passive scan rules as well.
 
 ```tsv
 10035	IGNORE	(Strict-Transport-Security Header Not Set)
