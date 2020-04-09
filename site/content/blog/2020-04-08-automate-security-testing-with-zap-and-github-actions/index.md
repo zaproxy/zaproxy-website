@@ -1,6 +1,6 @@
 ---
 title: "Automate Security Testing with ZAP and GitHub Actions"
-description: "How to ZAP baseline and github actions can help you to automate the security testing"
+description: "How ZAP baseline and github actions can help you to automate the security testing"
 images:
 - https://www.zaproxy.org/blog/2020-04-08-automate-security-testing-with-zap-and-github-actions/images/zap-issue.png
 - https://www.zaproxy.org/blog/2020-04-08-automate-security-testing-with-zap-and-github-actions/images/scan-job.png
@@ -38,11 +38,9 @@ The ZAP baseline action scan runs the ZAP spider against the specified web appli
 then waits for the passive scanning to complete before reporting the results. This means that the script doesn't 
 perform any actual ‘attacks’ and will run for a relatively short period of time (a few minutes at most).   
 
-
 The following YAML config shows how to configure the action to scan a publicly accessible web application. 
 In order to start scanning, create a file called `zap_scan.yaml` inside the `.github/workflows` 
 folder in your repository. 
-
 
 ```yaml
 on:
