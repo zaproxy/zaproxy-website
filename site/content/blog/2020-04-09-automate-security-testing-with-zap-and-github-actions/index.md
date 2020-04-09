@@ -1,6 +1,6 @@
 ---
 title: "Automate Security Testing with ZAP and GitHub Actions"
-description: "How ZAP baseline and github actions can help to automate the security testing"
+description: "How ZAP baseline and GitHib actions can help to automate the security testing"
 images:
 - https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/zap-issue.png
 - https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/scan-job.png
@@ -18,17 +18,17 @@ Furthermore having security integrated into your CI/CD pipeline (DevSecOps) will
 developing the application. To cater to this need ZAP provides a baseline scan feature to find common security faults in 
 a web application without doing any active attacks. 
 
-Furthermore, GitHub Actions makes it easier to automate how to scan and secure web applications at scale. Actions let you 
-write scripts that are triggered based on certain events in your GitHub repo such as — creating a new issue, pushing a 
-commit, or on a scheduled basis. This makes it convenient and easy to automate security testing and to run ZAP scans 
-without involving any of your own infrastructures. The ZAP baseline action is available in the Github Marketplace under 
+Furthermore, [GitHub Actions](https://github.com/features/actions) makes it easier to automate how to scan and secure 
+web applications at scale. Actions let you write scripts that are triggered based on certain events in your GitHub repo 
+such as — creating a new issue, pushing a commit, or on a scheduled basis. This makes it convenient and easy to automate security testing and to run ZAP scans 
+without involving any of your own infrastructures. The ZAP baseline action is available in the GitHub Marketplace under 
 the actions/security category.
 
 The [ZAP baseline-action](https://github.com/marketplace/actions/owasp-zap-baseline-scan) can be configured to periodically 
 scan a publicly available web application. Also, ZAP baseline-action can be configured to public and private repositories as well.
 Based on the scan results ZAP will maintain an active issue in GitHub repository. The action will update the issue if it identifies 
-any new or resolved alerts and will close the issue if all the alerts have been resolved. A detailed report is attached with 
-the issue to get more information regarding the identified alerts. The report is available in HTML and markdown formats.
+any new or resolved alerts and will close the issue if all the alerts have been resolved. A detailed report is attached to the workflow run 
+to get more information regarding the identified alerts. The report is available in HTML and Markdown formats.
 
 The following image shows how the GitHub Actions will notify the user with consequent scans.
 
@@ -53,12 +53,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Scan ZAP website
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: master
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.1.0
+        uses: zaproxy/action-baseline@v0.2.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://www.zaproxy.org/'
@@ -68,12 +64,31 @@ The ZAP baseline action can be also used to scan a locally built web application
 application and make it available via a headless browser so ZAP can access the site via the localhost.
 
 By default, baseline scan reports all alerts as WARNings but you can specify a config file that can change any rules to FAIL or IGNORE.
-The following shows a sample rules file. Create the `rules.tsv` file inside your repository and make sure to update the action 
+The following shows a sample rules file. Create the `rules.tsv` file inside your repository (example: inside `.zap` folder) and make sure to update the action 
 file with the relative path to the rule file.
 
 ```tsv
 10035	IGNORE	(Strict-Transport-Security Header Not Set)
 10098	IGNORE	(Cross-Domain Misconfiguration)
+```
+
+```yaml
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Scan ZAP website
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: ZAP Scan
+        uses: zaproxy/action-baseline@v0.2.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target: 'https://www.zaproxy.org/'
+          rules_file_name: '.zap/rules.tsv'
+          cmd_options: '-a'
 ```
 
 Also, you can view the scan logs by navigating to the ZAP scan job.
