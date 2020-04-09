@@ -3,10 +3,6 @@ title: "Automate Security Testing with ZAP and GitHub Actions"
 description: "How ZAP baseline and GitHib actions can help to automate the security testing"
 images:
 - https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/zap-action.png
-- https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/zap-issue-1.png
-- https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/zap-issue-2.png
-- https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/zap-issue-3.png
-- https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/scan-job.png
 type: post
 tags:
 - blog
