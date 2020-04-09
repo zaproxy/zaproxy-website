@@ -1,7 +1,7 @@
 on:
   schedule:
     # At 01:00.
-    - cron:  '0 1 * * *'
+    - cron:  '*/15 * * * *'
 
 jobs:
   zap_scan:
