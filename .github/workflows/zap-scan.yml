@@ -17,4 +17,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://www.zaproxy.org/'
-#          rules_file_name: '.github/workflows/rules.tsv'
+          rules_file_name: '.github/workflows/rules.tsv'
