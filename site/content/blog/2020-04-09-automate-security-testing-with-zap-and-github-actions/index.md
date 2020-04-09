@@ -14,7 +14,7 @@ authors:
     - nirojan
 ---
 
-![zap-action](./images/zap-action.png)
+[![zap-action](./images/zap-action.png)](https://github.com/marketplace/actions/owasp-zap-baseline-scan)
 
 With the increasing number of web application security breaches, it is essential to keep your web application secure at all times. 
 Furthermore having security integrated into your CI/CD pipeline (DevSecOps) will become a lifesaver if you are actively 
@@ -34,9 +34,20 @@ any new or resolved alerts and will close the issue if all the alerts have been 
 [workflow run](https://github.com/zaproxy/zaproxy-website/actions/runs/74379241) to get more information regarding the identified alerts. 
 The report is available in HTML and Markdown formats.
 
-The following [issue](https://github.com/zaproxy/zaproxy-website/issues/93) shows how the GitHub Actions will notify the user with consequent scans.
+The following [issue](https://github.com/zaproxy/zaproxy-website/issues/93) shows how the GitHub Baseline Action scans the 
+[https://www.zaproxy.org/](https://www.zaproxy.org/) website and notifies the users via opening an issue in the ZAP website repository. 
+The issue will be created by the GitHub Actions bot and will list the alerts as issue comments.
 
-![zap-issue](./images/zap-issue.png)
+[![zap-issue](images/zap-issue-1.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issue-597219582)
+
+
+During the second scan we are ignoring few alerts via ZAP rules and the action bot updates the issue with the newly ignored/resolved alerts. 
+[![zap-issue](images/zap-issue-2.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issuecomment-611490632)
+
+
+During the last scan we are ignoring all the alerts, thus resulting in finding zero vulnerabilities. Based on the scan results 
+the actions bot will close the ongoing open issue.
+[![zap-issue](images/zap-issue-3.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issuecomment-611496321)
 
 The ZAP baseline action scan runs the ZAP spider against the specified web application for (by default) 1 minute and 
 then waits for the passive scanning to complete before reporting the results. This means that the script doesn't 
@@ -100,5 +111,5 @@ Also, you can view the scan logs by navigating to the ZAP [scan job](https://git
 
 ![scan-job](./images/scan-job.png)
 
-We are excited to hear your thoughts and feedback for the new ZAP Baseline Action. Reach us through the dev group or 
-for any additional enhancements please feel free to create an issue in the [following repository](https://github.com/zaproxy/action-baseline).
+We are excited to hear your thoughts and feedback for the new ZAP Baseline Action. Reach us through the [dev group](https://groups.google.com/group/zaproxy-develop) 
+or for any additional enhancements please feel free to create an issue in the [following repository](https://github.com/zaproxy/action-baseline).
