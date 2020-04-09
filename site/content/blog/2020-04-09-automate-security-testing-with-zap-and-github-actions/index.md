@@ -2,6 +2,7 @@
 title: "Automate Security Testing with ZAP and GitHub Actions"
 description: "How ZAP baseline and GitHib actions can help to automate the security testing"
 images:
+- https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/zap-action.png
 - https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/zap-issue.png
 - https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/scan-job.png
 type: post
@@ -12,6 +13,8 @@ addSocialPreview: true
 authors:
     - nirojan
 ---
+
+![zap-action](./images/zap-action.png)
 
 With the increasing number of web application security breaches, it is essential to keep your web application secure at all times. 
 Furthermore having security integrated into your CI/CD pipeline (DevSecOps) will become a lifesaver if you are actively 
