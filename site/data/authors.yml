@@ -39,3 +39,9 @@ diogo:
   picture:
   twitter: Dimiresi
   is_core: false
+  
+nirojan:
+  name: Nirojan Selvanathan
+  picture:
+  twitter: sshniro
+  is_core: true  
