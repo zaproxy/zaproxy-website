@@ -47,7 +47,7 @@ Therefore during the second scan we are ignoring few alerts via ZAP rules and th
 [![zap-issue](images/zap-issue-2.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issuecomment-611490632)
 
 
-During the last scan we are ignoring all the alerts, thus resulting in finding zero vulnerabilities. Based on the scan results 
+During the last scan we are ignoring all the alerts, thus resulting in finding zero alerts. Based on the scan results 
 the actions bot will close the ongoing open issue.
 [![zap-issue](images/zap-issue-3.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issuecomment-611496321)
 
@@ -111,7 +111,9 @@ jobs:
 
 Also, you can view the scan logs by navigating to the ZAP [scan job](https://github.com/zaproxy/zaproxy-website/runs/573792586?check_suite_focus=true).
 
-![scan-job](./images/scan-job.png)
+[![scan-job](./images/scan-job.png)](https://github.com/zaproxy/zaproxy-website/runs/573792586?check_suite_focus=true)
 
-We are excited to hear your thoughts and feedback for the new ZAP Baseline Action. Reach us through the [dev group](https://groups.google.com/group/zaproxy-develop) 
+
+We are excited to hear your thoughts and feedback for the new ZAP Baseline Action. If you find the action useful please star the action.
+The ZAP team is also working on a ZAP Full Scan Action, stay tuned for updates. Reach us through the [dev group](https://groups.google.com/group/zaproxy-develop) 
 or for any additional enhancements please feel free to create an issue in the [following repository](https://github.com/zaproxy/action-baseline).
