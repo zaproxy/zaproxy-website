@@ -33,7 +33,7 @@ Based on the scan results ZAP will maintain an active issue in GitHub repository
 any new or resolved alerts and will close the issue if all the alerts have been resolved. A detailed report is attached to the workflow run 
 to get more information regarding the identified alerts. The report is available in HTML and Markdown formats.
 
-The following image shows how the GitHub Actions will notify the user with consequent scans.
+The following [issue](https://github.com/zaproxy/zaproxy-website/issues/93) shows how the GitHub Actions will notify the user with consequent scans.
 
 ![zap-issue](./images/zap-issue.png)
 
