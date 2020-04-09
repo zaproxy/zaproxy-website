@@ -1,13 +1,13 @@
 ---
 title: "Automate Security Testing with ZAP and GitHub Actions"
-description: "How ZAP baseline and github actions can help you to automate the security testing"
+description: "How ZAP baseline and github actions can help to automate the security testing"
 images:
-- https://www.zaproxy.org/blog/2020-04-08-automate-security-testing-with-zap-and-github-actions/images/zap-issue.png
-- https://www.zaproxy.org/blog/2020-04-08-automate-security-testing-with-zap-and-github-actions/images/scan-job.png
+- https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/zap-issue.png
+- https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/images/scan-job.png
 type: post
 tags:
 - blog
-date: "2020-04-08"
+date: "2020-04-09"
 addSocialPreview: true
 authors:
     - nirojan
@@ -79,3 +79,6 @@ file with the relative path to the rule file.
 Also, you can view the scan logs by navigating to the ZAP scan job.
 
 ![scan-job](./images/scan-job.png)
+
+We are excited to here your thoughts and feedback for our new ZAP Baseline Action. Reach us through our dev group or 
+for any additional enhancements please feel free to create an issue in the [following repository](https://github.com/zaproxy/action-baseline).
