@@ -19,7 +19,7 @@ Furthermore having security integrated into your CI/CD pipeline (DevSecOps) will
 developing the application. To cater to this need ZAP provides a baseline scan feature to find common security faults in 
 a web application without doing any active attacks. 
 
-[GitHub Actions](https://github.com/features/actions) makes it easier to automate how to scan and secure 
+[GitHub Actions](https://github.com/features/actions) make it easier to automate how to scan and secure 
 web applications at scale. Actions let you write scripts that are triggered based on certain events in your GitHub repo 
 such as — creating a new issue, pushing a commit, or on a scheduled basis. This makes it convenient and easy to automate security testing and to run ZAP scans 
 without involving any of your own infrastructures. The ZAP baseline action is available in the GitHub Marketplace under 
@@ -36,16 +36,16 @@ The following [issue](https://github.com/zaproxy/zaproxy-website/issues/93) show
 [https://www.zaproxy.org/](https://www.zaproxy.org/) website and notifies the users via opening an issue in the ZAP website repository. 
 The issue will be created by the GitHub Actions bot and will list the alerts as issue comments.
 
-[![zap-issue](images/zap-issue-1.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issue-597219582)
+[![issue open](images/zap-issue-1.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issue-597219582)
 
 To demonstrate the workflow of the action; we are ignoring the alerts as they are not relevant, but this has the same effect as fixing them.
 Therefore during the second scan we are ignoring few alerts via ZAP rules and the action bot updates the issue with the newly ignored/resolved alerts. 
-[![zap-issue](images/zap-issue-2.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issuecomment-611490632)
+[![comment with issues resolved](images/zap-issue-2.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issuecomment-611490632)
 
 
 During the last scan we are ignoring all the alerts, thus resulting in finding zero alerts. Based on the scan results 
 the actions bot will close the ongoing open issue.
-[![zap-issue](images/zap-issue-3.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issuecomment-611496321)
+[![issue closed](images/zap-issue-3.png)](https://github.com/zaproxy/zaproxy-website/issues/93#issuecomment-611496321)
 
 The ZAP baseline action scan runs the ZAP spider against the specified web application for (by default) 1 minute and 
 then waits for the passive scanning to complete before reporting the results. This means that the script doesn't 
