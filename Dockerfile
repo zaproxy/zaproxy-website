@@ -6,11 +6,9 @@ COPY .babelrc \
     package-lock.json \
     package.json \
     postcss.config.js \
-    renovate.json \
     webpack.common.js \
     webpack.dev.js \
-    webpack.prod.js \ 
-    yarn.lock /app/
+    webpack.prod.js /app/
 
 COPY site/ /app/site
 COPY src/ /app/src
