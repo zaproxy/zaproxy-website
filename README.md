@@ -11,8 +11,8 @@ The suggested setup for development is using the Docker.
 docker build -t zaproxy-website .
 
 # Start container with image of zaproxy-website
-docker run -it -v $(pwd)/site:/app/site \
-    -v $(pwd)/src:/app/src -p 3000:3000 zaproxy-website npm run preview
+docker run -it -v "$(pwd)/site:/app/site" \
+    -v "$(pwd)/src:/app/src" -p 3000:3000 zaproxy-website npm run preview
 ```
 
 ### Dependencies
