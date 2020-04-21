@@ -78,7 +78,7 @@ application and make it available locally so ZAP can access the site via the loc
 
 By default, baseline scan reports all alerts as WARNings but you can specify a config file that can change any rules to FAIL or IGNORE.
 The following shows a sample rules file. Create the `rules.tsv` file inside your repository (example: inside `.zap` folder) and make sure to update the action 
-file with the relative path to the rule file. Also, you can supply additional baseline [command-line options](https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan) 
+file with the relative path to the rule file. Also, you can supply additional baseline [command-line options](/docs/docker/baseline-scan/) 
 via the `cmd_options` parameter. For example passing `-a` as a command-line argument will include the alpha passive scan rules as well.
 
 ```tsv

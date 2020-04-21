@@ -1,0 +1,20 @@
+{{ define "main" }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Params.title }}</h1>
+  </div>
+</section>
+{{ $section := .Site.GetPage "section" .Section }}
+<div class="wrapper py-20" data-kind="{{ .Kind }}">
+    <div class="breadcrumbs">
+        <a href="/docs/docker/">Docker</a> &gt; {{ .Params.title }}
+    </div>
+    <h2>{{ .Title }}</h2>
+      <article class="pr-30 content single-post">
+          <main class="post-content">
+            {{ .Content }}
+          </main>
+      </article>
+</div>
+{{ end }}
+
