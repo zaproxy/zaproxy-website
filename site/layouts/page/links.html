@@ -13,6 +13,7 @@
       {{ if .Params.header }}
         <h5>{{ .Params.header }}</h5>
       {{ end }}
+      {{ .Content }}
       {{ with .Params }}
         <div>
           {{ range .links }}
