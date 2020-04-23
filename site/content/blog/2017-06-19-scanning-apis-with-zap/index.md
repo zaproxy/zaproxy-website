@@ -12,7 +12,7 @@ This blog post goes one step further, and explains how you can both explore and 
 line.  
 This allows you to easily automate the scanning of your APIs.  
   
-Following the approach taken by the [Baseline Scan](https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan) we have introduced a new API
+Following the approach taken by the [Baseline Scan](/docs/docker/baseline-scan/) we have introduced a new API
 scanning script which has only one dependency – Docker. You don’t need to install either ZAP or Java.  
 The script, zap-api-scan.py is included in the [Weekly](https://hub.docker.com/r/owasp/zap2docker-weekly/) and
 [Live](https://hub.docker.com/r/owasp/zap2docker-live/) ZAP Docker images, it will also be included in the next
@@ -77,8 +77,7 @@ additional rules that are implemented as scripts:
 
 You can change which rules are run and how failures are reported using a configuration file. This allows you to tune the scanning script to meet
 your requirements for each of your APIs.  
-To generate a configuration file use the ‘-g’ option. This will create a file which includes all of the [active](/docs/desktop/start/features/ascan/) and [passive](/docs/desktop/start/features/pscan/) scan rules available:
-<https://github.com/zaproxy/zaproxy/wiki/ZAP-API-Scan#configuration-file>. You can edit this file using a text editor.  
+To generate a configuration file use the ‘-g’ option. This will create a file which includes all of the [active](/docs/desktop/start/features/ascan/) and [passive](/docs/desktop/start/features/pscan/) scan rules available. See [configuration file](/docs/docker/api-scan/#configuration-file) for further details. You can edit this file using a text editor.  
 Changing a passive rule will only affect how failures are reported, but changing an active rule to IGNORE will prevent the rule from running.
 This is to reduce the overall scan time – passive rules are very quick while active rules can take a significant amount of time.  
   

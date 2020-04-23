@@ -21,4 +21,4 @@ table:
     cmd: docker pull owasp/zap2docker-live
     link: https://hub.docker.com/r/owasp/zap2docker-live/
 info:
-- See [Docker](https://github.com/zaproxy/zaproxy/wiki/Docker) for more information.
+- See [Docker](/docs/docker/) for more information.

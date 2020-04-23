@@ -21,7 +21,7 @@ This allows you tell ZAP more about the target, such as the authentication, the 
 
 Click on the 'gear' icon on the right hand side of many tabs to quickly access the setting for that feature.
 
-Docker Support - https://github.com/zaproxy/zaproxy/wiki/Docker
+[Docker Support](/docs/docker/)
 
 Does your application use anti CSRF tokens?  
 Make sure you have configured ZAP to handle them via the 'Options / Active Scan' screen.

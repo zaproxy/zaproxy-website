@@ -15,6 +15,10 @@ links:
     link: /docs/api/
     desc: a comprehensive guide to the ZAP API 
 
+  - name: 'Docker Details'
+    link: /docs/docker/
+    desc: detailed information on ZAP's docker images 
+
   - name: 'FAQ'
     link: /faq/
     desc: Frequently Asked Questions 

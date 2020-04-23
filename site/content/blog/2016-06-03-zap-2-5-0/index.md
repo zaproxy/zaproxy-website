@@ -54,14 +54,14 @@ For more information see the [Stats help page](/docs/desktop/start/features/stat
 
 The stable and weekly docker images now allow you to run the ZAP Desktop UI in a browser.  
 This means that you can run ZAP without having to install Java.  
-For more details see <https://github.com/zaproxy/zaproxy/wiki/WebSwing>  
+For more details see the [Webswing](/docs/docker/webswing) page. 
   
 The Docker images also include the ‘ZAP Baseline’ script.  
 This runs the ZAP spider against the specified target for (by default) 1 minute and then waits for the passive scanning to complete before
 reporting the results.  
 This means that the script does not perform any actual 'attacks' and will run for a relatively short period of time (a few minutes at most).  
 This script is intended to be ideal to run in a CI/CD environment, even against production sites.  
-For more details see <https://github.com/zaproxy/zaproxy/wiki/ZAP-Baseline-Scan>  
+For more details see the [Baseline Scan](/docs/docker/baseline-scan/) page.
   
 Thank you to everyone who contributed to this release.  
 To keep up to date with ZAP related news follow [@zaproxy](https://twitter.com/zaproxy) on twitter.
