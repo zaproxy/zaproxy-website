@@ -1,7 +1,7 @@
 on:
   schedule:
-    # Runs every hour
-    - cron:  '0 * * * *'
+    # Runs every week on sunday
+    - cron:  '0 0 * * 0'
 
 jobs:
   zap_scan:
