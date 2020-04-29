@@ -67,9 +67,8 @@ jobs:
     name: Scan ZAP website
     steps:
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.2.0
+        uses: zaproxy/action-baseline@v0.3.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://www.zaproxy.org/'
 ```
 
@@ -97,7 +96,7 @@ jobs:
         with:
           ref: master
       - name: ZAP Scan
-        uses: zaproxy/action-baseline@v0.2.0
+        uses: zaproxy/action-baseline@v0.3.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://www.zaproxy.org/'
