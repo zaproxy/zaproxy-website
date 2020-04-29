@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="bolt-header">
+   <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Title }}</h1>
+   </div>
+</section>
+<div class="wrapper py-70">
+   {{ .Content }}
+   <div class="flex latest-versions">
+      <table>
+         <TR>
+            <TH>Id</TH>
+            <TH>Alert</TH>
+            <TH>Status</TH>
+            <TH>Type</TH>
+         </TR>
+         {{ range (.Pages.ByParam "alertid") }}
+         <tr>
+            <td><a href="{{ .Permalink }}">{{ .Params.alertid }}</a></td>
+            <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+            <td>{{ .Params.status }}</td>
+            <td>{{ .Params.alerttype }}</td>
+         </tr>
+         </li>
+         {{ end }}
+      </table>
+   </div>
+</div>
+{{ end }}
