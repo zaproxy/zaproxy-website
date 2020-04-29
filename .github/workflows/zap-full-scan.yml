@@ -1,0 +1,19 @@
+on:
+  schedule:
+    # Runs every hour
+    - cron:  '0 * * * *'
+
+jobs:
+  zap_scan:
+    runs-on: ubuntu-latest
+    name: Full Scan ZAP website
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.1.0
+        with:
+          target: 'https://www.zaproxy.org/'
+          # rules_file_name: '.github/workflows/rules.tsv'
