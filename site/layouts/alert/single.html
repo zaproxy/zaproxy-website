@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+{{ $section := .Site.GetPage "section" .Section }}
+<div class="wrapper py-20" data-kind="{{ .Kind }}">
+    <div class="breadcrumbs">
+        <a href="/docs/">Docs</a> &gt;
+        <a href="/docs/alerts/">Alerts</a>
+    </div>
+    <div class="flex">
+      <article class="pr-30 content single-post">
+          <main class="post-content">
+            {{ .Content }}
+          </main>
+      </article>
+    </div>
+</div>
+{{ end }}
+

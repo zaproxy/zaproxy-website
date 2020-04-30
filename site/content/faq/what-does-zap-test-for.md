@@ -9,6 +9,8 @@ ZAP supports:
  - HTTP [active](/docs/desktop/start/features/ascan/) and [passive](/docs/desktop/start/features/pscan/) scanning.
  - WebSockets [passive](/docs/desktop/addons/websockets/pscanrules/) scanning.
 
+For a full list of the HTTP active and passive scan rules see the [Alert Details](/docs/alerts/) page.
+
 By default ZAP comes with the following (HTTP) 'release' quality rules:
 
   * [Release Active Scan Rules](/docs/desktop/addons/active-scan-rules/)
