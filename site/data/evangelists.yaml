@@ -2,7 +2,7 @@
 - name: Simon Bennetts
   email: psiinon@gmail.com
   twitter: psiinon
-  linkedin: http://www.linkedin.com/profile/view?id=46196399
+  linkedin: https://www.linkedin.com/in/psiinon/
   locations: UK / Worldwide / Remote
   language: English
   has_talks: Y
@@ -10,9 +10,9 @@
   is_core: true
   notes: >
     ZAP Project Lead.
-    Slides and videos linked off 
-    <a href="https://www.owasp.org/index.php/User:Simon_Bennetts"
-    rel="nofollow">OWASP profile</a> - feel free to rip these off ;)
+    Slides available via
+    <a href="https://www.slideshare.net/psiinon/presentations" rel="nofollow">Slideshare</a>
+    - feel free to rip them off ;)
 
 - name: Yvan Boily
   email: yvanboily@gmail.com
@@ -29,7 +29,6 @@
   language: English
   has_talks: Y
   has_training: Y
-  notes: <a href="https://www.youtube.com/watch?v=z9gEH-EqNFo#t=0" rel="nofollow">Video</a>
 
 - name: Duane L. Blanchard
   email: info@foolioninfosec.com
@@ -43,7 +42,7 @@
 - name: Zakaria Rachid
   email: badzack@gmail.com
   twitter: zackhimself
-  linkedin: http://www.linkedin.com/profile/view?id=297569442
+  linkedin: https://www.linkedin.com/in/zakariarachid/
   locations: France
   language: French, English, Arabic
   has_talks: Y
@@ -58,7 +57,7 @@
   language: Portuguese
   has_talks: Y
   has_training: Y
-  notes: <a href="http://www.slideshare.net/firebits" rel="nofollow">Slideshare</a>
+  notes: <a href="https://www.slideshare.net/firebits" rel="nofollow">Slideshare</a>
 
 - name: Amro Alolaqi
   email: amro@owasp.org
@@ -68,9 +67,6 @@
   language: English, Arabic
   has_talks: Y
   has_training: ''
-  notes: >
-    Talks linked off <a href="https://www.owasp.org/index.php/User:Amro_Ahmed"
-    rel="nofollow">OWASP profile</a>
 
 - name: Kim Carter
   email: kim.carter@owasp.org
@@ -82,8 +78,8 @@
   has_training: Y
   notes: >
     Co-founder of <a href="https://chcon.nz" rel="nofollow">CHCon</a>, Creator
-    of <a href="http://purpleteam-labs.com" rel="nofollow">purpleteam</a>, 
-    <a href="https://binarymist.io/publication/#4"
+    of <a href="https://purpleteam-labs.com" rel="nofollow">purpleteam</a>, 
+    <a href="https://binarymist.io/publication/"
     rel="nofollow">Host for Software Engineering Radio</a>,
     <a href="https://binarymist.io/talk/" rel="nofollow">Talks</a>,
     <a href="https://binarymist.io/project/service-development-team-security-training/"
@@ -94,7 +90,7 @@
 - name: Dan Cornell
   email: dan@denimgroup.com
   twitter: danielcornell
-  linkedin: http://www.linkedin.com/profile/view?id=3976642
+  linkedin: https://www.linkedin.com/in/dancornell/
   locations: USA / Remote
   language: English
   has_talks: Y
@@ -104,7 +100,7 @@
 - name: Adrien de Beaupre
   email: adriendb@gmail.com
   twitter: adriendb
-  linkedin: http://www.linkedin.com/profile/view?id=2047540
+  linkedin: https://www.linkedin.com/in/adrien-de-beaupre-b04828/
   locations: Canada
   language: English, French
   has_talks: Y
@@ -121,7 +117,7 @@
   
 - name: Malik Mesellem
   email: malik@itsecgames.com 
-  twitter: MME_IT" 
+  twitter: MME_IT
   linkedin: http://www.linkedin.com/in/malikmesellem
   locations: Belgium / Remote
   language: English, Dutch
@@ -141,7 +137,7 @@
   
 - name: Ben Walther
   email: ben.walther@gmail.com
-  linkedin: http://www.linkedin.com/profile/view?id=7188457
+  linkedin: https://www.linkedin.com/in/benwalther/
   locations: Los Angeles area
   language: English
   has_talks: Y
@@ -176,18 +172,18 @@
   has_training: Y
   notes: >
     toolsmith author, infosec tools evangelist.
-    <a href="https://holisticinfosec.org/research-mainmenu-45/22-research/193-owasp-top-10-tools-tactics" rel="nofollow">OWASP Top 10 tools, tactics</a> 
+    <a href="https://resources.infosecinstitute.com/owasp-top-10-tools-and-tactics/" rel="nofollow">OWASP Top 10 tools, tactics</a> 
     presented at SANSFIRE, <code>SecureWorld</code>, 
     ISSA International, etc.
 
 - name: Azzeddine Ramrami
   email: azzeddine.ramrami@owasp.org
-  linkedin: http://fr.linkedin.com/pub/azzeddine-ramrami/5/b7a/107/
+  linkedin: https://www.linkedin.com/in/%D8%B1%D9%85%D8%B1%D8%A7%D9%85%D9%8A-%D8%B9%D8%B2%D8%A7%D9%84%D8%AF%D9%8A%D9%86-azzeddine-ramrami-107b7a5/
   locations: Morocco, France and Ivory Coast
   language: English, French
   has_talks: Y
   has_training: ''
-  notes: French Translation for ZAP. <a href="http://2013.owasp.in/" rel="nofollow">http://2013.owasp.in/</a>
+  notes: French Translation for ZAP.
 
 - name: Ahmed M Neil
   email: Ahmed.neil@owasp.org
@@ -201,7 +197,7 @@
 - name: Jerome Athias
   email: athiasjerome@gmail.com 
   twitter: JA25000 
-  linkedin: http://www.linkedin.com/profile/view?id=13732623
+  linkedin: https://www.linkedin.com/in/jeromeathias/
   locations: Middle East
   language: English, French
   has_talks: Y
@@ -211,7 +207,7 @@
 - name: Michael Coates
   email: michael.coates@owasp.org 
   twitter: _mwc
-  linkedin: http://www.linkedin.com/profile/view?id=8374308
+  linkedin: https://www.linkedin.com/in/mcoates/
   locations: Bay Area
   language: English
   has_talks: Y
@@ -258,12 +254,12 @@
   has_training: Y
   notes: >
     OWASP project leader for vicnum. 
-    Talks and slide share at <a href="http://www.slideshare.net/mkraushar/vicnumdescription"
-    rel="nofollow">http://www.slideshare.net/mkraushar/vicnumdescription</a>
+    Talks and slide share at <a href="https://www.slideshare.net/mkraushar/vicnumdescription"
+    rel="nofollow">https://www.slideshare.net/mkraushar/vicnumdescription</a>
 
 - name: Jonathan Fernández
   email: jonathan.fernandez04@gmail.com
-  linkedin: http://www.linkedin.com/pub/jonathan-fernandez-jimenez/3b/368/5ba
+  linkedin: https://www.linkedin.com/in/jonathan-fernandez-jimenez-5ba3683b/
   locations: Latin America
   language: Spanish, English
   has_talks: Y
@@ -273,13 +269,13 @@
 - name: Yuho Kameda
   email: tyoisu@gmail.com 
   twitter: yuhokameda 
-  linkedin: http://www.linkedin.com/profile/view?id=204870400
+  linkedin: https://www.linkedin.com/in/yuhokameda/
   locations: Japan
   language: English, Japanese
   has_talks: Y
   has_training: Y
   notes: >
-    <a href="https://www.owasp.org/index.php/AppSecAsiaPac2014#tab=TRAINING_SESSIONS" rel="nofollow">Training Session in AppSecAPAC</a>, <a href="https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit" rel="nofollow">OWASP Japanese Manual</a>
+    <a href="https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit" rel="nofollow">OWASP Japanese Manual</a>
 
 - name: Chetan Karande
   email: chetan.karande@owasp.org 
@@ -301,8 +297,7 @@
   has_talks: Y
   has_training: Y
   notes: >
-    <a href="https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit" rel="nofollow">Supervision OWASP Japanese Manual</a>, 
-    <a href="http://appsecapac.org/2014/training/pentesting-using-owasp-zap/" rel="nofollow">Previous training</a>
+    <a href="https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit" rel="nofollow">Supervision OWASP Japanese Manual</a>
 
 - name: Serg Belokamen
   email: serg@owasp.org 
@@ -312,12 +307,12 @@
   language: English, Russian
   has_talks: Y
   has_training: Y
-  notes: OWASP chapter lead, application security designer/architect, <a href="http://sergbelokamen.com" rel="nofollow">http://sergbelokamen.com</a> <a href="http://bugcrowd.com" rel="nofollow">http://bugcrowd.com</a>
+  notes: OWASP chapter lead, application security designer/architect, <a href="http://www.bugcrowd.com" rel="nofollow">http://www.bugcrowd.com</a>
 
 - name: Derek Armstrong
   email: derek.v.armstrong@gmail.com 
   twitter: dsplice 
-  linkedin: http://www.linkedin.com/profile/view?id=13816412
+  linkedin: https://www.linkedin.com/in/derekarmstrong/
   locations: Canada
   language: English
   has_talks: Y
@@ -340,7 +335,7 @@
   language: English
   has_talks: Y
   has_training: Y
-  notes: '<a href="http://thetestdoctor.wordpress.com/" rel="nofollow">Blog: The Test Doctor</a>'
+  notes: '<a href="https://thetestdoctor.co.uk/" rel="nofollow">Blog: The Test Doctor</a>'
 
 - name: Jess Vermont
   email: jess.vermont.stl@gmail.com
@@ -353,8 +348,8 @@
 
 - name: Yassia Savadogo
   email: yassias@yahoo.fr 
-  twitter: yassias 
-  linkedin: https://www.linkedin.com/profile/view?id=35974704
+  twitter: yassias
+  linkedin: https://www.linkedin.com/in/savadogo-yassia-84006a10/
   locations: Burkina Faso
   language: French
   has_talks: Y
@@ -363,7 +358,6 @@
 
 - name: Ammar Hassan Brohi
   email: brohiammar@gmail.com
-  linkedin: http://pk.linkedin.com/pub/ammarbrohi
   locations: All Pakistan
   language: English
   has_talks: Y
@@ -382,7 +376,7 @@
 - name: Sumanth Damarla
   email: damarla.sumanth@gmail.com 
   twitter: Sumanth_Damarla 
-  linkedin: https://www.linkedin.com/in/sumanthdamarla" rel="nofollow">
+  linkedin: https://www.linkedin.com/in/sumanthdamarla
   locations: India / Remote
   language: English, Hindi, Telugu
   has_talks: Y
@@ -391,15 +385,13 @@
 
 - name: kunal Relan
   email: pentesterkunal@live.com 
-  twitter: kunal_relan 
-  linkedin: https://www.linkedin.com/profile/view?id=266070324
   locations: India / Remote
   language: English, Hindi
   has_talks: Y
   has_training: Y
   notes: >
     ZAP Evangelist,Mozilla Delhi/NCR Security lead and Information Security researcher, 
-    <a href="https://reps.mozilla.org/e/webmaker-and-security-workshop-at-niit-university" rel="nofollow">Web Security Workshop</a>
+    <a href="https://reps.mozilla.org/e/webmaker-and-security-workshop-at-niit-university/" rel="nofollow">Web Security Workshop</a>
 
 - name: Robert Kerby
   email: beardedwanderer@zoho.com
@@ -425,7 +417,7 @@
   language: English / Hebrew
   has_talks: Y
   has_training: Y
-  notes: ZAP Evangelist, <a href="https://omerlh.info/" rel="nofollow">Personal Site with previous talks</a>
+  notes: ZAP Evangelist, <a href="https://www.omerlh.info/" rel="nofollow">Personal Site with previous talks</a>
 
 - name: Chhagan Lal Mathuriya
   email: clmathuriya@gmail.com 
@@ -463,7 +455,7 @@
   language: English
   has_talks: Y
   has_training: Y
-  notes: OWASP DevSecOps Studio and DevSlop Project Leader. <a href="https://www.teachera.io/devsecops-course/" rel="nofollow">Practical DevSecOps Course </a>
+  notes: OWASP DevSecOps Studio and DevSlop Project Leader.
 
 - name: Raul Siles
   email: raulsiles+ZAP@gmail.com 
