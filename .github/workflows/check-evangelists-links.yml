@@ -1,0 +1,24 @@
+on:
+  schedule:
+    - cron:  '0 2 1 * *'
+
+name: Evangelists Broken Link Check
+jobs:
+  check:
+    name: Broken Link Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 13.x
+      - name: Install Dependencies
+        run: |
+          npm install -g mkdirp
+          npm install -g link-checker
+      - name: Get Page
+        # wget saves it as index.html
+        run: wget https://www.zaproxy.org/evangelists/
+      - name: Check Links
+        # linkedin doesn't play nice, it's always status 999, likely due to robots.txt exclusion
+        run: link-checker ./index.html --external-only --http-status-ignore 301 302 --url-ignore .*linkedin.*
