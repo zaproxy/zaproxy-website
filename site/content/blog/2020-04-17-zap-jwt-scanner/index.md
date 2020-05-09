@@ -17,7 +17,7 @@ With the popularity of JSON Web Tokens (JWTs) there comes the need to secure the
 ## Configuration
 As JWT add-on includes a rule for the Active Scanner but there are configuration details which are specific for the JWT add-on
 Under ZAP's Options dialog you will find a JWT section as shown below:
-[![JWT](./images/jwt-options-panel.png)]
+![JWT](./images/jwt-options-panel.png)
 
 ### Explanation
 In case the application which you are trying to scan is using RSA or more specifically RS* algorithm then please configure the public certificate TrustStore path and TrustStore password. These fields are used to find certain vulnerabilities related to RS* based JWTs.
