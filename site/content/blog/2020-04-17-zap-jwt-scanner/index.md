@@ -2,7 +2,7 @@
 title: "ZAP JWT Scanner"
 description: "How to scan JWT endpoints using OWASP ZAP"
 images:
-- https://www.zaproxy.org/blog/2020-04-17-zap-jwt-scanner/images/jwt-settings.png
+- https://www.zaproxy.org/blog/2020-04-17-zap-jwt-scanner/images/jwt-options-panel.png
 type: post
 tags:
 - blog
