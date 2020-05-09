@@ -12,7 +12,7 @@ authors:
     - preetkaran20 (Karan Preet Singh Sasan)
 ---
 
-With the popularity of JSON Web Tokens (JWTs)there comes the need to secure their use so that they are not misused because of bad configuration, older libraries, or buggy implementations. So the JWT Scanner Addon is used to find such vulnerabilities and this blog explains on how to use it.
+With the popularity of JSON Web Tokens (JWTs) there comes the need to secure their use so that they are not misused because of bad configuration, older libraries, or buggy implementations. So the JWT Scanner Add-on is used to find such vulnerabilities and this blog explains on how to use it.
 
 ## Configuration
 As JWT add-on includes a rule for the Active Scanner but there are configuration details which are specific for the JWT add-on
