@@ -47,7 +47,7 @@ In consequent scans if it identifies a fixed issue or newly raised alerts the ac
 [![comment with issues resolved](images/zap-issue-2.png)](https://github.com/zaproxy/zaproxy-website/issues/110#issuecomment-626256038)
 
 If you have resolved/ignored all the alerts then, the action will close the ongoing open issue. You can also use the 
-rules file to ignore the false positives which occur during the ZAP scan. Please check out our previous blog on the 
+rules file to ignore false positives which occur during the ZAP scan. Please check out our previous blog on the 
 [baseline scan](/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/) which covers how to exclude false positive from your issues.
 
 The following YAML config shows how to configure the action to scan a publicly accessible web application. 
