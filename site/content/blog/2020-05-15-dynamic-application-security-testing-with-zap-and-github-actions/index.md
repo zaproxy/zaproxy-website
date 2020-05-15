@@ -65,7 +65,7 @@ jobs:
     name: Scan ZAP website
     steps:
       - name: ZAP Scan
-        uses: zaproxy/action-fullscan@v0.1.0
+        uses: zaproxy/action-full-scan@v0.1.0
         with:
           target: 'https://www.zaproxy.org/'
 ```
