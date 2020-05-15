@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Application Security Testing with OWASP ZAP and GitHub Actions"
-description: "How ZAP full scan and GitHib actions can help to automate the security testing"
+description: "How ZAP full scan and GitHub actions can help to automate the security testing"
 images:
 - https://www.zaproxy.org/blog/2020-05-15-dynamic-application-security-testing-with-zap-and-github-actions/images/zap-action.png
 type: post
@@ -16,8 +16,8 @@ authors:
 
 [ZAP full scan GitHub action]((https://github.com/marketplace/actions/owasp-zap-full-scan)) provides free dynamic analysis 
 security testing (DAST) to your web applications. DAST is also known as black-box testing, which allows ZAP to identify 
-potential vulnerabilities in your web applications. ZAP previously introduced the ZAP baseline scan GitHub action to passively 
-identify potential alerts in a web application. However, unlike the baseline scan, ZAP full scan attacks the web application 
+potential vulnerabilities in your web applications. ZAP previously introduced the [ZAP baseline scan GitHub action](https://github.com/marketplace/actions/owasp-zap-baseline-scan) 
+to passively identify potential alerts in a web application. However, unlike the baseline scan, ZAP full scan attacks the web application 
 to find additional vulnerabilities.
 
 The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository. This means that the script does perform actual ‘attacks’ and can potentially run for a long period of time.
@@ -35,8 +35,8 @@ GitHub repository. The action will update the issue if it identifies any new or 
 issue if all the alerts have been resolved. A detailed report is attached to the workflow run to get more information 
 regarding the identified alerts. The report is available in HTML and Markdown formats.
 
-The following issue shows how the GitHub Baseline Action scans the [https://www.zaproxy.org](https://www.zaproxy.org) 
-website and notifies the users via opening an issue in the ZAP website repository. The issue will be created by the 
+The following issue shows how the GitHub full scan action scans the [https://www.zaproxy.org](https://www.zaproxy.org) 
+website and notifies the users via opening an issue in the ZAP website repository (Scan time: 45 Mins). The issue will be created by the 
 GitHub Actions bot and will list the alerts as issue comments. Compared to our [baseline scan results](https://github.com/zaproxy/zaproxy-website/issues/93#issue-597219582) 
 you can see the full scan has identified additional alerts in the zaproxy website.
 
