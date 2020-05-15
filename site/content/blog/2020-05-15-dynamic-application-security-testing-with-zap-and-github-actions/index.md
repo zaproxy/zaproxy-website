@@ -76,5 +76,5 @@ Also, you can view the scan logs by navigating to the ZAP [scan job](https://git
 [![scan-job](./images/scan-job.png)](https://github.com/zaproxy/zaproxy-website/runs/629858267?check_suite_focus=true)
 
 We are excited to hear your thoughts and feedback for the ZAP full scan action. If you find the action useful please star 
-the action. Reach us through the [dev group](https://groups.google.com/group/zaproxy-develop) or for any additional enhancements 
+the action. Reach us through the [user group](https://groups.google.com/forum/#!forum/zaproxy-users) or for any additional enhancements 
 please feel free to create an issue in the [following repository](https://github.com/zaproxy/action-full-scan).
