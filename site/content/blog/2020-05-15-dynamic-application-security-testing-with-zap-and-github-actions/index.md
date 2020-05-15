@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Application Security Testing with OWASP ZAP and GitHub Actions"
+title: "Dynamic Application Security Testing with ZAP and GitHub Actions"
 description: "How ZAP full scan and GitHub actions can help to automate the security testing"
 images:
 - https://www.zaproxy.org/blog/2020-05-15-dynamic-application-security-testing-with-zap-and-github-actions/images/zap-action.png
@@ -16,16 +16,16 @@ authors:
 
 [ZAP full scan GitHub action]((https://github.com/marketplace/actions/owasp-zap-full-scan)) provides free dynamic analysis 
 security testing (DAST) to your web applications. DAST is also known as black-box testing, which allows ZAP to identify 
-potential vulnerabilities in your web applications. ZAP previously introduced the [ZAP baseline scan GitHub action](https://github.com/marketplace/actions/owasp-zap-baseline-scan) 
+potential vulnerabilities in your web applications. We previously introduced the [ZAP baseline scan GitHub action](https://github.com/marketplace/actions/owasp-zap-baseline-scan) 
 to passively identify potential alerts in a web application. However, unlike the baseline scan, ZAP full scan attacks the web application 
 to find additional vulnerabilities.
 
 The ZAP full scan action runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results. The alerts will be maintained as a GitHub issue in the corresponding repository. This means that the script does perform actual ‘attacks’ and can potentially run for a long period of time.
 
-** Warning **
-As a full scan will perform attacks against the target you should only use the full scan against targets that you have 
+Warning: As a full scan will perform attacks against the target you should only use the full scan against targets that you have 
 permission to test. You should also check with your hosting company and any other services such as CDNs that may be 
-affected before running this action. ZAP will also submit forms which could result in a large number of messages via, 
+affected before running this action. ZAP will also submit forms which could result in a 
+[large number of messages](https://www.zaproxy.org/faq/how-can-i-prevent-zap-from-sending-me-1000s-of-emails-via-a-contact-us-form/) via, 
 for example, 'Contact us' or 'comment' forms.
 
 The ZAP full scan action can be used in multiple ways. The action can be configured to run against a publicly available 
