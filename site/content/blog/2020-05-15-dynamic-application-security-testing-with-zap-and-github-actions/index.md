@@ -25,7 +25,7 @@ The ZAP full scan action runs the ZAP spider against the specified target (by de
 **Warning:** 
 As a full scan will perform attacks against the target you should only use the full scan against targets that you have 
 permission to test. You should also check with your hosting company and any other services such as CDNs that may be 
-affected before running this action. ZAP will also submit forms which could result in a 
+affected before running this action. ZAP will submit forms and exercise functionality which could result in a 
 [large number of messages](/faq/how-can-i-prevent-zap-from-sending-me-1000s-of-emails-via-a-contact-us-form/) via, 
 for example, 'Contact us' or 'comment' forms.
 
