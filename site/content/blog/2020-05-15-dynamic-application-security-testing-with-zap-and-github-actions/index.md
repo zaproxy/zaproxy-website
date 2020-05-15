@@ -30,7 +30,7 @@ affected before running this action. ZAP will submit forms and exercise function
 for example, 'Contact us' or 'comment' forms.
 
 The ZAP full scan action can be used in multiple ways. The action can be configured to run against a publicly available 
-web application or against a locally available web application. Here in ZAP we use the action to periodically scan our 
+web application or against a locally available web application. The ZAP team use the action to scan our 
 website on a weekly basis. Similar to the baseline scan, a full scan action will also maintain an active issue in the 
 GitHub repository. The action will update the issue if it identifies any new or resolved alerts and will close the 
 issue if all the alerts have been resolved. A detailed report is attached to the workflow run to get more information 
