@@ -110,5 +110,7 @@ Also, you can view the scan logs by navigating to the ZAP [scan job](https://git
 
 
 We are excited to hear your thoughts and feedback for the new ZAP Baseline Action. If you find the action useful please star the action.
-The ZAP team is also working on a ZAP Full Scan Action, stay tuned for updates. Reach us through the [dev group](https://groups.google.com/group/zaproxy-develop) 
-or for any additional enhancements please feel free to create an issue in the [following repository](https://github.com/zaproxy/action-baseline).
+Also checkout out our [ZAP full scan action](https://github.com/marketplace/actions/owasp-zap-full-scan) on how to perform active scanning 
+on your web applications. The ZAP team is also working on a ZAP Full Scan Action, stay tuned for updates. Reach us through the 
+[dev group](https://groups.google.com/group/zaproxy-develop) or for any additional enhancements please feel free to create an 
+issue in the [following repository](https://github.com/zaproxy/action-baseline).
