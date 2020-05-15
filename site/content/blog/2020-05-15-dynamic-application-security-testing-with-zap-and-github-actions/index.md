@@ -25,7 +25,7 @@ The ZAP full scan action runs the ZAP spider against the specified target (by de
 Warning: As a full scan will perform attacks against the target you should only use the full scan against targets that you have 
 permission to test. You should also check with your hosting company and any other services such as CDNs that may be 
 affected before running this action. ZAP will also submit forms which could result in a 
-[large number of messages](https://www.zaproxy.org/faq/how-can-i-prevent-zap-from-sending-me-1000s-of-emails-via-a-contact-us-form/) via, 
+[large number of messages](/faq/how-can-i-prevent-zap-from-sending-me-1000s-of-emails-via-a-contact-us-form/) via, 
 for example, 'Contact us' or 'comment' forms.
 
 The ZAP full scan action can be used in multiple ways. The action can be configured to run against a publicly available 
@@ -47,7 +47,7 @@ In consequent scans if it identifies a fixed issue a newly raised alerts the act
 
 If you have resolved/ignored all the alerts then, the action will close the ongoing open issue. You can also use the 
 rules file to ignore the false positives which occur during the ZAP scan. Please check out our previous blog on the 
-[baseline scan](https://www.zaproxy.org/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/) on how to exclude false positive from your issues.
+[baseline scan](/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/) on how to exclude false positive from your issues.
 
 The following YAML config shows how to configure the action to scan a publicly accessible web application. 
 In order to start scanning, create a file called `zap_scan.yaml` inside the `.github/workflows` 
