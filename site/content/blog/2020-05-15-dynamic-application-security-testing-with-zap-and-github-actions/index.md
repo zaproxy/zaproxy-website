@@ -43,7 +43,7 @@ you can see the full scan has identified additional alerts in the zaproxy websit
 
 [![issue open](images/zap-issue-1.png)](https://github.com/zaproxy/zaproxy-website/issues/110#issue-609117077)
 
-In consequent scans if it identifies a fixed issue a newly raised alerts the action will update the issue with the required information.
+In consequent scans if it identifies a fixed issue or newly raised alerts the action will update the issue with the required information.
 [![comment with issues resolved](images/zap-issue-2.png)](https://github.com/zaproxy/zaproxy-website/issues/110#issuecomment-626256038)
 
 If you have resolved/ignored all the alerts then, the action will close the ongoing open issue. You can also use the 
