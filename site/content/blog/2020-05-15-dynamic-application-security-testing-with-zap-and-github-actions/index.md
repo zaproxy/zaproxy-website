@@ -14,7 +14,7 @@ authors:
 
 [![zap-action](./images/zap-action.png)](https://github.com/marketplace/actions/owasp-zap-full-scan)
 
-[ZAP full scan GitHub action]((https://github.com/marketplace/actions/owasp-zap-full-scan)) provides free dynamic analysis 
+[ZAP full scan GitHub action](https://github.com/marketplace/actions/owasp-zap-full-scan) provides free dynamic analysis 
 security testing (DAST) to your web applications. DAST is also known as black-box testing, which allows ZAP to identify 
 potential vulnerabilities in your web applications. We previously introduced the [ZAP baseline scan GitHub action](https://github.com/marketplace/actions/owasp-zap-baseline-scan) 
 to passively identify potential alerts in a web application. However, unlike the baseline scan, ZAP full scan attacks the web application 
