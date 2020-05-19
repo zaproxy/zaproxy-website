@@ -10,11 +10,12 @@ COPY .babelrc \
     webpack.dev.js \
     webpack.prod.js /app/
 
-COPY site/ /app/site
-COPY src/ /app/src
-
 WORKDIR /app
 
 RUN npm install
+
+COPY site/ /app/site
+COPY src/ /app/src
+
 RUN npm run build
 CMD npm run preview
