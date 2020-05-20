@@ -8,6 +8,7 @@ taxonomies:
   tag: "tags"
 
 params:
+  description: The world’s most widely used web app scanner. Free and open source. Actively maintained by a dedicated international team of volunteers.
   EditContent:
     BaseUrl: https://github.com/zaproxy/zaproxy-website/blob/master/site/content/
     Label: Edit on GitHub
