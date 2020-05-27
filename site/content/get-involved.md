@@ -35,4 +35,8 @@ links:
   - name: 'Bug Bounty'
     link: https://bugcrowd.com/owaspzap
     desc: for reporting any vulnerabilities 
+
+  - name: 'Third Party Engagement'
+    link: /third-party-engagement/
+    desc: How Third Parties can use ZAP and engage with the ZAP Core Team 
 ---
