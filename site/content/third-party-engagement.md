@@ -26,4 +26,4 @@ __This is not a legal document, third parties are expected to perform their own 
 * Third party - any individual, organisation, commercial or otherwise
 * ZAP core team: https://www.zaproxy.org/docs/desktop/credits/
 * ZAP code base: any code under https://github.com/zaproxy/
-* ZAP communication channels: https://www.zaproxy.org/, any of the ZAP Google groups, [zaproxy](https://twitter.com/zaproxy) twitter account, any other accounts associated with the ZAP project
+* ZAP communication channels: [https://www.zaproxy.org/](https://www.zaproxy.org/), any of the ZAP Google groups, [zaproxy](https://twitter.com/zaproxy) twitter account, any other accounts associated with the ZAP project
