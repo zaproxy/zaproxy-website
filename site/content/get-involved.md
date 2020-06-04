@@ -36,6 +36,10 @@ links:
     link: https://bugcrowd.com/owaspzap
     desc: for reporting any vulnerabilities 
 
+  - name: 'Supporters'
+    link: /supporters/
+    desc: Companies who have supported ZAP in a variety of ways 
+
   - name: 'Third Party Engagement'
     link: /third-party-engagement/
     desc: How Third Parties can use ZAP and engage with the ZAP Core Team 
