@@ -52,6 +52,8 @@ docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
     -t https://www.example.com -g gen.conf -r testreport.html --hook=/zap/wrk/my-hooks.py
 ```
 
+Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
+
 ## List of Hooks
 - `cli_opts(opts)`
 - `zap_started(zap, target)`
