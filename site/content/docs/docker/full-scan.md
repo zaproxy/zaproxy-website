@@ -53,5 +53,8 @@ If you use 'file' params then you need to mount the directory those file are in 
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py \
     -t https://www.example.com -g gen.conf -r testreport.html
 ```
+
+Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
+
 ### Scan Hooks
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
