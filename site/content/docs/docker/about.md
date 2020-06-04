@@ -69,6 +69,8 @@ docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-baseline.py \
     -t https://www.example.com -g gen.conf -r testreport.html
 ```
 
+Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
+
 For more details see the [ZAP Baseline Scan](../baseline-scan/) page.
 ### ZAP CLI:
 [ZAP CLI](https://github.com/Grunny/zap-cli) is a ZAP wrapper written in Python. It provides a simple way to do scanning from the command line:

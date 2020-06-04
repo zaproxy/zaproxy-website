@@ -54,6 +54,9 @@ If you use 'file' params then you need to mount the directory those file are in 
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
     -t https://www.example.com -g gen.conf -r testreport.html
 ```
+
+Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
+
 ### Example Output
 ```
 docker run -t owasp/zap2docker-stable zap-baseline.py -t https://www.example.com
