@@ -16,6 +16,10 @@ links:
     link: https://segment.com/
     notes: Sponsored some of David's work on the HUD
 
+  - name: 'Sonatype'
+    link: https://www.sonatype.com/
+    notes: ZAP in Ten series
+
   - name: 'Salesforce'
     link: https://www.salesforce.com/
     notes: $9,000 in donations
