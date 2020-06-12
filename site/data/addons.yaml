@@ -62,9 +62,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v34/ascanrules-release-34.zap
-  date: 2020-01-17
-  version: 34
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v35/ascanrules-release-35.zap
+  date: 2020-06-02
+  version: 35
 
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
@@ -73,9 +73,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v27/ascanrulesAlpha-alpha-27.zap
-  date: 2019-12-16
-  version: 27
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v28/ascanrulesAlpha-alpha-28.zap
+  date: 2020-06-02
+  version: 28
 
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
@@ -84,9 +84,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v27/ascanrulesBeta-beta-27.zap
-  date: 2019-12-16
-  version: 27
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v28/ascanrulesBeta-beta-28.zap
+  date: 2020-06-02
+  version: 28
 
 - id: attacksurfacedetector
   name: Attack Surface Detector
@@ -187,6 +187,17 @@
   date: 2019-08-23
   version: 8
 
+- id: commonlib
+  name: Common Library
+  description: A common library, for use by other add-ons.
+  author: ZAP Dev Team
+  status: release
+  infoUrl: ''
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.0.0/commonlib-release-1.0.0.zap
+  date: 2020-05-21
+  version: 1.0.0
+
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -275,6 +286,17 @@
   date: 2019-06-12
   version: 9
 
+- id: encoder
+  name: Encoder
+  description: Adds encode/decode/hash dialog and support for scripted processors as well
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.2.0/encoder-alpha-0.2.0.zap
+  date: 2020-06-02
+  version: 0.2.0
+
 - id: exportreport
   name: Export Report
   description: Report Export module that allows users to customize content and export in a desired format.
@@ -309,15 +331,15 @@
   version: 12
 
 - id: fuzzdb
-  name: FuzzDB files
+  name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer
   author: ZAP Dev Team
   status: release
   infoUrl: /docs/desktop/addons/fuzzdb-files/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v5/fuzzdb-release-5.zap
-  date: 2019-06-27
-  version: 5
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v6/fuzzdb-release-6.zap
+  date: 2020-04-14
+  version: 6
 
 - id: fuzzdbwebbackdoors
   name: FuzzDB Web Backdoors
@@ -579,9 +601,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/neonmarker/
   repoUrl: https://github.com/kingthorin/neonmarker
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/neonmarker-alpha-1.1.0.zap
-  date: 2020-01-02
-  version: 1.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/neonmarker-alpha-1.2.0.zap
+  date: 2020-04-14
+  version: 1.2.0
 
 - id: onlineMenu
   name: Online menus
@@ -597,13 +619,15 @@
 - id: openapi
   name: OpenAPI Support
   description: Imports and spiders OpenAPI definitions.
-  author: ZAP Core Team plus Joanna Bona, Nathalie Bouchahine, Artur Grzesica, Mohammad Kamar, Markus Kiss, Michal Materniak and Marcin Spiewak
+  author: ZAP Dev Team plus Joanna Bona, Nathalie Bouchahine, Artur Grzesica, Mohammad
+    Kamar, Markus Kiss, Michal Materniak, Marcin Spiewak, and SDA SE Open Industry
+    Solutions
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v15/openapi-beta-15.zap
-  date: 2020-01-17
-  version: 15
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v16/openapi-beta-16.zap
+  date: 2020-06-09
+  version: 16
 
 - id: plugnhack
   name: Plug-n-Hack Configuration
@@ -634,9 +658,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v26/pscanrules-release-26.zap
-  date: 2020-01-17
-  version: 26
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v29/pscanrules-release-29.zap
+  date: 2020-06-02
+  version: 29
 
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
@@ -645,9 +669,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v26/pscanrulesAlpha-alpha-26.zap
-  date: 2019-12-16
-  version: 26
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v27/pscanrulesAlpha-alpha-27.zap
+  date: 2020-06-02
+  version: 27
 
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
@@ -656,9 +680,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v21/pscanrulesBeta-beta-21.zap
-  date: 2019-12-16
-  version: 21
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v22/pscanrulesBeta-beta-22.zap
+  date: 2020-06-02
+  version: 22
 
 - id: quickstart
   name: Quick Start
@@ -670,6 +694,17 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v28/quickstart-release-28.zap
   date: 2020-02-04
   version: 28
+
+- id: reflect
+  name: Reflect
+  description: Finds reflected parameters
+  author: Caleb Kinney
+  status: alpha
+  infoUrl: ''
+  repoUrl: ''
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/reflect-alpha-0.0.8.zap
+  date: 2020-06-11
+  version: 0.0.8
 
 - id: regextester
   name: Regular Expression Tester
@@ -703,6 +738,17 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/requester-alpha-3.zap
   date: 2018-10-15
   version: 3
+
+- id: retire
+  name: Retire.js
+  description: Retire.js
+  author: Nikita Mundhada and the ZAP Dev Team
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.2.0/retire-alpha-0.2.0.zap
+  date: 2020-06-02
+  version: 0.2.0
 
 - id: reveal
   name: Reveal
@@ -777,9 +823,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.1.0/selenium-release-15.1.0.zap
-  date: 2020-01-17
-  version: 15.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.2.0/selenium-release-15.2.0.zap
+  date: 2020-03-31
+  version: 15.2.0
 
 - id: sequence
   name: Sequence
@@ -909,9 +955,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v16/wappalyzer-alpha-16.zap
-  date: 2020-01-27
-  version: 16
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v19/wappalyzer-alpha-19.zap
+  date: 2020-06-09
+  version: 19
 
 - id: webdriverlinux
   name: Linux WebDrivers
@@ -920,9 +966,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v16/webdriverlinux-release-16.zap
-  date: 2020-01-17
-  version: 16
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v18/webdriverlinux-release-18.zap
+  date: 2020-06-02
+  version: 18
 
 - id: webdrivermacos
   name: MacOS WebDrivers
@@ -931,9 +977,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v15/webdrivermacos-release-15.zap
-  date: 2020-01-17
-  version: 15
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v17/webdrivermacos-release-17.zap
+  date: 2020-06-02
+  version: 17
 
 - id: webdriverwindows
   name: Windows WebDrivers
@@ -942,9 +988,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v16/webdriverwindows-release-16.zap
-  date: 2020-01-17
-  version: 16
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v18/webdriverwindows-release-18.zap
+  date: 2020-06-02
+  version: 18
 
 - id: websocket
   name: WebSockets
