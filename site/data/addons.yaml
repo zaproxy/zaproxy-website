@@ -691,11 +691,11 @@
   description: Retire.js
   author: Nikita Mundhada and the ZAP Dev Team
   status: beta
-  infoUrl: ''
+  infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.3.0/retire-beta-0.3.0.zap
-  date: 2020-06-16
-  version: 0.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.3.1/retire-beta-0.3.1.zap
+  date: 2020-06-18
+  version: 0.3.1
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
