@@ -12,3 +12,5 @@ cascade:
 # FuzzDB Web Backdoors
 
 [FuzzDB](https://github.com/fuzzdb-project/fuzzdb/) web backdoors which can be used with the ZAP fuzzer.
+
+**Note:** This add-on was superseded by [FuzzDB Offensive](../fuzzdb-offensive/).
