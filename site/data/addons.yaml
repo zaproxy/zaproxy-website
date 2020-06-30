@@ -318,19 +318,20 @@
   status: release
   infoUrl: /docs/desktop/addons/fuzzdb-files/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v6/fuzzdb-release-6.zap
-  date: 2020-04-14
-  version: 6
-- id: fuzzdbwebbackdoors
-  name: FuzzDB Web Backdoors
-  description: FuzzDB web backdoors which can be used with the ZAP fuzzer
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v7/fuzzdb-release-7.zap
+  date: 2020-06-30
+  version: 7
+- id: fuzzdboffensive
+  name: FuzzDB Offensive
+  description: FuzzDB web backdoors and attack files which can be used with the ZAP
+    fuzzer or for manual penetration testing
   author: ZAP Dev Team
   status: release
-  infoUrl: /docs/desktop/addons/fuzzdb-web-backdoors/
-  repoUrl: https://github.com/zaproxy/fuzzdb-web-backdoors/
-  downloadUrl: https://github.com/zaproxy/fuzzdb-web-backdoors/releases/download/v2/fuzzdbwebbackdoors-release-2.zap
-  date: 2020-01-30
-  version: 2
+  infoUrl: /docs/desktop/addons/fuzzdb-offensive/
+  repoUrl: https://github.com/zaproxy/fuzzdb-offensive/
+  downloadUrl: https://github.com/zaproxy/fuzzdb-offensive/releases/download/v3/fuzzdboffensive-release-3.zap
+  date: 2020-06-30
+  version: 3
 - id: gettingStarted
   name: Getting Started with ZAP Guide
   description: A short Getting Started with ZAP Guide
