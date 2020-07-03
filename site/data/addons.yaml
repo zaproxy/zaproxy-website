@@ -485,13 +485,13 @@
 - id: imagelocationscanner
   name: Image Location and Privacy Scanner
   description: Image Location and Privacy Passive Scanner
-  author: Veggiespam and the ZAP Dev Team
+  author: Jay Ball (veggiespam) and the ZAP Dev Team
   status: beta
   infoUrl: /docs/desktop/addons/image-location-and-privacy-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/imagelocationscanner-beta-1.zap
-  date: 2018-02-27
-  version: 1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v2/imagelocationscanner-beta-2.zap
+  date: 2020-07-03
+  version: 2
 - id: importLogFiles
   name: Log File Importer
   description: Allows you to import log files from ModSecurity and files previously
