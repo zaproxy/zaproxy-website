@@ -866,9 +866,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/viewstate/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/viewstate-alpha-1.zap
-  date: 2017-11-28
-  version: 1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/viewstate-v2/viewstate-alpha-2.zap
+  date: 2020-07-10
+  version: 2
 - id: vulncheck
   name: VulnCheck Extension
   description: list vulnerabilities from known databases
