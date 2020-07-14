@@ -35,6 +35,7 @@ Options:
     -P                specify listen port
     -D                delay in seconds to wait for passive scanning 
     -i                default rules not in the config file to INFO
+    -I                do not return failure on warning
     -j                use the Ajax spider in addition to the traditional one
     -l level          minimum level to show: PASS, IGNORE, INFO, WARN or FAIL, use with -s to hide example URLs
     -n context_file   context file which will be loaded prior to scanning the target
