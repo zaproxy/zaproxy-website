@@ -684,9 +684,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/requester/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/requester-alpha-3.zap
-  date: 2018-10-15
-  version: 3
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v4/requester-alpha-4.zap
+  date: 2020-07-15
+  version: 4
 - id: retire
   name: Retire.js
   description: Retire.js
