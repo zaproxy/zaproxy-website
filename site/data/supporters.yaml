@@ -1,6 +1,11 @@
 ---
 
 platinum:
+  - name: 'StackHawk'
+    link: https://www.stackhawk.com/
+    logo: /img/supporters/stackhawk.png
+    notes: Currently sponsoring Simon's work on ZAP
+
   - name: 'Mozilla'
     link: https://www.mozilla.org/
     logo: /img/supporters/mozilla.png
