@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v28/ascanrulesBeta-beta-28.zap
-  date: 2020-06-02
-  version: 28
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v29/ascanrulesBeta-beta-29.zap
+  date: 2020-07-22
+  version: 29
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
