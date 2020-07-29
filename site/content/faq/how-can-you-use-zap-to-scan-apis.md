@@ -6,14 +6,15 @@ weight: 7
 ---
 
 
-ZAP understands API formats like JSON and XML and so can be used to scan APIs.
+ZAP understands API formats like JSON and so can be used to scan APIs.
+Earlier ZAP understanded XML format like WSDL. The SOAP Scanner add-on has been removed for the time being.
 
 The problem is usually how to effectively explore the APIs.
 
 There are various options:
 
   * If your API has an OpenAPI/Swagger definition then you can import it using the [OpenAPI add-on](/docs/desktop/addons/openapi-support/).
-  * If your API has a WSDL then you can import it using the SOAP Scanner add-on.
+  * If your API has a WSDL then you can proxy Postman/SoapUI throught ZAP.
   * If you have a list of endpoint URLs then you can import these using the [Import files containing URLs add-on](/docs/desktop/addons/import-urls/).
   * If you have regression tests for you API then you can proxy these through ZAP
 
