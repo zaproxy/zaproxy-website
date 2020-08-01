@@ -1,6 +1,7 @@
 on:
   schedule:
     - cron:  '0 2 1 * *'
+  workflow_dispatch:
 
 name: Evangelists Broken Link Check
 jobs:
@@ -21,4 +22,4 @@ jobs:
         run: wget https://www.zaproxy.org/evangelists/
       - name: Check Links
         # linkedin doesn't play nice, it's always status 999, likely due to robots.txt exclusion
-        run: link-checker ./index.html --external-only --http-status-ignore 301 302 --url-ignore .*linkedin.*
+        run: link-checker ./index.html --external-only --http-always-get --http-status-ignore 301 302 307 --url-ignore .*linkedin.*
