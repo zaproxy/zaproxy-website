@@ -58,9 +58,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v35/ascanrules-release-35.zap
-  date: 2020-06-02
-  version: 35
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v36/ascanrules-release-36.zap
+  date: 2020-08-04
+  version: 36
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha quality Active Scanner rules
@@ -181,9 +181,9 @@
   status: release
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.0.0/commonlib-release-1.0.0.zap
-  date: 2020-05-21
-  version: 1.0.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.1.0/commonlib-release-1.1.0.zap
+  date: 2020-08-04
+  version: 1.1.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -694,9 +694,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.3.1/retire-beta-0.3.1.zap
-  date: 2020-06-18
-  version: 0.3.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.4.0/retire-beta-0.4.0.zap
+  date: 2020-08-04
+  version: 0.4.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -886,9 +886,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v20.1.0/wappalyzer-beta-20.1.0.zap
-  date: 2020-06-30
-  version: 20.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v20.2.0/wappalyzer-beta-20.2.0.zap
+  date: 2020-08-04
+  version: 20.2.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
