@@ -26,6 +26,8 @@ Latest code: [ExampleFilePassiveScanner.java](https://github.com/zaproxy/zap-ext
 * **ASP.NET ViewState Integrity:** The application does not use a Message Authentication Code (MAC) to protect the integrity of the ASP.NET ViewState, which can be tampered with by a malicious client
 * **Base64 Disclosure:** Base64 encoded data was disclosed by the application/web server
 
+**Note:** At Low Threshold all occurrences within each response will be included.
+
 Latest code: [Base64Disclosure.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/Base64Disclosure.java)
 
 ## Content Cacheability
@@ -62,42 +64,6 @@ The presence of such banners may facilitate more targeted attacks against known 
 
 Latest code: [InPageBannerInfoLeakScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/InPageBannerInfoLeakScanner.java)
 
-## Insecure Component
-
-Passively scans the server response headers and body generator content for product versions, which are then cross-referenced against a list of product versions known to be vulnerable to various CVEs. A list of ranked CVEs and CVSS severity scores is output for each product noted to be vulnerable. Currently, the following server side products are supported:  
-Apache Tomcat application server (limited functionality due to limited information leakage by Tomcat)  
-Apache web server  
-mod_auth_radius Apache module  
-mod_fcgid Apache module  
-mod_imap Apache module  
-mod_jk Apache module  
-mod_perl Apache module  
-mod_python Apache module  
-mod_ssl Apache module  
-OpenSSL Apache module  
-Perl Apache module  
-Python Apache module  
-IBM HTTP Server  
-JBoss application server  
-Jetty web server / application server  
-LiteSpeed web server  
-Lighttpd web server  
-Microsoft IIS web server  
-Netscape Enterprise web server  
-Nginx web server  
-OpenCMS  
-Oracle Application Server  
-Oracle Web Cache  
-PHP  
-Phusion_Passenger  
-Squid proxy server  
-Sun One web server  
-Sun Java System Web Server  
-TornadoServer web server  
-WordPress  
-
-Latest code: [InsecureComponentScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/InsecureComponentScanner.java)
-
 ## Java Serialization Object
 
 Java Serialization Object (JSO) is a way to save and exchange objects between Java applications.  
@@ -107,13 +73,6 @@ JSO should not be used by Java programs. Strong controls must be done on seriali
 JSO are a type of vulnerabilities associated to A8:2017-Insecure Deserialization.
 
 Latest code: [JsoScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/JsoScanner.java)
-
-## Modern Web Application
-
-This raises an informational alert if a site appears to be a modern web application.  
-It does not indicate any potential vulnerabilities but it could indicate that the ajax spider might be more effective at exploring this site compared to the traditional spider.
-
-Latest code: [ModernAppDetectionScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ModernAppDetectionScanner.java)
 
 ## Source Code Disclosure
 
@@ -127,3 +86,10 @@ This scanner checks whether the integrity attribute in the script or the link el
 It helps mitigate an attack where the CDN has been compromised and content has been replaced by malicious content.  
 
 Latest code: [SubResourceIntegrityAttributeScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/SubResourceIntegrityAttributeScanner.java)
+
+## Dangerous JS Functions
+
+This scanner checks for any dangerous JS functions present in a site response.  
+**Note:** If the Custom Payloads addon is installed you can add your own function names (payloads) in the Custom Payloads options panel. They will also be searched for in responses as they're passively scanned. Keep in mind that the greater the number of payloads the greater the amount of time needed to passively scan.
+
+Latest code: [JSFunctionPassiveScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/JSFunctionPassiveScanner.java)
