@@ -73,15 +73,27 @@ This check identifies secure HTTPS pages that host insecure HTTP forms. The issu
 
 Latest code: [InsecureFormPostScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/InsecureFormPostScanner.java)
 
+## Modern Web Application
+
+This raises an informational alert if a site appears to be a modern web application.  
+It does not indicate any potential vulnerabilities but it could indicate that the ajax spider might be more effective at exploring this site compared to the traditional spider.
+
+Latest code: [ModernAppDetectionScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/ModernAppDetectionScanner.java)
+
 ## Open Redirect
 
 Open redirects are one of the OWASP 2010 Top Ten vulnerabilities. This check looks at user-supplied input in query string parameters and POST data to identify where open redirects might be possible. Open redirects occur when an application allows user-supplied input (e.g. http://nottrusted.com) to control an offsite redirect. This is generally a pretty accurate way to find where 301 or 302 redirects could be exploited by spammers or phishing attacks.
 
 Latest code: [UserControlledOpenRedirectScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/UserControlledOpenRedirectScanner.java)
 
-## PII Disclosure scanner
+## PII Disclosure
 
 PII is information like credit card number, SSN etc. This check currently reports only numbers which match credit card numbers and pass Luhn checksum, which gives high confidence, that this is a credit card number.
+
+Note: In the case of suspected credit card values, the potential credit card numbers are looked up against a Bank Identification Number List
+(BINList). If a match is found the alert is raised at High confidence and additional details are added to the 'Other Information' field in the
+alert, otherwise the alerts will have Medium confidence.
+See: [binlist-data](https://github.com/iannuttall/binlist-data) for more information.
 
 Latest code: [PiiScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/PiiScanner.java)
 
@@ -102,7 +114,7 @@ Latest code: [LinkTargetScanner.java](https://github.com/zaproxy/zap-extensions/
 
 ## Servlet Parameter Pollution
 
-Searches response content for HTML forms which fail to specify an action element. Version 3 of the Java Servlet spec calls for aggregation of query string and post data elements which may result in unintended handling of user controlled data. This may impact other frameworks and technologies as well. **Note:** This scan rule will only analyze responses on LOW Threshold.
+Searches response content for HTML forms which fail to specify an action element. Version 3 of the Java Servlet spec calls for aggregation of query string and post data elements which may result in unintended handling of user controlled data. This may impact other frameworks and technologies as well. **Note:** This scan rule will only analyze responses on LOW Threshold, and in Context URLs for which the Tech JSP/Servlet is applicable.
 
 Latest code: [ServletParameterPollutionScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/ServletParameterPollutionScanner.java)
 

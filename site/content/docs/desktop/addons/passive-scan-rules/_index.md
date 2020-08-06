@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 26.0.0
+    version: 29.0.0
 ---
 
 # Passive Scan Rules
@@ -15,9 +15,16 @@ The following release quality passive scan rules are included in this add-on:
 
 ## Application Errors
 
-Check server responses for HTTP 500 - Internal Server Error type responses or those that contain a known error string.  
+Check server responses for HTTP 500 - Internal Server Error type responses or those that contain a known error string.   
+**Note:** Matches made within script blocks or files are against the entire content not only comments.  
 At HIGH Threshold don’t alert on HTTP 500 (but do for other error patterns).  
 For Internal Server Error (HTTP 500) the Alert is set to Low risk and in other case it is set to Medium risk.
+
+**Note:** If the Custom Payloads addon is installed you can add your own Application Error strings (payloads) in the Custom Payloads options panel.
+They will also be searched for in responses as they're passively scanned. Keep in mind that the greater the number of payloads the greater the
+amount of time needed to passively scan.
+
+It is also possible to add patterns to the `xml/application_errors.xml` file in ZAP's user directory.  
 
 Latest code: [ApplicationErrorScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ApplicationErrorScanner.java)
 
@@ -99,6 +106,9 @@ Latest code: [CrossDomainMisconfiguration.java](https://github.com/zaproxy/zap-e
 
 The Content Security Policy (CSP) Scanner adds a passive scan rule which parses and analyzes CSP headers for potential misconfiguration or weakness. This scanner leverages Shape Security's [Salvation](https://github.com/shapesecurity/salvation) library to perform it's parsing and assessment of CSPs.
 
+Note: If multiple CSP headers are encountered they are merged (intersected) into a single policy for analysis, check the 'Other Info' field of alerts
+for further details.
+
 Latest code: [ContentSecurityPolicyScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ContentSecurityPolicyScanner.java)
 
 ## CSRF Countermeasures
@@ -108,14 +118,6 @@ At HIGH alert threshold only scans messages which are in scope.
 Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms.
 
 Latest code: [CSRFCountermeasures.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CSRFCountermeasures.java)
-
-## Header XSS Protection
-
-Checks for the existence of and value/setting of the X-XSS-Protection header. This response header can be used to configure a user-agent's built-in reflective XSS protection.  
-At MEDIUM and HIGH thresholds only non-error or non-redirect HTML responses are considered.  
-At LOW threshold all text responses are considered including errors and redirects.
-
-Latest code: [HeaderXssProtectionScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/HeaderXssProtectionScanner.java)
 
 ## Information Disclosure: Debug Errors
 
@@ -133,6 +135,11 @@ Latest code: [InformationDisclosureInURL.java](https://github.com/zaproxy/zap-ex
 ## Information Disclosure: Referrer
 
 Identifies the existence of sensitive details within the Referrer header field of HTTP requests (this may include parameters, document names, directory names, etc.).
+
+Note: In the case of suspected credit card identifiers in the Referrer value, the potential credit card numbers are looked up against a Bank Identification
+Number List (BINList). If a match is found the alert is raised at High confidence and additional details are added to the 'Other Information' field in the alert,
+otherwise the alerts will have Medium confidence.
+See: [binlist-data](https://github.com/iannuttall/binlist-data) for more information.
 
 Latest code: [InformationDisclosureReferrerScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/InformationDisclosureReferrerScanner.java)
 
@@ -185,7 +192,8 @@ Latest code: [TestInfoSessionIdURL.java](https://github.com/zaproxy/zap-extensio
 
 ## Timestamp Disclosure
 
-A timestamp was disclosed by the application/web server.
+A timestamp was disclosed by the application/web server.  
+At HIGH threshold this rule does not alert on potential timestamps that are not within a range of plus or minus one year.
 
 Latest code: [TimestampDisclosureScanner.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/TimestampDisclosureScanner.java)
 

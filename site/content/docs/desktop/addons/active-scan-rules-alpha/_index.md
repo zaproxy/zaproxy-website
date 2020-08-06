@@ -82,6 +82,10 @@ LDAP Injection may be possible. It may be possible for an attacker to bypass aut
 
 Latest code: [LDAPInjection.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/LDAPInjection.java)
 
+## NoSQL Injection - MongoDB
+
+This rule attempts to identify MongoDB specific NoSQL Injection vulnerabilities. It attempts various types of attacks including: boolean based, error based, time based, and authentication bypass. It will also attempt JSON parameter specific payloads if the scan is configured to include JSON parameter variants. Latest code: [MongoDbInjection.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/MongoDbInjection.java)
+
 ## XSLT Injection Scanner
 
 This active scanner checks for certain responses induced by injecting XSL transformations.   
