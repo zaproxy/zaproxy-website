@@ -1,0 +1,55 @@
+---
+
+services:
+  - name: 'StackHawk'
+    link: https://www.stackhawk.com/
+    logo: /img/supporters/stackhawk.png
+    supporter: ZAP Platinum Supporter
+
+  - name: 'GitLab'
+    link: https://docs.gitlab.com/ee/user/application_security/dast/
+
+  - name: 'DeepFactor'
+    link: https://deepfactor.io/
+
+  - name: 'HostedScan'
+    link: https://hostedscan.com/
+
+  - name: 'Sken.ai'
+    link: https://www.sken.ai/
+
+  - name: 'PatrOwl'
+    link: https://patrowl.io/
+
+integrations:
+  - name: 'ThreadFix'
+    link: https://threadfix.it/
+    logo: /img/supporters/denimgroup.png
+    license: 'Commercial'
+    supporter: ZAP Silver Supporter
+
+  - name: 'Faraday'
+    link: https://www.faradaysec.com/
+    license: 'Open source community edition'
+    supporter: ZAP Bronze Supporter
+
+  - name: 'DefectDojo'
+    link: https://www.defectdojo.org/
+    license: 'Free, open source'
+ 
+  - name: 'Dradis'
+    link: https://dradisframework.com/ce/
+    license: 'Open source community edition'
+ 
+  - name: 'Sn1per'
+    link: https://github.com/1N3/Sn1per
+    license: 'Open source community edition'
+ 
+  - name: 'Edgescan'
+    link: https://www.edgescan.com/
+    license: 'Commercial'
+ 
+other:
+  - name: 'Pluralsight'
+    link: https://www.pluralsight.com/courses/owasp-zap-web-app-pentesting-getting-started
+    what: 'ZAP Getting Started Course'
