@@ -1,0 +1,57 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+<section class="wrapper py-70" data-kind="{{ .Kind }}">
+  <article>
+
+<h5>{{ .Params.description }}</h5>
+<h5>{{ .Params.warning }}</h5>
+
+<h2>Services</h2>
+<div>{{ .Params.desc_services }}</div>
+
+<table>
+{{ range $service := $.Site.Data.thirdparty.services }}
+  <tr>
+  <td><a href="{{ $service.link }}">{{ if $service.logo }}<img src="{{ $service.logo }}" width="50%" height="50%"/>{{ else }}{{ $service.name }}{{ end }}</a></td>
+  <td><h5><a href="/supporters/">{{ $service.supporter }}</h5></a></td>
+  </tr>
+{{ end }}
+</table>
+<br/><br/>
+
+<h2>Integrations</h2>
+<div>{{ .Params.desc_integrations }}</div>
+<table>
+{{ range $integration := $.Site.Data.thirdparty.integrations }}
+  <tr>
+  <td><a href="{{ $integration.link }}">{{ if $integration.logo }}<img src="{{ $integration.logo }}" width="50%" height="50%"/>{{ else }}{{ $integration.name }}{{ end }}</a></td>
+  <td>{{ $integration.license }}</td>
+  <td><h5><a href="/supporters/">{{ $integration.supporter }}</h5></a></td>
+  </tr>
+{{ end }}
+</table>
+<br/><br/>
+
+<h2>Other</h2>
+<div>{{ .Params.desc_other }}</div>
+<table>
+{{ range $other := $.Site.Data.thirdparty.other }}
+  <tr>
+  <td><a href="{{ $other.link }}">{{ if $other.logo }}<img src="{{ $other.logo }}" width="50%" height="50%"/>{{ else }}{{ $other.name }}{{ end }}</a></td>
+  <td>{{ $other.what }}</td>
+  <td><h5><a href="/supporters/">{{ $other.supporter }}</h5></a></td>
+  </tr>
+{{ end }}
+</table>
+
+  </article>
+</section>
+{{ end }}
+
