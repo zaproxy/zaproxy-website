@@ -16,11 +16,12 @@
 <h2>Services</h2>
 <div>{{ .Params.desc_services }}</div>
 
-<table>
+<table class="table table-fixed">
 {{ range $service := $.Site.Data.thirdparty.services }}
   <tr>
-  <td><a href="{{ $service.link }}">{{ if $service.logo }}<img src="{{ $service.logo }}" width="50%" height="50%"/>{{ else }}{{ $service.name }}{{ end }}</a></td>
-  <td><h5><a href="/supporters/">{{ $service.supporter }}</h5></a></td>
+  <td class="cell-35"><a href="{{ $service.link }}">{{ if $service.logo }}<img src="{{ $service.logo }}"/>{{ else }}{{ $service.name }}{{ end }}</a></td>
+  <td class="cell-35">{{ $service.license }}</td>
+  <td class="cell-30">{{ if $service.supporter }}<a href="/supporters/"><h5>{{ $service.supporter }}</h5></a>{{ end }}{{ if $service.notes }}{{ $service.notes }}{{ end }}</td>
   </tr>
 {{ end }}
 </table>
@@ -28,25 +29,25 @@
 
 <h2>Integrations</h2>
 <div>{{ .Params.desc_integrations }}</div>
-<table>
+<table class="table table-fixed">
 {{ range $integration := $.Site.Data.thirdparty.integrations }}
   <tr>
-  <td><a href="{{ $integration.link }}">{{ if $integration.logo }}<img src="{{ $integration.logo }}" width="50%" height="50%"/>{{ else }}{{ $integration.name }}{{ end }}</a></td>
-  <td>{{ $integration.license }}</td>
-  <td><h5><a href="/supporters/">{{ $integration.supporter }}</h5></a></td>
+  <td class="cell-35"><a href="{{ $integration.link }}">{{ if $integration.logo }}<img src="{{ $integration.logo }}"/>{{ else }}{{ $integration.name }}{{ end }}</a></td>
+  <td class="cell-35">{{ $integration.license }}</td>
+  <td class="cell-30">{{ if $integration.supporter }}<a href="/supporters/"><h5>{{ $integration.supporter }}</h5></a>{{ end }}{{ if $integration.notes }}{{ $integration.notes }}{{ end }}</td>
   </tr>
 {{ end }}
 </table>
 <br/><br/>
 
-<h2>Other</h2>
-<div>{{ .Params.desc_other }}</div>
-<table>
-{{ range $other := $.Site.Data.thirdparty.other }}
+<h2>Training</h2>
+<div>{{ .Params.desc_training }}</div>
+<table class="table table-fixed">
+{{ range $training := $.Site.Data.thirdparty.training }}
   <tr>
-  <td><a href="{{ $other.link }}">{{ if $other.logo }}<img src="{{ $other.logo }}" width="50%" height="50%"/>{{ else }}{{ $other.name }}{{ end }}</a></td>
-  <td>{{ $other.what }}</td>
-  <td><h5><a href="/supporters/">{{ $other.supporter }}</h5></a></td>
+  <td class="cell-35">{{ if $training.logo }}<img src="{{ $training.logo }}" width="50%" height="50%"/>{{ else }}{{ $training.name }}{{ end }}</td>
+  <td class="cell-35"><a href="{{ $training.link }}">{{ $training.what }}</a></td>
+  <td class="cell-30"><a href="/supporters/"><h5>{{ $training.supporter }}</h5></a></td>
   </tr>
 {{ end }}
 </table>

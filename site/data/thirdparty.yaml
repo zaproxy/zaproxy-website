@@ -4,22 +4,33 @@ services:
   - name: 'StackHawk'
     link: https://www.stackhawk.com/
     logo: /img/supporters/stackhawk.png
+    license: 'Commercial, free for open source projects'
     supporter: ZAP Platinum Supporter
+
+  - name: 'SecureCodeBox'
+    link: https://www.securecodebox.io/
+    license: 'Free, open source'
+    notes: OWASP Project
 
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
+    license: 'Commercial'
 
   - name: 'DeepFactor'
     link: https://deepfactor.io/
+    license: 'Commercial, free community edition'
 
   - name: 'HostedScan'
     link: https://hostedscan.com/
+    license: 'Commercial, free option'
 
   - name: 'Sken.ai'
     link: https://www.sken.ai/
+    license: 'Commercial, free option'
 
   - name: 'PatrOwl'
     link: https://patrowl.io/
+    license: 'Commercial, free for open source projects'
 
 integrations:
   - name: 'ThreadFix'
@@ -36,6 +47,7 @@ integrations:
   - name: 'DefectDojo'
     link: https://www.defectdojo.org/
     license: 'Free, open source'
+    notes: OWASP Project
  
   - name: 'Dradis'
     link: https://dradisframework.com/ce/
@@ -49,7 +61,27 @@ integrations:
     link: https://www.edgescan.com/
     license: 'Commercial'
  
-other:
+training:
+  - name: 'Coursera'
+    link: https://www.coursera.org/projects/web-application-security-testing-with-owsap-zap
+    what: 'Web Application Security Testing with OWASP ZAP'
+
+  - name: 'Cycubix'
+    link: https://cycubix.com/course/web-application-security-essentials/
+    what: 'Web Application Security Essentials'
+
+  - name: 'Cybrary'
+    link: https://www.cybrary.it/course/owasp-tutorial/
+    what: 'OWASP ZAP Tool'
+
+  - name: 'Eduonix'
+    link: https://www.eduonix.com/pentesting-with-owasp-zap-mastery-course
+    what: 'PenTesting with OWASP ZAP: mastery course'
+
   - name: 'Pluralsight'
     link: https://www.pluralsight.com/courses/owasp-zap-web-app-pentesting-getting-started
     what: 'ZAP Getting Started Course'
+
+  - name: 'Udemy'
+    link: https://www.udemy.com/course/owasp-zap-from-scratch/
+    what: 'OWASP ZAP From Scratch'
