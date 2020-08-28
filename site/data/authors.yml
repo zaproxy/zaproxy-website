@@ -45,3 +45,9 @@ nirojan:
   picture: /img/authors/nirojan-selvanathan_400x400.png
   twitter: sshniro
   is_core: true  
+
+akshath:
+  name: Akshath Kothari
+  picture: /img/authors/akshath-kothari_400x400.jpg
+  twitter: ricekot_
+  is_core: false
