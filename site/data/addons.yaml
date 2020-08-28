@@ -342,6 +342,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v11/gettingStarted-release-11.zap
   date: 2020-01-17
   version: 11
+- id: graphql
+  name: GraphQL Support
+  description: Inspect and attack GraphQL endpoints.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.1.0/graphql-alpha-0.1.0.zap
+  date: 2020-08-28
+  version: 0.1.0
 - id: groovy
   name: Groovy Scripting
   description: Allows Groovy to be used for ZAP scripting - templates included
