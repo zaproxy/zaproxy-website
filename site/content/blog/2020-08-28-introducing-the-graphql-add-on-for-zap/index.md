@@ -5,6 +5,7 @@ type: post
 tags:
 - blog
 date: "2020-08-28"
+addSocialPreview: true
 authors:
     - akshath
 ---
