@@ -1,5 +1,27 @@
 ---
 
+- name: Akshath Kothari
+  email: 
+  twitter: ricekot_
+  linkedin: https://www.linkedin.com/in/akshath-kothari/
+  program: GSoC
+  title: GraphQL Support
+  date: 2020 Summer
+  links: >
+    <a href="/blog/2020-08-28-introducing-the-graphql-add-on-for-zap/">Blog</a>,
+    <a href="/docs/desktop/addons/graphql-support/">add-on</a>
+
+- name: Nirojan Selvanathan
+  email: 
+  twitter: sshniro
+  linkedin: https://www.linkedin.com/in/niroselva/
+  program: Direct
+  title: ZAP GitHub actions
+  date: 2020 Spring
+  links: >
+    <a href="/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/">Blog</a>,
+    <a href="/blog/2020-05-15-dynamic-application-security-testing-with-zap-and-github-actions/">blog</a>
+
 - name: Nirojan Selvanathan
   email: 
   twitter: sshniro
