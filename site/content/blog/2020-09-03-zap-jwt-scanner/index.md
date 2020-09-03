@@ -56,5 +56,8 @@ The **Component** drop down is used to choose the **Header** or the **Payload** 
 
 The **Key** drop down is used to choose the fields to be fuzzed in the **Header** or **Payload** components of the JWT.
 
+### Fuzzer View Animation
+![Fuzzer Animation](./images/fuzzer-animation.gif)
+
 The JWT add-on is available in the marketplace and can be installed from within ZAP.
 For more information please visit [JWT Support](https://github.com/SasanLabs/owasp-zap-jwt-addon)
