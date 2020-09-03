@@ -51,3 +51,9 @@ akshath:
   picture: /img/authors/akshath-kothari_400x400.jpg
   twitter: ricekot_
   is_core: false
+
+preetkaran20:
+  name: Karan Preet Singh Sasan
+  picture:
+  twitter: sasan_karan
+  is_core: false

@@ -2,7 +2,7 @@
 title: "ZAP JWT Support Add-on"
 description: "How to scan and fuzz JWT's using OWASP ZAP"
 images:
-- https://www.zaproxy.org/blog/2020-04-17-zap-jwt-scanner/images/jwt-options-panel.png
+- https://www.zaproxy.org/blog/2020-09-03-zap-jwt-scanner/images/jwt-options-panel.png
 type: post
 tags:
 - blog
@@ -12,10 +12,10 @@ authors:
     - preetkaran20 (Karan Preet Singh Sasan)
 ---
 
-With the popularity of JSON Web Tokens (JWTs) there comes the need to secure their use so that they are not misused because of bad configuration, older libraries, or buggy implementations. So the JWT Support Add-on is used to find such vulnerabilities and this blog explains on how to use it.
+With the popularity of JSON Web Tokens (JWTs) there comes the need to secure their use so that they are not misused because of bad configuration, older libraries, or buggy implementations. So the JWT Support add-on is used to find such vulnerabilities and this blog explains on how to use it.
 
 ## Configuration
-As JWT add-on includes a rule for the Active Scanner and Fuzzer but there are configuration details which are specific for the JWT add-on
+As JWT add-on includes a rule for the Active Scanner and Fuzzer but there are configuration details which are specific for the JWT add-on.
 Under ZAP's Options dialog you will find a JWT section as shown below:
 ![JWT](./images/jwt-options-panel.png)
  
@@ -34,7 +34,7 @@ As JWT is a signed token hence fuzzing field values require resigning the JWT an
 ### Scanner Vulnerability Coverage
 The JWT add-on's scan rule attempts to identified vulnerabilities in both Client/Browser and Server/Library implementations.
 
-For the Client side it covers most of the vulnerabilities mentioned in the [OWASP JWT CheatSheet](https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_Cheat_Sheet_for_Java.html#token-storage-on-client-side).
+For the Client side it covers most of the vulnerabilities mentioned in the [OWASP JWT CheatSheet](https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html#token-storage-on-client-side).
 
 For Server side it mainly covers following vulnerabilities:
 1. [None Algorithm attack](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/#Meet-the--None--Algorithm)
@@ -56,4 +56,5 @@ The **Component** drop down is used to choose the **Header** or the **Payload** 
 
 The **Key** drop down is used to choose the fields to be fuzzed in the **Header** or **Payload** components of the JWT.
 
+The JWT add-on is available in the marketplace and can be installed from within ZAP.
 For more information please visit [JWT Support](https://github.com/SasanLabs/owasp-zap-jwt-addon)
