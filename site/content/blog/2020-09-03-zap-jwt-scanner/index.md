@@ -25,7 +25,7 @@ Under ZAP's Options dialog you will find a JWT section as shown below:
 
 In case the application which you are trying to scan is using RSA or more specifically RS* algorithm then please configure the public certificate TrustStore path and TrustStore password. These fields are used to find certain vulnerabilities related to RS* based JWTs.
 
-The Enable Client Configuration Scan option is used to enable client side validations like JWT being sent to the browser in an insecure or non-recommended way.
+The Enable Client Configuration Scan option is used to enable client-side validations like JWT being sent to the browser in an insecure or non-recommended way.
 
 #### Fuzzer Configuration:
 
