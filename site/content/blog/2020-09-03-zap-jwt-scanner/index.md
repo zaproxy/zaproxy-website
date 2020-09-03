@@ -15,7 +15,7 @@ authors:
 With the popularity of JSON Web Tokens (JWTs) there comes the need to secure their use so that they are not misused because of bad configuration, older libraries, or buggy implementations. So the JWT Support add-on is used to find such vulnerabilities and this blog explains on how to use it.
 
 ## Configuration
-As JWT add-on includes a rule for the Active Scanner and Fuzzer but there are configuration details which are specific for the JWT add-on.
+As the JWT add-on includes a rule for the Active Scanner as well as Fuzzer functionality, there are configuration details which are specific for the JWT add-on.
 Under ZAP's Options dialog you will find a JWT section as shown below:
 ![JWT](./images/jwt-options-panel.png)
  
