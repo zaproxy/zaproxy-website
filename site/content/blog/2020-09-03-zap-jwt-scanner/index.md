@@ -38,7 +38,7 @@ For the Client-side it covers most of the vulnerabilities mentioned in the [OWAS
 
 For Server-side it mainly covers following vulnerabilities:
 1. [None Algorithm attack](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/#Meet.the..None..Algorithm)
-2. [Algorithm Confusion attack](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/#RSA-or-HMAC-)
+2. [Algorithm Confusion attack](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/#RSA.or.HMAC.)
 3. [Trusting JWK provided with the Token](https://nvd.nist.gov/vuln/detail/CVE-2018-0114)
 4. Empty JWT
 5. Null Byte Injection attack
