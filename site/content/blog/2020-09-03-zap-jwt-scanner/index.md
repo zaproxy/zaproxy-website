@@ -25,18 +25,18 @@ Under ZAP's Options dialog you will find a JWT section as shown below:
 
 In case the application which you are trying to scan is using RSA or more specifically RS* algorithm then please configure the public certificate TrustStore path and TrustStore password. These fields are used to find certain vulnerabilities related to RS* based JWTs.
 
-Enable Client Configuration Scan flag is used to enable client side validations like JWT being sent to the browser in an insecure or non-recommended way.
+The Enable Client Configuration Scan option is used to enable client side validations like JWT being sent to the browser in an insecure or non-recommended way.
 
 #### Fuzzer Configuration:
 
-As JWT is a signed token hence fuzzing field values require resigning the JWT and hence for signing fuzzer requires HMac secret key or RSA's private key as per the algorithm header field of JWT. So Fuzzer configurations corresponds to the same.
+Since JWT is a signed token; fuzzing field values requires resigning the JWT therefore the fuzzer requires an HMac secret key or RSA private key as per the algorithm header field of the JWT. So that the Fuzzer configuration corresponds to the same.
 
 ### Scanner Vulnerability Coverage
 The JWT add-on's scan rule attempts to identified vulnerabilities in both Client/Browser and Server/Library implementations.
 
-For the Client side it covers most of the vulnerabilities mentioned in the [OWASP JWT CheatSheet](https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html#token-storage-on-client-side).
+For the Client-side it covers most of the vulnerabilities mentioned in the [OWASP JWT CheatSheet](https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html#token-storage-on-client-side).
 
-For Server side it mainly covers following vulnerabilities:
+For Server-side it mainly covers following vulnerabilities:
 1. [None Algorithm attack](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/#Meet.the..None..Algorithm)
 2. [Algorithm Confusion attack](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/#RSA-or-HMAC-)
 3. [Trusting JWK provided with the Token](https://nvd.nist.gov/vuln/detail/CVE-2018-0114)
@@ -44,7 +44,7 @@ For Server side it mainly covers following vulnerabilities:
 5. Null Byte Injection attack
 
 ### Fuzzer View
-JWT fuzzer view is different from Http Fuzzer view as JWT's needs to be parsed and then JWT field values can be fuzzed so following is the Fuzzer view:
+JWT Fuzzer view is different from HTTP Fuzzer view as JWT's need to be parsed, then JWT field values can be fuzzed. The following is the Fuzzer view:
 ![Fuzzer View](./images/fuzzer-view.png)
 
 The **Signature Operation** drop down is used to control the operations on the Signature field of JWT.
