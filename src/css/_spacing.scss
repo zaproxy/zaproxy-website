@@ -1,5 +1,5 @@
 // Generate spacing for each size
-@each $size in 10 20 30 40 70  {
+@each $size in 0 10 20 30 40 70  {
   .p-#{$size} {
     padding: #{$size}px;
   }
