@@ -6,17 +6,89 @@
 </section>
 {{ $section := .Site.GetPage "section" .Section }}
 <div class="wrapper py-20" data-kind="{{ .Kind }}">
-    <div class="breadcrumbs">
+    <header class="breadcrumbs">
         <a href="/docs/">Docs</a> &gt;
         <a href="/docs/alerts/">Alerts</a>
-    </div>
-    <div class="flex">
-      <article class="pr-30 content single-post">
-          <main class="post-content">
-            {{ .Content }}
-          </main>
-      </article>
-    </div>
+    </header>
+    <main class="post-content flex pt-10 on-sm-stack">
+      <section class="col-1-3 mr-30 mb-30">
+        <table class="bordered">
+          <thead>
+            <tr>
+              <th colspan="2">
+                Details
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Alertid</strong>
+              </td>
+              <td>{{ .Params.alertid }}</td>
+            </tr>
+            <tr> 
+              <td>
+                <strong>Alert Type</strong>
+              </td>
+              <td>{{ .Params.alert_type }}</td>
+            </tr>
+            <tr> 
+              <td>
+                <strong>Status</strong>
+              </td>
+              <td>{{ .Params.status }}</td>
+            </tr>
+            <tr> 
+              <td>
+                <strong>
+                  Risk
+                </td>
+              <td>{{ .Params.risk }}</td>
+            </tr>
+            <tr> 
+              <td>
+                <strong>CWE</strong>
+              </td>
+              <td>
+                <a href="https://cwe.mitre.org/data/definitions/{{ .Params.cwe }}.html">
+                  {{ .Params.cwe }}
+                </a>
+              </td>
+            </tr>
+            <tr> 
+              <td>
+                <strong>WASC</strong>
+              </td>
+              <td>{{ .Params.wasc }}</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+      <section class="col-2-3">
+        <div data-attr="summary">
+          <h3 class="mb-10">Summary</h3>
+          {{ .Content }}
+        </div>
+        <div data-attr="solution" class="mb-20">
+          <h3 class="mb-10">Solution</h3>
+          {{ .Params.solution }}
+        </div>
+        <h3 class="mb-10">References</h3>
+        <ul data-attr="references">
+        {{ range .Params.references }}
+          <li>
+            <a href="{{ . }}">{{ . }}</a>
+          </li>
+        {{ end }}
+        </ul>
+        <h4 class="mb-10">Code</h4>
+          <a href='{{ .Params.code  }}'>
+            {{ index (split .Params.code "main/java/") 1 }}
+          </a>
+      </section>
+  </main>
 </div>
 {{ end }}
 
