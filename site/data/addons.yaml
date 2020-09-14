@@ -275,9 +275,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.2.0/encoder-alpha-0.2.0.zap
-  date: 2020-06-02
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.3.0/encoder-alpha-0.3.0.zap
+  date: 2020-09-14
+  version: 0.3.0
 - id: exportreport
   name: Export Report
   description: Report Export module that allows users to customize content and export
