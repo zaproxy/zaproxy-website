@@ -3,7 +3,7 @@ title: "ZAP Tags"
 description: "Use cases and details on ZAP's Tag functionality and Neonmarker add-on"
 summary: "How to give some colours to ZAP's History tab. An introduction to passive scanning tags, its use cases, and the Neonmarker add-on."
 images:
-- https://www.zaproxy.org/blog/2020-09-14/images/zapbot_tagged.png
+- https://www.zaproxy.org/blog/2020-09-14-tags/images/zapbot_tagged.png
 type: post
 tags:
 - blog
