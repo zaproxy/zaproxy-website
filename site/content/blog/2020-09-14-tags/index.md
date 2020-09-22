@@ -67,5 +67,5 @@ By reading this post you've learned:
 
 - Generally about ZAP's Passive Scan Tag functionality.
 - How to configure tags.
-- Now to use interpolation with tags.
+- How to use interpolation with tags.
 - How to get and use the Neonmarker add-on.
