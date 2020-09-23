@@ -24,8 +24,8 @@ menu:
       URL:  "/blog/"
       weight:  2
 
-    - name:  "ZAP in Ten"
-      URL: /zap-in-ten/
+    - name:  "Videos"
+      URL: /videos/
       weight:  3
 
     - name:  Documentation
@@ -50,8 +50,8 @@ menu:
       URL:  "/blog/"
       weight:  2
 
-    - name:  "ZAP in Ten"
-      URL:  /zap-in-ten/
+    - name:  "Videos"
+      URL:  /videos/
       weight:  3
 
     - name:  "Get Involved"
