@@ -31,6 +31,7 @@
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   {{ end }}
 </head>
 <body>
@@ -43,6 +44,27 @@
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}
     <script src="{{ relURL . }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#edeff5",
+          "text": "#444444"
+        },
+        "button": {
+          "background": "#ffa400",
+          "text": "#fff6f7"
+        }
+      },
+      "theme": "classic",
+      "position": "bottom",
+      "type": "opt-in",
+      "content": {
+        "href": "https://www.zaproxy.com/cookies"
+      }
+    });
+    </script>
   {{ end }}
 </div>
 </body>
