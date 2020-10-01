@@ -1,7 +1,7 @@
 # ZAP Website
 
 ## Development
-To work on the website you'll need to have either node.js or Docker installed. In your development environment  `npm run preview` will start up a webpack-dev-server on port 3000 for development which will hot-reload the site as file changes are detected.
+To work on the website you doesn't haveto do much more things, only some genuine work like you will have either node.js or Docker installed. In your development environment  `npm run preview` will start up a webpack-dev-server on port 3000 for development which will hot-reload the site as file changes are detected.
 
 ### Docker
 The suggested setup for development is using the Docker.
