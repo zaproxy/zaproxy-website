@@ -12,13 +12,15 @@
             <TH>Id</TH>
             <TH>Alert</TH>
             <TH>Status</TH>
+            <TH>Risk</TH>
             <TH>Type</TH>
          </TR>
-         {{ range (.Pages.ByParam "alertid") }}
+         {{ range (.Pages.ByParam "alertindex") }}
          <tr>
             <td><a href="{{ .Permalink }}">{{ .Params.alertid }}</a></td>
             <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
             <td>{{ .Params.status }}</td>
+            <td>{{ .Params.risk }}</td>
             <td>{{ .Params.alerttype }}</td>
          </tr>
          </li>

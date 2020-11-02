@@ -34,6 +34,13 @@ table {
   width: 100%;
   border-collapse: collapse;
 
+  &.bordered {
+    border: solid 2px #eee;
+
+    td, th {
+      padding:4px 8px;
+    }
+  }
 }
 
 .table-fixed {
@@ -46,11 +53,12 @@ table.table-fixed h5 {
 
 th {
   border-bottom: solid 3px var(--grey-light);
-  padding: 4px;
+  padding: 4px 8px;
+  background:  var(--grey-light);
 }
 
 td {
-  padding: 4px;
+  padding: 4px 8px;
   border-bottom: solid 1px var(--grey-light);
 }
 
