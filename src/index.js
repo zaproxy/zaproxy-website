@@ -48,15 +48,16 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   }
-
-  document.querySelector('[data-tree-filter]').addEventListener("change", function(e) {
-    const filter = e.target.value.toLowerCase();
-    const menu = e.target.nextElementSibling;
-    if (filter.length > 1) {
-      applyFilter(menu, filter);
-    } else {
-      clearFilter(menu);
-    }
+  Array.from(document.querySelectorAll("[data-tree-filter]")).map((el) => {
+    el.addEventListener("change", function(e) {
+      const filter = e.target.value.toLowerCase();
+      const menu = e.target.nextElementSibling;
+      if (filter.length > 1) {
+        applyFilter(menu, filter);
+      } else {
+        clearFilter(menu);
+      }
+    });
   });
 
   Array.from(document.querySelectorAll("[track-event]")).map((el) => {
