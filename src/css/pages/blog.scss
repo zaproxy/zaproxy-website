@@ -1,5 +1,4 @@
 .blog-post-preview {
-    margin-bottom: 18px;
     border-bottom: solid 1px var(--blue-light);
 }
 
@@ -45,4 +44,14 @@ main {
     img {
         box-shadow: 0px 1px 3px #aaa;
     }
+}
+
+.preview-image{
+    border-radius: 50%;
+    height: auto;
+    border: solid 4px var(--blue--lightest);
+}
+
+.post-author-single{
+    margin: -20px -20px 20px -20px;
 }
