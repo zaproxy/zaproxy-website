@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section class="bolt-header">
+  <div class="wrapper py-20">
+    <h1 class="text--white">The ZAP Blog</h1>
+  </div>
+</section>
+  <div class="wrapper py-70">
+      <div class="flex">
+        <div class="col-2-3 pr-30">
+            {{ range .Pages }}
+            <article class="blog-post-preview flex pt-40 pb-40">
+              <div class="col-1-4">
+                {{ range first 1 (where (.Resources.ByType "image") ".Height" ">=" 240) }} 
+                  {{ $image := .Fill "300x300" }}
+                  <img class="preview-image" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />  
+                {{ end }}
+             </div>
+              <div class="col-3-4 pl-30">
+                <h3 class="mb-10">
+                  <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+                <section class="p-10 bg--blue-lightest mb-10 mt-10 smaller-text text--blue-dark">
+                  Posted <span class="post-date">{{ .Date.Format "Monday January 2, 2006" }}</span>
+                  <span class="word-count fl-r"> {{ .WordCount }} Words </span>
+                </section>
+                <section class="summary">{{ .Summary }}</section>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+        <div class="col-1-3" style="display: none;">
+          {{ block "sidebar" . }}{{ partial "blog/sidebar" . }}{{end}}
+        </div>
+      </div>
+  </div>
+{{ end }}

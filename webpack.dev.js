@@ -19,6 +19,7 @@ module.exports = merge(common, {
     contentBase: path.join(process.cwd(), "./dist"),
     watchContentBase: true,
     stats: "none",
+    liveReload: false,
     quiet: false,
     open: true,
     historyApiFallback: {
