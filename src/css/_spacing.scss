@@ -50,3 +50,7 @@
     padding-bottom: #{$size}px;
   }
 }
+
+.bdr-btm {
+  border-bottom: solid 1px var(--blue-border);
+}

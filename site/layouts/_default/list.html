@@ -1,35 +1,29 @@
 {{ define "main" }}
 <section class="bolt-header">
   <div class="wrapper py-20">
-    <h1 class="text--white">The ZAP Blog</h1>
+    <h1 class="text--white">{{ .Title }}</h1>
   </div>
 </section>
   <div class="wrapper py-70">
       <div class="flex latest-versions">
         <div class="col-2-3 pr-30">
             {{ range .Pages }}
-            <article class="blog-post-preview">
-              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-              <h6 id="date"> {{ .Date.Format "Mon Jan 2, 2006" }} </h6>
-              <section class="summary">{{ .Summary }}</section>
-              <!-- Not currently supported 
-              {{ $taxonomy := "tags" }}
-                <ul>
-                  {{ range $index, $tag := .Params.tags }}
-                      <li>
-                        <a href="?">{{ $tag | urlize }}</a>
-                      </li>
-                  {{- end -}}
-                </ul>
-               -->
+            <article class="blog-post-preview pt-40 pb-40">
+                <h3 class="mb-10">
+                  <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+                <section class="p-10 bg--blue-lightest mb-10 mt-10 smaller-text text--blue-dark">
+                  Posted <span class="post-date">{{ .Date.Format "Monday January 2, 2006" }}</span>
+                  <span class="word-count fl-r"> {{ .WordCount }} Words </span>
+                </section>
+                <section class="summary">{{ .Summary }}</section>
             </article>
           {{ end }}
         </div>
-        <!-- 
-        <div class="col-1-3">
+
+        <div class="col-1-3 ml-20">
           {{ block "sidebar" . }}{{ partial "blog/sidebar" . }}{{end}}
         </div>
-         -->
       </div>
   </div>
 {{ end }}

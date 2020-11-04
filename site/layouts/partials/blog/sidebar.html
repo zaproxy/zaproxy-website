@@ -1,10 +1,13 @@
-
-<input type="text" placeholder="search" />
-<button type="button">Submit</button>
-<h3>Tags</h3>
-<ul class="taxonomy-list tax-tags">
-{{range $name, $taxonomy := .Site.Taxonomies.tags}}
-<li><a href="{{ "tags/" | relLangURL}}{{$name | urlize}}">{{$name}}</a></li>
-{{end}}
-</ul>
+<form data-no-csrf class="p-20 bg--blue-lightest flex" action="/search">
+    <input type="text" name="q" placeholder="Search ..." class="fx-g-1" />
+    <button class=" ml-10" type="button">Submit</button>
+</form>
+<section class="p-20">
+    <h3>Tags</h3>
+    <ul class="taxonomy-list tax-tags">
+    {{range $name, $taxonomy := .Site.Taxonomies.tags}}
+        <li><a href="{{ "tags/" | relLangURL}}{{$name | urlize}}">{{$name}}</a></li>
+    {{end}}
+    </ul>
+</section>
 
