@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.1.0
+    version: 15.2.0
 ---
 
 # Selenium
@@ -15,8 +15,12 @@ The Selenium add-on provides WebDrivers, for other add-ons, to invoke and remote
 control web browsers. It's also bundled the HtmlUnit web browser, an headless Java based
 web browser.
 
+It adds a 'Selenium' script type - these scripts are invoked whenever selenium launches a browser,
+for example for the Ajax Spider or for manual browsing.
+
 The add-on also adds a right click option to ZAP panels that list URLs (such at the History and Sites tree)
-which allows you to open the selected URL in any of the supported browsers.
+which allows you to open the selected URL in any of the supported browsers. The Selenium scripts have access to the
+launched browser and can interact with it, for example, run JavaScript scripts, access URLs, fill forms, click buttons...
 
 ## Supported Browsers
 
