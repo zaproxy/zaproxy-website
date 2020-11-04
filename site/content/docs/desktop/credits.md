@@ -16,8 +16,9 @@ For more details of code contributions see: <https://www.openhub.net/p/zaproxy/c
 |---|----------------------------------------------------------------------|
 |   | Simon Bennetts ([@psiinon](https://twitter.com/psiinon)) - StackHawk |
 |   | thc202                                                               |
-|   | Rick Mitchell (Kingthorin)                                           |
+|   | Rick Mitchell ([@kingthorin_rm](https://twitter.com/kingthorin_rm))  |
 |   | Nirojan Selvanathan ([@sshniro](https://twitter.com/sshniro))        |
+|   | Akshath Kothari ([@ricekot_](https://twitter.com/ricekot_))          |
 
 ## ZAP Extended Team
 
@@ -79,6 +80,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | David Keeler ([@mozkeeler](https://twitter.com/mozkeeler))                                                  |
 |   | James Kettle (Burp Suite)                                                                                   |
 |   | Samir Khakimov                                                                                              |
+|   | Mahmoud Khalil ([@khalil2535](https://github.com/khalil2535))                                               |
 |   | Björn Kimminich                                                                                             |
 |   | April King                                                                                                  |
 |   | Martin W. Kirst (MaWoKi)                                                                                    |
@@ -88,7 +90,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Dennis Kniep                                                                                                |
 |   | Robert Koch                                                                                                 |
 |   | Savva Kodeikin                                                                                              |
-|   | Akshath Kothari                                                                                             |
+|   | Christian Koidl                                                                                             |
 |   | Lars Kristensen                                                                                             |
 |   | Gwilym Lewis – Appsecco                                                                                     |
 |   | Sajeeb Lohani (sml555) - Bulletproof ZDS                                                                    |
