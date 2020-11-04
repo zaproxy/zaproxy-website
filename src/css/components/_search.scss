@@ -1,0 +1,11 @@
+  [data-summary] span {
+    display: inline;
+    word-break: break-all;  
+
+  }
+
+  [data-summary] .match {
+    display: inline-block;
+    margin:0 6px;
+    background: #fff9b0;
+  }
