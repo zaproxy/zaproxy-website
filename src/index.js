@@ -60,11 +60,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  const menu = document.getElementById('primary-menu');
+  menu.querySelector('.toggler').addEventListener("click", function(e) {
+    e.preventDefault();
+    menu.classList.toggle("in-search");
+  });
+
   Array.from(document.querySelectorAll("[track-event]")).map((el) => {
     el.addEventListener("click", function(e) {
       e.preventDefault();
       const [action, category, label] = el.getAttribute("track-event").split(".")
-      if (ga === undefined) {
+      if (window.ga === undefined) {
         console.log("track-event", action, category, label);
       } else {
         ga("send", {

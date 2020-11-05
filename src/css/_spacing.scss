@@ -4,6 +4,11 @@
     padding: #{$size}px;
   }
 
+  .m-#{$size} {
+    margin: #{$size}px;
+  }
+
+
   .px-#{$size} {
     padding-left: #{$size}px;
     padding-right:  #{$size}px;
