@@ -33,14 +33,9 @@ menu:
       URL: /docs/
       weight:  4
 
-    - name:  Get Involved
-      URL: /get-involved/
+    - name:  Community
+      URL: /community/
       weight:  5
-
-    - name:  "Support"
-      URL:  /support/
-      weight:  6
-
 
   footer: 
     - name:  "Home"
@@ -55,11 +50,6 @@ menu:
       URL:  /videos/
       weight:  3
 
-    - name:  "Get Involved"
-      URL:  /get-involved/
+    - name:  Community
+      URL: /community/
       weight:  4
-
-    - name:  "Support"
-      URL:  /support/
-      weight:  5
-
