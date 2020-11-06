@@ -9,9 +9,9 @@
 </section>
 <section class="wrapper py-70" data-kind="{{ .Kind }}">
   <article class="content single-default">
-    <form data-no-csrf>
-      <input type="text" name="q" id="search-filter" placeholder="Search ..." />
-      <button type="button" id="search-trigger">Search</button>
+    <form data-no-csrf class="p-20 bg--blue-lightest flex">
+      <input type="text" name="q" id="search-filter" placeholder="Search ..." class="fx-g-1" />
+      <button type="button" id="search-trigger" class=" ml-10" >Search</button>
     </form>
     <br/>
     <main id="search-results"></main>
@@ -54,9 +54,53 @@
           let cleaned = stripHtml(query);
           let doc = documents[result.ref];
           let clone = document.importNode(tmpl.content, true);
+          const summaryEl = clone.querySelector("[data-summary]");
           clone.querySelector("[data-title]").textContent = doc.title;
           clone.querySelector("[data-url]").setAttribute("href", doc.url);
-          clone.querySelector("[data-summary]").textContent = doc.summary;
+          const meta = result.matchData.metadata;
+          const keywords = Object.keys(meta);
+          let parts = doc.summary.replace(/\n/g, ' ').split(" ")
+            .map(t => {
+              return {
+                text: t,
+                match: keywords.some(k => t.toLowerCase().indexOf(k) !== -1),
+              };
+            });
+
+          const spans = [];
+          let prev = {};
+          let pointer = {
+            words: [],
+            match: false,
+          };
+        
+          while (parts.length) {
+            let word  = parts.shift();
+            if (word.match !== prev.match) {
+              spans.push(pointer);
+              pointer = {
+                words: [],
+                match: word.match,
+              };
+            }
+
+            pointer.words.push(word.text);
+            prev = word;
+          }
+          spans.push(pointer);
+          spans.map(s => {
+            const phrase  = s.words.join(" ");
+            if (s.match) {
+              let el = document.createElement("SPAN");
+              el.innerText = phrase;
+              el.className = "match";
+              return el;
+            } else {
+              return document.createTextNode(phrase);
+            }
+          }).map(el => {
+            summaryEl.appendChild(el)
+          })
           return clone;
         }
 
@@ -93,10 +137,10 @@
     })();
     </script>
     <template id="search-entry">
-      <article>
-      <h2 data-title set="innerText">Example</h2>
-      <a data-url set="href" href="#">More</a>
-      <ul data-tags></ul>
+      <article class="pt-40 pb-40 bdr-btm">
+        <a data-url href="#">
+          <h2 data-title>Example</h2>
+        </a>
       <div data-summary></div>
       </article>
     </template>
