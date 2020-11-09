@@ -13,10 +13,6 @@ Second check if you've enabled SSLv2Hello in the outbound [connection
 options](/docs/desktop/ui/dialogs/options/connection/). If so, disable SSLv2Hello and
 reload the content to see if the issue is resolved.
 
-Third option can be to add in Options / JVM the parameter "-Djsse.enableSNIExtension=false".
-Java 7 introduced SNI support which is enabled by default. I have found out that certain misconfigured servers send an "Unrecognized Name" warning in the SSL handshake which is ignored by most clients... except for Java. 
-The disadvantage of setting this flag is that SNI is disabled everywhere in the application.
-
 If this doesn't help and an HTTPS site reports a handshake failure then try
 installing the 'Java Cryptography Extension (JCE) Unlimited Strength
 Jurisdiction Policy Files':
