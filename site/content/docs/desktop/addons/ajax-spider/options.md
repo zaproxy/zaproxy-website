@@ -25,6 +25,7 @@ This screen allows you to configure the [AJAX Spider](/docs/desktop/addons/ajax-
 | Use Random Values in Form Fields              | When enabled, inserts random values into form fields. Otherwise, it uses empty values.                                                                                                                                                                          | True             |
 | Click Default Elements Only                   | When enabled, only elements "a", "button" and "input" will be clicked during crawl. Otherwise, it uses the table below to determine which elements will be clicked. For more in depth analysis, disable this and configure the clickable elements in the table. | True             |
 | Select elements to click during crawl (table) | The list of elements to crawl. This table only applies when "click default elements only" is not enabled. Use "enable all" for a more in depth analysis, though it may take somewhat longer.                                                                    | All enabled      |
+| Allowed Resources (table)                     | The list of allowed resources. The allowed resources are always fetched even if out of scope, allowing to include necessary resources (e.g. scripts) from 3rd-parties.                                                                                          |                  |
 
 ## See also
 
