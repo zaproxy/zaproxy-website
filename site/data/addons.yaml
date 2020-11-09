@@ -815,9 +815,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.1.0/spiderAjax-release-23.1.0.zap
-  date: 2020-01-17
-  version: 23.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.2.0/spiderAjax-release-23.2.0.zap
+  date: 2020-11-09
+  version: 23.2.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
