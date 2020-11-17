@@ -342,6 +342,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v11/gettingStarted-release-11.zap
   date: 2020-01-17
   version: 11
+- id: graaljs
+  name: GraalVM JavaScript
+  description: Provides the GraalVM JavaScript engine for ZAP scripting.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.1.0/graaljs-alpha-0.1.0.zap
+  date: 2020-11-17
+  version: 0.1.0
 - id: graphql
   name: GraphQL Support
   description: Inspect and attack GraphQL endpoints.
