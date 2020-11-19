@@ -357,11 +357,11 @@
   description: Inspect and attack GraphQL endpoints.
   author: ZAP Dev Team
   status: alpha
-  infoUrl: ''
+  infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.1.0/graphql-alpha-0.1.0.zap
-  date: 2020-08-28
-  version: 0.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.2.0/graphql-alpha-0.2.0.zap
+  date: 2020-11-19
+  version: 0.2.0
 - id: groovy
   name: Groovy Scripting
   description: Allows Groovy to be used for ZAP scripting - templates included
