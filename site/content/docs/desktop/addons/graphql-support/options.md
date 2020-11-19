@@ -47,6 +47,7 @@ The requests made to the endpoint can be of the following types:
 
 ## See also
 
-|   |                                                  |                                       |
-|---|--------------------------------------------------|---------------------------------------|
-|   | [GraphQL](/docs/desktop/addons/graphql-support/) | for an overview of the GraphQL add-on |
+|   |                                                                |                                           |
+|---|----------------------------------------------------------------|-------------------------------------------|
+|   | [GraphQL](/docs/desktop/addons/graphql-support/)               | for an overview of the GraphQL add-on.    |
+|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/) | for information about the bundled script. |
