@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.1.0
+    version: 0.2.0
 ---
 
 # GraphQL Support
@@ -37,8 +37,25 @@ A GraphQL Options Panel is added under Tools -\> Options -\> GraphQL. These opti
 
 The following operations are added to the API:
 
-* ACTION importFile (endurl\*, file\*)
-* ACTION importUrl (endurl\*, url)
+### Views
+
+* optionArgsType
+* optionMaxArgsDepth
+* optionMaxQueryDepth
+* optionOptionalArgsEnabled
+* optionQuerySplitType
+* optionRequestMethod
+
+### Actions
+
+* importFile (endurl\*, file\*)
+* importUrl (endurl\*, url)
+* setOptionArgsType (String\*)
+* setOptionMaxArgsDepth (Integer\*)
+* setOptionMaxQueryDepth (Integer\*)
+* setOptionOptionalArgsEnabled (Boolean\*)
+* setOptionQuerySplitType (String\*)
+* setOptionRequestMethod (String\*)
 
 `endurl` supports the `Endpoint URL` format explained earlier. The definitions will be imported synchronously and any warnings will be returned.
 
@@ -57,3 +74,4 @@ The definitions will be imported synchronously and any warnings will be displaye
 |   |                                                                  |                                                |
 |---|------------------------------------------------------------------|------------------------------------------------|
 |   | [GraphQL Options](/docs/desktop/addons/graphql-support/options/) | for information about the optional parameters. |
+|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/)   | for information about the bundled script.      |
