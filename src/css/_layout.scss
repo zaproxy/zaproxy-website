@@ -39,6 +39,10 @@
   grid-column-gap: 60px;
 }
 
+.grid_row_gap {
+  grid-row-gap: 60px;
+}
+
 .grid__two-col {
   grid-template-columns: 1fr 1fr;
 }
@@ -126,4 +130,13 @@ $grid_widths: 2 3 4 5 6 8;
 
 .fx-g-1 {
   flex-grow: 1;
+}
+
+// c/o https://embedresponsively.com/
+.embed-youtube {
+  position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
+} 
+
+.embed-youtube iframe, .embed-youtube object, .embed-youtube embed { 
+	position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
 }
