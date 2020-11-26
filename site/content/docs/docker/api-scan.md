@@ -9,7 +9,7 @@ type: docker
 
 The ZAP API scan is a script that is available in the ZAP [Docker](../about/) images.
 
-It is tuned for performing scans against APIs defined by OpenAPI via either a local file or a URL.
+It is tuned for performing scans against APIs defined by OpenAPI, or GraphQL (post 2.9.0) via either a local file or a URL.
 
 It imports the definition that you specify and then runs an Active Scan against the URLs found.
 The Active Scan is tuned to APIs, so it doesn't bother looking for things like XSSs.
@@ -23,7 +23,7 @@ It also includes 2 scripts that:
 ```
 Usage: zap-api-scan.py -t <target> -f <format> [options]
     -t target         target API definition, currently only an OpenAPI URL, eg https://www.example.com/openapi.json
-    -f format         either openapi or soap
+    -f format         openapi, soap, or graphql (graphql post 2.9.0)
 Options:
     -h                print this help message
     -c config_file    config file to use to INFO, IGNORE or FAIL warnings
@@ -38,13 +38,14 @@ Options:
     -P                specify listen port
     -D                delay in seconds to wait for passive scanning 
     -i                default rules not in the config file to INFO
-    -I                do not return failure on warning
+    -I                do not return failure on warning (post 2.9.0)
     -l level          minimum level to show: PASS, IGNORE, INFO, WARN or FAIL, use with -s to hide example URLs
     -n context_file   context file which will be loaded prior to scanning the target
     -p progress_file  progress file which specifies issues that are being addressed
     -s                short output format - dont show PASSes or example URLs
     -S                safe mode this will skip the active scan and perform a baseline scan
     -T                max time in minutes to wait for ZAP to start and the passive scan to run
+    -U user           username to use for authenticated scans - must be defined in the given context file (post 2.9.0)
     -O                the hostname to override in the (remote) OpenAPI spec
     -z zap_options    ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"
     --hook            path to python file that define your custom hooks
@@ -134,6 +135,10 @@ Unlike the baseline configuration file the API configuration file handles both a
 For more details see the blog posts:
 * [Exploring APIs with ZAP](/blog/2017-04-03-exploring-apis-with-zap/)
 * [Scanning APIs with ZAP](/blog/2017-06-19-scanning-apis-with-zap/)
+* [Introducing the GraphQL Add-on for ZAP](/blog/2020-08-28-introducing-the-graphql-add-on-for-zap/)
 
 ### Scan Hooks
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
+
+### Source Code
+The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/develop/docker](https://github.com/zaproxy/zaproxy/tree/develop/docker).

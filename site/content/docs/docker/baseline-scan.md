@@ -42,6 +42,7 @@ Options:
     -p progress_file  progress file which specifies issues that are being addressed
     -s                short output format - dont show PASSes or example URLs
     -T                max time in minutes to wait for ZAP to start and the passive scan to run
+    -U user           username to use for authenticated scans - must be defined in the given context file (post 2.9.0)
     -z zap_options    ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"
     --hook            path to python file that define your custom hooks
 ```
@@ -184,3 +185,6 @@ These generate a [dashboard](https://github.com/zaproxy/community-scripts/wiki/B
 
 ### Scan Hooks
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
+
+### Source Code
+The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/develop/docker](https://github.com/zaproxy/zaproxy/tree/develop/docker).
