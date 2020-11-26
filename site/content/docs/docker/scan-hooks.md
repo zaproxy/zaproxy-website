@@ -32,7 +32,7 @@ tests you want to run.
 #### Define your hooks in a python file `my-hooks.py`
 You define all the hooks you want to integrate with using python methods that
 correspond with the name of the hook. By default, ZAP scans will load hooks defined in
-`~/.zap_hooks.py` or you may specify the hooks location using a command line flag `--hook=my-hooks.py`. 
+`~/.zap_hooks.py`, the CWD (post 2.9.0) or you may specify the hooks location using a command line flag `--hook=my-hooks.py`. 
 
 ```python
 # vim my-hooks.py
@@ -53,6 +53,9 @@ docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
 ```
 
 Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
+
+## Example Hooks
+See https://github.com/zaproxy/community-scripts/tree/master/scan-hooks
 
 ## List of Hooks
 - `cli_opts(opts)`
@@ -76,4 +79,7 @@ Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will ne
 - `zap_import_context(zap, context_file)`
 - `zap_import_context_wrap(context_id)`
 - `zap_pre_shutdown(zap)`
+- `zap_set_scan_user(zap, username)` - post 2.9.0
+- `zap_set_scan_user_wrap(unused)` - post 2.9.0
+- `zap_tuned` - post 2.9.0
 - `pre_exit(fail_count, warn_count, pass_count)`

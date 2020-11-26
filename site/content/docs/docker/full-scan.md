@@ -35,13 +35,14 @@ Options:
     -P                specify listen port
     -D                delay in seconds to wait for passive scanning 
     -i                default rules not in the config file to INFO
-    -I                do not return failure on warning
+    -I                do not return failure on warning (post 2.9.0)
     -j                use the Ajax spider in addition to the traditional one
     -l level          minimum level to show: PASS, IGNORE, INFO, WARN or FAIL, use with -s to hide example URLs
     -n context_file   context file which will be loaded prior to scanning the target
     -p progress_file  progress file which specifies issues that are being addressed
     -s                short output format - dont show PASSes or example URLs
     -T                max time in minutes to wait for ZAP to start and the passive scan to run
+    -U user           username to use for authenticated scans - must be defined in the given context file (post 2.9.0)
     -z zap_options    ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"
     --hook            path to python file that define your custom hooks
 ```
@@ -59,3 +60,6 @@ Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will ne
 
 ### Scan Hooks
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
+
+### Source Code
+The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/develop/docker](https://github.com/zaproxy/zaproxy/tree/develop/docker).

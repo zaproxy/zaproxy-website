@@ -17,7 +17,7 @@ links:
 
   - name: 'API Scan'
     link: api-scan/
-    desc: a full scan of an API defined using OpenAPI / Swagger
+    desc: a full scan of an API defined using OpenAPI / Swagger, or GraphQL (post 2.9.0)
 
   - name: 'Scan Hooks'
     link: scan-hooks/

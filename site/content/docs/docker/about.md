@@ -35,6 +35,33 @@ The Dockerfiles can be found [here](https://github.com/zaproxy/zaproxy/tree/deve
 The docker file now supports [healthcheck](https://docs.docker.com/engine/reference/builder/#healthcheck). The check uses the `zap-cli status` to check that ZAP completed loading. If you are running ZAP with port other than the default `8080`, you need to set the `ZAP_PORT` environment variable. Otherwise, the healthcheck will fail.
 
 ## Usage Instructions:
+
+### Packaged Scans:
+All of the docker images provide a set of packaged scan scripts:
+
+* [Baseline Scan](../baseline-scan/) which runs the ZAP spider against the target for (by default) 1 minute followed by an optional ajax spider scan before reporting the results of the passive scanning.
+* [Full Scan](../full-scan/) which runs the ZAP spider against the target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results.
+* [API Scan](../api-scan/) which performs an active scan against APIs defined by OpenAPI, or GraphQL (post 2.9.0) via either a local file or a URL.
+
+In all cases the scans are tuned by:
+
+* Disabling the Db recovery log
+* Disabling all tags
+* Reporting a maximum of 10 passive scan alert instances 
+
+The `zap_tuned()` [Scan Hook](../scan-hook) is called after these changes have been made so you can undo them or apply other changes at this point if you want.
+
+### GitHub Actions:
+The following GitHub Actions wrap 2 of the above packaged scans and also support raising GitHub issues for potential vulnerabilities found:
+
+* [OWASP ZAP Baseline Scan](https://github.com/marketplace/actions/owasp-zap-baseline-scan)
+* [OWASP ZAP Full Scan](https://github.com/marketplace/actions/owasp-zap-full-scan)
+  
+For more details see the blog posts:
+
+* [Automate Security Testing with ZAP and GitHub Actions](/blog/2020-04-09-automate-security-testing-with-zap-and-github-actions/)
+* [Dynamic Application Security Testing with ZAP and GitHub Actions](/blog/2020-05-15-dynamic-application-security-testing-with-zap-and-github-actions/)
+
 ### ZAP GUI in a Browser:
 Yes, you can run the ZAP Desktop GUI in a browser. You can use it in just the same way as the Swing UI and can even proxy via it.<br>
 See the [Webswing](../webswing/) page for details.
@@ -56,22 +83,6 @@ docker run -u zap -p 8080:8080 -i owasp/zap2docker-stable zap-x.sh -daemon -host
 
 This first starts xvfb (X virtual frame buffer) which allows add-ons that use Selenium (like the Ajax Spider and DOM XSS scanner) to run in a headless environment. Firefox is also installed so can be used with these add-ons.
 
-### ZAP Baseline Scan:
-The [ZAP Baseline Scan](../baseline-scan/) runs the ZAP spider against the specified target for (by default) 1 minute and then waits for the passive scanning to complete before reporting the results.
-
-To run it with no 'file' params use:
-```bash
-docker run -t owasp/zap2docker-weekly zap-baseline.py -t https://www.example.com
-```
-If you use 'file' params then you need to mount the directory those file are in or will be generated in, eg
-```bash
-docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-baseline.py \
-    -t https://www.example.com -g gen.conf -r testreport.html
-```
-
-Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
-
-For more details see the [ZAP Baseline Scan](../baseline-scan/) page.
 ### ZAP CLI:
 [ZAP CLI](https://github.com/Grunny/zap-cli) is a ZAP wrapper written in Python. It provides a simple way to do scanning from the command line:
 
@@ -121,3 +132,12 @@ For example:
 ```bash
 docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://$(ip -f inet -o addr show docker0 | awk '{print $4}' | cut -d '/' -f 1):10080
 ```
+
+### Scanning an app running in another Docker container
+
+By default Docker does not allow apps running in one container to access an app running in another container.
+To get around this restriction create a Docker network using:
+```bash
+docker network create zapnet
+```
+And then include the Docker option `--net zapnet` when starting both your target app and the ZAP packaged scan.
