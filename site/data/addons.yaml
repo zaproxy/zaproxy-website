@@ -58,9 +58,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v36/ascanrules-release-36.zap
-  date: 2020-08-04
-  version: 36
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v37/ascanrules-release-37.zap
+  date: 2020-11-27
+  version: 37
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha quality Active Scanner rules
@@ -68,9 +68,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v29/ascanrulesAlpha-alpha-29.zap
-  date: 2020-08-13
-  version: 29
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v30/ascanrulesAlpha-alpha-30.zap
+  date: 2020-11-27
+  version: 30
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta quality Active Scanner rules
@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v31/ascanrulesBeta-beta-31.zap
-  date: 2020-09-02
-  version: 31
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v32/ascanrulesBeta-beta-32.zap
+  date: 2020-11-27
+  version: 32
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
