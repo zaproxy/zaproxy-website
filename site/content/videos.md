@@ -1,8 +1,19 @@
 ---
 type: page
 title: Videos
-layout: zap-in-ten
-uuid: RyTy22GZV6UccW41UCghC8
+layout: group-links
+groups:
+  - header: 'Official ZAP Videos'
+    links:
+      - name: 'ZAP in Ten'
+        link: /zap-in-ten/
+        desc:  An ongoing series of short videos about different ZAP features produced in conjunction with All Day DevOps
+
+      - name: 'ZAP Deep Dive Series'
+        link: /zap-deep-dive/
+        desc: An ongoing series of longer videos about ZAP features produced in conjunction with StackHawk
+
+      - name: 'ADDO ZAP Automation Workshop'
+        link: /addo-auth-workshop
+        desc: A set of ZAP workshops on automation and authentication produced in conjunction with All Day DevOps
 ---
-### ZAP in Ten: A series of short videos about different ZAP features
-#### Watch the first one below or see the full series [here](https://www.alldaydevops.com/zap-in-ten)

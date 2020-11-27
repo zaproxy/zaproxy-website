@@ -1,7 +1,6 @@
 {{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
 
 {{ define "main" }}
-<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
 {{ $section := .Site.GetPage "section" .Section }}
 <section class="bolt-header">
     <div class="wrapper py-20">
@@ -17,14 +16,11 @@
       {{ with .Params }}
           {{ range .links }}
 		    <div>
-			    <img
-			      style="width: 100%; margin: auto; display: block;"
-			      class="vidyard-player-embed"
-			      src="https://play.vidyard.com/{{ .uuid }}.jpg"
-			      data-uuid="{{ .uuid }}"
-			      data-v="4"
-			      data-type="inline"
-			    />
+		     <!-- iframe width="420" height="315" src="https://www.youtube.com/embed/{{ .uuid }}"></iframe--> 
+		     <div class='embed-youtube'>
+		       <iframe src='https://www.youtube.com/embed/{{ .uuid }}' frameborder='0' allowfullscreen></iframe>
+		     </div>
+		     
 		    </div>
           {{ end }}
       {{ end }}
