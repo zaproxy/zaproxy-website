@@ -48,6 +48,11 @@ silver:
     logo: /img/supporters/denimgroup.png
     notes: $3,000 in donations
 
+  - name: 'DeepFactor'
+    link: http://deepfactor.io/
+    logo: /img/supporters/deepfactor.png
+    notes: $1,000 donation
+
   - name: 'HiSolution AG'
     link: https://www.hisolutions.com/
     logo: /img/supporters/hisolutions.png
