@@ -4,8 +4,14 @@ services:
   - name: 'StackHawk'
     link: https://www.stackhawk.com/
     logo: /img/supporters/stackhawk.png
-    license: 'Commercial, free for open source projects'
+    license: 'Commercial, free option'
     supporter: ZAP Platinum Supporter
+
+  - name: 'DeepFactor'
+    link: https://deepfactor.io/
+    logo: /img/supporters/deepfactor-nologo.png
+    license: 'Commercial, free community edition'
+    supporter: ZAP Silver Supporter
 
   - name: 'SecureCodeBox'
     link: https://www.securecodebox.io/
@@ -15,10 +21,6 @@ services:
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
     license: 'Commercial'
-
-  - name: 'DeepFactor'
-    link: https://deepfactor.io/
-    license: 'Commercial, free community edition'
 
   - name: 'HostedScan'
     link: https://hostedscan.com/
