@@ -11,6 +11,10 @@ links:
     link: /docs/desktop/
     desc: the help included with the ZAP desktop application 
 
+  - name: 'ZAP Developer Guide'
+    link: /docs/developer/
+    desc: ZAP documentation for developers
+
   - name: 'API Details'
     link: /docs/api/
     desc: a comprehensive guide to the ZAP API 
