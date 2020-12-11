@@ -21,6 +21,9 @@ links:
   - name: 'The Sites Tree'
     uuid: 1_flXEBzEsE
 
+  - name: 'Scripting'
+    uuid: ujL6rH6nVXI
+
 ---
 A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](www.stackhawk.com).
 
