@@ -18,6 +18,10 @@ services:
     license: 'Free, open source'
     notes: OWASP Project
 
+  - name: 'Idyllum'
+    link: https://www.idyllum.com/
+    license: 'Commercial, free option'
+
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
     license: 'Commercial'
