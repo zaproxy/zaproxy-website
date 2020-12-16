@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Tags
 type: userguide
-weight: 24
+weight: 30
 ---
 
 # Tags

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Find dialog
 type: userguide
-weight: 6
+weight: 5
 ---
 
 # Find dialog

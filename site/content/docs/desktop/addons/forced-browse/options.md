@@ -30,6 +30,13 @@ Allows you to add your own files to be used when brute forcing files and directo
 These should be text files with one file or directory name per line.   
 Files are added to the 'dirbuster' directory underneath the ZAP home directory.
 
+### Force Browse files without extension
+
+If selected then in addition to brute forcing directories, files without extension will also be brute forced.   
+The URI of the file to be brute forced is derived by appending to the base path the entries of the selected forced browse text file.   
+By default this option is unchecked.   
+Enabling this will increase the scanning time.
+
 ### Force Browse files
 
 If checked then in addition to brute forcing directories, the files will also be brute forced.   

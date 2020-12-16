@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: help
-    version: 10.0.0
+    version: 11.0.0
 ---
 
 # OWASP ZAP Desktop User Guide
@@ -47,3 +47,9 @@ ZAP is a fork of the open source variant of the [Paros Proxy](/docs/desktop/paro
 |   | [Main ZAP website](/)                                                     |
 |   | [OWASP ZAP homepage](https://owasp.org/www-project-zap/)                  |
 |   | [Wikipedia entry for proxies](https://en.wikipedia.org/wiki/Proxy_server) |
+
+## Official Videos
+
+|   |                                                                                      |
+|---|--------------------------------------------------------------------------------------|
+|   | [https://www.zaproxy.org/videos/](/videos/) An ever growing collection of ZAP videos |

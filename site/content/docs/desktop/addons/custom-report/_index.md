@@ -37,6 +37,9 @@ These are checked and are included by default:
 * Reference
 * CWE ID
 * WASC ID
+* Parameter
+* Attack
+* Evidence
 
 These are unchecked and are excluded by default:
 

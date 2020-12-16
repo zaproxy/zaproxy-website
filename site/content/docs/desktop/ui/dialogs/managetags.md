@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Manage Tags dialog
 type: userguide
-weight: 10
+weight: 9
 ---
 
 # Manage Tags dialog

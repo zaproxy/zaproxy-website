@@ -15,7 +15,6 @@ The UI includes the following dialogs or popups:
 |   | [Add Breakpoint](/docs/desktop/ui/dialogs/addbreak/)           |   |
 |   | [Add Note](/docs/desktop/ui/dialogs/addnote/)                  |   |
 |   | [Active Scan](/docs/desktop/ui/dialogs/advascan/)              |   |
-|   | [Encode / Decode / Hash](/docs/desktop/ui/dialogs/enc_dec/)    |   |
 |   | [Find](/docs/desktop/ui/dialogs/find/)                         |   |
 |   | [History Filter](/docs/desktop/ui/dialogs/hist_filter/)        |   |
 |   | [Manual Request Editor](/docs/desktop/ui/dialogs/man_req/)     |   |

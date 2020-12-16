@@ -14,6 +14,8 @@ To run ZAP via the command line, you will need to locate the ZAP startup script.
 C:\Program Files (x86)\OWASP\Zed Attack Proxy\zap.bat
 ```
 
+**Note:** The command line options are not used by the executable (`zap.exe`) only the bat file.  
+
 **Mac:**   
 
 ```

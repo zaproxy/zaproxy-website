@@ -6,18 +6,12 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 30.0.0
+    version: 33.0.0
 ---
 
 # Active Scan Rules - Beta
 
 The following beta quality active scan rules are included in this add-on:
-
-## .htaccess Information Leak
-
-Checks for web accessible .htaccess files which may leak sensitive information (such as usernames, error handling, redirects, directory listing settings, etc.).
-
-Latest code: [HtAccessScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/HtAccessScanRule.java)
 
 ## Apache Range Header DoS (CVE-2011-3192)
 
@@ -30,6 +24,13 @@ Latest code: [ApacheRangeHeaderDosScanRule.java](https://github.com/zaproxy/zap-
 Scans for commonly-named backup copies of files on the web server, which may reveal sensitive information.
 
 Latest code: [BackupFileDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/BackupFileDisclosureScanRule.java)
+
+## Cloud Metadata Attack
+
+Attempts to abuse a misconfigured NGINX server in order to access the instance metadata maintained by cloud service providers such as AWS, GCP and Azure.  
+All of these providers provide metadata via an internal unroutable IP address '169.254.169.254' - this can be exposed by incorrectly configured NGINX servers and accessed by using this IP address in the Host header field.
+
+Latest code: [CloudMetadataScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/CloudMetadataScanRule.java)
 
 ## Cookie Slack Detector
 
@@ -52,14 +53,11 @@ Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.c
 
 Latest code: [CsrfTokenScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/CsrfTokenScanRule.java)
 
-## ELMAH Information Leak
+## .env Information Leak
 
-Tests to see if the Error Logging Modules and Handlers (elmah.axd) HTTP Module is available. Although this module is handy for developers and other stakeholders it can also leak a significant amount of information which a security analyst or malicious individual may be interested in.  
+Checks for web accessible .env files which may leak sensitive information (such as usernames, passwords, API or APP keys, etc.).
 
-The ELMAH scan rule targets Microsoft based technologies: IIS, Windows, ASP, and MSSQL.  
-Files are only reported if they contain the text "Error Log for" unless a LOW alert threshold is set.
-
-Latest code: [ElmahScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/ElmahScanRule.java)
+Latest code: [EnvFileScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/EnvFileScanRule.java)
 
 ## Expression Language Injection
 
@@ -78,6 +76,42 @@ Latest code: [GetForPostScanRule.java](https://github.com/zaproxy/zap-extensions
 Detects if the web server is vulnerable to the Heartbleed OpenSSL Vulnerability, by exploiting it. For further details refer to CVE-2014-0160.
 
 Latest code: [HeartBleedActiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/HeartBleedActiveScanRule.java)
+
+## Hidden File Finder
+
+This scan rule checks for various web accessible files which may leak administrative, configuration, or credential information. The original included set of payloads were based on [Snallygaster](https://github.com/hannob/snallygaster) by Hanno Böck. Such payloads are verified by checking response code, and content. If the response code is 200 (Ok) then additional content checks are performed to increase alert confidence. If the response code is 401 (Unauthorized) or 403 (Forbidden) or the content checks are un-successful then an alert is raised with lower confidence (at HIGH Threshold). **Note:** If the Custom Payloads addon is installed you can add your own hidden file paths (payloads) in the Custom Payloads options panel. For custom payloads only the response status code is checked. If there is a requirement to include a content check then it is also possible to add payloads to the `json/hidden_files.json` file in ZAP's user directory (in which case they will be treated as included payloads).
+
+The following describes the fields of the JSON entries.
+
+
+    {
+      "path":"some/path/without/leading/slash.ext",
+      "content":["content you want to find in responses"],
+      "not_content":["content you do not want the response to have"],
+      "binary":"\\x01\\x00",
+      "links":["https://example.com/relevant/reference.html,"https://other.example.org/"],
+      "type":"short_identifier",
+      "source":"attribution_not_used_by_output_or_checks"
+    }
+
+Details worth noting:
+
+* The only field that is required is path.
+* The fields content, not_content, and links can have multiple quoted, comma separated values (arrays of strings).
+* Checks of binary content are based on starting position 0 (ex: startsWith not contains).
+
+The following is an example JSON entry:
+
+
+    {
+      "path":"CVS/root",
+      "content":[":"],
+      "not_content":["<"],
+      "type":"cvs_dir",
+      "source":"snallygaster"
+    }
+
+Latest code: [HiddenFilesScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/HiddenFilesScanRule.java)
 
 ## HTTP Only Site
 
@@ -273,6 +307,13 @@ Latest code: [UsernameEnumerationScanRule.java](https://github.com/zaproxy/zap-e
 As described by OWASP: "XPath Injection attacks occur when a web site uses user-supplied information to construct an XPath query for XML data. By sending intentionally malformed information into the web site, an attacker can find out how the XML data is structured, or access data that he may not normally have access to. He may even be able to elevate his privileges on the web site if the XML data is being used for authentication (such as an XML based user file) or authorization." This rule attempts to identify such weaknesses.
 
 Latest code: [XpathInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/XpathInjectionScanRule.java)
+
+## XSLT Injection
+
+This scan rule checks for certain responses induced by injecting XSL transformations.   
+It attempts to obtain those responses with payloads which may induce: error responses, disclosure of library/framework vendor name, remote port scanning, or command execution.
+
+Latest code: [XsltInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/XsltInjectionScanRule.java)
 
 ## XXE
 

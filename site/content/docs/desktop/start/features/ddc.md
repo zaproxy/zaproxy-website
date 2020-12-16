@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Data Driven Content
 type: userguide
-weight: 10
+weight: 13
 ---
 
 # Data Driven Content
@@ -18,7 +18,7 @@ URLs like:
 * https://www.example.com/app/aaa?ddd=fff
 * https://www.example.com/app/bbb?ddd=eee
 
-are represented in the [Sites tab](/docs/desktop/ui/tabs/sites/) as two 'nodes' in the tree:
+are represented in the [Sites Tree](/docs/desktop/start/features/sitestree/) as two 'nodes' in the tree:
 
 * Sites
     * https://www.example.com

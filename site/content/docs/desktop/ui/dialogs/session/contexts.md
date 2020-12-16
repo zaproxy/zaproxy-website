@@ -64,9 +64,13 @@ This allows you to configure a set of Users that may be used for various other a
 The credentials section of the Users depends on the Authentication Method configured
 for the Context.
 
+## Custom Page {#custompages}
+
+This functionality allows you to handle situations in which the target does not return a RFC compliant or expected error response when for conditions such as 404 - Not Found, 500 - Internal Server Error, etc. Often developers implement custom 404 or 500 handling but do not actually return an appropriate status code. Leveraging Custom Page definitions you can define URLs or response content which identify error responses regardless of the status code associated with the response. Read [more](/docs/desktop/start/features/custompages/)...
+
 ## URL regexs
 
-In the *Include in \** , *Exclude from \** panels and the *Logged in/out indicators* of the *Authentication* panel, you can enter regular expressions to define excluded URLs. While you can escape a single meta-character with a backslash, you can also use the **\\Q...\\E** escape sequence. All the characters between the **\\Q** and the **\\E** are interpreted as literal characters. E.g. \\Q\*\\d+\*\\E matches the literal text \*\\d+\*. This escape sequence is used in ZAP when you exclude URLs via some context menus.   
+In the *Include in \** , *Exclude from \** panels and the *Logged in/out indicators* of the *Authentication* panel, etc. you can enter regular expressions to define excluded URLs. While you can escape a single meta-character with a backslash, you can also use the **\\Q...\\E** escape sequence. All the characters between the **\\Q** and the **\\E** are interpreted as literal characters. E.g. \\Q\*\\d+\*\\E matches the literal text \*\\d+\*. This escape sequence is used in ZAP when you exclude URLs via some context menus.   
 **Note:** If your URL contains a "\\E", then you have to do the following steps when using the **\\Q...\\E** escape sequence:
 
 * Open the escape sequence
@@ -80,15 +84,16 @@ Example: subdomain.example.com/path?a=**\\E** \&moredata=2 should appear as *\\Q
 
 ## Accessed via
 
-|   |                                                      |                           |
-|---|------------------------------------------------------|---------------------------|
-|   | [Top level File menu](/docs/desktop/ui/tlmenu/file/) | 'Properties...' menu item |
+|   |                                           |                        |
+|---|-------------------------------------------|------------------------|
+|   | [Sites tab](/docs/desktop/ui/tabs/sites/) | Double click a Context |
 
 ## See also
 
-|   |                                                                       |                                       |
-|---|-----------------------------------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface |
-|   | [Dialogs](/docs/desktop/ui/dialogs/)                                  | for details of the dialogs or popups  |
-|   | [Authentication](/docs/desktop/start/features/authentication/)        | for an overview of Authentication     |
-|   | [Session Management](/docs/desktop/start/features/sessionmanagement/) | for an overview of Session Management |
+|   |                                                                       |                                        |
+|---|-----------------------------------------------------------------------|----------------------------------------|
+|   | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface  |
+|   | [Dialogs](/docs/desktop/ui/dialogs/)                                  | for details of the dialogs or popups   |
+|   | [Authentication](/docs/desktop/start/features/authentication/)        | for an overview of Authentication      |
+|   | [Session Management](/docs/desktop/start/features/sessionmanagement/) | for an overview of Session Management  |
+|   | [Custom Page](/docs/desktop/start/features/custompages/)              | for an overview of Custom Page details |

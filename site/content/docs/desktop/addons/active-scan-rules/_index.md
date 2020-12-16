@@ -6,12 +6,18 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 36.0.0
+    version: 38.0.0
 ---
 
 # Active Scan Rules
 
 The following release quality active scan rules are included in this add-on:
+
+## .htaccess Information Leak
+
+Checks for web accessible .htaccess files which may leak sensitive information (such as usernames, error handling, redirects, directory listing settings, etc.).
+
+Latest code: [HtAccessScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/HtAccessScanRule.java)
 
 ## Buffer Overflow
 
@@ -65,6 +71,15 @@ Latest code: [CrlfInjectionScanRule.java](https://github.com/zaproxy/zap-extensi
 This rule checks to see if a request will provide access to a directory listing by examining the response body for patterns used with Apache, IIS and other web server software.
 
 Latest code: [DirectoryBrowsingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/DirectoryBrowsingScanRule.java)
+
+## ELMAH Information Leak
+
+Tests to see if the Error Logging Modules and Handlers (elmah.axd) HTTP Module is available. Although this module is handy for developers and other stakeholders it can also leak a significant amount of information which a security analyst or malicious individual may be interested in.  
+
+The ELMAH scan rule targets Microsoft based technologies: IIS, Windows, ASP, and MSSQL.  
+Files are only reported if they contain the text "Error Log for" unless a LOW alert threshold is set.
+
+Latest code: [ElmahScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/ElmahScanRule.java)
 
 ## External Redirect
 

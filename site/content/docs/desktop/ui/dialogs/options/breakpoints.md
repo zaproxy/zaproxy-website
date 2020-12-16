@@ -22,6 +22,22 @@ Custom breakpoints will not be affected.
 
 If selected this will mean that ZAP stays on top of all other windows whenever a breakpoint is hit.  
 
+### Show buttons to select the requests you don't want ZAP to break on
+
+This controls whether the buttons to select the file types you don't want ZAP to break on and the scope filter appear in the break panel.  
+
+#### Javascript URL regex
+
+This sets the regex used to predict if the content in the response will be a Javascript file.
+
+#### CSS and Fonts URL regex
+
+This sets the regex used to predict if the content in the response will be a CSS or a Font file.
+
+#### Multimedia URL regex
+
+This sets the regex used to predict if the content in the response will be a multimedia file (images, videos or sounds).
+
 ### Break buttons mode
 
 This controls whether there is a single combined break button on the [Top Level Toolbar](/docs/desktop/ui/tltoolbar/) or separate ones for Requests and Responses.

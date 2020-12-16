@@ -13,6 +13,10 @@ This screen allows you to configure the [anti CSRF tokens](/docs/desktop/start/f
 
 The form POST parameter names that should be treated as anti CSRF tokens.  
 
+### Partial Matches
+
+Defines if the form POST parameter names should be treated as anti CSRF tokens if they include one of the tokens (instead of requiring an exact match).  
+
 ## See also
 
 |   |                                                      |                                                 |

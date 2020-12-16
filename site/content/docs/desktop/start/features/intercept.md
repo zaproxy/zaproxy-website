@@ -1,13 +1,13 @@
 ---
 # This page was generated from the add-on.
-title: Man-in-the-middle Proxy
+title: Manipulator-in-the-middle Proxy
 type: userguide
-weight: 13
+weight: 16
 ---
 
-# Man-in-the-middle Proxy
+# Manipulator-in-the-middle Proxy
 
-ZAP is a Man-in-the-middle Proxy. It allows you to see all of the requests you make to a web app
+ZAP is a Manipulator-in-the-middle Proxy. It allows you to see all of the requests you make to a web app
 and all of the responses you receive from it.  
 Amongst other things this allows you to see AJAX calls that may not otherwise be obvious.
 

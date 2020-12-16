@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Structural Parameters
 type: userguide
-weight: 23
+weight: 29
 ---
 
 # Structural Parameters
@@ -18,7 +18,7 @@ URLs like:
 * https://www.example.com/app/aaa?ddd=fff
 * https://www.example.com/app/aaa?ddd=ggg
 
-are represented in the [Sites tab](/docs/desktop/ui/tabs/sites/) as one 'node' in the tree:
+are represented in the [Sites Tree](/docs/desktop/start/features/sitestree/) as one 'node' in the tree:
 
 * Sites
     * https://www.example.com

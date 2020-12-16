@@ -24,11 +24,6 @@ Right clicking on a node will bring up a menu which will allow you to:
 
 This will bring up the [Find dialog](/docs/desktop/ui/dialogs/find/).
 
-### Encode/Decode/Hash...
-
-This will bring up the [Encode/Decode/Hash dialog](/docs/desktop/ui/dialogs/enc_dec/).  
-If you have highlighted any text then this will be automatically included in the dialog.
-
 ### Copy
 
 This will copy the selected string to the clipboard.

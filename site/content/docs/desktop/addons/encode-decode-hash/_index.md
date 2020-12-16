@@ -1,15 +1,15 @@
 ---
 # This page was generated from the add-on.
-title: Advanced Encode / Decode / Hash dialog
+title: Encode / Decode / Hash dialog
 type: userguide
 weight: 1
 cascade:
   addon:
     id: encoder
-    version: 0.3.0
+    version: 0.4.0
 ---
 
-# Advanced Encode / Decode / Hash dialog
+# Encode / Decode / Hash dialog
 
 This allows you to encode, decode or hash text.
 
@@ -175,5 +175,5 @@ Custom "Encode/Decode" scripts can be created/added to the Scripts Tree and used
 
 |   |                                                                                                                                                 |
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|   | Tools menu 'Advanced Encode/Decode/Hash...' item                                                                                                |
-|   | Many text areas such as the Output tab, Scripts console, Request and Response panels via 'Advanced Encode/Decode/Hash...' right click menu item |
+|   | Tools menu 'Encode/Decode/Hash...' item                                                                                                |
+|   | Many text areas such as the Output tab, Scripts console, Request and Response panels via 'Encode/Decode/Hash...' right click menu item |

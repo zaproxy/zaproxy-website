@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Manage Add-ons
 type: userguide
-weight: 9
+weight: 8
 ---
 
 # Manage Add-ons

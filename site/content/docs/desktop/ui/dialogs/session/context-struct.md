@@ -35,9 +35,9 @@ The [Structural Modifiers](/docs/desktop/start/features/structmods/) that apply 
 
 ## Accessed via
 
-|   |                                                      |                           |
-|---|------------------------------------------------------|---------------------------|
-|   | [Top level File menu](/docs/desktop/ui/tlmenu/file/) | 'Properties...' menu item |
+|   |                                           |                        |
+|---|-------------------------------------------|------------------------|
+|   | [Sites tab](/docs/desktop/ui/tabs/sites/) | Double click a Context |
 
 ## See also
 

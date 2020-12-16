@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: History Filter dialog
 type: userguide
-weight: 7
+weight: 6
 ---
 
 # History Filter dialog

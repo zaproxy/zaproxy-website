@@ -44,3 +44,9 @@ The rules that run are configured via [Scan Policies](/docs/desktop/start/featur
 |   | [Passive scanning](/docs/desktop/start/features/pscan/)               |                                              |
 |   | [Scan Policy Manager Dialog](/docs/desktop/ui/dialogs/scanpolicymgr/) | which allows you to manage the scan policies |
 |   | [Scanner Rules](/docs/desktop/start/checks/)                          | supported by default                         |
+
+## Official Videos
+
+|   |                                                                                              |
+|---|----------------------------------------------------------------------------------------------|
+|   | [ZAP In Ten: Active Scanning](https://play.sonatype.com/watch/ZcEfSihgQSzuthJi4qEeW3) (9:47) |
