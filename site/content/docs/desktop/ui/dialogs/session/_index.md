@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Session Properties dialog
 type: userguide
-weight: 15
+weight: 14
 ---
 
 # Session Properties dialog
@@ -45,9 +45,9 @@ Example: subdomain.example.com/path?a=**\\E** \&moredata=2 should appear as *\\Q
 
 ## Accessed via
 
-|   |                                                      |                           |
-|---|------------------------------------------------------|---------------------------|
-|   | [Top level File menu](/docs/desktop/ui/tlmenu/file/) | 'Properties...' menu item |
+|   |                                                      |                                   |
+|---|------------------------------------------------------|-----------------------------------|
+|   | [Top level File menu](/docs/desktop/ui/tlmenu/file/) | 'Session Properties...' menu item |
 
 ## See also
 

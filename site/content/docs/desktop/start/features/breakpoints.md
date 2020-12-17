@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Breakpoints
 type: userguide
-weight: 7
+weight: 9
 ---
 
 # Breakpoints

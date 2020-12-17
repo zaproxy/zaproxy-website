@@ -39,7 +39,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Mennouchi Islam Azeddine                                                                                    |
 |   | Ahmed Bahajjaj ([@madanalogy](https://github.com/madanalogy))                                               |
 |   | Florent Baillais ([@flocurity](https://twitter.com/flocurity))                                              |
-|   | Jay Ball - Aspect Security                                                                                  |
+|   | Jay Ball                                                                                                    |
 |   | Adrien de Beaupre                                                                                           |
 |   | Alla Bezroutchko - Gremwell                                                                                 |
 |   | Artemy Bogdanov ([@Abr1k0s](https://twitter.com/Abr1k0s))                                                   |
@@ -72,6 +72,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Oleksandr Horokh                                                                                            |
 |   | Daiki Ichinose ([@mahoyaya](https://twitter.com/mahoyaya))                                                  |
 |   | Taras Ivashchenko, OWASP Russia                                                                             |
+|   | Eswarprasath Jayaraman ([ejayaraman](https://github.com/ejayaraman))                                        |
 |   | Jon ([@flibustier](https://twitter.com/flibustier))                                                         |
 |   | Tan Jin ([@tjtanjin](https://github.com/tjtanjin))                                                          |
 |   | Martin Kalina                                                                                               |
@@ -159,7 +160,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Milic Vuletic                                                                                               |
 |   | Kevin Wall                                                                                                  |
 |   | Martin Walton - Laterooms.com                                                                               |
-|   | Dave Wichers - Aspect Security                                                                              |
+|   | Dave Wichers                                                                                                |
 |   | Joset Zamora ([@setzamora](https://twitter.com/setzamora))                                                  |
 |   | Alexander Zapasnik                                                                                          |
 

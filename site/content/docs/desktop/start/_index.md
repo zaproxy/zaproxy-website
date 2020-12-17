@@ -12,7 +12,7 @@ This allows you to enter a URL which ZAP will first [spider](/docs/desktop/start
 and then [active scan](/docs/desktop/start/features/ascan/).  
 For a more in depth test you should explore your application using your browser or automated regression tests while proxying through ZAP.
 
-At its heart ZAP is a [man-in-the-middle proxy](/docs/desktop/start/features/intercept/).  
+At its heart ZAP is a [manipulator-in-the-middle proxy](/docs/desktop/start/features/intercept/).  
 To get the most out of ZAP you need to configure your browser or functional tests to connect to the web application you wish to test through ZAP.  
 If required you can also configure ZAP to connect through another proxy - this is often
 necessary in a corporate environment.  

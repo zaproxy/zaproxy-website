@@ -2,13 +2,13 @@
 # This page was generated from the add-on.
 title: Structural Modifiers
 type: userguide
-weight: 22
+weight: 28
 ---
 
 # Structural Modifiers
 
 Structural Modifiers are controls which change how ZAP represents the structure of the application.  
-The [Sites tab](/docs/desktop/ui/tabs/sites/) show ZAP's representation of the application.  
+The [Sites Tree](/docs/desktop/start/features/sitestree/) is ZAP's representation of the application.  
 If it is not a good representation of the structure then ZAP will not be able to attack the application effectively.  
 There are currently 2 types of Structural Modifiers:
 

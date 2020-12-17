@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: HTTP Sessions
 type: userguide
-weight: 12
+weight: 15
 ---
 
 # HTTP Sessions

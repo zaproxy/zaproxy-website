@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Manual Request Editor dialog
 type: userguide
-weight: 8
+weight: 7
 ---
 
 # Manual Request Editor dialog
@@ -38,6 +38,14 @@ This option controls whether encountered cookies should be added to subsequent r
 
 If selected automatically follows any redirects sent to the browser.  
 
+### ![](/docs/desktop/images/fugue/application-resize.png) Update Content Length
+
+By default ZAP will automatically update (or add) the Content-Length header to match the size of the data submitted. If this option is unselected then ZAP will not update the header allowing you to specify any value you like.  
+
+### ![](/docs/desktop/images/csrf-button.png) Regenerate Anti-CSRF
+
+If selected automatically regenerates Anti-CSRF tokens if any exist. Currently only supported in the message body and requires that the Anti-CSRF extension is enabled.  
+
 ### ![](/docs/desktop/images/layout_tabbed.png) Request and Response tabs side by side
 
 This changes the display so that the request and response tabs are side by side.  
@@ -66,11 +74,6 @@ Right clicking will bring up a menu which will allow you to:
 ### Find...
 
 This will bring up the [Find dialog](/docs/desktop/ui/dialogs/find/).
-
-### Encode/Decode...
-
-This will bring up the [Encode/Decode dialog](/docs/desktop/ui/dialogs/enc_dec/).  
-If you have highlighted any text then this will be automatically included in the dialog.
 
 ## Accessed via
 

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Passive Scan
 type: userguide
-weight: 16
+weight: 20
 ---
 
 # Passive Scan
@@ -31,3 +31,9 @@ The alerts raised by passive scanners can be configured using the
 |   | [Features](/docs/desktop/start/features/)              | provided by ZAP                       |
 |   | [Active scanning](/docs/desktop/start/features/ascan/) |                                       |
 |   | [Scanner Rules](/docs/desktop/start/checks/)           | supported by default                  |
+
+## Official Videos
+
+|   |                                                                                                |
+|---|------------------------------------------------------------------------------------------------|
+|   | [ZAP In Ten: Passive Scanning](https://play.sonatype.com/watch/vDWpoYjHi7fSLYFDQPWgMF) (10:27) |

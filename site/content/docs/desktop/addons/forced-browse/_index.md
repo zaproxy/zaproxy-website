@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: bruteforce
-    version: 9.0.0
+    version: 10.0.0
 ---
 
 # Forced Browse
@@ -19,7 +19,7 @@ file directly rather than relying on finding links to them.
 Forced Browse is configured using the [Options
 Forced Browse screen](/docs/desktop/addons/forced-browse/options/).  
 
-This functionality is based on code from the [OWASP DirBuster project](https://www.owasp.org/index.php/Category:OWASP_DirBuster_Project).
+This functionality is based on code from the now retired OWASP DirBuster project.
 
 ## Accessed via
 

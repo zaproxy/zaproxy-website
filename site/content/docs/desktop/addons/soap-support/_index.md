@@ -1,0 +1,32 @@
+---
+# This page was generated from the add-on.
+title: SOAP Support
+type: userguide
+weight: 1
+cascade:
+  addon:
+    id: soap
+    version: 4.0.0
+---
+
+# SOAP Support
+
+This add-on imports and scans WSDL files containing SOAP endpoints.
+
+## Importing
+
+The add-on will automatically detect any SOAP definitions and spider them as long as they are in scope.   
+
+2 menu items are also added to the Import menu:
+
+* Import a WSDL file from local file system
+* Import a WSDL file from a URL
+
+These operations are also available via the API.
+
+## Scanning
+
+The scan rules added by this add-on are:
+
+* Action Spoofing : <http://www.ws-attacks.org/index.php/SOAPAction_Spoofing>
+* XML Injection : <http://www.ws-attacks.org/index.php/XML_Injection>

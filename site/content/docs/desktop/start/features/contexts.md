@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Contexts
 type: userguide
-weight: 9
+weight: 11
 ---
 
 # Contexts
@@ -14,7 +14,7 @@ It is recommended that you define a new contexts for each web application
 that makes up the system you are testing, and set them in scope as you test each one.
 
 Contexts are defined as a set of regular expressions (regexs) which are applied to all of the URLs in the
-[Sites tab](/docs/desktop/ui/tabs/sites/).  
+[Sites Tree](/docs/desktop/start/features/sitestree/).  
 **Note:** The regular expressions must match the whole URL.
 
 You can configure contexts via:

@@ -7,7 +7,7 @@ weight: 1
 
 # Sites tab
 
-The sites tab contains two trees, one for [contexts](/docs/desktop/start/features/contexts/) and the other for the sites accessed by/through ZAP.
+The sites tab contains two trees, one for [Contexts](/docs/desktop/start/features/contexts/) and the other for the [Sites Tree](/docs/desktop/start/features/sitestree/).
 
 ## Contexts tree
 

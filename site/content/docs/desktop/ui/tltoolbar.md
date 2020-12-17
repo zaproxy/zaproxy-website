@@ -37,6 +37,10 @@ This button is the same as the [File menu](/docs/desktop/ui/tlmenu/file/) 'Prope
 
 This button is the same as the [Tools menu](/docs/desktop/ui/tlmenu/tools/) 'Options...' menu item.
 
+## ![](/docs/desktop/images/fugue/ui-color-picker-switch.png) Dynamically switch the Look and Feel
+
+This allows you to dynamically switch the Look and Feel which defines the appearance of the ZAP Desktop UI and includes support for 'Dark Modes'.
+
 ## ![](/docs/desktop/images/fugue/ui-tab-show.png) Show all tabs
 
 This button reveals all of the hidden tabs.

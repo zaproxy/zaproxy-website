@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Users
 type: userguide
-weight: 25
+weight: 31
 ---
 
 # Users
@@ -21,10 +21,9 @@ created and configured for this user (according to the Session
 Management defined for the Context). After that, requests sent from
 the point of view of a User are modified (if necessary) and sent in
 such a way that the web server identifies them as being sent by an
-authenticated webapp/website user. If anytime a message is sent from
-the perspective of a User and the response received seems
-unauthenticated (as identified using the *Logged In* and *Logged
-Out* [Authentication indicators](/docs/desktop/start/features/authentication/)), a new
+authenticated webapp/website user. If anytime a User appears to
+be unauthenticated (as determined by the
+[Authentication Verification Strategy](/docs/desktop/start/features/authstrategies/)), a new
 authentication is performed and the Session is updated accordingly.
 
 In order to perform the authentication of a user on a website /

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Spider
 type: userguide
-weight: 20
+weight: 26
 ---
 
 # Spider
@@ -66,3 +66,10 @@ The spider is configured using the [Spider Options screen](/docs/desktop/ui/dial
 |   | [UI Overview](/docs/desktop/ui/)                                  | for an overview of the user interface |
 |   | [Features](/docs/desktop/start/features/)                         | provided by ZAP                       |
 |   | [Spider Options screen](/docs/desktop/ui/dialogs/options/spider/) | for an overview of the Spider Options |
+
+## Official Videos
+
+|   |                                                                                                         |
+|---|---------------------------------------------------------------------------------------------------------|
+|   | [ZAP In Ten: Explore Your Applications](https://play.sonatype.com/watch/rLq2nvgbuGwVn2BX9gA8r2) (10:36) |
+|   | [ZAP Deep Dive: Exploring Applications: Standard Spider](https://youtu.be/mz2nhYpU-sw) (34:35)          |

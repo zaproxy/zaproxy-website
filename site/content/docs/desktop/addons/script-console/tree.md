@@ -8,9 +8,9 @@ weight: 2
 # Scripts tree tab
 
 The Scripts tree tab shows you all of the scripts you currently have loaded organized by type.  
-It also shows you which templates you have available - these cannot but run directly, you use them to create new scripts.  
+It also shows you which templates you have available - these cannot be run directly, you use them to create new scripts.  
 It also allows you to add new scripts, load, save and remove them.  
-The tab include a toolbar which allows you to:
+The tab includes a toolbar which allows you to:
 
 * Load a script from filestore
 * Save a script to filestore

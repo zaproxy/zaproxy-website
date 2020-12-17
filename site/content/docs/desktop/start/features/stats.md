@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Statistics
 type: userguide
-weight: 21
+weight: 27
 ---
 
 # Statistics
@@ -36,11 +36,11 @@ Statistics maintained on a per site basis include:
 * authentication info:
     * stats.auth.success (number of authentication successes)
     * stats.auth.failure (number of authentication failures)
-    * stats.auth.state.loggedin (number of responses that appear to be logged in)
-    * stats.auth.state.loggedout (number of responses that appear to be logged out)
-    * stats.auth.state.noindicator (number of responses where no logged in or out indicators have been set)
-    * stats.auth.state.unknown (number of responses which don't contain either logged in or out indicators)
-
+    * stats.auth.state.assumedin (number of messages between successful polls that are assumed to be logged in)
+    * stats.auth.state.loggedin (number of messages that appear to be logged in)
+    * stats.auth.state.loggedout (number of messages that appear to be logged out)
+    * stats.auth.state.noindicator (number of messages where no logged in or out indicators have been set)
+    * stats.auth.state.unknown (number of messages which don't contain either logged in or out indicators)
 
 ## See also
 

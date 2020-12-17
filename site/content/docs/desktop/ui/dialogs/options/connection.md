@@ -58,6 +58,57 @@ This is often required in a corporate environment.
 
 This section allows you to configure the outgoing proxy authentication.
 
+### SOCKS Proxy
+
+This section allows you to configure an outgoing SOCKS proxy, by default the SOCKS proxy configuration applies to all connections made by ZAP.
+
+The SOCKS proxy system properties (e.g. `socksProxyHost`, `socksProxyPort`) take precedence over the persisted configurations
+for compatibility with older ZAP versions. ZAP will use and display the values of the system's properties when defined at startup, the configurations
+can still be changed in this panel.
+
+**Note:** Loopback addresses (e.g. `localhost`, `127.0.01`, `::1`) are not proxied through the SOCKS proxy, the connections will be done directly.
+
+#### Enabled
+
+If ZAP should use the configured SOCKS proxy.   
+Default: `unselected`, unless the SOCKS proxy system properties are defined, in which case it is `selected`.
+
+#### Host
+
+The host name or address of the SOCKS proxy.   
+Default: `localhost`.
+
+#### Port
+
+The port of the SOCKS proxy.   
+Default: `1080`.
+
+#### Version
+
+The version of the SOCKS proxy.   
+Default: `5`.
+
+#### Use SOCKS' DNS
+
+If ZAP should let the SOCKS proxy resolve the host names. Requires a version 5 SOCKS proxy.   
+This might lead to connection failures if the SOCKS proxy is not able to resolve the host name (e.g. use of names that are defined in a `hosts` file).   
+Default: `selected`.
+
+#### Authentication
+
+The following fields allow to configure the authentication credentials for the SOCKS proxy.
+
+##### User Name
+
+The user name.   
+Default: none.
+
+##### Password
+
+The password.   
+Default: none.   
+**Note:** Stored in clear text in the configuration file.
+
 ## See also
 
 |   |                                                      |                                                 |
