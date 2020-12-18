@@ -48,6 +48,11 @@ silver:
     logo: /img/supporters/denimgroup.png
     notes: $3,000 in donations
 
+  - name: 'Webswing'
+    link: https://www.webswing.org/
+    logo: /img/supporters/webswing.png
+    notes: Permisssion to include production version of Webswing in the ZAP Docker images
+
   - name: 'DeepFactor'
     link: http://deepfactor.io/
     logo: /img/supporters/deepfactor.png
