@@ -153,16 +153,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/callgraph-alpha-4.zap
   date: 2017-11-28
   version: 4
-- id: cmss
-  name: WAFP Extension
-  description: Fingerprint web applications
-  author: ZAP Dev Team
-  status: alpha
-  infoUrl: /docs/desktop/addons/wafp-extension/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/cmss-alpha-2.zap
-  date: 2017-11-28
-  version: 2
 - id: codedx
   name: Code Dx Extension
   description: Includes request and response data in XML reports and provides the
@@ -919,16 +909,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/viewstate-v2/viewstate-alpha-2.zap
   date: 2020-07-10
   version: 2
-- id: vulncheck
-  name: VulnCheck Extension
-  description: list vulnerabilities from known databases
-  author: ZAP Dev Team
-  status: alpha
-  infoUrl: /docs/desktop/addons/vulncheck/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/vulncheck-alpha-1.zap
-  date: 2017-11-28
-  version: 1
 - id: wappalyzer
   name: Wappalyzer - Technology Detection
   description: 'Technology detection using Wappalyzer: wappalyzer.com'
