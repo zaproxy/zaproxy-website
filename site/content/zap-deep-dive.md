@@ -23,7 +23,10 @@ links:
 
   - name: 'Scripting'
     uuid: ujL6rH6nVXI
+    
+  - name: '2.10.0 Introduction'
+    uuid: rrVr-_-y6Xo
 
 ---
-A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](www.stackhawk.com).
+A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](https://www.stackhawk.com).
 
