@@ -7,8 +7,9 @@ cascade:
   addon:
     id: cmss
     version: 3.0.0
+deprecated: true
 ---
 
 # WAFP Extension
 
-Allows to fingerprint web applications.
+This add-on is no longer available in the marketplace, no longer being maintained. Refer to [Technology Detection add-on](/docs/desktop/addons/technology-detection/) for a replacement.
