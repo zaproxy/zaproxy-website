@@ -7,8 +7,9 @@ cascade:
   addon:
     id: vulncheck
     version: 2.0.0
+deprecated: true
 ---
 
 # VulnCheck
 
-Lists vulnerabilities from known databases.
+This add-on is no longer available in the marketplace, no longer being maintained.

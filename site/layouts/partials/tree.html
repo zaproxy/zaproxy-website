@@ -19,17 +19,22 @@
     {{ $nextDepth := add .depth 1 }}
     {{- $activeLink := $.root.Permalink }}
     {{- $className := "" }}
+    {{- $deprecated := true }}
     {{- with $.root.Site.GetPage .url }}
-        {{- $branchLink := .Permalink }}
-        {{- if in $activeLink $branchLink  }}
-            {{- $className = "tree-branch-active" -}}
-        {{ end }}
-        {{- if eq $activeLink $branchLink  }}
-            {{- $className = "tree-active tree-branch-active" -}}
-        {{- end -}}
-        <li data-depth="{{ $.depth }}" class="{{ $className }}">
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{- if not .Params.deprecated }}
+            {{- $deprecated = false }}
+            {{- $branchLink := .Permalink }}
+            {{- if in $activeLink $branchLink  }}
+                {{- $className = "tree-branch-active" -}}
+            {{ end }}
+            {{- if eq $activeLink $branchLink  }}
+                {{- $className = "tree-active tree-branch-active" -}}
+            {{- end -}}
+            <li data-depth="{{ $.depth }}" class="{{ $className }}">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{- end }}
     {{- end }}
+    {{- if not $deprecated }}
         <ul class="tree-branch">
         {{- range (readDir .path) }}
             {{- if in .Name "image" }}
@@ -52,4 +57,5 @@
         {{- end }}
         </ul>
     </li>
+    {{- end }}
 {{ end }}
