@@ -814,9 +814,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v4/soap-alpha-4.zap
-  date: 2020-12-16
-  version: 4
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v5/soap-alpha-5.zap
+  date: 2021-01-04
+  version: 5
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
