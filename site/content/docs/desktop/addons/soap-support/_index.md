@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: 4.0.0
+    version: 5.0.0
 ---
 
 # SOAP Support
@@ -23,6 +23,11 @@ The add-on will automatically detect any SOAP definitions and spider them as lon
 * Import a WSDL file from a URL
 
 These operations are also available via the API.
+
+### Form Handler Add-on Support
+
+The SOAP add-on supports overriding default parameter values based on field names via the Form Handler add-on. For example,   
+![Form Handler Example](/docs/desktop/addons/soap-support/images/formHandlerExample.png)
 
 ## Scanning
 
