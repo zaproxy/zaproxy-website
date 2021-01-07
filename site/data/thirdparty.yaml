@@ -18,6 +18,10 @@ services:
     license: 'Free, open source'
     notes: OWASP Project
 
+  - name: 'PurpleTeam-Labs'
+    link: https://purpleteam-labs.com/
+    license: 'Free, open source'
+
   - name: 'Idyllum'
     link: https://www.idyllum.com/
     license: 'Commercial, free option'
