@@ -93,7 +93,7 @@ potential vulnerabilities. It supports the following fields:
 
 ##  Simple example
 
-The [`ExampleSimplePassiveScanner`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanner.java) class implements a very simple passive
+The [`ExampleSimplePassiveScanRule`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanRule.java) class implements a very simple passive
 scan rule. As you will see, it just raises an alert randomly, so it isn't of any practical use. However it does demonstrate a couple of useful
 features:  
   
@@ -112,8 +112,8 @@ Note that the `pluginId` needs to be unique across all active and passive scan r
 
 ##  File based example
 
-The [`ExampleFilePassiveScanner`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanner.java) class implements a
-slightly more complex passive scan rule. In this case it reads in a set of strings from a [configuration file](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/zapHomeFiles/xml/example-pscan-file.txt) and checks for their presence in
+The [`ExampleFilePassiveScanRule`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanRule.java) class implements a
+slightly more complex passive scan rule. In this case it reads in a set of strings from a [configuration file](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/zapHomeFiles/txt/example-pscan-file.txt) and checks for their presence in
 the response. It could also use hardcoded strings, but the advantage of the approach taken is that a knowledgeable user could manually edit the
 file to meet their requirement.  
 (ZAP automatically extracts the files located in the `zapHomeFiles` directory into a directory underneath the ZAP user directory.)  

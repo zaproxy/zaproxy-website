@@ -59,7 +59,7 @@ vulnerabilities.
 
 ##  Simple example
 
-The [`ExampleSimpleActiveScanner`](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleSimpleActiveScanner.java) class implements a very simple active scan
+The [`ExampleSimpleActiveScanRule`](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleSimpleActiveScanRule.java) class implements a very simple active scan
 rule. As you will see, it just raises an alert randomly, so it isn't of any practical use. Like the simple example passive scanner introduced in
 the previous post it uses the `Vulnerabilities` class for the documentation associated with the vulnerability. Most of the methods should be self
 explanatory, but there are 2 that are worth explaining. The `getCategory()` method is used to group related rules in the UI. And the `getRisk()`
@@ -67,7 +67,7 @@ method affects the order the rules are run - the rules which report higher risks
 
 ##  File based example
 
-The [`ExampleFileActiveScanner`](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleFileActiveScanner.java) class implements a slightly more complex
+The [`ExampleFileActiveScanRule`](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleFileActiveScanRule.java) class implements a slightly more complex
 active scan rule which is equivalent to the example file passive scan rule introduced in the previous post. This class introduces another
 feature, the attack strength, which allows the user to adjust the number of attacks each rule performs. If you are implementing a rule just for
 your own use then you don't need to worry about this. However if you plan to publish it for others to use then you should consider supporting it.  
