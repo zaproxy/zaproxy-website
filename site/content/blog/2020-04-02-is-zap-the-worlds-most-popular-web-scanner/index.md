@@ -56,4 +56,4 @@ One thing is clear.
 
 If you want to have an impact in the web security field then you should seriously consider contributing to ZAP. Any improvements you make, any new or improved scan rules you add will be heavily used and will help to make the online world safer. 
 
-ZAP is, of course, completely open source and highly extensible. If you want to learn more about contributing to or extending ZAP then see the [Contributing Guide](https://github.com/zaproxy/zaproxy/blob/develop/CONTRIBUTING.md).
+ZAP is, of course, completely open source and highly extensible. If you want to learn more about contributing to or extending ZAP then see the [Contributing Guide](https://github.com/zaproxy/zaproxy/blob/main/CONTRIBUTING.md).

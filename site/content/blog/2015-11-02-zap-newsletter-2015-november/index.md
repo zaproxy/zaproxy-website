@@ -172,7 +172,7 @@ All downloads are served over HTTPS and are checked against the hash included in
   
 ZAP will not install any add-ons downloaded over HTTP or which do not match the specified hash.  
   
-The Check for Updates code is in the zaproxy [org.zaproxy.zap.extension.autoupdate](https://github.com/zaproxy/zaproxy/tree/develop/zap/src/main/java/org/zaproxy/zap/extension/autoupdate) package - if
+The Check for Updates code is in the zaproxy [org.zaproxy.zap.extension.autoupdate](https://github.com/zaproxy/zaproxy/tree/main/zap/src/main/java/org/zaproxy/zap/extension/autoupdate) package - if
 you have any questions on how it works then just ask on the [ZAP Developers Group](https://groups.google.com/group/zaproxy-develop).  
   
 

@@ -95,7 +95,7 @@ This will be solved in the next version of ZAP (2.10.0) which extends the defini
 
 The changes have already been made and are available in the latest weekly release for you to try out now.
 
-An example script will be included in ZAP: [Site modifying JSON example.js](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/dist/scripts/templates/variant/Site%20modifying%20JSON%20example.js)
+An example script will be included in ZAP: [Site modifying JSON example.js](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/dist/scripts/templates/variant/Site%20modifying%20JSON%20example.js)
 
 Note that if you try this script out with the ZAP weekly Desktop then you will need to disable the HUD to prevent it from trying to upgrade HTTP connections to HTTPS ones!
 
@@ -123,7 +123,7 @@ In this case it will change the Site Tree node paths to be:
 
 Input Vector scripts can change Site Tree node names and/or node paths, which gives complete control over how URLs are represented in the Sites Tree.
 
-In addition to this in 2.10.0 the underlying [Variant.java](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/core/scanner/Variant.java) class will become plugable, meaning that ZAP add-ons will be able to dynamically add (and remove) classes which can identify input vectors to attack and change how URLs are represented in the Sites Tree.
+In addition to this in 2.10.0 the underlying [Variant.java](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/core/scanner/Variant.java) class will become plugable, meaning that ZAP add-ons will be able to dynamically add (and remove) classes which can identify input vectors to attack and change how URLs are represented in the Sites Tree.
 
 These 2 changes will allow ZAP to handle any custom data formats and ensure that ZAP can then effectively attack the applications that use them.
 

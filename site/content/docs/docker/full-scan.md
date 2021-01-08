@@ -62,4 +62,4 @@ Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will ne
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
 
 ### Source Code
-The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/develop/docker](https://github.com/zaproxy/zaproxy/tree/develop/docker).
+The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/main/docker](https://github.com/zaproxy/zaproxy/tree/main/docker).

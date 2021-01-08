@@ -35,4 +35,4 @@ scripts](https://github.com/zaproxy/community-scripts) repo:
   * [Passive scripts](https://github.com/zaproxy/community-scripts/tree/master/passive)
 
 The full list of reserved scan ids is maintained in
-[scanners.md](https://github.com/zaproxy/zaproxy/blob/develop/docs/scanners.md)
+[scanners.md](https://github.com/zaproxy/zaproxy/blob/main/docs/scanners.md)

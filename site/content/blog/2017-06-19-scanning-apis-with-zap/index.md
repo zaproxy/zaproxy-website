@@ -72,8 +72,8 @@ By default the script will use a [Scan Policy](/docs/desktop/start/features/scan
 This disables rules that are focused on client side (e.g. browser) issues, such as the ones for detecting Cross Site Scripting, and also adds 2
 additional rules that are implemented as scripts:  
 
-  * [Alert_on_HTTP_Response_Code_Errors.js](https://github.com/zaproxy/zaproxy/blob/develop/docker/scripts/scripts/httpsender/Alert_on_HTTP_Response_Code_Errors.js)
-  * [Alert_on_Unexpected_Content_Types.js](https://github.com/zaproxy/zaproxy/blob/develop/docker/scripts/scripts/httpsender/Alert_on_Unexpected_Content_Types.js)
+  * [Alert_on_HTTP_Response_Code_Errors.js](https://github.com/zaproxy/zaproxy/blob/main/docker/scripts/scripts/httpsender/Alert_on_HTTP_Response_Code_Errors.js)
+  * [Alert_on_Unexpected_Content_Types.js](https://github.com/zaproxy/zaproxy/blob/main/docker/scripts/scripts/httpsender/Alert_on_Unexpected_Content_Types.js)
 
 You can change which rules are run and how failures are reported using a configuration file. This allows you to tune the scanning script to meet
 your requirements for each of your APIs.  

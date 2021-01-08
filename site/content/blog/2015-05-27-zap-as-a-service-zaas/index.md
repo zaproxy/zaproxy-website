@@ -29,7 +29,7 @@ So how will ZaaS differ from desktop ZAP?
 The current HSQLDB is good for a desktop application as it requires no installation, but it's not suitable for ZaaS.  
 In 2.4.0 we introduced a database independence layer so that alternative implementations can be supported, although the only implementation was
 the current hard coded HSQLDB option.  
-In the `develop` branch there's now a generic SQL implementation, in which all of the SQL statements have been extracted into property files.  
+In the `main` branch there's now a generic SQL implementation, in which all of the SQL statements have been extracted into property files.  
 In theory any SQL db should be supportable, and working implementations of both HSQLDB and MySQL are provided.  
 Although MySQL is intended for daemon or ZaaS modes there's no reason why it can't also be used for the desktop, and in fact that's one of the
 options that's been tested.  

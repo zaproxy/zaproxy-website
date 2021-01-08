@@ -33,7 +33,7 @@ rules due to the added complexity.
   
 We will pay out these bounties only when we have merged a PR that has an associated bounty. The PRs must test all of the associated rule
 functionality and must conform to our [Development Rules and Guidelines](https://github.com/zaproxy/zaproxy/wiki/DevGuidelines). Also see
-[CONTRIBUTING.md](https://github.com/zaproxy/zaproxy/blob/develop/CONTRIBUTING.md#guidelines-for-pull-request-pr-submission-and-processing)  
+[CONTRIBUTING.md](https://github.com/zaproxy/zaproxy/blob/main/CONTRIBUTING.md#guidelines-for-pull-request-pr-submission-and-processing)  
 We will work with submitters to help them improve any non-conforming PRs so that they meet our standards. We will also give the first person who
 submits a nearly conforming PR a reasonable time (e.g. 2 weeks) to reach the required standard rather than immediately accepting another later PR
 from someone else that does conform.  

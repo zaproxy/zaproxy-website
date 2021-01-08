@@ -11,7 +11,7 @@ We've made loads of enhancements to ZAP recently, and I want them to be availabl
 But I also want to make sure our 'full' releases remain as robust and stable as possible.  
 I want to get the next full release (2.0.0) out of the door asap, but I still want to get a load more features into it.  
   
-So I've discussed this with the other ZAP developers, and we've decided to do weekly ZAP releases from the [`develop` branch](https://github.com/zaproxy/zaproxy/tree/develop/).  
+So I've discussed this with the other ZAP developers, and we've decided to do weekly ZAP releases from the [`main` branch](https://github.com/zaproxy/zaproxy/tree/main/).  
 And that's starting today (Monday 22nd October) so there's a weekly release available now in the [Download](/download/#weekly) page.
   
 
@@ -33,7 +33,7 @@ And that's starting today (Monday 22nd October) so there's a weekly release avai
 
   * Anyone who has not used ZAP before (they would be better off with a full release)
   * Anyone building security distributions (ditto)
-  * Anyone developing or extending ZAP (they should use the `develop` branch)
+  * Anyone developing or extending ZAP (they should use the `main` branch)
 
 ###  What are some of the significant changes since the last full ZAP release?
 
@@ -49,8 +49,8 @@ And that's starting today (Monday 22nd October) so there's a weekly release avai
 ###  Want to know some more details?
 
   * The plan is to generate and upload the releases every Monday morning.
-  * That's not guaranteed - a weekly release could be delayed (or completely skipped) if, for example, there were significant problems with the code in the `develop` branch.
-  * The releases will be built from the `develop` branch, but will include [selected add-ons](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/weekly-add-ons.json).
+  * That's not guaranteed - a weekly release could be delayed (or completely skipped) if, for example, there were significant problems with the code in the `main` branch.
+  * The releases will be built from the `main` branch, but will include [selected add-ons](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/weekly-add-ons.json).
   * The release number is be based on the date generated, e.g. D-2012-10-15 (YYYY-MM-DD)
   * The check-for-updates mechanism has been updated so that weekly releases check for new weekly releases, while full releases still just report new full releases. Unless you disable it of course.
   * New weekly releases will not be announced on the twitter [@zaproxy](https://twitter.com/zaproxy) account, new full releases will still be announced there.

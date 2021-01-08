@@ -29,18 +29,18 @@ There are also some simple examples that we will examine in more detail. These a
 ##  The main classes
 
 Unlike passive scan rules there are different classes that you should extend depending on the type of rule you want to implement.  
-[`AbstractPlugin`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractPlugin.java) - you typically
+[`AbstractPlugin`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractPlugin.java) - you typically
 will not extend this class directly, but it provides key methods that you will need to use and abstract methods that will need to be
 implemented.  
-[`AbstractHostPlugin`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractHostPlugin.java) - extend
+[`AbstractHostPlugin`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractHostPlugin.java) - extend
 this class if you want your code to be run once against the top node that the user scans. This is ideal for scanning things that are not ‘page’
 related, such as the SSL certificate. The key method you’ll need to implement is the `scan()` method inherited from `AbstractPlugin` - this is
 where you perform your attacks.  
-[`AbstractAppPlugin`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractAppPlugin.java) - extend this
+[`AbstractAppPlugin`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractAppPlugin.java) - extend this
 class if you want your code to be run against every node (or page) being scanned. This is ideal for scanning elements that are not related to
 existing parameters, such as trying new debug flags. The key method you’ll need to implement is the `scan()` method inherited from
 `AbstractPlugin` - this is where you perform your attacks.  
-[`AbstractAppParamPlugin`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractAppParamPlugin.java) - extend this class if you want your code to run against every parameter in every node being scanned. This is ideal for scanning existing
+[`AbstractAppParamPlugin`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractAppParamPlugin.java) - extend this class if you want your code to run against every parameter in every node being scanned. This is ideal for scanning existing
 parameters. The key method you’ll need to implement is `scan(HttpMessage msg, String param, String value)` - this is where you attack the
 specified parameter.  
 
@@ -79,7 +79,7 @@ The `getAttackStrength()` method returns an `AttackStrength` which can be one of
   * `INSANE`:   No limit, although 1000s wouldn't be a good idea
 
   
-You should periodically check to see if the [`AbstractPlugin.isStop()`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractPlugin.java#L596) method
+You should periodically check to see if the [`AbstractPlugin.isStop()`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractPlugin.java#L596) method
 returns true - this indicates that the user has stopped the scan so your code should immediately return. The infrastructure will check this
 before invoking your code to scan a new target (e.g. page or parameter).  
 
@@ -88,7 +88,7 @@ before invoking your code to scan a new target (e.g. page or parameter).
 If your rule depends on another rule having been run then you need to specify that via the `getDependency()` method.  
 The persistent XSS rules do this, e.g. in [`TestPersistentXSSSpider`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/TestPersistentXSSSpider.java) and [`TestPersistentXSSAttack`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/TestPersistentXSSAttack.java).  
 If you need to know the exact type of parameter you are scanning, for example to ignore some types that are not relevant, then you can override
-the [`AbstractAppParamPlugin.scan(HttpMessage msg, NameValuePair originalParam)`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractAppParamPlugin.java#L284) method and provide an
+the [`AbstractAppParamPlugin.scan(HttpMessage msg, NameValuePair originalParam)`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractAppParamPlugin.java#L284) method and provide an
 empty `scan(HttpMessage msg, String param, String value)` method. The `NameValuePair` class includes the parameter type.
 
 ##  Building and deploying

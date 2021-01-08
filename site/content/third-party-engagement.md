@@ -7,7 +7,7 @@ __This is not a legal document, third parties are expected to perform their own 
 
 * Any third party can sponsor anyone to work on ZAP
 * Third parties can promote their sponsorship of ZAP or people working on ZAP
-* Any third party can build commercial services using ZAP as long as they conform to all of the [relevant Open Source licences](https://github.com/zaproxy/zaproxy/blob/develop/LEGALNOTICE.md) and do not claim that it is endorsed by the ZAP core team or OWASP
+* Any third party can build commercial services using ZAP as long as they conform to all of the [relevant Open Source licences](https://github.com/zaproxy/zaproxy/blob/main/LEGALNOTICE.md) and do not claim that it is endorsed by the ZAP core team or OWASP
 * Any third party can rebundle and redistribute ZAP with any other components as long as they do not claim it is an “official ZAP release” or endorsed by either the ZAP core team or OWASP
 * Third parties are encouraged to be public about their use of ZAP and to contribute back fixes and enhancements
 * Third parties should not use "ZAP" or "ZAPROXY" in their product names
