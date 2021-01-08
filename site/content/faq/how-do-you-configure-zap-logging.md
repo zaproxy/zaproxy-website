@@ -9,7 +9,7 @@ ZAP logs to a file called "zap.log" in the ZAP ['home'
 directory](/faq/what-is-the-default-directory-that-zap-uses/).
 
 The logging is configured by the
-[log4j.properties](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/resources/org/zaproxy/zap/resources/log4j.properties)
+[log4j.properties](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/resources/org/zaproxy/zap/resources/log4j.properties)
 file in the same directory.
 
 By default the 'main' logging levels are set to "INFO" by these 2 lines:

@@ -107,7 +107,7 @@ copyWeeklyAddOns - Copies the weekly add-ons into plugin dir, built from local r
 ```bash
 ./gradlew copyWeeklyAddOns
 ```
-In essence, this task is the same as running `./gradlew copyZapAddOn` for each of the add-ons included in the weekly release (see [`zaproxy/zap/src/main/weekly-add-ons.json`](https://github.com/zaproxy/zaproxy/blob/develop/zap/src/main/weekly-add-ons.json)).
+In essence, this task is the same as running `./gradlew copyZapAddOn` for each of the add-ons included in the weekly release (see [`zaproxy/zap/src/main/weekly-add-ons.json`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/weekly-add-ons.json)).
 
 For a better understanding of Gradle tasks you can check out the [Gradle user manual](https://docs.gradle.org/current/userguide/userguide.html).
 
