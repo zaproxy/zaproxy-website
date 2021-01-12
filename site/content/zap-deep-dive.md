@@ -27,6 +27,9 @@ links:
   - name: '2.10.0 Introduction'
     uuid: rrVr-_-y6Xo
 
+  - name: 'Passive Scanning'
+    uuid: Rx42kyrB0nk
+
 ---
 A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](https://www.stackhawk.com).
 
