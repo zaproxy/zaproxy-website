@@ -9,7 +9,7 @@ type: docker
 
 The ZAP API scan is a script that is available in the ZAP [Docker](../about/) images.
 
-It is tuned for performing scans against APIs defined by OpenAPI, or GraphQL (post 2.9.0) via either a local file or a URL.
+It is tuned for performing scans against APIs defined by OpenAPI, SOAP, or GraphQL via either a local file or a URL.
 
 It imports the definition that you specify and then runs an Active Scan against the URLs found.
 The Active Scan is tuned to APIs, so it doesn't bother looking for things like XSSs.
@@ -22,8 +22,9 @@ It also includes 2 scripts that:
 ### Usage
 ```
 Usage: zap-api-scan.py -t <target> -f <format> [options]
-    -t target         target API definition, currently only an OpenAPI URL, eg https://www.example.com/openapi.json
-    -f format         openapi, soap, or graphql (graphql post 2.9.0)
+    -t target         target API definition, OpenAPI or SOAP, local file or URL, e.g. https://www.example.com/openapi.json
+                      or target endpoint URL, GraphQL, e.g. https://www.example.com/graphql
+    -f format         openapi, soap, or graphql
 Options:
     -h                print this help message
     -c config_file    config file to use to INFO, IGNORE or FAIL warnings
