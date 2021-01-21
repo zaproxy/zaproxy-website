@@ -28,17 +28,17 @@ One way to find out which value you need to change is:
   7. Work out the XML hierarchy of the item that has changed
   8. Convert that to dot notation
 
-For example, the default scanner strength level is in:
+For example, the maximum number of threads per host for the active is in:
 
 ```XML
-<scanner><strength>MEDIUM</strength></scanner>
+<scanner><threadPerHost>2</threadPerHost></scanner>
 ```
 
 Which in dot notation is:
 
     
     
-    scanner.strength=MEDIUM
+    scanner.threadPerHost=2
     
 
 Note that you can set 'arrays' using keys like:
