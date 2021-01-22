@@ -30,6 +30,9 @@ links:
   - name: 'Passive Scanning'
     uuid: Rx42kyrB0nk
 
+  - name: 'Active Scanning'
+    uuid: z2r4xGMQlys
+
 ---
 A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](https://www.stackhawk.com).
 
