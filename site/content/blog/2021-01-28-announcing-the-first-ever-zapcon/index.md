@@ -34,6 +34,8 @@ Do you have a story to tell about how you use ZAP inside your company or a sweet
     * If you have a topic that is not included in this list, great! Send us an outline and we’ll review it!
   * **Where:** This will be a virtual event. Details to follow on platform, chat, etc.
   * **Format:** Presentations should be ~30min in length, with 10-15min Q&A Discussion to follow.
+ 
+The CFP will close on Feb 19th at 10:59 pm PT / Feb 20th at 6:59 AM GMT
   
 The conference will, of course, be completely free for attendees.
 
