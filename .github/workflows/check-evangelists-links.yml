@@ -23,4 +23,4 @@ jobs:
       - name: Check Links
         # linkedin doesn't play nice, it's always status 999, likely due to robots.txt exclusion
         # twitter has started responding 400 on all, though manual checks seems fine
-        run: link-checker ./index.html --external-only --http-always-get --http-status-ignore 301 302 303 307 --url-ignore .*linkedin|twitter.*
+        run: link-checker ./index.html --external-only --http-always-get --http-status-ignore 301 302 303 307 --url-ignore ".*linkedin|twitter.*"
