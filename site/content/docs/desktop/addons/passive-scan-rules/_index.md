@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 31.0.0
+    version: 33.0.0
 ---
 
 # Passive Scan Rules
@@ -238,7 +238,7 @@ The following conditions may result in an alert:
 * **X-Frame-Options Header Not Set:** If the X-Frame-Options header is missing from the response completely.
 * **Multiple X-Frame-Options Header Entries:** When more than one X-Frame-Options header is detected on the response.
 * **X-Frame-Options Defined via META (Non-compliant with Spec):** A "http-equiv" entry was found in the response that attempts to define X-Frame-Options, which is not supported by the specification.
-* **X-Frame-Options Setting Malformed:** The header is present with no value, or the value is not as expected (i.e.: other than "DENY", "SAMEORIGIN", or "ALLOW-FROM").
+* **X-Frame-Options Setting Malformed:** The header is present with no value, or the value is not as expected (i.e.: other than "DENY", or "SAMEORIGIN").
 
 By default no alerts will be raised in the response includes a Content-Security-Policy 'frame-ancestors' element as this take precedence over the X-Frame-Options header. However at LOW threshold the above issues will still be reported but at a LOW risk.
 
