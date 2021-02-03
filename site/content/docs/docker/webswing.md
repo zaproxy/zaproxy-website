@@ -61,3 +61,7 @@ When you run ZAP using Webswing then the following ZAP Command Line Options will
 
 For example to start ZAP listening on a different port (9090) use:
   * `docker run -v $(pwd):/zap/wrk/:rw -e ZAP_WEBSWING_OPTS="-host 0.0.0.0 -port 9090" -u zap -p 8080:8080 -p 9090:9090 -i owasp/zap2docker-stable zap-webswing.sh`
+
+## Blog post
+  
+For more details see the Blog post: [Run ZAP without Java using Docker and Webswing](/blog/2021-02-03-run-zap-without-java-using-docker-and-webswing/)
