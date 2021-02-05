@@ -104,7 +104,7 @@ a set of `vulnerabilities.xml` files as it is internationalized, so ZAP will rea
 defaulting back to English for any phrases that have not been translated. This is therefore a quick and easy way to fill in these details, as
 long as the relevant vulnerability is included in that file.  
   
-It also uses the [log4j](https://logging.apache.org/log4j/) `Logger` class to output debug messages. This is the recommended way of outputting such
+It also uses the [Log4j 2](https://logging.apache.org/log4j/2.x/) `Logger` class to output debug messages. This is the recommended way of outputting such
 messages.  
   
 Note that the `pluginId` needs to be unique across all active and passive scan rules. The master list of ids is in the
