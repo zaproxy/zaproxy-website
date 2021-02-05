@@ -1,5 +1,11 @@
 {{ define "main" }}
 {{ $section := .Site.GetPage "section" .Section }}
+<section class="bolt-header">
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+
 <div class="wrapper py-70" data-kind="{{ .Kind }}">
     <div class="flex latest-versions">
       <article class="col-2-3 pr-30 content single-post">
@@ -7,7 +13,6 @@
               <a href="/blog/">The ZAP Blog</a>
           </div>
 
-          <h1 class="post-title">{{ .Title }}</h1>
           <main class="post-content">
             <section class="p-10 bg--blue-lightest mb-10 mt-10 smaller-text text--blue-dark">
               Posted <span class="post-date">{{ .Date.Format "Monday January 2, 2006" }}</span>
