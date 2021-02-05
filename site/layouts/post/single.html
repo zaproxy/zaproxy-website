@@ -53,11 +53,11 @@
           <h4>Table of Contents</h4>
           {{ .TableOfContents }}
 
-          <h4>Tags</h4>
           {{ with .Params.tags }}
+          <h4>Tags</h4>
           <ul id="tags">
            {{ range . }}
-           <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+           <li> <a href="{{ "tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a> </li>
            {{ end }}
           </ul>
           {{ end }}
