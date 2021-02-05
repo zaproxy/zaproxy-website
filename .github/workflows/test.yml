@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: sudo apt-get update && sudo apt-get install -y nginx
+      - run: sudo apt-get update && sudo apt-get install -y nginx && sudo systemctl start nginx
       
       - name: Install node.js 10.x
         uses: actions/setup-node@v1
