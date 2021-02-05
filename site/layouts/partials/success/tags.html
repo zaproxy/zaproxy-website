@@ -1,0 +1,7 @@
+{{ with .Params.successtags }}
+<ul id="tags">
+  {{ range . }}
+    <li> <a href="{{ "successtags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+  {{ end }}
+</ul>
+{{ end }}

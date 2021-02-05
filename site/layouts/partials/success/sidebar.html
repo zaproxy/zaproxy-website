@@ -1,0 +1,10 @@
+
+<section class="p-20">
+    <h3>Tags</h3>
+    <ul class="taxonomy-list tax-tags">
+    {{range $name, $taxonomy := .Site.Taxonomies.successtags}}
+        <li><a href="{{ "successtags/" | relLangURL}}{{$name | urlize}}">{{$name}}</a></li>
+    {{end}}
+    </ul>
+</section>
+
