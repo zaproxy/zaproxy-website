@@ -528,3 +528,12 @@
   has_training: Y
   notes: AppSec, Automation / ZAP API, Bug Bounty. <a href="https://github.com/cak" rel="nofollow">GitHub</a>
   
+- name: BJ Edward Taduran
+  email: bj.taduran@gmail.com
+  twitter: bjtaduran
+  linkedin: https://www.linkedin.com/in/bjtaduran/
+  locations: Pasig City, Philippines
+  language: English, Filipino
+  has_talks: Y
+  has_training: Y
+  notes: Specialties - Layers of Security, Compliance, SSDLC, Security Testing, DevSecOps and Cloud
