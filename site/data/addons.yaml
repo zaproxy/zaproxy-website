@@ -265,9 +265,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/encode-decode-hash/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.4.0/encoder-beta-0.4.0.zap
-  date: 2020-12-15
-  version: 0.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.5.0/encoder-beta-0.5.0.zap
+  date: 2021-02-09
+  version: 0.5.0
 - id: exportreport
   name: Export Report
   description: Report Export module that allows users to customize content and export
