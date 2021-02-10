@@ -17,6 +17,25 @@
     ul {
       padding: 0 0 0 16px;
     }
+
+    @media (max-width:650px) {
+      max-height: 300px;
+      border-radius: var(--radius);
+      border: solid 4px #eee;
+      overflow: auto;
+      margin-bottom: 16px;
+
+      input[name="filter"] {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        width: 100%;
+        top: 0;
+      }
+
+      ul {
+        padding: 0 0 0 30px;
+      }
+    }
   }
   
 .is-filtering {
