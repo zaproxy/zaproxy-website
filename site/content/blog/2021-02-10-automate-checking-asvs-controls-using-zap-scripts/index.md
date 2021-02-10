@@ -3,8 +3,11 @@ title: "Automate checking ASVS controls using ZAP scripts"
 description: "Automate checking ASVS controls using ZAP scripts"
 summary: "Write scripts in ZAP which will check a target application's compliance against ASVS controls."
 type: post
+images:
+- https://www.zaproxy.org/blog/2021-02-10-automate-checking-asvs-controls-using-zap-scripts/asvs_40_levels.png
 tags:
 - blog
+- asvs
 date: "2021-02-10"
 addSocialPreview: true
 authors:
