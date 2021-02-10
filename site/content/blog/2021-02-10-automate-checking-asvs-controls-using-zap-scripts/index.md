@@ -6,7 +6,7 @@ type: post
 tags:
 - blog
 date: "2021-02-10"
-addSocialPreview: false
+addSocialPreview: true
 authors:
  - "BlazingWind"
 ---
@@ -29,6 +29,8 @@ penetration-testable from a black box perspective and this article
 focuses only on level 1 controls. Considering how broad ASVS is, it is
 difficult to ensure that every nook and cranny of an application is
 compliant with ASVS controls.
+
+![ASVS levels](./images/asvs_40_levels.png)
 
 And here raises a question: how to ensure more coverage of an
 application and make auditing applications with OWASP ASVS easier,
