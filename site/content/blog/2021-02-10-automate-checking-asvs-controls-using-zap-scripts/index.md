@@ -6,7 +6,7 @@ type: post
 tags:
 - blog
 date: "2021-02-10"
-addSocialPreview: true
+addSocialPreview: false
 authors:
  - "BlazingWind"
 ---
