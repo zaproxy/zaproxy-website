@@ -19,7 +19,7 @@
     }
 
     @media (max-width:650px) {
-      max-height: 300px;
+      max-height: Min(30vh, 300px);
       border-radius: var(--radius);
       border: solid 4px #eee;
       overflow: auto;

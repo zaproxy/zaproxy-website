@@ -99,6 +99,10 @@ article {
 .guide-content {
   border-radius: var(--radius);
   border: solid 4px #eee;
+  padding-top: Min(1vh, 15px);
+  padding-right: Min(5vw, 30px);
+  padding-bottom: Min(1vh, 30px);
+  padding-left: Min(5vw, 30px);
 }
 
 #page-container {
