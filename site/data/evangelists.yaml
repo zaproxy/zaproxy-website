@@ -537,3 +537,16 @@
   has_talks: Y
   has_training: Y
   notes: Specialties - Layers of Security, Compliance, SSDLC, Security Testing, DevSecOps and Cloud
+
+- name: Grant Ongers
+  email: grant.ongers@owasp.org
+  twitter: rewtd
+  linkedin: https://www.linkedin.com/in/rewtd/
+  locations: London, United Kingdom / Remote
+  language: English, Dutch
+  has_talks: Y
+  has_training: Y
+  notes: Security as a part of delivery, not in the way of it. <a href="https://github.com/rewtd" rel="nofollow">GitHub</a>
+
+
+
