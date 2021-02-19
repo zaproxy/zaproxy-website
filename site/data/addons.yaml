@@ -684,9 +684,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: ''
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/reflect-alpha-0.0.10.zap
-  date: 2021-02-18
-  version: 0.0.10
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/reflect-alpha-0.0.11.zap
+  date: 2021-02-19
+  version: 0.0.11
 - id: regextester
   name: Regular Expression Tester
   description: Allows to test Regular Expressions
