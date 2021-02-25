@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Create datalist that input can use for suggetions
-    function setupDatalist(el, label) {
+    function setupDatalist(el, label, idx) {
       widget.options[idx] = document.createElement('datalist');
       widget.options[idx].setAttribute('id', 'opts_for_'  + label);
       widget.options[idx]._options = []
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   
     // Add input for filtering
-    function addInput(el, label) {
+    function addInput(el, label, idx) {
       const input = document.createElement('input');
       input.addEventListener("change", function(e) {
         widget.filters[idx] = e.target.value;
@@ -72,13 +72,13 @@ document.addEventListener("DOMContentLoaded", function() {
       const isSuggested = el.getAttribute("data-suggest") !== null;
       const label = el.innerText.toLowerCase();
       el.appendChild(document.createElement('br'));
-      addInput(el, label);
+      addInput(el, label, idx);
       
       if (isSuggested) {
-        setupDatalist(el, label);      
+        setupDatalist(el, label, idx);      
       }
       return {idx, isSuggested, label};
-    })
+    });
 
     const rows = Array.from(el.querySelectorAll('tbody tr')).map(tr => {
       const columns = Array.from(tr.querySelectorAll('td')).map((c, idx) => {
