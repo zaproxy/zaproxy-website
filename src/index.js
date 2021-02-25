@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
     Object.entries(widget.options).map(pair => {
       const [idx, el] = pair;
       const opts = [...new Set(el._options)];
-      opts.sort();
+      opts.sort((a, b) => a.length - b.length);
       opts.map(o => {
         const ol = document.createElement('option');
         ol.innerText = o;
