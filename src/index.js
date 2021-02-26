@@ -8,6 +8,12 @@ new BadgerAccordion(".js-badger-accordion", {
   openHeadersOnLoad: [0]
 });
 
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+      parent.removeChild(parent.firstChild);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
   // Basic attempt to obfuscate emails
   Array.from(document.querySelectorAll("[data-mail]")).map(function(el) {
@@ -16,6 +22,91 @@ document.addEventListener("DOMContentLoaded", function() {
       el.setAttribute("href", "mailto:" + atob(data));
       el.removeAttribute("data-mail");
     }, {once: true});
+  });
+
+  // Make tables filterable
+  Array.from(document.querySelectorAll("[data-sort-filter]")).map(function(el) {
+    const widget = {
+      options: {},
+      filters: {}    
+    };
+
+    // Checks if row matches against filter
+    function isFilterMatch(row) {
+      for (let index in widget.filters) {
+        const filter = widget.filters[index].toLowerCase();
+        const rowValue = row.columns[index].toLowerCase();
+        if (rowValue.indexOf(filter) === -1) {
+          return false;
+        }
+      }
+      return true;
+    }
+
+    // Create datalist that input can use for suggetions
+    function setupDatalist(el, label, idx) {
+      widget.options[idx] = document.createElement('datalist');
+      widget.options[idx].setAttribute('id', 'opts_for_'  + label);
+      widget.options[idx]._options = []
+      el.appendChild(widget.options[idx]);
+    }
+  
+    // Add input for filtering
+    function addInput(el, label, idx) {
+      const input = document.createElement('input');
+      input.addEventListener("change", function(e) {
+        widget.filters[idx] = e.target.value;
+        removeAllChildNodes(tbody);
+        rows.filter(isFilterMatch).map(r => {
+          tbody.appendChild(r.el)
+        });
+      });
+      input.setAttribute('style', 'width:100%;display:block')
+      input.setAttribute('type', 'text');
+      input.setAttribute('name', 'filter_'  + label);
+      input.setAttribute('list', 'opts_for_'  + label);
+      el.appendChild(input);
+    }
+    const tbody = el.querySelector('tbody');
+    const headings = Array.from(el.querySelectorAll('thead th')).map((el, idx) => {
+      const isSuggested = el.getAttribute("data-suggest") !== null;
+      const label = el.innerText.toLowerCase();
+      el.appendChild(document.createElement('br'));
+      addInput(el, label, idx);
+      
+      if (isSuggested) {
+        setupDatalist(el, label, idx);      
+      }
+      return {idx, isSuggested, label};
+    });
+
+    const rows = Array.from(el.querySelectorAll('tbody tr')).map(tr => {
+      const columns = Array.from(tr.querySelectorAll('td')).map((c, idx) => {
+        // For columns that match the index of the `data-suggest` headers
+        // ... add the text value to options
+        if (widget.options[idx]) {
+          widget.options[idx]._options.push(c.innerText)
+        }
+        return c.innerText;
+      });
+      return {
+        el: tr,  // Needed for writing to dom
+        columns, // Needed for filtered
+      };
+    });
+
+    // Go through options elements and populate lists with column aggregates
+    // gathered in previous loop
+    Object.entries(widget.options).map(pair => {
+      const [idx, el] = pair;
+      const opts = [...new Set(el._options)];
+      opts.sort((a, b) => a.length - b.length);
+      opts.map(o => {
+        const ol = document.createElement('option');
+        ol.innerText = o;
+        return ol;
+      }).map(ol => el.appendChild(ol));
+    });
   });
 
   function clearFilter(menu) {
