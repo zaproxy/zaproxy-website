@@ -71,6 +71,10 @@ integrations:
     link: https://www.edgescan.com/
     license: 'Commercial'
  
+  - name: 'Security Phoenix'
+    link: https://securityphoenix.com/integration/
+    license: 'Commercial'
+ 
 training:
   - name: 'Coursera'
     link: https://www.coursera.org/projects/web-application-security-testing-with-owsap-zap
