@@ -7,6 +7,7 @@ images:
 type: post
 tags:
 - blog
+- zapcon
 date: "2021-01-28"
 addSocialPreview: true
 authors:
