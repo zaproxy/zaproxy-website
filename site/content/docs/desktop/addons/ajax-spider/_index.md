@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: spiderAjax
-    version: 23.2.0
+    version: 23.3.0
 ---
 
 # AJAX Spider
@@ -16,6 +16,8 @@ Crawljax. You can use it to identify the pages of the targeted site. You can com
 with the (normal) spider for better results.
 
 The spider is configured using the [Options AJAX Spider screen](/docs/desktop/addons/ajax-spider/options/).
+
+This add-on supports the [Automation Framework](/docs/desktop/addons/ajax-spider/automation/).
 
 ## Accessed via
 

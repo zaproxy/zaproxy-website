@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options AJAX Spider screen
 type: userguide
-weight: 2
+weight: 3
 ---
 
 # Options AJAX Spider screen

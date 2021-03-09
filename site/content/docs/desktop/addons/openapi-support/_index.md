@@ -6,14 +6,16 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 17.0.0
+    version: 18.0.0
 ---
 
 # OpenAPI Support
 
 This add-on allows you to spider and import OpenAPI (Swagger) definitions, versions 1.2, 2.0, and 3.0.   
 
-The add-on will automatically detect any OpenAPI definitions and spider them as long as they are in scope.
+The add-on will automatically detect any OpenAPI definitions and spider them as long as they are in scope.   
+
+It also supports the [Automation Framework](/docs/desktop/addons/openapi-support/automation/).
 
 ## UI
 
