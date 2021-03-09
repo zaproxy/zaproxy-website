@@ -21,7 +21,7 @@ The full set of jobs currently supported by the framework are:
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
 * [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided of the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
-* [report](docs/desktop/addons/report-generation/automation/) - report generation, provided of the [Report Generation](/docs/desktop/addons/report-generation/) add-on
+* [report](/docs/desktop/addons/report-generation/automation/) - report generation, provided of the [Report Generation](/docs/desktop/addons/report-generation/) add-on
 * [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
 * [spiderAjax](/docs/desktop/addons/ajax-spider/automation/) - runs the ajax spider, provided of the [Ajax Spider](/docs/desktop/addons/ajax-spider/) add-on
 
