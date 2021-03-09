@@ -15,9 +15,9 @@ links:
     link: /docs/developer/
     desc: ZAP documentation for developers
 
-  - name: 'API Details'
-    link: /docs/api/
-    desc: a comprehensive guide to the ZAP API 
+  - name: 'Automate'
+    link: /docs/automate/
+    desc: the various options for automating ZAP 
 
   - name: 'Alert Details'
     link: /docs/alerts/

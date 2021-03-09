@@ -28,5 +28,5 @@ links:
     desc: you can run the ZAP Desktop UI in your browser leveraging Docker and Webswing
 ---
 
-ZAP's docker images provide an easy way to run ZAP, especially in a CI/CD environment.
+ZAP's docker images provide an easy way to [automate](/docs/automate/) ZAP, especially in a CI/CD environment.
 
