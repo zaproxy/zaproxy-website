@@ -107,7 +107,7 @@
   description: Automation Framework.
   author: ZAP Dev Team
   status: alpha
-  infoUrl: '/docs/desktop/addons/automation-framework/'
+  infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.0.1/automation-alpha-0.0.1.zap
   date: 2021-03-09
