@@ -33,6 +33,25 @@ extension:   # The extension to use when generating the report
 The Thymeleaf report template.   
 This should have the same extension that is specified in the template.yaml file (e.g. 'report.md') except if it is a PDF report, in which case "html" should be used (see below).
 
+### Messages.properties
+
+The report subdirectory may also include a "Messages.properties" language file for template specific strings localised to English as well as "Message_*locale* .property" files for localising the strings into other languages.  
+The template specific strings should all start with '`report.template.`'  
+The language files may also override the default translations built into the reports add-on.
+
+### Resources
+
+The report subdirectory may also include a "resources" directory. If this is present then when a report is generated a subdirectory will be created based on the report name and all of the files in the resources directory will be copied into it.   
+You should reference the files in the "resources" subdirectory in the following way so that they can be accessed both via the template and by the report when the subdirectory is created:
+
+```
+   <script th:src="${resources + '/script.js'}" src="resources/script.js"></script>
+   <link rel="stylesheet" th:href="${resources + '/style.css'}" href="resources/style.css">
+   <img th:src="${resources + '/image.png'}" src="resources/image.png">
+```
+
+The 'traditional-html-plus' template includes examples of JavaScript, CSS and image resources.
+
 ## Data Available
 
 The following data items are available to all reports. These can be accessed via the Thymeleaf Standard Dialect, e.g. `${reportTitle}`
