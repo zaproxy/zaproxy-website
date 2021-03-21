@@ -13,6 +13,10 @@ links:
     link: building-zap-with-eclipse/
     desc: How to build and run ZAP using the Eclipse IDE
 
+  - name: 'Building ZAP with IntelliJ IDEA'
+    link: building-zap-with-intellij-idea/
+    desc: How to build and run ZAP using IntelliJ IDEA
+  
   - name: 'Creating a New Add-on in zap-extensions'
     link: creating-new-addon-in-zap-extensions/
     desc: A quick way to create a new add-on

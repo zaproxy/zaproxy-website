@@ -5,7 +5,7 @@ tags:
 - guide
 - tutorial
 type: page
-date: "2021-03-19"
+date: "2021-03-22"
 ---
 
 ZAP has a plugin architecture and new functionality is implemented via add-ons.
