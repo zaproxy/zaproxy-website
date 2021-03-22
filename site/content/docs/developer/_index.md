@@ -12,6 +12,11 @@ links:
   - name: 'Building ZAP with Eclipse'
     link: building-zap-with-eclipse/
     desc: How to build and run ZAP using the Eclipse IDE
+
+  - name: 'Creating a New Add-on in zap-extensions'
+    link: creating-new-addon-in-zap-extensions/
+    desc: A quick way to create a new add-on
+
 ---
 
 ZAP documentation for developers. This is currently being worked upon and more articles will be published soon.
