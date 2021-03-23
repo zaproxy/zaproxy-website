@@ -13,7 +13,7 @@ column_2:
     - title: Homebrew Cask
       info:
         - On Mac OS X you can also install ZAP using [Homebrew Cask](https://formulae.brew.sh/cask/owasp-zap)
-        - "To install: `brew cask install owasp-zap`"
+        - "To install: `brew install --cask owasp-zap`"
     - title: Flathub
       info:
         - On Linux systems you can also use [Flathub](https://flathub.org/apps/details/org.zaproxy.ZAP).
