@@ -16,7 +16,7 @@ services:
   - name: 'SecureCodeBox'
     link: https://www.securecodebox.io/
     license: 'Free, open source'
-    notes: OWASP Project
+    notes: OWASP Tool
 
   - name: 'PurpleTeam-Labs'
     link: https://purpleteam-labs.com/
@@ -65,7 +65,7 @@ integrations:
   - name: 'DefectDojo'
     link: https://www.defectdojo.org/
     license: 'Free, open source'
-    notes: OWASP Project
+    notes: OWASP Tool
  
   - name: 'Dradis'
     link: https://dradisframework.com/ce/
