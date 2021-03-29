@@ -5,7 +5,7 @@ summary: "Do you know what interesting bits were added to ZAP 2.10.0? Don't read
 Dark mode, Expand/Collapse top panes, Custom pages, Scriptable encode/decode/hash, Authentication polling, Auth header via ENV vars, 
 Site tree control, and more."
 images:
-- https://www.zaproxy.org/blog/2021-01-31-zap-2-10-0-features/images/zapbot.png
+- https://www.zaproxy.org/blog/2021-03-29-zap-2-10-0-features/images/zapbot.png
 type: post
 tags:
 - blog
