@@ -30,6 +30,10 @@ services:
     link: https://www.idyllum.com/
     license: 'Commercial, free option'
 
+  - name: 'Alertflex'
+    link: https://www.alertflex.org/
+    license: 'Commercial, free community edition, open source'
+
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
     license: 'Commercial'
