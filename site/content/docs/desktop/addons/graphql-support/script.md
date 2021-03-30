@@ -27,7 +27,8 @@ Note that the built-in JSON Input Vector handler also works when a request is se
 
 ## See also
 
-|   |                                                                  |                                                |
-|---|------------------------------------------------------------------|------------------------------------------------|
-|   | [GraphQL](/docs/desktop/addons/graphql-support/)                 | for an overview of the GraphQL add-on.         |
-|   | [GraphQL Options](/docs/desktop/addons/graphql-support/options/) | for information about the optional parameters. |
+|   |                                                                        |                                                         |
+|---|------------------------------------------------------------------------|---------------------------------------------------------|
+|   | [GraphQL](/docs/desktop/addons/graphql-support/)                       | for an overview of the GraphQL add-on.                  |
+|   | [GraphQL Options](/docs/desktop/addons/graphql-support/options/)       | for information about the optional parameters.          |
+|   | [GraphQL Automation](/docs/desktop/addons/graphql-support/automation/) | for information about the automation framework support. |

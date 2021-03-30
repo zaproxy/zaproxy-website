@@ -13,6 +13,14 @@ In this document, a 'Query' may refer to a GraphQL query, subscription or mutati
 
 The maximum depth of a generated query.
 
+## Lenient Maximum Query Depth
+
+If enabled, this option prevents invalid queries by allowing additional depth for fields with no leaf types. If disabled, Maximum Query Depth is enforced strictly, even if it means generating an invalid query.
+
+## Additional Query Depth
+
+The value for this option is used only if the "Lenient Maximum Query Depth" option is enabled. The maximum additional depth used to search for leaf-type fields. If a leaf type is not found, the generated query may be invalid and a message is logged.
+
 ## Maximum Arguments Depth
 
 The maximum depth of specified arguments. This is useful when a field has an input object as an argument.
@@ -47,7 +55,8 @@ The requests made to the endpoint can be of the following types:
 
 ## See also
 
-|   |                                                                |                                           |
-|---|----------------------------------------------------------------|-------------------------------------------|
-|   | [GraphQL](/docs/desktop/addons/graphql-support/)               | for an overview of the GraphQL add-on.    |
-|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/) | for information about the bundled script. |
+|   |                                                                        |                                                         |
+|---|------------------------------------------------------------------------|---------------------------------------------------------|
+|   | [GraphQL](/docs/desktop/addons/graphql-support/)                       | for an overview of the GraphQL add-on.                  |
+|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/)         | for information about the bundled script.               |
+|   | [GraphQL Automation](/docs/desktop/addons/graphql-support/automation/) | for information about the automation framework support. |
