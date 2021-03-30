@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.2.0
+    version: 0.3.0
 ---
 
 # GraphQL Support
@@ -71,7 +71,8 @@ The definitions will be imported synchronously and any warnings will be displaye
 
 ## See also
 
-|   |                                                                  |                                                |
-|---|------------------------------------------------------------------|------------------------------------------------|
-|   | [GraphQL Options](/docs/desktop/addons/graphql-support/options/) | for information about the optional parameters. |
-|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/)   | for information about the bundled script.      |
+|   |                                                                        |                                                         |
+|---|------------------------------------------------------------------------|---------------------------------------------------------|
+|   | [GraphQL Options](/docs/desktop/addons/graphql-support/options/)       | for information about the optional parameters.          |
+|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/)         | for information about the bundled script.               |
+|   | [GraphQL Automation](/docs/desktop/addons/graphql-support/automation/) | for information about the automation framework support. |
