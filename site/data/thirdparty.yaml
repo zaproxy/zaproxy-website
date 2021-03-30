@@ -26,6 +26,10 @@ services:
     link: https://github.com/banzaicloud/dast-operator
     license: 'Free, open source'
 
+  - name: 'Microsoft RAFT'
+    link: https://github.com/microsoft/rest-api-fuzz-testing
+    license: 'Free, open source'
+
   - name: 'Idyllum'
     link: https://www.idyllum.com/
     license: 'Commercial, free option'
@@ -49,6 +53,10 @@ services:
   - name: 'PatrOwl'
     link: https://patrowl.io/
     license: 'Commercial, free for open source projects'
+
+  - name: 'Nucleus'
+    link: https://www.nucleussec.com/integrations
+    license: 'Commercial'
 
 integrations:
   - name: 'ThreadFix'
@@ -103,6 +111,14 @@ training:
   - name: 'Pluralsight'
     link: https://www.pluralsight.com/courses/owasp-zap-web-app-pentesting-getting-started
     what: 'ZAP Getting Started Course'
+
+  - name: 'Pluralsight'
+    link: https://www.pluralsight.com/courses/automate-web-app-scans-owasp-zap-python
+    what: 'Automate Web Application Scans with OWASP ZAP and Python'
+
+  - name: 'Pluralsight'
+    link: https://www.pluralsight.com/courses/writing-custom-scripts-owasp-zed-attack-proxy
+    what: 'Writing Custom Scripts for OWASP Zed Attack Proxy'
 
   - name: 'Udemy'
     link: https://www.udemy.com/course/owasp-zap-from-scratch/
