@@ -359,9 +359,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.2.0/graphql-alpha-0.2.0.zap
-  date: 2020-11-19
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.3.0/graphql-alpha-0.3.0.zap
+  date: 2021-03-30
+  version: 0.3.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -834,9 +834,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v5/soap-alpha-5.zap
-  date: 2021-01-04
-  version: 5
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v6/soap-alpha-6.zap
+  date: 2021-03-30
+  version: 6
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
