@@ -18,11 +18,13 @@ The full set of jobs currently supported by the framework are:
 
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
 * [addons](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
+* [graphql](/docs/desktop/addons/graphql-support/automation/) - GraphQL schema import, provided with the [GraphQL](/docs/desktop/addons/graphql-support/) add-on
+* [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided with the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
-* [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided of the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
-* [report](/docs/desktop/addons/report-generation/automation/) - report generation, provided of the [Report Generation](/docs/desktop/addons/report-generation/) add-on
+* [report](/docs/desktop/addons/report-generation/automation/) - report generation, provided with the [Report Generation](/docs/desktop/addons/report-generation/) add-on
+* [soap](/docs/desktop/addons/soap-support/automation/) - SOAP WSDL import, provided with the [SOAP](/docs/desktop/addons/soap-support/) add-on
 * [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
-* [spiderAjax](/docs/desktop/addons/ajax-spider/automation/) - runs the ajax spider, provided of the [Ajax Spider](/docs/desktop/addons/ajax-spider/) add-on
+* [spiderAjax](/docs/desktop/addons/ajax-spider/automation/) - runs the ajax spider, provided with the [Ajax Spider](/docs/desktop/addons/ajax-spider/) add-on
 
 For details of future changes planned see the [tracker issue](https://github.com/zaproxy/zaproxy/issues/6461).
