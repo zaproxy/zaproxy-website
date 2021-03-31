@@ -832,7 +832,7 @@
   description: Imports and scans WSDL files containing SOAP endpoints.
   author: Alberto (albertov91) + ZAP Dev Team
   status: alpha
-  infoUrl: ''
+  infoUrl: /docs/desktop/addons/soap-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v6/soap-alpha-6.zap
   date: 2021-03-30
