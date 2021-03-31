@@ -79,7 +79,7 @@ These are the minimum changes needed to get your new add-on working.
 
 ### Message.properties
 
-Edit the file `addOns/myaddon/src/main/resources/org/zaproxy/zap/extension/simpleexample/resources/Messages.properties` 
+Edit the file `addOns/myaddon/src/main/resources/org/zaproxy/addon/simpleexample/resources/Messages.properties`
 and change all of the instances of `simpleexample` in the keys to `myaddon` as well as changing the `Simple Example` strings to something like `My Add-on`. 
 
 ```
@@ -100,7 +100,7 @@ myaddon.topmenu.tools.title = My Add-on: Example top menu
 
 ### ExtensionSimpleExample.java
 
-Edit the file `addOns/myaddon/src/main/java/org/zaproxy/zap/extension/simpleexample/ExtensionSimpleExample.java` and change the NAME and PREFIX strings:
+Edit the file `addOns/myaddon/src/main/java/org/zaproxy/addon/simpleexample/ExtensionSimpleExample.java` and change the NAME and PREFIX strings:
 
 ```
     // The name is public so that other extensions can access it
@@ -136,7 +136,7 @@ You should update the following files before you make too many other changes:
 
 ### Package Name
 
-Change the package from `org/zaproxy/zap/extension/simpleexample` to something like `org/zaproxy/addon/myaddon/`
+Change the package from `org/zaproxy/addon/simpleexample` to something like `org/zaproxy/addon/myaddon/`
 You can change the package name (and class names in the following section) by just editing the files but in general your IDE is likely to make this easier.
 
 ### Class Names
