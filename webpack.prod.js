@@ -16,9 +16,10 @@ module.exports = merge(common, {
   optimization: {
     minimizer: [
       new TerserPlugin({
-        cache: true,
         parallel: true,
-        sourceMap: true
+        terserOptions:{ 
+          sourceMap: true
+        }
       }),
 
       new MiniCssExtractPlugin({
