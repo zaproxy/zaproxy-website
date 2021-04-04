@@ -48,7 +48,7 @@ Note that while you have successfully got ZAP running, it doesn’t come with ma
 ## Installing ZAP Add-ons
 As the name suggests, ZAP add-ons are a way to enhance ZAP functionality. There are several add-ons that allow you to do many different things. The *zap-extensions* repository contains the source code for the add-ons maintained by the core team. So, the first thing to do is clone *zap-extensions*:
 ```bash
-git clone https://github.com/zaproxy/zap-extensions.git.
+git clone https://github.com/zaproxy/zap-extensions.git
 ```
 Then, navigate to the cloned folder and run
 ```bash
