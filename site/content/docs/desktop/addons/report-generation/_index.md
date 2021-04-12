@@ -6,30 +6,29 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.1.0
+    version: 0.2.0
 ---
 
 # Report Generation
 
 This add-on allows you to generate a variety of reports in a flexible and extensible way.
 
-It provides a dialog that can be accessed via menu "Report / Generate Report..." menu item or via the "Generate Report..." toolbar button.
+It provides a dialog that can be accessed via menu "Report /
+Generate Report..." menu item or via the "Generate Report..." toolbar
+button.
 
-It also supports the [Automation Framework](/docs/desktop/addons/report-generation/automation/).
+It also supports the [Automation
+Framework](/docs/desktop/addons/report-generation/automation/).
 
 # Generate Report Dialog
 
-## Fields
+## Scope Fields
 
-The dialog has the following fields:
+The Scope tab has the following fields:
 
 ### Report Title
 
 The title that will be used in the report.
-
-### Template
-
-A pulldown containing all of the available templates. The template names include the format that they will be generated in, e.g. HTML, MD, PDF etc.
 
 ### Report Name
 
@@ -62,7 +61,8 @@ A list of all of the Sites currently available. Select one or more to only inclu
 
 By default all sites will be included.
 
-If you select sites that are not in the contexts that you have also selected then no data will be included in the report.
+If you select sites that are not in the contexts that you have
+also selected then no data will be included in the report.
 
 ### Generate If No Alerts
 
@@ -72,6 +72,22 @@ By default the dialog will prevent you from generating a report with no alerts. 
 
 If selected then ZAP will attempt to open the report using the default program used by your operating system for that report type.
 
+## Template Fields
+
+The Template tab has the following fields:
+
+### Template
+
+A pulldown containing all of the available templates. The template names include the format that they will be generated in, e.g. HTML, MD, PDF etc.
+
+### Sections
+
+Templates may optionally define 'sections' - parts of the report which can be included or excluded. If the selected template defines sections then a checkbox for each section will be displayed here. By default all checkboxes will be selected. If you unselect any of the sections then they will not be included in the report.
+
+## Filter Fields
+
+The Filter tab has the following fields:
+
 ### Include Risks
 
 Include alerts with the selected risks.
@@ -79,6 +95,10 @@ Include alerts with the selected risks.
 ### Include Confidences
 
 Include alerts with the selected confidences.
+
+## Options Fields
+
+The Options tab has the following fields:
 
 ### Report Name Pattern
 

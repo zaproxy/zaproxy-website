@@ -9,11 +9,15 @@ weight: 2
 
 You can easily create your own reports.
 
-The add-on uses the [Thymeleaf](https://www.thymeleaf.org/) templating engine, so see their documentation for details of the templating syntax.
+The add-on uses the [Thymeleaf](https://www.thymeleaf.org/)
+templating engine, so see their documentation for details of the
+templating syntax.
 
-The built in reports are copied into the 'reports' directory underneath the ZAP
-[default directory](/faq/what-is-the-default-directory-that-zap-uses/).
-Each report is in its own subdirectory. The easiest way to create a new report is to copy and existing one into a new directory at the same level.
+The built in reports are copied into the 'reports' directory
+underneath the ZAP [default
+directory](/faq/what-is-the-default-directory-that-zap-uses/). Each report is in its own subdirectory. The easiest way to
+create a new report is to copy and existing one into a new directory
+at the same level.
 
 Each report subdirectory must include:
 
@@ -26,6 +30,7 @@ name:        # The display name for the report
 format:      # The format, eg one of HTML, XML, MD, JSON, PDF - this is used internally but not currently exposed in ZAP
 mode:        # The Thymeleaf template mode, one of HTML, RAW, TEXT, HTML
 extension:   # The extension to use when generating the report
+sections:    # An optional list of sections - parts of the report which may be included or excluded
 ```
 
 ### report.*ext*
@@ -35,8 +40,9 @@ This should have the same extension that is specified in the template.yaml file 
 
 ### Messages.properties
 
-The report subdirectory may also include a "Messages.properties" language file for template specific strings localised to English as well as "Message_*locale* .property" files for localising the strings into other languages.  
-The template specific strings should all start with '`report.template.`'  
+The report subdirectory may also include a "Messages.properties" language file for template specific strings localised to English as well as "Message_ *locale* .property" files for localising the strings into other languages.   
+The template specific strings should all start with ' `report.template.` '   
+If the report included sections then they must be defined in this file - the keys will automatically be prefixed by `report.template.section.` . Section names in the template.yaml file must just be alphanumeric strings and not start with an integer.   
 The language files may also override the default translations built into the reports add-on.
 
 ### Resources
@@ -64,11 +70,14 @@ Every node in the tree is an [AlertNode](https://javadoc.io/static/org.zaproxy/z
 
 The top level node does not include any useful data.
 
-There is one second level node for each type of alert found. These nodes have a 'userObject' of type
-[Alert](https://javadoc.io/static/org.zaproxy/zap/2.10.0/org/parosproxy/paros/core/scanner/Alert.html)
-which gives you access to all of the alert data and the associated request and response.
+There is one second level node for each type of alert found. These
+nodes have a 'userObject' of type [Alert](https://javadoc.io/static/org.zaproxy/zap/2.10.0/org/parosproxy/paros/core/scanner/Alert.html)
+which gives you access to all of the alert data and the associated
+request and response.
 
-The 3rd and final level contains the alert instances - these are all the same type as their parent node and give access to the alert details in the same way.
+The 3rd and final level contains the alert instances - these are
+all the same type as their parent node and give access to the alert
+details in the same way.
 
 ### reportTitle
 
@@ -93,7 +102,9 @@ A Map of risk levels to the number of unique alerts. This can be used by reports
 
 An instance of the [ReportData](https://github.com/zaproxy/zap-extensions/tree/master/addOns/reports/src/main/java/org/zaproxy/addon/reports/ReportData.java) class that defines the data to be included in the report. This can be used, for example, to tell if there were no level alerts of a specific level or if they were deliberately excluded.
 
-The plan is to allow any add-ons to make additional data items available. This help page will be updated when that feature is available.
+Automation jobs can make additional data available to the
+reports, in many cases even if the automation framework was not used.
+See the help pages for the relevant jobs for more details.
 
 ## Testing Reports
 
@@ -101,7 +112,9 @@ ZAP does not cache the report templates, so it rereads them every time you gener
 
 ## PDF Reports
 
-PDF reports are generated using the [Flying Saucer](https://github.com/flyingsaucerproject/flyingsaucer) library which converts HTML documents into PDF format. In order to create a PDF report you need to design it in HTML, call the template "report.html" but specify the format as "PDF".
+PDF reports are generated using the [Flying
+Saucer](https://github.com/flyingsaucerproject/flyingsaucer) library which converts HTML documents into PDF format. In order to create a PDF report you need to design it in HTML, call the template "report.html" but specify the format as "PDF".
 
-Note that Flying Saucer requires that the HTML is well-formed XML / XHTML.
-It will fail with an error if the template is not well-formed so check the ZAP log file for details.
+Note that Flying Saucer requires that the HTML is well-formed
+XML / XHTML. It will fail with an error if the template is not
+well-formed so check the ZAP log file for details.
