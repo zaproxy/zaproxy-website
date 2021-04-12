@@ -11,6 +11,8 @@ This job runs the traditional spider. This is fast but does not handle modern ap
 
 By default this job will spider the first context defined in the [environment](/docs/desktop/addons/automation-framework/environment/) and so none of the parameters are mandatory.
 
+## YAML
+
 ```
   - type: spider                       # The traditional spider - fast but doesnt handle modern apps so well
     parameters:

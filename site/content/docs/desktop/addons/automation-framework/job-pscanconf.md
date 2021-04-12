@@ -13,10 +13,16 @@ The passive scanner runs against all requests and responses that are generated b
 If you want to configure the passive scan configuration then you should typically do so before running any other jobs.
 However you can run this job later, or multiple times, if you want different jobs to use different passive scan configurations.
 
+## YAML
+
 ```
   - type: passiveScan-config           # Passive scan configuration
     parameters:
       maxAlertsPerRule: 10             # Int: Maximum number of alerts to raise per rule
       scanOnlyInScope: true            # Bool: Only scan URLs in scope (recommended)
       maxBodySizeInBytesToScan:        # Int: Maximum body size to scan, default: 0 - will scan all messages
+    rules:                             # A list of one or more passive scan rules and associated settings which override the defaults
+    - id:                              # Int: The rule id as per https://www.zaproxy.org/docs/alerts/
+      name:                            # String: The name of the rule for documentation purposes - this is not required or actually used
+      threshold:                       # String: The Alert Threshold for this rule, one of Off, Low, Medium, High, default: Medium
 ```
