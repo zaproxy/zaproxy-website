@@ -53,3 +53,7 @@ menu:
     - name:  Community
       URL: /community/
       weight:  4
+
+    - name:  Statistics
+      URL: /statistics/
+      weight:  5
