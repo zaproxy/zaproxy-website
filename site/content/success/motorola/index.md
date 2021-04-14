@@ -1,5 +1,5 @@
 ---
-title: "Motorola"
+title: "Motorola Solutions"
 type: success
 successtags:
 - automation
@@ -11,7 +11,7 @@ company:
   twitter: MotoSolutions
 ---
 
-Motorola Solutions follows best S-SDLC (secure software development lifecycle) practices for
+Motorola Solutions follows S-SDLC (secure software development lifecycle) practices for
 our product development. Similarly, these best practices can be found in another OWASP
 project, the [Software Assurance Maturity Model](https://owaspsamm.org/). We build our software development approach
 on the OWASP SAMM, to ensure delivery of secure products, from architecture design to the
@@ -27,18 +27,18 @@ application teams within the company.
 A major strength of the OWASP ZAP is the ease of deployment. Being a standalone Java
 application, and running smoothly from a Docker container, means ZAP can be easily installed
 closely to the scanned application. Regardless if the targeted service runs in a closed
-on-premise lab, or on the Kubernetes cluster hosted in the public cloud, ZAP can be easily
+on-premise lab, or on a Kubernetes cluster hosted in the public cloud, ZAP can be easily
 added to the environment. Close proximity to the target deployment brings many advantages.
 For example, it allows us to avoid web application firewalls and intrusion prevention systems,
 which could impact the results of a scan.
 
 For development teams to adopt ZAP, it is important that the tool fits into the existing
-environment, and brings additional value. The ZAP project delivers pre-packaged Docker
+environment and brings additional value. The ZAP project delivers pre-packaged Docker
 containers, which are perfect for use in automated scans. To simplify this process even more,
-we prepared dedicated jobs, easily applicable to our CI/CD pipelines.
+we prepared dedicated jobs - easily applicable to our CI/CD pipelines.
 
 It’s important to note that there is no need to modify ZAP itself. The product is highly
-customizable, allowing us to change its behavior with custom scripts, Python hooks and in other
+customizable, allowing us to change its behavior with custom scripts, Python hooks, and in other
 ways. For example, we implemented a common script to handle authentication steps on our
 Identity Management solution. Now, for the teams using the same IdM, it’s very easy to start
 performing authenticated scans of their products.
