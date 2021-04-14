@@ -7,6 +7,7 @@ summaryLength: 48
 
 taxonomies:
   tag: "tags"
+  successtag: "successtags"
 
 params:
   description: The world’s most widely used web app scanner. Free and open source. Actively maintained by a dedicated international team of volunteers.

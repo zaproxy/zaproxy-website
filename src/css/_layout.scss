@@ -137,6 +137,11 @@ $grid_widths: 2 3 4 5 6 8;
   flex-grow: 1;
 }
 
+.scale {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 // c/o https://embedresponsively.com/
 .embed-youtube {
   position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;

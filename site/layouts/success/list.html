@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="bolt-header">
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+  <div class="wrapper py-70">
+      <h4>{{ .Description }}</h4>
+      {{ .Content }}
+  
+      <div class="flex on-sm-stack">
+	   <div class="grid grid__three-col grid_row_gap">
+	     {{ range .Pages }}
+	     <div>
+	      <a href="{{ .Permalink }}">
+	      <img class="company-logo scale" src="{{ .Params.company.logo }}" />
+	      </a>
+	     </div>
+	     {{ end }}
+	   </div>
+        <div class="col-1-3 ml-20">
+          {{ block "sidebar" . }}{{ partial "success/sidebar" . }}{{end}}
+        </div>
+      </div>
+  </div>
+{{ end }}
