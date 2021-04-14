@@ -1,0 +1,25 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+
+{{ define "main" }}
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+{{ $section := .Site.GetPage "section" .Section }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+<section class="wrapper py-70" data-kind="{{ .Kind }}">
+  <article>
+
+
+<main>{{- .Content -}}</main>
+
+<div>
+{{ range $chart := $.Params.charts }}
+{{ end }}
+</div>
+
+  </article>
+</section>
+
+{{ end }}
