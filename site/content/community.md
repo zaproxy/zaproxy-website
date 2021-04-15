@@ -66,6 +66,10 @@ groups:
         link: /supporters/
         desc: Companies who have supported ZAP in a variety of ways 
     
+      - name: 'Success Stories'
+        link: /success/
+        desc: See how companies are using ZAP right now 
+    
       - name: 'Third Party Products and Services'
         link: /third-party-services/
         desc: Third Party products and services that use or integrate with ZAP 
