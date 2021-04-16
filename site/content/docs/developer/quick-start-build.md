@@ -11,7 +11,13 @@ date: "2020-12-04"
 addSocialPreview: true
 ---
 
-Have you ever wanted to play around with the ZAP codebase but felt it was too overwhelming? This guide will walk you through building ZAP from the command line regardless of the operating system and IDE you're using. Let’s jump right into it!
+Have you ever wanted to play around with the ZAP codebase but felt it was too overwhelming? This guide will walk you through building ZAP from the command line regardless of the operating system and IDE you're using.
+
+You can also follow along with Simon as he sets the ZAP development environment in this [Deep Dive](/zap-deep-dive/) video:
+
+{{<youtube uuid="BYi4nA0nhR8">}}
+
+Let’s jump right into it!
 
 ## Preparation
 All you need is a working local installation of [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [JDK 8 or 11](https://adoptopenjdk.net/).

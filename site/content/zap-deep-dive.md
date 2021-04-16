@@ -45,6 +45,12 @@ links:
   - name: 'Report Generation'
     uuid: kD540gUWJ3I
 
+  - name: 'Setting up a ZAP Dev Environment'
+    uuid: BYi4nA0nhR8
+
+  - name: 'Zest Scripting Part 1'
+    uuid: DW_vXdEOoVA
+
 ---
 A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](https://www.stackhawk.com).
 These are included in the [OWASP ZAP Tutorial videos](https://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB) playlist along with older ZAP videos 
