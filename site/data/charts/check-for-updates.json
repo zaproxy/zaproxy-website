@@ -1,6 +1,6 @@
 {
   "title": "Check for Updates",
-  "description": "The number of Check for Update pings received per month. From 2.9.0 the suffix 'd' indicates ZAP is running as a daemon rather than the desktop.",
+  "description": "The number of Check for Update requests received per month. From 2.9.0 the suffix 'd' indicates ZAP is running as a daemon rather than the desktop.",
   "columns": ["Version" , "2-4-3", "2-5-0", "2-6-0", "2-7-0", "2-8-0", "2-9-0", "2-9-0d", "2-10-0", "2-10-0d"],
   "data": [
     ["2015-12-01", 8550, 0, 0, 0, 0, 0, 0, 0, 0, ""],
