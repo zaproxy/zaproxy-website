@@ -11,13 +11,13 @@ company:
   twitter: MotoSolutions
 ---
 
-Motorola Solutions follows S-SDLC (secure software development lifecycle) practices for
+Motorola Solutions follows S-SDLC (secure software development lifecycle) best practices for
 our product development. Similarly, these best practices can be found in another OWASP
 project, the [Software Assurance Maturity Model](https://owaspsamm.org/). We build our software development approach
 on the OWASP SAMM, to ensure delivery of secure products, from architecture design to the
 deployment in our own or customer’s infrastructure.
 
-One of the SAMM requirements, defined in a _Verification / Security Testing_ practice on a highest
+One of the SAMM requirements, defined in the _Verification / Security Testing_ practice on a highest
 maturity level, states that an organization should _embed security testing as part of the
 development and deployment processes_. We use a number of commercial tools for both static
 and dynamic application security scans, software composition analysis and for measuring other
@@ -51,5 +51,5 @@ were able to add simple telemetry requests. Every execution is being recorded, a
 track usage of the tool.
 
 Shortly after the rollout of our dedicated pipeline jobs, the scans were adopted by several
-application teams, scanning tens of frontend and backend services. This number grows every
-month, helping us improve the safety of our customers and their systems.
+application teams, running dozens of automated scans on frontend and backend services daily. 
+This number grows every month, helping us improve the safety of our customers and their systems.
