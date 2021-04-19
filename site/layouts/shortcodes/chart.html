@@ -1,5 +1,6 @@
 <div>
-  {{ $name := .Get 0 }}
+  {{ $name := .Get "name" }}
+  {{ $stacked := .Get "stacked" }}
   {{ $chart := index .Site.Data.charts ($name) }}
 
   <h3>{{ $chart.title}}</h3>
@@ -23,10 +24,11 @@
     	        height: 400,
     	        legend: { position: 'top', maxLines: 3 },
     	        bar: { groupWidth: '75%' },
+    	        {{ if eq $stacked "true" }}
     	        isStacked: true,
+    	        {{ end }}
     	      };
 
-      
       var chart = new google.visualization.ColumnChart(document.getElementById("chart_{{ $name }}_values"));
       chart.draw(view, options);
   }
