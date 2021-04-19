@@ -5,7 +5,7 @@ layout: charts
 ---
 We measure and record a range of statistics related to ZAP, some of which are made public here.
 
-A blog post will be written soon which explains how this all works.
+The blog post: [Collecting Statistics for Open Source Projects](/blog/2021-04-19-collecting-statistics-for-open-source-projects/) explains how this all works.
 
 {{< chart name="check-for-updates" stacked="true">}}
 
