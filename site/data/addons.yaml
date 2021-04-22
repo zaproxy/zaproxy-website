@@ -986,6 +986,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v33/zest-beta-33.zap
-  date: 2020-11-27
-  version: 33
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v34/zest-beta-34.zap
+  date: 2021-04-22
+  version: 34
