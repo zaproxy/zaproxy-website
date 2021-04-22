@@ -6,13 +6,13 @@ weight: 1
 cascade:
   addon:
     id: zest
-    version: 31.0.0
+    version: 34.0.0
 ---
 
 # Zest
 
 Zest is an experimental specialized scripting language (also known as a domain-specific language)
-developed by the Mozilla security team and is intended to be used in web oriented security tools.
+originally developed by the Mozilla security team and is intended to be used in web oriented security tools.
 
 It is included by default with ZAP.  
 
@@ -91,7 +91,6 @@ A right click menu is provided (where relevant) in the edit dialogs to allow you
 
 ## External links
 
-|   |                                                 |                                                               |
-|---|-------------------------------------------------|---------------------------------------------------------------|
-|   | <https://developer.mozilla.org/en-US/docs/zest> | Zest overview                                                 |
-|   | <https://github.com/mozilla/zest>               | The Zest github repository, including details of the language |
+|   |                                    |                                                               |
+|---|------------------------------------|---------------------------------------------------------------|
+|   | <https://github.com/zaproxy/zest/> | The Zest GitHub repository, including details of the language |
