@@ -58,6 +58,10 @@ services:
     link: https://www.nucleussec.com/integrations
     license: 'Commercial'
 
+  - name: 'Astra'
+    link: https://www.getastra.com/
+    license: 'Commercial'
+
 integrations:
   - name: 'ThreadFix'
     link: https://threadfix.it/
