@@ -20,7 +20,7 @@ authors:
 Apparently people have been a bit confused by some of the wording in this blog post, so just so that it is clear:
 
 * The competition is **OPEN**
-* It is open to everyone, regardless of where they live as long as we are legally able to
+* It is open to everyone, regardless of where they live as long as we are legally able to participate
 
 It will remain open until we have accepted **10** templates or July 1st 2021, whichever comes first. Hopefully the 10 templates!
 
