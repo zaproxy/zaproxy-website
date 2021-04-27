@@ -29,5 +29,12 @@ well.
 
 Generally, most user's tend to use the Mac OS build, which is a ordinary Mac
 OS app that can be started as any other app: Double-Click on the app to start
-it. If you have downloaded the Linux package, which can also be run on Mac OS,
+it. 
+
+If you have installed ZAP in '/Applications' then you can run it from the command line using 
+'/Applications/OWASP\ ZAP.app/Contents/Java/zap.sh'
+
+If you have installed ZAP in another directory then change the initial '/Applications' part accordingly.
+
+If you have downloaded the Linux package, which can also be run on Mac OS,
 you can use the 'zap.sh' script, as per linux.
