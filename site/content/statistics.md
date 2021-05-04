@@ -9,13 +9,15 @@ The blog post: [Collecting Statistics for Open Source Projects](/blog/2021-04-19
 
 {{< chart name="check-for-updates" stacked="true">}}
 
+The 'devw' label is used for the development version of ZAP, these stats were not reliably recorded before 2020-11-01.
+
 The Check for Update requests that ZAP makes are detailed in the FAQ: [What 'calls home' does ZAP make?](/faq/what-calls-home-does-zap-make/)
 
 {{< chart name="downloads" stacked="true">}}
 
 {{< chart name="docker" stacked="true">}}
 
-No, we don't know why there were so many Docker pulls in February 2021 either &#128539;.
+No, we don't know why there were so many Docker pulls in February and April 2021 either &#128539;.
  
 {{< chart name="user-group" stacked="false">}}
  
