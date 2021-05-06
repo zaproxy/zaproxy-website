@@ -53,6 +53,11 @@ silver:
     logo: /img/supporters/webswing.png
     notes: Permisssion to include production version of Webswing in the ZAP Docker images
 
+  - name: 'Astra'
+    link: https://www.getastra.com/
+    logo: /img/supporters/astra.png
+    notes: Sponsoring some of Akshath's work on ZAP
+
   - name: 'DeepFactor'
     link: http://deepfactor.io/
     logo: /img/supporters/deepfactor.png
