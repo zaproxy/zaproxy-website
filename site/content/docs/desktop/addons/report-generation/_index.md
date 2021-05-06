@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.2.0
+    version: 0.3.0
 ---
 
 # Report Generation
@@ -80,6 +80,10 @@ The Template tab has the following fields:
 
 A pulldown containing all of the available templates. The template names include the format that they will be generated in, e.g. HTML, MD, PDF etc.
 
+### Theme
+
+Templates may optionally define 'themes' - typically different colours and styles which apply to the same content. If any themes are defined for the selected template then you can select them here.
+
 ### Sections
 
 Templates may optionally define 'sections' - parts of the report which can be included or excluded. If the selected template defines sections then a checkbox for each section will be displayed here. By default all checkboxes will be selected. If you unselect any of the sections then they will not be included in the report.
@@ -106,11 +110,13 @@ The pattern that will be used to generate the report name.
 
 ### Template Directory
 
-The directory from which templates will be loaded. You should not typically need to change unless you are designing new reports, in which case it can be useful to change to point to your local source code reports directory.
+The directory from which templates will be loaded. You should not typically need to change unless you are designing new reports, in which case it can be useful to change to point to your local source code reports directory. The "reports" folder in your ZAP home directory is used by default.
 
 ## See also
 
-|   |                                                                    |                                                        |
-|---|--------------------------------------------------------------------|--------------------------------------------------------|
-|   | [Creating Reports](/docs/desktop/addons/report-generation/create/) | for details on how to create and edit your own reports |
-|   | [About](/docs/desktop/addons/report-generation/about/)             | for more details of this add-on                        |
+|   |                                                                                                      |                                                         |
+|---|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+|   | [Creating Reports](/docs/desktop/addons/report-generation/create/)                                   | for details on how to create and edit your own reports  |
+|   | [Report Generation Automation Framework Support](/docs/desktop/addons/report-generation/automation/) | for more details about the Automation Framework Support |
+|   | [Report Generation API](/docs/desktop/addons/report-generation/api/)                                 | for more details about the Reports API                  |
+|   | [About](/docs/desktop/addons/report-generation/about/)                                               | for more details of this add-on                         |

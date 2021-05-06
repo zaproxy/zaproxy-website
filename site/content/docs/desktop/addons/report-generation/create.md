@@ -31,6 +31,7 @@ format:      # The format, eg one of HTML, XML, MD, JSON, PDF - this is used int
 mode:        # The Thymeleaf template mode, one of HTML, RAW, TEXT, HTML
 extension:   # The extension to use when generating the report
 sections:    # An optional list of sections - parts of the report which may be included or excluded
+themes:      # An optional list of themes - different colours and styles which apply to the same content
 ```
 
 ### report.*ext*
@@ -43,6 +44,7 @@ This should have the same extension that is specified in the template.yaml file 
 The report subdirectory may also include a "Messages.properties" language file for template specific strings localised to English as well as "Message_ *locale* .property" files for localising the strings into other languages.   
 The template specific strings should all start with ' `report.template.` '   
 If the report included sections then they must be defined in this file - the keys will automatically be prefixed by `report.template.section.` . Section names in the template.yaml file must just be alphanumeric strings and not start with an integer.   
+If a report includes themes then they must be defined in this file - the keys will automatically be prefixed by `report.template.theme.` . Theme names in the template.yaml file must just be alphanumeric strings and not start with an integer.   
 The language files may also override the default translations built into the reports add-on.
 
 ### Resources
@@ -91,12 +93,23 @@ The description of the report set by the user.
 
 An instance of the [ReportHelper](https://github.com/zaproxy/zap-extensions/tree/master/addOns/reports/src/main/java/org/zaproxy/addon/reports/ReportHelper.java) class that provides useful methods, including:
 
-* `getRiskString(int risk)` Returns an internationalised string for the associated risk code
 * `getConfidenceString(int confidence)` Returns an internationalised string for the associated confidence code
+* `getRiskString(int risk)` Returns an internationalised string for the associated risk code
+* `getHttpStatusCode(int code)` Returns the meaning of the specified HTTP status code
+* `getHostForSite(String site)` Returns the hostname for a given site URL
+* `getPortForSite(String site)` Returns the port for a given site URL
+* `isSslSite(String site)` Returns true if the given site URL is using SSL
+* `getStatisticsString(String stat)` Returns the meaning of the specific statistics key - currently only supported for authentication stats
+* `getSiteStats(String site, String prefix)` Returns a Map of the statistics for the given site starting with the (optional) prefix
+* `hasSiteStats(String site, String prefix)` Returns true if the given site has any statistics starting with the (optional) prefix
 
 ### alertCounts
 
 A Map of risk levels to the number of unique alerts. This can be used by reports, for example, to generate a summary table.
+
+### alertCountsByRule
+
+A Map of scan rule IDs to the number of instances.
 
 ### reportData
 
@@ -105,6 +118,10 @@ An instance of the [ReportData](https://github.com/zaproxy/zap-extensions/tree/m
 Automation jobs can make additional data available to the
 reports, in many cases even if the automation framework was not used.
 See the help pages for the relevant jobs for more details.
+
+### stats
+
+A Map of the global statistics. The site based statistics are available via the helper.
 
 ## Testing Reports
 
