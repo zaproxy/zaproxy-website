@@ -96,6 +96,10 @@ integrations:
     license: 'Commercial'
  
 training:
+  - name: 'AppSec Engineer'
+    link: https://appsecengineer.com/courses/owasp-zap-dast-automation/
+    what: 'DAST Automation with OWASP ZAP'
+
   - name: 'Coursera'
     link: https://www.coursera.org/projects/web-application-security-testing-with-owsap-zap
     what: 'Web Application Security Testing with OWASP ZAP'
