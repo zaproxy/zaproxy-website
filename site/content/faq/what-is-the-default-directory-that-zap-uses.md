@@ -34,7 +34,7 @@ Note that you can override this using the -dir [command line](/docs/desktop/cmdl
 
     
     
-    ~/Library/Application Support/ZAP
+    /Applications/OWASP\ ZAP.app/Contents/Java
     
 
 ##  Weekly releases
