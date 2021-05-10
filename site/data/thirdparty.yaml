@@ -13,6 +13,12 @@ services:
     license: 'Commercial, free community edition'
     supporter: ZAP Silver Supporter
 
+  - name: 'Astra'
+    link: https://www.getastra.com/
+    logo: /img/supporters/astra.png
+    license: 'Commercial'
+    supporter: ZAP Silver Supporter
+
   - name: 'SecureCodeBox'
     link: https://www.securecodebox.io/
     license: 'Free, open source'
@@ -56,10 +62,6 @@ services:
 
   - name: 'Nucleus'
     link: https://www.nucleussec.com/integrations
-    license: 'Commercial'
-
-  - name: 'Astra'
-    link: https://www.getastra.com/
     license: 'Commercial'
 
 integrations:
