@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 38.0.0
+    version: 39.0.0
 ---
 
 # Active Scan Rules
@@ -102,6 +102,8 @@ Latest code: [ParameterTamperScanRule.java](https://github.com/zaproxy/zap-exten
 ## Path Traversal
 
 This rule attempts to access files and directories outside of the web document root by constructing various combinations of pathname prefixes and local file targets for Windows and \*NIX systems as well as Java servlets. If the body of the response matches a pattern corresponding to the current target file an alert is raised and the scanner returns immediately. If none of the common local file targets succeed, path traversal is attempted using the filename in the URL. As long as submitting an arbitrary filename does not return an OK status code but the real filename does, an alert is raised and the scanner returns immediately.
+
+Note: This scan rule has one check that is excluded at High Alert Threshold.
 
 Latest code: [PathTraversalScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/PathTraversalScanRule.java)
 
