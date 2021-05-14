@@ -1,0 +1,372 @@
+# All 'official' ZAP videos
+# Note that videos are grouped by series in reverse date order to make them a bit easier to manage
+---
+
+# Deep Dive Series
+
+- title: 'Zest Scripting Part 3'
+  id: zwOZayLmNoY
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/05/13'
+  length: 29:22
+  tags:
+  - scripts
+  - zest
+
+- title: 'Zest Scripting Part 2'
+  id: LQyJmNj5CgA
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/05/06'
+  length: 29:19
+  tags:
+  - scripts
+  - zest
+
+- title: 'Zest Scripting Part 1'
+  id: DW_vXdEOoVA
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/04/15'
+  length: 33:49
+  tags:
+  - scripts
+  - zest
+
+- title: 'Setting up a ZAP Dev Environment'
+  id: BYi4nA0nhR8
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/03/25'
+  length: 32:02
+  tags:
+  - development
+  - add-ons
+
+- title: 'Report Generation'
+  id: kD540gUWJ3I
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/03/18'
+  length: 23:52
+  tags:
+  - reporting
+
+- title: 'Authenticated Packaged Scans'
+  id: BOlalxfdLbU
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/02/25'
+  length: 28:33
+  tags:
+  - authentication
+  - packagedScan
+  - forcedUserMode
+
+- title: 'Automation'
+  id: B-MDsECikqM
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/02/18'
+  length: 27:50
+  tags:
+  - automation
+  - cmdline
+  - docker
+  - packagedScan
+  - scanHooks
+  - githubAction
+  - daemon
+
+- title: 'Configuration'
+  id: EIUlCknXMSI
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/02/13'
+  length: 26:37
+  tags:
+  - config
+  - contexts
+  - scripts
+  - scanPolicy
+
+- title: 'Active Scanning'
+  id: z2r4xGMQlys
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/01/22'
+  length: 31:26
+  tags:
+  - activeScan
+  - scanPolicy
+  - attackMode
+  - inputVectors
+
+- title: 'Passive Scanning'
+  id: Rx42kyrB0nk
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/01/11'
+  length: 27:35
+  tags:
+  - passiveScan
+
+- title: '2.10.0 Introduction'
+  id: rrVr-_-y6Xo
+  site: youtube
+  series: 'Deep Dive'
+  date: '2020/12/18'
+  length: 27:44
+  tags:
+  - release
+  - authentication
+  - add-ons
+  - graphql
+  - soap
+  - formHandler
+  - customPages
+
+- title: 'Scripting'
+  id: ujL6rH6nVXI
+  site: youtube
+  series: 'Deep Dive'
+  date: '2020/12/10'
+  length: 28:35
+  tags:
+  - scripts
+
+- title: 'The Sites Tree'
+  id: 1_flXEBzEsE
+  site: youtube
+  series: 'Deep Dive'
+  date: '2020/11/24'
+  length: 30:26
+  tags:
+  - siteTree
+  - dataDrivenNode
+  - structuralParameter
+
+- title: 'Exploring in other ways'
+  id: F8yOU1IrfOw
+  site: youtube
+  series: 'Deep Dive'
+  date: '2020/11/24'
+  length: 20:23
+  tags:
+  - explore
+  - openapi
+  - swagger
+  - soap
+  - graphql
+  - urlImport
+  - logFileImport
+  - formHandler
+  - forcedBrowse
+
+- title: 'Exploring with the Ajax Spider'
+  id: EwbPPPBhM4A
+  site: youtube
+  series: 'Deep Dive'
+  date: '2020/11/24'
+  length: 21:09
+  tags:
+  - explore
+  - ajaxSpider
+
+- title: 'Exploring with the spider'
+  id: mz2nhYpU-sw
+  site: youtube
+  series: 'Deep Dive'
+  date: '2020/11/24'
+  length: 34:46
+  tags:
+  - explore
+  - spider
+
+- title: 'Desktop Interface'
+  id: -kbY4k8eSd0
+  site: youtube
+  series: 'Deep Dive'
+  date: '2020/11/24'
+  length: 31:54
+  tags:
+  - desktop
+
+- title: 'Intro to ZAP'
+  id: CxjHGWk4BCs
+  site: youtube
+  series: 'Deep Dive'
+  date: '2020/11/24'
+  length: 21:42
+  tags:
+  - intro
+  - cmdline
+  - desktop
+  - help
+
+# ZAP in Ten
+
+- title: 'Active Scan Scripts'
+  id: aEwqErXFMTYdDDQbTgnJeA
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/04/03'
+  length: 11:37
+  tags:
+  - scripts
+
+- title: 'Passive Scan Scripts'
+  id: HfENJ3GJB3zbD6sMscDrjD
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/04/03'
+  length: 11:53
+  tags:
+  - scripts
+    
+- title: 'Proxy and HttpSender scripts'
+  id: 4no8EY1iB8RdnQLPFpYi2a
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/03/23'
+  length: 10:12
+  tags:
+  - scripts
+    
+- title: 'Targeted Scripts'
+  id: JzX1YkJqdk7BYTMHikh433
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/03/23'
+  length: 9:59
+  tags:
+  - scripts
+    
+- title: 'Intro to Scripting'
+  id: 7gR4qYzUZ686wEDMBfxGdf
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/03/23'
+  length: 9:32
+  tags:
+  - scripts
+    
+- title: 'Authentication - Form based'
+  id: B1vhaLSUsme7eA5hU8WeGB
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/03/23'
+  length: 12:59
+  tags:
+  - authentication
+    
+- title: 'Auth - Basic and Digest'
+  id: ttqKANDzJCAdBUkPrsz6Td
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/03/23'
+  length: 9:57
+  tags:
+  - authentication
+    
+- title: '2.9.0'
+  id: WRwcRM9AFPpKitybFatLiD
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/02/04'
+  length: 10:43
+  tags:
+  - release
+    
+- title: 'Marketplace'
+  id: u5Wv6KsoozBefCuEmrFDzC
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/02/04'
+  length: 9:47
+  tags:
+  - marketplace
+    
+- title: 'Website and Resource Update'
+  id: 32UoD4hxtUBvxdaK7siFzM
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/02/04'
+  length: 10:22
+  tags:
+  - website
+    
+- title: 'Active Scanning'
+  id: ZcEfSihgQSzuthJi4qEeW3
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2020/02/04'
+  length: 9:45
+  tags:
+  - activeScan
+    
+- title: 'Passive Scanning'
+  id: vDWpoYjHi7fSLYFDQPWgMF
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2019/12/12'
+  length: 10:26
+  tags:
+  - passiveScan
+    
+- title: 'Ajax Spider'
+  id: eay2rpdKHt82oC1VpfzHZx
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2019/12/12'
+  length: 8:33
+  tags:
+  - ajaxSpider
+  - explore
+    
+- title: 'Explore your Apps'
+  id: rLq2nvgbuGwVn2BX9gA8r2
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2019/12/12'
+  length: 10:35
+  tags:
+  - explore
+    
+- title: 'HUD Intro'
+  id: W5Lo3VYZUspbqRsEgXumgB
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2019/11/26'
+  length: 10:39
+  tags:
+  - HUD
+
+- title: 'Desktop Interface'
+  id: p35FK8Cri5A3EF3RBGoMAr
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2019/11/26'
+  length: 10:06
+  tags:
+  - desktop
+
+- title: 'Resource Downloads'
+  id: JDyzdepHYqb2pjJSbdNzMh
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2019/11/26'
+  length: 7:43
+  tags:
+  - download
+
+- title: 'Welcome'
+  id: RyTy22GZV6UccW41UCghC8
+  site: vidyard
+  series: 'ZAP in Ten'
+  date: '2019/11/26'
+  length: 9:57
+  tags:
+  - intro
+
