@@ -13,8 +13,10 @@
         <td >
             {{if eq .series "Deep Dive" }}
             <a href="https://www.youtube.com/playlist?list=PLz_NN8o2uh8AQ7VyUEN1GCCnpzl5_FaJA" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
-            {{else if eq .series "ZAP in Ten" }}
+            {{else if or (eq .series "ZAP in Ten") (eq .series "ADDO Automation") }}
             <a href="https://www.alldaydevops.com/zap-in-ten" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
+            {{else if eq .series "Tutorials" }}
+            <a href="https://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
             {{else}}
             {{ .series }}
             {{end}}
