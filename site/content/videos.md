@@ -20,4 +20,8 @@ groups:
       - name: 'ADDO ZAP Automation Workshop'
         link: /addo-auth-workshop/
         desc: A set of ZAP workshops on automation and authentication produced in conjunction with All Day DevOps
+
+      - name: 'All Official ZAP Videos'
+        link: /videos-list/
+        desc: All of the Official ZAP videos, tagged and searchable
 ---
