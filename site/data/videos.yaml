@@ -205,6 +205,89 @@
   - desktop
   - help
 
+# ADDO Automation
+
+- title: 'Automation Introduction'
+  id: BAmiaxyzS3g2BCgX2vbVvV
+  site: vidyard
+  series: 'ADDO Automation'
+  date: '2020/04/17'
+  length: 8:02
+  tags:
+  - automation
+  - intro
+
+- title: 'Automation Command line'
+  id: g97SccHH52RXnAcBYBmDGA
+  site: vidyard
+  series: 'ADDO Automation'
+  date: '2020/04/17'
+  length: 14:03
+  tags:
+  - automation
+  - cmdline
+
+- title: 'Automation Packaged scans'
+  id: iT5C1onahsh3YhQi5SRnLL
+  site: vidyard
+  series: 'ADDO Automation'
+  date: '2020/04/17'
+  length: 52:52
+  tags:
+  - automation
+  - packagedScan
+
+- title: 'Automation Intro to Auth'
+  id: zwWm4qMRc8wD2KAgozvC5t
+  site: vidyard
+  series: 'ADDO Automation'
+  date: '2020/04/17'
+  length: 2:31
+  tags:
+  - automation
+  - authentication
+
+- title: 'Automation Simple Auth Bodgeit'
+  id: iErtsKxpwKn4m8iRoovtH9
+  site: vidyard
+  series: 'ADDO Automation'
+  date: '2020/04/17'
+  length: 12:46
+  tags:
+  - automation
+  - authentication
+
+- title: 'Automation Simple Auth JuiceShop'
+  id: igf3A8UdZ6QAGiFjEpLH86
+  site: vidyard
+  series: 'ADDO Automation'
+  date: '2020/04/17'
+  length: 23:30
+  tags:
+  - automation
+  - authentication
+
+- title: 'Automation Auth Scripts'
+  id: gYz7LxioR54i2gY9Ze7c4F
+  site: vidyard
+  series: 'ADDO Automation'
+  date: '2020/04/17'
+  length: 1:57
+  tags:
+  - automation
+  - authentication
+  - scripts
+
+- title: 'Automation SSO with Juice Shop'
+  id: TMcBcuhyPt57sUqPcJUtpv
+  site: vidyard
+  series: 'ADDO Automation'
+  date: '2020/04/17'
+  length: 35:35
+  tags:
+  - automation
+  - authentication
+
 # ZAP in Ten
 
 - title: 'Active Scan Scripts'
@@ -370,3 +453,214 @@
   tags:
   - intro
 
+# Misc videos, confs and online
+
+- title: 'Automating OWASP ZAP'
+  id: zLStJYOWOIY
+  site: youtube
+  date: '2021/04/12'
+  length: 59:08
+  tags:
+  - intro
+  - automation
+  - conference
+
+- title: 'ZAP Automation in CI/CD'
+  id: 5oMp5O9CeSg
+  site: youtube
+  date: '2021/02/16'
+  length: 1:29:05
+  tags:
+  - intro
+  - automation
+  - conference
+
+- title: 'An Introduction to OWASP ZAP'
+  id: rtFVJm2j3vQ
+  site: youtube
+  date: '2020/09/24'
+  length: 36:45
+  tags:
+  - intro
+
+- title: 'Web Security for Web Developers'
+  id: 54UV2_JwcIY
+  site: youtube
+  date: '2020/07/16'
+  length: 1:17:06
+  tags:
+  -
+
+- title: 'Introducing the ZAP HUD'
+  id: 1hbKGDgx_p0
+  site: youtube
+  date: '2019/04/15'
+  length: 25:57
+  tags:
+  - hud
+  - conference
+
+- title: 'Automating OWASP ZAP'
+  id: 3vVnMh6AUkk
+  site: youtube
+  date: '2016/11/20'
+  length: 58:00
+  tags:
+  - automation
+  - conference
+
+- title: 'An Introduction to ZAP'
+  id: 2tKOK4YsQ-4
+  site: youtube
+  date: '2016/07/29'
+  length: 57:19
+  tags:
+  - intro
+  - conference
+
+- title: 'Introduction to ZAP'
+  id: WE2g6o5W_8Q
+  site: youtube
+  date: '2016/03/04'
+  length: 16:07
+  tags:
+  - intro
+  - conference
+
+- title: 'ZAP More Advanced Features'
+  id: LJIoyx405bw
+  site: youtube
+  date: '2015/06/09'
+  length: 46:56
+  tags:
+  - conference
+
+- title: 'ZAP Advanced Features'
+  id: SmY8D8VTWdI
+  site: youtube
+  date: '2014/07/03'
+  length: 53:25
+  tags:
+  - conference
+
+- title: 'ZAP Innovations'
+  id: pYFtLA2yTR8
+  site: youtube
+  date: '2013/11/21'
+  length: 51:18
+  tags:
+  - conference
+
+- title: 'Practical Security for Developers'
+  id: QG2RCZHMEkM
+  site: youtube
+  date: '2013/02/11'
+  length: 51:48
+  tags:
+  - intro
+  - conference
+
+# Older Tutorial Videos
+
+- title: 'Browser Launch'
+  id: lYHwR7UEggA
+  site: youtube
+  series: 'Tutorials'
+  date: '2017/08/22'
+  length: 6:20
+  tags:
+  - browserLaunch
+
+- title: 'Security scanning in a CI Pipeline'
+  id: 3oOWtX7zu5k
+  site: youtube
+  series: 'Tutorials'
+  date: '2016/11/15'
+  length: 30:15
+  tags:
+  - intro
+  - automation
+  - baselineScan
+
+- title: 'ZAP 2.4.0 Introduction'
+  id: TyhaA3DJ5oM
+  site: youtube
+  series: 'Tutorials'
+  date: '2015/04/14'
+  length: 10:20
+  tags:
+  - release
+
+- title: 'ZAP UI and Spidering'
+  id: WSLpFiaOjws
+  site: youtube
+  series: 'Tutorials'
+  date: '2015/04/02'
+  length: 50:13
+  tags:
+  - desktop
+  - spider
+
+- title: 'OWASP A1: Injection'
+  id: dqKGGCVFTvI
+  site: youtube
+  series: 'Tutorials'
+  date: '2014/10/20'
+  length: 6:36
+  tags:
+  - injection
+
+- title: 'Ajax Spidering Authenticated Websites'
+  id: F5CyM4akOAs
+  site: youtube
+  series: 'Tutorials'
+  date: '2014/08/20'
+  length: 8:22
+  tags:
+  - ajaxSpider
+  - authentication
+
+- title: 'Authentication, Session and Users Management'
+  id: cR4gw-cPZOA
+  site: youtube
+  series: 'Tutorials'
+  date: '2013/12/21'
+  length: 18:11
+  tags:
+  - authentication
+
+- title: 'ZAP 2.0.0 Overview'
+  id: a-lJafBdAeM
+  site: youtube
+  series: 'Tutorials'
+  date: '2013/02/08'
+  length: 11:30
+  tags:
+  - release
+
+- title: 'Security Testing in Development and QA'
+  id: ZWSLFHpg1So
+  site: youtube
+  series: 'Tutorials'
+  date: '2012/06/13'
+  length: 15:52
+  tags:
+  - intro
+
+- title: 'ZAP Initial Setup Guide'
+  id: Xp_PBH7wjiw
+  site: youtube
+  series: 'Tutorials'
+  date: '2012/08/01'
+  length: 5:48
+  tags:
+  - setup
+
+- title: 'ZAP Tutorial - Overview'
+  id: eH0RBI0nmww
+  site: youtube
+  series: 'Tutorials'
+  date: '2012/10/12'
+  length: 7:23
+  tags:
+  - intro
