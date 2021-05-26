@@ -21,8 +21,8 @@ groups:
         desc: ask questions about the ZAP Heads Up Display internals 
     
       - name: 'IRC'
-        link: https://webchat.freenode.net/#zaproxy
-        desc: 'chat with core ZAP developers on the #zaproxy freenode channel (European office hours usually best)' 
+        link: https://kiwiirc.com/nextclient/irc.libera.chat/#zaproxy
+        desc: 'chat with core ZAP developers on the #zaproxy Libera Chat channel (European office hours usually best)' 
 
       - name: 'Evangelists'
         link: /evangelists/

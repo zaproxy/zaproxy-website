@@ -2,5 +2,5 @@
 title: IRC
 layout: redirect
 url: /irc/
-redirect: https://webchat.freenode.net/#zaproxy
+redirect: https://kiwiirc.com/nextclient/irc.libera.chat/#zaproxy
 ---
