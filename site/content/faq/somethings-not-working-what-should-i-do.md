@@ -55,7 +55,7 @@ Be aware that lots of webapps do weird and wonderful things, often in bizarre wa
 
 ###  Ask on irc
 
-Many of ZAP contributors hang out on the [freenode](https://freenode.net/) [#zaproxy](https://webchat.freenode.net/#zaproxy) channel which you can access via that link or your favourite irc client.
+Many of ZAP contributors hang out on the Libera Chat [#zaproxy](https://web.libera.chat/#zaproxy) channel which you can access via that link or your favourite irc client.
 
 ###  Ask on twitter
 

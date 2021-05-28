@@ -156,4 +156,4 @@ cd ..
 ```
 
 ### Make Changes and Submit a PR!
-If you have any questions related to ZAP development, reach out on the [ZAP Developer group](https://groups.google.com/g/zaproxy-develop) or the [IRC channel](https://webchat.freenode.net/#zaproxy). 
+If you have any questions related to ZAP development, reach out on the [ZAP Developer group](https://groups.google.com/g/zaproxy-develop) or the [IRC channel](https://web.libera.chat/#zaproxy). 

@@ -74,7 +74,7 @@ Try different UI layouts via the buttons on the main toolbar.
 Use keyboard shortcuts to speed up your testing - you can define your own combinations via 'Options / Keyboard' which also generates printable shortcut cheatsheets.
 
 Want to chat to someone about ZAP?  
-Many of the ZAP core developers hang out on the freenode #zaproxy irc channel: https://webchat.freenode.net/#zaproxy
+Many of the ZAP core developers hang out on the Libera Chat #zaproxy irc channel: https://web.libera.chat/#zaproxy
 
 Want to script ZAP in a scripting language other than Java Script and Zest?  
 Check the ZAP Marketplace for other languages like python and ruby.  

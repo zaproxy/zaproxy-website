@@ -89,7 +89,7 @@ These settings allow you to control the output of the add-on's Query Generator. 
 
 For example, by increasing the maximum query depth, you may be able to exhaust the server's resources. Or if you specify arguments using variables, you could perform injection attacks by making use of ZAP's input vectors. You may also be able to bypass authorization and discover IDORs by generating queries with or without certain arguments and fields. The possibilities are endless!
 
-I did say before, that the add-on is still in an early stage. If you face any problems or have any feature requests, feel free to join in the discussion on the [ZAP User Group](https://groups.google.com/group/zaproxy-users) or contact me directly. You can also ping us on the irc channel ([#zaproxy on Freenode](https://webchat.freenode.net/#zaproxy)) or raise a GitHub issue for bugs.
+I did say before, that the add-on is still in an early stage. If you face any problems or have any feature requests, feel free to join in the discussion on the [ZAP User Group](https://groups.google.com/group/zaproxy-users) or contact me directly. You can also ping us on the irc channel ([#zaproxy on Libera Chat](https://web.libera.chat/#zaproxy)) or raise a GitHub issue for bugs.
 
 ## The Story Behind this Add-On
 
