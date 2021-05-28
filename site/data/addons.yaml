@@ -885,9 +885,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/tips-and-tricks/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tips-v7/tips-beta-7.zap
-  date: 2020-01-17
-  version: 7
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tips-v8/tips-beta-8.zap
+  date: 2021-05-28
+  version: 8
 - id: tlsdebug
   name: TLS Debug
   description: Provides a tab which allows to quickly debug a TLS/SSL connection
