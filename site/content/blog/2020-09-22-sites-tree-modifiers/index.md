@@ -87,7 +87,7 @@ We have yet another problem, and one that ZAP 2.9.0 cannot effectively solve.
 The above techniques only work if ZAP understands the structure of the data.
 While we do our best to make sure that ZAP can always understand the structure of the most common data formats there will always be custom formats that we never get to hear about or new formats that are introduced after a ZAP release.
 
-ZAP 2.9.0 does allow you to attack these custom formats as it provides [Input Vector Scripts](https://github.com/zaproxy/community-scripts/tree/master/variant) which allow anyone to write ZAP scripts to handle these formats. However these scripts cannot change how URLs are represented in the Sites Tree which means that we end up with the same problems as before.
+ZAP 2.9.0 does allow you to attack these custom formats as it provides [Input Vector Scripts](https://github.com/zaproxy/community-scripts/tree/main/variant) which allow anyone to write ZAP scripts to handle these formats. However these scripts cannot change how URLs are represented in the Sites Tree which means that we end up with the same problems as before.
 
 # The Solution
 

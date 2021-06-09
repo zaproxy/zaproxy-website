@@ -31,8 +31,8 @@ from the [ZAP Marketplace](/addons/).
 And there are also these scripts in the [community
 scripts](https://github.com/zaproxy/community-scripts) repo:
 
-  * [Active scripts](https://github.com/zaproxy/community-scripts/tree/master/active)
-  * [Passive scripts](https://github.com/zaproxy/community-scripts/tree/master/passive)
+  * [Active scripts](https://github.com/zaproxy/community-scripts/tree/main/active)
+  * [Passive scripts](https://github.com/zaproxy/community-scripts/tree/main/passive)
 
 The full list of reserved scan ids is maintained in
 [scanners.md](https://github.com/zaproxy/zaproxy/blob/main/docs/scanners.md)

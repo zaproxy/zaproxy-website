@@ -180,7 +180,7 @@ You can pass parameters onto ZAP using the baseline `-z` parameter. This means y
 The weekly version of ZAP supports scan rule configuration. One particular configuration option allows you to define the IDs of HTML forms which you want to ignore when it comes to anti-CSRF tokens. So if you run the baseline scan with: `-z -config rules.csrf.ignorelist=search,login` then ZAP will not fail the scan if forms with an ID of "search" or "login" do not have anti CSRF tokens.
 
 ### Mass Baseline
-If you would like to run the baseline against a number of sites then you can use the [mass baseline scripts](https://github.com/zaproxy/community-scripts/tree/master/api/mass-baseline) on the ZAP Community Scripts repo.
+If you would like to run the baseline against a number of sites then you can use the [mass baseline scripts](https://github.com/zaproxy/community-scripts/tree/main/api/mass-baseline) on the ZAP Community Scripts repo.
 These generate a [dashboard](https://github.com/zaproxy/community-scripts/wiki/Baseline-Summary) which will show you a summary of the results on one wiki page.
 
 ### Scan Hooks
