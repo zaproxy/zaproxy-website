@@ -131,7 +131,7 @@ You can learn a bit about auth header environment variables [here](https://www.y
 
 ## Site Tree Control
 
-Scripts and add-ons now have full access to how nodes are represented in the [Sites Tree](https://www.zaproxy.org/docs/desktop/start/features/sitestree/). Both [Input Vector Scripts](https://github.com/zaproxy/community-scripts/tree/master/variant) and add-ons which include implementations of the [Variant class](https://static.javadoc.io/org.zaproxy/zap/2.10.0/org/parosproxy/paros/core/scanner/Variant.html) can change both the tree structure and names used for new nodes.
+Scripts and add-ons now have full access to how nodes are represented in the [Sites Tree](https://www.zaproxy.org/docs/desktop/start/features/sitestree/). Both [Input Vector Scripts](https://github.com/zaproxy/community-scripts/tree/main/variant) and add-ons which include implementations of the [Variant class](https://static.javadoc.io/org.zaproxy/zap/2.10.0/org/parosproxy/paros/core/scanner/Variant.html) can change both the tree structure and names used for new nodes.
 
 For more details see the [Site Tree Modifiers](https://www.zaproxy.org/blog/2020-09-22-sites-tree-modifiers/) Blog post, and this [video](https://www.youtube.com/watch?v=rrVr-_-y6Xo&t=697s).
 

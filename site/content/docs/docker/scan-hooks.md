@@ -55,7 +55,7 @@ docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
 Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
 
 ## Example Hooks
-See https://github.com/zaproxy/community-scripts/tree/master/scan-hooks
+See https://github.com/zaproxy/community-scripts/tree/main/scan-hooks
 
 ## List of Hooks
 - `cli_opts(opts)`

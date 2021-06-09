@@ -42,7 +42,7 @@ a wider range of authentication mechanisms including the option to poll a specif
 ### Site Tree Control
 
 Scripts and add-ons now have full access to how nodes are represented in the [Sites Tree](/docs/desktop/start/features/sitestree/).
-Both [Input Vector Scripts](https://github.com/zaproxy/community-scripts/tree/master/variant/) and add-ons which include implementations of the 
+Both [Input Vector Scripts](https://github.com/zaproxy/community-scripts/tree/main/variant/) and add-ons which include implementations of the 
 [Variant](https://static.javadoc.io/org.zaproxy/zap/2.10.0/org/parosproxy/paros/core/scanner/Variant.html) class can change both the tree
 structure and names used for new nodes.
 
