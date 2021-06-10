@@ -4,6 +4,16 @@
 
 # Deep Dive Series
 
+- title: 'Fuzzing'
+  id: YVsU-adgxb4
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/06/10'
+  length: 33:09
+  tags:
+  - scripts
+  - fuzzing
+
 - title: 'Zest Scripting Part 3'
   id: zwOZayLmNoY
   site: youtube
