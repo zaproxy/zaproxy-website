@@ -329,9 +329,9 @@
   status: release
   infoUrl: /docs/desktop/addons/fuzzdb-offensive/
   repoUrl: https://github.com/zaproxy/fuzzdb-offensive/
-  downloadUrl: https://github.com/zaproxy/fuzzdb-offensive/releases/download/v3/fuzzdboffensive-release-3.zap
-  date: 2020-06-30
-  version: 3
+  downloadUrl: https://github.com/zaproxy/fuzzdb-offensive/releases/download/v4/fuzzdboffensive-release-4.zap
+  date: 2021-06-11
+  version: 4
 - id: gettingStarted
   name: Getting Started with ZAP Guide
   description: A short Getting Started with ZAP Guide
