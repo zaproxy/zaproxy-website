@@ -191,9 +191,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/community-scripts/
   repoUrl: https://github.com/zaproxy/community-scripts/
-  downloadUrl: https://github.com/zaproxy/community-scripts/releases/download/v9/communityScripts-alpha-9.zap
-  date: 2020-01-30
-  version: 9
+  downloadUrl: https://github.com/zaproxy/community-scripts/releases/download/v10/communityScripts-alpha-10.zap
+  date: 2021-06-11
+  version: 10
 - id: custompayloads
   name: Custom Payloads
   description: Ability to add, edit or remove payloads that are used i.e. by active
