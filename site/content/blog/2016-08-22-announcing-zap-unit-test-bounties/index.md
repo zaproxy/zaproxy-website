@@ -12,12 +12,12 @@ ZAP unit tests, and we are therefore launching a Unit Test Bounty program, where
 We are going to start with the passive scan rules (release and beta quality).  
 These are all defined in the zap-extensions main packages:  
 
-  * [org.zaproxy.zap.extension.pscanrules](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules)
-  * [org.zaproxy.zap.extension.pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta)
+  * [org.zaproxy.zap.extension.pscanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules)
+  * [org.zaproxy.zap.extension.pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta)
 
 We do already have some release quality unit tests in the corresponding test package:  
 
-  * [org.zaproxy.zap.extension.pscanrules](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrules/src/test/java/org/zaproxy/zap/extension/pscanrules)
+  * [org.zaproxy.zap.extension.pscanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules/src/test/java/org/zaproxy/zap/extension/pscanrules)
 
 These can be used as a basis of the new tests. Unit tests should be included for real issues (true positives) as well as false positives.  
 For details of how passive scan rules work see the blog post: [Hacking ZAP #3 Passive Scan Rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/)  

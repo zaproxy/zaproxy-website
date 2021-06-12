@@ -25,9 +25,9 @@ some of the concepts and the underlying classes available to you.
 The easiest way to get started is to rip off an existing rule. The passive scan rules can be found in 3 add-ons in the
 [zap-extensions](https://github.com/zaproxy/zap-extensions/) project, depending on their status:  
 
-  * Release quality:  [addOns/pscanrules](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules)
-  * Beta quality:       [addOns/pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta)
-  * Alpha quality:     [addOns/pscanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha)
+  * Release quality:  [addOns/pscanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules)
+  * Beta quality:       [addOns/pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta)
+  * Alpha quality:     [addOns/pscanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha)
 
 There are also some simple examples that we will examine in more detail. These are all in the `pscanrulesAlpha` add-on.  
 
@@ -93,7 +93,7 @@ potential vulnerabilities. It supports the following fields:
 
 ##  Simple example
 
-The [`ExampleSimplePassiveScanRule`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanRule.java) class implements a very simple passive
+The [`ExampleSimplePassiveScanRule`](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanRule.java) class implements a very simple passive
 scan rule. As you will see, it just raises an alert randomly, so it isn't of any practical use. However it does demonstrate a couple of useful
 features:  
   
@@ -112,8 +112,8 @@ Note that the `pluginId` needs to be unique across all active and passive scan r
 
 ##  File based example
 
-The [`ExampleFilePassiveScanRule`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanRule.java) class implements a
-slightly more complex passive scan rule. In this case it reads in a set of strings from a [configuration file](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/src/main/zapHomeFiles/txt/example-pscan-file.txt) and checks for their presence in
+The [`ExampleFilePassiveScanRule`](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanRule.java) class implements a
+slightly more complex passive scan rule. In this case it reads in a set of strings from a [configuration file](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/zapHomeFiles/txt/example-pscan-file.txt) and checks for their presence in
 the response. It could also use hardcoded strings, but the advantage of the approach taken is that a knowledgeable user could manually edit the
 file to meet their requirement.  
 (ZAP automatically extracts the files located in the `zapHomeFiles` directory into a directory underneath the ZAP user directory.)  
@@ -121,7 +121,7 @@ file to meet their requirement.
 This class also demonstrates a couple of other features:  
   
 Instead of using the `Vulnerabilities` class the code uses `Constant.messages.getString(str)`. All of the strings used in this way are defined in the
-[Messages.properties](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesAlpha/src/main/resources/org/zaproxy/zap/extension/pscanrulesAlpha/resources/Messages.properties) file. If you are just implementing the rule
+[Messages.properties](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesAlpha/src/main/resources/org/zaproxy/zap/extension/pscanrulesAlpha/resources/Messages.properties) file. If you are just implementing the rule
 for your own benefit then you can hardcode the strings if you want, but internationalizing them is very simple and saves having to go back and
 change your code if you want to have your rule included in the ZAP Marketplace.  
   
@@ -137,11 +137,11 @@ way for the user to tune how the rules work and so it's worth using if you can.
 
 ##  Building and deploying
 
-The alpha passive active scan rules add-on build file is [addOns/pscanrulesAlpha/pscanrulesAlpha.gradle.kts](https://github.com/zaproxy/zap-extensions/blob/master/addOns/pscanrulesAlpha/pscanrulesAlpha.gradle.kts). All you need to do is run the Gradle task `:addOns:pscanrulesAlpha:copyZapAddOn` in the `zap-extensions` project and the relevant add-on will be built and copied to the correct location, assuming you have a ZAP core project called `zaproxy`. If you want to deploy to a different location then you can use the command line argument `--into=/path/to/copy/into/`.  
+The alpha passive active scan rules add-on build file is [addOns/pscanrulesAlpha/pscanrulesAlpha.gradle.kts](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/pscanrulesAlpha.gradle.kts). All you need to do is run the Gradle task `:addOns:pscanrulesAlpha:copyZapAddOn` in the `zap-extensions` project and the relevant add-on will be built and copied to the correct location, assuming you have a ZAP core project called `zaproxy`. If you want to deploy to a different location then you can use the command line argument `--into=/path/to/copy/into/`.  
 
 ##  Updating the help
 
-To finish off a new rule you should add a short description of the rule to the help file: [pscanalpha.html](https://github.com/zaproxy/zap-extensions/tree/master/addOns/pscanrulesAlpha/src/main/javahelp/org/zaproxy/zap/extension/pscanrulesAlpha/resources/help/contents/pscanalpha.html)  
+To finish off a new rule you should add a short description of the rule to the help file: [pscanalpha.html](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesAlpha/src/main/javahelp/org/zaproxy/zap/extension/pscanrulesAlpha/resources/help/contents/pscanalpha.html)  
 This is not really necessary unless you want to publish your rules.  
   
 A future post will cover how to contribute your code back to the ZAP community and progress it from alpha to beta and then release status.  

@@ -9,7 +9,7 @@ weight: 1
 
 ## Source Code
 
-<https://github.com/zaproxy/zap-extensions/tree/master/addOns/allinonenotes>
+<https://github.com/zaproxy/zap-extensions/tree/main/addOns/allinonenotes>
 
 ## Authors
 

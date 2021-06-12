@@ -13,6 +13,6 @@ cascade:
 
 This add-on includes a passive scan rule which implements checks provided by [Retire.js](https://retirejs.github.io/retire.js/) in order to identify vulnerable or out-dated JavaScript packages.
 
-Latest code: [Retire.js Add-on](https://github.com/zaproxy/zap-extensions/blob/master/addOns/retire/)
+Latest code: [Retire.js Add-on](https://github.com/zaproxy/zap-extensions/blob/main/addOns/retire/)
 
 **Note:** This add-on is based on original work by [Nikita Mundhad](https://github.com/nikmmy/retire).

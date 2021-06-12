@@ -91,7 +91,7 @@ The description of the report set by the user.
 
 ### helper
 
-An instance of the [ReportHelper](https://github.com/zaproxy/zap-extensions/tree/master/addOns/reports/src/main/java/org/zaproxy/addon/reports/ReportHelper.java) class that provides useful methods, including:
+An instance of the [ReportHelper](https://github.com/zaproxy/zap-extensions/tree/main/addOns/reports/src/main/java/org/zaproxy/addon/reports/ReportHelper.java) class that provides useful methods, including:
 
 * `getConfidenceString(int confidence)` Returns an internationalised string for the associated confidence code
 * `getRiskString(int risk)` Returns an internationalised string for the associated risk code
@@ -113,7 +113,7 @@ A Map of scan rule IDs to the number of instances.
 
 ### reportData
 
-An instance of the [ReportData](https://github.com/zaproxy/zap-extensions/tree/master/addOns/reports/src/main/java/org/zaproxy/addon/reports/ReportData.java) class that defines the data to be included in the report. This can be used, for example, to tell if there were no level alerts of a specific level or if they were deliberately excluded.
+An instance of the [ReportData](https://github.com/zaproxy/zap-extensions/tree/main/addOns/reports/src/main/java/org/zaproxy/addon/reports/ReportData.java) class that defines the data to be included in the report. This can be used, for example, to tell if there were no level alerts of a specific level or if they were deliberately excluded.
 
 Automation jobs can make additional data available to the
 reports, in many cases even if the automation framework was not used.

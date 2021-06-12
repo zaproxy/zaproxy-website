@@ -34,4 +34,4 @@ The scanner will also attempt URL/query parameter injections which are not impac
 The rule will only report one DOM XSS vulnerability per node, unless the LOW Alert threshold
 is used, in which case it will keep trying all of the specified payloads.
 
-Latest code: [DomXssScanRule.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java)
+Latest code: [DomXssScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java)

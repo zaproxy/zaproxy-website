@@ -17,7 +17,7 @@ know how your application responded to each one.
 
 Ideally we would like a ZAP unit test which reproduces the problem. An example
 of one of these is
-[TestCrossSiteScriptV2UnitTest.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/test/java/org/zaproxy/zap/extension/ascanrules/TestCrossSiteScriptV2UnitTest.java)
+[TestCrossSiteScriptV2UnitTest.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/test/java/org/zaproxy/zap/extension/ascanrules/TestCrossSiteScriptV2UnitTest.java)
 However these are not easy for non programmers to write.
 
 An alternative is to record a Zest script of the rule that you think should

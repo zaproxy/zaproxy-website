@@ -42,4 +42,4 @@ By default this job will actively scan the first context defined in the [environ
 The following class will be made available to add-ons that provide access to the Job Data such as the Reporting add-on. Note that in this case the data is from the last Active Scan, regardless of whether it was started by the Automation Framework, the UI, or the API.
 
 * Key: `activeScanData`
-* Class: [ActiveScanJobResultData](https://github.com/zaproxy/zap-extensions/blob/master/addOns/automation/src/main/java/org/zaproxy/addon/automation/jobs/ActiveScanJobResultData.java)
+* Class: [ActiveScanJobResultData](https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/jobs/ActiveScanJobResultData.java)

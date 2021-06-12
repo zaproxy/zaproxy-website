@@ -9,7 +9,7 @@ weight: 1
 
 ## Source Code
 
-<https://github.com/zaproxy/zap-extensions/tree/master/addOns/groovy>
+<https://github.com/zaproxy/zap-extensions/tree/main/addOns/groovy>
 
 ## Authors
 

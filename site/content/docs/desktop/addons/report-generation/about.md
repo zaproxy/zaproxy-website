@@ -9,7 +9,7 @@ weight: 3
 
 ## Source Code
 
-<https://github.com/zaproxy/zap-extensions/tree/master/addOns/reports>
+<https://github.com/zaproxy/zap-extensions/tree/main/addOns/reports>
 
 ## Authors
 

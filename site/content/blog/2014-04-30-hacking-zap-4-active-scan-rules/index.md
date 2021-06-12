@@ -20,9 +20,9 @@ some of the concepts underlying classes available to you.
 As with passive rules, the easiest way to get started is to rip off an existing rule.  The (main) active scan rules can be found in 3 add-ons in the
 [zap-extensions](https://github.com/zaproxy/zap-extensions/) project, depending on their status:  
 
-  * Release quality:  [addOns/ascanrules](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules)
-  * Beta quality:       [addOns/ascanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta)
-  * Alpha quality:     [addOns/ascanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha)
+  * Release quality:  [addOns/ascanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules)
+  * Beta quality:       [addOns/ascanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta)
+  * Alpha quality:     [addOns/ascanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha)
 
 There are also some simple examples that we will examine in more detail. These are all in the `ascanrulesAlpha` add-on.  
 
@@ -59,7 +59,7 @@ vulnerabilities.
 
 ##  Simple example
 
-The [`ExampleSimpleActiveScanRule`](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleSimpleActiveScanRule.java) class implements a very simple active scan
+The [`ExampleSimpleActiveScanRule`](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleSimpleActiveScanRule.java) class implements a very simple active scan
 rule. As you will see, it just raises an alert randomly, so it isn't of any practical use. Like the simple example passive scanner introduced in
 the previous post it uses the `Vulnerabilities` class for the documentation associated with the vulnerability. Most of the methods should be self
 explanatory, but there are 2 that are worth explaining. The `getCategory()` method is used to group related rules in the UI. And the `getRisk()`
@@ -67,7 +67,7 @@ method affects the order the rules are run - the rules which report higher risks
 
 ##  File based example
 
-The [`ExampleFileActiveScanRule`](https://github.com/zaproxy/zap-extensions/tree/master/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleFileActiveScanRule.java) class implements a slightly more complex
+The [`ExampleFileActiveScanRule`](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleFileActiveScanRule.java) class implements a slightly more complex
 active scan rule which is equivalent to the example file passive scan rule introduced in the previous post. This class introduces another
 feature, the attack strength, which allows the user to adjust the number of attacks each rule performs. If you are implementing a rule just for
 your own use then you don't need to worry about this. However if you plan to publish it for others to use then you should consider supporting it.  
@@ -86,18 +86,18 @@ before invoking your code to scan a new target (e.g. page or parameter).
 ##  Advanced features
 
 If your rule depends on another rule having been run then you need to specify that via the `getDependency()` method.  
-The persistent XSS rules do this, e.g. in [`TestPersistentXSSSpider`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/TestPersistentXSSSpider.java) and [`TestPersistentXSSAttack`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/TestPersistentXSSAttack.java).  
+The persistent XSS rules do this, e.g. in [`TestPersistentXSSSpider`](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/TestPersistentXSSSpider.java) and [`TestPersistentXSSAttack`](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/TestPersistentXSSAttack.java).  
 If you need to know the exact type of parameter you are scanning, for example to ignore some types that are not relevant, then you can override
 the [`AbstractAppParamPlugin.scan(HttpMessage msg, NameValuePair originalParam)`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/core/scanner/AbstractAppParamPlugin.java#L284) method and provide an
 empty `scan(HttpMessage msg, String param, String value)` method. The `NameValuePair` class includes the parameter type.
 
 ##  Building and deploying
 
-The alpha active scan rules add-on build file is [addOns/ascanrulesAlpha/ascanrulesAlpha.gradle.kts](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesAlpha/ascanrulesAlpha.gradle.kts). All you need to do is run the Gradle task `:addOns:ascanrulesAlpha:copyZapAddOn` in the `zap-extensions` project and the relevant add-on will be built and copied to the correct location, assuming you have a ZAP core project called `zaproxy`. If you want to deploy to a different location then you can use the command line argument `--into=/path/to/copy/into/`.  
+The alpha active scan rules add-on build file is [addOns/ascanrulesAlpha/ascanrulesAlpha.gradle.kts](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/ascanrulesAlpha.gradle.kts). All you need to do is run the Gradle task `:addOns:ascanrulesAlpha:copyZapAddOn` in the `zap-extensions` project and the relevant add-on will be built and copied to the correct location, assuming you have a ZAP core project called `zaproxy`. If you want to deploy to a different location then you can use the command line argument `--into=/path/to/copy/into/`.  
 
 ##  Updating the help
 
-As with passive scan rules it's good to add a short description of the rule to the help file: [`ascanalpha.html`](https://github.com/zaproxy/zap-extensions/blob/master/addOns/ascanrulesAlpha/src/main/javahelp/org/zaproxy/zap/extension/ascanrulesAlpha/resources/help/contents/ascanalpha.html).
+As with passive scan rules it's good to add a short description of the rule to the help file: [`ascanalpha.html`](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/javahelp/org/zaproxy/zap/extension/ascanrulesAlpha/resources/help/contents/ascanalpha.html).
 
 The next post in this series will be: Hacking ZAP #5: Extensions
 

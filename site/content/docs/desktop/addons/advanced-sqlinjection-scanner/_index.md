@@ -13,4 +13,4 @@ cascade:
 
 Provides an advanced active injection bundle for SQLi detection (derived by SQLMap).
 
-Latest code: [SQLInjectionPlugin.java](https://github.com/zaproxy/zap-extensions/blob/master/addOns/sqliplugin/src/main/java/org/zaproxy/zap/extension/sqliplugin/SQLInjectionPlugin.java)
+Latest code: [SQLInjectionPlugin.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/sqliplugin/src/main/java/org/zaproxy/zap/extension/sqliplugin/SQLInjectionPlugin.java)
