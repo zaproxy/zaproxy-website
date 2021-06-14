@@ -9,7 +9,7 @@ weight: 1
 
 ## Source Code
 
-<https://github.com/zaproxy/zap-extensions/tree/master/addOns/imagelocationscanner>  
+<https://github.com/zaproxy/zap-extensions/tree/main/addOns/imagelocationscanner>  
 <https://github.com/veggiespam/ImageLocationScanner>
 
 ## Authors

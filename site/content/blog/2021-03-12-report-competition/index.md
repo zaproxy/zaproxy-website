@@ -87,7 +87,7 @@ If you need more advice and guidance then ask on the [ZAP User Group](https://gr
 Also join the User Group for updates on the Report Generation add-on especially for features related to this competition.
 
 To submit a report to this competition raise a pull request adding your report in a new directory underneath 
-[reports/src/main/zapHomeFiles/reports](https://github.com/zaproxy/zap-extensions/tree/master/addOns/reports/src/main/zapHomeFiles/reports) - 
+[reports/src/main/zapHomeFiles/reports](https://github.com/zaproxy/zap-extensions/tree/main/addOns/reports/src/main/zapHomeFiles/reports) - 
 if you are not sure how to do that ask on the User group as well.
 
 We are **really** looking forward to seeing what you produce - lets make one of ZAP's traditional weaknesses into one of its strengths!

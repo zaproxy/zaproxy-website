@@ -9,7 +9,7 @@ weight: 7
 
 ## Source Code
 
-<https://github.com/zaproxy/zap-extensions/tree/master/addOns/automation>
+<https://github.com/zaproxy/zap-extensions/tree/main/addOns/automation>
 
 ## Authors
 
