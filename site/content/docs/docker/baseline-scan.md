@@ -33,7 +33,7 @@ Options:
     -a                include the alpha passive scan rules as well
     -d                show debug messages
     -P                specify listen port
-    -D                delay in seconds to wait for passive scanning 
+    -D secs           delay in seconds to wait for passive scanning 
     -i                default rules not in the config file to INFO
     -I                do not return failure on warning
     -j                use the Ajax spider in addition to the traditional one
@@ -41,10 +41,12 @@ Options:
     -n context_file   context file which will be loaded prior to spidering the target
     -p progress_file  progress file which specifies issues that are being addressed
     -s                short output format - dont show PASSes or example URLs
-    -T                max time in minutes to wait for ZAP to start and the passive scan to run
+    -T mins           max time in minutes to wait for ZAP to start and the passive scan to run
     -U user           username to use for authenticated scans - must be defined in the given context file (post 2.9.0)
     -z zap_options    ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"
     --hook            path to python file that define your custom hooks
+    --auto            use the automation framework if supported for the given parameters (this will become the default soon)
+    --autooff         do not use the automation framework even if supported for the given parameters
 ```
 To run it with no 'file' params use:
 ```
@@ -185,6 +187,10 @@ These generate a [dashboard](https://github.com/zaproxy/community-scripts/wiki/B
 
 ### Scan Hooks
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
+
+### Automation Framework Migration
+The baseline scan is in the process of being migrated to use the [Automation Framework](/docs/automate/automation-framework/). 
+For more details see the blog post: [Baseline Scan Changes](/blog/2021-06-15-baseline-scan-changes/)
 
 ### Source Code
 The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/main/docker](https://github.com/zaproxy/zaproxy/tree/main/docker).
