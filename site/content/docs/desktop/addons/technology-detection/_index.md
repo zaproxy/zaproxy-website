@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.0.0
+    version: 21.2.0
 ---
 
 # Technology Detection Using Wappalyzer
@@ -17,6 +17,7 @@ It works in a very similar way to the Wappalyzer browser add-ons with the follow
 
 * It does not use the 'Global JavaScript variables' as these are difficult to test without a 'full' browser
 * It does not not show the confidence - this is still todo
+* It does not match technologies on the basis of DOM properties as some properties are set by JavaScript in the browser after the response has passed through ZAP
 * It allows you to see the 'evidence' used to detect the technologies
 
 ## The Technology Tab
@@ -31,6 +32,10 @@ passive scanner.
 
 The toolbar includes an enable/disable toggle button which controls whether the technology detection passive scan rule is functioning or not.
 This enabled state is persisted between ZAP sessions.
+
+## Reporting
+
+Technology data is available to reports via the [WappalyzerJobResultData](https://github.com/zaproxy/zap-extensions/tree/main/addOns/wappalyzer/src/main/java/org/zaproxy/zap/extension/wappalyzer/automation/WappalyzerJobResultData) class.
 
 ## External Links
 
