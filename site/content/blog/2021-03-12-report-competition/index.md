@@ -24,8 +24,9 @@ Apparently people have been a bit confused by some of the wording in this blog p
 
 It will remain open until we have accepted **10** templates or July 1st 2021, whichever comes first. Hopefully the 10 templates!
 
-Number of accepted templates to date: **0**
+Number of accepted templates to date: **1**
 
+* [#2876](https://github.com/zaproxy/zap-extensions/pull/2876) Awarded $200 due to the number of themes included
 
 ## The Competition
 
