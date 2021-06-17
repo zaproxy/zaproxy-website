@@ -12,3 +12,5 @@ cascade:
 # Custom Payloads
 
 This addon adds an Options panel from which users are able to add, update, remove payloads of their creation/choosing for use by active or passive scan rules which support custom payloads (accessible via the Tools menu Options menu item).
+
+The option panel interface also facilitates addition of multiple payloads from a file.

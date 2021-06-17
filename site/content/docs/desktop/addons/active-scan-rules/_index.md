@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 39.0.0
+    version: 40.0.0
 ---
 
 # Active Scan Rules
@@ -121,8 +121,7 @@ Latest code: [ServerSideIncludeScanRule.java](https://github.com/zaproxy/zap-ext
 
 ## Source Code Disclosure - /WEB-INF
 
-Exploit the presence of an unprotected /WEB-INF folder to download and decompile Java classes, to disclose Java source code.  
-**Note:** Currently not supported on Java 9 and above.
+Exploit the presence of an unprotected /WEB-INF folder to download and decompile Java classes, to disclose Java source code.
 
 Latest code: [SourceCodeDisclosureWebInfScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/SourceCodeDisclosureWebInfScanRule.java)
 

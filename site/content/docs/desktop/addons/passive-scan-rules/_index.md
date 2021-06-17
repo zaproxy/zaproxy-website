@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 33.0.0
+    version: 34.0.0
 ---
 
 # Passive Scan Rules
@@ -30,9 +30,9 @@ Latest code: [ApplicationErrorScanRule.java](https://github.com/zaproxy/zap-exte
 
 ## Cache Control
 
-Checks "Cache-Control" and "Pragma" response headers against general industry best practice settings for protection of sensitive content.  
-At MEDIUM and HIGH thresholds only non-error or non-redirect text responses (excluding JavaScript) are considered.  
-At LOW threshold all responses apart from images and CSS are considered including errors and redirects.
+Checks "Cache-Control" response headers against general industry best practice settings for protection of sensitive content.  
+At MEDIUM and HIGH thresholds only non-error or non-redirect text responses (excluding JavaScript and CSS) are considered.  
+At LOW threshold all responses are considered including errors and redirects.
 
 Latest code: [CacheControlScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CacheControlScanRule.java)
 
@@ -81,7 +81,11 @@ Latest code: [CookieSecureFlagScanRule.java](https://github.com/zaproxy/zap-exte
 
 ## Cookie Without SameSite Attribute
 
-This reports any cookies that do not have the SameSite attribute or that do not have a recognised valid value for that attribute.
+This reports any cookies that:
+
+* do not have the SameSite attribute
+* have the attribute set to "None" (ignored at HIGH Threshold)
+* do not have a recognised valid value for that attribute
 
 Latest code: [CookieSameSiteScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CookieSameSiteScanRule.java)
 
@@ -106,8 +110,7 @@ Latest code: [CrossDomainMisconfigurationScanRule.java](https://github.com/zapro
 
 The Content Security Policy (CSP) passive scan rule parses and analyzes CSP headers for potential misconfiguration or weakness. This rule leverages Shape Security's [Salvation](https://github.com/shapesecurity/salvation) library to perform it's parsing and assessment of CSPs.
 
-Note: If multiple CSP headers are encountered they are merged (intersected) into a single policy for analysis, check the 'Other Info' field of alerts
-for further details.
+If a response has multiple CSPs they are analyzed individually, as there is no sure way to intersect/merge the policies and further different browsers have varying levels of CSP support and enforcement.
 
 Latest code: [ContentSecurityPolicyScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ContentSecurityPolicyScanRule.java)
 
@@ -115,7 +118,7 @@ Latest code: [ContentSecurityPolicyScanRule.java](https://github.com/zaproxy/zap
 
 This rule identifies "potential" vulnerabilities with the lack of known CSRF countermeasures in pages with forms.  
 At HIGH alert threshold only scans messages which are in scope.  
-Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms.
+Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms. Form element names are sorted and de-duplicated when they are printed in the Zap Report.
 
 Latest code: [CsrfCountermeasuresScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CsrfCountermeasuresScanRule.java)
 

@@ -58,9 +58,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v39/ascanrules-release-39.zap
-  date: 2021-05-10
-  version: 39
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v40/ascanrules-release-40.zap
+  date: 2021-06-17
+  version: 40
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha quality Active Scanner rules
@@ -68,9 +68,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v30/ascanrulesAlpha-alpha-30.zap
-  date: 2020-11-27
-  version: 30
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v31/ascanrulesAlpha-alpha-31.zap
+  date: 2021-06-17
+  version: 31
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta quality Active Scanner rules
@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v33/ascanrulesBeta-beta-33.zap
-  date: 2020-12-15
-  version: 33
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v34/ascanrulesBeta-beta-34.zap
+  date: 2021-06-17
+  version: 34
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -198,13 +198,13 @@
   name: Custom Payloads
   description: Ability to add, edit or remove payloads that are used i.e. by active
     scanners
-  author: ZAP Core Team
+  author: ZAP Dev Team
   status: alpha
   infoUrl: /docs/desktop/addons/custom-payloads/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.9.0/custompayloads-alpha-0.9.0.zap
-  date: 2019-10-31
-  version: 0.9.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.10.0/custompayloads-alpha-0.10.0.zap
+  date: 2021-06-17
+  version: 0.10.0
 - id: customreport
   name: CustomReport
   description: New HTML report module allows users to customize report content.
@@ -654,9 +654,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v33/pscanrules-release-33.zap
-  date: 2021-01-29
-  version: 33
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v34/pscanrules-release-34.zap
+  date: 2021-06-17
+  version: 34
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha quality Passive Scanner rules
@@ -664,9 +664,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v30/pscanrulesAlpha-alpha-30.zap
-  date: 2021-02-08
-  version: 30
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v31/pscanrulesAlpha-alpha-31.zap
+  date: 2021-06-17
+  version: 31
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta quality Passive Scanner rules
@@ -674,9 +674,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v24/pscanrulesBeta-beta-24.zap
-  date: 2020-12-15
-  version: 24
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v25/pscanrulesBeta-beta-25.zap
+  date: 2021-06-17
+  version: 25
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
@@ -936,9 +936,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.1.0/wappalyzer-release-21.1.0.zap
-  date: 2021-03-03
-  version: 21.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.2.0/wappalyzer-release-21.2.0.zap
+  date: 2021-06-17
+  version: 21.2.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: 24.0.0
+    version: 25.0.0
 ---
 
 # Passive Scan Rules - Beta
@@ -45,7 +45,8 @@ Latest code: [DirectoryBrowsingScanRule.java](https://github.com/zaproxy/zap-ext
 ## Hash Disclosure
 
 Passively scans for password hashes disclosed by the web server.   
-Various formats are including, including some formats such as MD4, MD5, and SHA\*, which are sometimes used for purposes other than to contain password hashes.
+Various formats are including, including some formats such as MD4, MD5, and SHA\*, which are sometimes used for purposes other than to contain password hashes.   
+**Note:** This scan rule will only analyze JavaScript responses on LOW Threshold.
 
 Latest code: [HashDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/HashDisclosureScanRule.java)
 

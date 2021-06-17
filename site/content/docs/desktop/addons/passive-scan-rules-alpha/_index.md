@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: 29.0.0
+    version: 31.0.0
 ---
 
 # Passive Scan Rules - Alpha
@@ -68,13 +68,6 @@ For more details see: [Hacking ZAP Part 3: Passive Scan Rules](/blog/2014-04-03-
 
 Latest code: [ExampleSimplePassiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanRule.java)
 
-## Feature Policy Header Not Set
-
-This rule checks the HTTP response headers (on HTML and JavaScript responses) for inclusion of a "Feature-Policy" header, and alerts if one is not found.  
-Redirects are ignored except at the Low threshold.
-
-Latest code: [FeaturePolicyScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/FeaturePolicyScanRule.java)
-
 ## In Page Banner Information Leak
 
 Analyzes response body content for the presence of web or application server banners (when the responses have error status codes).  
@@ -93,6 +86,13 @@ JSO are a type of vulnerabilities associated to A8:2017-Insecure Deserialization
 
 Latest code: [JsoScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/JsoScanRule.java)
 
+## Permissions Policy Header Not Set
+
+This rule checks the HTTP response headers (on HTML and JavaScript responses) for inclusion of a "Permissions-Policy" header, and alerts if one is not found.  
+Redirects are ignored except at the Low threshold.
+
+Latest code: [PermissionsPolicyScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/PermissionsPolicyScanRule.java)
+
 ## Source Code Disclosure
 
 Application Source Code was disclosed by the web server.
@@ -109,6 +109,6 @@ Latest code: [SubResourceIntegrityAttributeScanRule.java](https://github.com/zap
 ## Dangerous JS Functions
 
 This scan rule checks for any dangerous JS functions present in a site response.  
-**Note:** If the Custom Payloads addon is installed you can add your own function names (payloads) in the Custom Payloads options panel. They will also be searched for in responses as they're passively scanned. Keep in mind that the greater the number of payloads the greater the amount of time needed to passively scan.
+**Note:** If the Custom Payloads addon is installed you can add your own function names (payloads) in the Custom Payloads options panel. They will also be searched for in responses as they're passively scanned. Keep in mind that the greater the number of payloads the greater the amount of time needed to passively scan. **Note:** $ is stripped from the start of the strings/payloads and is optionally included when the patterns are assembled.
 
 Latest code: [JsFunctionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/JsFunctionScanRule.java)
