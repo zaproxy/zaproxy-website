@@ -30,7 +30,7 @@
   title: ZAP API documentation
   date: 2019 Autumn
   links: >
-    <a href="https://whyaxis.me/2019/11/25/gsod-with-owasp-zap/" rel="nofollow">Blog</a>,
+    <a href="https://web.archive.org/web/20200922182250/https://whyaxis.me/2019/11/25/gsod-with-owasp-zap/" rel="nofollow">Blog</a>,
     <a href="/docs/api/">docs</a>,
     <a href="https://github.com/zaproxy/zap-api-docs" rel="nofollow">repo</a>
 
