@@ -181,9 +181,9 @@
   status: release
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.3.0/commonlib-release-1.3.0.zap
-  date: 2021-05-10
-  version: 1.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.4.0/commonlib-release-1.4.0.zap
+  date: 2021-06-23
+  version: 1.4.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -834,9 +834,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/soap-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v6/soap-alpha-6.zap
-  date: 2021-03-30
-  version: 6
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v7/soap-alpha-7.zap
+  date: 2021-06-23
+  version: 7
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
