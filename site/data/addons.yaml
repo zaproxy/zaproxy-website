@@ -109,9 +109,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.2.0/automation-alpha-0.2.0.zap
-  date: 2021-04-12
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.3.0/automation-alpha-0.3.0.zap
+  date: 2021-06-28
+  version: 0.3.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -724,9 +724,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.3.0/reports-beta-0.3.0.zap
-  date: 2021-05-06
-  version: 0.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.4.0/reports-beta-0.4.0.zap
+  date: 2021-06-28
+  version: 0.4.0
 - id: requester
   name: Requester
   description: Request numbered panel.
