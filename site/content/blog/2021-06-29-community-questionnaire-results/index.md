@@ -3,7 +3,7 @@ title: "Community Questionnaire Results"
 description: "Community Questionnaire Results"
 summary: "The results of the Community Questionnaire which we ran during the first half of 2021."
 images:
-- https://www.zaproxy.org/blog/2021-06-29-community-questionnaire/images/first-help.png
+- https://www.zaproxy.org/blog/2021-06-29-community-questionnaire-results/images/first-help.png
 type: post
 tags:
 - questionnaire
@@ -13,7 +13,7 @@ authors:
 - simon
 
 ---
-In December 2021 we published a Community Questionnaire focused on feedback and documentation.
+In December 2020 we published a Community Questionnaire focused on feedback and documentation.
 We have just closed that questionnaire and wanted to share the results and explain how they are changing what we do.
 
 ## The Results
