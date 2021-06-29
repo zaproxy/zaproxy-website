@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 18.0.0
+    version: 19.0.0
 ---
 
 # OpenAPI Support
@@ -66,3 +66,9 @@ In most cases these will be simple values (like strings and integers) but in som
 ```
 { "id": 0, "name": "Freda" }
 ```
+
+## Statistics
+
+The add-on maintains the following statistics:
+
+* openapi.urls.added : The total number of URLs added when importing OpenAPI definitions
