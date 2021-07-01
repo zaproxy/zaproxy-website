@@ -1,7 +1,7 @@
 ---
 title: "ZAP Report Competition"
 description: "ZAP Report Competition"
-summary: "Help us add modern, useful and stylish reports to ZAP"
+summary: "Help us add modern, useful and stylish reports to ZAP - the competition is now open until October 1st 2021."
 images:
 - https://www.zaproxy.org/blog/2021-03-12-report-competition/images/social.png
 type: post
@@ -20,9 +20,9 @@ authors:
 Apparently people have been a bit confused by some of the wording in this blog post, so just so that it is clear:
 
 * The competition is **OPEN**
-* It is open to everyone, regardless of where they live as long as we are legally able to participate
+* It is open to everyone, regardless of where they live as long as we are legally able to pay them
 
-It will remain open until we have accepted **10** templates or July 1st 2021, whichever comes first. Hopefully the 10 templates!
+It will remain open until we have accepted **10** templates or ~~July~~ **October** 1st 2021, whichever comes first - yes we've extended the deadline by 3 months!
 
 Number of accepted templates to date: **1**
 
