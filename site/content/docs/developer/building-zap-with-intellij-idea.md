@@ -1,7 +1,7 @@
 ---
 title: "Building ZAP with IntelliJ IDEA"
 description: "This guide will get you started with building and running ZAP in IntelliJ IDEA."
-tags: 
+tags:
 - guide
 - tutorial
 type: page
@@ -12,6 +12,19 @@ This guide explains how to make changes to ZAP using IntelliJ IDEA.
 
 ## Preparation
 You will need to have followed the [Quick Start Guide to Building ZAP](../quick-start-build/) and installed a version of [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
+
+##### Gradle Resources
+Working with ZAP in IntelliJ IDEA may need a bit more Java resources for the Gradle actions. To adjust how much memory Gradle can use on your machine set the option in [gradle.properties](https://docs.gradle.org/current/userguide/build_environment.html)
+
+For Linux/OSX
+```bash
+echo 'org.gradle.jvmargs=-Xmx4g -XX:MaxPermSize=1g' >> ~/.gradle/gradle.properties
+```  
+
+For Windows
+```powershell
+echo "org.gradle.jvmargs=-Xmx4g -XX:MaxPermSize=1g" >> %USERPROFILE%\.gradle\gradle.properties
+```  
 
 ## Import the ZAP Repositories
 
@@ -51,7 +64,7 @@ ZAP will now start but it is not set up quite right and may show warning dialogs
 
 Select the 'Run' &#8594; 'Edit Configurations...' and then the `ZAP` configuration under 'Application'.
 
-Change the 'Working directory' by browsing to: `.../zaproxy/zap/src/main/dist/`. Here, `.../zaproxy` should be replaced by the complete path to the cloned _zaproxy_ repository on your system. 
+Change the 'Working directory' by browsing to: `.../zaproxy/zap/src/main/dist/`. Here, `.../zaproxy` should be replaced by the complete path to the cloned _zaproxy_ repository on your system.
 
 ![IntelliJ Run Configuration](/img/docs/developer/intellij-config-run.png)
 
