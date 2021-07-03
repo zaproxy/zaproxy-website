@@ -1,0 +1,24 @@
+on:
+  schedule:
+    - cron:  '0 2 1 * *'
+  workflow_dispatch:
+
+name: Broken Link Check
+jobs:
+  LinkCheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Check with Hydra
+        run: |
+          BASE=$(pwd)
+          git clone --depth 1 https://github.com/zaproxy/zaproxy-website.git
+          git clone --depth 1 https://github.com/victoriadrake/hydra-link-checker.git
+          cd hydra-link-checker
+          wget -O evangelists.html https://www.zaproxy.org/evangelists/
+          wget -O hof.html https://www.zaproxy.org/student-hall-of-fame/
+          python hydra.py file://$BASE/hydra-link-checker/evangelists.html $BASE/zaproxy-website/.github/workflows/conf/hydra.json
+          python hydra.py file://$BASE/hydra-link-checker/hof.html $BASE/zaproxy-website/.github/workflows/conf/hydra.json

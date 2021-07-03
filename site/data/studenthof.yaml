@@ -159,7 +159,7 @@
   title: BIRT Reporting
   date: 2013 Summer
   links: >
-    <a href="https://www.owasp.org/index.php/GSoC2013_Ideas/OWASP_ZAP_Exploring_Advanced_reporting_using_BIRT" rel="nofollow">Wiki</a>
+    <a href="https://wiki.owasp.org/index.php/GSoC2013_Ideas/OWASP_ZAP_Exploring_Advanced_reporting_using_BIRT" rel="nofollow">Wiki</a>
 
 - name: Alessandro Secco
   email: 
@@ -199,7 +199,7 @@
   title: CMS add-on
   date: 2013 Summer
   links: >
-    <a href="https://www.owasp.org/index.php/GSoC2013_Ideas/OWASP_ZAP_CMS_SCANNER" rel="nofollow">Wiki</a>
+    <a href="https://wiki.owasp.org/index.php/GSoC2013_Ideas/OWASP_ZAP_CMS_SCANNER" rel="nofollow">Wiki</a>
 
 - name: Robert Koch
   email: 
