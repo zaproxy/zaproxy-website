@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v34/ascanrulesBeta-beta-34.zap
-  date: 2021-06-17
-  version: 34
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v35/ascanrulesBeta-beta-35.zap
+  date: 2021-07-06
+  version: 35
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -654,9 +654,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v34/pscanrules-release-34.zap
-  date: 2021-06-17
-  version: 34
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v35/pscanrules-release-35.zap
+  date: 2021-07-06
+  version: 35
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha quality Passive Scanner rules
@@ -664,9 +664,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v31/pscanrulesAlpha-alpha-31.zap
-  date: 2021-06-17
-  version: 31
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v32/pscanrulesAlpha-alpha-32.zap
+  date: 2021-07-06
+  version: 32
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta quality Passive Scanner rules
