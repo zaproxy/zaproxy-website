@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 34.0.0
+    version: 35.0.0
 ---
 
 # Passive Scan Rules
