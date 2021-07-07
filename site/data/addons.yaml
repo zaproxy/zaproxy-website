@@ -664,9 +664,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v32/pscanrulesAlpha-alpha-32.zap
-  date: 2021-07-06
-  version: 32
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v33/pscanrulesAlpha-alpha-33.zap
+  date: 2021-07-07
+  version: 33
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta quality Passive Scanner rules
