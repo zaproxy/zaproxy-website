@@ -4,6 +4,16 @@
 
 # Deep Dive Series
 
+- title: 'WebSockets'
+  id: LDm0Fst81hU
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/07/15'
+  length: 18:06
+  tags:
+  - websockets
+  - scripts
+
 - title: 'Fuzzing'
   id: YVsU-adgxb4
   site: youtube
@@ -214,6 +224,84 @@
   - cmdline
   - desktop
   - help
+
+# ZAPCon
+
+- title: 'The whole conference (4½ hours)'
+  id: xlt---D9I3w
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/03/09'
+  length: 4:31:39
+  tags:
+  - zapcon
+
+- title: 'Democratizing ZAP with Test Automation and DSLs'
+  id: jimW-R6_F4U
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/03/09'
+  length: 47:47
+  tags:
+  - zapcon
+  - automation
+
+- title: 'ZAP Project Updates'
+  id: aZmS9NiQlJA
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/03/09'
+  length: 36:10
+  tags:
+  - zapcon
+
+- title: 'Mobile Application Security Testing with ZAP'
+  id: KWofjrHNNqs
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/03/09'
+  length: 37:37
+  tags:
+  - zapcon
+  - mobile
+
+- title: 'ZAP in Pakistani Fintech'
+  id: VeBbHBow9kQ
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/03/09'
+  length: 34:42
+  tags:
+  - zapcon
+
+- title: 'Enhancing ZAP with Feedback Based Fuzzing'
+  id: 5Hq0sPbhnDQ
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/03/09'
+  length: 40:40
+  tags:
+  - zapcon
+  - fuzzing
+
+- title: 'Starting a Security Program on a Shoestring (with ZAP)'
+  id: Gyf0XZRDBAM
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/03/09'
+  length: 28:23
+  tags:
+  - zapcon
+
+- title: 'Simon Bennetts Ask Me Anything'
+  id: 6e4_m1Zm6LY
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/03/09'
+  length: 1:03:55
+  tags:
+  - zapcon
+  - ama
 
 # ADDO Automation
 
