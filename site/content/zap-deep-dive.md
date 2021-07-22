@@ -59,6 +59,9 @@ links:
 
   - name: 'Fuzzing'
     uuid: YVsU-adgxb4
+    
+  - name: 'WebSockets'
+    uuid: LDm0Fst81hU
 
 ---
 A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](https://www.stackhawk.com).

@@ -24,5 +24,8 @@ links:
   - name: 'Starting a Security Program on a Shoestring (with ZAP)'
     uuid: Gyf0XZRDBAM
 
+  - name: 'Simon Bennetts Ask Me Anything'
+    uuid: 6e4_m1Zm6LY
+
 ---
 The videos from [ZAPCon](https://zapcon.io/) 2021.
