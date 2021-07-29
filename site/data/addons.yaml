@@ -17,9 +17,9 @@
   status: release
   infoUrl: /docs/desktop/addons/alert-filters/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v10/alertFilters-release-10.zap
-  date: 2020-01-17
-  version: 10
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v11/alertFilters-release-11.zap
+  date: 2021-07-29
+  version: 11
 - id: alertReport
   name: Report alert generator
   description: Allows you to generate reports for alerts you specify in pdf or odt
@@ -674,9 +674,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v25/pscanrulesBeta-beta-25.zap
-  date: 2021-06-17
-  version: 25
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v26/pscanrulesBeta-beta-26.zap
+  date: 2021-07-29
+  version: 26
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
