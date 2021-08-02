@@ -67,7 +67,9 @@ ZAP has installers for Windows, Linux, and Mac OS/X. There are also Docker image
 ##### Install ZAP
 The first thing to do is install ZAP on the system you intend to perform pentesting on. Download the appropriate installer from the [Download](/download/) page.
 
-Note that ZAP requires Java 8+ in order to run. The Mac OS/X installer includes an appropriate version of Java but you must install Java 8+ separately for Windows, Linux, and Cross-Platform versions. The Docker versions do not require you to install Java.
+Warning: OWASP is not a verified developer with Apple. On MacOS, you will see a message like: `“OWASP ZAP.app” cannot be opened because the developer cannot be verified.` To circumvent this check, you would need to go to "System Preferences" > "Security & Privacy" at the bottom of the dialog. You will see a message saying that "OWASP ZAP" was blocked. Next to it, if you trust the downloaded installer, you can click "Open anyway". 
+
+Note that ZAP requires Java 8+ in order to run. The MacOS installer includes an appropriate version of Java but you must install Java 8+ separately for Windows, Linux, and Cross-Platform versions. The Docker versions do not require you to install Java.
 
 Once the installation is complete, launch ZAP and read the license terms. Click **Agree** if you accept the terms, and ZAP will finish installing, then ZAP will automatically start.
 
