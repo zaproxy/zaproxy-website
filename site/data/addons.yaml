@@ -605,6 +605,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/neonmarker-alpha-1.3.0.zap
   date: 2020-09-30
   version: 1.3.0
+- id: oast
+  name: OAST Support
+  description: Allows you to exploit out-of-band vulnerabilities
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/oast-support/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.1.0/oast-alpha-0.1.0.zap
+  date: 2021-08-04
+  version: 0.1.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
