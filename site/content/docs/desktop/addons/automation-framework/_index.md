@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.3.0
+    version: 0.4.0
 ---
 
 # Automation Framework
@@ -28,6 +28,10 @@ To use the automation framework:
 
 In most cases it is recommended to also use the `-cmd` command line option so that the ZAP desktop is not displayed and ZAP exits as soon as it has finished generating or running the jobs defined in the file. However you can choose to run Automation Framework jobs using the ZAP desktop to help you debug issues.
 
+## GUI
+
+A [GUI](/docs/desktop/addons/automation-framework/gui/) is under development and currently provides a limited set of functionality.
+
 ## Environment
 
 The [environment](/docs/desktop/addons/automation-framework/environment/) section of the file defines the applications which the rest of the jobs can act on.
@@ -39,6 +43,7 @@ The following automation jobs are supported by this add-on:
 * [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
+* [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - crafts specific requests to send to the corresponding targets
 * [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
 

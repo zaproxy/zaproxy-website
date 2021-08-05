@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 19.0.0
+    version: 20.0.0
 ---
 
 # OpenAPI Support
@@ -46,6 +46,25 @@ The following operations are added to the API:
 * ACTION importUrl (url, hostOverride)
 
 Both `target` and `hostOverride` support the `Target URL` format explained earlier. The definitions will be imported synchronously and any warnings will be returned.
+
+### Data Driven Nodes
+
+When the OpenAPI schema contains path params the plugin will automatically generate data driven nodes in either the default context or for the context from the provided `contextId`. For example, the following OpenAPI definition will result in at least one data driven node. **openapi.yml** `
+...
+/users/v1/{username}/email:
+...
+parameters:
+- name: username
+in: path
+description: username to update email
+required: true
+schema:
+type: string
+...
+` **Default Context \> Structure \> Structural Modifiers** `
+DDN0: (/)(.+?)(/.*)
+DDN1: (/users/v1/)(.+?)(/.*)
+`
 
 ## Command Line
 
