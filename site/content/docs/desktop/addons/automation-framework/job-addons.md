@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - addOns Job
 type: userguide
-weight: 2
+weight: 3
 ---
 
 # Automation Framework - addOns Job

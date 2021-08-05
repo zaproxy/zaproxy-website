@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - passiveScan-wait Job
 type: userguide
-weight: 4
+weight: 5
 ---
 
 # Automation Framework - passiveScan-wait Job

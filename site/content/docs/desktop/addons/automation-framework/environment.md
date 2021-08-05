@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - Environment
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # Automation Framework - Environment
