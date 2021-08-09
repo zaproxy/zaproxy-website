@@ -7,35 +7,23 @@ weight: 2
 
 The default directory that ZAP uses depends on the OS.
 
-Note that you can override this using the -dir [command line](/docs/desktop/cmdline/) option.
+It can be overridden using the `-dir` [command line](/docs/desktop/cmdline/) option.
 
-##  Windows 7 / 8
+The default or home directory contains ZAP files added or modified at runtime. Including (but not limited to): config files, add-ons, input files, logs, etc. It is also the save location, for: scripts, active scan policy files, exported contexts, etc.
 
-    
-    
-    C:\Users\<username>\OWASP ZAP
-    
+Note: ZAP's home is not the same as the user's home directory, which is also OS dependent, and is the initial save location for sessions, reports, exported URLs, etc.
 
-##  Windows XP
+##  Windows 7 / 8 / 10
 
-    
-    
-    C:\Documents and Settings\<username>\OWASP ZAP
-    
+`C:\Users\<username>\OWASP ZAP`
 
 ##  Linux
 
-    
-    
-    ~/.ZAP
-    
+`~/.ZAP`
 
 ##  Mac OS
 
-    
-    
-    ~/Library/Application Support/ZAP
-    
+`~/Library/Application Support/ZAP`
 
 ##  Weekly releases
 

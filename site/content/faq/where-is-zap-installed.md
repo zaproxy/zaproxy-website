@@ -5,25 +5,16 @@ category: General Questions
 weight: 2
 ---
 
-ZAP is installed in different places depending on the OS:
+ZAP is installed in different places depending on the OS.
 
-##  Windows 7
+The install directory contains everything that's bundled with ZAP originally.
 
-Underneath the 'Program Files (x86)' directory, e.g.
+##  Windows 7 / 8 / 10
 
-    
-    
-    C:\Program Files (x86)\OWASP\Zed Attack Proxy
-    
+Underneath the `Program Files` directory, e.g.
 
-##  Windows XP
-
-Underneath the 'Program Files' directory, e.g.
-
-    
-    
-    C:\Program Files\OWASP\Zed Attack Proxy
-    
+- `C:\Program Files\OWASP\Zed Attack Proxy` - For 64bit installs.
+- `C:\Program Files (x86)\OWASP\Zed Attack Proxy` - For 32bit installs.
 
 ##  Linux
 
@@ -35,4 +26,4 @@ wherever you expand the archive.
 Same as for Linux, the Mac OS package is just a zip file. The contained "Owasp
 ZAP" app can be executed instantly, regardless of the directory. As for any
 other Mac application, most users preferably put the app into the
-/Applications directory.
+`/Applications` directory.
