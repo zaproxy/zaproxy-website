@@ -15,6 +15,10 @@ receiver.
 Requests made to BOAST by the target web application can be viewed in the [OAST Callbacks
 Tab](/docs/desktop/addons/oast-support/tab/) in the ZAP GUI.
 
+## Scripts
+
+If the *Script Console* and the *GraalVM JavaScript* add-ons are installed, a new script called "OAST Get BOAST Servers.js" is added to ZAP. This script prints all the available information related to the registered BOAST servers. The primary purpose of this script is to demonstrate how to interact with BOAST from a script. This will enable you to write other scripts that make use of BOAST payloads and canary values to perform out-of-bound attacks.
+
 ## See also
 
 |   |                                                                            |   |

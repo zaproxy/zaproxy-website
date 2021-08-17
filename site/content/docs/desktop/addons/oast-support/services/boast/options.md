@@ -18,31 +18,28 @@ running a working instance of BOAST.
 
 An example of a valid URI is: `https://example.com:1337/events`.
 
-### ID
+### Polling Frequency
 
-A non-editable field that is filled in when you register with a BOAST instance.
+This option allows you to change the frequency of polling the registered BOAST servers. It takes values in
+seconds. The minimum allowed value is 10 seconds and there is no maximum allowed value. The default value is 60
+seconds.
 
-This ID can be used to craft an address that can be specified in relevant attacks.
+### Active Servers
 
-For example, if an ID is `cxcjyaf5wahkidrp2zvhxe6ola`, and the Server URI host is `example.com`,
-then the payload URI host will be `cxcjyaf5wahkidrp2zvhxe6ola.example.com`.
+This table lists the Payloads and Canary values of all registered BOAST Servers. An entry is added each time you
+click on Register.
 
-### Canary
+#### Payload
+
+The Payload is the address of an active BOAST server that can be used in out-of-bound attacks.
+
+#### Canary
 
 The Canary value is a random string that is returned to the target web application when it makes a request to the
-registered BOAST server.
+corresponding Payload address.
 
 Consider an example of how this value could be used: if the target web application ends up using the canary value
-somewhere, then it may be vulnerable to out of band injection attacks.
-
-### Other Configuration Options
-
-By default, ZAP polls all the registered BOAST servers once per minute. This setting will be made configurable in
-future versions of this add-on.
-
-Along with the *Polling Frequency* setting, there is also a plan to introduce a *Registered Servers*
-panel that will display all registered BOAST servers.
-
+somewhere, then it may be vulnerable to out-of-band injection attacks.
 
 ## See also
 
