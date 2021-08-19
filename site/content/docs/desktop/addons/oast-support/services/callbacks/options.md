@@ -30,10 +30,10 @@ If the Random Port option is unchecked then this is the port that ZAP will liste
 
 ### Test URL
 
-This is the test URL that you can try to access from remote systems. All accesses to the Test URL will be recorded in the ZAP log file at INFO level. If you are using the ZAP UI then accesses will also be shown in the Output tab, as well as the [OAST Callbacks tab](/docs/desktop/addons/oast-support/tab/).
+This is the test URL that you can try to access from remote systems. All accesses to the Test URL will be recorded in the ZAP log file at INFO level. If you are using the ZAP UI then accesses will also be shown in the Output tab, as well as the [OAST tab](/docs/desktop/addons/oast-support/tab/).
 
 ## See also
 
-|   |                                                              |   |
-|---|--------------------------------------------------------------|---|
-|   | [OAST Callbacks Tab](/docs/desktop/addons/oast-support/tab/) |   |
+|   |                                                    |   |
+|---|----------------------------------------------------|---|
+|   | [OAST Tab](/docs/desktop/addons/oast-support/tab/) |   |

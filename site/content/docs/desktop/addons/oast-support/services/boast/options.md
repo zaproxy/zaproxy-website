@@ -31,7 +31,7 @@ click on Register.
 
 #### Payload
 
-The Payload is the address of an active BOAST server that can be used in out-of-bound attacks.
+The Payload is the address of an active BOAST server that can be used in out-of-band attacks.
 
 #### Canary
 
