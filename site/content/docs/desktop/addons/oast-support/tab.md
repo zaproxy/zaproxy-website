@@ -1,14 +1,14 @@
 ---
 # This page was generated from the add-on.
-title: OAST Callbacks Tab
+title: OAST Tab
 type: userguide
 weight: 1
 ---
 
-# OAST Callbacks Tab
+# OAST Tab
 
-This tab shows a summary of the callback requests ZAP has received.
-For each callback you can see:
+This tab shows a summary of the out-of-band messages discovered by ZAP.
+For each message, you can see:
 
 |   |                                                                                            |
 |---|--------------------------------------------------------------------------------------------|
