@@ -2,6 +2,7 @@
     <thead  align="left">
     <tr>
         <th style="width: 50%">Name</th>
+        <th>ID</th>
         <th style="width: 10%">Version</th>
         <th style="width: 10%">Status</th>
         <th style="width: 15%">Author</th>
@@ -24,6 +25,9 @@
             {{end}}
             <br>
             {{ .description }}
+        </td>
+        <td>
+            {{ .id }}
         </td>
         <td align="center">
             {{ .version }}
