@@ -22,7 +22,7 @@ You will now get a new 'Launch Browser' option in the Quick Start tab:
   
 {{< img "images/launch-browser.png" >}}  
 To see a demo of this feature see the following video:
-{{< youtube lYHwR7UEggA >}}
+{{< youtube uuid="lYHwR7UEggA" >}}
   
 Note that you must be using the latest version of ZAP (currently 2.8.0) and at least Java 8.  
 Version 2.8.0 does support Java 7, but this functionality requires Java 8. It’s worth noting that the next full release of ZAP will also require
