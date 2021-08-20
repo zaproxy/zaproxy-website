@@ -51,3 +51,6 @@ The FileUpload add-on is currently only available for dev versions of ZAP such a
 For more information please visit [FileUpload addon](https://github.com/SasanLabs/owasp-zap-fileupload-addon)
 
 For detailed information on FileUpload add-on configuration see the following video: {{< youtube uuid="3bHjrpbLQmA" >}}
+
+## Special Thanks
+This addon is highly inspired from [Upload-Scanner](https://github.com/portswigger/upload-scanner) and uses many concepts from Upload-Scanner extension.
