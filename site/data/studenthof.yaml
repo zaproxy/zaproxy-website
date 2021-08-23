@@ -5,6 +5,17 @@
   twitter: ricekot_
   linkedin: https://www.linkedin.com/in/akshath-kothari/
   program: GSoC
+  title: Out-of-band Application Security Testing 
+  date: 2021 Summer
+  links: >
+    <a href="/blog/2021-08-23-oast-with-owasp-zap/">Blog</a>,
+    <a href="/docs/desktop/addons/oast-support/">add-on</a>
+
+- name: Akshath Kothari
+  email: 
+  twitter: ricekot_
+  linkedin: https://www.linkedin.com/in/akshath-kothari/
+  program: GSoC
   title: GraphQL Support
   date: 2020 Summer
   links: >

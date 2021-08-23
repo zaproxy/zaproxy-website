@@ -8,5 +8,5 @@ info:
 - These are version specific and define the add-on on the ZAP Marketplace for that release stream.
 - The 2.10 release stream uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.10.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.10.xml)
 - The development code uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-dev.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-dev.xml)
-- At the moment these files are the same, but it does allow us to maintain different versions of add-ons for different versions of ZAP, if we need to support this in the future.
+- These files are usually the same, but it does allow us to release add-ons which depend on core features which have been added since the current stable release.
 illustration:  version-bot.svg
