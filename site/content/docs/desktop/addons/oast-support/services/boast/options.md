@@ -1,6 +1,6 @@
 ---
 # This page was generated from the add-on.
-title: BOAST
+title: BOAST Options
 type: userguide
 weight: 1
 ---
@@ -27,7 +27,7 @@ seconds.
 ### Active Servers
 
 This table lists the Payloads and Canary values of all registered BOAST Servers. An entry is added each time you
-click on Register.
+register a new BOAST server.
 
 #### Payload
 
