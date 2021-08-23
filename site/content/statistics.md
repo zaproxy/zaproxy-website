@@ -17,7 +17,7 @@ The Check for Update requests that ZAP makes are detailed in the FAQ: [What 'cal
 
 {{< chart name="docker" stacked="true">}}
 
-No, we don't know why there were so many Docker pulls in February and April 2021 either &#128539;.
+No, we don't know why there were so many Docker pulls from May 2021 either &#128539;.
  
 {{< chart name="user-group" stacked="false">}}
  
