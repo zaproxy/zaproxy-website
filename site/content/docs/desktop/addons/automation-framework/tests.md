@@ -26,7 +26,7 @@ Statistics-based tests are supported by all add-ons that have an automation job.
         statistic: 'stats.addon.something'    # Name of an integer / long statistic
         operator: '>='                        # One of '==', '!=', '>=', '>', '<', '<='
         value: 10                             # Value to compare statistic against
-        onFail: 'warn'                        # One of 'warn', 'error', 'ignore'
+        onFail: 'info'                        # String: One of 'warn', 'error', 'info', mandatory
 
 ```
 
@@ -58,6 +58,6 @@ Alert tests are supported by the activeScan and passiveScan-wait jobs. These tes
         confidence:                            # String: The confidence of the alert, one of 'False Positive', 'Low', 'Medium', 'High', 'Confirmed', optional
         risk:                                  # String: The risk of the alert, one of 'Informational', 'Low', 'Medium', 'High', optional
         otherInfo:                             # String: Additional information corresponding to the alert, optional
-        onFail: 'warn'                         # One of 'warn', 'error', 'ignore'
+        onFail: 'info'                         # String: One of 'warn', 'error', 'info', mandatory
   
 ```
