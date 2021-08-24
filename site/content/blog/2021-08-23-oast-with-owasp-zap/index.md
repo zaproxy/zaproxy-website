@@ -7,6 +7,8 @@ images:
 type: post
 tags:
 - blog
+- gsoc
+- oast
 date: "2021-08-23"
 addSocialPreview: true
 authors:

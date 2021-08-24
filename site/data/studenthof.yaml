@@ -11,6 +11,17 @@
     <a href="/blog/2021-08-23-oast-with-owasp-zap/">Blog</a>,
     <a href="/docs/desktop/addons/oast-support/">add-on</a>
 
+- name: Pranav Saxena
+  email: 
+  twitter: 
+  linkedin: 
+  program: GSoC
+  title: Retesting Alerts
+  date: 2021 Summer
+  links: >
+    <a href="/blog/2021-08-23-retest-with-zap/">Blog</a>,
+    <a href="/docs/desktop/addons/retest/">add-on</a>
+
 - name: Akshath Kothari
   email: 
   twitter: ricekot_

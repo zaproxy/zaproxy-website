@@ -2,13 +2,17 @@
 title: "Retesting alerts with OWASP ZAP"
 description: "Introducing the Retest add-on for ZAP"
 summary: "An overview of the features of the Retest add-on for OWASP ZAP. This add-on allows you to retest for previously generated alerts."
+images:
+- https://www.zaproxy.org/blog/2021-08-23-retest-with-zap/images/dialog.png
 type: post
 tags:
 - blog
+- gsoc
+- retest
 date: "2021-08-23"
 addSocialPreview: true
 authors:
-- pranavsaxena17
+- pranavsaxena
 ---
 
 ZAP is a great tool to detect vulnerabilities of different kinds in web applications and generate alerts accordingly. However, it currently lacks a user-friendly mechanism to revalidate or retest the identified weaknesses.
