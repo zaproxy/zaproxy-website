@@ -28,7 +28,7 @@ The blog post titled ["ZAP SSRF Setup"](/blog/2020-03-09-zap-ssrf-setup/) is a g
 1. Go to the Options window in ZAP. To do so you could either
     - go to `Tools` &rarr; `Options...`, 
     - click on the gear icon ![Gear Icon](images/zap-gear-icon.png) in the toolbar, or 
-    - press `ctrl`+`alt`+`O` .
+    - press `ctrl` + `alt` + `O` .
 1. Choose OAST from the list under *Options*.
 1. Select the BOAST tab in the OAST Options screen.
 
@@ -41,7 +41,9 @@ The blog post titled ["ZAP SSRF Setup"](/blog/2020-03-09-zap-ssrf-setup/) is a g
     An example of a valid URI is: `https://example.com:1337/events`.
 1.  Choose a polling frequency. This is the rate at which the registered BOAST servers will be polled. It takes values in seconds. The minimum allowed value is 10 seconds and there is no maximum allowed value. The default value is 60 seconds.
 1. Click on Register. 
-1. You will notice that a new entry has been added to *Active Servers* table. ZAP will now poll this server at the frequency you set and report all interactions (DNS, HTTP) with the payload URI in the OAST tab in the main screen.
+1. You will notice that a new entry has been added to *Active Servers* table. You can copy the payload with `ctrl` + `C` to use it in your attacks.
+
+    ZAP will now poll this server at the frequency you set and report all interactions (DNS, HTTP) with the payload URI in the OAST tab in the main screen.
 
     ![The OAST Tab](images/zap-oast-tab.png)
 
