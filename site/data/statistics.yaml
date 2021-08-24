@@ -1,0 +1,296 @@
+# The statistics maintained by ZAP
+---
+
+- key: stats.pscan.reqBodyTooBig
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanThread.java
+  desc: The number of requests that have not been passively scanned as they exceed the configured max body size to scan
+
+- key: stats.pscan.respBodyTooBig
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanThread.java
+  desc: The number of responses that have not been passively scanned as they exceed the configured max body size to scan
+
+- key: stats.pscan.<rule-name>
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanThread.java
+  desc: The cumulative number of milliseconds taken to run the given scan rule
+
+- key: stats.tag.<tag-name>
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/RegexAutoTagScanner.java
+  desc: The number of messages containing the given tag
+
+- key: stats.code.<response-code>
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/StatsPassiveScanner.java
+  desc: The number of messages which include the given response code
+
+- key: stats.contentType.<content-type>
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/StatsPassiveScanner.java
+  desc: The number of messages which include the given content type
+
+- key: stats.responseTime.<time-slice>
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/StatsPassiveScanner.java
+  desc: The number of messages with response times in milliseconds the given (logerithmic) time slice (1, 2, 4, 8 etc)
+
+- key: stats.acsrf.<token-name>
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/anticsrf/AntiCsrfDetectScanner.java
+  desc: The number of time given token is present in an HTTP response
+
+- key: sqldb.<key>.calls
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/db/sql/DbSQL.java
+  desc: The number of times the SQL statement with the given key has been called
+
+- key: sqldb.<key>.time
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/db/sql/DbSQL.java
+  desc: The cumulative number of milliseconds taken by the corresponding SQL statements
+
+- key: sqldb.<key>.pool
+  scope: global
+  type: highwatermark
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/db/sql/DbSQL.java
+  desc: The highest number of prepared statements in the pool for the given key
+
+- key: sqldb.conn.openned
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/db/sql/DbSQL.java
+  desc: The number of time the ZAP db has been openned
+
+- key: sqldb.conn.closed
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/db/sql/DbSQL.java
+  desc: The number of time the ZAP db has been closed
+
+- key: stats.auth.state.assumedin
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationMethod.java
+  desc: The number of messages between successful polls that are assumed to be logged in
+
+- key: stats.auth.state.loggedin
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationMethod.java
+  desc: The number of messages that include the logged-in indicator
+
+- key: stats.auth.state.loggedout
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationMethod.java
+  desc: The number of messages that include the logged-out indicator
+
+- key: stats.auth.state.noindicator
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationMethod.java
+  desc: The number of messages where no logged in or out indicators have been set in the context
+
+- key: stats.auth.state.unknown
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationMethod.java
+  desc: The number of messages which don't contain either logged in or out indicators
+
+- key: stats.auth.success
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationHelper.java
+  desc: The number of authentication successes
+
+- key: stats.auth.failure
+  scope: site
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationHelper.java
+  desc: The number of authentication failures
+
+- key: automation.spider.urls.added
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/automation/src/main/java/org/zaproxy/addon/automation/jobs/SpiderJob.java
+  desc: The number of URLs added by the standard spider running in the automation framework
+
+- key: domxss.gets.count
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of GET requests made by the DOM XSS scan rule
+
+- key: domxss.vulns.get1
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of DOM XSS vulnerabilities found using the first GET request
+
+- key: domxss.vulns.input1
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of DOM XSS vulnerabilities found when retrieving input elements
+
+- key: domxss.vulns.possibleDomXSSTriggers2
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of DOM XSS vulnerabilities found using possibleDomXSSTriggers2
+
+- key: domxss.vulns.get2
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of DOM XSS vulnerabilities found using the first second GET request
+
+- key: domxss.vulns.possibleDomXSSTriggers3
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of DOM XSS vulnerabilities found using possibleDomXSSTriggers3
+
+- key: domxss.vulns.div1
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of DOM XSS vulnerabilities found when retrieving div elements
+
+- key: domxss.vulns.div2
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of DOM XSS vulnerabilities found when accessing div elements
+
+- key: domxss.scan.count
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of times the DOM XSS rule was run against a target URL
+
+- key: domxss.attack.<vector>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/domxss/src/main/java/org/zaproxy/zap/extension/domxss/DomXssScanRule.java
+  desc: The number of time the given DOM XSS attack vector was used
+
+- key: openapi.urls.added
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/openapi/src/main/java/org/zaproxy/zap/extension/openapi/HistoryPersister.java
+  desc: The number of URLs added by importing an OpenAPI definition
+
+- key: soap.urls.added
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/soap/src/main/java/org/zaproxy/zap/extension/soap/WSDLCustomParser.java
+  desc: The number of URLs added by importing a SOAP definition
+
+- key: spiderAjax.urls.added
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/spiderAjax/src/main/java/org/zaproxy/zap/extension/spiderAjax/automation/AjaxSpiderJob.java
+  desc: The number of URLs found by the ajax spider
+
+- key: stats.websockets.open
+  scope: site
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketProxy.java
+  desc: The number of time a websocket connection was opened
+
+- key: stats.websockets.close
+  scope: site
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketProxy.java
+  desc: The number of time a websocket connection was closed
+
+- key: stats.websockets.opcode.<opcode>
+  scope: site
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketProxy.java
+  desc: The number of websocket messages by opcode
+
+- key: stats.websockets.count.incoming
+  scope: site
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketProxy.java
+  desc: The number of incoming websocket messages
+
+- key: stats.websockets.count.outgoing
+  scope: site
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketProxy.java
+  desc: The number of outgoing websocket messages
+
+- key: stats.websockets.bytes.incoming
+  scope: site
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketProxy.java
+  desc: The cumulative number of incoming websocket bytes received
+
+- key: stats.websockets.bytes.outgoing
+  scope: site
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketProxy.java
+  desc: The cumulative number of outgoing websocket bytes sent
+
+- key: stats.websockets.pscan.<pscanname>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/pscan/WebSocketPassiveScanThread.java
+  desc: The number of times the given rule was run against a message
