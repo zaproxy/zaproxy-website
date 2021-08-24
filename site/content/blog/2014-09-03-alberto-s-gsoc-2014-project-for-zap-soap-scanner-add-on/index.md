@@ -2,6 +2,9 @@
 title: "Alberto's GSoC 2014 Project for ZAP  SOAP Scanner Add-On"
 type: post
 tags:
+- blog
+- gsoc
+- soap
 date: "2014-09-03"
 authors:
     - alberto

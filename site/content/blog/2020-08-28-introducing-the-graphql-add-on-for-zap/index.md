@@ -4,6 +4,8 @@ description: "Now attack GraphQL endpoints with the new GraphQL add-on for ZAP"
 type: post
 tags:
 - blog
+- gsoc
+- graphql
 date: "2020-08-28"
 addSocialPreview: true
 authors:

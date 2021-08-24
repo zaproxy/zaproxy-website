@@ -16,11 +16,17 @@ thorin:
   twitter: kingthorin_rm
   is_core: true
 
+akshath:
+  name: Akshath Kothari
+  picture: /img/authors/akshath-kothari_400x400.jpg
+  twitter: ricekot_
+  is_core: true
+
 david:
   name: David Scrobonia
   picture: /img/authors/david-scrobonia_400x400.png
   twitter: david_scrobonia
-  is_core: true
+  is_core: false
 
 jordan:
   name: Jordan GS
@@ -44,13 +50,7 @@ nirojan:
   name: Nirojan Selvanathan
   picture: /img/authors/nirojan-selvanathan_400x400.png
   twitter: sshniro
-  is_core: true  
-
-akshath:
-  name: Akshath Kothari
-  picture: /img/authors/akshath-kothari_400x400.jpg
-  twitter: ricekot_
-  is_core: false
+  is_core: false  
 
 preetkaran20:
   name: Karan Preet Singh Sasan
@@ -62,4 +62,10 @@ BlazingWind:
   name: Sylwia Budzynska
   picture: /img/authors/sylwia-400x400.jpg
   twitter: BlazingWindSec
+  is_core: false
+
+pranavsaxena:
+  name: Pranav Saxena
+  picture:
+  twitter: 
   is_core: false

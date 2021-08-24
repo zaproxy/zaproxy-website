@@ -2,6 +2,8 @@
 title: "ZAP 2.0.0 and the Google Summer of Code 2012 Projects"
 type: post
 tags:
+- blog
+- gsoc
 date: "2012-12-10"
 authors:
     - simon
