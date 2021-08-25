@@ -1,0 +1,26 @@
+<table data-sort-filter class="table market-table">
+    <thead  align="left">
+    <tr>
+        <th style="width: 30%">Key / Link</th>
+        <th style="width: 10%">Scope</th>
+        <th style="width: 10%">Type</th>
+        <th style="width: 50%">Description</th>
+    </tr>
+    </thead>
+    {{ range sort $.Site.Data.statistics "key" }}
+    <tr>
+        <td>
+            <a class="no-border" title="{{ .key }}" href="https://github.com/{{ .repo }}/blob/{{ .code }}" target="_blank" rel="noopener noreferrer">{{ .key }}</a>
+        </td>
+        <td align="center">
+            {{ .scope }}
+        </td>
+        <td align="center">
+            {{ .type }}
+        </td>
+        <td >
+            {{ .desc }}
+        </td>
+    </tr>
+    {{ end }}
+</table>
