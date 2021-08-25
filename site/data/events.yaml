@@ -1,0 +1,114 @@
+# The events raised in ZAP
+---
+
+- publisher: org.parosproxy.paros.extension.history.ProxyListenerLogEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/extension/history/ProxyListenerLogEventPublisher.java
+  event: href.added
+
+- publisher: org.parosproxy.paros.model.HistoryReferenceEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/HistoryReferenceEventPublisher.java
+  event: href.tags.set
+
+- publisher: org.parosproxy.paros.model.HistoryReferenceEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/HistoryReferenceEventPublisher.java
+  event: href.note.set
+
+- publisher: org.parosproxy.paros.model.HistoryReferenceEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/HistoryReferenceEventPublisher.java
+  event: href.tag.removed
+
+- publisher: org.parosproxy.paros.model.HistoryReferenceEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/HistoryReferenceEventPublisher.java
+  event: href.removed
+
+- publisher: org.parosproxy.paros.model.HistoryReferenceEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/HistoryReferenceEventPublisher.java
+  event: href.tag.added
+
+- publisher: org.zaproxy.zap.extension.websocket.WebSocketEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketEventPublisher.java
+  event: ws.stateChange
+
+- publisher: org.zaproxy.zap.extension.websocket.WebSocketEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketEventPublisher.java
+  event: ws.message
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.error
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: test.added
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.saved
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: test.removed
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.finished
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.info
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: job.removed
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.started
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: job.started
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.created
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: job.added
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: job.finished
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.warning
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: job.changed
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.env.created
+
+- publisher: org.zaproxy.addon.automation.AutomationEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
+  event: plan.changed
+
+- publisher: org.zaproxy.zap.extension.alert.AlertEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/zaproxy/zap/extension/alert/AlertEventPublisher.java
+  event: alert.all.removed
+
+- publisher: org.zaproxy.zap.extension.alert.AlertEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/zaproxy/zap/extension/alert/AlertEventPublisher.java
+  event: alert.changed
+
+- publisher: org.zaproxy.zap.extension.alert.AlertEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/zaproxy/zap/extension/alert/AlertEventPublisher.java
+  event: alert.removed
+
+- publisher: org.zaproxy.zap.extension.alert.AlertEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/zaproxy/zap/extension/alert/AlertEventPublisher.java
+  event: alert.added
