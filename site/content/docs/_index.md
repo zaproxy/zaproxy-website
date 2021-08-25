@@ -27,6 +27,10 @@ links:
     link: /docs/docker/
     desc: detailed information on ZAP's docker images 
 
+  - name: 'Internal Events'
+    link: /docs/internal-events/
+    desc: detailed information on the internal events ZAP publishes 
+
   - name: 'Internal Statistics'
     link: /docs/internal-statistics/
     desc: detailed information on the internal statistics ZAP maintains 
