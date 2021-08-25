@@ -1,5 +1,5 @@
 ---
-title: "Why are there missing History Ids?"
+title: "Why are there missing History IDs?"
 type: faq
 category: Detailed Questions
 weight: 7
@@ -16,23 +16,21 @@ nodes of the "Sites" tab, not yet (manually) accessed, are selected.
 
 So if you access `http://www.example.com/images/123/456.jpg` then ZAP will
 fill out any 'missing' nodes in the tree, e.g. the 'images' and '123' nodes:
-
-    
-    
-     [+] http://www.example.com
-        [+] images
-            [+] 123
-                [ ] 456.jpg
-    
+ 
+```text
+[+] http://www.example.com
+   [+] images
+       [+] 123
+           [ ] 456.jpg
+```    
 
 The history tab may well show something like:
 
-    
-    
-      1  GET    http://www.example.com/
-      2  GET    http://www.example.com/images/123/456.jpg
-      5  GET    http://www.example.com/xyz
-    
+```text
+1  GET    http://www.example.com/
+2  GET    http://www.example.com/images/123/456.jpg
+5  GET    http://www.example.com/xyz
+```
 
 In this case the Ids 3 and 4 are used internally for the 'images' and '123'
 nodes added to the Sites tree.
