@@ -64,7 +64,12 @@ print("Payload: ", server.getPayload())
 print("Canary: ", server.getCanary())
 ```
 
-To change the polling frequency:
+To poll all registered servers:
+```js
+boast.poll()
+```
+
+To change the automatic polling frequency (in seconds):
 ```js
 boast.getParam().setPollingFrequency(30)
 ```
