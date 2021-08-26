@@ -602,9 +602,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/neonmarker/
   repoUrl: https://github.com/kingthorin/neonmarker
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/neonmarker-alpha-1.3.0.zap
-  date: 2020-09-30
-  version: 1.3.0
+  downloadUrl: https://github.com/kingthorin/neonmarker/releases/download/v1.4.0/neonmarker-alpha-1.4.0.zap
+  date: 2021-08-26
+  version: 1.4.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
