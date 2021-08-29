@@ -26,6 +26,8 @@ links:
   - name: 'Webswing'
     link: webswing/
     desc: you can run the ZAP Desktop UI in your browser leveraging Docker and Webswing
+cascade:
+  EditableContent: true
 ---
 
 ZAP's docker images provide an easy way to [automate](/docs/automate/) ZAP, especially in a CI/CD environment.
