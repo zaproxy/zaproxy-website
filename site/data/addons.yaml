@@ -634,9 +634,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v20/openapi-beta-20.zap
-  date: 2021-08-05
-  version: 20
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v21/openapi-beta-21.zap
+  date: 2021-09-01
+  version: 21
 - id: plugnhack
   name: Plug-n-Hack Configuration
   description: 'Supports the Mozilla Plug-n-Hack standard: https://developer.mozilla.org/en-US/docs/Plug-n-Hack.'
