@@ -10,7 +10,7 @@ This menu handles the display options.
 
 ### Enable Image in History
 
-If selected then images will be displayed in the [History tab](/docs/desktop/ui/tabs/history/).   
+If selected then images will be displayed in the [History tab](/docs/desktop/ui/tabs/history/).
 
 ### Show Tab
 
@@ -36,7 +36,7 @@ Note that [add-ons](/docs/desktop/start/features/addons/) can add additional men
 
 ## See also
 
-|   |                                                |                                       |
-|---|------------------------------------------------|---------------------------------------|
-|   | [The top level menu](/docs/desktop/ui/tlmenu/) |                                       |
-|   | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |
+|     |                                                |                                       |
+| --- | ---------------------------------------------- | ------------------------------------- |
+|     | [The top level menu](/docs/desktop/ui/tlmenu/) |                                       |
+|     | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |

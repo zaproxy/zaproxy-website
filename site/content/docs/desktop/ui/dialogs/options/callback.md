@@ -33,8 +33,8 @@ This is the test URL that you can try to access from remote systems. All accesse
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [Callbacks tab](/docs/desktop/ui/tabs/callbacks/)    |                                                 |
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [Callbacks tab](/docs/desktop/ui/tabs/callbacks/)    |                                                 |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |

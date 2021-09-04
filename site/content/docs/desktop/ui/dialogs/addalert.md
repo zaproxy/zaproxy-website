@@ -8,7 +8,7 @@ weight: 2
 # Add Alert dialog
 
 This dialog allows you to manually add or change an [Alert](/docs/desktop/start/features/alerts/) associated
-with a specific request.  
+with a specific request.
 
 ## Fields
 
@@ -24,24 +24,24 @@ If you select one of the existing types then the Description, Solution and Other
 
 A pull down field which allows you to specify how serious you think the risk is:
 
-|   |               |   |
-|---|---------------|---|
-|   | Informational |   |
-|   | Low           |   |
-|   | Medium        |   |
-|   | High          |   |
+|     |               |     |
+| --- | ------------- | --- |
+|     | Informational |     |
+|     | Low           |     |
+|     | Medium        |     |
+|     | High          |     |
 
 ### Confidence
 
 A pull down field which allows you to specify how confident you are in the validity of the finding:
 
-|   |                |                                                              |
-|---|----------------|--------------------------------------------------------------|
-|   | False Positive | for potential issues that you later find are not exploitable |
-|   | Low            | for unconfirmed issues                                       |
-|   | Medium         | for issues you are somewhat confident of                     |
-|   | High           | for findings you are highly confident in                     |
-|   | Confirmed      | for confirmed issues                                         |
+|     |                |                                                              |
+| --- | -------------- | ------------------------------------------------------------ |
+|     | False Positive | for potential issues that you later find are not exploitable |
+|     | Low            | for unconfirmed issues                                       |
+|     | Medium         | for issues you are somewhat confident of                     |
+|     | High           | for findings you are highly confident in                     |
+|     | Confirmed      | for confirmed issues                                         |
 
 ### Parameter
 
@@ -74,14 +74,14 @@ Note that any changes you make will be lost if you select another type.
 
 ## Accessed via
 
-|   |                                               |                                      |
-|---|-----------------------------------------------|--------------------------------------|
-|   | [History tab](/docs/desktop/ui/tabs/history/) | 'New Alert...' right click menu item |
-|   | [Alerts tab](/docs/desktop/ui/tabs/alerts/)   | double clicking on an existing alert |
+|     |                                               |                                      |
+| --- | --------------------------------------------- | ------------------------------------ |
+|     | [History tab](/docs/desktop/ui/tabs/history/) | 'New Alert...' right click menu item |
+|     | [Alerts tab](/docs/desktop/ui/tabs/alerts/)   | double clicking on an existing alert |
 
 ## See also
 
-|   |                                      |                                       |
-|---|--------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
-|   | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |
+|     |                                      |                                       |
+| --- | ------------------------------------ | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
+|     | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |

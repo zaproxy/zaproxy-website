@@ -19,7 +19,6 @@ Right click the output console to clear the trace.
 
 Note that ZAP configurations are not yet considered. These are features for the next version:
 
-* Select the level of details of the trace ("all", "ssl")
-* Use a client certificate
-* Use an outgoing proxy
-
+- Select the level of details of the trace ("all", "ssl")
+- Use a client certificate
+- Use an outgoing proxy

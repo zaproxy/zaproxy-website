@@ -1,55 +1,59 @@
-{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
-
-{{ define "main" }}
-{{ $section := .Site.GetPage "section" .Section }}
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }} {{ define
+"main" }} {{ $section := .Site.GetPage "section" .Section }}
 <section class="bolt-header">
-    <div class="wrapper py-20">
-      <h1 class="text--white">{{ .Title }}</h1>
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
   </div>
 </section>
 <section class="wrapper py-70" data-kind="{{ .Kind }}">
   <article class="content single-default">
     <form data-no-csrf class="p-20 bg--blue-lightest flex">
-      <input type="text" name="q" id="search-filter" placeholder="Search ..." class="fx-g-1" />
-      <button type="button" id="search-trigger" class=" ml-10" >Search</button>
+      <input
+        type="text"
+        name="q"
+        id="search-filter"
+        placeholder="Search ..."
+        class="fx-g-1"
+      />
+      <button type="button" id="search-trigger" class="ml-10">Search</button>
     </form>
-    <br/>
+    <br />
     <main id="search-results"></main>
     <script>
-      (function() {
-      let params = new URLSearchParams(window.location.search);
-      let query = params.get('q') || false;
-      let searchFor = () => {};
-      let idx;
-      let documents = [];
-      fetch('/search/index.json')
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(data) {
-          idx = lunr(function () {
-              this.ref('url');
-              this.field('title', { boost: 3});
-              this.field('keywords');
-              this.field('tags', { boost: 2 });
-              this.field('content');
-              this.metadataWhitelist = ['position']
+      (function () {
+        let params = new URLSearchParams(window.location.search);
+        let query = params.get("q") || false;
+        let searchFor = () => {};
+        let idx;
+        let documents = [];
+        fetch("/search/index.json")
+          .then(function (response) {
+            return response.json();
+          })
+          .then(function (data) {
+            idx = lunr(function () {
+              this.ref("url");
+              this.field("title", { boost: 3 });
+              this.field("keywords");
+              this.field("tags", { boost: 2 });
+              this.field("content");
+              this.metadataWhitelist = ["position"];
 
               documents = data.results.reduce((aggr, doc) => {
                 aggr[doc.url] = doc;
                 return aggr;
-              }, {})
-              
+              }, {});
+
               data.results.forEach(function (doc) {
-                this.add(doc)
+                this.add(doc);
               }, this);
             });
 
             if (query) {
               searchFor(query);
             }
-        });
-      
+          });
+
         function renderResult(result, tmpl, query) {
           let cleaned = stripHtml(query);
           let doc = documents[result.ref];
@@ -59,11 +63,13 @@
           clone.querySelector("[data-url]").setAttribute("href", doc.url);
           const meta = result.matchData.metadata;
           const keywords = Object.keys(meta);
-          let parts = doc.summary.replace(/\n/g, ' ').split(" ")
-            .map(t => {
+          let parts = doc.summary
+            .replace(/\n/g, " ")
+            .split(" ")
+            .map((t) => {
               return {
                 text: t,
-                match: keywords.some(k => t.toLowerCase().indexOf(k) !== -1),
+                match: keywords.some((k) => t.toLowerCase().indexOf(k) !== -1),
               };
             });
 
@@ -73,9 +79,9 @@
             words: [],
             match: false,
           };
-        
+
           while (parts.length) {
-            let word  = parts.shift();
+            let word = parts.shift();
             if (word.match !== prev.match) {
               spans.push(pointer);
               pointer = {
@@ -88,63 +94,70 @@
             prev = word;
           }
           spans.push(pointer);
-          spans.map(s => {
-            const phrase  = s.words.join(" ");
-            if (s.match) {
-              let el = document.createElement("SPAN");
-              el.innerText = phrase;
-              el.className = "match";
-              return el;
-            } else {
-              return document.createTextNode(phrase);
-            }
-          }).map(el => {
-            summaryEl.appendChild(el)
-          })
+          spans
+            .map((s) => {
+              const phrase = s.words.join(" ");
+              if (s.match) {
+                let el = document.createElement("SPAN");
+                el.innerText = phrase;
+                el.className = "match";
+                return el;
+              } else {
+                return document.createTextNode(phrase);
+              }
+            })
+            .map((el) => {
+              summaryEl.appendChild(el);
+            });
           return clone;
         }
 
-        function stripHtml(html){
+        function stripHtml(html) {
           var tmp = document.createElement("DIV");
           tmp.innerHTML = html;
           return tmp.textContent || tmp.innerText || "";
         }
-   
-      document.addEventListener('DOMContentLoaded', function() {
-        searchFor = function (value) {
-          let nodes = idx.search(value).map(result => {
-            results.append(renderResult(result, template, value));
-          });
-        } 
 
-        let template = document.querySelector('#search-entry');
-        let results = document.getElementById('search-results');
-        let filter = document.getElementById('search-filter');
+        document.addEventListener(
+          "DOMContentLoaded",
+          function () {
+            searchFor = function (value) {
+              let nodes = idx.search(value).map((result) => {
+                results.append(renderResult(result, template, value));
+              });
+            };
 
-        if (query) {
-          filter.value = query;
-        }
-      
-        document.getElementById('search-trigger').addEventListener('click', function() {
-          results.innerHTML = "";
-          searchFor(filter.value);
-        });
+            let template = document.querySelector("#search-entry");
+            let results = document.getElementById("search-results");
+            let filter = document.getElementById("search-filter");
 
-        filter.addEventListener('change', function() {
-          idx.search(filter.value);
-        });
-      }, false);
-    })();
+            if (query) {
+              filter.value = query;
+            }
+
+            document
+              .getElementById("search-trigger")
+              .addEventListener("click", function () {
+                results.innerHTML = "";
+                searchFor(filter.value);
+              });
+
+            filter.addEventListener("change", function () {
+              idx.search(filter.value);
+            });
+          },
+          false
+        );
+      })();
     </script>
     <template id="search-entry">
       <article class="pt-40 pb-40 bdr-btm">
         <a data-url href="#">
           <h2 data-title>Example</h2>
         </a>
-      <div data-summary></div>
+        <div data-summary></div>
       </article>
     </template>
   </article>
 </section>
 {{ end }}
-

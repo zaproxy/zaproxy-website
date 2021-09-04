@@ -10,12 +10,12 @@ weight: 1
 The Scripts Console allows you to write scripts which run within ZAP.  
 It is made up of:
 
-* A toolbar
-* A text area (top) in which you can write your scripts
-* An output text area (bottom) for debug and error messages, with "print" statements.
+- A toolbar
+- A text area (top) in which you can write your scripts
+- An output text area (bottom) for debug and error messages, with "print" statements.
 
 You can run 'Stand Alone' scripts from within this tab using the 'Run' button on the tab toolbar.  
-All other types of scripts will be run when enabled or if explicitly invoked.  
+All other types of scripts will be run when enabled or if explicitly invoked.
 
 To create a new script or to load or switch scripts see the [The Scripts 'tree' tab](/docs/desktop/addons/script-console/tree/).
 
@@ -26,7 +26,7 @@ will be given the option to keep the script in the console or replace it with th
 If a script is changed by another program when it is not being displayed and has not previously been changed in the script console
 then that script will be loaded and the new contents will be used when the script is run.
 
-Templates can be viewed in the console but cannot be edited.  
+Templates can be viewed in the console but cannot be edited.
 
 ### Auto-complete
 
@@ -35,7 +35,7 @@ When enabled a popup will be shown when you type the name of one of the defined 
 
 ## See also
 
-|   |                                                                     |   |
-|---|---------------------------------------------------------------------|---|
-|   | [The Scripts add-on](/docs/desktop/addons/script-console/)          |   |
-|   | [The Scripts 'tree' tab](/docs/desktop/addons/script-console/tree/) |   |
+|     |                                                                     |     |
+| --- | ------------------------------------------------------------------- | --- |
+|     | [The Scripts add-on](/docs/desktop/addons/script-console/)          |     |
+|     | [The Scripts 'tree' tab](/docs/desktop/addons/script-console/tree/) |     |

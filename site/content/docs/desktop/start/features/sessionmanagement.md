@@ -32,15 +32,15 @@ Contexts Dialog](/docs/desktop/ui/dialogs/session/contexts/#sm) and requires you
 
 ## Configured via
 
-|   |                                                                          |   |
-|---|--------------------------------------------------------------------------|---|
-|   | [Session Contexts Dialog](/docs/desktop/ui/dialogs/session/contexts/#sm) |   |
+|     |                                                                          |     |
+| --- | ------------------------------------------------------------------------ | --- |
+|     | [Session Contexts Dialog](/docs/desktop/ui/dialogs/session/contexts/#sm) |     |
 
 ## See also
 
-|   |                                                                       |                                                                                                                                   |
-|---|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-|   | [Youtube tutorial](https://youtu.be/cR4gw-cPZOA)                      | of the Authentication, Session Management and Users Management features of ZAP \[external link to https://youtu.be/cR4gw-cPZOA\]. |
-|   | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface                                                                                             |
-|   | [Features](/docs/desktop/start/features/)                             | provided by ZAP                                                                                                                   |
-|   | [Session Contexts Dialog](/docs/desktop/ui/dialogs/session/contexts/) | for an overview of the Session Properties                                                                                         |
+|     |                                                                       |                                                                                                                                   |
+| --- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+|     | [Youtube tutorial](https://youtu.be/cR4gw-cPZOA)                      | of the Authentication, Session Management and Users Management features of ZAP \[external link to https://youtu.be/cR4gw-cPZOA\]. |
+|     | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface                                                                                             |
+|     | [Features](/docs/desktop/start/features/)                             | provided by ZAP                                                                                                                   |
+|     | [Session Contexts Dialog](/docs/desktop/ui/dialogs/session/contexts/) | for an overview of the Session Properties                                                                                         |

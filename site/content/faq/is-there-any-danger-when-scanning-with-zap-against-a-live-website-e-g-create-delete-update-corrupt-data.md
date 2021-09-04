@@ -5,7 +5,6 @@ category: Scanning
 weight: 3
 ---
 
-
 Proxying (and therefore passive scanning) requests via ZAP is completely safe
 and legal, it just allows you to see whats going on.
 

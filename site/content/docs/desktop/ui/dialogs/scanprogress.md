@@ -7,7 +7,7 @@ weight: 13
 
 # Scan Progress Dialog
 
-This shows you the status of an [active scan](/docs/desktop/start/features/ascan/).  
+This shows you the status of an [active scan](/docs/desktop/start/features/ascan/).
 
 ### Progress tab
 
@@ -19,11 +19,11 @@ It also allows you to skip the rule which is currently being run by clicking on 
 This shows the number of responses per second received by ZAP while active scanning a site.  
 The responses are charted per 'HTTP response status code group':
 
-* 1xx Informational
-* 2xx Success
-* 3xx Redirection
-* 4xx Client Error
-* 5xx Server Error
+- 1xx Informational
+- 2xx Success
+- 3xx Redirection
+- 4xx Client Error
+- 5xx Server Error
 
 You can zoom in by selecting an area of the chart using your mouse.  
 You can also right click the chart for more options.  
@@ -33,19 +33,19 @@ By default the maximum time the chart will cover is 10 minutes, you can change t
 
 ## Accessed via
 
-|   |                                                 |   |
-|---|-------------------------------------------------|---|
-|   | [Active Scan tab](/docs/desktop/ui/tabs/ascan/) |   |
+|     |                                                 |     |
+| --- | ----------------------------------------------- | --- |
+|     | [Active Scan tab](/docs/desktop/ui/tabs/ascan/) |     |
 
 ## See also
 
-|   |                                      |                                       |
-|---|--------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
-|   | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |
+|     |                                      |                                       |
+| --- | ------------------------------------ | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
+|     | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |
 
 ## External Links
 
-|   |                                                           |   |
-|---|-----------------------------------------------------------|---|
-|   | <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes> |   |
+|     |                                                           |     |
+| --- | --------------------------------------------------------- | --- |
+|     | <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes> |     |

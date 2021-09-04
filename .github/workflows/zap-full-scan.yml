@@ -1,7 +1,7 @@
 on:
   schedule:
     # Runs every week on sunday
-    - cron:  '0 0 * * 0'
+    - cron: "0 0 * * 0"
 
 jobs:
   zap_scan:
@@ -15,5 +15,5 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-full-scan@v0.2.0
         with:
-          target: 'https://www.zaproxy.org/'
+          target: "https://www.zaproxy.org/"
           # rules_file_name: '.github/workflows/rules.tsv'

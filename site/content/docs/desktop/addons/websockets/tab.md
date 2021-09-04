@@ -15,17 +15,17 @@ to see WebSockets in action.
 
 ### Channel Selector
 
-You can restrict the display of messages to one specific WebSocket channel or all.   
-If you select a specific channel, then the *Show handshake* button (![](/docs/desktop/addons/websockets/images/handshake.png)) becomes enabled. When you click on it, the corresponding HTTP handshake is shown in the Request/Response tab.
+You can restrict the display of messages to one specific WebSocket channel or all.  
+If you select a specific channel, then the _Show handshake_ button (![](/docs/desktop/addons/websockets/images/handshake.png)) becomes enabled. When you click on it, the corresponding HTTP handshake is shown in the Request/Response tab.
 
 ### Filter Dialog
 
-In the filter dialog (![](/docs/desktop/addons/websockets/images/054.png)) you can further control which messages are displayed.   
+In the filter dialog (![](/docs/desktop/addons/websockets/images/054.png)) you can further control which messages are displayed.
 
 ## Breakpoints
 
-You can set custom breakpoints using the *Add Custom Breakpoints* button (![](/docs/desktop/addons/websockets/images/break_add.png)).   
-Alternatively you can use the *Right click menu* .   
+You can set custom breakpoints using the _Add Custom Breakpoints_ button (![](/docs/desktop/addons/websockets/images/break_add.png)).  
+Alternatively you can use the _Right click menu_ .
 
 ## Right click menu
 
@@ -33,8 +33,8 @@ Right clicking on a WebSocket message will bring up a menu which will allow you 
 
 ### Exclude from WebSocket
 
-WebSocket connections can be excluded from the WebSockets tab by adding an excluded URL to the *Session Properties* . Clicking on this item, brings up the session properties with the URL pre-filled. Excluding a WebSocket connection will not result in closing the connection, but in forwarding them without further processing.
+WebSocket connections can be excluded from the WebSockets tab by adding an excluded URL to the _Session Properties_ . Clicking on this item, brings up the session properties with the URL pre-filled. Excluding a WebSocket connection will not result in closing the connection, but in forwarding them without further processing.
 
 ### Break...
 
-This will bring up the *Add Break Point dialog* which allows you to set up a custom break point.
+This will bring up the _Add Break Point dialog_ which allows you to set up a custom break point.

@@ -16,7 +16,7 @@ The top screen shows 3 buttons that take you to the following screens.
 
 ## Automated Scan
 
-The Automated Scan screen allows you to launch an automated scan against an application - just enter its URL below and press 'Attack'.   
+The Automated Scan screen allows you to launch an automated scan against an application - just enter its URL below and press 'Attack'.  
 Please be aware that you should only attack applications that you have been specifically been given permission to test.
 
 ### URL to attack
@@ -37,9 +37,9 @@ This option is only shown if the ajax spider add-on is installed. If it is not a
 
 The Manual Explore screen allows you to launch the browser of your choice so that you can explore your application while proxying through ZAP. Select the browser you want from the pull-down and press the 'Launch Browser' button.  
 Browsers launched this way will be configured to proxy via ZAP and will ignore certificate errors, so you will not need to import the ZAP Root CA Certificate.  
-ZAP will remember the last browser you chose when you restart it.  
+ZAP will remember the last browser you chose when you restart it.
 
-A button will also be added to the toolbar which will launch the latest browser chosen. The icon will change to represent the relevant browser   
+A button will also be added to the toolbar which will launch the latest browser chosen. The icon will change to represent the relevant browser
 
 Note that launched browsers will stop working if you change the address or port that ZAP is listening on.
 
@@ -53,7 +53,7 @@ ZAP must be able to access this URL.
 
 ### Enable HUD
 
-The ZAP Heads Up Display (HUD) brings all of the essential ZAP functionality into your browser. It is ideal for people new to web security and also allows experienced penetration testers to focus on an application's features while providing key security information and functionality.   
+The ZAP Heads Up Display (HUD) brings all of the essential ZAP functionality into your browser. It is ideal for people new to web security and also allows experienced penetration testers to focus on an application's features while providing key security information and functionality.  
 This option is enabled if the HUD add-on is installed. If it is not available then you can download and install it for free from the ZAP Marketplace.
 
 ## Learn More
@@ -66,7 +66,7 @@ Occasional news items will be displayed underneath the 3 buttons. Clicking on th
 
 ## See also
 
-|   |                                                                   |                                       |
-|---|-------------------------------------------------------------------|---------------------------------------|
-|   | [Command Line](/docs/desktop/addons/quick-start/cmdline/)         | description of command line arguments |
-|   | [Launch Options](/docs/desktop/addons/quick-start/launchoptions/) | the Quick Start Launch Options        |
+|     |                                                                   |                                       |
+| --- | ----------------------------------------------------------------- | ------------------------------------- |
+|     | [Command Line](/docs/desktop/addons/quick-start/cmdline/)         | description of command line arguments |
+|     | [Launch Options](/docs/desktop/addons/quick-start/launchoptions/) | the Quick Start Launch Options        |

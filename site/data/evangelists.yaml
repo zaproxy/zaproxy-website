@@ -46,7 +46,7 @@
   locations: France
   language: French, English, Arabic
   has_talks: Y
-  has_training: ''
+  has_training: ""
   notes: <a href="http://4sec.fr/" rel="nofollow">Homepage</a>
 
 - name: Mauro Risonho de Paula Assumpção
@@ -66,7 +66,7 @@
   locations: Gulf Cooperation Council
   language: English, Arabic
   has_talks: Y
-  has_training: ''
+  has_training: ""
 
 - name: Kim Carter
   email: kim.carter@owasp.org
@@ -95,7 +95,7 @@
   language: English
   has_talks: Y
   has_training: Y
-  notes: ''
+  notes: ""
 
 - name: Adrien de Beaupre
   email: adriendb@gmail.com
@@ -112,11 +112,11 @@
   locations: Latin America
   language: Spanish, English
   has_talks: Y
-  has_training: ''
-  notes: ''
-  
+  has_training: ""
+  notes: ""
+
 - name: Malik Mesellem
-  email: malik@itsecgames.com 
+  email: malik@itsecgames.com
   twitter: MME_IT
   linkedin: http://www.linkedin.com/in/malikmesellem
   locations: Belgium / Remote
@@ -132,18 +132,18 @@
   locations: UK
   language: English
   has_talks: Y
-  has_training: ''
-  notes: ''
-  
+  has_training: ""
+  notes: ""
+
 - name: Ben Walther
   email: ben.walther@gmail.com
   linkedin: https://www.linkedin.com/in/benwalther/
   locations: Los Angeles area
   language: English
   has_talks: Y
-  has_training: ''
-  notes: ''
-  
+  has_training: ""
+  notes: ""
+
 - name: Johanna Curiel
   email: johanna.curiel@owasp.com
   locations: Netherlands, Caribbean
@@ -153,7 +153,7 @@
   notes: OWASP ZAP -creating add ons / Playing with Fuzzer
 
 - name: Mennouchi Islam Azeddine
-  email: azeddine.mennouchi@owasp.org 
+  email: azeddine.mennouchi@owasp.org
   twitter: islamoc_
   linkedin: http://ca.linkedin.com/in/islamoc
   locations: Algeria
@@ -163,7 +163,7 @@
   notes: OWASP Algeria. dzwebdays(Blida,Constantine,Algiers) , OWASP Algeria meeting , OWASP Sudan, Bside Algiers
 
 - name: Russ McRee
-  email: russ@holisticinfosec.org 
+  email: russ@holisticinfosec.org
   twitter: holisticinfosec
   linkedin: http://www.linkedin.com/in/russmcree
   locations: USA / Remote
@@ -182,7 +182,7 @@
   locations: Morocco, France and Ivory Coast
   language: English, French
   has_talks: Y
-  has_training: ''
+  has_training: ""
   notes: French Translation for ZAP.
 
 - name: Ahmed M Neil
@@ -192,11 +192,11 @@
   language: English
   has_talks: Y
   has_training: Y
-  notes: ''
+  notes: ""
 
 - name: Jerome Athias
-  email: athiasjerome@gmail.com 
-  twitter: JA25000 
+  email: athiasjerome@gmail.com
+  twitter: JA25000
   linkedin: https://www.linkedin.com/in/jeromeathias/
   locations: Middle East
   language: English, French
@@ -205,7 +205,7 @@
   notes: <a href="http://www.frhack.org" rel="nofollow">http://www.frhack.org</a>
 
 - name: Michael Coates
-  email: michael.coates@owasp.org 
+  email: michael.coates@owasp.org
   twitter: _mwc
   linkedin: https://www.linkedin.com/in/mcoates/
   locations: Bay Area
@@ -215,16 +215,16 @@
   notes: OWASP Chairman
 
 - name: Aaron Guzman
-  email: aaron.guzman@owasp.org 
+  email: aaron.guzman@owasp.org
   twitter: scriptingxss
   locations: Los Angeles area
   language: English
   has_talks: Y
   has_training: Y
-  notes: ''
-  links: ''
+  notes: ""
+  links: ""
 - name: Florencio Cano Gabarda
-  email: fcano@seinhe.com 
+  email: fcano@seinhe.com
   twitter: florenciocano
   linkedin: http://www.linkedin.com/in/florenciocano
   locations: Spain
@@ -236,14 +236,14 @@
     with Peach Fuzzer</a>
 
 - name: David Epler
-  email: dcepler@dcepler.net 
+  email: dcepler@dcepler.net
   twitter: dcepler
   linkedin: http://www.linkedin.com/in/davidepler
   locations: Washington, DC Area
   language: English
   has_talks: Y
-  has_training: ''
-  notes: ''
+  has_training: ""
+  notes: ""
 
 - name: Mordecai Kraushar
   email: mordecai.kraushar@owasp.org
@@ -267,8 +267,8 @@
   notes: Spanish Tranlation for ZAP
 
 - name: Yuho Kameda
-  email: tyoisu@gmail.com 
-  twitter: yuhokameda 
+  email: tyoisu@gmail.com
+  twitter: yuhokameda
   linkedin: https://www.linkedin.com/in/yuhokameda/
   locations: Japan
   language: English, Japanese
@@ -278,18 +278,19 @@
     <a href="https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit" rel="nofollow">OWASP Japanese Manual</a>
 
 - name: Chetan Karande
-  email: chetan.karande@owasp.org 
+  email: chetan.karande@owasp.org
   twitter: karande_c
   inkedin: http://http://www.linkedin.com/pub/chetan-karande/3a/b66/478
   locations: USA
   language: English
   has_talks: Y
   has_training: N
-  notes: <a href="https://speakerdeck.com/ckarande/top-overlooked-security-threats-to-node-dot-js-web-applications"
+  notes:
+    <a href="https://speakerdeck.com/ckarande/top-overlooked-security-threats-to-node-dot-js-web-applications"
     rel="nofollow">Previous talks</a>
 
 - name: Minoru Sakai
-  email: minosky@gmail.com 
+  email: minosky@gmail.com
   twitter: _Minsky_
   inkedin: http://www.linkedin.com/profile/view?id=132440245
   locations: Japan
@@ -300,8 +301,8 @@
     <a href="https://docs.google.com/file/d/0B1e1Cma1GUllazNUNVp6OWdGYzg/edit" rel="nofollow">Supervision OWASP Japanese Manual</a>
 
 - name: Serg Belokamen
-  email: serg@owasp.org 
-  twitter: sergicles 
+  email: serg@owasp.org
+  twitter: sergicles
   linkedin: https://www.linkedin.com/in/sergb
   locations: Melbourne, Australia
   language: English, Russian
@@ -310,8 +311,8 @@
   notes: OWASP chapter lead, application security designer/architect, <a href="http://www.bugcrowd.com" rel="nofollow">http://www.bugcrowd.com</a>
 
 - name: Derek Armstrong
-  email: derek.v.armstrong@gmail.com 
-  twitter: dsplice 
+  email: derek.v.armstrong@gmail.com
+  twitter: dsplice
   linkedin: https://www.linkedin.com/in/derekarmstrong/
   locations: Canada
   language: English
@@ -328,8 +329,8 @@
   notes: Application developer, web application security enthusiast, <a href="http://renouncedthoughts.wordpress.com/" rel="nofollow">Blog</a>, <a href="http://vimeo.com/gmaran23" rel="nofollow">Talks - Vimeo Channel</a>
 
 - name: Dan Billing
-  email: thetestdoctor@gmail.com 
-  twitter: thetestdoctor 
+  email: thetestdoctor@gmail.com
+  twitter: thetestdoctor
   linkedin: https://www.linkedin.com/in/danielbilling
   locations: UK / Europe
   language: English
@@ -343,11 +344,12 @@
   language: English
   has_talks: Y
   has_training: N
-  notes: ZAP Focus – extensibility of ZAP; ZAP for general Web App Sec usage/pen testing/vulnerability
+  notes:
+    ZAP Focus – extensibility of ZAP; ZAP for general Web App Sec usage/pen testing/vulnerability
     detection
 
 - name: Yassia Savadogo
-  email: yassias@yahoo.fr 
+  email: yassias@yahoo.fr
   twitter: yassias
   linkedin: https://www.linkedin.com/in/savadogo-yassia-84006a10/
   locations: Burkina Faso
@@ -365,17 +367,17 @@
   notes: ZAP as Swiss Army Knife
 
 - name: Marcin Kopeć
-  email: marcin.jan.kopec@gmail.com 
+  email: marcin.jan.kopec@gmail.com
   linkedin: https://www.linkedin.com/in/mkopec
   locations: Poland
   language: Polish and English
   has_talks: Y
   has_training: Y
-  notes: ''
+  notes: ""
 
 - name: Sumanth Damarla
-  email: damarla.sumanth@gmail.com 
-  twitter: Sumanth_Damarla 
+  email: damarla.sumanth@gmail.com
+  twitter: Sumanth_Damarla
   linkedin: https://www.linkedin.com/in/sumanthdamarla
   locations: India / Remote
   language: English, Hindi, Telugu
@@ -384,7 +386,7 @@
   notes: ZAP Evangelist at FOSSASIA, <a href="https://wiki.mozilla.org/Security/Mentorships/MWoS/2014/OWASP_ZAP_AMF_Support" rel="nofollow">MWOS AMF Support project</a>
 
 - name: kunal Relan
-  email: pentesterkunal@live.com 
+  email: pentesterkunal@live.com
   locations: India / Remote
   language: English, Hindi
   has_talks: Y
@@ -399,10 +401,10 @@
   language: English
   has_talks: Y
   has_training: Y
-  notes: ''
+  notes: ""
 
 - name: Jonathan Claudius
-  email: claudijd@yahoo.com 
+  email: claudijd@yahoo.com
   twitter: claudijd
   locations: USA / Remote / Worldwide
   language: English
@@ -411,7 +413,7 @@
   notes: ZAP Evangelist, <a href="https://blog.rubidus.com/" rel="nofollow">blog</a>
 
 - name: Omer Levi Hevroni
-  email: omerlh@gmail.com 
+  email: omerlh@gmail.com
   twitter: omerlh
   locations: Israel / Remote / Worldwide
   language: English / Hebrew
@@ -420,8 +422,8 @@
   notes: ZAP Evangelist, <a href="https://www.omerlh.info/" rel="nofollow">Personal Site with previous talks</a>
 
 - name: Chhagan Lal Mathuriya
-  email: clmathuriya@gmail.com 
-  twitter: clmathuriya 
+  email: clmathuriya@gmail.com
+  twitter: clmathuriya
   linkedin: https://www.linkedin.com/profile/view?id=clmathuriya
   locations: Bangalore, India
   language: English, Hindi
@@ -430,7 +432,7 @@
   notes: I Have worked on Automated Security Testing usig ZAP. <a href="https://github.com/clmathuriya/">My Github Page</a>
 
 - name: Amit Kulkarni
-  email: amitskulkarni@gmail.com 
+  email: amitskulkarni@gmail.com
   linkedin: https://www.linkedin.com/profile/view?id=amtoya
   locations: Perth, Australia
   language: English
@@ -439,7 +441,7 @@
   notes: Automated Security Testing using ZAP. <a href="https://github.com/AmitKulkarni9">My Github Page</a>
 
 - name: Sanket Mishra
-  email: sanket.altruist@gmail.com 
+  email: sanket.altruist@gmail.com
   linkedin: https://www.linkedin.com/in/sanket-mishra-04a71a7a/
   locations: Boston, US
   language: English
@@ -458,8 +460,8 @@
   notes: OWASP DevSecOps Studio and DevSlop Project Leader.
 
 - name: Raul Siles
-  email: raulsiles+ZAP@gmail.com 
-  twitter: raulsiles 
+  email: raulsiles+ZAP@gmail.com
+  twitter: raulsiles
   linkedin: https://www.linkedin.com/in/raulsiles
   locations: Spain / Worldwide / Remote
   language: Spanish, English
@@ -470,8 +472,8 @@
     <a href="https://www.dinosec.com/en/lab.html" rel="nofollow">DinoSec's Lab</a>, SANS SEC542 &amp; SEC575
 
 - name: Mohammad Febri Ramadlan
-  email: mohammadfebrir@gmail.com 
-  twitter: mohammadfebri_r 
+  email: mohammadfebrir@gmail.com
+  twitter: mohammadfebri_r
   linkedin: https://www.linkedin.com/in/mohammadfebriramadlan/
   locations: Indonesia / Southeast Asia
   language: English
@@ -480,8 +482,8 @@
   notes: ZAP for Penetration Testing and Automation Testing. <a href="https://www.slideshare.net/MohammadFebri1/owasp-risk-rating-management-project" rel="nofollow">Slides</a>
 
 - name: Takanori Matsumoto
-  email: nilfigo@gmail.com 
-  twitter: nilfigo 
+  email: nilfigo@gmail.com
+  twitter: nilfigo
   linkedin: https://www.linkedin.com/in/takanori-matsumoto-02026ba6/
   locations: Japan
   language: Japanese
@@ -490,7 +492,7 @@
   notes: ZAP for Penetration Testing and Automation Testing. <a href="https://speakerdeck.com/security_testing_workshop" rel="nofollow">Slides</a>
 
 - name: Marek Šottl
-  email: sottlmarek@gmail.com 
+  email: sottlmarek@gmail.com
   linkedin: https://www.linkedin.com/in/marek-%C5%A1ottl-bb25164a/
   locations: Central Europe - Czech Republic
   language: English, Czech
@@ -499,8 +501,8 @@
   notes: Specialties - SSDLC, Pentesting, DevSecOps and Cloud
 
 - name: Gowtham Sundar
-  email: gowu.karthik@gmail.com 
-  twitter: gowsundar 
+  email: gowu.karthik@gmail.com
+  twitter: gowsundar
   linkedin: https://www.linkedin.com/in/gowtham-sundar-6669b380/
   locations: Chennai, India
   language: English
@@ -508,9 +510,9 @@
   has_training: Y
   notes: Exploring Security Automation with ZAP. <a href="https://medium.com/@gowsundar" rel="nofollow">blog</a>
 
-- name: Ricky van Rijn 	
-  email: rickyvanrijn@gmail.com 
-  twitter: rickyvanrijn 
+- name: Ricky van Rijn
+  email: rickyvanrijn@gmail.com
+  twitter: rickyvanrijn
   linkedin: https://www.linkedin.com/in/rickyvanrijn/
   locations: Netherlands, Worldwide, Remote
   language: Dutch, English
@@ -518,8 +520,8 @@
   has_training: Y
   notes: ZAP Enthusiast. <a href="https://rickyvanrijn.nl/" rel="nofollow">blog</a>
 
-- name: Caleb Kinney 	
-  email: cak@cak.codes 
+- name: Caleb Kinney
+  email: cak@cak.codes
   twitter: OptionalValue
   linkedin: https://www.linkedin.com/in/calebk/
   locations: Maryland, USA / Remote
@@ -527,7 +529,7 @@
   has_talks: Y
   has_training: Y
   notes: AppSec, Automation / ZAP API, Bug Bounty. <a href="https://github.com/cak" rel="nofollow">GitHub</a>
-  
+
 - name: BJ Edward Taduran
   email: bj.taduran@gmail.com
   twitter: bjtaduran

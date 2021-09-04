@@ -1,9 +1,9 @@
 ---
 title: "Building ZAP with Eclipse"
 description: "This guide will get you started with building and running ZAP in the Eclipse IDE."
-tags: 
-- guide
-- tutorial
+tags:
+  - guide
+  - tutorial
 type: page
 date: "2021-03-18"
 ---
@@ -11,9 +11,11 @@ date: "2021-03-18"
 If you want to make changes to ZAP using the Eclipse IDE then you are in the right place.
 
 ## Preparation
+
 You will need to have followed the [Quick Start Guide to Building ZAP](../quick-start-build/) and installed a version of [Eclipse](https://www.eclipse.org/) suitable for Java development. We would suggest the "Eclipse IDE for Java Developers" [package](https://www.eclipse.org/downloads/packages/).
 
 ## Import the ZAP Repositories
+
 In Eclipse select the 'File' menu, then 'Import...', and then 'Gradle' &#8594; 'Existing Gradle Project':
 
 ![Eclipse Gradle Import](/img/docs/developer/eclipse-import.png)
@@ -25,8 +27,10 @@ Repeat this process until you have imported all of the ZAP repositories.
 It is worth noting that some of the _zap-extensions_ add-ons may fail to compile if you do not have the required environment for them. This is to be expected and is not a problem unless you want to work on those add-ons, in which case see their READMEs for more details.
 
 ## Running ZAP
+
 In the Eclipse Project Explorer navigate to:
-* zaproxy / zap / src / main / java / org / zaproxy / zap
+
+- zaproxy / zap / src / main / java / org / zaproxy / zap
 
 Right click `ZAP.java` and select 'Run As' &#8594; 'Java Application'.
 
@@ -41,12 +45,14 @@ Select the 'Arguments' tab, change the 'Working directory' from 'Default' to 'Ot
 Run this configuration and ZAP should now start with all of the add-ons correctly configured.
 
 ## Running Gradle Tasks
+
 You can run the ZAP Gradle tasks from the command line or from within Eclipse, the end result will be the same.
 
-Eclipse has a 'Gradle Tasks' tab that lists all of the tasks available to you ordered by project. 
+Eclipse has a 'Gradle Tasks' tab that lists all of the tasks available to you ordered by project.
 Note that the add-ons in _zap-extensions_ all have their own set of tasks in addition to the top level ones.
 
 ## Debugging Add-ons
+
 You can debug code in the _zaproxy_ repository without making any changes, but you will need to tweak your configuration in order to debug add-ons.
 
 Select the ZAP runtime configuration as before, switch to the 'Source' tab and click on the 'Add...' button.

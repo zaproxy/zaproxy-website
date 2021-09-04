@@ -12,16 +12,16 @@ It also shows you which templates you have available - these cannot be run direc
 It also allows you to add new scripts, load, save and remove them.  
 The tab includes a toolbar which allows you to:
 
-* Load a script from filestore
-* Save a script to filestore
-* Create a new script
+- Load a script from filestore
+- Save a script to filestore
+- Create a new script
 
 Scripts that are run within ZAP components, such as the Active Scanner, can be enabled and disabled via right click menu option.  
 All scripts can be removed from the UI via a right click 'Remove Script' menu option.
 
 ## See also
 
-|   |                                                                        |   |
-|---|------------------------------------------------------------------------|---|
-|   | [The Scripts add-on](/docs/desktop/addons/script-console/)             |   |
-|   | [The Script Console tab](/docs/desktop/addons/script-console/console/) |   |
+|     |                                                                        |     |
+| --- | ---------------------------------------------------------------------- | --- |
+|     | [The Scripts add-on](/docs/desktop/addons/script-console/)             |     |
+|     | [The Script Console tab](/docs/desktop/addons/script-console/console/) |     |

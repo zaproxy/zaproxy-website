@@ -21,15 +21,15 @@ procedure**.
 ### Access Rules
 
 In order to identify potential access control issues, ZAP needs to know which parts of the web application are
-supposed to be accessed by which user. In ZAP, the name for these rules is: *Access Rules* and generally have
-the meaning: "*PageA should/shouldn't be accessed by UserX*".
+supposed to be accessed by which user. In ZAP, the name for these rules is: _Access Rules_ and generally have
+the meaning: "_PageA should/shouldn't be accessed by UserX_".
 
 The rules are configured for a Context and, for each User of that Context, each Site Node (web page) will be
 associated to one of the following values:
 
-* **Allowed** - the resource **can** be accessed by the User to which the rule refers
-* **Denied** - the resource **should not** be accessed by the User to which the rule refers
-* **Unknown** - there is **no information** regarding whether the resource should or shouldn't be accessible to the User to which the rule refers
+- **Allowed** - the resource **can** be accessed by the User to which the rule refers
+- **Denied** - the resource **should not** be accessed by the User to which the rule refers
+- **Unknown** - there is **no information** regarding whether the resource should or shouldn't be accessible to the User to which the rule refers
 
 In order to simplify the access rules definition process, ZAP is making use of the tree-based structure of URLs.
 When analyzing the rules, an inference algorithm is used to detect the matching rules for each node based on its
@@ -42,12 +42,12 @@ about this can be found on the Access Control [Context options](/docs/desktop/ad
 As a whole, in order to fully perform access control testing for a web application, the next steps should be
 followed:
 
-* the tester defines set of Users and how they authenticate;
-* the tester defines how ZAP can identify un-authorized requests (via the Authorization panel in the Session Properties);
-* the web-application is explored either manually or via the Spider;
-* the tester define the Access Rules for each of the Users associated to the Context, basically letting ZAP know which parts of the web application are supposed to be accessed by which users;
-* an ‘attack’ is performed by ZAP by trying to access every URL of the web-app from the perspective of every user;
-* in the corresponding Status Tab, the results are displayed, showing which pages were accessed successfully by which users and marking the cases where the access rules where not followed.
+- the tester defines set of Users and how they authenticate;
+- the tester defines how ZAP can identify un-authorized requests (via the Authorization panel in the Session Properties);
+- the web-application is explored either manually or via the Spider;
+- the tester define the Access Rules for each of the Users associated to the Context, basically letting ZAP know which parts of the web application are supposed to be accessed by which users;
+- an ‘attack’ is performed by ZAP by trying to access every URL of the web-app from the perspective of every user;
+- in the corresponding Status Tab, the results are displayed, showing which pages were accessed successfully by which users and marking the cases where the access rules where not followed.
 
 **Note:** Access control testing is not allowed in `Safe` mode nor `Protected` if the context is not in scope.
 
@@ -77,7 +77,7 @@ Gets the Access Control scan status (description string) for the given context I
 
 ## See also
 
-|   |                                                                                               |                                                        |
-|---|-----------------------------------------------------------------------------------------------|--------------------------------------------------------|
-|   | [Access Control Testing Tab](/docs/desktop/addons/access-control-testing/tab/)                | for a description of the status tab used by the add-on |
-|   | [Access Control Context options](/docs/desktop/addons/access-control-testing/contextoptions/) | to learn about the related context options             |
+|     |                                                                                               |                                                        |
+| --- | --------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+|     | [Access Control Testing Tab](/docs/desktop/addons/access-control-testing/tab/)                | for a description of the status tab used by the add-on |
+|     | [Access Control Context options](/docs/desktop/addons/access-control-testing/contextoptions/) | to learn about the related context options             |

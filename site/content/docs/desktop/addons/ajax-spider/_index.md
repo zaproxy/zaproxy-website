@@ -21,16 +21,16 @@ This add-on supports the [Automation Framework](/docs/desktop/addons/ajax-spider
 
 ## Accessed via
 
-|   |                                                          |                                               |
-|---|----------------------------------------------------------|-----------------------------------------------|
-|   | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/) |                                               |
-|   | History tab                                              | 'Attack/AJAX Spider...' right click menu item |
-|   | Sites tab                                                | 'Attack/AJAX Spider...' right click menu item |
+|     |                                                          |                                               |
+| --- | -------------------------------------------------------- | --------------------------------------------- |
+|     | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/) |                                               |
+|     | History tab                                              | 'Attack/AJAX Spider...' right click menu item |
+|     | Sites tab                                                | 'Attack/AJAX Spider...' right click menu item |
 
 ## See also
 
-|   |                                                                         |                                            |
-|---|-------------------------------------------------------------------------|--------------------------------------------|
-|   | [Options AJAX Spider screen](/docs/desktop/addons/ajax-spider/options/) | for an overview of the AJAX Spider Options |
-|   | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/)                | for an overview of the AJAX Spider Tab     |
-|   | [AJAX Spider dialog](/docs/desktop/addons/ajax-spider/scandialog/)      | for an overview of the AJAX Spider Dialog  |
+|     |                                                                         |                                            |
+| --- | ----------------------------------------------------------------------- | ------------------------------------------ |
+|     | [Options AJAX Spider screen](/docs/desktop/addons/ajax-spider/options/) | for an overview of the AJAX Spider Options |
+|     | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/)                | for an overview of the AJAX Spider Tab     |
+|     | [AJAX Spider dialog](/docs/desktop/addons/ajax-spider/scandialog/)      | for an overview of the AJAX Spider Dialog  |

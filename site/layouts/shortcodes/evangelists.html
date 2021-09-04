@@ -1,80 +1,119 @@
 <table class="table evangelists-table">
-    <thead  align="left">
-        <tr>
-        <th colspan="2">Name</th>
-        <th colspan="3">Contact</th>
-        <th>Region</th>
-        <th>Languages</th>
-        <th>Talks</th>
-        <th>Training</th>
-        <th>Notes</th>
-        </tr>
-    </thead>
-    {{ range $evangelist := $.Site.Data.evangelists }}
+  <thead align="left">
     <tr>
-        <td style="min-width: 60px;">
-            <img src="https://www.gravatar.com/avatar/{{ md5 $evangelist.email }}?s=40&d=identicon" style="border-radius:50%;width:40px;display:block" width="40px" />
-        </td>
-        <td>
-            {{ $evangelist.name }}
-        </td>
-        <td>
-        {{ if $evangelist.email }}
-            <a data-mail="{{ $evangelist.email | base64Encode }}" style="border-bottom: none;">
-            <!-- c/o https://iconmonstr.com/email-2-svg/ -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
-            </a>
-        {{ end }}
-        </td>
-        <td>
-        {{ if $evangelist.linkedin }}
-            <a href="{{ $evangelist.linkedin }}" style="border-bottom: none;">
-            <!--  c/o https://iconmonstr.com/linkedin-3-svg/ -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-        {{ end }}
-        </td>
-        <td>
-        {{ if $evangelist.twitter }}
-            <a href="https://twitter.com/{{ $evangelist.twitter }}" style="border-bottom: none;">
-                <!-- c/o https://iconmonstr.com/twitter-1-svg/ -->
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-                </svg>
-            </a>
-        {{ end }}
-        </td>
-        <td>
-            {{ $evangelist.locations }}
-        </td>
-        <td>
-            {{ $evangelist.language }}
-        </td>
-        <td>
-            {{ if $evangelist.has_talks }}
-            <!-- c/o https://iconmonstr.com/flip-chart-2-svg/ -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path d="M16.488 20l3.414 4h-2.627l-3.42-4h2.633zm1.512-14h-4v1h4v-1zm-7 18h2v-4h-2v4zm-6.918 0h2.628l3.42-4h-2.633l-3.415 4zm13.918-16h-4v1h4v-1zm0 2h-4v1h4v-1zm-8.5 3c1.762 0 3.205-1.306 3.45-3h-3.95v-3.95c-1.694.245-3 1.688-3 3.45 0 1.933 1.567 3.5 3.5 3.5zm.5-6.95v2.95h2.95c-.221-1.529-1.421-2.729-2.95-2.95zm8 5.95h-4v1h4v-1zm5-9h-1v15h-20v-15h-1v-3h22v3zm-3 0h-16v13h16v-13z"/>
-            </svg>
-            {{ end }}
-        </td>
-        <td>
-            {{ if $evangelist.has_training }}
-            <!-- c/o https://iconmonstr.com/school-27-svg/ -->
-            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-            <path d="M24 17.99l-7.731-.001 2.731 4h-1.311l-2.736-4h-1.953l-2.736 4h-1.264l2.732-4h-2.95v-1h8.218v-1h3v1h3v-14h-17v.447h-1v-1.447h19v16zm-17.241-9c.649 0 1.293-.213 1.692-.436.755-.42 2.695-1.643 3.485-2.124.215-.13.496-.082.654.114l.009.01c.164.205.145.5-.043.68l-3.371 3.214c-.521.498-.822 1.183-.853 1.902-.095 2.207-.261 6.912-.332 8.834-.016.45-.386.806-.836.806h-.001c-.444 0-.786-.348-.836-.788-.111-.982-.329-3.279-.427-4.212-.04-.384-.279-.613-.584-.614-.304-.002-.523.226-.548.608-.062.921-.266 3.249-.342 4.221-.034.441-.397.785-.84.785h-.001c-.452 0-.823-.356-.842-.809-.097-2.34-.369-8.963-.369-8.963l-1.287 2.331c-.14.254-.445.364-.715.26l-.001-.001c-.228-.088-.371-.305-.371-.54l.022-.157 1.244-4.393c.122-.43.515-.727.963-.727h4.53zm7.241 2h5v-1h-5v1zm0-2h7v-1h-7v1zm-8.626-5c1.241 0 2.25 1.008 2.25 2.25s-1.009 2.25-2.25 2.25c-1.242 0-2.25-1.008-2.25-2.25s1.008-2.25 2.25-2.25zm8.626 3h7v-1h-7v1z"/>
-            </svg>
-            {{ end }}
-        </td>
-        <td>
-            <div style="max-width:100%;">
-                {{ $evangelist.notes | safeHTML  }}
-            </div>
-        </td>
+      <th colspan="2">Name</th>
+      <th colspan="3">Contact</th>
+      <th>Region</th>
+      <th>Languages</th>
+      <th>Talks</th>
+      <th>Training</th>
+      <th>Notes</th>
     </tr>
-{{ end }}
+  </thead>
+  {{ range $evangelist := $.Site.Data.evangelists }}
+  <tr>
+    <td style="min-width: 60px">
+      <img
+        src="https://www.gravatar.com/avatar/{{ md5 $evangelist.email }}?s=40&d=identicon"
+        style="border-radius: 50%; width: 40px; display: block"
+        width="40px"
+      />
+    </td>
+    <td>{{ $evangelist.name }}</td>
+    <td>
+      {{ if $evangelist.email }}
+      <a
+        data-mail="{{ $evangelist.email | base64Encode }}"
+        style="border-bottom: none"
+      >
+        <!-- c/o https://iconmonstr.com/email-2-svg/ -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+          />
+        </svg>
+      </a>
+      {{ end }}
+    </td>
+    <td>
+      {{ if $evangelist.linkedin }}
+      <a href="{{ $evangelist.linkedin }}" style="border-bottom: none">
+        <!--  c/o https://iconmonstr.com/linkedin-3-svg/ -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+          />
+        </svg>
+      </a>
+      {{ end }}
+    </td>
+    <td>
+      {{ if $evangelist.twitter }}
+      <a
+        href="https://twitter.com/{{ $evangelist.twitter }}"
+        style="border-bottom: none"
+      >
+        <!-- c/o https://iconmonstr.com/twitter-1-svg/ -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+          />
+        </svg>
+      </a>
+      {{ end }}
+    </td>
+    <td>{{ $evangelist.locations }}</td>
+    <td>{{ $evangelist.language }}</td>
+    <td>
+      {{ if $evangelist.has_talks }}
+      <!-- c/o https://iconmonstr.com/flip-chart-2-svg/ -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.488 20l3.414 4h-2.627l-3.42-4h2.633zm1.512-14h-4v1h4v-1zm-7 18h2v-4h-2v4zm-6.918 0h2.628l3.42-4h-2.633l-3.415 4zm13.918-16h-4v1h4v-1zm0 2h-4v1h4v-1zm-8.5 3c1.762 0 3.205-1.306 3.45-3h-3.95v-3.95c-1.694.245-3 1.688-3 3.45 0 1.933 1.567 3.5 3.5 3.5zm.5-6.95v2.95h2.95c-.221-1.529-1.421-2.729-2.95-2.95zm8 5.95h-4v1h4v-1zm5-9h-1v15h-20v-15h-1v-3h22v3zm-3 0h-16v13h16v-13z"
+        />
+      </svg>
+      {{ end }}
+    </td>
+    <td>
+      {{ if $evangelist.has_training }}
+      <!-- c/o https://iconmonstr.com/school-27-svg/ -->
+      <svg
+        width="24"
+        height="24"
+        xmlns="http://www.w3.org/2000/svg"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+      >
+        <path
+          d="M24 17.99l-7.731-.001 2.731 4h-1.311l-2.736-4h-1.953l-2.736 4h-1.264l2.732-4h-2.95v-1h8.218v-1h3v1h3v-14h-17v.447h-1v-1.447h19v16zm-17.241-9c.649 0 1.293-.213 1.692-.436.755-.42 2.695-1.643 3.485-2.124.215-.13.496-.082.654.114l.009.01c.164.205.145.5-.043.68l-3.371 3.214c-.521.498-.822 1.183-.853 1.902-.095 2.207-.261 6.912-.332 8.834-.016.45-.386.806-.836.806h-.001c-.444 0-.786-.348-.836-.788-.111-.982-.329-3.279-.427-4.212-.04-.384-.279-.613-.584-.614-.304-.002-.523.226-.548.608-.062.921-.266 3.249-.342 4.221-.034.441-.397.785-.84.785h-.001c-.452 0-.823-.356-.842-.809-.097-2.34-.369-8.963-.369-8.963l-1.287 2.331c-.14.254-.445.364-.715.26l-.001-.001c-.228-.088-.371-.305-.371-.54l.022-.157 1.244-4.393c.122-.43.515-.727.963-.727h4.53zm7.241 2h5v-1h-5v1zm0-2h7v-1h-7v1zm-8.626-5c1.241 0 2.25 1.008 2.25 2.25s-1.009 2.25-2.25 2.25c-1.242 0-2.25-1.008-2.25-2.25s1.008-2.25 2.25-2.25zm8.626 3h7v-1h-7v1z"
+        />
+      </svg>
+      {{ end }}
+    </td>
+    <td>
+      <div style="max-width: 100%">{{ $evangelist.notes | safeHTML }}</div>
+    </td>
+  </tr>
+  {{ end }}
 </table>
 <br />

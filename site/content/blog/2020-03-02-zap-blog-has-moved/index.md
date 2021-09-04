@@ -2,15 +2,16 @@
 title: "The ZAP Blog has Moved"
 description: "The ZAP Blog has moved from Blogger to https://zaproxy.org/blog/"
 images:
-- https://www.zaproxy.org/blog/2020-03-02-zap-blog-has-moved/images/zapbot-running.png
+  - https://www.zaproxy.org/blog/2020-03-02-zap-blog-has-moved/images/zapbot-running.png
 type: post
 tags:
-- blog
+  - blog
 date: "2020-03-02"
 addSocialPreview: true
 authors:
-    - simon
+  - simon
 ---
+
 {{< img "images/zapbot-running.png" >}}
 
 OK, OK, it's been a long time since the last ZAP blog post.
@@ -23,7 +24,7 @@ So while this blog post is appearing on both Blogger and the ZAP website this wi
 
 We are planning a whole series of new blog posts - if you want to be notified when they are published then either:
 
-* Follow [@zaproxy](https://twitter.com/zaproxy) on Twitter
-* Join the [ZAP User Group](https://groups.google.com/group/zaproxy-users)
+- Follow [@zaproxy](https://twitter.com/zaproxy) on Twitter
+- Join the [ZAP User Group](https://groups.google.com/group/zaproxy-users)
 
-If you have any comments or questions about this then please post them to this [ZAP User Group thread](https://groups.google.com/d/msg/zaproxy-users/QCP-yg4_cy8/eZS5sQFKCQAJ). 
+If you have any comments or questions about this then please post them to this [ZAP User Group thread](https://groups.google.com/d/msg/zaproxy-users/QCP-yg4_cy8/eZS5sQFKCQAJ).

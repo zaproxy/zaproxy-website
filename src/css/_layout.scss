@@ -52,15 +52,15 @@
 }
 
 .grid__four-col {
-  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 // Generate the various grid widths
 $grid_widths: 2 3 4 5 6 8;
-@each $size in $grid_widths  {
+@each $size in $grid_widths {
   @for $i from 1 through ($size - 1) {
     .col-#{$i}-#{$size} {
-      width:  percentage($i  / $size);
+      width: percentage($i / $size);
     }
   }
 }
@@ -87,7 +87,8 @@ $grid_widths: 2 3 4 5 6 8;
     grid-template-columns: 1fr;
   }
 
-  .col-1-3, .col-2-3 {
+  .col-1-3,
+  .col-2-3 {
     width: 100%;
   }
 
@@ -106,7 +107,6 @@ $grid_widths: 2 3 4 5 6 8;
   }
 }
 
-
 @media screen and (max-width: 650px) {
   .on-sm-stack {
     flex-direction: column;
@@ -120,7 +120,7 @@ $grid_widths: 2 3 4 5 6 8;
     display: none;
   }
 
-  .on-sm-rp{
+  .on-sm-rp {
     padding: 0;
   }
 }
@@ -144,9 +144,19 @@ $grid_widths: 2 3 4 5 6 8;
 
 // c/o https://embedresponsively.com/
 .embed-youtube {
-  position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
-} 
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
 
-.embed-youtube iframe, .embed-youtube object, .embed-youtube embed { 
-	position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

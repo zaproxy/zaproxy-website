@@ -12,9 +12,9 @@ It also defines how these rules run influencing how many requests are made and h
 You can define as many scan policies as you like and select the most appropriate one when you start the scan via
 the [Active Scan Dialog](/docs/desktop/ui/dialogs/advascan/).  
 You can define the default scan policy to be used for active scans and for the [Attack mode](/docs/desktop/start/features/modes/) via the
-[Options Active Scan screen](/docs/desktop/ui/dialogs/options/ascan/).  
+[Options Active Scan screen](/docs/desktop/ui/dialogs/options/ascan/).
 
-Active scanning is an attack on those targets.   
+Active scanning is an attack on those targets.  
 You should NOT use it on web applications that you do not own.
 
 It should be noted that active scanning can only find certain types of vulnerabilities.  
@@ -29,15 +29,15 @@ You can also define as many scan policies as you like - these define exactly whi
 
 ## Configured via
 
-|   |                                                                       |                                              |
-|---|-----------------------------------------------------------------------|----------------------------------------------|
-|   | [Scan Policy Manager Dialog](/docs/desktop/ui/dialogs/scanpolicymgr/) | which allows you to manage the scan policies |
+|     |                                                                       |                                              |
+| --- | --------------------------------------------------------------------- | -------------------------------------------- |
+|     | [Scan Policy Manager Dialog](/docs/desktop/ui/dialogs/scanpolicymgr/) | which allows you to manage the scan policies |
 
 ## See also
 
-|   |                                                         |                                       |
-|---|---------------------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                        | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/)               | provided by ZAP                       |
-|   | [Passive scanning](/docs/desktop/start/features/pscan/) |                                       |
-|   | [Scanner Rules](/docs/desktop/start/checks/)            | supported by default                  |
+|     |                                                         |                                       |
+| --- | ------------------------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                        | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/)               | provided by ZAP                       |
+|     | [Passive scanning](/docs/desktop/start/features/pscan/) |                                       |
+|     | [Scanner Rules](/docs/desktop/start/checks/)            | supported by default                  |

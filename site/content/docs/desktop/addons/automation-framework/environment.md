@@ -18,12 +18,12 @@ env:                                   # The environment, mandatory
       excludePaths:                    # An optional list of regexes to exclude
       authentication:                  # TBA: In time to cover all auth configs
   parameters:
-    failOnError: true                  # If set exit on an error         
+    failOnError: true                  # If set exit on an error
     failOnWarning: false               # If set exit on a warning
     progressToStdout: true             # If set will write job progress to stdout
   vars:                                # List of 1 or more custom variables to be used throughout the config file
     myVarOne: CustomConfigVarOne       # Can be used as ${myVarOne} anywhere throughout the config
-    myVarTwo: ${myVarOne}.VarTwo       # Can refer other vars    
+    myVarTwo: ${myVarOne}.VarTwo       # Can refer other vars
 ```
 
 System environment variables can also be used in the config in the same manner as above. In case there are two variables with the same name, the value of the system variable would be preferred.

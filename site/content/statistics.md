@@ -3,6 +3,7 @@ type: "page"
 title: "Statistics"
 layout: charts
 ---
+
 We measure and record a range of statistics related to ZAP, some of which are made public here.
 
 The blog post: [Collecting Statistics for Open Source Projects](/blog/2021-04-19-collecting-statistics-for-open-source-projects/) explains how this all works.
@@ -18,6 +19,5 @@ The Check for Update requests that ZAP makes are detailed in the FAQ: [What 'cal
 {{< chart name="docker" stacked="true">}}
 
 No, we don't know why there were so many Docker pulls from May 2021 either &#128539;.
- 
+
 {{< chart name="user-group" stacked="false">}}
- 

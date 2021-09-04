@@ -35,7 +35,7 @@ By default this job will spider the first context defined in the [environment](/
       requestWaitTime:                 # Int: The time between the requests sent to a server in milliseconds, default: 200
       sendRefererHeader:               # Bool: Whether the spider will send the referer header, default: true
       threadCount:                     # Int: The number of spider threads, default: 2
-      userAgent:                       # String: The user agent to use in requests, default: '' - use the default ZAP one 
+      userAgent:                       # String: The user agent to use in requests, default: '' - use the default ZAP one
     tests:
       - name: 'At least 100 URLs found'                 # String: Name of the test, default: statistic + operator + value
         type: 'stats'                                   # String: Type of test, only 'stats' is supported for now

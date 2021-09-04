@@ -13,12 +13,12 @@ cascade:
 
 The Linux WebDrivers add-on provides WebDrivers for the following browsers:
 
-* Chrome - ChromeDriver 91.0.4472.101
-* Firefox - geckodriver 0.29.1
+- Chrome - ChromeDriver 91.0.4472.101
+- Firefox - geckodriver 0.29.1
 
 ## See also
 
-|   |                                                                                                                           |                                                |
-|---|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
-|   | [geckodriver » Supported platforms](https://firefox-source-docs.mozilla.org/testing/geckodriver/geckodriver/Support.html) | to known which Firefox versions are supported. |
-|   | [ChromeDriver » Downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)                                | to known which Chrome versions are supported.  |
+|     |                                                                                                                           |                                                |
+| --- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+|     | [geckodriver » Supported platforms](https://firefox-source-docs.mozilla.org/testing/geckodriver/geckodriver/Support.html) | to known which Firefox versions are supported. |
+|     | [ChromeDriver » Downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)                                | to known which Chrome versions are supported.  |

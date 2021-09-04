@@ -1,43 +1,42 @@
 .tree-branch {
-    display: none;
+  display: none;
+}
+
+.tree-branch-active {
+  .tree-branch {
+    display: block;
   }
-  
-  .tree-branch-active {
-  
-    .tree-branch {
-      display: block;
+}
+
+.tree-active > a {
+  font-weight: bold;
+}
+
+.tree-menu {
+  ul {
+    padding: 0 0 0 16px;
+  }
+
+  @media (max-width: 850px) {
+    max-height: Min(30vh, 300px);
+    border-radius: var(--radius);
+    border: solid 4px #eee;
+    overflow: auto;
+    margin-bottom: 16px;
+
+    input[name="filter"] {
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      width: 100%;
+      top: 0;
     }
-  }
-  
-  .tree-active > a {
-    font-weight: bold;
-  }
-  
-  .tree-menu {
+
     ul {
-      padding: 0 0 0 16px;
-    }
-
-    @media (max-width:850px) {
-      max-height: Min(30vh, 300px);
-      border-radius: var(--radius);
-      border: solid 4px #eee;
-      overflow: auto;
-      margin-bottom: 16px;
-
-      input[name="filter"] {
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        width: 100%;
-        top: 0;
-      }
-
-      ul {
-        padding: 0 0 0 30px;
-      }
+      padding: 0 0 0 30px;
     }
   }
-  
+}
+
 .is-filtering {
   li {
     display: none;
@@ -47,7 +46,7 @@
     display: block;
   }
 
-  .tree-filter-match{ 
+  .tree-filter-match {
     display: block;
     > a {
     }

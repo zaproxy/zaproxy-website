@@ -1,6 +1,6 @@
 ---
 title: "Frequently Asked Questions"
 cascade:
-   EditableContent: true
+  EditableContent: true
 EditableContent: false
 ---

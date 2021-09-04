@@ -34,8 +34,8 @@ The title that will be used in the report.
 
 The filename that will be used for the report. This name can include the following patterns:
 
-* `{{`*date/time pattern* `}}` Any Java Date/Time pattern, e.g. `yyyy-MM-dd`
-* `[[site]]` The name of the first site selected
+- `{{`_date/time pattern_ `}}` Any Java Date/Time pattern, e.g. `yyyy-MM-dd`
+- `[[site]]` The name of the first site selected
 
 The name will be automatically updated with the site selected and extension for the report type.
 
@@ -114,9 +114,9 @@ The directory from which templates will be loaded. You should not typically need
 
 ## See also
 
-|   |                                                                                                      |                                                         |
-|---|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-|   | [Creating Reports](/docs/desktop/addons/report-generation/create/)                                   | for details on how to create and edit your own reports  |
-|   | [Report Generation Automation Framework Support](/docs/desktop/addons/report-generation/automation/) | for more details about the Automation Framework Support |
-|   | [Report Generation API](/docs/desktop/addons/report-generation/api/)                                 | for more details about the Reports API                  |
-|   | [About](/docs/desktop/addons/report-generation/about/)                                               | for more details of this add-on                         |
+|     |                                                                                                      |                                                         |
+| --- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+|     | [Creating Reports](/docs/desktop/addons/report-generation/create/)                                   | for details on how to create and edit your own reports  |
+|     | [Report Generation Automation Framework Support](/docs/desktop/addons/report-generation/automation/) | for more details about the Automation Framework Support |
+|     | [Report Generation API](/docs/desktop/addons/report-generation/api/)                                 | for more details about the Reports API                  |
+|     | [About](/docs/desktop/addons/report-generation/about/)                                               | for more details of this add-on                         |

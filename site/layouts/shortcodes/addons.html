@@ -1,46 +1,48 @@
 <table data-sort-filter class="table market-table">
-    <thead  align="left">
+  <thead align="left">
     <tr>
-        <th style="width: 50%">Name</th>
-        <th>ID</th>
-        <th style="width: 10%">Version</th>
-        <th style="width: 10%">Status</th>
-        <th style="width: 15%">Author</th>
-        <th style="width: 15%">Last Updated</th>
+      <th style="width: 50%">Name</th>
+      <th>ID</th>
+      <th style="width: 10%">Version</th>
+      <th style="width: 10%">Status</th>
+      <th style="width: 15%">Author</th>
+      <th style="width: 15%">Last Updated</th>
     </tr>
-    </thead>
-    {{ range sort $.Site.Data.addons "name" }}
-    <tr>
-        <td id="addon-{{ .id }}">
-            {{if .infoUrl }}
-            <a href="{{ .infoUrl }}">{{ .name }}</a>
-            {{else}}
-            <span style="text-decoration: underline;">{{ .name }}</span>
-            {{end}}
-            {{if .repoUrl }}
-            <a class="no-border" title="Repository" href="{{ .repoUrl }}" target="_blank" rel="noopener noreferrer"><img alt="Repository" src="/img/addons/source.png" /></a>
-            {{end}}
-            {{if .downloadUrl }}
-            <a class="no-border" title="Download" href="{{ .downloadUrl }}" target="_blank" rel="noopener noreferrer"><img alt="Download" src="/img/addons/download.png" /></a>
-            {{end}}
-            <br>
-            {{ .description }}
-        </td>
-        <td>
-            {{ .id }}
-        </td>
-        <td align="center">
-            {{ .version }}
-        </td>
-        <td >
-            {{ .status }}
-        </td>
-        <td>
-            {{ .author }}
-        </td>
-        <td align="center">
-            {{ .date }}
-        </td>
-    </tr>
-    {{ end }}
+  </thead>
+  {{ range sort $.Site.Data.addons "name" }}
+  <tr>
+    <td id="addon-{{ .id }}">
+      {{if .infoUrl }}
+      <a href="{{ .infoUrl }}">{{ .name }}</a>
+      {{else}}
+      <span style="text-decoration: underline">{{ .name }}</span>
+      {{end}} {{if .repoUrl }}
+      <a
+        class="no-border"
+        title="Repository"
+        href="{{ .repoUrl }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img alt="Repository" src="/img/addons/source.png"
+      /></a>
+      {{end}} {{if .downloadUrl }}
+      <a
+        class="no-border"
+        title="Download"
+        href="{{ .downloadUrl }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        ><img alt="Download" src="/img/addons/download.png"
+      /></a>
+      {{end}}
+      <br />
+      {{ .description }}
+    </td>
+    <td>{{ .id }}</td>
+    <td align="center">{{ .version }}</td>
+    <td>{{ .status }}</td>
+    <td>{{ .author }}</td>
+    <td align="center">{{ .date }}</td>
+  </tr>
+  {{ end }}
 </table>

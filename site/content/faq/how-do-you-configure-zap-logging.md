@@ -14,26 +14,20 @@ file in the same directory.
 
 By default the 'main' logging levels are set to `info` by these lines:
 
-    
-    
     logger.paros.name = org.parosproxy.paros
     logger.paros.level = info
-    
+
     logger.zap.name = org.zaproxy.zap
     logger.zap.level = info
-    
 
 Changing these to `debug` (and restarting ZAP) will _significantly_ increase
 the amount of logging performed:
 
-    
-    
     logger.paros.name = org.parosproxy.paros
     logger.paros.level = debug
-    
+
     logger.zap.name = org.zaproxy.zap
     logger.zap.level = debug
-    
 
 Logging can be selectively enabled using a [Stand Alone script](/docs/desktop/addons/script-console/#script-types) while ZAP is
 running (the example below is a JavaScript script):

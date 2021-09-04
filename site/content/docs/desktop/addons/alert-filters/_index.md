@@ -16,9 +16,8 @@ of any alerts raised by the active and passive scan.
 
 There are 2 different types of Alert Filter:
 
-* [Context Alert Filters](/docs/desktop/addons/alert-filters/contextalertfilter/)
-* [Global Alert Filters](/docs/desktop/addons/alert-filters/globalalertfilter/)
-
+- [Context Alert Filters](/docs/desktop/addons/alert-filters/contextalertfilter/)
+- [Global Alert Filters](/docs/desktop/addons/alert-filters/globalalertfilter/)
 
 The easiest way to create Alert Filters is to right click an alert and select
 the 'Create Alert Filter...' option. This will display the

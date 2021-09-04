@@ -6,4 +6,3 @@ layout: redirect
 redirect: /docs/desktop/ui/tabs/sites/
 weight: 4
 ---
-

@@ -19,14 +19,14 @@ The add-on allows you to instruct ZAP to return content from the ZAP history bet
 dates rather than forwarding the requests to the site.  
 This allows you to apparently browse and use a website that you no longer have access to.  
 It also allows you to see what it looked like at between specific times, which is useful if
-the application has since changed.  
+the application has since changed.
 
 When returning pages from the ZAP history floating footers are injected into HTML pages to
 give a visual clue that these pages are generated from ZAP.  
 ZAP will return pages that were the result of both GET and POST requests as long as it finds ones that match.  
 Pages only match if all URL and POST parameters are the same, ignoring the order and any known CSRF tokens.  
 If no matching page can be found in the history then a custom 404 page is returned which will
-include links to the same page if it has been invoked with different parameters or outside of the time period specified.  
+include links to the same page if it has been invoked with different parameters or outside of the time period specified.
 
 This add-on adds right click menus to the Sites tree:
 
@@ -44,7 +44,7 @@ When selected then the revisit functionality will be disabled for the selected s
 
 ## API
 
-The add on supports the following API endpoints:  
+The add on supports the following API endpoints:
 
 revisit / view / revisitList Returns the list of sites enabled for revisit  
 revisit / action / revisitSiteOn Turns revisit on for the specified site. Dates must use the format: "yyyy/MM/dd HH:mm:ss"  

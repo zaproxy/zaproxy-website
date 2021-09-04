@@ -23,13 +23,12 @@ the rule `rules.domxss.browserid`, via the Options 'Rule configuration' panel, w
 The following Attack Strengths are supported, and related directly to the number of attack payloads used
 for URL fragment and form input field injections (eg: http://example.com/index.html?foo=bar#injection):
 
-* LOW: 1 attack payloads
-* MEDIUM: 3 attack payloads
-* HIGH: 6 attack payloads
-* INSANE: 9 attack payloads
+- LOW: 1 attack payloads
+- MEDIUM: 3 attack payloads
+- HIGH: 6 attack payloads
+- INSANE: 9 attack payloads
 
 The scanner will also attempt URL/query parameter injections which are not impacted by the selected strength.
-
 
 The rule will only report one DOM XSS vulnerability per node, unless the LOW Alert threshold
 is used, in which case it will keep trying all of the specified payloads.

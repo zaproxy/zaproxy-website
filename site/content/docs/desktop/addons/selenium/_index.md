@@ -29,8 +29,8 @@ with the crawler later, it's up to the scripts to access the required URLs.
 
 The following web browsers are supported:
 
-|       Name       |        ID        |                                                                                                                                                                                                          Requirements/Notes                                                                                                                                                                                                           |
-|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name             | ID               | Requirements/Notes                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| ---------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Chrome           | chrome           | The following versions are known to work: 59 and 60 (older versions might work too). Requires ChromeDriver, if not on the system's PATH, it can be set in the options. For more information on ChromeDriver and how to obtain it refer to the [ChromeDriver website](https://sites.google.com/a/chromium.org/chromedriver/).                                                                                                          |
 | Chrome Headless  | chrome-headless  | Starts Chrome without GUI.                                                                                                                                                                                                                                                                                                                                                                                                            |
 | Firefox          | firefox          | The following versions are known to work: 45 (ESR), 46, 47.0.1, 54, and 55 (older versions might work too). Some versions are known to not work, for example, 47.0. Newer versions (≥ 48) require geckodriver, it can be set in the options. For more information on geckodriver and how to obtain it refer to the [geckodriver website](https://github.com/mozilla/geckodriver) (see footer note for caveat when using geckodriver). |
@@ -64,7 +64,7 @@ file, a domain name mapping to the local address and use that domain name instea
 
 ## See also
 
-|   |                                                                   |                                         |
-|---|-------------------------------------------------------------------|-----------------------------------------|
-|   | [Options Selenium screen](/docs/desktop/addons/selenium/options/) | for an overview of the Selenium Options |
-|   | [API](/docs/desktop/addons/selenium/api/)                         | for an overview of the Selenium API     |
+|     |                                                                   |                                         |
+| --- | ----------------------------------------------------------------- | --------------------------------------- |
+|     | [Options Selenium screen](/docs/desktop/addons/selenium/options/) | for an overview of the Selenium Options |
+|     | [API](/docs/desktop/addons/selenium/api/)                         | for an overview of the Selenium API     |

@@ -39,7 +39,7 @@ This rule attempts to identify MongoDB specific NoSQL Injection vulnerabilities.
 
 ## CORS Header
 
-This rule attempts to identify CORS headers and also CORS misconfiguration. The CORS is considered as misconfigured when it allows all origins, origins with weaker protocols and null origin.  
+This rule attempts to identify CORS headers and also CORS misconfiguration. The CORS is considered as misconfigured when it allows all origins, origins with weaker protocols and null origin.
 
 Latest code: [CorsScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/CorsScanRule.java)
 
@@ -47,6 +47,6 @@ Latest code: [CorsScanRule.java](https://github.com/zaproxy/zap-extensions/blob/
 
 This rule attempts to identify Web Cache Deception vulnerabilities. It checks whether a static path appended to original URIs can be used to leak sensitive user information or not.
 
-* User must be authenticated before using this rule
+- User must be authenticated before using this rule
 
 Latest code: [WebCacheDeceptionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/WebCacheDeceptionScanRule.java)

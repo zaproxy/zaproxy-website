@@ -12,10 +12,10 @@ This screen allows you to configure the behaviour of specific active and passive
 Select any of the listed rows to see details of the specific configuration and to change the associated value.
 Both individual and all rules can be reset.
 
-The built-in rules include:  
+The built-in rules include:
 
-|            Name            | Default |                                                                                                                           Description                                                                                                                            |
-|----------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Name                       | Default | Description                                                                                                                                                                                                                                                      |
+| -------------------------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | rules.common.sleep         | 15      | The length of time in seconds used for timing attacks.                                                                                                                                                                                                           |
 | rules.cookie.ignorelist    |         | A comma separated list of cookie names. Cookies included in this list will be ignored when scanning for cookie related issues.                                                                                                                                   |
 | rules.csrf.ignorelist      |         | A comma separated list of identifiers. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms.     |
@@ -25,7 +25,7 @@ The built-in rules include:
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |

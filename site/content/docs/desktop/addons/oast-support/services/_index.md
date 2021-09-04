@@ -9,5 +9,5 @@ weight: 2
 
 The OAST add-on currently supports the following services:
 
-* [BOAST](/docs/desktop/addons/oast-support/services/boast/)
-* [Callbacks](/docs/desktop/addons/oast-support/services/callbacks/)
+- [BOAST](/docs/desktop/addons/oast-support/services/boast/)
+- [Callbacks](/docs/desktop/addons/oast-support/services/callbacks/)

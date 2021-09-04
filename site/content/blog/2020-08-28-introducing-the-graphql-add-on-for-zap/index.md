@@ -3,18 +3,18 @@ title: "Introducing the GraphQL Add-on for ZAP"
 description: "Now attack GraphQL endpoints with the new GraphQL add-on for ZAP"
 type: post
 tags:
-- blog
-- gsoc
-- graphql
+  - blog
+  - gsoc
+  - graphql
 date: "2020-08-28"
 addSocialPreview: true
 authors:
-    - akshath
+  - akshath
 ---
 
-GraphQL Schemas can be very large and testing them can be a very time-consuming process. Currently, there is a lack of tools that allow developers to launch and automate attacks on these endpoints. The GraphQL add-on for ZAP intends to fill this gap. 
+GraphQL Schemas can be very large and testing them can be a very time-consuming process. Currently, there is a lack of tools that allow developers to launch and automate attacks on these endpoints. The GraphQL add-on for ZAP intends to fill this gap.
 
-The add-on is still in an early stage, so the range of its functionality is limited. However, you can combine it with existing ZAP functionality to abuse GraphQL endpoints in many different ways. 
+The add-on is still in an early stage, so the range of its functionality is limited. However, you can combine it with existing ZAP functionality to abuse GraphQL endpoints in many different ways.
 
 This post will first highlight the core features of the add-on, and then go on to describe how easy it is for a newbie programmer (with a passion for learning) to begin contributing to ZAP.
 
@@ -24,11 +24,11 @@ If you are using the latest version of ZAP then you can browse and download add-
 
 ![The Manage Add-ons Button](images/manage-add-ons-button.png)
 
-The *Manage Add-ons* window will open.
+The _Manage Add-ons_ window will open.
 
 ![The GraphQL Add-on in the Marketplace](images/marketplace.png)
 
-Under the *Marketplace* tab, you will find the GraphQL Support add-on. Toggle the checkbox next to it and click on "Install Selected".
+Under the _Marketplace_ tab, you will find the GraphQL Support add-on. Toggle the checkbox next to it and click on "Install Selected".
 
 ## Import a GraphQL Schema into ZAP
 
@@ -53,7 +53,7 @@ Regardless of how a Schema is obtained, if everything is valid and correctly spe
 
 The imported schema will be parsed and queries will be generated from it.
 
-What exactly do we mean by *generated*? 
+What exactly do we mean by _generated_?
 
 Basically, ZAP parses the imported schema and tries to create all possible valid queries from it. Allow me to explain this with the help of an example.
 
@@ -83,7 +83,7 @@ query {
 
 This is in fact a [unit test](https://github.com/zaproxy/zap-extensions/blob/3cb399a8e8a3b998e4b90cf8bffba99501ef00f0/addOns/graphql/src/test/java/org/zaproxy/addon/graphql/GraphQlGeneratorUnitTest.java#L72) for the add-on. You can look at the other tests for more examples.
 
-Now, if you go to *Tools -> Options -> GraphQL*, you will find the following settings panel:
+Now, if you go to _Tools -> Options -> GraphQL_, you will find the following settings panel:
 
 ![The GraphQL Options Panel](images/graphql-options-panel.png)
 

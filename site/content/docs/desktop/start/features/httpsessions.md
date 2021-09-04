@@ -43,15 +43,15 @@ Options screen](/docs/desktop/ui/dialogs/options/httpsessions/).
 
 ## Accessed via
 
-|   |                                                          |   |
-|---|----------------------------------------------------------|---|
-|   | [HTTP Sessions tab](/docs/desktop/ui/tabs/httpsessions/) |   |
+|     |                                                          |     |
+| --- | -------------------------------------------------------- | --- |
+|     | [HTTP Sessions tab](/docs/desktop/ui/tabs/httpsessions/) |     |
 
 ## See also
 
-|   |                                                                                |                                       |
-|---|--------------------------------------------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                               | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/)                                      | provided by ZAP                       |
-|   | [HTTP Sessions Options screen](/docs/desktop/ui/dialogs/options/httpsessions/) | for an overview of the tool's Options |
-|   | [Params Tab](/docs/desktop/ui/tabs/params/)                                    | for an overview of Params Tab         |
+|     |                                                                                |                                       |
+| --- | ------------------------------------------------------------------------------ | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                                               | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/)                                      | provided by ZAP                       |
+|     | [HTTP Sessions Options screen](/docs/desktop/ui/dialogs/options/httpsessions/) | for an overview of the tool's Options |
+|     | [Params Tab](/docs/desktop/ui/tabs/params/)                                    | for an overview of Params Tab         |

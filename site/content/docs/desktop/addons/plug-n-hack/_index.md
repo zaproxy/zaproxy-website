@@ -20,6 +20,6 @@ your browser to work with ZAP quickly and easily.
 It also allows you to control ZAP from your browser. In Firefox this is supported via the Developer Toolbar (Shift+F2).  
 Type 'help pnh' or 'help zap' in the Firefox Developer toolbar to get started.
 
-Plug-n-Hack is currently supported by Firefox 24.0 and later.   
+Plug-n-Hack is currently supported by Firefox 24.0 and later.  
 For more details about Plug-n-Hack including the latest information about which browsers and tools
 support it see: https://developer.mozilla.org/en-US/docs/Plug-n-Hack

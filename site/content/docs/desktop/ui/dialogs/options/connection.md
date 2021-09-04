@@ -36,9 +36,9 @@ If you resend the same request with session tracking then it will use the cookie
 
 Defines for how long the successful DNS queries should be cached:
 
-* Negative number, cache forever;
-* Zero, disables caching;
-* Positive number, the number of seconds the queries will be cached.
+- Negative number, cache forever;
+- Zero, disables caching;
+- Positive number, the number of seconds the queries will be cached.
 
 **Note:** Changes are applied after a restart.
 
@@ -46,7 +46,7 @@ The option can also be set using the `-config` command line argument with the ke
 
 ### Security Protocols
 
-Allows to choose the SSL/TLS versions enabled for outgoing connections (for example, to servers). At least one version must be enabled, versions unsupported by the JRE will be unselected and disabled.   
+Allows to choose the SSL/TLS versions enabled for outgoing connections (for example, to servers). At least one version must be enabled, versions unsupported by the JRE will be unselected and disabled.  
 The option SSLv2Hello must be selected in conjunction with at least one SSL/TLS version.
 
 ### Use Proxy Chain
@@ -70,28 +70,28 @@ can still be changed in this panel.
 
 #### Enabled
 
-If ZAP should use the configured SOCKS proxy.   
+If ZAP should use the configured SOCKS proxy.  
 Default: `unselected`, unless the SOCKS proxy system properties are defined, in which case it is `selected`.
 
 #### Host
 
-The host name or address of the SOCKS proxy.   
+The host name or address of the SOCKS proxy.  
 Default: `localhost`.
 
 #### Port
 
-The port of the SOCKS proxy.   
+The port of the SOCKS proxy.  
 Default: `1080`.
 
 #### Version
 
-The version of the SOCKS proxy.   
+The version of the SOCKS proxy.  
 Default: `5`.
 
 #### Use SOCKS' DNS
 
-If ZAP should let the SOCKS proxy resolve the host names. Requires a version 5 SOCKS proxy.   
-This might lead to connection failures if the SOCKS proxy is not able to resolve the host name (e.g. use of names that are defined in a `hosts` file).   
+If ZAP should let the SOCKS proxy resolve the host names. Requires a version 5 SOCKS proxy.  
+This might lead to connection failures if the SOCKS proxy is not able to resolve the host name (e.g. use of names that are defined in a `hosts` file).  
 Default: `selected`.
 
 #### Authentication
@@ -100,19 +100,19 @@ The following fields allow to configure the authentication credentials for the S
 
 ##### User Name
 
-The user name.   
+The user name.  
 Default: none.
 
 ##### Password
 
-The password.   
-Default: none.   
+The password.  
+Default: none.  
 **Note:** Stored in clear text in the configuration file.
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
-|   | [Command Line](/docs/desktop/cmdline/)               | for details of the Command Line                 |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     | [Command Line](/docs/desktop/cmdline/)               | for details of the Command Line                 |

@@ -14,16 +14,15 @@ By default ZAP will create unique nodes in the tree based on the HTTP method and
 
 This means that the following requests will all end up having different tree nodes:
 
-* GET https://www.example.com/ex1?a=b\&c=d
-* GET https://www.example.com/ex1?a=b\&d=c
-* POST https://www.example.com/ex1?a=b\&c=d
+- GET https://www.example.com/ex1?a=b\&c=d
+- GET https://www.example.com/ex1?a=b\&d=c
+- POST https://www.example.com/ex1?a=b\&c=d
 
 And the following requests will end up having the same node:
 
-
-* GET https://www.example.com?a=b\&c=d
-* GET https://www.example.com?a=c\&c=c
-* GET https://www.example.com?a=e\&c=f
+- GET https://www.example.com?a=b\&c=d
+- GET https://www.example.com?a=c\&c=c
+- GET https://www.example.com?a=e\&c=f
 
 This works pretty well in lots of cases - different HTTP methods and parameter names typically mean different actions while the parameter values usually don’t change the outcome.
 
@@ -35,8 +34,8 @@ There are always exceptions.
 
 Take the case where the action to be taken is actually defined in a parameter value:
 
-* GET https://www.example.com?a=b\&action=add
-* GET https://www.example.com?a=b\&action=delete
+- GET https://www.example.com?a=b\&action=add
+- GET https://www.example.com?a=b\&action=delete
 
 In this case both URLs will end up in the same Sites Tree node, which means that in practice only one of them will be attacked. The other URL will not be attacked and so any vulnerabilities specific to that action will not be found.
 
@@ -48,9 +47,9 @@ Once you have done that (and revisited the URLs) then they will appear as 2 diff
 
 Conversely we have the case where a URL path element is actually part of the data and not part of the structure of the site. For example the following URLs could all represent the same functionality if the second path element (companyX) is actually data:
 
-* https://www.example.com/app/company1/aaa?ddd=eee
-* https://www.example.com/app/company2/aaa?ddd=fff
-* https://www.example.com/app/company3/aaa?ddd=ggg
+- https://www.example.com/app/company1/aaa?ddd=eee
+- https://www.example.com/app/company2/aaa?ddd=fff
+- https://www.example.com/app/company3/aaa?ddd=ggg
 
 In this case all 3 URLs will end up in unique nodes and ZAP will attack each of them even though it doesn't really need to. This probably is not a big problem if there are just 3 instances, but in most cases this data will be coming from a database so there could be a huge number of such nodes.
 
@@ -67,13 +66,13 @@ In these cases you can use Input Vector [Scripts](/docs/desktop/start/features/s
 
 ## See also
 
-|   |                                           |                                       |
-|---|-------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
+|     |                                           |                                       |
+| --- | ----------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
 
 ## External links
 
-|   |                                                                          |
-|---|--------------------------------------------------------------------------|
-|   | [ZAP Blog: Sites Tree Modifiers](/blog/2020-09-22-sites-tree-modifiers/) |
+|     |                                                                          |
+| --- | ------------------------------------------------------------------------ |
+|     | [ZAP Blog: Sites Tree Modifiers](/blog/2020-09-22-sites-tree-modifiers/) |

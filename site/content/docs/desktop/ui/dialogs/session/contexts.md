@@ -18,13 +18,13 @@ This allows you to set the context name and description.
 ### Include in Context
 
 This allows you to manage the URLs which will be included in the context.  
-URLs which dont match any of the regexs will not be included in the context.   
+URLs which dont match any of the regexs will not be included in the context.  
 **Note:** The regular expressions must match the whole URL.
 
 ### Exclude from Context
 
 This allows you to manage the URLs which will be excluded from the context.  
-You only need to specify regexs for URLs that you do not want to include but which match one or more of the 'include' regexes.   
+You only need to specify regexs for URLs that you do not want to include but which match one or more of the 'include' regexes.  
 **Note:** The regular expressions must match the whole URL.
 
 ### Structure {#struct}
@@ -55,7 +55,7 @@ No configuration is needed for this session management method. Read [more](/docs
 
 #### Script-Based Session Management
 
-To use this session management method, you **first** need to write (and save) a **Session Management Script** using the **Scripts** tab (see the provided examples and templates for this script type in the Scripts tab). Then you need to supply the name of the script in the dropdown list. After selecting the script, you need to press the **Load** button, loading all the requirements of the script. Any parameters that you have specified as *required* or *optional* in the script will be shown in the interface to be defined. Their values are available to be used in the script, during the session management process, as seen in the provided examples for Session Management Scripts. Make sure that after doing any changes to the parameters required by the Session Management script you re-load the script. Otherwise, the parameters shown in the interface might not be the ones used during the session management process and errors might occur. Read [more](/docs/desktop/start/features/sessionmanagement/#sbsm)...
+To use this session management method, you **first** need to write (and save) a **Session Management Script** using the **Scripts** tab (see the provided examples and templates for this script type in the Scripts tab). Then you need to supply the name of the script in the dropdown list. After selecting the script, you need to press the **Load** button, loading all the requirements of the script. Any parameters that you have specified as _required_ or _optional_ in the script will be shown in the interface to be defined. Their values are available to be used in the script, during the session management process, as seen in the provided examples for Session Management Scripts. Make sure that after doing any changes to the parameters required by the Session Management script you re-load the script. Otherwise, the parameters shown in the interface might not be the ones used during the session management process and errors might occur. Read [more](/docs/desktop/start/features/sessionmanagement/#sbsm)...
 
 ### Users {#users}
 
@@ -70,30 +70,29 @@ This functionality allows you to handle situations in which the target does not 
 
 ## URL regexs
 
-In the *Include in \** , *Exclude from \** panels and the *Logged in/out indicators* of the *Authentication* panel, etc. you can enter regular expressions to define excluded URLs. While you can escape a single meta-character with a backslash, you can also use the **\\Q...\\E** escape sequence. All the characters between the **\\Q** and the **\\E** are interpreted as literal characters. E.g. \\Q\*\\d+\*\\E matches the literal text \*\\d+\*. This escape sequence is used in ZAP when you exclude URLs via some context menus.   
+In the \*Include in \** , *Exclude from \** panels and the *Logged in/out indicators* of the *Authentication\* panel, etc. you can enter regular expressions to define excluded URLs. While you can escape a single meta-character with a backslash, you can also use the **\\Q...\\E** escape sequence. All the characters between the **\\Q** and the **\\E** are interpreted as literal characters. E.g. \\Q\*\\d+\*\\E matches the literal text \*\\d+\*. This escape sequence is used in ZAP when you exclude URLs via some context menus.  
 **Note:** If your URL contains a "\\E", then you have to do the following steps when using the **\\Q...\\E** escape sequence:
 
-* Open the escape sequence
-* Close the escape sequence before the "character" \\E
-* Escape the backslash
-* Open after the "\\E" another escape sequence;
-* Close the escape sequence as normally would.
+- Open the escape sequence
+- Close the escape sequence before the "character" \\E
+- Escape the backslash
+- Open after the "\\E" another escape sequence;
+- Close the escape sequence as normally would.
 
-
-Example: subdomain.example.com/path?a=**\\E** \&moredata=2 should appear as *\\Qsubdomain.example.com/path?a=\\E* **\\\\E** *\\Q\&moredata=2\\E*
+Example: subdomain.example.com/path?a=**\\E** \&moredata=2 should appear as _\\Qsubdomain.example.com/path?a=\\E_ **\\\\E** _\\Q\&moredata=2\\E_
 
 ## Accessed via
 
-|   |                                           |                        |
-|---|-------------------------------------------|------------------------|
-|   | [Sites tab](/docs/desktop/ui/tabs/sites/) | Double click a Context |
+|     |                                           |                        |
+| --- | ----------------------------------------- | ---------------------- |
+|     | [Sites tab](/docs/desktop/ui/tabs/sites/) | Double click a Context |
 
 ## See also
 
-|   |                                                                       |                                        |
-|---|-----------------------------------------------------------------------|----------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface  |
-|   | [Dialogs](/docs/desktop/ui/dialogs/)                                  | for details of the dialogs or popups   |
-|   | [Authentication](/docs/desktop/start/features/authentication/)        | for an overview of Authentication      |
-|   | [Session Management](/docs/desktop/start/features/sessionmanagement/) | for an overview of Session Management  |
-|   | [Custom Page](/docs/desktop/start/features/custompages/)              | for an overview of Custom Page details |
+|     |                                                                       |                                        |
+| --- | --------------------------------------------------------------------- | -------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface  |
+|     | [Dialogs](/docs/desktop/ui/dialogs/)                                  | for details of the dialogs or popups   |
+|     | [Authentication](/docs/desktop/start/features/authentication/)        | for an overview of Authentication      |
+|     | [Session Management](/docs/desktop/start/features/sessionmanagement/) | for an overview of Session Management  |
+|     | [Custom Page](/docs/desktop/start/features/custompages/)              | for an overview of Custom Page details |

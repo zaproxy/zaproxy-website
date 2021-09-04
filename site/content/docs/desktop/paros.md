@@ -22,12 +22,12 @@ org.zaproxy.zap
 
 ## See also
 
-|   |                                |                         |
-|---|--------------------------------|-------------------------|
-|   | [Introduction](/docs/desktop/) | the introduction to ZAP |
+|     |                                |                         |
+| --- | ------------------------------ | ----------------------- |
+|     | [Introduction](/docs/desktop/) | the introduction to ZAP |
 
 ## External links
 
-|   |                                           |                 |
-|---|-------------------------------------------|-----------------|
-|   | <https://sourceforge.net/projects/paros/> | the Paros proxy |
+|     |                                           |                 |
+| --- | ----------------------------------------- | --------------- |
+|     | <https://sourceforge.net/projects/paros/> | the Paros proxy |

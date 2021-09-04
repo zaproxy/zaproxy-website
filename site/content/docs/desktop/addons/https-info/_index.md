@@ -23,13 +23,13 @@ to perform it's certificate and cipher suite information gathering.
 
 The top portion of a tab is devoted to general details of the SSL/TLS certificate presented by the server. Such as:
 
-* Subject DN
-* Signing Algorithm
-* Certificate Fingerprint
-* Issuer DN
-* Validity Dates
-* Self-signed Status
-* etc.
+- Subject DN
+- Signing Algorithm
+- Certificate Fingerprint
+- Issuer DN
+- Validity Dates
+- Self-signed Status
+- etc.
 
 ## Cipher Suites
 

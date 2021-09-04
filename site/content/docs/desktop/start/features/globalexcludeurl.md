@@ -19,7 +19,7 @@ Exclude URL screen](/docs/desktop/ui/dialogs/options/globalexcludeurl/) in the Z
 
 ## See also
 
-|   |                                           |                                       |
-|---|-------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
+|     |                                           |                                       |
+| --- | ----------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/) | provided by ZAP                       |

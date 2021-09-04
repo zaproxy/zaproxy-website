@@ -7,24 +7,22 @@
         <p>{{ .description }}</p>
 
         {{ range .text}}
-          <p class="small">{{ . }}</p>
+        <p class="small">{{ . }}</p>
         {{ end }}
 
         <div class="companies__logos flex ai-c jc-sa py-70 on-sm-stack">
-            {{ range .logos }}
-              <div class="companies__logo-item">
-               <img src="/img/home/companies/{{ . }}.png" />
-              </div>
-            {{ end }}
+          {{ range .logos }}
+          <div class="companies__logo-item">
+            <img src="/img/home/companies/{{ . }}.png" />
           </div>
+          {{ end }}
+        </div>
       </div>
       <div class="companies__illustration no-shrink">
         {{ partial "svg/homepage/companies/building-hug.svg" }}
-
       </div>
     </div>
 
-    
     {{ end }}
   </div>
 </section>

@@ -11,15 +11,15 @@ This screen allows you to configure the [anti CSRF tokens](/docs/desktop/start/f
 
 ### Tokens
 
-The form POST parameter names that should be treated as anti CSRF tokens.  
+The form POST parameter names that should be treated as anti CSRF tokens.
 
 ### Partial Matches
 
-Defines if the form POST parameter names should be treated as anti CSRF tokens if they include one of the tokens (instead of requiring an exact match).  
+Defines if the form POST parameter names should be treated as anti CSRF tokens if they include one of the tokens (instead of requiring an exact match).
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |

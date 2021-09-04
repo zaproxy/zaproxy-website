@@ -9,9 +9,8 @@ weight: 1
 
 The Server-Sent Events tab displays all events from event streams.
 
-
 ## See also
 
-|   |                                                                               |                                                |
-|---|-------------------------------------------------------------------------------|------------------------------------------------|
-|   | [Basic Server-Sent Events concepts](/docs/desktop/addons/server-sent-events/) | for a short introduction to Server-Sent Events |
+|     |                                                                               |                                                |
+| --- | ----------------------------------------------------------------------------- | ---------------------------------------------- |
+|     | [Basic Server-Sent Events concepts](/docs/desktop/addons/server-sent-events/) | for a short introduction to Server-Sent Events |

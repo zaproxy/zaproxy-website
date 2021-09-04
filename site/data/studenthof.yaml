@@ -1,20 +1,19 @@
 ---
-
 - name: Akshath Kothari
-  email: 
+  email:
   twitter: ricekot_
   linkedin: https://www.linkedin.com/in/akshath-kothari/
   program: GSoC
-  title: Out-of-band Application Security Testing 
+  title: Out-of-band Application Security Testing
   date: 2021 Summer
   links: >
     <a href="/blog/2021-08-23-oast-with-owasp-zap/">Blog</a>,
     <a href="/docs/desktop/addons/oast-support/">add-on</a>
 
 - name: Pranav Saxena
-  email: 
-  twitter: 
-  linkedin: 
+  email:
+  twitter:
+  linkedin:
   program: GSoC
   title: Retesting Alerts
   date: 2021 Summer
@@ -23,7 +22,7 @@
     <a href="/docs/desktop/addons/retest/">add-on</a>
 
 - name: Akshath Kothari
-  email: 
+  email:
   twitter: ricekot_
   linkedin: https://www.linkedin.com/in/akshath-kothari/
   program: GSoC
@@ -34,7 +33,7 @@
     <a href="/docs/desktop/addons/graphql-support/">add-on</a>
 
 - name: Nirojan Selvanathan
-  email: 
+  email:
   twitter: sshniro
   linkedin: https://www.linkedin.com/in/niroselva/
   program: Direct
@@ -45,7 +44,7 @@
     <a href="/blog/2020-05-15-dynamic-application-security-testing-with-zap-and-github-actions/">blog</a>
 
 - name: Nirojan Selvanathan
-  email: 
+  email:
   twitter: sshniro
   linkedin: https://www.linkedin.com/in/niroselva/
   program: GSoD
@@ -57,7 +56,7 @@
     <a href="https://github.com/zaproxy/zap-api-docs" rel="nofollow">repo</a>
 
 - name: Manos Kirtas
-  email: 
+  email:
   twitter: Kir_Manos
   linkedin: https://www.linkedin.com/in/manos-kirtas-1a9004151/
   program: GSoC
@@ -68,7 +67,7 @@
     <a href="https://github.com/zaproxy/zaproxy/wiki/GSoC2019_WebSocketScanning" rel="nofollow">wiki</a>
 
 - name: David Scrobonia
-  email: 
+  email:
   twitter: david_scrobonia
   linkedin: https://www.linkedin.com/in/dscrobonia/
   program: Direct
@@ -79,7 +78,7 @@
     <a href="https://www.youtube.com/watch?v=ztfgip-UhWw" rel="nofollow">video</a>
 
 - name: Kajan Mohanagandhirasa
-  email: 
+  email:
   twitter: GM_K4J4N
   linkedin: https://www.linkedin.com/in/k4j4n/
   program: GSoC
@@ -89,7 +88,7 @@
     <a href="https://github.com/zaproxy/zaproxy/wiki/GSoC2018AuthenticationhelperAddOn" rel="nofollow">Wiki</a>
 
 - name: Manos Kirtas
-  email: 
+  email:
   twitter: Kir_Manos
   linkedin: https://www.linkedin.com/in/manos-kirtas-1a9004151/
   program: GSoC
@@ -98,36 +97,36 @@
   links: >
     <a href="https://manosmagnus.github.io/posts/websocket-passive-scan-using-scripts-with-zap/" rel="nofollow">Blog</a>
 
-- name:  Ryan Wehe
-  email: 
-  twitter: 
+- name: Ryan Wehe
+  email:
+  twitter:
   linkedin: https://www.linkedin.com/in/ryanwehe/
   program: MWoS
   title: Form handling (team project)
   date: 2016 Winter
   links: <a href="https://wiki.mozilla.org/Security/Automation/Winter_Of_Security_2016/ZAP_Form_Handling">Wiki</a>
 
-- name:  Christopher Laguna
-  email: 
-  twitter: 
-  linkedin: 
+- name: Christopher Laguna
+  email:
+  twitter:
+  linkedin:
   program: MWoS
   title: Form handling (team project)
   date: 2016 Winter
   links: <a href="https://wiki.mozilla.org/Security/Automation/Winter_Of_Security_2016/ZAP_Form_Handling">Wiki</a>
 
-- name:  Rian Franey
-  email: 
-  twitter: 
-  linkedin: 
+- name: Rian Franey
+  email:
+  twitter:
+  linkedin:
   program: MWoS
   title: Form handling (team project)
   date: 2016 Winter
   links: <a href="https://wiki.mozilla.org/Security/Automation/Winter_Of_Security_2016/ZAP_Form_Handling">Wiki</a>
 
 - name: Sanchit Kapoor
-  email: 
-  twitter: 
+  email:
+  twitter:
   linkedin: https://www.linkedin.com/in/sanchitkapoor/
   program: GSoC
   title: Bug tracker support
@@ -135,7 +134,7 @@
   links: <a href="/docs/desktop/addons/bug-tracker/">Add-on</a>
 
 - name: Aabha Biyani
-  email: 
+  email:
   twitter: AabhaBiyani
   linkedin: https://www.linkedin.com/in/aabha-biyani-a875b975/
   program: Direct
@@ -144,9 +143,9 @@
   links: <a href="/docs/desktop/addons/dom-xss-active-scan-rule/">Add-on</a>
 
 - name: Sebastian Schulze
-  email: 
-  twitter: 
-  linkedin: 
+  email:
+  twitter:
+  linkedin:
   program: GSoC
   title: Advanced fuzzing
   date: 2014 Summer
@@ -154,8 +153,8 @@
     <a href="https://github.com/zaproxy/zaproxy/wiki/GSoC_2014_Advanced_Fuzzing" rel="nofollow">Wiki</a>
 
 - name: Alberto Verza
-  email: 
-  twitter: 
+  email:
+  twitter:
   linkedin: https://www.linkedin.com/in/albertov91/
   program: GSoC
   title: SOAP scanning
@@ -164,7 +163,7 @@
     <a href="/blog/2014-09-03-alberto-s-gsoc-2014-project-for-zap-soap-scanner-add-on/" rel="nofollow">Blog</a>
 
 - name: Cosmin Stefan
-  email: 
+  email:
   twitter: cosmin_stefan
   linkedin: https://www.linkedin.com/in/cosminstefan/
   program: GSoC
@@ -174,9 +173,9 @@
     <a href="https://github.com/zaproxy/zaproxy/wiki/Gsoc2013_Enhancing_HTTP_Sessions" rel="nofollow">Wiki</a>
 
 - name: Rauf Butt
-  email: 
-  twitter: 
-  linkedin: 
+  email:
+  twitter:
+  linkedin:
   program: GSoC
   title: BIRT Reporting
   date: 2013 Summer
@@ -184,8 +183,8 @@
     <a href="https://wiki.owasp.org/index.php/GSoC2013_Ideas/OWASP_ZAP_Exploring_Advanced_reporting_using_BIRT" rel="nofollow">Wiki</a>
 
 - name: Alessandro Secco
-  email: 
-  twitter: 
+  email:
+  twitter:
   linkedin: https://www.linkedin.com/in/seccoale/
   program: GSoC
   title: Zest enhancements
@@ -194,7 +193,7 @@
     <a href="http://seccoalegsoc.blogspot.com/2013/09/gsoc-end-current-status.html" rel="nofollow">Wiki</a>
 
 - name: Cosmin Stefan
-  email: 
+  email:
   twitter: cosmin_stefan
   linkedin: https://www.linkedin.com/in/cosminstefan/
   program: GSoC
@@ -204,7 +203,7 @@
     <a href="https://github.com/zaproxy/zaproxy/wiki/Gsoc2013_Enhancing_HTTP_Sessions" rel="nofollow">Wiki</a>
 
 - name: Pulasthi Mahawithana
-  email: 
+  email:
   twitter: pulasthi7
   linkedin: https://www.linkedin.com/in/pulasthi7/
   program: GSoC
@@ -214,9 +213,9 @@
     <a href="https://owasp.org/www-community/initiatives/gsoc/gsoc2013zapsaml" rel="nofollow">Wiki</a>
 
 - name: Abdelhadi Azouni
-  email: 
+  email:
   twitter: hadiazouni
-  linkedin: 
+  linkedin:
   program: GSoC
   title: CMS add-on
   date: 2013 Summer
@@ -224,8 +223,8 @@
     <a href="https://wiki.owasp.org/index.php/GSoC2013_Ideas/OWASP_ZAP_CMS_SCANNER" rel="nofollow">Wiki</a>
 
 - name: Robert Koch
-  email: 
-  twitter: 
+  email:
+  twitter:
   linkedin: https://www.linkedin.com/in/robert-koch-448b39a1/
   program: GSoC
   title: WebSocket testing
@@ -235,7 +234,7 @@
     <a href="http://www.ub.tuwien.ac.at/dipl/2013/AC07815487.pdf" rel="nofollow">masters thesis</a>
 
 - name: Guifre Ruiz
-  email: 
+  email:
   twitter: GuifreRuiz
   linkedin: https://www.linkedin.com/in/guifre/
   program: GSoC
@@ -246,7 +245,7 @@
     <a href="http://blog.guif.re/2012/08/pentesting-webapps-with-zap-and-its-ajax-spider-plugin.html" rel="nofollow">blog</a>
 
 - name: Cosmin Stefan
-  email: 
+  email:
   twitter: cosmin_stefan
   linkedin: https://www.linkedin.com/in/cosminstefan/
   program: GSoC

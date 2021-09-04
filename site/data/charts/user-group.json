@@ -1,7 +1,7 @@
 {
   "title": "User Group",
   "description": "Messages and threads since the group was created.",
-  "columns": ["Date" , "Messages", "Threads"],
+  "columns": ["Date", "Messages", "Threads"],
   "data": [
     ["2012-01-01", 0, 0, ""],
     ["2012-02-01", 0, 0, ""],

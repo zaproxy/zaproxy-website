@@ -20,7 +20,7 @@ The depth is calculated starting from the seeds, so, if a Spider scan
 starts with only a single URL (eg. URL manually specified), the depth is
 calculated from this one. However, if the scan starts with multiple
 seeds (eg. recurse and Sites tree node with children), a resource is processed if it's depth
-relative to *any* of the seeds is less than the defined one.
+relative to _any_ of the seeds is less than the defined one.
 
 ### Number of threads used
 
@@ -48,9 +48,9 @@ Allows to manage the domains, string literals or regular expressions, that are i
 
 When crawling, the Spider has an internal mechanism that marks which pages were already visited, so they are not processed again. When this check is made, the way the URIs parameters are handled is set using this option. There are three available options:
 
-* **Ignore parameters completely** - if www.example.org/?bar=456 is visited, then www.example.org/?foo=123 will not be visited
-* **Consider only parameter's name** (ignore parameter's value) - if www.example.org/?foo=123 is visited, then www.example.org/?foo=456 will not be visited, but www.example.org/?bar=789 or www.example.org/?foo=456\&bar=123 will be visited
-* **Consider both parameter's name and value** - if www.example.org/?123 is visited, any other uri that is different (including, for example, www.example.org/?foo=456 or www.example.org/?bar=abc) will be visited
+- **Ignore parameters completely** - if www.example.org/?bar=456 is visited, then www.example.org/?foo=123 will not be visited
+- **Consider only parameter's name** (ignore parameter's value) - if www.example.org/?foo=123 is visited, then www.example.org/?foo=456 will not be visited, but www.example.org/?bar=789 or www.example.org/?foo=456\&bar=123 will be visited
+- **Consider both parameter's name and value** - if www.example.org/?123 is visited, any other uri that is different (including, for example, www.example.org/?foo=456 or www.example.org/?bar=abc) will be visited
 
 ### Send "Referer" header
 
@@ -58,8 +58,8 @@ If the spider requests should be sent with the "Referer" header.
 
 ### Accept Cookies
 
-If the spider scans should accept cookies while spidering. If enabled the Spider will properly handle any cookies received from the server and will send them back accordingly. If the option is disabled, the Spider will not send any cookies in its requests. For example, this might control whether or not the Spider uses the same session throughout a spidering scan.   
-When accepting cookies the cookies are not shared between spider scans, each scan has its own cookie jar.   
+If the spider scans should accept cookies while spidering. If enabled the Spider will properly handle any cookies received from the server and will send them back accordingly. If the option is disabled, the Spider will not send any cookies in its requests. For example, this might control whether or not the Spider uses the same session throughout a spidering scan.  
+When accepting cookies the cookies are not shared between spider scans, each scan has its own cookie jar.  
 This option has low priority, the Spider will respect other (global) options related to the HTTP state. This option is ignored if, for example, the option [Enable (Global) HTTP State](/docs/desktop/ui/dialogs/options/connection/) is enabled, when spidering as a [User](/docs/desktop/start/features/users/) or when a [HTTP Session](/docs/desktop/start/features/httpsessions/) is active.
 
 ### Process forms
@@ -68,7 +68,7 @@ During the crawling process, the behaviour of the spider when it encounters HTML
 
 ### POST forms
 
-As briefly described in the previous paragraph (Process Forms), this option configures the behaviour of the spider when *Process Forms* is enabled and when encountering HTML forms that have to be POSTed.
+As briefly described in the previous paragraph (Process Forms), this option configures the behaviour of the spider when _Process Forms_ is enabled and when encountering HTML forms that have to be POSTed.
 
 ### Parse HTML Comments
 
@@ -84,8 +84,8 @@ This options defines whether the spider should try to detect OData-specific para
 
 ## See also
 
-|   |                                                |                                       |
-|---|------------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |
-|   | [Spider](/docs/desktop/start/features/spider/) | for an overview of the Spider         |
-|   | [Spider Tab](/docs/desktop/ui/tabs/spider/)    | for an overview of the Spider tab     |
+|     |                                                |                                       |
+| --- | ---------------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |
+|     | [Spider](/docs/desktop/start/features/spider/) | for an overview of the Spider         |
+|     | [Spider Tab](/docs/desktop/ui/tabs/spider/)    | for an overview of the Spider tab     |

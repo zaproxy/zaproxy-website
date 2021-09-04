@@ -27,6 +27,6 @@ This will remove the breakpoint
 
 ## See also
 
-|   |                                  |                                       |
-|---|----------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |
+|     |                                  |                                       |
+| --- | -------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |

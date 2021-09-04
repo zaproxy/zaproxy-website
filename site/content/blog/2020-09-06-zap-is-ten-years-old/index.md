@@ -3,15 +3,16 @@ title: "ZAP is Ten Years Old"
 description: "ZAP was first released on 6th September 2010"
 summary: "On September 6th 2010 I posted this message to Bugtraq: Title - The Zed Attack Proxy (ZAP) version 1.0.0. From those very humble beginnings ZAP has now become what we believe is the world’s most frequently used web application scanner."
 images:
-- https://www.zaproxy.org/blog/2020-09-06-zap-is-ten-years-old/images/bugtraq-zap.png
+  - https://www.zaproxy.org/blog/2020-09-06-zap-is-ten-years-old/images/bugtraq-zap.png
 type: post
 tags:
-- blog
+  - blog
 date: "2020-09-06"
 addSocialPreview: true
 authors:
-    - simon
+  - simon
 ---
+
 ## Ten Years Ago
 
 On September 6th 2010 I posted this message to Bugtraq:
@@ -39,7 +40,7 @@ ZAP is arguably still leading the field when it comes to API support and scripti
 
 ## The Future
 
-I’ve spent a lot of time working on ZAP, but that commitment has been repaid many times over. 
+I’ve spent a lot of time working on ZAP, but that commitment has been repaid many times over.
 
 My work on ZAP enabled me to move into the security industry, present at conferences all over the world, meet and work with some incredible people.
 

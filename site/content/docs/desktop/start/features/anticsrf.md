@@ -8,7 +8,7 @@ weight: 4
 # Anti CSRF Tokens
 
 Anti CSRF tokens are (pseudo) random parameters used to protect against Cross Site Request Forgery (CSRF) attacks.  
-However they also make a penetration testers job harder, especially if the tokens are regenerated every time a form is requested.  
+However they also make a penetration testers job harder, especially if the tokens are regenerated every time a form is requested.
 
 ZAP detects anti CSRF tokens purely by attribute names - the list of attribute names considered to be anti CSRF tokens
 is configured using the [Options Anti CSRF screen](/docs/desktop/ui/dialogs/options/anticsrf/).  
@@ -18,7 +18,7 @@ cause ZAP to automatically regenerate the tokens when required.
 
 ## See also
 
-|   |                                           |                                       |
-|---|-------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
+|     |                                           |                                       |
+| --- | ----------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/) | provided by ZAP                       |

@@ -5,7 +5,7 @@ category: Technologies Supported
 weight: 7
 ---
 
-The information in this FAQ is based on details from: 
+The information in this FAQ is based on details from:
 [This user group thread](https://groups.google.com/forum/#!topic/zaproxy-users/wXAX_5MmIxA)
 
 The Vaadin framework makes heavy use of JavaScript, so it seems the Ajax Spider is the way to go.
@@ -16,10 +16,19 @@ You may need to look at the source of various components to make sure the spider
 
 For example use the Firefox 'right click' 'Inspect Element' for this, but you can also use the ZAP Response tab or the View Source in your browser of choice.
 The login button is defined as:
+
 ```html
-<div class="v-button v-widget primary v-button-primary" role="button" tabindex="0">
-<span class="v-button-wrap"><span class="v-button-caption">Sign In</span></span></div>
+<div
+  class="v-button v-widget primary v-button-primary"
+  role="button"
+  tabindex="0"
+>
+  <span class="v-button-wrap"
+    ><span class="v-button-caption">Sign In</span></span
+  >
+</div>
 ```
+
 So it's a div. Great. Why use HTML conventions when you can do anything you like? ;)
 Anyway, this means that the default elements (a, button, input) won't be enough, so in Options / AJAX Spider uncheck 'Click default elements only (a, button, input)'. This might actually be enough to make it all work.
 However for me the loading time looked like it was over 1 second, so I increased the Options / AJAX Spider 'Event' and 'Reload' wait times.

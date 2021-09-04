@@ -19,15 +19,15 @@ ZAP Dev Team
 
 ### Version 3.0.0 - TBD
 
-* Promote to beta status
-* Change add-on name/description and update help
-* Start using Semantic Versioning.
+- Promote to beta status
+- Change add-on name/description and update help
+- Start using Semantic Versioning.
 
 ### Version 2 - 2018-04-19
 
-* Add help
-* Add script templates
+- Add help
+- Add script templates
 
 ### Version 1 - 2018-03-15
 
-* Initial release
+- Initial release

@@ -11,7 +11,7 @@ cascade:
 
 # OWASP ZAP Desktop User Guide
 
-Welcome to the OWASP Zed Attack Proxy (ZAP) Desktop User Guide.  
+Welcome to the OWASP Zed Attack Proxy (ZAP) Desktop User Guide.
 
 This is available both as context sensitive help within ZAP and online at
 [https://www.zaproxy.org/docs/desktop/](/docs/desktop/)
@@ -31,25 +31,25 @@ ZAP is a fork of the open source variant of the [Paros Proxy](/docs/desktop/paro
 
 ## See also
 
-|   |                                           |                                                    |
-|---|-------------------------------------------|----------------------------------------------------|
-|   | [Getting Started](/docs/desktop/start/)   | for details of how to start using ZAP              |
-|   | [Features](/docs/desktop/start/features/) | for details of various features provided by ZAP    |
-|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the User Interface              |
-|   | [Command Line](/docs/desktop/cmdline/)    | for the command line options available             |
-|   | [Releases](/docs/desktop/releases/)       | for details of the changes made in ZAP releases    |
-|   | [Credits](/docs/desktop/credits/)         | for the list of people who have contributed to ZAP |
+|     |                                           |                                                    |
+| --- | ----------------------------------------- | -------------------------------------------------- |
+|     | [Getting Started](/docs/desktop/start/)   | for details of how to start using ZAP              |
+|     | [Features](/docs/desktop/start/features/) | for details of various features provided by ZAP    |
+|     | [UI Overview](/docs/desktop/ui/)          | for an overview of the User Interface              |
+|     | [Command Line](/docs/desktop/cmdline/)    | for the command line options available             |
+|     | [Releases](/docs/desktop/releases/)       | for details of the changes made in ZAP releases    |
+|     | [Credits](/docs/desktop/credits/)         | for the list of people who have contributed to ZAP |
 
 ## External links
 
-|   |                                                                           |
-|---|---------------------------------------------------------------------------|
-|   | [Main ZAP website](/)                                                     |
-|   | [OWASP ZAP homepage](https://owasp.org/www-project-zap/)                  |
-|   | [Wikipedia entry for proxies](https://en.wikipedia.org/wiki/Proxy_server) |
+|     |                                                                           |
+| --- | ------------------------------------------------------------------------- |
+|     | [Main ZAP website](/)                                                     |
+|     | [OWASP ZAP homepage](https://owasp.org/www-project-zap/)                  |
+|     | [Wikipedia entry for proxies](https://en.wikipedia.org/wiki/Proxy_server) |
 
 ## Official Videos
 
-|   |                                                                                      |
-|---|--------------------------------------------------------------------------------------|
-|   | [https://www.zaproxy.org/videos/](/videos/) An ever growing collection of ZAP videos |
+|     |                                                                                      |
+| --- | ------------------------------------------------------------------------------------ |
+|     | [https://www.zaproxy.org/videos/](/videos/) An ever growing collection of ZAP videos |

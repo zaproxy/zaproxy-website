@@ -3,68 +3,67 @@ type: page
 title: ZAP Deep Dive
 layout: youtube-videos
 links:
-  - name: 'Intro to ZAP'
+  - name: "Intro to ZAP"
     uuid: CxjHGWk4BCs
 
-  - name: 'Desktop Interface'
+  - name: "Desktop Interface"
     uuid: -kbY4k8eSd0
 
-  - name: 'Exploring with the spider'
+  - name: "Exploring with the spider"
     uuid: mz2nhYpU-sw
 
-  - name: 'Exploring with the Ajax Spider'
+  - name: "Exploring with the Ajax Spider"
     uuid: EwbPPPBhM4A
 
-  - name: 'Exploring in other ways'
+  - name: "Exploring in other ways"
     uuid: F8yOU1IrfOw
 
-  - name: 'The Sites Tree'
+  - name: "The Sites Tree"
     uuid: 1_flXEBzEsE
 
-  - name: 'Scripting'
+  - name: "Scripting"
     uuid: ujL6rH6nVXI
-    
-  - name: '2.10.0 Introduction'
+
+  - name: "2.10.0 Introduction"
     uuid: rrVr-_-y6Xo
 
-  - name: 'Passive Scanning'
+  - name: "Passive Scanning"
     uuid: Rx42kyrB0nk
 
-  - name: 'Active Scanning'
+  - name: "Active Scanning"
     uuid: z2r4xGMQlys
 
-  - name: 'Configuration'
+  - name: "Configuration"
     uuid: EIUlCknXMSI
 
-  - name: 'Automation'
+  - name: "Automation"
     uuid: B-MDsECikqM
 
-  - name: 'Authenticated Packaged Scans'
+  - name: "Authenticated Packaged Scans"
     uuid: BOlalxfdLbU
 
-  - name: 'Report Generation'
+  - name: "Report Generation"
     uuid: kD540gUWJ3I
 
-  - name: 'Setting up a ZAP Dev Environment'
+  - name: "Setting up a ZAP Dev Environment"
     uuid: BYi4nA0nhR8
 
-  - name: 'Zest Scripting Part 1'
+  - name: "Zest Scripting Part 1"
     uuid: DW_vXdEOoVA
 
-  - name: 'Zest Scripting Part 2'
+  - name: "Zest Scripting Part 2"
     uuid: LQyJmNj5CgA
 
-  - name: 'Zest Scripting Part 3'
+  - name: "Zest Scripting Part 3"
     uuid: zwOZayLmNoY
 
-  - name: 'Fuzzing'
+  - name: "Fuzzing"
     uuid: YVsU-adgxb4
-    
-  - name: 'WebSockets'
+
+  - name: "WebSockets"
     uuid: LDm0Fst81hU
-
 ---
-A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](https://www.stackhawk.com).
-These are included in the [OWASP ZAP Tutorial videos](https://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB) playlist along with older ZAP videos 
-and their own [OWASP ZAP Deep Dive](https://www.youtube.com/playlist?list=PLEBitBW-HlstiimJoOyOxunpt79q0l4Ku) playlist.
 
+A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](https://www.stackhawk.com).
+These are included in the [OWASP ZAP Tutorial videos](https://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB) playlist along with older ZAP videos
+and their own [OWASP ZAP Deep Dive](https://www.youtube.com/playlist?list=PLEBitBW-HlstiimJoOyOxunpt79q0l4Ku) playlist.

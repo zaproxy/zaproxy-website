@@ -5,8 +5,8 @@ simon:
   is_core: true
 
 ricardo:
-  name: Ricardo 
-  picture: 
+  name: Ricardo
+  picture:
   twitter: thc202
   is_core: true
 
@@ -30,14 +30,14 @@ david:
 
 jordan:
   name: Jordan GS
-  picture: 
-  twitter: 
+  picture:
+  twitter:
   is_core: false
 
 alberto:
   name: Alberto Verza
-  picture: 
-  twitter: 
+  picture:
+  twitter:
   is_core: false
 
 diogo:
@@ -45,18 +45,18 @@ diogo:
   picture:
   twitter: Dimiresi
   is_core: false
-  
+
 nirojan:
   name: Nirojan Selvanathan
   picture: /img/authors/nirojan-selvanathan_400x400.png
   twitter: sshniro
-  is_core: false  
+  is_core: false
 
 preetkaran20:
   name: Karan Preet Singh Sasan
   picture: /img/authors/karan-preet-singh-sasan_400x400.jpeg
   twitter: sasan_karan
-  is_core: false 
+  is_core: false
 
 BlazingWind:
   name: Sylwia Budzynska
@@ -67,5 +67,5 @@ BlazingWind:
 pranavsaxena:
   name: Pranav Saxena
   picture:
-  twitter: 
+  twitter:
   is_core: false

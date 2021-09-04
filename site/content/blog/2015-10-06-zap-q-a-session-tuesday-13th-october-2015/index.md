@@ -4,61 +4,64 @@ type: post
 tags:
 date: "2015-10-06"
 authors:
-    - simon
+  - simon
 ---
-**The first online ZAP Q&A Session was held on Tuesday 13th October.**  
-  
-You can listen to a recording of the session [here](https://soundcloud.com/simon-bennetts/2015-10-13-owasp-zap-qa).  
-  
-Please leave feedback via this [Google Form](https://docs.google.com/forms/d/1KxMTz18IZCr1BVcqA40zXf8ZH5S3-rbFrffjXVLANR4/viewform).  
-  
-Some links to resources mentioned in the session or related to the questions:  
 
-* [The DOM XSS add-on](/docs/desktop/addons/dom-xss-active-scan-rule/)
-* [The Context Alert Filters add-on](/docs/desktop/addons/alert-filters/)
-* [The Revisit Add-on](/docs/desktop/addons/revisit/)
-* [The Access Control add-on](/docs/desktop/addons/access-control-testing/)
-* [The vulnerabilities detected by ZAP](/faq/what-does-zap-test-for/)
-* [How to set up form based authentication](/faq/how-can-zap-automatically-authenticate-via-forms/)
-* [The community-scripts repo](https://github.com/zaproxy/community-scripts)
+**The first online ZAP Q&A Session was held on Tuesday 13th October.**
 
-Note that you can download add-ons from within ZAP via the [Marketplace](/addons/).  
-  
-The original announcement is below for reference:  
-  
-**Do you have questions you would like answered about OWASP ZAP?**  
-  
+You can listen to a recording of the session [here](https://soundcloud.com/simon-bennetts/2015-10-13-owasp-zap-qa).
+
+Please leave feedback via this [Google Form](https://docs.google.com/forms/d/1KxMTz18IZCr1BVcqA40zXf8ZH5S3-rbFrffjXVLANR4/viewform).
+
+Some links to resources mentioned in the session or related to the questions:
+
+- [The DOM XSS add-on](/docs/desktop/addons/dom-xss-active-scan-rule/)
+- [The Context Alert Filters add-on](/docs/desktop/addons/alert-filters/)
+- [The Revisit Add-on](/docs/desktop/addons/revisit/)
+- [The Access Control add-on](/docs/desktop/addons/access-control-testing/)
+- [The vulnerabilities detected by ZAP](/faq/what-does-zap-test-for/)
+- [How to set up form based authentication](/faq/how-can-zap-automatically-authenticate-via-forms/)
+- [The community-scripts repo](https://github.com/zaproxy/community-scripts)
+
+Note that you can download add-ons from within ZAP via the [Marketplace](/addons/).
+
+The original announcement is below for reference:
+
+**Do you have questions you would like answered about OWASP ZAP?**
+
 If so then you'll want to attend the ZAP Q&A Session with Simon Bennetts, the ZAP project lead, on **Tuesday 13th October, 16:00 - 17:00 BST**
-([see in your timezone](https://www.timeanddate.com/worldclock/fixedtime.html?msg=OWASP+ZAP+Q%26A&iso=20151013T16&p1=136&ah=1))  
-****  
-[**https://global.gotomeeting.com/join/531638173**](https://global.gotomeeting.com/join/531638173) - toll-free numbers given below.  
-  
-You can either ask questions during the session or submit them in advance via twitter to [@psiinon](https://twitter.com/psiinon)  
-  
-The meeting will be recorded for those who cannot attend.  
-  
-This is the first time we'll have tried such a session, but if it proves useful then we may make this a regular event.  
-  
+([see in your timezone](https://www.timeanddate.com/worldclock/fixedtime.html?msg=OWASP+ZAP+Q%26A&iso=20151013T16&p1=136&ah=1))
+
+---
+
+[**https://global.gotomeeting.com/join/531638173**](https://global.gotomeeting.com/join/531638173) - toll-free numbers given below.
+
+You can either ask questions during the session or submit them in advance via twitter to [@psiinon](https://twitter.com/psiinon)
+
+The meeting will be recorded for those who cannot attend.
+
+This is the first time we'll have tried such a session, but if it proves useful then we may make this a regular event.
+
 Please note that this session is probably not the best forum for detailed support questions.  
-For those please use the [ZAP User Group](https://groups.google.com/group/zaproxy-users).  
-  
-Simon Bennetts  
-  
-Full session details:  
-  
+For those please use the [ZAP User Group](https://groups.google.com/group/zaproxy-users).
+
+Simon Bennetts
+
+Full session details:
+
 OWASP ZAP Q &A;  
-Tue, Oct 13, 2015 4:00 PM - 5:00 PM BST  
-  
-    Please join my meeting from your computer, tablet or smartphone.  
-    <https://global.gotomeeting.com/join/531638173>  
-  
-    You can also dial in using your phone.  
+Tue, Oct 13, 2015 4:00 PM - 5:00 PM BST
+
+Please join my meeting from your computer, tablet or smartphone.  
+    <https://global.gotomeeting.com/join/531638173>
+
+You can also dial in using your phone.  
     United States (Toll-free): 1 877 309 2070  
-    United States +1 (312) 757-3119  
-  
-    Access Code: 531-638-173  
-  
-    More phone numbers  
+    United States +1 (312) 757-3119
+
+Access Code: 531-638-173
+
+More phone numbers  
     Argentina (Toll-free): 0 800 444 2385  
     Australia (Toll-free): 1 800 191 358  
     Austria (Toll-free): 0 800 080061  
@@ -113,6 +116,4 @@ Tue, Oct 13, 2015 4:00 PM - 5:00 PM BST
     United Arab Emirates (Toll-free): 800 044 40444  
     United Kingdom (Toll-free): 0 800 389 5276  
     Uruguay (Toll-free): 000 405 4459  
-    Viet Nam (Toll-free): 120 32 148  
-  
-
+    Viet Nam (Toll-free): 120 32 148

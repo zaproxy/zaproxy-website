@@ -15,10 +15,10 @@ The Technology Detection add-on uses the Wappalyzer rules to detect the technolo
 
 It works in a very similar way to the Wappalyzer browser add-ons with the following exceptions:
 
-* It does not use the 'Global JavaScript variables' as these are difficult to test without a 'full' browser
-* It does not not show the confidence - this is still todo
-* It does not match technologies on the basis of DOM properties as some properties are set by JavaScript in the browser after the response has passed through ZAP
-* It allows you to see the 'evidence' used to detect the technologies
+- It does not use the 'Global JavaScript variables' as these are difficult to test without a 'full' browser
+- It does not not show the confidence - this is still todo
+- It does not match technologies on the basis of DOM properties as some properties are set by JavaScript in the browser after the response has passed through ZAP
+- It allows you to see the 'evidence' used to detect the technologies
 
 ## The Technology Tab
 
@@ -39,7 +39,7 @@ Technology data is available to reports via the [WappalyzerJobResultData](https:
 
 ## External Links
 
-|   |                                         |                           |
-|---|-----------------------------------------|---------------------------|
-|   | <https://www.wappalyzer.com/>           | The Wappalyzer Homepage   |
-|   | <https://github.com/AliasIO/Wappalyzer> | The Wappalyzer Repository |
+|     |                                         |                           |
+| --- | --------------------------------------- | ------------------------- |
+|     | <https://www.wappalyzer.com/>           | The Wappalyzer Homepage   |
+|     | <https://github.com/AliasIO/Wappalyzer> | The Wappalyzer Repository |

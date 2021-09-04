@@ -48,13 +48,13 @@ Request cookies.
 
 The data formats that the active scanner will target:
 
-|   |                     |   |
-|---|---------------------|---|
-|   | Multipart Form Data |   |
-|   | XML tag/attribute   |   |
-|   | JSON                |   |
-|   | Google Web Toolkit  |   |
-|   | OData id/filter     |   |
+|     |                     |     |
+| --- | ------------------- | --- |
+|     | Multipart Form Data |     |
+|     | XML tag/attribute   |     |
+|     | JSON                |     |
+|     | Google Web Toolkit  |     |
+|     | OData id/filter     |     |
 
 ### Enable Script Input Vectors
 
@@ -68,8 +68,8 @@ parameter names.
 
 ## See also
 
-|   |                                                                           |                                                 |
-|---|---------------------------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                          | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/)                      | for details of the other Options dialog screens |
-|   | [Active Scan Input Vectors](/docs/desktop/ui/dialogs/options/ascaninput/) |                                                 |
+|     |                                                                           |                                                 |
+| --- | ------------------------------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                                          | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/)                      | for details of the other Options dialog screens |
+|     | [Active Scan Input Vectors](/docs/desktop/ui/dialogs/options/ascaninput/) |                                                 |

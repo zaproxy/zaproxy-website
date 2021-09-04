@@ -1,9 +1,8 @@
-
-.homepage-key-features  {
+.homepage-key-features {
   text-align: center;
 }
 
-.homepage-key-features__item, 
+.homepage-key-features__item,
 .homepage-personas__item {
   text-align: center;
   font-size: 1.2em;
@@ -23,18 +22,16 @@
 }
 
 .homepage-personas {
-  
   border-top: solid 1px var(--blue-border);
-
 }
 .homepage-personas__item:hover {
   background: var(--blue);
 
-  h4, p {
+  h4,
+  p {
     color: #fff;
   }
 }
-
 
 .homepage-key-features__item-icon {
   width: 85px;
@@ -84,20 +81,19 @@
   z-index: 2;
 }
 .quote-bubble {
-  background: rgba(255,255,255,0.1);
-    padding: 40px;
-    border-radius: 8px;
-    position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  position: relative;
 }
 
-
-.quote-bubble:after{
-  content: '';
-  width: 0; 
-  height: 0; 
+.quote-bubble:after {
+  content: "";
+  width: 0;
+  height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 20px solid rgba(255,255,255,0.1);
+  border-top: 20px solid rgba(255, 255, 255, 0.1);
   position: absolute;
   bottom: -20px;
   left: calc(50% - 20px);
@@ -134,7 +130,7 @@
 
 @media screen and (max-width: 1000px) {
   .homepage-hero__item {
-    flex-direction:  column-reverse;
+    flex-direction: column-reverse;
     align-items: center;
   }
 
@@ -167,5 +163,3 @@
     height: auto;
   }
 }
-
-

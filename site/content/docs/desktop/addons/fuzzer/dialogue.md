@@ -11,14 +11,14 @@ This allows you to select the fuzzers to use when [fuzzing](/docs/desktop/addons
 
 ### Fuzz Locations tab
 
-To configure the fuzzing:  
+To configure the fuzzing:
 
-* Highlight a string you wish to fuzz in the Fuzz Locations tab
-* Click the 'Add...' button to launch the [Payloads dialog](/docs/desktop/addons/fuzzer/payloads/)
-* Add the payloads you want to use
-* Click on the 'Processors...' button to launch the [Location Processors dialog](/docs/desktop/addons/fuzzer/locations/) (if required)
-* Click on the 'Start Fuzzer' button to start the fuzzing
-* The results will then be listed in the [Fuzzer tab](/docs/desktop/addons/fuzzer/tab/) select them to see the full requests and responses.
+- Highlight a string you wish to fuzz in the Fuzz Locations tab
+- Click the 'Add...' button to launch the [Payloads dialog](/docs/desktop/addons/fuzzer/payloads/)
+- Add the payloads you want to use
+- Click on the 'Processors...' button to launch the [Location Processors dialog](/docs/desktop/addons/fuzzer/locations/) (if required)
+- Click on the 'Start Fuzzer' button to start the fuzzing
+- The results will then be listed in the [Fuzzer tab](/docs/desktop/addons/fuzzer/tab/) select them to see the full requests and responses.
 
 You can also search for strings in the fuzz results using the 'Search tab'.
 
@@ -35,14 +35,14 @@ Add-ons can also define additional payload generators.
 
 ## Accessed via
 
-|   |                       |                                 |
-|---|-----------------------|---------------------------------|
-|   | Request tab           | 'Fuzz...' right click menu item |
-|   | Sites and History tab | Attack \> Fuzz... menu items    |
-|   | Tools menu            | Attack \> Fuzz... menu item     |
+|     |                       |                                 |
+| --- | --------------------- | ------------------------------- |
+|     | Request tab           | 'Fuzz...' right click menu item |
+|     | Sites and History tab | Attack \> Fuzz... menu items    |
+|     | Tools menu            | Attack \> Fuzz... menu item     |
 
 ## See also
 
-|   |                                                 |
-|---|-------------------------------------------------|
-|   | [Fuzzer concepts](/docs/desktop/addons/fuzzer/) |
+|     |                                                 |
+| --- | ----------------------------------------------- |
+|     | [Fuzzer concepts](/docs/desktop/addons/fuzzer/) |

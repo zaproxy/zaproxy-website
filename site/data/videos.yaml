@@ -1,764 +1,763 @@
 # All 'official' ZAP videos
 # Note that videos are grouped by series in reverse date order to make them a bit easier to manage
 ---
-
 # Deep Dive Series
 
-- title: 'WebSockets'
+- title: "WebSockets"
   id: LDm0Fst81hU
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/07/15'
+  series: "Deep Dive"
+  date: "2021/07/15"
   length: 18:06
   tags:
-  - websockets
-  - scripts
+    - websockets
+    - scripts
 
-- title: 'Fuzzing'
+- title: "Fuzzing"
   id: YVsU-adgxb4
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/06/10'
+  series: "Deep Dive"
+  date: "2021/06/10"
   length: 33:09
   tags:
-  - scripts
-  - fuzzing
+    - scripts
+    - fuzzing
 
-- title: 'Zest Scripting Part 3'
+- title: "Zest Scripting Part 3"
   id: zwOZayLmNoY
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/05/13'
+  series: "Deep Dive"
+  date: "2021/05/13"
   length: 29:22
   tags:
-  - scripts
-  - zest
+    - scripts
+    - zest
 
-- title: 'Zest Scripting Part 2'
+- title: "Zest Scripting Part 2"
   id: LQyJmNj5CgA
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/05/06'
+  series: "Deep Dive"
+  date: "2021/05/06"
   length: 29:19
   tags:
-  - scripts
-  - zest
+    - scripts
+    - zest
 
-- title: 'Zest Scripting Part 1'
+- title: "Zest Scripting Part 1"
   id: DW_vXdEOoVA
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/04/15'
+  series: "Deep Dive"
+  date: "2021/04/15"
   length: 33:49
   tags:
-  - scripts
-  - zest
+    - scripts
+    - zest
 
-- title: 'Setting up a ZAP Dev Environment'
+- title: "Setting up a ZAP Dev Environment"
   id: BYi4nA0nhR8
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/03/25'
+  series: "Deep Dive"
+  date: "2021/03/25"
   length: 32:02
   tags:
-  - development
-  - add-ons
+    - development
+    - add-ons
 
-- title: 'Report Generation'
+- title: "Report Generation"
   id: kD540gUWJ3I
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/03/18'
+  series: "Deep Dive"
+  date: "2021/03/18"
   length: 23:52
   tags:
-  - reporting
+    - reporting
 
-- title: 'Authenticated Packaged Scans'
+- title: "Authenticated Packaged Scans"
   id: BOlalxfdLbU
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/02/25'
+  series: "Deep Dive"
+  date: "2021/02/25"
   length: 28:33
   tags:
-  - authentication
-  - packagedScan
-  - forcedUserMode
+    - authentication
+    - packagedScan
+    - forcedUserMode
 
-- title: 'Automation'
+- title: "Automation"
   id: B-MDsECikqM
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/02/18'
+  series: "Deep Dive"
+  date: "2021/02/18"
   length: 27:50
   tags:
-  - automation
-  - cmdline
-  - docker
-  - packagedScan
-  - scanHooks
-  - githubAction
-  - daemon
+    - automation
+    - cmdline
+    - docker
+    - packagedScan
+    - scanHooks
+    - githubAction
+    - daemon
 
-- title: 'Configuration'
+- title: "Configuration"
   id: EIUlCknXMSI
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/02/13'
+  series: "Deep Dive"
+  date: "2021/02/13"
   length: 26:37
   tags:
-  - config
-  - contexts
-  - scripts
-  - scanPolicy
+    - config
+    - contexts
+    - scripts
+    - scanPolicy
 
-- title: 'Active Scanning'
+- title: "Active Scanning"
   id: z2r4xGMQlys
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/01/22'
+  series: "Deep Dive"
+  date: "2021/01/22"
   length: 31:26
   tags:
-  - activeScan
-  - scanPolicy
-  - attackMode
-  - inputVectors
+    - activeScan
+    - scanPolicy
+    - attackMode
+    - inputVectors
 
-- title: 'Passive Scanning'
+- title: "Passive Scanning"
   id: Rx42kyrB0nk
   site: youtube
-  series: 'Deep Dive'
-  date: '2021/01/11'
+  series: "Deep Dive"
+  date: "2021/01/11"
   length: 27:35
   tags:
-  - passiveScan
+    - passiveScan
 
-- title: '2.10.0 Introduction'
+- title: "2.10.0 Introduction"
   id: rrVr-_-y6Xo
   site: youtube
-  series: 'Deep Dive'
-  date: '2020/12/18'
+  series: "Deep Dive"
+  date: "2020/12/18"
   length: 27:44
   tags:
-  - release
-  - authentication
-  - add-ons
-  - graphql
-  - soap
-  - formHandler
-  - customPages
+    - release
+    - authentication
+    - add-ons
+    - graphql
+    - soap
+    - formHandler
+    - customPages
 
-- title: 'Scripting'
+- title: "Scripting"
   id: ujL6rH6nVXI
   site: youtube
-  series: 'Deep Dive'
-  date: '2020/12/10'
+  series: "Deep Dive"
+  date: "2020/12/10"
   length: 28:35
   tags:
-  - scripts
+    - scripts
 
-- title: 'The Sites Tree'
+- title: "The Sites Tree"
   id: 1_flXEBzEsE
   site: youtube
-  series: 'Deep Dive'
-  date: '2020/11/24'
+  series: "Deep Dive"
+  date: "2020/11/24"
   length: 30:26
   tags:
-  - siteTree
-  - dataDrivenNode
-  - structuralParameter
+    - siteTree
+    - dataDrivenNode
+    - structuralParameter
 
-- title: 'Exploring in other ways'
+- title: "Exploring in other ways"
   id: F8yOU1IrfOw
   site: youtube
-  series: 'Deep Dive'
-  date: '2020/11/24'
+  series: "Deep Dive"
+  date: "2020/11/24"
   length: 20:23
   tags:
-  - explore
-  - openapi
-  - swagger
-  - soap
-  - graphql
-  - urlImport
-  - logFileImport
-  - formHandler
-  - forcedBrowse
+    - explore
+    - openapi
+    - swagger
+    - soap
+    - graphql
+    - urlImport
+    - logFileImport
+    - formHandler
+    - forcedBrowse
 
-- title: 'Exploring with the Ajax Spider'
+- title: "Exploring with the Ajax Spider"
   id: EwbPPPBhM4A
   site: youtube
-  series: 'Deep Dive'
-  date: '2020/11/24'
+  series: "Deep Dive"
+  date: "2020/11/24"
   length: 21:09
   tags:
-  - explore
-  - ajaxSpider
+    - explore
+    - ajaxSpider
 
-- title: 'Exploring with the spider'
+- title: "Exploring with the spider"
   id: mz2nhYpU-sw
   site: youtube
-  series: 'Deep Dive'
-  date: '2020/11/24'
+  series: "Deep Dive"
+  date: "2020/11/24"
   length: 34:46
   tags:
-  - explore
-  - spider
+    - explore
+    - spider
 
-- title: 'Desktop Interface'
+- title: "Desktop Interface"
   id: -kbY4k8eSd0
   site: youtube
-  series: 'Deep Dive'
-  date: '2020/11/24'
+  series: "Deep Dive"
+  date: "2020/11/24"
   length: 31:54
   tags:
-  - desktop
+    - desktop
 
-- title: 'Intro to ZAP'
+- title: "Intro to ZAP"
   id: CxjHGWk4BCs
   site: youtube
-  series: 'Deep Dive'
-  date: '2020/11/24'
+  series: "Deep Dive"
+  date: "2020/11/24"
   length: 21:42
   tags:
-  - intro
-  - cmdline
-  - desktop
-  - help
+    - intro
+    - cmdline
+    - desktop
+    - help
 
 # ZAPCon
 
-- title: 'The whole conference (4½ hours)'
+- title: "The whole conference (4½ hours)"
   id: xlt---D9I3w
   site: youtube
-  series: 'ZAPCon 2021'
-  date: '2021/03/09'
+  series: "ZAPCon 2021"
+  date: "2021/03/09"
   length: 4:31:39
   tags:
-  - zapcon
+    - zapcon
 
-- title: 'Democratizing ZAP with Test Automation and DSLs'
+- title: "Democratizing ZAP with Test Automation and DSLs"
   id: jimW-R6_F4U
   site: youtube
-  series: 'ZAPCon 2021'
-  date: '2021/03/09'
+  series: "ZAPCon 2021"
+  date: "2021/03/09"
   length: 47:47
   tags:
-  - zapcon
-  - automation
+    - zapcon
+    - automation
 
-- title: 'ZAP Project Updates'
+- title: "ZAP Project Updates"
   id: aZmS9NiQlJA
   site: youtube
-  series: 'ZAPCon 2021'
-  date: '2021/03/09'
+  series: "ZAPCon 2021"
+  date: "2021/03/09"
   length: 36:10
   tags:
-  - zapcon
+    - zapcon
 
-- title: 'Mobile Application Security Testing with ZAP'
+- title: "Mobile Application Security Testing with ZAP"
   id: KWofjrHNNqs
   site: youtube
-  series: 'ZAPCon 2021'
-  date: '2021/03/09'
+  series: "ZAPCon 2021"
+  date: "2021/03/09"
   length: 37:37
   tags:
-  - zapcon
-  - mobile
+    - zapcon
+    - mobile
 
-- title: 'ZAP in Pakistani Fintech'
+- title: "ZAP in Pakistani Fintech"
   id: VeBbHBow9kQ
   site: youtube
-  series: 'ZAPCon 2021'
-  date: '2021/03/09'
+  series: "ZAPCon 2021"
+  date: "2021/03/09"
   length: 34:42
   tags:
-  - zapcon
+    - zapcon
 
-- title: 'Enhancing ZAP with Feedback Based Fuzzing'
+- title: "Enhancing ZAP with Feedback Based Fuzzing"
   id: 5Hq0sPbhnDQ
   site: youtube
-  series: 'ZAPCon 2021'
-  date: '2021/03/09'
+  series: "ZAPCon 2021"
+  date: "2021/03/09"
   length: 40:40
   tags:
-  - zapcon
-  - fuzzing
+    - zapcon
+    - fuzzing
 
-- title: 'Starting a Security Program on a Shoestring (with ZAP)'
+- title: "Starting a Security Program on a Shoestring (with ZAP)"
   id: Gyf0XZRDBAM
   site: youtube
-  series: 'ZAPCon 2021'
-  date: '2021/03/09'
+  series: "ZAPCon 2021"
+  date: "2021/03/09"
   length: 28:23
   tags:
-  - zapcon
+    - zapcon
 
-- title: 'Simon Bennetts Ask Me Anything'
+- title: "Simon Bennetts Ask Me Anything"
   id: 6e4_m1Zm6LY
   site: youtube
-  series: 'ZAPCon 2021'
-  date: '2021/03/09'
+  series: "ZAPCon 2021"
+  date: "2021/03/09"
   length: 1:03:55
   tags:
-  - zapcon
-  - ama
+    - zapcon
+    - ama
 
 # ADDO Automation
 
-- title: 'Automation Introduction'
+- title: "Automation Introduction"
   id: BAmiaxyzS3g2BCgX2vbVvV
   site: vidyard
-  series: 'ADDO Automation'
-  date: '2020/04/17'
+  series: "ADDO Automation"
+  date: "2020/04/17"
   length: 8:02
   tags:
-  - automation
-  - intro
+    - automation
+    - intro
 
-- title: 'Automation Command line'
+- title: "Automation Command line"
   id: g97SccHH52RXnAcBYBmDGA
   site: vidyard
-  series: 'ADDO Automation'
-  date: '2020/04/17'
+  series: "ADDO Automation"
+  date: "2020/04/17"
   length: 14:03
   tags:
-  - automation
-  - cmdline
+    - automation
+    - cmdline
 
-- title: 'Automation Packaged scans'
+- title: "Automation Packaged scans"
   id: iT5C1onahsh3YhQi5SRnLL
   site: vidyard
-  series: 'ADDO Automation'
-  date: '2020/04/17'
+  series: "ADDO Automation"
+  date: "2020/04/17"
   length: 52:52
   tags:
-  - automation
-  - packagedScan
+    - automation
+    - packagedScan
 
-- title: 'Automation Intro to Auth'
+- title: "Automation Intro to Auth"
   id: zwWm4qMRc8wD2KAgozvC5t
   site: vidyard
-  series: 'ADDO Automation'
-  date: '2020/04/17'
+  series: "ADDO Automation"
+  date: "2020/04/17"
   length: 2:31
   tags:
-  - automation
-  - authentication
+    - automation
+    - authentication
 
-- title: 'Automation Simple Auth Bodgeit'
+- title: "Automation Simple Auth Bodgeit"
   id: iErtsKxpwKn4m8iRoovtH9
   site: vidyard
-  series: 'ADDO Automation'
-  date: '2020/04/17'
+  series: "ADDO Automation"
+  date: "2020/04/17"
   length: 12:46
   tags:
-  - automation
-  - authentication
+    - automation
+    - authentication
 
-- title: 'Automation Simple Auth JuiceShop'
+- title: "Automation Simple Auth JuiceShop"
   id: igf3A8UdZ6QAGiFjEpLH86
   site: vidyard
-  series: 'ADDO Automation'
-  date: '2020/04/17'
+  series: "ADDO Automation"
+  date: "2020/04/17"
   length: 23:30
   tags:
-  - automation
-  - authentication
+    - automation
+    - authentication
 
-- title: 'Automation Auth Scripts'
+- title: "Automation Auth Scripts"
   id: gYz7LxioR54i2gY9Ze7c4F
   site: vidyard
-  series: 'ADDO Automation'
-  date: '2020/04/17'
+  series: "ADDO Automation"
+  date: "2020/04/17"
   length: 1:57
   tags:
-  - automation
-  - authentication
-  - scripts
+    - automation
+    - authentication
+    - scripts
 
-- title: 'Automation SSO with Juice Shop'
+- title: "Automation SSO with Juice Shop"
   id: TMcBcuhyPt57sUqPcJUtpv
   site: vidyard
-  series: 'ADDO Automation'
-  date: '2020/04/17'
+  series: "ADDO Automation"
+  date: "2020/04/17"
   length: 35:35
   tags:
-  - automation
-  - authentication
+    - automation
+    - authentication
 
 # ZAP in Ten
 
-- title: 'Active Scan Scripts'
+- title: "Active Scan Scripts"
   id: aEwqErXFMTYdDDQbTgnJeA
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/04/03'
+  series: "ZAP in Ten"
+  date: "2020/04/03"
   length: 11:37
   tags:
-  - scripts
+    - scripts
 
-- title: 'Passive Scan Scripts'
+- title: "Passive Scan Scripts"
   id: HfENJ3GJB3zbD6sMscDrjD
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/04/03'
+  series: "ZAP in Ten"
+  date: "2020/04/03"
   length: 11:53
   tags:
-  - scripts
-    
-- title: 'Proxy and HttpSender scripts'
+    - scripts
+
+- title: "Proxy and HttpSender scripts"
   id: 4no8EY1iB8RdnQLPFpYi2a
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/03/23'
+  series: "ZAP in Ten"
+  date: "2020/03/23"
   length: 10:12
   tags:
-  - scripts
-    
-- title: 'Targeted Scripts'
+    - scripts
+
+- title: "Targeted Scripts"
   id: JzX1YkJqdk7BYTMHikh433
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/03/23'
+  series: "ZAP in Ten"
+  date: "2020/03/23"
   length: 9:59
   tags:
-  - scripts
-    
-- title: 'Intro to Scripting'
+    - scripts
+
+- title: "Intro to Scripting"
   id: 7gR4qYzUZ686wEDMBfxGdf
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/03/23'
+  series: "ZAP in Ten"
+  date: "2020/03/23"
   length: 9:32
   tags:
-  - scripts
-    
-- title: 'Authentication - Form based'
+    - scripts
+
+- title: "Authentication - Form based"
   id: B1vhaLSUsme7eA5hU8WeGB
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/03/23'
+  series: "ZAP in Ten"
+  date: "2020/03/23"
   length: 12:59
   tags:
-  - authentication
-    
-- title: 'Auth - Basic and Digest'
+    - authentication
+
+- title: "Auth - Basic and Digest"
   id: ttqKANDzJCAdBUkPrsz6Td
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/03/23'
+  series: "ZAP in Ten"
+  date: "2020/03/23"
   length: 9:57
   tags:
-  - authentication
-    
-- title: '2.9.0'
+    - authentication
+
+- title: "2.9.0"
   id: WRwcRM9AFPpKitybFatLiD
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/02/04'
+  series: "ZAP in Ten"
+  date: "2020/02/04"
   length: 10:43
   tags:
-  - release
-    
-- title: 'Marketplace'
+    - release
+
+- title: "Marketplace"
   id: u5Wv6KsoozBefCuEmrFDzC
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/02/04'
+  series: "ZAP in Ten"
+  date: "2020/02/04"
   length: 9:47
   tags:
-  - marketplace
-    
-- title: 'Website and Resource Update'
+    - marketplace
+
+- title: "Website and Resource Update"
   id: 32UoD4hxtUBvxdaK7siFzM
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/02/04'
+  series: "ZAP in Ten"
+  date: "2020/02/04"
   length: 10:22
   tags:
-  - website
-    
-- title: 'Active Scanning'
+    - website
+
+- title: "Active Scanning"
   id: ZcEfSihgQSzuthJi4qEeW3
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2020/02/04'
+  series: "ZAP in Ten"
+  date: "2020/02/04"
   length: 9:45
   tags:
-  - activeScan
-    
-- title: 'Passive Scanning'
+    - activeScan
+
+- title: "Passive Scanning"
   id: vDWpoYjHi7fSLYFDQPWgMF
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2019/12/12'
+  series: "ZAP in Ten"
+  date: "2019/12/12"
   length: 10:26
   tags:
-  - passiveScan
-    
-- title: 'Ajax Spider'
+    - passiveScan
+
+- title: "Ajax Spider"
   id: eay2rpdKHt82oC1VpfzHZx
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2019/12/12'
+  series: "ZAP in Ten"
+  date: "2019/12/12"
   length: 8:33
   tags:
-  - ajaxSpider
-  - explore
-    
-- title: 'Explore your Apps'
+    - ajaxSpider
+    - explore
+
+- title: "Explore your Apps"
   id: rLq2nvgbuGwVn2BX9gA8r2
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2019/12/12'
+  series: "ZAP in Ten"
+  date: "2019/12/12"
   length: 10:35
   tags:
-  - explore
-    
-- title: 'HUD Intro'
+    - explore
+
+- title: "HUD Intro"
   id: W5Lo3VYZUspbqRsEgXumgB
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2019/11/26'
+  series: "ZAP in Ten"
+  date: "2019/11/26"
   length: 10:39
   tags:
-  - HUD
+    - HUD
 
-- title: 'Desktop Interface'
+- title: "Desktop Interface"
   id: p35FK8Cri5A3EF3RBGoMAr
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2019/11/26'
+  series: "ZAP in Ten"
+  date: "2019/11/26"
   length: 10:06
   tags:
-  - desktop
+    - desktop
 
-- title: 'Resource Downloads'
+- title: "Resource Downloads"
   id: JDyzdepHYqb2pjJSbdNzMh
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2019/11/26'
+  series: "ZAP in Ten"
+  date: "2019/11/26"
   length: 7:43
   tags:
-  - download
+    - download
 
-- title: 'Welcome'
+- title: "Welcome"
   id: RyTy22GZV6UccW41UCghC8
   site: vidyard
-  series: 'ZAP in Ten'
-  date: '2019/11/26'
+  series: "ZAP in Ten"
+  date: "2019/11/26"
   length: 9:57
   tags:
-  - intro
+    - intro
 
 # Misc videos, confs and online
 
-- title: 'Automating OWASP ZAP'
+- title: "Automating OWASP ZAP"
   id: zLStJYOWOIY
   site: youtube
-  date: '2021/04/12'
+  date: "2021/04/12"
   length: 59:08
   tags:
-  - intro
-  - automation
-  - conference
+    - intro
+    - automation
+    - conference
 
-- title: 'ZAP Automation in CI/CD'
+- title: "ZAP Automation in CI/CD"
   id: 5oMp5O9CeSg
   site: youtube
-  date: '2021/02/16'
+  date: "2021/02/16"
   length: 1:29:05
   tags:
-  - intro
-  - automation
-  - conference
+    - intro
+    - automation
+    - conference
 
-- title: 'An Introduction to OWASP ZAP'
+- title: "An Introduction to OWASP ZAP"
   id: rtFVJm2j3vQ
   site: youtube
-  date: '2020/09/24'
+  date: "2020/09/24"
   length: 36:45
   tags:
-  - intro
+    - intro
 
-- title: 'Web Security for Web Developers'
+- title: "Web Security for Web Developers"
   id: 54UV2_JwcIY
   site: youtube
-  date: '2020/07/16'
+  date: "2020/07/16"
   length: 1:17:06
   tags:
-  -
+    -
 
-- title: 'Introducing the ZAP HUD'
+- title: "Introducing the ZAP HUD"
   id: 1hbKGDgx_p0
   site: youtube
-  date: '2019/04/15'
+  date: "2019/04/15"
   length: 25:57
   tags:
-  - hud
-  - conference
+    - hud
+    - conference
 
-- title: 'Automating OWASP ZAP'
+- title: "Automating OWASP ZAP"
   id: 3vVnMh6AUkk
   site: youtube
-  date: '2016/11/20'
+  date: "2016/11/20"
   length: 58:00
   tags:
-  - automation
-  - conference
+    - automation
+    - conference
 
-- title: 'An Introduction to ZAP'
+- title: "An Introduction to ZAP"
   id: 2tKOK4YsQ-4
   site: youtube
-  date: '2016/07/29'
+  date: "2016/07/29"
   length: 57:19
   tags:
-  - intro
-  - conference
+    - intro
+    - conference
 
-- title: 'Introduction to ZAP'
+- title: "Introduction to ZAP"
   id: WE2g6o5W_8Q
   site: youtube
-  date: '2016/03/04'
+  date: "2016/03/04"
   length: 16:07
   tags:
-  - intro
-  - conference
+    - intro
+    - conference
 
-- title: 'ZAP More Advanced Features'
+- title: "ZAP More Advanced Features"
   id: LJIoyx405bw
   site: youtube
-  date: '2015/06/09'
+  date: "2015/06/09"
   length: 46:56
   tags:
-  - conference
+    - conference
 
-- title: 'ZAP Advanced Features'
+- title: "ZAP Advanced Features"
   id: SmY8D8VTWdI
   site: youtube
-  date: '2014/07/03'
+  date: "2014/07/03"
   length: 53:25
   tags:
-  - conference
+    - conference
 
-- title: 'ZAP Innovations'
+- title: "ZAP Innovations"
   id: pYFtLA2yTR8
   site: youtube
-  date: '2013/11/21'
+  date: "2013/11/21"
   length: 51:18
   tags:
-  - conference
+    - conference
 
-- title: 'Practical Security for Developers'
+- title: "Practical Security for Developers"
   id: QG2RCZHMEkM
   site: youtube
-  date: '2013/02/11'
+  date: "2013/02/11"
   length: 51:48
   tags:
-  - intro
-  - conference
+    - intro
+    - conference
 
 # Older Tutorial Videos
 
-- title: 'Browser Launch'
+- title: "Browser Launch"
   id: lYHwR7UEggA
   site: youtube
-  series: 'Tutorials'
-  date: '2017/08/22'
+  series: "Tutorials"
+  date: "2017/08/22"
   length: 6:20
   tags:
-  - browserLaunch
+    - browserLaunch
 
-- title: 'Security scanning in a CI Pipeline'
+- title: "Security scanning in a CI Pipeline"
   id: 3oOWtX7zu5k
   site: youtube
-  series: 'Tutorials'
-  date: '2016/11/15'
+  series: "Tutorials"
+  date: "2016/11/15"
   length: 30:15
   tags:
-  - intro
-  - automation
-  - baselineScan
+    - intro
+    - automation
+    - baselineScan
 
-- title: 'ZAP 2.4.0 Introduction'
+- title: "ZAP 2.4.0 Introduction"
   id: TyhaA3DJ5oM
   site: youtube
-  series: 'Tutorials'
-  date: '2015/04/14'
+  series: "Tutorials"
+  date: "2015/04/14"
   length: 10:20
   tags:
-  - release
+    - release
 
-- title: 'ZAP UI and Spidering'
+- title: "ZAP UI and Spidering"
   id: WSLpFiaOjws
   site: youtube
-  series: 'Tutorials'
-  date: '2015/04/02'
+  series: "Tutorials"
+  date: "2015/04/02"
   length: 50:13
   tags:
-  - desktop
-  - spider
+    - desktop
+    - spider
 
-- title: 'OWASP A1: Injection'
+- title: "OWASP A1: Injection"
   id: dqKGGCVFTvI
   site: youtube
-  series: 'Tutorials'
-  date: '2014/10/20'
+  series: "Tutorials"
+  date: "2014/10/20"
   length: 6:36
   tags:
-  - injection
+    - injection
 
-- title: 'Ajax Spidering Authenticated Websites'
+- title: "Ajax Spidering Authenticated Websites"
   id: F5CyM4akOAs
   site: youtube
-  series: 'Tutorials'
-  date: '2014/08/20'
+  series: "Tutorials"
+  date: "2014/08/20"
   length: 8:22
   tags:
-  - ajaxSpider
-  - authentication
+    - ajaxSpider
+    - authentication
 
-- title: 'Authentication, Session and Users Management'
+- title: "Authentication, Session and Users Management"
   id: cR4gw-cPZOA
   site: youtube
-  series: 'Tutorials'
-  date: '2013/12/21'
+  series: "Tutorials"
+  date: "2013/12/21"
   length: 18:11
   tags:
-  - authentication
+    - authentication
 
-- title: 'ZAP 2.0.0 Overview'
+- title: "ZAP 2.0.0 Overview"
   id: a-lJafBdAeM
   site: youtube
-  series: 'Tutorials'
-  date: '2013/02/08'
+  series: "Tutorials"
+  date: "2013/02/08"
   length: 11:30
   tags:
-  - release
+    - release
 
-- title: 'Security Testing in Development and QA'
+- title: "Security Testing in Development and QA"
   id: ZWSLFHpg1So
   site: youtube
-  series: 'Tutorials'
-  date: '2012/06/13'
+  series: "Tutorials"
+  date: "2012/06/13"
   length: 15:52
   tags:
-  - intro
+    - intro
 
-- title: 'ZAP Initial Setup Guide'
+- title: "ZAP Initial Setup Guide"
   id: Xp_PBH7wjiw
   site: youtube
-  series: 'Tutorials'
-  date: '2012/08/01'
+  series: "Tutorials"
+  date: "2012/08/01"
   length: 5:48
   tags:
-  - setup
+    - setup
 
-- title: 'ZAP Tutorial - Overview'
+- title: "ZAP Tutorial - Overview"
   id: eH0RBI0nmww
   site: youtube
-  series: 'Tutorials'
-  date: '2012/10/12'
+  series: "Tutorials"
+  date: "2012/10/12"
   length: 7:23
   tags:
-  - intro
+    - intro

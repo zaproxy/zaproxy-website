@@ -7,9 +7,9 @@ weight: 1
 
 # OpenAPI Automation Framework Support
 
-This add-on supports the Automation Framework.   
+This add-on supports the Automation Framework.
 
-The add-on will add OpenAPI definitions if they are found while spidering but adding them explicitly via a URL or local file is recommended if they are available.   
+The add-on will add OpenAPI definitions if they are found while spidering but adding them explicitly via a URL or local file is recommended if they are available.
 
 The targetUrl parameter works in the same way per ['Target URL Format'](/docs/desktop/addons/openapi-support/).
 

@@ -12,12 +12,12 @@ a [breakpoint](/docs/desktop/start/features/breakpoints/).
 It allows you to change elements that you would not normally be able to change via your
 browser, including:
 
-|   |                                                             |
-|---|-------------------------------------------------------------|
-|   | The header                                                  |
-|   | Hidden fields                                               |
-|   | Disabled fields                                             |
-|   | Fields that use javascript to filter out illegal characters |
+|     |                                                             |
+| --- | ----------------------------------------------------------- |
+|     | The header                                                  |
+|     | Hidden fields                                               |
+|     | Disabled fields                                             |
+|     | Fields that use javascript to filter out illegal characters |
 
 This functionality is key to effectively pen testing your application.
 
@@ -31,19 +31,18 @@ While the Break tab is not in use its icon is a grey cross:
 ![](/docs/desktop/images/16/101grey.png) .  
 When a [breakpoint](/docs/desktop/start/features/breakpoints/) is hit the tab icon is changed
 to a red cross:
-![](/docs/desktop/images/16/101.png) .  
+![](/docs/desktop/images/16/101.png) .
 
 If you have selected "Show buttons to select the requests you don't want ZAP to break on" in the
 [options menu](/docs/desktop/ui/dialogs/options/breakpoints/) you will be able to select if you just want to break
-on requests that are in scope and you will be able to select the file extensions you don't want to break on:  
+on requests that are in scope and you will be able to select the file extensions you don't want to break on:
 
-|   |                                                               |
-|---|---------------------------------------------------------------|
-|   | ![](/docs/desktop/images/javascript.png) Javascript Files     |
-|   | ![](/docs/desktop/images/cssAndFonts.png) CSS and Fonts Files |
-|   | ![](/docs/desktop/images/multimedia.png) Multimedia Files     |
-|   | ![](/docs/desktop/images/fugue/target.png) Only in scope      |
-
+|     |                                                               |
+| --- | ------------------------------------------------------------- |
+|     | ![](/docs/desktop/images/javascript.png) Javascript Files     |
+|     | ![](/docs/desktop/images/cssAndFonts.png) CSS and Fonts Files |
+|     | ![](/docs/desktop/images/multimedia.png) Multimedia Files     |
+|     | ![](/docs/desktop/images/fugue/target.png) Only in scope      |
 
 ### ![](/docs/desktop/images/fugue/application-resize.png) Update Content Length
 
@@ -64,7 +63,7 @@ This will copy the selected string to the clipboard.
 
 ## See also
 
-|   |                                                       |                                                    |
-|---|-------------------------------------------------------|----------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                      | for an overview of the user interface              |
-|   | [Breakpoints tab](/docs/desktop/ui/tabs/breakpoints/) | for details of how to change or delete breakpoints |
+|     |                                                       |                                                    |
+| --- | ----------------------------------------------------- | -------------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                      | for an overview of the user interface              |
+|     | [Breakpoints tab](/docs/desktop/ui/tabs/breakpoints/) | for details of how to change or delete breakpoints |

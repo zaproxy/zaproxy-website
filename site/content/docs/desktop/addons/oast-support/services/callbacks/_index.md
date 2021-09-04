@@ -14,6 +14,6 @@ The ZAP GUI includes a panel in which such requests can be reviewed: [OAST tab](
 
 ## See also
 
-|   |                                                                                   |   |
-|---|-----------------------------------------------------------------------------------|---|
-|   | [Callback Options](/docs/desktop/addons/oast-support/services/callbacks/options/) |   |
+|     |                                                                                   |     |
+| --- | --------------------------------------------------------------------------------- | --- |
+|     | [Callback Options](/docs/desktop/addons/oast-support/services/callbacks/options/) |     |

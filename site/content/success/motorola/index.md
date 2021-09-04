@@ -2,8 +2,8 @@
 title: "Motorola Solutions"
 type: success
 successtags:
-- automation
-- internal
+  - automation
+  - internal
 date: "2021-04-14"
 company:
   link: https://www.motorolasolutions.com/
@@ -51,5 +51,5 @@ were able to add simple telemetry requests. Every execution is being recorded, a
 track usage of the tool.
 
 Shortly after the rollout of our dedicated pipeline jobs, the scans were adopted by several
-application teams, running dozens of automated scans on frontend and backend services daily. 
+application teams, running dozens of automated scans on frontend and backend services daily.
 This number grows every month, helping us improve the safety of our customers and their systems.

@@ -12,13 +12,13 @@ associated with a request.
 
 ## Accessed via
 
-|   |                                               |                                        |
-|---|-----------------------------------------------|----------------------------------------|
-|   | [History tab](/docs/desktop/ui/tabs/history/) | 'Manage Tags...' right click menu item |
+|     |                                               |                                        |
+| --- | --------------------------------------------- | -------------------------------------- |
+|     | [History tab](/docs/desktop/ui/tabs/history/) | 'Manage Tags...' right click menu item |
 
 ## See also
 
-|   |                                      |                                       |
-|---|--------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
-|   | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |
+|     |                                      |                                       |
+| --- | ------------------------------------ | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
+|     | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |

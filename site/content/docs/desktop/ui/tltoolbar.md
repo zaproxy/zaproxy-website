@@ -147,10 +147,10 @@ Note that [add-ons](/docs/desktop/start/features/addons/) can add additional but
 
 ## See also
 
-[The user interface overview](/docs/desktop/ui/)  
+[The user interface overview](/docs/desktop/ui/)
 
-|   |                                         |                                       |
-|---|-----------------------------------------|---------------------------------------|
-|   | [Getting Started](/docs/desktop/start/) | for details of how to start using ZAP |
-|   | [Dialogs](/docs/desktop/ui/dialogs/)    | for details of the dialogs or popups  |
-|   | [Introduction](/docs/desktop/)          | the introduction to ZAP               |
+|     |                                         |                                       |
+| --- | --------------------------------------- | ------------------------------------- |
+|     | [Getting Started](/docs/desktop/start/) | for details of how to start using ZAP |
+|     | [Dialogs](/docs/desktop/ui/dialogs/)    | for details of the dialogs or popups  |
+|     | [Introduction](/docs/desktop/)          | the introduction to ZAP               |

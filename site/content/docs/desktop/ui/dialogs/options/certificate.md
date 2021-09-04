@@ -21,15 +21,15 @@ It is also possible to set the Client Certificate from the command line with the
 
 `-config certificate.pkcs12.index` is only necessary if the file contains multiple certificates
 and you wish to use one other than the first. Index values start at zero (0) which is the first certificate
-in the file.  
+in the file.
 
 `-config certificate.persist=true` is only necessary if you would like the settings persisted in ZAP's regular
 configuration file (so that they apply for subsequent ZAP use).
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
-|   | [Command Line](/docs/desktop/cmdline/)               | for details of the Command Line                 |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     | [Command Line](/docs/desktop/cmdline/)               | for details of the Command Line                 |

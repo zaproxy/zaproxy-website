@@ -25,14 +25,14 @@ types of responses:
 
 Processes the specific tags, identifying links to new resources:
 
-* Base - Proper handling
-* A, Link, Area - 'href' attribute
-* Frame, IFrame, Script, Img - 'src' attribute
-* Meta - 'http-equiv' for 'location' and 'refresh'
-* Form - proper handling of Forms with both GET and POST method. The fields values are generated validly, including [HTML
-    5.0 input types](http://www.w3schools.com/html5/html5_form_input_types.asp).
-* Comments - Valid tags found in comments are also analyzed, if specified in the [Options
-    Spider screen](/docs/desktop/ui/dialogs/options/spider/)
+- Base - Proper handling
+- A, Link, Area - 'href' attribute
+- Frame, IFrame, Script, Img - 'src' attribute
+- Meta - 'http-equiv' for 'location' and 'refresh'
+- Form - proper handling of Forms with both GET and POST method. The fields values are generated validly, including [HTML
+  5.0 input types](http://www.w3schools.com/html5/html5_form_input_types.asp).
+- Comments - Valid tags found in comments are also analyzed, if specified in the [Options
+  Spider screen](/docs/desktop/ui/dialogs/options/spider/)
 
 #### Robots.txt file
 
@@ -53,23 +53,23 @@ Currently, the Spider does not process this type of resources.
 
 ## Other aspects
 
-* When checking if an URL was already visited, the behaviour regarding how parameters are handled can be configured on the Spider Options screen.
-* When checking if an URL was already visited, there are a few common parameters which are ignored: jsessionid, phpsessid, aspsessionid, utm_\*
-* The Spider's behaviour regarding cookies depends on how the spider is started and which options are enabled. For more details refer to the Spider Options screen.
+- When checking if an URL was already visited, the behaviour regarding how parameters are handled can be configured on the Spider Options screen.
+- When checking if an URL was already visited, there are a few common parameters which are ignored: jsessionid, phpsessid, aspsessionid, utm\_\*
+- The Spider's behaviour regarding cookies depends on how the spider is started and which options are enabled. For more details refer to the Spider Options screen.
 
 The spider is configured using the [Spider Options screen](/docs/desktop/ui/dialogs/options/spider/).
 
 ## See also
 
-|   |                                                                   |                                       |
-|---|-------------------------------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                  | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/)                         | provided by ZAP                       |
-|   | [Spider Options screen](/docs/desktop/ui/dialogs/options/spider/) | for an overview of the Spider Options |
+|     |                                                                   |                                       |
+| --- | ----------------------------------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                                  | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/)                         | provided by ZAP                       |
+|     | [Spider Options screen](/docs/desktop/ui/dialogs/options/spider/) | for an overview of the Spider Options |
 
 ## Official Videos
 
-|   |                                                                                                         |
-|---|---------------------------------------------------------------------------------------------------------|
-|   | [ZAP In Ten: Explore Your Applications](https://play.sonatype.com/watch/rLq2nvgbuGwVn2BX9gA8r2) (10:36) |
-|   | [ZAP Deep Dive: Exploring Applications: Standard Spider](https://youtu.be/mz2nhYpU-sw) (34:35)          |
+|     |                                                                                                         |
+| --- | ------------------------------------------------------------------------------------------------------- |
+|     | [ZAP In Ten: Explore Your Applications](https://play.sonatype.com/watch/rLq2nvgbuGwVn2BX9gA8r2) (10:36) |
+|     | [ZAP Deep Dive: Exploring Applications: Standard Spider](https://youtu.be/mz2nhYpU-sw) (34:35)          |

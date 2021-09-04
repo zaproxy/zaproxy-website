@@ -46,8 +46,8 @@ once you've added the ZAP Root CA certificate to your list of trusted
 Root CAs, your browser doesn't recognize the man in the middle.
 
 **Note:**
-> On iOS 10.3 and onwards, you also need to enable full trust for the root certificate: Go to Settings \> General \> About \> Certificate Trust Settings. Under “Enable full trust for root certificates”, turn on trust for the certificate.
 
+> On iOS 10.3 and onwards, you also need to enable full trust for the root certificate: Go to Settings \> General \> About \> Certificate Trust Settings. Under “Enable full trust for root certificates”, turn on trust for the certificate.
 
 ### Generate
 
@@ -62,18 +62,12 @@ Every generated Root CA certificate is 2048 bit strong (RSA with SHA1).
 Every generated Root CA certificate starts with serial number "1".
 Every generated Root CA certificate consists of the following identifiers:
 
-`
-CN = OWASP Zed Attack Proxy Root CA`  
-`
-L = 87b77fe834b0a301`  
-`
-O = OWASP Root CA`  
-`
-OU = OWASP ZAP Root CA`  
-`
-C = XX`  
-`
-`
+` CN = OWASP Zed Attack Proxy Root CA`  
+` L = 87b77fe834b0a301`  
+` O = OWASP Root CA`  
+` OU = OWASP ZAP Root CA`  
+` C = XX`  
+` `
 
 As you can see, there's a Location identifier (L) which is only a hexadecimal number.
 This number is constructed out of two 32bit hash codes: user's name and user's home directory.
@@ -89,76 +83,42 @@ Copy the file 'OWASP ZAP/config.xml' from your users home directory to
 the PC, where you want to use the same certificate and press 'import' to import it.
 
 You can also import certificates stored in pem files as long as they include both
-the certificate and the unencrypted private key in the following format:  
+the certificate and the unencrypted private key in the following format:
 
-`
------BEGIN CERTIFICATE-----`  
-`
-MIIC9TCCAl6gAwIBAgIJANL8E4epRNznMA0GCSqGSIb3DQEBBQUAMFsxGDAWBgNV`  
-`
-BAoTD1N1cGVyZmlzaCwgSW5jLjELMAkGA1UEBxMCU0YxCzAJBgNVBAgTAkNBMQsw`  
-`
-CQYDVQQGEwJVUzEYMBYGA1UEAxMPU3VwZXJmaXNoLCBJbmMuMB4XDTE0MDUxMjE2`  
-`
-MjUyNloXDTM0MDUwNzE2MjUyNlowWzEYMBYGA1UEChMPU3VwZXJmaXNoLCBJbmMu`  
-`
-MQswCQYDVQQHEwJTRjELMAkGA1UECBMCQ0ExCzAJBgNVBAYTAlVTMRgwFgYDVQQD`  
-`
-Ew9TdXBlcmZpc2gsIEluYy4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOjz`  
-`
-Shh2Xxk/sc9Y6X9DBwmVgDXFD/5xMSeBmRImIKXfj2r8QlU57gk4idngNsSsAYJb`  
-`
-1Tnm+Y8HiN/+7vahFM6pdEXY/fAXVyqC4XouEpNarIrXFWPRt5tVgA9YvBxJ7SBi`  
-`
-3bZMpTrrHD2g/3pxptMQeDOuS8Ic/ZJKocPnQaQtAgMBAAGjgcAwgb0wDAYDVR0T`  
-`
-BAUwAwEB/zAdBgNVHQ4EFgQU+5izU38URC7o7tUJml4OVoaoNYgwgY0GA1UdIwSB`  
-`
-hTCBgoAU+5izU38URC7o7tUJml4OVoaoNYihX6RdMFsxGDAWBgNVBAoTD1N1cGVy`  
-`
-ZmlzaCwgSW5jLjELMAkGA1UEBxMCU0YxCzAJBgNVBAgTAkNBMQswCQYDVQQGEwJV`  
-`
-UzEYMBYGA1UEAxMPU3VwZXJmaXNoLCBJbmMuggkA0vwTh6lE3OcwDQYJKoZIhvcN`  
-`
-AQEFBQADgYEApHyg7ApKx3DEcWjzOyLi3JyN0JL+c35yK1VEmxu0Qusfr76645Oj`  
-`
-1IsYwpTws6a9ZTRMzST4GQvFFQra81eLqYbPbMPuhC+FCxkUF5i0DNSWi+kczJXJ`  
-`
-TtCqSwGl9t9JEoFqvtW+znZ9TqyLiOMw7TGEUI+88VAqW0qmXnwPcfo=`  
-`
------END CERTIFICATE-----`  
-`
------BEGIN PRIVATE KEY-----`  
-`
-MIICXgIBAAKBgQDo80oYdl8ZP7HPWOl/QwcJlYA1xQ/+cTEngZkSJiCl349q/EJV`  
-`
-Oe4JOInZ4DbErAGCW9U55vmPB4jf/u72oRTOqXRF2P3wF1cqguF6LhKTWqyK1xVj`  
-`
-0bebVYAPWLwcSe0gYt22TKU66xw9oP96cabTEHgzrkvCHP2SSqHD50GkLQIDAQAB`  
-`
-AoGBAKepW14J7F5e0ppa8wvOcUU7neCVafKHA4rcoxBF8t+P7UhiMVfn7uQiFk2D`  
-`
-K8gXyKpLcEdRb7K7CI+3i8RkoXTRDEZU5XPMJnZsE5LWgNQ+pi3HwMEdR0vD2Iyv`  
-`
-vIH3tq6mNKgDu+vozm8DWsEP96jrhVbo1U1rzyEtX46afo79AkEA/VXanGaqj4ua`  
-`
-EsqfY6n/7+MTm4iPOM7qfoyI4EppJXZklc/FbcV2lAjY2Jl9U6X7WnqCPn+/zg44`  
-`
-6lKWTnhAawJBAOtmi6nw8WjY6uyXZosE/0r4SkSSo20EJbBCJcgdofKT+VCGB4hp`  
-`
-h6XwGdls0ca+qa5ZE1a196dpwwVre0hm88cCQQDrUm3QbHmw/39uRzOJs6dfYPKc`  
-`
-vlwz69jdFpQqrFRBjVlf4/FDx3IfjpxHj0RgiEUUxcnoXmh/8qwh1fdzCrbjAkB4`  
-`
-afg/chTLQUrKw5ecvW2p9+Blu20Fsv1kcDHLb/0LjU4XNrhbuz+8TlmqstOMCrPZ`  
-`
-j48o5+RLKvqrpxNlMeS5AkEA6qIdW/yp5N8b1j2OxYZ9u5O//BvspwRITGM60Cps`  
-`
-yemZE/ua8wm34SKvDHf5uxcmofShW17PLICrsLJ7P35y/A== `  
-`
------END PRIVATE KEY-----`  
-`
-`  
+` -----BEGIN CERTIFICATE-----`  
+` MIIC9TCCAl6gAwIBAgIJANL8E4epRNznMA0GCSqGSIb3DQEBBQUAMFsxGDAWBgNV`  
+` BAoTD1N1cGVyZmlzaCwgSW5jLjELMAkGA1UEBxMCU0YxCzAJBgNVBAgTAkNBMQsw`  
+` CQYDVQQGEwJVUzEYMBYGA1UEAxMPU3VwZXJmaXNoLCBJbmMuMB4XDTE0MDUxMjE2`  
+` MjUyNloXDTM0MDUwNzE2MjUyNlowWzEYMBYGA1UEChMPU3VwZXJmaXNoLCBJbmMu`  
+` MQswCQYDVQQHEwJTRjELMAkGA1UECBMCQ0ExCzAJBgNVBAYTAlVTMRgwFgYDVQQD`  
+` Ew9TdXBlcmZpc2gsIEluYy4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAOjz`  
+` Shh2Xxk/sc9Y6X9DBwmVgDXFD/5xMSeBmRImIKXfj2r8QlU57gk4idngNsSsAYJb`  
+` 1Tnm+Y8HiN/+7vahFM6pdEXY/fAXVyqC4XouEpNarIrXFWPRt5tVgA9YvBxJ7SBi`  
+` 3bZMpTrrHD2g/3pxptMQeDOuS8Ic/ZJKocPnQaQtAgMBAAGjgcAwgb0wDAYDVR0T`  
+` BAUwAwEB/zAdBgNVHQ4EFgQU+5izU38URC7o7tUJml4OVoaoNYgwgY0GA1UdIwSB`  
+` hTCBgoAU+5izU38URC7o7tUJml4OVoaoNYihX6RdMFsxGDAWBgNVBAoTD1N1cGVy`  
+` ZmlzaCwgSW5jLjELMAkGA1UEBxMCU0YxCzAJBgNVBAgTAkNBMQswCQYDVQQGEwJV`  
+` UzEYMBYGA1UEAxMPU3VwZXJmaXNoLCBJbmMuggkA0vwTh6lE3OcwDQYJKoZIhvcN`  
+` AQEFBQADgYEApHyg7ApKx3DEcWjzOyLi3JyN0JL+c35yK1VEmxu0Qusfr76645Oj`  
+` 1IsYwpTws6a9ZTRMzST4GQvFFQra81eLqYbPbMPuhC+FCxkUF5i0DNSWi+kczJXJ`  
+` TtCqSwGl9t9JEoFqvtW+znZ9TqyLiOMw7TGEUI+88VAqW0qmXnwPcfo=`  
+` -----END CERTIFICATE-----`  
+` -----BEGIN PRIVATE KEY-----`  
+` MIICXgIBAAKBgQDo80oYdl8ZP7HPWOl/QwcJlYA1xQ/+cTEngZkSJiCl349q/EJV`  
+` Oe4JOInZ4DbErAGCW9U55vmPB4jf/u72oRTOqXRF2P3wF1cqguF6LhKTWqyK1xVj`  
+` 0bebVYAPWLwcSe0gYt22TKU66xw9oP96cabTEHgzrkvCHP2SSqHD50GkLQIDAQAB`  
+` AoGBAKepW14J7F5e0ppa8wvOcUU7neCVafKHA4rcoxBF8t+P7UhiMVfn7uQiFk2D`  
+` K8gXyKpLcEdRb7K7CI+3i8RkoXTRDEZU5XPMJnZsE5LWgNQ+pi3HwMEdR0vD2Iyv`  
+` vIH3tq6mNKgDu+vozm8DWsEP96jrhVbo1U1rzyEtX46afo79AkEA/VXanGaqj4ua`  
+` EsqfY6n/7+MTm4iPOM7qfoyI4EppJXZklc/FbcV2lAjY2Jl9U6X7WnqCPn+/zg44`  
+` 6lKWTnhAawJBAOtmi6nw8WjY6uyXZosE/0r4SkSSo20EJbBCJcgdofKT+VCGB4hp`  
+` h6XwGdls0ca+qa5ZE1a196dpwwVre0hm88cCQQDrUm3QbHmw/39uRzOJs6dfYPKc`  
+` vlwz69jdFpQqrFRBjVlf4/FDx3IfjpxHj0RgiEUUxcnoXmh/8qwh1fdzCrbjAkB4`  
+` afg/chTLQUrKw5ecvW2p9+Blu20Fsv1kcDHLb/0LjU4XNrhbuz+8TlmqstOMCrPZ`  
+` j48o5+RLKvqrpxNlMeS5AkEA6qIdW/yp5N8b1j2OxYZ9u5O//BvspwRITGM60Cps`  
+`yemZE/ua8wm34SKvDHf5uxcmofShW17PLICrsLJ7P35y/A==`  
+` -----END PRIVATE KEY-----`  
+` `  
 And yes, that example will work - its the Superfish certificate!
 
 ### View {#view}
@@ -189,20 +149,14 @@ Every dynamically generated certificate is 2048 bit strong (RSA with SHA1).
 Every dynamically generated certificate has a random serial number.
 Every dynamically generated certificate consists of the following identifiers:
 
-`
-CN = www.example.com`  
-`
-E = owasp-zed-attack-proxy@lists.owasp.org`  
-`
-C = XX`  
-`
-O = OWASP`  
-`
-OU = Zed Attack Proxy Project`  
-`
-`
+` CN = www.example.com`  
+` E = owasp-zed-attack-proxy@lists.owasp.org`  
+` C = XX`  
+` O = OWASP`  
+` OU = Zed Attack Proxy Project`  
+` `
 
-*Side note:
+_Side note:
 Each time you start ZAP, internally a random serial number offset is generated.
 Every dynamically generated certificate will use this offset plus an
 increasing counter. For example, first dynamically certificate has
@@ -215,7 +169,7 @@ By using the random offset (internally 48bit random number), the chances
 are 1 to 281.474.976.710.656 that when restarting ZAP, the serial number
 offset is a different one.
 So in the rare case, you are discovering that you browser complains about
-a broken serial number within the certificate, just restart your browser ;-)*.
+a broken serial number within the certificate, just restart your browser ;-)_.
 
 ## Install ZAP Root CA certificate {#install}
 
@@ -259,7 +213,7 @@ Installation and late on validation is done in the same preferences dialog:
 
 ## Risks
 
-**Attention, there are risks!**   
+**Attention, there are risks!**  
 When adding self generated Root CA certificates to your list of trusted
 root certificates, everyone with the root certificate can smuggle data
 into your system (browser).
@@ -269,6 +223,6 @@ vector to your system.
 
 ## See also
 
-|   |                                                               |                             |
-|---|---------------------------------------------------------------|-----------------------------|
-|   | [Certificates](/docs/desktop/ui/dialogs/options/certificate/) | for SSL client certificates |
+|     |                                                               |                             |
+| --- | ------------------------------------------------------------- | --------------------------- |
+|     | [Certificates](/docs/desktop/ui/dialogs/options/certificate/) | for SSL client certificates |

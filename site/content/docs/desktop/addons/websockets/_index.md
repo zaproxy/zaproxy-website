@@ -16,7 +16,7 @@ bi-directional (two-way), full duplex communication channel over a
 single TCP connection.  
 It features a lightweight protocol, allowing developers to realize
 realtime use cases. WebSockets do also provide an alternative to
-heavy use of Ajax, HTTP Long Polling or Comet.  
+heavy use of Ajax, HTTP Long Polling or Comet.
 
 After an initial HTTP based handshake, the TCP connection is kept open,
 allowing applications to send \& receive arbitrary data. Often port
@@ -25,18 +25,18 @@ allowing applications to send \& receive arbitrary data. Often port
 The WebSocket standard is defined in
 
 [The WebSocket API (http://www.w3.org/TR/websockets/)](http://www.w3.org/TR/websockets/)
-:   specifies the interface in browsers
+: specifies the interface in browsers
 
 [The WebSocket Protocol (RFC6455) (https://tools.ietf.org/html/rfc6455)](https://tools.ietf.org/html/rfc6455)
-:   describes the structure of WebSocket frames upon TCP
+: describes the structure of WebSocket frames upon TCP
 
 ZAP is able to:
 
-* intercept and show WebSocket messages
-* set breakpoints on specific types of WebSocket messages
-* fuzz WebSocket messages (send lots of invalid or unexpected data to a browser or server)
-* passively scan WebSocket messages and raise alerts with scripts
+- intercept and show WebSocket messages
+- set breakpoints on specific types of WebSocket messages
+- fuzz WebSocket messages (send lots of invalid or unexpected data to a browser or server)
+- passively scan WebSocket messages and raise alerts with scripts
 
-WebSocket messages are displayed within the [WebSockets tab](/docs/desktop/addons/websockets/tab/).  
+WebSocket messages are displayed within the [WebSockets tab](/docs/desktop/addons/websockets/tab/).
 
 The WebSocket add-on adds new [scripts](/docs/desktop/addons/websockets/script/) and additional endpoints to the ZAP [API](/docs/desktop/addons/websockets/api/)

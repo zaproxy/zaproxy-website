@@ -1,9 +1,9 @@
 ---
 title: "ZAP - Baseline Scan"
-tags: 
-- docker
-- guide
-- packaged_scan
+tags:
+  - docker
+  - guide
+  - packaged_scan
 type: docker
 ---
 
@@ -16,7 +16,9 @@ This means that the script doesn't perform any actual 'attacks' and will run for
 By default it reports all alerts as WARNings but you can specify a config file which can change any rules to FAIL or IGNORE.
 
 This script is intended to be ideal to run in a CI/CD environment, even against production sites.
+
 ### Usage
+
 ```
 Usage: zap-baseline.py -t <target> [options]
     -t target         target URL including the protocol, eg https://www.example.com
@@ -33,7 +35,7 @@ Options:
     -a                include the alpha passive scan rules as well
     -d                show debug messages
     -P                specify listen port
-    -D secs           delay in seconds to wait for passive scanning 
+    -D secs           delay in seconds to wait for passive scanning
     -i                default rules not in the config file to INFO
     -I                do not return failure on warning
     -j                use the Ajax spider in addition to the traditional one
@@ -48,11 +50,15 @@ Options:
     --auto            use the automation framework if supported for the given parameters (this will become the default soon)
     --autooff         do not use the automation framework even if supported for the given parameters
 ```
+
 To run it with no 'file' params use:
+
 ```
 docker run -t owasp/zap2docker-stable zap-baseline.py -t https://www.example.com
 ```
+
 If you use 'file' params then you need to mount the directory those file are in or will be generated in, eg
+
 ```
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
     -t https://www.example.com -g gen.conf -r testreport.html
@@ -61,6 +67,7 @@ docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
 Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
 
 ### Example Output
+
 ```
 docker run -t owasp/zap2docker-stable zap-baseline.py -t https://www.example.com
 May 17, 2016 1:24:32 PM java.util.prefs.FileSystemPreferences$1 run
@@ -106,8 +113,11 @@ WARN: X-Content-Type-Options Header Missing [10021] x 3
 	https://www.example.com/sitemap.xml
 FAIL: 0	WARN: 4	IGNORE: 0	PASS: 22
 ```
+
 ### Configuration File
+
 You can configure how the baseline scan runs with a configuration file. A default configuration file can be created using the '-g' parameter.
+
 ```
 # zap-baseline rule configuration file
 # Change WARN to IGNORE to ignore rule or FAIL to fail if rule matches
@@ -140,33 +150,40 @@ You can configure how the baseline scan runs with a configuration file. A defaul
 90030	WARN	(WSDL File Passive Scanner)
 90033	WARN	(Loosely Scoped Cookie)
 ```
+
 Edit the file and change WARN to IGNORE to ignore rule or FAIL to fail as required.
 
 You can also specify URL regex patterns which should be ignored by adding lines like:
+
 ```
 <rule-id>    OUTOFSCOPE    <regex>
 ```
-to the file. You can also use ‘*’ for all rules.
+
+to the file. You can also use ‘\*’ for all rules.
 For example:
+
 ```
 # Ignore the specified URL for Autocomplete in browser
 10012    OUTOFSCOPE    https://www.example.com/test.html
 # Ignore all URLS containing ‘.js’ for all scan rules
 *    OUTOFSCOPE    .*\.js
 ```
+
 ### Progress File
+
 You can specify a progress file to flag issues that are already known about and are being addressed:
+
 ```
 {
 	"site" : "www.example.com",
 	"issues" : [
-		{ 
+		{
 			"id" : "10016",
 			"name" : "Web Browser XSS Protection Not Enabled",
 			"state" : "inprogress",
 			"link": "https://www.example.com/bugtracker/issue=1234"
 		},
-		{ 
+		{
 			"id" : "10020",
 			"name" : "X-Frame-Options Header Not Set",
 			"state" : "inprogress",
@@ -175,22 +192,28 @@ You can specify a progress file to flag issues that are already known about and 
 	]
 }
 ```
+
 These issues will then be flagged as being 'IN-PROGRESS' which makes it much easier to identify new issues.
 
 ### ZAP Parameters
+
 You can pass parameters onto ZAP using the baseline `-z` parameter. This means you can fine tune ZAP, for example by specifying any of the parameters that are stored in the ZAP config file via the `-config key=value` parameter.
 The weekly version of ZAP supports scan rule configuration. One particular configuration option allows you to define the IDs of HTML forms which you want to ignore when it comes to anti-CSRF tokens. So if you run the baseline scan with: `-z -config rules.csrf.ignorelist=search,login` then ZAP will not fail the scan if forms with an ID of "search" or "login" do not have anti CSRF tokens.
 
 ### Mass Baseline
+
 If you would like to run the baseline against a number of sites then you can use the [mass baseline scripts](https://github.com/zaproxy/community-scripts/tree/main/api/mass-baseline) on the ZAP Community Scripts repo.
 These generate a [dashboard](https://github.com/zaproxy/community-scripts/wiki/Baseline-Summary) which will show you a summary of the results on one wiki page.
 
 ### Scan Hooks
+
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
 
 ### Automation Framework Migration
-The baseline scan is in the process of being migrated to use the [Automation Framework](/docs/automate/automation-framework/). 
+
+The baseline scan is in the process of being migrated to use the [Automation Framework](/docs/automate/automation-framework/).
 For more details see the blog post: [Baseline Scan Changes](/blog/2021-06-15-baseline-scan-changes/)
 
 ### Source Code
+
 The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/main/docker](https://github.com/zaproxy/zaproxy/tree/main/docker).

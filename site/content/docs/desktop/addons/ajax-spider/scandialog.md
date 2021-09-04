@@ -80,8 +80,8 @@ The list of allowed resources. The allowed resources are always fetched even if 
 
 ## See also
 
-|   |                                                                         |                                            |
-|---|-------------------------------------------------------------------------|--------------------------------------------|
-|   | [AJAX Spider](/docs/desktop/addons/ajax-spider/)                        | for an overview of the AJAX Spider         |
-|   | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/)                | for an overview of the AJAX Spider Tab     |
-|   | [Options AJAX Spider screen](/docs/desktop/addons/ajax-spider/options/) | for an overview of the AJAX Spider Options |
+|     |                                                                         |                                            |
+| --- | ----------------------------------------------------------------------- | ------------------------------------------ |
+|     | [AJAX Spider](/docs/desktop/addons/ajax-spider/)                        | for an overview of the AJAX Spider         |
+|     | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/)                | for an overview of the AJAX Spider Tab     |
+|     | [Options AJAX Spider screen](/docs/desktop/addons/ajax-spider/options/) | for an overview of the AJAX Spider Options |

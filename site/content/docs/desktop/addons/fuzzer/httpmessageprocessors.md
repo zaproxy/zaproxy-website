@@ -21,13 +21,13 @@ For more information consult the help page "Getting Started" \> "Features" \> "A
 
 Allows to select the enabled Fuzzer HTTP Processor scripts. The scripts allow you to:
 
-* Obtain the list of payloads
-* Stop fuzzing
-* Increase the error count
-* Send new messages
-* Add messages to the Results tab
-* Set custom ‘state’ messages in the [Fuzzer tab](/docs/desktop/addons/fuzzer/tab/)
-* Raise alerts
+- Obtain the list of payloads
+- Stop fuzzing
+- Increase the error count
+- Send new messages
+- Add messages to the Results tab
+- Set custom ‘state’ messages in the [Fuzzer tab](/docs/desktop/addons/fuzzer/tab/)
+- Raise alerts
 
 Scripts can include both Required and Optional parameters the values for which the user will be prompted to provide when the Processor is added to the fuzzer. The parameter names are defined within the script(s) via the methods `getRequiredParamsNames` and `getOptionalParamsNames`, each of which simply return an array of strings representing the parameters names.
 
@@ -53,12 +53,12 @@ Other add-ons can define additional HTTP Message Processors.
 
 ## Accessed via
 
-|   |                                                                                     |
-|---|-------------------------------------------------------------------------------------|
-|   | [Fuzzer dialog](/docs/desktop/addons/fuzzer/dialogue/) under Message Processors tab |
+|     |                                                                                     |
+| --- | ----------------------------------------------------------------------------------- |
+|     | [Fuzzer dialog](/docs/desktop/addons/fuzzer/dialogue/) under Message Processors tab |
 
 ## See also
 
-|   |                                                 |
-|---|-------------------------------------------------|
-|   | [Fuzzer concepts](/docs/desktop/addons/fuzzer/) |
+|     |                                                 |
+| --- | ----------------------------------------------- |
+|     | [Fuzzer concepts](/docs/desktop/addons/fuzzer/) |

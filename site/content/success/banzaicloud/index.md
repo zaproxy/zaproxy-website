@@ -2,9 +2,9 @@
 title: "Banzai Cloud"
 type: success
 successtags:
-- automation
-- internal
-- opensource
+  - automation
+  - internal
+  - opensource
 date: "2021-04-14"
 company:
   link: https://github.com/banzaicloud/dast-operator

@@ -12,9 +12,9 @@ weight: 2
 This controls the page that is shown when you launch a browser to be proxied through ZAP.  
 There are 3 options:
 
-* Default ZAP Page
-* Blank Page
-* URL (specify below)
+- Default ZAP Page
+- Blank Page
+- URL (specify below)
 
 The default ZAP page is read from an online page on start up.  
 If you do not want the online page to be requested then you can choose one of the other options.
@@ -25,6 +25,6 @@ The URL of the page that you would like browsers launched from ZAP to display.
 
 ## See also
 
-|   |                                                  |                                 |
-|---|--------------------------------------------------|---------------------------------|
-|   | [Quick Start](/docs/desktop/addons/quick-start/) | the introduction to Quick Start |
+|     |                                                  |                                 |
+| --- | ------------------------------------------------ | ------------------------------- |
+|     | [Quick Start](/docs/desktop/addons/quick-start/) | the introduction to Quick Start |

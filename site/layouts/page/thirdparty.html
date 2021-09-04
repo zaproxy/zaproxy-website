@@ -1,58 +1,81 @@
-{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
-
-{{ define "main" }}
-{{ $section := .Site.GetPage "section" .Section }}
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }} {{ define
+"main" }} {{ $section := .Site.GetPage "section" .Section }}
 <section class="bolt-header">
-    <div class="wrapper py-20">
-      <h1 class="text--white">{{ .Title }}</h1>
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
   </div>
 </section>
 <section class="wrapper py-70" data-kind="{{ .Kind }}">
   <article>
+    <h5>{{ .Params.description }}</h5>
+    <h5>{{ .Params.warning }}</h5>
 
-<h5>{{ .Params.description }}</h5>
-<h5>{{ .Params.warning }}</h5>
+    <h2>Services</h2>
+    <div>{{ .Params.desc_services }}</div>
 
-<h2>Services</h2>
-<div>{{ .Params.desc_services }}</div>
+    <table class="table table-fixed">
+      {{ range $service := $.Site.Data.thirdparty.services }}
+      <tr>
+        <td class="cell-35">
+          <a href="{{ $service.link }}"
+            >{{ if $service.logo }}<img src="{{ $service.logo }}" />{{ else }}{{
+            $service.name }}{{ end }}</a
+          >
+        </td>
+        <td class="cell-35">{{ $service.license }}</td>
+        <td class="cell-30">
+          {{ if $service.supporter }}<a href="/supporters/"
+            ><h5>{{ $service.supporter }}</h5></a
+          >{{ end }}{{ if $service.notes }}{{ $service.notes }}{{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </table>
+    <br /><br />
 
-<table class="table table-fixed">
-{{ range $service := $.Site.Data.thirdparty.services }}
-  <tr>
-  <td class="cell-35"><a href="{{ $service.link }}">{{ if $service.logo }}<img src="{{ $service.logo }}"/>{{ else }}{{ $service.name }}{{ end }}</a></td>
-  <td class="cell-35">{{ $service.license }}</td>
-  <td class="cell-30">{{ if $service.supporter }}<a href="/supporters/"><h5>{{ $service.supporter }}</h5></a>{{ end }}{{ if $service.notes }}{{ $service.notes }}{{ end }}</td>
-  </tr>
-{{ end }}
-</table>
-<br/><br/>
+    <h2>Integrations</h2>
+    <div>{{ .Params.desc_integrations }}</div>
+    <table class="table table-fixed">
+      {{ range $integration := $.Site.Data.thirdparty.integrations }}
+      <tr>
+        <td class="cell-35">
+          <a href="{{ $integration.link }}"
+            >{{ if $integration.logo }}<img src="{{ $integration.logo }}" />{{
+            else }}{{ $integration.name }}{{ end }}</a
+          >
+        </td>
+        <td class="cell-35">{{ $integration.license }}</td>
+        <td class="cell-30">
+          {{ if $integration.supporter }}<a href="/supporters/"
+            ><h5>{{ $integration.supporter }}</h5></a
+          >{{ end }}{{ if $integration.notes }}{{ $integration.notes }}{{ end }}
+        </td>
+      </tr>
+      {{ end }}
+    </table>
+    <br /><br />
 
-<h2>Integrations</h2>
-<div>{{ .Params.desc_integrations }}</div>
-<table class="table table-fixed">
-{{ range $integration := $.Site.Data.thirdparty.integrations }}
-  <tr>
-  <td class="cell-35"><a href="{{ $integration.link }}">{{ if $integration.logo }}<img src="{{ $integration.logo }}"/>{{ else }}{{ $integration.name }}{{ end }}</a></td>
-  <td class="cell-35">{{ $integration.license }}</td>
-  <td class="cell-30">{{ if $integration.supporter }}<a href="/supporters/"><h5>{{ $integration.supporter }}</h5></a>{{ end }}{{ if $integration.notes }}{{ $integration.notes }}{{ end }}</td>
-  </tr>
-{{ end }}
-</table>
-<br/><br/>
-
-<h2>Training</h2>
-<div>{{ .Params.desc_training }}</div>
-<table class="table table-fixed">
-{{ range $training := $.Site.Data.thirdparty.training }}
-  <tr>
-  <td class="cell-35">{{ if $training.logo }}<img src="{{ $training.logo }}" width="50%" height="50%"/>{{ else }}{{ $training.name }}{{ end }}</td>
-  <td class="cell-35"><a href="{{ $training.link }}">{{ $training.what }}</a></td>
-  <td class="cell-30"><a href="/supporters/"><h5>{{ $training.supporter }}</h5></a></td>
-  </tr>
-{{ end }}
-</table>
-
+    <h2>Training</h2>
+    <div>{{ .Params.desc_training }}</div>
+    <table class="table table-fixed">
+      {{ range $training := $.Site.Data.thirdparty.training }}
+      <tr>
+        <td class="cell-35">
+          {{ if $training.logo }}<img
+            src="{{ $training.logo }}"
+            width="50%"
+            height="50%"
+          />{{ else }}{{ $training.name }}{{ end }}
+        </td>
+        <td class="cell-35">
+          <a href="{{ $training.link }}">{{ $training.what }}</a>
+        </td>
+        <td class="cell-30">
+          <a href="/supporters/"><h5>{{ $training.supporter }}</h5></a>
+        </td>
+      </tr>
+      {{ end }}
+    </table>
   </article>
 </section>
 {{ end }}
-

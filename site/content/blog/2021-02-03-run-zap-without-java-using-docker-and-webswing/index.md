@@ -3,14 +3,14 @@ title: "Run ZAP without Java using Docker and Webswing"
 description: "Run ZAP without Java using Docker and Webswing"
 summary: "You can access the ZAP Desktop even when it is running in Docker, and that means you do not have to install Java if you do not want to."
 images:
-- https://www.zaproxy.org/blog/2021-02-03-run-zap-without-java-using-docker-and-webswing/images/zap-webswing-social.png
+  - https://www.zaproxy.org/blog/2021-02-03-run-zap-without-java-using-docker-and-webswing/images/zap-webswing-social.png
 type: post
 tags:
-- blog
+  - blog
 date: "2021-02-03"
 addSocialPreview: true
 authors:
- - simon
+  - simon
 ---
 
 The [ZAP Docker images](/docs/docker/about/) are a great way to automate ZAP, but when testing a new application or diagnosing problems it is always easier to use the ZAP desktop so that you can see what is going on.
@@ -25,9 +25,10 @@ Luckily you can still access the ZAP Desktop when running in Docker using a grea
 Webswing is a commercial product but the company behind it are strong supporters of Open Source and so have very kindly allowed us to include Webswing in the ZAP Docker images.
 
 To do that start ZAP running with Webswing use
- * `docker run -u zap -p 8080:8080 -p 8090:8090 -i owasp/zap2docker-stable zap-webswing.sh`
 
-Then point your browser at `http://localhost:8080/zap` 
+- `docker run -u zap -p 8080:8080 -p 8090:8090 -i owasp/zap2docker-stable zap-webswing.sh`
+
+Then point your browser at `http://localhost:8080/zap`
 
 You will see the ZAP Splash screen and then you will have the full ZAP Desktop running in your browser!
 
@@ -41,18 +42,18 @@ You can also interact with the ZAP Desktop in exactly the same way as you would 
 
 Although most of the functionality works there are some features that will not work, in particular any features that launch other processes with GUIs like browsers. This breaks the [Browser Launch](/blog/2017-08-22-zap-browser-launch/) feature that many of you will use to start a browser that is set up to proxy through ZAP and trust its root CA certificate.
 
-## Proxying your local browser through ZAP in Webswing 
+## Proxying your local browser through ZAP in Webswing
 
 In order to proxy a local browser with https based sites you need to start the docker container with a local drive mapped to `/zap/wrk` e.g. using:
 
-*  `docker run -v $(pwd):/zap/wrk/:rw -u zap -p 8080:8080 -p 8090:8090 -i owasp/zap2docker-stable zap-webswing.sh`
+- `docker run -v $(pwd):/zap/wrk/:rw -u zap -p 8080:8080 -p 8090:8090 -i owasp/zap2docker-stable zap-webswing.sh`
 
 Note that on Windows you will need to replace `$(pwd)` with the full current working directory.
 
 When you do this ZAP will create 2 files on your mapped drive:
 
-* `owasp_zap_root_ca.crt` - the public ZAP Root CA certificate
-* `owasp_zap_root_ca.key` - the private ZAP Root CA certificate
+- `owasp_zap_root_ca.crt` - the public ZAP Root CA certificate
+- `owasp_zap_root_ca.key` - the private ZAP Root CA certificate
 
 You will need to use 2 browsers / profiles - one to proxy through ZAP and one to control the ZAP Desktop that you can now access via [Webswing](https://www.webswing.org/).
 

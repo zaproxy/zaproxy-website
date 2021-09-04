@@ -10,26 +10,26 @@ jobs:
       - uses: actions/checkout@v2
 
       - run: sudo apt-get update && sudo apt-get install -y nginx && sudo systemctl start nginx
-      
+
       - name: Install node.js 10.x
         uses: actions/setup-node@v1
         with:
-          node-version: '10.x'
-      
+          node-version: "10.x"
+
       - name: Install npm dependencies
         run: npm install
-      
+
       - name: Run npm build
         run: npm run build --if-present
-      
-      - name: Copy to www 
+
+      - name: Copy to www
         run: sudo rm /var/www/html/*.html && sudo cp -rf ./dist/* /var/www/html
 
       - run: curl http://localhost/
-      
+
       - run: google-chrome --headless --disable-gpu --screenshot --window-size=1280,1600 http://localhost
-      
-      - name: 'Upload screenshot'
+
+      - name: "Upload screenshot"
         uses: actions/upload-artifact@v1
         with:
           name: screenshots

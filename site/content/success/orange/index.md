@@ -2,8 +2,8 @@
 title: "Orange Business Services"
 type: success
 successtags:
-- automation
-- internal
+  - automation
+  - internal
 date: "2021-07-21"
 company:
   link: https://www.orange-business.com/en

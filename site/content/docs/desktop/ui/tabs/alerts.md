@@ -52,6 +52,6 @@ This will bring up the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/m
 
 ## See also
 
-|   |                                  |                                       |
-|---|----------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |
+|     |                                  |                                       |
+| --- | -------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |

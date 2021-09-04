@@ -7,21 +7,21 @@ weight: 1
 
 # Options Selenium screen
 
-This screen allows you to setup the requirements of some of the WebDrivers.   
+This screen allows you to setup the requirements of some of the WebDrivers.
 
 ## Configuration Options
 
 ### WebDrivers
 
-|    Field     |                                 Details                                 |                     Default                      |                               Config File                                |
-|--------------|-------------------------------------------------------------------------|--------------------------------------------------|--------------------------------------------------------------------------|
+| Field        | Details                                                                 | Default                                          | Config File                                                              |
+| ------------ | ----------------------------------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------ |
 | ChromeDriver | This allows you to select the location of ChromeDriver.                 | The path to the bundled WebDriver, if available. | Key: `selenium.chromeDriver` Value: file system path to the ChromeDriver |
 | geckodriver  | This allows you to select the location of geckodriver (Firefox driver). | The path to the bundled WebDriver, if available. | Key: `selenium.firefoxDriver` Value: file system path to the geckodriver |
 
 ### Binaries
 
-|   Field   |                                                         Details                                                         | Default |                                   Config File                                   |
-|-----------|-------------------------------------------------------------------------------------------------------------------------|---------|---------------------------------------------------------------------------------|
+| Field     | Details                                                                                                                 | Default | Config File                                                                     |
+| --------- | ----------------------------------------------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------------------------- |
 | Firefox   | This allows you to select the location of Firefox binary (for example, to use a version other than the system default). | (None)  | Key: `selenium.firefoxBinary` Value: file system path to the Firefox binary     |
 | PhantomJS | This allows you to select the location of PhantomJS binary.                                                             | (None)  | Key: `selenium.phantomJsBinary` Value: file system path to the PhantomJS binary |
 
@@ -31,7 +31,7 @@ More details about the bundled WebDrivers can be found on the overview page.
 
 ## See also
 
-|   |                                            |                                        |
-|---|--------------------------------------------|----------------------------------------|
-|   | [Selenium](/docs/desktop/addons/selenium/) | for an overview of the Selenium add-on |
-|   | [API](/docs/desktop/addons/selenium/api/)  | for an overview of the Selenium API    |
+|     |                                            |                                        |
+| --- | ------------------------------------------ | -------------------------------------- |
+|     | [Selenium](/docs/desktop/addons/selenium/) | for an overview of the Selenium add-on |
+|     | [API](/docs/desktop/addons/selenium/api/)  | for an overview of the Selenium API    |

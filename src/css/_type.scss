@@ -1,10 +1,8 @@
-
-
 body {
   color: var(--grey-medium);
-  font-family: 'Didact Gothic', sans-serif;
-  font-family: 'Arimo', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Didact Gothic", sans-serif;
+  font-family: "Arimo", sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   font-size: 16px;
   line-height: 1.6em;
@@ -15,8 +13,13 @@ body {
 @media screen and (max-width: 650px) {
 }
 
-h1, h2,h3,h4,h5,h6 {
-  font-family: 'Quicksand', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Quicksand", sans-serif;
   line-height: 1.3em;
 
   a {
@@ -24,46 +27,58 @@ h1, h2,h3,h4,h5,h6 {
   }
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0 0 10px 0;
 }
 
-h1, .as-h1 {
+h1,
+.as-h1 {
   font-size: 3.1rem;
 }
 
-h2, .as-h2 {
+h2,
+.as-h2 {
   font-size: 2.4rem;
 }
 
-h3, .as-h3 {
+h3,
+.as-h3 {
   font-size: 2.1rem;
   margin-bottom: 30px;
   color: var(--blue-dark);
 }
 
-h4, .as-h4 {
+h4,
+.as-h4 {
   font-size: 1.8333rem;
   margin-bottom: 30px;
   color: var(--blue-dark);
 }
 
-h5, .as-h5 {
+h5,
+.as-h5 {
   font-size: 1.5333rem;
   margin-bottom: 30px;
   color: var(--blue-dark);
-
 }
 
 .smaller-text {
   font-size: 0.8rem;
 }
-p, blockquote  {
+p,
+blockquote {
   margin-bottom: 20px;
 }
 
-p.small, .small-text {
-  font-size: 1.0rem;
+p.small,
+.small-text {
+  font-size: 1rem;
 }
 
 .text--blue {
@@ -79,7 +94,7 @@ p.small, .small-text {
 }
 
 .text--white {
-  color: white
+  color: white;
 }
 
 .text--orange {
@@ -90,49 +105,45 @@ p.small, .small-text {
   text-align: center;
 }
 
-
 li {
   line-height: 1.4;
 }
 
-
 ul {
   li::before {
-    content: "\2022"; 
+    content: "\2022";
     color: var(--blue-dark);
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1em; 
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
     margin-left: -1em;
   }
 }
 
 .no-list-style {
   li::before {
-    content: '';
+    content: "";
     display: none;
   }
 }
 
-
 nav {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
-nav li::before  {
-  content: '';
+nav li::before {
+  content: "";
 }
 
 pre {
   background: #eee;
-  padding:20px;
+  padding: 20px;
   overflow: scroll;
 }
 
-
-
 @media screen and (max-width: 650px) {
-  h1, .as-h1 {
+  h1,
+  .as-h1 {
     font-size: 2.8rem;
   }
 }

@@ -12,11 +12,11 @@ For example you could use notes to record details of extra tests that you need t
 Notes are added and changed using the [Add Note dialog](/docs/desktop/ui/dialogs/addnote/).
 
 Notes are flagged in the [History tab](/docs/desktop/ui/tabs/history/) with the
-![](/docs/desktop/images/16/172.png) icon.  
+![](/docs/desktop/images/16/172.png) icon.
 
 ## See also
 
-|   |                                           |                                       |
-|---|-------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
+|     |                                           |                                       |
+| --- | ----------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/) | provided by ZAP                       |

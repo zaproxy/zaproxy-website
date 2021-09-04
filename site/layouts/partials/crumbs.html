@@ -1,13 +1,10 @@
 <ol class="breadcrumbs">
-{{ range $index, $element := split .Permalink "/" }}
-    {{- $.Scratch.Add "path" $element }}
-    {{- if ne $element "" }}
-    <li>
-        {{- with $.Site.GetPage ( $.Scratch.Get "path") }}
-        <a href='{{ .Permalink }}'>{{ .Title }}</a>
-        {{- end }}
-    </li>
-    {{- $.Scratch.Add "path" "/" }}
+  {{ range $index, $element := split .Permalink "/" }} {{- $.Scratch.Add "path"
+  $element }} {{- if ne $element "" }}
+  <li>
+    {{- with $.Site.GetPage ( $.Scratch.Get "path") }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
     {{- end }}
-{{ end }}
+  </li>
+  {{- $.Scratch.Add "path" "/" }} {{- end }} {{ end }}
 </ol>

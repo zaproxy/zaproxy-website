@@ -7,6 +7,7 @@ title: Redirects and Resources
 This area contains redirects to the various communications platforms or resource URLs related to Zed Attack Proxy. As well as links to other ZAP resources.
 
 ### Redirects:
+
 - [Docker](/docker/)
 - [GitHub](/github/)
 - [Slack](/slack/)
@@ -15,6 +16,7 @@ This area contains redirects to the various communications platforms or resource
 - [IRC](/irc/)
 
 ### Resources:
+
 - [ZAP User Group](https://groups.google.com/forum/#!forum/zaproxy-users)
 - [ZAP Developers Group](https://groups.google.com/forum/#!forum/zaproxy-develop)
 - [ZAP Scripts Group](https://groups.google.com/forum/#!forum/zaproxy-scripts)

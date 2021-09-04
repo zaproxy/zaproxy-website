@@ -15,8 +15,8 @@ should be apparent in your web server logs.
 
 If someone is using ZAP to attack your site then there are 2 main questions:
 
-  * Do you have any evidence that your site might have been compromised?
-  * Has any approved security testing been performed on your site at any stage?
+- Do you have any evidence that your site might have been compromised?
+- Has any approved security testing been performed on your site at any stage?
 
 If there is no evidence of compromise and you have had your site security
 tested recently then there's probably not much to worry about.

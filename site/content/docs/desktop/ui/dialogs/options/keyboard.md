@@ -9,7 +9,6 @@ weight: 18
 
 This screen allows you to configure keyboard shortcuts for all of the ZAP menus.
 
-
 Clicking on any of the table rows will bring up a dialog box which allows you to change the keyboard shortcuts.
 
 ### 'Action' Cheatsheet
@@ -28,7 +27,7 @@ Clicking on this button will reset all of the shortcuts to their defaults.
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |

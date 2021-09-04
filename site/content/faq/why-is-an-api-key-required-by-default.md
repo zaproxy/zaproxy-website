@@ -15,16 +15,12 @@ screen](/docs/desktop/ui/dialogs/options/api/).
 
 You can also set the API key from the command line using an option like:
 
-    
-    
     -config api.key=change-me-9203935709
 
 The following is not recommended unless you are using ZAP in a completely isolated
 environment, as it allows malicious sites to access the ZAP API. However, you
 can disable it via the UI or via the command line option:
 
-    
-    
     -config api.disablekey=true
 
 By default ZAP will now also only allow connections from the local machine. To

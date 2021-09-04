@@ -1,5 +1,5 @@
 // Generate spacing for each size
-@each $size in 0 10 20 30 40 70  {
+@each $size in 0 10 20 30 40 70 {
   .p-#{$size} {
     padding: #{$size}px;
   }
@@ -8,14 +8,13 @@
     margin: #{$size}px;
   }
 
-
   .px-#{$size} {
     padding-left: #{$size}px;
-    padding-right:  #{$size}px;
+    padding-right: #{$size}px;
   }
   .mx-#{$size} {
     margin-left: #{$size}px;
-    margin-right:  #{$size}px;
+    margin-right: #{$size}px;
   }
 
   .py-#{$size} {

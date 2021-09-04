@@ -47,8 +47,8 @@ Alert tests are supported by the activeScan and passiveScan-wait jobs. These tes
     tests:
       - name: 'test one'                       # Name of the test, optional
         type: alert                            # Specifies that the test is of type 'alert'
-        action: passIfPresent/passIfAbsent     # String: The condition (presence/absence) of the alert, default: passIfAbsent  
-        scanRuleId:                            # Integer: The id of the scanRule which generates the alert, mandatory  
+        action: passIfPresent/passIfAbsent     # String: The condition (presence/absence) of the alert, default: passIfAbsent
+        scanRuleId:                            # Integer: The id of the scanRule which generates the alert, mandatory
         alertName:                             # String: The name of the alert generated, optional
         url: http://www.example.com/path       # String: The url of the request corresponding to the alert generated, optional
         method:                                # String: The method of the request corresponding to the alert generated, optional
@@ -59,5 +59,5 @@ Alert tests are supported by the activeScan and passiveScan-wait jobs. These tes
         risk:                                  # String: The risk of the alert, one of 'Informational', 'Low', 'Medium', 'High', optional
         otherInfo:                             # String: Additional information corresponding to the alert, optional
         onFail: 'info'                         # String: One of 'warn', 'error', 'info', mandatory
-  
+
 ```

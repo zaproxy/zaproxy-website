@@ -1,7 +1,7 @@
 on:
   schedule:
     # At 01:00.
-    - cron:  '0 1 * * *'
+    - cron: "0 1 * * *"
 
 jobs:
   zap_scan:
@@ -16,5 +16,5 @@ jobs:
         uses: zaproxy/action-baseline@v0.4.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          target: 'https://www.zaproxy.org/'
-          rules_file_name: '.github/workflows/rules.tsv'
+          target: "https://www.zaproxy.org/"
+          rules_file_name: ".github/workflows/rules.tsv"

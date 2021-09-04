@@ -22,7 +22,8 @@
   version: 11
 - id: alertReport
   name: Report alert generator
-  description: Allows you to generate reports for alerts you specify in pdf or odt
+  description:
+    Allows you to generate reports for alerts you specify in pdf or odt
     format
   author: Talsoft SRL
   status: beta
@@ -83,7 +84,8 @@
   version: 35
 - id: attacksurfacedetector
   name: Attack Surface Detector
-  description: The Attack Surface Detector analyzes web application source code to
+  description:
+    The Attack Surface Detector analyzes web application source code to
     generate endpoints that can be used for penetration testing.
   author: Secure Decisions (Matthew DeLetto)
   status: alpha
@@ -134,7 +136,8 @@
   version: 5
 - id: bruteforce
   name: Forced Browse
-  description: Forced browsing of files and directories using code from the OWASP
+  description:
+    Forced browsing of files and directories using code from the OWASP
     DirBuster tool
   author: ZAP Dev Team
   status: beta
@@ -165,7 +168,8 @@
   version: 4
 - id: codedx
   name: Code Dx Extension
-  description: Includes request and response data in XML reports and provides the
+  description:
+    Includes request and response data in XML reports and provides the
     ability to upload reports directly to a Code Dx server
   author: Code Dx, Inc.
   status: alpha
@@ -179,7 +183,7 @@
   description: A common library, for use by other add-ons.
   author: ZAP Dev Team
   status: release
-  infoUrl: ''
+  infoUrl: ""
   repoUrl: https://github.com/zaproxy/zap-extensions/
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.4.0/commonlib-release-1.4.0.zap
   date: 2021-06-23
@@ -196,7 +200,8 @@
   version: 10
 - id: custompayloads
   name: Custom Payloads
-  description: Ability to add, edit or remove payloads that are used i.e. by active
+  description:
+    Ability to add, edit or remove payloads that are used i.e. by active
     scanners
   author: ZAP Dev Team
   status: alpha
@@ -217,7 +222,8 @@
   version: 6
 - id: diff
   name: Diff
-  description: Displays a dialog showing the differences between 2 requests or responses.
+  description:
+    Displays a dialog showing the differences between 2 requests or responses.
     It uses diffutils and diff_match_patch
   author: ZAP Dev Team
   status: beta
@@ -248,7 +254,8 @@
   version: 3
 - id: directorylistv2_3_lc
   name: Directory List v2.3 LC
-  description: Lists of lower case directory names to be used with "Forced Browse"
+  description:
+    Lists of lower case directory names to be used with "Forced Browse"
     add-on.
   author: ZAP Dev Team
   status: release
@@ -269,7 +276,8 @@
   version: 10
 - id: encoder
   name: Encoder
-  description: Adds encode/decode/hash dialog and support for scripted processors
+  description:
+    Adds encode/decode/hash dialog and support for scripted processors
     as well
   author: ZAP Dev Team
   status: beta
@@ -280,7 +288,8 @@
   version: 0.5.0
 - id: exportreport
   name: Export Report
-  description: Report Export module that allows users to customize content and export
+  description:
+    Report Export module that allows users to customize content and export
     in a desired format.
   author: Goran Sarenkapa - JordanGS
   status: alpha
@@ -291,7 +300,8 @@
   version: 7
 - id: formhandler
   name: Form Handler
-  description: This Form Handler Add-on allows a user to define field names and values
+  description:
+    This Form Handler Add-on allows a user to define field names and values
     to be used in a form's fields. Fields can be added, modified, enabled, and deleted
     for use in form fields.
   author: ZAP Dev Team
@@ -323,7 +333,8 @@
   version: 7
 - id: fuzzdboffensive
   name: FuzzDB Offensive
-  description: FuzzDB web backdoors and attack files which can be used with the ZAP
+  description:
+    FuzzDB web backdoors and attack files which can be used with the ZAP
     fuzzer or for manual penetration testing
   author: ZAP Dev Team
   status: release
@@ -347,7 +358,7 @@
   description: Provides the GraalVM JavaScript engine for ZAP scripting.
   author: ZAP Dev Team
   status: alpha
-  infoUrl: ''
+  infoUrl: ""
   repoUrl: https://github.com/zaproxy/zap-extensions/
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.1.0/graaljs-alpha-0.1.0.zap
   date: 2020-11-17
@@ -387,8 +398,8 @@
   description: Bosnian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_bs_BA-alpha-9.zap
   date: 2018-02-08
   version: 9
@@ -397,8 +408,8 @@
   description: Spanish version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_es_ES-release-9.zap
   date: 2018-02-08
   version: 9
@@ -407,8 +418,8 @@
   description: Filipino version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_fil_PH-alpha-2.zap
   date: 2018-02-08
   version: 2
@@ -417,8 +428,8 @@
   description: French version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_fr_FR-alpha-9.zap
   date: 2018-02-08
   version: 9
@@ -427,8 +438,8 @@
   description: Indonesian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: beta
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_id_ID-beta-2.zap
   date: 2018-02-08
   version: 2
@@ -437,8 +448,8 @@
   description: Japanese version of the ZAP help file.
   author: ZAP Crowdin Team
   status: beta
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_ja_JP-beta-9.zap
   date: 2018-02-08
   version: 9
@@ -447,8 +458,8 @@
   description: Portuguese, Brazilian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_pt_BR-release-10.zap
   date: 2018-02-08
   version: 10
@@ -457,8 +468,8 @@
   description: Turkish version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_tr_TR-release-1.zap
   date: 2018-02-08
   version: 1
@@ -467,8 +478,8 @@
   description: Chinese Simplified version of the ZAP help file.
   author: ZAP Crowdin Team
   status: beta
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_zh_CN-beta-2.zap
   date: 2018-02-08
   version: 2
@@ -514,7 +525,8 @@
   version: 2
 - id: importLogFiles
   name: Log File Importer
-  description: Allows you to import log files from ModSecurity and files previously
+  description:
+    Allows you to import log files from ModSecurity and files previously
     exported from ZAP
   author: ZAP Dev Team
   status: alpha
@@ -525,7 +537,8 @@
   version: 4
 - id: importurls
   name: Import files containing URLs
-  description: Adds an option to import a file of URLs. The file must be plain text
+  description:
+    Adds an option to import a file of URLs. The file must be plain text
     with one URL per line.
   author: ZAP Dev Team
   status: beta
@@ -536,7 +549,8 @@
   version: 7
 - id: invoke
   name: Invoke Applications
-  description: Invoke external applications passing context related information such
+  description:
+    Invoke external applications passing context related information such
     as URLs and parameters
   author: ZAP Dev Team
   status: beta
@@ -570,7 +584,7 @@
   description: Detect JWT requests and scan them to find related vulnerabilities
   author: KSASAN preetkaran20@gmail.com
   status: alpha
-  infoUrl: ''
+  infoUrl: ""
   repoUrl: https://github.com/SasanLabs/owasp-zap-jwt-addon/
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/jwt-alpha-1.0.1.zap
   date: 2020-12-22
@@ -628,7 +642,8 @@
 - id: openapi
   name: OpenAPI Support
   description: Imports and spiders OpenAPI definitions.
-  author: ZAP Dev Team plus Joanna Bona, Nathalie Bouchahine, Artur Grzesica, Mohammad
+  author:
+    ZAP Dev Team plus Joanna Bona, Nathalie Bouchahine, Artur Grzesica, Mohammad
     Kamar, Markus Kiss, Michal Materniak, Marcin Spiewak, and SDA SE Open Industry
     Solutions
   status: beta
@@ -639,7 +654,7 @@
   version: 21
 - id: plugnhack
   name: Plug-n-Hack Configuration
-  description: 'Supports the Mozilla Plug-n-Hack standard: https://developer.mozilla.org/en-US/docs/Plug-n-Hack.'
+  description: "Supports the Mozilla Plug-n-Hack standard: https://developer.mozilla.org/en-US/docs/Plug-n-Hack."
   author: ZAP Dev Team
   status: beta
   infoUrl: /docs/desktop/addons/plug-n-hack/
@@ -702,8 +717,8 @@
   description: Finds reflected parameters
   author: Caleb Kinney
   status: alpha
-  infoUrl: ''
-  repoUrl: ''
+  infoUrl: ""
+  repoUrl: ""
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/reflect-alpha-0.0.11.zap
   date: 2021-02-19
   version: 0.0.11
@@ -859,7 +874,8 @@
   version: 8
 - id: spiderAjax
   name: Ajax Spider
-  description: Allows you to spider sites that make heavy use of JavaScript using
+  description:
+    Allows you to spider sites that make heavy use of JavaScript using
     Crawljax
   author: ZAP Dev Team
   status: release
@@ -920,7 +936,8 @@
   version: 4
 - id: tokengen
   name: Token Generation and Analysis
-  description: Allows you to generate and analyze pseudo random tokens, such as those
+  description:
+    Allows you to generate and analyze pseudo random tokens, such as those
     used for session handling or CSRF protection
   author: ZAP Dev Team
   status: beta
@@ -951,7 +968,7 @@
   version: 2
 - id: wappalyzer
   name: Wappalyzer - Technology Detection
-  description: 'Technology detection using Wappalyzer: wappalyzer.com'
+  description: "Technology detection using Wappalyzer: wappalyzer.com"
   author: ZAP Dev Team
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/

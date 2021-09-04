@@ -1,21 +1,21 @@
 column_1:
   - items:
-    - title: Linux Repos
-      info:
-        - The official [ZAP Linux Repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=owasp-zap)
-    - title: Snapcraft
-      info:
-        - On Linux systems you can use [Snapcraft](https://snapcraft.io/zaproxy).
-        - "To install: `snap install zaproxy --classic`"
-        - "To run: `zaproxy`"
+      - title: Linux Repos
+        info:
+          - The official [ZAP Linux Repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=owasp-zap)
+      - title: Snapcraft
+        info:
+          - On Linux systems you can use [Snapcraft](https://snapcraft.io/zaproxy).
+          - "To install: `snap install zaproxy --classic`"
+          - "To run: `zaproxy`"
 column_2:
   - items:
-    - title: Homebrew Cask
-      info:
-        - On Mac OS X you can also install ZAP using [Homebrew Cask](https://formulae.brew.sh/cask/owasp-zap)
-        - "To install: `brew install --cask owasp-zap`"
-    - title: Flathub
-      info:
-        - On Linux systems you can also use [Flathub](https://flathub.org/apps/details/org.zaproxy.ZAP).
-        - "To install: `flatpak install flathub org.zaproxy.ZAP`"
-        - "To run: `flatpak run org.zaproxy.ZAP`"
+      - title: Homebrew Cask
+        info:
+          - On Mac OS X you can also install ZAP using [Homebrew Cask](https://formulae.brew.sh/cask/owasp-zap)
+          - "To install: `brew install --cask owasp-zap`"
+      - title: Flathub
+        info:
+          - On Linux systems you can also use [Flathub](https://flathub.org/apps/details/org.zaproxy.ZAP).
+          - "To install: `flatpak install flathub org.zaproxy.ZAP`"
+          - "To run: `flatpak run org.zaproxy.ZAP`"

@@ -8,12 +8,11 @@ weight: 20
 # Options Local Proxies screen
 
 This screen allows you to configure the addresses and ports
-on which ZAP accepts incoming connections.  
+on which ZAP accepts incoming connections.
 
 ## Local Proxy
 
 By default ZAP will listen on one local address and port, and these are the address and port that you must configure your browser to use as a proxy.
-
 
 ### Address
 
@@ -32,8 +31,9 @@ ZAP will obtain the public IP address from
 [AWS EC2
 instance's metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#working-with-ip-addresses).  
 ZAP should be started with this option enabled if access to the API, through the public IP address, is required:
+
 > zap.sh -daemon -port 8080 -host 0.0.0.0 -config proxy.behindnat=true
-Also, the [API](/docs/desktop/ui/dialogs/options/api/) needs to be configured to accept external IP addresses (i.e. the IP address from where ZAP is being accessed).
+> Also, the [API](/docs/desktop/ui/dialogs/options/api/) needs to be configured to accept external IP addresses (i.e. the IP address from where ZAP is being accessed).
 
 ### Remove Unsupported Encodings
 
@@ -43,8 +43,8 @@ The messages encoded with unsupported encodings will not be correctly scanned (e
 
 ### Security Protocols
 
-Allows to choose the SSL/TLS versions enabled for incoming connections (for example, from browsers). At least one version must be enabled, versions unsupported by the JRE will be unselected and disabled.   
-The option SSLv2Hello must be selected in conjunction with at least one SSL/TLS version.   
+Allows to choose the SSL/TLS versions enabled for incoming connections (for example, from browsers). At least one version must be enabled, versions unsupported by the JRE will be unselected and disabled.  
+The option SSLv2Hello must be selected in conjunction with at least one SSL/TLS version.  
 The security options apply to both the main and all of the additional proxies.
 
 ## Additional Proxies
@@ -64,7 +64,7 @@ HTTPS traffic to a local proxy listening on `192.168.0.14:8080`:
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |

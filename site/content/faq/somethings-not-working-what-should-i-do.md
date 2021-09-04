@@ -10,7 +10,7 @@ bug or a misunderstanding of how ZAP works.
 
 The following steps may well help:
 
-###  Check for updates
+### Check for updates
 
 Click on the 'Manage Add-ons' button on the toolbar and then click on the
 'Check for updates' button.
@@ -24,7 +24,7 @@ then you should install them.
 We are constantly improving ZAP and the add-ons and newer versions may fix the
 problems that you are experiencing.
 
-###  Check the ZAP User Guide
+### Check the ZAP User Guide
 
 ZAP includes a User Guide that should cover all of the functionality
 available.
@@ -35,7 +35,7 @@ individual dialogs or via the F1 key (which is context dependant).
 
 The User Guide is also available [online](/docs/desktop/).
 
-###  Check the log file
+### Check the log file
 
 Look in the zap.log file to see if any errors have been logged. This is either
 in the directory you specified via the '-dir' [command line](/docs/desktop/cmdline/) option or in
@@ -44,7 +44,7 @@ the [default directory](/faq/what-is-the-default-directory-that-zap-uses/) if yo
 If there are error messages that appear to indicate a Java memory problem then
 try increasing the memory available via the [JVM options](/docs/desktop/ui/dialogs/options/jvm/).
 
-###  Ask on the ZAP User Group
+### Ask on the ZAP User Group
 
 The [ZAP user group](https://groups.google.com/group/zaproxy-users) is a great
 place to ask questions about using ZAP. All of the ZAP developers are on the
@@ -53,17 +53,17 @@ you.
 
 Be aware that lots of webapps do weird and wonderful things, often in bizarre ways. We can't second guess them, so when asking for help you'll need to give us sanitized examples to help us figure out what's going on.
 
-###  Ask on irc
+### Ask on irc
 
 Many of ZAP contributors hang out on the Libera Chat [#zaproxy](https://web.libera.chat/#zaproxy) channel which you can access via that link or your favourite irc client.
 
-###  Ask on twitter
+### Ask on twitter
 
 You can ask [@psiinon](https://twitter.com/psiinon) short questions directly
 on twitter, although whether he's online will be timezone and holiday
 dependant.
 
-###  Raise an issue
+### Raise an issue
 
 You can raise issues (bugs or new features) at the [issue
 tracker](https://github.com/zaproxy/zaproxy/issues/new).

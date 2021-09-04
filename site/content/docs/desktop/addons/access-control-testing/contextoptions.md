@@ -15,16 +15,16 @@ structure of URLs. So, when configuring the access rules, only 1 rule needs to b
 subtree, while for the other nodes rules are inferred. Three possible values can be set for any node in Context for
 each User:
 
-* **Allowed** - The rule for the node is *explicitly* set as Allowed
-* **Denied** - The rule for the node is *explicitly* set as Denied
-* **Inherited** - The rule for the node is inferred based on the closest parent with an explicitly set rule
+- **Allowed** - The rule for the node is _explicitly_ set as Allowed
+- **Denied** - The rule for the node is _explicitly_ set as Denied
+- **Inherited** - The rule for the node is inferred based on the closest parent with an explicitly set rule
 
-By default, the rules for any node has an *Inherited* value and the root node has a value of *Unknown* .
+By default, the rules for any node has an _Inherited_ value and the root node has a value of _Unknown_ .
 Thus, for any node without a parent with an explicitly configured rule, the inferred rule will default to
-*Unknown*.
+_Unknown_.
 
 ## See also
 
-|   |                                                                                 |                                                    |
-|---|---------------------------------------------------------------------------------|----------------------------------------------------|
-|   | [Access Control Testing concepts](/docs/desktop/addons/access-control-testing/) | for a short introduction to Access Control Testing |
+|     |                                                                                 |                                                    |
+| --- | ------------------------------------------------------------------------------- | -------------------------------------------------- |
+|     | [Access Control Testing concepts](/docs/desktop/addons/access-control-testing/) | for a short introduction to Access Control Testing |

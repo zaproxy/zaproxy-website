@@ -6,7 +6,7 @@ type: userguide
 
 # The File menu
 
-This menu handles the current session. By default the following menu items will be present:  
+This menu handles the current session. By default the following menu items will be present:
 
 ### New Session
 
@@ -21,14 +21,14 @@ Opening a session without saving the current session will loose all of the data 
 
 ### Persist Session...
 
-This persists the current session.   
+This persists the current session.  
 While the session is always stored in a database on disk, it will be lost when ZAP is stopped unless it has been persisted.  
 You only need to persist it once - after that all changes will be saved.
 
 ### Snapshot Session As...
 
 This saves a snapshot of a session that has already been persisted.  
-It will suggest the same filename as the persisted session with a date-time string appended to it, and allow the user to set whatever name they choose.  
+It will suggest the same filename as the persisted session with a date-time string appended to it, and allow the user to set whatever name they choose.
 
 ### Session Properties...
 
@@ -64,7 +64,7 @@ Note that [add-ons](/docs/desktop/start/features/addons/) can add additional men
 
 ## See also
 
-|   |                                                |                                       |
-|---|------------------------------------------------|---------------------------------------|
-|   | [The top level menu](/docs/desktop/ui/tlmenu/) |                                       |
-|   | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |
+|     |                                                |                                       |
+| --- | ---------------------------------------------- | ------------------------------------- |
+|     | [The top level menu](/docs/desktop/ui/tlmenu/) |                                       |
+|     | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |

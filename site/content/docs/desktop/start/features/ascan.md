@@ -10,7 +10,7 @@ weight: 1
 Active scanning attempts to find potential vulnerabilities by using
 known attacks against the selected targets.
 
-Active scanning is an attack on those targets.   
+Active scanning is an attack on those targets.  
 You should NOT use it on web applications that you do not own.
 
 In order to facilitate identifying ZAP traffic and Web Application Firewall exceptions, ZAP is accompanied
@@ -29,24 +29,24 @@ The rules that run are configured via [Scan Policies](/docs/desktop/start/featur
 
 ## Accessed via
 
-|   |                                                 |                                               |
-|---|-------------------------------------------------|-----------------------------------------------|
-|   | [Active Scan tab](/docs/desktop/ui/tabs/ascan/) | 'New Scan' button                             |
-|   | [Sites tab](/docs/desktop/ui/tabs/sites/)       | 'Attack/Active Scan...' right click menu item |
-|   | [History tab](/docs/desktop/ui/tabs/history/)   | 'Attack/Active Scan...' right click menu item |
+|     |                                                 |                                               |
+| --- | ----------------------------------------------- | --------------------------------------------- |
+|     | [Active Scan tab](/docs/desktop/ui/tabs/ascan/) | 'New Scan' button                             |
+|     | [Sites tab](/docs/desktop/ui/tabs/sites/)       | 'Attack/Active Scan...' right click menu item |
+|     | [History tab](/docs/desktop/ui/tabs/history/)   | 'Attack/Active Scan...' right click menu item |
 
 ## See also
 
-|   |                                                                       |                                              |
-|---|-----------------------------------------------------------------------|----------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface        |
-|   | [Features](/docs/desktop/start/features/)                             | provided by ZAP                              |
-|   | [Passive scanning](/docs/desktop/start/features/pscan/)               |                                              |
-|   | [Scan Policy Manager Dialog](/docs/desktop/ui/dialogs/scanpolicymgr/) | which allows you to manage the scan policies |
-|   | [Scanner Rules](/docs/desktop/start/checks/)                          | supported by default                         |
+|     |                                                                       |                                              |
+| --- | --------------------------------------------------------------------- | -------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface        |
+|     | [Features](/docs/desktop/start/features/)                             | provided by ZAP                              |
+|     | [Passive scanning](/docs/desktop/start/features/pscan/)               |                                              |
+|     | [Scan Policy Manager Dialog](/docs/desktop/ui/dialogs/scanpolicymgr/) | which allows you to manage the scan policies |
+|     | [Scanner Rules](/docs/desktop/start/checks/)                          | supported by default                         |
 
 ## Official Videos
 
-|   |                                                                                              |
-|---|----------------------------------------------------------------------------------------------|
-|   | [ZAP In Ten: Active Scanning](https://play.sonatype.com/watch/ZcEfSihgQSzuthJi4qEeW3) (9:47) |
+|     |                                                                                              |
+| --- | -------------------------------------------------------------------------------------------- |
+|     | [ZAP In Ten: Active Scanning](https://play.sonatype.com/watch/ZcEfSihgQSzuthJi4qEeW3) (9:47) |

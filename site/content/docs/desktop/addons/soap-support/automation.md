@@ -7,7 +7,7 @@ weight: 1
 
 # SOAP Automation Framework Support
 
-This add-on supports the Automation Framework.   
+This add-on supports the Automation Framework.
 
 The add-on will import WSDL files containing SOAP endpoints if they are found while spidering but adding them explicitly via a URL or local file is recommended if they are available.
 

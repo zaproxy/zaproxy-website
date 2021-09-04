@@ -29,37 +29,37 @@ PUT etc) and the correct parameter names. If you can't find it then there is a
 problem exploring your application. This could be the way you are using ZAP or
 a problem with ZAP itself and is out of scope for this FAQ.
 
-  1. Right click the relevant URL and select 'Attack / Active Scan...'
+1. Right click the relevant URL and select 'Attack / Active Scan...'
 
-  2. Check the 'Show advanced options' box if it is not already selected.
+2. Check the 'Show advanced options' box if it is not already selected.
 
-  3. Select the 'Policy' tab.
+3. Select the 'Policy' tab.
 
-  4. Select: 'Apply "OFF" Threshold to "All" Rules' and click 'Go'.
+4. Select: 'Apply "OFF" Threshold to "All" Rules' and click 'Go'.
 
-  5. Find the rule you want to test in the relevant category and change its Threshold to 'Default' by clicking on it in the table.
+5. Find the rule you want to test in the relevant category and change its Threshold to 'Default' by clicking on it in the table.
 
-  6. Click 'Start Scan'. You should now see one or more requests in the 'Active Scan' tab.
+6. Click 'Start Scan'. You should now see one or more requests in the 'Active Scan' tab.
 
-  7. Select all of the requests in the 'Active Scan' tab, e.g. by clicking the first, then clicking the last with the shift key pressed.
+7. Select all of the requests in the 'Active Scan' tab, e.g. by clicking the first, then clicking the last with the shift key pressed.
 
-  8. Right click and select 'Add to Zest Script -> New Zest Script...'
+8. Right click and select 'Add to Zest Script -> New Zest Script...'
 
-  9. Give the script a suitable title and 'Save'. You should now see the new script in the 'Scripts' tab and the 'Script Console' tab.
+9. Give the script a suitable title and 'Save'. You should now see the new script in the 'Scripts' tab and the 'Script Console' tab.
 
-  10. Right click the top panel in the 'Script Console' tab and select 'Select All'.
+10. Right click the top panel in the 'Script Console' tab and select 'Select All'.
 
-  11. Right click again and select 'Copy'.
+11. Right click again and select 'Copy'.
 
 You can now paste this script into an issue, email, ZAP group post etc.
 
 If the script contains sensitive information then prior to performing 'Select
 All':
 
-  1. Find the relevant strings in the Zest requests or responses
+1. Find the relevant strings in the Zest requests or responses
 
-  2. Highlight them
+2. Highlight them
 
-  3. Right click and select 'Redact text...'
+3. Right click and select 'Redact text...'
 
-  4. Press 'Save'. If you leave the default 'Apply to all current requests' box checked then you will only need to do this once per string.
+4. Press 'Save'. If you leave the default 'Apply to all current requests' box checked then you will only need to do this once per string.

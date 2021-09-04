@@ -1,51 +1,43 @@
-{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
-
-{{ define "main" }}
-{{ $section := .Site.GetPage "section" .Section }}
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }} {{ define
+"main" }} {{ $section := .Site.GetPage "section" .Section }}
 <section class="bolt-header">
-    <div class="wrapper py-20">
-      <h1 class="text--white">{{ .Title }}</h1>
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
   </div>
 </section>
 <section class="wrapper py-70" data-kind="{{ .Kind }}">
   <article>
+    <h5>{{ .Params.description }}</h5>
 
-<h5>{{ .Params.description }}</h5>
+    <h2>Platinum</h2>
+    <div>{{ .Params.desc_platinum }}</div>
 
-<h2>Platinum</h2>
-<div>{{ .Params.desc_platinum }}</div>
+    {{ range $supporter := $.Site.Data.supporters.platinum }}
+    <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a
+    >&nbsp;&nbsp; {{ end }} <br /><br />
 
-{{ range $supporter := $.Site.Data.supporters.platinum }}
-  <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
-{{ end }}
-<br/><br/>
+    <h2>Gold</h2>
+    <div>{{ .Params.desc_gold }}</div>
 
-<h2>Gold</h2>
-<div>{{ .Params.desc_gold }}</div>
+    {{ range $supporter := $.Site.Data.supporters.gold }}
+    <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a
+    >&nbsp;&nbsp; {{ end }} <br /><br />
 
-{{ range $supporter := $.Site.Data.supporters.gold }}
-  <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
-{{ end }}
-<br/><br/>
+    <h2>Silver</h2>
+    <div>{{ .Params.desc_silver }}</div>
 
-<h2>Silver</h2>
-<div>{{ .Params.desc_silver }}</div>
+    {{ range $supporter := $.Site.Data.supporters.silver }}
+    <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a
+    >&nbsp;&nbsp; {{ end }} <br /><br />
 
-{{ range $supporter := $.Site.Data.supporters.silver }}
-  <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
-{{ end }}
-<br/><br/>
+    <h2>Bronze</h2>
+    <div>{{ .Params.desc_bronze }}</div>
 
-<h2>Bronze</h2>
-<div>{{ .Params.desc_bronze }}</div>
-
-<ul>
-{{ range $supporter := $.Site.Data.supporters.bronze }}
-    <li><a href="{{ $supporter.link }}">{{ $supporter.name }}</a></li>
-{{ end }}
-</ul>
-
+    <ul>
+      {{ range $supporter := $.Site.Data.supporters.bronze }}
+      <li><a href="{{ $supporter.link }}">{{ $supporter.name }}</a></li>
+      {{ end }}
+    </ul>
   </article>
 </section>
 {{ end }}
-

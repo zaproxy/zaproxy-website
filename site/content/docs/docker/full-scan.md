@@ -1,9 +1,9 @@
 ---
 title: "ZAP - Full Scan"
-tags: 
-- docker
-- guide
-- packaged_scan
+tags:
+  - docker
+  - guide
+  - packaged_scan
 type: docker
 ---
 
@@ -17,6 +17,7 @@ By default it reports all alerts as WARNings but you can specify a config file w
 The configuration works in a very similar way as the [Baseline Scan](../baseline-scan/) so see the Baseline page for more details.
 
 ### Usage
+
 ```
 Usage: zap-full-scan.py -t <target> [options]
     -t target         target URL including the protocol, eg https://www.example.com
@@ -33,7 +34,7 @@ Options:
     -a                include the alpha active and passive scan rules as well
     -d                show debug messages
     -P                specify listen port
-    -D                delay in seconds to wait for passive scanning 
+    -D                delay in seconds to wait for passive scanning
     -i                default rules not in the config file to INFO
     -I                do not return failure on warning (post 2.9.0)
     -j                use the Ajax spider in addition to the traditional one
@@ -46,11 +47,15 @@ Options:
     -z zap_options    ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"
     --hook            path to python file that define your custom hooks
 ```
+
 To run it with no 'file' params use:
+
 ```
 docker run -t owasp/zap2docker-stable zap-full-scan.py -t https://www.example.com
 ```
+
 If you use 'file' params then you need to mount the directory those file are in or will be generated in, eg
+
 ```
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py \
     -t https://www.example.com -g gen.conf -r testreport.html
@@ -59,7 +64,9 @@ docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py \
 Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
 
 ### Scan Hooks
+
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
 
 ### Source Code
+
 The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/main/docker](https://github.com/zaproxy/zaproxy/tree/main/docker).

@@ -22,6 +22,6 @@ This will copy the selected string to the clipboard.
 
 ## See also
 
-|   |                                  |                                       |
-|---|----------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |
+|     |                                  |                                       |
+| --- | -------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |

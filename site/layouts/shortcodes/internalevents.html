@@ -1,18 +1,23 @@
 <table data-sort-filter class="table market-table">
-    <thead  align="left">
+  <thead align="left">
     <tr>
-        <th style="width: 30%">Event</th>
-        <th style="width: 70%">Publisher / Link</th>
+      <th style="width: 30%">Event</th>
+      <th style="width: 70%">Publisher / Link</th>
     </tr>
-    </thead>
-    {{ range sort $.Site.Data.events "event" }}
-    <tr>
-        <td >
-            {{ .event }}
-        </td>
-        <td>
-            <a class="no-border" title="{{ .publisher }}" href="{{ .link }}" target="_blank" rel="noopener noreferrer">{{ .publisher }}</a>
-        </td>
-    </tr>
-    {{ end }}
+  </thead>
+  {{ range sort $.Site.Data.events "event" }}
+  <tr>
+    <td>{{ .event }}</td>
+    <td>
+      <a
+        class="no-border"
+        title="{{ .publisher }}"
+        href="{{ .link }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ .publisher }}</a
+      >
+    </td>
+  </tr>
+  {{ end }}
 </table>

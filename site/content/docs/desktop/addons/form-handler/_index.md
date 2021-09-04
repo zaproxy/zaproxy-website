@@ -39,13 +39,12 @@ for the user to provide field information.
 
 Please take note of the following when adding a new field:
 
-* A field name must be provided.
-* The field name cannot already exist in the table or a warning error will occur.
-* The field name supplied to the Form Handler must match the field ID on the form that you wish to define.
-* The field name is not case sensitive.
-* A value does not have to be provided. This will result in an empty string being used.
-* The value field is case sensitive, and will be seen in the POST.
-
+- A field name must be provided.
+- The field name cannot already exist in the table or a warning error will occur.
+- The field name supplied to the Form Handler must match the field ID on the form that you wish to define.
+- The field name is not case sensitive.
+- A value does not have to be provided. This will result in an empty string being used.
+- The value field is case sensitive, and will be seen in the POST.
 
 ### Modifying An Existing Field
 
@@ -60,8 +59,8 @@ common constraint when modifying a field is that the name cannot be the same as 
 ### Removing Fields
 
 The user can remove fields at any time. To do so simply select the field that you wish to remove and
-click on the **Remove** button. *Please note that you will be prompted to confirm removal before
-proceeding unless the **Remove without Confirmation** box is checked.*
+click on the **Remove** button. _Please note that you will be prompted to confirm removal before
+proceeding unless the **Remove without Confirmation** box is checked._
 
 ## Form Fields That Are Not Defined
 

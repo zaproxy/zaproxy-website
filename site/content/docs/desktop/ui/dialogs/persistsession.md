@@ -35,7 +35,7 @@ You can change your decision via the [Options database](/docs/desktop/ui/dialogs
 
 ## See also
 
-|   |                                      |                                       |
-|---|--------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
-|   | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |
+|     |                                      |                                       |
+| --- | ------------------------------------ | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
+|     | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |

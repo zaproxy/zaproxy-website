@@ -16,13 +16,13 @@ nodes of the "Sites" tab, not yet (manually) accessed, are selected.
 
 So if you access `http://www.example.com/images/123/456.jpg` then ZAP will
 fill out any 'missing' nodes in the tree, e.g. the 'images' and '123' nodes:
- 
+
 ```text
 [+] http://www.example.com
    [+] images
        [+] 123
            [ ] 456.jpg
-```    
+```
 
 The history tab may well show something like:
 

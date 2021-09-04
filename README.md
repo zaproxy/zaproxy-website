@@ -1,9 +1,11 @@
 # ZAP Website
 
 ## Development
-To work on the website you'll need to have either node.js or Docker installed. In your development environment  `npm run preview` will start up a webpack-dev-server on port 3000 for development which will hot-reload the site as file changes are detected.
+
+To work on the website you'll need to have either node.js or Docker installed. In your development environment `npm run preview` will start up a webpack-dev-server on port 3000 for development which will hot-reload the site as file changes are detected.
 
 ### Docker
+
 The suggested setup for development is using the Docker.
 
 ```sh
@@ -16,6 +18,7 @@ docker run -it -v "$(pwd)/site:/app/site" \
 ```
 
 ### Dependencies
+
 For development, the site heavily depends on node.js for utilities that build the front-end CSS & JavaScript. The entrypoint for modifying the site JavaScript is `src/index.js` which gets transpiled using babel & packed up with webpack packages.
 
 ```sh
@@ -39,9 +42,11 @@ git push origin staging
 ```
 
 ## Hugo
-*Generically speaking, the term post & page can be used interchangeably, the exception is when content types are defined (`type: post`)*
+
+_Generically speaking, the term post & page can be used interchangeably, the exception is when content types are defined (`type: post`)_
 
 ### Structure
+
 https://gohugo.io/getting-started/directory-structure/
 
 ```
@@ -59,16 +64,18 @@ https://gohugo.io/getting-started/directory-structure/
 ```
 
 #### Content
-For adding & modifying content the place to be is  `site/content/`. Content is written in the form of markdown files with YAML headers including details about the post such as title, date & layout. The name of the file is tranformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. Additionally, any folder structure you create in that directory will be reflected in the sites' url heirarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`. 
 
-**Sample**  
+For adding & modifying content the place to be is `site/content/`. Content is written in the form of markdown files with YAML headers including details about the post such as title, date & layout. The name of the file is tranformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. Additionally, any folder structure you create in that directory will be reflected in the sites' url heirarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`.
+
+**Sample**
+
 ```markdown
 ---
 type: page
 title: Get Involved
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et dui ligula. 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et dui ligula.
 Donec semper ex at molestie scelerisque. In sodales bibendum leo, vitae porttitor
 est viverra at. Phasellus tincidunt enim ac rutrum convallis. Duis at tellus a
 erat consequat fringilla. Ut augue leo, blandit vel d
@@ -92,11 +99,12 @@ hugo new blog/$(date -v +7d '+%Y-%m-%d')-learning-zap-api/index.md
 For keeping content organized you also have the option of encapsulating the content of a post in a directory. If a post has a number of images or other assets related to it, it is much cleaner to include those assets with the post instead of putting them all in the assets directory. For example instead of having `site/content/download.md`, you could have `site/content/download/index.md` & all the post's related images would also live in that same `download` directory.
 
 ##### New Content
+
 For adding new categories of content such as addons or wiki entries follow the pattern below using addons as an example
 
 - Create the content directory `mkdir -p site/content/addons/{images,icons}`
-- If there IS NOT  a lot of media within that section, copy images into the images directory
-- If the content IS media heavy, insteading of creating a single markdown file per post, create a directory with the post name 
+- If there IS NOT a lot of media within that section, copy images into the images directory
+- If the content IS media heavy, insteading of creating a single markdown file per post, create a directory with the post name
   - `site/content/addons/active-scan-rules/images/`
 - If there is sub pages of content, then you will also need to create the directories that reflect the content structure
   - For example for Access Control Context Options you would use one of the structures depending on the depth of the content
@@ -104,8 +112,8 @@ For adding new categories of content such as addons or wiki entries follow the p
     - `site/content/addons/access-control/context-options.md`
 - When you create entries that, include a type in the header
 
-
 ###### Sample
+
 `site/content/addons/active-scan-rules.md`
 
 ```
@@ -113,14 +121,15 @@ For adding new categories of content such as addons or wiki entries follow the p
 title: "Active Scan Rules"
 type: addon
 status: alpha
-icon: 
+icon:
 ---
 ```
 
 #### Layouts
-For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
 
-For generic  posts, the lookup resolution works great, but sometimes you have posts that requires custom layouts, such as the downloads page. In those cases, you can specifiy the layout in the content markdown file & it will lookup the template.
+For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`.
+
+For generic posts, the lookup resolution works great, but sometimes you have posts that requires custom layouts, such as the downloads page. In those cases, you can specifiy the layout in the content markdown file & it will lookup the template.
 
 This is what `site/content/download.md` currently looks like which resolves to the template found `site/layouts/page/download.html`.
 
@@ -134,45 +143,52 @@ layout: download
 - https://gohugo.io/templates/lookup-order/
 
 #### Data
+
 Data that is shared across the site lives in `site/data/`. For example, a list of all the site authors is an example of a piece of data you would reference across numerous places on the site. You can create `site/data/authors.yaml`.
 
 ```yaml
 ---
-- name: 'Simon Bennets'
-  picture: 'https://pbs.twimg.com/profile_images/2186782633/simonbennetts2_400x400.jpg'
-  twitter: '@psiinon'
+- name: "Simon Bennets"
+  picture: "https://pbs.twimg.com/profile_images/2186782633/simonbennetts2_400x400.jpg"
+  twitter: "@psiinon"
   is_core: true
 
-- name: 'David Scrobonia'
-  picture: 'https://pbs.twimg.com/profile_images/1132029219876347904/FYA3rHRq_400x400.png'
-  twitter: '@david_scrobonia'
+- name: "David Scrobonia"
+  picture: "https://pbs.twimg.com/profile_images/1132029219876347904/FYA3rHRq_400x400.png"
+  twitter: "@david_scrobonia"
   is_core: true
 ```
 
 Later, in the templates, you would reference that data & the template would render.
+
 ```html
 {{ range $author := $.Site.Data.authors }}
-    <section class="post-author-single flex p-10">
-      <div class="col-1-5">
-        <img class="author-picture" src="{{ $author.picture }}" />
-      </div>
-      <div class="author-name col-4-5">
-        {{ $author.name }}
-        <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">{{ $author.twitter }}</a>
-      </div>
-    </section>
+<section class="post-author-single flex p-10">
+  <div class="col-1-5">
+    <img class="author-picture" src="{{ $author.picture }}" />
+  </div>
+  <div class="author-name col-4-5">
+    {{ $author.name }}
+    <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}"
+      >{{ $author.twitter }}</a
+    >
+  </div>
+</section>
 {{ end }}
 ```
+
 https://gohugo.io/templates/data-templates/
 
-
 #### Frontend Assets
+
 ##### Static
+
 For assets that are completely static and don't need to go through the asset pipeline,
 use the `site/static` folder. Images, font-files, etc, all go there. Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
 will end up being available as `/favicon.ico` and so on...
 
 ##### CSS/SCSS
+
 All the CSS is written in SCSS ("Sassy CSS") with all the files in `src/css/` with `src/css/main.css` being the entrypoint, defining main variables & importing the needed styles.
 
 Styles are separated by broad category, component and post specific styles. For example, if you need to change the typography across the entire site, `src/css/_type.scss` is the file to edit.
@@ -180,6 +196,7 @@ Styles are separated by broad category, component and post specific styles. For 
 https://sass-lang.com/documentation/syntax
 
 ##### JavaScript
+
 The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
 
 You can use **ES6** and use both relative imports or import libraries from npm. Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
@@ -189,13 +206,11 @@ You can use **ES6** and use both relative imports or import libraries from npm. 
 
 ### Basic Concepts
 
-You can read more about Hugo's template language in their documentation below. 
+You can read more about Hugo's template language in their documentation below.
 The most useful page there is the one about the available functions.
 
 - https://gohugo.io/templates/overview/
 - https://gohugo.io/templates/functions/
-
-
 
 ### Environment variables
 
@@ -208,6 +223,7 @@ You can access the environment variable inside the theme files with `getenv "NOD
 All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
 
 ### Helpful Links
+
 - https://regisphilibert.com/blog/2018/01/hugo-page-resources-and-how-to-use-them/
 - https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/
 - https://gist.github.com/sebz/efddfc8fdcb6b480f567

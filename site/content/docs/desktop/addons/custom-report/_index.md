@@ -15,12 +15,12 @@ The Customizable HTML Report add-on allows to control the information that goes 
 
 ## Scope
 
-Can set the report name, report description and select the template of the HTML output. Additionally, can specify whether to include only contents in scope.   
+Can set the report name, report description and select the template of the HTML output. Additionally, can specify whether to include only contents in scope.  
 Report templates:
 
-* **Traditional**: lists all the alerts and sorts them by the risk level from High to Low.
-* **Separated Sites**: same as Traditional, but also groups by domain names.
-* **Concise**: groups alerts by type (to avoid repetition) and sorts from High to Low.
+- **Traditional**: lists all the alerts and sorts them by the risk level from High to Low.
+- **Separated Sites**: same as Traditional, but also groups by domain names.
+- **Concise**: groups alerts by type (to avoid repetition) and sorts from High to Low.
 
 ## Alerts
 
@@ -28,23 +28,22 @@ Can select which alert types to include into the report. Additionally, alerts ca
 
 ## Alert Details
 
-Allows to select which alert attributes are included into the Report.   
+Allows to select which alert attributes are included into the Report.  
 These are checked and are included by default:
 
-* Description
-* Other Info
-* Solution
-* Reference
-* CWE ID
-* WASC ID
-* Parameter
-* Attack
-* Evidence
+- Description
+- Other Info
+- Solution
+- Reference
+- CWE ID
+- WASC ID
+- Parameter
+- Attack
+- Evidence
 
 These are unchecked and are excluded by default:
 
-
-* Request Header
-* Response Header
-* Request Body
-* Response Body
+- Request Header
+- Response Header
+- Request Body
+- Response Body

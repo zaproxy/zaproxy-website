@@ -20,14 +20,14 @@ The dialog has one field that is common to all of the tabs:
 ### Text to be encoded/decoded/hashed:
 
 This field is for the text that you want to be encoded, decoded or hashed.  
-If any text is selected when the dialog is invoked then it will be put in this field. The other fields will be updated dynamically if you change the text  
+If any text is selected when the dialog is invoked then it will be put in this field. The other fields will be updated dynamically if you change the text
 
 ## Toolbar
 
-* ![](/docs/desktop/addons/encode-decode-hash/images/ui-tab--plus.png) Add New Tab - Adds a new tab to the dialog.
-* ![](/docs/desktop/addons/encode-decode-hash/images/ui-tab--delete.png) Remove Selected Tab - Removes the selected (or current) tab from the dialog.
-* ![](/docs/desktop/addons/encode-decode-hash/images/ui-output--plus.png) Add Output Panel to Current Tab - Adds an output panel to the current tab.
-* Reset - Reset all the tabs/panels to their default state.
+- ![](/docs/desktop/addons/encode-decode-hash/images/ui-tab--plus.png) Add New Tab - Adds a new tab to the dialog.
+- ![](/docs/desktop/addons/encode-decode-hash/images/ui-tab--delete.png) Remove Selected Tab - Removes the selected (or current) tab from the dialog.
+- ![](/docs/desktop/addons/encode-decode-hash/images/ui-output--plus.png) Add Output Panel to Current Tab - Adds an output panel to the current tab.
+- Reset - Reset all the tabs/panels to their default state.
 
 ## Default Dialog Tabs \& Panels
 
@@ -35,40 +35,40 @@ In its default state the Encode/Decode/Hash dialog displays tabs and output pane
 
 ### Encode tab fields
 
-* Base 64 Encode
-* Base 64 URL Encode
-* URL Encode
-* Full URL Encode
-* ASCII Hex Encode
-* HTML Encode
-* JavaScript Encode
+- Base 64 Encode
+- Base 64 URL Encode
+- URL Encode
+- Full URL Encode
+- ASCII Hex Encode
+- HTML Encode
+- JavaScript Encode
 
 ### Decode tab fields
 
-* Base 64 Decode
-* Base 64 URL Decode
-* URL Decode
-* Full URL Decode
-* ASCII Hex Decode
-* HTML Decode
-* JavaScript Decode
+- Base 64 Decode
+- Base 64 URL Decode
+- URL Decode
+- Full URL Decode
+- ASCII Hex Decode
+- HTML Decode
+- JavaScript Decode
 
 ### Hash tab fields
 
-* SHA256 Hash
-* SHA1 Hash
-* MD5 Hash
+- SHA256 Hash
+- SHA1 Hash
+- MD5 Hash
 
 ### Illegal UTF-8
 
-* 2 byte
-* 3 byte
-* 4 byte
+- 2 byte
+- 3 byte
+- 4 byte
 
 ### Unicode
 
-* Escaped Text
-* Unescaped Text
+- Escaped Text
+- Unescaped Text
 
 ## Predefined Encode / Decode / Hash Processors
 
@@ -92,7 +92,7 @@ Will display the ASCII hex encoding of the text you enter.
 
 ### Base 64 Encode
 
-Will display the base 64 encoding of the text you enter.  
+Will display the base 64 encoding of the text you enter.
 
 ### Base 64 URL Encode
 
@@ -131,7 +131,7 @@ If there is no valid decoding then the field will be disabled.
 
 #### Base 64 Decode
 
-Will display the base 64 decoding of the text you enter.  
+Will display the base 64 decoding of the text you enter.
 
 #### Base 64 URL Decode
 
@@ -173,7 +173,7 @@ Custom "Encode/Decode" scripts can be created/added to the Scripts Tree and used
 
 ## Accessed via
 
-|   |                                                                                                                                                 |
-|---|-------------------------------------------------------------------------------------------------------------------------------------------------|
-|   | Tools menu 'Encode/Decode/Hash...' item                                                                                                |
-|   | Many text areas such as the Output tab, Scripts console, Request and Response panels via 'Encode/Decode/Hash...' right click menu item |
+|     |                                                                                                                                        |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------- |
+|     | Tools menu 'Encode/Decode/Hash...' item                                                                                                |
+|     | Many text areas such as the Output tab, Scripts console, Request and Response panels via 'Encode/Decode/Hash...' right click menu item |

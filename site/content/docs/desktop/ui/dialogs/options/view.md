@@ -22,19 +22,19 @@ If the HTTP CONNECT requests received by the [Local Proxies](/docs/desktop/ui/di
 The layout of the 3 main panels.  
 The following options are available:
 
-* Maximise left (Sites) tab - The 'tree' panel containing the Sites tab extends for the full length of the left hand side. This will reduce the amount of space available to the 'information' panel.
-* Maximise bottom (History etc) tabs - The 'information' panel extends for the full length of the bottom. This will reduce the amount of space available to the 'tree' panel.
-* Full Layout - The selected tab takes up the full screen. This is useful when using ZAP on small screens.
+- Maximise left (Sites) tab - The 'tree' panel containing the Sites tab extends for the full length of the left hand side. This will reduce the amount of space available to the 'information' panel.
+- Maximise bottom (History etc) tabs - The 'information' panel extends for the full length of the bottom. This will reduce the amount of space available to the 'tree' panel.
+- Full Layout - The selected tab takes up the full screen. This is useful when using ZAP on small screens.
 
 ### Response Panel Position
 
 Allows to configure the position of the Response tab with respect to Request tab.  
 The following options are available:
 
-* Tabs Side by Side - The Request and Response tabs are side by side. This increases the information that can be displayed but means you cannot see both the request and response at the same time.
-* Side by Side in Tab - The Request and Response panels are shown side by side in the same tab. This decreases the information that can be displayed but means you can see both the request and response at the same time.
-* Panels Side by Side - The Request panel is shown to the left of the Response panel. This decreases the information that can be displayed but means you can see both the request and response at the same time.
-* Request Shown Above Response - The Request panel is shown above the Response panel. This decreases the information that can be displayed but means you can see both the request and response at the same time.
+- Tabs Side by Side - The Request and Response tabs are side by side. This increases the information that can be displayed but means you cannot see both the request and response at the same time.
+- Side by Side in Tab - The Request and Response panels are shown side by side in the same tab. This decreases the information that can be displayed but means you can see both the request and response at the same time.
+- Panels Side by Side - The Request panel is shown to the left of the Response panel. This decreases the information that can be displayed but means you can see both the request and response at the same time.
+- Request Shown Above Response - The Request panel is shown above the Response panel. This decreases the information that can be displayed but means you can see both the request and response at the same time.
 
 The Response Panel Position option does not apply when the Display option is set to Full Layout.
 
@@ -59,7 +59,7 @@ Setting this value to -1 will result in response always being displayed no matte
 Once you've enabled time stamps on the output tab you can configure the format you would like those time stamps to appear in. Either select a pre-defined format from the drop-down list or enter one of your own choosing. The format is based on Java's SimpleDateFormat. After choosing or entering a time stamp format if you press enter the example on the right will be updated to reflect your choice. If ZAP is unable to use a format you've entered then the example is displayed based on the Default format.
 
 |                 |                        |
-|-----------------|------------------------|
+| --------------- | ---------------------- |
 | Long \& Default | yyyy-MM-dd HH:mm:ss    |
 | ISO8601         | yyyy-MM-dd'T'HH:mm:ssZ |
 | Time Only       | HH:mm:ss               |
@@ -77,13 +77,13 @@ The system property `swing.defaultlaf` takes precedence over this option.
 
 ## See also
 
-|   |                                                      |                                                  |
-|---|------------------------------------------------------|--------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface.           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens. |
+|     |                                                      |                                                  |
+| --- | ---------------------------------------------------- | ------------------------------------------------ |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface.           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens. |
 
 ## External Links
 
-|   |                                                                                                                 |
-|---|-----------------------------------------------------------------------------------------------------------------|
-|   | [Details of Java's SimpleDateFormat](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html) |
+|     |                                                                                                                 |
+| --- | --------------------------------------------------------------------------------------------------------------- |
+|     | [Details of Java's SimpleDateFormat](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html) |

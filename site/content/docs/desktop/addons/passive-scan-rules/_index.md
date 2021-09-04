@@ -15,7 +15,7 @@ The following release quality passive scan rules are included in this add-on:
 
 ## Application Errors
 
-Check server responses for HTTP 500 - Internal Server Error type responses or those that contain a known error string.   
+Check server responses for HTTP 500 - Internal Server Error type responses or those that contain a known error string.  
 **Note:** Matches made within script blocks or files are against the entire content not only comments.  
 At HIGH Threshold don’t alert on HTTP 500 (but do for other error patterns).  
 For Internal Server Error (HTTP 500) the Alert is set to Low risk and in other case it is set to Medium risk.
@@ -24,7 +24,7 @@ For Internal Server Error (HTTP 500) the Alert is set to Low risk and in other c
 They will also be searched for in responses as they're passively scanned. Keep in mind that the greater the number of payloads the greater the
 amount of time needed to passively scan.
 
-It is also possible to add patterns to the `xml/application_errors.xml` file in ZAP's user directory.  
+It is also possible to add patterns to the `xml/application_errors.xml` file in ZAP's user directory.
 
 Latest code: [ApplicationErrorScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ApplicationErrorScanRule.java)
 
@@ -42,12 +42,12 @@ This check identifies responses where the HTTP Content-Type header declares a ch
 
 The scan rule handles various conditions depending on the Threshold set for the rule, as follows:
 
-* All Thresholds:
-    * Header Versus Meta Content-Type Charset - The declaration in the HTTP Content-Type header doesn't match what is declared in a META Content-Type tag.
-    * Header Versus Meta Charset - The declaration in the HTTP Content-Type header doesn't match what is declared in a META Charset tag.
-* Low Threshold:
-    * Meta Content-Type Charset Missing - The response doesn't contain a META Content-Type declaration, which may overlook older clients.
-    * Meta Charset Versus Meta Content-Type Charset - The response contains both a META Content-Type declaration and a META Charset declaration, and they don't match.
+- All Thresholds:
+  - Header Versus Meta Content-Type Charset - The declaration in the HTTP Content-Type header doesn't match what is declared in a META Content-Type tag.
+  - Header Versus Meta Charset - The declaration in the HTTP Content-Type header doesn't match what is declared in a META Charset tag.
+- Low Threshold:
+  - Meta Content-Type Charset Missing - The response doesn't contain a META Content-Type declaration, which may overlook older clients.
+  - Meta Charset Versus Meta Content-Type Charset - The response contains both a META Content-Type declaration and a META Charset declaration, and they don't match.
 
 Further reference:  
 <http://www.w3.org/TR/html401/charset.html#h-5.2.2>  
@@ -83,9 +83,9 @@ Latest code: [CookieSecureFlagScanRule.java](https://github.com/zaproxy/zap-exte
 
 This reports any cookies that:
 
-* do not have the SameSite attribute
-* have the attribute set to "None" (ignored at HIGH Threshold)
-* do not have a recognised valid value for that attribute
+- do not have the SameSite attribute
+- have the attribute set to "None" (ignored at HIGH Threshold)
+- do not have a recognised valid value for that attribute
 
 Latest code: [CookieSameSiteScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CookieSameSiteScanRule.java)
 
@@ -94,8 +94,8 @@ Latest code: [CookieSameSiteScanRule.java](https://github.com/zaproxy/zap-extens
 Validates whether or not scripts are included from domains other than the domain hosting the content. By looking at the "src" attributes of "script" tags in HTML responses.  
 Allowed Cross-Domain scripts:
 
-* Any script with a non-empty "integrity" attribute is ignored - the integrity value is not checked as this will be checked by the browser
-* At MEDIUM and HIGH thresholds if a script URL falls within a context that also includes the URL of the base message no alerts will be raised.
+- Any script with a non-empty "integrity" attribute is ignored - the integrity value is not checked as this will be checked by the browser
+- At MEDIUM and HIGH thresholds if a script URL falls within a context that also includes the URL of the base message no alerts will be raised.
 
 Latest code: [CrossDomainScriptInclusionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CrossDomainScriptInclusionScanRule.java)
 
@@ -206,7 +206,7 @@ If any context contains defined users this scan rule checks all responses for th
 
 **Note:** If the Custom Payloads addon is installed you can add your own Username strings (payloads) in the Custom Payloads options panel.
 They will also be hashed and searched for in responses as they're passively scanned. Keep in mind that the greater the number of payloads the greater the
-amount of time needed to passively scan. (The default payloads are "Admin" and "admin".)  
+amount of time needed to passively scan. (The default payloads are "Admin" and "admin".)
 
 Discovery of any such value may represent an Insecure Direct Object Reference (IDOR) vulnerability. Alerts are only raised as informational items as further manual testing is required in order to confirm and assess impact.
 
@@ -216,10 +216,10 @@ Latest code: [UsernameIdorScanRule.java](https://github.com/zaproxy/zap-extensio
 
 Attempts to identify VIEWSTATE parameters and analyze said parameters for various best practices or protective measures such as:
 
-* Those based on ASP.NET 1.0 and 1.1.
-* VIEWSTATE Lacking signature.
-* Split VIEWSTATE.
-* VIEWSTATE containing email or IP patterns.
+- Those based on ASP.NET 1.0 and 1.1.
+- VIEWSTATE Lacking signature.
+- Split VIEWSTATE.
+- VIEWSTATE containing email or IP patterns.
 
 Latest code: [ViewstateScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ViewstateScanRule.java)
 
@@ -227,7 +227,7 @@ Latest code: [ViewstateScanRule.java](https://github.com/zaproxy/zap-extensions/
 
 This scan rule check for the Anti-MIME-Sniffing header X-Content-Type-Options and ensures it is set to 'nosniff'.  
 At MEDIUM and HIGH thresholds this rule does not alert on client or server error responses or redirects.  
-At LOW threshold it will alert on all responses including errors and redirects.  
+At LOW threshold it will alert on all responses including errors and redirects.
 
 Latest code: [XContentTypeOptionsScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/XContentTypeOptionsScanRule.java)
 
@@ -238,10 +238,10 @@ At MEDIUM and HIGH thresholds this only looks at non-error or non-redirect HTML 
 At LOW threshold it looks at all text responses including errors and redirects.  
 The following conditions may result in an alert:
 
-* **X-Frame-Options Header Not Set:** If the X-Frame-Options header is missing from the response completely.
-* **Multiple X-Frame-Options Header Entries:** When more than one X-Frame-Options header is detected on the response.
-* **X-Frame-Options Defined via META (Non-compliant with Spec):** A "http-equiv" entry was found in the response that attempts to define X-Frame-Options, which is not supported by the specification.
-* **X-Frame-Options Setting Malformed:** The header is present with no value, or the value is not as expected (i.e.: other than "DENY", or "SAMEORIGIN").
+- **X-Frame-Options Header Not Set:** If the X-Frame-Options header is missing from the response completely.
+- **Multiple X-Frame-Options Header Entries:** When more than one X-Frame-Options header is detected on the response.
+- **X-Frame-Options Defined via META (Non-compliant with Spec):** A "http-equiv" entry was found in the response that attempts to define X-Frame-Options, which is not supported by the specification.
+- **X-Frame-Options Setting Malformed:** The header is present with no value, or the value is not as expected (i.e.: other than "DENY", or "SAMEORIGIN").
 
 By default no alerts will be raised in the response includes a Content-Security-Policy 'frame-ancestors' element as this take precedence over the X-Frame-Options header. However at LOW threshold the above issues will still be reported but at a LOW risk.
 

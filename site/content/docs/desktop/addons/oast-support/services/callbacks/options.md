@@ -34,6 +34,6 @@ This is the test URL that you can try to access from remote systems. All accesse
 
 ## See also
 
-|   |                                                    |   |
-|---|----------------------------------------------------|---|
-|   | [OAST Tab](/docs/desktop/addons/oast-support/tab/) |   |
+|     |                                                    |     |
+| --- | -------------------------------------------------- | --- |
+|     | [OAST Tab](/docs/desktop/addons/oast-support/tab/) |     |

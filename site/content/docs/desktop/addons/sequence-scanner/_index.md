@@ -16,7 +16,7 @@ This add-on facilitates the recording and scanning sequences of requests. In som
 ## Creating Sequences
 
 One sequence script should be created for each multi-step operation in the application/site being tested.
-There are two options for creating sequences:   
+There are two options for creating sequences:
 
 1. In either the Sites tree or History tab select the requests you wish to have included, right click, and use "Add To Zest Script" (either choosing to create a new script or adding to an existing Sequence script).
 2. From the main tool bar, use the "Record a New Zest Script..." button, selecting "Sequence" as the type.

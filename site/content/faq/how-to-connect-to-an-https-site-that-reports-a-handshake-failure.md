@@ -5,7 +5,6 @@ category: Networking
 weight: 4
 ---
 
-
 First of all try checking the 'Enable unsafe SSL/TLS renegotiation' checkbox
 in the Certificate Options screen and trying again.
 
@@ -17,11 +16,11 @@ If this doesn't help and an HTTPS site reports a handshake failure then try
 installing the 'Java Cryptography Extension (JCE) Unlimited Strength
 Jurisdiction Policy Files':
 
-  * Java 8 : <https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html>
-  * Java 9 : Should not require the JCE Policy Files, per [JDK 9 Readme](https://www.oracle.com/technetwork/java/javase/terms/readme/jdk9-readme-3852447.html#jce) (as reviewed 20171212):
+- Java 8 : <https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html>
+- Java 9 : Should not require the JCE Policy Files, per [JDK 9 Readme](https://www.oracle.com/technetwork/java/javase/terms/readme/jdk9-readme-3852447.html#jce) (as reviewed 20171212):
 
 > The default JCE policy files bundled in this Java Runtime Environment allow
-for "unlimited" cryptographic strengths.
+> for "unlimited" cryptographic strengths.
 
 You will need to restart ZAP for these to take effect.
 
@@ -57,9 +56,9 @@ sometimes manifest as an SSL/TLS negotiation failure.
 If this doesn't help then get in touch via the [User
 Group](https://groups.google.com/forum/#!forum/zaproxy-users).
 
-* * *
+---
 
-##  Error "java.lang.RuntimeException: Could not generate DH keypair"
+## Error "java.lang.RuntimeException: Could not generate DH keypair"
 
 The error and the likely cause is described in
 [#2626](https://github.com/zaproxy/zaproxy/issues/2626): Java 8 does not

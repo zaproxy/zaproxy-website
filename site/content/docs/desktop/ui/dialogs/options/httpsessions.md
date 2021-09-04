@@ -25,9 +25,9 @@ If this option is enabled, the Extension will only process the messages sent and
 
 ## See also
 
-|   |                                                                  |                                                 |
-|---|------------------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                 | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/)             | for details of the other Options dialog screens |
-|   | [HTTP Sessions Tool](/docs/desktop/start/features/httpsessions/) | for an overview of the Tool                     |
-|   | [HTTP Sessions tab](/docs/desktop/ui/tabs/httpsessions/)         | for an overview of the Tab                      |
+|     |                                                                  |                                                 |
+| --- | ---------------------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                                 | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/)             | for details of the other Options dialog screens |
+|     | [HTTP Sessions Tool](/docs/desktop/start/features/httpsessions/) | for an overview of the Tool                     |
+|     | [HTTP Sessions tab](/docs/desktop/ui/tabs/httpsessions/)         | for an overview of the Tab                      |

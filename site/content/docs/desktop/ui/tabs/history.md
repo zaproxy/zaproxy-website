@@ -10,19 +10,19 @@ weight: 5
 The History tab shows a list of all of the requests in the order in which they were made.  
 For each request you can see:
 
-|   |                                                                            |
-|---|----------------------------------------------------------------------------|
-|   | The request index - each request is numbered, starting at 1                |
-|   | The HTML method, e.g. GET or POST                                          |
-|   | The URL requested                                                          |
-|   | The HTTP response code                                                     |
-|   | A short summary of what the HTTP response code means                       |
-|   | The length of time the whole request took                                  |
-|   | Any [Alerts](/docs/desktop/start/features/alerts/) on the request          |
-|   | Any [Notes](/docs/desktop/start/features/notes/) you have added to request |
-|   | Any [Tags](/docs/desktop/start/features/tags/) on the request              |
+|     |                                                                            |
+| --- | -------------------------------------------------------------------------- |
+|     | The request index - each request is numbered, starting at 1                |
+|     | The HTML method, e.g. GET or POST                                          |
+|     | The URL requested                                                          |
+|     | The HTTP response code                                                     |
+|     | A short summary of what the HTTP response code means                       |
+|     | The length of time the whole request took                                  |
+|     | Any [Alerts](/docs/desktop/start/features/alerts/) on the request          |
+|     | Any [Notes](/docs/desktop/start/features/notes/) you have added to request |
+|     | Any [Tags](/docs/desktop/start/features/tags/) on the request              |
 
-Selecting a requests will display it in the [Request tab](/docs/desktop/ui/tabs/request/) and [Response tab](/docs/desktop/ui/tabs/response/) above.  
+Selecting a requests will display it in the [Request tab](/docs/desktop/ui/tabs/request/) and [Response tab](/docs/desktop/ui/tabs/response/) above.
 
 ## The filter toolbar
 
@@ -40,11 +40,11 @@ The Attack menu has the following submenus:
 
 #### Active Scan...
 
-This will launch the [Active Scan](/docs/desktop/ui/dialogs/advascan/) dialog which allows you to initiate an [active scan](/docs/desktop/start/features/ascan/) with the starting point set to the request you selected.  
+This will launch the [Active Scan](/docs/desktop/ui/dialogs/advascan/) dialog which allows you to initiate an [active scan](/docs/desktop/start/features/ascan/) with the starting point set to the request you selected.
 
 #### Spider...
 
-This will launch the [Spider](/docs/desktop/ui/dialogs/spider/) dialog which allows you to initiate the [spider](/docs/desktop/start/features/spider/) with the starting point set to the request you selected.  
+This will launch the [Spider](/docs/desktop/ui/dialogs/spider/) dialog which allows you to initiate the [spider](/docs/desktop/start/features/spider/) with the starting point set to the request you selected.
 
 ### Include in Context
 
@@ -61,19 +61,19 @@ The [Session Contexts](/docs/desktop/ui/dialogs/session/contexts/) dialog will b
 
 This menu has the following submenus for each of the [contexts](/docs/desktop/start/features/contexts/) you have defined:
 
-#### *Context name* Form-based Auth Login request
+#### _Context name_ Form-based Auth Login request
 
 This identifies the specified node as a login request for the specified context.  
 You may only have one node identified as such in any one context.  
 The [Session Context Authentication](/docs/desktop/ui/dialogs/session/context-auth/) screen will be displayed to allow you to make any additional changes.
 
-#### *Context name* JSON-based Auth Login request
+#### _Context name_ JSON-based Auth Login request
 
 This identifies the specified node as a login request for the specified context.  
 You may only have one node identified as such in any one context.  
 The [Session Context Authentication](/docs/desktop/ui/dialogs/session/context-auth/) screen will be displayed to allow you to make any additional changes.
 
-#### *Context name* Data driven node
+#### _Context name_ Data driven node
 
 This identifies the specified node as [Data driven content](/docs/desktop/start/features/ddc/) for the specified context.  
 The [Session Context Structure](/docs/desktop/ui/dialogs/session/context-struct/) screen will be displayed to allow you to make any additional changes.
@@ -113,7 +113,7 @@ However they can be added back in, to prevent this use the 'Exclude from' menus.
 
 ### Break...
 
-This will bring up the [Add Breakpoint dialog](/docs/desktop/ui/dialogs/addbreak/) which allows you to set a breakpoint on that URL.  
+This will bring up the [Add Breakpoint dialog](/docs/desktop/ui/dialogs/addbreak/) which allows you to set a breakpoint on that URL.
 
 ### Alerts for this node
 
@@ -143,6 +143,6 @@ It will only be enabled for POST requests, if the API is enabled and if Java sup
 
 ## See also
 
-|   |                                  |                                       |
-|---|----------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |
+|     |                                  |                                       |
+| --- | -------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |

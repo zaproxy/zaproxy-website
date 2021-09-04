@@ -11,6 +11,6 @@ cascade:
 
 # Kotlin Support
 
-The Kotlin Support add-on allows you to integrate Kotlin scripts in ZAP.  
+The Kotlin Support add-on allows you to integrate Kotlin scripts in ZAP.
 
 When you create a new script you will be given the option to use Kotlin, as well as the option to choose from Kotlin templates.

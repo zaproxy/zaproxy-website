@@ -20,8 +20,8 @@ Veggiespam and the ZAP Dev Team
 
 ### Version 2 - TBD
 
-* Maintenance changes.
+- Maintenance changes.
 
 ### Version 1 - 2018-02-27
 
-* Image Location and Privacy Scanner separated from Passive Scan Rules Alpha and promoted to Beta.
+- Image Location and Privacy Scanner separated from Passive Scan Rules Alpha and promoted to Beta.

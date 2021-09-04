@@ -27,7 +27,7 @@ The new risk level to be assigned to any alerts raised that match the criteria d
 ### URL
 
 An optional URL.  
-If specified then this rule will be applied if the URL matches the URL of a raised alert.  
+If specified then this rule will be applied if the URL matches the URL of a raised alert.
 
 ### URL is Regex?
 
@@ -37,7 +37,7 @@ If it is not set then any specified URL must exactly match the URL of the alert.
 ### Parameter
 
 An optional parameter.  
-If specified then this rule will be applied if the parameter exactly matches the parameter of a raised alert.  
+If specified then this rule will be applied if the parameter exactly matches the parameter of a raised alert.
 
 ### Parameter is Regex?
 
@@ -47,7 +47,7 @@ If it is not set then any specified parameter must exactly match the parameter o
 ### Attack
 
 An optional attack.  
-If specified then this rule will be applied if the attack exactly matches the attack of a raised alert.  
+If specified then this rule will be applied if the attack exactly matches the attack of a raised alert.
 
 ### Attack is Regex?
 
@@ -57,7 +57,7 @@ If it is not set then any specified attack must exactly match the attack of the 
 ### Evidence
 
 An optional evidence.  
-If specified then this rule will be applied if the evidence exactly matches the evidence of a raised alert.  
+If specified then this rule will be applied if the evidence exactly matches the evidence of a raised alert.
 
 ### Evidence is Regex?
 

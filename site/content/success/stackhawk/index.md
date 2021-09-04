@@ -2,12 +2,12 @@
 title: "StackHawk"
 type: success
 successtags:
-- commercial
-- supporter
-- saas
+  - commercial
+  - supporter
+  - saas
 date: "2021-04-14"
-# Weights based on supporter type: bronze: 1, silver: 2, gold: 3, platinum: 4 
-weight: '4'
+# Weights based on supporter type: bronze: 1, silver: 2, gold: 3, platinum: 4
+weight: "4"
 company:
   link: https://www.stackhawk.com
   logo: /img/supporters/stackhawk.png

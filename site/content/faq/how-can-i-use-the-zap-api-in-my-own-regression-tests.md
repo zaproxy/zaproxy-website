@@ -5,7 +5,6 @@ category: API
 weight: 7
 ---
 
-
 You can use ZAP to perform security regression tests on your own products.
 
 Note that this answer is very basic and WILL need to be improved ;)

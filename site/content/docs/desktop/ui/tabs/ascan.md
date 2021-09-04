@@ -7,11 +7,11 @@ weight: 9
 
 # Active Scan tab
 
-The Active Scan tab allows you to perform an [active scan](/docs/desktop/start/features/ascan/).  
+The Active Scan tab allows you to perform an [active scan](/docs/desktop/start/features/ascan/).
 
-The 'Scan Policy Manager' button ![](/docs/desktop/images/fugue/equalizer.png) shows the [Scan Policy Manager](/docs/desktop/ui/dialogs/scanpolicymgr/) dialog which allows configuration of [scan policies](/docs/desktop/start/features/scanpolicy/).   
+The 'Scan Policy Manager' button ![](/docs/desktop/images/fugue/equalizer.png) shows the [Scan Policy Manager](/docs/desktop/ui/dialogs/scanpolicymgr/) dialog which allows configuration of [scan policies](/docs/desktop/start/features/scanpolicy/).
 
-The 'New Scan' button launches the [Active Scan dialog](/docs/desktop/ui/dialogs/advascan/) which allows you to specify exactly what should be scanned.   
+The 'New Scan' button launches the [Active Scan dialog](/docs/desktop/ui/dialogs/advascan/) which allows you to specify exactly what should be scanned.
 
 The toolbar provides a set of buttons which allow you to start, stop, pause and resume the scan selected.  
 A progress bar shows how far the scan of the selected site has progressed.  
@@ -60,7 +60,7 @@ This will open the URL of the selected node in your default browser.
 
 ## See also
 
-|   |                                                                       |                                              |
-|---|-----------------------------------------------------------------------|----------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface        |
-|   | [Options Active Scan screen](/docs/desktop/ui/dialogs/options/ascan/) | for details of the active scan configuration |
+|     |                                                                       |                                              |
+| --- | --------------------------------------------------------------------- | -------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface        |
+|     | [Options Active Scan screen](/docs/desktop/ui/dialogs/options/ascan/) | for details of the active scan configuration |

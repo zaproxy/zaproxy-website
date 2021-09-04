@@ -11,6 +11,6 @@ This screen allows you to configure the [Python Scripting](/docs/desktop/addons/
 
 ## Configuration Options
 
-|             Field              |                                      Details                                      | Default |                            Config File                             |
-|--------------------------------|-----------------------------------------------------------------------------------|---------|--------------------------------------------------------------------|
+| Field                          | Details                                                                           | Default | Config File                                                        |
+| ------------------------------ | --------------------------------------------------------------------------------- | ------- | ------------------------------------------------------------------ |
 | Additional Python modules path | The path to the directory with additional modules/libraries for Python scripting. | (none)  | Key: `jython.modulepath` Values: file system path to the directory |

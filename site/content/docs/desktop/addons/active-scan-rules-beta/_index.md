@@ -46,7 +46,7 @@ Latest code: [CrossDomainScanRule.java](https://github.com/zaproxy/zap-extension
 
 ## CSRF Token
 
-Scans HTML based messages for the existence of Anti-CSRF tokens.   
+Scans HTML based messages for the existence of Anti-CSRF tokens.  
 Alerts on requests which do not appear to contain Anti-CSRF tokens.  
 At HIGH alert threshold only scans messages which are in scope.  
 Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms.
@@ -55,7 +55,7 @@ Latest code: [CsrfTokenScanRule.java](https://github.com/zaproxy/zap-extensions/
 
 ## .env Information Leak
 
-Checks for web accessible .env files which may leak sensitive information (such as usernames, passwords, API or APP keys, etc.). Environment files come in many flavors but mostly they are KEY=VALUE formatted.   
+Checks for web accessible .env files which may leak sensitive information (such as usernames, passwords, API or APP keys, etc.). Environment files come in many flavors but mostly they are KEY=VALUE formatted.  
 This rule checks for how servers deliver them by default; NGINX returns them as binary/octet-stream content-type Apache just returns the text with no content-type. This rule also check for content length over 500 characters to try and exclude larger, possibly intentional, files.
 
 Latest code: [EnvFileScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/EnvFileScanRule.java)
@@ -84,7 +84,6 @@ This scan rule checks for various web accessible files which may leak administra
 
 The following describes the fields of the JSON entries.
 
-
     {
       "path":"some/path/without/leading/slash.ext",
       "content":["content you want to find in responses"],
@@ -97,12 +96,11 @@ The following describes the fields of the JSON entries.
 
 Details worth noting:
 
-* The only field that is required is path.
-* The fields content, not_content, and links can have multiple quoted, comma separated values (arrays of strings).
-* Checks of binary content are based on starting position 0 (ex: startsWith not contains).
+- The only field that is required is path.
+- The fields content, not_content, and links can have multiple quoted, comma separated values (arrays of strings).
+- Checks of binary content are based on starting position 0 (ex: startsWith not contains).
 
 The following is an example JSON entry:
-
 
     {
       "path":"CVS/root",
@@ -162,9 +160,9 @@ Latest code: [PaddingOracleScanRule.java](https://github.com/zaproxy/zap-extensi
 
 Attempts to detect and fingerprint proxy server(s). This information helps a potential attacker to determine:
 
-* A list of targets for an attack against the application.
-* Potential vulnerabilities on the proxy servers that service the application.
-* The presence or absence of any proxy-based components that might cause attacks against the application to be detected, prevented, or mitigated.
+- A list of targets for an attack against the application.
+- Potential vulnerabilities on the proxy servers that service the application.
+- The presence or absence of any proxy-based components that might cause attacks against the application to be detected, prevented, or mitigated.
 
 Latest code: [ProxyDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/ProxyDisclosureScanRule.java)
 
@@ -189,7 +187,7 @@ Latest code: [SessionFixationScanRule.java](https://github.com/zaproxy/zap-exten
 ## ShellShock - CVE-2014-6271
 
 This rule perform 2 attacks to detect servers vulnerable to CVE-2014-6271 aka ShellShock.  
-The first is a simple reflected attack and the second is a time based attack.  
+The first is a simple reflected attack and the second is a time based attack.
 
 Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
 
@@ -206,7 +204,7 @@ Latest code: [SourceCodeDisclosureCve20121823ScanRule.java](https://github.com/z
 ## Source Code Disclosure - SVN
 
 Uses Subversion source code repository metadata to scan for files containing source code on the web server.  
-At LOW alert threshold the rule will require less evidence to identify potential code, which could result in more false positives.  
+At LOW alert threshold the rule will require less evidence to identify potential code, which could result in more false positives.
 
 Latest code: [SourceCodeDisclosureSvnScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SourceCodeDisclosureSvnScanRule.java)
 
@@ -225,10 +223,10 @@ Latest code: [SourceCodeDisclosureGitScanRule.java](https://github.com/zaproxy/z
 ## SQL Injection - Hypersonic (Time Based)
 
 This rule uses Hypersonic-specific SQL syntax to attempt to induce time delays in the SQL statement called by the page.  
-If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a Hypersonic SQL database.   
-This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected Hypersonic database.   
-For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
-The rule tests only for time-based SQL injection vulnerabilities.  
+If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a Hypersonic SQL database.  
+This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected Hypersonic database.  
+For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.  
+The rule tests only for time-based SQL injection vulnerabilities.
 
 Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
 
@@ -243,10 +241,10 @@ Latest code: [SqlInjectionMsSqlScanRule.java](https://github.com/zaproxy/zap-ext
 ## SQL Injection - MySQL (Time Based)
 
 This rule uses MySQL-specific SQL syntax to attempt to induce time delays in the SQL statement called by the page.  
-If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a MySQL database.   
-This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected MySQL database.   
-For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
-The rule tests only for time-based SQL injection vulnerabilities.  
+If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a MySQL database.  
+This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected MySQL database.  
+For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.  
+The rule tests only for time-based SQL injection vulnerabilities.
 
 Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
 
@@ -255,10 +253,10 @@ Latest code: [SqlInjectionMyqlScanRule.java](https://github.com/zaproxy/zap-exte
 ## SQL Injection - Oracle (Time Based)
 
 This scan rule uses Oracle-specific SQL syntax to attempt to induce time delays in the SQL statement called by the page.  
-If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a Oracle SQL database.   
-This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected Oracle database.   
-For this reason, the number of active scan threads should be set to the minimum when using this rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
-The scan rule tests only for time-based SQL injection vulnerabilities.  
+If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a Oracle SQL database.  
+This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected Oracle database.  
+For this reason, the number of active scan threads should be set to the minimum when using this rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.  
+The scan rule tests only for time-based SQL injection vulnerabilities.
 
 Note that this rule does not currently allow you to change the length of time used for the timing attacks due to the way the delay is caused.
 
@@ -267,10 +265,10 @@ Latest code: [SqlInjectionOracleScanRule.java](https://github.com/zaproxy/zap-ex
 ## SQL Injection - PostgreSQL (Time Based)
 
 This rule uses PostgreSQL-specific SQL syntax to attempt to induce time delays in the SQL statement called by the page.  
-If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a PostgreSQL database.   
-This scan rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected PostgreSQL database.   
-For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
-The rule tests only for time-based SQL injection vulnerabilities.  
+If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a PostgreSQL database.  
+This scan rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected PostgreSQL database.  
+For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.  
+The rule tests only for time-based SQL injection vulnerabilities.
 
 Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
 
@@ -284,7 +282,7 @@ Latest code: [SqlInjectionSqLiteScanRule.java](https://github.com/zaproxy/zap-ex
 
 ## Trace.axd Information Leak
 
-Tests to see if Trace Viewer (trace.axd) is available. Although this component is convenient for developers and other stakeholders it can leak a significant amount of information which a security analyst or malicious individual may be interested in.  
+Tests to see if Trace Viewer (trace.axd) is available. Although this component is convenient for developers and other stakeholders it can leak a significant amount of information which a security analyst or malicious individual may be interested in.
 
 The trace.axd scan rule targets Microsoft based technologies: IIS, Windows, ASP, and MSSQL.
 
@@ -311,14 +309,14 @@ Latest code: [XpathInjectionScanRule.java](https://github.com/zaproxy/zap-extens
 
 ## XSLT Injection
 
-This scan rule checks for certain responses induced by injecting XSL transformations.   
+This scan rule checks for certain responses induced by injecting XSL transformations.  
 It attempts to obtain those responses with payloads which may induce: error responses, disclosure of library/framework vendor name, remote port scanning, or command execution.
 
 Latest code: [XsltInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/XsltInjectionScanRule.java)
 
 ## XXE
 
-This component attempts to identify applications which are subject to XML eXternal Entity (XXE) attacks. Applications which parse XML input may be subject to XXE when weakly or poorly configured parsers handle XML input containing reference to an external entity such as a local file, HTTP requests to internal or tertiary systems, etc. The number of tags which are tested individually depends on the strength of the rule.  
+This component attempts to identify applications which are subject to XML eXternal Entity (XXE) attacks. Applications which parse XML input may be subject to XXE when weakly or poorly configured parsers handle XML input containing reference to an external entity such as a local file, HTTP requests to internal or tertiary systems, etc. The number of tags which are tested individually depends on the strength of the rule.
 
 It requires the Callback extension, so will not work if this extension is disabled or removed. It is also recommended that you test that the Callback extension is correctly configured for your target site. If the target system cannot connect to the Callback Address then some XXE vulnerabilities will not be detected.
 

@@ -43,7 +43,7 @@ somewhere, then it may be vulnerable to out-of-band injection attacks.
 
 ## See also
 
-|   |                                                                 |   |
-|---|-----------------------------------------------------------------|---|
-|   | [BOAST Help](/docs/desktop/addons/oast-support/services/boast/) |   |
-|   | [BOAST on GitHub](https://github.com/marcoagner/boast)          |   |
+|     |                                                                 |     |
+| --- | --------------------------------------------------------------- | --- |
+|     | [BOAST Help](/docs/desktop/addons/oast-support/services/boast/) |     |
+|     | [BOAST on GitHub](https://github.com/marcoagner/boast)          |     |

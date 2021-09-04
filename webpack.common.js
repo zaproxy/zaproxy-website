@@ -6,11 +6,11 @@ const AssetsPlugin = require("assets-webpack-plugin");
 
 module.exports = {
   entry: {
-    main: path.join(__dirname, "src", "index.js")
+    main: path.join(__dirname, "src", "index.js"),
   },
 
   output: {
-    path: path.join(__dirname, "dist")
+    path: path.join(__dirname, "dist"),
   },
 
   module: {
@@ -18,39 +18,46 @@ module.exports = {
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
         use: {
-          loader: "file-loader?name=/[hash].[ext]"
-        }
+          loader: "file-loader?name=/[hash].[ext]",
+        },
       },
 
       {
-        test: /\.json$/, 
+        test: /\.json$/,
         use: {
-          loader: "json-loader"
-        }
+          loader: "json-loader",
+        },
       },
 
       {
         test: /\.js?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
-          options:{
-            cacheDirectory: true
-          }
-        }
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true,
+          },
+        },
       },
 
       {
         test: /\.(sa|sc|c)ss$/,
         exclude: /node_modules/,
-        use: ["style-loader", MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
-      }
-    ]
+        use: [
+          "style-loader",
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
+      },
+    ],
   },
 
   plugins: [
     new webpack.ProvidePlugin({
-      fetch: "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch"
+      fetch:
+        "imports-loader?this=>global!exports-loader?global.fetch!whatwg-fetch",
     }),
     new AssetsPlugin({
       filename: "webpack.json",
@@ -64,8 +71,8 @@ module.exports = {
         {
           from: "./src/fonts/",
           to: "[name][ext]",
-        }
-      ]
-    })
-  ]
+        },
+      ],
+    }),
+  ],
 };

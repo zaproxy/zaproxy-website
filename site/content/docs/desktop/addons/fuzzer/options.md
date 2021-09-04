@@ -26,6 +26,6 @@ Files are added to the 'fuzzers' directory underneath the ZAP home directory.
 
 ## See also
 
-|   |                                                 |
-|---|-------------------------------------------------|
-|   | [Fuzzer concepts](/docs/desktop/addons/fuzzer/) |
+|     |                                                 |
+| --- | ----------------------------------------------- |
+|     | [Fuzzer concepts](/docs/desktop/addons/fuzzer/) |

@@ -33,30 +33,30 @@ If this option is selected then optional (nullable) arguments will be specified 
 
 Choose how the field arguments should be added in the generated query,
 
-* Inline
-* Using Variables
-* Both - each query will be sent twice, once with inline arguments and once with variables
+- Inline
+- Using Variables
+- Both - each query will be sent twice, once with inline arguments and once with variables
 
 ## Generate Query For
 
 A separate query may be generated for either of the following in the provided schema,
 
-* each Leaf, that is, each scalar or enum;
-* each field under a root operation type (Query, Mutation or Subscription); or
-* each root operation type.
+- each Leaf, that is, each scalar or enum;
+- each field under a root operation type (Query, Mutation or Subscription); or
+- each root operation type.
 
 ## Request Method
 
 The requests made to the endpoint can be of the following types:
 
-* A POST request with a JSON body (Content-Type: application/json)
-* A POST request with a GraphQL query in the body (Content-Type: application/graphql)
-* A GET request with the query appended to it in a query string
+- A POST request with a JSON body (Content-Type: application/json)
+- A POST request with a GraphQL query in the body (Content-Type: application/graphql)
+- A GET request with the query appended to it in a query string
 
 ## See also
 
-|   |                                                                        |                                                         |
-|---|------------------------------------------------------------------------|---------------------------------------------------------|
-|   | [GraphQL](/docs/desktop/addons/graphql-support/)                       | for an overview of the GraphQL add-on.                  |
-|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/)         | for information about the bundled script.               |
-|   | [GraphQL Automation](/docs/desktop/addons/graphql-support/automation/) | for information about the automation framework support. |
+|     |                                                                        |                                                         |
+| --- | ---------------------------------------------------------------------- | ------------------------------------------------------- |
+|     | [GraphQL](/docs/desktop/addons/graphql-support/)                       | for an overview of the GraphQL add-on.                  |
+|     | [GraphQL Script](/docs/desktop/addons/graphql-support/script/)         | for information about the bundled script.               |
+|     | [GraphQL Automation](/docs/desktop/addons/graphql-support/automation/) | for information about the automation framework support. |

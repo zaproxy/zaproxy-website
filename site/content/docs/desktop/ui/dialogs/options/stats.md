@@ -7,8 +7,7 @@ weight: 28
 
 # Options Statistics screen
 
-
-This screen allows you to configure the [statistics](/docs/desktop/start/features/stats/) 
+This screen allows you to configure the [statistics](/docs/desktop/start/features/stats/)
 that ZAP maintains.
 
 ### In Memory Statistics Enabled
@@ -33,7 +32,7 @@ The prefix ZAP will prepend to the statistics that it sends to the Statsd server
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |

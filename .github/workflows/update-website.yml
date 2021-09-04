@@ -3,38 +3,38 @@ name: Update Website
 on:
   push:
     branches:
-    - master
+      - master
 
 jobs:
   update-website:
     runs-on: ubuntu-latest
     steps:
-    - name: Setup node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '10.x'
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        path: zaproxy-website
-    - name: Checkout zaproxy.github.io
-      uses: actions/checkout@v2
-      with:
-        repository: zaproxy/zaproxy.github.io
-        persist-credentials: false
-        path: zaproxy.github.io
-        fetch-depth: 0
-    - name: Build Website Content
-      run: |
-        cd zaproxy-website
-        npm install
-        npm run build
-    - name: Update Website
-      uses: ./zaproxy-website/.github/actions/update-website
-      with:
-        repo: 'zaproxy.github.io'
-        branch: 'master'
-        user: 'zapbot'
-        email: '12745184+zapbot@users.noreply.github.com'
-      env:
-        AUTH_TOKEN: ${{ secrets.ZAPBOT_TOKEN }}
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "10.x"
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          path: zaproxy-website
+      - name: Checkout zaproxy.github.io
+        uses: actions/checkout@v2
+        with:
+          repository: zaproxy/zaproxy.github.io
+          persist-credentials: false
+          path: zaproxy.github.io
+          fetch-depth: 0
+      - name: Build Website Content
+        run: |
+          cd zaproxy-website
+          npm install
+          npm run build
+      - name: Update Website
+        uses: ./zaproxy-website/.github/actions/update-website
+        with:
+          repo: "zaproxy.github.io"
+          branch: "master"
+          user: "zapbot"
+          email: "12745184+zapbot@users.noreply.github.com"
+        env:
+          AUTH_TOKEN: ${{ secrets.ZAPBOT_TOKEN }}

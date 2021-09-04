@@ -26,7 +26,7 @@ You can use the
 ![](/docs/desktop/images/16/107.png) Next and
 ![](/docs/desktop/images/16/108.png) Previous
 buttons to view found search terms in the [Request](/docs/desktop/ui/tabs/request/)
-and [Response tabs](/docs/desktop/ui/tabs/response/).   
+and [Response tabs](/docs/desktop/ui/tabs/response/).
 
 You can also go directly to a specific instance by clicking on the relevant
 line in the results list.
@@ -41,11 +41,11 @@ The Attack menu has the following submenus:
 
 #### Active Scan...
 
-This will launch the [Active Scan dialog](/docs/desktop/ui/dialogs/advascan/) which allows you to initiate an [active scan](/docs/desktop/start/features/ascan/) with the starting point set to the request you selected.  
+This will launch the [Active Scan dialog](/docs/desktop/ui/dialogs/advascan/) which allows you to initiate an [active scan](/docs/desktop/start/features/ascan/) with the starting point set to the request you selected.
 
 #### Spider...
 
-This will launch the [Spider dialog](/docs/desktop/ui/dialogs/spider/) which allows you to initiate the [spider](/docs/desktop/start/features/spider/) with the starting point set to the request you selected.  
+This will launch the [Spider dialog](/docs/desktop/ui/dialogs/spider/) which allows you to initiate the [spider](/docs/desktop/start/features/spider/) with the starting point set to the request you selected.
 
 ### Include in Context
 
@@ -62,19 +62,19 @@ The [Session Contexts](/docs/desktop/ui/dialogs/session/contexts/) dialog will b
 
 This menu has the following submenus for each of the [contexts](/docs/desktop/start/features/contexts/) you have defined:
 
-#### *Context name* Form-based Auth Login request
+#### _Context name_ Form-based Auth Login request
 
 This identifies the specified node as a login request for the specified context.  
 You may only have one node identified as such in any one context.  
 The [Session Context Authentication](/docs/desktop/ui/dialogs/session/context-auth/) screen will be displayed to allow you to make any additional changes.
 
-#### *Context name* JSON-based Auth Login request
+#### _Context name_ JSON-based Auth Login request
 
 This identifies the specified node as a login request for the specified context.  
 You may only have one node identified as such in any one context.  
 The [Session Context Authentication](/docs/desktop/ui/dialogs/session/context-auth/) screen will be displayed to allow you to make any additional changes.
 
-#### *Context name* Data driven node
+#### _Context name_ Data driven node
 
 This identifies the specified node as [Data driven content](/docs/desktop/start/features/ddc/) for the specified context.  
 The [Session Context Structure](/docs/desktop/ui/dialogs/session/context-struct/) screen will be displayed to allow you to make any additional changes.
@@ -121,6 +121,6 @@ This will open the URL of the selected node in your default browser.
 
 ## See also
 
-|   |                                  |                                       |
-|---|----------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |
+|     |                                  |                                       |
+| --- | -------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |

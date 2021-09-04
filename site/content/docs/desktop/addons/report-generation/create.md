@@ -34,22 +34,22 @@ sections:    # An optional list of sections - parts of the report which may be i
 themes:      # An optional list of themes - different colours and styles which apply to the same content
 ```
 
-### report.*ext*
+### report._ext_
 
-The Thymeleaf report template.   
+The Thymeleaf report template.  
 This should have the same extension that is specified in the template.yaml file (e.g. 'report.md') except if it is a PDF report, in which case "html" should be used (see below).
 
 ### Messages.properties
 
-The report subdirectory may also include a "Messages.properties" language file for template specific strings localised to English as well as "Message_ *locale* .property" files for localising the strings into other languages.   
-The template specific strings should all start with ' `report.template.` '   
-If the report included sections then they must be defined in this file - the keys will automatically be prefixed by `report.template.section.` . Section names in the template.yaml file must just be alphanumeric strings and not start with an integer.   
-If a report includes themes then they must be defined in this file - the keys will automatically be prefixed by `report.template.theme.` . Theme names in the template.yaml file must just be alphanumeric strings and not start with an integer.   
+The report subdirectory may also include a "Messages.properties" language file for template specific strings localised to English as well as "Message\_ _locale_ .property" files for localising the strings into other languages.  
+The template specific strings should all start with ' `report.template.` '  
+If the report included sections then they must be defined in this file - the keys will automatically be prefixed by `report.template.section.` . Section names in the template.yaml file must just be alphanumeric strings and not start with an integer.  
+If a report includes themes then they must be defined in this file - the keys will automatically be prefixed by `report.template.theme.` . Theme names in the template.yaml file must just be alphanumeric strings and not start with an integer.  
 The language files may also override the default translations built into the reports add-on.
 
 ### Resources
 
-The report subdirectory may also include a "resources" directory. If this is present then when a report is generated a subdirectory will be created based on the report name and all of the files in the resources directory will be copied into it.   
+The report subdirectory may also include a "resources" directory. If this is present then when a report is generated a subdirectory will be created based on the report name and all of the files in the resources directory will be copied into it.  
 You should reference the files in the "resources" subdirectory in the following way so that they can be accessed both via the template and by the report when the subdirectory is created:
 
 ```
@@ -93,15 +93,15 @@ The description of the report set by the user.
 
 An instance of the [ReportHelper](https://github.com/zaproxy/zap-extensions/tree/main/addOns/reports/src/main/java/org/zaproxy/addon/reports/ReportHelper.java) class that provides useful methods, including:
 
-* `getConfidenceString(int confidence)` Returns an internationalised string for the associated confidence code
-* `getRiskString(int risk)` Returns an internationalised string for the associated risk code
-* `getHttpStatusCode(int code)` Returns the meaning of the specified HTTP status code
-* `getHostForSite(String site)` Returns the hostname for a given site URL
-* `getPortForSite(String site)` Returns the port for a given site URL
-* `isSslSite(String site)` Returns true if the given site URL is using SSL
-* `getStatisticsString(String stat)` Returns the meaning of the specific statistics key - currently only supported for authentication stats
-* `getSiteStats(String site, String prefix)` Returns a Map of the statistics for the given site starting with the (optional) prefix
-* `hasSiteStats(String site, String prefix)` Returns true if the given site has any statistics starting with the (optional) prefix
+- `getConfidenceString(int confidence)` Returns an internationalised string for the associated confidence code
+- `getRiskString(int risk)` Returns an internationalised string for the associated risk code
+- `getHttpStatusCode(int code)` Returns the meaning of the specified HTTP status code
+- `getHostForSite(String site)` Returns the hostname for a given site URL
+- `getPortForSite(String site)` Returns the port for a given site URL
+- `isSslSite(String site)` Returns true if the given site URL is using SSL
+- `getStatisticsString(String stat)` Returns the meaning of the specific statistics key - currently only supported for authentication stats
+- `getSiteStats(String site, String prefix)` Returns a Map of the statistics for the given site starting with the (optional) prefix
+- `hasSiteStats(String site, String prefix)` Returns true if the given site has any statistics starting with the (optional) prefix
 
 ### alertCounts
 

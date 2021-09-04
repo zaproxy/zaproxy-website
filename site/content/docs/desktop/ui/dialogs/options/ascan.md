@@ -70,8 +70,8 @@ To disable the chart the option should be set to zero minutes.
 
 ## See also
 
-|   |                                                                |                                                 |
-|---|----------------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                               | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/)           | for details of the other Options dialog screens |
-|   | [Active Scan options](/docs/desktop/ui/dialogs/options/ascan/) |                                                 |
+|     |                                                                |                                                 |
+| --- | -------------------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                               | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/)           | for details of the other Options dialog screens |
+|     | [Active Scan options](/docs/desktop/ui/dialogs/options/ascan/) |                                                 |

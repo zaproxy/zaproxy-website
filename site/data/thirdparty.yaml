@@ -1,150 +1,149 @@
 ---
-
 services:
   # ZAP Supporters - ordered by supporter level, alphabetic
-  - name: 'StackHawk'
+  - name: "StackHawk"
     link: https://www.stackhawk.com/
     logo: /img/supporters/stackhawk.png
-    license: 'Commercial, free option'
+    license: "Commercial, free option"
     supporter: ZAP Platinum Supporter
 
-  - name: 'Astra'
+  - name: "Astra"
     link: https://www.getastra.com/
     logo: /img/supporters/astra.png
-    license: 'Commercial'
+    license: "Commercial"
     supporter: ZAP Silver Supporter
 
-  - name: 'DeepFactor'
+  - name: "DeepFactor"
     link: https://deepfactor.io/
     logo: /img/supporters/deepfactor-nologo.png
-    license: 'Commercial, free community edition'
+    license: "Commercial, free community edition"
     supporter: ZAP Silver Supporter
 
   # OWASP tools, alphabetic
-  - name: 'PurpleTeam-Labs'
+  - name: "PurpleTeam-Labs"
     link: https://purpleteam-labs.com/
-    license: 'Free, open source'
+    license: "Free, open source"
     notes: OWASP Tool
 
-  - name: 'SecureCodeBox'
+  - name: "SecureCodeBox"
     link: https://www.securecodebox.io/
-    license: 'Free, open source'
+    license: "Free, open source"
     notes: OWASP Tool
 
   # Free, open source tools, alphabetic
-  - name: 'DAST Operator'
+  - name: "DAST Operator"
     link: https://github.com/banzaicloud/dast-operator
-    license: 'Free, open source'
+    license: "Free, open source"
 
-  - name: 'Microsoft RAFT'
+  - name: "Microsoft RAFT"
     link: https://github.com/microsoft/rest-api-fuzz-testing
-    license: 'Free, open source'
+    license: "Free, open source"
 
   # Open source, free, commercial tools, alphabetic
-  - name: 'Alertflex'
+  - name: "Alertflex"
     link: https://www.alertflex.org/
-    license: 'Commercial, free community edition, open source'
+    license: "Commercial, free community edition, open source"
 
   # Commerical, free option tools, alphabetic
-  - name: 'Idyllum'
+  - name: "Idyllum"
     link: https://www.idyllum.com/
-    license: 'Commercial, free option'
+    license: "Commercial, free option"
 
-  - name: 'HostedScan'
+  - name: "HostedScan"
     link: https://hostedscan.com/
-    license: 'Commercial, free option'
+    license: "Commercial, free option"
 
-  - name: 'PatrOwl'
+  - name: "PatrOwl"
     link: https://patrowl.io/
-    license: 'Commercial, free for open source projects'
+    license: "Commercial, free for open source projects"
 
-  - name: 'Sken.ai'
+  - name: "Sken.ai"
     link: https://www.sken.ai/
-    license: 'Commercial, free option'
+    license: "Commercial, free option"
 
   # Commerical, alphabetic
-  - name: 'GitLab'
+  - name: "GitLab"
     link: https://docs.gitlab.com/ee/user/application_security/dast/
-    license: 'Commercial'
+    license: "Commercial"
 
-  - name: 'IOTHREAT'
+  - name: "IOTHREAT"
     link: https://iothreat.com/
-    license: 'Commercial'
+    license: "Commercial"
 
-  - name: 'Nucleus'
+  - name: "Nucleus"
     link: https://www.nucleussec.com/integrations
-    license: 'Commercial'
+    license: "Commercial"
 
 integrations:
-  - name: 'ThreadFix'
+  - name: "ThreadFix"
     link: https://threadfix.it/
     logo: /img/supporters/denimgroup.png
-    license: 'Commercial'
+    license: "Commercial"
     supporter: ZAP Silver Supporter
 
-  - name: 'Faraday'
+  - name: "Faraday"
     link: https://www.faradaysec.com/
-    license: 'Open source community edition'
+    license: "Open source community edition"
     supporter: ZAP Bronze Supporter
 
-  - name: 'DefectDojo'
+  - name: "DefectDojo"
     link: https://www.defectdojo.org/
-    license: 'Free, open source'
+    license: "Free, open source"
     notes: OWASP Tool
- 
-  - name: 'Dradis'
+
+  - name: "Dradis"
     link: https://dradisframework.com/ce/
-    license: 'Open source community edition'
- 
-  - name: 'Sn1per'
+    license: "Open source community edition"
+
+  - name: "Sn1per"
     link: https://github.com/1N3/Sn1per
-    license: 'Open source community edition'
- 
-  - name: 'Uleska'
+    license: "Open source community edition"
+
+  - name: "Uleska"
     link: https://www.uleska.com/docs/zapproxy
-    license: 'Commercial, free option'
+    license: "Commercial, free option"
 
-  - name: 'Edgescan'
+  - name: "Edgescan"
     link: https://www.edgescan.com/
-    license: 'Commercial'
- 
-  - name: 'Security Phoenix'
+    license: "Commercial"
+
+  - name: "Security Phoenix"
     link: https://securityphoenix.com/integration/
-    license: 'Commercial'
- 
+    license: "Commercial"
+
 training:
-  - name: 'AppSec Engineer'
+  - name: "AppSec Engineer"
     link: https://appsecengineer.com/courses/owasp-zap-dast-automation/
-    what: 'DAST Automation with OWASP ZAP'
+    what: "DAST Automation with OWASP ZAP"
 
-  - name: 'Coursera'
+  - name: "Coursera"
     link: https://www.coursera.org/projects/web-application-security-testing-with-owsap-zap
-    what: 'Web Application Security Testing with OWASP ZAP'
+    what: "Web Application Security Testing with OWASP ZAP"
 
-  - name: 'Cycubix'
+  - name: "Cycubix"
     link: https://cycubix.com/course/web-application-security-essentials/
-    what: 'Web Application Security Essentials'
+    what: "Web Application Security Essentials"
 
-  - name: 'Cybrary'
+  - name: "Cybrary"
     link: https://www.cybrary.it/course/owasp-tutorial/
-    what: 'OWASP ZAP Tool'
+    what: "OWASP ZAP Tool"
 
-  - name: 'Eduonix'
+  - name: "Eduonix"
     link: https://www.eduonix.com/pentesting-with-owasp-zap-mastery-course
-    what: 'PenTesting with OWASP ZAP: mastery course'
+    what: "PenTesting with OWASP ZAP: mastery course"
 
-  - name: 'Pluralsight'
+  - name: "Pluralsight"
     link: https://www.pluralsight.com/courses/owasp-zap-web-app-pentesting-getting-started
-    what: 'ZAP Getting Started Course'
+    what: "ZAP Getting Started Course"
 
-  - name: 'Pluralsight'
+  - name: "Pluralsight"
     link: https://www.pluralsight.com/courses/automate-web-app-scans-owasp-zap-python
-    what: 'Automate Web Application Scans with OWASP ZAP and Python'
+    what: "Automate Web Application Scans with OWASP ZAP and Python"
 
-  - name: 'Pluralsight'
+  - name: "Pluralsight"
     link: https://www.pluralsight.com/courses/writing-custom-scripts-owasp-zed-attack-proxy
-    what: 'Writing Custom Scripts for OWASP Zed Attack Proxy'
+    what: "Writing Custom Scripts for OWASP Zed Attack Proxy"
 
-  - name: 'Udemy'
+  - name: "Udemy"
     link: https://www.udemy.com/course/owasp-zap-from-scratch/
-    what: 'OWASP ZAP From Scratch'
+    what: "OWASP ZAP From Scratch"

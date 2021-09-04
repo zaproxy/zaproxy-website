@@ -19,9 +19,9 @@ When set the HUD will be injected into HTML responses when ZAP is started in dae
 
 When set will send pings to a bit.ly URL when:
 
-* The HUD is used
-* The HUD tutorial first page is visited
-* The HUD tutorial last page is visited
+- The HUD is used
+- The HUD tutorial first page is visited
+- The HUD tutorial last page is visited
 
 Each ping is sent at most once per ZAP run and the only information available to the ZAP team is the number of pings made and the countries they have come from.  
 We get very little feedback and so information like this really helps us understand how ZAP is being used. We have limited time to spend and so want to focus on features that people are actually using.
@@ -49,9 +49,9 @@ The HUD will not currently work if a strong CSP policy is used in target web sit
 
 If set then various options are set that can be useful when debugging the HUD, including:
 
-* Setting the client side debug level to DEBUG
-* Sending the client side logging to the ZAP Output tab
-* Adding the 'HUD Errors' tool which shows any errors logged
+- Setting the client side debug level to DEBUG
+- Sending the client side logging to the ZAP Output tab
+- Adding the 'HUD Errors' tool which shows any errors logged
 
 ## Base directory
 
@@ -71,6 +71,6 @@ Clicking on this button will reset the tasks so that you will be able to take th
 
 ## See also
 
-|   |                                  |                                   |
-|---|----------------------------------|-----------------------------------|
-|   | [HUD](/docs/desktop/addons/hud/) | for an overview of the HUD add-on |
+|     |                                  |                                   |
+| --- | -------------------------------- | --------------------------------- |
+|     | [HUD](/docs/desktop/addons/hud/) | for an overview of the HUD add-on |

@@ -50,10 +50,12 @@ One of ZAP's [oldest issues](https://github.com/zaproxy/zaproxy/issues/9) and a 
 Have you ever encountered an application that returned a `200 - Ok` instead of a proper `404 - File Not Found` or `500 - Server Error` (or other non-standard handling)? Users can now define custom pages for their Context(s). These will be considered by scan rules whenever a URL is considered to be part of a defined and enabled Context.
 
 This new functionality gives much more specificity and control in properly modeling and therefore assessing targets. There are a few ways this can impact scanning:
+
 1. If the scan rule considers the initial condition of the request/response. (Some scan rules skip testing requests that are in an error state to start with.)
 2. If the scan rule considers the state of the response as part of it's analysis. (Some scan rules will not raise alerts when the response is an error state.)
 
 The configurations currently supported by this new functionality are:
+
 1. Ok
 2. Not Found
 3. Error
@@ -62,10 +64,11 @@ The configurations currently supported by this new functionality are:
 Of course these types are not necessarily limited to specific status code or simple definition. For example you could definitely define an `Error` type for a `405 - Method Not Allowed`, or `501 - Not Implemented`, etc. The `Other` type is provided to give further flexibility to users who want to script or handle unanticipated circumstances.
 
 The functionality also allows for various options in definition:
-- Location: URL or response (content).
-- Match type: Regex or plain string<sup>*</sup>. 
 
-<sup>*</sup> Obviously a complex regex pattern may impact scan performance.
+- Location: URL or response (content).
+- Match type: Regex or plain string<sup>\*</sup>.
+
+<sup>\*</sup> Obviously a complex regex pattern may impact scan performance.
 
 ![Custom Page definition dialogs](images/custom-page-defn.png)
 
@@ -78,7 +81,7 @@ The Encode/Decode/Hash functionality provided by ZAP is now scriptable and is no
 It still supports a lot of default transformations:
 
 | Encoder                | Decoders           | Hashers |
-|------------------------|--------------------|---------|
+| ---------------------- | ------------------ | ------- |
 | 2 byte Illegal UTF-8   | ASCII Hex Decode   | MD5     |
 | 3 byte Illegal UTF-8   | Base 64 Decode     | SHA1    |
 | 4 byte Illegal UTF-8   | Base 64 URL Decode | SHA256  |
@@ -94,7 +97,9 @@ It still supports a lot of default transformations:
 Along with allowing users to create their own scripted transforms. For example say you wanted to be able to double space a string, you could add a JavaScript script such as:
 
 ```js
-var EncodeDecodeResult = Java.type("org.zaproxy.addon.encoder.processors.EncodeDecodeResult");
+var EncodeDecodeResult = Java.type(
+  "org.zaproxy.addon.encoder.processors.EncodeDecodeResult"
+);
 
 /**
  * Process the input value and return the encoded/decoded/hashed etc. value
@@ -105,9 +110,9 @@ var EncodeDecodeResult = Java.type("org.zaproxy.addon.encoder.processors.EncodeD
  * @param {String} value - The input value
  * @returns {EncodeDecodeResult} - The value that was encoded/decoded/hashed etc.
  */
-function process(value){
-    // Replace any character (except last) with the character and a space
-    return new EncodeDecodeResult(value.replaceAll(".(?=.)", "$0 ").trim());
+function process(value) {
+  // Replace any character (except last) with the character and a space
+  return new EncodeDecodeResult(value.replaceAll(".(?=.)", "$0 ").trim());
 }
 ```
 
@@ -121,7 +126,7 @@ Checkout this video summary of [auth polling](https://www.youtube.com/watch?v=rr
 
 ## Authentication Header via ENV Vars
 
-To help simplify automated testing usage, CI/CD, etc. A new set of environmental variables are available which allow you to easily add an authentication header to all of the requests that are proxied through ZAP or initiated by the ZAP tools, including the spiders and active scanner. 
+To help simplify automated testing usage, CI/CD, etc. A new set of environmental variables are available which allow you to easily add an authentication header to all of the requests that are proxied through ZAP or initiated by the ZAP tools, including the spiders and active scanner.
 
 - `ZAP_AUTH_HEADER_VALUE` &rarr; if this is defined then its value will be added as a header to all of the requests.
 - `ZAP_AUTH_HEADER` &rarr; if this is defined then its value will be used as the header name - if it is not defined then the standard Authorization header will be used.

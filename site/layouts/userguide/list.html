@@ -1,15 +1,13 @@
 {{ define "main" }}
-  <div class="wrapper py-30">
-      <div class="flex latest-versions">
-          <div class="col-1-4 on-tab-full">
-              {{ block "sidebar" . }}
-                {{ partial "tree" (dict "root" . "dir" "/content/docs/desktop/")  }}
-              {{end}}
-            </div>
-        <div class="col-3-4 on-tab-full guide-content">
-          {{ partial "crumbs" . }}
-          {{ .Content }}
-        </div>
-      </div>
+<div class="wrapper py-30">
+  <div class="flex latest-versions">
+    <div class="col-1-4 on-tab-full">
+      {{ block "sidebar" . }} {{ partial "tree" (dict "root" . "dir"
+      "/content/docs/desktop/") }} {{end}}
+    </div>
+    <div class="col-3-4 on-tab-full guide-content">
+      {{ partial "crumbs" . }} {{ .Content }}
+    </div>
   </div>
+</div>
 {{ end }}

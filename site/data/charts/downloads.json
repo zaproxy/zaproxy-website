@@ -1,7 +1,16 @@
 {
   "title": "Direct Downloads",
   "description": "Direct downloads since v2.4.3. It is worth noting that downloads have reduced since the Docker images have become more popular.",
-  "columns": ["Version" , "v2.4.3", "v2.5.0", "v2.6.0", "v2.7.0", "v2.8.0", "v2.9.0", "v2.10.0"],
+  "columns": [
+    "Version",
+    "v2.4.3",
+    "v2.5.0",
+    "v2.6.0",
+    "v2.7.0",
+    "v2.8.0",
+    "v2.9.0",
+    "v2.10.0"
+  ],
   "data": [
     ["2015-12-01", 10465, 0, 0, 0, 0, 0, 0, ""],
     ["2016-02-01", 42682, 0, 0, 0, 0, 0, 0, ""],

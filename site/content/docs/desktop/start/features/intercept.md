@@ -15,7 +15,7 @@ You can also set [breakpoints](/docs/desktop/start/features/breakpoints/) which 
 
 ## See also
 
-|   |                                           |                                       |
-|---|-------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
+|     |                                           |                                       |
+| --- | ----------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/) | provided by ZAP                       |

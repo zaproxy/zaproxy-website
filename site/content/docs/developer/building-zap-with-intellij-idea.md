@@ -2,8 +2,8 @@
 title: "Building ZAP with IntelliJ IDEA"
 description: "This guide will get you started with building and running ZAP in IntelliJ IDEA."
 tags:
-- guide
-- tutorial
+  - guide
+  - tutorial
 type: page
 date: "2021-03-22"
 ---
@@ -11,36 +11,40 @@ date: "2021-03-22"
 This guide explains how to make changes to ZAP using IntelliJ IDEA.
 
 ## Preparation
+
 You will need to have followed the [Quick Start Guide to Building ZAP](../quick-start-build/) and installed a version of [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
 
 ##### Gradle Resources
+
 Working with ZAP in IntelliJ IDEA may need a bit more Java resources for the Gradle actions. To adjust how much memory Gradle can use on your machine set the option in [gradle.properties](https://docs.gradle.org/current/userguide/build_environment.html)
 
 For Linux/OSX
+
 ```bash
 echo 'org.gradle.jvmargs=-Xmx4g -XX:MaxPermSize=1g' >> ~/.gradle/gradle.properties
-```  
+```
 
 For Windows
+
 ```powershell
 echo "org.gradle.jvmargs=-Xmx4g -XX:MaxPermSize=1g" >> %USERPROFILE%\.gradle\gradle.properties
-```  
+```
 
 ## Import the ZAP Repositories
 
-On the welcome screen of IntelliJ IDEA, click on 'New Project'. In the New Project window, select 'Empty Project' and click on Next. Choose a Project name (e.g. "ZAP Development Environment") and pick a location of your choice. Click on Finish.  
+On the welcome screen of IntelliJ IDEA, click on 'New Project'. In the New Project window, select 'Empty Project' and click on Next. Choose a Project name (e.g. "ZAP Development Environment") and pick a location of your choice. Click on Finish.
 
 ![IntelliJ New Project](/img/docs/developer/intellij-new-project.png)
 
-In the 'Project Structure' window that pops up next, pick an installed JDK.  
+In the 'Project Structure' window that pops up next, pick an installed JDK.
 
 ![Pick installed JDK](/img/docs/developer/intellij-jdk.png)
 
-In the same window, select the 'Modules' tab under 'Project Settings', click on the ➕ button, and select 'Import Module'.  
+In the same window, select the 'Modules' tab under 'Project Settings', click on the ➕ button, and select 'Import Module'.
 
 ![Import Module](/img/docs/developer/intellij-import-module.png)
 
-Then, in the 'Select File or Directory to Import' window, navigate to any one of the cloned ZAP repositories, select the 'build.gradle.kts' file that is present in the root of its directory, and click on OK.  
+Then, in the 'Select File or Directory to Import' window, navigate to any one of the cloned ZAP repositories, select the 'build.gradle.kts' file that is present in the root of its directory, and click on OK.
 
 ![Select Gradle Build Script](/img/docs/developer/intellij-select-gradle-build-script.png)
 
@@ -51,8 +55,10 @@ You should now be able to see all the imported repositories in the IntelliJ IDEA
 It is worth noting that some of the _zap-extensions_ add-ons may fail to compile if you do not have the required environment for them. This is to be expected and is not a problem unless you want to work on those add-ons, in which case see their READMEs for more details.
 
 ## Running ZAP
+
 In the IntelliJ Project tab navigate to:
-* zaproxy / zap / src / main / java / org / zaproxy / zap
+
+- zaproxy / zap / src / main / java / org / zaproxy / zap
 
 Right click on `ZAP` and select 'Run ZAP.main()'.
 
@@ -71,6 +77,7 @@ Change the 'Working directory' by browsing to: `.../zaproxy/zap/src/main/dist/`.
 Click on Apply and try running ZAP again. ZAP should now start with all of the add-ons correctly configured.
 
 ## Running Gradle Tasks
+
 You can run the ZAP Gradle tasks from the command line or from within IntelliJ IDEA - the end result will be the same.
 
 IntelliJ has a 'Gradle' tab that lists all of the tasks available to you ordered by project. You can view this tab by going to 'View' &#8594; 'Tool Windows' &#8594; 'Gradle'.

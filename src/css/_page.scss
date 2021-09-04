@@ -2,7 +2,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,7 +20,7 @@ a {
   list-style-type: disc;
   padding-left: 1em;
   font-size: 1.185rem;
-  color: #2A303A;
+  color: #2a303a;
 }
 
 .bullet-list li {
@@ -37,8 +39,9 @@ table {
   &.bordered {
     border: solid 2px #eee;
 
-    td, th {
-      padding:4px 8px;
+    td,
+    th {
+      padding: 4px 8px;
     }
   }
 }
@@ -47,14 +50,14 @@ table {
   table-layout: fixed;
 }
 
-table.table-fixed h5 { 
+table.table-fixed h5 {
   margin-bottom: 0px;
 }
 
 th {
   border-bottom: solid 3px var(--grey-light);
   padding: 4px 8px;
-  background:  var(--grey-light);
+  background: var(--grey-light);
 }
 
 td {

@@ -27,11 +27,11 @@ Only requests and responses which match those criteria will be intercepted by ZA
 Custom breakpoints are shown in the [Breakpoints tab](/docs/desktop/ui/tabs/breakpoints/)
 
 Breakpoint option are configured using the
-[Options Breakpoints screen](/docs/desktop/ui/dialogs/options/breakpoints/).  
+[Options Breakpoints screen](/docs/desktop/ui/dialogs/options/breakpoints/).
 
 ## See also
 
-|   |                                           |                                       |
-|---|-------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/) | provided by the UI                    |
+|     |                                           |                                       |
+| --- | ----------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/) | provided by the UI                    |

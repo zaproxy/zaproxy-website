@@ -1,24 +1,6 @@
 {
-    "OK": [
-        200,
-        301,
-        302,
-        303,
-        307,
-        403,
-        429,
-        500,
-        999
-    ],
-    "attrs": [
-        "href"
-    ],
-    "exclude_scheme_prefixes": [
-        "tel",
-        "mailto",
-        "/"
-    ],
-    "tags": [
-        "a"
-    ]
+  "OK": [200, 301, 302, 303, 307, 403, 429, 500, 999],
+  "attrs": ["href"],
+  "exclude_scheme_prefixes": ["tel", "mailto", "/"],
+  "tags": ["a"]
 }

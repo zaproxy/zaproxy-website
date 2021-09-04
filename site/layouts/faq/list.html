@@ -1,41 +1,40 @@
 {{ define "main" }}
 <section class="bolt-header">
-    <div class="wrapper py-20">
-      <h1 class="text--white">{{ .Title }}</h1>
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
   </div>
 </section>
 
-  <div class="wrapper py-70">
-      <div class="flex latest-versions">
-        <div class="col-2-3 pr-30">
-            <script type="application/json">{{- $pages := (where .Pages ".Params.noindex" "ne" true) -}}
-                {{- $lastindex := (sub (len $pages) 1) -}}
-                {{- range $index, $page := $pages -}} 
-              {
-                "url": "{{ .Permalink }}",
-                "title": "{{ .Title }}",
-              }
-                {{- if ne $lastindex $index }},{{ end }}
-                {{- end -}}]
-            </script>
-            {{ range .Pages.GroupBy "Weight"}}
-            {{ range .Pages.GroupByParam "category" }}
-            <section data-category="{{ .Key | urlize }}">
-              <h2 id="cat-{{ .Key | urlize }}">{{ .Key }}</h2>
-              <ul>              
-                {{ range .Pages }}
-                <li>
-                  <a href="{{ .Permalink }}">{{ .Title }}</a>
-                </li>
-              {{ end }}
-              </ul>
-            </section>
+<div class="wrapper py-70">
+  <div class="flex latest-versions">
+    <div class="col-2-3 pr-30">
+      <script type="application/json">
+        {{- $pages := (where .Pages ".Params.noindex" "ne" true) -}}
+                        {{- $lastindex := (sub (len $pages) 1) -}}
+                        {{- range $index, $page := $pages -}}
+                      {
+                        "url": "{{ .Permalink }}",
+                        "title": "{{ .Title }}",
+                      }
+                        {{- if ne $lastindex $index }},{{ end }}
+                        {{- end -}}]
+      </script>
+      {{ range .Pages.GroupBy "Weight"}} {{ range .Pages.GroupByParam "category"
+      }}
+      <section data-category="{{ .Key | urlize }}">
+        <h2 id="cat-{{ .Key | urlize }}">{{ .Key }}</h2>
+        <ul>
+          {{ range .Pages }}
+          <li>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </section>
 
-          {{ end }}
-          {{ end }}
-        </div>
-        <div class="col-1-3">
-        </div>
-      </div>
+      {{ end }} {{ end }}
+    </div>
+    <div class="col-1-3"></div>
   </div>
+</div>
 {{ end }}

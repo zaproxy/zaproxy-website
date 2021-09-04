@@ -16,4 +16,4 @@ It's bundled Jython 2.7.2.
 
 When you create a new script you will be given the option to use Python, as well as the option to choose from various Python templates.
 
-Python Scripting is configured using the [Options Jython screen](/docs/desktop/addons/python-scripting/options/).  
+Python Scripting is configured using the [Options Jython screen](/docs/desktop/addons/python-scripting/options/).

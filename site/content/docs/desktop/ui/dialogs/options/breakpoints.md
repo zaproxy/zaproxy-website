@@ -20,11 +20,11 @@ Custom breakpoints will not be affected.
 
 ### ZAP always on top when breakpoint hit
 
-If selected this will mean that ZAP stays on top of all other windows whenever a breakpoint is hit.  
+If selected this will mean that ZAP stays on top of all other windows whenever a breakpoint is hit.
 
 ### Show buttons to select the requests you don't want ZAP to break on
 
-This controls whether the buttons to select the file types you don't want ZAP to break on and the scope filter appear in the break panel.  
+This controls whether the buttons to select the file types you don't want ZAP to break on and the scope filter appear in the break panel.
 
 #### Javascript URL regex
 
@@ -44,7 +44,7 @@ This controls whether there is a single combined break button on the [Top Level 
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |

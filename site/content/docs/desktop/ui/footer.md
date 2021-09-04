@@ -11,11 +11,11 @@ This footer displays counts of the High, Medium, Low and Informational
 [alerts](/docs/desktop/start/features/alerts/) and counts of the currently active
 [active](/docs/desktop/start/features/ascan/) and
 [spider](/docs/desktop/start/features/spider/)
-scans.   
+scans.  
 It can also contain counters of scanners provided by add-ons.
 
 ## See also
 
-|   |                                  |                                       |
-|---|----------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |
+|     |                                  |                                       |
+| --- | -------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/) | for an overview of the user interface |

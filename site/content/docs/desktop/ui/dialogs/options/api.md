@@ -11,21 +11,21 @@ This screen allows you to configure the [API](/docs/desktop/start/features/api/)
 
 ### Enabled
 
-If enabled then the API is available to all machines that are able to use ZAP as a proxy.  
+If enabled then the API is available to all machines that are able to use ZAP as a proxy.
 
 ### Web UI Enabled
 
-If enabled then the API Web UI is available to all machines that are able to use ZAP as a proxy. To access the API Web UI point your browser to the host and port that ZAP is listening on.  
+If enabled then the API Web UI is available to all machines that are able to use ZAP as a proxy. To access the API Web UI point your browser to the host and port that ZAP is listening on.
 
 ### Secure Only
 
-If enabled then the API will only be available via HTTPS. Otherwise it will be available via both HTTP and HTTPS.  
+If enabled then the API will only be available via HTTPS. Otherwise it will be available via both HTTP and HTTPS.
 
 ### API Key
 
 A key that must be specified on all API 'actions' and some 'other' operations.  
 The API key is used to prevent malicious sites from accessing the ZAP API.  
-It is strongly recommended that you set a key unless you are using ZAP in a completely isolated environment.  
+It is strongly recommended that you set a key unless you are using ZAP in a completely isolated environment.
 
 ### Addresses permitted to use the API
 
@@ -56,7 +56,7 @@ Note that the full error details are always written to the ZAP log file.
 ### Autofill API key in the API UI
 
 If this option is selected then the API key is automatically included in the API UI.  
-This is not recommended unless you are using ZAP in a completely isolated environment, as it allows malicious sites to access the ZAP API Key.  
+This is not recommended unless you are using ZAP in a completely isolated environment, as it allows malicious sites to access the ZAP API Key.
 
 ### Enable JSONP
 
@@ -66,7 +66,7 @@ If JSONP is enabled then all API operations using JSONP (including views) will r
 
 ## See also
 
-|   |                                                      |                                                 |
-|---|------------------------------------------------------|-------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
-|   | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |
+|     |                                                      |                                                 |
+| --- | ---------------------------------------------------- | ----------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                     | for an overview of the user interface           |
+|     | [Options dialogs](/docs/desktop/ui/dialogs/options/) | for details of the other Options dialog screens |

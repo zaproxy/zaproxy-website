@@ -11,9 +11,9 @@ cascade:
 
 # OpenAPI Support
 
-This add-on allows you to spider and import OpenAPI (Swagger) definitions, versions 1.2, 2.0, and 3.0.   
+This add-on allows you to spider and import OpenAPI (Swagger) definitions, versions 1.2, 2.0, and 3.0.
 
-The add-on will automatically detect any OpenAPI definitions and spider them as long as they are in scope.   
+The add-on will automatically detect any OpenAPI definitions and spider them as long as they are in scope.
 
 It also supports the [Automation Framework](/docs/desktop/addons/openapi-support/automation/).
 
@@ -21,8 +21,8 @@ It also supports the [Automation Framework](/docs/desktop/addons/openapi-support
 
 2 menu items are added to the Import menu:
 
-* Import an OpenAPI definition from the local file system
-* Import an OpenAPI definition from a URL
+- Import an OpenAPI definition from the local file system
+- Import an OpenAPI definition from a URL
 
 Both dialogues allow to override the server URL present in the OpenAPI definition (or specify one if not present) through the Target URL field.
 
@@ -33,17 +33,17 @@ The Target URL has the following format:
 with all URI components optional. Note: while all URI components are optional the scheme and authority become mandatory when not importing from URL and the definition does not specify them (for example, it has no servers or schemes).  
 Following some examples, overriding:
 
-* The authority and path: `localhost/api/`
-* Just the scheme: `https://`
-* Just the authority: `qa.example.com:9090`
-* Just the path: `/dev/v3/`
+- The authority and path: `localhost/api/`
+- Just the scheme: `https://`
+- Just the authority: `qa.example.com:9090`
+- Just the path: `/dev/v3/`
 
 ## API
 
 The following operations are added to the API:
 
-* ACTION importFile (file, target)
-* ACTION importUrl (url, hostOverride)
+- ACTION importFile (file, target)
+- ACTION importUrl (url, hostOverride)
 
 Both `target` and `hostOverride` support the `Target URL` format explained earlier. The definitions will be imported synchronously and any warnings will be returned.
 
@@ -54,25 +54,26 @@ When the OpenAPI schema contains path params the plugin will automatically gener
 /users/v1/{username}/email:
 ...
 parameters:
+
 - name: username
-in: path
-description: username to update email
-required: true
-schema:
-type: string
-...
-` **Default Context \> Structure \> Structural Modifiers** `
-DDN0: (/)(.+?)(/.*)
-DDN1: (/users/v1/)(.+?)(/.*)
-`
+  in: path
+  description: username to update email
+  required: true
+  schema:
+  type: string
+  ...
+  `**Default Context \> Structure \> Structural Modifiers**`
+  DDN0: (/)(.+?)(/._)
+  DDN1: (/users/v1/)(.+?)(/._)
+  `
 
 ## Command Line
 
 The following Command Line options are added:
 
-* -openapifile \<filename\> : Imports an OpenAPI definition from the specified file name
-* -openapiurl \<url\> : Imports an OpenAPI definition from the specified URL
-* -openapitargeturl \<url\> : The Target URL, to override the server URL present in the OpenAPI definition
+- -openapifile \<filename\> : Imports an OpenAPI definition from the specified file name
+- -openapiurl \<url\> : Imports an OpenAPI definition from the specified URL
+- -openapitargeturl \<url\> : The Target URL, to override the server URL present in the OpenAPI definition
 
 The definitions will be imported synchronously and any warnings will be displayed on the command line.
 
@@ -90,4 +91,4 @@ In most cases these will be simple values (like strings and integers) but in som
 
 The add-on maintains the following statistics:
 
-* openapi.urls.added : The total number of URLs added when importing OpenAPI definitions
+- openapi.urls.added : The total number of URLs added when importing OpenAPI definitions

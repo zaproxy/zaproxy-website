@@ -14,7 +14,7 @@ The ZAP GUI includes a panel in which such requests can be reviewed: [Callbacks 
 
 ## See also
 
-|   |                                                                |   |
-|---|----------------------------------------------------------------|---|
-|   | [Callbacks tab](/docs/desktop/ui/tabs/callbacks/)              |   |
-|   | [Callback options](/docs/desktop/ui/dialogs/options/callback/) |   |
+|     |                                                                |     |
+| --- | -------------------------------------------------------------- | --- |
+|     | [Callbacks tab](/docs/desktop/ui/tabs/callbacks/)              |     |
+|     | [Callback options](/docs/desktop/ui/dialogs/options/callback/) |     |

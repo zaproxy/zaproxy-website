@@ -8,17 +8,17 @@ weight: 3
 # Alerts
 
 An alert is a potential vulnerability and is associated with a specific request.  
-A request can have more than one alert.  
+A request can have more than one alert.
 
 Alerts are shown in the UI with a flag indicating the risk:
 
-|   |                                                     |   |
-|---|-----------------------------------------------------|---|
-|   | ![](/docs/desktop/images/16/071.png) High           |   |
-|   | ![](/docs/desktop/images/16/076.png) Medium         |   |
-|   | ![](/docs/desktop/images/16/074.png) Low            |   |
-|   | ![](/docs/desktop/images/16/073.png) Informational  |   |
-|   | ![](/docs/desktop/images/16/072.png) False Positive |   |
+|     |                                                     |     |
+| --- | --------------------------------------------------- | --- |
+|     | ![](/docs/desktop/images/16/071.png) High           |     |
+|     | ![](/docs/desktop/images/16/076.png) Medium         |     |
+|     | ![](/docs/desktop/images/16/074.png) Low            |     |
+|     | ![](/docs/desktop/images/16/073.png) Informational  |     |
+|     | ![](/docs/desktop/images/16/072.png) False Positive |     |
 
 Alerts can be raised by various ZAP components, including but not limited to: [active scanning](/docs/desktop/start/features/ascan/), [passive scanning](/docs/desktop/start/features/pscan/),
 scripts, by addons (extensions), or manually using the [Add Alert dialog](/docs/desktop/ui/dialogs/addalert/)
@@ -48,11 +48,11 @@ The format is:
 
 The following properties are supported:
 
-* name
-* description
-* solution
-* otherInfo
-* reference
+- name
+- description
+- solution
+- otherInfo
+- reference
 
 For example
 
@@ -61,8 +61,8 @@ For example
 40012.solution = Follow our company specific guidelines at http://internet.example.com/xss.html
 ```
 
-If the value starts with a '+' then it is appended to the existing information.   
-If it starts with a '-' then it is prepended to the existing information.   
+If the value starts with a '+' then it is appended to the existing information.  
+If it starts with a '-' then it is prepended to the existing information.  
 If it does not start with a '+' or '-' then it replaces the existing information.
 
 The alert override configuration file can be specified via the [API](/docs/desktop/start/features/api/),
@@ -75,7 +75,7 @@ or using the [command line](/docs/desktop/cmdline/) option:
 
 ## See also
 
-|   |                                           |                                       |
-|---|-------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
+|     |                                           |                                       |
+| --- | ----------------------------------------- | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/) | provided by ZAP                       |

@@ -1,8 +1,8 @@
 <section class="py-70">
-  <div class="homepage-hero__wrapper wrapper" >
-      <div class="glide">
-        <div class="glide-track" data-glide-el="track">
-          <div class="glide__slides">
+  <div class="homepage-hero__wrapper wrapper">
+    <div class="glide">
+      <div class="glide-track" data-glide-el="track">
+        <div class="glide__slides">
           {{ range .Site.Data.homepage.hero.heroItems }}
           <div class="homepage-hero__item flex glide__slide">
             <div class="homepage-hero__item-content">
@@ -10,25 +10,30 @@
                 <h1>{{ .headline }}</h1>
                 <h2 class="on-sm-hide mt-20">
                   {{ .subhead }}
-                  <span class="small-text">{{ .quote_source | markdownify }}</span>
+                  <span class="small-text"
+                    >{{ .quote_source | markdownify }}</span
+                  >
                 </h2>
-
               </hgroup>
 
-              <a href="/getting-started/" class="button button--blue">Quick Start Guide</a>
-              <a href="/download/" class="button button--orange">Download now</a>
+              <a href="/getting-started/" class="button button--blue"
+                >Quick Start Guide</a
+              >
+              <a href="/download/" class="button button--orange"
+                >Download now</a
+              >
             </div>
             <div class="homepage-hero__item-image ml-40">
-                {{ $svg := (printf "%s%s" "svg/homepage/hero/" .image ) }}
-                {{ partial $svg .}}
+              {{ $svg := (printf "%s%s" "svg/homepage/hero/" .image ) }} {{
+              partial $svg .}}
             </div>
           </div>
           {{ end }}
-          </div>
+        </div>
       </div>
       <div class="glide__bullets" data-glide-el="controls[nav]">
         {{ range $index, $el := .Site.Data.homepage.hero.heroItems }}
-            <button class="glide__bullet" data-glide-dir="={{$index}}"></button>
+        <button class="glide__bullet" data-glide-dir="={{$index}}"></button>
         {{ end }}
       </div>
     </div>

@@ -15,10 +15,10 @@ This add-on provides a framework that allows ZAP to be automated in an easy and 
 
 It provides the following command line options:
 
-* -autorun \<filename\> Run the automation jobs specified in the file.
-* -autogenmin \<filename\> Generate template automation file with the key parameters.
-* -autogenmax \<filename\> Generate template automation file with all parameters.
-* -autogenconf \<filename\> Generate template automation file using the current configuration.
+- -autorun \<filename\> Run the automation jobs specified in the file.
+- -autogenmin \<filename\> Generate template automation file with the key parameters.
+- -autogenmax \<filename\> Generate template automation file with all parameters.
+- -autogenconf \<filename\> Generate template automation file using the current configuration.
 
 To use the automation framework:
 
@@ -40,12 +40,12 @@ The [environment](/docs/desktop/addons/automation-framework/environment/) sectio
 
 The following automation jobs are supported by this add-on:
 
-* [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
-* [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
-* [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
-* [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - crafts specific requests to send to the corresponding targets
-* [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
-* [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
+- [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
+- [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
+- [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
+- [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - crafts specific requests to send to the corresponding targets
+- [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
+- [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
 
 This framework is plugable and so other add-ons may add support for other jobs, see the [Automation Framework](/docs/automate/automation-framework/) website pages for a more complete list.
 

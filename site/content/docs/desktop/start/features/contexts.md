@@ -19,13 +19,13 @@ Contexts are defined as a set of regular expressions (regexs) which are applied 
 
 You can configure contexts via:
 
-* Right click menu items in the in the Sites or History tab
-* The [Session Contexts dialogs](/docs/desktop/ui/dialogs/session/contexts/).
+- Right click menu items in the in the Sites or History tab
+- The [Session Contexts dialogs](/docs/desktop/ui/dialogs/session/contexts/).
 
 ## See also
 
-|   |                                                                  |                                                                           |
-|---|------------------------------------------------------------------|---------------------------------------------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                                 | for an overview of the user interface                                     |
-|   | [Features](/docs/desktop/start/features/)                        | provided by ZAP                                                           |
-|   | [Structural Modifiers](/docs/desktop/start/features/structmods/) | controls which change how ZAP represents the structure of the application |
+|     |                                                                  |                                                                           |
+| --- | ---------------------------------------------------------------- | ------------------------------------------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                                 | for an overview of the user interface                                     |
+|     | [Features](/docs/desktop/start/features/)                        | provided by ZAP                                                           |
+|     | [Structural Modifiers](/docs/desktop/start/features/structmods/) | controls which change how ZAP represents the structure of the application |

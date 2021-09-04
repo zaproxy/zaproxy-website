@@ -1,9 +1,9 @@
 ---
 title: "ZAP - API Scan"
-tags: 
-- docker
-- guide
-- packaged_scan
+tags:
+  - docker
+  - guide
+  - packaged_scan
 type: docker
 ---
 
@@ -16,10 +16,11 @@ The Active Scan is tuned to APIs, so it doesn't bother looking for things like X
 
 It also includes 2 scripts that:
 
-* Raise alerts for any HTTP Server Error response codes
-* Raise alerts for any URLs that return content types that are not usually associated with APIs
+- Raise alerts for any HTTP Server Error response codes
+- Raise alerts for any URLs that return content types that are not usually associated with APIs
 
 ### Usage
+
 ```
 Usage: zap-api-scan.py -t <target> -f <format> [options]
     -t target         target API definition, OpenAPI or SOAP, local file or URL, e.g. https://www.example.com/openapi.json
@@ -37,7 +38,7 @@ Options:
     -a                include the alpha passive scan rules as well
     -d                show debug messages
     -P                specify listen port
-    -D                delay in seconds to wait for passive scanning 
+    -D                delay in seconds to wait for passive scanning
     -i                default rules not in the config file to INFO
     -I                do not return failure on warning (post 2.9.0)
     -l level          minimum level to show: PASS, IGNORE, INFO, WARN or FAIL, use with -s to hide example URLs
@@ -53,11 +54,14 @@ Options:
 ```
 
 ### Configuration
+
 The configuration works in a very similar way as the [Baseline Scan](../baseline-scan/) so see the Baseline page for more details.
 
 ### Configuration File
+
 You can configure how the API scan runs with a configuration file. A default configuration file can be created using the '-g' parameter.
 Unlike the baseline configuration file the API configuration file handles both active and passive scan rules.
+
 ```
 # zap-api-scan rule configuration file
 # Change WARN to IGNORE to ignore rule or FAIL to fail if rule matches
@@ -134,12 +138,15 @@ Unlike the baseline configuration file the API configuration file handles both a
 ```
 
 For more details see the blog posts:
-* [Exploring APIs with ZAP](/blog/2017-04-03-exploring-apis-with-zap/)
-* [Scanning APIs with ZAP](/blog/2017-06-19-scanning-apis-with-zap/)
-* [Introducing the GraphQL Add-on for ZAP](/blog/2020-08-28-introducing-the-graphql-add-on-for-zap/)
+
+- [Exploring APIs with ZAP](/blog/2017-04-03-exploring-apis-with-zap/)
+- [Scanning APIs with ZAP](/blog/2017-06-19-scanning-apis-with-zap/)
+- [Introducing the GraphQL Add-on for ZAP](/blog/2020-08-28-introducing-the-graphql-add-on-for-zap/)
 
 ### Scan Hooks
+
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
 
 ### Source Code
+
 The source code for this script is in [https://github.com/zaproxy/zaproxy/tree/main/docker](https://github.com/zaproxy/zaproxy/tree/main/docker).

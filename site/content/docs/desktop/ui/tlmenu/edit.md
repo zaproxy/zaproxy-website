@@ -14,7 +14,7 @@ This allows you to change the current [mode](/docs/desktop/start/features/modes/
 
 ### Find...
 
-This opens the [Find dialog](/docs/desktop/ui/dialogs/find/) which allows you to find a string in the currently selected window.  
+This opens the [Find dialog](/docs/desktop/ui/dialogs/find/) which allows you to find a string in the currently selected window.
 
 ### Search...
 
@@ -43,7 +43,7 @@ Note that [add-ons](/docs/desktop/start/features/addons/) can add additional men
 
 ## See also
 
-|   |                                                |                                       |
-|---|------------------------------------------------|---------------------------------------|
-|   | [The top level menu](/docs/desktop/ui/tlmenu/) |                                       |
-|   | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |
+|     |                                                |                                       |
+| --- | ---------------------------------------------- | ------------------------------------- |
+|     | [The top level menu](/docs/desktop/ui/tlmenu/) |                                       |
+|     | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |

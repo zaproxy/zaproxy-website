@@ -1,81 +1,80 @@
 ---
-
 platinum:
-  - name: 'StackHawk'
+  - name: "StackHawk"
     link: https://www.stackhawk.com/
     logo: /img/supporters/stackhawk.png
     notes: Currently sponsoring Simon's work on ZAP
 
-  - name: 'Mozilla'
+  - name: "Mozilla"
     link: https://www.mozilla.org/
     logo: /img/supporters/mozilla.png
     notes: Sponsored Simon for 8 years and $10,000 donation
 
 gold:
-  - name: 'Google'
+  - name: "Google"
     link: https://www.google.com/
     logo: /img/supporters/google.png
-    notes: $4,500 donations and GSoC 
+    notes: $4,500 donations and GSoC
 
-  - name: 'Salesforce'
+  - name: "Salesforce"
     link: https://www.salesforce.com/
     logo: /img/supporters/salesforce.png
     notes: $9,000 in donations
 
 silver:
-  - name: 'OWASP'
+  - name: "OWASP"
     link: https://www.owasp.org/
     logo: /img/supporters/owasp.png
     notes: General support and an early significant donation
 
-  - name: 'Segment'
+  - name: "Segment"
     link: https://segment.com/
     logo: /img/supporters/segment.png
     notes: Sponsored some of David's work on the HUD
 
-  - name: 'Sonatype'
+  - name: "Sonatype"
     link: https://www.sonatype.com/
     logo: /img/supporters/sonatype.png
     notes: ZAP in Ten series
 
-  - name: 'OWASP Denver'
+  - name: "OWASP Denver"
     link: https://owasp.org/www-chapter-denver/
     logo: /img/supporters/owaspdenver.png
     notes: A $5,000 donation
 
-  - name: 'Denim Group'
+  - name: "Denim Group"
     link: https://www.denimgroup.com/
     logo: /img/supporters/denimgroup.png
     notes: $3,000 in donations
 
-  - name: 'Webswing'
+  - name: "Webswing"
     link: https://www.webswing.org/
     logo: /img/supporters/webswing.png
     notes: Permisssion to include production version of Webswing in the ZAP Docker images
 
-  - name: 'Astra'
+  - name: "Astra"
     link: https://www.getastra.com/
     logo: /img/supporters/astra.png
     notes: Sponsoring some of Akshath's work on ZAP
 
-  - name: 'DeepFactor'
+  - name: "DeepFactor"
     link: http://deepfactor.io/
     logo: /img/supporters/deepfactor.png
     notes: $1,000 donation
 
-  - name: 'HiSolution AG'
+  - name: "HiSolution AG"
     link: https://www.hisolutions.com/
     logo: /img/supporters/hisolutions.png
     notes: $1,000 donation
 
 bronze:
-  - name: 'Faraday'
+  - name: "Faraday"
     link: https://www.faradaysec.com/
     notes: $900 donation
 
-  - name: 'Sage'
+  - name: "Sage"
     link: https://www.sage.co.uk/
     notes: Sponsored some of Simon's initial work on ZAP
 
-  - name: 'Microsoft'
+  - name: "Microsoft"
     link: https://www.microsoft.com/

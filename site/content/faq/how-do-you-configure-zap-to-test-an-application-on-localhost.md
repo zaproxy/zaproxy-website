@@ -5,7 +5,6 @@ category: Networking
 weight: 4
 ---
 
-
 ZAP has no problems scanning applications running on localhost, however there
 are a couple of things you need to be aware of.
 

@@ -1,46 +1,66 @@
 <table data-sort-filter class="table videos">
-    <thead  align="left">
+  <thead align="left">
     <tr>
-        <th style="width: 15%">Series</th>
-        <th style="width: 30%">Title</th>
-        <th style="width: 10%">Length</th>
-        <th style="width: 30%">Tags</th>
-        <th style="width: 15%">Date</th>
+      <th style="width: 15%">Series</th>
+      <th style="width: 30%">Title</th>
+      <th style="width: 10%">Length</th>
+      <th style="width: 30%">Tags</th>
+      <th style="width: 15%">Date</th>
     </tr>
-    </thead>
-    {{ range sort $.Site.Data.videos "date" "desc" }}
-    <tr>
-        <td >
-            {{if eq .series "Deep Dive" }}
-            <a href="https://www.youtube.com/playlist?list=PLz_NN8o2uh8AQ7VyUEN1GCCnpzl5_FaJA" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
-            {{else if or (eq .series "ZAP in Ten") (eq .series "ADDO Automation") }}
-            <a href="https://www.alldaydevops.com/zap-in-ten" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
-            {{else if eq .series "ZAPCon 2021" }}
-            <a href="https://www.youtube.com/playlist?list=PLz_NN8o2uh8CtsbnEA8NhJODYDg2qr3md" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
-            {{else if eq .series "Tutorials" }}
-            <a href="https://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
-            {{else}}
-            {{ .series }}
-            {{end}}
-        </td>
-        <td id="video-{{ .id }}">
-            {{if eq .site "youtube" }}
-            <a href="https://www.youtube.com/watch?v={{ .id }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
-            {{else if eq .site "vidyard" }}
-            <a href="https://play.vidyard.com/{{ .id }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a>
-            {{else}}
-            {{ .title }}
-            {{end}}
-        </td>
-        <td align="center">
-            {{ .length }}
-        </td>
-        <td>
-            {{ range sort .tags }}{{ . }} {{ end }}
-        </td>
-        <td align="center">
-            {{ .date }}
-        </td>
-    </tr>
-    {{ end }}
+  </thead>
+  {{ range sort $.Site.Data.videos "date" "desc" }}
+  <tr>
+    <td>
+      {{if eq .series "Deep Dive" }}
+      <a
+        href="https://www.youtube.com/playlist?list=PLz_NN8o2uh8AQ7VyUEN1GCCnpzl5_FaJA"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ .series }}</a
+      >
+      {{else if or (eq .series "ZAP in Ten") (eq .series "ADDO Automation") }}
+      <a
+        href="https://www.alldaydevops.com/zap-in-ten"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ .series }}</a
+      >
+      {{else if eq .series "ZAPCon 2021" }}
+      <a
+        href="https://www.youtube.com/playlist?list=PLz_NN8o2uh8CtsbnEA8NhJODYDg2qr3md"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ .series }}</a
+      >
+      {{else if eq .series "Tutorials" }}
+      <a
+        href="https://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ .series }}</a
+      >
+      {{else}} {{ .series }} {{end}}
+    </td>
+    <td id="video-{{ .id }}">
+      {{if eq .site "youtube" }}
+      <a
+        href="https://www.youtube.com/watch?v={{ .id }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ .title }}</a
+      >
+      {{else if eq .site "vidyard" }}
+      <a
+        href="https://play.vidyard.com/{{ .id }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ .title }}</a
+      >
+      {{else}} {{ .title }} {{end}}
+    </td>
+    <td align="center">{{ .length }}</td>
+    <td>{{ range sort .tags }}{{ . }} {{ end }}</td>
+    <td align="center">{{ .date }}</td>
+  </tr>
+  {{ end }}
 </table>

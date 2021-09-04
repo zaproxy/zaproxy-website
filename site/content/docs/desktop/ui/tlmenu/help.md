@@ -15,7 +15,7 @@ This displayed the 'about' dialog.
 ### Support Info...
 
 Displays a dialog that contains information which is useful when troubleshooting or seeking support. Such as:  
-Version, installed add-ons and versions, operating system, java version, locale info, and ZAP Home Directory path. This information can be copied and pasted.   
+Version, installed add-ons and versions, operating system, java version, locale info, and ZAP Home Directory path. This information can be copied and pasted.  
 The dialog includes an "Open" button, which assuming the OS supports the necessary functionality, will open the ZAP Home Directory (for logs or configuration files) when clicked.
 
 ### Check For Updates...
@@ -30,7 +30,7 @@ Note that [add-ons](/docs/desktop/start/features/addons/) can add additional men
 
 ## See also
 
-|   |                                                |                                       |
-|---|------------------------------------------------|---------------------------------------|
-|   | [The top level menu](/docs/desktop/ui/tlmenu/) |                                       |
-|   | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |
+|     |                                                |                                       |
+| --- | ---------------------------------------------- | ------------------------------------- |
+|     | [The top level menu](/docs/desktop/ui/tlmenu/) |                                       |
+|     | [UI Overview](/docs/desktop/ui/)               | for an overview of the user interface |

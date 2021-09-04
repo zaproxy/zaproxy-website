@@ -7,7 +7,7 @@ weight: 6
 
 # History Filter dialog
 
-This dialog allows you to restrict which requests are displayed in the [History tab](/docs/desktop/ui/tabs/history/).  
+This dialog allows you to restrict which requests are displayed in the [History tab](/docs/desktop/ui/tabs/history/).
 
 ## Fields
 
@@ -27,7 +27,7 @@ The [Tags](/docs/desktop/start/features/tags/) to filter on.
 
 ### Alerts
 
-The types of [Alerts](/docs/desktop/start/features/alerts/) to filter on.  
+The types of [Alerts](/docs/desktop/start/features/alerts/) to filter on.
 
 ### Notes
 
@@ -43,13 +43,13 @@ A list of 'exclude' regex patterns (one per line) - if specified then any urls t
 
 ## Accessed via
 
-|   |                                               |                                                             |
-|---|-----------------------------------------------|-------------------------------------------------------------|
-|   | [History tab](/docs/desktop/ui/tabs/history/) | Filter toolbar button: ![](/docs/desktop/images/16/054.png) |
+|     |                                               |                                                             |
+| --- | --------------------------------------------- | ----------------------------------------------------------- |
+|     | [History tab](/docs/desktop/ui/tabs/history/) | Filter toolbar button: ![](/docs/desktop/images/16/054.png) |
 
 ## See also
 
-|   |                                      |                                       |
-|---|--------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
-|   | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |
+|     |                                      |                                       |
+| --- | ------------------------------------ | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
+|     | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |

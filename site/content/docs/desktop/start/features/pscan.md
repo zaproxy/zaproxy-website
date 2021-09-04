@@ -21,19 +21,19 @@ A set of rules for automatic tagging are provided by default. These can be chang
 added to via the [Options Passive Scan Tags screen](/docs/desktop/ui/dialogs/options/pscan/).
 
 The alerts raised by passive scanners can be configured using the
-[Options Passive Scan Rules screen](/docs/desktop/ui/dialogs/options/pscanrules/).  
+[Options Passive Scan Rules screen](/docs/desktop/ui/dialogs/options/pscanrules/).
 
 ## See also
 
-|   |                                                        |                                       |
-|---|--------------------------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)                       | for an overview of the user interface |
-|   | [Features](/docs/desktop/start/features/)              | provided by ZAP                       |
-|   | [Active scanning](/docs/desktop/start/features/ascan/) |                                       |
-|   | [Scanner Rules](/docs/desktop/start/checks/)           | supported by default                  |
+|     |                                                        |                                       |
+| --- | ------------------------------------------------------ | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)                       | for an overview of the user interface |
+|     | [Features](/docs/desktop/start/features/)              | provided by ZAP                       |
+|     | [Active scanning](/docs/desktop/start/features/ascan/) |                                       |
+|     | [Scanner Rules](/docs/desktop/start/checks/)           | supported by default                  |
 
 ## Official Videos
 
-|   |                                                                                                |
-|---|------------------------------------------------------------------------------------------------|
-|   | [ZAP In Ten: Passive Scanning](https://play.sonatype.com/watch/vDWpoYjHi7fSLYFDQPWgMF) (10:27) |
+|     |                                                                                                |
+| --- | ---------------------------------------------------------------------------------------------- |
+|     | [ZAP In Ten: Passive Scanning](https://play.sonatype.com/watch/vDWpoYjHi7fSLYFDQPWgMF) (10:27) |

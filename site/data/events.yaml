@@ -1,6 +1,5 @@
 # The events raised in ZAP
 ---
-
 - publisher: org.parosproxy.paros.extension.history.ProxyListenerLogEventPublisher
   link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/extension/history/ProxyListenerLogEventPublisher.java
   event: href.added

@@ -7,9 +7,9 @@ weight: 7
 
 Following the steps used to spider/scan DVWA v1.9 at `http://localhost/DVWA` using ZAP 2.4.3:
 
-* Create a new authentication JavaScript/ECMAScript script [1] and replace/set the script contents with the following:
+- Create a new authentication JavaScript/ECMAScript script [1] and replace/set the script contents with the following:
 
-``` JavaScript
+```JavaScript
 function authenticate(helper, paramsValues, credentials) {
     var loginUrl = paramsValues.get("Login URL");
     var csrfTokenName = paramsValues.get("CSRF Field");
@@ -78,66 +78,68 @@ function extractInputFieldValue(page, fieldName) {
 }
 ```
 
-* Create "DVWA" context (or edit the "Default Context"):
-  * Context Name: `DVWAv1.9` 
-  * In "Include in Context" panel add: `\Qhttp://localhost/DVWA\E.*` 
-  * In "Exclude from Context" panel add:  
-`\Qhttp://localhost/DVWA/login.php\E` 
-`\Qhttp://localhost/DVWA/logout.php\E` 
-`\Qhttp://localhost/DVWA/setup.php\E` 
-  * In "Authentication" panel, choose "Script-Based Authentication" [3], select the "DVWA" authentication script, load it and fill the fields: 
-Login URL: `http://localhost/DVWA/login.php` 
-CSRF Field: `user_token` 
-POST Data: `username={%username%}&password={%password%}&Login=Login&user_token={%user_token%}` 
-Logged in: `\Q<a href="logout.php">Logout</a>\E`  
-Logged Out: `(?:Location: [./]*login\.php)|(?:\Q<form action="login.php" method="post">\E)` 
-  * In "Users" panel, add the user: 
-User Name: `Administrator` 
-Username: `admin` 
-Password: `password` 
-  * Close the dialogue. 
+- Create "DVWA" context (or edit the "Default Context"):
 
-* Verify authentication is working, create seed for the spider and configure DVWA: 
-  * Enable "Force User Mode" [4] and access the main page (e.g. "http://localhost/DVWA") while proxying through ZAP, cookies should be disabled in the browser; It should show the main page thus the authentication is working and the spider has a seed; 
-  * Access "http://localhost/DVWA/security.php" and change the "Security Level" to "low"; 
-  * Disable the "Forced User Mode" (no longer needed). 
-  * Exclude from the context the following URLs, to prevent the spider from changing the "Security Level" and the password: 
-`\Qhttp://localhost/DVWA/security.php\E` 
-`\Qhttp://localhost/DVWA/vulnerabilities/csrf\E.*` 
+  - Context Name: `DVWAv1.9`
+  - In "Include in Context" panel add: `\Qhttp://localhost/DVWA\E.*`
+  - In "Exclude from Context" panel add:  
+    `\Qhttp://localhost/DVWA/login.php\E`
+    `\Qhttp://localhost/DVWA/logout.php\E`
+    `\Qhttp://localhost/DVWA/setup.php\E`
+  - In "Authentication" panel, choose "Script-Based Authentication" [3], select the "DVWA" authentication script, load it and fill the fields:
+    Login URL: `http://localhost/DVWA/login.php`
+    CSRF Field: `user_token`
+    POST Data: `username={%username%}&password={%password%}&Login=Login&user_token={%user_token%}`
+    Logged in: `\Q<a href="logout.php">Logout</a>\E`  
+    Logged Out: `(?:Location: [./]*login\.php)|(?:\Q<form action="login.php" method="post">\E)`
+  - In "Users" panel, add the user:
+    User Name: `Administrator`
+    Username: `admin`
+    Password: `password`
+  - Close the dialogue.
+
+- Verify authentication is working, create seed for the spider and configure DVWA:
+  - Enable "Force User Mode" [4] and access the main page (e.g. "http://localhost/DVWA") while proxying through ZAP, cookies should be disabled in the browser; It should show the main page thus the authentication is working and the spider has a seed;
+  - Access "http://localhost/DVWA/security.php" and change the "Security Level" to "low";
+  - Disable the "Forced User Mode" (no longer needed).
+  - Exclude from the context the following URLs, to prevent the spider from changing the "Security Level" and the password:
+    `\Qhttp://localhost/DVWA/security.php\E`
+    `\Qhttp://localhost/DVWA/vulnerabilities/csrf\E.*`
 
 With the context and authentication set up, it's possible to spider/scan as user.
 
-* Spider:
-  * Select "Spider" tab and click the button "New Scan";
-  * Click "Select...", choose the context (e.g. "DVWAv1.9") and click OK;
-  * Select the user "Administrator" and click "Start Scan";
-  * Spider should start and spider as user "Administrator". The spider can be run a second time to ensure that all URLs are found.
+- Spider:
 
-* Active Scan:
-  * Select "Active Scan" tab and click the button "New Scan";
-  * Click "Select...", choose the context (e.g. "DVWAv1.9") and click OK;
-  * Select the user "Administrator" and click "Start Scan";
-  * Active scanner should start and scan as user "Administrator".
+  - Select "Spider" tab and click the button "New Scan";
+  - Click "Select...", choose the context (e.g. "DVWAv1.9") and click OK;
+  - Select the user "Administrator" and click "Start Scan";
+  - Spider should start and spider as user "Administrator". The spider can be run a second time to ensure that all URLs are found.
+
+- Active Scan:
+  - Select "Active Scan" tab and click the button "New Scan";
+  - Click "Select...", choose the context (e.g. "DVWAv1.9") and click OK;
+  - Select the user "Administrator" and click "Start Scan";
+  - Active scanner should start and scan as user "Administrator".
 
 Active scanner should find some issues:
 
-  - Cross Site Scripting (Persistent) (4)
-  - Cross Site Scripting (Reflected) (6)
-  - Path Traversal
-  - Remote OS Command Injection
-  - SQL Injection - MySQL
-  - SQL Injection (2)
-  - Directory Browsing (7)
+- Cross Site Scripting (Persistent) (4)
+- Cross Site Scripting (Reflected) (6)
+- Path Traversal
+- Remote OS Command Injection
+- SQL Injection - MySQL
+- SQL Injection (2)
+- Directory Browsing (7)
 
 * Fuzzing:
 
 If you are tackling a fuzzing challenge in DVWA and need to handle CSRF tokens, the following details may be of assistance:
 
- - The script works with Nashorn script engine (Java 8), if you are using Java 7 it needs some changes (the changes are mentioned in the original script).
- - The constants defined in the beginning of the file might need to be changed (e.g. SOURCE_URL to match the target server/webapp).
- - The script assumes that the message being fuzzed has a valid DVWA session.
+- The script works with Nashorn script engine (Java 8), if you are using Java 7 it needs some changes (the changes are mentioned in the original script).
+- The constants defined in the beginning of the file might need to be changed (e.g. SOURCE_URL to match the target server/webapp).
+- The script assumes that the message being fuzzed has a valid DVWA session.
 
-``` JavaScript
+```JavaScript
 var SOURCE_URL = "http://localhost/DVWA/vulnerabilities/brute/";
 var CSRF_TOKEN_NAME = "user_token";
 var REQUEST_URI = new org.apache.commons.httpclient.URI(SOURCE_URL, true);
@@ -188,4 +190,4 @@ function replace(params, name, value) {
         }
     }
 }
-```  
+```

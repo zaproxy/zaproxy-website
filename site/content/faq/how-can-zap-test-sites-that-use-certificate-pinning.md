@@ -19,9 +19,9 @@ In Firefox you can change the
 
 The levels supported are:
 
-  * 0 Don't enforce any pins
-  * 1 Enforce pins when the chain is not from a local root
-  * 2 Always enforce pins
+- 0 Don't enforce any pins
+- 1 Enforce pins when the chain is not from a local root
+- 2 Always enforce pins
 
 This article: <https://www.imperialviolet.org/2011/05/04/pinning.html> states
 that Chrome will allow user installed root CA certificates to override pins.

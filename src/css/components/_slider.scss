@@ -4,24 +4,24 @@
   overflow: hidden;
 }
 .glide__bullets {
- display: inline-flex;
- display: none;
- margin-top: 40px;
+  display: inline-flex;
+  display: none;
+  margin-top: 40px;
 }
 
 .glide__bullet {
- background-color: var(--blue-light);
- box-shadow: none;
- width: 13px;
- height: 13px;
- padding: 0;
- margin-right: 18px;
- border-radius: 50%;
- border: none;
- transition: all 150ms ease;
- cursor: pointer;
+  background-color: var(--blue-light);
+  box-shadow: none;
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin-right: 18px;
+  border-radius: 50%;
+  border: none;
+  transition: all 150ms ease;
+  cursor: pointer;
 }
 
 .glide__bullet--active {
- background-color: var(--blue);
+  background-color: var(--blue);
 }

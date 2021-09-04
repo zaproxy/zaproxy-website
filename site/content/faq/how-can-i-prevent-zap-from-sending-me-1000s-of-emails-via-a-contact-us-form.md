@@ -5,7 +5,6 @@ category: Scanning
 weight: 3
 ---
 
-
 In this case prevention is definitely better than cure.
 
 By default when you use the ZAP spider and active scanner then ZAP will access

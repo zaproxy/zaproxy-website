@@ -4,14 +4,14 @@ description: "Automate checking ASVS controls using ZAP scripts"
 summary: "Write scripts in ZAP which will check a target application's compliance against ASVS controls."
 type: post
 images:
-- https://www.zaproxy.org/blog/2021-02-10-automate-checking-asvs-controls-using-zap-scripts/images/asvs_40_levels.png
+  - https://www.zaproxy.org/blog/2021-02-10-automate-checking-asvs-controls-using-zap-scripts/images/asvs_40_levels.png
 tags:
-- blog
-- asvs
+  - blog
+  - asvs
 date: "2021-02-10"
 addSocialPreview: true
 authors:
- - "BlazingWind"
+  - "BlazingWind"
 ---
 
 Many security teams are required to provide security insights, and
@@ -86,9 +86,9 @@ to write a script for testing that one specific area. Take control
 v4.0.2-14.4.1, for which I have written a script which is available
 [here](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide/blob/main/ZAP-scripts/14-4-1-Charset.py).
 
-*"Verify that every HTTP response contains a Content-Type header.
+_"Verify that every HTTP response contains a Content-Type header.
 text/\*, /+xml and application/xml content types should also specify a
-safe character set (e.g., UTF-8, ISO-8859-1)."*
+safe character set (e.g., UTF-8, ISO-8859-1)."_
 
 The control is easy to check manually, but a manual control does not
 give as good coverage as a ZAP script with a crawler. Additionally, the
@@ -120,16 +120,17 @@ def scan(ps, msg, src):
   patternCharset = re.compile(r"(?i).*UTF-8.*|.*ISO-8859-1.*")
 
   if (header == "None"):
-    ps.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription, 
-      msg.getRequestHeader().getURI().toString(), 
+    ps.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription,
+      msg.getRequestHeader().getURI().toString(),
       alertParam, "", alertInfo, alertSolution[0], header, cweID, wascID, msg);
   elif (re.search(patternType,header)):
     charsets = re.search(patternCharset,header)
     if not charsets:
-      ps.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription, 
-        msg.getRequestHeader().getURI().toString(), 
+      ps.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription,
+        msg.getRequestHeader().getURI().toString(),
         alertParam, "", alertInfo, alertSolution[1], header, cweID, wascID, msg);
 ```
+
 Breaking down the above script, the flow is as follows:
 
 1.  first the script checks that each HTTP response contains a Content-Type header
@@ -147,9 +148,9 @@ be used. Take control v4.0.2-14.5.3, for which I have written a script
 available
 [here](https://github.com/BlazingWind/OWASP-ASVS-4.0-testing-guide/blob/main/ZAP-scripts/14-5-3-CORS-header.py).
 
-*'Verify that the cross-domain resource sharing (CORS)
+_'Verify that the cross-domain resource sharing (CORS)
 Access-Control-Allow-Origin header uses a strict allowlist of trusted
-domains to match against and does not support the \"null\" origin.'*
+domains to match against and does not support the \"null\" origin.'_
 
 Cross-Origin Resource Sharing (CORS) is a mechanism that uses additional
 HTTP headers to tell browsers to give a web application running at one
@@ -161,6 +162,7 @@ from. It is set automatically by the user agent to describe the security
 contexts that caused the user agent to initiate an HTTP request. For
 more information on CORS, consult the guide under control 14.5.3 Origin
 header.
+
 ```Python
 import re
 
@@ -179,11 +181,11 @@ def scanNode(sas, msg):
   origMsg = msg;
   # Copy requests before reusing them
   msg = origMsg.cloneRequest();
-  
+
   # GET resource that doesn't exist
   msg.getRequestHeader().setHeader("Origin", origin)
 
-  # sendAndReceive(msg, followRedirect, handleAntiCSRFtoken) 
+  # sendAndReceive(msg, followRedirect, handleAntiCSRFtoken)
   if (sas.isStop()):
     return
   sas.sendAndReceive(msg, True, False);
@@ -191,20 +193,21 @@ def scanNode(sas, msg):
   header = str(msg.getResponseHeader().getHeader("Access-Control-Allow-Origin"))
   if (header == "*"):
     alertParam = "wildcard directive in Access-Control-Allow-Origin"
-    sas.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription, 
-      msg.getRequestHeader().getURI().toString(), 
+    sas.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription,
+      msg.getRequestHeader().getURI().toString(),
       alertParam, "", alertInfo, alertSolution[0], "", cweID, wascID, msg);
   elif (header == origin):
     alertParam = "Access-Control-Allow-Origin reflects Origin header"
-    sas.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription, 
-      msg.getRequestHeader().getURI().toString(), 
+    sas.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription,
+      msg.getRequestHeader().getURI().toString(),
       alertParam, "", alertInfo, alertSolution[0], "", cweID, wascID, msg);
   elif (header == "null"):
     alertParam = "Access-Control-Allow-Origin is null"
-    sas.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription, 
-      msg.getRequestHeader().getURI().toString(), 
+    sas.raiseAlert(alertRisk, alertReliability, alertTitle, alertDescription,
+      msg.getRequestHeader().getURI().toString(),
       alertParam, "", alertInfo, alertSolution[0], "", cweID, wascID, msg);
 ```
+
 The above script checks for misconfiguration of CORS and the flow is as
 follows:
 
@@ -244,4 +247,3 @@ I am looking for people that would be willing to write ZAP scripts to
 verify controls, review the controls that are already in the testing
 guide or add new controls to it. Feel free to drop me a message on
 Twitter [&commat;BlazingWindSec](https://twitter.com/BlazingWindSec)
-

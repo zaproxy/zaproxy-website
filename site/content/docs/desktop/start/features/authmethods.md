@@ -16,9 +16,9 @@ authenticated webapp [Users](/docs/desktop/start/features/users/).
 Authentication methods can be used in multiple places around
 ZAP. Some of the examples include:
 
-* defining Users and automatic login
-* detection of authenticated/unauthenticated states
-* performing automatic re-authentication
+- defining Users and automatic login
+- detection of authenticated/unauthenticated states
+- performing automatic re-authentication
 
 Multiple authentication methods have been implemented and the
 system supports easy addition of new methods, according to user needs.
@@ -41,11 +41,11 @@ This method is used for websites / webapps where authentication is
 done by submitting a form or performing a GET request to a 'login url'
 using a 'username/password' pair of authentication credentials.
 Re-authentication is possible. Configuration can be done using the [Session
-Contexts Authentication screen](/docs/desktop/ui/dialogs/session/context-auth/) or using the contextual PopupMenu: *Flag as...
-Form-Based Authentication Login Request*.
+Contexts Authentication screen](/docs/desktop/ui/dialogs/session/context-auth/) or using the contextual PopupMenu: _Flag as...
+Form-Based Authentication Login Request_.
 
 When using this authentication method, configuring a User for the context requires
-setting up the *username/password* pair of credentials that are used for the form based
+setting up the _username/password_ pair of credentials that are used for the form based
 authentication.
 
 If the application requires submitting the anti-CSRF token presented in the login page, ZAP will
@@ -58,11 +58,11 @@ This method is used for websites / webapps where authentication is
 done by submitting a JSON object to a 'login url' using a 'username/password'
 pair of authentication credentials.
 Re-authentication is possible. Configuration can be done using the [Session
-Contexts Authentication screen](/docs/desktop/ui/dialogs/session/context-auth/) or using the contextual PopupMenu: *Flag as...
-JSON-Based Authentication Login Request*.
+Contexts Authentication screen](/docs/desktop/ui/dialogs/session/context-auth/) or using the contextual PopupMenu: _Flag as...
+JSON-Based Authentication Login Request_.
 
 When using this authentication method, configuring a User for the context requires
-setting up the *username/password* pair of credentials that are used for the
+setting up the _username/password_ pair of credentials that are used for the
 authentication.
 
 ## HTTP/NTLM Authentication {#httpAuth}
@@ -75,7 +75,7 @@ request. Configuration can be done using the [Session
 Contexts Authentication screen](/docs/desktop/ui/dialogs/session/context-auth/).
 
 When using this authentication method, configuring a User for the context requires
-setting up the *username/password* pair of credentials that are used for the HTTP/NTLM authentication.
+setting up the _username/password_ pair of credentials that are used for the HTTP/NTLM authentication.
 
 ## Script-Based Authentication {#scriptBased}
 
@@ -91,18 +91,18 @@ setting up the a set of parameters defined in the script. For more details, see 
 
 ## Configured via
 
-|   |                                                                                          |   |
-|---|------------------------------------------------------------------------------------------|---|
-|   | [Session Contexts Authentication screen](/docs/desktop/ui/dialogs/session/context-auth/) |   |
+|     |                                                                                          |     |
+| --- | ---------------------------------------------------------------------------------------- | --- |
+|     | [Session Contexts Authentication screen](/docs/desktop/ui/dialogs/session/context-auth/) |     |
 
 ## See also
 
-|   |                                                                       |                                                                                                                                   |
-|---|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-|   | [Authentication](/docs/desktop/start/features/authentication/)        | overview                                                                                                                          |
-|   | [Youtube tutorial](https://youtu.be/cR4gw-cPZOA)                      | of the Authentication, Session Management and Users Management features of ZAP \[external link to https://youtu.be/cR4gw-cPZOA\]. |
-|   | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface                                                                                             |
-|   | [Features](/docs/desktop/start/features/)                             | provided by ZAP                                                                                                                   |
-|   | [Session Contexts Dialog](/docs/desktop/ui/dialogs/session/contexts/) | for an overview of the Session Properties                                                                                         |
-|   | [Users](/docs/desktop/start/features/users/)                          | for an overview of Users                                                                                                          |
-|   | [Anti-CSRF tokens](/docs/desktop/start/features/anticsrf/)            | for an overview of anti-CSRF tokens                                                                                               |
+|     |                                                                       |                                                                                                                                   |
+| --- | --------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+|     | [Authentication](/docs/desktop/start/features/authentication/)        | overview                                                                                                                          |
+|     | [Youtube tutorial](https://youtu.be/cR4gw-cPZOA)                      | of the Authentication, Session Management and Users Management features of ZAP \[external link to https://youtu.be/cR4gw-cPZOA\]. |
+|     | [UI Overview](/docs/desktop/ui/)                                      | for an overview of the user interface                                                                                             |
+|     | [Features](/docs/desktop/start/features/)                             | provided by ZAP                                                                                                                   |
+|     | [Session Contexts Dialog](/docs/desktop/ui/dialogs/session/contexts/) | for an overview of the Session Properties                                                                                         |
+|     | [Users](/docs/desktop/start/features/users/)                          | for an overview of Users                                                                                                          |
+|     | [Anti-CSRF tokens](/docs/desktop/start/features/anticsrf/)            | for an overview of anti-CSRF tokens                                                                                               |

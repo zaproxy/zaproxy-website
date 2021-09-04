@@ -1,7 +1,7 @@
 {
   "title": "Docker Pulls",
   "description": "Docker pulls since the ZAP Docker images were published.",
-  "columns": ["Version" , "live", "stable", "weekly", "bare"],
+  "columns": ["Version", "live", "stable", "weekly", "bare"],
   "data": [
     ["2017-07-01", 28, 4272, 1370, 0, ""],
     ["2017-08-01", 102, 16586, 3233, 0, ""],

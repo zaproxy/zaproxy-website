@@ -7,13 +7,12 @@ weight: 3
 
 # Options AJAX Spider screen
 
-This screen allows you to configure the [AJAX Spider](/docs/desktop/addons/ajax-spider/) options. The AJAX Spider is an add-on for a crawler called Crawljax. The add-on sets up a local proxy in ZAP to talk to Crawljax. The AJAX Spider allows you to crawl web applications written in AJAX in far more depth than the native Spider. Use the AJAX Spider if you may have web applications written in AJAX. You should also use the native Spider as well for complete coverage of a web application (e.g., to cover HTML comments).   
+This screen allows you to configure the [AJAX Spider](/docs/desktop/addons/ajax-spider/) options. The AJAX Spider is an add-on for a crawler called Crawljax. The add-on sets up a local proxy in ZAP to talk to Crawljax. The AJAX Spider allows you to crawl web applications written in AJAX in far more depth than the native Spider. Use the AJAX Spider if you may have web applications written in AJAX. You should also use the native Spider as well for complete coverage of a web application (e.g., to cover HTML comments).
 
 ## Configuration Options
 
-
-|                     Field                     |                                                                                                                             Details                                                                                                                             |     Default      |
-|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
+| Field                                         | Details                                                                                                                                                                                                                                                         | Default          |
+| --------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | Browser                                       | AJAX Spider relies on an external browser to crawl the targeted site. You can specify which one you want to use. For more details on supported browsers refer to "Selenium" add-on help pages.                                                                  | Firefox Headless |
 | Number of Browser Windows to Open             | You can configure the number of windows to be used by AJAX Spider. The more windows, the faster the process will be.                                                                                                                                            | 1                |
 | Maximum Crawl Depth                           | The maximum depth that the crawler can reach. Zero means unlimited depth.                                                                                                                                                                                       | 10               |
@@ -29,8 +28,8 @@ This screen allows you to configure the [AJAX Spider](/docs/desktop/addons/ajax-
 
 ## See also
 
-|   |                                                                    |                                           |
-|---|--------------------------------------------------------------------|-------------------------------------------|
-|   | [AJAX Spider](/docs/desktop/addons/ajax-spider/)                   | for an overview of the AJAX Spider        |
-|   | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/)           | for an overview of the AJAX Spider Tab    |
-|   | [AJAX Spider dialog](/docs/desktop/addons/ajax-spider/scandialog/) | for an overview of the AJAX Spider Dialog |
+|     |                                                                    |                                           |
+| --- | ------------------------------------------------------------------ | ----------------------------------------- |
+|     | [AJAX Spider](/docs/desktop/addons/ajax-spider/)                   | for an overview of the AJAX Spider        |
+|     | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/)           | for an overview of the AJAX Spider Tab    |
+|     | [AJAX Spider dialog](/docs/desktop/addons/ajax-spider/scandialog/) | for an overview of the AJAX Spider Dialog |

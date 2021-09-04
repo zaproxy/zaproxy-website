@@ -3,14 +3,14 @@ title: "Sites Tree Modifiers"
 description: "Why the Sites Tree is so important to ZAP and how you will have much more control over it in ZAP 2.10.0"
 summary: "The Sites Tree is a key component of ZAP, and one whose purpose is often misunderstood. This blog post will explain why the Sites Tree is so important, how you can change it now and how you will be able to change it in the next ZAP release."
 images:
-- https://www.zaproxy.org/blog/2020-09-22-sites-tree-modifiers/images/sites_tree_mod.png
+  - https://www.zaproxy.org/blog/2020-09-22-sites-tree-modifiers/images/sites_tree_mod.png
 type: post
 tags:
-- blog
+  - blog
 date: "2020-09-22"
 addSocialPreview: true
 authors:
- - simon
+  - simon
 ---
 
 ## The Sites Tree
@@ -27,7 +27,7 @@ In ZAP we separate exploring an app from attacking it. This gives us much more f
 
 So let's take the case where we are proxying unit tests through ZAP.
 
-Unit tests are there to test functionality not to minimise HTTP(S) calls, so it is likely that the same URL will be called many times, potentially hundreds or thousands of times. 
+Unit tests are there to test functionality not to minimise HTTP(S) calls, so it is likely that the same URL will be called many times, potentially hundreds or thousands of times.
 
 One of the big drawbacks of Dynamic Application Security Testing (DAST) is the length of time it takes. The number of requests a scanner makes directly impacts the time taken, so it's important to try to minimise the number of requests while maximising their effectiveness. As always it's a balancing act.
 
@@ -42,15 +42,15 @@ By default ZAP will create unique nodes in the tree based on the HTTP method and
 
 This means that the following requests will all end up having different tree nodes:
 
-* `GET https://www.example.com?a=b&c=d`
-* `GET https://www.example.com?a=b&d=c`
-* `POST https://www.example.com?a=b&c=d`
+- `GET https://www.example.com?a=b&c=d`
+- `GET https://www.example.com?a=b&d=c`
+- `POST https://www.example.com?a=b&c=d`
 
 And these requests will end up having the same node:
 
-* `GET https://www.example.com?a=b&c=d`
-* `GET https://www.example.com?a=c&c=c`
-* `GET https://www.example.com?a=e&c=f`
+- `GET https://www.example.com?a=b&c=d`
+- `GET https://www.example.com?a=c&c=c`
+- `GET https://www.example.com?a=e&c=f`
 
 This works pretty well in lots of cases - different HTTP methods and parameter names typically mean different actions while the parameter values usually don’t change the outcome.
 
@@ -60,8 +60,8 @@ There are always exceptions.
 
 Take the case where the action to be taken is actually defined in a parameter value:
 
-* `GET https://www.example.com?a=b&action=add`
-* `GET https://www.example.com?a=b&action=delete`
+- `GET https://www.example.com?a=b&action=add`
+- `GET https://www.example.com?a=b&action=delete`
 
 In this case both URLs will end up in the same Sites Tree node, which means that in practice only one of them will be attacked. The other URL will not be attacked and so any vulnerabilities specific to that action will not be found.
 
@@ -70,9 +70,9 @@ In ZAP the solution to this is to define the ‘action’ parameter as a [Struct
 Conversely we have the case where a URL path element is actually part of the data and not part of the structure of the app.
 For example the following URLs could all represent the same functionality if the second path element (`companyX`) is actually data:
 
-* `https://www.example.com/app/company1/aaa?ddd=eee` 
-* `https://www.example.com/app/company2/aaa?ddd=fff` 
-* `https://www.example.com/app/company3/aaa?ddd=ggg`
+- `https://www.example.com/app/company1/aaa?ddd=eee`
+- `https://www.example.com/app/company2/aaa?ddd=fff`
+- `https://www.example.com/app/company3/aaa?ddd=ggg`
 
 In this case all 3 URLs will end up in unique nodes and ZAP will attack each of them even though it doesn't really need to. This probably is not a big problem if there are just 3 instances, but in most cases this data will be coming from a database so there could be a huge number of such nodes.
 
@@ -101,10 +101,10 @@ Note that if you try this script out with the ZAP weekly Desktop then you will n
 
 This script will work with requests like:
 
-* `GET http://www.example.com/page/?%5B%7B%22key%22:%22aa%22,%22value%22:%22bb%22%7D%5D`
-* `GET http://www.example.com/page/?%5B%7B%22key%22:%22aa%22,%22value%22:%22bb%22%7D,%7B%22key%22:%22cc%22,%22value%22:%22dd%22%7D%5D`
-* `POST http://www.example.com/page/`
-  * `[{"key":"aa","value":"ee"},{"key":"cc","value":"ff"}]`
+- `GET http://www.example.com/page/?%5B%7B%22key%22:%22aa%22,%22value%22:%22bb%22%7D%5D`
+- `GET http://www.example.com/page/?%5B%7B%22key%22:%22aa%22,%22value%22:%22bb%22%7D,%7B%22key%22:%22cc%22,%22value%22:%22dd%22%7D%5D`
+- `POST http://www.example.com/page/`
+  - `[{"key":"aa","value":"ee"},{"key":"cc","value":"ff"}]`
 
 It will ensure that the JSON parameter values are identified and can be attacked and will change the node names in the Sites Tree to be:
 
@@ -112,10 +112,10 @@ It will ensure that the JSON parameter values are identified and can be attacked
 
 The script will also work with requests like:
 
-* `GET http://www.example.com/test/aaa/test2/bbb/`
-* `GET http://www.example.com/test/ccc/test2/ddd/`
-* `GET http://www.example.com/test/ccc/test2/ddd/eee/fff/ggg/hhh`
-* `GET http://www.example.com/test/ccc/test2/eee/fff/ggg/hhh/iii`
+- `GET http://www.example.com/test/aaa/test2/bbb/`
+- `GET http://www.example.com/test/ccc/test2/ddd/`
+- `GET http://www.example.com/test/ccc/test2/ddd/eee/fff/ggg/hhh`
+- `GET http://www.example.com/test/ccc/test2/eee/fff/ggg/hhh/iii`
 
 In this case it will change the Site Tree node paths to be:
 

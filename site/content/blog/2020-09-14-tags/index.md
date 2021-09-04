@@ -3,15 +3,15 @@ title: "ZAP Tags"
 description: "Use cases and details on ZAP's Tag functionality and Neonmarker add-on"
 summary: "How to give some colours to ZAP's History tab. An introduction to passive scanning tags, its use cases, and the Neonmarker add-on."
 images:
-- https://www.zaproxy.org/blog/2020-09-14-tags/images/zapbot_tagged.png
+  - https://www.zaproxy.org/blog/2020-09-14-tags/images/zapbot_tagged.png
 type: post
 tags:
-- blog
-- youdontknowzap
+  - blog
+  - youdontknowzap
 date: "2020-09-14"
 addSocialPreview: true
 authors:
-    - thorin
+  - thorin
 ---
 
 ## Basics
@@ -38,7 +38,7 @@ Tags can also be used to filter History entries. For example, if you wanted to s
 
 ## Interpolation
 
-A lesser known feature that was added in [version 2.8.0](/docs/desktop/releases/2.8.0/) is Tag Interpolation. This may sound like an advanced or daunting technology. But really it boils down to allowing the value returned  by a Regex capturing group to be used in the Tag text. For example a user could configure a Tag to identify the ID or name of a product:
+A lesser known feature that was added in [version 2.8.0](/docs/desktop/releases/2.8.0/) is Tag Interpolation. This may sound like an advanced or daunting technology. But really it boils down to allowing the value returned by a Regex capturing group to be used in the Tag text. For example a user could configure a Tag to identify the ID or name of a product:
 
 ![Product Tag configuration](./images/product_tag.png)
 

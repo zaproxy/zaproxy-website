@@ -13,13 +13,12 @@
 #primary-menu {
   position: relative;
   padding: 0;
-  margin:0;
+  margin: 0;
 
-  #search-menu { 
+  #search-menu {
     position: initial;
   }
 }
-
 
 #primary-menu > li {
   position: relative;
@@ -30,8 +29,7 @@
 
   a {
     display: inline-block;
-    padding:8px 7px;
-
+    padding: 8px 7px;
   }
 }
 
@@ -56,9 +54,9 @@
   }
 
   form {
-    position:absolute;
-    right:60px;
-    top:2px;
+    position: absolute;
+    right: 60px;
+    top: 2px;
     width: 0%;
     overflow: hidden;
     transition: width 300ms linear;
@@ -71,9 +69,8 @@
 
 #cta-download {
   position: relative;
-  top:-4px;
+  top: -4px;
 }
-
 
 .site-header nav a {
   color: var(--blue-dark);
@@ -97,7 +94,8 @@
   height: 24px;
 }
 
-.hamburger-icon {}
+.hamburger-icon {
+}
 .hamburger-icon,
 .hamburger-click {
   display: none;
@@ -119,15 +117,15 @@
   width: 160px;
   top: 100px;
   left: -8px;
-  opacity: 0;;
+  opacity: 0;
   font-weight: normal;
   border: solid 2px rgba(255, 255, 255, 0.5);
-  background-clip: padding-box; 
+  background-clip: padding-box;
   font-size: 0.9em;
   transition: all 40ms cubic-bezier(0.42, 0, 1, 1);
 }
 
-.site-header  li:hover {
+.site-header li:hover {
   .sub-menu {
     top: 100%;
     opacity: 1;
@@ -141,7 +139,7 @@
 
 .hamburger-click {
   cursor: pointer;
-  opacity: 0.0;
+  opacity: 0;
   z-index: 2;
   position: absolute;
   top: 36px;
@@ -157,7 +155,6 @@
 input {
   cursor: pointer;
   z-index: 2;
-
 }
 
 .download-button {
@@ -178,7 +175,7 @@ input {
     display: none;
   }
 
-  #primary-menu{
+  #primary-menu {
     -webkit-transform: none;
     transform: none;
     background: red;
@@ -192,27 +189,27 @@ input {
     font-size: 2em;
     margin: 0px;
     width: 100%;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     z-index: 10;
     transform-origin: 0% 0%;
     transform: translate(-120%, 0%);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 
     li {
       padding: 0;
     }
 
     .sub-menu {
-      top:0;
+      top: 0;
       opacity: 1;
       position: relative;
       width: 100%;
       padding: 0;
-      margin:0;
-    
+      margin: 0;
+
       a {
         font-size: 0.7em;
-        opacity:0.8;
+        opacity: 0.8;
       }
     }
   }
@@ -220,24 +217,20 @@ input {
   #search-menu {
     width: 100%;
     line-height: 0;
-  
+
     .toggler {
       display: none;
     }
-  
+
     form {
       width: 100%;
       position: relative;
-      right:0px;
-      top:0px;
+      right: 0px;
+      top: 0px;
     }
-  
+
     input {
       width: 100%;
     }
   }
-  
-
 }
-
-

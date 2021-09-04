@@ -88,18 +88,18 @@ In the following example only successful (200 - Ok) requests which use the POST 
 
 Contributed by: [Simon Bennetts (@psiinon)](https://twitter.com/psiinon)
 
-Prior to ZAP 2.9 the only options for session management were cookie based or HTTP authentication based. It had been possibe to work around these limitations through 
-the use of HttpSender scripts which harvested tokens and set them into subsequent requests, however that was not terribly user friendly. Therefore in order to 
-accommodate technologies such as JWT, bearer tokens, etc. With 2.9 comes the concept of Session Management Scripts which greatly simplify the process of maintaining 
+Prior to ZAP 2.9 the only options for session management were cookie based or HTTP authentication based. It had been possibe to work around these limitations through
+the use of HttpSender scripts which harvested tokens and set them into subsequent requests, however that was not terribly user friendly. Therefore in order to
+accommodate technologies such as JWT, bearer tokens, etc. With 2.9 comes the concept of Session Management Scripts which greatly simplify the process of maintaining
 authenticated sessions for more modern applications.
 
-ZAP now ships with a JavaScript template for scripted session management, as well as an [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) example script. 
+ZAP now ships with a JavaScript template for scripted session management, as well as an [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/) example script.
 It is the Juice Shop example that we will discuss here.
 
 ```JavaScript
 /*
  * Session Management script for OWASP Juice Shop
- * 
+ *
  * For Authentication select:
  * 		Authentication method:		JSON-based authentication
  * 		Login FORM target URL:		http://localhost:3000/rest/user/login
@@ -108,7 +108,7 @@ It is the Juice Shop example that we will discuss here.
  * 		Username Parameter:			email
  * 		Password Parameter:			password
  * 		Logged out regex:			\Q{"user":{}}\E
- * 
+ *
  * Obviously update with any local changes as necessary.
  */
 
@@ -124,13 +124,13 @@ function extractWebSession(sessionWrapper) {
 	sessionWrapper.getSession().setValue("token", token);
 	ScriptVars.setGlobalVar("juiceshop.token", token);
 }
-    	
+
 function clearWebSessionIdentifiers(sessionWrapper) {
 	var headers = sessionWrapper.getHttpMessage().getRequestHeader();
 	headers.setHeader("Authorization", null);
 	ScriptVars.setGlobalVar("juiceshop.token", null);
 }
-    	
+
 function processMessageToMatchSession(sessionWrapper) {
 	var token = sessionWrapper.getSession().getValue("token");
 	if (token === null) {
@@ -147,7 +147,7 @@ function processMessageToMatchSession(sessionWrapper) {
 }
 
 function getRequiredParamsNames() {
-	return []; 
+	return [];
 }
 
 function getOptionalParamsNames() {
@@ -155,28 +155,27 @@ function getOptionalParamsNames() {
 }
 ```
 
-The example starts out with a documentation block explaining the assumptions for the Context setup and user being authenticated. The next few lines define the 
+The example starts out with a documentation block explaining the assumptions for the Context setup and user being authenticated. The next few lines define the
 imports/types that will be used by the script. Then we get to the business part of the script.
 
 The `extractWebSession` function extracts the token value and saves it into a Global variable where it can later be retrieved by other scripts/functions, as well as saving it into the session (which is used internally when processing messages).
 
 The next function `clearWebSessionIdentifiers` is setup to remove or invalidate a token from within ZAP.
 
-`processMessageToMatchSession` is responsible for inserting the token where necessary, in the case of Juice Shop both the `Authorization` header value and a 
+`processMessageToMatchSession` is responsible for inserting the token where necessary, in the case of Juice Shop both the `Authorization` header value and a
 cookie value.
 
 The functions `getRequiredParamsNames` and `getOptionalParamsNames` are un-used for Juice Shop session management.
-These functions are called during the script loading to obtain a list of the names of the required (or optional, as applicable) configuration parameters, 
-that will be shown in the Session Properties -> Session Management panel for configuration. They can be used to input dynamic data into the script, 
+These functions are called during the script loading to obtain a list of the names of the required (or optional, as applicable) configuration parameters,
+that will be shown in the Session Properties -> Session Management panel for configuration. They can be used to input dynamic data into the script,
 from the user interface or API (e.g. a JSONPath expression for extracting values from a JSON response, the name of a header, a login URL, or name of POST parameters, etc.)
 
-For more information about getting familiar with ZAP and setting up/managing authentication for ZAP scans refer to the 
+For more information about getting familiar with ZAP and setting up/managing authentication for ZAP scans refer to the
 [ZAP in Ten](https://www.alldaydevops.com/zap-in-ten) series.
 
 ## Conclusion
 
-This blog post delved into specific of some of the features that were new to ZAP in 2.9.0. ZAP is constantly being improved by a Global community 
+This blog post delved into specific of some of the features that were new to ZAP in 2.9.0. ZAP is constantly being improved by a Global community
 of volunteers. Watch for more of these blogs in the future.
 
 For further details see the [2.9.0 release notes](/docs/desktop/releases/2.9.0/).
-

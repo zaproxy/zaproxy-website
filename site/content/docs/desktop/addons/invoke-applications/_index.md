@@ -21,7 +21,7 @@ screen](/docs/desktop/addons/invoke-applications/options/).
 
 ## Accessed via
 
-|   |               |                                         |
-|---|---------------|-----------------------------------------|
-|   | *Sites tab*   | 'Run application' right click menu item |
-|   | *History tab* | 'Run application' right click menu item |
+|     |               |                                         |
+| --- | ------------- | --------------------------------------- |
+|     | _Sites tab_   | 'Run application' right click menu item |
+|     | _History tab_ | 'Run application' right click menu item |

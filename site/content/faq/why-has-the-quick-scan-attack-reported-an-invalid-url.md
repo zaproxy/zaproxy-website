@@ -7,10 +7,7 @@ weight: 7
 
 If the Quick Start Attack fails with the message:
 
-    
-    
     Failed to attack the URL, please check that the URL is valid
-    
 
 then the first thing to do is check your URL in a browser.
 

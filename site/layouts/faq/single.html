@@ -1,23 +1,22 @@
 {{ define "main" }}
 <section class="bolt-header">
-    <div class="wrapper py-20">
-      <h1 class="text--white">Frequently Asked Questions</h1>
+  <div class="wrapper py-20">
+    <h1 class="text--white">Frequently Asked Questions</h1>
   </div>
 </section>
 {{ $section := .Site.GetPage "section" .Section }}
 <div class="wrapper py-20" data-kind="{{ .Kind }}">
-    <div class="breadcrumbs">
-        <a href="/faq/">FAQ</a> &gt;
-        <a href="/faq/#cat-{{ .Params.category | urlize }}">{{ .Params.category }}</a>
-    </div>
-    <h2>{{ .Title }}</h2>
-    <div class="flex">
-      <article class="pr-30 content single-post">
-          <main class="post-content">
-            {{ .Content }}
-          </main>
-      </article>
-    </div>
+  <div class="breadcrumbs">
+    <a href="/faq/">FAQ</a> &gt;
+    <a href="/faq/#cat-{{ .Params.category | urlize }}"
+      >{{ .Params.category }}</a
+    >
+  </div>
+  <h2>{{ .Title }}</h2>
+  <div class="flex">
+    <article class="pr-30 content single-post">
+      <main class="post-content">{{ .Content }}</main>
+    </article>
+  </div>
 </div>
 {{ end }}
-

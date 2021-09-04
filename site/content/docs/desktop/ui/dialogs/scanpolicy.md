@@ -8,21 +8,20 @@ weight: 1
 # Scan Policy Dialog
 
 This allows you to enable and disable the rules that are run when performing an [active scan](/docs/desktop/start/features/ascan/).  
-The first screen allows you to define the default levels as well as the levels for all of the rules in a specific category.  
+The first screen allows you to define the default levels as well as the levels for all of the rules in a specific category.
 
-The category screens allow you to define the levels for every individual rule.  
-
+The category screens allow you to define the levels for every individual rule.
 
 Note that [passive scan](/docs/desktop/start/features/pscan/) rules are no longer managed via this dialog but are instead
 managed via the [Options Passive Scan Rules](/docs/desktop/ui/dialogs/options/pscanrules/).
 
 ### Threshold
 
-This controls how likely ZAP is to report potential vulnerabilities.  
+This controls how likely ZAP is to report potential vulnerabilities.
 
-* If you select Off then the scanner won't run.
-* If you select Low then more potential issues will be raised which may increase the number of false positives.
-* If you select High then fewer potential issues will be raised which may mean that some real issues are missed (false negatives).
+- If you select Off then the scanner won't run.
+- If you select Low then more potential issues will be raised which may increase the number of false positives.
+- If you select High then fewer potential issues will be raised which may mean that some real issues are missed (false negatives).
 
 ### Strength
 
@@ -37,13 +36,13 @@ commentary or reference to mental health or personal stability.
 
 ## Accessed via
 
-|   |                                                                       |   |
-|---|-----------------------------------------------------------------------|---|
-|   | [Scan Policy Manager dialog](/docs/desktop/ui/dialogs/scanpolicymgr/) |   |
+|     |                                                                       |     |
+| --- | --------------------------------------------------------------------- | --- |
+|     | [Scan Policy Manager dialog](/docs/desktop/ui/dialogs/scanpolicymgr/) |     |
 
 ## See also
 
-|   |                                      |                                       |
-|---|--------------------------------------|---------------------------------------|
-|   | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
-|   | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |
+|     |                                      |                                       |
+| --- | ------------------------------------ | ------------------------------------- |
+|     | [UI Overview](/docs/desktop/ui/)     | for an overview of the user interface |
+|     | [Dialogs](/docs/desktop/ui/dialogs/) | for details of the dialogs or popups  |

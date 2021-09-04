@@ -30,25 +30,26 @@
   display: flex;
 }
 
-
 .accordion__item__content-image {
   width: 396px;
   height: 276px;
 }
 
-.accordion__item__content-text{
+.accordion__item__content-text {
   border-top-left-radius: 4px;
   background: var(--blue--lightest);
-  background: linear-gradient(90deg, rgba(244,250,255,1) 75%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(244, 250, 255, 1) 75%,
+    rgba(255, 255, 255, 1) 100%
+  );
   padding: 20px 30px;
   margin: 20px -23px 0px 0;
 }
 
-
 dd {
   margin-left: 0px;
 }
-
 
 @media screen and (max-width: 650px) {
   .accordion__item__content {

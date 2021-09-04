@@ -13,7 +13,7 @@ getting access to any sensitive data such as your IP address.
 ZAP can be freely downloaded and we get very little feedback from most users -
 this at least tells us if ZAP is getting more or less popular :)
 
-###  Check for Updates
+### Check for Updates
 
 ZAP makes one request to see if ZAP or any of the add-ons are up to date.
 
@@ -25,7 +25,7 @@ Desktop UI [Check for Updates Options](/docs/desktop/ui/dialogs/options/checkfor
 
 Since ZAP 2.9.0 the check for updates is also done when running in daemon mode.
 
-###  Browser Launch Start Page
+### Browser Launch Start Page
 
 By default the Quick Start add-on makes one request to see if there is a new
 Quick Start page - this is the HTML shown by default when a browser is
@@ -36,7 +36,7 @@ GitHub repo, e.g. [2.7.html](https://github.com/zaproxy/zap-admin/blob/master/fi
 
 This will be discontinued from ZAP 2.8.0
 
-###  ZAP News
+### ZAP News
 
 Starting from ZAP 2.8.0 the Quick Start add-on makes one request to see if
 there is any new ZAP news.
@@ -44,7 +44,7 @@ there is any new ZAP news.
 The Bitly URL resolves to the relevant quick start file in the zap-admin
 GitHub repo, e.g. [2.8.xml](https://github.com/zaproxy/zap-admin/blob/master/files/news/2_8.xml)
 
-##  Silent Mode
+## Silent Mode
 
 Starting from ZAP 2.8.0 the '-silent' command line option can be used to prevent ZAP from making any 'calls home'.
 

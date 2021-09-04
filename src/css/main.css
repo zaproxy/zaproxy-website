@@ -1,13 +1,13 @@
 :root {
-  --blue: #4389FF;
-  --blue-dark: #00549E;
+  --blue: #4389ff;
+  --blue-dark: #00549e;
   --blue-medium: #618aae;
-  --blue-light: #BBDEFB;
-  --blue--lightest: #F4FAFF;
-  --blue-border: #DCEAFF;
+  --blue-light: #bbdefb;
+  --blue--lightest: #f4faff;
+  --blue-border: #dceaff;
   --blue-grey: #7e92a4;
-  --orange: #FFA400;
-  --orange-dark: rgb(191, 132, 22);;
+  --orange: #ffa400;
+  --orange-dark: rgb(191, 132, 22);
 
   --bp-small: 480px;
   --bp-med: 950px;
@@ -16,33 +16,30 @@
   --grey-light: #eee;
   --grey-medium: #444;
   --breakpoint-mobile: 650px;
-  
-  --footer-height: 120px;
 
+  --footer-height: 120px;
 }
 
-
-
-@import 'reset';
-@import 'components/button';
-@import 'components/card';
-@import 'components/accordion';
-@import 'components/slider';
-@import 'components/prism.css';
-@import 'components/tree';
-@import 'components/breadcrumbs';
-@import 'components/search';
-@import 'type';
-@import 'spacing';
-@import 'page';
-@import 'headers';
-@import 'layout';
-@import 'navigation';
-@import 'footer';
-@import 'form.scss';
-@import 'effects.scss';
-@import 'pages/addons.scss';
-@import 'pages/homepage.scss';
-@import 'pages/download.scss';
-@import 'pages/blog.scss';
-@import 'terminal';
+@import "reset";
+@import "components/button";
+@import "components/card";
+@import "components/accordion";
+@import "components/slider";
+@import "components/prism.css";
+@import "components/tree";
+@import "components/breadcrumbs";
+@import "components/search";
+@import "type";
+@import "spacing";
+@import "page";
+@import "headers";
+@import "layout";
+@import "navigation";
+@import "footer";
+@import "form.scss";
+@import "effects.scss";
+@import "pages/addons.scss";
+@import "pages/homepage.scss";
+@import "pages/download.scss";
+@import "pages/blog.scss";
+@import "terminal";

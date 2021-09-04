@@ -13,18 +13,18 @@ The default or home directory contains ZAP files added or modified at runtime. I
 
 Note: ZAP's home is not the same as the user's home directory, which is also OS dependent, and is the initial save location for sessions, reports, exported URLs, etc.
 
-##  Windows 7 / 8 / 10
+## Windows 7 / 8 / 10
 
 `C:\Users\<username>\OWASP ZAP`
 
-##  Linux
+## Linux
 
 `~/.ZAP`
 
-##  Mac OS
+## Mac OS
 
 `~/Library/Application Support/ZAP`
 
-##  Weekly releases
+## Weekly releases
 
 Note that for weekly releases `_D` is appended to the above directory. Development builds also use this directory.

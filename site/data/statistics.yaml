@@ -1,6 +1,5 @@
 # The statistics maintained by ZAP
 ---
-
 - key: stats.pscan.reqBodyTooBig
   scope: global
   type: counter

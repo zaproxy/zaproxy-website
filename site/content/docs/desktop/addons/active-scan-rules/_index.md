@@ -33,16 +33,16 @@ Latest code: [CodeInjectionScanRule.java](https://github.com/zaproxy/zap-extensi
 
 ## Command Injection
 
-This rule submits \*NIX and Windows OS commands as URL parameter values to determine whether or not the web application is passing unchecked user input directly to the underlying OS. The injection strings consist of meta-characters that may be interpreted by the OS as join commands along with a payload that should generate output in the response if the application is vulnerable. If the content of a response body matches the payload, the scanner raises an alert and returns immediately. In the event that none of the error-based matching attempts return output in the response, the scanner will attempt a blind injection attack by submitting sleep instructions as the payload and comparing the elapsed time between sending the request and receiving the response against a heuristic time-delay lower limit. If the elapsed time is greater than this limit, an alert is raised with medium confidence and the scanner returns immediately.   
+This rule submits \*NIX and Windows OS commands as URL parameter values to determine whether or not the web application is passing unchecked user input directly to the underlying OS. The injection strings consist of meta-characters that may be interpreted by the OS as join commands along with a payload that should generate output in the response if the application is vulnerable. If the content of a response body matches the payload, the scanner raises an alert and returns immediately. In the event that none of the error-based matching attempts return output in the response, the scanner will attempt a blind injection attack by submitting sleep instructions as the payload and comparing the elapsed time between sending the request and receiving the response against a heuristic time-delay lower limit. If the elapsed time is greater than this limit, an alert is raised with medium confidence and the scanner returns immediately.  
 Post 2.5.0 you can change the length of time used for the blind injection attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
 
 Latest code: [CommandInjectionScaRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/CommandInjectionScaRule.java)
 
 ## Cross Site Scripting (Reflected)
 
-This rule starts by submitting a 'safe' value and analyzing all of the locations in which this value occurs in the response (if any).   
-It then performs a series of attacks specifically targeted at the location in which each of the instances occurs, including tag attributes, URL attributes, attributes in tags which support src attributes, html comments etc.   
-Note:   
+This rule starts by submitting a 'safe' value and analyzing all of the locations in which this value occurs in the response (if any).  
+It then performs a series of attacks specifically targeted at the location in which each of the instances occurs, including tag attributes, URL attributes, attributes in tags which support src attributes, html comments etc.  
+Note:  
 This rule only scans HTTP PUT requests at LOW threshold.  
 If an XSS injection is located in a JSON response a LOW risk and LOW confidence alert is raised.
 
@@ -52,9 +52,9 @@ Latest code: [CrossSiteScriptingScanRule.java](https://github.com/zaproxy/zap-ex
 
 This rule starts by submitting a unique 'safe' value and then spiders the whole application to find all of the locations in which the value occurs.  
 It then performs a series of attacks in the same way that the 'reflected' version does but in this case checks all of the target locations in other pages.  
-Note:   
+Note:  
 This rule only scans HTTP PUT requests at LOW threshold.  
-If an XSS injection is located in a JSON response a LOW risk and LOW confidence alert is raised.  
+If an XSS injection is located in a JSON response a LOW risk and LOW confidence alert is raised.
 
 Latest code: [PersistentXssPrimeScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/PersistentXssPrimeScanRule.java),
 [PersistentXssSpiderScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/PersistentXssSpiderScanRule.java),
@@ -74,7 +74,7 @@ Latest code: [DirectoryBrowsingScanRule.java](https://github.com/zaproxy/zap-ext
 
 ## ELMAH Information Leak
 
-Tests to see if the Error Logging Modules and Handlers (elmah.axd) HTTP Module is available. Although this module is handy for developers and other stakeholders it can also leak a significant amount of information which a security analyst or malicious individual may be interested in.  
+Tests to see if the Error Logging Modules and Handlers (elmah.axd) HTTP Module is available. Although this module is handy for developers and other stakeholders it can also leak a significant amount of information which a security analyst or malicious individual may be interested in.
 
 The ELMAH scan rule targets Microsoft based technologies: IIS, Windows, ASP, and MSSQL.  
 Files are only reported if they contain the text "Error Log for" unless a LOW alert threshold is set.
@@ -127,8 +127,8 @@ Latest code: [SourceCodeDisclosureWebInfScanRule.java](https://github.com/zaprox
 
 ## SQL Injection
 
-This scanner scans for SQL Injection vulnerabilities in an RDBMS-independent fashion, by attacking url parameters and form parameters with fragments of valid and invalid SQL syntax, using error based, boolean based, Union based, and stacked query SQL Injection techniques.   
-This scanner may be able to fingerprint the RDBMS if the application throws a known RDBMS specific SQL error message.   
+This scanner scans for SQL Injection vulnerabilities in an RDBMS-independent fashion, by attacking url parameters and form parameters with fragments of valid and invalid SQL syntax, using error based, boolean based, Union based, and stacked query SQL Injection techniques.  
+This scanner may be able to fingerprint the RDBMS if the application throws a known RDBMS specific SQL error message.  
 This scanner does not exploit any RDBMS specific techniques, and so is the best SQL injection scanner to use as a starting point.
 
 Latest code: [SqlInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/SqlInjectionScanRule.java)
