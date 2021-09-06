@@ -49,7 +49,7 @@ In all cases the scans are tuned by:
 * Disabling all tags
 * Reporting a maximum of 10 passive scan alert instances 
 
-The `zap_tuned()` [Scan Hook](../scan-hook) is called after these changes have been made so you can undo them or apply other changes at this point if you want.
+The `zap_tuned()` [Scan Hook](../scan-hooks/) is called after these changes have been made so you can undo them or apply other changes at this point if you want.
 
 ### GitHub Actions:
 The following GitHub Actions wrap 2 of the above packaged scans and also support raising GitHub issues for potential vulnerabilities found:
