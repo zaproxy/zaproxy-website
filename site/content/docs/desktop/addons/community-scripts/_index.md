@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: communityScripts
-    version: 9.0.0
+    version: 11.0.0
 ---
 
 # Community Scripts
