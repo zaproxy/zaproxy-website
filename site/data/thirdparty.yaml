@@ -20,12 +20,7 @@ services:
     license: 'Commercial, free community edition'
     supporter: ZAP Silver Supporter
 
-  # OWASP tools, alphabetic
-  - name: 'PurpleTeam-Labs'
-    link: https://purpleteam-labs.com/
-    license: 'Free, open source'
-    notes: OWASP Tool
-
+  # OWASP tools, non-commercial, alphabetic
   - name: 'SecureCodeBox'
     link: https://www.securecodebox.io/
     license: 'Free, open source'
@@ -39,6 +34,12 @@ services:
   - name: 'Microsoft RAFT'
     link: https://github.com/microsoft/rest-api-fuzz-testing
     license: 'Free, open source'
+
+  # OWASP tools, open source, free, commercial tools, alphabetic
+  - name: 'PurpleTeam-Labs'
+    link: https://purpleteam-labs.com/
+    license: 'Commercial, free option, open source'
+    notes: OWASP Tool
 
   # Open source, free, commercial tools, alphabetic
   - name: 'Alertflex'
