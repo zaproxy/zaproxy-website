@@ -1,4 +1,5 @@
 # The statistics maintained by ZAP
+# Note that is file is currently maintained manually.
 ---
 
 - key: stats.pscan.reqBodyTooBig
@@ -140,6 +141,41 @@
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationHelper.java
   desc: The number of authentication failures
+
+- key: stats.spider.started
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  desc: The number of times the spider has been started - from 2.11.0
+
+- key: stats.spider.stopped
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  desc: The number of times the spider has been stopped (as opposed to completing) - from 2.11.0
+
+- key: stats.spider.time
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  desc: The total number of milliseconds the spider has run for across all scans - from 2.11.0
+
+- key: stats.spider.url.found
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  desc: The number of URLs the spider has found and accessed - from 2.11.0
+
+- key: stats.spider.url.error
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  desc: The number of URLs the spider has found but failed to access - from 2.11.0
 
 - key: automation.spider.urls.added
   scope: global
