@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: alertFilters
-    version: 11.0.0
+    version: 12.0.0
 ---
 
 # Alert Filters
@@ -18,6 +18,8 @@ There are 2 different types of Alert Filter:
 
 * [Context Alert Filters](/docs/desktop/addons/alert-filters/contextalertfilter/)
 * [Global Alert Filters](/docs/desktop/addons/alert-filters/globalalertfilter/)
+
+Alert Filters can also be defined in the [Automation Framework](/docs/desktop/addons/alert-filters/automation/).
 
 
 The easiest way to create Alert Filters is to right click an alert and select
