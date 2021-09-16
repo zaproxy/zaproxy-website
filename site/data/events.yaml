@@ -25,6 +25,54 @@
   link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/HistoryReferenceEventPublisher.java
   event: href.tag.added
 
+- publisher: org.zaproxy.zap.extension.ascan.ActiveScanEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascan/src/main/java/org/zaproxy/zap/extension/ascan/ActiveScanEventPublisher.java
+  event: scan.paused
+
+- publisher: org.zaproxy.zap.extension.ascan.ActiveScanEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascan/src/main/java/org/zaproxy/zap/extension/ascan/ActiveScanEventPublisher.java
+  event: scan.stopped
+
+- publisher: org.zaproxy.zap.extension.ascan.ActiveScanEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascan/src/main/java/org/zaproxy/zap/extension/ascan/ActiveScanEventPublisher.java
+  event: scan.started
+
+- publisher: org.zaproxy.zap.extension.ascan.ActiveScanEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascan/src/main/java/org/zaproxy/zap/extension/ascan/ActiveScanEventPublisher.java
+  event: scan.progress
+
+- publisher: org.zaproxy.zap.extension.ascan.ActiveScanEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascan/src/main/java/org/zaproxy/zap/extension/ascan/ActiveScanEventPublisher.java
+  event: scan.resumed
+
+- publisher: org.zaproxy.zap.extension.ascan.ActiveScanEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascan/src/main/java/org/zaproxy/zap/extension/ascan/ActiveScanEventPublisher.java
+  event: scan.completed
+
+- publisher: org.zaproxy.zap.extension.spider.SpiderEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/spider/src/main/java/org/zaproxy/zap/extension/spider/SpiderEventPublisher.java
+  event: scan.paused
+
+- publisher: org.zaproxy.zap.extension.spider.SpiderEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/spider/src/main/java/org/zaproxy/zap/extension/spider/SpiderEventPublisher.java
+  event: scan.stopped
+
+- publisher: org.zaproxy.zap.extension.spider.SpiderEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/spider/src/main/java/org/zaproxy/zap/extension/spider/SpiderEventPublisher.java
+  event: scan.started
+
+- publisher: org.zaproxy.zap.extension.spider.SpiderEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/spider/src/main/java/org/zaproxy/zap/extension/spider/SpiderEventPublisher.java
+  event: scan.progress
+
+- publisher: org.zaproxy.zap.extension.spider.SpiderEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/spider/src/main/java/org/zaproxy/zap/extension/spider/SpiderEventPublisher.java
+  event: scan.resumed
+
+- publisher: org.zaproxy.zap.extension.spider.SpiderEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/spider/src/main/java/org/zaproxy/zap/extension/spider/SpiderEventPublisher.java
+  event: scan.completed
+
 - publisher: org.zaproxy.zap.extension.websocket.WebSocketEventPublisher
   link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketEventPublisher.java
   event: ws.stateChange
@@ -32,6 +80,22 @@
 - publisher: org.zaproxy.zap.extension.websocket.WebSocketEventPublisher
   link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketEventPublisher.java
   event: ws.message
+
+- publisher: org.parosproxy.paros.model.SiteMapEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/SiteMapEventPublisher.java
+  event: siteNode.removed
+
+- publisher: org.parosproxy.paros.model.SiteMapEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/SiteMapEventPublisher.java
+  event: site.removed
+
+- publisher: org.parosproxy.paros.model.SiteMapEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/SiteMapEventPublisher.java
+  event: site.added
+
+- publisher: org.parosproxy.paros.model.SiteMapEventPublisher
+  link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/parosproxy/paros/model/SiteMapEventPublisher.java
+  event: siteNode.added
 
 - publisher: org.zaproxy.addon.automation.AutomationEventPublisher
   link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
@@ -96,6 +160,18 @@
 - publisher: org.zaproxy.addon.automation.AutomationEventPublisher
   link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/AutomationEventPublisher.java
   event: plan.changed
+
+- publisher: org.zaproxy.zap.extension.brk.BreakEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/brk/src/main/java/org/zaproxy/zap/extension/brk/BreakEventPublisher.java
+  event: break.active
+
+- publisher: org.zaproxy.zap.extension.brk.BreakEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/brk/src/main/java/org/zaproxy/zap/extension/brk/BreakEventPublisher.java
+  event: break.hit
+
+- publisher: org.zaproxy.zap.extension.brk.BreakEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/brk/src/main/java/org/zaproxy/zap/extension/brk/BreakEventPublisher.java
+  event: break.inactive
 
 - publisher: org.zaproxy.zap.extension.alert.AlertEventPublisher
   link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/zaproxy/zap/extension/alert/AlertEventPublisher.java
