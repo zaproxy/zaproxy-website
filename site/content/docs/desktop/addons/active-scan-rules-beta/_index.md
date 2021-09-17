@@ -6,18 +6,12 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 35.0.0
+    version: 36.0.0
 ---
 
 # Active Scan Rules - Beta
 
 The following beta quality active scan rules are included in this add-on:
-
-## Apache Range Header DoS (CVE-2011-3192)
-
-Tests to see if the server is vulnerable to the Apache Range Header Denial of Service issue, by requesting eleven (11) different byte ranges. Eleven ranges is one more than is accepted by patched/fixed servers.
-
-Latest code: [ApacheRangeHeaderDosScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/ApacheRangeHeaderDosScanRule.java)
 
 ## Backup File Disclosure
 
