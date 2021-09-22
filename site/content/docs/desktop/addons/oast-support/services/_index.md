@@ -11,3 +11,4 @@ The OAST add-on currently supports the following services:
 
 * [BOAST](/docs/desktop/addons/oast-support/services/boast/)
 * [Callbacks](/docs/desktop/addons/oast-support/services/callbacks/)
+* [Interactsh](/docs/desktop/addons/oast-support/services/interactsh/)
