@@ -9,7 +9,7 @@ EditableContent: true
 
 This guide is intended to serve as a basic introduction for using ZAP to perform security testing, even if you don’t have a background in security testing. To that end, some security testing concepts and terminology is included but this document is not intended to be a comprehensive guide to either ZAP or security testing.
 
-It is also available as a [pdf](/pdf/ZAPGettingStartedGuide-2.9.pdf) to make it easier to print.
+It is also available as a [pdf](/pdf/ZAPGettingStartedGuide-2.10.pdf) to make it easier to print.
 
 ### Security Testing Basics
 Software security testing is the process of assessing and testing a system to discover security risks and vulnerabilities of the system and its data. There is no universal terminology but for our purposes, we define assessments as the analysis and discovery of vulnerabilities without attempting to actually exploit those vulnerabilities. We define testing as the discovery and attempted exploitation of vulnerabilities.
@@ -203,14 +203,12 @@ The marketplace can be accessed from within ZAP via the ‘Manage Add-ons’ but
 
 All of the add-ons on the marketplace are completely free.
 
-
 ### Automation
-ZAP is an ideal tool to use in automation with libraries for Java, Python, Node.js PHP, Ruby & more!
-
-It can be run in headless mode and has a powerful API which allows you to control nearly all of the features available via the ZAP desktop.
-
-For more details see the [API Documentation](/docs/api).
-
+ZAP is an ideal tool to use in automation and supports a range of options:
+- [Docker Packaged Scans](/docs/docker/)
+- [GitHub Actions](https://github.com/marketplace?query=owasp+zap)
+- [Automation Framework](/docs/automate/automation-framework/)
+- [API and Daemon mode](/docs/api/)
 
 ### Learn More About ZAP
 Now that you are familiar with a few basic capabilities of ZAP, you can learn more about ZAP’s capabilities and how to use them from ZAP’s [Desktop User Guide](/docs/desktop/). The User Guide provides step-by-step instructions, references for the API and command-line programming, instructional videos, and tips and tricks for using ZAP.
