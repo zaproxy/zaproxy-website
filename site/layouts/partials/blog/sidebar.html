@@ -8,3 +8,11 @@
     </ul>
 </section>
 
+<section class="p-20">
+    <h3>Authors</h3>
+    <ul class="taxonomy-list tax-tags">
+    {{range $name, $taxonomy := .Site.Taxonomies.authors}}
+        <li><a href="{{ "authors/" | relLangURL}}{{$name | urlize}}/">{{$name}}</a></li>
+    {{end}}
+    </ul>
+</section>
