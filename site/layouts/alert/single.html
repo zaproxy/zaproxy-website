@@ -62,6 +62,16 @@
               </td>
               <td>{{ .Params.wasc }}</td>
             </tr>
+            <tr> 
+              <td>
+                <strong>Tags</strong>
+              </td>
+              <td>
+              {{ range $tagkey, $tagvalue := .Params.alerttags }}
+              	<a href="{{ $tagvalue }}">{{ upper $tagkey }}</a><br>
+              {{ end }}
+              </td>
+            </tr>
           </tbody>
         </table>
 
