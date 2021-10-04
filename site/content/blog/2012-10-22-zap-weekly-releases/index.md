@@ -2,6 +2,8 @@
 title: "ZAP Weekly Releases"
 type: post
 tags:
+- blog
+- release
 date: "2012-10-22"
 authors:
     - simon
