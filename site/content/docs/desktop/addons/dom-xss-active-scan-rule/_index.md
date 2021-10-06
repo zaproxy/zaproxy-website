@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: domxss
-    version: 10.0.0
+    version: 11.0.0
 ---
 
 # DOM XSS Active Scan Rule
@@ -21,7 +21,7 @@ the rule `rules.domxss.browserid`, via the Options 'Rule configuration' panel, w
 `firefox`, `firefox-headless`, `chrome` and `chrome-headless`.
 
 The following Attack Strengths are supported, and related directly to the number of attack payloads used
-for URL fragment and form input field injections (eg: http://example.com/index.html?foo=bar#injection):
+for URL fragment and form input field injections (eg: `http://example.com/index.html?foo=bar#injection`):
 
 * LOW: 1 attack payloads
 * MEDIUM: 3 attack payloads

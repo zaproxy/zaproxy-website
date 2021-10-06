@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.6.0
+    version: 0.7.0
 ---
 
 # Automation Framework
@@ -31,6 +31,15 @@ In most cases it is recommended to also use the `-cmd` command line option so th
 ## GUI
 
 A [GUI](/docs/desktop/addons/automation-framework/gui/) is under development and currently provides a limited set of functionality.
+
+## API
+
+The following API endpoints are provided by this add-on:
+
+* Action: runPlan(filePath) - loads and asynchronously runs the plan in the specified file, returning a planId
+* View: planProgress(planId) - returns the progress details for the specified planId
+
+If the ZAP desktop is being used then the plan will also be shown in the GUI to make it easier to diagnose any problems.
 
 ## Environment
 
