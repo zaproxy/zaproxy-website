@@ -49,6 +49,22 @@ A pull down field which allows you to specify which parameter the issue is assoc
 The field is prepopulated with any URL and FORM parameters found, but you can also enter your own parameter name.  
 Array parameters (in URL query component and `x-www-form-urlencoded` request body) are identified with its index. For example, for a request containing `choices[]=ChoiceA&choices[]=ChoiceB` the first parameter would be identified as `choices[0]` and the second as `choices[1]`.
 
+### Attack
+
+The payload that was supplied to the *Parameter* . This is expected to be set only by active scan rules which are the ones that send payloads/attacks.
+
+### Evidence
+
+The available information in the message request or response (header or body) that indicates that the issue is present.
+
+### CWE ID
+
+The relevant Common Weakness Enumeration (CWE) ID associated with the flagged vulnerability. This field can only be an integer.
+
+### WASC ID
+
+The relevant Web Application Security Consortium (WASC) ID associated with the flagged vulnerability. This field can only be an integer.
+
 ### Description
 
 A general description of the type of issue found.  
@@ -71,6 +87,14 @@ Note that any changes you make will be lost if you select another type.
 One or more URLs pointing to more information on the internet about the selected type of alert.  
 This is populated when you select one of the predefined types, but you can also change it as required.  
 Note that any changes you make will be lost if you select another type.
+
+### Alert Tags
+
+Alerts can be tagged with arbitrary keys or key=value pairs.  
+You can add as many tags as you want to each alert. However,
+
+* You cannot have two tags with the same key.
+* The key must be limited to 1024 characters and the value must be limited to 4000 characters for each tag.
 
 ## Accessed via
 

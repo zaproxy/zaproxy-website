@@ -12,13 +12,12 @@ weight: 8
 People who have made significant enhancements to the latest releases.  
 For more details of code contributions see: <https://www.openhub.net/p/zaproxy/contributors>
 
-|   |                                                                      |
-|---|----------------------------------------------------------------------|
-|   | Simon Bennetts ([@psiinon](https://twitter.com/psiinon)) - StackHawk |
-|   | thc202                                                               |
-|   | Rick Mitchell ([@kingthorin_rm](https://twitter.com/kingthorin_rm))  |
-|   | Nirojan Selvanathan ([@sshniro](https://twitter.com/sshniro))        |
-|   | Akshath Kothari ([@ricekot_](https://twitter.com/ricekot_))          |
+|   |                                                                                                                                   |
+|---|-----------------------------------------------------------------------------------------------------------------------------------|
+|   | Simon Bennetts ([@psiinon](https://twitter.com/psiinon)) - StackHawk                                                              |
+|   | thc202 - [Sponsor on GitHub](https://github.com/sponsors/thc202)                                                                  |
+|   | Rick Mitchell ([@kingthorin_rm](https://twitter.com/kingthorin_rm)) - [Sponsor on GitHub](https://github.com/sponsors/kingthorin) |
+|   | Akshath Kothari ([@ricekot_](https://twitter.com/ricekot_))                                                                       |
 
 ## ZAP Extended Team
 
@@ -39,8 +38,10 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Mennouchi Islam Azeddine                                                                                    |
 |   | Ahmed Bahajjaj ([@madanalogy](https://github.com/madanalogy))                                               |
 |   | Florent Baillais ([@flocurity](https://twitter.com/flocurity))                                              |
+|   | Adam Baldwin ([@adamhawkbaldwin](https://twitter.com/adamhawkbaldwin))                                      |
 |   | Jay Ball                                                                                                    |
 |   | Adrien de Beaupre                                                                                           |
+|   | Florian Beijers ([@zersiax](https://twitter.com/zersiax))                                                   |
 |   | Alla Bezroutchko - Gremwell                                                                                 |
 |   | Artemy Bogdanov ([@Abr1k0s](https://twitter.com/Abr1k0s))                                                   |
 |   | Yvan Boily                                                                                                  |
@@ -52,6 +53,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Eranda Chandrika                                                                                            |
 |   | Jonathan Claudius ([@claudijd](https://twitter.com/claudijd))                                               |
 |   | Adrian Clay                                                                                                 |
+|   | Baptiste Crépin - AXA Group Security                                                                        |
 |   | Johanna Curiel                                                                                              |
 |   | Karl Dalley ([@gnirlos](https://github.com/gnirlos))                                                        |
 |   | Anamika Das ([@AnamikaD](https://twitter.com/AnamikaD))                                                     |
@@ -60,6 +62,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Freakyclown - Portcullis Security                                                                           |
 |   | Michael Gabriel ([shamashel](https://github.com/shamashel))                                                 |
 |   | Patrick Galley                                                                                              |
+|   | Scott Gerlach ([@sgerlach](https://twitter.com/sgerlach)) - StackHawk                                       |
 |   | Mark Goodwin                                                                                                |
 |   | Chris Grieger                                                                                               |
 |   | Daniel Grunwell (grunny)                                                                                    |
@@ -93,6 +96,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Savva Kodeikin                                                                                              |
 |   | Christian Koidl                                                                                             |
 |   | Lars Kristensen                                                                                             |
+|   | Erik de Kuijper ([@edkpr](https://github.com/edkpr))                                                        |
 |   | Gwilym Lewis – Appsecco                                                                                     |
 |   | Sajeeb Lohani (sml555) - Bulletproof ZDS                                                                    |
 |   | Dejan Lukan (eleanor)                                                                                       |
@@ -129,17 +133,21 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Matt Raible                                                                                                 |
 |   | Vahid Rafiei ([@vahid_r](https://twitter.com/vahid_r))                                                      |
 |   | Javan Rasokat                                                                                               |
+|   | Aman Rawat ([@theamanrawat](https://github.com/theamanrawat))                                               |
 |   | Guifre Ruiz Utges                                                                                           |
 |   | Dobin Rutishauser - Compass Security AG                                                                     |
 |   | Bunyanuch Saengnet                                                                                          |
+|   | Najam Ul Saqib ([@njmulsqb](https://www.twitter.com/njmulsqb))                                              |
 |   | Goran Sarenkapa (JordanGS)                                                                                  |
 |   | Karan Preet Singh Sasan ([@preetkaran20](https://github.com/preetkaran20))                                  |
+|   | Pranav Saxena ([@pranavsaxena17](https://github.com/pranavsaxena17))                                        |
 |   | Dominic Scheirlinck ([@dominics](https://twitter.com/dominics))                                             |
 |   | Peter Schuler                                                                                               |
 |   | Rafał Ścipień                                                                                               |
 |   | David Scrobonia ([@david_scrobonia](https://twitter.com/david_scrobonia))                                   |
 |   | Justin Searle                                                                                               |
 |   | Alessandro Secco                                                                                            |
+|   | Nirojan Selvanathan ([@sshniro](https://twitter.com/sshniro))                                               |
 |   | Bill Sempf - Columbus OWASP                                                                                 |
 |   | Chaitanya Sharma ([@phoenix24](https://twitter.com/phoenix24))                                              |
 |   | Zainab Al Showely                                                                                           |
@@ -149,7 +157,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Yannic Smeets                                                                                               |
 |   | Andreas Sommer                                                                                              |
 |   | David Sopas ([@dsopas](https://twitter.com/dsopas))                                                         |
-|   | Josh Soref (@jsoref)                                                                                        |
+|   | Josh Soref ([@jsoref](https://github.com/jsoref/))                                                          |
 |   | Cosmin Stefan-Dobrin                                                                                        |
 |   | Sunny (darkowlzz) [indiasuny000@gmail.com](mailto:indiasuny000@gmail.com)                                   |
 |   | Daniel Thompson-Yvetot ([@nothingismagick](https://github.com/nothingismagick))                             |

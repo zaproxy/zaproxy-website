@@ -19,7 +19,7 @@ The UI includes the following dialogs or popups:
 |   | [History Filter](/docs/desktop/ui/dialogs/hist_filter/)        |   |
 |   | [Manual Request Editor](/docs/desktop/ui/dialogs/man_req/)     |   |
 |   | [Manage Add-ons](/docs/desktop/ui/dialogs/manageaddons/)       |   |
-|   | [Manage Tags](/docs/desktop/ui/dialogs/managetags/)            |   |
+|   | [Manage History Tags](/docs/desktop/ui/dialogs/managetags/)    |   |
 |   | [Options](/docs/desktop/ui/dialogs/options/)                   |   |
 |   | [Persist Session](/docs/desktop/ui/dialogs/persistsession/)    |   |
 |   | [Scan Policy Manager](/docs/desktop/ui/dialogs/scanpolicymgr/) |   |

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Passive Scanner Screen
 type: userguide
-weight: 23
+weight: 22
 ---
 
 # Options Passive Scanner screen

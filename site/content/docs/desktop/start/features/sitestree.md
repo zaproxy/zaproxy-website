@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Sites Tree
 type: userguide
-weight: 25
+weight: 24
 ---
 
 # Sites Tree

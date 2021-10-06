@@ -40,10 +40,10 @@ Setting this to a non zero value will increase the time an active scan takes, bu
 
 If this option is selected the active scanner will inject the request header `X-ZAP-Scan-ID` with the ID of the scanner that's sending the HTTP requests.
 
-### Handle anti-CSRF tokens (experimental functionality).
+### Handle anti-CSRF tokens.
 
 If this option is selected then the active scanner will attempt to automatically request [anti CSRF](/docs/desktop/start/features/anticsrf/) tokens when required.  
-Note that this is experimental functionality and will slow down the scanning process as only one thread will be used to ensure that anti CSRF token requests dont get out of step.
+Previously this would have forced the scanner to only use one thread, but that is no longer the case. You are strongly recommended to check that the anti CSRF tokens are being correctly generated if more than one thread is being used, for example using custom [tags](/docs/desktop/start/features/tags/) to check for success / failure patterns in the response.
 
 ### In Attack Mode prompt to rescan nodes when scope changed.
 

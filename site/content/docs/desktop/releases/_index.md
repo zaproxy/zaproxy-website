@@ -11,6 +11,7 @@ The following releases have been made:
 
 |   |                                          |                                                                                                              |
 |---|------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+|   | [2.11.0](/docs/desktop/releases/2.11.0/) | OWASP 20th anniversary bug fix and enhancement release                                                       |
 |   | [2.10.0](/docs/desktop/releases/2.10.0/) | 10 year anniversary bug fix and enhancement release                                                          |
 |   | [2.9.0](/docs/desktop/releases/2.9.0/)   | bug fix and enhancement release                                                                              |
 |   | [2.8.0](/docs/desktop/releases/2.8.0/)   | bug fix and enhancement release                                                                              |

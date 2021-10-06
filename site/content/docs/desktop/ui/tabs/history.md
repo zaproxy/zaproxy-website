@@ -98,9 +98,9 @@ The nodes can be included again via the [Session Properties](/docs/desktop/ui/di
 This will prevent the selected nodes from being spidered.  
 The nodes can be included again via the [Session Properties](/docs/desktop/ui/dialogs/session/) dialog
 
-### Manage Tags...
+### Manage History Tags...
 
-This will bring up the [Manage Tags dialog](/docs/desktop/ui/dialogs/managetags/) which allows you to change the [tags](/docs/desktop/start/features/tags/) associated with the request.
+This will bring up the [Manage History Tags dialog](/docs/desktop/ui/dialogs/managetags/) which allows you to change the [tags](/docs/desktop/start/features/tags/) associated with the request.
 
 ### Note...
 

@@ -62,7 +62,6 @@ ZAP supports the following command line options:
 |   | -addonupdate                | Update all changed add-ons from the ZAP Marketplace                                                                                                                                                                                      |
 |   | -addonlist                  | List all of the installed add-ons                                                                                                                                                                                                        |
 |   | -script \<script\>          | Run the specified script (file system path) if command line/daemon, or just load it if GUI                                                                                                                                               |
-|   | -last_scan_report \<path\>  | Generate the 'Last Scan Report' into the specified path                                                                                                                                                                                  |
 |   | -suppinfo                   | Outputs details relevant for support and troubleshooting (to the console/standard out). Such as: ZAP version, java version, installed add-ons and version, locale info, operating system, etc.                                           |
 |   | -certload \<path\>          | Loads the Root CA certificate from the specified file name                                                                                                                                                                               |
 |   | -certpubdump \<path\>       | Dumps the Root CA public certificate into the specified file name, this is suitable for importing into browsers                                                                                                                          |
@@ -88,10 +87,10 @@ Examples:
     <zap-script> -daemon -newsession session
     ```
 
-* Create a report of the last scan of an existing session and exit ZAP once finished:
+* Run a script against an existing session and exit ZAP once finished:
 
     ```
-    <zap-script> -last_scan_report /full/path/to/save/report.xml -session /full/path/to/existing/session -cmd
+    <zap-script> -session /full/path/to/existing/session -script /full/path/to/script.js -cmd
     ```
 
 ## See also

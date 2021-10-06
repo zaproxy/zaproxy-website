@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Display screen
 type: userguide
-weight: 12
+weight: 11
 ---
 
 # Options Display screen

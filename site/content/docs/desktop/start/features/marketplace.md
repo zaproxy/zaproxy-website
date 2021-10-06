@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Marketplace
 type: userguide
-weight: 17
+weight: 16
 ---
 
 # Marketplace

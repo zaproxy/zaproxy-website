@@ -8,18 +8,6 @@ type: userguide
 
 This menu handles the reports.
 
-### Generate HTML Report...
-
-This generates a new HTML report containing the alerts raised.
-
-### Generate XML Report...
-
-This generates a new XML report containing the alerts raised.
-
-### Generate Markdown Report...
-
-This generates a new Markdown report containing the alerts raised.
-
 ### Export Messages to File...
 
 This allows you to save requests and responses to a text file.   

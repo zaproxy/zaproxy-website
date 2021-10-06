@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Local Proxies screen
 type: userguide
-weight: 20
+weight: 19
 ---
 
 # Options Local Proxies screen

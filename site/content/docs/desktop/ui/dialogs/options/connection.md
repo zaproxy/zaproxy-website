@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Connection screen
 type: userguide
-weight: 10
+weight: 9
 ---
 
 # Options Connection screen

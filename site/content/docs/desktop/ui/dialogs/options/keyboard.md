@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Keyboard screen
 type: userguide
-weight: 18
+weight: 17
 ---
 
 # Options Keyboard screen

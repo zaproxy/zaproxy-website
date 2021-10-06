@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Globally Excluded URLs
 type: userguide
-weight: 14
+weight: 13
 ---
 
 # Globally Excluded URLs

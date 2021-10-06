@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Global Exclude URL screen
 type: userguide
-weight: 15
+weight: 14
 ---
 
 # Options Global Exclude URL screen

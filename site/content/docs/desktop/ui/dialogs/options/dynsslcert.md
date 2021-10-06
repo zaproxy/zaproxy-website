@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Dynamic SSL Certificates
 type: userguide
-weight: 13
+weight: 12
 ---
 
 # Option Dynamic SSL Certificates
@@ -12,11 +12,11 @@ For doing so, ZAP has to encrypt each request before sending
 to the server and decrypt each response, which comes back.
 But, this is already done by the browser.
 That's why, the only way to decrypt or intercept the transmission,
-is to do a 'man in the middle' approach.
+is to do a 'manipulator in the middle' approach.
 
 ## Overview
 
-![man in the middle](/docs/desktop/images/maninthemiddle.png)
+![manipulator in the middle](/docs/desktop/images/manipulatorinthemiddle.png)
 
 In short words, every data send to and received from the server
 is encrypted/decrypted by using the original server's certificate
@@ -51,8 +51,8 @@ Root CAs, your browser doesn't recognize the man in the middle.
 
 ### Generate
 
-If you're running ZAP the first time, you should generate a Root CA certificate first.
-Once you've generated one, you have to install it within your browser
+When you are running ZAP for the first time then it will generate a Root CA certificate just for you.
+If you do not use the 'browser launch' feature then you have to install it within your browser
 or HTTP client application. See section [installation](#install)
 for more details.
 
@@ -87,6 +87,12 @@ Root CA certificate, so you can import it. Simply use one installation of OWASP 
 to generate one Root CA certificate.  
 Copy the file 'OWASP ZAP/config.xml' from your users home directory to
 the PC, where you want to use the same certificate and press 'import' to import it.
+
+Alternatively you can use the [command line](/docs/desktop/cmdline/) options:
+
+* -certfulldump \<path\> to dump the certificate from one ZAP instance
+* -certload \<path\> to load the certificate into another ZAP instance
+
 
 You can also import certificates stored in pem files as long as they include both
 the certificate and the unencrypted private key in the following format:  

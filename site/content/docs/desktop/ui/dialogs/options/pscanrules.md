@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Passive Scan Rules Screen
 type: userguide
-weight: 21
+weight: 20
 ---
 
 # Options Passive Scan Rules Screen

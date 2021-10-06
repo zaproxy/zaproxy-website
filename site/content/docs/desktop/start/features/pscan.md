@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Passive Scan
 type: userguide
-weight: 20
+weight: 19
 ---
 
 # Passive Scan
