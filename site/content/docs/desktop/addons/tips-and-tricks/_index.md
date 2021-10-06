@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: tips
-    version: 7.0.0
+    version: 9.0.0
 ---
 
 # Tips and Tricks
