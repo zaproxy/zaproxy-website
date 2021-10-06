@@ -20,6 +20,11 @@ services:
     license: 'Commercial, free community edition'
     supporter: ZAP Silver Supporter
 
+  - name: 'IOTHREAT'
+    link: https://iothreat.com/
+    license: 'Commercial'
+    supporter: ZAP Bronze Supporter
+
   # OWASP tools, non-commercial, alphabetic
   - name: 'SecureCodeBox'
     link: https://www.securecodebox.io/
@@ -66,10 +71,6 @@ services:
   # Commerical, alphabetic
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
-    license: 'Commercial'
-
-  - name: 'IOTHREAT'
-    link: https://iothreat.com/
     license: 'Commercial'
 
   - name: 'Nucleus'
