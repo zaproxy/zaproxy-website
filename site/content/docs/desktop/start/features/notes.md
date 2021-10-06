@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Notes
 type: userguide
-weight: 19
+weight: 18
 ---
 
 # Notes

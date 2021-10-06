@@ -18,7 +18,6 @@ It include the following screens:
 |   | [Anti CSRF Tokens](/docs/desktop/ui/dialogs/options/anticsrf/)            |   |
 |   | [API](/docs/desktop/ui/dialogs/options/api/)                              |   |
 |   | [Breakpoints](/docs/desktop/ui/dialogs/options/breakpoints/)              |   |
-|   | [Callback Address](/docs/desktop/ui/dialogs/options/callback/)            |   |
 |   | [Client Certificate](/docs/desktop/ui/dialogs/options/certificate/)       |   |
 |   | [Check for Updates](/docs/desktop/ui/dialogs/options/checkforupdates/)    |   |
 |   | [Connection](/docs/desktop/ui/dialogs/options/connection/)                |   |

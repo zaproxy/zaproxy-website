@@ -2,14 +2,14 @@
 # This page was generated from the add-on.
 title: Tags
 type: userguide
-weight: 30
+weight: 29
 ---
 
 # Tags
 
 A tag is short piece of text that you wish to associate with a request.  
 A request can have multiple tags associated with it.  
-Tags can be added and changed using the [Manage Tags dialog](/docs/desktop/ui/dialogs/managetags/).  
+Tags can be added and changed using the [Manage History Tags dialog](/docs/desktop/ui/dialogs/managetags/).  
 They can also be automatically added via [Passive scanning](/docs/desktop/start/features/pscan/) -
 this allows you to automatically tag pages which match a particular regular expression.  
 

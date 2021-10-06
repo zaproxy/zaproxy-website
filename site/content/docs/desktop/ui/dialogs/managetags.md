@@ -1,20 +1,20 @@
 ---
 # This page was generated from the add-on.
-title: Manage Tags dialog
+title: Manage History Tags dialog
 type: userguide
 weight: 9
 ---
 
-# Manage Tags dialog
+# Manage History Tags dialog
 
 This allows you to manage the [tags](/docs/desktop/start/features/tags/)
 associated with a request.
 
 ## Accessed via
 
-|   |                                               |                                        |
-|---|-----------------------------------------------|----------------------------------------|
-|   | [History tab](/docs/desktop/ui/tabs/history/) | 'Manage Tags...' right click menu item |
+|   |                                               |                                                |
+|---|-----------------------------------------------|------------------------------------------------|
+|   | [History tab](/docs/desktop/ui/tabs/history/) | 'Manage History Tags...' right click menu item |
 
 ## See also
 

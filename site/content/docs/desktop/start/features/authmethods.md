@@ -31,6 +31,8 @@ This method allows users to perform the authentication manually
 then select the corresponding HTTP session. As the actual
 authentication is being performed by you, this method does not support
 re-authentication in case the webapp logs a user out.
+However if you do define an [Authentication Verification Strategy](/docs/desktop/start/features/authstrategies/)
+then ZAP will maintain the authentication [statistics](/docs/desktop/start/features/stats/).
 
 When using this authentication method, configuring a User for the context
 require choosing an authenticated HTTP session.

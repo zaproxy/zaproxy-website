@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Spider screen
 type: userguide
-weight: 27
+weight: 26
 ---
 
 # Options Spider screen

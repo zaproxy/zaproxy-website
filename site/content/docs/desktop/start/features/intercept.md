@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Manipulator-in-the-middle Proxy
 type: userguide
-weight: 16
+weight: 15
 ---
 
 # Manipulator-in-the-middle Proxy

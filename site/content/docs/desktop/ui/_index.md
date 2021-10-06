@@ -44,17 +44,16 @@ This is displayed on the top right hand side and is where requests and responses
 
 This is displayed on the bottom and is where useful information is displayed.
 
-|   |                                                       |                                                                        |
-|---|-------------------------------------------------------|------------------------------------------------------------------------|
-|   | [History tab](/docs/desktop/ui/tabs/history/)         | This shows the requests in the order they were made                    |
-|   | [Search tab](/docs/desktop/ui/tabs/search/)           | This allows you to search all of the requests and responses            |
-|   | [Breakpoints tab](/docs/desktop/ui/tabs/breakpoints/) | This shows the Breakpoints set                                         |
-|   | [Alerts tab](/docs/desktop/ui/tabs/alerts/)           | This shows the alerts raised on the application                        |
-|   | [Active Scan tab](/docs/desktop/ui/tabs/ascan/)       | This shows the active scans                                            |
-|   | [Spider tab](/docs/desktop/ui/tabs/spider/)           | This shows the URLs not yet visited                                    |
-|   | [Params tab](/docs/desktop/ui/tabs/params/)           | This shows a summary of the parameters a site uses                     |
-|   | [Output tab](/docs/desktop/ui/tabs/output/)           | This shows various informational messages                              |
-|   | [Callbacks tab](/docs/desktop/ui/tabs/callbacks/)     | This shows informational about callback requests that ZAP has received |
+|   |                                                       |                                                             |
+|---|-------------------------------------------------------|-------------------------------------------------------------|
+|   | [History tab](/docs/desktop/ui/tabs/history/)         | This shows the requests in the order they were made         |
+|   | [Search tab](/docs/desktop/ui/tabs/search/)           | This allows you to search all of the requests and responses |
+|   | [Breakpoints tab](/docs/desktop/ui/tabs/breakpoints/) | This shows the Breakpoints set                              |
+|   | [Alerts tab](/docs/desktop/ui/tabs/alerts/)           | This shows the alerts raised on the application             |
+|   | [Active Scan tab](/docs/desktop/ui/tabs/ascan/)       | This shows the active scans                                 |
+|   | [Spider tab](/docs/desktop/ui/tabs/spider/)           | This shows the URLs not yet visited                         |
+|   | [Params tab](/docs/desktop/ui/tabs/params/)           | This shows a summary of the parameters a site uses          |
+|   | [Output tab](/docs/desktop/ui/tabs/output/)           | This shows various informational messages                   |
 
 
 All but the most essential tabs can be hidden by clicking on the grey 'x' on the tab title.  
@@ -70,6 +69,7 @@ Hidden tabs may also appear when 'activated' by another action.
 |   | [Getting Started](/docs/desktop/start/) | for details of how to start using ZAP |
 |   | [Dialogs](/docs/desktop/ui/dialogs/)    | for details of the dialogs or popups  |
 |   | [Introduction](/docs/desktop/)          | the introduction to ZAP               |
+
 ## Official Videos
 
 |   |                                                                                                     |

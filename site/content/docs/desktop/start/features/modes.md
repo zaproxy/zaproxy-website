@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Modes
 type: userguide
-weight: 18
+weight: 17
 ---
 
 # Modes

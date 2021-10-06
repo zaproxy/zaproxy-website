@@ -54,11 +54,23 @@ The following properties are supported:
 * otherInfo
 * reference
 
+The format for alert tags is:
+
+```
+<alertid>.tag.<key> = [ + | - ] [ <value> ]
+```
+
+Note that:
+
+* Spaces in the tag key must be escaped with a backslash.
+* The tag value is optional.
+
 For example
 
 ```
 # 40012 = Reflected XSS
 40012.solution = Follow our company specific guidelines at http://internet.example.com/xss.html
+40012.tag.Bug\ Tracker\ URL = https://example.com/issues/1234
 ```
 
 If the value starts with a '+' then it is appended to the existing information.   

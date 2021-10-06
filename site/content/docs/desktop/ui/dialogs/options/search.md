@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Search screen
 type: userguide
-weight: 26
+weight: 25
 ---
 
 # Options Search screen

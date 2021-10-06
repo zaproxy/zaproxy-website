@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Rule Configuration screen
 type: userguide
-weight: 24
+weight: 23
 ---
 
 # Options Rule Configuration screen
