@@ -15,19 +15,13 @@ authors:
  - simon
 ---
 
-## The Competition is Currently OPEN
+## The Competition is now closed
 
-Apparently people have been a bit confused by some of the wording in this blog post, so just so that it is clear:
-
-* The competition is **OPEN**
-* It is open to everyone, regardless of where they live as long as we are legally able to pay them
-
-It will remain open until we have accepted **10** templates or ~~July~~ **October** 1st 2021, whichever comes first - yes we've extended the deadline by 3 months!
-
-Number of accepted templates to date: **2**
+Number of accepted templates: **3**
 
 * [#2876](https://github.com/zaproxy/zap-extensions/pull/2876) Awarded $200 due to the number of themes included
 * [#2896](https://github.com/zaproxy/zap-extensions/pull/2896) Awarded $100
+* [#3188](https://github.com/zaproxy/zap-extensions/pull/3188) Awarded $150 due to the number of options, now the ZAP default template!
 
 ## The Competition
 
