@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 0.4.0
+    version: 0.6.0
 ---
 
 # Encode / Decode / Hash dialog
@@ -173,7 +173,7 @@ Custom "Encode/Decode" scripts can be created/added to the Scripts Tree and used
 
 ## Accessed via
 
-|   |                                                                                                                                                 |
-|---|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|   |                                                                                                                                        |
+|---|----------------------------------------------------------------------------------------------------------------------------------------|
 |   | Tools menu 'Encode/Decode/Hash...' item                                                                                                |
 |   | Many text areas such as the Output tab, Scripts console, Request and Response panels via 'Encode/Decode/Hash...' right click menu item |
