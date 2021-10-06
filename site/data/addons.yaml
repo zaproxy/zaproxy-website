@@ -20,17 +20,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v12/alertFilters-release-12.zap
   date: 2021-09-16
   version: 12
-- id: alertReport
-  name: Report alert generator
-  description: Allows you to generate reports for alerts you specify in pdf or odt
-    format
-  author: Talsoft SRL
-  status: beta
-  infoUrl: /docs/desktop/addons/report-alert-generator/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/alertReport-beta-14.zap
-  date: 2017-11-27
-  version: 14
 - id: allinonenotes
   name: All In One Notes
   description: A simple extension to view all notes in one pane.
@@ -205,16 +194,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.10.0/custompayloads-alpha-0.10.0.zap
   date: 2021-06-17
   version: 0.10.0
-- id: customreport
-  name: CustomReport
-  description: New HTML report module allows users to customize report content.
-  author: Chienli Ma
-  status: alpha
-  infoUrl: /docs/desktop/addons/custom-report/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/customreport-v6/customreport-alpha-6.zap
-  date: 2020-12-15
-  version: 6
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
@@ -278,17 +257,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.5.0/encoder-beta-0.5.0.zap
   date: 2021-02-09
   version: 0.5.0
-- id: exportreport
-  name: Export Report
-  description: Report Export module that allows users to customize content and export
-    in a desired format.
-  author: Goran Sarenkapa - JordanGS
-  status: alpha
-  infoUrl: /docs/desktop/addons/export-report/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exportreport-v7/exportreport-alpha-7.zap
-  date: 2020-12-15
-  version: 7
 - id: formhandler
   name: Form Handler
   description: This Form Handler Add-on allows a user to define field names and values
@@ -499,9 +467,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/hud/
   repoUrl: https://github.com/zaproxy/zap-hud/
-  downloadUrl: https://github.com/zaproxy/zap-hud/releases/download/v0.12.0/hud-beta-0.12.0.zap
-  date: 2020-10-15
-  version: 0.12.0
+  downloadUrl: https://github.com/zaproxy/zap-hud/releases/download/v0.13.0/hud-beta-0.13.0.zap
+  date: 2021-10-06
+  version: 0.13.0
 - id: imagelocationscanner
   name: Image Location and Privacy Scanner
   description: Image Location and Privacy Passive Scanner
