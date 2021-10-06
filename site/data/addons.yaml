@@ -833,9 +833,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.5.0/spiderAjax-release-23.5.0.zap
-  date: 2021-09-16
-  version: 23.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.6.0/spiderAjax-release-23.6.0.zap
+  date: 2021-10-06
+  version: 23.6.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
@@ -873,9 +873,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/tips-and-tricks/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tips-v8/tips-beta-8.zap
-  date: 2021-05-28
-  version: 8
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tips-v9/tips-beta-9.zap
+  date: 2021-10-06
+  version: 9
 - id: tlsdebug
   name: TLS Debug
   description: Provides a tab which allows to quickly debug a TLS/SSL connection
@@ -934,9 +934,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v31/webdriverlinux-release-31.zap
-  date: 2021-09-17
-  version: 31
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v32/webdriverlinux-release-32.zap
+  date: 2021-10-06
+  version: 32
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -944,9 +944,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v31/webdrivermacos-release-31.zap
-  date: 2021-09-17
-  version: 31
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v32/webdrivermacos-release-32.zap
+  date: 2021-10-06
+  version: 32
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -954,9 +954,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v31/webdriverwindows-release-31.zap
-  date: 2021-09-17
-  version: 31
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v32/webdriverwindows-release-32.zap
+  date: 2021-10-06
+  version: 32
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
@@ -964,9 +964,9 @@
   status: release
   infoUrl: /docs/desktop/addons/websockets/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v23/websocket-release-23.zap
-  date: 2020-12-18
-  version: 23
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v24/websocket-release-24.zap
+  date: 2021-10-06
+  version: 24
 - id: zest
   name: Zest - Graphical Security Scripting Language
   description: A graphical security scripting language, ZAPs macro language on steroids
@@ -974,6 +974,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v34/zest-beta-34.zap
-  date: 2021-04-22
-  version: 34
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v35/zest-beta-35.zap
+  date: 2021-10-06
+  version: 35
