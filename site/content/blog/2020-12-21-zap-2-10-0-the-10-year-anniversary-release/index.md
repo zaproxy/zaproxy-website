@@ -7,6 +7,7 @@ images:
 type: post
 tags:
 - blog
+- release
 date: "2020-12-21"
 addSocialPreview: true
 authors:

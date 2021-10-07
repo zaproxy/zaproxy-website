@@ -8,6 +8,7 @@ images:
 type: post
 tags:
 - blog
+- release
 - youdontknowzap
 date: "2020-06-04"
 addSocialPreview: true

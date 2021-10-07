@@ -2,6 +2,8 @@
 title: "ZAP 2.5.0"
 type: post
 tags:
+- blog
+- release
 date: "2016-06-03"
 authors:
     - simon
