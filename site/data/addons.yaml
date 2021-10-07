@@ -7,9 +7,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/access-control-testing/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/accessControl-v6/accessControl-alpha-6.zap
-  date: 2020-10-06
-  version: 6
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/accessControl-v7/accessControl-alpha-7.zap
+  date: 2021-10-07
+  version: 7
 - id: alertFilters
   name: Alert Filters
   description: Allows you to automate the changing of alert risk levels.
@@ -27,19 +27,19 @@
   status: alpha
   infoUrl: /docs/desktop/addons/all-in-one-notes/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/allinonenotes-v1/allinonenotes-alpha-1.zap
-  date: 2019-06-18
-  version: 1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/allinonenotes-v2/allinonenotes-alpha-2.zap
+  date: 2021-10-07
+  version: 2
 - id: amf
-  name: AMF
+  name: AMF Support
   description: Adds support for AMF messages
   author: ZAP Dev Team
   status: alpha
   infoUrl: /docs/desktop/addons/amf-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/amf-alpha-2.zap
-  date: 2017-11-28
-  version: 2
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/amf-v3/amf-alpha-3.zap
+  date: 2021-10-07
+  version: 3
 - id: ascanrules
   name: Active scanner rules
   description: The release quality Active Scanner rules
@@ -84,13 +84,13 @@
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
-  author: ZAP Core Team
+  author: ZAP Dev Team
   status: alpha
   infoUrl: /docs/desktop/addons/authentication-statistics/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/authstats-alpha-1.zap
-  date: 2017-11-28
-  version: 1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authstats-v2/authstats-alpha-2.zap
+  date: 2021-10-07
+  version: 2
 - id: automation
   name: Automation Framework
   description: Automation Framework.
@@ -108,9 +108,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/bean-shell/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/beanshell-beta-6.zap
-  date: 2017-11-27
-  version: 6
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/beanshell-v7/beanshell-beta-7.zap
+  date: 2021-10-07
+  version: 7
 - id: browserView
   name: Browser View
   description: Adds an option to render HTML responses like a browser
@@ -139,9 +139,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/bug-tracker/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/bugtracker-alpha-2.zap
-  date: 2017-11-28
-  version: 2
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bugtracker-v3/bugtracker-alpha-3.zap
+  date: 2021-10-07
+  version: 3
 - id: callgraph
   name: Call Graph
   description: Allows the user to view a call graph of the selected resources
@@ -149,9 +149,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/call-graph/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/callgraph-alpha-4.zap
-  date: 2017-11-28
-  version: 4
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callgraph-v5/callgraph-alpha-5.zap
+  date: 2021-10-07
+  version: 5
 - id: codedx
   name: Code Dx Extension
   description: Includes request and response data in XML reports and provides the
@@ -160,9 +160,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/code-dx/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/codedx-v8/codedx-alpha-8.zap
-  date: 2019-08-23
-  version: 8
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/codedx-v9/codedx-alpha-9.zap
+  date: 2021-10-07
+  version: 9
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
@@ -257,6 +257,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.6.0/encoder-beta-0.6.0.zap
   date: 2021-10-06
   version: 0.6.0
+- id: fileupload
+  name: FileUpload
+  description: Detect File upload requests and scan them to find related vulnerabilities
+  author: KSASAN preetkaran20@gmail.com
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/SasanLabs/owasp-zap-fileupload-addon/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/fileupload-alpha-1.1.0.zap
+  date: 2021-09-17
+  version: 1.1.0
 - id: formhandler
   name: Form Handler
   description: This Form Handler Add-on allows a user to define field names and values

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: accessControl
-    version: 6.0.0
+    version: 7.0.0
 ---
 
 # Access Control Testing
