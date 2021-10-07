@@ -16,7 +16,7 @@ It displays tabs in a status panel, in which various summary information is disp
 regarding the target server's HTTPS certificate, and the offered SSL/TLS cipher suites.
 
 This add-on leverages another OWASP project:
-[Deep Violet](https://www.owasp.org/index.php/OWASP_DeepViolet_TLS/SSL_Scanner)
+[Deep Violet](https://github.com/spoofzu/DeepViolet/)
 to perform it's certificate and cipher suite information gathering.
 
 ## General

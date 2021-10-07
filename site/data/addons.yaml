@@ -457,19 +457,19 @@
   status: alpha
   infoUrl: /docs/desktop/addons/highlighter/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/highlighter-alpha-7.zap
-  date: 2018-05-30
-  version: 7
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/highlighter-v8/highlighter-alpha-8.zap
+  date: 2021-10-07
+  version: 8
 - id: httpsInfo
   name: HttpsInfo
   description: Displays HTTPS configuration information.
   author: ZAP Dev Team
   status: alpha
-  infoUrl: /docs/desktop/addons/https-info/
+  infoUrl: /docs/desktop/addons/https-info-add-on/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v12/httpsInfo-alpha-12.zap
-  date: 2019-04-26
-  version: 12
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v13/httpsInfo-alpha-13.zap
+  date: 2021-10-07
+  version: 13
 - id: hud
   name: HUD - Heads Up Display
   description: Display information from ZAP in browser.
@@ -494,13 +494,13 @@
   name: Log File Importer
   description: Allows you to import log files from ModSecurity and files previously
     exported from ZAP
-  author: ZAP Dev Team
+  author: Joseph Kirwin, ZAP Dev Team
   status: alpha
   infoUrl: /docs/desktop/addons/log-file-importer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/importLogFiles-alpha-4.zap
-  date: 2017-11-28
-  version: 4
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/importLogFiles-v5/importLogFiles-alpha-5.zap
+  date: 2021-10-07
+  version: 5
 - id: importurls
   name: Import files containing URLs
   description: Adds an option to import a file of URLs. The file must be plain text
@@ -530,9 +530,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/ruby-scripting/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jruby-v7/jruby-beta-7.zap
-  date: 2020-12-15
-  version: 7
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jruby-v8/jruby-beta-8.zap
+  date: 2021-10-07
+  version: 8
 - id: jsonview
   name: JSON View
   description: Adds a view that shows JSON messages nicely formatted
