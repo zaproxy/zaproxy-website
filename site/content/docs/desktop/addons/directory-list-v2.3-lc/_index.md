@@ -12,3 +12,5 @@ cascade:
 # Directory List v2.3 LC
 
 Provides files with lower case directory names to be used with Forced Browse or Fuzzer add-on.
+
+The lists were compiled by DirBuster authors.
