@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: tlsdebug
-    version: 4.0.0
+    version: 5.0.0
 ---
 
 # TLS Debug
