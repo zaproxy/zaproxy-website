@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: 33.0.0
+    version: 34.0.0
 ---
 
 # Passive Scan Rules - Alpha
@@ -95,7 +95,8 @@ Latest code: [PermissionsPolicyScanRule.java](https://github.com/zaproxy/zap-ext
 
 ## Source Code Disclosure
 
-Application Source Code was disclosed by the web server.
+Application Source Code was disclosed by the web server.  
+NOTE: Ignores CSS, JavaScript, images, and font files.
 
 Latest code: [SourceCodeDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/SourceCodeDisclosureScanRule.java)
 

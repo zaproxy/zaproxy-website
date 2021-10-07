@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: 26.0.0
+    version: 27.0.0
 ---
 
 # Passive Scan Rules - Beta
@@ -107,7 +107,7 @@ Latest code: [RetrievedFromCacheScanRule.java](https://github.com/zaproxy/zap-ex
 
 ## Reverse Tabnabbing
 
-This checks to see if any links use a target attribute without using both of the "noopener" and "noreferrer" keywords in the "rel" attribute, as this will allow target pages to take over the page that opens them.  
+This checks to see if any links use a target attribute using "opener" keyword in the "rel" attribute, as this may allow target pages to take over the page that opens them.  
 By default this rule will ignore all links that are in the same context as the page. At the LOW threshold it will only ignore links that are on the same host.  
 At HIGH threshold it will only report links that use the "_blank" target.  
 You can specify a comma separated list of URL regex patterns using the `rules.domains.trusted` parameter via the Options 'Rule configuration' panel. Any link URL that matches one of these patterns will be considered to be in a trusted domain and will therefore not be reported.
