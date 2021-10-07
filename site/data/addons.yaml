@@ -822,9 +822,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/soap-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v9/soap-alpha-9.zap
-  date: 2021-09-16
-  version: 9
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v10/soap-alpha-10.zap
+  date: 2021-10-07
+  version: 10
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
