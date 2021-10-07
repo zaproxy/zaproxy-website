@@ -12,3 +12,5 @@ cascade:
 # SVN Digger Files
 
 Provides the SVN Digger files which can be used with ZAP forced browsing.
+
+Files compiled by [mavitunasecurity.com](http://www.mavitunasecurity.com/blog/svn-digger-better-lists-for-forced-browsing/)

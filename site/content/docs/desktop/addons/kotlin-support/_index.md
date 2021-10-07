@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: kotlin
-    version: 1.0.0
+    version: 1.1.0
 ---
 
 # Kotlin Support
