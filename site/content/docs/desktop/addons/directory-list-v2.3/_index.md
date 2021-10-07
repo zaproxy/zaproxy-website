@@ -12,3 +12,5 @@ cascade:
 # Directory List v2.3
 
 Provides files with directory names to be used with Forced Browse or Fuzzer add-on.
+
+The lists were compiled by DirBuster authors.

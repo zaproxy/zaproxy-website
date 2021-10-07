@@ -191,9 +191,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/custom-payloads/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.10.0/custompayloads-alpha-0.10.0.zap
-  date: 2021-06-17
-  version: 0.10.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.11.0/custompayloads-alpha-0.11.0.zap
+  date: 2021-10-07
+  version: 0.11.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
@@ -217,25 +217,25 @@
   version: 5
 - id: directorylistv2_3
   name: Directory List v2.3
-  description: Lists of directory names to be used with "Forced Browse" add-on.
+  description: Lists of directory names to be used with Forced Browse or Fuzzer add-on.
   author: ZAP Dev Team
   status: release
   infoUrl: /docs/desktop/addons/directory-list-v2.3/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/directorylistv2_3-release-3.zap
-  date: 2017-11-27
-  version: 3
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/directorylistv2_3-v4/directorylistv2_3-release-4.zap
+  date: 2021-10-07
+  version: 4
 - id: directorylistv2_3_lc
   name: Directory List v2.3 LC
-  description: Lists of lower case directory names to be used with "Forced Browse"
-    add-on.
+  description: Lists of lower case directory names to be used with Forced Browse or
+    Fuzzer add-on.
   author: ZAP Dev Team
   status: release
   infoUrl: /docs/desktop/addons/directory-list-v2.3-lc/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/directorylistv2_3_lc-release-3.zap
-  date: 2017-11-27
-  version: 3
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/directorylistv2_3_lc-v4/directorylistv2_3_lc-release-4.zap
+  date: 2021-10-07
+  version: 4
 - id: domxss
   name: DOM XSS Active scanner rule
   description: DOM XSS Active scanner rule
@@ -296,9 +296,9 @@
   status: release
   infoUrl: /docs/desktop/addons/fuzzdb-files/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v7/fuzzdb-release-7.zap
-  date: 2020-06-30
-  version: 7
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v8/fuzzdb-release-8.zap
+  date: 2021-10-07
+  version: 8
 - id: fuzzdboffensive
   name: FuzzDB Offensive
   description: FuzzDB web backdoors and attack files which can be used with the ZAP
@@ -347,9 +347,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/groovy-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/groovy-v3.0.0/groovy-beta-3.0.0.zap
-  date: 2020-12-15
-  version: 3.0.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/groovy-v3.1.0/groovy-beta-3.1.0.zap
+  date: 2021-10-07
+  version: 3.1.0
 - id: help
   name: Help - English
   description: English version of the ZAP help file.
@@ -534,15 +534,15 @@
   date: 2020-12-15
   version: 7
 - id: jsonview
-  name: Json view
+  name: JSON View
   description: Adds a view that shows JSON messages nicely formatted
   author: Juha Kivekäs
   status: alpha
   infoUrl: /docs/desktop/addons/json-view/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/jsonview-alpha-1.zap
-  date: 2018-02-08
-  version: 1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jsonview-v2/jsonview-alpha-2.zap
+  date: 2021-10-07
+  version: 2
 - id: jwt
   name: JWT Support
   description: Detect JWT requests and scan them to find related vulnerabilities
@@ -924,9 +924,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/viewstate/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/viewstate-v2/viewstate-alpha-2.zap
-  date: 2020-07-10
-  version: 2
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/viewstate-v3/viewstate-alpha-3.zap
+  date: 2021-10-07
+  version: 3
 - id: wappalyzer
   name: Wappalyzer - Technology Detection
   description: 'Technology detection using Wappalyzer: wappalyzer.com'
@@ -934,9 +934,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.3.0/wappalyzer-release-21.3.0.zap
-  date: 2021-08-25
-  version: 21.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.4.0/wappalyzer-release-21.4.0.zap
+  date: 2021-10-07
+  version: 21.4.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
