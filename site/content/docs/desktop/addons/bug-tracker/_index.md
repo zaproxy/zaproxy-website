@@ -23,9 +23,3 @@ The user can select one or more Alerts (even their subnodes as per need) after s
 A new dialog will popup which will give the user the ability to edit the fields or even choose some fields from the existing configuration. For example: If the configuration of Github is chosen then there is no need to fill the Username, Password, and Repository URL as long as they are correct. There is a dropdown called "Choose a Bug Tracker" which the user can choose the Bug Tracker to raise the issue on.  
 The fields for raising the issue depend on the Bug Tracker and their implementations.   
 After filling out the fields the user can click "Save" to raise the issue. A message will then be displayed to the user stating if his/her attempt to raise the issue was succesful or not, and if not the reason for that.
-
-## External links
-
-|                                                                                                                                                |
-|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Blog Post demonstrating the usage of this add-on](http://darkprince304.github.io/the-final-evaluations/2016/08/23/the-final-evaluations.html) |
