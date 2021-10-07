@@ -560,9 +560,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/python-scripting/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v11/jython-beta-11.zap
-  date: 2020-12-15
-  version: 11
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v12/jython-beta-12.zap
+  date: 2021-10-07
+  version: 12
 - id: kotlin
   name: Kotlin Support
   description: Allows Kotlin to be used for ZAP scripting
@@ -622,9 +622,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/plug-n-hack/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/plugnhack-beta-11.zap
-  date: 2017-11-27
-  version: 11
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/plugnhack-v12/plugnhack-beta-12.zap
+  date: 2021-10-07
+  version: 12
 - id: portscan
   name: Port Scanner
   description: Allows to port scan a target server
@@ -632,9 +632,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/port-scan/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/portscan-beta-8.zap
-  date: 2017-11-27
-  version: 8
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/portscan-v9/portscan-beta-9.zap
+  date: 2021-10-07
+  version: 9
 - id: pscanrules
   name: Passive scanner rules
   description: The release quality Passive Scanner rules
@@ -893,9 +893,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/tls-debug/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tlsdebug-v4/tlsdebug-alpha-4.zap
-  date: 2020-12-15
-  version: 4
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tlsdebug-v5/tlsdebug-alpha-5.zap
+  date: 2021-10-07
+  version: 5
 - id: tokengen
   name: Token Generation and Analysis
   description: Allows you to generate and analyze pseudo random tokens, such as those
@@ -904,9 +904,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/token-generator/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tokengen-v14/tokengen-beta-14.zap
-  date: 2020-12-15
-  version: 14
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tokengen-v15/tokengen-beta-15.zap
+  date: 2021-10-07
+  version: 15
 - id: treetools
   name: TreeTools
   description: Tools to add functionality to the tree view.

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: tokengen
-    version: 14.0.0
+    version: 15.0.0
 ---
 
 # Token Generation and Analysis
