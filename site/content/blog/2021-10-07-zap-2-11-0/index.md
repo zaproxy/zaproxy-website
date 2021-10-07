@@ -51,7 +51,7 @@ This add-on is alpha at the time of the 2.11.0 release but is expected to be upd
 ### Retest
 
 The new [Retest](/docs/desktop/addons/retest/) add-on allows you to retest for presence/absence of previously generated alerts
-which means you to retest issues very quickly.
+which means you can retest issues very quickly.
 
 This add-on is alpha at the time of the 2.11.0 release but is expected to be updated soon, so check the help pages for the latest features.
 
