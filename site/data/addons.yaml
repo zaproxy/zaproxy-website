@@ -57,9 +57,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v31/ascanrulesAlpha-alpha-31.zap
-  date: 2021-06-17
-  version: 31
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v32/ascanrulesAlpha-alpha-32.zap
+  date: 2021-10-07
+  version: 32
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta quality Active Scanner rules
@@ -67,9 +67,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v36/ascanrulesBeta-beta-36.zap
-  date: 2021-09-17
-  version: 36
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v37/ascanrulesBeta-beta-37.zap
+  date: 2021-10-07
+  version: 37
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -477,9 +477,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/image-location-and-privacy-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v2/imagelocationscanner-beta-2.zap
-  date: 2020-07-03
-  version: 2
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v3/imagelocationscanner-beta-3.zap
+  date: 2021-10-07
+  version: 3
 - id: importLogFiles
   name: Log File Importer
   description: Allows you to import log files from ModSecurity and files previously
@@ -642,9 +642,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v33/pscanrulesAlpha-alpha-33.zap
-  date: 2021-07-07
-  version: 33
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v34/pscanrulesAlpha-alpha-34.zap
+  date: 2021-10-07
+  version: 34
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta quality Passive Scanner rules
@@ -652,9 +652,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v26/pscanrulesBeta-beta-26.zap
-  date: 2021-07-29
-  version: 26
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v27/pscanrulesBeta-beta-27.zap
+  date: 2021-10-07
+  version: 27
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
@@ -843,9 +843,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/advanced-sqlinjection-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sqliplugin-v13/sqliplugin-beta-13.zap
-  date: 2019-06-07
-  version: 13
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sqliplugin-v14/sqliplugin-beta-14.zap
+  date: 2021-10-07
+  version: 14
 - id: sse
   name: Server-Sent Events
   description: Allows you to view Server-Sent Events (SSE) communication.

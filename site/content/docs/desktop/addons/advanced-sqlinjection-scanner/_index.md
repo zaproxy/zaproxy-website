@@ -1,6 +1,6 @@
 ---
 # This page was generated from the add-on.
-title: Advanced SQLInjection Scanner
+title: Advanced SQLInjection Add-on
 type: userguide
 weight: 1
 cascade:
@@ -9,8 +9,8 @@ cascade:
     version: 14.0.0
 ---
 
-# Advanced SQLInjection Scanner
+# Advanced SQLInjection Add-on
 
-Provides an advanced active injection bundle for SQLi detection (derived by SQLMap).
+Provides an advanced active injection bundle for SQLi detection (derived from SQLMap).
 
-Latest code: [SQLInjectionPlugin.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/sqliplugin/src/main/java/org/zaproxy/zap/extension/sqliplugin/SQLInjectionPlugin.java)
+Latest code: [sqliplugin](https://github.com/zaproxy/zap-extensions/blob/main/addOns/sqliplugin/src/main/java/org/zaproxy/zap/extension/sqliplugin/)

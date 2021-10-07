@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: 31.0.0
+    version: 32.0.0
 ---
 
 # Active Scan Rules - Alpha
@@ -50,3 +50,7 @@ This rule attempts to identify Web Cache Deception vulnerabilities. It checks wh
 * User must be authenticated before using this rule
 
 Latest code: [WebCacheDeceptionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/WebCacheDeceptionScanRule.java)
+
+## Java Spring Actuators
+
+This rule attempts to identify if the Spring Actuators are enabled. Tests for the default /actuator/health route in the application. Latest code: [SpringActuatorScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/SpringActuatorScanRule.java)
