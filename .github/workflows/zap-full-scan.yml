@@ -1,4 +1,5 @@
 on:
+  workflow_dispatch:
   schedule:
     # Runs every week on sunday
     - cron:  '0 0 * * 0'
