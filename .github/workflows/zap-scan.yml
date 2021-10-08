@@ -1,4 +1,5 @@
 on:
+  workflow_dispatch:
   schedule:
     # At 01:00.
     - cron:  '0 1 * * *'
