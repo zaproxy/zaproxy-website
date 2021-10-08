@@ -8,16 +8,19 @@ tags:
 The new Automation Framework will in time replace the Command Line and Packaged Scan options.
 It allows you to control ZAP via one YAML file and provides more flexibility while not being tied to any specific container technology.
 
-To use the Automation Framework with ZAP 2.10.0 install the [Automation Framework](/docs/desktop/addons/automation-framework/) 
-add-on and update the rest of the add-ons that you have installed.
-The framework is plugable and many of the existing add-ons have been enhanced to support it. It is included in the latest weekly releases.
+The Automation Framework in included with ZAP 2.11.0 as well as the stable docker image.
+The framework is plugable and many of the existing add-ons have been enhanced to support it.
+
+__Important:__  if you run the framework from the command line you MUST either start ZAP with the `-addonupdate` option or
+NOT use the [addOns](/docs/desktop/addons/automation-framework/job-addons/) `updateAddOns` option - this has been found to cause
+problems when updating add-ons which are defined in the current plan. A longer term solution is being worked on.
 
 For details of how to get started with the framework see the main [framework help page](/docs/desktop/addons/automation-framework/).
 
 The full set of jobs currently supported by the framework are:
 
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
-* [addons](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
+* [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
 * [alertFilter](/docs/desktop/addons/alert-filters/automation/) - alert filter configuration, provided with the [Alert Filters](/docs/desktop/addons/alert-filters/) add-on
 * [graphql](/docs/desktop/addons/graphql-support/automation/) - GraphQL schema import, provided with the [GraphQL](/docs/desktop/addons/graphql-support/) add-on
 * [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided with the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
