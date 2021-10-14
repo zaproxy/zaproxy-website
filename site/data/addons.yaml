@@ -286,9 +286,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.3.0/fuzz-beta-13.3.0.zap
-  date: 2021-10-06
-  version: 13.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.4.0/fuzz-beta-13.4.0.zap
+  date: 2021-10-14
+  version: 13.4.0
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer

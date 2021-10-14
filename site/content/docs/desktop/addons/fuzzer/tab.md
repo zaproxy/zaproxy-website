@@ -16,7 +16,8 @@ The results have to be manually assessed to know if any vulnerability was found.
 
 ## Right click menu
 
-Right clicking on a row will bring up a menu which has the same options as the History tab.
+Right clicking on a row will bring up a menu which has the same options as the History tab. Plus providing an option to add messages from the fuzz results to the Sites Tree and History tab (the messages will be tagged `FromFuzzer` and initially show a fuzzer icon in the Sites Tree).
+
 
 ## See also
 
