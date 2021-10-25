@@ -75,4 +75,5 @@ There will be a command line option which will disable it when ZAP starts up and
 
 The telemetry feature will of course also obey the `-silent` [command line option](/docs/desktop/cmdline/).
 
-If you have any thoughts or concerns about any of this then please get in touch. <!-- post them to this thread on the ZAP User Group: TBA -->
+If you have any thoughts or concerns about any of this then please post them to 
+[this thread](https://groups.google.com/g/zaproxy-users/c/k_AvtTO6Ch8/m/VIb6nMrCAgAJ) on the ZAP User Group.
