@@ -1,3 +1,4 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
 {{ define "main" }}
 <section class="bolt-header">
     <div class="wrapper py-20">
@@ -89,7 +90,11 @@
         <ul data-attr="references">
         {{ range .Params.references }}
           <li>
-            <a href="{{ . }}">{{ . }}</a>
+            {{ if hasPrefix . "http" }}
+              <a href="{{ . }}">{{ . }}</a>
+            {{ else }}
+              {{ . }}
+            {{ end }}
           </li>
         {{ end }}
         </ul>
