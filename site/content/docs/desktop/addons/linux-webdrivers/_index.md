@@ -6,14 +6,14 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: 32.0.0
+    version: 33.0.0
 ---
 
 # Linux WebDrivers
 
 The Linux WebDrivers add-on provides WebDrivers for the following browsers:
 
-* Chrome - ChromeDriver 93.0.4577.15
+* Chrome - ChromeDriver 95.0.4638.17
 * Firefox - geckodriver 0.30.0
 
 ## See also
@@ -21,4 +21,4 @@ The Linux WebDrivers add-on provides WebDrivers for the following browsers:
 |   |                                                                                                                           |                                                |
 |---|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 |   | [geckodriver » Supported platforms](https://firefox-source-docs.mozilla.org/testing/geckodriver/geckodriver/Support.html) | to known which Firefox versions are supported. |
-|   | [ChromeDriver » Downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)                                | to known which Chrome versions are supported.  |
+|   | [ChromeDriver downloads page](https://chromedriver.chromium.org/downloads)                                                | to known which Chrome versions are supported.  |
