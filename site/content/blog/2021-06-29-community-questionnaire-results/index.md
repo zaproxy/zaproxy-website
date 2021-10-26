@@ -77,7 +77,7 @@ Although this was free format the answers were much more focused making it easie
 
 The answers were pretty evenly split between __articles__ and __videos__, with some people preferring one and other people liking both.
 
-### Would you like to be featured in a "ZAP Success Stories" section on www.zaproxy.org?
+### Would you like to be featured in a "ZAP Success Stories" section on [www.zaproxy.org](https://www.zaproxy.org)?
 
 Quite a few of you said you might be interested - we have contacted some of you and will contact the rest very shortly.
 
