@@ -102,16 +102,16 @@ integrations:
     link: https://github.com/1N3/Sn1per
     license: 'Open source community edition'
  
+  - name: 'AppSec Phoenix'
+    link: https://appsecphoenix.com/
+    license: 'Commercial, free option'
+ 
   - name: 'Uleska'
     link: https://www.uleska.com/docs/zapproxy
     license: 'Commercial, free option'
 
   - name: 'Edgescan'
     link: https://www.edgescan.com/
-    license: 'Commercial'
- 
-  - name: 'Security Phoenix'
-    link: https://securityphoenix.com/integration/
     license: 'Commercial'
  
 training:
