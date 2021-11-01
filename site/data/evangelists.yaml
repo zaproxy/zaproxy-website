@@ -202,7 +202,7 @@
   language: English, French
   has_talks: Y
   has_training: Y
-  notes: <a href="http://www.frhack.org" rel="nofollow">http://www.frhack.org</a>
+  notes: ''
 
 - name: Michael Coates
   email: michael.coates@owasp.org 
