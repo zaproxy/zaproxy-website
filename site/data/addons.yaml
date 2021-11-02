@@ -183,6 +183,16 @@
   downloadUrl: https://github.com/zaproxy/community-scripts/releases/download/v14/communityScripts-alpha-14.zap
   date: 2021-11-01
   version: 14
+- id: coreLang
+  name: Core Language Files
+  description: Translations of the core language files
+  author: ZAP Dev Team
+  status: release
+  infoUrl: https://crowdin.com/project/owasp-zap
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/coreLang-v14/coreLang-release-14.zap
+  date: 2021-11-02
+  version: 14
 - id: custompayloads
   name: Custom Payloads
   description: Ability to add, edit or remove payloads that are used i.e. by active
