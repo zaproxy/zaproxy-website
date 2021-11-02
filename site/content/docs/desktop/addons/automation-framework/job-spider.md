@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - spider Job
 type: userguide
-weight: 6
+weight: 7
 ---
 
 # Automation Framework - spider Job
@@ -17,6 +17,7 @@ By default this job will spider the first context defined in the [environment](/
   - type: spider                       # The traditional spider - fast but doesnt handle modern apps so well
     parameters:
       context:                         # String: Name of the context to spider, default: first context
+      user:                            # String: An optional user to use for authentication, must be defined in the env
       url:                             # String: Url to start spidering from, default: first context URL
       maxDuration:                     # Int: The max time in minutes the spider will be allowed to run for, default: 0 unlimited
       maxDepth:                        # Int: The maximum tree depth to explore, default 5

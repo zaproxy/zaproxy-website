@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.7.0
+    version: 0.8.0
 ---
 
 # Automation Framework
@@ -20,6 +20,14 @@ It provides the following command line options:
 * -autogenmax \<filename\> Generate template automation file with all parameters.
 * -autogenconf \<filename\> Generate template automation file using the current configuration.
 
+If the `-autorun` option is used with the ZAP `-cmd` option then the ZAP exit value will be set as follows:
+
+* 0 - The plan completed successfully with no errors or warnings
+* 1 - The plan reported one or more errors
+* 2 - The plan reported no errors but one or more warnings
+
+Whether the plan completed after encountering errors or warnings will depend on the settings used in the [environment](/docs/desktop/addons/automation-framework/environment/).
+
 To use the automation framework:
 
 1. Generate a template automation file using one of the `-autogen*` command line options
@@ -28,9 +36,13 @@ To use the automation framework:
 
 In most cases it is recommended to also use the `-cmd` command line option so that the ZAP desktop is not displayed and ZAP exits as soon as it has finished generating or running the jobs defined in the file. However you can choose to run Automation Framework jobs using the ZAP desktop to help you debug issues.
 
+## Authentication
+
+The Automation Framework supports a subset of the [authentication](/docs/desktop/addons/automation-framework/authentication/) mechanisms supported by ZAP.
+
 ## GUI
 
-A [GUI](/docs/desktop/addons/automation-framework/gui/) is under development and currently provides a limited set of functionality.
+A [GUI](/docs/desktop/addons/automation-framework/gui/) is under development and provides an ever increasing set of features.
 
 ## API
 
@@ -50,12 +62,16 @@ The [environment](/docs/desktop/addons/automation-framework/environment/) sectio
 The following automation jobs are supported by this add-on:
 
 * [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
+* [delay](/docs/desktop/addons/automation-framework/job-delay/) - pauses the plan for a specified period of time or a specific condition is met
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
 * [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - crafts specific requests to send to the corresponding targets
 * [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
 
-This framework is plugable and so other add-ons may add support for other jobs, see the [Automation Framework](/docs/automate/automation-framework/) website pages for a more complete list.
+[Job tests](/docs/desktop/addons/automation-framework/tests/) can be added to jobs to check that the jobs have performed as expected.
+
+This framework is plugable and so other add-ons may add support for other jobs, see the
+[Automation Framework](/docs/automate/automation-framework/) website pages for a more complete list.
 
 The 'min' and 'max' templates include comments giving more information about the fields.
