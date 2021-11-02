@@ -13,6 +13,7 @@ This job sends specifically crafted requests to a target url, with a custom requ
 ```
   - type: requestor                    # Used to send specific requests to targets
     parameters:
+      user:                            # String: An optional user to use for authenticated requests, must be defined in the env
     requests:                          # A list of requests to make
       - url:                           # String: A mandatory URL of the request to be made
         method:                        # String: A non-empty request method, default: GET

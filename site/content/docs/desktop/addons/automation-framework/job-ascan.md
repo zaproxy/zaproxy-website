@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - activeScan Job
 type: userguide
-weight: 7
+weight: 8
 ---
 
 # Automation Framework - activeScan Job
@@ -17,6 +17,7 @@ By default this job will actively scan the first context defined in the [environ
   - type: activeScan                   # The active scanner - this actively attacks the target so should only be used with permission
     parameters:
       context:                         # String: Name of the context to attack, default: first context
+      user:                            # String: An optional user to use for authentication, must be defined in the env
       policy:                          # String: Name of the scan policy to be used, default: Default Policy
       maxRuleDurationInMins:           # Int: The max time in minutes any individual rule will be allowed to run for, default: 0 unlimited
       maxScanDurationInMins:           # Int: The max time in minutes the active scanner will be allowed to run for, default: 0 unlimited
