@@ -11,9 +11,15 @@ It allows you to control ZAP via one YAML file and provides more flexibility whi
 The Automation Framework in included with ZAP 2.11.0 as well as the stable docker image.
 The framework is plugable and many of the existing add-ons have been enhanced to support it.
 
-__Important:__  if you run the framework from the command line you MUST either start ZAP with the `-addonupdate` option or
-NOT use the [addOns](/docs/desktop/addons/automation-framework/job-addons/) `updateAddOns` option - this has been found to cause
-problems when updating add-ons which are defined in the current plan. A longer term solution is being worked on.
+__Important:__  if you run the framework from the command line you should not use the `-addonupdate` option or
+the [addOns](/docs/desktop/addons/automation-framework/job-addons/) `updateAddOns` option - this has been found to cause
+problems when updating add-ons which are defined in the current plan. 
+The recommended approach is to run ZAP inline once to update all of the add-ons and then again to run the plan, e.g.:
+```
+    ./zap.sh -cmd -addonupdate
+    ./zap.sh -cmd -autorun zap.yaml <any other ZAP options>
+```
+A longer term solution is being worked on.
 
 For details of how to get started with the framework see the main [framework help page](/docs/desktop/addons/automation-framework/).
 
