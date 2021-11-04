@@ -24,7 +24,11 @@ You can also search for strings in the fuzz results using the 'Search tab'.
 
 ### Options tab
 
-This tab allows you to configure the options to be used when fuzzing.
+This tab allows you to configure the options to be used when fuzzing. See the main [options help](/docs/desktop/addons/fuzzer/options/) for more details.
+
+#### Follow Redirects
+
+Indicates whether or not the Fuzzer should follow redirect responses (only visible for HTTP messages).
 
 ### Message Processors tab
 
