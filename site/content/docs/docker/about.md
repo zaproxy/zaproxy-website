@@ -37,7 +37,7 @@ The docker file now supports [healthcheck](https://docs.docker.com/engine/refere
 ## Usage Instructions:
 
 ### Packaged Scans:
-All of the docker images provide a set of packaged scan scripts:
+All of the docker images (apart from the 'bare' one) provide a set of packaged scan scripts:
 
 * [Baseline Scan](../baseline-scan/) which runs the ZAP spider against the target for (by default) 1 minute followed by an optional ajax spider scan before reporting the results of the passive scanning.
 * [Full Scan](../full-scan/) which runs the ZAP spider against the target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results.
