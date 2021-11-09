@@ -25,6 +25,6 @@ Note: ZAP's home is not the same as the user's home directory, which is also OS 
 
 `~/Library/Application Support/ZAP`
 
-##  Weekly releases
+##  Weekly releases and development builds
 
-Note that for weekly releases `_D` is appended to the above directory. Development builds also use this directory.
+Note that for weekly releases `_D` is appended to the above directory. 
