@@ -27,4 +27,4 @@ Note: ZAP's home is not the same as the user's home directory, which is also OS 
 
 ##  Weekly releases and development builds
 
-Note that for weekly releases `_D` is appended to the above directory. 
+Note that for both weekly releases and dev builds `_D` is appended to the above mentioned directory name. For example on Linux the zap.log file will be saved in `~/.ZAP_D/`.
