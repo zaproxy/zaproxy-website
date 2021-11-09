@@ -19,6 +19,10 @@ links:
     link: /docs/automate/
     desc: the various options for automating ZAP 
 
+  - name: 'Authenticate'
+    link: /docs/authentication/
+    desc: everything you need to know about authentication in ZAP 
+
   - name: 'Alert Details'
     link: /docs/alerts/
     desc: detailed information on the alerts ZAP can raise 
