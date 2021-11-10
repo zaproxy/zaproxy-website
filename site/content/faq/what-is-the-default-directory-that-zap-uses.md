@@ -27,4 +27,4 @@ Note: ZAP's home is not the same as the user's home directory, which is also OS 
 
 ##  Weekly releases and development builds
 
-Note that for both weekly releases and dev builds `_D` is appended to the above mentioned directory name. For example on Linux the home directory is `~/.ZAP_D/`. If the user specified -dir option then that parameter will be used as home directory  
+Note that for both weekly releases and dev builds `_D` is appended to the above mentioned directory name. For example on Linux the home directory is `~/.ZAP_D/`. 
