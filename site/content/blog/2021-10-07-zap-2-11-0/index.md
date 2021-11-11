@@ -11,6 +11,8 @@ authors:
 
 ZAP 2.11.0 (also known as the OWASP 20th anniversary release) is [available now](/download/#main).  
 
+{{< youtube uuid="8liaCddrb8s" >}}
+
 Major changes include:
 
 ### Alert Tags
