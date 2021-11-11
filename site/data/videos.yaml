@@ -4,6 +4,21 @@
 
 # Deep Dive Series
 
+- title: 'ZAP 2.11.0'
+  id: 8liaCddrb8s
+  site: youtube
+  series: 'Deep Dive'
+  date: '2021/11/09'
+  length: 17:53
+  tags:
+  - release
+  - automation
+  - reporting
+  - oast
+  - retesting
+  - docker
+  - statistics
+
 - title: 'WebSockets'
   id: LDm0Fst81hU
   site: youtube
@@ -254,6 +269,9 @@
   length: 36:10
   tags:
   - zapcon
+  - automation
+  - reporting
+  - oast
 
 - title: 'Mobile Application Security Testing with ZAP'
   id: KWofjrHNNqs
@@ -302,6 +320,17 @@
   tags:
   - zapcon
   - ama
+
+- title: 'First Look: ZAP Automation Framework'
+  id: TTiW5NPJlwY
+  site: youtube
+  series: 'ZAPCon 2021'
+  date: '2021/08/04'
+  length: 49:50
+  tags:
+  - zapcon
+  - afterhours
+  - automation
 
 # ADDO Automation
 
@@ -552,6 +581,16 @@
   - intro
 
 # Misc videos, confs and online
+
+- title: 'Using OWASP ZAP across an Enterprise'
+  id: mCMlLog5Rbs
+  site: youtube
+  date: '2021/11/10'
+  length: 38:51
+  tags:
+  - intro
+  - automation
+  - appsecpodcast
 
 - title: 'Automating OWASP ZAP'
   id: zLStJYOWOIY
