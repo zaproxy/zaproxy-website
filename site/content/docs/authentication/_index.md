@@ -38,6 +38,7 @@ links:
 
 cascade:
   EditableContent: true
+  addBreadcrumbs: true
 ---
 
 Most apps protect their main functionality using authentication.

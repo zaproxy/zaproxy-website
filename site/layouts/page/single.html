@@ -9,6 +9,7 @@
 </section>
 <section class="wrapper flex py-70 on-sm-stack" data-kind="{{ .Kind }}">
   <article class="on-sm-full">
+  {{ if .Params.addBreadcrumbs }}{{partial "crumbs.html" . }}{{ end }}
     <main>{{- .Content -}}</main>
   </article>
 </section>
