@@ -12,7 +12,8 @@ links:
     desc: how you can authenticate when testing manually
 
   - name: ZAP authentication concepts
-    desc: Coming Soon
+    link: concepts/
+    desc: you will need to understand these in order to configure authentication in ZAP
 
   - name: 'Handling authentication yourself in automation'
     desc: Coming Soon
