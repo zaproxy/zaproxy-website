@@ -20,7 +20,7 @@ You can also follow along with Simon as he sets the ZAP development environment 
 Let’s jump right into it!
 
 ## Preparation
-All you need is a working local installation of [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [JDK 8 or 11](https://adoptopenjdk.net/).
+All you need is a working local installation of [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [JDK 8 or 11](https://adoptium.net/).
 Newer JDK versions might not work.
 
 ## Clone the Repo Locally
@@ -29,46 +29,37 @@ Create a new directory on your system and run the following command in that dire
 git clone https://github.com/zaproxy/zaproxy.git
 ```
 
-## Running ZAP from Source
-Navigate to the cloned *zaproxy* folder and run the following command (replace `./gradlew` with `gradlew.bat` if you are a Windows user):
-```bash
-./gradlew run
-```
-That’s it! You’re now running ZAP from source! You can confirm this if you see “Dev Build” in the loading window.
+## Preparing ZAP to Run from Source
 
-![ZAP Dev Build Loading Window](/img/docs/developer/zap-dev-build.png)
+ZAP requires some add-ons to work properly, called mandatory add-ons. These add-ons need to be installed first to be able to run ZAP from source.
 
-It is possible that you might be greeted with the following prompt if you already have some other application that is using port 8080.
-
-![ZAP Proxy Port in Use](/img/docs/developer/zap-proxy-port.png)
-
-In this case, ZAP suggests a different port that is free and starts listening on that port when you click on *Yes*.
-
-ZAP uses a [gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) that downloads all the dependencies for the project. The gradle wrapper has been configured to provide other tasks for convenience. You can view these by running,
-
-```bash
-./gradlew tasks
-```
-
-Note that while you have successfully got ZAP running, it doesn’t come with many of the key features that are provided by ZAP add-ons.
+ZAP uses the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) that downloads all the dependencies for the projects.
 
 ## Installing ZAP Add-ons
-As the name suggests, ZAP add-ons are a way to enhance ZAP functionality. There are several add-ons that allow you to do many different things. The *zap-extensions* repository contains the source code for the add-ons maintained by the core team. So, the first thing to do is clone *zap-extensions*:
+As the name suggests, ZAP add-ons are a way to enhance ZAP functionality. There are several add-ons that allow you to do many different things. The *zap-extensions* repository contains the source code for the add-ons maintained by the core team, including the mandatory add-ons. So, the first thing to do is clone *zap-extensions*:
 ```bash
 git clone https://github.com/zaproxy/zap-extensions.git
 ```
-Then, navigate to the cloned folder and run
+Then, navigate to the cloned folder and run (replace `./gradlew` with `gradlew.bat` if you are a Windows user)
 ```bash
 ./gradlew tasks
 ```
 to see a list of the available tasks. You can observe many of these in the output, but this is the one we're interested in:
+```
+copyMandatoryAddOns - Copies the mandatory add-ons to zaproxy project.
+```
+```bash
+./gradlew copyMandatoryAddOns
+```
+For this command to work as expected, you need to have your local clones of *zaproxy* and *zap-extensions* in the same directory. If you run this command while ZAP is running, you must restart ZAP to see the newer add-ons.
+
+You can also install other add-ons with the task
 ```
 copyZapAddOn - Copies the add-on to zaproxy project (defaults to "$rootDir/../zaproxy/zap/src/main/dist/plugin/").
 ```
 ```bash
 ./gradlew copyZapAddOn
 ```
-For this command to work as expected, you need to have your local clones of *zaproxy* and *zap-extensions* in the same directory. If you run this command while ZAP is running, you must restart ZAP to see the installed add-ons.
 
 Note that this task installs ALL the ZAP add-ons in *zap-extensions*. To install a specific add-on, run the following command
 ```bash
@@ -117,6 +108,30 @@ copyWeeklyAddOns - Copies the weekly add-ons into plugin dir, built from local r
 In essence, this task is the same as running `./gradlew copyZapAddOn` for each of the add-ons included in the weekly release (see [`zaproxy/zap/src/main/weekly-add-ons.json`](https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/weekly-add-ons.json)).
 
 For a better understanding of Gradle tasks you can check out the [Gradle user manual](https://docs.gradle.org/current/userguide/userguide.html).
+
+## Running ZAP from Source
+With the mandatory add-ons now installed, navigate to the cloned *zaproxy* folder and run the following command:
+```bash
+./gradlew run
+```
+That’s it! You’re now running ZAP from source! You can confirm this if you see “Dev Build” in the loading window.
+
+![ZAP Dev Build Loading Window](/img/docs/developer/zap-dev-build.png)
+
+If you didn't install the mandatory add-ons an error will be shown:
+
+![ZAP Error Missing Mandatory Add-on](/img/docs/developer/zap-mandatory-addon.png)
+
+The output/log will show a message like:
+```
+[ZAP-BootstrapGUI] ERROR org.parosproxy.paros.control.Control - The mandatory add-on was not found: callhome
+```
+
+It is possible that you might be greeted with the following prompt if you already have some other application that is using port 8080.
+
+![ZAP Proxy Port in Use](/img/docs/developer/zap-proxy-port.png)
+
+In this case, ZAP suggests a different port that is free and starts listening on that port when you click on *Yes*.
 
 ## For Prospective ZAP Contributors
 If you feel that some part of ZAP can be improved, enhanced or updated in any way, go ahead and open a [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/about-pull-requests)! Here are the steps you need to follow before you can do that:
