@@ -24,27 +24,24 @@ All you need is a working local installation of [git](https://git-scm.com/book/e
 Newer JDK versions might not work.
 
 ## Clone the Repo Locally
-Create a new directory on your system and run the following command in that directory to clone the core ZAP repository.
+Create a new directory on your system and run the following commands in that directory to clone the main ZAP repositories.
 ```bash
 git clone https://github.com/zaproxy/zaproxy.git
+git clone https://github.com/zaproxy/zap-extensions.git
 ```
 
-## Preparing ZAP to Run from Source
+## Installing ZAP Add-ons
+As the name suggests, ZAP add-ons are a way to enhance ZAP functionality. There are several add-ons that allow you to do many different things. Some add-ons which are required by ZAP to work properly are called mandatory add-ons. These add-ons need to be installed first to be able to run ZAP from source.
 
-ZAP requires some add-ons to work properly, called mandatory add-ons. These add-ons need to be installed first to be able to run ZAP from source.
+The *zap-extensions* repository contains the source code for the add-ons maintained by the core team, including the mandatory add-ons.
 
 ZAP uses the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) that downloads all the dependencies for the projects.
 
-## Installing ZAP Add-ons
-As the name suggests, ZAP add-ons are a way to enhance ZAP functionality. There are several add-ons that allow you to do many different things. The *zap-extensions* repository contains the source code for the add-ons maintained by the core team, including the mandatory add-ons. So, the first thing to do is clone *zap-extensions*:
-```bash
-git clone https://github.com/zaproxy/zap-extensions.git
-```
-Then, navigate to the cloned folder and run (replace `./gradlew` with `gradlew.bat` if you are a Windows user)
+Navigate to the *zap-extensions* folder that you cloned earlier, and run (replace `./gradlew` with `gradlew.bat` if you are a Windows user)
 ```bash
 ./gradlew tasks
 ```
-to see a list of the available tasks. You can observe many of these in the output, but this is the one we're interested in:
+to see a list of the available tasks. You can see many tasks in the output, but this is the one we're interested in:
 ```
 copyMandatoryAddOns - Copies the mandatory add-ons to zaproxy project.
 ```
@@ -89,7 +86,7 @@ or if you're in a hurry,
 ```
 
 The process of installing the ZAP HUD and the help is identical:
-1. Clone their repositories.
+1. Clone their repositories in the same folder as the other two.
     ```bash
     git clone https://github.com/zaproxy/zap-hud.git
     git clone https://github.com/zaproxy/zap-core-help.git
@@ -110,7 +107,7 @@ In essence, this task is the same as running `./gradlew copyZapAddOn` for each o
 For a better understanding of Gradle tasks you can check out the [Gradle user manual](https://docs.gradle.org/current/userguide/userguide.html).
 
 ## Running ZAP from Source
-With the mandatory add-ons now installed, navigate to the cloned *zaproxy* folder and run the following command:
+Ensuring that the mandatory add-ons are installed, navigate to the cloned *zaproxy* folder and run the following command:
 ```bash
 ./gradlew run
 ```
