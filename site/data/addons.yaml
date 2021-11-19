@@ -470,16 +470,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/highlighter-v8/highlighter-alpha-8.zap
   date: 2021-10-07
   version: 8
-- id: httpsInfo
-  name: HttpsInfo
-  description: Displays HTTPS configuration information.
-  author: ZAP Dev Team
-  status: alpha
-  infoUrl: /docs/desktop/addons/https-info-add-on/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v13/httpsInfo-alpha-13.zap
-  date: 2021-10-07
-  version: 13
 - id: hud
   name: HUD - Heads Up Display
   description: Display information from ZAP in browser.
@@ -896,16 +886,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tips-v9/tips-beta-9.zap
   date: 2021-10-06
   version: 9
-- id: tlsdebug
-  name: TLS Debug
-  description: Provides a tab which allows to quickly debug a TLS/SSL connection
-  author: P.M.J. Roth
-  status: alpha
-  infoUrl: /docs/desktop/addons/tls-debug/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tlsdebug-v5/tlsdebug-alpha-5.zap
-  date: 2021-10-07
-  version: 5
 - id: tokengen
   name: Token Generation and Analysis
   description: Allows you to generate and analyze pseudo random tokens, such as those
