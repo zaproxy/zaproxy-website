@@ -47,7 +47,7 @@ Vulnerabilities covered are:
 - Remote Code Execution by uploading JSP and its variants
 - No virus scan. 
 
-The FileUpload add-on is currently in ZAP Marketplace.
+The FileUpload add-on is currently available in ZAP Marketplace.
 For more information please visit [FileUpload addon](https://github.com/SasanLabs/owasp-zap-fileupload-addon)
 
 For detailed information on FileUpload add-on configuration see the following video: {{< youtube uuid="3bHjrpbLQmA" >}}
