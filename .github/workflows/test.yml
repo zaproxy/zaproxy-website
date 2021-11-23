@@ -11,10 +11,10 @@ jobs:
 
       - run: sudo apt-get update && sudo apt-get install -y nginx && sudo systemctl start nginx
       
-      - name: Install node.js 10.x
-        uses: actions/setup-node@v1
+      - name: Install node.js 14
+        uses: actions/setup-node@v2
         with:
-          node-version: '10.x'
+          node-version: '14'
       
       - name: Install npm dependencies
         run: npm install
