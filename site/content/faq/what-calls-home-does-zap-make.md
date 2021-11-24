@@ -5,15 +5,15 @@ category: General Questions
 weight: 2
 ---
 
-ZAP makes a limited set of 'calls home', typically via bitly.com URLs.
+ZAP makes a limited set of 'calls home', historically via bitly.com URLs.
 
-Bitly is used so that we get a very limited form of telemetry data without
+Bitly was used so that we could get a very limited form of telemetry data without
 getting access to any sensitive data such as your IP address.
 
 ZAP can be freely downloaded and we get very little feedback from most users -
 this at least tells us if ZAP is getting more or less popular :)
 
-From 2.12.0 (and in development) we will migrate from bitly to our own services using the zaproxy.org domain.
+From late 2021 and finishing in 2.12.0 we will migrate from bitly to our own services using the zaproxy.org domain.
 
 ###  Check for Updates
 
@@ -47,8 +47,14 @@ there is any new ZAP news.
 The Bitly URL resolves to the relevant quick start file in the zap-admin
 GitHub repo, e.g. [2.8.xml](https://github.com/zaproxy/zap-admin/blob/master/files/news/2_8.xml)
 
-From 2.12.0 (and in development) this request will be made to https://news.zaproxy.org - the same information will be supplied as
+From late 2021 (for those users who update add-ons) this request is made to https://news.zaproxy.org - the same information will be supplied as
 for the Check for Updates service.
+
+### Telemetry
+
+We plan to add support for a new Telemetry Service as per the [ZAP Telemetry Plans](/blog/2021-10-25-zap-telemetry-plans/) blog post.
+
+This FAQ will be updated when the service is in use.
 
 ###  Browser Launch Start Page - Discontinued
 
