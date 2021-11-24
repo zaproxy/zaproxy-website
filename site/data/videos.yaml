@@ -582,6 +582,16 @@
 
 # Misc videos, confs and online
 
+- title: 'OWASP Outstanding Project 2021'
+  id: iz1EAwaV0gI
+  site: youtube
+  date: '2021/11/17'
+  length: 22:50
+  tags:
+  - waspy
+  - award
+  - owasp
+
 - title: 'Using OWASP ZAP across an Enterprise'
   id: mCMlLog5Rbs
   site: youtube
