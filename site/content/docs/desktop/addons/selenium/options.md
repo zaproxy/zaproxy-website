@@ -29,6 +29,15 @@ This screen allows you to setup the requirements of some of the WebDrivers.
 
 More details about the bundled WebDrivers can be found on the overview page.
 
+### Browser Extensions
+
+You can add, remove, enable, or disable browser extensions via the relevant buttons on this screen. Supported browsers and file extensions are:
+
+* Firefox: .xpi
+* Chrome: .crx
+
+Add-ons can also add new browser extensions. If you delete a browser extension via this screen then it will be added again by the add-on so either just disable it or uninstall the add-on to remove the browser extension.
+
 ## See also
 
 |   |                                            |                                        |
