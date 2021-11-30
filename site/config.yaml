@@ -8,6 +8,7 @@ summaryLength: 48
 taxonomies:
   tag: "tags"
   successtag: "successtags"
+  alerttag: "alerttags"
   author: "authors"
 
 params:
