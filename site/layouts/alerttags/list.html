@@ -1,0 +1,50 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+{{ define "main" }}
+<section class="bolt-header">
+  <div class="wrapper py-20">
+    {{ if eq .Title "Alerttags" }}
+      <h1 class="text--white">Alert Tags</h1>
+    {{ else }}
+      <h1 class="text--white">Alert Tag:  {{ .Title }}</h1>
+    {{ end }}
+  </div>
+</section>
+  <div class="wrapper py-70">
+    <header class="breadcrumbs">
+        <a href="/alerttags/">Alert Tags</a> &gt;
+        {{ if ne .Title "Alerttags" }}
+        <a href="/alerttags/{{ lower .Title }}">{{ .Title }}</a>
+        {{ end }}
+    </header>
+   {{ .Content }}
+
+    {{ if eq .Title "Alerttags" }}
+      All of the defined Alert Tags:
+    {{ else }}
+      {{ $alerttag := index $.Site.Data.alerttags .Title }}
+      {{ if $alerttag.link }}
+        <h4><a href="{{ $alerttag.link }}">{{ $alerttag.link }}</a></h4>
+      {{ else }}
+        <h4>{{ .Title }}</h4>
+      {{ end }}
+      All of the alerts which use this tag:
+    {{ end }}
+
+   <div class="flex latest-versions">
+      <table data-sort-filter>
+         <thead>
+            <tr>
+               <th>Search</th>
+            </tr>
+         </thead>
+         <tbody>
+            {{ range .Pages }}
+               <tr>
+                  <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+               </tr>
+            {{ end }}
+         </tbody>
+      </table>
+   </div>
+  </div>
+{{ end }} 

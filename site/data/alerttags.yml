@@ -1,0 +1,42 @@
+OWASP_2017_A01:
+  link: https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html
+
+OWASP_2017_A03:
+  link: https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html
+
+OWASP_2017_A05:
+  link: https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html
+
+OWASP_2017_A06:
+  link: https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html
+
+OWASP_2017_A07:
+  link: https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS).html
+
+OWASP_2017_A08:
+  link: https://owasp.org/www-project-top-ten/2017/A8_2017-Insecure_Deserialization.html
+
+OWASP_2017_A09:
+  link: https://owasp.org/www-project-top-ten/2017/A9_2017-Using_Components_with_Known_Vulnerabilities.html
+
+OWASP_2021_A01:
+  link: https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+
+OWASP_2021_A02:
+  link: https://owasp.org/Top10/A02_2021-Cryptographic_Failures/
+
+OWASP_2021_A03:
+  link: https://owasp.org/Top10/A03_2021-Injection/
+
+OWASP_2021_A04:
+  link: https://owasp.org/Top10/A04_2021-Insecure_Design/
+
+OWASP_2021_A05:
+  link: https://owasp.org/Top10/A05_2021-Security_Misconfiguration/
+
+OWASP_2021_A06:
+  link: https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
+
+OWASP_2021_A08:
+  link: https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/
+

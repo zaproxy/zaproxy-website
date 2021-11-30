@@ -68,8 +68,8 @@
                 <strong>Tags</strong>
               </td>
               <td>
-              {{ range $tagkey, $tagvalue := .Params.alerttags }}
-              	<a href="{{ $tagvalue }}">{{ upper $tagkey }}</a><br>
+              {{ range $tag := .Params.alerttags }}
+              	<a href="/alerttags/{{ lower $tag }}">{{ upper $tag }}</a><br>
               {{ end }}
               </td>
             </tr>
