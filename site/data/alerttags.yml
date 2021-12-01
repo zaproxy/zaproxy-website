@@ -1,8 +1,14 @@
 OWASP_2017_A01:
   link: https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html
 
+OWASP_2017_A02:
+  link: https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication.html
+
 OWASP_2017_A03:
   link: https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure.html
+
+OWASP_2017_A04:
+  link: https://owasp.org/www-project-top-ten/2017/A4_2017-XML_External_Entities_(XXE).html
 
 OWASP_2017_A05:
   link: https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html
@@ -39,4 +45,49 @@ OWASP_2021_A06:
 
 OWASP_2021_A08:
   link: https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/
+
+WSTG-v42-ATHN-01:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel
+
+WSTG-v42-ATHN-06:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses
+
+WSTG-v42-ATHZ-04:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References
+
+WSTG-v42-CLNT-02:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/02-Testing_for_JavaScript_Execution
+
+WSTG-v42-CLNT-04:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/04-Testing_for_Client-side_URL_Redirect
+
+WSTG-v42-CLNT-09:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking
+
+WSTG-v42-CRYP-03:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/03-Testing_for_Sensitive_Information_Sent_via_Unencrypted_Channels
+
+WSTG-v42-ERRH-01:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling
+
+WSTG-v42-ERRH-02:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces
+
+WSTG-v42-INFO-02:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server
+
+WSTG-v42-INFO-05:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage
+
+WSTG-v42-INFO-08:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework
+
+WSTG-v42-SESS-02:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes
+
+WSTG-v42-SESS-04:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/04-Testing_for_Exposed_Session_Variables
+
+WSTG-v42-SESS-05:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery
 
