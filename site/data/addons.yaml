@@ -180,9 +180,9 @@
   status: release
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.5.0/commonlib-release-1.5.0.zap
-  date: 2021-10-06
-  version: 1.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.6.0/commonlib-release-1.6.0.zap
+  date: 2021-12-01
+  version: 1.6.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -652,9 +652,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v36/pscanrules-release-36.zap
-  date: 2021-10-06
-  version: 36
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v37/pscanrules-release-37.zap
+  date: 2021-12-01
+  version: 37
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha quality Passive Scanner rules
@@ -662,9 +662,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v34/pscanrulesAlpha-alpha-34.zap
-  date: 2021-10-07
-  version: 34
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v35/pscanrulesAlpha-alpha-35.zap
+  date: 2021-12-01
+  version: 35
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta quality Passive Scanner rules
@@ -672,9 +672,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v27/pscanrulesBeta-beta-27.zap
-  date: 2021-10-07
-  version: 27
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v28/pscanrulesBeta-beta-28.zap
+  date: 2021-12-01
+  version: 28
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
