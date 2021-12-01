@@ -16,7 +16,8 @@ links:
     desc: you will need to understand these in order to configure authentication in ZAP
 
   - name: 'Handling authentication yourself in automation'
-    desc: Coming Soon
+    link: handling-auth-yourself/
+    desc: how to handle authentication without as much ZAP configuration
 
   - name: Session handling
     desc: Coming Soon
