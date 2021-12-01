@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: 34.0.0
+    version: 35.0.0
 ---
 
 # Passive Scan Rules - Alpha
@@ -104,6 +104,7 @@ Latest code: [SourceCodeDisclosureScanRule.java](https://github.com/zaproxy/zap-
 
 This rule checks whether the integrity attribute in the script or the link element served by an external resource (for example: CDN) is missing.  
 It helps mitigate an attack where the CDN has been compromised and content has been replaced by malicious content.  
+Note: A suggested integrity hash value will be present in the relevant Alert's Other Info details if it can be resolved to a script in the Sites Tree.
 
 Latest code: [SubResourceIntegrityAttributeScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/SubResourceIntegrityAttributeScanRule.java)
 
