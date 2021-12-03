@@ -603,6 +603,16 @@
   downloadUrl: https://github.com/kingthorin/neonmarker/releases/download/v1.4.0/neonmarker-alpha-1.4.0.zap
   date: 2021-08-26
   version: 1.4.0
+- id: network
+  name: Network
+  description: Provides core networking capabilities.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/network/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.0.1/network-alpha-0.0.1.zap
+  date: 2021-12-03
+  version: 0.0.1
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
