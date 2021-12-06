@@ -20,6 +20,12 @@ services:
     license: 'Commercial, free community edition'
     supporter: ZAP Silver Supporter
 
+  - name: 'HostedScan'
+    link: https://hostedscan.com/
+    logo: /img/supporters/hostedscan.png
+    license: 'Commercial, free option'
+    supporter: ZAP Silver Supporter
+
   - name: 'IOTHREAT'
     link: https://iothreat.com/
     license: 'Commercial'
@@ -54,10 +60,6 @@ services:
   # Commerical, free option tools, alphabetic
   - name: 'Idyllum'
     link: https://www.idyllum.com/
-    license: 'Commercial, free option'
-
-  - name: 'HostedScan'
-    link: https://hostedscan.com/
     license: 'Commercial, free option'
 
   - name: 'PatrOwl'

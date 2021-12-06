@@ -58,6 +58,11 @@ silver:
     logo: /img/supporters/astra.png
     notes: Sponsoring some of Akshath's work on ZAP
 
+  - name: 'HostedScan'
+    link: https://hostedscan.com/
+    logo: /img/supporters/hostedscan.png
+    notes: $1,500 donation
+
   - name: 'DeepFactor'
     link: http://deepfactor.io/
     logo: /img/supporters/deepfactor.png
