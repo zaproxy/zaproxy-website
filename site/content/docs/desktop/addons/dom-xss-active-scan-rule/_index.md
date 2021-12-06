@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: domxss
-    version: 11.0.0
+    version: 12.0.0
 ---
 
 # DOM XSS Active Scan Rule
