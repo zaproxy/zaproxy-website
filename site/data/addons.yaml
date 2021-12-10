@@ -387,9 +387,9 @@
   status: release
   infoUrl: /docs/desktop/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help-v12/help-release-12.zap
-  date: 2021-10-06
-  version: 12
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help-v13/help-release-13.zap
+  date: 2021-12-10
+  version: 13
 - id: help_bs_BA
   name: Help - Bosnian
   description: Bosnian version of the ZAP help file.
