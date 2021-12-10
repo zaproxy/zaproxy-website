@@ -51,7 +51,7 @@ We are working on patching and releasing new versions of ZAP and will update thi
 
 The ZAP core has been [patched](https://github.com/zaproxy/zaproxy/pull/6965) and we can confirm that it is not vulnerable to this vulnerability.
 
-The Live and Weekly docker releases are currently being regenerated: https://github.com/zaproxy/zaproxy/actions
+The Live and Weekly docker releases have also now been updated.
 
 We are in the process of generating and releasing ZAP 2.11.1.
 
