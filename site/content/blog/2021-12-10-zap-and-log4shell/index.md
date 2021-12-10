@@ -14,7 +14,7 @@ authors:
 A vulnerability has been found in Log4j which can result in Remote Code Execution (RCE):
 [CVE-2021-44228](https://www.lunasec.io/docs/blog/log4j-zero-day/) also known as [Log4Shell](https://www.randori.com/blog/cve-2021-44228/).
 
-ZAP 2.11.0 and the current weekly and dev versions of ZAP use Log4j 2.14.1 which is known to be vulnerable.
+ZAP 2.11.0 and the previous weekly and dev versions of ZAP use Log4j 2.14.1 which is known to be vulnerable.
 
 This blog post details our initial advice and the ongoing investigations we are making.
 
@@ -48,6 +48,12 @@ logger.zap.level = off
 ## Patching
 
 We are working on patching and releasing new versions of ZAP and will update this blog as soon as those versions are available.
+
+The ZAP core has been [patched](https://github.com/zaproxy/zaproxy/pull/6965) and we can confirm that it is not vulnerable to this vulnerability.
+
+The Live and Weekly docker releases are currently being regenerated: https://github.com/zaproxy/zaproxy/actions
+
+We are in the process of generating and releasing ZAP 2.11.1.
 
 ## Ongoing Investigations
 
