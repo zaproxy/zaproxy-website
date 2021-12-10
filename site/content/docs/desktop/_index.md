@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: help
-    version: 12.0.0
+    version: 14.0.0
 ---
 
 # OWASP ZAP Desktop User Guide
