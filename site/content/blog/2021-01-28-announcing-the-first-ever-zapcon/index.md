@@ -8,6 +8,7 @@ type: post
 tags:
 - blog
 - zapcon
+- cfp
 date: "2021-01-28"
 addSocialPreview: true
 authors:
