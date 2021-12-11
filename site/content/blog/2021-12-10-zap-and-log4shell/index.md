@@ -2,7 +2,7 @@
 title: "ZAP and Log4Shell"
 summary: >
   ZAP appears to be impacted by the Log4Shell vulnerability - CVE-2021-44228.
-  This blog post details our initial advice and the ongoing investigations we are making.
+  We have released ZAP 2.11.1 which fixes the problem, this blog post gives more information and the impact on older versions of ZAP.
 type: post
 tags:
 - blog
@@ -16,9 +16,16 @@ A vulnerability has been found in Log4j which can result in Remote Code Executio
 
 ZAP 2.11.0 and the previous weekly and dev versions of ZAP use Log4j 2.14.1 which is known to be vulnerable.
 
-This blog post details our initial advice and the ongoing investigations we are making.
+## ZAP 2.11.1
 
-## Initial Advice
+ZAP 2.11.1 has been released. This upgrades to use a non-vulnerable version of the Log4J library.
+
+We strongly recommend that all users [upgrade](/download/) to this release ASAP.
+
+All of the packages maintained by the core team have been updated and we have notified all of the 
+[3rd Party Package Maintainers](/3rd-party-package-maintenance/) that we are aware of.
+
+## Updated Advice for Older Versions
 
 First the good news - ZAP does __not__ typically log strings that could be used to exploit this vulnerability out of the box,
 so the exposure to this vulnerability should be limited.
@@ -29,7 +36,7 @@ then at this stage we believe that you will not be vulnerable.
 In particular if you are running ZAP in a container like Docker and have not exposed the ZAP API outside of the container then you 
 should be fine.
 
-However we do recommend that you:
+If you cannot update to 2.11.1 right now then we do recommend that you:
 
 * Do not expose the ZAP API to untrusted addresses
 * Do not run ZAP with debug logging on, unless you are only testing trusted websites
@@ -45,16 +52,3 @@ logger.paros.level = off
 logger.zap.level = off
 ```
 
-## Patching
-
-We are working on patching and releasing new versions of ZAP and will update this blog as soon as those versions are available.
-
-The ZAP core has been [patched](https://github.com/zaproxy/zaproxy/pull/6965) and we can confirm that it is not vulnerable to this vulnerability.
-
-The Live and Weekly docker releases have also now been updated.
-
-We are in the process of generating and releasing ZAP 2.11.1.
-
-## Ongoing Investigations
-
-We are continuing our investigations and will update this blog as soon as we have more information to share.
