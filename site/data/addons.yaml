@@ -57,9 +57,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v33/ascanrulesAlpha-alpha-33.zap
-  date: 2021-12-06
-  version: 33
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v34/ascanrulesAlpha-alpha-34.zap
+  date: 2021-12-12
+  version: 34
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta quality Active Scanner rules
@@ -620,9 +620,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.6.0/oast-alpha-0.6.0.zap
-  date: 2021-12-06
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.7.0/oast-alpha-0.7.0.zap
+  date: 2021-12-12
+  version: 0.7.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
