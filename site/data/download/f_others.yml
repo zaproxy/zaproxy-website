@@ -3,26 +3,32 @@ column_1:
     - title: Linux Repos
       info:
         - The official [ZAP Linux Repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=owasp-zap)
-    - title: Snapcraft
-      info:
-        - On Linux systems you can use [Snapcraft](https://snapcraft.io/zaproxy).
-        - "To install: `snap install zaproxy --classic`"
-        - "To run: `zaproxy`"
     - title: Flathub
       info:
         - On Linux systems you can also use [Flathub](https://flathub.org/apps/details/org.zaproxy.ZAP).
         - "To install: `flatpak install flathub org.zaproxy.ZAP`"
         - "To run: `flatpak run org.zaproxy.ZAP`"
-column_2:
-  - items:
     - title: Homebrew Cask
       info:
         - On Mac OS X you can also install ZAP using [Homebrew Cask](https://formulae.brew.sh/cask/owasp-zap)
         - "To install: `brew install --cask owasp-zap`"
+    - title: Snapcraft
+      info:
+        - On Linux systems you can use [Snapcraft](https://snapcraft.io/zaproxy).
+        - "To install: `snap install zaproxy --classic`"
+        - "To run: `zaproxy`"
+column_2:
+  - items:
     - title: Chocolatey
       info:
         - On Windows systems you can use [Chocolatey](https://community.chocolatey.org/packages/zap).
         - "To install: `choco install zap`"
+    - title: FreeBSD
+      info:
+        - On FreeBSD systems you can also use the [zaproxy](https://www.freshports.org/security/zaproxy/) package.
+        - "Dependency lines: `zaproxy>0:security/zaproxy`"
+        - "To install the port: `cd /usr/ports/security/zaproxy/ && make install clean`"
+        - "To add the package run: `pkg install zaproxy`"
     - title: Scoop
       info:
         - On Windows systems you can also use [Scoop](https://github.com/lukesampson/scoop-extras/blob/master/bucket/zaproxy.json).
