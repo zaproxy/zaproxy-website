@@ -1,3 +1,6 @@
+OUT_OF_BAND:
+  link: https://www.zaproxy.org/docs/desktop/addons/oast-support/
+
 OWASP_2017_A01:
   link: https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html
 
@@ -60,6 +63,9 @@ WSTG-v42-ATHZ-01:
 
 WSTG-v42-ATHZ-04:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References
+
+WSTG-v42-CLNT-01:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting
 
 WSTG-v42-CLNT-02:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/02-Testing_for_JavaScript_Execution
