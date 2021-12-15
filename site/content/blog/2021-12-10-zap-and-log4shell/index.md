@@ -6,6 +6,8 @@ summary: >
 type: post
 tags:
 - blog
+- advisory
+- log4shell
 date: "2021-12-10"
 authors: 
     - simon
