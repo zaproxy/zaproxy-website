@@ -6,6 +6,7 @@ images:
 type: post
 tags:
 - blog
+- log4shell
 - oast
 date: "2021-12-14"
 addSocialPreview: true
