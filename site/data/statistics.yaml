@@ -310,6 +310,146 @@
   code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/StatsPassiveScanner.java
   desc: The number of messages which include the given content type
 
+- key: stats.exim.save.raw.file.msg
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/PopupMenuSaveRawMessage.java
+  desc: The number of messages saved as raw files
+
+- key: stats.exim.save.raw.file.msg.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/PopupMenuSaveRawMessage.java
+  desc: The number of errors when saving messages as raw files
+
+- key: stats.exim.save.xml.file.msg
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/PopupMenuSaveXmlMessage.java
+  desc: The number of messages saved as XML files
+
+- key: stats.exim.save.xml.file.msg.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/PopupMenuSaveXmlMessage.java
+  desc: The number of errors when saving messages as XML files
+
+- key: stats.exim.import.har.file
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/har/HarImporter.java
+  desc: The number of HAR files imported
+
+- key: stats.exim.import.har.file.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/har/HarImporter.java
+  desc: The number of errors when importing a HAR file
+
+- key: stats.exim.import.har.file.message
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/har/HarImporter.java
+  desc: The number of HAR messages imported via a file
+
+- key: stats.exim.import.har.file.message.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/har/HarImporter.java
+  desc: The number of errors when importing a message via a HAR file
+
+- key: stats.exim.save.har.file
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/har/PopupMenuItemSaveHarMessage
+  desc: The number of HAR Files saved
+
+- key: stats.exim.save.har.file.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/har/PopupMenuItemSaveHarMessage
+  desc: The number of errors when saving a HAR file
+
+- key: stats.exim.save.har.file.message
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/har/PopupMenuItemSaveHarMessage
+  desc: The number of HAR messages saves to a files
+
+- key: stats.exim.import.zap.file
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/log/LogsImporter.java
+  desc: The number of ZAP files imported
+
+- key: stats.exim.import.zap.file.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/log/LogsImporter.java
+  desc: The number of errors when importing a ZAP file
+
+- key: stats.exim.import.zap.file.message
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/log/LogsImporter.java
+  desc: The number of ModSecurity v2 messages imported via a file
+
+- key: stats.exim.import.modsec2.file
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/log/LogsImporter.java
+  desc: The number of ModSecurity v2 files imported
+
+- key: stats.exim.import.modsec2.file.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/log/LogsImporter.java
+  desc: The number of errors when importing a ModSecurity v2 file
+
+- key: stats.exim.import.modsec2.file.message
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/log/LogsImporter.java
+  desc: The number of ModSecurity v2 messages imported via a file
+
+- key: stats.exim.import.url.file
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/urls/UrlsImporter.java
+  desc: The number of URL files imported
+
+- key: stats.exim.import.url.file.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/urls/UrlsImporter.java
+  desc: The number of errors when importing a URL file
+
+- key: stats.exim.import.url.file.message
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/urls/UrlsImporter.java
+  desc: The number of URLs imported via a file
+
 - key: stats.pscan.reqBodyTooBig
   scope: global
   type: counter
