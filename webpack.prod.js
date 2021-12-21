@@ -14,7 +14,6 @@ module.exports = merge(common, {
   },
 
   optimization: {
-  runtimeChunk: 'single',
     minimizer: [
       new TerserPlugin({
         parallel: true,
