@@ -287,6 +287,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/evalvillain-v0.0.1/evalvillain-alpha-0.0.1.zap
   date: 2021-12-01
   version: 0.0.1
+- id: exim
+  name: Import/Export
+  description: Import and Export functionality
+  author: ZAP Dev Team & thatsn0tmysite
+  status: alpha
+  infoUrl: /docs/desktop/addons/import-export/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.0.1/exim-alpha-0.0.1.zap
+  date: 2021-12-22
+  version: 0.0.1
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -518,9 +528,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/log-file-importer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/importLogFiles-v5/importLogFiles-alpha-5.zap
-  date: 2021-10-07
-  version: 5
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/importLogFiles-v6/importLogFiles-alpha-6.zap
+  date: 2021-12-22
+  version: 6
 - id: importurls
   name: Import files containing URLs
   description: Adds an option to import a file of URLs. The file must be plain text
@@ -529,9 +539,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-urls/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/importurls-v8/importurls-beta-8.zap
-  date: 2021-10-06
-  version: 8
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/importurls-v9/importurls-beta-9.zap
+  date: 2021-12-22
+  version: 9
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such
@@ -812,9 +822,9 @@
   status: release
   infoUrl: /docs/desktop/addons/save-raw-message/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saverawmessage-v6/saverawmessage-release-6.zap
-  date: 2021-10-06
-  version: 6
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saverawmessage-v7/saverawmessage-release-7.zap
+  date: 2021-12-22
+  version: 7
 - id: savexmlmessage
   name: Save XML Message
   description: Allows to save content of HTTP messages as XML
@@ -822,9 +832,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/save-xml-message/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/savexmlmessage-v0.2.0/savexmlmessage-alpha-0.2.0.zap
-  date: 2021-10-06
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/savexmlmessage-v0.3.0/savexmlmessage-alpha-0.3.0.zap
+  date: 2021-12-22
+  version: 0.3.0
 - id: scripts
   name: Script Console
   description: Supports all JSR 223 scripting languages

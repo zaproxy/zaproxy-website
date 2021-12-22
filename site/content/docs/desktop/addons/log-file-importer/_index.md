@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: importLogFiles
-    version: 5.0.0
+    version: 6.0.0
 ---
 
 # Log File Importer
