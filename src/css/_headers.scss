@@ -68,46 +68,19 @@
 
 .zapcon-banner-col-brand .sir-zapalot img {
     max-width: 163px;
-
-
-
 }
 
-@media (max-width: 992px) {
-    .zapcon-banner-container {
-        flex-direction: column;
-    }
+@media screen and (max-width: 825px) {
+  .zapcon-header {
+    display: none;
+  }
 
-    .zapcon-banner {
-        height: auto;
-        overflow: hidden;
-    }
+  .zapcon-register {
+    display: none;
+  }
 
-    .zapcon-banner-col-date {
-        width: 100%;
-    }
-
-    .zapcon-banner-col-brand {
-        width: 100%;
-        height: auto;
-        justify-content: center;
-        background-repeat: repeat;
-        max-height: 80px;
-        overflow: hidden;
-    }
-
-    .zapcon-banner-col-date {
-        padding: 20px 0;
-        flex-direction: column;
-
-    }
-
-    .zapcon-banner-date {
-        margin-bottom: 16px;
-    }
-
-    .zapcon-banner-col-brand .sir-zapalot {
-        position: relative;
-        /* top: 0; */
-    }
-}
+  .zapcon-banner {
+    margin-right: 24px;
+    display: none;
+  }
+} 
