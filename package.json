@@ -17,7 +17,7 @@
     "build:preview": "npm run build:webpack && npm run build:hugo:preview",
     "build:hugo": "hugo -d ../dist -s site -v",
     "build:hugo:preview": "npm run build:hugo -- -D -F",
-    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js --hot"
+    "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "MIT",
