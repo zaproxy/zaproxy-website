@@ -57,9 +57,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v34/ascanrulesAlpha-alpha-34.zap
-  date: 2021-12-12
-  version: 34
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v35/ascanrulesAlpha-alpha-35.zap
+  date: 2022-01-07
+  version: 35
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta quality Active Scanner rules
@@ -682,9 +682,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v37/pscanrules-release-37.zap
-  date: 2021-12-01
-  version: 37
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v38/pscanrules-release-38.zap
+  date: 2022-01-07
+  version: 38
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha quality Passive Scanner rules
