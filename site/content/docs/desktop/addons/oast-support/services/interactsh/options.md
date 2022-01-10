@@ -31,7 +31,8 @@ value is 10 seconds and the maximum is 21600 seconds (6 hours). The default valu
 ### Active Payloads
 
 This table lists all the generated Payloads and corresponding Canary values. An entry is added each time you create a
-new payload.
+new payload. The 'New Payload' Button is disabled if you change the Server URL and/or the Authorization Token.
+To create new payloads in that case either revert the changes or save the settings and reopen the options screen.
 
 #### Payload
 
