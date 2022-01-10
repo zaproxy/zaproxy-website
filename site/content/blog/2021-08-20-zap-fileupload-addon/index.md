@@ -48,6 +48,7 @@ Vulnerabilities covered are:
 - No virus scan. 
 
 The FileUpload add-on is currently only available for dev versions of ZAP such as weekly releases or built from source, as it depends on an up-to-date version of ZAP's core.
+The add-on will be made available in the [ZAP Marketplace](https://www.zaproxy.org/addons/) for newer ZAP versions.
 For more information please visit [FileUpload addon](https://github.com/SasanLabs/owasp-zap-fileupload-addon)
 
 For detailed information on FileUpload add-on configuration see the following video: {{< youtube uuid="3bHjrpbLQmA" >}}
