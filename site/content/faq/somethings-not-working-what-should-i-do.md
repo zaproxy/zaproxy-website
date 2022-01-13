@@ -10,7 +10,7 @@ bug or a misunderstanding of how ZAP works.
 
 The following steps may well help:
 
-###  Check for updates
+###  Check for Updates
 
 Click on the 'Manage Add-ons' button on the toolbar and then click on the
 'Check for updates' button.
@@ -35,7 +35,7 @@ individual dialogs or via the F1 key (which is context dependant).
 
 The User Guide is also available [online](/docs/desktop/).
 
-###  Check the log file
+###  Check the Log File
 
 Look in the zap.log file to see if any errors have been logged. This is either
 in the directory you specified via the '-dir' [command line](/docs/desktop/cmdline/) option or in
@@ -53,17 +53,17 @@ you.
 
 Be aware that lots of webapps do weird and wonderful things, often in bizarre ways. We can't second guess them, so when asking for help you'll need to give us sanitized examples to help us figure out what's going on.
 
-###  Ask on irc
+###  Ask on IRC
 
 Many of ZAP contributors hang out on the Libera Chat [#zaproxy](https://web.libera.chat/#zaproxy) channel which you can access via that link or your favourite irc client.
 
-###  Ask on twitter
+###  Ask on Twitter
 
 You can ask [@psiinon](https://twitter.com/psiinon) short questions directly
 on twitter, although whether he's online will be timezone and holiday
-dependant.
+dependent.
 
-###  Raise an issue
+###  Raise an Issue
 
 You can raise issues (bugs or new features) at the [issue
 tracker](https://github.com/zaproxy/zaproxy/issues/new).
