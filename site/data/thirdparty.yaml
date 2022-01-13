@@ -83,6 +83,17 @@ services:
     link: https://www.nucleussec.com/integrations
     license: 'Commercial'
 
+  # Open source, no longer maintained?, alphabetic
+  - name: 'BDD Security'
+    link: https://github.com/iriusrisk/bdd-security
+    license: 'Free, open source'
+    notes: No longer maintained?
+
+  - name: 'Seccubus'
+    link: https://github.com/seccubus/seccubus
+    license: 'Free, open source'
+    notes: No longer maintained?
+
 integrations:
   - name: 'ThreadFix'
     link: https://threadfix.it/
