@@ -159,9 +159,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/call-home/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.1.0/callhome-alpha-0.1.0.zap
-  date: 2021-12-20
-  version: 0.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.2.0/callhome-alpha-0.2.0.zap
+  date: 2022-01-14
+  version: 0.2.0
 - id: codedx
   name: Code Dx Extension
   description: Includes request and response data in XML reports and provides the
@@ -326,9 +326,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.5.0/fuzz-beta-13.5.0.zap
-  date: 2021-11-04
-  version: 13.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.6.0/fuzz-beta-13.6.0.zap
+  date: 2022-01-14
+  version: 13.6.0
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer

@@ -22,6 +22,11 @@ To configure the fuzzing:
 
 You can also search for strings in the fuzz results using the 'Search tab'.
 
+Click on the 'Edit' button to edit the message you have selected for fuzzing.
+Note that this will remove all of the fuzz locations that you have defined.
+
+You will need to 'Save' the message before you can define new fuzz locations.
+
 ### Options tab
 
 This tab allows you to configure the options to be used when fuzzing. See the main [options help](/docs/desktop/addons/fuzzer/options/) for more details.
