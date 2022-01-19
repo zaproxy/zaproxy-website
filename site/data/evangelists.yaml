@@ -557,3 +557,13 @@
   has_talks: Y
   has_training: Y
   notes: Web Application Security Evangelist, ZAP lover, <a href="https://www.youtube.com/channel/UCjulUE_Gn91GGWOlqWHtmHg" rel="nofollow">YouTube channel</a>
+
+- name: Chad Martell
+  email: dcmartell@protonmail.com
+  twitter: CoffeeHouseSec
+  linkedin: https://www.linkedin.com/in/chadmartell/
+  locations: California, United States
+  language: English
+  has_talks: N
+  has_training: N
+  notes: Threat Hunting; ZAP for general Web Application Security usage/pen testing/vulnerability detection
