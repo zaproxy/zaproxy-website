@@ -95,12 +95,12 @@
   name: Automation Framework
   description: Automation Framework.
   author: ZAP Dev Team
-  status: alpha
+  status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.10.1/automation-alpha-0.10.1.zap
-  date: 2022-01-05
-  version: 0.10.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.11.0/automation-beta-0.11.0.zap
+  date: 2022-01-19
+  version: 0.11.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console

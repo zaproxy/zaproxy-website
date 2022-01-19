@@ -9,7 +9,8 @@ weight: 2
 
 This section of the YAML configuration file defines the applications which the rest of the jobs can act on.
 
-The Automation Framework supports a subset of the [authentication](/docs/desktop/addons/automation-framework/authentication/) mechanisms supported by ZAP.
+The Automation Framework supports all of the [authentication](/docs/desktop/addons/automation-framework/authentication/) mechanisms supported by ZAP
+with the exception of scripts, which will be coming soon.
 
 ```
 env:                                   # The environment, mandatory
@@ -19,11 +20,14 @@ env:                                   # The environment, mandatory
       includePaths:                    # An optional list of regexes to include
       excludePaths:                    # An optional list of regexes to exclude
       authentication:
-        method:                        # String, one of 'manual', 'http' - in time will cover all methods supported by ZAP
-        parameters:
+        method:                        # String, one of 'manual', 'http', 'form' or 'json' - script support is planned as well
+        parameters:                    # All of the parameters support vars except for the port 
           hostname:                    # String, only for 'http' method
           port:                        # Int, only for 'http' method
           realm:                       # String, only for 'http' method
+          loginPageUrl:                # String, the login page URL to read prior to making the request, only for 'form' or 'json' methods
+          loginRequestUrl:             # String, the login URL to request, only for 'form' or 'json' methods
+          loginRequestBody:            # String, the login request body - if not supplied a GET request will be used, only for 'form' or 'json' methods
         verification:
           method:                      # String, one of 'response', 'request', 'both', 'poll'
           loggedInRegex:               # String, regex pattern for determining if logged in
