@@ -22,8 +22,10 @@ The Automation Framework supports the following methods of authentication suppor
 
 * Manual (use this if you are using the Authentication Header Environmental Variable)
 * HTTP / NTLM
+* Form-based
+* JSON-based
 
-The remaining mechanisms will be supported soon.
+Script based authentication will be supported soon.
 
 ## Authentication Statistics
 
