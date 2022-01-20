@@ -1,7 +1,8 @@
 ---
 title: "ZAP Developer Guide"
 cascade:
-   EditableContent: true
+  EditableContent: true
+  addBreadcrumbs: true
 type: page
 layout: links
 links:
@@ -20,6 +21,10 @@ links:
   - name: 'Creating a New Add-on in zap-extensions'
     link: creating-new-addon-in-zap-extensions/
     desc: A quick way to create a new add-on
+
+  - name: 'Development Rules and Guidelines'
+    link: dev-rules-and-guidelines/
+    desc: To be followed when contributing ZAP code
 
 ---
 

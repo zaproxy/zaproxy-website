@@ -24,16 +24,17 @@ then you should install them.
 We are constantly improving ZAP and the add-ons and newer versions may fix the
 problems that you are experiencing.
 
-###  Check the ZAP User Guide
+###  Check the ZAP Documentation
 
-ZAP includes a User Guide that should cover all of the functionality
-available.
+ZAP includes a User Guide is available [online](/docs/desktop/).
 
-This can be accessed via the 'Help / OWASP ZAP User Guide' menu, the help
+It can be accessed via the 'Help / OWASP ZAP User Guide' menu, the help
 button on the right hand side of the top toolbar, via help buttons on
 individual dialogs or via the F1 key (which is context dependant).
 
-The User Guide is also available [online](/docs/desktop/).
+The [Frequently Asked Questions](/faq/) cover a range of issues that lots of people come across.
+
+The [ZAP user group](https://groups.google.com/group/zaproxy-users) is searchable and has a wide range of discussions about all aspect of ZAP.
 
 ###  Check the Log File
 

@@ -41,7 +41,7 @@ groups:
   - header: 'Get Involved'
     links:
       - name: 'Contributing Guide'
-        link: https://github.com/zaproxy/zaproxy/blob/main/CONTRIBUTING.md
+        link: /docs/contribute/
         desc: lots more details on how you can get involved 
     
       - name: 'Source Code'
