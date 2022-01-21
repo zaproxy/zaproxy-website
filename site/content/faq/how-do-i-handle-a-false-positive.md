@@ -18,4 +18,11 @@ If you are automating ZAP and the relevant scan rule does not support a suitable
 
 The [packaged scans](/docs/docker/) also support regex expressions in the [configuration file](/docs/docker/api-scan/#configuration-file) which allow you to ignore alerts for the URLs you specify.
 
-The built in report does not include false positives, but some add-ons which provide reporting capabilities may still do.
+The reports do not include false positives by default, however you can choose to filter the included alerts by Risk or Confidence.
+
+If you wish to adjust risk or confidence via the API check the following endpoints:
+```
+/alert/updateAlert (id* name* riskId* confidenceId* description* param attack otherInfo solution references evidence cweId wascId )
+/alert/updateAlertsConfidence (ids* confidenceId* ) 
+/alert/updateAlertsRisk (ids* riskId* ) 
+```
