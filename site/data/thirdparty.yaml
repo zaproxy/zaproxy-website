@@ -127,6 +127,10 @@ integrations:
     link: https://www.uleska.com/docs/zapproxy
     license: 'Commercial, free option'
 
+  - name: 'ArmorCode'
+    link: https://www.armorcode.com/integrations
+    license: 'Commercial'
+
   - name: 'Edgescan'
     link: https://www.edgescan.com/
     license: 'Commercial'
