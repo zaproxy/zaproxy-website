@@ -50,3 +50,5 @@ If it appears that the user is no longer authenticated during an authenticated s
 
 [^1]: [OWASP Session Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
 [^2]: [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
+
+{{<prevnext prevUrl="../manual-auth/" prevTitle="Manual authentication" nextUrl="../handling-auth-yourself/" nextTitle="Handling authentication yourself in automation">}}

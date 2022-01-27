@@ -47,3 +47,5 @@ ZAP tools like the spiders and active scanner typically replay the previously re
 Defining a session as active will ensure that these tools use the right cookie for the active session.
 
 Using an active session also allows you to switch quickly and easily between different app sessions as part of your manual testing.
+
+{{<prevnext prevUrl="../make-your-life-easier/" prevTitle="How to make your life easier" nextUrl="../concepts/" nextTitle="ZAP authentication concepts">}}

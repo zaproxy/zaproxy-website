@@ -52,3 +52,5 @@ You can perform authenticated scans while still handling authentication yourself
 ZAP will maintain statistics based on the Verification Strategy which will allow you to see if authentication appears to be working.
 
 For more details see Verification strategies (Coming Soon).
+
+{{<prevnext prevUrl="../concepts/" prevTitle="ZAP authentication concepts" nextTitle="Session Handling (coming soon)">}}
