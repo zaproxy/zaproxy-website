@@ -38,3 +38,5 @@ If you are testing your own app then seriously consider what options you have yo
 Although you probably want to use authentication in automation it is still much easier to test it in the ZAP Desktop.
 
 You will be able to see the requests and responses sent through ZAP and be able to change them on the fly in order to see what works and what does not work.
+
+{{<prevnext nextUrl="../manual-auth/" nextTitle="Manual authentication">}}

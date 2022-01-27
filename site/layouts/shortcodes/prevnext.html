@@ -1,0 +1,10 @@
+<div class="next-content bg--blue-lightest p-10">
+    {{ if .Get "prevUrl" }}
+      Previous <a class="previous" href='{{.Get "prevUrl"}}'> {{.Get "prevTitle"}}</a>
+    {{ end }}
+    {{ if .Get "nextUrl" }}
+      Next <a class="next" href='{{.Get "nextUrl"}}'> {{.Get "nextTitle"}}</a>
+    {{ else if .Get "nextTitle" }}
+      Next {{.Get "nextTitle"}}
+    {{ end }}
+</div>

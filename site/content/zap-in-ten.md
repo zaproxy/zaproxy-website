@@ -59,5 +59,3 @@ links:
 
 ---
 A series of short videos (~10 mins each) about different ZAP features produced in conjunction with [All Day DevOps](https://www.alldaydevops.com/).
-Also available on https://www.alldaydevops.com/zap-in-ten
-
