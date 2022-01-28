@@ -52,9 +52,15 @@ for the Check for Updates service.
 
 ### Telemetry
 
-We plan to add support for a new Telemetry Service as per the [ZAP Telemetry Plans](/blog/2021-10-25-zap-telemetry-plans/) blog post.
+From late 2021 (for those users who update add-ons) the [Call Home](/docs/desktop/addons/call-home/) add-on will by default send data to the Telemetry Service as per the [ZAP Telemetry Plans](/blog/2021-10-25-zap-telemetry-plans/) blog post.
 
-This FAQ will be updated when the service is in use.
+One call will be made when ZAP starts up, reporting environmental data and the add-ons installed, and then one call will be made when the 
+ZAP session changes, reporting selected statistics.
+
+The last set of data sent is shown in the [Call Home](/docs/desktop/addons/call-home/) Options panel.
+
+The telemetry calls can be disabled via the [Call Home](/docs/desktop/addons/call-home/) Options panel or by using the `-silent` 
+[command line option](/docs/desktop/cmdline/) also detailed below.
 
 ###  Browser Launch Start Page - Discontinued
 
@@ -69,10 +75,10 @@ This was discontinued from ZAP 2.8.0
 
 ##  Silent Mode
 
-Starting from ZAP 2.8.0 the '-silent' command line option can be used to prevent ZAP from making any 'calls home'.
+Starting from ZAP 2.8.0 the `-silent` command line option can be used to prevent ZAP from making any 'calls home'.
 If you explicitly ask ZAP to check for updates then it will still call the Check for Updates service.
 
-Note that some third party add-ons may not obey the '-silent' option.
+Note that some third party add-ons may not obey the `-silent` option.
 
 This FAQ will be updated to detail any of the add-ons in the [ZAP Marketplace](/addons/)
 that fall into this category.
