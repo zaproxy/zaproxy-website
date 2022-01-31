@@ -39,16 +39,16 @@ Logging can be selectively enabled using a [Stand Alone script](/docs/desktop/ad
 running (the example below is a JavaScript script):
 
 ```JavaScript
-var Level = Java.type("org.apache.logging.log4j.Level")
-var LoggerContext = Java.type("org.apache.logging.log4j.core.LoggerContext")
+var Configurator = Java.type("org.apache.logging.log4j.core.config.Configurator");
+var Level = Java.type("org.apache.logging.log4j.Level");
 
-var context = LoggerContext.getContext()
-var config = context.getConfiguration()
-
-// The following will enable DEBUG logging for the API
-config.getLoggerConfig("org.zaproxy.zap.extension.api.API").setLevel(Level.DEBUG)
-// The following will enable DEBUG logging for the Session Fixation scan rule
-config.getLoggerConfig("org.zaproxy.zap.extension.ascanrulesBeta.SessionFixationScanRule").setLevel(Level.DEBUG)
-
-context.updateLoggers()
+// https://logging.apache.org/log4j/2.x/javadoc.html
+Configurator.setLevel({
+  // The following will enable DEBUG logging for the API
+  "org.zaproxy.zap.extension.api.API" : Level.DEBUG,
+  // The following will enable DEBUG logging for the Session Fixation scan rule
+  "org.zaproxy.zap.extension.ascanrulesBeta.SessionFixationScanRule" : Level.DEBUG,
+  // The following will enable DEBUG logging for the spider add-on
+  "org.zaproxy.addon.spider" : Level.DEBUG,
+});
 ```
