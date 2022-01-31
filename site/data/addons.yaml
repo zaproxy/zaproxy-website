@@ -660,9 +660,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.8.0/oast-alpha-0.8.0.zap
-  date: 2022-01-10
-  version: 0.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.9.0/oast-alpha-0.9.0.zap
+  date: 2022-01-31
+  version: 0.9.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items

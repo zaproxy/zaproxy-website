@@ -30,6 +30,10 @@ For each message, you can see:
 |   | Clear Messages | Clears all messages in the table.                                                                                                                                                                                                                  |
 |   | Poll Now       | Polls all registered services and resets the time to next polling. This means that if the polling frequency is set to 120 seconds, and you click on the button with 30 seconds remaining, the next automatic polling will occur after 120 seconds. |
 
+## Indicators
+
+The OAST Tab contains status indicators for external OAST services. A grey colour indicates that the service has not been registered yet. A green colour indicates that the service is registered and is being polled. If the service is registered as an active scan service, a small flame icon is added to the bottom right corner of the indicator. The timestamp next to the service name is updated whenever the service is polled.
+
 ## See also
 
 |   |                                                    |   |
