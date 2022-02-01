@@ -28,12 +28,13 @@ The full set of jobs currently supported by the framework are:
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
 * [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
 * [alertFilter](/docs/desktop/addons/alert-filters/automation/) - alert filter configuration, provided with the [Alert Filters](/docs/desktop/addons/alert-filters/) add-on
+* [delay](/docs/desktop/addons/automation-framework/job-delay/) - waits for a specified time or until a condition is met
 * [graphql](/docs/desktop/addons/graphql-support/automation/) - GraphQL schema import, provided with the [GraphQL](/docs/desktop/addons/graphql-support/) add-on
 * [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided with the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
 * [report](/docs/desktop/addons/report-generation/automation/) - report generation, provided with the [Report Generation](/docs/desktop/addons/report-generation/) add-on
-* [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - send specific requests to targets
+* [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - sends specific requests to targets
 * [soap](/docs/desktop/addons/soap-support/automation/) - SOAP WSDL import, provided with the [SOAP](/docs/desktop/addons/soap-support/) add-on
 * [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
 * [spiderAjax](/docs/desktop/addons/ajax-spider/automation/) - runs the ajax spider, provided with the [Ajax Spider](/docs/desktop/addons/ajax-spider/) add-on
