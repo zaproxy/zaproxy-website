@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.11.0/automation-beta-0.11.0.zap
-  date: 2022-01-19
-  version: 0.11.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.12.0/automation-beta-0.12.0.zap
+  date: 2022-02-01
+  version: 0.12.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -682,9 +682,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v25/openapi-beta-25.zap
-  date: 2022-01-18
-  version: 25
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v26/openapi-beta-26.zap
+  date: 2022-02-01
+  version: 26
 - id: plugnhack
   name: Plug-n-Hack Configuration
   description: 'Supports the Mozilla Plug-n-Hack standard: https://developer.mozilla.org/en-US/docs/Plug-n-Hack.'
@@ -902,9 +902,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/soap-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v12/soap-alpha-12.zap
-  date: 2021-11-29
-  version: 12
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v13/soap-alpha-13.zap
+  date: 2022-02-01
+  version: 13
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
