@@ -7,7 +7,7 @@ weight: 3
 
 # Automation Framework - authentication
 
-The Automation Framework supports a subset of the authentication mechanisms supported by ZAP.
+The Automation Framework supports all of the authentication mechanisms supported by ZAP.
 
 ## Environmental Variables
 
@@ -24,8 +24,7 @@ The Automation Framework supports the following methods of authentication suppor
 * HTTP / NTLM
 * Form-based
 * JSON-based
-
-Script based authentication will be supported soon.
+* Script
 
 ## Authentication Statistics
 
