@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: commonlib
-    version: 1.6.0
+    version: 1.7.0
 ---
 
 # Common Library
