@@ -62,6 +62,10 @@ services:
     license: 'Commercial, free community edition, open source'
 
   # Commerical, free option tools, alphabetic
+  - name: 'Cyber Tzar'
+    link: https://www.cybertzar.com/
+    license: 'Commercial, free option'
+
   - name: 'Idyllum'
     link: https://www.idyllum.com/
     license: 'Commercial, free option'
