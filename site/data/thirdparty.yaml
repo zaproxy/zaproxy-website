@@ -61,13 +61,17 @@ services:
     link: https://www.alertflex.org/
     license: 'Commercial, free community edition, open source'
 
-  # Commerical, free option tools, alphabetic
+  # Commercial, free option tools, alphabetic
   - name: 'Cyber Tzar'
     link: https://www.cybertzar.com/
     license: 'Commercial, free option'
 
   - name: 'Idyllum'
     link: https://www.idyllum.com/
+    license: 'Commercial, free option'
+
+  - name: 'Levo.ai'
+    link: https://levo.ai/
     license: 'Commercial, free option'
 
   - name: 'PatrOwl'
@@ -78,7 +82,7 @@ services:
     link: https://www.sken.ai/
     license: 'Commercial, free option'
 
-  # Commerical, alphabetic
+  # Commercial, alphabetic
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
     license: 'Commercial'
