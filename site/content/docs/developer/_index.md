@@ -18,6 +18,10 @@ links:
     link: building-zap-with-intellij-idea/
     desc: How to build and run ZAP using IntelliJ IDEA
   
+  - name: 'Verifying Your Changes'
+    link: verifying-your-changes/
+    desc: How to make sure your changes will pass the build checks and get merged quicker
+
   - name: 'Creating a New Add-on in zap-extensions'
     link: creating-new-addon-in-zap-extensions/
     desc: A quick way to create a new add-on
