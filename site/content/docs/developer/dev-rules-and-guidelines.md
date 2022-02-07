@@ -49,14 +49,7 @@ but if you plan to make bigger contributions then you should check them before m
 
 ### Unit Test Specific Guidelines
 
-* Where possible all developments should include regression tests. There are not enough at the moment, and we need to change that.
-* Function names should be descriptive, and use standard camelCaps (camelCase). Examples: 
-  * `shouldRaiseAlertIfPasswordFieldAndFormHasNoAutocomplete()`
-  * `shouldSetValuesToFieldsWithNoValueWhenParsingGetForm()`
-  * `shouldAppendSessionFiletypeAndRetrieveSessionFileFromRelativePath()`.
-* Comments should be used to aide in increasing readability and classifying/tagging portions of Unit Test functions, such as: `\\Given`, `\\When`, `\\Then`. Example: 
-  * [1 - SessionUtilsUnitTest.java](https://github.com/zaproxy/zaproxy/blob/4741552cebc0d860b0bb2cc605b0dcffe42ece83/zap/src/test/java/org/zaproxy/zap/model/SessionUtilsUnitTest.java#L45)
-* Unit Tests should cover at least all the main functionality of the item under test.
+These have been moved to [Verifying Your Changes](../verifying-your-changes).
 
 ### Style Guidelines
 
