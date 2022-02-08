@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Report Generation - About
 type: userguide
-weight: 3
+weight: 4
 ---
 
 # Report Generation - About
