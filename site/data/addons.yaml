@@ -782,9 +782,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.10.0/reports-release-0.10.0.zap
-  date: 2021-12-06
-  version: 0.10.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.11.0/reports-release-0.11.0.zap
+  date: 2022-02-08
+  version: 0.11.0
 - id: requester
   name: Requester
   description: Request numbered panel.

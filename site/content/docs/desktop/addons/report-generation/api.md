@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Report Generation API
 type: userguide
-weight: 4
+weight: 5
 ---
 
 # Report Generation API

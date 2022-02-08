@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Report Generation Automation Framework Support
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # Report Generation Automation Framework Support

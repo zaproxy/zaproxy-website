@@ -6,12 +6,12 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.10.0
+    version: 0.11.0
 ---
 
 # Report Generation
 
-This add-on allows you to generate a variety of reports in a flexible and extensible way.
+This add-on allows you to generate a [variety of reports](/docs/desktop/addons/report-generation/templates/) in a flexible and extensible way.
 
 It provides a dialog that can be accessed via menu "Report /
 Generate Report..." menu item or via the "Generate Report..." toolbar
@@ -116,6 +116,7 @@ The directory from which templates will be loaded. You should not typically need
 
 |   |                                                                                                      |                                                         |
 |---|------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+|   | [Templates](/docs/desktop/addons/report-generation/templates/)                                       | for details of the templates currently available        |
 |   | [Creating Reports](/docs/desktop/addons/report-generation/create/)                                   | for details on how to create and edit your own reports  |
 |   | [Report Generation Automation Framework Support](/docs/desktop/addons/report-generation/automation/) | for more details about the Automation Framework Support |
 |   | [Report Generation API](/docs/desktop/addons/report-generation/api/)                                 | for more details about the Reports API                  |
