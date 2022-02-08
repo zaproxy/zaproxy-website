@@ -23,6 +23,10 @@ links:
     link: /evangelists/
     desc: anyone can do it, you just need to feel comfortable talking about ZAP
 
+  - name: 'Contribute a Success Story'
+    link: /success/
+    desc: tell the world how you are using ZAP
+
   - name: 'Help Improve the ZAP Docs'
     link: docs/
     desc: because documentation is always so important
