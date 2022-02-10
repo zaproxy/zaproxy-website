@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: evalvillain
-    version: 0.0.1
+    version: 0.1.0
 ---
 
 # Eval Villain
@@ -14,7 +14,8 @@ cascade:
 This add-on adds the Eval Villain extension to Firefox when launched from ZAP.  
 Eval Villain is a web extension for Firefox that will hook dangerous functions, like eval, and warn you of their use.
 
-For more details see the ZAP blog post [The Eval Villain Add-on](/blog/2021-12-01-the-eval-villain-add-on/) and the [Eval Villain homepage](https://github.com/swoops/eval_villain).
+For more details see the ZAP blog post [The Eval Villain Add-on](/blog/2021-12-01-the-eval-villain-add-on/) and the
+[Eval Villain homepage](https://github.com/swoops/eval_villain).
 
 Click on the Eval Villain button in the Firefox toolbar to start using it.
 
