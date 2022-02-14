@@ -200,9 +200,9 @@
   status: release
   infoUrl: https://crowdin.com/project/owasp-zap
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/coreLang-v14/coreLang-release-14.zap
-  date: 2021-11-02
-  version: 14
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/coreLang-v15/coreLang-release-15.zap
+  date: 2022-02-14
+  version: 15
 - id: custompayloads
   name: Custom Payloads
   description: Ability to add, edit or remove payloads that are used i.e. by active
