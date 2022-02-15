@@ -284,9 +284,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/eval-villain/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/evalvillain-v0.1.0/evalvillain-alpha-0.1.0.zap
-  date: 2022-02-10
-  version: 0.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/evalvillain-v0.1.1/evalvillain-alpha-0.1.1.zap
+  date: 2022-02-15
+  version: 0.1.1
 - id: exim
   name: Import/Export
   description: Import and Export functionality
