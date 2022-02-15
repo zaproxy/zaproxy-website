@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: 35.0.0
+    version: 36.0.0
 ---
 
 # Active Scan Rules - Alpha
@@ -58,3 +58,11 @@ This rule attempts to identify if the Spring Actuators are enabled. Tests for th
 ## Log4Shell (CVE-2021-44228 and CVE-2021-45046)
 
 This rule attempts to discover the Log4Shell ([CVE-2021-44228](https://www.cve.org/CVERecord?id=CVE-2021-44228) and [CVE-2021-45046](https://www.cve.org/CVERecord?id=CVE-2021-45046)) vulnerabilities. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions. We recommend that this scan rule is used with header injection enabled for maximum coverage. Latest code: [Log4ShellScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/Log4ShellScanRule.java)
+
+## Out of Band XSS
+
+This rule attempts to discover Out-of-band XSS vulnerabilities. Latest code: [OutOfBandXssScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/OutOfBandXssScanRule.java)
+
+## Exponential Entity Expansion (Billion Laughs Attack)
+
+This rule attempts to identify the "Billion Laughs" vulnerability in servers that accept XML or YAML files. Latest code: [ExponentialEntityExpansionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExponentialEntityExpansionScanRule.java)
