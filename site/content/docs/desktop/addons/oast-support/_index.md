@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: oast
-    version: 0.9.0
+    version: 0.10.0
 ---
 
 # Out-of-band Application Security Testing Support
