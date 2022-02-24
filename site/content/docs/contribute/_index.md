@@ -42,7 +42,7 @@ links:
 
   - name: 'Core Team'
     link: core-team/
-    desc: heres what the ZAP Core Team is about and how you can join us
+    desc: here's what the ZAP Core Team is about and how you can join us
 
 cascade:
   EditableContent: true
