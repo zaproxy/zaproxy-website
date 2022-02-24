@@ -6,6 +6,12 @@ aliases:
   - /get-involved/
   - /support/
 groups:
+  - header: 'Mission statement'
+    links:
+      - name: 'Mission Statement'
+        link: /mission-statement/
+        desc: this is what we are trying to achieve
+
   - header: 'Get In Touch'
     links:
       - name: 'User Group'
