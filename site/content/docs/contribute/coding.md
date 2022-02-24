@@ -30,6 +30,13 @@ These are issues which we think are suitable for people new to ZAP development a
 
 Do not be afraid to ask questions on a specific issue if anything is not clear to you.
 
+#### Good Second Issues
+
+Once you've made a small change to the ZAP source the next thing you can look at is an issue labelled 
+[good second issue](https://github.com/zaproxy/zaproxy/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+second+issue%22).
+
+These should still be relatively straightforward but they are likely to be a bit more challenging that the 'first' issues.
+
 #### Scan Rules
 
 Scan rules are a good place to start as they are relatively self contained and do not require a great understanding of the rest of the ZAP codebase.

@@ -37,7 +37,12 @@ links:
 
   - name: 'Coding'
     link: coding/
-    desc: last but definitely not least, you can help us make ZAP a better tool
+    desc: because writing code is key to all tools
+
+
+  - name: 'Core Team'
+    link: core-team/
+    desc: heres what the ZAP Core Team is about and how you can join us
 
 cascade:
   EditableContent: true
