@@ -494,12 +494,12 @@
   name: Help - Russian
   description: Russian version of the ZAP help file.
   author: ZAP Crowdin Team
-  status: alpha
+  status: release
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ru_RU-v1/help_ru_RU-alpha-1.zap
-  date: 2022-01-18
-  version: 1
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ru_RU-v2/help_ru_RU-release-2.zap
+  date: 2022-02-24
+  version: 2
 - id: help_tr_TR
   name: Help - Turkish
   description: Turkish version of the ZAP help file.
