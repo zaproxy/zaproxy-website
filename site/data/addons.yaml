@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.12.0/automation-beta-0.12.0.zap
-  date: 2022-02-01
-  version: 0.12.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.13.0/automation-beta-0.13.0.zap
+  date: 2022-02-25
+  version: 0.13.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -872,9 +872,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v29/scripts-beta-29.zap
-  date: 2021-10-06
-  version: 29
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v30/scripts-beta-30.zap
+  date: 2022-02-25
+  version: 30
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
