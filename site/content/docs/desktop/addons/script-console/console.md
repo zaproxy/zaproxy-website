@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Script Console Tab
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # Script Console Tab
