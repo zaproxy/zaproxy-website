@@ -64,6 +64,9 @@ WSTG-v42-ATHZ-01:
 WSTG-v42-ATHZ-04:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References
 
+WSTG-v42-BUSL-09:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files
+
 WSTG-v42-CLNT-01:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting
 
