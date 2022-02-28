@@ -8,7 +8,7 @@ tags:
 The new Automation Framework will in time replace the Command Line and Packaged Scan options.
 It allows you to control ZAP via one YAML file and provides more flexibility while not being tied to any specific container technology.
 
-The Automation Framework in included with the latest version of ZAP as well as the stable docker image.
+The Automation Framework is included with the latest version of ZAP as well as the stable docker image.
 The framework is plugable and many of the existing add-ons have been enhanced to support it.
 
 __Important:__  if you run the framework from the command line you should not use the `-addonupdate` option or
