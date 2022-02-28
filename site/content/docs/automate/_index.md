@@ -22,5 +22,7 @@ links:
   - name: 'API and Daemon mode'
     link: /docs/api/
     desc: for full control over ZAP via a comprehensive API
+cascade:
+  EditableContent: true
 ---
 There are various ways you can automate ZAP:
