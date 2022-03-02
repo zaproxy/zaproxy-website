@@ -1,0 +1,35 @@
+  {{ $target := .Get "target" }}
+  {{ $section := .Get "section" }}
+  {{ $data := index .Site.Data.scans ($target) ($section) }}
+
+    <tr>
+      <td><h5><a href="#section-{{ $section }}" onclick="showHide('scan-{{ $section }}')" id="section-{{ $section }}">{{ $data.section}}</a></h5></td>
+      <td></td>
+      <td></td>
+      <td><h5>{{ $data.score}}</h5></td>
+    </tr>
+    <tr class="scan-{{ $section }}" style="display: none">
+      <th style="width: 70%">Individual Tests</th>
+      <th>Rule</th>
+      <th>Pass</th>
+      <th>Fail</th>
+    </tr>
+    <tr class="scan-{{ $section }}" style="display: none">
+      <td>Top Level: <a href="{{ $data.url}}/" id="section-{{ $section }}">{{ $data.url}}</a></td>
+      <td> </td>
+      <td align="center">{{ $data.passes}}</td>
+      <td align="center">{{ $data.fails}}</td>
+    </tr>
+    {{ range $test := $data.details }} 
+    <tr class="scan-{{ $section }}" style="display: none">
+      <td><a href="{{ $data.url}}{{ $test.path}}">{{ $test.path}}</a></td>
+      <td><a href="/docs/alerts/{{ $test.rule}}/">{{ $test.rule}}</a></td>
+      {{ if eq $test.result "Pass" }} 
+        <td><div class="scan-result-pass">&#10003; {{ $test.result}} </div></td>
+        <td></td>
+      {{ else }}
+        <td></td>
+        <td><div class="scan-result-fail">&#10060; {{ $test.result}} </div></td>
+      {{ end }} 
+    </tr>
+    {{ end }}

@@ -57,4 +57,8 @@ groups:
       - name: 'Internal Statistics'
         link: /docs/internal-statistics/
         desc: detailed information on the internal statistics ZAP maintains 
+
+      - name: 'Test Scans'
+        link: /docs/scans/
+        desc: the results of running ZAP vs well known deliberately vulnerable apps 
 ---

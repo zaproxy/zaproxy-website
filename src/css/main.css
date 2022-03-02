@@ -32,6 +32,7 @@
 @import 'components/tree';
 @import 'components/breadcrumbs';
 @import 'components/search';
+@import 'components/scans';
 @import 'type';
 @import 'spacing';
 @import 'page';

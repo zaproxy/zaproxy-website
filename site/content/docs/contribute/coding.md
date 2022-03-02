@@ -49,6 +49,8 @@ The following blog posts will help you get started with scan rules - they are a 
 * [Hacking ZAP #3 - Passive scan rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/)
 * [Hacking ZAP #4 - Active scan rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/)
 
+To see the results of ZAP running against well known vulnerable apps go to [ZAP Scans](/docs/scans/) - any issues that ZAP fails to find on these apps could be a good candidate for fixing.
+
 #### Projects
 
 We have a set of open issues labelled [project](https://github.com/zaproxy/zaproxy/issues?q=is%3Aopen+is%3Aissue+label%3A%22project%22+) - 
