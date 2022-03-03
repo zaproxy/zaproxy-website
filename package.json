@@ -49,7 +49,7 @@
     "plugin-error": "^1.0.1",
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.2.1",
-    "postcss-preset-env": "^7.4.1",
+    "postcss-preset-env": "^7.4.2",
     "rimraf": "^3.0.2",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
