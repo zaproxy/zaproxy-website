@@ -39,6 +39,9 @@ links:
     link: coding/
     desc: because writing code is key to all tools
 
+  - name: 'Scan Rules'
+    link: scan-rules/
+    desc: a great way to learn more about security without having to understand too much of the ZAP code base
 
   - name: 'Core Team'
     link: core-team/
