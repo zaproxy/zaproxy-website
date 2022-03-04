@@ -39,17 +39,7 @@ These should still be relatively straightforward but they are likely to be a bit
 
 #### Scan Rules
 
-Scan rules are a good place to start as they are relatively self contained and do not require a great understanding of the rest of the ZAP codebase.
-
-If you do not have a specific rule you would like to add / improve (and if you do not find a relevant issue that appeals to you) then try running ZAP against one of the many [deliberately vulnerable web applications](https://owasp.org/www-project-vulnerable-web-applications-directory/).
-
-You can see the list of current ZAP rules on the [Alert Details](/docs/alerts/) page.
-
-The following blog posts will help you get started with scan rules - they are a bit old but they are mostly still accurate:
-* [Hacking ZAP #3 - Passive scan rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/)
-* [Hacking ZAP #4 - Active scan rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/)
-
-To see the results of ZAP running against well known vulnerable apps go to [ZAP Scans](/docs/scans/) - any issues that ZAP fails to find on these apps could be a good candidate for fixing.
+Scan rules are such a good place to start that they have a page dedicated to them: [Contributing: Scan Rules](../scan-rules/).
 
 #### Projects
 
