@@ -1,0 +1,26 @@
+<table class="table market-table">
+    <thead  align="left">
+    <tr>
+        <th >Position</th>
+        <th >Alert</th>
+        <th>Status</th>
+        <th >Rule Type</th>
+    </tr>
+    </thead>
+    {{ range $index, $element := $.Site.Data.charts.top_false_positives_last_month }}
+      <tr>
+        <td >
+          {{ add $index 1 }}
+        </td>
+        <td >
+          <a href="/docs/alerts/{{ .id }}/">{{ .name }}</a>
+        </td>
+        <td >
+          {{ .status }}
+        </td>
+        <td >
+          {{ .type }}
+        </td>
+      </tr>
+    {{ end }}
+</table>

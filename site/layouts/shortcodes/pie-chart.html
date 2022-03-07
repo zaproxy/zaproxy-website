@@ -1,0 +1,29 @@
+<div>
+  {{ $name := .Get "name" }}
+  {{ $chart := index .Site.Data.charts ($name) }}
+
+  <h3>{{ $chart.title}}</h3>
+  {{ $chart.description }}
+
+  <script type="text/javascript">
+    google.charts.load("current", {packages:['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+      		  {{ range $data := $chart.data }} {{$data}}, {{ end }}
+          ]);
+
+        var view = new google.visualization.DataView(data);
+
+        var options = {
+          pieSliceText: 'label'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById("chart_{{ $name }}_values"));
+
+        chart.draw(data, options);
+     }
+  </script>
+<div id="chart_{{ $name }}_values" style="width: 100%; height: 400px;"></div>
+</div>

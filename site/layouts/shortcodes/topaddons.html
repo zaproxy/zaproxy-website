@@ -1,0 +1,36 @@
+<table class="table market-table">
+    <thead  align="left">
+    <tr>
+        <th >Position</th>
+        <th >Add-On</th>
+        <th >Status</th>
+        <th>Id</th>
+        <th >Last Updated</th>
+    </tr>
+    </thead>
+    {{ range $index, $element := $.Site.Data.charts.top_addons_last_month }}
+      {{ range first 1 (where $.Site.Data.addons "id" $element.id) }}
+      <tr>
+        <td >
+          {{ add $index 1 }}
+        </td>
+        <td >
+          {{ if .infoUrl }}
+            <a href="{{ .infoUrl}}">{{ .name }}</a>
+          {{ else }}
+            {{ .name }}
+          {{ end }}
+        </td>
+        <td >
+          {{ .status }}
+        </td>
+        <td >
+          {{ $element.id }}
+        </td>
+        <td >
+          {{ .date }}
+        </td>
+      </tr>
+      {{ end }}
+    {{ end }}
+</table>
