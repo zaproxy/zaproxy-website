@@ -180,9 +180,9 @@
   status: release
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.7.0/commonlib-release-1.7.0.zap
-  date: 2022-02-02
-  version: 1.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.8.0/commonlib-release-1.8.0.zap
+  date: 2022-03-07
+  version: 1.8.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -291,12 +291,12 @@
   name: Import/Export
   description: Import and Export functionality
   author: ZAP Dev Team & thatsn0tmysite
-  status: alpha
+  status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.0.1/exim-alpha-0.0.1.zap
-  date: 2021-12-22
-  version: 0.0.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.1.0/exim-beta-0.1.0.zap
+  date: 2022-03-07
+  version: 0.1.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities

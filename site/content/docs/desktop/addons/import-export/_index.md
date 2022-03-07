@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.0.1
+    version: 0.1.0
 ---
 
 # Save Selected Entries as HAR (HTTP Archive File)
@@ -31,7 +31,9 @@ Allows you to import log files from ModSecurity and files previously exported fr
 
 # Import URLs
 
-An option to import a file of URLs is available via the 'Import' menu ('Import a File Containing URLs'). The file must be plain text with one URL per line. Blank lines and lines starting with # will be ignored.
+An option to import a file of URLs is available via the 'Import' menu ('Import a File Containing URLs'). The file must be plain text with one URL per line. Blank lines and lines starting with # will be ignored.   
+
+It also supports the [Automation Framework](/docs/desktop/addons/import-export/automation/).
 
 # ZAP API
 
