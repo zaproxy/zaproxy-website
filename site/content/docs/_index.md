@@ -43,6 +43,10 @@ groups:
         link: /docs/docker/
         desc: detailed information on ZAP's Docker images 
     
+      - name: 'Statistics'
+        link: /docs/statistics/
+        desc: public ZAP usage statistics
+    
   - header: 'Internal Details'
     links:
 

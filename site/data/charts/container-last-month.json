@@ -1,0 +1,17 @@
+{
+  "title": "News Pings by Container in February 2022",
+  "description": "The number of News pings from ZAP by container in February 2022",
+  "data": [
+    ["Container", "Count"],
+    ["zap2docker-stable", 464099],
+    ["None", 326038],
+    ["zap2docker-live", 136651],
+    ["zap2docker-weekly", 67662],
+    ["snapcraft", 4390],
+    ["zap2docker-stable.webswing", 1713],
+    ["zap2docker-bare", 1587],
+    ["flatpak", 983],
+    ["zap2docker-weekly.webswing", 93],
+    ["zap2docker-live.webswing", 10]
+  ]
+}

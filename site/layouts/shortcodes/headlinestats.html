@@ -1,0 +1,38 @@
+<H4>Headline Statistics for {{ $.Site.Data.charts.headline.month }}</H4>
+
+<h5>
+<table class="table market-table">
+  <tr>
+    <td >
+      Number of Times ZAP was Started
+    </td>
+    <td  align='right'>
+      {{ $.Site.Data.charts.headline.zap_runs }}
+    </td>
+  </tr>
+  <tr>
+    <td >
+      Number of Active Scans
+    </td>
+    <td  align='right'>
+      {{ $.Site.Data.charts.headline.zap_ascans }}
+    </td>
+  </tr>
+  <tr>
+    <td >
+      Number of Alerts Raised
+    </td>
+    <td  align='right'>
+      {{ $.Site.Data.charts.headline.zap_alerts }}
+    </td>
+  </tr>
+  <tr>
+    <td >
+      Number of Active Scan Messages Sent
+    </td>
+    <td  align='right'>
+      {{ $.Site.Data.charts.headline.zap_attacks }}
+    </td>
+  </tr>
+</table>
+</h5>

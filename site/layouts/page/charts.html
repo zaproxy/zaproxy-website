@@ -10,7 +10,7 @@
 </section>
 <section class="wrapper py-70" data-kind="{{ .Kind }}">
   <article>
-
+  {{ if .Params.addBreadcrumbs }}{{partial "crumbs.html" . }}{{ end }}
 
 <main>{{- .Content -}}</main>
 

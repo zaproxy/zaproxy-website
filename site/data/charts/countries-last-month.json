@@ -1,0 +1,27 @@
+{
+  "title": "News Pings by Country in February 2022",
+  "description": "The number of News pings from ZAP by country in February 2022",
+  "data": [
+    ["Country", "Count"],
+    ["US", 362590],
+    ["DE", 191331],
+    ["IE", 81983],
+    ["SG", 38860],
+    ["IN", 38038],
+    ["NL", 34590],
+    ["SE", 28867],
+    ["GB", 26099],
+    ["FR", 19441],
+    ["JP", 14622],
+    ["CA", 14606],
+    ["BR", 10861],
+    ["ES", 8441],
+    ["AU", 7793],
+    ["TR", 7555],
+    ["IL", 6143],
+    ["RU", 5769],
+    ["PL", 5736],
+    ["IT", 5471],
+    ["CH", 5203]
+  ]
+}

@@ -58,5 +58,5 @@ menu:
       weight:  4
 
     - name:  Statistics
-      URL: /statistics/
+      URL: /docs/statistics/
       weight:  5

@@ -1,6 +1,6 @@
 ---
 type: "page"
-title: "Statistics"
+title: "Bar Charts"
 layout: charts
 ---
 We measure and record a range of statistics related to ZAP, some of which are made public here.
