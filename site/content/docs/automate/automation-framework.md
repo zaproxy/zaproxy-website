@@ -23,6 +23,12 @@ A longer term solution is being worked on.
 
 For details of how to get started with the framework see the main [framework help page](/docs/desktop/addons/automation-framework/).
 
+The framework supports:
+
+* [environment](/docs/desktop/addons/automation-framework/environment/) - which defines all of the applications the plan can act on
+* [Authentication](/docs/desktop/addons/automation-framework/authentication/) - all of the authentication mechanisms supported by ZAP
+* [Job Tests](/docs/desktop/addons/automation-framework/tests/) - which can be used to validate the outcome of jobs
+
 The full set of jobs currently supported by the framework and other add-ons are:
 
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
@@ -30,6 +36,7 @@ The full set of jobs currently supported by the framework and other add-ons are:
 * [alertFilter](/docs/desktop/addons/alert-filters/automation/) - alert filter configuration, provided with the [Alert Filters](/docs/desktop/addons/alert-filters/) add-on
 * [delay](/docs/desktop/addons/automation-framework/job-delay/) - waits for a specified time or until a condition is met
 * [graphql](/docs/desktop/addons/graphql-support/automation/) - GraphQL schema import, provided with the [GraphQL](/docs/desktop/addons/graphql-support/) add-on
+* [import](/docs/desktop/addons/import-export/automation/) - allows you to import HAR(HTTP Archive File), ModSecurity2 Logs, ZAP Messages or a file containing URLs locally
 * [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided with the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
