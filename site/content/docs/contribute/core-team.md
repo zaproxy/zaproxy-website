@@ -12,7 +12,7 @@ It is also a team - we work together in a collaborative way to make ZAP a better
 Decisions are made as a group, no one person makes the final decision - either we all agree or we work out a way to ensure everyone is happy with a given approach.
 
 The Core Team communicates very regularly in [IRC](https://web.libera.chat/#zaproxy) and have a 45 min weekly meeting on Fridays at 15:00 UTC.
-This meeting is open to anyone who is interested in ZAP development - [get in contact]((mailto:zaproxy-admin@googlegroups.com)) with us to receive an invite.
+This meeting is open to anyone who is interested in ZAP development - [get in contact](mailto:zaproxy-admin@googlegroups.com) with us to receive an invite.
 
 We are always looking for new people to join the Core Team, but only people who have significantly contributed to ZAP and work with us to make ZAP a better project will be invited to join.
 
