@@ -22,8 +22,6 @@ try.
 Failing that you can try to convince someone else to implement it for you. The
 [ZAP Developer Group](https://groups.google.com/group/zaproxy-develop) is a
 good place to find people interested in working on ZAP. 
-The [Bounty Source](https://www.bountysource.com/teams/zap/issues) site allows you to put
-bounties on ZAP features, so that might be a suitable incentive for someone.
 
 And the final option is to implement it yourself.
 
