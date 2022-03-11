@@ -77,7 +77,7 @@ You can run the Automation Framework in docker using the zap.yaml file in the cu
 ```bash
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap.sh -cmd -autorun /zap/wrk/zap.yaml
 ```
-NOTE: Linux users can use $(pwd).Windows users can replace ($pwd) with 'C:\your\working\directory'.
+Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory (ex: `C:\your\working\directory\`).
 
 If you want to make sure that ZAP is up to date before running the yaml file then the recommended approach is:
 
@@ -90,8 +90,6 @@ The latest version of the Automation Framework will set the ZAP exit value based
 ```bash
 docker container run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap.sh -cmd -autorun /zap/wrk/zap.yaml
 ```
-
-Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
 
 ### ZAP GUI in a Browser
 Yes, you can run the ZAP Desktop GUI in a browser. You can use it in just the same way as the Swing UI and can even proxy via it.<br>
