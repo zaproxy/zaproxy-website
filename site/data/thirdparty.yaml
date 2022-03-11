@@ -91,6 +91,10 @@ services:
     link: https://www.nucleussec.com/integrations
     license: 'Commercial'
 
+  - name: 'SOOS'
+    link: https://soos.io/soos-dast-no-limit/
+    license: 'Commercial'
+
   # Open source, no longer maintained?, alphabetic
   - name: 'BDD Security'
     link: https://github.com/iriusrisk/bdd-security
