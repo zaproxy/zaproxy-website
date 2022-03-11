@@ -77,6 +77,8 @@ You can run the Automation Framework in docker using the zap.yaml file in the cu
 ```bash
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap.sh -cmd -autorun /zap/wrk/zap.yaml
 ```
+Linux users can use $(pwd).
+Windows users can replace ($pwd) with 'C:\your\working\directory'
 
 If you want to make sure that ZAP is up to date before running the yaml file then the recommended approach is:
 
