@@ -5,6 +5,11 @@ title: "OWASP ZAP"
 enableEmoji: true
 summaryLength: 48
 
+markup:
+  goldmark:
+    extensions:
+      linkifyProtocol: http
+
 taxonomies:
   tag: "tags"
   successtag: "successtags"
