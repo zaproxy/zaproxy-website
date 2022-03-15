@@ -1,0 +1,31 @@
+<div>
+
+<script type="text/javascript">
+    function showHide(name) {
+        for (let e of document.getElementsByClassName(name)) {
+	        if (e.style.display === "none") {
+	            e.style.display = "";
+	        } else {
+	            e.style.display = "none";
+	        }
+	    }
+    }
+</script>
+
+  <table class="SpiderResultsTable" style="resize: none">
+    <colgroup>
+      <col width="70%" />
+      <col width="20%" />
+      <col width="10%" />
+    </colgroup>
+    <tr>
+      <th>Section</th>
+      <th></th>
+      <th>Score</th>
+    </tr>
+
+    {{ .Inner }}
+    
+  </table>
+
+</div>

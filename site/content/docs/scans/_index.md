@@ -5,7 +5,10 @@ layout: links
 links:
   - name: 'Google Firing Range'
     link: firingrange
-    desc: 
+    desc: a test bed for automated web application security scanners (unmaintained)
+  - name: 'Google Security Crawl Maze'
+    link: crawlmaze
+    desc: a comprehensive testbed for web security crawlers (maintained)
 EditableContent: true
 cascade:
   addBreadcrumbs: true
