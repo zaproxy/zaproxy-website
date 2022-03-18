@@ -6,27 +6,30 @@
     <tr>
       <td><h5><a href="#section-{{ $section }}" onclick="showHide('scan-{{ $section }}')" id="section-{{ $section }}">{{ $data.section}}</a></h5></td>
       <td></td>
-      <td><h5>{{ $data.score}}</h5></td>
+      <td align="center"><h5>{{ $data.score}}</h5></td>
     </tr>
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
       <th style="width: 70%">Individual Tests</th>
-      <th>Pass</th>
-      <th>Fail</th>
+      <th>Standard</th>
+      <th>Ajax</th>
     </tr>
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
-      <td>Top Level: <a href="{{ $data.url}}/" id="section-{{ $section }}">{{ $data.url}}</a></td>
-      <td align="center">{{ $data.passes}}</td>
-      <td align="center">{{ $data.fails}}</td>
+      <td>Top Level: <a href="https://{{ $data.target}}/" id="section-{{ $section }}">https://{{ $data.target}}</a></td>
+      <td align="center">{{ $data.standardPasses}}</td>
+      <td align="center">{{ $data.ajaxPasses}}</td>
     </tr>
     {{ range $test := $data.details }} 
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
-      <td><a href="{{ $data.url}}{{ $test.path}}">{{ $test.path}}</a></td>
-      {{ if eq $test.result "FAIL" }} 
-        <td></td>
-        <td><div class="scan-result-fail">&#10060; {{ $test.result}} </div></td>
+      <td><a href="{{ $test.scheme}}://{{ $data.target}}{{ $test.path}}">{{ $test.path}}</a></td>
+      {{ if eq $test.standard "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.standard}} </div></td>
       {{ else }}
-        <td><div class="scan-result-pass">&#10003; {{ $test.result}} </div></td>
-        <td></td>
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.standard}} </div></td>
+      {{ end }} 
+      {{ if eq $test.ajax "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.ajax}} </div></td>
+      {{ else }}
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.ajax}} </div></td>
       {{ end }} 
     </tr>
     {{ end }}
