@@ -113,13 +113,13 @@ details:
   result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_assignment
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_comment
   result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/js_eval
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_quoted_string
   result: Pass
@@ -128,7 +128,7 @@ details:
   result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/js_slashquoted_string
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/tagname
   result: FAIL
@@ -137,6 +137,6 @@ details:
   result: FAIL
   rule: 40012
 tests: 45
-passes: 11
-fails: 34
-score: 24%
+passes: 8
+fails: 37
+score: 18%
