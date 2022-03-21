@@ -2,8 +2,8 @@ section: All URLs
 target: security-crawl-maze.app
 details:
 - path: /test/css/font-face.found
-  scheme: http
-  standard: Pass
+  scheme: https
+  standard: FAIL
   ajax: FAIL
 - path: /test/headers/content-location.found
   scheme: https
@@ -14,9 +14,9 @@ details:
   standard: Pass
   ajax: FAIL
 - path: /test/headers/location.found
-  scheme: http
-  standard: Pass
-  ajax: Pass
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
 - path: /test/headers/refresh.found
   scheme: https
   standard: Pass
@@ -47,11 +47,11 @@ details:
   ajax: Pass
 - path: /test/html/body/applet/archive.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/applet/codebase.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/blockquote/cite.found
   scheme: https
@@ -67,7 +67,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/form/action-post.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
 - path: /test/html/body/form/button/formaction.found
   scheme: https
@@ -75,7 +75,7 @@ details:
   ajax: Pass
 - path: /test/html/body/frameset/frame/src.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: Pass
 - path: /test/html/body/iframe/src.found
   scheme: https
@@ -87,11 +87,11 @@ details:
   ajax: Pass
 - path: /test/html/body/img/dynsrc.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/img/lowsrc.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/img/longdesc.found
   scheme: https
@@ -115,7 +115,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/input/src.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: Pass
 - path: /test/html/body/isindex/action.found
   scheme: https
@@ -123,7 +123,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/map/area/ping.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
 - path: /test/html/body/object/data.found
   scheme: https
@@ -202,12 +202,12 @@ details:
   standard: Pass
   ajax: FAIL
 - path: /test/html/misc/url/full-url.found
-  scheme: http
-  standard: Pass
+  scheme: https
+  standard: FAIL
   ajax: FAIL
 - path: /test/html/misc/url/path-relative-url.found
-  scheme: http
-  standard: Pass
+  scheme: https
+  standard: FAIL
   ajax: FAIL
 - path: /test/html/misc/url/protocol-relative-url.found
   scheme: https
@@ -234,12 +234,12 @@ details:
   standard: FAIL
   ajax: FAIL
 - path: /test/javascript/misc/comment.found
-  scheme: http
-  standard: Pass
+  scheme: https
+  standard: FAIL
   ajax: FAIL
 - path: /test/javascript/misc/string-variable.found
-  scheme: http
-  standard: Pass
+  scheme: https
+  standard: FAIL
   ajax: FAIL
 - path: /test/javascript/misc/string-concat-variable.found
   scheme: https
@@ -278,12 +278,12 @@ details:
   standard: Pass
   ajax: FAIL
 - path: /test/misc/known-files/sitemap.xml.found
-  scheme: http
-  standard: Pass
+  scheme: https
+  standard: FAIL
   ajax: FAIL
 tests: 70
-passes: 43
-standardPasses: 30
-ajaxPasses: 21
-fails: 27
-score: 61%
+passes: 38
+standardPasses: 25
+ajaxPasses: 20
+fails: 32
+score: 54%
