@@ -13,10 +13,11 @@ authors:
     - simon
 ---
 ## Overview
+
 A vulnerability has been found in Log4j which can result in Remote Code Execution (RCE):
 [CVE-2021-44228](https://www.lunasec.io/docs/blog/log4j-zero-day/) also known as [Log4Shell](https://www.randori.com/blog/cve-2021-44228/).
 
-ZAP 2.11.0 and the previous weekly and dev versions of ZAP use Log4j 2.14.1 which is known to be vulnerable.
+ZAP 2.11.0 and the previous weekly and dev versions of ZAP use Log4j 2.14.1 which is known to be vulnerable. There may well be ways to abuse ZAP versions <=2.11.0 that we have not yet discovered or anticipated, please upgrade at your earliest opportunity.
 
 ## ZAP 2.11.1
 
@@ -29,8 +30,8 @@ All of the packages maintained by the core team have been updated and we have no
 
 ## Updated Advice for Older Versions
 
-First the good news - ZAP does __not__ typically log strings that could be used to exploit this vulnerability out of the box,
-so the exposure to this vulnerability should be limited.
+First the good news - ZAP does __not typically__ log strings that could be used to exploit this vulnerability out of the box,
+so the exposure to this vulnerability __should__ be limited.
 
 If you have not changed the default ZAP Log4j settings and have not exposed the ZAP API to untrusted addresses (which we do not advise) 
 then at this stage we believe that you will not be vulnerable.
@@ -46,11 +47,11 @@ If you cannot update to 2.11.1 right now then we do recommend that you:
 
 To turn ZAP logging off see the FAQ: [How do you configure ZAP logging?](https://www.zaproxy.org/faq/how-do-you-configure-zap-logging/)
 and change all logging levels to "off" e.g.
-```
+
+```text
 rootLogger.level = off
 
 logger.paros.level = off
 
 logger.zap.level = off
 ```
-
