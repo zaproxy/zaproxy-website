@@ -47,9 +47,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v45/ascanrules-release-45.zap
-  date: 2022-03-15
-  version: 45
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v46/ascanrules-release-46.zap
+  date: 2022-03-21
+  version: 46
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha quality Active Scanner rules
@@ -180,9 +180,9 @@
   status: release
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.8.0/commonlib-release-1.8.0.zap
-  date: 2022-03-07
-  version: 1.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.9.0/commonlib-release-1.9.0.zap
+  date: 2022-03-21
+  version: 1.9.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
