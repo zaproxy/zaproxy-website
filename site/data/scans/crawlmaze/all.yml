@@ -63,11 +63,11 @@ details:
   ajax: Pass
 - path: /test/html/body/form/action-get.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/form/action-post.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/form/button/formaction.found
   scheme: https
@@ -282,8 +282,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 70
-passes: 46
-standardPasses: 34
+passes: 48
+standardPasses: 36
 ajaxPasses: 21
-fails: 24
-score: 66%
+fails: 22
+score: 69%
