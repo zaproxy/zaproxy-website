@@ -47,11 +47,11 @@ details:
   ajax: Pass
 - path: /test/html/body/applet/archive.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/applet/codebase.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/blockquote/cite.found
   scheme: https
@@ -67,7 +67,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/form/action-post.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
 - path: /test/html/body/form/button/formaction.found
   scheme: https
@@ -75,7 +75,7 @@ details:
   ajax: Pass
 - path: /test/html/body/frameset/frame/src.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: Pass
 - path: /test/html/body/iframe/src.found
   scheme: https
@@ -87,11 +87,11 @@ details:
   ajax: Pass
 - path: /test/html/body/img/dynsrc.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/img/lowsrc.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/img/longdesc.found
   scheme: https
@@ -115,7 +115,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/input/src.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: Pass
 - path: /test/html/body/isindex/action.found
   scheme: https
@@ -123,7 +123,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/map/area/ping.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
 - path: /test/html/body/object/data.found
   scheme: https
@@ -282,8 +282,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 70
-passes: 43
-standardPasses: 30
+passes: 45
+standardPasses: 32
 ajaxPasses: 21
-fails: 27
-score: 61%
+fails: 25
+score: 64%
