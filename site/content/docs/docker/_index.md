@@ -26,6 +26,11 @@ links:
   - name: 'Webswing'
     link: webswing/
     desc: you can run the ZAP Desktop UI in your browser leveraging Docker and Webswing
+    
+  - name: 'Diagnosing Docker Problems'
+    link: diagnosing-problems/
+    desc: how to resolve problems running ZAP in Docker
+
 cascade:
   EditableContent: true
 ---
