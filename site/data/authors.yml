@@ -75,3 +75,9 @@ bemodtwz:
   picture: /img/authors/bemodtwz_400x400.jpg
   twitter: bemodtwz
   is_core: false
+
+jan:
+  name: Ján Ambroz
+  picture: /img/authors/jan-ambroz_400x400.jpg
+  twitter: jan_ambroz_jr
+  is_core: false
