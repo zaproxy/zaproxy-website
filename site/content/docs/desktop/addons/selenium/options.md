@@ -22,6 +22,7 @@ This screen allows you to setup the requirements of some of the WebDrivers.
 
 |   Field   |                                                         Details                                                         | Default |                                   Config File                                   |
 |-----------|-------------------------------------------------------------------------------------------------------------------------|---------|---------------------------------------------------------------------------------|
+| Chrome    | This allows you to select the location of Chrome binary (for example, to use a version other than the system default).  | (None)  | Key: `selenium.chromeBinary` Value: file system path to the Chrome binary       |
 | Firefox   | This allows you to select the location of Firefox binary (for example, to use a version other than the system default). | (None)  | Key: `selenium.firefoxBinary` Value: file system path to the Firefox binary     |
 | PhantomJS | This allows you to select the location of PhantomJS binary.                                                             | (None)  | Key: `selenium.phantomJsBinary` Value: file system path to the PhantomJS binary |
 
