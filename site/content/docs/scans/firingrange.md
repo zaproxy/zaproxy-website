@@ -25,6 +25,8 @@ Changes which find any of the missed vulnerabilities are eligible for a bounty v
 
   {{< scan-results target= "firingrange" section="reverseclickjacking">}}
 
+  {{< scan-results target= "firingrange" section="leakedcookie">}}
+
   {{< scan-results target= "firingrange" section="invalidframing">}}
 
 {{< /scan-table >}}
