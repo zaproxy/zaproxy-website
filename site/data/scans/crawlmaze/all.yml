@@ -59,7 +59,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/embed/src.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: Pass
 - path: /test/html/body/form/action-get.found
   scheme: https
@@ -283,7 +283,7 @@ details:
   ajax: FAIL
 tests: 70
 passes: 48
-standardPasses: 36
+standardPasses: 37
 ajaxPasses: 21
 fails: 22
 score: 69%
