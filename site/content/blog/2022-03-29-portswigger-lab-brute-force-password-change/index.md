@@ -20,9 +20,7 @@ authors:
 The [PortSwigger WebSecurity Academy](https://portswigger.net/web-security) is a great way to learn more about web security, 
 but not too surprisingly it is also intended as a showcase for Burp Suite.
 
-However you can of course use ZAP instead of Burp, even those labs which require Burp Pro.
-
-In this series of ZAP Blog posts I will show you how.
+However you can of course use ZAP instead of Burp, and in this series of ZAP Blog posts I will show you how.
 
 The first lab has the tag PRACTITIONER and you can find it [here](https://portswigger.net/web-security/authentication/other-mechanisms/lab-password-brute-force-via-password-change). 
 I want to show you how to solve this lab using ZAP and specifically the [Fuzzer](/docs/desktop/addons/fuzzer/) tool.
