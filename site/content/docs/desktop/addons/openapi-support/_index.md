@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 26.0.0
+    version: 27.0.0
 ---
 
 # OpenAPI Support
@@ -25,7 +25,7 @@ It also supports the [Automation Framework](/docs/desktop/addons/openapi-support
 * Import an OpenAPI definition from the local file system
 * Import an OpenAPI definition from a URL
 
-Both dialogues allow to override the server URL present in the OpenAPI definition (or specify one if not present) through the Target URL field.
+Both dialogues allow to override the server URL present in the OpenAPI definition (or specify one if not present) through the Target URL field. The import progress is shown in the progress tab.
 
 ### Target URL Format
 
