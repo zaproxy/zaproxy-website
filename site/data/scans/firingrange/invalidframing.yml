@@ -1,28 +1,31 @@
 section: Invalid framing configuration
-url: https://public-firing-range.appspot.com/invalidframingconfig
+url: https://public-firing-range.appspot.com/invalidframing
 details:
-- path: /frameancestorsnonenoxfodeny
-  result: Pass
-  rule: 10055
-- path: /frameancestorsnoxfoallowfrom
-  result: Pass
-  rule: 10055
-- path: /frameancestorsselfnoxfosameorigin
-  result: Pass
-  rule: 10055
-- path: /xfoallowfromnocoverdomain
-  result: Pass
-  rule: 10055
-- path: /xfoallowfromnoframeancestors
+- path: config/
   result: Pass
   rule: 10020
-- path: /xfodenynoframeancestorsnone
+- path: config/frameancestorsnonenoxfodeny
   result: Pass
   rule: 10055
-- path: /xfosameoriginnoframeancestorsself
+- path: config/frameancestorsnoxfoallowfrom
   result: Pass
   rule: 10055
-tests: 7
-passes: 7
+- path: config/frameancestorsselfnoxfosameorigin
+  result: Pass
+  rule: 10055
+- path: config/xfoallowfromnocoverdomain
+  result: Pass
+  rule: 10055
+- path: config/xfoallowfromnoframeancestors
+  result: Pass
+  rule: 10020
+- path: config/xfodenynoframeancestorsnone
+  result: Pass
+  rule: 10055
+- path: config/xfosameoriginnoframeancestorsself
+  result: Pass
+  rule: 10055
+tests: 8
+passes: 8
 fails: 0
 score: 100%
