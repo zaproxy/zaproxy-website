@@ -23,6 +23,27 @@ If `curl` cannot access your target app then this is a Docker networking issue r
 If you are running your target app in another Docker container then see the ZAP Docker User Guide: 
 [Scanning an app running in another Docker container](../about/#scanning-an-app-running-in-another-docker-container). 
 
+## Cannot Access Created Files
+
+Any files created in a docker image will be lost when that image stops unless you map a local drive using the Docker `-v` option.
+
+For the packaged scans you need to map a drive to `/zap/wrk`.
+
+On Linux / MacOS you can do this using the Docker option `-v $(pwd):/zap/wrk/:rw`.
+
+On Windows you need to specify the full local directory name e.g. `-v C:\temp:/zap/wrk/:rw`.
+
+If you cannot see files that should be being created then first check to make sure they are created in the mapped drive.
+
+If they are then check that any file can be created - the following command should create the file `test.txt` in the CWD on Linux / MacOS.
+
+```bash
+docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable touch /zap/wrk/test.txt
+```
+
+If this does not work then there is a permission issue in your environment - no ZAP options will be able to work around that.
+
+
 ## ZAP Fails for Another Reason
 
 If ZAP is failing for another reason then you will need to look in the log file.
