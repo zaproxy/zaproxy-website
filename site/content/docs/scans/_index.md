@@ -9,6 +9,9 @@ links:
   - name: 'Google Security Crawl Maze'
     link: crawlmaze
     desc: a comprehensive testbed for web security crawlers (maintained)
+  - name: 'Websites Vulnerable to SSTI'
+    link: ssti
+    desc: a set of simple servers which are vulnerable to Server Side Template Injection (maintained)
 EditableContent: true
 cascade:
   addBreadcrumbs: true

@@ -1,0 +1,74 @@
+{{ $target := .Get "target" }}
+{{ $section := .Get "section" }}
+{{ $data := index .Site.Data.scans ($target) ($section) }}
+
+<div>
+
+  <table class="sstiResultsTable" style="resize: none">
+    <colgroup>
+      <col width="25%" />
+      <col width="15%" />
+      <col width="15%" />
+      <col width="15%" />
+      <col width="15%" />
+      <col width="15%" />
+    </colgroup>
+    <tr>
+      <th>Section</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Score</th>
+    </tr>
+
+    <tr>
+      <td><h5>{{ $data.section }}</h5></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td align="center"><h5>{{ $data.score}}</h5></td>
+    </tr>
+    <tr class="scan-{{ $section }}">
+      <th>Individual Tests</th>
+      <th><a href="/docs/alerts/40012/">Reflected XSS</a></th>
+      <th><a href="/docs/alerts/40026/">DOM XSS</a></th>
+      <th><a href="/docs/alerts/90025/">Expr Lang Inj</a></th>
+      <th><a href="/docs/alerts/90019/">Server Code Inj</a></th>
+      <th>Result</th>
+    </tr>
+    {{ range $test := $data.details }} 
+    <tr class="scan-{{ $section }}">
+      <td>{{ $test.title}}</a></td>
+      {{ if eq $test.rule_40012 "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_40012}} </div></td>
+      {{ else }}
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_40012}} </div></td>
+      {{ end }} 
+      {{ if eq $test.rule_40026 "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_40026}} </div></td>
+      {{ else }}
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_40026}} </div></td>
+      {{ end }} 
+      {{ if eq $test.rule_90025 "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_90025}} </div></td>
+      {{ else }}
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90025}} </div></td>
+      {{ end }} 
+      {{ if eq $test.rule_90019 "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_90019}} </div></td>
+      {{ else }}
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90019}} </div></td>
+      {{ end }} 
+      {{ if eq $test.any "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.any}} </div></td>
+      {{ else }}
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.any}} </div></td>
+      {{ end }} 
+    </tr>
+    {{ end }}
+    
+  </table>
+
+</div>
