@@ -1,0 +1,237 @@
+section: All URLs
+details:
+- title: 'Jinja2 - Python'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Mako - Python'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: Pass
+  any: Pass
+- title: '(Code eval) - Python'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '(Code exec) - Python'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Smarty - PHP'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: Pass
+  any: Pass
+- title: 'Smarty (secure mode) - PHP'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: Pass
+  any: Pass
+- title: 'Twig - PHP'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '(Code eval) - PHP'
+  rule_40012: FAIL
+  rule_40026: FAIL
+  rule_90019: Pass
+  rule_90025: FAIL
+  any: Pass
+- title: 'FreeMarker - Java'
+  rule_40012: FAIL
+  rule_40026: FAIL
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: FAIL
+- title: 'Velocity - Java'
+  rule_40012: FAIL
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Thymeleaf - Java '
+  rule_40012: FAIL
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Jade - Nodejs'
+  rule_40012: Pass
+  rule_40026: FAIL
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Nunjucks - JavaScript'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'doT - JavaScript'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Dust - JavaScript'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'EJS - JavaScript'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '(Code eval) - JavaScript'
+  rule_40012: FAIL
+  rule_40026: FAIL
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: FAIL
+- title: 'VueJs - JavaScript'
+  rule_40012: FAIL
+  rule_40026: FAIL
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: FAIL
+- title: 'Slim - Ruby'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'ERB - Ruby'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '(Code eval) - Ruby'
+  rule_40012: FAIL
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'go - go'
+  rule_40012: Pass
+  rule_40026: FAIL
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Input rendered in other location'
+  rule_40012: FAIL
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Rendering result not visible to attacker'
+  rule_40012: FAIL
+  rule_40026: FAIL
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: FAIL
+- title: 'Input inserted in the middle of template code math operations'
+  rule_40012: FAIL
+  rule_40026: FAIL
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: FAIL
+- title: 'Non Vulnerable'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: 'Input inserted in the middle of template code text'
+  rule_40012: Pass
+  rule_40026: FAIL
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '{ } Python Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: Pass
+  any: Pass
+- title: '${ } Python Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: Pass
+  any: Pass
+- title: '{{ }} Python Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '<%= %> Python Eval ERB'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '#{ } Python Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '{{= }} Python Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '{ } Ruby Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: Pass
+  any: Pass
+- title: '${ } Ruby Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: Pass
+  any: Pass
+- title: '{{ }} Ruby Eval YBNE Nunjucks'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '<%= %> Ruby Eval Erb'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '#{ } Ruby Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+- title: '{{= }} Ruby Eval'
+  rule_40012: Pass
+  rule_40026: Pass
+  rule_90019: FAIL
+  rule_90025: FAIL
+  any: Pass
+score: 87%
