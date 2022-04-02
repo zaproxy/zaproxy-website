@@ -408,7 +408,7 @@
   language: English
   has_talks: Y
   has_training: Y
-  notes: ZAP Evangelist, <a href="https://blog.rubidus.com/" rel="nofollow">blog</a>
+  notes: ZAP Evangelist
 
 - name: Omer Levi Hevroni
   email: omerlh@gmail.com 
@@ -477,7 +477,7 @@
   language: English
   has_talks: Y
   has_training: N
-  notes: ZAP for Penetration Testing and Automation Testing. <a href="https://www.slideshare.net/MohammadFebri1/owasp-risk-rating-management-project" rel="nofollow">Slides</a>
+  notes: ZAP for Penetration Testing and Automation Testing.
 
 - name: Takanori Matsumoto
   email: nilfigo@gmail.com 
