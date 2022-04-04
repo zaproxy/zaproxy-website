@@ -3,6 +3,7 @@ title: "Hacking ZAP #3 - Passive scan rules"
 type: post
 tags:
  - hacking
+ - scanrules
 date: "2014-04-03"
 authors:
     - simon

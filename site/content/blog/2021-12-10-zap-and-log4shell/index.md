@@ -8,6 +8,7 @@ tags:
 - blog
 - advisory
 - log4shell
+- scanrules
 date: "2021-12-10"
 authors: 
     - simon
