@@ -57,9 +57,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v36/ascanrulesAlpha-alpha-36.zap
-  date: 2022-02-15
-  version: 36
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v37/ascanrulesAlpha-alpha-37.zap
+  date: 2022-04-04
+  version: 37
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta quality Active Scanner rules
