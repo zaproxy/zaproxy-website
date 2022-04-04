@@ -83,6 +83,10 @@ services:
     license: 'Commercial, free option'
 
   # Commercial, alphabetic
+  - name: 'Blacklock'
+    link: https://blacklock.io/
+    license: 'Commercial'
+
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
     license: 'Commercial'
