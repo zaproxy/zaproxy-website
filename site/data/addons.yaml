@@ -712,9 +712,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v39/pscanrules-release-39.zap
-  date: 2022-03-07
-  version: 39
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v40/pscanrules-release-40.zap
+  date: 2022-04-05
+  version: 40
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha quality Passive Scanner rules
@@ -732,9 +732,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v28/pscanrulesBeta-beta-28.zap
-  date: 2021-12-01
-  version: 28
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v29/pscanrulesBeta-beta-29.zap
+  date: 2022-04-05
+  version: 29
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
