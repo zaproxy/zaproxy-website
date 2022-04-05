@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 39.0.0
+    version: 40.0.0
 ---
 
 # Passive Scan Rules
@@ -70,6 +70,17 @@ Further reference:
 <http://www.w3.org/TR/html5/document-metadata.html#charset>
 
 Latest code: [CharsetMismatchScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CharsetMismatchScanRule.java)
+
+## Content Security Policy (CSP) Header Not Set
+
+This checks HTML response headers for the presence of a Content Security Policy header.  
+By default this rule checks for the presence of the "Content-Security-Policy" header, and at the Low threshold also checks for the "X-Content-Security-Policy" and "X-WebKit-CSP" headers.  
+Redirects and non HTML responses are ignored except at the Low threshold.
+
+If a "Content-Security-Policy-Report-Only" header is found on a response an INFO alert is raised. This may represent an enforcement effort
+that is actively being refined or developed, or one which is only partially implemented.
+
+Latest code: [ContentSecurityPolicyMissingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ContentSecurityPolicyMissingScanRule.java)
 
 ## Content Type Missing
 

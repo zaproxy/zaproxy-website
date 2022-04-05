@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: 28.0.0
+    version: 29.0.0
 ---
 
 # Passive Scan Rules - Beta
@@ -24,17 +24,6 @@ Latest code: [BigRedirectsScanRule.java](https://github.com/zaproxy/zap-extensio
 This check looks at user-supplied input in query string parameters and POST data to identify where cookie parameters might be controlled. This is called a cookie poisoning attack, and becomes exploitable when an attacker can manipulate the cookie in various ways. In some cases this will not be exploitable, however, allowing URL parameters to set cookie values is generally considered a bug.
 
 Latest code: [UserControlledCookieScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/UserControlledCookieScanRule.java)
-
-## Content Security Policy (CSP) Header Not Set
-
-This checks HTML response headers for the presence of a Content Security Policy header.  
-By default this rule checks for the presence of the "Content-Security-Policy" header, and at the Low threshold also checks for the "X-Content-Security-Policy" and "X-WebKit-CSP" headers.  
-Redirects and non HTML responses are ignored except at the Low threshold.
-
-If a "Content-Security-Policy-Report-Only" header is found on a response an INFO alert is raised. This may represent an enforcement effort
-that is actively being refined or developed, or one which is only partially implemented.
-
-Latest code: [ContentSecurityPolicyMissingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/ContentSecurityPolicyMissingScanRule.java)
 
 ## Directory Browsing
 
