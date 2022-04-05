@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.13.0/automation-beta-0.13.0.zap
-  date: 2022-02-25
-  version: 0.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.14.0/automation-beta-0.14.0.zap
+  date: 2022-04-05
+  version: 0.14.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -377,9 +377,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.8.0/graphql-alpha-0.8.0.zap
-  date: 2022-02-02
-  version: 0.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.9.0/graphql-alpha-0.9.0.zap
+  date: 2022-04-05
+  version: 0.9.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -782,9 +782,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.12.0/reports-release-0.12.0.zap
-  date: 2022-02-11
-  version: 0.12.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.13.0/reports-release-0.13.0.zap
+  date: 2022-04-05
+  version: 0.13.0
 - id: requester
   name: Requester
   description: Request numbered panel.
