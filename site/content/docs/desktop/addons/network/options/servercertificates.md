@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Server Certificates
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # Server Certificates
