@@ -46,6 +46,10 @@ services:
     link: https://github.com/microsoft/rest-api-fuzz-testing
     license: 'Free, open source'
 
+  - name: 'Ostorlab'
+    link: https://github.com/Ostorlab/ostorlab
+    license: 'Free, open source'
+
   - name: 'RedHat RapiDAST'
     link: https://github.com/RedHatProductSecurity/rapidast
     license: 'Free, open source'
