@@ -6,15 +6,19 @@
 
   <table class="sstiResultsTable" style="resize: none">
     <colgroup>
-      <col width="25%" />
-      <col width="15%" />
-      <col width="15%" />
-      <col width="15%" />
-      <col width="15%" />
-      <col width="15%" />
+      <col width="30%" />
+      <col width="10%" />
+      <col width="10%" />
+      <col width="10%" />
+      <col width="10%" />
+      <col width="10%" />
+      <col width="10%" />
+      <col width="10%" />
     </colgroup>
     <tr>
       <th>Section</th>
+      <th></th>
+      <th></th>
       <th></th>
       <th></th>
       <th></th>
@@ -28,6 +32,8 @@
       <td></td>
       <td></td>
       <td></td>
+      <td></td>
+      <td></td>
       <td align="center"><h5>{{ $data.score}}</h5></td>
     </tr>
     <tr class="scan-{{ $section }}">
@@ -36,6 +42,8 @@
       <th><a href="/docs/alerts/40026/">DOM XSS</a></th>
       <th><a href="/docs/alerts/90025/">Expr Lang Inj</a></th>
       <th><a href="/docs/alerts/90019/">Server Code Inj</a></th>
+      <th><a href="/docs/alerts/90035/">SSTI</a></th>
+      <th><a href="/docs/alerts/90036/">SSTI Blind</a></th>
       <th>Result</th>
     </tr>
     {{ range $test := $data.details }} 
@@ -61,6 +69,16 @@
       {{ else }}
         <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90019}} </div></td>
       {{ end }} 
+      {{ if eq $test.rule_90035 "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_90035}} </div></td>
+      {{ else }}
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90035}} </div></td>
+      {{ end }} 
+      {{ if eq $test.rule_90036 "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_90036}} </div></td>
+      {{ else }}
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90036}} </div></td>
+      {{ end }} 
       {{ if eq $test.any "FAIL" }} 
         <td align="center"><div class="scan-result-fail">&#10060; {{ $test.any}} </div></td>
       {{ else }}
@@ -68,6 +86,16 @@
       {{ end }} 
     </tr>
     {{ end }}
+    <tr>
+      <td><h5>Total Passes</h5></td>
+      <td align="center"><h5>{{ $data.rule_40012_score }}</h5></td>
+      <td align="center"><h5>{{ $data.rule_40026_score }}</h5></td>
+      <td align="center"><h5>{{ $data.rule_90025_score }}</h5></td>
+      <td align="center"><h5>{{ $data.rule_90019_score }}</h5></td>
+      <td align="center"><h5>{{ $data.rule_90035_score }}</h5></td>
+      <td align="center"><h5>{{ $data.rule_90036_score }}</h5></td>
+      <td align="center"><h5>{{ $data.any_score }}</h5></td>
+    </tr>
     
   </table>
 
