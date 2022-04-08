@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: 37.0.0
+    version: 38.0.0
 ---
 
 # Active Scan Rules - Alpha
@@ -82,3 +82,15 @@ Latest code: [ExponentialEntityExpansionScanRule.java](https://github.com/zaprox
 This rule attempts to discover the Spring4Shell ([CVE-2022-22965](https://tanzu.vmware.com/security/cve-2022-22965) vulnerability. It uses a payload of `class.module.classLoader.DefaultAssertionStatus=nonsense` on all nodes and raises an alert if this payload results in a 400 response. It will not raise an alert if a similar but safe payload also results in a 400 response.
 
 Latest code: [Spring4ShellScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/Spring4ShellScanRule.java)
+
+## Server Side Template Injection
+
+This rule attempts to detect situations in which user input might be interpreted as part of the template and processed on the server, versus the user input simply being used as an argument to the template/engine.
+
+Latest code: [SstiScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/SstiScanRule.java)
+
+## Server Side Template Injection (Blind)
+
+This rule goes one step further than the SSTI scan rule and attempts to find places where the impact of the user input is not immediately obvious, such as when used by an admin panel, report output, invoice, etc.
+
+Latest code: [SstiBlindScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/SstiBlindScanRule.java)
