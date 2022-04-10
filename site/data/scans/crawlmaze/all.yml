@@ -160,7 +160,7 @@ details:
 - path: /test/html/body/video/src.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
 - path: /test/html/body/video/poster.found
   scheme: https
   standard: FAIL
@@ -282,8 +282,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 70
-passes: 48
+passes: 47
 standardPasses: 37
-ajaxPasses: 21
-fails: 22
-score: 69%
+ajaxPasses: 20
+fails: 23
+score: 67%
