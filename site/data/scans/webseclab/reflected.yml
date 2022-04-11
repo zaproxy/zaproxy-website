@@ -1,0 +1,136 @@
+section: Reflected JavaScript
+details:
+- path: /backslash1
+  result: FAIL
+  rule: 
+  notes: ''
+- path: /basic
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /basic_in_tag
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /doubq1
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /enc2
+  result: FAIL
+  rule: 
+  notes: ''
+- path: /enc2_fp
+  result: Pass
+  rule: 
+  notes: 'Not Vulnerable'
+- path: /full1
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /inredirect1_fp
+  result: Pass
+  rule: 
+  notes: 'Not Vulnerable'
+- path: /js3
+  result: FAIL
+  rule: 
+  notes: ''
+- path: /js3_fp
+  result: FAIL
+  rule: 40012
+  notes: 'Not Vulnerable'
+- path: /js3_notags
+  result: FAIL
+  rule: 
+  notes: ''
+- path: /js3_notags_fp
+  result: FAIL
+  rule: 40012
+  notes: 'Not Vulnerable'
+- path: /js3_search_fp
+  result: FAIL
+  rule: 40012
+  notes: 'Not Vulnerable'
+- path: /js4_dq
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /js4_dq_fp
+  result: Pass
+  rule: 
+  notes: 'Not Vulnerable'
+- path: /js6_sq
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /js6_sq_combo1
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /js6_sq_fp
+  result: Pass
+  rule: 
+  notes: 'Not Vulnerable'
+- path: /js_script_close
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /oneclick1
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /onmouseover
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /onmouseover_div_unquoted
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /onmouseover_div_unquoted_fp
+  result: Pass
+  rule: 
+  notes: 'Not Vulnerable'
+- path: /onmouseover_unquoted
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /onmouseover_unquoted_fp
+  result: Pass
+  rule: 
+  notes: 'Not Vulnerable'
+- path: /post1()
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /refer1
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /rs1
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /textarea1
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /textarea1_fp
+  result: Pass
+  rule: 
+  notes: 'Not Vulnerable'
+- path: /textarea2
+  result: Pass
+  rule: 40012
+  notes: ''
+- path: /textarea2_fp
+  result: Pass
+  rule: 
+  notes: 'Not Vulnerable'
+tests: 32
+passes: 25
+fails: 7
+fps: 3
+fns: 4
+score: 78%
