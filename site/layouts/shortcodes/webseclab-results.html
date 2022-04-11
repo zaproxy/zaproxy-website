@@ -1,0 +1,40 @@
+  {{ $target := .Get "target" }}
+  {{ $section := .Get "section" }}
+  {{ $expand := .Get "expand" }}
+  {{ $data := index .Site.Data.scans ($target) ($section) }}
+
+    <tr>
+      <td><h5><a href="#section-{{ $section }}" onclick="showHide('scan-{{ $section }}')" id="section-{{ $section }}">{{ $data.section}}</a></h5></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td align="center"><h5>{{ $data.score}}</h5></td>
+    </tr>
+    <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
+      <th style="width: 55%">Individual Tests</th>
+      <th>Notes</th>
+      <th>Rule</th>
+      <th>Pass</th>
+      <th>Fail</th>
+    </tr>
+    <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td align="center">{{ $data.passes}}</td>
+      <td align="center">{{ $data.fails}}</td>
+    </tr>
+    {{ range $test := $data.details }} 
+    <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
+      <td>{{ $test.path}}</td>
+      <td align="center">{{ $test.notes}}</td>
+      <td><a href="/docs/alerts/{{ $test.rule}}/">{{ $test.rule}}</a></td>
+      {{ if eq $test.result "Pass" }} 
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.result}} </div></td>
+        <td></td>
+      {{ else }}
+        <td></td>
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.result}} </div></td>
+      {{ end }} 
+    </tr>
+    {{ end }}

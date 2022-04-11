@@ -12,6 +12,9 @@ links:
   - name: 'Websites Vulnerable to SSTI'
     link: ssti
     desc: a set of simple servers which are vulnerable to Server Side Template Injection (maintained)
+  - name: 'Yahoo Webseclab'
+    link: webseclab
+    desc: a set of web security test cases (unmaintained)
 EditableContent: true
 cascade:
   addBreadcrumbs: true
