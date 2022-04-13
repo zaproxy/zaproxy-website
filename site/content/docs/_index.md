@@ -43,6 +43,10 @@ groups:
         link: /docs/docker/
         desc: detailed information on ZAP's Docker images 
     
+      - name: 'Burp to ZAP Feature Map'
+        link: /docs/burp-to-zap-feature-map/
+        desc: a mapping from Burp Suite features to their ZAP equivalents
+            
       - name: 'Statistics'
         link: /docs/statistics/
         desc: public ZAP usage statistics

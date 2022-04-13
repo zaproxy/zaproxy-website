@@ -1,0 +1,36 @@
+<table class="burp2zap-table">
+    <thead  align="left">
+    <tr>
+        <th >Burp Feature</th>
+        <th  align="center">Community</th>
+        <th >Notes</th>
+        <th>ZAP Equivalent(s)</th>
+    </tr>
+    </thead>
+    {{ range sort $.Site.Data.burp2zap "burp" }}
+      <tr>
+        <td >
+          {{ .burp }}
+        </td>
+        <td align="center">
+          {{ if .comSupport }}
+            <div class="scan-result-pass">&#10003;</div>
+          {{ else }}
+            <div class="scan-result-fail">&#10060;</div>
+          {{ end }}
+        </td>
+        <td >
+          <div class="scan-result-fail"> {{ .comNotes }}</div>
+        </td>
+        <td >
+          <a href="{{ .zap1Link }}">{{ .zap1 }}</a>
+          {{ if .zap2 }}
+            , <a href="{{ .zap2Link }}">{{ .zap2 }}</a>
+          {{ end }}
+          {{ if .zap3 }}
+            , <a href="{{ .zap3Link }}">{{ .zap3 }}</a>
+          {{ end }}
+        </td>
+      </tr>
+    {{ end }}
+</table>
