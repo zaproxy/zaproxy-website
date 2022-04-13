@@ -118,3 +118,30 @@ If you are using the ZAP daemon in docker and controlling it via the API then yo
    ```
 
 All of the requests and responses made by or proxied through ZAP will be written to the `req-resp-log.txt` file in your CWD as above.
+
+### Automation Framework
+
+If you are using the Automation Framework then you will need to:
+
+1. Copy the following file to your CWD
+   * [LogMessages.js](https://github.com/zaproxy/community-scripts/blob/main/httpsender/LogMessages.js)
+2. Modify your YAML plan file to add the script, e.g.
+   ```bash
+   jobs:
+   ...
+   - parameters:
+       action: "add"
+       type: "httpsender"
+       engine: "Oracle Nashorn"
+       name: "LogMessages.js"
+       file: "/zap/wrk/LogMessages.js"
+     name: "script"
+     type: "script"
+   ...
+   ```
+3. Run your plan, making sure that your environment maps the CWD to `/zap/wrk/`, e.g.
+   ```bash
+    ./zap.sh -cmd -autorun zap.yaml
+    ```
+    
+All of the requests and responses made by or proxied through ZAP will be written to the `req-resp-log.txt` file in your CWD as above.
