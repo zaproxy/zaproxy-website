@@ -1,0 +1,70 @@
+---
+- burp: Collaborator
+  comSupport: false
+  comNotes:
+  zap1: OAST Support Add-on
+  zap1Link: /docs/desktop/addons/oast-support/
+- burp: Comparer
+  comSupport: true
+  comNotes:
+  zap1: Diff
+  zap1Link: /docs/desktop/addons/diff/
+- burp: Intercept
+  comSupport: true
+  comNotes:
+  zap1: Breakpoints
+  zap1Link: /docs/desktop/start/features/breakpoints/
+- burp: Decoder
+  comSupport: true
+  comNotes:
+  zap1: Encoder
+  zap1Link: /docs/desktop/addons/encode-decode-hash/
+- burp: DOM Invader
+  comSupport: true
+  comNotes:
+  zap1: Eval Villian Add-on
+  zap1Link: /docs/desktop/addons/eval-villain/
+- burp: Extender
+  comSupport: true
+  comNotes:
+  zap1: Marketplace
+  zap1Link: /addons/
+  zap2: Scripts
+  zap2Link: /docs/desktop/start/features/scripts/
+- burp: Intruder
+  comSupport: true
+  comNotes: Throttled
+  zap1: Fuzzer
+  zap1Link: /docs/desktop/addons/fuzzer/
+- burp: Project Files
+  comSupport: false
+  comNotes:
+  zap1: Session Files
+  zap1Link: /docs/desktop/ui/dialogs/persistsession/
+- burp: Proxy
+  comSupport: true
+  comNotes:
+  zap1: Proxy
+  zap1Link: /docs/desktop/start/features/intercept/
+- burp: Repeater
+  comSupport: true
+  comNotes:
+  zap1: Manual Request Editor
+  zap1Link:
+  zap2: Requestor Add-on
+  zap2Link: /docs/desktop/addons/requester/
+- burp: Scanner
+  comSupport: false
+  comNotes:
+  zap1: Active Scanner
+  zap1Link: /docs/desktop/start/features/ascan/
+- burp: Sequencer
+  comSupport: true
+  comNotes:
+  zap1: Token Generation and Analysis
+  zap1Link: /docs/desktop/addons/token-generator/
+- burp: Target
+  comSupport: true
+  comNotes:
+  zap1: Contexts
+  zap1Link: /docs/desktop/start/features/contexts/
