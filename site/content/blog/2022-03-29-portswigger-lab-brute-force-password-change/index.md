@@ -80,4 +80,4 @@ When you now try to login to your account with the new credentials the lab will 
 
 ![Lab Solved](images/solved.png)
 
-ZAP rocks! 
+ZAP rocks! :metal:

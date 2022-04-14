@@ -72,4 +72,4 @@ If we open the response from this request we can see that we solved the lab and 
 
 ![MFA code](images/mfa-code.png)
 
-ZAP rocks! 
+ZAP rocks! :metal:
