@@ -4,6 +4,7 @@ languageLang: "en"
 title: "OWASP ZAP"
 enableEmoji: true
 summaryLength: 48
+disableHugoGeneratorInject: true
 
 markup:
   goldmark:
