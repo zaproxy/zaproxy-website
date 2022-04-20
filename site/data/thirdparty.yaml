@@ -54,6 +54,10 @@ services:
     link: https://github.com/RedHatProductSecurity/rapidast
     license: 'Free, open source'
 
+  - name: 'SecHub'
+    link: https://github.com/mercedes-benz/sechub
+    license: 'Free, open source'
+
   # OWASP tools, open source, free, commercial tools, alphabetic
   - name: 'PurpleTeam-Labs'
     link: https://purpleteam-labs.com/
