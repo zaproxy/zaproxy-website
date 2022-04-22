@@ -61,3 +61,7 @@ The name `ZAP` should be used in the majority of cases. If the article or contex
 
 #### Text: Titles, Menu Items, and Options
 Titles, menu items, and options text should be represented using Title Capitalization as defined by the 'Chicago Manual of Style'. For quick reference you can use this online tool: https://capitalizemytitle.com/#Chicago (make sure you select the "Chicago" tab). The only exception here would be for strings that form full sentences (ending with proper punctuation).
+
+#### Usage of "and/or"
+
+The dev team would prefer that "and/or" be avoided in ZAP's UI and help content. In the majority of English cases simply using "or" is just fine.
