@@ -38,6 +38,10 @@ services:
     notes: OWASP Tool
 
   # Free, open source tools, alphabetic
+  - name: 'ArcherySec'
+    link: https://www.archerysec.com/
+    license: 'Free, open source'
+
   - name: 'DAST Operator'
     link: https://github.com/banzaicloud/dast-operator
     license: 'Free, open source'
