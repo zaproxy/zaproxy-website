@@ -11,15 +11,25 @@ It allows you to control ZAP via one YAML file and provides more flexibility whi
 The Automation Framework is included with the latest version of ZAP as well as the stable docker image.
 The framework is plugable and many of the existing add-ons have been enhanced to support it.
 
+### Updating Add-ons
+
 __Important:__  if you run the framework from the command line you should not use the `-addonupdate` option or
 the [addOns](/docs/desktop/addons/automation-framework/job-addons/) `updateAddOns` option - this has been found to cause
 problems when updating add-ons which are defined in the current plan. 
 The recommended approach is to run ZAP inline once to update all of the add-ons and then again to run the plan, e.g.:
+```bash
+./zap.sh -cmd -addonupdate
+./zap.sh -cmd -autorun zap.yaml <any other ZAP options>
 ```
-    ./zap.sh -cmd -addonupdate
-    ./zap.sh -cmd -autorun zap.yaml <any other ZAP options>
+If you are using the framework in the ZAP stable [docker](/docs/docker/about/) image then the recommended approach is to run ZAP in this way:
+```bash
+docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable bash -c "zap.sh -cmd -addonupdate; zap.sh -cmd -autorun /zap/wrk/zap.yaml"
 ```
+The weekly and live docker images are less likely to be out of date but if you want to use an add-on which has been updated since they were released then you should use the same sort of command.
+
 A longer term solution is being worked on.
+
+### Framework Overview
 
 For details of how to get started with the framework see the main [framework help page](/docs/desktop/addons/automation-framework/).
 
