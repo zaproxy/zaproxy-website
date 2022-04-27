@@ -31,8 +31,9 @@ links:
   - name: Authentication in the browser
     desc: Coming Soon
 
-  - name: Testing authentication
-    desc: Coming Soon
+  - name: Diagnosing authentication problems
+    link: diagnosing-auth-problems/
+    desc: what to do if you are getting stuck
 
   - name: Monitoring with statistics
     desc: Coming Soon
