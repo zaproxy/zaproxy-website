@@ -20,7 +20,8 @@ links:
     desc: how to handle authentication without as much ZAP configuration
 
   - name: Session handling
-    desc: Coming Soon
+    link: session-handling/
+    desc: how to configure ZAP to maintain sessions
 
   - name: Authentication methods
     desc: Coming Soon
