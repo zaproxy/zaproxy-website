@@ -58,6 +58,10 @@
   comNotes:
   zap1: Active Scanner
   zap1Link: /docs/desktop/start/features/ascan/
+- burp: Live scan
+  comSupport: false
+  zap1: ATTACK Mode
+  zap1Link: /docs/desktop/start/features/modes/
 - burp: Sequencer
   comSupport: true
   comNotes:
