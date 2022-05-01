@@ -11,7 +11,7 @@ cascade:
 
 # Passive Scan Rules - Beta
 
-The following beta quality passive scan rules are included in this add-on:
+The following beta status passive scan rules are included in this add-on:
 
 ## Big Redirect Detected (Potential Sensitive Information Leak)
 

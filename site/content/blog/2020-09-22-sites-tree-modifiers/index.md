@@ -31,7 +31,7 @@ Unit tests are there to test functionality not to minimise HTTP(S) calls, so it 
 
 One of the big drawbacks of Dynamic Application Security Testing (DAST) is the length of time it takes. The number of requests a scanner makes directly impacts the time taken, so it's important to try to minimise the number of requests while maximising their effectiveness. As always it's a balancing act.
 
-If we only had the History table available then we would end up attacking that URL as many times as it occurs. There are currently 18 release quality active scan rules and at medium strength each of those can make around 12 requests per parameter per page. So if you have 3 parameters on that repeated URL then we will attack the same URL 18 x 12 x 3 = 648 times each time we come across it in the History table. That would make the scan way longer than it needs to be.
+If we only had the History table available then we would end up attacking that URL as many times as it occurs. There are currently 18 release status active scan rules and at medium strength each of those can make around 12 requests per parameter per page. So if you have 3 parameters on that repeated URL then we will attack the same URL 18 x 12 x 3 = 648 times each time we come across it in the History table. That would make the scan way longer than it needs to be.
 
 ## What does the Sites Tree Represent?
 

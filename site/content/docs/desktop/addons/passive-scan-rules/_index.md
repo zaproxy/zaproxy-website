@@ -11,7 +11,7 @@ cascade:
 
 # Passive Scan Rules
 
-The following release quality passive scan rules are included in this add-on:
+The following release status passive scan rules are included in this add-on:
 
 ## Anti-clickjacking Header
 

@@ -20,11 +20,11 @@ help pages associated with the add-ons you have installed will be available unde
 
 Add-ons are assigned a status which may be one of:
 
-|   |         |                                                                                              |
-|---|---------|----------------------------------------------------------------------------------------------|
-|   | Release | which indicates they are of high quality and fit for purpose                                 |
-|   | Beta    | which indicates they are of reasonable quality but may be incomplete or need further testing |
-|   | Alpha   | which indicates they are at an early stage of development                                    |
+|   |         |                                                                                             |
+|---|---------|---------------------------------------------------------------------------------------------|
+|   | Release | which indicates they are of high status and fit for purpose                                 |
+|   | Beta    | which indicates they are of reasonable status but may be incomplete or need further testing |
+|   | Alpha   | which indicates they are at an early stage of development                                   |
 
 
 ### Location of add-ons available to ZAP

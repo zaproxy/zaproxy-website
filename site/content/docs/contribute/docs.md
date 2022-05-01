@@ -31,7 +31,7 @@ The source of the help for each add-on lives with each add-on, under the `/src/m
 
 For example:
 
-* The release quality active scan rules help is under https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrules/src/main/javahelp/org/zaproxy/zap/extension/ascanrules/resources/help/contents
+* The release status active scan rules help is under https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrules/src/main/javahelp/org/zaproxy/zap/extension/ascanrules/resources/help/contents
 * The HUD help is under https://github.com/zaproxy/zap-hud/tree/main/src/main/javahelp/org/zaproxy/zap/extension/hud/resources/help/contents
 
 You will see that the translations for the add-on help files also live with each add-on. These should not be updated manually as they are maintained via [Crowdin](../translate/). Any changes made directly to the translations in GitHub will be lost when the files are automatically updated.

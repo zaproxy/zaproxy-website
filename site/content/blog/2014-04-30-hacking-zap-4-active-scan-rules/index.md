@@ -21,9 +21,9 @@ some of the concepts underlying classes available to you.
 As with passive rules, the easiest way to get started is to rip off an existing rule.  The (main) active scan rules can be found in 3 add-ons in the
 [zap-extensions](https://github.com/zaproxy/zap-extensions/) project, depending on their status:  
 
-  * Release quality:  [addOns/ascanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules)
-  * Beta quality:       [addOns/ascanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta)
-  * Alpha quality:     [addOns/ascanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha)
+  * Release status:  [addOns/ascanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules)
+  * Beta status:       [addOns/ascanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta)
+  * Alpha status:     [addOns/ascanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha)
 
 There are also some simple examples that we will examine in more detail. These are all in the `ascanrulesAlpha` add-on.  
 

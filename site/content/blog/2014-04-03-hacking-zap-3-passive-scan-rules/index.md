@@ -26,9 +26,9 @@ some of the concepts and the underlying classes available to you.
 The easiest way to get started is to rip off an existing rule. The passive scan rules can be found in 3 add-ons in the
 [zap-extensions](https://github.com/zaproxy/zap-extensions/) project, depending on their status:  
 
-  * Release quality:  [addOns/pscanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules)
-  * Beta quality:       [addOns/pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta)
-  * Alpha quality:     [addOns/pscanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha)
+  * Release status:  [addOns/pscanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules)
+  * Beta status:       [addOns/pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta)
+  * Alpha status:     [addOns/pscanrulesAlpha](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha)
 
 There are also some simple examples that we will examine in more detail. These are all in the `pscanrulesAlpha` add-on.  
 

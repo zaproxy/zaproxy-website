@@ -11,7 +11,7 @@ cascade:
 
 # Active Scan Rules
 
-The following release quality active scan rules are included in this add-on:
+The following release status active scan rules are included in this add-on:
 
 ## .htaccess Information Leak
 

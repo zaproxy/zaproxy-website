@@ -9,20 +9,20 @@ authors:
 Unit tests are wonderful things, but they are painful to add to a mature project that doesn’t have enough of them. We would love to have more
 ZAP unit tests, and we are therefore launching a Unit Test Bounty program, where we pay for unit tests for specific areas of the ZAP codebase.  
   
-We are going to start with the passive scan rules (release and beta quality).  
+We are going to start with the passive scan rules (release and beta status).  
 These are all defined in the zap-extensions main packages:  
 
   * [org.zaproxy.zap.extension.pscanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules)
   * [org.zaproxy.zap.extension.pscanrulesBeta](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta)
 
-We do already have some release quality unit tests in the corresponding test package:  
+We do already have some release status unit tests in the corresponding test package:  
 
   * [org.zaproxy.zap.extension.pscanrules](https://github.com/zaproxy/zap-extensions/tree/main/addOns/pscanrules/src/test/java/org/zaproxy/zap/extension/pscanrules)
 
 These can be used as a basis of the new tests. Unit tests should be included for real issues (true positives) as well as false positives.  
 For details of how passive scan rules work see the blog post: [Hacking ZAP #3 Passive Scan Rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/)  
   
-We have raised issues for all of the release and beta quality passive scan rules that do not have unit tests, and assigned a bounty on them in
+We have raised issues for all of the release and beta status passive scan rules that do not have unit tests, and assigned a bounty on them in
 Bounty Source. The bounties vary based on the amount of work we expect will be required. We will increase the bounties paid if the pull request
 (PR) include fixes for false positives or false negatives.  
   

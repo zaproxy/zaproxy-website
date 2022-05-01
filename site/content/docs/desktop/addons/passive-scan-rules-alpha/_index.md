@@ -11,7 +11,7 @@ cascade:
 
 # Passive Scan Rules - Alpha
 
-The following alpha quality passive scan rules are included in this add-on:
+The following alpha status passive scan rules are included in this add-on:
 
 ## An example passive scan rule which loads data from a file
 
