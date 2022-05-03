@@ -168,6 +168,10 @@ integrations:
     license: 'Commercial'
  
 training:
+  - name: 'The XSS Rat'
+    link: https://www.youtube.com/watch?v=-5UMNGy7x0A
+    what: 'Fully FREE @OWASP ZAP Course'
+
   - name: 'AppSec Engineer'
     link: https://appsecengineer.com/courses/owasp-zap-dast-automation/
     what: 'DAST Automation with OWASP ZAP'
