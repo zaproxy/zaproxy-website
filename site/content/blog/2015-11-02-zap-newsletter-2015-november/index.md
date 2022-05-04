@@ -123,10 +123,10 @@ In order to update the core we have to release a new version of ZAP, but add-ons
 For this reason we are trying to move as much functionality into add-ons as possible, even features that you might think of as being essential
 to ZAP, like the scanner rules.  
   
-Add-ons have an associated ‘quality’:  
+Add-ons have an associated ‘status’:  
 
-  * [Release](https://github.com/zaproxy/zap-extensions/wiki/AddOnsRelease) : which can be expected to be of high quality and fit for purpose 
-  * [Beta](https://github.com/zaproxy/zap-extensions/wiki/AddOnsBeta) : which are of reasonable quality and mostly fit for purpose 
+  * [Release](https://github.com/zaproxy/zap-extensions/wiki/AddOnsRelease) : which can be expected to be of high status and fit for purpose 
+  * [Beta](https://github.com/zaproxy/zap-extensions/wiki/AddOnsBeta) : which are of reasonable status and mostly fit for purpose 
   * [Alpha](https://github.com/zaproxy/zap-extensions/wiki/AddOnsAlpha) : which are typically at an early stage of development - they may be incomplete, contain significant issues or cause stability problems 
 
 All new add-ons start off as alpha and only progress to beta and release after suitable reviews.  
@@ -158,8 +158,8 @@ that not everyone will want to do this.
 If selected then ZAP will automatically download and install updates to only the scanner rules you have installed. This is very useful when
 using ZAP in a Continuous Integration environment.  
   
-**Report new release/beta/alpha quality add-ons**  
-If selected then you will be notified whenever new or updated add-ons of the relevant quality are available, even if you don’t have them
+**Report new release/beta/alpha status add-ons**  
+If selected then you will be notified whenever new or updated add-ons of the relevant status are available, even if you don’t have them
 installed. This is an easy way for you to learn about new functionality as soon as it becomes available.  
   
 If you do choose to “Check for Updates on startup” then ZAP will make one request to a ‘Bitly’ URL. The only information about you that is

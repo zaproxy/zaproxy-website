@@ -14,7 +14,7 @@ ZAP supports both [active](/docs/desktop/start/features/ascan/) and
 
 All rules are contained in [add-ons](/docs/desktop/start/features/addons/) so that they can be updated quickly and easily.  
 
-By default ZAP ships with just the 'Release' quality rules, but you can install 'Beta' and 'Alpha' quality rules via the
+By default ZAP ships with just the 'Release' status rules, but you can install 'Beta' and 'Alpha' status rules via the
 [Manage Add-ons dialog](/docs/desktop/ui/dialogs/manageaddons/).
 
 

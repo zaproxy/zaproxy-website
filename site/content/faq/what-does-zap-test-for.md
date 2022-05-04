@@ -11,7 +11,7 @@ ZAP supports:
 
 For a full list of the HTTP active and passive scan rules see the [Alert Details](/docs/alerts/) page.
 
-By default ZAP comes with the following (HTTP) 'release' quality rules:
+By default ZAP comes with the following (HTTP) 'release' status rules:
 
   * [Release Active Scan Rules](/docs/desktop/addons/active-scan-rules/)
   * [Release Passive Scan Rules](/docs/desktop/addons/passive-scan-rules/)

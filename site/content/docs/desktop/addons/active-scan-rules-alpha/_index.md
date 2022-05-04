@@ -11,7 +11,7 @@ cascade:
 
 # Active Scan Rules - Alpha
 
-The following alpha quality active scan rules are included in this add-on:
+The following alpha status active scan rules are included in this add-on:
 
 ## An example active scan rule which loads data from a file
 

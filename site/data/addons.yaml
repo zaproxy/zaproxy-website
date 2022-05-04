@@ -42,7 +42,7 @@
   version: 3
 - id: ascanrules
   name: Active scanner rules
-  description: The release quality Active Scanner rules
+  description: The release status Active Scanner rules
   author: ZAP Dev Team
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
@@ -52,7 +52,7 @@
   version: 46
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
-  description: The alpha quality Active Scanner rules
+  description: The alpha status Active Scanner rules
   author: ZAP Dev Team
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
@@ -62,7 +62,7 @@
   version: 38
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
-  description: The beta quality Active Scanner rules
+  description: The beta status Active Scanner rules
   author: ZAP Dev Team
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
@@ -707,7 +707,7 @@
   version: 9
 - id: pscanrules
   name: Passive scanner rules
-  description: The release quality Passive Scanner rules
+  description: The release status Passive Scanner rules
   author: ZAP Dev Team
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
@@ -717,7 +717,7 @@
   version: 40
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
-  description: The alpha quality Passive Scanner rules
+  description: The alpha status Passive Scanner rules
   author: ZAP Dev Team
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
@@ -727,7 +727,7 @@
   version: 35
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
-  description: The beta quality Passive Scanner rules
+  description: The beta status Passive Scanner rules
   author: ZAP Dev Team
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/

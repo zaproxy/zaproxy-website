@@ -30,21 +30,21 @@ If selected then ZAP will automatically download and install any updates to the 
 If selected then ZAP will automatically download and install any updates to the scanner rules you have installed.  
 These are a subset of the full set of add-ons installed.
 
-### Report new release quality add-ons
+### Report new release status add-ons
 
-If selected then ZAP will inform you if and when any add-ons are promoted to 'release' quality.  
-These add-ons will have been thoroughly tested and reviewed, and you can be sure they are of the highest quality.
+If selected then ZAP will inform you if and when any add-ons are promoted to 'release' status.  
+These add-ons will have been thoroughly tested and reviewed, and you can be sure they are of the highest status.
 
-### Report new beta quality add-ons
+### Report new beta status add-ons
 
-If selected then ZAP will inform you if and when any add-ons are promoted to 'beta' quality.  
-These add-ons will have been tested and reviewed, and are considered to be of a reasonable quality and mostly fit for purpose.  
+If selected then ZAP will inform you if and when any add-ons are promoted to 'beta' status.  
+These add-ons will have been tested and reviewed, and are considered to be of a reasonable status and mostly fit for purpose.  
 However they may be incomplete or need further testing.  
 Some of the add-ons included with ZAP by default are still at the beta level.
 
-### Report new alpha quality add-ons
+### Report new alpha status add-ons
 
-If selected then ZAP will inform you if and when any new add-ons are added at 'alpha' quality.  
+If selected then ZAP will inform you if and when any new add-ons are added at 'alpha' status.  
 These add-ons will have been reviewed but they are typically at an early stage of development.  
 They may be incomplete, contain significant issues or cause stability problems.
 

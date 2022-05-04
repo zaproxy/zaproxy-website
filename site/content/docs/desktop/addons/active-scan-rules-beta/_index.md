@@ -11,7 +11,7 @@ cascade:
 
 # Active Scan Rules - Beta
 
-The following beta quality active scan rules are included in this add-on:
+The following beta status active scan rules are included in this add-on:
 
 ## Backup File Disclosure
 
