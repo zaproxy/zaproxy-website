@@ -53,4 +53,4 @@ ZAP will maintain statistics based on the Verification Strategy which will allow
 
 For more details see Verification strategies (Coming Soon).
 
-{{<prevnext prevUrl="../concepts/" prevTitle="ZAP authentication concepts" nextUrl="../session-handling/" nextTitle="Session Handling">}}
+{{<prevnext prevUrl="../concepts/" prevTitle="ZAP authentication concepts" nextUrl="../finding-a-verification-url/" nextTitle="Finding a verification URL">}}

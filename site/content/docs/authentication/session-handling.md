@@ -26,16 +26,42 @@ Session Management is difficult to test in isolation so you will typically need 
 
 Server-side Session Management is nearly always handled by HTTP headers and is typically straightforward to configure - getting hold of the authentication tokens to put in the headers may well be harder.
 
+If you do not know what type of session management your application uses then authenticate manually to your app while proxying through ZAP and look at the responses from the app.
+
+#### Cookie-based Session Management
+
+If you can see any `Set-Cookie` headers being returned then it is likely that your app is using cookie-based session management.
+
+Make a request to your [verification URL](../finding-a-verification-url/) while authenticated and then open that request in the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/).
+
+Check that there is a `Cookie` header in the request and that when you `Send` the request then it indicates you are logged in.
+
+If that is the case then remove the `Cookie` header from the request and `Send` again - if the response indicates you are no longer logged in then your app uses Cookie-based session management.
+
+Configure your context to use this - you do not need any other configuration, such as which cookies to use.
+
+#### HTTP Authentication Session Management
+
+If you see a `WWW-Authenticate` response header and then a `Authorization` header then your app is using [HTTP Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication).
+
+As above, make a request to your [verification URL](../finding-a-verification-url/) while authenticated and then open that request in the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/).
+
+Check that there is an `Authorization` header in the request and that when you `Send` the request then it indicates you are logged in.
+
+If that is the case then remove the `Authorization` header from the request and `Send` again - if the response indicates you are no longer logged in then your app uses HTTP Authentication session management.
+
+Configure your context to use this - you do not need any other configuration.
+
 ### Client-side Session Management
 
 Client-side Session Management is handled in the browser. It cannot be handle by ZAP automatically and is typically harder to configure.
 However you will need to configure ZAP to handle it if you need to use the [Ajax Spider](/docs/desktop/addons/ajax-spider/) or the [DOM XSS Scanner rule](/docs/desktop/addons/dom-xss-active-scan-rule/) while authenticated.
 
-You will typically need to inject authentication tokens into the browser using ZAP [selenium](/zaproxy/community-scripts/tree/main/selenium) scripts.
+You will typically need to inject authentication tokens into the browser using ZAP [selenium](https://github.com/zaproxy/community-scripts/tree/main/selenium) scripts.
 
 This video explains and demonstrates how to set ZAP up to handle both server-side and client-side session management with 
 [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/):
 
 {{< vinyard uuid="igf3A8UdZ6QAGiFjEpLH86" >}}
 
-{{<prevnext prevUrl="../handling-auth-yourself/" prevTitle="Handling Authentication Yourself" nextTitle="Authentication Methods (coming soon)">}}
+{{<prevnext prevUrl="../finding-a-verification-url/" prevTitle="Finding a verification URL" nextTitle="Authentication methods (coming soon)">}}

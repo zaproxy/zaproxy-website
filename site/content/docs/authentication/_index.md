@@ -19,6 +19,10 @@ links:
     link: handling-auth-yourself/
     desc: how to handle authentication without as much ZAP configuration
 
+  - name: Finding a verification URL
+    link: finding-a-verification-url/
+    desc: you will need one of these
+
   - name: Session handling
     link: session-handling/
     desc: how to configure ZAP to maintain sessions
