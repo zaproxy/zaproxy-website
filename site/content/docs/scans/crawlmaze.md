@@ -18,3 +18,9 @@ see Issue [#7152](https://github.com/zaproxy/zaproxy/issues/7152) for more detai
   {{< spider-results target= "crawlmaze" section="all" expand="true" >}}
 
 {{< /spider-table >}}
+
+| Config | Details |
+| --- | --- |
+| Frequency | Daily |
+| Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/crawlmaze/ |
+| Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-crawlmaze.yml | 
