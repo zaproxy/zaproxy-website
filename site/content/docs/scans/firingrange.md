@@ -30,3 +30,9 @@ Changes which find any of the missed vulnerabilities are eligible for a bounty v
   {{< scan-results target= "firingrange" section="invalidframingconfig">}}
 
 {{< /scan-table >}}
+
+| Config | Details |
+| --- | --- |
+| Frequency | Daily |
+| Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/firingrange/ |
+| Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-firingrange.yml | 

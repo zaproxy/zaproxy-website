@@ -19,3 +19,9 @@ If an alert is generated for a false positive then the test fails.
   {{< webseclab-results target= "webseclab" section="reflected">}}
 
 {{< /webseclab-table >}}
+
+| Config | Details |
+| --- | --- |
+| Frequency | Daily |
+| Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/webseclab/ |
+| Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-webseclab.yml | 
