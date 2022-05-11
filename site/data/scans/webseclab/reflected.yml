@@ -1,136 +1,144 @@
 section: Reflected JavaScript
 details:
 - path: /backslash1
-  result: FAIL
-  rule: 
   notes: ''
+  rule:
+  result: FAIL
 - path: /basic
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /basic_in_tag
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /doubq1
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /enc2
-  result: FAIL
-  rule: 
   notes: ''
+  rule:
+  result: FAIL
 - path: /enc2_fp
-  result: Pass
-  rule: 
   notes: 'Not Vulnerable'
+  rule:
+  result: Pass
 - path: /full1
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /inredirect1_fp
-  result: Pass
-  rule: 
   notes: 'Not Vulnerable'
+  rule:
+  result: Pass
 - path: /js3
-  result: FAIL
-  rule: 
   notes: ''
+  rule:
+  result: FAIL
 - path: /js3_fp
-  result: FAIL
-  rule: 40012
   notes: 'Not Vulnerable'
+  rule: 40012
+  result: FAIL
 - path: /js3_notags
-  result: FAIL
-  rule: 
   notes: ''
+  rule:
+  result: FAIL
 - path: /js3_notags_fp
-  result: FAIL
-  rule: 40012
   notes: 'Not Vulnerable'
+  rule: 40012
+  result: FAIL
 - path: /js3_search_fp
+  notes: 'Not Vulnerable'
+  rule: 40012
   result: FAIL
-  rule: 40012
-  notes: 'Not Vulnerable'
 - path: /js4_dq
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /js4_dq_fp
-  result: Pass
-  rule: 
   notes: 'Not Vulnerable'
+  rule:
+  result: Pass
 - path: /js6_sq
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /js6_sq_combo1
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
+- path: /js6_sq_combo1
+  notes: ''
+  rule: 40012
+  result: Pass
 - path: /js6_sq_fp
-  result: Pass
-  rule: 
   notes: 'Not Vulnerable'
+  rule:
+  result: Pass
+- path: /js6_sq_fp
+  notes: 'Not Vulnerable'
+  rule:
+  result: Pass
 - path: /js_script_close
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /oneclick1
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /onmouseover
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /onmouseover_div_unquoted
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /onmouseover_div_unquoted_fp
-  result: Pass
-  rule: 
   notes: 'Not Vulnerable'
+  rule:
+  result: Pass
 - path: /onmouseover_unquoted
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /onmouseover_unquoted_fp
-  result: Pass
-  rule: 
   notes: 'Not Vulnerable'
+  rule:
+  result: Pass
 - path: /post1()
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /refer1
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /rs1
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /textarea1
-  result: Pass
-  rule: 40012
   notes: ''
+  rule: 40012
+  result: Pass
 - path: /textarea1_fp
-  result: Pass
-  rule: 
   notes: 'Not Vulnerable'
+  rule:
+  result: Pass
 - path: /textarea2
-  result: Pass
-  rule: 40012
   notes: ''
-- path: /textarea2_fp
+  rule: 40012
   result: Pass
-  rule: 
+- path: /textarea2_fp
   notes: 'Not Vulnerable'
-tests: 32
+  rule:
+  result: Pass
+tests: 34
 passes: 25
 fails: 7
 fps: 3
-fns: 4
+fns: 3
 score: 78%
