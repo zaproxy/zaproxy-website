@@ -48,10 +48,15 @@ silver:
     logo: /img/supporters/denimgroup.png
     notes: $3,000 in donations
 
+  - name: 'SOOS'
+    link: https://soos.io/soos-dast-no-limit/
+    logo: /img/supporters/soos.png
+    notes: GitHub direct sponsorship
+
   - name: 'Webswing'
     link: https://www.webswing.org/
     logo: /img/supporters/webswing.png
-    notes: Permisssion to include production version of Webswing in the ZAP Docker images
+    notes: Permission to include production version of Webswing in the ZAP Docker images
 
   - name: 'Astra'
     link: https://www.getastra.com/
