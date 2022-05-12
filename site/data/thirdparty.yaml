@@ -8,6 +8,12 @@ services:
     license: 'Commercial, free option'
     supporter: ZAP Platinum Supporter
 
+  - name: 'SOOS'
+    link: https://soos.io/soos-dast-no-limit/
+    logo: /img/supporters/soos.png
+    license: 'Commercial'
+    supporter: ZAP Silver Supporter
+
   - name: 'Astra'
     link: https://www.getastra.com/
     logo: /img/supporters/astra.png
@@ -105,10 +111,6 @@ services:
 
   - name: 'Nucleus'
     link: https://www.nucleussec.com/integrations
-    license: 'Commercial'
-
-  - name: 'SOOS'
-    link: https://soos.io/soos-dast-no-limit/
     license: 'Commercial'
 
   # Open source, no longer maintained?, alphabetic
