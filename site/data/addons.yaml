@@ -685,6 +685,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v27/openapi-beta-27.zap
   date: 2022-03-29
   version: 27
+- id: packpentester
+  name: 'Collection: Pentester Pack'
+  description: A collection of add-ons ideal for pentesters
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/collection-pentester-pack/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/packpentester-v0.1.0/packpentester-alpha-0.1.0.zap
+  date: 2022-05-12
+  version: 0.1.0
 - id: plugnhack
   name: Plug-n-Hack Configuration
   description: 'Supports the Mozilla Plug-n-Hack standard: https://developer.mozilla.org/en-US/docs/Plug-n-Hack.'
