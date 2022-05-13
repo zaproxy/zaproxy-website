@@ -695,6 +695,17 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/packpentester-v0.1.0/packpentester-alpha-0.1.0.zap
   date: 2022-05-12
   version: 0.1.0
+- id: packscanrules
+  name: 'Collection: Scan Rules Pack'
+  description: All of the add-ons just containing release, beta and alpha status scan
+    rules
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/collection-scan-rules-pack/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/packscanrules-v0.0.1/packscanrules-alpha-0.0.1.zap
+  date: 2022-05-13
+  version: 0.0.1
 - id: plugnhack
   name: Plug-n-Hack Configuration
   description: 'Supports the Mozilla Plug-n-Hack standard: https://developer.mozilla.org/en-US/docs/Plug-n-Hack.'
