@@ -23,7 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.17.10",
-    "@babel/plugin-proposal-object-rest-spread": "^7.17.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.17.12",
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
     "@babel/preset-env": "^7.17.10",
     "@babel/register": "^7.17.7",
