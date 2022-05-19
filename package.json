@@ -48,7 +48,7 @@
     "optimize-css-assets-webpack-plugin": "^6.0.1",
     "plugin-error": "^1.0.1",
     "postcss-import": "^14.1.0",
-    "postcss-loader": "^6.2.1",
+    "postcss-loader": "^7.0.0",
     "postcss-preset-env": "^7.5.0",
     "rimraf": "^3.0.2",
     "sass-loader": "^12.6.0",
