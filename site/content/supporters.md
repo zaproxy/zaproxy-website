@@ -15,5 +15,6 @@ You can also sponsor the following members of the Core team directly - these con
 
 * [thc202](https://github.com/sponsors/thc202)
 * [kingthorin](https://github.com/sponsors/kingthorin)
+* [ricekot](https://github.com/sponsors/ricekot)
 
 Also see the [Third Party Engagement](/third-party-engagement/) page.
