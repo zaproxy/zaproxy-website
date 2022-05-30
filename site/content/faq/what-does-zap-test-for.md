@@ -11,10 +11,12 @@ ZAP supports:
 
 For a full list of the HTTP active and passive scan rules see the [Alert Details](/docs/alerts/) page.
 
-By default ZAP comes with the following (HTTP) 'release' status rules:
+By default ZAP comes with the following (HTTP) scan rules:
 
   * [Release Active Scan Rules](/docs/desktop/addons/active-scan-rules/)
   * [Release Passive Scan Rules](/docs/desktop/addons/passive-scan-rules/)
+  * [Retire.js](/docs/desktop/addons/retire.js/)
+  * [DOM XSS Active Scan Rule](/docs/desktop/addons/dom-xss-active-scan-rule/)
 
 But you can also download and install:
 
@@ -23,7 +25,6 @@ But you can also download and install:
   * [Alpha Active Scan Rules](/docs/desktop/addons/active-scan-rules-alpha/)
   * [Alpha Passive Scan Rules](/docs/desktop/addons/passive-scan-rules-alpha/)
   * [Advanced SQLInjection Active Scan Rule](/docs/desktop/addons/advanced-sqlinjection-scanner/)
-  * [DOM XSS Active Scan Rule](/docs/desktop/addons/dom-xss-active-scan-rule/)
   * [Image Location and Privacy Scanner](/docs/desktop/addons/image-location-and-privacy-scanner/)
 
 from the [ZAP Marketplace](/addons/).
