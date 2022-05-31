@@ -74,7 +74,7 @@ details:
   result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/attribute_name
-  result: FAIL
+  result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/attribute_quoted
   result: Pass
@@ -131,12 +131,12 @@ details:
   result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/tagname
-  result: FAIL
+  result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/textarea
   result: FAIL
   rule: 40012
 tests: 45
-passes: 11
-fails: 34
-score: 24%
+passes: 13
+fails: 32
+score: 29%
