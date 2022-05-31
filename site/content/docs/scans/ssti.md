@@ -13,3 +13,9 @@ The vulnerabilities are reported by various ZAP scan rules - if any of them find
 Note that the "Non Vulnerable" site _is_ actually vulnerable to XSS attacks :smile:
 
 {{< ssti-table target="ssti" section="all" >}}
+
+| Config | Details |
+| --- | --- |
+| Frequency | Daily |
+| Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/ssti/ |
+| Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-ssti.yml | 
