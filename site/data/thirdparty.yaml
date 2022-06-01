@@ -32,6 +32,11 @@ services:
     license: 'Commercial, free option'
     supporter: ZAP Silver Supporter
 
+  - name: 'Intruder'
+    link: https://www.intruder.io/
+    license: 'Commercial'
+    supporter: ZAP Bronze Supporter
+
   - name: 'IOTHREAT'
     link: https://iothreat.com/
     license: 'Commercial'
