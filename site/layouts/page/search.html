@@ -22,6 +22,10 @@
       let searchFor = () => {};
       let idx;
       let documents = [];
+
+      if (query) {
+    	  query = query.replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+      }
       fetch('/search/index.json')
         .then(function(response) {
           return response.json();
