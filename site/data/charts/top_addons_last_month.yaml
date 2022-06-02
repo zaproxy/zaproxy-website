@@ -17,5 +17,5 @@
 - id: "jython"
 - id: "fuzzdboffensive"
 - id: "communityScripts"
-- id: "tokengen"
 - id: "jwt"
+- id: "jsonview"
