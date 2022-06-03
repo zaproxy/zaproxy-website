@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.10.0
+    version: 21.11.0
 ---
 
 # Technology Detection Using Wappalyzer
@@ -39,7 +39,7 @@ Technology data is available to reports via the [WappalyzerJobResultData](https:
 
 ## External Links
 
-|   |                                         |                           |
-|---|-----------------------------------------|---------------------------|
-|   | <https://www.wappalyzer.com/>           | The Wappalyzer Homepage   |
-|   | <https://github.com/AliasIO/Wappalyzer> | The Wappalyzer Repository |
+|   |                                            |                           |
+|---|--------------------------------------------|---------------------------|
+|   | <https://www.wappalyzer.com/>              | The Wappalyzer Homepage   |
+|   | <https://github.com/wappalyzer/wappalyzer> | The Wappalyzer Repository |
