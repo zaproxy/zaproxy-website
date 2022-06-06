@@ -211,6 +211,15 @@ training:
     link: https://www.pluralsight.com/courses/writing-custom-scripts-owasp-zed-attack-proxy
     what: 'Writing Custom Scripts for OWASP Zed Attack Proxy'
 
+  - name: 'TCM Security'
+    link: https://academy.tcm-sec.com/p/practical-web-application-security-and-testing/
+    what: 'Practical Web Application Security Testing'
+
   - name: 'Udemy'
     link: https://www.udemy.com/course/owasp-zap-from-scratch/
     what: 'OWASP ZAP From Scratch'
+
+books:
+  - name: 'Amazon.com'
+    what: 'Zed Attack Proxy Cookbook'
+    link: https://www.amazon.com/Zed-Attack-Proxy-Cookbook-applications-ebook/dp/B0B2PSGM8H

@@ -34,7 +34,11 @@
 <div>{{ .Params.desc_silver }}</div>
 
 {{ range $supporter := $.Site.Data.supporters.silver }}
-  <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
+  {{ if $supporter.logo }}
+    <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
+  {{ else }}
+    <h3><a href="{{ $supporter.link }}">{{ $supporter.name }}</a></h3>
+  {{ end }}
 {{ end }}
 <br/><br/>
 

@@ -48,6 +48,10 @@ silver:
     logo: /img/supporters/denimgroup.png
     notes: $3,000 in donations
 
+  - name: 'Dave Wichers'
+    link: https://www.linkedin.com/in/wichers/
+    notes: GitHub direct sponsorship
+
   - name: 'SOOS'
     link: https://soos.io/soos-dast-no-limit/
     logo: /img/supporters/soos.png
