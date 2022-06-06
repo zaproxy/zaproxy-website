@@ -51,6 +51,19 @@
   </tr>
 {{ end }}
 </table>
+<br/><br/>
+
+<h2>Books</h2>
+<div>{{ .Params.desc_books }}</div>
+<table class="table table-fixed">
+{{ range $book := $.Site.Data.thirdparty.books }}
+  <tr>
+  <td class="cell-35">{{ if $book.logo }}<img src="{{ $book.logo }}" width="50%" height="50%"/>{{ else }}{{ $book.name }}{{ end }}</td>
+  <td class="cell-35"><a href="{{ $book.link }}">{{ $book.what }}</a></td>
+  <td class="cell-30"><a href="/supporters/"><h5>{{ $book.supporter }}</h5></a></td>
+  </tr>
+{{ end }}
+</table>
 
   </article>
 </section>
