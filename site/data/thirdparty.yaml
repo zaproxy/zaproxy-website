@@ -223,3 +223,7 @@ books:
   - name: 'Amazon.com'
     what: 'Zed Attack Proxy Cookbook'
     link: https://www.amazon.com/Zed-Attack-Proxy-Cookbook-applications-ebook/dp/B0B2PSGM8H
+
+  - name: 'Amazon.co.jp'
+    what: 'OWASP ZAP: GitHub Actions'
+    link: https://www.amazon.co.jp/dp/B09HJQZBBC/ref=cm_sw_r_tw_dp_V83Y9GYZ7NTJS9JQAF3W
