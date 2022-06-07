@@ -3,48 +3,48 @@
   name: "Timestamp Disclosure"
   status: "release"
   type: "Passive"
-- id: 10027
-  name: "Information Disclosure - Suspicious Comments"
+- id: 10098
+  name: "Cross-Domain Misconfiguration"
   status: "release"
   type: "Passive"
-- id: 10038
-  name: "Content Security Policy (CSP) Header Not Set"
-  status: "beta"
-  type: "Passive"
-- id: 10015
-  name: "Incomplete or No Cache-control Header Set"
-  status: "release"
-  type: "Passive"
-- id: 10104
-  name: "User Agent Fuzzer"
-  status: "beta"
-  type: "Active"
 - id: 10017
   name: "Cross-Domain JavaScript Source File Inclusion"
+  status: "release"
+  type: "Passive"
+- id: 10027
+  name: "Information Disclosure - Suspicious Comments"
   status: "release"
   type: "Passive"
 - id: 10202
   name: "Absence of Anti-CSRF Tokens"
   status: "release"
   type: "Passive"
-- id: 10021
-  name: "X-Content-Type-Options Header Missing"
-  status: "release"
-  type: "Passive"
-- id: 10055
-  name: "CSP"
-  status: "release"
-  type: "Passive"
-- id: 10031
-  name: "User Controllable HTML Element Attribute (Potential XSS)"
+- id: 10104
+  name: "User Agent Fuzzer"
   status: "beta"
+  type: "Active"
+- id: 10015
+  name: "Incomplete or No Cache-control Header Set"
+  status: "release"
   type: "Passive"
 - id: 10035
   name: "Strict-Transport-Security Header"
   status: "beta"
   type: "Passive"
-- id: 10109
-  name: "Modern Web Application"
+- id: 10055
+  name: "CSP"
+  status: "release"
+  type: "Passive"
+- id: 10021
+  name: "X-Content-Type-Options Header Missing"
+  status: "release"
+  type: "Passive"
+- id: 10062
+  name: "PII Disclosure"
+  status: "beta"
+  type: "Passive"
+- id: 10031
+  name: "User Controllable HTML Element Attribute (Potential XSS)"
   status: "beta"
   type: "Passive"
 - id: 10054
@@ -55,27 +55,27 @@
   name: "X-Frame-Options Header Not Set"
   status: "release"
   type: "Passive"
-- id: 10024
-  name: "Information Disclosure - Sensitive Information in URL"
-  status: "release"
-  type: "Passive"
-- id: 10036
-  name: "HTTP Server Response Header"
+- id: 10109
+  name: "Modern Web Application"
   status: "beta"
-  type: "Passive"
-- id: 10062
-  name: "PII Disclosure"
-  status: "beta"
-  type: "Passive"
-- id: 2
-  name: "Private IP Disclosure"
-  status: "release"
   type: "Passive"
 - id: 90022
   name: "Application Error Disclosure"
   status: "release"
   type: "Passive"
-- id: 10049
-  name: "Content Cacheability"
-  status: "alpha"
+- id: 10010
+  name: "Cookie No HttpOnly Flag"
+  status: "release"
+  type: "Passive"
+- id: 10038
+  name: "Content Security Policy (CSP) Header Not Set"
+  status: "beta"
+  type: "Passive"
+- id: 10024
+  name: "Information Disclosure - Sensitive Information in URL"
+  status: "release"
+  type: "Passive"
+- id: 2
+  name: "Private IP Disclosure"
+  status: "release"
   type: "Passive"
