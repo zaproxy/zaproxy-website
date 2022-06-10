@@ -9,6 +9,10 @@ groups:
         link: /zap-deep-dive/
         desc: An ongoing series of longer videos about ZAP features produced in conjunction with StackHawk
 
+      - name: 'ZAPCon 2022'
+        link: /zapcon-2022/
+        desc: All of the videos from ZAPCon 2022
+
       - name: 'ZAPCon 2021'
         link: /zapcon-2021/
         desc: All of the videos from ZAPCon 2021

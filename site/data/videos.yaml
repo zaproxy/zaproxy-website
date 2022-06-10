@@ -240,7 +240,133 @@
   - desktop
   - help
 
-# ZAPCon
+# ZAPCon 2022
+
+- title: 'ZAP for Everybody'
+  id: 32W_hm30dsg
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 44:05
+  tags:
+  - zapcon
+  - intro
+
+- title: 'The OWASP Top Ten 2021 and ZAP'
+  id: g-NDruzJzpM
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 39:07
+  tags:
+  - zapcon
+  - owaspTop10
+
+- title: 'Out-of-band Application Security Testing with ZAP'
+  id: 6tkraWH4bwY
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 42:52
+  tags:
+  - zapcon
+  - oast
+
+- title: 'More Power to "ZAP" - Demystifying ZAP Add-ons'
+  id: N4OEtVCda6s
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 40:29
+  tags:
+  - zapcon
+  - addons
+
+- title: 'ZAP Project Updates'
+  id: xwoefXhOW6k
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 38:07
+  tags:
+  - zapcon
+  - automation
+
+- title: 'Modern Approaches to Application Security (Panel)'
+  id: rpvsqxZwbhs
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 40:31
+  tags:
+  - zapcon
+
+- title: 'The Final Frontier, Automating Dynamic Security Testing'
+  id: TXjSBHFLfHA
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 43:14
+  tags:
+  - zapcon
+  - automation
+
+- title: 'Drive-By Pentesting with ZAP Scripts'
+  id: AqZdqAK9S2g
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 38:19
+  tags:
+  - zapcon
+  - scripts
+
+- title: 'ZAP Integration and Automation (Panel)'
+  id: XaVxKARC4_k
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/08'
+  length: 37:19
+  tags:
+  - zapcon
+  - automation
+
+- title: 'API Security Testing (Workshop)'
+  id: l0ISDMUpm68
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/09'
+  length: 2:24:35
+  tags:
+  - zapcon
+  - openapi
+  - soap
+  - fuzzing
+
+- title: 'How to Contribute to ZAP (Workshop)'
+  id: M2fWFvLZLwI
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/09'
+  length: 1:31:03
+  tags:
+  - zapcon
+  - intro
+  - development
+
+- title: 'Automated Security Testing with GitHub Actions (Workshop)'
+  id: V864fLPct-o
+  site: youtube
+  series: 'ZAPCon 2022'
+  date: '2022/03/09'
+  length: 1:31:57
+  tags:
+  - zapcon
+  - automation
+  - githubAction
+
+
+# ZAPCon 2021
 
 - title: 'The whole conference (4½ hours)'
   id: xlt---D9I3w
