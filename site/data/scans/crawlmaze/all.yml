@@ -156,7 +156,7 @@ details:
 - path: /test/html/body/table/td/background.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
 - path: /test/html/body/video/src.found
   scheme: https
   standard: FAIL
@@ -282,8 +282,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 70
-passes: 50
+passes: 49
 standardPasses: 42
-ajaxPasses: 21
-fails: 20
-score: 71%
+ajaxPasses: 20
+fails: 21
+score: 70%
