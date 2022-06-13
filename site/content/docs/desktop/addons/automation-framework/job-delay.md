@@ -16,7 +16,7 @@ The conditions supported are:
 
 * The creation of the file given by the optional fileName parameter
 * Calling the static method: `org.zaproxy.addon.automation.jobs.DelayJob.setEndJob(true);`
-* Calling the API end point: `authentication / action / endDelayJob`
+* Calling the API end point: `automation / action / endDelayJob`
 
 ## YAML
 
