@@ -14,7 +14,7 @@ For more details of code contributions see: <https://www.openhub.net/p/zaproxy/c
 
 |   |                                                                                                                                   |
 |---|-----------------------------------------------------------------------------------------------------------------------------------|
-|   | Simon Bennetts ([@psiinon](https://twitter.com/psiinon)) - StackHawk                                                              |
+|   | Simon Bennetts ([@psiinon](https://twitter.com/psiinon)) - [Sponsor on GitHub](https://github.com/sponsors/psiinon)               |
 |   | thc202 - [Sponsor on GitHub](https://github.com/sponsors/thc202)                                                                  |
 |   | Rick Mitchell ([@kingthorin_rm](https://twitter.com/kingthorin_rm)) - [Sponsor on GitHub](https://github.com/sponsors/kingthorin) |
 |   | Akshath Kothari ([@ricekot_](https://twitter.com/ricekot_))  - [Sponsor on GitHub](https://github.com/sponsors/ricekot)           |
