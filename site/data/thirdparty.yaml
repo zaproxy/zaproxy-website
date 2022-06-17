@@ -6,7 +6,7 @@ services:
     link: https://www.stackhawk.com/
     logo: /img/supporters/stackhawk.png
     license: 'Commercial, free option'
-    supporter: ZAP Platinum Supporter
+    supporter: ZAP Gold Supporter
 
   - name: 'SOOS'
     link: https://soos.io/soos-dast-no-limit/
