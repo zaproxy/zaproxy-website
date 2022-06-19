@@ -74,19 +74,19 @@ details:
   result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/attribute_name
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/attribute_quoted
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/attribute_script
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/attribute_singlequoted
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/attribute_unquoted
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/body
   result: FAIL
@@ -95,7 +95,7 @@ details:
   result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/css_import
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/css_style
   result: FAIL
@@ -113,30 +113,30 @@ details:
   result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_assignment
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_comment
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_eval
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_quoted_string
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_singlequoted_string
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/js_slashquoted_string
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/tagname
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/textarea
   result: FAIL
   rule: 40012
 tests: 45
-passes: 13
-fails: 32
-score: 29%
+passes: 0
+fails: 45
+score: 0%
