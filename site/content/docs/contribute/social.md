@@ -15,10 +15,6 @@ links:
     link: https://twitter.com/zaproxy
     desc: follow the official ZAP Twitter account (low volume)
 
-  - name: 'Twitter: @ZAProxyCon'
-    link: https://twitter.com/ZAProxyCon
-    desc: follow the official ZAPCon Twitter account
-
   - name: 'Docker: zap2docker-stable'
     link: https://hub.docker.com/r/owasp/zap2docker-stable/
     desc: like the ZAP stable Docker image
