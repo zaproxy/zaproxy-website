@@ -6,11 +6,15 @@ aliases:
   - /get-involved/
   - /support/
 groups:
-  - header: 'Mission statement'
+  - header: 'About ZAP'
     links:
       - name: 'Mission Statement'
         link: /mission-statement/
         desc: this is what we are trying to achieve
+
+      - name: 'Team'
+        link: /docs/team/
+        desc: the key people working on ZAP right now
 
   - header: 'Get In Touch'
     links:

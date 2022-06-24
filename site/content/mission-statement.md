@@ -22,4 +22,4 @@ The ZAP Mission Statement, in priority order, is:
 
 ![](https://www.zaproxy.org/img/zap-banner.png)
 
-It is the responsibility of the [Core Team](/docs/contribute/core-team/) to ensure that this mission is upheld in all decisions made regarding ZAP.
+It is the responsibility of the [Core Team](/docs/team/) to ensure that this mission is upheld in all decisions made regarding ZAP.

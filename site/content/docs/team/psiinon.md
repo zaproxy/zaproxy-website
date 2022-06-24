@@ -1,0 +1,41 @@
+---
+handle: psiinon
+name: "Simon Bennetts"
+roles: Core Team, Project Leader, Founder
+author: simon
+type: team
+github: psiinon
+linkedin: psiinon
+weight: 1
+---
+Simon released ZAP in 2010 and has been working on it ever since.
+
+#### Sponsor
+
+Simon's work on ZAP was previously sponsored by Mozilla and StackHawk but he is currently not in work and is looking for 
+[one or more new sponsors](/blog/2022-06-17-help-needed-fund-zap-development/).
+
+He can also be sponsored directly via his [GitHub Sponsor](https://github.com/sponsors/psiinon/) page.
+
+#### Expertise
+
+Simon has worked on nearly every part of the ZAP code base.
+
+He is currently focusing on:
+
+* [Automation Framework](/docs/automate/automation-framework/)
+* [Test Scans](/docs/scans/)
+* Handling modern web apps more effectively
+
+#### Talks and Videos
+
+Simon has given ZAP talks at conferences all over the world and has recorded numerous videos, including the series:
+
+* [ZAP Deep Dive Series](/zap-deep-dive/)
+* [ZAP in Ten](/zap-in-ten/)
+
+All of Simon’s publicly available videos are linked off the [Videos](/videos/) page.
+
+#### Other Work
+
+Simon is an active member of the [OWASP Project Committee](https://owasp.org/www-committee-project/).

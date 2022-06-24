@@ -1,0 +1,92 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; Team &ndash; {{ .Params.name }}{{ end }}
+{{ define "main" }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">ZAP Team: {{ .Params.name }}</h1>
+  </div>
+</section>
+{{ $section := .Site.GetPage "section" .Section }}
+{{ $author := .Params.author }}
+{{ $authorRec := index $.Site.Data.authors $author }}
+
+{{ $posts := where .Site.Pages "Type" "post" }}
+{{ range $posts}}
+	{{ if in .Params.authors $author }}
+		{{ $.Scratch.Add "blogCounter" 1 }}
+	{{ end }}
+{{ end }}
+
+<div class="wrapper py-20" data-kind="{{ .Kind }}">
+    <header class="breadcrumbs">
+        <a href="/community/">Community</a> &gt;
+        <a href="/docs/team/">Team</a>
+    </header>
+    <main class="post-content flex pt-10 on-sm-stack">
+      <section class="col-1-3 mr-30 mb-30">
+        <img class="author-picture" src="{{ $authorRec.picture }}" />
+        <table class="bordered">
+          <thead>
+            <tr>
+              <th colspan="2">
+                Links
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>GitHub</strong>
+              </td>
+              <td>
+                <a href="https://github.com/{{ .Params.github }}">
+                  https://github.com/{{ .Params.github }}
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Twitter</strong>
+              </td>
+              <td>
+                <a href="https://twitter.com/{{ $authorRec.twitter }}">
+                  https://twitter.com/{{ $authorRec.twitter }}
+                </a>
+              </td>
+            </tr>
+            {{ if .Params.linkedin }}
+            <tr>
+              <td>
+                <strong>LinkedIn</strong>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/in/{{ .Params.linkedin }}/">
+                  https://www.linkedin.com/in/{{ .Params.linkedin }}/
+                </a>
+              </td>
+            </tr>
+            {{ end }}
+            {{ if $.Scratch.Get "blogCounter" }}
+            <tr>
+              <td>
+                <strong>Blog Posts</strong>
+              </td>
+              <td>
+                <a href="/authors/{{ .Params.author }}/">
+                  Author: {{ .Params.author }}
+                </a>
+                ({{ $.Scratch.Get "blogCounter" }})
+              </td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+
+      </section>
+      <section class="col-2-3">
+          <h3 class="mb-10">Profile</h3>
+          {{ .Content }}
+      </section>
+  </main>
+</div>
+{{ end }}
+
