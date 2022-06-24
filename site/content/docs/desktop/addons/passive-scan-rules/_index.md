@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 40.0.0
+    version: 41.0.0
 ---
 
 # Passive Scan Rules
@@ -247,6 +247,8 @@ Attempts to identify VIEWSTATE parameters and analyze said parameters for variou
 * VIEWSTATE Lacking signature.
 * Split VIEWSTATE.
 * VIEWSTATE containing email or IP patterns.
+
+The "Viewstate without MAC Signature (Unsure)" alert will only be raised at LOW threshold.
 
 Latest code: [ViewstateScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ViewstateScanRule.java)
 
