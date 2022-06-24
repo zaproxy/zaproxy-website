@@ -53,6 +53,11 @@ silver:
     link: https://www.linkedin.com/in/wichers/
     notes: GitHub direct sponsorship
 
+  - name: 'Astra'
+    link: https://www.getastra.com/
+    logo: /img/supporters/astra.png
+    notes: GitHub direct sponsorship, also sponsored some of Akshath's work on ZAP
+
   - name: 'SOOS'
     link: https://soos.io/soos-dast-no-limit/
     logo: /img/supporters/soos.png
@@ -62,11 +67,6 @@ silver:
     link: https://www.webswing.org/
     logo: /img/supporters/webswing.png
     notes: Permission to include production version of Webswing in the ZAP Docker images
-
-  - name: 'Astra'
-    link: https://www.getastra.com/
-    logo: /img/supporters/astra.png
-    notes: Sponsored some of Akshath's work on ZAP
 
   - name: 'HostedScan'
     link: https://hostedscan.com/
