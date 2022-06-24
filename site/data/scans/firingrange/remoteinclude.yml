@@ -5,18 +5,18 @@ details:
   result: FAIL
   rule: 40012
 - path: /parameter/object/application_x-shockwave-flash
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /parameter/object_raw
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /parameter/script
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /script_hash.html
   result: FAIL
   rule: 40012
 tests: 5
-passes: 3
-fails: 2
-score: 60%
+passes: 0
+fails: 5
+score: 0%
