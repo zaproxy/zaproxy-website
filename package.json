@@ -51,7 +51,7 @@
     "postcss-loader": "^7.0.0",
     "postcss-preset-env": "^7.7.2",
     "rimraf": "^3.0.2",
-    "sass-loader": "^13.0.0",
+    "sass-loader": "^13.0.1",
     "style-loader": "^3.3.1",
     "terser-webpack-plugin": "^5.3.3",
     "toml": "^3.0.0",
