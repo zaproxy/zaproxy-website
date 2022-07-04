@@ -16,4 +16,7 @@ Proxies](/docs/desktop/ui/dialogs/options/localproxy/) screen, remember to chang
 browser's proxy settings as well: [Configuring Proxies](/docs/desktop/start/proxies/).
 
 You also need to check that you have not configured your browser to ignore
-your configured proxy (ZAP) for localhost.
+your configured proxy (ZAP) for localhost. Note that Firefox (>= version 67)
+and Chrome (>= version 72) by default do not proxy to localhost.
+[Configuring Proxies](/docs/desktop/start/proxies/) explains how to reconfigure
+them to proxy to localhost.
