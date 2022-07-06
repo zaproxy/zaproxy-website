@@ -114,6 +114,10 @@ services:
     link: https://docs.gitlab.com/ee/user/application_security/dast/
     license: 'Commercial'
 
+  - name: 'Jit'
+    link: https://www.jit.io/security-tools
+    license: 'Commercial'
+
   - name: 'Nucleus'
     link: https://www.nucleussec.com/integrations
     license: 'Commercial'
@@ -168,6 +172,10 @@ integrations:
 
   - name: 'Edgescan'
     link: https://www.edgescan.com/
+    license: 'Commercial'
+ 
+  - name: 'Kondukto'
+    link: https://kondukto.io/integrations
     license: 'Commercial'
  
   - name: 'Sn1per Pro'
