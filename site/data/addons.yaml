@@ -640,9 +640,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/neonmarker/
   repoUrl: https://github.com/kingthorin/neonmarker
-  downloadUrl: https://github.com/kingthorin/neonmarker/releases/download/v1.4.0/neonmarker-alpha-1.4.0.zap
-  date: 2021-08-26
-  version: 1.4.0
+  downloadUrl: https://github.com/kingthorin/neonmarker/releases/download/v1.5.0/neonmarker-alpha-1.5.0.zap
+  date: 2022-07-11
+  version: 1.5.0
 - id: network
   name: Network
   description: Provides core networking capabilities.
