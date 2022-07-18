@@ -159,9 +159,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/call-home/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.3.0/callhome-alpha-0.3.0.zap
-  date: 2022-01-21
-  version: 0.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.4.0/callhome-alpha-0.4.0.zap
+  date: 2022-07-18
+  version: 0.4.0
 - id: codedx
   name: Code Dx Extension
   description: Includes request and response data in XML reports and provides the
