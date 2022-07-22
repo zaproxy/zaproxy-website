@@ -57,10 +57,6 @@ services:
     link: https://github.com/banzaicloud/dast-operator
     license: 'Free, open source'
 
-  - name: 'Microsoft RAFT'
-    link: https://github.com/microsoft/rest-api-fuzz-testing
-    license: 'Free, open source'
-
   - name: 'Ostorlab'
     link: https://github.com/Ostorlab/ostorlab
     license: 'Free, open source'
@@ -101,6 +97,10 @@ services:
     link: https://patrowl.io/
     license: 'Commercial, free for open source projects'
 
+  - name: 'Probely'
+    link: https://probely.com/
+    license: 'Commercial, free option'
+
   - name: 'Sken.ai'
     link: https://www.sken.ai/
     license: 'Commercial, free option'
@@ -127,6 +127,11 @@ services:
     link: https://github.com/iriusrisk/bdd-security
     license: 'Free, open source'
     notes: No longer maintained?
+
+  - name: 'Microsoft RAFT'
+    link: https://github.com/microsoft/rest-api-fuzz-testing
+    license: 'Free, open source'
+    notes: No longer maintained
 
   - name: 'Seccubus'
     link: https://github.com/seccubus/seccubus
