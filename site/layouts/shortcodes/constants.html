@@ -1,0 +1,26 @@
+<table data-sort-filter class="table market-table">
+    <thead  align="left">
+    <tr>
+        <th style="width: 15%">Type</th>
+        <th style="width: 5%">Value</th>
+        <th style="width: 20%">Name</th>
+        <th style="width: 60%">Code</th>
+    </tr>
+    </thead>
+    {{ range $.Site.Data.constants }}
+    <tr>
+        <td >
+            {{ .type }}
+        </td>
+        <td align="center">
+            {{ .value }}
+        </td>
+        <td >
+            {{ .name }}
+        </td>
+        <td>
+            <a class="no-border" title="{{ .code }}" href="https://github.com/{{ .repo }}/blob/{{ .code }}" target="_blank" rel="noopener noreferrer">{{ .code }}</a>
+        </td>
+    </tr>
+    {{ end }}
+</table>
