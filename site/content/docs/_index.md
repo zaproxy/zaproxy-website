@@ -58,6 +58,10 @@ groups:
         link: /docs/alerts/
         desc: detailed information on the alerts ZAP can raise 
 
+      - name: 'Constants'
+        link: /docs/constants/
+        desc: defined in the ZAP codebase that are exposed via the API and/or scripts 
+    
       - name: 'Internal Events'
         link: /docs/internal-events/
         desc: detailed information on the internal events ZAP publishes 
