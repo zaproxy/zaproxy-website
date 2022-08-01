@@ -35,8 +35,6 @@ but if you plan to make bigger contributions then you should check them before m
 * Any significant changes (as opposed to additions) to the UI should initially be checked in as a non default option. Once everyone else has had a chance to try the changes out we can come to a collective decision as to which option should be the new default (old options can also be completely dropped).
 * There should be a clean split between the functionality and the UI. OK, so thats not true of a lot of the existing code, but new code should have that split, and hopefully over time we'll be able to update all of the old code as well. This will make it much easier to create regression tests and make more of the functionality accessible in headless mode.
 * Extensions should not expose graphical elements, such as Panels. Instead public methods should provide full access to as much of the functionality the extension provides via non graphical classes.
-* There should be a clean split between the functionality and the UI. OK, so thats not true of a lot of the existing code, but new code should have that split, and hopefully over time we'll be able to update all of the old code as well. This will make it much easier to create regression tests and make more of the functionality accessible in headless mode.
-* Extensions should not expose graphical elements, such as Panels. Instead public methods should provide full access to as much of the functionality the extension provides via non graphical classes.
 
 ### Code Guidelines
 
