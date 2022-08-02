@@ -263,9 +263,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/dom-xss-active-scan-rule/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v12/domxss-beta-12.zap
-  date: 2021-12-06
-  version: 12
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v13/domxss-beta-13.zap
+  date: 2022-08-02
+  version: 13
 - id: encoder
   name: Encoder
   description: Adds encode/decode/hash dialog and support for scripted processors
