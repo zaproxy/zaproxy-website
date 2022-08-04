@@ -44,6 +44,11 @@ silver:
     logo: /img/supporters/owaspdenver.png
     notes: A $5,000 donation
 
+  - name: 'SOOS'
+    link: https://soos.io/soos-dast-no-limit/
+    logo: /img/supporters/soos.png
+    notes: GitHub direct sponsorship + $1,500 via OWASP donation
+
   - name: 'Denim Group'
     link: https://www.denimgroup.com/
     logo: /img/supporters/denimgroup.png
@@ -57,11 +62,6 @@ silver:
     link: https://www.getastra.com/
     logo: /img/supporters/astra.png
     notes: GitHub direct sponsorship, also sponsored some of Akshath's work on ZAP
-
-  - name: 'SOOS'
-    link: https://soos.io/soos-dast-no-limit/
-    logo: /img/supporters/soos.png
-    notes: GitHub direct sponsorship
 
   - name: 'Webswing'
     link: https://www.webswing.org/
@@ -103,6 +103,10 @@ bronze:
   - name: 'IOTHREAT'
     link: https://iothreat.com/
     notes: $250 donation
+
+  - name: 'Crest'
+    link: https://www.crest-approved.org/
+    notes: $225 donation
 
   - name: 'Sage'
     link: https://www.sage.co.uk/
