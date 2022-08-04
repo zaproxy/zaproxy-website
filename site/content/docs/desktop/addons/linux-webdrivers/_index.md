@@ -6,14 +6,14 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: 41.0.0
+    version: 42.0.0
 ---
 
 # Linux WebDrivers
 
 The Linux WebDrivers add-on provides WebDrivers for the following browsers:
 
-* Chrome - ChromeDriver 103.0.5060.134
+* Chrome - ChromeDriver 104.0.5112.79
 * Firefox - geckodriver 0.31.0
 
 ## See also
