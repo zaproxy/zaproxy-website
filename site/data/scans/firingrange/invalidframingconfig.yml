@@ -2,8 +2,8 @@ section: Invalid framing configuration
 url: https://public-firing-range.appspot.com/invalidframingconfig
 details:
 - path: /frameancestorsnonenoxfodeny
-  result: Pass
-  rule: 10055
+  result: FAIL
+  rule: 10020
 - path: /frameancestorsnoxfoallowfrom
   result: Pass
   rule: 10055
@@ -23,6 +23,6 @@ details:
   result: Pass
   rule: 10055
 tests: 7
-passes: 7
-fails: 0
-score: 100%
+passes: 6
+fails: 1
+score: 86%
