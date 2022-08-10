@@ -179,7 +179,7 @@ details:
   ajax: FAIL
 - path: /test/html/head/import/implementation.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/head/link/href.found
   scheme: https
@@ -187,11 +187,11 @@ details:
   ajax: Pass
 - path: /test/html/head/meta/content-csp.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/head/meta/content-pinned-websites.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/head/meta/content-reading-view.found
   scheme: https
@@ -226,12 +226,12 @@ details:
   standard: FAIL
   ajax: FAIL
 - path: /test/html/misc/string/url-string.found
-  scheme: https
-  standard: FAIL
+  scheme: http
+  standard: Pass
   ajax: FAIL
 - path: /test/html/misc/string/string-known-extension.pdf
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/javascript/misc/comment.found
   scheme: http
@@ -282,8 +282,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 70
-passes: 51
-standardPasses: 49
+passes: 56
+standardPasses: 54
 ajaxPasses: 21
-fails: 19
-score: 73%
+fails: 14
+score: 80%
