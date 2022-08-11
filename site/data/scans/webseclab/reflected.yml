@@ -1,5 +1,9 @@
 section: Reflected JavaScript
 details:
+- path: lab_refer.html(<script>alert
+  notes: ''
+  rule:
+  result: FAIL
 - path: /backslash1
   notes: ''
   rule:
@@ -136,9 +140,9 @@ details:
   notes: 'Not Vulnerable'
   rule:
   result: Pass
-tests: 34
+tests: 35
 passes: 25
-fails: 7
+fails: 8
 fps: 3
 fns: 3
-score: 78%
+score: 76%
