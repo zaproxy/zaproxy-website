@@ -11,7 +11,17 @@ This is not unusual, and we do not consider this a significant problem.
 
 In our experience it is usually all down to how the application is explored - the traditional and ajax spiders seem to be sensitive to small changes, including things like network speed.
 
-If ZAP finds exactly the same URLs and the target has not changed then we would expect the alerts to be the same.
+Some of the ZAP integration tests perform a baseline scan of https://www.example.com and even though this is just one 
+page we have found that results can vary.
+
+Investigations into this showed that the number of requests made by the traditional spider sometimes differed and the same
+page could be requested more than once.
+For most rules and alerts this should not be a problem, but that is not always the case.
+For example, the [Retrieved from Cache](/docs/alerts/10050/) rule includes the value of the "Age" header as evidence.
+If multiple requests are made to the same page then this header value is likely to change, and if it does the alerts are
+treated as different instances.
+
+If ZAP finds exactly the same URLs and the target has not changed then we would expect the alerts to be the same (although the instances of those alerts may differ).
 
 However if you investigate this issue in more detail and find out there are other problems then please let us know.
 
