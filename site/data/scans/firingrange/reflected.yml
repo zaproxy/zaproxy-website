@@ -2,10 +2,10 @@ section: Reflected XSS
 url: https://public-firing-range.appspot.com/reflected
 details:
 - path: /contentsniffing/json
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /contentsniffing/plaintext
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /escapedparameter/js_eventhandler_quoted/DOUBLE_QUOTED_ATTRIBUTE
   result: Pass
@@ -143,6 +143,6 @@ details:
   result: Pass
   rule: 40012
 tests: 47
-passes: 46
-fails: 1
-score: 98%
+passes: 44
+fails: 3
+score: 94%

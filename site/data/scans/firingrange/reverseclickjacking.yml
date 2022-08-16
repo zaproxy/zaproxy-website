@@ -14,13 +14,13 @@ details:
   result: FAIL
   rule: 10020
 - path: /multipage/ParameterInQuery/InCallback/WithoutXFO/
-  result: Pass
+  result: FAIL
   rule: 10020
 - path: /multipage/ParameterInQuery/InCallback/WithXFO/
   result: FAIL
   rule: 10020
 - path: /multipage/ParameterInQuery/OtherParameter/WithoutXFO/
-  result: Pass
+  result: FAIL
   rule: 10020
 - path: /multipage/ParameterInQuery/OtherParameter/WithXFO/
   result: FAIL
@@ -38,6 +38,6 @@ details:
   result: Pass
   rule: 10020
 tests: 12
-passes: 8
-fails: 4
-score: 67%
+passes: 6
+fails: 6
+score: 50%
