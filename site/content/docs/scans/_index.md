@@ -9,6 +9,9 @@ links:
   - name: 'Google Security Crawl Maze'
     link: crawlmaze
     desc: a comprehensive testbed for web security crawlers (maintained)
+  - name: 'OWASP Benchmark'
+    link: benchmark
+    desc: a test suite designed to verify the speed and accuracy of software vulnerability detection tools
   - name: 'Websites Vulnerable to SSTI'
     link: ssti
     desc: a set of simple servers which are vulnerable to Server Side Template Injection (maintained)

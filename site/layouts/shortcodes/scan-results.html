@@ -1,6 +1,7 @@
   {{ $target := .Get "target" }}
   {{ $section := .Get "section" }}
   {{ $expand := .Get "expand" }}
+  {{ $nolinks := default false (.Get "nolinks") }}
   {{ $data := index .Site.Data.scans ($target) ($section) }}
 
     <tr>
@@ -16,15 +17,24 @@
       <th>Fail</th>
     </tr>
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
+      {{ if $nolinks }}
+      <td>Top Level: {{ $data.url}}</td>
+      {{ else }}
       <td>Top Level: <a href="{{ $data.url}}/" id="section-{{ $section }}">{{ $data.url}}</a></td>
+      {{ end }}
       <td> </td>
       <td align="center">{{ $data.passes}}</td>
       <td align="center">{{ $data.fails}}</td>
     </tr>
     {{ range $test := $data.details }} 
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
+      {{ if $nolinks }}
+      <td>{{ $test.path}}</td>
+      <td>{{ $test.rule}}</td>
+      {{ else }}
       <td><a href="{{ $data.url}}{{ $test.path}}">{{ $test.path}}</a></td>
       <td><a href="/docs/alerts/{{ $test.rule}}/">{{ $test.rule}}</a></td>
+      {{ end }}
       {{ if eq $test.result "Pass" }} 
         <td><div class="scan-result-pass">&#10003; {{ $test.result}} </div></td>
         <td></td>
