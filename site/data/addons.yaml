@@ -706,6 +706,17 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/packscanrules-v0.0.1/packscanrules-alpha-0.0.1.zap
   date: 2022-05-13
   version: 0.0.1
+- id: paramminer
+  name: Parameter Miner
+  description: Identify hidden, unlinked parameters. Useful for finding web cache
+    poisoning vulnerabilities.
+  author: ZAP Dev Team and Arkaprabha Chakraborty
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/paramminer-v0.0.1/paramminer-alpha-0.0.1.zap
+  date: 2022-08-17
+  version: 0.0.1
 - id: plugnhack
   name: Plug-n-Hack Configuration
   description: 'Supports the Mozilla Plug-n-Hack standard: https://developer.mozilla.org/en-US/docs/Plug-n-Hack.'
