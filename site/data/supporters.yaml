@@ -49,14 +49,18 @@ silver:
     logo: /img/supporters/soos.png
     notes: GitHub direct sponsorship + $1,500 via OWASP donation
 
+  - name: 'Dave Wichers'
+    link: https://www.linkedin.com/in/wichers/
+    notes: GitHub direct sponsorship
+
+  - name: 'Marcel Patzelt'
+    link: https://twitter.com/blinkZ03272259
+    notes: GitHub direct sponsorship
+
   - name: 'Denim Group'
     link: https://www.denimgroup.com/
     logo: /img/supporters/denimgroup.png
     notes: $3,000 in donations
-
-  - name: 'Dave Wichers'
-    link: https://www.linkedin.com/in/wichers/
-    notes: GitHub direct sponsorship
 
   - name: 'Astra'
     link: https://www.getastra.com/
