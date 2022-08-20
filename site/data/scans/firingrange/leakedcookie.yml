@@ -2,12 +2,12 @@ section: Leaked httpOnly cookie
 url: https://public-firing-range.appspot.com/leakedcookie
 details:
 - path: /leakedcookie
-  result: Pass
+  result: FAIL
   rule: 10011
 - path: /leakedinresource
   result: Pass
   rule: 10011
 tests: 2
-passes: 2
-fails: 0
-score: 100%
+passes: 1
+fails: 1
+score: 50%
