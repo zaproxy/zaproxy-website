@@ -212,7 +212,7 @@
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/parosproxy/paros/model/HistoryReference.java
 
-- name: 'Param Miner'
+- name: 'Param Digger'
   type: 'History Type'
   value: 23
   repo: zaproxy/zaproxy
@@ -314,7 +314,7 @@
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/parosproxy/paros/network/HttpSender.java
 
-- name: 'Param Miner'
+- name: 'Param Digger'
   type: 'Request Initiator'
   value: 17
   repo: zaproxy/zaproxy
