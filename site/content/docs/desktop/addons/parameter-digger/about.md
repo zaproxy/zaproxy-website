@@ -1,15 +1,15 @@
 ---
 # This page was generated from the add-on.
-title: Parameter Miner - About
+title: Parameter Digger - About
 type: userguide
 weight: 1
 ---
 
-# Param Miner - About
+# Param Digger - About
 
 ## Source Code
 
-<https://github.com/zaproxy/zap-extensions/tree/main/addOns/paramminer>
+<https://github.com/zaproxy/zap-extensions/tree/main/addOns/paramdigger>
 
 ## Authors
 
