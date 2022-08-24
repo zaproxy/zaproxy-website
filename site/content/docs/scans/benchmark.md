@@ -8,7 +8,7 @@ OWASP Benchmark is a Java test suite designed to verify the speed and accuracy o
 
 You can find the home page for the project at https://owasp.org/www-project-benchmark/ and the source code at https://github.com/OWASP-Benchmark/BenchmarkJava.
 
-Click on the Sections to see the full set of results, which include the path of the test in the appication and the scan rule which should find the vulnerability.
+Click on the Sections to see the full set of results, which include the path of the test in the application and the scan rule which should find the vulnerability.
 
 {{< scan-table >}}
 
