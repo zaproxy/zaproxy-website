@@ -728,6 +728,15 @@
   - automation
   - appsecpodcast
 
+- title: 'Evolution of AppSec: Perspectives from a Decade of Building OWASP ZAP'
+  id: o9f7S0XNj14
+  site: youtube
+  date: '2021/07/20'
+  length: 40:00
+  tags:
+  - intro
+  - rsa
+
 - title: 'Automating OWASP ZAP'
   id: zLStJYOWOIY
   site: youtube
