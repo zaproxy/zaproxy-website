@@ -133,7 +133,7 @@ After the download is completed unzip the downloaded package and you'll have a f
 
 The reason for using the core version of ZAP is because it doesn't  contain unneccesary components like the in-built browser that doesn't  work on the set up.
 
-All you have to do now is install any browser of your choice, install ZAP's CA certificate and [set up the proxy](https://www.zaproxy.org/docs/desktop/start/proxies/) on the browser and you're good to go.
+All you have to do now is install any browser of your choice, install ZAP's CA certificate and [set up the proxy](/docs/desktop/start/proxies/) on the browser and you're good to go.
 
 ![ZAP working screen](images/Screenshot_2022-08-20-18-01-55-325_com.realvnc.viewer.android.jpg)
 
