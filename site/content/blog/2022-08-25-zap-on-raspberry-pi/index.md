@@ -54,7 +54,7 @@ Then click the ***'CHOOSE OS'*** button , select ***'CUSTOM'*** from the drop do
 
 Now plug in your card reader with the micro SD card inserted into any of the various USB ports on your computer and click on the ***'CHOOSE STORAGE'*** button and locate your SD card in the options displayed (usually your sd card is the only option displayed if no other storage devices are plugged into your computer).
 
-The ***'WRITE'*** button at this point would change colour depicting that you're ready to write into your SD card , but before we write into the storage device click the 'SETTINGS' icon below the gear button to access options to pre-configure WiFi , SSH (recommended)  and so on and set according to your preferrences.
+The ***'WRITE'*** button at this point would change colour depicting that you're ready to write into your SD card , but before we write into the storage device click the 'SETTINGS' icon below the gear button to access options to pre-configure WiFi , SSH (recommended)  and so on and set according to your preferences.
 
 Once this is done, we can now click the ***'WRITE'*** to write into our SD card .
 It doesn't take much time, once the raspberry pi imager is done with the writing process it displays the following prompt.
@@ -75,17 +75,17 @@ Run the following commands to install a VNC server on the raspberry pi
 
 * Update the raspberry pi repository list
 
-```
+```bash
  sudo apt update   
 ```
 
 * Install tightvncserver by typing
-```
+```bash
   sudo apt install tightvncserver
 ```
 
 * Run tightvncserver
-```
+```bash
     sudo tightvncserver
 ```
 
@@ -93,7 +93,7 @@ Now create a password for the VNC server .There's no need to create a view only 
 
 The Raspberry Pi has now started a VNC server session at ***your raspberry pi ip:1*** remember this address as it is needed later.
 
-Install any VNC client software from the Google Playstore and launch the application add new host using ***your raspberry pi ip:1*** as Host address, use the user that created the vnc server on your raspberry pi and the password you created.
+Install any VNC client software from the Google Play store and launch the application add new host using ***your raspberry pi ip:1*** as Host address, use the user that created the vnc server on your raspberry pi and the password you created.
 
 ## Step 3 : Installing a windows manager and a desktop manager on the raspberry pi
 When i was going through this set up initially i tried to make it as light weight and minimalistic as possible, i installed only X , dmenu and a windows manager , i3  but the VNC clients weren't recognising the shortcut keys to run the terminal and dmenu  even after editing i3's config so i had to install a desktop manager , lxde.
@@ -102,13 +102,13 @@ When i was going through this set up initially i tried to make it as light weigh
 
 Run the following commands to install X, dmenu ,i3 and lxde on the raspberry pi
 
-```
+```bash
 sudo apt update && sudo apt upgrade && sudo apt install xserver-xorg-core xserver-xorg-video-fbdev xserver-xorg-input-evdev xinit xfonts-base lxde  --no-install-recommends -y
 ```
 
 Let XServer know the preferred desktop environment  to start:
 
-```
+```bash
 echo 'exec startlxde' > ~/.xinitrc
 ```
 
@@ -119,11 +119,11 @@ Now we can start up a terminal from the VNC client by clicking the last option o
 ## Step 4: Installing ZAP on the raspberry pi
 Before we start ZAP installation, we need to install java8 or higher in our raspberry pi (i used java11 for this installation)
 
-```
+```bash
 sudo apt-get install openjdk-8-jdk
 ```
 
-Go to [ZAP official download page](https://www.zaproxy.org/download/) and download the ***`core cross platform package`*** zip file.
+Go to [ZAP official download page](/download/) and download the ***`core cross platform package`*** zip file.
 
 ![ZAP core zip download screen](images/Screenshot_2022-08-20-12-33-22-028_com.realvnc.viewer.android.jpg)
 
@@ -131,7 +131,7 @@ After the download is completed unzip the downloaded package and you'll have a f
 
 ![ZAP beginning screen](images/Screenshot_2022-08-20-12-57-35-168_com.realvnc.viewer.android.jpg)
 
-The reason for using the core version of ZAP is because it doesn't  contain unneccesary componets like the in-built browser that doesn't  work on the set up.
+The reason for using the core version of ZAP is because it doesn't  contain unneccesary components like the in-built browser that doesn't  work on the set up.
 
 All you have to do now is install any browser of your choice, install ZAP's CA certificate and [set up the proxy](https://www.zaproxy.org/docs/desktop/start/proxies/) on the browser and you're good to go.
 
