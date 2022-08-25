@@ -143,11 +143,11 @@ details:
   ajax: Pass
 - path: /test/html/body/svg/image/xlink.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: Pass
 - path: /test/html/body/svg/script/xlink.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: Pass
 - path: /test/html/body/table/background.found
   scheme: https
@@ -283,7 +283,7 @@ details:
   ajax: FAIL
 tests: 70
 passes: 56
-standardPasses: 54
+standardPasses: 56
 ajaxPasses: 21
 fails: 14
 score: 80%
