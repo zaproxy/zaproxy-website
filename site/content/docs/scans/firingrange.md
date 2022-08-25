@@ -31,8 +31,20 @@ Changes which find any of the missed vulnerabilities are eligible for a bounty v
 
 {{< /scan-table >}}
 
+&nbsp;  
+
+#### Configuration
+
 | Config | Details |
 | --- | --- |
 | Frequency | Daily |
 | Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/firingrange/ |
 | Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-firingrange.yml | 
+
+&nbsp;  
+
+#### Settings
+
+The latest [Live ZAP Docker image](https://hub.docker.com/r/owasp/zap2docker-live/) is run with the default settings against this app with the following exceptions:
+
+* The [XSS](/docs/alerts/40012/) rule is set to use LOW threshold in order to detect 2 cases which are not strictly vulnerable.

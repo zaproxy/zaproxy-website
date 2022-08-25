@@ -14,8 +14,18 @@ Note that the "Non Vulnerable" site _is_ actually vulnerable to XSS attacks :smi
 
 {{< ssti-table target="ssti" section="all" >}}
 
+&nbsp;  
+
+#### Configuration
+
 | Config | Details |
 | --- | --- |
 | Frequency | Daily |
 | Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/ssti/ |
 | Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-ssti.yml | 
+
+&nbsp;  
+
+#### Settings
+
+The latest [Live ZAP Docker image](https://hub.docker.com/r/owasp/zap2docker-live/) is run with the default settings against this app with no exceptions.
