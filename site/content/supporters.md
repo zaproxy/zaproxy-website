@@ -13,7 +13,6 @@ You can sponsor the ZAP project via the "Donate" button on the [OWASP ZAP projec
 
 You can also sponsor the following members of the Core team directly - these contributions count as donations to the ZAP project in terms of "ZAP Supporters":
 
-* [psiinon](https://github.com/sponsors/psiinon)
 * [thc202](https://github.com/sponsors/thc202)
 * [kingthorin](https://github.com/sponsors/kingthorin)
 * [ricekot](https://github.com/sponsors/ricekot)

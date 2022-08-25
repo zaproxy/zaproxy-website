@@ -12,10 +12,7 @@ Simon released ZAP in 2010 and has been working on it ever since.
 
 #### Sponsor
 
-Simon's work on ZAP was previously sponsored by Mozilla and StackHawk but he is currently not in work and is looking for 
-[one or more new sponsors](/blog/2022-06-17-help-needed-fund-zap-development/).
-
-He can also be sponsored directly via his [GitHub Sponsor](https://github.com/sponsors/psiinon/) page.
+Simon's work on ZAP was previously sponsored by Mozilla and StackHawk.
 
 #### Expertise
 
