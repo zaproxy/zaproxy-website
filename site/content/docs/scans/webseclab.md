@@ -20,8 +20,18 @@ If an alert is generated for a false positive then the test fails.
 
 {{< /webseclab-table >}}
 
+&nbsp;  
+
+#### Configuration
+
 | Config | Details |
 | --- | --- |
 | Frequency | Daily |
 | Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/webseclab/ |
 | Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-webseclab.yml | 
+
+&nbsp;  
+
+#### Settings
+
+The latest [Live ZAP Docker image](https://hub.docker.com/r/owasp/zap2docker-live/) is run with the default settings against this app with no exceptions.

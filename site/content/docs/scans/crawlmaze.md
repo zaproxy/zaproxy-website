@@ -19,8 +19,21 @@ see Issue [#7152](https://github.com/zaproxy/zaproxy/issues/7152) for more detai
 
 {{< /spider-table >}}
 
+&nbsp;  
+
+#### Configuration
+
 | Config | Details |
 | --- | --- |
 | Frequency | Daily |
 | Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/crawlmaze/ |
 | Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-crawlmaze.yml | 
+
+&nbsp;  
+
+#### Settings
+
+The latest [Live ZAP Docker image](https://hub.docker.com/r/owasp/zap2docker-live/) is run with the default settings against this app with the following exceptions:
+
+* The traditional Spider "maxDepth" is set to 10 to find the deeper links.
+* The number of browsers launched by the Ajax Spider is set to 10 to speed up the crawling.
