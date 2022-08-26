@@ -1,0 +1,51 @@
+{{ $target := .Get "target" }}
+{{ $section := .Get "section" }}
+{{ $expand := .Get "expand" }}
+{{ $nolinks := default false (.Get "nolinks") }}
+{{ $data := index .Site.Data.scans ($target) ($section) }}
+
+<tr>
+    <td>
+        <h5><a href="#section-{{ $section }}" onclick="showHide('scan-{{ $section }}')" id="section-{{ $section }}">{{
+                $data.section }}</a></h5>
+    </td>
+    <td align="center"><strong>{{ $data.tests }}</strong></td>
+    <td align="center"><strong>{{ $data.passes }}</strong></td>
+    <td align="center"><strong>{{ $data.fails }}</strong></td>
+    <td align="center"><strong>{{ $data.score }}</strong></td>
+</tr>
+<tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
+    <th>Individual Tests</th>
+    <th>Rule</th>
+    <th>Vulnerable</th>
+    <th>Reported</th>
+    <th>Result</th>
+</tr>
+<tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
+    {{ if $nolinks }}
+    <td>Top Level: {{ $data.url}}</td>
+    {{ else }}
+    <td>Top Level: <a href="{{ $data.url}}/" id="section-{{ $section }}">{{ $data.url}}</a></td>
+    {{ end }}
+</tr>
+{{ range $test := $data.details }}
+<tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
+    {{ if $nolinks }}
+    <td>{{ $test.path }}</td>
+    {{ else }}
+    <td><a href="{{ $data.url}}{{ $test.path}}">{{ $test.path}}</a></td>
+    {{ end }}
+    <td align="center"><a href="/docs/alerts/{{ $test.rule }}/">{{ $test.rule}}</a></td>
+    <td align="center">{{ if not $test.vulnerable}} Not {{end}} Vulnerable </a></td>
+    <td align="center">{{ if not $test.reported}} Not {{end}} Reported </a></td>
+    {{ if eq $test.result "Pass" }}
+    <td align="center">
+        <div class="scan-result-pass">&#10003; {{ $test.result}} </div>
+    </td>
+    {{ else }}
+    <td align="center">
+        <div class="scan-result-fail">&#10060; {{ $test.result}} </div>
+    </td>
+    {{ end }}
+</tr>
+{{ end }}

@@ -1,760 +1,1262 @@
 section: Command Injection
-url: https://localhost:8443/
+url: https://localhost:8443/benchmark
 details:
-- path: benchmark/cmdi-00/BenchmarkTest00006
-  result: FAIL
+- path: /cmdi-00/BenchmarkTest00006
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00007
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00007
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00015
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00015
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00017
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00017
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00051
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00051
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00077
   result: Pass
+- path: /cmdi-00/BenchmarkTest00077
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00090
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00090
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00091
   result: Pass
+- path: /cmdi-00/BenchmarkTest00091
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00092
   result: Pass
+- path: /cmdi-00/BenchmarkTest00092
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00093
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00093
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00158
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00158
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00159
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00159
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00171
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00171
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00172
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00172
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00173
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00173
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00174
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00174
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00175
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00175
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00176
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00176
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00177
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00177
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00293
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00293
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00294
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00294
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00295
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00295
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00302
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00302
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00303
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00303
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00304
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00304
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00305
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00305
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00306
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00306
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00307
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00307
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00308
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00308
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00309
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00309
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00310
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00310
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00311
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00311
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00396
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00396
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00406
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00406
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00407
   result: Pass
+- path: /cmdi-00/BenchmarkTest00407
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00408
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00408
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00409
   result: Pass
+- path: /cmdi-00/BenchmarkTest00409
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00410
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00410
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00411
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00411
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00412
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00412
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00480
   result: Pass
+- path: /cmdi-00/BenchmarkTest00480
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00481
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00481
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00494
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00494
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00495
   result: Pass
+- path: /cmdi-00/BenchmarkTest00495
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00496
   result: Pass
+- path: /cmdi-00/BenchmarkTest00496
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00497
   result: Pass
+- path: /cmdi-00/BenchmarkTest00497
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00498
   result: Pass
+- path: /cmdi-00/BenchmarkTest00498
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00499
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00499
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00500
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00500
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00558
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00558
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00559
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00559
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00567
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00567
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00568
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00568
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00569
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00569
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00570
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00570
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00571
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00571
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00572
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00572
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00573
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00573
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00574
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00574
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00575
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00575
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00576
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00576
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00657
   result: FAIL
+- path: /cmdi-00/BenchmarkTest00657
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00658
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00658
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00659
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00659
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00731
   result: Pass
+- path: /cmdi-00/BenchmarkTest00731
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00732
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00732
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00738
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00738
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00739
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00739
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00740
   result: Pass
+- path: /cmdi-00/BenchmarkTest00740
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00741
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00741
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00742
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00742
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00743
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00743
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00814
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00814
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00815
   result: Pass
+- path: /cmdi-00/BenchmarkTest00815
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00816
   result: Pass
+- path: /cmdi-00/BenchmarkTest00816
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00823
   result: Pass
+- path: /cmdi-00/BenchmarkTest00823
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00824
   result: Pass
+- path: /cmdi-00/BenchmarkTest00824
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00825
   result: Pass
+- path: /cmdi-00/BenchmarkTest00825
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00826
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00826
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-00/BenchmarkTest00827
-  result: FAIL
+  result: Pass
+- path: /cmdi-00/BenchmarkTest00827
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00895
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00895
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00896
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00896
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00897
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00897
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00905
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00905
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00906
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00906
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00907
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00907
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00908
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00908
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00909
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00909
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00910
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00910
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00968
   result: Pass
+- path: /cmdi-01/BenchmarkTest00968
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00969
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00969
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00970
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00970
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00978
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00978
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00979
   result: Pass
+- path: /cmdi-01/BenchmarkTest00979
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00980
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00980
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00981
   result: Pass
+- path: /cmdi-01/BenchmarkTest00981
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00982
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest00982
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest00983
   result: Pass
+- path: /cmdi-01/BenchmarkTest00983
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01064
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01064
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01065
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01065
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01066
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01066
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01067
   result: FAIL
+- path: /cmdi-01/BenchmarkTest01067
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01068
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01068
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01182
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01182
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01189
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01189
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01190
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01190
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01191
   result: FAIL
+- path: /cmdi-01/BenchmarkTest01191
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01192
   result: FAIL
+- path: /cmdi-01/BenchmarkTest01192
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01193
   result: FAIL
+- path: /cmdi-01/BenchmarkTest01193
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01194
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01194
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01269
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01269
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01270
   result: Pass
+- path: /cmdi-01/BenchmarkTest01270
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01285
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01285
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01286
   result: Pass
+- path: /cmdi-01/BenchmarkTest01286
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01287
   result: Pass
+- path: /cmdi-01/BenchmarkTest01287
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01288
   result: Pass
+- path: /cmdi-01/BenchmarkTest01288
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01289
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01289
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01290
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01290
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01353
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01353
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01360
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01360
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01361
   result: Pass
+- path: /cmdi-01/BenchmarkTest01361
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01362
   result: Pass
+- path: /cmdi-01/BenchmarkTest01362
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01363
   result: Pass
+- path: /cmdi-01/BenchmarkTest01363
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01364
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01364
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01365
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01365
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01430
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01430
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01440
   result: FAIL
+- path: /cmdi-01/BenchmarkTest01440
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01441
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01441
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01442
   result: FAIL
+- path: /cmdi-01/BenchmarkTest01442
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01443
   result: FAIL
+- path: /cmdi-01/BenchmarkTest01443
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01444
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01444
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01445
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01445
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01446
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01446
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01516
   result: FAIL
+- path: /cmdi-01/BenchmarkTest01516
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01517
   result: Pass
-  rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01526
-  result: FAIL
+- path: /cmdi-01/BenchmarkTest01517
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01527
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01526
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01528
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01527
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01529
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01528
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01530
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01529
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01531
   result: Pass
+- path: /cmdi-01/BenchmarkTest01530
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01532
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01531
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01533
   result: Pass
+- path: /cmdi-01/BenchmarkTest01532
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01600
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01533
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01601
   result: Pass
+- path: /cmdi-01/BenchmarkTest01600
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01606
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01601
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01607
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01606
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01608
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01607
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01609
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01608
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01610
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01609
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01672
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01610
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01673
   result: Pass
+- path: /cmdi-01/BenchmarkTest01672
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01674
   result: Pass
+- path: /cmdi-01/BenchmarkTest01673
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01685
   result: Pass
+- path: /cmdi-01/BenchmarkTest01674
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01686
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01685
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01687
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01686
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01688
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01687
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01689
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01688
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01690
   result: Pass
+- path: /cmdi-01/BenchmarkTest01689
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-01/BenchmarkTest01691
   result: Pass
+- path: /cmdi-01/BenchmarkTest01690
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01692
-  result: FAIL
+  result: Pass
+- path: /cmdi-01/BenchmarkTest01691
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01693
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01692
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01778
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01693
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01779
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01778
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01780
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01779
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01791
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01780
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01792
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01791
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01793
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01792
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01794
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01793
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01795
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01794
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01796
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01795
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01850
   result: Pass
+- path: /cmdi-02/BenchmarkTest01796
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01851
   result: Pass
+- path: /cmdi-02/BenchmarkTest01850
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01852
   result: Pass
+- path: /cmdi-02/BenchmarkTest01851
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01864
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01852
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01865
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01864
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01928
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01865
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01929
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01928
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01936
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01929
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01937
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01936
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01938
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01937
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01939
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01938
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01940
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01939
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01941
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01940
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01942
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01941
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01943
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01942
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest01944
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01943
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02058
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest01944
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02059
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02058
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02067
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02059
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02068
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02067
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02069
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02068
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02070
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02069
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02137
   result: Pass
+- path: /cmdi-02/BenchmarkTest02070
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02146
   result: FAIL
+- path: /cmdi-02/BenchmarkTest02137
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02147
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02146
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02148
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02147
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02149
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02148
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02150
   result: Pass
+- path: /cmdi-02/BenchmarkTest02149
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02151
   result: Pass
+- path: /cmdi-02/BenchmarkTest02150
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02152
   result: Pass
+- path: /cmdi-02/BenchmarkTest02151
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02153
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02152
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02154
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02153
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02155
   result: Pass
+- path: /cmdi-02/BenchmarkTest02154
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02156
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02155
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02242
   result: FAIL
+- path: /cmdi-02/BenchmarkTest02156
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02243
   result: Pass
+- path: /cmdi-02/BenchmarkTest02242
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02244
   result: Pass
+- path: /cmdi-02/BenchmarkTest02243
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02249
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02244
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02250
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02249
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02251
   result: Pass
+- path: /cmdi-02/BenchmarkTest02250
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02252
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02251
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02253
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02252
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02333
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02253
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02334
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02333
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02335
   result: FAIL
+- path: /cmdi-02/BenchmarkTest02334
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02336
   result: FAIL
+- path: /cmdi-02/BenchmarkTest02335
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02340
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02336
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02341
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02340
+  vulnerable: false
+  reported: false
+  rule: 90020
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02341
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02342
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02342
+  vulnerable: true
+  reported: false
+  rule: 90020
   result: FAIL
+- path: /cmdi-02/BenchmarkTest02343
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02343
   result: FAIL
+- path: /cmdi-02/BenchmarkTest02344
+  vulnerable: true
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02344
   result: FAIL
+- path: /cmdi-02/BenchmarkTest02411
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02411
   result: Pass
+- path: /cmdi-02/BenchmarkTest02412
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02412
   result: Pass
+- path: /cmdi-02/BenchmarkTest02413
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02413
-  result: FAIL
-  rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02414
   result: Pass
+- path: /cmdi-02/BenchmarkTest02414
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02428
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02428
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02429
   result: Pass
+- path: /cmdi-02/BenchmarkTest02429
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02430
   result: Pass
+- path: /cmdi-02/BenchmarkTest02430
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02431
   result: Pass
+- path: /cmdi-02/BenchmarkTest02431
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02432
   result: Pass
+- path: /cmdi-02/BenchmarkTest02432
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02433
   result: Pass
+- path: /cmdi-02/BenchmarkTest02433
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02496
   result: Pass
+- path: /cmdi-02/BenchmarkTest02496
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02510
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02510
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02511
   result: Pass
+- path: /cmdi-02/BenchmarkTest02511
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02512
   result: Pass
+- path: /cmdi-02/BenchmarkTest02512
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02513
-  result: FAIL
+  result: Pass
+- path: /cmdi-02/BenchmarkTest02513
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02514
   result: Pass
+- path: /cmdi-02/BenchmarkTest02514
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02515
   result: Pass
+- path: /cmdi-02/BenchmarkTest02515
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-02/BenchmarkTest02516
   result: Pass
+- path: /cmdi-02/BenchmarkTest02516
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02517
   result: Pass
+- path: /cmdi-03/BenchmarkTest02517
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02518
-  result: FAIL
+  result: Pass
+- path: /cmdi-03/BenchmarkTest02518
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02610
-  result: FAIL
+  result: Pass
+- path: /cmdi-03/BenchmarkTest02610
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02611
   result: Pass
+- path: /cmdi-03/BenchmarkTest02611
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02612
   result: Pass
+- path: /cmdi-03/BenchmarkTest02612
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02613
   result: Pass
+- path: /cmdi-03/BenchmarkTest02613
+  vulnerable: true
+  reported: true
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02697
-  result: FAIL
+  result: Pass
+- path: /cmdi-03/BenchmarkTest02697
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02698
-  result: FAIL
+  result: Pass
+- path: /cmdi-03/BenchmarkTest02698
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02699
-  result: FAIL
+  result: Pass
+- path: /cmdi-03/BenchmarkTest02699
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02713
-  result: FAIL
+  result: Pass
+- path: /cmdi-03/BenchmarkTest02713
+  vulnerable: false
+  reported: false
   rule: 90020
-- path: benchmark/cmdi-03/BenchmarkTest02714
-  result: FAIL
+  result: Pass
+- path: /cmdi-03/BenchmarkTest02714
+  vulnerable: false
+  reported: false
   rule: 90020
+  result: Pass
 tests: 251
-passes: 66
-fails: 185
-score: 26%
+passes: 224
+fails: 27
+score: 89%

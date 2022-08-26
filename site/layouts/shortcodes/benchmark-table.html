@@ -1,0 +1,35 @@
+<div>
+
+  <script type="text/javascript">
+    function showHide(name) {
+      for (let e of document.getElementsByClassName(name)) {
+        if (e.style.display === "none") {
+          e.style.display = "";
+        } else {
+          e.style.display = "none";
+        }
+      }
+    }
+  </script>
+
+  <table class="scanResultsTable" style="resize: none">
+    <colgroup>
+      <col width="50%" />
+      <col width="12.5%" />
+      <col width="12.5%" />
+      <col width="12.5%" />
+      <col width="12.5%" />
+    </colgroup>
+    <tr>
+      <th>Section</th>
+      <th>Total Tests</th>
+      <th>Passes</th>
+      <th>Fails</th>
+      <th>Score</th>
+    </tr>
+
+    {{ .Inner }}
+
+  </table>
+
+</div>
