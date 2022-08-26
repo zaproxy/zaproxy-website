@@ -26,6 +26,7 @@ If your app can be run with full functionality and without authentication then j
 Single Sign On systems can be especially hard to work with. 
 If you can use a simpler authentication mechanism like HTTP auth or a simple POST form then do that - these options will be much
 easier to set up and much less likely to break your testing.
+Some SSO providers do document ways to authenticate automatically - see the next page.
 
 Two factor authentication (2AF) can be even harder to work with.
 ZAP does not work by magic - if you want to perform automated scanning but need a 2FA token then you are going to need to be able to 
@@ -39,4 +40,4 @@ Although you probably want to use authentication in automation it is still much 
 
 You will be able to see the requests and responses sent through ZAP and be able to change them on the fly in order to see what works and what does not work.
 
-{{<prevnext nextUrl="../manual-auth/" nextTitle="Manual authentication">}}
+{{<prevnext nextUrl="../documented-sso-solutions/" nextTitle="Documented SSO Solutions">}}
