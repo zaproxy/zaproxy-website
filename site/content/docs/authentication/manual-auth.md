@@ -48,4 +48,4 @@ Defining a session as active will ensure that these tools use the right cookie f
 
 Using an active session also allows you to switch quickly and easily between different app sessions as part of your manual testing.
 
-{{<prevnext prevUrl="../make-your-life-easier/" prevTitle="How to make your life easier" nextUrl="../concepts/" nextTitle="ZAP authentication concepts">}}
+{{<prevnext prevUrl="../documented-sso-solutions/" prevTitle="Documented SSO Solutions" nextUrl="../concepts/" nextTitle="ZAP authentication concepts">}}

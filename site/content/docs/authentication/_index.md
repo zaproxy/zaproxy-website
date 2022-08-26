@@ -7,6 +7,10 @@ links:
     link: make-your-life-easier/
     desc: authentication is hard, don't make it harder than it needs to be
 
+  - name: 'Documented SSO Solutions'
+    link: documented-sso-solutions/
+    desc: these SSO providers have documented ways to make integration with tools like ZAP easier
+
   - name: 'Manual authentication'
     link: manual-auth/
     desc: how you can authenticate when testing manually
