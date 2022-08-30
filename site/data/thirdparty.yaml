@@ -61,6 +61,10 @@ services:
     link: https://github.com/Ostorlab/ostorlab
     license: 'Free, open source'
 
+  - name: 'Rekono'
+    link: https://github.com/pablosnt/rekono
+    license: 'Free, open source'
+
   - name: 'RedHat RapiDAST'
     link: https://github.com/RedHatProductSecurity/rapidast
     license: 'Free, open source'
@@ -116,6 +120,10 @@ services:
 
   - name: 'Jit'
     link: https://www.jit.io/security-tools
+    license: 'Commercial'
+
+  - name: 'NamicSoft'
+    link: https://www.namicsoft.com/
     license: 'Commercial'
 
   - name: 'Nucleus'
@@ -211,6 +219,10 @@ training:
   - name: 'Eduonix'
     link: https://www.eduonix.com/pentesting-with-owasp-zap-mastery-course
     what: 'PenTesting with OWASP ZAP: mastery course'
+
+  - name: 'Everable'
+    link: https://app.everable.com/course-information/8
+    what: 'Automated DAST in CI/CD using OWASP ZAP'
 
   - name: 'Pluralsight'
     link: https://www.pluralsight.com/courses/owasp-zap-web-app-pentesting-getting-started
