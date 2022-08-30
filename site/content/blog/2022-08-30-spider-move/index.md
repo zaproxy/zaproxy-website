@@ -19,12 +19,14 @@ For the upcoming stable release of ZAP a number of changes have been made to the
 
 To facilitate more frequent functional enhancements and bug fixes the core Spider has been moved to an add-on which means such changes are no longer bound to core/stable releases. Other add-ons which use Traditional Spider functionality have also been re-worked to support the Spider add-on, including: Quick Start, Form Handler, GraphQL, OpenAPI, SOAP, and the Automation Framework. Please help us test this out by using a [weekly release](/download/#weekly).
 
-**Note**: Some Third Party add-ons which use the Spider may start to fail with the release of 2.12. Please get in-touch via the [Developer Group](https://groups.google.com/g/zaproxy-develop) if you have questions about updating your add-on(s) to work in 2.12.
+**Note**: Some Third Party add-ons which use the Spider will stop working with the release of 2.12. Please get in-touch via the [Developer Group](https://groups.google.com/g/zaproxy-develop) if you have questions about updating your add-on(s) to work in 2.12.
 
 ## Functional Improvements for 2.12
 
 A large number of functional improvements have been made since 2.11. Most of which have been a result of efforts related to [Issue 7152](https://github.com/zaproxy/zaproxy/issues/7152) which is backed by bounties via the StackHawk [ZAP Fund](https://www.stackhawk.com/zap-fund/).
 Please feel free to jump in and claim some bounties yourself! The following table lists the changes in the Spider's behaviour after said updates.
+
+The next weekly will include changes allowing users to specify [Irrelevant parameters](https://github.com/zaproxy/zaproxy/pull/4398) which the Spider should ignore when [determining what resources were already visited](/docs/desktop/ui/dialogs/options/spider/#query-parameters-handling).
 
 | Before                                                                                                                                  | With                                                                                                                                                                                                                |
 |-----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
