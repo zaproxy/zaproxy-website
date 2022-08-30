@@ -3,7 +3,7 @@ title: "Spider News"
 summary: >
   News about changes to the Traditional Spider for the up-coming release.
 images:
-- https://www.zaproxy.org/blog/2022-08-30-spider-move/images/zapbot.spider.jpg
+- https://www.zaproxy.org/blog/2022-08-30-spider-move/images/zapbot.spider.png
 addSocialPreview: true
 type: post
 date: "2022-08-30"
