@@ -210,7 +210,7 @@ details:
   any: Pass
 - title: 'Input inserted in the middle of template code text'
   rule_40012: Pass
-  rule_40026: FAIL
+  rule_40026: Pass
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
@@ -314,7 +314,7 @@ details:
   any: Pass
 score: 97%
 rule_40012_score: 29
-rule_40026_score: 33
+rule_40026_score: 34
 rule_90019_score: 1
 rule_90025_score: 7
 rule_90035_score: 27
