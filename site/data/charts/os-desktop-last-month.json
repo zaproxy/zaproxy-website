@@ -1,13 +1,13 @@
 {
-  "title": "Desktop News Pings by OS in July 2022",
-  "description": "The number of News pings from ZAP Desktops by OS in July 2022",
+  "title": "Desktop News Pings by OS in August 2022",
+  "description": "The number of News pings from ZAP Desktops by OS in August 2022",
   "data": [
     ["OS", "Count"],
-    ["Windows", 123274],
-    ["Kali", 60305],
-    ["Linux", 33824],
-    ["MacOS", 21099],
-    ["BackBox", 379],
-    ["Unknown", 22]
+    ["Windows", 127285],
+    ["Kali", 64610],
+    ["Linux", 36120],
+    ["MacOS", 21571],
+    ["BackBox", 405],
+    ["Unknown", 36]
   ]
 }
