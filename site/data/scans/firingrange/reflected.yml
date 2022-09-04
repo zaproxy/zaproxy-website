@@ -25,10 +25,10 @@ details:
 - path: /filteredstrings/body/caseInsensitive/script
   result: Pass
   rule: 40012
-- path: /filteredstrings/body/caseSensitive/SCRIPT
+- path: /filteredstrings/body/caseSensitive/script
   result: Pass
   rule: 40012
-- path: /filteredstrings/body/caseSensitive/script
+- path: /filteredstrings/body/caseSensitive/SCRIPT
   result: Pass
   rule: 40012
 - path: /parameter/attribute_name
