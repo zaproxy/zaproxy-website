@@ -195,10 +195,14 @@ integrations:
     link: https://sn1persecurity.com/wordpress/sn1per-professional-v10-released/
     license: 'Commercial'
  
+  - name: 'Strobes Security'
+    link: https://www.strobes.co/integrations
+    license: 'Commercial'
+ 
   - name: 'Virtuoso'
     link: https://docs.virtuoso.qa/guide/advanced-topics/virtuoso-bridge/#virtuoso-bridge-proxy-support
     license: 'Commercial'
- 
+
 training:
   - name: 'The XSS Rat'
     link: https://www.youtube.com/watch?v=-5UMNGy7x0A
