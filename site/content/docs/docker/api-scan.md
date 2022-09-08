@@ -50,6 +50,7 @@ Options:
     -O                the hostname to override in the (remote) OpenAPI spec
     -z zap_options    ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"
     --hook            path to python file that define your custom hooks
+    --schema          GraphQL schema location, URL or file, e.g. https://www.example.com/schema.graphqls
 ```
 
 ### Configuration
