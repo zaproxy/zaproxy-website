@@ -130,6 +130,10 @@ services:
     link: https://www.nucleussec.com/integrations
     license: 'Commercial'
 
+  - name: 'Scan Factory'
+    link: https://in.scanfactory.io/
+    license: 'Commercial'
+
   # Open source, no longer maintained?, alphabetic
   - name: 'BDD Security'
     link: https://github.com/iriusrisk/bdd-security
