@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - activeScan Job
 type: userguide
-weight: 8
+weight: 9
 ---
 
 # Automation Framework - activeScan Job
@@ -10,6 +10,8 @@ weight: 8
 This job runs the active scanner. This actively attacks your applications and should therefore only be used against applications that you have permission to test.
 
 By default this job will actively scan the first context defined in the [environment](/docs/desktop/addons/automation-framework/environment/) and so none of the parameters are mandatory.
+
+This job supports [monitor](/docs/desktop/addons/automation-framework/test-monitor/) tests.
 
 ## YAML
 

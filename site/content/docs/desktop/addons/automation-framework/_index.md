@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.16.0
+    version: 0.17.0
 ---
 
 # Automation Framework
@@ -38,11 +38,15 @@ In most cases it is recommended to also use the `-cmd` command line option so th
 
 ## Authentication
 
-The Automation Framework supports a subset of the [authentication](/docs/desktop/addons/automation-framework/authentication/) mechanisms supported by ZAP.
+The Automation Framework supports all of the [authentication](/docs/desktop/addons/automation-framework/authentication/) mechanisms supported by ZAP.
 
 ## GUI
 
 A [GUI](/docs/desktop/addons/automation-framework/gui/) is under development and provides an ever increasing set of features.
+
+## Options
+
+The [Automation Options](/docs/desktop/addons/automation-framework/options/) screen allows you to configure specific options.
 
 ## API
 
@@ -61,7 +65,7 @@ The [environment](/docs/desktop/addons/automation-framework/environment/) sectio
 
 The following automation jobs are supported by this add-on:
 
-* [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
+* [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management, now deprecated
 * [delay](/docs/desktop/addons/automation-framework/job-delay/) - pauses the plan for a specified period of time or a specific condition is met
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
