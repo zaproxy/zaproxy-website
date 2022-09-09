@@ -14,7 +14,7 @@ Otherwise you can have a look at the existing ZAP issues labelled with:
 * [FalseNegative](https://github.com/zaproxy/zaproxy/issues?q=is%3Aopen+is%3Aissue+label%3AFalseNegative)
 * [FalsePositive](https://github.com/zaproxy/zaproxy/issues?q=is%3Aopen+is%3Aissue+label%3AFalsePositive)
 
-Alternatively you can try running ZAP against one of the many [deliberately vulnerable web applications](https://owasp.org/www-project-vulnerable-web-applications-directory/).
+Alternatively you can try running ZAP against one of the many [deliberately vulnerable web applications](../testing/).
 
 To see the results of ZAP running against well known vulnerable apps go to [ZAP Scans](/docs/scans/) - any issues that ZAP fails to find on these apps could be a good candidate for fixing.
 
