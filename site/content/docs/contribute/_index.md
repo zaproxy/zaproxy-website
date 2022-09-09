@@ -35,6 +35,10 @@ links:
     link: translate/
     desc: so that people can use ZAP in their native language
 
+  - name: 'Test ZAP'
+    link: testing/
+    desc: e.g. against deliberately vulnerable applications
+
   - name: 'Coding'
     link: coding/
     desc: because writing code is key to all tools
