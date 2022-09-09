@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - spider Job
 type: userguide
-weight: 7
+weight: 8
 ---
 
 # Automation Framework - spider Job
@@ -10,6 +10,8 @@ weight: 7
 This job runs the traditional spider. This is fast but does not handle modern applications as effectively.
 
 By default this job will spider the first context defined in the [environment](/docs/desktop/addons/automation-framework/environment/) and so none of the parameters are mandatory.
+
+This job supports [monitor](/docs/desktop/addons/automation-framework/test-monitor/) tests.
 
 ## YAML
 
