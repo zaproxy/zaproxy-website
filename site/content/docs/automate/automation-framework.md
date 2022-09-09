@@ -13,9 +13,14 @@ The framework is plugable and many of the existing add-ons have been enhanced to
 
 ### Updating Add-ons
 
-__Important:__  if you run the framework from the command line you should not use the `-addonupdate` option or
-the [addOns](/docs/desktop/addons/automation-framework/job-addons/) `updateAddOns` option - this has been found to cause
-problems when updating add-ons which are defined in the current plan. 
+The [addOns](/docs/desktop/addons/automation-framework/job-addons/) job has been found to cause
+problems when updating add-ons which are defined in the current plan. This job has been depreciated and no longer does anything.
+
+#### In ZAP 2.11
+
+__Important:__  if you run the framework using ZAP 2.11.x from the command line you should __not__ use the `-addonupdate` option -
+again this has been found to cause similar problems.
+ 
 The recommended approach is to run ZAP inline once to update all of the add-ons and then again to run the plan, e.g.:
 ```bash
 ./zap.sh -cmd -addonupdate
@@ -25,9 +30,25 @@ If you are using the framework in the ZAP stable [docker](/docs/docker/about/) i
 ```bash
 docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable bash -c "zap.sh -cmd -addonupdate; zap.sh -cmd -autorun /zap/wrk/zap.yaml"
 ```
-The weekly and live docker images are less likely to be out of date but if you want to use an add-on which has been updated since they were released then you should use the same sort of command.
 
-A longer term solution is being worked on.
+#### Weekly, Live, and Post 2.11
+
+With the weekly and live releases and docker images you can use the standard ZAP [command line](/docs/desktop/cmdline/) 
+options with the AF `-autorun` option:
+
+* `-addoninstall <addOnId>` to install an add-on
+* `-addonuninstall <addOnId>` to uninstall an add-on
+* `-addonupdate` to update all add-ons
+
+You can use `-addoninstall` and `-addonuninstall` as many times as you need:
+
+```bash
+./zap.sh -addonupdate\
+    -addoninstall example-1 \
+    -addoninstall example-2 \
+    -addonuninstall example-3 \
+    -cmd -autorun zap.yaml <any other ZAP options>
+```
 
 ### Framework Overview
 
@@ -42,7 +63,6 @@ The framework supports:
 The full set of jobs currently supported by the framework and other add-ons are:
 
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
-* [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management
 * [alertFilter](/docs/desktop/addons/alert-filters/automation/) - alert filter configuration, provided with the [Alert Filters](/docs/desktop/addons/alert-filters/) add-on
 * [delay](/docs/desktop/addons/automation-framework/job-delay/) - waits for a specified time or until a condition is met
 * [graphql](/docs/desktop/addons/graphql-support/automation/) - GraphQL schema import, provided with the [GraphQL](/docs/desktop/addons/graphql-support/) add-on
