@@ -1,6 +1,11 @@
 ---
 
 platinum:
+  - name: 'Jit'
+    link: https://www.jit.io/zap
+    logo: /img/supporters/jit.png
+    license: 'Commercial'
+    notes: Sponsoring Simon's work on ZAP
 
 gold:
   - name: 'Mozilla'
