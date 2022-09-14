@@ -12,7 +12,7 @@ Simon released ZAP in 2010 and has been working on it ever since.
 
 #### Sponsor
 
-Simon's work on ZAP was previously sponsored by Mozilla and StackHawk.
+Simon's work on ZAP is sponsored by [Jit](https://jit.io) where he works as a Distinguished Engineer.
 
 #### Expertise
 

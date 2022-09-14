@@ -2,6 +2,12 @@
 
 services:
   # ZAP Supporters - ordered by supporter level, alphabetic
+  - name: 'Jit'
+    link: https://www.jit.io/zap
+    logo: /img/supporters/jit.png
+    license: 'Commercial'
+    supporter: ZAP Platinum Supporter
+
   - name: 'StackHawk'
     link: https://www.stackhawk.com/
     logo: /img/supporters/stackhawk.png
@@ -116,10 +122,6 @@ services:
 
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
-    license: 'Commercial'
-
-  - name: 'Jit'
-    link: https://www.jit.io/security-tools
     license: 'Commercial'
 
   - name: 'NamicSoft'
