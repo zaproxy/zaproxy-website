@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 42.0.0
+    version: 43.0.0
 ---
 
 # Passive Scan Rules
@@ -73,12 +73,14 @@ Latest code: [CharsetMismatchScanRule.java](https://github.com/zaproxy/zap-exten
 
 ## Content Security Policy (CSP) Header Not Set
 
-This checks HTML response headers for the presence of a Content Security Policy header.  
+This checks HTML response headers for the presence of a Content Security Policy header, or the response body for CSP specified via META tag.  
 By default this rule checks for the presence of the "Content-Security-Policy" header, and at the Low threshold also checks for the "X-Content-Security-Policy" and "X-WebKit-CSP" headers.  
-Redirects and non HTML responses are ignored except at the Low threshold.
+Redirects and non-HTML responses are ignored except at the Low threshold.
 
 If a "Content-Security-Policy-Report-Only" header is found on a response an INFO alert is raised. This may represent an enforcement effort
 that is actively being refined or developed, or one which is only partially implemented.
+
+Note: This rule does not perform any actual analysis of the specified policy, for that please ensure the CSP scan rule is enabled.
 
 Latest code: [ContentSecurityPolicyMissingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ContentSecurityPolicyMissingScanRule.java)
 
@@ -223,7 +225,9 @@ Latest code: [InfoSessionIdUrlScanRule.java](https://github.com/zaproxy/zap-exte
 ## Timestamp Disclosure
 
 A timestamp was disclosed by the application/web server.  
-At HIGH threshold this rule does not alert on potential timestamps that are not within a range of plus or minus one year.
+At HIGH threshold this rule does not alert on potential timestamps that are not within a range of plus or minus one year.  
+At MEDIUM threshold this rule does not alert on potential timestamps beyond 10 years.  
+At all thresholds, this rule will not alert on timestamps beyond the Y2038 epoch edge.  
 
 Latest code: [TimestampDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/TimestampDisclosureScanRule.java)
 
