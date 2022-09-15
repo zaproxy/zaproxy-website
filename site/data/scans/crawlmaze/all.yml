@@ -55,7 +55,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/blockquote/cite.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/embed/src.found
   scheme: https
@@ -135,7 +135,7 @@ details:
   ajax: FAIL
 - path: /test/html/body/object/param/value.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/body/script/src.found
   scheme: https
@@ -171,7 +171,7 @@ details:
   ajax: Pass
 - path: /test/html/head/base/href.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/head/comment-conditional.found
   scheme: https
@@ -219,11 +219,11 @@ details:
   ajax: FAIL
 - path: /test/html/misc/string/dot-dot-slash-prefix.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/misc/string/dot-slash-prefix.found
   scheme: https
-  standard: FAIL
+  standard: Pass
   ajax: FAIL
 - path: /test/html/misc/string/url-string.found
   scheme: http
@@ -282,8 +282,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 70
-passes: 56
-standardPasses: 56
+passes: 61
+standardPasses: 61
 ajaxPasses: 21
-fails: 14
-score: 80%
+fails: 9
+score: 87%
