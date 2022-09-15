@@ -34,3 +34,7 @@ A basic status panel.
 ## ZAP API Component
 
 An API component that adds an action endpoint.
+
+## Also see:
+- [The Param Digger Add-on GSOC 2022](https://www.zaproxy.org/blog/2022-08-22-the-param-digger-addon/).
+- Latest code: [paramdigger](https://github.com/zaproxy/zap-extensions/tree/main/addOns/paramdigger).
