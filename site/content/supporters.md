@@ -18,3 +18,6 @@ You can also sponsor the following members of the Core team directly - these con
 * [ricekot](https://github.com/sponsors/ricekot)
 
 Also see the [Third Party Engagement](/third-party-engagement/) page.
+
+Note that companies whose actions are considered to be damaging to the ZAP project may be demoted or even be removed from this page, 
+at the discretion of the ZAP Core Team.
