@@ -8,12 +8,6 @@ services:
     license: 'Commercial'
     supporter: ZAP Platinum Supporter
 
-  - name: 'StackHawk'
-    link: https://www.stackhawk.com/
-    logo: /img/supporters/stackhawk.png
-    license: 'Commercial, free option'
-    supporter: ZAP Gold Supporter
-
   - name: 'SOOS'
     link: https://soos.io/soos-dast-no-limit/
     logo: /img/supporters/soos.png
@@ -46,6 +40,11 @@ services:
   - name: 'IOTHREAT'
     link: https://iothreat.com/
     license: 'Commercial'
+    supporter: ZAP Bronze Supporter
+
+  - name: 'StackHawk'
+    link: https://www.stackhawk.com/
+    license: 'Commercial, free option'
     supporter: ZAP Bronze Supporter
 
   # OWASP tools, non-commercial, alphabetic

@@ -13,11 +13,6 @@ gold:
     logo: /img/supporters/mozilla.png
     notes: Sponsored Simon for 8 years and $10,000 donation
 
-  - name: 'StackHawk'
-    link: https://www.stackhawk.com/
-    logo: /img/supporters/stackhawk.png
-    notes: Sponsored Simon for 2 years
-
   - name: 'Google'
     link: https://www.google.com/
     logo: /img/supporters/google.png
@@ -93,6 +88,10 @@ silver:
     notes: $1,000 donation
 
 bronze:
+  - name: 'StackHawk'
+    link: https://www.stackhawk.com/
+    notes: Sponsored Simon for 2 years
+
   - name: 'Faraday'
     link: https://www.faradaysec.com/
     notes: $900 donation
