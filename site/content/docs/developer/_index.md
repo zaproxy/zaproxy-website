@@ -26,6 +26,10 @@ links:
     link: creating-new-addon-in-zap-extensions/
     desc: A quick way to create a new add-on
 
+  - name: 'ZAP Session Database'
+    link: zap-session-db/
+    desc: Details about the Session Database
+
   - name: 'Development Rules and Guidelines'
     link: dev-rules-and-guidelines/
     desc: To be followed when contributing ZAP code

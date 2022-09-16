@@ -79,6 +79,14 @@ Note that the add-ons in _zap-extensions_ all have their own set of tasks in add
 
 ## Tips and Tricks
 
+### Connecting to a Session Database
+The Database tab in IntelliJ IDEA can be used to inspect a session database.
+The following links may be used for reference:
+
+- [Developer Guide - ZAP Session Database](/docs/developer/zap-session-db/#connecting-to-a-session-database)
+- [IntelliJ Docs on the Database tool window](https://www.jetbrains.com/help/idea/database-tool-window.html)
+- [IntelliJ Docs on connecting to an HSQLDB Database](https://www.jetbrains.com/help/idea/hsqldb.html)
+
 ### Refresh Gradle Project
 
 Sometimes IntelliJ will unexpectedly fail to compile ZAP code. This can occur if you switch between git branches which have different dependencies.
