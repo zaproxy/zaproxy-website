@@ -6,10 +6,20 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: 35.0.0
+    version: 36.0.0
 ---
 
 # Passive Scan Rules - Alpha
+
+## General Configuration
+
+### Trusted Domains
+
+You can specify a comma separated list of URL regex patterns using the `rules.domains.trusted` parameter via the Options 'Rule configuration' panel. Any link URL that matches one of these patterns will be considered to be in a trusted domain and will therefore not be reported. Following rules supports **Trusted Domains** :
+
+* Sub Resource Integrity Attribute Missing
+
+*** ** * ** ***
 
 The following alpha status passive scan rules are included in this add-on:
 
@@ -88,7 +98,7 @@ Latest code: [JsoScanRule.java](https://github.com/zaproxy/zap-extensions/blob/m
 
 ## Permissions Policy Header Not Set
 
-This rule checks the HTTP response headers (on HTML and JavaScript responses) for inclusion of a "Permissions-Policy" header, and alerts if one is not found.  
+This rule checks the HTTP response headers (on HTML and JavaScript responses) for inclusion of a "Permissions-Policy" header, and alerts if one is not found. It also alerts if the deprecated header "Feature-Policy" is found.  
 Redirects are ignored except at the Low threshold.
 
 Latest code: [PermissionsPolicyScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/PermissionsPolicyScanRule.java)
@@ -105,6 +115,8 @@ Latest code: [SourceCodeDisclosureScanRule.java](https://github.com/zaproxy/zap-
 This rule checks whether the integrity attribute in the script or the link element served by an external resource (for example: CDN) is missing.  
 It helps mitigate an attack where the CDN has been compromised and content has been replaced by malicious content.  
 Note: A suggested integrity hash value will be present in the relevant Alert's Other Info details if it can be resolved to a script in the Sites Tree.
+
+This rule supports **Trusted Domains**, check "General Configuration" for more information.
 
 Latest code: [SubResourceIntegrityAttributeScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/SubResourceIntegrityAttributeScanRule.java)
 
