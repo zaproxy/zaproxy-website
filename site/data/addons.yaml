@@ -316,9 +316,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/form-handler/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v5/formhandler-beta-5.zap
-  date: 2022-07-20
-  version: 5
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.0.0/formhandler-beta-6.0.0.zap
+  date: 2022-09-21
+  version: 6.0.0
 - id: fuzz
   name: Fuzzer
   description: Advanced fuzzer for manual testing
