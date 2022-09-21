@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 27.0.0
+    version: 28.0.0
 ---
 
 # OpenAPI Support
@@ -27,6 +27,14 @@ It also supports the [Automation Framework](/docs/desktop/addons/openapi-support
 
 Both dialogues allow to override the server URL present in the OpenAPI definition (or specify one if not present) through the Target URL field. The import progress is shown in the progress tab.
 
+### Context for Adding DDNs
+
+The dialogues also allow selecting a Context, optionally. If a context is selected,
+
+* the target URL used for importing is added to the context
+* the imported spec is saved to the session database
+* data driven nodes are generated for endpoints with path parameters
+
 ### Target URL Format
 
 The Target URL has the following format:  
@@ -43,29 +51,41 @@ Following some examples, overriding:
 
 The following operations are added to the API:
 
-* ACTION importFile (file, target)
-* ACTION importUrl (url, hostOverride)
+* ACTION importFile (file, target, contextId)
+* ACTION importUrl (url, hostOverride, contextId)
 
 Both `target` and `hostOverride` support the `Target URL` format explained earlier. The definitions will be imported synchronously and any warnings will be returned.
 
-### Data Driven Nodes
+## Data Driven Nodes
 
-When the OpenAPI schema contains path params the plugin will automatically generate data driven nodes in either the default context or for the context from the provided `contextId`. For example, the following OpenAPI definition will result in at least one data driven node. **openapi.yml** `
-...
-/users/v1/{username}/email:
-...
-parameters:
-- name: username
-in: path
-description: username to update email
-required: true
-schema:
-type: string
-...
-` **Default Context \> Structure \> Structural Modifiers** `
-DDN0: (/)(.+?)(/.*)
-DDN1: (/users/v1/)(.+?)(/.*)
-`
+When the OpenAPI definition contains path parameters, and a context is specified during importing, the add-on will automatically generate data driven nodes. If no context is specified, no data driven nodes are generated. For example, the following OpenAPI definition will result in at least one data driven node.
+
+```
+    ...
+    /users/v1/{username}/email:
+      ...
+      parameters:
+        - name: username
+          in: path
+          description: username to update email
+          required: true
+          schema:
+            type: string
+    ...
+```
+
+The following nodes are added to the Sites Tree for the above endpoint:
+
+```
+Sites
+└── http://example.com
+    └── users
+        └── v1
+            └── «username»
+                └── email
+```
+
+The imported OpenAPI definition is persisted to the session database. When the session is reloaded, the definition is used to generate the data driven nodes and mark them for future requests.
 
 ## Command Line
 
