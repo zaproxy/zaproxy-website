@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.9.0
+    version: 0.10.0
 ---
 
 # GraphQL Support

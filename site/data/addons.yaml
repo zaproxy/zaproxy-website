@@ -326,9 +326,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.6.0/fuzz-beta-13.6.0.zap
-  date: 2022-01-14
-  version: 13.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.7.0/fuzz-beta-13.7.0.zap
+  date: 2022-09-23
+  version: 13.7.0
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer
@@ -336,9 +336,9 @@
   status: release
   infoUrl: /docs/desktop/addons/fuzzdb-files/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v8/fuzzdb-release-8.zap
-  date: 2021-10-07
-  version: 8
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzdb-v9/fuzzdb-release-9.zap
+  date: 2022-09-23
+  version: 9
 - id: fuzzdboffensive
   name: FuzzDB Offensive
   description: FuzzDB web backdoors and attack files which can be used with the ZAP
@@ -377,9 +377,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.9.0/graphql-alpha-0.9.0.zap
-  date: 2022-04-05
-  version: 0.9.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.10.0/graphql-alpha-0.10.0.zap
+  date: 2022-09-23
+  version: 0.10.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -547,9 +547,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/image-location-and-privacy-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v3/imagelocationscanner-beta-3.zap
-  date: 2021-10-07
-  version: 3
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v4/imagelocationscanner-beta-4.zap
+  date: 2022-09-23
+  version: 4
 - id: importLogFiles
   name: Log File Importer
   description: Allows you to import log files from ModSecurity and files previously
@@ -657,12 +657,12 @@
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
   author: ZAP Dev Team
-  status: alpha
+  status: beta
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.10.0/oast-alpha-0.10.0.zap
-  date: 2022-02-18
-  version: 0.10.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.11.0/oast-beta-0.11.0.zap
+  date: 2022-09-23
+  version: 0.11.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
@@ -931,12 +931,12 @@
   name: SOAP Support
   description: Imports and scans WSDL files containing SOAP endpoints.
   author: Alberto (albertov91) + ZAP Dev Team
-  status: alpha
+  status: beta
   infoUrl: /docs/desktop/addons/soap-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v13/soap-alpha-13.zap
-  date: 2022-02-01
-  version: 13
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v14/soap-beta-14.zap
+  date: 2022-09-23
+  version: 14
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
@@ -965,9 +965,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/server-sent-events/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v10/sse-alpha-10.zap
-  date: 2021-10-07
-  version: 10
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v11/sse-alpha-11.zap
+  date: 2022-09-23
+  version: 11
 - id: svndigger
   name: SVN Digger Files
   description: SVN Digger files which can be used with ZAP forced browsing
@@ -1026,9 +1026,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.12.0/wappalyzer-release-21.12.0.zap
-  date: 2022-08-15
-  version: 21.12.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.13.0/wappalyzer-release-21.13.0.zap
+  date: 2022-09-23
+  version: 21.13.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
@@ -1076,6 +1076,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v35/zest-beta-35.zap
-  date: 2021-10-06
-  version: 35
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v36/zest-beta-36.zap
+  date: 2022-09-23
+  version: 36
