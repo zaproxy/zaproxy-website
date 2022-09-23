@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: bugtracker
-    version: 3.0.0
+    version: 4.0.0
 ---
 
 # Bug Tracker
@@ -15,7 +15,7 @@ The Bug Tracker add-on can help the user raise the Alerts that they receive in t
 
 ## Configuration of Bug Trackers
 
-The user may configure the Bug Trackers with their important details like Username, Password, Repository URL, etc. by going to **Options-\>Bug Tracker** and then selecting the appropriate Bug Tracker.
+The user may configure the Bug Trackers with their important details like Username, Password/Token, Repository URL, etc. by going to **Options-\>Bug Tracker** and then selecting the appropriate Bug Tracker.
 
 ## Raising the Issues
 
