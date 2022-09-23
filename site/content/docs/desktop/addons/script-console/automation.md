@@ -32,9 +32,23 @@ Removes the specified script from ZAP.
 
 ## Action: run
 
-Runs the specified standalone script to ZAP. The script must already be available in ZAP, for example added using the 'add' action.
+Runs the specified script to ZAP. The script must already be available in ZAP, for example added using the 'add' action.
 
-* type: mandatory, must be 'standalone'
+* type: mandatory, can be 'standalone' or 'targeted'
+* name: mandatory, the name of the script in ZAP
+* engine: optional, can be used to override the default engine for the file extension
+* target: mandatory, if type is 'targeted', the target URL to be invoked for 'targeted' script
+
+## Action: enable
+
+Enables the specified script. The script must already be available in ZAP, for example added using the 'add' action.
+
+* name: mandatory, the name of the script in ZAP
+
+## Action: disable
+
+Disables the specified script. The script must already be available in ZAP, for example added using the 'add' action.
+
 * name: mandatory, the name of the script in ZAP
 
 ## YAML definition
@@ -44,10 +58,11 @@ Not all of the parameters are valid for all of the actions, see above for detail
 ```
   - type: script
     parameters:
-      action:                    # String: The executed action - available actions: add, remove, run
+      action:                    # String: The executed action - available actions: add, remove, run, enable, disable
       type:                      # String: The type of the script
       engine:                    # String: The script engine to use - can be used to override the default engine for the file extension
       name:                      # String: The name of the script, defaults to the file name
       file:                      # String: The full file path, must be readable
+      target:                    # String: The URL to be invoked for "targeted" script type
 	
 ```
