@@ -32,3 +32,12 @@ As well as being a welcoming, community oriented Open Source project it is (we b
 Being part of a significant Open Source project is a great way to learn, grow, and raise your profile in the industry.
 
 It can also really help your career - everyone who has been a member of the ZAP Core Team for any length of time has had job offers due to their association with ZAP. Some of us have even accepted them :smiley:
+
+### Duties
+
+Include, but are not limited to:
+- Contributing to ZAP.
+- Promoting ZAP within the industry.
+- Supporting users, developers, and the Core Team.
+- Performing tasks related to releases as needed.
+- Other tasks as required/agreed.
