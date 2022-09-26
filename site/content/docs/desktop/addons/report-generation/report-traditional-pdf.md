@@ -12,7 +12,7 @@ type: userguide
 |:---------------|:--------------|
 | Alert Count    | alertcount    |
 | Instance Count | instancecount |
-| Alerts Details | alertsdetails |
+| Alert Details  | alertdetails  |
 
 ### Screenshot
 
