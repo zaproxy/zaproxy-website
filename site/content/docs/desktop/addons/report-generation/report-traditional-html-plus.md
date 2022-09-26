@@ -14,7 +14,7 @@ type: userguide
 | Alert Count    | alertcount    |
 | Instance Count | instancecount |
 | Passing Rules  | passingrules  |
-| Alerts Details | alertsdetails |
+| Alert Details  | alertdetails  |
 | Statistics     | statistics    |
 | Parameters     | params        |
 
