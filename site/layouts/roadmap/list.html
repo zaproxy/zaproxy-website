@@ -1,0 +1,34 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+{{ define "main" }}
+<section class="bolt-header">
+   <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Title }}</h1>
+   </div>
+</section>
+<div class="wrapper py-20">
+    <header class="breadcrumbs">
+        <a href="/docs/">Documentation</a> > Roadmap
+    </header>
+   {{ .Content }}
+   <div class="flex">
+      <table>
+         <thead>
+            <tr>
+               <th>Year</th>
+               <th>Status</th>
+               <th>Item</th>
+            </tr>
+         </thead>
+         <tbody>
+            {{ range $.Site.Data.roadmap }}
+               <tr>
+                  <td align="center">{{ .year }}</td>
+                  <td align="center">{{ .status }}</td>
+                  <td>{{ if .url }} <a href="{{ .url }}">{{ .item }}</a> {{ else }} {{ .item }} {{ end }}</td>
+               </tr>
+            {{ end }}
+         </tbody>
+      </table>
+   </div>
+</div>
+{{ end }}
