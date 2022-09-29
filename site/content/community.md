@@ -16,6 +16,10 @@ groups:
         link: /docs/team/
         desc: the key people working on ZAP right now
 
+      - name: 'Roadmap'
+        link: /docs/roadmap/
+        desc: where ZAP is headed
+
       - name: 'History'
         link: /docs/history/
         desc: how ZAP came to be (work in progress)
