@@ -1,10 +1,10 @@
-- item: Continue working on issues
-  status: In progress
-  url: https://github.com/zaproxy/zaproxy/issues
-  year: 2022
 - item: Networking overhaul
   status: Finished
   url: https://www.zaproxy.org/blog/2022-02-10-new-zap-networking-layer/
+  year: 2022
+- item: Continue working on issues
+  status: In progress
+  url: https://github.com/zaproxy/zaproxy/issues
   year: 2022
 - item: Continue improving scan rules
   status: In progress
@@ -30,13 +30,17 @@
   status: In progress
   year: 2022
 - item: Release 2.12
-  status: Not started
+  status: In progress
   year: 2022
 - item: "Networking: Initial HTTP/2 support"
-  status: Not started
+  status: In progress
   year: 2022
 - item: Move core functionality to add-ons
   status: In progress
+  year: 2022
+- item: "OpenSSF Best Practices: Silver"
+  status: In progress
+  url: https://bestpractices.coreinfrastructure.org/en/projects/24?criteria_level=1
   year: 2022
 
 - item: Continue working on issues
