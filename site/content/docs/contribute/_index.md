@@ -51,6 +51,10 @@ links:
     link: core-team/
     desc: here's what the ZAP Core Team is about and how you can join us
 
+  - name: 'Roles and Governance'
+    link: roles-and-governance/
+    desc: project roles and governance
+
 cascade:
   EditableContent: true
   addBreadcrumbs: true
