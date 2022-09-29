@@ -1,5 +1,16 @@
 ---
 
+- name: Arkaprabha Chakraborty
+  email: 
+  twitter: FValkyrie_17
+  linkedin: https://www.linkedin.com/in/arkaprabhachakraborty/
+  program: GSoC
+  title: Param Digger 
+  date: 2022 Summer
+  links: >
+    <a href="/blog/2022-08-22-the-param-digger-addon/">Blog</a>,
+    <a href="/docs/desktop/addons/parameter-digger/">add-on</a>
+
 - name: Akshath Kothari
   email: 
   twitter: ricekot_
