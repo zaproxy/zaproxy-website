@@ -1,3 +1,6 @@
+CUSTOM_PAYLOADS:
+  link: 
+
 OUT_OF_BAND:
   link: https://www.zaproxy.org/docs/desktop/addons/oast-support/
 
