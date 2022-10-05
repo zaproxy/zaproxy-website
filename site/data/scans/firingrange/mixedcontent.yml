@@ -4,7 +4,10 @@ details:
 - path: /
   result: Pass
   rule: 10040
-tests: 1
+- path: /
+  result: FAIL
+  rule: 10040
+tests: 2
 passes: 1
-fails: 0
-score: 100%
+fails: 1
+score: 50%
