@@ -26,9 +26,9 @@ As you will see from the main [ZAP Fund](https://www.stackhawk.com/zap-fund/) pa
 In order to work on any of these issues you will need to set up a ZAP development environment.
 Fortunately we have lots of docs to help you do this - see the [ZAP Developer Guide](/docs/developer/).
 
-Then you just need to choose an issue to work on - these are listed on the [ZAP Fund](https://www.stackhawk.com/zap-fund/) page and are tagged with the [stackhawk-bounty](https://github.com/zaproxy/zaproxy/issues?q=is%3Aissue+is%3Aopen+label%3Astackhawk-bounty) label in our main repo.
+Then you just need to choose an issue to work on - these are listed on the [ZAP Fund](https://www.stackhawk.com/zap-fund/) page and are tagged with the [bounty](https://github.com/zaproxy/zaproxy/issues?q=is%3Aissue+is%3Aopen+label%3Abounty) label in our main repo.
 
-Just comment on an unassigned issue to reserve it. In order to give everyone a fair chance only one [stackhawk-bounty](https://github.com/zaproxy/zaproxy/issues?q=is%3Aissue+is%3Aopen+label%3Astackhawk-bounty) issue will be assigned to any one person at a time.
+Just comment on an unassigned issue to reserve it. In order to give everyone a fair chance only one [bounty](https://github.com/zaproxy/zaproxy/issues?q=is%3Aissue+is%3Aopen+label%3Abounty) issue will be assigned to any one person at a time.
 
 ## Scan Rules and Spiders
 
