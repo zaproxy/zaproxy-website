@@ -98,3 +98,9 @@ cabelo:
   picture: /img/authors/cabelo_400x400.jpg
   twitter: cabelo_linux 
   is_core: false
+
+njmulsqb:
+  name: Najam Ul Saqib
+  picture: /img/authors/njmulsqb_400x400.jpg
+  twitter: njmulsqb 
+  is_core: false
