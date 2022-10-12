@@ -6,7 +6,7 @@ type: userguide
 
 # Automation Framework - requestor Job
 
-This job sends specifically crafted requests to a target url, with a custom request method and body. The user can also specify an expected response code, against which the actual response is compared, and the user is warned in case it does not match.
+This job sends specifically crafted requests to a target url, with a custom request method and body. The user can also specify an expected response code, against which the actual response is compared, and the user is warned in case it does not match. The user can add additional headers to the request e.g. Authorization Tokens, etc.
 
 ## YAML
 
@@ -17,6 +17,8 @@ This job sends specifically crafted requests to a target url, with a custom requ
     requests:                          # A list of requests to make
       - url:                           # String: A mandatory URL of the request to be made
         method:                        # String: A non-empty request method, default: GET
+        headers:                       # An optional list of additional headers to include in the request
+            - "header1:value1"
         data:                          # String: Optional data to send in the request body
         responseCode:                  # Int: An optional, expected response code against which the actual response code will be matched
 ```
