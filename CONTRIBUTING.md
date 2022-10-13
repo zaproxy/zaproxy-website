@@ -17,7 +17,7 @@ $ npm install
 $ npm run build
 ```
 
-## Testing documentation
+## Testing Documentation
 
 1. Run the server
 
