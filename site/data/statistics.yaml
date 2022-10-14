@@ -275,6 +275,41 @@
   code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationHelper.java
   desc: The number of authentication successes
 
+- key: stats.auto.errors
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/automation/src/main/java/org/zaproxy/addon/automation/ExtensionAutomation.java
+  desc: The number of automation errors reported
+
+- key: stats.auto.plans.run
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/automation/src/main/java/org/zaproxy/addon/automation/ExtensionAutomation.java
+  desc: The number of automation plans run
+
+- key: stats.auto.jobs.run
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/automation/src/main/java/org/zaproxy/addon/automation/ExtensionAutomation.java
+  desc: The number of automation jobs run
+
+- key: stats.auto.job.<job-type>.run
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/automation/src/main/java/org/zaproxy/addon/automation/ExtensionAutomation.java
+  desc: The number of times the given automation job type has been run
+
+- key: stats.auto.warnings
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/automation/src/main/java/org/zaproxy/addon/automation/ExtensionAutomation.java
+  desc: The number of automation warnings reported
+
 - key: stats.break.drop
   scope: global
   type: counter
@@ -309,6 +344,13 @@
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/StatsPassiveScanner.java
   desc: The number of messages which include the given content type
+
+- key: stats.exim.copy.url
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/PopupMenuCopyUrls.java
+  desc: The number of URLs copied
 
 - key: stats.exim.save.raw.file.msg
   scope: global
@@ -450,6 +492,104 @@
   code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/urls/UrlsImporter.java
   desc: The number of URLs imported via a file
 
+- key: stats.fuzz.payload.processors.error
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/fuzzer/src/main/java/org/zaproxy/zap/extension/fuzz/payloads/generator/ProcessedPayloadGenerator.java
+  desc: The number of fuzzer payload processor errors
+
+- key: stats.fuzz.payload.processors.run
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/fuzzer/src/main/java/org/zaproxy/zap/extension/fuzz/payloads/generator/ProcessedPayloadGenerator.java
+  desc: The number of fuzzer payload processors run
+
+- key: stats.fuzz.HTTP.message.processors.error
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/fuzzer/src/main/java/org/zaproxy/zap/extension/fuzz/httpfuzzer/HttpFuzzer.java
+  desc: The number of fuzzer HTTP message processor errors
+
+- key: stats.fuzz.HTTP.message.processors.run
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/fuzzer/src/main/java/org/zaproxy/zap/extension/fuzz/httpfuzzer/HttpFuzzer.java
+  desc: The number of fuzzer HTTP message processors run
+
+- key: stats.fuzz.messages.edited
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/fuzzer/src/main/java/org/zaproxy/zap/extension/fuzz/impl/FuzzerDialog.java
+  desc: The number of fuzz messages edited
+
+- key: stats.fuzz.messages.sent
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/fuzzer/src/main/java/org/zaproxy/zap/extension/fuzz/AbstractFuzzer.java
+  desc: The number of fuzz messages sent
+
+- key: stats.fuzz.<message-type>.started
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/fuzzer/src/main/java/org/zaproxy/zap/extension/fuzz/AbstractFuzzer.java
+  desc: The number of fuzzers started by message type
+
+- key: stats.quickstart.news.<news-id>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/quickstart/src/main/java/org/zaproxy/zap/extension/quickstart/QuickStartPanel.java
+  desc: The number of times the given news item has been clicked on
+
+- key: stats.oast.boast.interactions
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/oast/src/main/java/org/zaproxy/addon/oast/services/boast/BoastServer.java
+  desc: The number of BOAST interactions
+
+- key: stats.oast.boast.payloadsGenerated
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/oast/src/main/java/org/zaproxy/addon/oast/services/boast/BoastServer.java
+  desc: The number of BOAST payloads generated
+
+- key: stats.oast.callback.interactions
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/oast/src/main/java/org/zaproxy/addon/oast/services/callback/CallbackProxyListener.java
+  desc: The number of callback interactions
+
+- key: stats.oast.callback.payloadsGenerated
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/oast/src/main/java/org/zaproxy/addon/oast/services/callback/CallbackService.java
+  desc: The number of callback payloads generated
+
+- key: stats.oast.interactsh.interactions
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/oast/src/main/java/org/zaproxy/addon/oast/services/interactsh/InteractshService.java
+  desc: The number of Interactsh interactions
+
+- key: stats.oast.interactsh.payloadsGenerated
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/oast/src/main/java/org/zaproxy/addon/oast/services/interactsh/InteractshService.java
+  desc: The number of Interactsh payloads generated
+
 - key: stats.pscan.reqBodyTooBig
   scope: global
   type: counter
@@ -485,6 +625,27 @@
   code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanThread.java
   desc: The cumulative number of milliseconds taken to run the given scan rule - DEPRECATED - use stats.pscan.<rule-id>.time instead
 
+- key: stats.reports.error.<template-name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/reports/src/main/java/org/zaproxy/addon/reports/ExtensionReports.java
+  desc: The number of errors by template name
+
+- key: stats.reports.generated.<template-name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/reports/src/main/java/org/zaproxy/addon/reports/ExtensionReports.java
+  desc: The number of reports generated by template name
+
+- key: stats.reports.nofile.<template-name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/reports/src/main/java/org/zaproxy/addon/reports/ExtensionReports.java
+  desc: The number of File Not Found errors by template name
+
 - key: stats.responseTime.<time-slice>
   scope: site
   type: counter
@@ -505,6 +666,13 @@
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/zaproxy/zap/extension/script/ExtensionScript.java
   desc: The number of times the given type of script has been returned an error - from 2.11.0
+
+- key: stats.selenium.launch.<browser-id>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/selenium/src/main/java/org/zaproxy/zap/extension/selenium/ExtensionSelenium.java
+  desc: The number of time the given browser has been launched
 
 - key: stats.spider.started
   scope: global
