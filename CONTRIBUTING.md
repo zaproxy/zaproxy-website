@@ -17,33 +17,19 @@ $ npm install
 $ npm run build
 ```
 
-## Testing
+## Reviewing Changes
 
-```sh
-$ npm run test
-```
-
-```sh
-$ npm run test:watch
-```
-
-## Running the server
+1. Run the server
 
 ```sh
 $ npm run start
 ```
 
-## Pull Requests
-
-We actively welcome your pull requests.
-
-1. Fork the repo and create your branch from `master`.
-2. If you've added code that should be tested, add tests.
-3. If you've changed APIs, update the documentation.
-4. Ensure the test suite passes.
-5. Make sure your code lints.
+2. Load the page in the browser.
+3. Read changes out loud.
+4. Make any appropriate edits for clarity, grammar, or spelling.
 
 ## License
 
 By contributing to zaproxy-website, you agree that your contributions will be licensed
-under its [MIT license](LICENSE).
+under its [MIT License](LICENSE).
