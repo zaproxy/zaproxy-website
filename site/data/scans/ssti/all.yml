@@ -2,7 +2,7 @@ section: All URLs
 details:
 - title: 'Jinja2 - Python'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -10,7 +10,7 @@ details:
   any: Pass
 - title: 'Mako - Python'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: Pass
   rule_90035: Pass
@@ -18,7 +18,7 @@ details:
   any: Pass
 - title: '(Code eval) - Python'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -26,7 +26,7 @@ details:
   any: Pass
 - title: '(Code exec) - Python'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
@@ -34,7 +34,7 @@ details:
   any: Pass
 - title: 'Smarty - PHP'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: Pass
   rule_90035: Pass
@@ -42,7 +42,7 @@ details:
   any: Pass
 - title: 'Smarty (secure mode) - PHP'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: Pass
   rule_90035: Pass
@@ -50,7 +50,7 @@ details:
   any: Pass
 - title: 'Twig - PHP'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -66,28 +66,28 @@ details:
   any: Pass
 - title: 'FreeMarker - Java'
   rule_40012: FAIL
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
   rule_90036: FAIL
-  any: Pass
+  any: FAIL
 - title: 'Velocity - Java'
   rule_40012: FAIL
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
   rule_90036: FAIL
-  any: Pass
+  any: FAIL
 - title: 'Thymeleaf - Java '
   rule_40012: FAIL
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
   rule_90036: FAIL
-  any: Pass
+  any: FAIL
 - title: 'Jade - Nodejs'
   rule_40012: Pass
   rule_40026: FAIL
@@ -98,7 +98,7 @@ details:
   any: Pass
 - title: 'Nunjucks - JavaScript'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -106,7 +106,7 @@ details:
   any: Pass
 - title: 'doT - JavaScript'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -114,7 +114,7 @@ details:
   any: Pass
 - title: 'Dust - JavaScript'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -122,7 +122,7 @@ details:
   any: Pass
 - title: 'EJS - JavaScript'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -138,7 +138,7 @@ details:
   any: FAIL
 - title: 'VueJs - JavaScript'
   rule_40012: FAIL
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -146,7 +146,7 @@ details:
   any: Pass
 - title: 'Slim - Ruby'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -154,7 +154,7 @@ details:
   any: Pass
 - title: 'ERB - Ruby'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -162,15 +162,15 @@ details:
   any: Pass
 - title: '(Code eval) - Ruby'
   rule_40012: FAIL
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
   rule_90036: FAIL
-  any: Pass
+  any: FAIL
 - title: 'go - go'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -178,12 +178,12 @@ details:
   any: Pass
 - title: 'Input rendered in other location'
   rule_40012: FAIL
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
   rule_90036: FAIL
-  any: Pass
+  any: FAIL
 - title: 'Rendering result not visible to attacker'
   rule_40012: FAIL
   rule_40026: FAIL
@@ -202,7 +202,7 @@ details:
   any: Pass
 - title: 'Non Vulnerable'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
@@ -210,7 +210,7 @@ details:
   any: Pass
 - title: 'Input inserted in the middle of template code text'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
@@ -218,7 +218,7 @@ details:
   any: Pass
 - title: '{ } Python Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: Pass
   rule_90035: Pass
@@ -226,7 +226,7 @@ details:
   any: Pass
 - title: '${ } Python Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: Pass
   rule_90035: Pass
@@ -234,7 +234,7 @@ details:
   any: Pass
 - title: '{{ }} Python Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -242,7 +242,7 @@ details:
   any: Pass
 - title: '<%= %> Python Eval ERB'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -250,7 +250,7 @@ details:
   any: Pass
 - title: '#{ } Python Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -258,7 +258,7 @@ details:
   any: Pass
 - title: '{{= }} Python Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -266,7 +266,7 @@ details:
   any: Pass
 - title: '{ } Ruby Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: Pass
   rule_90035: Pass
@@ -274,7 +274,7 @@ details:
   any: Pass
 - title: '${ } Ruby Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: Pass
   rule_90035: Pass
@@ -282,7 +282,7 @@ details:
   any: Pass
 - title: '{{ }} Ruby Eval YBNE Nunjucks'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -290,7 +290,7 @@ details:
   any: Pass
 - title: '<%= %> Ruby Eval Erb'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -298,7 +298,7 @@ details:
   any: Pass
 - title: '#{ } Ruby Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
@@ -306,17 +306,17 @@ details:
   any: Pass
 - title: '{{= }} Ruby Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: Pass
   rule_90036: FAIL
   any: Pass
-score: 97%
+score: 84%
 rule_40012_score: 29
-rule_40026_score: 34
+rule_40026_score: 0
 rule_90019_score: 1
 rule_90025_score: 7
 rule_90035_score: 27
 rule_90036_score: 18
-any_score: 38
+any_score: 33
