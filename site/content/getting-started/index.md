@@ -62,14 +62,20 @@ Because ZAP is open-source, the source code can be examined to see exactly how t
 As with most open source projects, donations are welcome to help with costs for the projects. You can find a donate button on the owasp.org page for ZAP at [https://owasp.org/www-project-zap/](https://owasp.org/www-project-zap/).
 
 ### Install and Configure ZAP
-ZAP has installers for Windows, Linux, and Mac OS/X. There are also Docker images available on the download site listed below.
+ZAP has installers for Windows, Linux, and macOS. There are also Docker images available on the download site listed below.
 
 ##### Install ZAP
 The first thing to do is install ZAP on the system you intend to perform pentesting on. Download the appropriate installer from the [Download](/download/) page.
 
-Note that ZAP requires Java 8+ in order to run. The Mac OS/X installer includes an appropriate version of Java but you must install Java 8+ separately for Windows, Linux, and Cross-Platform versions. The Docker versions do not require you to install Java.
+Note that ZAP requires Java 11+ in order to run. The macOS installer includes an appropriate version of Java but you must install Java 11+ separately for Windows, Linux, and Cross-Platform versions. The Docker versions do not require you to install Java.
 
 Once the installation is complete, launch ZAP and read the license terms. Click **Agree** if you accept the terms, and ZAP will finish installing, then ZAP will automatically start.
+
+###### macOS
+OWASP ZAP is currently not a verified developer with Apple. On macOS, you will see a message like: 
+> “OWASP ZAP.app” cannot be opened because the developer cannot be verified.
+
+To circumvent this warning, you would need to go to **System Preferences** &gt; **Security & Privacy** at the bottom of the dialog. You will see a message saying that "OWASP ZAP" was blocked. Next to it, if you trust the downloaded installer, you can click **Open anyway**.
 
 ##### Persisting a Session
 When you first start ZAP, you will be asked if you want to persist the ZAP session. By default, ZAP sessions are always recorded to disk in a HSQLDB database with a default name and location. If you do not persist the session, those files are deleted when you exit ZAP.
