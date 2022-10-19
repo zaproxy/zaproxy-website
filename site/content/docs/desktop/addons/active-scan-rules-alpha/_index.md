@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: 39.0.0
+    version: 40.0.0
 ---
 
 # Active Scan Rules - Alpha
@@ -94,3 +94,9 @@ Latest code: [SstiScanRule.java](https://github.com/zaproxy/zap-extensions/blob/
 This rule goes one step further than the SSTI scan rule and attempts to find places where the impact of the user input is not immediately obvious, such as when used by an admin panel, report output, invoice, etc.
 
 Latest code: [SstiBlindScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/SstiBlindScanRule.java)
+
+## Text4shell (CVE-2022-42889)
+
+This rule attempts to discover the Text4shell ([CVE-2022-42889](https://www.cve.org/CVERecord?id=CVE-2022-42889)) vulnerability. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions.
+
+Latest code: [Text4ShellScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/Text4ShellScanRule.java)
