@@ -185,7 +185,7 @@ The Heads Up Display (HUD) is a new an innovative interface that provides access
 
 {{< img "images/hud-welcome.png" >}}
 
-The HUD is overlayed on top of the target application in your browser when enabled via the ‘Manual Explore’ screen or toolbar option. Only modern browsers such as Firefox and Chrome are supported.
+The HUD is overlayed on top of the target application in your browser when enabled via the ‘Manual Explore’ screen or toolbar option. Only modern browsers such as Firefox and Chrome are supported. Firefox users may need to [disable "Enhanced Tracking Protection"](images/firefox-protection-hud.png) in order to be able to see the HUD interface. This can be done by clicking on the shield icon in the URL bar.
 
 By default a splash screen is shown for the HUD which includes a link to a tutorial which will take you through the HUD features and explain how you can use them.
 
