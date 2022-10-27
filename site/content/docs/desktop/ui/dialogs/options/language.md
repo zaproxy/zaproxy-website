@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options language screen
 type: userguide
-weight: 18
+weight: 15
 ---
 
 # Options language screen

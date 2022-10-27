@@ -19,6 +19,7 @@ Each [Context](/docs/desktop/start/features/contexts/) may include multiple Cust
     * Not Found \> For '404 - Not Found' responses.
     * Ok \> For '200 - Ok' definitions
     * Other \> To facilitate use of Custom Pages in scripts or other usages that have not yet been foreseen.
+    * Auth. Issue \> For Authentication/Authorization related responses. For example: '401 - Unauthorized' or '403 - Forbidden' type conditions.
 
 ## Configuration example
 

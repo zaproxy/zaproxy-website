@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Session Properties dialog
 type: userguide
-weight: 14
+weight: 13
 ---
 
 # Session Properties dialog

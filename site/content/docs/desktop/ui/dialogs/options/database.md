@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Database screen
 type: userguide
-weight: 10
+weight: 8
 ---
 
 # Options Database screen

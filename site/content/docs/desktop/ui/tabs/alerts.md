@@ -46,10 +46,6 @@ Allows to delete all alerts.
 
 Right clicking on a node will bring up a menu which will allow you to:
 
-### Open/Resend with Request Editor...
-
-This will bring up the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/) which allows you to resend the request associated with the alert after making any changes to it that you want to.
-
 ## See also
 
 |   |                                  |                                       |

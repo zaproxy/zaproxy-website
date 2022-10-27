@@ -23,12 +23,11 @@ Note that [add-ons](/docs/desktop/start/features/addons/) can add additional vie
 
 ## Used in
 
-|   |                                                            |   |
-|---|------------------------------------------------------------|---|
-|   | [Break tab](/docs/desktop/ui/tabs/break/)                  |   |
-|   | [Request tab](/docs/desktop/ui/tabs/request/)              |   |
-|   | [Response tab](/docs/desktop/ui/tabs/response/)            |   |
-|   | [Manual Request dialog](/docs/desktop/ui/dialogs/man_req/) |   |
+|   |                                                 |   |
+|---|-------------------------------------------------|---|
+|   | [Break tab](/docs/desktop/ui/tabs/break/)       |   |
+|   | [Request tab](/docs/desktop/ui/tabs/request/)   |   |
+|   | [Response tab](/docs/desktop/ui/tabs/response/) |   |
 
 ## See also
 

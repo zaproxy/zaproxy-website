@@ -11,11 +11,11 @@ This screen allows you to configure the [API](/docs/desktop/start/features/api/)
 
 ### Enabled
 
-If enabled then the API is available to all machines that are able to use ZAP as a proxy.  
+If enabled then the API is available to all machines that are able to access ZAP's proxies that expose the API.  
 
 ### Web UI Enabled
 
-If enabled then the API Web UI is available to all machines that are able to use ZAP as a proxy. To access the API Web UI point your browser to the host and port that ZAP is listening on.  
+If enabled then the API Web UI is available to all machines that are able to access ZAP's proxies that expose the API. To access the API Web UI point your browser to the host and port that ZAP is listening on.  
 
 ### Secure Only
 

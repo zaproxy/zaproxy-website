@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Passive Scan Tags screen
 type: userguide
-weight: 21
+weight: 17
 ---
 
 # Options Passive Scan Tags screen

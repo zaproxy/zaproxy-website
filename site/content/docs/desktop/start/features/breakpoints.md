@@ -15,9 +15,9 @@ which allows you to change disabled or hidden fields, and will allow you to bypa
 client side validation (often enforced using javascript).  
 It is an essential penetration testing technique.
 
-You can set a 'global' breakpoint on requests and/or responses using the buttons on the
+You can set a 'global' breakpoint on requests or responses using the buttons on the
 [top level toolbar](/docs/desktop/ui/tltoolbar/).  
-All requests and/or responses will then be intercepted by ZAP allowing you to change anything before
+All requests or responses will then be intercepted by ZAP allowing you to change anything before
 allowing the request or response to continue.
 
 You can also set breakpoints on specific criteria using the "Break..." right click menu on the

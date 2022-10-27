@@ -63,9 +63,6 @@ ZAP supports the following command line options:
 |   | -addonlist                  | List all of the installed add-ons                                                                                                                                                                                                        |
 |   | -script \<script\>          | Run the specified script (file system path) if command line/daemon, or just load it if GUI                                                                                                                                               |
 |   | -suppinfo                   | Outputs details relevant for support and troubleshooting (to the console/standard out). Such as: ZAP version, java version, installed add-ons and version, locale info, operating system, etc.                                           |
-|   | -certload \<path\>          | Loads the Root CA certificate from the specified file name                                                                                                                                                                               |
-|   | -certpubdump \<path\>       | Dumps the Root CA public certificate into the specified file name, this is suitable for importing into browsers                                                                                                                          |
-|   | -certfulldump \<path\>      | Dumps the Root CA full certificate (including the private key) into the specified file name, this is suitable for importing into ZAP                                                                                                     |
 
 
 The options `-session` and `-newsession` are mutually exclusive. An error will be shown and ZAP exit (if not in GUI) when both options are set.   
@@ -73,7 +70,7 @@ Relative paths to session file are resolved against the "session" directory loca
 Configuration keys should be specified using the dot notation based their location in the XML of the configuration file, eg:  
 
 ```
-<zap-script> -config api.key=12345 -config connection.timeoutInSecs=60
+<zap-script> -config api.key=12345
 ```
 
 Note that add-ons can add extra command line options.

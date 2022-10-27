@@ -13,7 +13,7 @@ However they also make a penetration testers job harder, especially if the token
 ZAP detects anti CSRF tokens purely by attribute names - the list of attribute names considered to be anti CSRF tokens
 is configured using the [Options Anti CSRF screen](/docs/desktop/ui/dialogs/options/anticsrf/).  
 When ZAP detects these tokens it records the token value and which URL generated the token.  
-Other scanners, like [active scanner](/docs/desktop/start/features/ascan/), have options which
+Other tools, like the [active scanner](/docs/desktop/start/features/ascan/), have options which
 cause ZAP to automatically regenerate the tokens when required.
 
 ## See also

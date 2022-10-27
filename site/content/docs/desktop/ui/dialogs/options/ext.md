@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Extensions screen
 type: userguide
-weight: 13
+weight: 10
 ---
 
 # Options Extensions screen

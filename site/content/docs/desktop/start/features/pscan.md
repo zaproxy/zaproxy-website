@@ -20,7 +20,7 @@ and raising [alerts](/docs/desktop/start/features/alerts/) for potential issues.
 A set of rules for automatic tagging are provided by default. These can be changed, deleted or
 added to via the [Options Passive Scan Tags screen](/docs/desktop/ui/dialogs/options/pscan/).
 
-The alerts raised by passive scanners can be configured using the
+The alerts raised by passive scan rules can be configured using the
 [Options Passive Scan Rules screen](/docs/desktop/ui/dialogs/options/pscanrules/).  
 
 ## See also

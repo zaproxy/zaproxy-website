@@ -42,10 +42,6 @@ The nodes can be included again via the [Session Properties](/docs/desktop/ui/di
 This will prevent the selected nodes from being spidered.  
 The nodes can be included again via the [Session Properties](/docs/desktop/ui/dialogs/session/) dialog
 
-### Open/Resend with Request Editor...
-
-This will bring up the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/) which allows you to resend the request after making any changes to it that you want to.
-
 ### New Alert...
 
 This will bring up the [Add Alert dialog](/docs/desktop/ui/dialogs/addalert/) which allows you to manually record a new [alert](/docs/desktop/start/features/alerts/) against this request.

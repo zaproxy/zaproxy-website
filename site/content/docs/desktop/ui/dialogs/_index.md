@@ -17,7 +17,6 @@ The UI includes the following dialogs or popups:
 |   | [Active Scan](/docs/desktop/ui/dialogs/advascan/)              |   |
 |   | [Find](/docs/desktop/ui/dialogs/find/)                         |   |
 |   | [History Filter](/docs/desktop/ui/dialogs/hist_filter/)        |   |
-|   | [Manual Request Editor](/docs/desktop/ui/dialogs/man_req/)     |   |
 |   | [Manage Add-ons](/docs/desktop/ui/dialogs/manageaddons/)       |   |
 |   | [Manage History Tags](/docs/desktop/ui/dialogs/managetags/)    |   |
 |   | [Options](/docs/desktop/ui/dialogs/options/)                   |   |
@@ -25,7 +24,7 @@ The UI includes the following dialogs or popups:
 |   | [Scan Policy Manager](/docs/desktop/ui/dialogs/scanpolicymgr/) |   |
 |   | [Scan Progress](/docs/desktop/ui/dialogs/scanprogress/)        |   |
 |   | [Session Properties](/docs/desktop/ui/dialogs/session/)        |   |
-|   | [Spider](/docs/desktop/ui/dialogs/spider/)                     |   |
+|   | Spider                                                         |   |
 
 ## See also
 

@@ -12,10 +12,6 @@ This menu handles the tools and general options.
 
 Opens the [ZAP API](/docs/desktop/start/features/api/) in the system's default browser.
 
-### Manual Request Editor....
-
-This displays the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/).
-
 ### Options....
 
 This displays the [Options dialog](/docs/desktop/ui/dialogs/options/).

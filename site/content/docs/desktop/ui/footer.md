@@ -9,10 +9,8 @@ weight: 6
 
 This footer displays counts of the High, Medium, Low and Informational
 [alerts](/docs/desktop/start/features/alerts/) and counts of the currently active
-[active](/docs/desktop/start/features/ascan/) and
-[spider](/docs/desktop/start/features/spider/)
-scans.   
-It can also contain counters of scanners provided by add-ons.
+[active](/docs/desktop/start/features/ascan/) and spider scans.   
+It can also contain counters for other tools or provided by add-ons.
 
 ## See also
 
