@@ -547,9 +547,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/hud/
   repoUrl: https://github.com/zaproxy/zap-hud/
-  downloadUrl: https://github.com/zaproxy/zap-hud/releases/download/v0.14.0/hud-beta-0.14.0.zap
-  date: 2022-09-22
-  version: 0.14.0
+  downloadUrl: https://github.com/zaproxy/zap-hud/releases/download/v0.15.0/hud-beta-0.15.0.zap
+  date: 2022-10-27
+  version: 0.15.0
 - id: imagelocationscanner
   name: Image Location and Privacy Scanner
   description: Image Location and Privacy Passive Scanner

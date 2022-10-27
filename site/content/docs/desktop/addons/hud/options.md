@@ -15,17 +15,6 @@ When set the HUD will be injected into HTML responses when the ZAP Desktop is us
 
 When set the HUD will be injected into HTML responses when ZAP is started in daemon or 'headless' mode. This defaults to false as many people use ZAP for automation, injecting the HUD would not help and could cause existing tests to break.
 
-## Enable anonymous telemetry
-
-When set will send pings to a bit.ly URL when:
-
-* The HUD is used
-* The HUD tutorial first page is visited
-* The HUD tutorial last page is visited
-
-Each ping is sent at most once per ZAP run and the only information available to the ZAP team is the number of pings made and the countries they have come from.  
-We get very little feedback and so information like this really helps us understand how ZAP is being used. We have limited time to spend and so want to focus on features that people are actually using.
-
 ## Show the HUD welcome screen when a browser is opened
 
 When set the HUD Welcome screen, which includes a link to the tutorial, will be shown whenever a browser that is proxying through ZAP is opened. The welcome screen includes an option to not show the screen again, if that is selected then this is the only way to make the welcome screen appear again.
