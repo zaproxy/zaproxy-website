@@ -6,14 +6,14 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: 46.0.0
+    version: 47.0.0
 ---
 
 # MacOS WebDrivers
 
 The MacOS WebDrivers add-on provides WebDrivers for the following browsers:
 
-* Chrome - ChromeDriver 106.0.5249.61
+* Chrome - ChromeDriver 107.0.5304.62
 * Firefox - geckodriver 0.32.0
 
 ## See also
