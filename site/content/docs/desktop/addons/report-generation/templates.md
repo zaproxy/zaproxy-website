@@ -21,3 +21,4 @@ The following templates are available:
 | [Traditional Markdown Report](/docs/desktop/addons/report-generation/report-traditional-markdown/)                          | traditional-markdown  | Markdown | Yes      |        |
 | [Traditional PDF Report](/docs/desktop/addons/report-generation/report-traditional-pdf/)                                    | traditional-pdf       | PDF      | Yes      |        |
 | [Traditional XML Report](/docs/desktop/addons/report-generation/report-traditional-xml/)                                    | traditional-xml       | XML      |          |        |
+| [Traditional XML Report with Requests and Responses](/docs/desktop/addons/report-generation/report-traditional-xml-plus/)   | traditional-xml-plus  | XML      |          |        |

@@ -1,21 +1,25 @@
 ---
 # This page was generated from the add-on.
-title: Requester
+title: Requester Add-on
 type: userguide
 weight: 1
 cascade:
   addon:
     id: requester
-    version: 6.0.0
+    version: 7.0.0
 ---
 
-# Requester
+# Requester Add-on
 
-Adds a new "Requester" panel next to the standard "Request" and "Response" ones.
+An add-on that allows to manually edit and send messages.
 
-The Requester Panel acts like the Manual Request Editor but supports as many sub tabs as you need.
+By default it provides a [workspace tab](/docs/desktop/addons/requester/tab/) and [dialogs](/docs/desktop/addons/requester/dialogs/) for HTTP messages.
 
-Right click on a request in any of the other ZAP tabs and select "Open in Requester Tab..." to open that request in a new Requester tab.
-You can also use the Control / Command + "W" key to do the same thing via the keyboard.
+Other add-ons might build on top of the provided infrastructure
+to support their own specific messages (e.g. WebSocket).
 
-The tabs are initially numbered but if you double click on the tab then a dialog will be shown which will allow you to rename it.
+## See also
+
+|   |                                                    |                          |
+|---|----------------------------------------------------|--------------------------|
+|   | [Options](/docs/desktop/addons/requester/options/) | for the provided options |

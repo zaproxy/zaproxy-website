@@ -7,7 +7,6 @@ weight: 2
 
 # Command Line
 
-**Note:** This feature is only available in weekly releases and versions after 2.11.   
 The Network add-on supports the following command line options:
 
 |   |               |                                                                                                                     |
