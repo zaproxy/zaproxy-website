@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 0.6.0
+    version: 0.7.0
 ---
 
 # Encode / Decode / Hash dialog
@@ -41,6 +41,7 @@ In its default state the Encode/Decode/Hash dialog displays tabs and output pane
 * Full URL Encode
 * ASCII Hex Encode
 * HTML Encode
+* Full HTML Encode
 * JavaScript Encode
 
 ### Decode tab fields
@@ -105,6 +106,10 @@ Will display escaped Unicode characters. For example, the text `Açores` would b
 #### HTML Encode
 
 Will display the HTML encoding of the text you enter. For example, the text `"piñata"` would be encoded as `&quot;pi&ntilde;ata&quot;`.
+
+#### Full HTML Encode
+
+Will display the full HTML encoding of the text you enter. For example, the text `<script>` would be encoded as `&#60;&#115;&#99;&#114;&#105;&#112;&#116;&#62;`
 
 #### JavaScript Encode
 

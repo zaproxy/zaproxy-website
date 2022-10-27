@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - About
 type: userguide
-weight: 15
+weight: 14
 ---
 
 # Automation Framework - About

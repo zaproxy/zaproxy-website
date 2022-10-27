@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.18.0
+    version: 0.19.0
 ---
 
 # Automation Framework
@@ -70,7 +70,6 @@ The following automation jobs are supported by this add-on:
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
 * [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - crafts specific requests to send to the corresponding targets
-* [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
 
 [Job tests](/docs/desktop/addons/automation-framework/tests/) can be added to jobs to check that the jobs have performed as expected.
