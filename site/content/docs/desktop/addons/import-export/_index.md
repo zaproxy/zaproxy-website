@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.2.0
+    version: 0.3.0
 ---
 
-# \>Copy URLs to Clipboard
+# Copy URLs to Clipboard
 
 A context menu item to Copy URLs to the system clipboard.
 
@@ -68,7 +68,11 @@ All URLs in the Sites tree that fall within the selected context are exported. T
 
 This add-on also exposes various ZAP API endpoints to facilitate programmatic use of the functionality.
 
-* `/exim/importHar (filePath*)`
-* `/exim/importModsec2Logs (filePath*)`
-* `/exim/importUrls (filePath*)`
-* `/exim/importZapLogs (filePath*)`
+* `/exim/action/importHar (filePath*)`
+* `/exim/action/importModsec2Logs (filePath*)`
+* `/exim/action/importUrls (filePath*)`
+* `/exim/action/importZapLogs (filePath*)`
+* ---
+* `/exim/other/exportHar (baseurl start count)`
+* `/exim/other/exportHarById (ids*)`
+* `/exim/other/sendHarRequest (request* followRedirects)`

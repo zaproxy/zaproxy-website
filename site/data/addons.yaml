@@ -17,9 +17,9 @@
   status: release
   infoUrl: /docs/desktop/addons/alert-filters/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v13/alertFilters-release-13.zap
-  date: 2021-10-06
-  version: 13
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v14/alertFilters-release-14.zap
+  date: 2022-10-27
+  version: 14
 - id: allinonenotes
   name: All In One Notes
   description: A simple extension to view all notes in one pane.
@@ -47,9 +47,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v48/ascanrules-release-48.zap
-  date: 2022-09-22
-  version: 48
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v49/ascanrules-release-49.zap
+  date: 2022-10-27
+  version: 49
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.18.0/automation-beta-0.18.0.zap
-  date: 2022-10-12
-  version: 0.18.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.19.0/automation-beta-0.19.0.zap
+  date: 2022-10-27
+  version: 0.19.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -129,9 +129,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/forced-browse/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v11/bruteforce-beta-11.zap
-  date: 2021-10-06
-  version: 11
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v12/bruteforce-beta-12.zap
+  date: 2022-10-27
+  version: 12
 - id: bugtracker
   name: Bug Tracker
   description: Bug Tracker extension.
@@ -156,12 +156,12 @@
   name: Call Home
   description: Handles all of the calls to ZAP services.
   author: ZAP Dev Team
-  status: alpha
+  status: release
   infoUrl: /docs/desktop/addons/call-home/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.4.0/callhome-alpha-0.4.0.zap
-  date: 2022-07-18
-  version: 0.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.5.0/callhome-release-0.5.0.zap
+  date: 2022-10-27
+  version: 0.5.0
 - id: codedx
   name: Code Dx Extension
   description: Includes request and response data in XML reports and provides the
@@ -180,9 +180,9 @@
   status: release
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.10.0/commonlib-release-1.10.0.zap
-  date: 2022-09-15
-  version: 1.10.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.11.0/commonlib-release-1.11.0.zap
+  date: 2022-10-27
+  version: 1.11.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -214,6 +214,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.12.0/custompayloads-alpha-0.12.0.zap
   date: 2022-09-23
   version: 0.12.0
+- id: database
+  name: Database
+  description: Provides database engines and related infrastructure.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/database/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.1.0/database-alpha-0.1.0.zap
+  date: 2022-10-27
+  version: 0.1.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
@@ -222,9 +232,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/diff/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/diff-v11/diff-beta-11.zap
-  date: 2021-10-06
-  version: 11
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/diff-v12/diff-beta-12.zap
+  date: 2022-10-27
+  version: 12
 - id: directorylistv1
   name: Directory List v1.0
   description: List of directory names to be used with Forced Browse or Fuzzer add-on.
@@ -260,12 +270,12 @@
   name: DOM XSS Active scanner rule
   description: DOM XSS Active scanner rule
   author: Aabha Biyani, ZAP Dev Team
-  status: beta
+  status: release
   infoUrl: /docs/desktop/addons/dom-xss-active-scan-rule/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v13/domxss-beta-13.zap
-  date: 2022-08-02
-  version: 13
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v14/domxss-release-14.zap
+  date: 2022-10-27
+  version: 14
 - id: encoder
   name: Encoder
   description: Adds encode/decode/hash dialog and support for scripted processors
@@ -274,9 +284,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/encode-decode-hash/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.6.0/encoder-beta-0.6.0.zap
-  date: 2021-10-06
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.7.0/encoder-beta-0.7.0.zap
+  date: 2022-10-27
+  version: 0.7.0
 - id: evalvillain
   name: Eval Villain
   description: Adds the Eval Villain extension to Firefox when launched from ZAP.
@@ -294,9 +304,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.2.0/exim-beta-0.2.0.zap
-  date: 2022-07-20
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.3.0/exim-beta-0.3.0.zap
+  date: 2022-10-27
+  version: 0.3.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -316,9 +326,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/form-handler/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.0.0/formhandler-beta-6.0.0.zap
-  date: 2022-09-21
-  version: 6.0.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.1.0/formhandler-beta-6.1.0.zap
+  date: 2022-10-27
+  version: 6.1.0
 - id: fuzz
   name: Fuzzer
   description: Advanced fuzzer for manual testing
@@ -326,9 +336,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.7.0/fuzz-beta-13.7.0.zap
-  date: 2022-09-23
-  version: 13.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.8.0/fuzz-beta-13.8.0.zap
+  date: 2022-10-27
+  version: 13.8.0
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer
@@ -357,9 +367,9 @@
   status: release
   infoUrl: /docs/desktop/addons/getting-started-guide/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v13/gettingStarted-release-13.zap
-  date: 2021-10-06
-  version: 13
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v14/gettingStarted-release-14.zap
+  date: 2022-10-27
+  version: 14
 - id: graaljs
   name: GraalVM JavaScript
   description: Provides the GraalVM JavaScript engine for ZAP scripting.
@@ -550,28 +560,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v4/imagelocationscanner-beta-4.zap
   date: 2022-09-23
   version: 4
-- id: importLogFiles
-  name: Log File Importer
-  description: Allows you to import log files from ModSecurity and files previously
-    exported from ZAP
-  author: Joseph Kirwin, ZAP Dev Team
-  status: alpha
-  infoUrl: /docs/desktop/addons/log-file-importer/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/importLogFiles-v6/importLogFiles-alpha-6.zap
-  date: 2021-12-22
-  version: 6
-- id: importurls
-  name: Import files containing URLs
-  description: Adds an option to import a file of URLs. The file must be plain text
-    with one URL per line.
-  author: ZAP Dev Team
-  status: beta
-  infoUrl: /docs/desktop/addons/import-urls/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/importurls-v9/importurls-beta-9.zap
-  date: 2021-12-22
-  version: 9
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such
@@ -877,26 +865,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saml-v9/saml-alpha-9.zap
   date: 2021-10-07
   version: 9
-- id: saverawmessage
-  name: Save Raw Message
-  description: Allows to save content of HTTP messages as binary
-  author: ZAP Dev Team
-  status: release
-  infoUrl: /docs/desktop/addons/save-raw-message/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saverawmessage-v7/saverawmessage-release-7.zap
-  date: 2021-12-22
-  version: 7
-- id: savexmlmessage
-  name: Save XML Message
-  description: Allows to save content of HTTP messages as XML
-  author: thatsn0tmysite
-  status: alpha
-  infoUrl: /docs/desktop/addons/save-xml-message/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/savexmlmessage-v0.3.0/savexmlmessage-alpha-0.3.0.zap
-  date: 2021-12-22
-  version: 0.3.0
 - id: scripts
   name: Script Console
   description: Supports all JSR 223 scripting languages

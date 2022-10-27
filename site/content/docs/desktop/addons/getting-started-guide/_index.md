@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: gettingStarted
-    version: 13.0.0
+    version: 14.0.0
 ---
 
 # Getting Started Guide

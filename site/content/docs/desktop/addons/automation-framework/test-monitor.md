@@ -2,12 +2,12 @@
 # This page was generated from the add-on.
 title: Automation Framework - Monitor Job Test
 type: userguide
-weight: 12
+weight: 11
 ---
 
 # Automation Framework - Monitor Job Test
 
-Monitor tests are supported by long running jobs, such as [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) and [spider](/docs/desktop/addons/automation-framework/job-spider/).
+Monitor tests are supported by long running jobs, such as [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) and spider.
 
 Unlike the other Job Tests, monitor tests run while a job is running.
 They work in a similar way to [statistic](/docs/desktop/addons/automation-framework/test-stats/) tests in that they check a specified statistic,
