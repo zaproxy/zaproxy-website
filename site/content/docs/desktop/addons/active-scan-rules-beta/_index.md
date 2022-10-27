@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 42.0.0
+    version: 43.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -19,18 +19,17 @@ Scans for commonly-named backup copies of files on the web server, which may rev
 
 Latest code: [BackupFileDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/BackupFileDisclosureScanRule.java)
 
-## Cloud Metadata Attack
-
-Attempts to abuse a misconfigured NGINX server in order to access the instance metadata maintained by cloud service providers such as AWS, GCP, Azure, and Alibaba.  
-Most of these services provide metadata via an internal unroutable IP address '169.254.169.254' ('100.100.100.200' for Alibaba) - this can be exposed by incorrectly configured NGINX servers and accessed by using this IP address in the Host header field.
-
-Latest code: [CloudMetadataScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/CloudMetadataScanRule.java)
-
 ## Cookie Slack Detector
 
 Tests cookies to detect if some have no effect on response size when omitted, especially cookies containing the name "session" or "userid".
 
 Latest code: [SlackerCookieDetector.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SlackerCookieDetector.java)
+
+## CORS Header
+
+This rule attempts to identify CORS headers and also CORS misconfiguration. The CORS is considered as misconfigured when it allows all origins, origins with weaker protocols and null origin.  
+
+Latest code: [CorsScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/CorsScanRule.java)
 
 ## Cross-Domain Misconfiguration
 
@@ -47,66 +46,17 @@ Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.c
 
 Latest code: [CsrfTokenScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/CsrfTokenScanRule.java)
 
-## .env Information Leak
+## Exponential Entity Expansion (Billion Laughs Attack)
 
-Checks for web accessible .env files which may leak sensitive information (such as usernames, passwords, API or APP keys, etc.). Environment files come in many flavors but mostly they are KEY=VALUE formatted.   
-This rule checks for how servers deliver them by default; NGINX returns them as binary/octet-stream content-type Apache just returns the text with no content-type. This rule also check for content length over 500 characters to try and exclude larger, possibly intentional, files.
+This rule attempts to identify the "Billion Laughs" vulnerability in servers that accept XML or YAML files.
 
-Latest code: [EnvFileScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/EnvFileScanRule.java)
+Latest code: [ExponentialEntityExpansionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/ExponentialEntityExpansionScanRule.java)
 
 ## Expression Language Injection
 
 Checks if the web application is subject to Expression Language (EL) injection attacks, which occur when an application fails to sufficiently neutralize special elements that could modify the intended EL statement before it is executed.
 
 Latest code: [ExpressionLanguageInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/ExpressionLanguageInjectionScanRule.java)
-
-## GET for POST
-
-This scan rule takes `application/x-www-form-urlencoded` POST requests, changes the parameters from POST to GET and resubmits the request. If the GET response is the same as the original POST response then an alert is raised. While this does not necessarily represent a security weakness unto itself it may indicate that other attacks or weaknesses can be expanded or simplified. (Such as a POST based Cross-Site Scripting (XSS) attack being changed to GET.)
-
-Latest code: [GetForPostScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/GetForPostScanRule.java)
-
-## Heartbleed OpenSSL Vulnerability
-
-Detects if the web server is vulnerable to the Heartbleed OpenSSL Vulnerability, by exploiting it. For further details refer to CVE-2014-0160.
-
-Latest code: [HeartBleedActiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/HeartBleedActiveScanRule.java)
-
-## Hidden File Finder
-
-This scan rule checks for various web accessible files which may leak administrative, configuration, or credential information. The original included set of payloads were based on [Snallygaster](https://github.com/hannob/snallygaster) by Hanno Böck. Such payloads are verified by checking response code, and content. If the response code is 200 (Ok) then additional content checks are performed to increase alert confidence. If the response code is 401 (Unauthorized) or 403 (Forbidden) or the content checks are un-successful then an alert is raised with lower confidence (at HIGH Threshold). **Note:** If the Custom Payloads addon is installed you can add your own hidden file paths (payloads) in the Custom Payloads options panel. For custom payloads only the response status code is checked. If there is a requirement to include a content check then it is also possible to add payloads to the `json/hidden_files.json` file in ZAP's user directory (in which case they will be treated as included payloads).
-
-The following describes the fields of the JSON entries.
-
-
-    {
-      "path":"some/path/without/leading/slash.ext",
-      "content":["content you want to find in responses"],
-      "not_content":["content you do not want the response to have"],
-      "binary":"\\x01\\x00",
-      "links":["https://example.com/relevant/reference.html,"https://other.example.org/"],
-      "type":"short_identifier",
-      "source":"attribution_not_used_by_output_or_checks"
-    }
-
-Details worth noting:
-
-* The only field that is required is path.
-* The fields content, not_content, and links can have multiple quoted, comma separated values (arrays of strings).
-* Checks of binary content are based on starting position 0 (ex: startsWith not contains).
-
-The following is an example JSON entry:
-
-
-    {
-      "path":"CVS/root",
-      "content":[":"],
-      "not_content":["<"],
-      "type":"cvs_dir",
-      "source":"snallygaster"
-    }
-
-Latest code: [HiddenFilesScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/HiddenFilesScanRule.java)
 
 ## HTTP Only Site
 
@@ -146,11 +96,23 @@ Looks for indicators of integer overflows in compiled code that causes the web s
 
 Latest code: [IntegerOverflowScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/IntegerOverflowScanRule.java)
 
-## Padding Oracle
+## Java Spring Actuators
 
-This rule attempts to manipulate the padding of encrypted strings to trigger an error response indicating a likely padding oracle vulnerability. Such a vulnerability can affect any application or framework that uses encryption improperly, such as some versions of ASP.net, Java Server Faces, and Mono.
+This rule attempts to identify if the Spring Actuators are enabled. Tests for the default /actuator/health route in the application.
 
-Latest code: [PaddingOracleScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/PaddingOracleScanRule.java)
+Latest code: [SpringActuatorScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SpringActuatorScanRule.java)
+
+## Log4Shell (CVE-2021-44228 and CVE-2021-45046)
+
+This rule attempts to discover the Log4Shell ([CVE-2021-44228](https://www.cve.org/CVERecord?id=CVE-2021-44228) and [CVE-2021-45046](https://www.cve.org/CVERecord?id=CVE-2021-45046)) vulnerabilities. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions. We recommend that this scan rule is used with header injection enabled for maximum coverage.
+
+Latest code: [Log4ShellScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/Log4ShellScanRule.java)
+
+## Out of Band XSS
+
+This rule attempts to discover Out-of-band XSS vulnerabilities.
+
+Latest code: [OutOfBandXssScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/OutOfBandXssScanRule.java)
 
 ## Proxy Disclosure
 
@@ -168,11 +130,17 @@ Tests if the web server is configured to serve responses to ambiguous URLs in a 
 
 Latest code: [RelativePathConfusionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/RelativePathConfusionScanRule.java)
 
-## Remote Code Execution - CVE-2012-1823
+## Server Side Template Injection
 
-Detect CVE-2012-1823 to perform Remote Code Execution on a PHP-CGI based web server.
+This rule attempts to detect situations in which user input might be interpreted as part of the template and processed on the server, versus the user input simply being used as an argument to the template/engine.
 
-Latest code: [RemoteCodeExecutionCve20121823ScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/RemoteCodeExecutionCve20121823ScanRule.java)
+Latest code: [SstiScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SstiScanRule.java)
+
+## Server Side Template Injection (Blind)
+
+This rule goes one step further than the SSTI scan rule and attempts to find places where the impact of the user input is not immediately obvious, such as when used by an admin panel, report output, invoice, etc.
+
+Latest code: [SstiBlindScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SstiBlindScanRule.java)
 
 ## Session Fixation
 
@@ -188,14 +156,6 @@ The first is a simple reflected attack and the second is a time based attack.
 Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
 
 Latest code: [ShellShockScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/ShellShockScanRule.java)
-
-## Source Code Disclosure - CVE-2012-1823
-
-Exploit CVE-2012-1823 to disclose server-side PHP source code on a PHP-CGI based web server.  
-Only analyzes responses that are text based (HTML, JSON, XML, etc.), in order to avoid false positives which may occur with image or other binary content.  
-JavaScript responses are only anaylzed when a LOW alert threshold is set.
-
-Latest code: [SourceCodeDisclosureCve20121823ScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SourceCodeDisclosureCve20121823ScanRule.java)
 
 ## Source Code Disclosure - SVN
 
@@ -216,80 +176,11 @@ Uses Git source code repository metadata to scan for files containing source cod
 
 Latest code: [SourceCodeDisclosureGitScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SourceCodeDisclosureGitScanRule.java)
 
-## SQL Injection - Hypersonic (Time Based)
+## Spring4Shell (CVE-2022-22965)
 
-This rule uses Hypersonic-specific SQL syntax to attempt to induce time delays in the SQL statement called by the page.  
-If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a Hypersonic SQL database.   
-This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected Hypersonic database.   
-For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
-The rule tests only for time-based SQL injection vulnerabilities.  
+This rule attempts to discover the Spring4Shell ([CVE-2022-22965](https://tanzu.vmware.com/security/cve-2022-22965) vulnerability. It uses a payload of `class.module.classLoader.DefaultAssertionStatus=nonsense` on all nodes and raises an alert if this payload results in a 400 response. It will not raise an alert if a similar but safe payload also results in a 400 response.
 
-Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
-
-Latest code: [SqlInjectionHypersonicScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SqlInjectionHypersonicScanRule.java)
-
-## SQL Injection - MsSQL
-
-This active scan rule attempts to inject MsSQL specific sleep commands into parameter values and analyzes the server's response time to see if the sleep is effectively executed on the server (indicating a successful SQL injection attack).
-
-Latest code: [SqlInjectionMsSqlScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SqlInjectionMsSqlScanRule.java)
-
-## SQL Injection - MySQL (Time Based)
-
-This rule uses MySQL-specific SQL syntax to attempt to induce time delays in the SQL statement called by the page.  
-If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a MySQL database.   
-This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected MySQL database.   
-For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
-The rule tests only for time-based SQL injection vulnerabilities.  
-
-Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
-
-Latest code: [SqlInjectionMySqlScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SqlInjectionMySqlScanRule.java)
-
-## SQL Injection - Oracle (Time Based)
-
-This scan rule uses Oracle-specific SQL syntax to attempt to induce time delays in the SQL statement called by the page.  
-If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a Oracle SQL database.   
-This rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected Oracle database.   
-For this reason, the number of active scan threads should be set to the minimum when using this rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
-The scan rule tests only for time-based SQL injection vulnerabilities.  
-
-Note that this rule does not currently allow you to change the length of time used for the timing attacks due to the way the delay is caused.
-
-Latest code: [SqlInjectionOracleScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SqlInjectionOracleScanRule.java)
-
-## SQL Injection - PostgreSQL (Time Based)
-
-This rule uses PostgreSQL-specific SQL syntax to attempt to induce time delays in the SQL statement called by the page.  
-If the unmodified query is not affected by a time delay, and the modified query's delay can be controlled, it is indicative of a time-based SQL Injection vulnerability in a PostgreSQL database.   
-This scan rule is time sensitive, and should only be used in an attempt to find stubborn and un-obvious SQL injection vulnerabilities in a suspected PostgreSQL database.   
-For this reason, the number of active scan threads should be set to the minimum when using this scan rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
-The rule tests only for time-based SQL injection vulnerabilities.  
-
-Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
-
-Latest code: [SqlInjectionPostgreScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SqlInjectionPostgreScanRule.java)
-
-## SQL Injection - SQLite
-
-This active scan rule attempts to inject SQLite specific commands into parameter values and analyzes the server's responses to see if the commands were effectively executed on the server (indicating a successful SQL injection attack).
-
-Latest code: [SqlInjectionSqLiteScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SqlInjectionSqLiteScanRule.java)
-
-## Trace.axd Information Leak
-
-Tests to see if Trace Viewer (trace.axd) is available. Although this component is convenient for developers and other stakeholders it can leak a significant amount of information which a security analyst or malicious individual may be interested in.  
-
-The trace.axd scan rule targets Microsoft based technologies: IIS, Windows, ASP, and MSSQL.
-
-Latest code: [TraceAxdScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/TraceAxdScanRule.java)
-
-## User Agent Fuzzer
-
-This active scan rule checks for differences in response based on fuzzed User Agent (eg. mobile sites, access as a Search Engine Crawler). The rule compares the response statuscode and the hashcode of the response body with the original response.  
-**Note:** If the Custom Payloads addon is installed you can add your own User Agent strings (payloads) in the Custom Payloads options panel.
-
-Latest code: [UserAgentScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/UserAgentScanRule.java)
+Latest code: [Spring4ShellScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/Spring4ShellScanRule.java)
 
 ## Username Enumeration
 
@@ -302,18 +193,3 @@ Latest code: [UsernameEnumerationScanRule.java](https://github.com/zaproxy/zap-e
 As described by OWASP: "XPath Injection attacks occur when a web site uses user-supplied information to construct an XPath query for XML data. By sending intentionally malformed information into the web site, an attacker can find out how the XML data is structured, or access data that he may not normally have access to. He may even be able to elevate his privileges on the web site if the XML data is being used for authentication (such as an XML based user file) or authorization." This rule attempts to identify such weaknesses.
 
 Latest code: [XpathInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/XpathInjectionScanRule.java)
-
-## XSLT Injection
-
-This scan rule checks for certain responses induced by injecting XSL transformations.   
-It attempts to obtain those responses with payloads which may induce: error responses, disclosure of library/framework vendor name, remote port scanning, or command execution.
-
-Latest code: [XsltInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/XsltInjectionScanRule.java)
-
-## XXE
-
-This component attempts to identify applications which are subject to XML eXternal Entity (XXE) attacks. Applications which parse XML input may be subject to XXE when weakly or poorly configured parsers handle XML input containing reference to an external entity such as a local file, HTTP requests to internal or tertiary systems, etc. The number of tags which are tested individually depends on the strength of the rule.  
-
-This scan rule will only run if the OAST add-on is installed and available. It is also recommended that you test that the Callbacks service in the OAST add-on is correctly configured for your target site. If the target system cannot connect to the Callback Address then some XXE vulnerabilities will not be detected.
-
-Latest code: [XxeScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/XxeScanRule.java)
