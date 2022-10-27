@@ -18,7 +18,7 @@ By default only the machine ZAP is running on is able to access the API. You can
 as a proxy, access to the API. The API is configured using the [Options API screen](/docs/desktop/ui/dialogs/options/api/).
 
 The API provides access to most of the core ZAP features such as the
-[active scanner](/docs/desktop/start/features/ascan/) and [spider](/docs/desktop/start/features/spider/).  
+[active scanner](/docs/desktop/start/features/ascan/).  
 Future versions of ZAP will increase the functionality available via the APi.
 
 ## See also

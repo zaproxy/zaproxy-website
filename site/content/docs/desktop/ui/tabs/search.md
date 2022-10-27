@@ -45,7 +45,7 @@ This will launch the [Active Scan dialog](/docs/desktop/ui/dialogs/advascan/) wh
 
 #### Spider...
 
-This will launch the [Spider dialog](/docs/desktop/ui/dialogs/spider/) which allows you to initiate the [spider](/docs/desktop/start/features/spider/) with the starting point set to the request you selected.  
+This will launch the Spider dialog which allows you to initiate the spider with the starting point set to the request you selected.  
 
 ### Include in Context
 
@@ -98,10 +98,6 @@ The nodes can be included again via the [Session Properties](/docs/desktop/ui/di
 
 This will prevent the selected nodes from being spidered.  
 The nodes can be included again via the [Session Properties](/docs/desktop/ui/dialogs/session/) dialog
-
-### Open/Resend with Request Editor...
-
-This will bring up the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/) which allows you to resend the request after making any changes to it that you want to.
 
 ### New Alert...
 

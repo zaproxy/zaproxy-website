@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Manage History Tags dialog
 type: userguide
-weight: 9
+weight: 8
 ---
 
 # Manage History Tags dialog

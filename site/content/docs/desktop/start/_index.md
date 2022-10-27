@@ -8,7 +8,7 @@ weight: 2
 # Getting Started
 
 The quickest way to get going with ZAP is to use the Quick Start add-on, which is installed by default.  
-This allows you to enter a URL which ZAP will first [spider](/docs/desktop/start/features/spider/)
+This allows you to enter a URL which ZAP will first spider
 and then [active scan](/docs/desktop/start/features/ascan/).  
 For a more in depth test you should explore your application using your browser or automated regression tests while proxying through ZAP.
 

@@ -17,7 +17,7 @@ A breakpoint is defined by the following fields:
 * **Inverse** - if the result of the `Match` should be the inverse.
 * **Ignore case** - if the case of the `String` should be ignored.
 
-If you proxy a HTTP message that matches a breakpoint then ZAP will intercept it and allow you to change either the request and/or the response.
+If you proxy a HTTP message that matches a breakpoint then ZAP will intercept it and allow you to change either the request or the response.
 
 **Note:** ZAP will warn and prevent adding breakpoints with a fragment identifier component (`#`), if
 the breakpoint has match `Contains` and location `URL`. Such breakpoint would not work because the

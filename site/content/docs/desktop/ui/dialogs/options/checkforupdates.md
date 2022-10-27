@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Check for Updates screen
 type: userguide
-weight: 8
+weight: 7
 ---
 
 # Options Check for Updates screen

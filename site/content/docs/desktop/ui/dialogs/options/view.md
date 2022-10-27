@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Display screen
 type: userguide
-weight: 11
+weight: 9
 ---
 
 # Options Display screen
@@ -15,7 +15,7 @@ If ZAP processes images.
 
 ### Show (local) CONNECT requests
 
-If the HTTP CONNECT requests received by the [Local Proxies](/docs/desktop/ui/dialogs/options/localproxy/) should be persisted in the current [session](/docs/desktop/ui/tlmenu/file/) and shown in the [History tab](/docs/desktop/ui/tabs/history/). The default is to not show those requests, they happen frequently (in preparation for TLS/SSL, WebSocket... connections) and, unless inspecting the behaviour of the client application, are not (usually) of much interest.
+If the HTTP CONNECT requests received by ZAP's proxies should be persisted in the current [session](/docs/desktop/ui/tlmenu/file/) and shown in the [History tab](/docs/desktop/ui/tabs/history/). The default is to not show those requests, they happen frequently (in preparation for TLS/SSL, WebSocket... connections) and, unless inspecting the behaviour of the client application, are not (usually) of much interest.
 
 ### Display
 

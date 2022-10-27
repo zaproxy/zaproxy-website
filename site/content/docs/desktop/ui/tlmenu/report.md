@@ -8,29 +8,6 @@ type: userguide
 
 This menu handles the reports.
 
-### Export Messages to File...
-
-This allows you to save requests and responses to a text file.   
-Select the messages to save in the History tab - use the shift key to select multiple messages.
-
-### Export Response to File...
-
-This allows you to save a specific response to a file.   
-Select the relevant message in the History tab - note that binary responses (such as images) can be saved as well as test responses.
-
-### Export All URLs to File...
-
-This allows you to save all of the URLs accessed to a text or HTML file.   
-This can be used, amongst other things, to compare the URLs available to users with different roles or permissions on the same system.
-
-### Export Selected URLs to File...
-
-Based on the selection (including multi-select) in the Sites tree all URLs and child URLs of selected nodes are exported.
-
-### Export URLs for Context
-
-All URLs in the Sites tree that fall within the selected context are exported. This functionality is also available from the right-click menu when used on a Context node in the Sites tree panel.
-
 ### Compare with another Session...
 
 This prompts you for a ZAP session that you have previously saved.   

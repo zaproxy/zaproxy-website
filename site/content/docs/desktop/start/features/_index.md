@@ -33,7 +33,7 @@ ZAP provides the following features:
 |   | [Scripts](/docs/desktop/start/features/scripts/)                                       |   |
 |   | [Session Management](/docs/desktop/start/features/sessionmanagement/)                  |   |
 |   | [Sites Tree](/docs/desktop/start/features/sitestree/)                                  |   |
-|   | [Spider](/docs/desktop/start/features/spider/)                                         |   |
+|   | Spider                                                                                 |   |
 |   | [Statistics](/docs/desktop/start/features/stats/)                                      |   |
 |   | [Structural Modifiers](/docs/desktop/start/features/structmods/)                       |   |
 |   | [Structural Parameters](/docs/desktop/start/features/structparams/)                    |   |

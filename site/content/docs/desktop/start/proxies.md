@@ -8,8 +8,7 @@ weight: 1
 # Configuring Proxies
 
 You will need to configure your browser to use ZAP as a proxy.  
-By default ZAP uses an Address of 'localhost' and a Port of '8080', but these can be changed via the
-[Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/).
+By default, ZAP uses an Address of 'localhost' and a Port of '8080', but these can be changed via the Options \> Network \> Local Servers/Proxies screen.
 Instructions for the latest versions of the most commonly used browsers:
 
 ### Chrome (on Windows)
@@ -26,18 +25,18 @@ Instructions for the latest versions of the most commonly used browsers:
 
 ### Firefox (on Windows)
 
-|   |              |                                                                                                                                                                                                                                                                                                                 |
-|---|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|   | Select the   | 'Tools' menu                                                                                                                                                                                                                                                                                                    |
-|   | Select the   | 'Options..' menu item                                                                                                                                                                                                                                                                                           |
-|   | Select the   | 'General' panel                                                                                                                                                                                                                                                                                                 |
-|   | Scroll to    | 'Network Settings' section                                                                                                                                                                                                                                                                                      |
-|   | Press the    | 'Settings...' button                                                                                                                                                                                                                                                                                            |
-|   | Select the   | 'Manual proxy configuration' radio button                                                                                                                                                                                                                                                                       |
-|   | Enter in the | 'HTTP Proxy:' field the 'Address' you configured in the [Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/)                                                                                                                                                                            |
-|   | Enter in the | 'Port' field to the right of the 'HTTP Proxy' field the 'Port' you configured in the [Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/). Ensure 'SSL Proxy' is also configured, either by selecting 'Use this proxy server for all protocols' or by setting the corresponding values. |
-|   | Press the    | Connection Setting 'OK' button                                                                                                                                                                                                                                                                                  |
-|   | Press the    | Options 'OK' button                                                                                                                                                                                                                                                                                             |
+|   |              |                                                                                                                                                                                                                                                   |
+|---|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   | Select the   | 'Tools' menu                                                                                                                                                                                                                                      |
+|   | Select the   | 'Options..' menu item                                                                                                                                                                                                                             |
+|   | Select the   | 'General' panel                                                                                                                                                                                                                                   |
+|   | Scroll to    | 'Network Settings' section                                                                                                                                                                                                                        |
+|   | Press the    | 'Settings...' button                                                                                                                                                                                                                              |
+|   | Select the   | 'Manual proxy configuration' radio button                                                                                                                                                                                                         |
+|   | Enter in the | 'HTTP Proxy:' field the 'Address' you configured in the options screen                                                                                                                                                                            |
+|   | Enter in the | 'Port' field to the right of the 'HTTP Proxy' field the 'Port' you configured in the options screen. Ensure 'SSL Proxy' is also configured, either by selecting 'Use this proxy server for all protocols' or by setting the corresponding values. |
+|   | Press the    | Connection Setting 'OK' button                                                                                                                                                                                                                    |
+|   | Press the    | Options 'OK' button                                                                                                                                                                                                                               |
 
 **Note:** To proxy `localhost` (and related addresses) with newer Firefox versions (\>= 67) the preference `network.proxy.allow_hijacking_localhost` (accessible through the `about:config` page) must be set to `true`.
 
@@ -69,19 +68,19 @@ Instructions for the latest versions of the most commonly used browsers:
 
 ### Opera
 
-|   |              |                                                                                                                                               |
-|---|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-|   | Select the   | 'Menu' in the top left hand corner                                                                                                            |
-|   | Select the   | 'Settings' menu item                                                                                                                          |
-|   | Select the   | 'Preferences' menu item                                                                                                                       |
-|   | Select the   | 'Advanced' tab                                                                                                                                |
-|   | Select the   | 'Network' item in the left hand list                                                                                                          |
-|   | Press the    | 'Proxy Servers' button                                                                                                                        |
-|   | Select the   | 'HTTP' checkbox                                                                                                                               |
-|   | Enter in the | field to the right of 'HTTP' the 'Address' you configured in the [Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/) |
-|   | Enter in the | HTTP 'Port' field the 'Port' you configured in the [Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/)               |
-|   | Press the    | Proxy servers 'OK' button                                                                                                                     |
-|   | Press the    | Preferences 'OK' button                                                                                                                       |
+|   |              |                                                                                 |
+|---|--------------|---------------------------------------------------------------------------------|
+|   | Select the   | 'Menu' in the top left hand corner                                              |
+|   | Select the   | 'Settings' menu item                                                            |
+|   | Select the   | 'Preferences' menu item                                                         |
+|   | Select the   | 'Advanced' tab                                                                  |
+|   | Select the   | 'Network' item in the left hand list                                            |
+|   | Press the    | 'Proxy Servers' button                                                          |
+|   | Select the   | 'HTTP' checkbox                                                                 |
+|   | Enter in the | field to the right of 'HTTP' the 'Address' you configured in the options screen |
+|   | Enter in the | HTTP 'Port' field the 'Port' you configured in the options screen               |
+|   | Press the    | Proxy servers 'OK' button                                                       |
+|   | Press the    | Preferences 'OK' button                                                         |
 
 ### Safari (on OS X)
 
@@ -106,23 +105,23 @@ Instructions for the latest versions of the most commonly used browsers:
 
 ### OS X System Proxy settings
 
-|   |              |                                                                                                                                   |
-|---|--------------|-----------------------------------------------------------------------------------------------------------------------------------|
-|   | Select the   | 'Web Proxy (HTTP)                                                                                                                 |
-|   | Enter in the | 'Address:' field the 'Address' you configured in the [Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/) |
-|   | Enter in the | 'Port' field the 'Port' you configured in the [Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/)        |
-|   | Press the    | Proxies Setting 'OK' button                                                                                                       |
-|   | Press the    | Network Options 'Apply' button                                                                                                    |
+|   |              |                                                                     |
+|---|--------------|---------------------------------------------------------------------|
+|   | Select the   | 'Web Proxy (HTTP)                                                   |
+|   | Enter in the | 'Address:' field the 'Address' you configured in the options screen |
+|   | Enter in the | 'Port' field the 'Port' you configured in the options screen        |
+|   | Press the    | Proxies Setting 'OK' button                                         |
+|   | Press the    | Network Options 'Apply' button                                      |
 
 ### Windows LAN Settings
 
-|   |              |                                                                                                                                   |
-|---|--------------|-----------------------------------------------------------------------------------------------------------------------------------|
-|   | Select the   | 'Use a proxy server for your LAN' checkbox                                                                                        |
-|   | Enter in the | 'Address:' field the 'Address' you configured in the [Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/) |
-|   | Enter in the | 'Port' field the 'Port' you configured in the [Options Local Proxies screen](/docs/desktop/ui/dialogs/options/localproxy/)        |
-|   | Press the    | Local Area Network (LAN) Setting 'OK' button                                                                                      |
-|   | Press the    | Internet Options 'OK' button                                                                                                      |
+|   |              |                                                                     |
+|---|--------------|---------------------------------------------------------------------|
+|   | Select the   | 'Use a proxy server for your LAN' checkbox                          |
+|   | Enter in the | 'Address:' field the 'Address' you configured in the options screen |
+|   | Enter in the | 'Port' field the 'Port' you configured in the options screen        |
+|   | Press the    | Local Area Network (LAN) Setting 'OK' button                        |
+|   | Press the    | Internet Options 'OK' button                                        |
 
 ## See also
 

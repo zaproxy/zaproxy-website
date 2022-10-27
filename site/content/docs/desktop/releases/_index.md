@@ -11,6 +11,7 @@ The following releases have been made:
 
 |   |                                          |                                                                                                              |
 |---|------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+|   | [2.12.0](/docs/desktop/releases/2.12.0/) | ten thousand star bug fix and enhancement release                                                            |
 |   | [2.11.1](/docs/desktop/releases/2.11.1/) | includes an important security fix - users are urged to upgrade asap                                         |
 |   | [2.11.0](/docs/desktop/releases/2.11.0/) | OWASP 20th anniversary bug fix and enhancement release                                                       |
 |   | [2.10.0](/docs/desktop/releases/2.10.0/) | 10 year anniversary bug fix and enhancement release                                                          |

@@ -19,6 +19,10 @@ Starting a new session without saving the current session will loose all of the 
 This opens a session that has been previously saved.  
 Opening a session without saving the current session will loose all of the data in the current session.
 
+### Open Recent
+
+A list of files that have been recently accessed.
+
 ### Persist Session...
 
 This persists the current session.   

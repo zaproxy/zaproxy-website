@@ -17,7 +17,7 @@ This allows you to find the text you enter in the selected tab.
 |   | [Break tab](/docs/desktop/ui/tabs/break/)            | 'Find...' right click menu item |
 |   | [Request tab](/docs/desktop/ui/tabs/request/)        | 'Find...' right click menu item |
 |   | [Response tab](/docs/desktop/ui/tabs/response/)      | 'Find...' right click menu item |
-|   | [Spider tab](/docs/desktop/ui/tabs/spider/)          | 'Find...' right click menu item |
+|   | Spider tab                                           | 'Find...' right click menu item |
 
 ## See also
 

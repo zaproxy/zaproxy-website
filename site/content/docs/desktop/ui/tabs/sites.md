@@ -23,7 +23,7 @@ This will launch the [Active Scan dialog](/docs/desktop/ui/dialogs/advascan/) wh
 
 #### Spider...
 
-This will launch the [Spider dialog](/docs/desktop/ui/dialogs/spider/) which allows you to initiate the [spider](/docs/desktop/start/features/spider/) with the starting point set to the context you selected.  
+This will launch the Spider dialog which allows you to initiate the spider with the starting point set to the context you selected.  
 
 #### Add to Scope/Remove from Scope
 
@@ -60,7 +60,7 @@ This will launch the [Active Scan](/docs/desktop/ui/dialogs/advascan/) dialog wh
 
 ##### Spider...
 
-This will launch the [Spider](/docs/desktop/ui/dialogs/spider/) dialog which allows you to initiate the [spider](/docs/desktop/start/features/spider/) with the starting point set to the request you selected.  
+This will launch the Spider dialog which allows you to initiate the spider with the starting point set to the request you selected.  
 
 #### Include in Context
 
@@ -122,16 +122,12 @@ However they can be added back in, to prevent this use the 'Exclude from' menus.
 #### Break...
 
 This will bring up a new window which will allow you to set a [breakpoint](/docs/desktop/start/features/breakpoints/) on that URL.  
-The breakpoint is defined via a regular expression. If you visit a URL which matches this expression then ZAP will intercept it and allow you to change either the request and/or the response.
+The breakpoint is defined via a regular expression. If you visit a URL which matches this expression then ZAP will intercept it and allow you to change either the request or the response.
 
 #### Alerts for this node
 
 If the URL selected has [alerts](/docs/desktop/start/features/alerts/) associated with it then they will be listed under this menu.  
 Selecting one of the alerts will cause it to be displayed.
-
-#### Open/Resend with Request Editor...
-
-This will bring up the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/) which allows you to resend the request after making any changes to it that you want to.
 
 #### New Alert...
 

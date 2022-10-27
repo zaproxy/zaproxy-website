@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Scan Progress Dialog
 type: userguide
-weight: 13
+weight: 12
 ---
 
 # Scan Progress Dialog
