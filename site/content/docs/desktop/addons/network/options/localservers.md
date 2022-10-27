@@ -2,12 +2,10 @@
 # This page was generated from the add-on.
 title: Local Servers/Proxies
 type: userguide
-weight: 1
+weight: 3
 ---
 
 # Local Servers/Proxies
-
-**Note:** This feature is only available in weekly releases and versions after 2.11.   
 
 ## Local Servers/Proxies
 
@@ -53,6 +51,7 @@ ZAP will obtain the public IP address from
 instance's metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#working-with-ip-addresses).  
 ZAP should be started with this option enabled if access to the API, through the public IP address, is required:
 > zap.sh -daemon -port 8080 -host 0.0.0.0 -config network.localServers.mainProxy.behindNat=true
+
 Also, the API needs to be configured to accept external IP addresses (i.e. the IP address from where ZAP is being accessed).
 
 #### Remove Accept-Encoding Request Header
@@ -73,7 +72,7 @@ For example, if you have a Linux machine you use for testing, you can do somethi
 HTTPS traffic to a local proxy listening on `192.168.0.14:8080`:
 
     iptables -t nat -A OUTPUT -p tcp --dport 443 -j DNAT --to-destination 192.168.0.14:8080
-    	iptables -t nat -A OUTPUT -p tcp --dport 80 -j DNAT --to-destination 192.168.0.14:8080
+    iptables -t nat -A OUTPUT -p tcp --dport 80 -j DNAT --to-destination 192.168.0.14:8080
     	
 ## Aliases
 

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: replacer
-    version: 10.0.0
+    version: 11.0.0
 ---
 
 # Replacer
@@ -21,6 +21,11 @@ Each rule is defined by the following fields:
 ### Description
 
 A description that allows you to identify the rule.
+
+### URL
+
+A regular expression to match the URL of the message, if empty the rule applies to all messages.  
+For example, allows to restrict the rules to certain domains when providing authentication credentials.
 
 ### Match Type
 

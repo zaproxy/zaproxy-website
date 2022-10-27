@@ -7,15 +7,13 @@ weight: 3
 
 # Options
 
-**Note:** This feature is only available in weekly releases and versions after 2.11.   
 The Network add-on provides the following options screens:
-
-|   |                                                                             |                                                           |
-|---|-----------------------------------------------------------------------------|-----------------------------------------------------------|
-|   | [Local Servers/Proxies](/docs/desktop/addons/network/options/localservers/) | Allows to manage and configure the local servers/proxies. |
 
 |   |                                                                                 |                                                                                 |
 |---|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
+|   | [Client Certificates](/docs/desktop/addons/network/options/clientcertificates/) | Allows to configure the client certificates, PKCS#11 and PKCS#12.               |
+|   | [Connection](/docs/desktop/addons/network/options/connection/)                  | Allows to configure the connection.                                             |
+|   | [Local Servers/Proxies](/docs/desktop/addons/network/options/localservers/)     | Allows to manage and configure the local servers/proxies.                       |
 |   | [Server Certificates](/docs/desktop/addons/network/options/servercertificates/) | Allows to manage and configure the root CA certificate and issued certificates. |
 
 ## See also

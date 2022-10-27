@@ -2,12 +2,11 @@
 # This page was generated from the add-on.
 title: Server Certificates
 type: userguide
-weight: 2
+weight: 4
 ---
 
 # Server Certificates
 
-**Note:** This feature is only available in weekly releases and versions after 2.11.   
 This screens allows to manage and configure the root CA certificate and issued certificates.
 
 OWASP ZAP allows you to transparently decrypt SSL connections.

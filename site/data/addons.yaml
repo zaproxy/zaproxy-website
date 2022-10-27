@@ -377,9 +377,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.2.0/graaljs-alpha-0.2.0.zap
-  date: 2021-10-06
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.3.0/graaljs-alpha-0.3.0.zap
+  date: 2022-10-27
+  version: 0.3.0
 - id: graphql
   name: GraphQL Support
   description: Inspect and attack GraphQL endpoints.
@@ -387,9 +387,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.10.0/graphql-alpha-0.10.0.zap
-  date: 2022-09-23
-  version: 0.10.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.11.0/graphql-alpha-0.11.0.zap
+  date: 2022-10-27
+  version: 0.11.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -568,9 +568,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/invoke-applications/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/invoke-v11/invoke-beta-11.zap
-  date: 2021-10-06
-  version: 11
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/invoke-v12/invoke-beta-12.zap
+  date: 2022-10-27
+  version: 12
 - id: jruby
   name: Ruby Scripting
   description: Allows Ruby to be used for ZAP scripting - templates included
@@ -635,12 +635,12 @@
   name: Network
   description: Provides core networking capabilities.
   author: ZAP Dev Team
-  status: alpha
+  status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.2.0/network-alpha-0.2.0.zap
-  date: 2022-04-06
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.3.0/network-beta-0.3.0.zap
+  date: 2022-10-27
+  version: 0.3.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -648,9 +648,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.12.0/oast-beta-0.12.0.zap
-  date: 2022-10-19
-  version: 0.12.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.13.0/oast-beta-0.13.0.zap
+  date: 2022-10-27
+  version: 0.13.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
@@ -658,9 +658,9 @@
   status: release
   infoUrl: /docs/desktop/addons/online-menu/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/onlineMenu-v9/onlineMenu-release-9.zap
-  date: 2021-10-06
-  version: 9
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/onlineMenu-v10/onlineMenu-release-10.zap
+  date: 2022-10-27
+  version: 10
 - id: openapi
   name: OpenAPI Support
   description: Imports and spiders OpenAPI definitions.
@@ -670,9 +670,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v28/openapi-beta-28.zap
-  date: 2022-09-21
-  version: 28
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v29/openapi-beta-29.zap
+  date: 2022-10-27
+  version: 29
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -732,9 +732,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v43/pscanrules-release-43.zap
-  date: 2022-09-15
-  version: 43
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v44/pscanrules-release-44.zap
+  date: 2022-10-27
+  version: 44
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -762,9 +762,9 @@
   status: release
   infoUrl: /docs/desktop/addons/quick-start/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v34/quickstart-release-34.zap
-  date: 2022-09-23
-  version: 34
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v35/quickstart-release-35.zap
+  date: 2022-10-27
+  version: 35
 - id: reflect
   name: Reflect
   description: Finds reflected parameters
@@ -792,9 +792,9 @@
   status: release
   infoUrl: /docs/desktop/addons/replacer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v10/replacer-release-10.zap
-  date: 2022-09-23
-  version: 10
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v11/replacer-release-11.zap
+  date: 2022-10-27
+  version: 11
 - id: reports
   name: Report Generation
   description: Official ZAP Reports.
@@ -802,19 +802,19 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.15.0/reports-release-0.15.0.zap
-  date: 2022-07-20
-  version: 0.15.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.16.0/reports-release-0.16.0.zap
+  date: 2022-10-27
+  version: 0.16.0
 - id: requester
   name: Requester
-  description: Request numbered panel.
-  author: Surikato
-  status: alpha
+  description: Allows to manually edit and send messages.
+  author: Surikato and the ZAP Dev Team
+  status: beta
   infoUrl: /docs/desktop/addons/requester/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v6/requester-alpha-6.zap
-  date: 2022-05-10
-  version: 6
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v7.0.0/requester-beta-7.0.0.zap
+  date: 2022-10-27
+  version: 7.0.0
 - id: retest
   name: Retest
   description: An add-on to retest for presence/absence of previously generated alerts.
@@ -822,9 +822,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/retest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retest-v0.3.0/retest-alpha-0.3.0.zap
-  date: 2022-09-23
-  version: 0.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retest-v0.4.0/retest-alpha-0.4.0.zap
+  date: 2022-10-27
+  version: 0.4.0
 - id: retire
   name: Retire.js
   description: Retire.js
@@ -832,9 +832,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.15.0/retire-release-0.15.0.zap
-  date: 2022-09-22
-  version: 0.15.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.16.0/retire-release-0.16.0.zap
+  date: 2022-10-27
+  version: 0.16.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -842,9 +842,9 @@
   status: release
   infoUrl: /docs/desktop/addons/reveal/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reveal-v4/reveal-release-4.zap
-  date: 2021-10-06
-  version: 4
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reveal-v5/reveal-release-5.zap
+  date: 2022-10-27
+  version: 5
 - id: revisit
   name: Revisit
   description: Revisit a site at any time in the past using the session history

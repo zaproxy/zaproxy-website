@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: reveal
-    version: 4.0.0
+    version: 5.0.0
 ---
 
 # Reveal
