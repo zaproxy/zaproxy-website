@@ -7,9 +7,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/access-control-testing/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/accessControl-v7/accessControl-alpha-7.zap
-  date: 2021-10-07
-  version: 7
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/accessControl-v8/accessControl-alpha-8.zap
+  date: 2022-10-28
+  version: 8
 - id: alertFilters
   name: Alert Filters
   description: Allows you to automate the changing of alert risk levels.
@@ -862,9 +862,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/saml-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saml-v9/saml-alpha-9.zap
-  date: 2021-10-07
-  version: 9
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saml-v10/saml-alpha-10.zap
+  date: 2022-10-28
+  version: 10
 - id: scripts
   name: Script Console
   description: Supports all JSR 223 scripting languages
@@ -943,9 +943,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/server-sent-events/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v11/sse-alpha-11.zap
-  date: 2022-09-23
-  version: 11
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v12/sse-alpha-12.zap
+  date: 2022-10-28
+  version: 12
 - id: svndigger
   name: SVN Digger Files
   description: SVN Digger files which can be used with ZAP forced browsing
