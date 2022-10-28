@@ -34,13 +34,16 @@
       <table data-sort-filter>
          <thead>
             <tr>
-               <th>Search</th>
+               <th>Tag</th>
+               <th>Link</th>
             </tr>
          </thead>
          <tbody>
             {{ range .Pages }}
+               {{ $alerttag := index $.Site.Data.alerttags .Title }}
                <tr>
                   <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+                  <td><a href="{{ $alerttag.link }}">{{ $alerttag.link }}</a></td>
                </tr>
             {{ end }}
          </tbody>
