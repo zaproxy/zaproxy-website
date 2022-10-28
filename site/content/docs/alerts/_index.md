@@ -10,3 +10,6 @@ Note that these are examples of the alerts raised - many rules include different
 Only the `release` rules are included in ZAP by default, the beta and alpha rules can be installed via the [ZAP Marketplace](/addons/).
 
 You can also use HTTP passive and active scripts, examples of which are available in the ZAP [community scripts](https://github.com/zaproxy/community-scripts) repo, as well as Websocket [passive](/docs/desktop/addons/websockets/pscanrules/) scripts.
+
+Many alerts support [tags](/alerttags/) which allow you to see which alerts are related to, for example, specific
+[OWASP Top Ten](https://owasp.org/Top10/) categories or [OWASP Web Service Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) chapters.
