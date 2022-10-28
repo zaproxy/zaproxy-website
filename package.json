@@ -29,7 +29,7 @@
     "@babel/register": "^7.18.9",
     "assets-webpack-plugin": "^7.1.1",
     "babel-eslint": "^10.1.0",
-    "babel-loader": "^8.2.5",
+    "babel-loader": "^9.0.0",
     "badger-accordion": "^1.2.4",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
