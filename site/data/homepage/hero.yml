@@ -1,5 +1,8 @@
 heroItems:
   - headline: OWASP® Zed Attack Proxy (ZAP)
-    subhead: The world’s most widely used web app scanner. Free and open source. Actively maintained by a dedicated international team of volunteers.
+    subhead: 
+      The world’s most widely used web app scanner. Free and open source. 
+      Actively maintained by a dedicated international team of volunteers.
+      A GitHub Top 1000 project.
     image: hero-illustration-1.svg
     imageSize: 290
