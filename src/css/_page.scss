@@ -57,6 +57,10 @@ th {
   background:  var(--grey-light);
 }
 
+th.sortable {
+	cursor: pointer;
+}
+
 td {
   padding: 4px 8px;
   border-bottom: solid 1px var(--grey-light);
