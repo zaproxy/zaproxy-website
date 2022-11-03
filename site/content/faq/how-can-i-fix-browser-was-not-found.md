@@ -44,6 +44,8 @@ if it is not then ZAP may not be able to find it.
 
 You can configure the locations of both Chrome and Firefox via the [Selenium Options](/docs/desktop/addons/selenium/options/) screen.
 
+On macOS you may need to specify the full path to the executable, e.g. `/Applications/Firefox.app/Contents/MacOS/firefox`
+
 ### Check the zap.log file
 
 If that does not help then [check the zap.log file](/faq/somethings-not-working-what-should-i-do/#check-the-log-file) 
