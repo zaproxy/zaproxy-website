@@ -7,6 +7,8 @@ weight: 2
 
 The default directory that ZAP uses depends on the OS.
 
+You can open the ZAP Home directory in your OS's file explorer in ZAP via `Help` > `Support Info ...` and by clicking on the `Open ZAP Home` button.
+
 It can be overridden using the `-dir` [command line](/docs/desktop/cmdline/) option.
 
 The default or home directory contains ZAP files added or modified at runtime. Including (but not limited to): config files, add-ons, input files, logs, etc. It is also the save location, for: scripts, active scan policy files, exported contexts, etc.
