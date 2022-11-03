@@ -15,6 +15,8 @@ Many scan rules support [Alert Thresholds](/docs/desktop/ui/dialogs/scanpolicy/#
 If you are using ZAP manually then you can double click alerts in the desktop UI and change the confidence level to False Positive.
 
 If you are automating ZAP and the relevant scan rule does not support a suitable threshold level then you can use [Alert Filters](/docs/desktop/addons/alert-filters/) to change alerts that match specific criteria to have a confidence level of False Positive.
+Configuring Alert Filters in this way actually helps the whole ZAP community (if you have not turned off Telemetry) 
+as it allows us to measure which rules have the [highest false positive rate](/docs/statistics/highest-false-positives-last-month/).
 
 The [packaged scans](/docs/docker/) also support regex expressions in the [configuration file](/docs/docker/api-scan/#configuration-file) which allow you to ignore alerts for the URLs you specify.
 

@@ -1,0 +1,28 @@
+<table class="table">
+    <tr>
+        <th class="sortable" align="left">Alert</th>
+        <th class="sortable" align="left">Status</th>
+        <th class="sortable" align="left">Alert Count</th>
+        <th class="sortable" align="left">False Positive %</th>
+        <th class="sortable" align="left">Average Time in Secs</th>
+    </tr>
+    {{ range $index, $element := $.Site.Data.charts.top_ascan_rules_last_month }}
+      <tr>
+        <td >
+          <a href="/docs/alerts/{{ .id }}/">{{ .name }}</a>
+        </td>
+        <td >
+          {{ .status }}
+        </td>
+        <td >
+          {{ .alerts }}
+        </td>
+        <td >
+          {{ .fps }}
+        </td>
+        <td >
+          {{ .time }}
+        </td>
+      </tr>
+    {{ end }}
+</table>
