@@ -104,3 +104,9 @@ njmulsqb:
   picture: /img/authors/njmulsqb_400x400.jpg
   twitter: njmulsqb 
   is_core: false
+
+zapbot:
+  name: ZAPbot
+  picture: /img/authors/zapbot_400x400.jpg
+  twitter: zaproxybot
+  is_core: false

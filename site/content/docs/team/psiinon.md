@@ -6,6 +6,7 @@ author: simon
 type: team
 github: psiinon
 linkedin: psiinon
+mastodon: https://infosec.exchange/@psiinon
 weight: 1
 ---
 Simon released ZAP in 2010 and has been working on it ever since.
