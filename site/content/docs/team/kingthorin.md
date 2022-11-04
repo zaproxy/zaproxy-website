@@ -6,6 +6,7 @@ author: thorin
 type: team
 github: kingthorin
 linkedin: rmitchel
+mastodon: https://infosec.exchange/@kingthorin_rm
 weight: 3
 ---
 Rick started contributing to ZAP in 2014.
