@@ -65,6 +65,18 @@
               </td>
             </tr>
             {{ end }}
+            {{ if .Params.mastodon }}
+            <tr>
+              <td>
+                <strong>Mastodon</strong>
+              </td>
+              <td>
+                <a href="{{ .Params.mastodon }}">
+                  {{ .Params.mastodon }}
+                </a>
+              </td>
+            </tr>
+            {{ end }}
             {{ if $.Scratch.Get "blogCounter" }}
             <tr>
               <td>

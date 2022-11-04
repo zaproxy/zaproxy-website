@@ -6,6 +6,7 @@ author: njmulsqb
 type: team
 github: njmulsqb
 linkedin: njmulsqb
+mastodon: https://infosec.exchange/@cybersoldier
 weight: 12
 ---
 
