@@ -37,7 +37,7 @@ The following operations are added to the API:
     * filePath: The file system path to the PEM file, containing the certificate and private key.
 * removeAlias (name\*): Removes an alias.
     * name: The name of the alias.
-* removeHttpProxyExclusion (host\*): Removes a HTTP proxy exclusion.
+* removeHttpProxyExclusion (host\*): Removes an HTTP proxy exclusion.
     * host: The value of the host.
 * removeLocalServer (address\* port\*): Removes a local server/proxy.
     * address: The address of the local server/proxy.
@@ -63,7 +63,7 @@ The following operations are added to the API:
     * enabled: The enabled state, true or false.
 * setHttpProxyEnabled (enabled\*): Sets whether or not the HTTP proxy is enabled.
     * enabled: The enabled state, true or false.
-* setHttpProxyExclusionEnabled (host\* enabled\*): Sets whether or not a HTTP proxy exclusion is enabled.
+* setHttpProxyExclusionEnabled (host\* enabled\*): Sets whether or not an HTTP proxy exclusion is enabled.
     * host: The value of the host.
     * enabled: The enabled state, true or false.
 * setPassThroughEnabled (authority\* enabled): Sets whether or not a pass-through is enabled.

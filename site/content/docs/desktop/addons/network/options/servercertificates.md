@@ -186,7 +186,7 @@ save it into a new .CER file (which is simple text as you see in the dialog).
 
 Each ZAP instance is using it's own root certificate. Of course, you can
 import root certificates, to use them on multiple machines.
-When running, there will be sub-certificated created, each time a HTTPS
+When running, there will be sub-certificated created, each time an HTTPS
 resource is requested.
 That means, the Root CA certificate is used as an issuer.
 
