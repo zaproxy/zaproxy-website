@@ -37,6 +37,11 @@ The port on which the server/proxy will listen.
 Allows to choose the SSL/TLS versions enabled for incoming connections (for example, from browsers). At least one version must be enabled, versions unsupported by the JRE will be unselected and disabled.   
 The option SSLv2Hello must be selected in conjunction with at least one SSL/TLS version.
 
+#### ALPN
+
+Allows to enable and select the application protocols negotiated during a TLS handshake (ALPN extension).   
+**Note:** The connection is closed if the client establishing the connection does not support ALPN or any of the selected protocols.
+
 #### Mode
 
 Allows to specify if the API should be exposed or if it should be allowed to proxy requests. For example, one can configure a server exposing just the the API to external addresses (i.e. remote control) while having a proxy for local addresses only.
