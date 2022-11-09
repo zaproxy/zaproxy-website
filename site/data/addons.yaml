@@ -638,9 +638,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.4.0/network-beta-0.4.0.zap
-  date: 2022-11-07
-  version: 0.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.5.0/network-beta-0.5.0.zap
+  date: 2022-11-09
+  version: 0.5.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
