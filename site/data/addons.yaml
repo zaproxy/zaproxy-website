@@ -621,6 +621,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/kotlin-v1.1.0/kotlin-alpha-1.1.0.zap
   date: 2021-10-07
   version: 1.1.0
+- id: levoai
+  name: Levo.ai
+  description: Build OpenAPI Specs with ZAP traffic using Levo.ai.
+  author: Levo.ai
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/levoai/levoai-zap-addon
+  downloadUrl: https://github.com/levoai/levoai-zap-addon/releases/download/v0.1.0/levoai-zap-addon-alpha-0.1.0.zap
+  date: 2022-11-11
+  version: 0.1.0
 - id: neonmarker
   name: Neonmarker
   description: Colors history table items based on tags
