@@ -6,7 +6,7 @@ simon:
 
 ricardo:
   name: Ricardo 
-  picture: 
+  picture: /img/authors/zap_400x400.png
   twitter: thc202
   is_core: true
 
@@ -35,19 +35,19 @@ david:
 
 jordan:
   name: Jordan GS
-  picture: 
+  picture: /img/authors/zap_400x400.png
   twitter: 
   is_core: false
 
 alberto:
   name: Alberto Verza
-  picture: 
+  picture: /img/authors/zap_400x400.png
   twitter: 
   is_core: false
 
 diogo:
   name: Diogo Silva
-  picture:
+  picture: /img/authors/zap_400x400.png
   twitter: Dimiresi
   is_core: false
   
@@ -71,7 +71,7 @@ BlazingWind:
 
 pranavsaxena:
   name: Pranav Saxena
-  picture:
+  picture: /img/authors/zap_400x400.png
   twitter: 
   is_core: false
 
@@ -89,7 +89,7 @@ jan:
 
 eingengraou:
   name: Uzoma Miracle Jumbo
-  picture: 
+  picture: /img/authors/zap_400x400.png
   twitter: eingengraou
   is_core: false
  
