@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 29.0.0
+    version: 30.0.0
 ---
 
 # OpenAPI Support
@@ -31,7 +31,7 @@ Both dialogues allow to override the server URL present in the OpenAPI definitio
 
 The dialogues also allow selecting a Context, optionally. If a context is selected,
 
-* the target URL used for importing is added to the context
+* each imported endpoint is included in the context, unless its URL matches an already existing *Include in Context* regex entry.
 * the imported spec is saved to the session database
 * data driven nodes are generated for endpoints with path parameters
 
