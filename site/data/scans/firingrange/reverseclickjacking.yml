@@ -37,7 +37,10 @@ details:
 - path: /singlepage/ParameterInQuery/OtherParameter/
   result: Pass
   rule: 10020
-tests: 12
+- path: /singlepage/ParameterInQuery/InCallback/
+  result: FAIL
+  rule: 10020
+tests: 13
 passes: 8
-fails: 4
-score: 67%
+fails: 5
+score: 62%
