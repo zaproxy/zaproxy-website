@@ -47,6 +47,10 @@ links:
     link: scan-rules/
     desc: a great way to learn more about security without having to understand too much of the ZAP code base
 
+  - name: 'Run a Hackathon'
+    link: run-a-zap-hackathon/
+    desc: if you run a technical group then why not get everyone involved?
+
   - name: 'Core Team'
     link: core-team/
     desc: here's what the ZAP Core Team is about and how you can join us
