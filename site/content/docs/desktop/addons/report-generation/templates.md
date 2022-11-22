@@ -18,6 +18,7 @@ The following templates are available:
 | [Traditional HTML Report with Requests and Responses](/docs/desktop/addons/report-generation/report-traditional-html-plus/) | traditional-html-plus | HTML     | Yes      | Yes    |
 | [Traditional JSON Report](/docs/desktop/addons/report-generation/report-traditional-json/)                                  | traditional-json      | JSON     |          |        |
 | [Traditional JSON Report with Requests and Responses](/docs/desktop/addons/report-generation/report-traditional-json-plus/) | traditional-json-plus | JSON     |          |        |
+| [SARIF JSON Report](/docs/desktop/addons/report-generation/report-sarif-json/)                                              | sarif-json            | JSON     |          |        |
 | [Traditional Markdown Report](/docs/desktop/addons/report-generation/report-traditional-markdown/)                          | traditional-markdown  | Markdown | Yes      |        |
 | [Traditional PDF Report](/docs/desktop/addons/report-generation/report-traditional-pdf/)                                    | traditional-pdf       | PDF      | Yes      |        |
 | [Traditional XML Report](/docs/desktop/addons/report-generation/report-traditional-xml/)                                    | traditional-xml       | XML      |          |        |
