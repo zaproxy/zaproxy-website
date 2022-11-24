@@ -9,6 +9,4 @@ cascade:
     version: 3.0.0
 ---
 
-# BIRT Reports
-
-Allows to create alert reports using BIRT report API.
+This add-on has been deprecated and replaced by the [Report Generation](../report-generation/) add-on.
