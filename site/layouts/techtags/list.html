@@ -1,0 +1,45 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ replace (replace .Title "_" " ") "." " / " }}{{ end }}
+{{ define "main" }}
+<section class="bolt-header">
+  <div class="wrapper py-20">
+    {{ if eq .Title "Techtags" }}
+      <h1 class="text--white">Technologies</h1>
+    {{ else }}
+      <h1 class="text--white">Technology:  {{ replace (replace .Title "_" " ") "." " / " }}</h1>
+    {{ end }}
+  </div>
+</section>
+  <div class="wrapper py-70">
+    <header class="breadcrumbs">
+        <a href="/techtags/">Technologies</a> &gt;
+        {{ if ne .Title "Techtags" }}
+        <a href="/techtags/{{ lower .Title }}">{{ replace (replace .Title "_" " ") "." " / " }}</a>
+        {{ end }}
+    </header>
+   {{ .Content }}
+
+    {{ if eq .Title "Techtags" }}
+      All of the defined technologies which are relevant to specific <a href="/docs/alerts/">alerts</a>:
+    {{ else }}
+      <h4>{{ replace (replace .Title "_" " ") "." " / " }}</h4>
+      All of the alerts which explicitly target this technology:
+    {{ end }}
+
+   <div class="flex latest-versions">
+      <table data-sort-filter>
+         <thead>
+            <tr>
+               <th>Technology</th>
+            </tr>
+         </thead>
+         <tbody>
+            {{ range .Pages }}
+               <tr>
+                  <td><a href="{{ .Permalink }}">{{ replace (replace .Title "_" " ") "." " / " }}</a></td>
+               </tr>
+            {{ end }}
+         </tbody>
+      </table>
+   </div>
+  </div>
+{{ end }} 
