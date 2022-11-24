@@ -16,6 +16,7 @@ taxonomies:
   successtag: "successtags"
   alerttag: "alerttags"
   author: "authors"
+  techtag: "techtags"
 
 params:
   description: 

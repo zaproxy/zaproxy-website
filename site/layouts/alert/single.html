@@ -65,6 +65,20 @@
             </tr>
             <tr> 
               <td>
+                <strong>Technologies Targeted</strong>
+              </td>
+              <td>
+              {{ if isset .Params "techtags" }}
+                {{ range $tag := .Params.techtags }}
+                	<a href="/techtags/{{ lower $tag }}">{{ replace (replace $tag "_" " ") "." " / " }}</a><br>
+                {{ end }}
+              {{ else }}
+                All
+              {{ end }}
+	          </td>
+            </tr>
+            <tr> 
+              <td>
                 <strong>Tags</strong>
               </td>
               <td>
