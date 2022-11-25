@@ -9,8 +9,4 @@ cascade:
     version: 15.0.0
 ---
 
-# Report Alert Generator
-
-Allows to generate reports for alerts in PDF or ODT format.
-
-Contributed by https://www.talsoft.com.ar/
+This add-on has been deprecated and replaced by the [Report Generation](../report-generation/) add-on.
