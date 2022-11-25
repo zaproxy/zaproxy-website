@@ -2,30 +2,31 @@
   status: 🎉 Finished
   url: https://www.zaproxy.org/blog/2022-02-10-new-zap-networking-layer/
   year: 2022
-- item: Improve modern web app handling
-  status: ⚡ In progress
-  year: 2022
-- item: Add permanent DB support
-  status: ⚡ In progress
-  url: https://github.com/zaproxy/zap-extensions/pull/3699
+- item: Migrate manual request editor out of core
+  status: 🎉 Finished
   year: 2022
 - item: Migrate Spider out of core
-  status: ⚡ In progress
+  status: 🎉 Finished
   url: https://www.zaproxy.org/blog/2022-08-30-spider-move/
   year: 2022
-- item: Migrate manual request editor out of core
-  status: ⚡ In progress
-  year: 2022
 - item: Update minimum Java version to 11
+  status: 🎉 Finished
+  year: 2022
+- item: Add permanent DB support
+  status: 🎉 Finished
+  url: https://github.com/zaproxy/zap-extensions/pull/3699
+  year: 2022
+- item: Release 2.12
+  status: 🎉 Finished
+  url: /blog/2022-10-27-zap-2-12-0-the-ten-thousand-star-release/
+  year: 2022
+
+- item: Improve modern web app handling
   status: ⚡ In progress
   year: 2022
 - item: Automation Framework enhancements
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/6461
-  year: 2022
-- item: Release 2.12
-  status: ⚡ In progress
-  url: https://github.com/zaproxy/zaproxy/milestone/8
   year: 2022
 - item: "Networking: Initial HTTP/2 support"
   status: ⚡ In progress
