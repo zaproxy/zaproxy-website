@@ -179,7 +179,7 @@ These issues will then be flagged as being 'IN-PROGRESS' which makes it much eas
 
 ### ZAP Parameters
 You can pass parameters onto ZAP using the baseline `-z` parameter. This means you can fine tune ZAP, for example by specifying any of the parameters that are stored in the ZAP config file via the `-config key=value` parameter.
-The weekly version of ZAP supports scan rule configuration. One particular configuration option allows you to define the IDs of HTML forms which you want to ignore when it comes to anti-CSRF tokens. So if you run the baseline scan with: `-z -config rules.csrf.ignorelist=search,login` then ZAP will not fail the scan if forms with an ID of "search" or "login" do not have anti CSRF tokens.
+The weekly version of ZAP supports scan rule configuration. One particular configuration option allows you to define the IDs of HTML forms which you want to ignore when it comes to anti-CSRF tokens. So if you run the baseline scan with: `-z "-config rules.csrf.ignorelist=search,login"` then ZAP will not fail the scan if forms with an ID of "search" or "login" do not have anti CSRF tokens.
 
 ### Mass Baseline
 If you would like to run the baseline against a number of sites then you can use the [mass baseline scripts](https://github.com/zaproxy/community-scripts/tree/main/api/mass-baseline) on the ZAP Community Scripts repo.
