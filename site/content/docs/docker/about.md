@@ -32,7 +32,8 @@ docker pull owasp/zap2docker-bare
 The Dockerfiles can be found [here](https://github.com/zaproxy/zaproxy/tree/main/docker).
 
 ### Healthcheck
-The docker file now supports [healthcheck](https://docs.docker.com/engine/reference/builder/#healthcheck). The check uses the `zap-cli status` to check that ZAP completed loading. If you are running ZAP with port other than the default `8080`, you need to set the `ZAP_PORT` environment variable. Otherwise, the healthcheck will fail.
+The docker file supports the [healthcheck](https://docs.docker.com/engine/reference/builder/#healthcheck). 
+If you are running ZAP with port other than the default `8080`, you need to set the `ZAP_PORT` environment variable. Otherwise, the healthcheck will fail.
 
 ## Usage Instructions
 
@@ -112,14 +113,6 @@ docker run -u zap -p 8080:8080 -i owasp/zap2docker-stable zap-x.sh -daemon -host
 
 This first starts xvfb (X virtual frame buffer) which allows add-ons that use Selenium (like the Ajax Spider and DOM XSS scanner) to run in a headless environment. Firefox is also installed so can be used with these add-ons.
 Note that by default add-ons which use Selenium will default to using headless browsers when running in docker so this option is not usually required.
-
-### ZAP CLI
-[ZAP CLI](https://github.com/Grunny/zap-cli) is a 3rd party ZAP wrapper written in Python (not supported by the ZAP core team). It provides a way to perform scanning from the command line:
-
-```bash
-docker run -i owasp/zap2docker-stable zap-cli quick-scan --self-contained \
-    --start-options '-config api.disablekey=true' http://target
-```
 
 ### Accessing the API from outside of the Docker container
 
