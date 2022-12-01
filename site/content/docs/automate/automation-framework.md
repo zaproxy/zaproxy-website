@@ -16,24 +16,7 @@ The framework is plugable and many of the existing add-ons have been enhanced to
 The [addOns](/docs/desktop/addons/automation-framework/job-addons/) job has been found to cause
 problems when updating add-ons which are defined in the current plan. This job has been depreciated and no longer does anything.
 
-#### In ZAP 2.11
-
-__Important:__  if you run the framework using ZAP 2.11.x from the command line you should __not__ use the `-addonupdate` option -
-again this has been found to cause similar problems.
- 
-The recommended approach is to run ZAP inline once to update all of the add-ons and then again to run the plan, e.g.:
-```bash
-./zap.sh -cmd -addonupdate
-./zap.sh -cmd -autorun zap.yaml <any other ZAP options>
-```
-If you are using the framework in the ZAP stable [docker](/docs/docker/about/) image then the recommended approach is to run ZAP in this way:
-```bash
-docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable bash -c "zap.sh -cmd -addonupdate; zap.sh -cmd -autorun /zap/wrk/zap.yaml"
-```
-
-#### Weekly, Live, and Post 2.11
-
-With the weekly and live releases and docker images you can use the standard ZAP [command line](/docs/desktop/cmdline/) 
+From 2.12 you can use the standard ZAP [command line](/docs/desktop/cmdline/) 
 options with the AF `-autorun` option:
 
 * `-addoninstall <addOnId>` to install an add-on
