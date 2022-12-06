@@ -13,26 +13,47 @@ Docker image with OWASP Zed Attack Proxy preinstalled.
 
 ## Install Instructions
 
-For the stable release:
+#### Stable
+
+The stable image is updated whenever there is a ZAP full release.
+It is also regenerated monthly, typically on the first Monday of the month.
+The monthly updates pull in the latest base Docker image and also any updated ZAP add-ons - no ZAP 'core'
+changes are included.
+
 ```bash
 docker pull owasp/zap2docker-stable
 ```
-For the latest weekly release:
+
+#### Weekly
+
+The weekly image is typically updated every Monday, and includes the very latest changes to the ZAP
+core and add-ons. It is the same as the [Cross Platform Weekly Release](/download/#weekly).
+
 ```bash
 docker pull owasp/zap2docker-weekly
 ```
-For the live release (built whenever the [zaproxy](https://github.com/zaproxy/zaproxy) project is changed):
+
+#### Live
+
+The live image is updated at least once a day, and includes the very latest changes to the ZAP
+core and add-ons.
+
 ```bash
 docker pull owasp/zap2docker-live
 ```
-For the bare release (a very small Docker image, contains only the necessary required dependencies to run ZAP, ideal for CI environments):
+
+#### Bare
+
+The bare image is a very small Docker image and contains only the necessary required dependencies to run ZAP, ideal for CI environments. 
+It is updated on the same schedule as the stable image.
+
 ```bash
 docker pull owasp/zap2docker-bare
 ```
 The Dockerfiles can be found [here](https://github.com/zaproxy/zaproxy/tree/main/docker).
 
 ### Healthcheck
-The docker file supports the [healthcheck](https://docs.docker.com/engine/reference/builder/#healthcheck). 
+All of the images support the [healthcheck](https://docs.docker.com/engine/reference/builder/#healthcheck). 
 If you are running ZAP with port other than the default `8080`, you need to set the `ZAP_PORT` environment variable. Otherwise, the healthcheck will fail.
 
 ## Usage Instructions
