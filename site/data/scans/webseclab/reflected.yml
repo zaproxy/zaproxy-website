@@ -86,8 +86,8 @@ details:
   result: Pass
 - path: /oneclick1
   notes: ''
-  rule: 40012
-  result: Pass
+  rule:
+  result: FAIL
 - path: /onmouseover
   notes: ''
   rule: 40012
@@ -137,8 +137,8 @@ details:
   rule:
   result: Pass
 tests: 34
-passes: 25
-fails: 7
+passes: 24
+fails: 8
 fps: 3
 fns: 3
-score: 78%
+score: 75%
