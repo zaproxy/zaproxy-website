@@ -45,6 +45,8 @@ env:                                   # The environment, mandatory
         parameters:                    # List of 0 or more parameters - may include any required for scripts
           script:                      # String, path to script, only for 'script' session management
           scriptEngine:                # String, the name of the script engine to use, only for 'script' session management
+      technology:
+        exclude:                       # List of tech to exclude, as per https://www.zaproxy.org/techtags/ (just use last names)
       users:                           # List of one or more users available to use for authentication
       - name:                          # String, the name to be used by the jobs
         credentials:                   # List of user credentials - may include any required for scripts
@@ -67,3 +69,5 @@ Originally the 'engine' and 'scriptEngine' fields were directly under the 'sessi
 
 Originally the 'username' and 'password' fields were directly under the user element - this is still supported when reading plans but they
 will now always be output under the 'credentials' element.
+
+When specifying technology the tech names are given on https://www.zaproxy.org/techtags/ - only specify the last name, e.g. "C".
