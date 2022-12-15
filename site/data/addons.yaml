@@ -281,12 +281,12 @@
   description: Adds encode/decode/hash dialog and support for scripted processors
     as well
   author: ZAP Dev Team
-  status: beta
+  status: release
   infoUrl: /docs/desktop/addons/encode-decode-hash/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v0.7.0/encoder-beta-0.7.0.zap
-  date: 2022-10-27
-  version: 0.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v1.0.0/encoder-release-1.0.0.zap
+  date: 2022-12-15
+  version: 1.0.0
 - id: evalvillain
   name: Eval Villain
   description: Adds the Eval Villain extension to Firefox when launched from ZAP.

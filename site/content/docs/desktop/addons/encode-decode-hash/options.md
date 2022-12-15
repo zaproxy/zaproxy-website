@@ -16,3 +16,7 @@ Allows the user to select which character set should be used for Base64 conversi
 ### Base64 - Break Lines
 
 Indicates whether or not Base64 encoding should break lines at 76 characters (MIME standard).
+
+### Hashers - Always output lower case?
+
+Indicates whether or not the output of predefined Hash processors should always be lower case or not (upper case).

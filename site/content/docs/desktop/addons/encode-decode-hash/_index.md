@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 0.7.0
+    version: 1.0.0
 ---
 
 # Encode / Decode / Hash dialog
@@ -28,6 +28,8 @@ If any text is selected when the dialog is invoked then it will be put in this f
 * ![](/docs/desktop/addons/encode-decode-hash/images/ui-tab--delete.png) Remove Selected Tab - Removes the selected (or current) tab from the dialog.
 * ![](/docs/desktop/addons/encode-decode-hash/images/ui-output--plus.png) Add Output Panel to Current Tab - Adds an output panel to the current tab.
 * Reset - Reset all the tabs/panels to their default state.
+* Options - Will open the options dialog, with the focus set to the Encode/Decode/Hash options panel.
+* Help - Will open the User Guide, with the content pane preset to the Encode/Decode/Hash add-on's help page.
 
 ## Default Dialog Tabs \& Panels
 
@@ -137,6 +139,7 @@ If there is no valid decoding then the field will be disabled.
 #### Base 64 Decode
 
 Will display the base 64 decoding of the text you enter.  
+Leveraging a [Mime decoder](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeDecoder()) to handle wrapped lines.
 
 #### Base 64 URL Decode
 
@@ -172,9 +175,31 @@ Will display the SHA1 hash of the text you enter.
 
 Will display the SHA256 hash of the text you enter.
 
+## Other Processors
+
+The following processors can also be added to any tab.
+
 ### Custom
 
-Custom "Encode/Decode" scripts can be created/added to the Scripts Tree and used by custom Output Panels.
+Custom "Encode/Decode" scripts can be created/added to the Scripts Tree and used by custom Output Panels. They should return `EncodeDecodeResult` objects as indicated by the templates. However, in the event that users aren't careful in doing so will return other data types leveraging their `toString()` implementation (which may or may not be useful/obvious at first glance).
+
+### Utility
+
+#### To Lower Case
+
+Converts the input to all lower case characters.
+
+#### Remove Whitespace
+
+Removes all whitespace characters from the text, based on [Character.isWhiteSpace(char)](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isWhitespace(char)).
+
+#### Reverse
+
+Reverses the order of the input.
+
+#### To Upper Case
+
+Converts the input to all upper case characters.
 
 ## Accessed via
 
