@@ -55,6 +55,9 @@ OWASP_2021_A06:
 OWASP_2021_A08:
   link: https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/
 
+OWASP_2021_A10:
+  link: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
+
 WSTG-v42-ATHN-01:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel
 
@@ -156,6 +159,9 @@ WSTG-v42-INPV-12:
 
 WSTG-v42-INPV-15:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/15-Testing_for_HTTP_Splitting_Smuggling
+
+WSTG-v42-INPV-19:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery
 
 WSTG-v42-SESS-02:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes
