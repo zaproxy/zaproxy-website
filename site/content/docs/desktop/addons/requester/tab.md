@@ -20,6 +20,12 @@ thing via the keyboard.
 The tabs are initially numbered but if you double click on the
 tab then a dialog will be shown which will allow you to rename it.
 
+Each tab has a footer which allows you to find strings in the
+HTTP request and response. The footer shows the number of case
+insensitive matches and allows you to loop through them. The footer
+also shows the time taken for the request, the body length, and the
+total length.
+
 ## See also
 
 |   |                                              |                                      |
