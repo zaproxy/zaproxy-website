@@ -626,11 +626,11 @@
   description: Build OpenAPI Specs with ZAP traffic using Levo.ai.
   author: Levo.ai
   status: alpha
-  infoUrl: ''
+  infoUrl: https://docs.levo.ai/api-observability/quickstart/quickstart-zap-addon
   repoUrl: https://github.com/levoai/levoai-zap-addon
-  downloadUrl: https://github.com/levoai/levoai-zap-addon/releases/download/v0.1.0/levoai-zap-addon-alpha-0.1.0.zap
-  date: 2022-11-11
-  version: 0.1.0
+  downloadUrl: https://github.com/levoai/levoai-zap-addon/releases/download/v0.2.0/levoai-zap-addon-alpha-0.2.0.zap
+  date: 2022-12-26
+  version: 0.2.0
 - id: neonmarker
   name: Neonmarker
   description: Colors history table items based on tags
