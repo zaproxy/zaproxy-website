@@ -598,9 +598,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/SasanLabs/owasp-zap-jwt-addon/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/jwt-alpha-1.0.2.zap
-  date: 2022-01-22
-  version: 1.0.2
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/jwt-alpha-1.0.3.zap
+  date: 2023-01-02
+  version: 1.0.3
 - id: jython
   name: Python Scripting
   description: Allows Python to be used for ZAP scripting - templates included
