@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 44.0.0
+    version: 45.0.0
 ---
 
 # Passive Scan Rules
@@ -159,7 +159,7 @@ Latest code: [CrossDomainMisconfigurationScanRule.java](https://github.com/zapro
 
 ## CSP (Content Security Policy)
 
-The Content Security Policy (CSP) passive scan rule parses and analyzes CSP headers for potential misconfiguration or weakness. This rule leverages Shape Security's [Salvation](https://github.com/shapesecurity/salvation) library to perform it's parsing and assessment of CSPs.
+The Content Security Policy (CSP) passive scan rule parses and analyzes CSP headers and META definitions for potential misconfiguration or weakness. This rule leverages Shape Security's [Salvation](https://github.com/shapesecurity/salvation) library to perform it's parsing and assessment of CSPs.
 
 If a response has multiple CSPs they are analyzed individually, as there is no sure way to intersect/merge the policies and further different browsers have varying levels of CSP support and enforcement.
 
@@ -275,7 +275,7 @@ Latest code: [UserControlledOpenRedirectScanRule.java](https://github.com/zaprox
 ## PII Disclosure
 
 PII is information like credit card number, SSN etc. This check currently reports only numbers which match credit card numbers and pass Luhn checksum, which gives high confidence, that this is a credit card number (images and CSS are ignored).   
-At MEDIUM and HIGH threshold it attempts to use three characters of context on each side of potential matches to exclude matches within deicmal like content. At LOW threshold, alerts will be raised for such matches.
+At MEDIUM and HIGH threshold it attempts to use three characters of context on each side of potential matches to exclude matches within decimal like content. At LOW threshold, alerts will be raised for such matches.
 
 Note: In the case of suspected credit card values, the potential credit card numbers are looked up against a Bank Identification Number List
 (BINList). If a match is found the alert is raised at High confidence and additional details are added to the 'Other Information' field in the
