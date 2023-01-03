@@ -26,7 +26,7 @@ You can write custom payload generator scripts - these can supply any payloads t
 
 Add-ons can also define additional payload generators.   
 
-The 'Processors...' button launches the [Payload Processors dialog](/docs/desktop/addons/fuzzer/processors/) which allows you to configure payload processors that just apply to the palyload generator you have selected.   
+The 'Processors...' button launches the [Payload Processors dialog](/docs/desktop/addons/fuzzer/processors/) which allows you to configure payload processors that just apply to the payload generator you have selected.   
 
 ## Accessed via
 

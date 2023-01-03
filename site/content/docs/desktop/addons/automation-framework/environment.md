@@ -11,6 +11,11 @@ This section of the YAML configuration file defines the applications which the r
 
 The Automation Framework supports all of the [authentication](/docs/desktop/addons/automation-framework/authentication/) mechanisms supported by ZAP.
 
+**Note** When testing targets that operate on default ports (80 for http, 443 for https), the colon port portion of the URL should not be included.
+Including that portion (for example: http://example.com:80) may result in an inability to crawl or test the target. If a 'default' port is specified both
+browsers and ZAP treat it without the default port being included then it doesn't match the expectation within the Context and there's nothing to interact with
+as part of the Context.
+
 ```
 env:                                   # The environment, mandatory
   contexts :                           # List of 1 or more contexts, mandatory

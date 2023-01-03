@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 50.0.0
+    version: 51.0.0
 ---
 
 # Active Scan Rules
@@ -164,7 +164,7 @@ Latest code: [PaddingOracleScanRule.java](https://github.com/zaproxy/zap-extensi
 
 ## Parameter Tampering
 
-This rule submits requests with parameter values known to cause errors to be displayed to the user if handled improperly. Responses are checked to make sure that they return a server error status code, then compared with a normal HTTP response to make sure it does not raise an alert if the bad parameter has no effect on output. Finally, the content of the reponse body is compared against various patterns that may be found in Java servlet, Microsoft VBScript, OLE DB, JET, PHP and Tomcat errors. If a match is found, an alert is raised and the scanner returns immediately.
+This rule submits requests with parameter values known to cause errors to be displayed to the user if handled improperly. Responses are checked to make sure that they return a server error status code, then compared with a normal HTTP response to make sure it does not raise an alert if the bad parameter has no effect on output. Finally, the content of the response body is compared against various patterns that may be found in Java servlet, Microsoft VBScript, OLE DB, JET, PHP and Tomcat errors. If a match is found, an alert is raised and the scanner returns immediately.
 
 Latest code: [ParameterTamperScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/ParameterTamperScanRule.java)
 
@@ -198,7 +198,7 @@ Latest code: [ServerSideIncludeScanRule.java](https://github.com/zaproxy/zap-ext
 
 Exploit CVE-2012-1823 to disclose server-side PHP source code on a PHP-CGI based web server.  
 Only analyzes responses that are text based (HTML, JSON, XML, etc.), in order to avoid false positives which may occur with image or other binary content.  
-JavaScript responses are only anaylzed when a LOW alert threshold is set.
+JavaScript responses are only analyzed when a LOW alert threshold is set.
 
 Latest code: [SourceCodeDisclosureCve20121823ScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/SourceCodeDisclosureCve20121823ScanRule.java)
 

@@ -55,7 +55,7 @@ Default Values:
 
 ### Information Disclosure: Credit Card Number
 
-This script scans for the presence of Personally Information Identifiable in incoming WebSocket message paylaod. More specifically, it passively scans payload for credit card numbers. The available scans are for the following credit card types: {American Express, Diners Club, Discover, Jcb, Mestro, Master Card, Visa}.  
+This script scans for the presence of Personally Information Identifiable in incoming WebSocket message payload. More specifically, it passively scans payload for credit card numbers. The available scans are for the following credit card types: {American Express, Diners Club, Discover, Jcb, Maestro, Master Card, Visa}.  
 
 Examples:
 

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: replacer
-    version: 11.0.0
+    version: 12.0.0
 ---
 
 # Replacer
@@ -65,11 +65,23 @@ If set then the Match String will be treated as a regex expression. This option 
 
 ### Replacement String
 
-The new string that will replace the specified selection. Hexadecimal bytes are represented with "\\x00 - \\xFF". The literal string "\\x00" can be kept with "\\\\x00".
+The new string that will replace the specified selection.
+Hexadecimal bytes are represented with "\\x00 - \\xFF".
+The literal string "\\x00" can be kept with "\\\\x00".
 
 ### Enable
 
 If not set then the rule will not apply.
+
+### Token Processing
+
+When enabled, the Replacement String may contain a single token which is replaced with a dynamic value:
+
+|       Token        |                                                                                                Description                                                                                                |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| {{RINT\|MIN\|MAX}} | Random Integer. `MIN` and `MAX` are each optional. `MIN` defaults to `0` `MAX` defaults to [Integer.maxValue](https://docs.oracle.com/javase/8/docs/api/constant-values.html#java.lang.Integer.MAX_VALUE) |
+| {{UUID}}           | Random UUID generated using [java.util.UUID.randomUUID()](https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html#randomUUID--)                                                                     |
+| {{TICKS}}          | Unix epoch milliseconds using [System.currentTimeMillis()](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#currentTimeMillis--)                                                           |
 
 ### Initiators tab
 

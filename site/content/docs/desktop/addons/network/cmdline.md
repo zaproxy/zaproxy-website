@@ -19,7 +19,7 @@ The Network add-on supports the following command line options:
 
 ### Local Servers/Proxies
 
-When ZAP is running in command line mode (i.e. `-cmd`) only the main proxy is started, for example, to proxy integration tests. If unable to start the main proxy in command line mode or in daemon mode (i.e. `-daemon`) ZAP is terminated, when running with GUI an appropriate warning is shown instead.
+When ZAP is running in command line mode (i.e. `-cmd`) only the main proxy is started, for example, to proxy integration tests or access the ZAP API. If unable to start the main proxy in command line mode or in daemon mode (i.e. `-daemon`) ZAP is terminated, when running with GUI an appropriate warning is shown instead.
 
 ## See also
 
