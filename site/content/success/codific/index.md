@@ -8,7 +8,7 @@ date: "2022-01-05"
 company:
   link: https://www.codific.com
   logo: /img/success/codific.png
-  twitter: codific
+  twitter: codific_eu
 ---
 
 Codific is a developer of secure collaboration tools in Ed Tech, MedTech and HR Tech. Our team of software engineers leverages privacy by design and security by design principles to maximize the security of the applications and the privacy of its users.
