@@ -34,7 +34,7 @@ All selected alerts can also be edited using the 'Edit' button, which allows the
 The dialog has a 'Verify' button, which checks whether the alerts which have been selected to be included in the plan, are actually present at that moment. This ensures that the user is faced with no surprises when they use the plan somewhat later down the line.
 Each selected alert has a status column in the table, which displays the current status of the alert, which is one out of 'Not Verified', 'Present' and 'Absent'.
 
-The user can click on the 'Create' button, which creates the plan and loads it in the automation panel. From here, the user can reorder/modify the jobs as required and also run the plan. More information on how the Automation Framework GUI works is given [here](https://www.zaproxy.org/docs/desktop/addons/automation-framework/gui/)
+The user can click on the 'Create' button, which creates the plan and loads it in the automation panel. From here, the user can reorder/modify the jobs as required and also run the plan. More information on how the Automation Framework GUI works is given [here](/docs/desktop/addons/automation-framework/gui/)
 Since a retest plan can be run from the command line too, it is also easy to integrate it within a CI/CD pipeline.
 
 ## Retest Result 

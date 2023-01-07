@@ -110,7 +110,7 @@ One thing that should be noted is that adding a request handler is not an idempo
 - Support long-term polling across ZAP instances.
 - Support other OAST services based on community feedback.
 
-Keep an eye out for updates! Visit the [Community page](https://www.zaproxy.org/community/) to learn how you can get in touch. Check out the [project blog](https://ricekot.com/projects/zap-oast/) for blog posts related to the development of OAST.
+Keep an eye out for updates! Visit the [Community page](/community/) to learn how you can get in touch. Check out the [project blog](https://ricekot.com/projects/zap-oast/) for blog posts related to the development of OAST.
 
 I developed this add-on as a participant of Google Summer of Code 2021. I am deeply grateful to the program organizers and my mentors.
 

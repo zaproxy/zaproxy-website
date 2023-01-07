@@ -48,7 +48,7 @@ well as the start of the ZAP [History](/docs/history) pages.
 
 ### Networking Changes
 
-In February we announced the new [ZAP networking layer](/2022-02-10-new-zap-networking-layer/).
+In February we announced the new [ZAP networking layer](/blog/2022-02-10-new-zap-networking-layer/).
 
 This was a major change to the ZAP networking stack but one that was necessary in order to support more modern protocols.
 Significant work continued on the networking code throughout 2022.
