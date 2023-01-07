@@ -27,7 +27,7 @@ Number of accepted templates: **3**
 
 ![](./images/social.png)
 
-We have a new [Report Generation](https://www.zaproxy.org/docs/desktop/addons/report-generation/) add-on (detailed below) 
+We have a new [Report Generation](/docs/desktop/addons/report-generation/) add-on (detailed below) 
 but while it is much more flexible, the current report templates it includes are still very basic. 
 Lets be honest - creating stylish reports is probably not one of the ZAP core team's strengths &#128521;
 Hence this competition.
@@ -53,7 +53,7 @@ We are looking for templates that are:
 * Different from each other - we don't want 10 clones, we want to give people a real choice
 
 ## New Reporting Add-on
-In order to be able to generate more modern and flexible reports we have released a new Reporting Add-on at [ZAPCon 2021](https://zapcon.io): that is now available on the ZAP Marketplace: [Report Generation](https://www.zaproxy.org/docs/desktop/addons/report-generation/).
+In order to be able to generate more modern and flexible reports we have released a new Reporting Add-on at [ZAPCon 2021](https://zapcon.io): that is now available on the ZAP Marketplace: [Report Generation](/docs/desktop/addons/report-generation/).
 
 This add-on is still at an early stage - for a list of enhancements planned see the related [issue tracker](https://github.com/zaproxy/zaproxy/issues/6483).
 

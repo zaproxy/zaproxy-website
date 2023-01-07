@@ -50,8 +50,7 @@ traditional spider and an AJAX spider. Those cover the first part of the
 question.
 
 As for making auditing applications easier, faster and more effective,
-let's look closer at the [ZAP scripting
-engine](https://www.zaproxy.org/docs/desktop/addons/script-console/).
+let's look closer at the [ZAP scripting engine](/docs/desktop/addons/script-console/).
 ZAP allows for scripting in JavaScript, Python, Ruby, Groovy, ZEST and
 Kotlin. All these languages are supported, but in their Java equivalent
 -- e.g. Jython for Python. It is also possible to write an extension in
@@ -96,7 +95,7 @@ script can be reused for doing periodical controls on an application
 eliminating the need for a person to do it manually. Here we would use a
 passive scan script, because there is no need to modify or send any
 request, but only passively scan the passing traffic. There already
-exists [a rule](https://www.zaproxy.org/docs/alerts/10019/) in
+exists [a rule](/docs/alerts/10019/) in
 ZAP that checks if the Content-Type header is missing, but it does not
 check the charset, hence I have written this script.
 

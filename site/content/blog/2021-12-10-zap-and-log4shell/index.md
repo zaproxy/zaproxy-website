@@ -46,7 +46,7 @@ If you cannot update to 2.11.1 right now then we do recommend that you:
 * Do not run ZAP with debug logging on, unless you are only testing trusted websites
 * Turn logging off, just to be safe
 
-To turn ZAP logging off see the FAQ: [How do you configure ZAP logging?](https://www.zaproxy.org/faq/how-do-you-configure-zap-logging/)
+To turn ZAP logging off see the FAQ: [How do you configure ZAP logging?](/faq/how-do-you-configure-zap-logging/)
 and change all logging levels to "off" e.g.
 
 ```text

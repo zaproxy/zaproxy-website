@@ -17,7 +17,7 @@ This is another area where you can help!
 Try using ZAP to test one of the apps that we are not [regularly testing ZAP against](/docs/scans/).
 
 ZAP can sometimes be a bit tricky to configure to handle specific apps.
-We do have some FAQs which may help, see: [Can ZAP be used to test my favorite vulnerable app?](https://www.zaproxy.org/faq/can-zap-be-used-to-test-my-favorite-vulnerable-app/)
+We do have some FAQs which may help, see: [Can ZAP be used to test my favorite vulnerable app?](/faq/can-zap-be-used-to-test-my-favorite-vulnerable-app/)
 If a FAQ doesn't exist for the app you are testing then you could create one and submit it as a PR to this site.
 
 Check the documentation of the app to see what vulnerabilities should be there, or test it yourself manually.

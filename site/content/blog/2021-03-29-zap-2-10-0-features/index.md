@@ -20,7 +20,7 @@ authors:
 
 # ZAP 2.10.0
 
-2.10.0 was released in [December 2020](https://www.zaproxy.org/blog/2020-12-21-zap-2-10-0-the-10-year-anniversary-release/). This article digs into the details of some of the new and exciting features.
+2.10.0 was released in [December 2020](/blog/2020-12-21-zap-2-10-0-the-10-year-anniversary-release/). This article digs into the details of some of the new and exciting features.
 
 For full details see the [2.10.0 release notes](/docs/desktop/releases/2.10.0/).
 
@@ -116,7 +116,7 @@ function process(value){
 
 ## Authentication Polling
 
-The concept of [Authentication Verification Strategies](https://www.zaproxy.org/docs/desktop/start/features/authstrategies/) has been introduced which allows ZAP to handle a wider range of authentication mechanisms including the option to poll a specified page for the authentication status of a user.
+The concept of [Authentication Verification Strategies](/docs/desktop/start/features/authstrategies/) has been introduced which allows ZAP to handle a wider range of authentication mechanisms including the option to poll a specified page for the authentication status of a user.
 
 Checkout this video summary of [auth polling](https://www.youtube.com/watch?v=rrVr-_-y6Xo&t=377s).
 
@@ -132,9 +132,9 @@ You can learn a bit about auth header environment variables [here](https://www.y
 
 ## Site Tree Control
 
-Scripts and add-ons now have full access to how nodes are represented in the [Sites Tree](https://www.zaproxy.org/docs/desktop/start/features/sitestree/). Both [Input Vector Scripts](https://github.com/zaproxy/community-scripts/tree/main/variant) and add-ons which include implementations of the [Variant class](https://static.javadoc.io/org.zaproxy/zap/2.10.0/org/parosproxy/paros/core/scanner/Variant.html) can change both the tree structure and names used for new nodes.
+Scripts and add-ons now have full access to how nodes are represented in the [Sites Tree](/docs/desktop/start/features/sitestree/). Both [Input Vector Scripts](https://github.com/zaproxy/community-scripts/tree/main/variant) and add-ons which include implementations of the [Variant class](https://static.javadoc.io/org.zaproxy/zap/2.10.0/org/parosproxy/paros/core/scanner/Variant.html) can change both the tree structure and names used for new nodes.
 
-For more details see the [Site Tree Modifiers](https://www.zaproxy.org/blog/2020-09-22-sites-tree-modifiers/) Blog post, and this [video](https://www.youtube.com/watch?v=rrVr-_-y6Xo&t=697s).
+For more details see the [Site Tree Modifiers](/blog/2020-09-22-sites-tree-modifiers/) Blog post, and this [video](https://www.youtube.com/watch?v=rrVr-_-y6Xo&t=697s).
 
 ## Conclusion
 

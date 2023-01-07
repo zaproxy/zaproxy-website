@@ -97,7 +97,7 @@ When we first started testing ZAP against Crawl Maze in March 2022 it only score
 
 The following new pages were added:
 
-* Blog: [Running ZAP on a raspberry pi](https://www.zaproxy.org/blog/2022-08-25-zap-on-raspberry-pi/)
+* Blog: [Running ZAP on a raspberry pi](/blog/2022-08-25-zap-on-raspberry-pi/)
 * Blog: [The Param Digger Add-on GSOC 2022](/blog/2022-08-22-the-param-digger-addon/) as mentioned above
 * Test Scan: [OWASP Benchmark](/docs/scans/benchmark) as mentioned above
 * FAQ: [How can you import POST requests?](/faq/how-can-you-import-post-requests/)
