@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: retire
-    version: 0.18.0
+    version: 0.19.0
 ---
 
 # Retire.js
@@ -15,4 +15,4 @@ This add-on includes a passive scan rule which implements checks provided by [Re
 
 Latest code: [Retire.js Add-on](https://github.com/zaproxy/zap-extensions/blob/main/addOns/retire/)
 
-**Note:** This add-on is based on original work by [Nikita Mundhad](https://github.com/nikmmy/retire).
+**Note:** This add-on is based on original work by [Nikita Mundhada](https://github.com/nikmmy/retire).
