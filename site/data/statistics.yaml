@@ -6,7 +6,7 @@
   scope: global
   type: counter
   repo: zaproxy/zap-extensions
-  code: main/addOns/automation/src/main/java/org/zaproxy/addon/automation/jobs/SpiderJob.java
+  code: main/addOns/spider/src/main/java/org/zaproxy/addon/spider/automation/SpiderJob.java
   desc: The number of URLs added by the standard spider running in the automation framework
 
 - key: domxss.attack.<vector>
@@ -225,6 +225,48 @@
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/parosproxy/paros/core/scanner/PluginStats.java
   desc: The number of URLs that the given active scan rule has requested - from 2.11.0
+
+- key: stats.auth.configure.auth.form
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java
+  desc: The number of contexts automatically configured for form-based authentication
+
+- key: stats.auth.configure.auth.json
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java
+  desc: The number of contexts automatically configured for JSON-based authentication
+
+- key: stats.auth.configure.auth.error
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java
+  desc: The number of errors when automatically configuring context authentication
+
+- key: stats.auth.detect.auth.form
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java
+  desc: The number of form-based authentication requests identified
+  
+- key: stats.auth.detect.auth.json
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java
+  desc: The number of JSON-based authentication requests identified
+
+- key: stats.auth.detect.register
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java
+  desc: The number of registration requests identified
 
 - key: stats.auth.failure
   scope: site
