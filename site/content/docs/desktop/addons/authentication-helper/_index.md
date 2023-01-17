@@ -62,4 +62,4 @@ The rule will currently identify:
 * Form-based authentication requests
 * JSON-based authentication requests
 
-Latest code: [AuthenticationDetectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/authhelper/src/main/java/org/zaproxy/zap/extension/authhelper/AuthenticationDetectionScanRule.java)
+Latest code: [AuthenticationDetectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java)
