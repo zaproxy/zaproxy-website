@@ -9,32 +9,14 @@ weight: 7
 If ZAP is displayed in a really tiny window then it's probably because you have
 a high DPI display.
 
-The solution is easy - use Java 9+
+We believe High DPI displays and ZAP should behave properly with Windows and Java 11+.
 
-If you need to have multiple versions of Java on Windows then you may find it
-difficult to specify which one should be used. However changing the last line
-of the existing `zap.bat` batch file to specify the path to the right version
-of Java should solve this problem, e.g.:
-
-    
-    
-    "C:\Program Files\Java\jdk-11.0.1\bin\java" %jvmopts% -jar zap-2.8.0.jar %*
-    
-
-If you can only use Java 8 on Windows 10 then you can set the compatibility
-settings:
+If you're using Windows and encounter an issue then you can set the compatibility settings:
 
 ![Windows Settings High-DPI](/img/faq/windows-settings-high-dpi.png)
 
-On Linux you can try editing the zap.sh file to include the Java command line
-option like:
-
-    
-    
-     -Dsun.java2d.uiScale=2.5
-    
-
-You can change the scale to which ever value works for you.
+There may also be benefit in setting [JVM Options](/docs/desktop/ui/dialogs/options/jvm/) to include the Java command line
+parameter: `-Dsun.java2d.uiScale=2.5`. You can change the scale to which ever value works for you.
 
 Finally, if all else fails, you can increase the Font Size via the ZAP Options
 / Display - this will also scale all of the images as well, although some
