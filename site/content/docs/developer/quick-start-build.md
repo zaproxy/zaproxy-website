@@ -170,6 +170,7 @@ cd ..
 ```
 
 ### Make Changes and Submit a PR!
-We welcome any changes made by a Contributor following a review process conducted by a ZAP core team member. Prior to submittion of a PR, A contributor must strictly adhere to the [Guidelines](https://github.com/zaproxy/zaproxy/blob/c6fbfcb2035f5a452af59a1a9080855c06bde4c0/CONTRIBUTING.md#guidelines-for-pull-request-pr-submission-and-processing).
+
+We welcome any changes made by a Contributor following a review process conducted by a ZAP core team member. Prior to submission of a PR, please be aware: Contributions must adhere to the [Guidelines](https://github.com/zaproxy/zaproxy/blob/main/CONTRIBUTING.md#guidelines-for-pull-request-pr-submission-and-processing).
 	
 If you have any questions related to ZAP development, reach out on the [ZAP Developer group](https://groups.google.com/g/zaproxy-develop) or the [IRC channel](https://web.libera.chat/#zaproxy). 
