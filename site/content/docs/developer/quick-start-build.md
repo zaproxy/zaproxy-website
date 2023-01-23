@@ -15,7 +15,7 @@ Ever wanted to experiment with the ZAP codebase but felt intimidated by it? This
 
 You can also follow along with Simon Bennetts as he sets the ZAP development environment in this [Deep Dive](/zap-deep-dive/) video:
 
-**NOTE**: This video was created prior to the introduction of *mandatory add-ons* in ZAP. For an up-to-date guide on building ZAP from source, please refer the text below the video.
+**NOTE**: This video was created prior to the introduction of *mandatory add-ons* in ZAP. For an up-to-date guide on building ZAP from source, please refer to the text below the video.
 
 {{<youtube uuid="BYi4nA0nhR8">}}
 
