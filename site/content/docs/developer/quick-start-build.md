@@ -11,7 +11,7 @@ date: "2020-12-04"
 addSocialPreview: true
 ---
 
-Ever wanted to experiment with the ZAP codebase but felt intimidated by it? This guide will walk you through the process of building ZAP from the command line regardless of your operating system or IDE of your choice.
+Ever wanted to experiment with the ZAP codebase but felt intimidated by it? This guide will walk you through the process of building ZAP from the command line regardless of your operating system or IDE.
 
 You can also follow along with Simon Bennetts as he sets the ZAP development environment in this [Deep Dive](/zap-deep-dive/) video:
 
