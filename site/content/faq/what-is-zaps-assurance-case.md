@@ -22,8 +22,8 @@ While attempts are made to ensure that third parties cannot adversely impact use
 - Users identify which "targets" they interact with.
 - The Web API and proxy are available only locally by default.
 - Access to the Web API requires the use of a key/token and identified permitted clients by default.
-- Scripts and add-ons are added based on user selection/choice.
-	- Scripts and add-ons which are maintained by the core team or advertised via the ZAP Marketplace are reviewed prior to release, to ensure at the very least that they do not do anything obviously malicious.
+- Third party scripts and add-ons are added based on user selection/choice.
+	- Scripts and add-ons which are advertised via the ZAP Marketplace are reviewed prior to release, to ensure at the very least that they do not do anything obviously malicious.
 
 ## Secure Design Principles
 
