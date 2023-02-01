@@ -3,7 +3,7 @@ title: "Authenticating Using Selenium"
 summary: >
   How to configure ZAP to handle complex authentication using Selenium.
 images:
-- https://www.zaproxy.org/blog/2023-02-01-authentication-using-selenium/images/selenium-auth.png
+- https://www.zaproxy.org/blog/2023-02-01-authenticating-using-selenium/images/selenium-auth.png
 type: post
 tags:
 - blog
