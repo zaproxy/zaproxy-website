@@ -15,8 +15,16 @@
   name: "Loosely Scoped Cookie"
   status: "release"
   type: "Passive"
+- id: 10062
+  name: "PII Disclosure"
+  status: "release"
+  type: "Passive"
 - id: 10202
   name: "Absence of Anti-CSRF Tokens"
+  status: "release"
+  type: "Passive"
+- id: 10050
+  name: "Retrieved from Cache"
   status: "release"
   type: "Passive"
 - id: 10015
@@ -27,37 +35,33 @@
   name: "Backup File Disclosure"
   status: "beta"
   type: "Active"
+- id: 10096
+  name: "Timestamp Disclosure"
+  status: "release"
+  type: "Passive"
 - id: 10017
   name: "Cross-Domain JavaScript Source File Inclusion"
   status: "release"
   type: "Passive"
-- id: 10050
-  name: "Retrieved from Cache"
-  status: "release"
+- id: 10063
+  name: "Permissions Policy Header Not Set"
+  status: "beta"
   type: "Passive"
-- id: 10096
-  name: "Timestamp Disclosure"
+- id: 10020
+  name: "Anti-clickjacking Header"
   status: "release"
   type: "Passive"
 - id: 10055
   name: "CSP"
   status: "release"
   type: "Passive"
-- id: 10044
-  name: "Big Redirect Detected (Potential Sensitive Information Leak)"
-  status: "release"
-  type: "Passive"
-- id: 10020
-  name: "Anti-clickjacking Header"
-  status: "release"
-  type: "Passive"
 - id: 10104
   name: "User Agent Fuzzer"
   status: "release"
   type: "Active"
-- id: 10063
-  name: "Permissions Policy Header Not Set"
-  status: "beta"
+- id: 10044
+  name: "Big Redirect Detected (Potential Sensitive Information Leak)"
+  status: "release"
   type: "Passive"
 - id: 10054
   name: "Cookie without SameSite Attribute"
@@ -67,15 +71,11 @@
   name: "Modern Web Application"
   status: "release"
   type: "Passive"
-- id: 10031
-  name: "User Controllable HTML Element Attribute (Potential XSS)"
-  status: "release"
-  type: "Passive"
 - id: 10036
   name: "HTTP Server Response Header"
   status: "release"
   type: "Passive"
-- id: 10010
-  name: "Cookie No HttpOnly Flag"
+- id: 10035
+  name: "Strict-Transport-Security Header"
   status: "release"
   type: "Passive"
