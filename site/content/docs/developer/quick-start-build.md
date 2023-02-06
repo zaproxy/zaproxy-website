@@ -11,11 +11,11 @@ date: "2020-12-04"
 addSocialPreview: true
 ---
 
-Have you ever wanted to play around with the ZAP codebase but felt it was too overwhelming? This guide will walk you through building ZAP from the command line regardless of the operating system and IDE you're using.
+Ever wanted to experiment with the ZAP codebase but felt intimidated by it? This guide will walk you through the process of building ZAP from the command line regardless of your operating system or IDE.
 
-You can also follow along with Simon as he sets the ZAP development environment in this [Deep Dive](/zap-deep-dive/) video:
+You can also follow along with Simon Bennetts as he sets the ZAP development environment in this [Deep Dive](/zap-deep-dive/) video:
 
-**NOTE**: This video was made before *mandatory add-ons* were introduced in ZAP. Please refer to the text below the video for an up-to-date guide on building ZAP from source.
+**NOTE**: This video was created prior to the introduction of *mandatory add-ons* in ZAP. For an up-to-date guide on building ZAP from source, please refer to the text below the video.
 
 {{<youtube uuid="BYi4nA0nhR8">}}
 
@@ -170,4 +170,7 @@ cd ..
 ```
 
 ### Make Changes and Submit a PR!
+
+We welcome any changes made by a Contributor following a review process. Prior to submission of a PR, please be aware: Contributions must adhere to the [Guidelines](https://github.com/zaproxy/zaproxy/blob/main/CONTRIBUTING.md#guidelines-for-pull-request-pr-submission-and-processing).
+	
 If you have any questions related to ZAP development, reach out on the [ZAP Developer group](https://groups.google.com/g/zaproxy-develop) or the [IRC channel](https://web.libera.chat/#zaproxy). 
