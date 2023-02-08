@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.1.0
+    version: 0.2.0
 ---
 
 # Authentication Helper
@@ -20,7 +20,11 @@ The add-on can be used in 2 ways:
 * To passively detect authentication features.
 * To automatically configure ZAP to handle the authentication features discovered.
 
-See below for the authentication features currently supported.
+The features currently supported are:
+
+
+* [Authentication Request Identification](/docs/desktop/addons/authentication-helper/auth-req-id/)
+* [Header Based Session Management](/docs/desktop/addons/authentication-helper/session-header/)
 
 By default the add-on will raise informational alerts detailing any authentication features identified.
 
@@ -42,24 +46,8 @@ If the add-on identifies an authentication request that is part of the context y
 If an authentication request is not identified then check to make sure it is made to a site which is included in the context.  
 If it is not then add the site to the context and authenticate again via your browser.
 
-## Authentication Request Identification
+### Links
 
-This add-on includes a passive scan rule which attempts to identify authentication requests.  
-It identifies authentication requests by the presence of commonly used username and password field names. It also uses commonly used URL segments to identify more likely authentication requests, and uses commonly used registration URL segments to ignore registration requests.  
-
-The rule will not attempt to identify very unusual authentication requests - automation is one of the end goals so false negatives (missing unusual authentication requests) is more desirable than false positives (incorrectly identifying an authentication request).   
-The 'other' field is used to report a set of key-value pairs which can be easily parsed. The current keys supported are:
-
-* userParam
-* userValue
-* passwordParam
-* csrfToken
-
-There can potentially be multiple csrfTokens.
-
-The rule will currently identify:
-
-* Form-based authentication requests
-* JSON-based authentication requests
-
-Latest code: [AuthenticationDetectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java)
+|   |                                                                              |
+|---|------------------------------------------------------------------------------|
+|   | [ZAP Blog Post: Authentication Help/](/blog/2023-01-19-authentication-help/) |
