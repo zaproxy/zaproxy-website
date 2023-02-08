@@ -95,7 +95,7 @@ In addition to that, if the request is in a context which is set to “Manual Au
 
 The following changes are planned:
 
-* Header based session handling - a new session management method which will support an arbitrary number of headers based on data from the authentication response.
+* ~~Header based session handling~~ - added in [Authentication Helper v0.2.0](https://github.com/zaproxy/zap-extensions/releases/tag/authhelper-v0.2.0).
 * Session handling detection - automatically detecting common session management methods.
 * Session handling configuration - automatically configuring ZAP to handle session management in a similar way to the authentication handling above.
 * Verification detection - reporting a set of URLs that appear to be suitable for authentication verification.
