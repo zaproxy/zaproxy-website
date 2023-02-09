@@ -8,6 +8,10 @@ type: userguide
 
 ### Sample
 
+#### About riskdesc
+
+riskdesc - Is a combination identifier, showing Risk followed by Confidence (in brackets). For example `High (Medium)` would indicate a High risk issue identified with Medium confidence.
+
 ```
 <?xml version="1.0"?>
 <OWASPZAPReport version="Dev Build" generated="Fri, 4 Feb 2022 17:42:18">
