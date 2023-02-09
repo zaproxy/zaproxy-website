@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.23.0
+    version: 0.24.0
 ---
 
 # Automation Framework
@@ -60,6 +60,10 @@ If the ZAP desktop is being used then the plan will also be shown in the GUI to 
 ## Environment
 
 The [environment](/docs/desktop/addons/automation-framework/environment/) section of the file defines the applications which the rest of the jobs can act on.
+
+## File Paths
+
+All file and directory paths can either be absolute or relative to the directory containing the plan. Relative paths are recommended for portability.
 
 ## Jobs
 

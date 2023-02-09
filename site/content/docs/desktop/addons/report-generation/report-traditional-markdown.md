@@ -8,6 +8,10 @@ type: userguide
 
 ### Sample
 
+#### Header `Risk (Confidence)`
+
+This header is a combination identifier, showing Risk followed by Confidence. For example `High (Medium)` , would indicate a High risk issue identified with Medium confidence.
+
 ```
 
 # ZAP Scanning Report

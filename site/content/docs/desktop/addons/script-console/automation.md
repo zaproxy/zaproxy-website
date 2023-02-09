@@ -22,7 +22,7 @@ By default the default script engine for the file extension (if any) will be use
 * type: mandatory, can be any of the script types supported by ZAP
 * engine: optional, can be used to override the default engine for the file extension
 * name: optional, defaults to the file name, can be used to specify the script in another job
-* file: mandatory, the full file path, must be a readable text file
+* file: mandatory, the path to the file (absolute or relative to the plan), must be a readable text file
 
 ## Action: remove
 
@@ -62,7 +62,22 @@ Not all of the parameters are valid for all of the actions, see above for detail
       type:                      # String: The type of the script
       engine:                    # String: The script engine to use - can be used to override the default engine for the file extension
       name:                      # String: The name of the script, defaults to the file name
-      file:                      # String: The full file path, must be readable
+      file:                      # String: The full or relative file path, must be readable
       target:                    # String: The URL to be invoked for "targeted" script type
 	
 ```
+
+## Interacting with plans
+
+Scripts can interact with running plans using code like:
+
+
+    var extAF = control.getExtensionLoader().getExtension("ExtensionAutomation");
+
+    var plans = extAF.getRunningPlans();
+
+    if (plans.size() >  0) {
+      plans.get(0).getProgress().info("An info message added by a script");
+    } else {
+      print('No running plans');
+    }
