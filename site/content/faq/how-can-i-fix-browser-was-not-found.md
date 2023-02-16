@@ -46,6 +46,12 @@ You can configure the locations of both Chrome and Firefox via the [Selenium Opt
 
 On macOS you may need to specify the full path to the executable, e.g. `/Applications/Firefox.app/Contents/MacOS/firefox`
 
+### Is Firefox installed using Flatpack or Snap?
+
+There is a known problem (which is outside of our control) related to Firefox installed via Flatpack or Snap.
+
+For a workaround see https://github.com/mozilla/geckodriver/releases/tag/v0.32.0
+
 ### Check the zap.log file
 
 If that does not help then [check the zap.log file](/faq/somethings-not-working-what-should-i-do/#check-the-log-file) 
