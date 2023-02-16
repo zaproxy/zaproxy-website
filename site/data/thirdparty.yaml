@@ -119,6 +119,10 @@ services:
     link: https://blacklock.io/
     license: 'Commercial'
 
+  - name: 'ForAllSecure'
+    link: https://forallsecure.com/mayhem-for-api
+    license: 'Commercial'
+
   - name: 'GitLab'
     link: https://docs.gitlab.com/ee/user/application_security/dast/
     license: 'Commercial'
