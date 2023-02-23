@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: spider
-    version: 0.2.0
+    version: 0.3.0
 ---
 
 # Spider
@@ -65,6 +65,10 @@ If set in the [Options Spider screen](/docs/desktop/addons/spider/options/), the
 #### Git metadata files
 
 If set in the [Options Spider screen](/docs/desktop/addons/spider/options/), the Spider should also parse Git metadata files and tries to identify new resources.
+
+#### .DS_Store files
+
+If set in the [Options Spider screen](/docs/desktop/addons/spider/options/), the Spider should also parse .DS_Store files and tries to identify new resources.
 
 #### OData Atom Format
 
