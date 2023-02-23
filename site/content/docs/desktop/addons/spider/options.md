@@ -90,6 +90,10 @@ This option controls whether the Spider should also parse SVN metadata files and
 
 This option controls whether the Spider should also parse Git metadata files and try to identify new resources.
 
+### Parse .DS_Store files
+
+This option controls whether the Spider should also parse .DS_Store files and try to identify new resources.
+
 ### Handle OData-specific parameters
 
 This options defines whether the Spider should try to detect OData-specific parameters (i.e. resources identifiers) in order to properly process them according to the rule defined by the "Query parameters handling" option.
