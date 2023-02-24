@@ -6,8 +6,8 @@ successtags:
 - internal
 - supporter
 date: "2021-04-14"
-# Weights based on supporter type: bronze: 1, silver: 2, gold: 3, platinum: 4 
-weight: '4'
+# Weights based on supporter type: bronze: 4, silver: 3, gold: 2, platinum: 1 
+weight: '2'
 company:
   link: https://www.mozilla.com
   logo: /img/supporters/mozilla.png
