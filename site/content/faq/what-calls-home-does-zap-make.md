@@ -7,6 +7,8 @@ weight: 2
 
 From 2.12.0 all ZAP 'calls home' are made to the zaproxy.org domain.
 
+The availability of these services is shown on an [UptimeRobot dashboard](https://stats.uptimerobot.com/W03Dvh6Wk4).
+
 ###  Check for Updates
 
 ZAP makes one request to https://cfu.zaproxy.org to see if ZAP or any of the add-ons are up to date.
