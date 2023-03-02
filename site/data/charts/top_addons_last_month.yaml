@@ -10,6 +10,7 @@
 - id: "sequence"
 - id: "plugnhack"
 - id: "pscanrulesAlpha"
+- id: "authhelper"
 - id: "custompayloads"
 - id: "ascanrulesAlpha"
 - id: "wappalyzer"
@@ -18,4 +19,3 @@
 - id: "directorylistv2_3"
 - id: "jython"
 - id: "directorylistv2_3_lc"
-- id: "fuzzdboffensive"
