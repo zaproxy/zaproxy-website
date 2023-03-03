@@ -852,9 +852,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.19.0/retire-release-0.19.0.zap
-  date: 2023-01-10
-  version: 0.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.20.0/retire-release-0.20.0.zap
+  date: 2023-03-03
+  version: 0.20.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -1024,9 +1024,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.18.0/wappalyzer-release-21.18.0.zap
-  date: 2023-01-06
-  version: 21.18.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.19.0/wappalyzer-release-21.19.0.zap
+  date: 2023-03-03
+  version: 21.19.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
