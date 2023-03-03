@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 45.0.0
+    version: 46.0.0
 ---
 
 # Passive Scan Rules
@@ -90,8 +90,11 @@ Latest code: [CharsetMismatchScanRule.java](https://github.com/zaproxy/zap-exten
 ## Content Security Policy (CSP) Header Not Set
 
 This checks HTML response headers for the presence of a Content Security Policy header, or the response body for CSP specified via META tag.  
-By default this rule checks for the presence of the "Content-Security-Policy" header, and at the Low threshold also checks for the "X-Content-Security-Policy" and "X-WebKit-CSP" headers.  
-Redirects and non-HTML responses are ignored except at the Low threshold.
+By default this rule checks for the presence of the "Content-Security-Policy", "X-Content-Security-Policy", and "X-WebKit-CSP" headers. Redirects and non-HTML responses are ignored except at the Low threshold.
+
+If a "Content-Security-Policy" header is not found, an alert is raised.
+
+If an "X-Content-Security-Policy" or "X-WebKit-CSP" header is found, an INFO alert is raised. This may represent an outdated enforcement implementation.
 
 If a "Content-Security-Policy-Report-Only" header is found on a response an INFO alert is raised. This may represent an enforcement effort
 that is actively being refined or developed, or one which is only partially implemented.
@@ -276,6 +279,8 @@ Latest code: [UserControlledOpenRedirectScanRule.java](https://github.com/zaprox
 
 PII is information like credit card number, SSN etc. This check currently reports only numbers which match credit card numbers and pass Luhn checksum, which gives high confidence, that this is a credit card number (images and CSS are ignored).   
 At MEDIUM and HIGH threshold it attempts to use three characters of context on each side of potential matches to exclude matches within decimal like content. At LOW threshold, alerts will be raised for such matches.
+
+PDFs are only evaluated at LOW threshold.
 
 Note: In the case of suspected credit card values, the potential credit card numbers are looked up against a Bank Identification Number List
 (BINList). If a match is found the alert is raised at High confidence and additional details are added to the 'Other Information' field in the
