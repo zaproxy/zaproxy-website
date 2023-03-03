@@ -40,7 +40,7 @@
     "exports-loader": "^4.0.0",
     "fancy-log": "^2.0.0",
     "file-loader": "^6.2.0",
-    "hugo-bin": "^0.98.0",
+    "hugo-bin": "^0.99.1",
     "imports-loader": "^4.0.1",
     "mini-css-extract-plugin": "^2.7.2",
     "node-sass": "^8.0.0",
