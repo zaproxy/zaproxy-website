@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 44.0.0
+    version: 45.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -104,7 +104,7 @@ Latest code: [SpringActuatorScanRule.java](https://github.com/zaproxy/zap-extens
 
 ## Log4Shell (CVE-2021-44228 and CVE-2021-45046)
 
-This rule attempts to discover the Log4Shell ([CVE-2021-44228](https://www.cve.org/CVERecord?id=CVE-2021-44228) and [CVE-2021-45046](https://www.cve.org/CVERecord?id=CVE-2021-45046)) vulnerabilities. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions. We recommend that this scan rule is used with header injection enabled for maximum coverage.
+This rule attempts to discover the Log4Shell ([CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) and [CVE-2021-45046](https://nvd.nist.gov/vuln/detail/CVE-2021-45046)) vulnerabilities. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions. We recommend that this scan rule is used with header injection enabled for maximum coverage.
 
 Latest code: [Log4ShellScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/Log4ShellScanRule.java)
 

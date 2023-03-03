@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: 31.0.0
+    version: 32.0.0
 ---
 
 # Passive Scan Rules - Beta
@@ -25,7 +25,7 @@ The following beta status passive scan rules are included in this add-on:
 
 ## Content Cacheability
 
-This scan rule analyzes the cache control and pragma headers in HTTP traffic and resports on the cacheability of the requests from a RFC7234 point of view.
+This scan rule analyzes the cache control and pragma headers in HTTP traffic and reports on the cacheability of the requests from a RFC7234 point of view.
 
 Alerts generated:
 
