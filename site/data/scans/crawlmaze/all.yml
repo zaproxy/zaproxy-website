@@ -1,6 +1,34 @@
 section: All URLs
 target: security-crawl-maze.app
 details:
+- path: /javascript/frameworks/angular/event-handler.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /javascript/frameworks/angular/router-outlet.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /javascript/frameworks/angularjs/ng-href.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /javascript/frameworks/polymer/event-handler.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /javascript/frameworks/polymer/polymer-router.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /javascript/frameworks/react/index.html/search.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /javascript/frameworks/react/route-path.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
 - path: /test/css/font-face.found
   scheme: http
   standard: Pass
@@ -21,18 +49,6 @@ details:
   scheme: https
   standard: Pass
   ajax: FAIL
-- path: /test/html/doctype.found
-  scheme: https
-  standard: Pass
-  ajax: FAIL
-- path: /test/html/manifest.found
-  scheme: https
-  standard: Pass
-  ajax: FAIL
-- path: /test/html/body/background.found
-  scheme: https
-  standard: Pass
-  ajax: Pass
 - path: /test/html/body/a/href.found
   scheme: https
   standard: Pass
@@ -41,10 +57,6 @@ details:
   scheme: https
   standard: Pass
   ajax: FAIL
-- path: /test/html/body/audio/src.found
-  scheme: https
-  standard: Pass
-  ajax: Pass
 - path: /test/html/body/applet/archive.found
   scheme: https
   standard: Pass
@@ -53,6 +65,26 @@ details:
   scheme: https
   standard: Pass
   ajax: FAIL
+- path: /test/html/body/audio/source/src.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/html/body/audio/source/srcset1x.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /test/html/body/audio/source/srcset2x.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /test/html/body/audio/src.found
+  scheme: https
+  standard: Pass
+  ajax: Pass
+- path: /test/html/body/background.found
+  scheme: https
+  standard: Pass
+  ajax: Pass
 - path: /test/html/body/blockquote/cite.found
   scheme: https
   standard: Pass
@@ -89,11 +121,11 @@ details:
   scheme: https
   standard: Pass
   ajax: FAIL
-- path: /test/html/body/img/lowsrc.found
+- path: /test/html/body/img/longdesc.found
   scheme: https
   standard: Pass
   ajax: FAIL
-- path: /test/html/body/img/longdesc.found
+- path: /test/html/body/img/lowsrc.found
   scheme: https
   standard: Pass
   ajax: FAIL
@@ -125,14 +157,14 @@ details:
   scheme: https
   standard: Pass
   ajax: FAIL
-- path: /test/html/body/object/data.found
-  scheme: https
-  standard: Pass
-  ajax: Pass
 - path: /test/html/body/object/codebase.found
   scheme: https
   standard: Pass
   ajax: FAIL
+- path: /test/html/body/object/data.found
+  scheme: https
+  standard: Pass
+  ajax: Pass
 - path: /test/html/body/object/param/value.found
   scheme: https
   standard: Pass
@@ -157,18 +189,22 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-- path: /test/html/body/video/src.found
-  scheme: https
-  standard: Pass
-  ajax: Pass
 - path: /test/html/body/video/poster.found
   scheme: https
   standard: Pass
   ajax: Pass
-- path: /test/html/head/profile.found
+- path: /test/html/body/video/src.found
   scheme: https
   standard: Pass
   ajax: Pass
+- path: /test/html/body/video/track/src.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /test/html/doctype.found
+  scheme: https
+  standard: Pass
+  ajax: FAIL
 - path: /test/html/head/base/href.found
   scheme: https
   standard: Pass
@@ -201,6 +237,30 @@ details:
   scheme: https
   standard: Pass
   ajax: FAIL
+- path: /test/html/head/profile.found
+  scheme: https
+  standard: Pass
+  ajax: Pass
+- path: /test/html/manifest.found
+  scheme: https
+  standard: Pass
+  ajax: FAIL
+- path: /test/html/misc/string/dot-dot-slash-prefix.found
+  scheme: https
+  standard: Pass
+  ajax: FAIL
+- path: /test/html/misc/string/dot-slash-prefix.found
+  scheme: https
+  standard: Pass
+  ajax: FAIL
+- path: /test/html/misc/string/string-known-extension.pdf
+  scheme: https
+  standard: Pass
+  ajax: FAIL
+- path: /test/html/misc/string/url-string.found
+  scheme: http
+  standard: Pass
+  ajax: FAIL
 - path: /test/html/misc/url/full-url.found
   scheme: http
   standard: Pass
@@ -217,27 +277,75 @@ details:
   scheme: https
   standard: Pass
   ajax: FAIL
-- path: /test/html/misc/string/dot-dot-slash-prefix.found
+- path: /test/javascript/interactive/js-delete.found
   scheme: https
-  standard: Pass
-  ajax: FAIL
-- path: /test/html/misc/string/dot-slash-prefix.found
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/js-post-event-listener.found
   scheme: https
-  standard: Pass
-  ajax: FAIL
-- path: /test/html/misc/string/url-string.found
-  scheme: http
-  standard: Pass
-  ajax: FAIL
-- path: /test/html/misc/string/string-known-extension.pdf
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/js-post.found
   scheme: https
-  standard: Pass
+  standard: FAIL
+  ajax: FAIL
+- path: /test/javascript/interactive/js-put.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/listener-and-event-attribute-first.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/listener-and-event-attribute-second.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/multi-step-request-event-attribute.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/multi-step-request-event-listener-div-dom.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /test/javascript/interactive/multi-step-request-event-listener-div.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /test/javascript/interactive/multi-step-request-event-listener-dom.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/multi-step-request-event-listener.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/multi-step-request-redefine-event-attribute.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/multi-step-request-remove-button.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/multi-step-request-remove-event-listener.found
+  scheme: https
+  standard: FAIL
+  ajax: FAIL
+- path: /test/javascript/interactive/two-listeners-first.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/interactive/two-listeners-second.found
+  scheme: https
+  standard: FAIL
+  ajax: Pass
+- path: /test/javascript/misc/automatic-post.found
+  scheme: https
+  standard: FAIL
   ajax: FAIL
 - path: /test/javascript/misc/comment.found
-  scheme: http
-  standard: Pass
-  ajax: FAIL
-- path: /test/javascript/misc/string-variable.found
   scheme: http
   standard: Pass
   ajax: FAIL
@@ -245,33 +353,9 @@ details:
   scheme: https
   standard: FAIL
   ajax: FAIL
-- path: /test/javascript/frameworks/angular/event-handler.found
-  scheme: https
-  standard: FAIL
-  ajax: FAIL
-- path: /test/javascript/frameworks/angular/router-outlet.found
-  scheme: https
-  standard: FAIL
-  ajax: FAIL
-- path: /test/javascript/frameworks/angularjs/ng-href.found
-  scheme: https
-  standard: FAIL
-  ajax: FAIL
-- path: /test/javascript/frameworks/polymer/event-handler.found
-  scheme: https
-  standard: FAIL
-  ajax: FAIL
-- path: /test/javascript/frameworks/polymer/polymer-router.found
-  scheme: https
-  standard: FAIL
-  ajax: FAIL
-- path: /test/javascript/frameworks/react/route-path.found
-  scheme: https
-  standard: FAIL
-  ajax: FAIL
-- path: /test/javascript/frameworks/react/index.html/search.found
-  scheme: https
-  standard: FAIL
+- path: /test/javascript/misc/string-variable.found
+  scheme: http
+  standard: Pass
   ajax: FAIL
 - path: /test/misc/known-files/robots.txt.found
   scheme: https
@@ -281,9 +365,9 @@ details:
   scheme: http
   standard: Pass
   ajax: FAIL
-tests: 70
-passes: 61
+tests: 91
+passes: 74
 standardPasses: 61
-ajaxPasses: 21
-fails: 9
-score: 87%
+ajaxPasses: 34
+fails: 17
+score: 81%
