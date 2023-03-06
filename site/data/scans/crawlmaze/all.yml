@@ -288,7 +288,7 @@ details:
 - path: /test/javascript/interactive/js-post.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
+  ajax: Pass
 - path: /test/javascript/interactive/js-put.found
   scheme: https
   standard: FAIL
@@ -332,7 +332,7 @@ details:
 - path: /test/javascript/interactive/multi-step-request-remove-event-listener.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
 - path: /test/javascript/interactive/two-listeners-first.found
   scheme: https
   standard: FAIL
