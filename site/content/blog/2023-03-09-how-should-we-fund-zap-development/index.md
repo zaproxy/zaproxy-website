@@ -52,4 +52,4 @@ please ask them why they are not providing ongoing funding for us! :grin:
 
 You can contact the core team via [email](mailto:zaproxy-admin@googlegroups.com).
 
-Or join the discussion on the ZAP User Group - link to be added once this blog has been published!
+Or join the discussion on the [ZAP User Group](https://groups.google.com/g/zaproxy-users/c/Wf3nbPca6HA/m/3_ulvR4FAwAJ).
