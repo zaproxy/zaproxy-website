@@ -288,7 +288,7 @@ details:
 - path: /test/javascript/interactive/js-post.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
+  ajax: Pass
 - path: /test/javascript/interactive/js-put.found
   scheme: https
   standard: FAIL
@@ -366,8 +366,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 91
-passes: 75
+passes: 76
 standardPasses: 61
-ajaxPasses: 35
-fails: 16
-score: 82%
+ajaxPasses: 36
+fails: 15
+score: 84%
