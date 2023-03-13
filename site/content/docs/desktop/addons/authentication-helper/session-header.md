@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Header Based Session Management
 type: userguide
-weight: 2
+weight: 3
 ---
 
 # Header Based Session Management
@@ -20,6 +20,17 @@ The header values can include the following tokens:
 |   | `{%url:key%}`           | Authentication URL param          |
 
 When adding Header Based Session Management via the API the `headers` parameter is a string of `header:value` pairs separated by newline characters: `\n`.
+
+## Automation Framework
+
+Header Based Session Management can be configured in the environment section of an Automation Framework plan using:
+
+```
+      sessionManagement:
+        method: "headers"
+        parameters:                    #  list of header: value pairs which can include any of the tokens defined above, e.g.
+          Authorization: "Bearer: {%json:AuthenticationResult.AccessToken%}"
+```
 
 Note that due to restrictions in the core:
 

@@ -88,9 +88,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.2.0/authhelper-alpha-0.2.0.zap
-  date: 2023-02-08
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.3.0/authhelper-alpha-0.3.0.zap
+  date: 2023-03-13
+  version: 0.3.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -128,9 +128,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/browser-view/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/browserView-alpha-5.zap
-  date: 2017-11-28
-  version: 5
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/browserView-v6/browserView-alpha-6.zap
+  date: 2023-03-13
+  version: 6
 - id: bruteforce
   name: Forced Browse
   description: Forced browsing of files and directories using code from the OWASP
@@ -294,9 +294,9 @@
   status: release
   infoUrl: /docs/desktop/addons/encode-decode-hash/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v1.0.0/encoder-release-1.0.0.zap
-  date: 2022-12-15
-  version: 1.0.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v1.1.0/encoder-release-1.1.0.zap
+  date: 2023-03-13
+  version: 1.1.0
 - id: evalvillain
   name: Eval Villain
   description: Adds the Eval Villain extension to Firefox when launched from ZAP.
@@ -668,9 +668,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.14.0/oast-beta-0.14.0.zap
-  date: 2022-12-13
-  version: 0.14.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.15.0/oast-beta-0.15.0.zap
+  date: 2023-03-13
+  version: 0.15.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
@@ -782,9 +782,9 @@
   status: release
   infoUrl: /docs/desktop/addons/quick-start/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v36/quickstart-release-36.zap
-  date: 2023-01-03
-  version: 36
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v37/quickstart-release-37.zap
+  date: 2023-03-13
+  version: 37
 - id: reflect
   name: Reflect
   description: Finds reflected parameters
