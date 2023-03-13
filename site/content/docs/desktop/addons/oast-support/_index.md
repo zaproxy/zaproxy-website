@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: oast
-    version: 0.14.0
+    version: 0.15.0
 ---
 
 # Out-of-band Application Security Testing Support
@@ -16,6 +16,10 @@ The OAST Support add-on allows you to detect and exploit out-of-band vulnerabili
 ## Services
 
 For a list of the supported services, see the [OAST Services](/docs/desktop/addons/oast-support/services/) page.
+
+## Context Menu
+
+A context menu, "Insert OAST Payload", is available in editable text components that allow to insert new payloads from the supported OAST services.
 
 ## Scripts
 

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 1.0.0
+    version: 1.1.0
 ---
 
 # Encode / Decode / Hash dialog
@@ -30,6 +30,14 @@ If any text is selected when the dialog is invoked then it will be put in this f
 * Reset - Reset all the tabs/panels to their default state.
 * Options - Will open the options dialog, with the focus set to the Encode/Decode/Hash options panel.
 * Help - Will open the User Guide, with the content pane preset to the Encode/Decode/Hash add-on's help page.
+
+## Output Panel(s) Context Menu
+
+* Find - Brings up a standard input dialog to allow searching within a text area.
+* Copy - Standard copy functionality.
+* Paste - Standard paste functionality.
+* Delete Output Panel - Removes the relevant output text area.
+* Replace Input Text - Replaces the input text content, based on the selection or full content of the relevant output text area. (Only active if the text area has content.)
 
 ## Default Dialog Tabs \& Panels
 
@@ -200,6 +208,26 @@ Reverses the order of the input.
 #### To Upper Case
 
 Converts the input to all upper case characters.
+
+### Miscellaneous
+
+#### PowerShell Encode
+
+Converted to UTF-16LE and base64 encoded. Equivalent to one of the following examples (encoding "dir"):
+
+` printf "dir"| iconv -t UTF-16LE | base64 -w 0 -`
+
+
+    $command = 'dir'
+    $bytes = [System.Text.Encoding]::Unicode.GetBytes($command)
+    $encodedCommand = [Convert]::ToBase64String($bytes)
+    echo $encodedCommand
+
+
+Resulting in: `ZABpAHIA`.
+
+Which can be leveraged via something like the following (where `$encodedCommand` is set to the encoded value `ZABpAHIA`):  
+`powershell -exec bypass -enc $encodedCommand`
 
 ## Accessed via
 
