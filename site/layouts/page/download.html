@@ -241,22 +241,15 @@
     </div>
   </section>
 
-  <div class="wrapper">
-    <h5>A big thank you to our Platinum Sponsor(s):</h5>
-
-{{ range $supporter := $.Site.Data.supporters.platinum }}
-  <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
-{{ end }}
-
-    <h5>And Gold Sponsor(s):</h5>
-
-{{ range $supporter := $.Site.Data.supporters.gold }}
-  <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
-{{ end }}
-
-<h5>For details of other ZAP sponsors see the <a href="/supporters/">Supporters</a> page.</h5>
-
-  </div>
+  <section class="py-20">
+    <div class="wrapper">
+      <h5>A big thank you to our Platinum Sponsor(s):</h5>
+      {{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.platinum) }}
+      <h5>And Gold Sponsor(s):</h5>
+      {{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.gold) }}
+      <h5>For details of other ZAP sponsors see the <a href="/supporters/">Supporters</a> page.</h5>
+    </div>
+  </section>
 
 
 {{ end }}

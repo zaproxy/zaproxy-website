@@ -1,0 +1,13 @@
+.supporters-grid {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 850px) {
+    .supporters-grid {
+        grid-template-columns: 1fr;
+        row-gap: 0;
+    }
+}
