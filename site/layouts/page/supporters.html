@@ -15,7 +15,6 @@
 {{- .Content -}}
 
 <h2>Platinum</h2>
-<div>{{ .Params.desc_platinum }}</div>
 
 {{ range $supporter := $.Site.Data.supporters.platinum }}
   <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
@@ -23,7 +22,6 @@
 <br/><br/>
 
 <h2>Gold</h2>
-<div>{{ .Params.desc_gold }}</div>
 
 {{ range $supporter := $.Site.Data.supporters.gold }}
   <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
@@ -31,7 +29,6 @@
 <br/><br/>
 
 <h2>Silver</h2>
-<div>{{ .Params.desc_silver }}</div>
 
 {{ range $supporter := $.Site.Data.supporters.silver }}
   {{ if $supporter.logo }}
@@ -43,7 +40,6 @@
 <br/><br/>
 
 <h2>Bronze</h2>
-<div>{{ .Params.desc_bronze }}</div>
 
 <ul>
 {{ range $supporter := $.Site.Data.supporters.bronze }}
