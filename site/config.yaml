@@ -50,6 +50,10 @@ menu:
       URL: /community/
       weight:  5
 
+    - name:  Sponsor
+      URL: /sponsor/
+      weight:  5
+
   footer: 
     - name:  "Home"
       URL:  "/"
@@ -67,6 +71,10 @@ menu:
       URL: /community/
       weight:  4
 
+    - name:  Sponsor
+      URL: /sponsor/
+      weight:  5
+
     - name:  Statistics
       URL: /docs/statistics/
-      weight:  5
+      weight:  6
