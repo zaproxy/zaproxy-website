@@ -18,31 +18,11 @@ gold:
     logo: /img/supporters/google.png
     notes: $4,500 donations and GSoC 
 
+silver:
   - name: 'Salesforce'
     link: https://www.salesforce.com/
     logo: /img/supporters/salesforce.png
     notes: $9,000 in donations
-
-silver:
-  - name: 'OWASP'
-    link: https://www.owasp.org/
-    logo: /img/supporters/owasp.png
-    notes: General support and an early significant donation
-
-  - name: 'Segment'
-    link: https://segment.com/
-    logo: /img/supporters/segment.png
-    notes: Sponsored some of David's work on the HUD
-
-  - name: 'Sonatype'
-    link: https://www.sonatype.com/
-    logo: /img/supporters/sonatype.png
-    notes: ZAP in Ten series
-
-  - name: 'OWASP Denver'
-    link: https://owasp.org/www-chapter-denver/
-    logo: /img/supporters/owaspdenver.png
-    notes: A $5,000 donation
 
   - name: 'SOOS'
     link: https://soos.io/soos-dast-no-limit/
@@ -57,11 +37,6 @@ silver:
     link: https://twitter.com/blinkZ03272259
     notes: GitHub direct sponsorship
 
-  - name: 'Denim Group'
-    link: https://www.denimgroup.com/
-    logo: /img/supporters/denimgroup.png
-    notes: $3,000 in donations
-
   - name: 'Astra'
     link: https://www.getastra.com/
     logo: /img/supporters/astra.png
@@ -72,14 +47,32 @@ silver:
     logo: /img/supporters/webswing.png
     notes: Permission to include production version of Webswing in the ZAP Docker images
 
-  - name: 'HostedScan'
-    link: https://hostedscan.com/
-    logo: /img/supporters/hostedscan.png
-    notes: $1,500 donation
-
   - name: 'DeepFactor'
     link: http://deepfactor.io/
     logo: /img/supporters/deepfactor.png
+    notes: $1,500 donation
+
+bronze:
+  - name: 'Segment'
+    link: https://segment.com/
+    notes: Sponsored some of David's work on the HUD
+
+  - name: 'Sonatype'
+    link: https://www.sonatype.com/
+    notes: ZAP in Ten series
+
+  - name: 'OWASP Denver'
+    link: https://owasp.org/www-chapter-denver/
+    notes: A $5,000 donation
+
+  - name: 'Denim Group'
+    link: https://www.denimgroup.com/
+    logo: /img/supporters/denimgroup.png
+    notes: $3,000 in donations
+
+  - name: 'HostedScan'
+    link: https://hostedscan.com/
+    logo: /img/supporters/hostedscan.png
     notes: $1,500 donation
 
   - name: 'HiSolution AG'
@@ -87,14 +80,9 @@ silver:
     logo: /img/supporters/hisolutions.png
     notes: $1,000 donation
 
-bronze:
   - name: 'StackHawk'
     link: https://www.stackhawk.com/
     notes: Sponsored Simon for 2 years
-
-  - name: 'Faraday'
-    link: https://www.faradaysec.com/
-    notes: $900 donation
 
   - name: 'GitHub'
     link: https://github.blog/2022-06-24-thank-you-to-our-maintainers/
@@ -108,17 +96,6 @@ bronze:
     link: https://home.kpmg/
     notes: $500 donation
 
-  - name: 'IOTHREAT'
-    link: https://iothreat.com/
-    notes: $250 donation
-
   - name: 'CREST'
     link: https://www.crest-approved.org/
     notes: $225 donation
-
-  - name: 'Sage'
-    link: https://www.sage.co.uk/
-    notes: Sponsored some of Simon's initial work on ZAP
-
-  - name: 'Microsoft'
-    link: https://www.microsoft.com/

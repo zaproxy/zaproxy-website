@@ -31,11 +31,11 @@ You can also sponsor the following members of the Core team directly - these con
 
 ### Platinum
 
-Criteria:
+##### Criteria
 
 * Direct sponsorship allowing one or more of the ZAP Core Team to spend at least 80% of their time working on ZAP.
 
-Benefits
+##### Benefits
 
 * Priority Support
 * Logo and Link on the [main page](/).
@@ -46,11 +46,11 @@ Benefits
 
 ### Gold
 
-Criteria:
+##### Criteria
 
 * A significant investment in time or money, equivalent to $8,000 or more.
 
-Benefits
+##### Benefits
 
 * Logo and Link on the [Download](/download/) page.
 * Logo and Link on the [Supporters](/supporters/) page.
@@ -59,11 +59,11 @@ Benefits
 
 ### Silver
 
-Criteria:
+##### Criteria
 
 * An investment in time or money, equivalent to $1,000 or more.
 
-Benefits
+##### Benefits
 
 * Logo and Link on the [Supporters](/supporters/) page.
 * Priority placement on [Third Party Products and Services](/third-party-services/) page.
@@ -71,11 +71,11 @@ Benefits
 
 ### Bronze
 
-Criteria:
+##### Criteria
 
 * An investment in time or money, equivalent to more than $200 and less than $1,000.
 
-Benefits
+##### Benefits
 
 * Name and Link on the [Supporters](/supporters/) page.
 * Priority placement on [Third Party Products and Services](/third-party-services/) page.
