@@ -28,9 +28,8 @@ services:
 
   - name: 'HostedScan'
     link: https://hostedscan.com/
-    logo: /img/supporters/hostedscan.png
     license: 'Commercial, free option'
-    supporter: ZAP Silver Supporter
+    supporter: ZAP Bronze Supporter
 
   - name: 'Intruder'
     link: https://www.intruder.io/
@@ -158,13 +157,7 @@ services:
 integrations:
   - name: 'ThreadFix'
     link: https://threadfix.it/
-    logo: /img/supporters/denimgroup.png
     license: 'Commercial'
-    supporter: ZAP Silver Supporter
-
-  - name: 'Faraday'
-    link: https://www.faradaysec.com/
-    license: 'Open source community edition'
     supporter: ZAP Bronze Supporter
 
   - name: 'DefectDojo'
@@ -176,6 +169,10 @@ integrations:
     link: https://dradisframework.com/ce/
     license: 'Open source community edition'
  
+  - name: 'Faraday'
+    link: https://www.faradaysec.com/
+    license: 'Open source community edition'
+
   - name: 'Sn1per'
     link: https://github.com/1N3/Sn1per
     license: 'Open source community edition'
