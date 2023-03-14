@@ -15,28 +15,15 @@
 {{- .Content -}}
 
 <h2>Platinum</h2>
-
-{{ range $supporter := $.Site.Data.supporters.platinum }}
-  <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
-{{ end }}
+{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.platinum) }}
 <br/><br/>
 
 <h2>Gold</h2>
-
-{{ range $supporter := $.Site.Data.supporters.gold }}
-  <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
-{{ end }}
+{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.gold) }}
 <br/><br/>
 
 <h2>Silver</h2>
-
-{{ range $supporter := $.Site.Data.supporters.silver }}
-  {{ if $supporter.logo }}
-    <a href="{{ $supporter.link }}"><img src="{{ $supporter.logo }}" /></a>&nbsp;&nbsp;
-  {{ else }}
-    <h3><a href="{{ $supporter.link }}">{{ $supporter.name }}</a></h3>
-  {{ end }}
-{{ end }}
+{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.silver) }}
 <br/><br/>
 
 <h2>Bronze</h2>

@@ -1,0 +1,13 @@
+<div class="supporters-grid mb-30">
+    {{ range $supporter := .supporters }}
+    <a href="{{ $supporter.link }}" class="pt-30 px-30 card flex jc-c ai-c fd-c br-def">
+        {{ if $supporter.logo }}
+        <div class="mb-30">
+            <img src="{{ $supporter.logo }}" style="width:100%;" />
+        </div>
+        {{ else }}
+        <h3> {{ $supporter.name }} </h3>
+        {{ end }}
+    </a>
+    {{ end }}
+</div>
