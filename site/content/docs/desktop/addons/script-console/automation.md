@@ -63,7 +63,30 @@ Not all of the parameters are valid for all of the actions, see above for detail
       engine:                    # String: The script engine to use - can be used to override the default engine for the file extension
       name:                      # String: The name of the script, defaults to the file name
       file:                      # String: The full or relative file path, must be readable
+      inline:                    # String: The full script (may be multi-line) - supply this or 'file' not both
       target:                    # String: The URL to be invoked for "targeted" script type
+	
+```
+
+## Inline Scripts
+
+Inline scripts are where the script contents are in the YAML plan rather that a separate file. An example of adding and running a simple standalone inline script is:
+
+```
+  - type: script
+      parameters:
+        action: "add"
+        type: "standalone"
+        engine: "ECMAScript : Graal.js"
+        name: "inline-test"
+        inline: |
+          print("This is a simple example")
+          print("Of a multi-line script")
+  - type: script
+      parameters:
+        action: "run"
+        type: "standalone"
+        name: "inline-test"
 	
 ```
 
