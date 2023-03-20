@@ -28,8 +28,9 @@
 
 <h2>Bronze</h2>
 
+{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.bronzeV2) }}
 <ul>
-{{ range $supporter := $.Site.Data.supporters.bronze }}
+{{ range $supporter := $.Site.Data.supporters.bronzeV1 }}
     <li><a href="{{ $supporter.link }}">{{ $supporter.name }}</a></li>
 {{ end }}
 </ul>
