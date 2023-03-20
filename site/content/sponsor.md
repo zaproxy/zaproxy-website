@@ -27,6 +27,9 @@ You can also sponsor the following members of the Core team directly - these con
 * [kingthorin](https://github.com/sponsors/kingthorin)
 * [ricekot](https://github.com/sponsors/ricekot)
 
+If you have any questions about sponsorship then please [get in touch](mailto:zaproxy-admin@googlegroups.com) - 
+we want to make it straightforward and as mutually beneficial as possible.
+
 ## Sponsorship Levels and Benefits
 
 ### Platinum
@@ -37,10 +40,12 @@ You can also sponsor the following members of the Core team directly - these con
 
 ##### Benefits
 
-* Priority Support
+* Significant say in the work implemented by the sponsored team members (see [Caveats](#caveats)).
+* Priority Support.
 * Logo and Link on the [main page](/).
 * Logo and Link on the [Download](/download/) page.
 * Logo and Link on the [Supporters](/supporters/) page.
+* Name and link on any sponsored [Roadmap](/docs/roadmap) items.
 * Priority placement on [Third Party Products and Services](/third-party-services/) page.
 * Priority placement on [Success Stories](/success/) page.
 
@@ -48,12 +53,14 @@ You can also sponsor the following members of the Core team directly - these con
 
 ##### Criteria
 
-* A significant investment in time or money, equivalent to $8,000 or more.
+* A significant investment in time or money, equivalent to $10,000 or more.
 
 ##### Benefits
 
+* Option to sponsor specific major developments (see [Caveats](#caveats)).
 * Logo and Link on the [Download](/download/) page.
 * Logo and Link on the [Supporters](/supporters/) page.
+* Name and link on any sponsored [Roadmap](/docs/roadmap) items.
 * Priority placement on [Third Party Products and Services](/third-party-services/) page.
 * Priority placement on [Success Stories](/success/) page.
 
@@ -61,7 +68,8 @@ You can also sponsor the following members of the Core team directly - these con
 
 ##### Criteria
 
-* An investment in time or money, equivalent to $1,000 or more.
+* Option to sponsor specific less involved developments (see [Caveats](#caveats)).
+* An investment in time or money, equivalent to $5,000 or more.
 
 ##### Benefits
 
@@ -73,19 +81,33 @@ You can also sponsor the following members of the Core team directly - these con
 
 ##### Criteria
 
-* An investment in time or money, equivalent to more than $200 and less than $1,000.
+* An investment in time or money, equivalent to more than $1,000.
 
 ##### Benefits
 
-* Name and Link on the [Supporters](/supporters/) page.
+* Logo (for new Bronze supporters, name for previous ones) and Link on the [Supporters](/supporters/) page.
 * Priority placement on [Third Party Products and Services](/third-party-services/) page.
 * Priority placement on [Success Stories](/success/) page.
 
-Note that all benefits are under continual review and are subject to change without notice.
+### Community
+
+##### Criteria
+
+* Any contributions less than $1,000.
+
+##### Benefits
+
+* Name on the [Supporters](/supporters/) page.
+
+### Caveats
+
+Any work undertaken as part of sponsorship will need to be compatible with the [Roadmap](/docs/roadmap/). 
+
+All benefits are under continual review and are subject to change without notice.
 
 ### Historic Donations
 
-Supporters will move down one level each full calendar year after the last donation.
+Supporters will move down one level each full calendar year after the last donation. Supporters will not be removed from the Community section.
 
 Note that companies whose actions are considered to be damaging to the ZAP project may be demoted or even be removed 
 from the [Supporters](/supporters/) page, at the discretion of the ZAP Core Team.

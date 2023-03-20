@@ -34,6 +34,14 @@
 {{ end }}
 </ul>
 
+<h2>Community</h2>
+
+<ul>
+{{ range $supporter := $.Site.Data.supporters.community }}
+    <li>{{ $supporter.name }}</li>
+{{ end }}
+</ul>
+
   </article>
 </section>
 {{ end }}
