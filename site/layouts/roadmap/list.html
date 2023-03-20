@@ -16,6 +16,7 @@
             <tr>
                <th>Year</th>
                <th>Status</th>
+               <th>Sponsor</th>
                <th>Item</th>
             </tr>
          </thead>
@@ -24,6 +25,7 @@
                <tr>
                   <td align="center">{{ .year }}</td>
                   <td align="center">{{ .status }}</td>
+                  <td align="center"><a href="{{ .sponsorlink }}">{{ .sponsor }}</a></td>
                   <td>{{ if .url }} <a href="{{ .url }}">{{ .item }}</a> {{ else }} {{ .item }} {{ end }}</td>
                </tr>
             {{ end }}

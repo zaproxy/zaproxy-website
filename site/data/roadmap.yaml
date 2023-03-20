@@ -1,44 +1,28 @@
-- item: Networking overhaul
-  status: 🎉 Finished
-  url: https://www.zaproxy.org/blog/2022-02-10-new-zap-networking-layer/
-  year: 2022
-- item: Migrate manual request editor out of core
-  status: 🎉 Finished
-  year: 2022
-- item: Migrate Spider out of core
-  status: 🎉 Finished
-  url: https://www.zaproxy.org/blog/2022-08-30-spider-move/
-  year: 2022
-- item: Update minimum Java version to 11
-  status: 🎉 Finished
-  year: 2022
-- item: Add permanent DB support
-  status: 🎉 Finished
-  url: https://github.com/zaproxy/zap-extensions/pull/3699
-  year: 2022
-- item: Release 2.12
-  status: 🎉 Finished
-  url: /blog/2022-10-27-zap-2-12-0-the-ten-thousand-star-release/
-  year: 2022
 
+- item: Authentication handling improvements
+  status: ⚡ In progress
+  url: /blog/2023-01-19-authentication-help/
+  sponsor: Jit
+  sponsorlink: https://www.jit.io
+  year: 2023
+- item: Update to latest Crawljax
+  status: ⚡ In progress
+  year: 2023
 - item: Improve modern web app handling
   status: ⚡ In progress
-  year: 2022
+  year: 2023
 - item: Automation Framework enhancements
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/6461
-  year: 2022
-- item: "Networking: Initial HTTP/2 support"
-  status: ⚡ In progress
-  year: 2022
+  year: 2023
 - item: Move core functionality to add-ons
   status: ⚡ In progress
-  year: 2022
+  year: 2023
 - item: "OpenSSF Best Practices: Silver"
   status: ⚡ In progress
   url: https://bestpractices.coreinfrastructure.org/en/projects/24?criteria_level=1
-  year: 2022
-  
+  year: 2023
+
 - item: Continue working on issues
   status: ♻ Ongoing
   url: https://github.com/zaproxy/zaproxy/issues
@@ -48,6 +32,6 @@
   url: /docs/contribute/scan-rules/
   year: n/a
 
-- item: Networking changes in add-ons and maintenance
+- item: Release 2.13
   status: 🗓 Not started
   year: 2023
