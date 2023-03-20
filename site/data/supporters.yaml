@@ -2,7 +2,7 @@
 
 platinum:
   - name: 'Jit'
-    link: https://www.jit.io/zap
+    link: https://www.jit.io/zap?utm_source=zapproxy&utm_medium=banner&utm_campaign=zap-proxy-website-banner
     logo: /img/supporters/jit.png
     license: 'Commercial'
     notes: Sponsoring Simon's work on ZAP

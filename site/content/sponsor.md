@@ -48,6 +48,7 @@ we want to make it straightforward and as mutually beneficial as possible.
 * Name and link on any sponsored [Roadmap](/docs/roadmap) items.
 * Priority placement on [Third Party Products and Services](/third-party-services/) page.
 * Priority placement on [Success Stories](/success/) page.
+* Analytic links option.
 
 ### Gold
 
@@ -63,6 +64,7 @@ we want to make it straightforward and as mutually beneficial as possible.
 * Name and link on any sponsored [Roadmap](/docs/roadmap) items.
 * Priority placement on [Third Party Products and Services](/third-party-services/) page.
 * Priority placement on [Success Stories](/success/) page.
+* Analytic links option.
 
 ### Silver
 
