@@ -52,7 +52,13 @@ silver:
     logo: /img/supporters/deepfactor.png
     notes: $1,500 donation
 
-bronze:
+bronzeV2:
+  - name: 'Tenebris'
+    link: https://tenebris.com/
+    logo: /img/supporters/tenebris.png
+    notes: Sponsoring Rick
+
+bronzeV1:
   - name: 'Segment'
     link: https://segment.com/
     notes: Sponsored some of David's work on the HUD
