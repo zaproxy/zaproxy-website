@@ -14,20 +14,19 @@
 
 {{- .Content -}}
 
-<h2>Platinum</h2>
+<h2 id="platinum">Platinum</h2>
 {{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.platinum) }}
 <br/><br/>
 
-<h2>Gold</h2>
+<h2 id="gold">Gold</h2>
 {{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.gold) }}
 <br/><br/>
 
-<h2>Silver</h2>
+<h2 id="silver">Silver</h2>
 {{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.silver) }}
 <br/><br/>
 
-<h2>Bronze</h2>
-
+<h2 id="bronze">Bronze</h2>
 {{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.bronzeV2) }}
 <ul>
 {{ range $supporter := $.Site.Data.supporters.bronzeV1 }}
@@ -35,7 +34,7 @@
 {{ end }}
 </ul>
 
-<h2>Community</h2>
+<h2 id="community">Community</h2>
 
 <ul>
 {{ range $supporter := $.Site.Data.supporters.community }}
