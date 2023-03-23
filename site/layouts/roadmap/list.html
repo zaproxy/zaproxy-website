@@ -12,17 +12,26 @@
    {{ .Content }}
    <div class="flex">
       <table>
+         <colgroup>
+            <col span="1" style="width: 10%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 20%;">
+            <col span="1" style="width: 50%;">
+         </colgroup>
          <thead>
             <tr>
                <th>Year</th>
-               <th>Status</th>
+               <th>Status<br>
+                  <input id="showfinished" class="togglehidetablerows" type="checkbox">
+                  <label for="showfinished">Show Finished</label>
+               </th>
                <th>Sponsor</th>
                <th>Item</th>
             </tr>
          </thead>
          <tbody>
             {{ range $.Site.Data.roadmap }}
-               <tr>
+               <tr {{ if ne .archive nil -}} class="togglehide" style="display:none;" {{- end }}>
                   <td align="center">{{ .year }}</td>
                   <td align="center">{{ .status }}</td>
                   <td align="center"><a href="{{ .sponsorlink }}">{{ .sponsor }}</a></td>

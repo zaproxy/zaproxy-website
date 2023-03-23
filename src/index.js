@@ -193,4 +193,11 @@ document.addEventListener("DOMContentLoaded", function() {
           .forEach(tr => table.appendChild(tr) );
   })));
 
+  // Tables with hidden rows
+  document.querySelectorAll('input.togglehidetablerows').forEach(input => input.addEventListener('change', (() => {
+    const table = input.closest('table');
+    Array.from(table.querySelectorAll('tr.togglehide'))
+      .forEach(tr => tr.style.display = input.checked ? '' : 'none');
+  })));
+
 });
