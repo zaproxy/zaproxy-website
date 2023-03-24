@@ -1,6 +1,6 @@
 ---
 type: page
-title: Sponsor
+title: Become a Sponsor
 description: How to support ongoing ZAP development
 ---
 

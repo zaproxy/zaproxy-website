@@ -35,3 +35,32 @@
 - item: Release 2.13
   status: 🗓 Not started
   year: 2023
+
+- item: Networking overhaul
+  status: 🎉 Finished
+  url: https://www.zaproxy.org/blog/2022-02-10-new-zap-networking-layer/
+  year: 2022
+  archive: true
+- item: Migrate manual request editor out of core
+  status: 🎉 Finished
+  year: 2022
+  archive: true
+- item: Migrate Spider out of core
+  status: 🎉 Finished
+  url: https://www.zaproxy.org/blog/2022-08-30-spider-move/
+  year: 2022
+  archive: true
+- item: Update minimum Java version to 11
+  status: 🎉 Finished
+  year: 2022
+  archive: true
+- item: Add permanent DB support
+  status: 🎉 Finished
+  url: https://github.com/zaproxy/zap-extensions/pull/3699
+  year: 2022
+  archive: true
+- item: Release 2.12
+  status: 🎉 Finished
+  url: /blog/2022-10-27-zap-2-12-0-the-ten-thousand-star-release/
+  year: 2022
+  archive: true
