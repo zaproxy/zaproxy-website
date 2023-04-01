@@ -38,10 +38,7 @@ main {
     }
 }
 .post-content {
-
- 
-    
-    img {
+    img:not(.supporter-logo) {
         box-shadow: 0px 1px 3px #aaa;
     }
 }

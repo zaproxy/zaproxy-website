@@ -9,3 +9,5 @@ site/data/webpack.json
 
 # Build folders
 build-*
+
+site/.hugo_build.lock
