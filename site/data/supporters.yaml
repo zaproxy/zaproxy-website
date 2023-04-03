@@ -73,17 +73,14 @@ bronzeV1:
 
   - name: 'Denim Group'
     link: https://www.denimgroup.com/
-    logo: /img/supporters/denimgroup.png
     notes: $3,000 in donations
 
   - name: 'HostedScan'
     link: https://hostedscan.com/
-    logo: /img/supporters/hostedscan.png
     notes: $1,500 donation
 
   - name: 'HiSolution AG'
     link: https://www.hisolutions.com/
-    logo: /img/supporters/hisolutions.png
     notes: $1,000 donation
 
   - name: 'StackHawk'
