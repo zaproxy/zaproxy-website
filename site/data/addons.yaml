@@ -304,9 +304,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/eval-villain/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/evalvillain-v0.1.1/evalvillain-alpha-0.1.1.zap
-  date: 2022-02-15
-  version: 0.1.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/evalvillain-v0.2.0/evalvillain-alpha-0.2.0.zap
+  date: 2023-04-04
+  version: 0.2.0
 - id: exim
   name: Import/Export
   description: Import and Export functionality
@@ -314,9 +314,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.4.0/exim-beta-0.4.0.zap
-  date: 2023-02-09
-  version: 0.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.5.0/exim-beta-0.5.0.zap
+  date: 2023-04-04
+  version: 0.5.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -336,9 +336,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/form-handler/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.1.0/formhandler-beta-6.1.0.zap
-  date: 2022-10-27
-  version: 6.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.2.0/formhandler-beta-6.2.0.zap
+  date: 2023-04-04
+  version: 6.2.0
 - id: fuzz
   name: Fuzzer
   description: Advanced fuzzer for manual testing
@@ -397,9 +397,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.13.0/graphql-alpha-0.13.0.zap
-  date: 2023-02-09
-  version: 0.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.14.0/graphql-alpha-0.14.0.zap
+  date: 2023-04-04
+  version: 0.14.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -658,9 +658,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.6.0/network-beta-0.6.0.zap
-  date: 2023-01-03
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.7.0/network-beta-0.7.0.zap
+  date: 2023-04-04
+  version: 0.7.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -690,9 +690,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v32/openapi-beta-32.zap
-  date: 2023-02-09
-  version: 32
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v33/openapi-beta-33.zap
+  date: 2023-04-04
+  version: 33
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -752,9 +752,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v46/pscanrules-release-46.zap
-  date: 2023-03-03
-  version: 46
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v47/pscanrules-release-47.zap
+  date: 2023-04-04
+  version: 47
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -822,9 +822,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.19.0/reports-release-0.19.0.zap
-  date: 2023-02-09
-  version: 0.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.20.0/reports-release-0.20.0.zap
+  date: 2023-04-04
+  version: 0.20.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
@@ -852,9 +852,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.20.0/retire-release-0.20.0.zap
-  date: 2023-03-03
-  version: 0.20.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.21.0/retire-release-0.21.0.zap
+  date: 2023-04-04
+  version: 0.21.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -1024,9 +1024,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.19.0/wappalyzer-release-21.19.0.zap
-  date: 2023-03-03
-  version: 21.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.20.0/wappalyzer-release-21.20.0.zap
+  date: 2023-04-04
+  version: 21.20.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
@@ -1034,9 +1034,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v52/webdriverlinux-release-52.zap
-  date: 2023-03-09
-  version: 52
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v53/webdriverlinux-release-53.zap
+  date: 2023-04-04
+  version: 53
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1044,9 +1044,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v52/webdrivermacos-release-52.zap
-  date: 2023-03-09
-  version: 52
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v53/webdrivermacos-release-53.zap
+  date: 2023-04-04
+  version: 53
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1054,9 +1054,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v51/webdriverwindows-release-51.zap
-  date: 2023-03-09
-  version: 51
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v52/webdriverwindows-release-52.zap
+  date: 2023-04-04
+  version: 52
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.

@@ -36,6 +36,7 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                                                                                 <param></param>
                                                                                 <attack></attack>
                                                                                 <evidence></evidence>
+                                                                                <otherinfo></otherinfo>
                                                                                 <requestheader>GET http://localhost:8080/bodgeit/js HTTP/1.1
         Host: localhost:8080
         User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0
@@ -68,6 +69,7 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                                                                                 <param></param>
                                                                                 <attack></attack>
                                                                                 <evidence></evidence>
+                                                                                <otherinfo></otherinfo>
                                                                                 <requestheader>GET http://localhost:8080/bodgeit/js/util.js HTTP/1.1
         Host: localhost:8080
         User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:105.0) Gecko/20100101 Firefox/105.0

@@ -40,7 +40,7 @@ The option SSLv2Hello must be selected in conjunction with at least one SSL/TLS 
 #### ALPN
 
 Allows to enable and select the application protocols negotiated during a TLS handshake (ALPN extension).   
-**Note:** The connection is closed if the client establishing the connection does not support ALPN or any of the selected protocols.
+**Note:** The protocol falls back to HTTP/1.1 if the client establishing the connection does not support ALPN or any of the selected protocols.
 
 #### Mode
 

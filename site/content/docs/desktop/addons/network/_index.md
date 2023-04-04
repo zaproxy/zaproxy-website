@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: network
-    version: 0.6.0
+    version: 0.7.0
 ---
 
 # Network Add-on
