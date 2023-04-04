@@ -37,6 +37,7 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                                     <param></param>
                                     <attack></attack>
                                     <evidence><form id="advanced" name="advanced" method="POST" onsubmit="return validateForm(this);false;"></evidence>
+                                    <otherinfo></otherinfo>
                                 </instance>
 
                                 <instance>
@@ -45,6 +46,7 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                                     <param></param>
                                     <attack></attack>
                                     <evidence><form id="query" name="advanced" method="POST"></evidence>
+                                    <otherinfo></otherinfo>
                                 </instance>
 
                                 <instance>
@@ -53,6 +55,7 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                                     <param></param>
                                     <attack></attack>
                                     <evidence><form action="basket.jsp" method="post"></evidence>
+                                    <otherinfo></otherinfo>
                                 </instance>
 
 

@@ -52,7 +52,7 @@ Default: All protocols supported.
 
 ### Enable unsafe SSL/TLS renegotiation
 
-Allows unsafe SSL/TLS renegotiations ([CVE-2009-3555](https://www.cve.org/CVERecord?id=CVE-2009-3555)) for compatibility with older servers.  
+Allows unsafe SSL/TLS renegotiations ([CVE-2009-3555](https://nvd.nist.gov/vuln/detail/CVE-2009-3555)) for compatibility with older servers.  
 **Note:** The option must be set before establishing any HTTPS connection, a ZAP restart might be required.   
 Default: `unselected`.
 

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: formhandler
-    version: 6.1.0
+    version: 6.2.0
 ---
 
 # Form Handler
@@ -15,10 +15,10 @@ This Form Handler extension allows for the custom configuration of values used i
 
 ## Description
 
-With this add-on the user can create new fields for each individual field that they wish to set the
-value of. Additionally, the user can modify any existing field's name and value to fit the field that
+With this add-on the user can create new fields for fields that they wish to set the
+value of. Additionally, the user can modify any existing field's name and value to fit the fields that
 they are trying to set. Any field can also be disabled or removed by the user so that the custom values
-are not used. Field names, values and enabled status will be stored even after a ZAP session has
+are not used. Field names, values, enabled, and regex status will be stored even after a ZAP session has
 concluded.
 
 The add-on provides a set of default field names that may be found on a form and a corresponding
@@ -39,10 +39,11 @@ for the user to provide field information.
 
 Please take note of the following when adding a new field:
 
-* A field name must be provided.
-* The field name cannot already exist in the table or a warning error will occur.
+* A field name or regex pattern must be provided.
+* The field name cannot already exist in the table or a warning will occur.
 * The field name supplied to the Form Handler must match the field ID on the form that you wish to define.
-* The field name is not case sensitive.
+* The field name is not case sensitive, unless using regex.
+* Simple name matches will be attempted before regex matches.
 * A value does not have to be provided. This will result in an empty string being used.
 * The value field is case sensitive, and will be seen in the POST.
 
@@ -70,3 +71,16 @@ the form.
 
 Any field that is not defined in the form handler add-on will use a ZAP default value that is generated to match
 each field type.(For example: A text field will have the value "ZAP")
+
+## Statistics
+
+A number of statistics are exposed via the add-on for add, modify, and remove operations.  
+In the following examples `{name}` will be the actual name of the Form Handler field.
+
+* stats.formhandler.add
+* stats.formhandler.add.{name}
+* stats.formhandler.modify
+* stats.formhandler.modify.{name}
+* stats.formhandler.remove
+* stats.formhandler.remove.{name}
+

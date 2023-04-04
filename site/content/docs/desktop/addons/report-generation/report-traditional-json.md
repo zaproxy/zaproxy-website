@@ -38,14 +38,16 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                             "method": "GET",
                             "param": "q",
                             "attack": "</font><scrIpt>alert(1);</scRipt><font>",
-                            "evidence": "</font><scrIpt>alert(1);</scRipt><font>"
+                            "evidence": "</font><scrIpt>alert(1);</scRipt><font>",
+                            "otherinfo": ""
                         },
                         {
                             "uri": "http://localhost:8080/bodgeit/contact.jsp",
                             "method": "POST",
                             "param": "comments",
                             "attack": "</td><scrIpt>alert(1);</scRipt><td>",
-                            "evidence": "</td><scrIpt>alert(1);</scRipt><td>"
+                            "evidence": "</td><scrIpt>alert(1);</scRipt><td>",
+                            "otherinfo": ""
                         }
                     ],                   
                     "count": "2", 

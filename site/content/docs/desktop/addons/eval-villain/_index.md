@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: evalvillain
-    version: 0.1.1
+    version: 0.2.0
 ---
 
 # Eval Villain
