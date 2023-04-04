@@ -13,10 +13,13 @@ But what can you do if ZAP fails to launch your browser?
 
 ### Check for Updates
 
-The first thing to do is to 'Check for Updates' and install any add-ons which are out of date, 
-in particular the webdriver and [Selenium](/docs/desktop/addons/selenium/) ones.
-Browsers are updated very frequently and the updates often require corresponding changes to the webdrivers.
-If you dont have the right webdrivers then ZAP will not be able to launch the browsers.
+In ZAP:
+- The first thing to do is to 'Check for Updates' in ZAP and install any add-ons which are out of date,
+in particular, the webdriver and [Selenium](/docs/desktop/addons/selenium/) ones.
+
+In your local browser:
+- Browsers are updated very frequently, and the updates often require corresponding changes to the webdrivers.
+If you don’t have the right webdrivers then ZAP will not be able to launch the browsers. **ZAP ties to your local browser**, so even though it launches its own instance of web browsers, check you have the latest version installed locally.
 
 If you are on Windows then you may also need to restart ZAP. 
 Windows will refuse to allow ZAP to copy the webdrivers to the correct location if they are currently being used.
