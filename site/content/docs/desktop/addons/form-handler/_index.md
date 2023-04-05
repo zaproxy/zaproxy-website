@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: formhandler
-    version: 6.2.0
+    version: 6.2.1
 ---
 
 # Form Handler
