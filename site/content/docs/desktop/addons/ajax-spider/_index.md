@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: spiderAjax
-    version: 23.13.0
+    version: 23.13.1
 ---
 
 # AJAX Spider
