@@ -1034,9 +1034,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v53/webdriverlinux-release-53.zap
-  date: 2023-04-04
-  version: 53
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v54/webdriverlinux-release-54.zap
+  date: 2023-04-06
+  version: 54
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1044,9 +1044,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v53/webdrivermacos-release-53.zap
-  date: 2023-04-04
-  version: 53
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v54/webdrivermacos-release-54.zap
+  date: 2023-04-06
+  version: 54
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1054,9 +1054,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v52/webdriverwindows-release-52.zap
-  date: 2023-04-04
-  version: 52
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v53/webdriverwindows-release-53.zap
+  date: 2023-04-06
+  version: 53
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
