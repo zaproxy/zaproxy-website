@@ -1,6 +1,14 @@
 ---
+- id: 10096
+  name: "Timestamp Disclosure"
+  status: "release"
+  type: "Passive"
 - id: 10027
   name: "Information Disclosure - Suspicious Comments"
+  status: "release"
+  type: "Passive"
+- id: 10010
+  name: "Cookie No HttpOnly Flag"
   status: "release"
   type: "Passive"
 - id: 10098
@@ -11,8 +19,12 @@
   name: "X-Content-Type-Options Header Missing"
   status: "release"
   type: "Passive"
-- id: 10055
-  name: "CSP"
+- id: 10104
+  name: "User Agent Fuzzer"
+  status: "release"
+  type: "Active"
+- id: 10202
+  name: "Absence of Anti-CSRF Tokens"
   status: "release"
   type: "Passive"
 - id: 90033
@@ -23,59 +35,47 @@
   name: "Session ID in URL Rewrite"
   status: "release"
   type: "Passive"
-- id: 10202
-  name: "Absence of Anti-CSRF Tokens"
+- id: 10015
+  name: "Re-examine Cache-control Directives"
   status: "release"
   type: "Passive"
 - id: 10050
   name: "Retrieved from Cache"
   status: "release"
   type: "Passive"
+- id: 10055
+  name: "CSP"
+  status: "release"
+  type: "Passive"
+- id: 20012
+  name: "Anti-CSRF Tokens Check"
+  status: "beta"
+  type: "Active"
 - id: 10095
   name: "Backup File Disclosure"
   status: "beta"
   type: "Active"
-- id: 10015
-  name: "Re-examine Cache-control Directives"
-  status: "release"
-  type: "Passive"
-- id: 10096
-  name: "Timestamp Disclosure"
-  status: "release"
-  type: "Passive"
-- id: 10017
-  name: "Cross-Domain JavaScript Source File Inclusion"
-  status: "release"
-  type: "Passive"
-- id: 10020
-  name: "Anti-clickjacking Header"
-  status: "release"
-  type: "Passive"
 - id: 10063
   name: "Permissions Policy Header Not Set"
   status: "beta"
   type: "Passive"
-- id: 10054
-  name: "Cookie without SameSite Attribute"
-  status: "release"
-  type: "Passive"
-- id: 10110
-  name: "Dangerous JS Functions"
-  status: "beta"
-  type: "Passive"
-- id: 90022
-  name: "Application Error Disclosure"
-  status: "release"
-  type: "Passive"
-- id: 10036
-  name: "HTTP Server Response Header"
+- id: 10020
+  name: "Anti-clickjacking Header"
   status: "release"
   type: "Passive"
 - id: 10038
   name: "Content Security Policy (CSP) Header Not Set"
   status: "release"
   type: "Passive"
-- id: 10104
-  name: "User Agent Fuzzer"
+- id: 10062
+  name: "PII Disclosure"
   status: "release"
-  type: "Active"
+  type: "Passive"
+- id: 10044
+  name: "Big Redirect Detected (Potential Sensitive Information Leak)"
+  status: "release"
+  type: "Passive"
+- id: 10035
+  name: "Strict-Transport-Security Header"
+  status: "release"
+  type: "Passive"
