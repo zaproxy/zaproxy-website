@@ -234,6 +234,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.1.0/database-alpha-0.1.0.zap
   date: 2022-10-27
   version: 0.1.0
+- id: dev
+  name: Dev Add-on
+  description: An add-on to help with development of ZAP.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/dev-add-on/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.0.1/dev-alpha-0.0.1.zap
+  date: 2023-04-19
+  version: 0.0.1
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
