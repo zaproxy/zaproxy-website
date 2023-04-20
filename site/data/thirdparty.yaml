@@ -1,6 +1,7 @@
 ---
 
-services:
+services_plus:
+  # ZAP Supporters or open source :)
   # ZAP Supporters - ordered by supporter level, alphabetic
   - name: 'Jit'
     link: https://www.jit.io/zap?utm_source=zapproxy&utm_medium=banner&utm_campaign=zap-proxy-website-banner
@@ -88,6 +89,24 @@ services:
     link: https://www.alertflex.org/
     license: 'Commercial, free community edition, open source'
 
+  # Open source, no longer maintained?, alphabetic
+  - name: 'BDD Security'
+    link: https://github.com/iriusrisk/bdd-security
+    license: 'Free, open source'
+    notes: No longer maintained?
+
+  - name: 'Microsoft RAFT'
+    link: https://github.com/microsoft/rest-api-fuzz-testing
+    license: 'Free, open source'
+    notes: No longer maintained
+
+  - name: 'Seccubus'
+    link: https://github.com/seccubus/seccubus
+    license: 'Free, open source'
+    notes: No longer maintained?
+
+services_minus:
+  # Closed source services which have never supported ZAP
   # Commercial, free option tools, alphabetic
   - name: 'Cyber Tzar'
     link: https://www.cybertzar.com/
@@ -126,6 +145,10 @@ services:
     link: https://docs.gitlab.com/ee/user/application_security/dast/
     license: 'Commercial'
 
+  - name: 'Forward Security'
+    link: https://forwardsecurity.com/eureka-devsecops-service/
+    license: 'Commercial'
+
   - name: 'NamicSoft'
     link: https://www.namicsoft.com/
     license: 'Commercial'
@@ -141,22 +164,6 @@ services:
   - name: 'Traceable'
     link: https://docs.traceable.ai/docs/security-testing
     license: 'Commercial'
-
-  # Open source, no longer maintained?, alphabetic
-  - name: 'BDD Security'
-    link: https://github.com/iriusrisk/bdd-security
-    license: 'Free, open source'
-    notes: No longer maintained?
-
-  - name: 'Microsoft RAFT'
-    link: https://github.com/microsoft/rest-api-fuzz-testing
-    license: 'Free, open source'
-    notes: No longer maintained
-
-  - name: 'Seccubus'
-    link: https://github.com/seccubus/seccubus
-    license: 'Free, open source'
-    notes: No longer maintained?
 
 integrations:
   - name: 'ThreadFix'
@@ -199,6 +206,10 @@ integrations:
  
   - name: 'Kondukto'
     link: https://kondukto.io/integrations
+    license: 'Commercial'
+ 
+  - name: 'PlexTrac'
+    link: https://plextrac.com/platform/integrations/
     license: 'Commercial'
  
   - name: 'Sn1per Pro'

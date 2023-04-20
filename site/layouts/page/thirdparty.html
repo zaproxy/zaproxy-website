@@ -13,11 +13,11 @@
 <h5>{{ .Params.description }}</h5>
 <h5>{{ .Params.warning }}</h5>
 
-<h2>Services</h2>
-<div>{{ .Params.desc_services }}</div>
+<h2>Services (supportive)</h2>
+<p>{{ .Params.desc_services_plus }}</p>
 
 <table class="table table-fixed">
-{{ range $service := $.Site.Data.thirdparty.services }}
+{{ range $service := $.Site.Data.thirdparty.services_plus }}
   <tr>
   <td class="cell-35"><a href="{{ $service.link }}">{{ if $service.logo }}<img src="{{ $service.logo }}"/>{{ else }}{{ $service.name }}{{ end }}</a></td>
   <td class="cell-35">{{ $service.license }}</td>
@@ -28,7 +28,7 @@
 <br/><br/>
 
 <h2>Integrations</h2>
-<div>{{ .Params.desc_integrations }}</div>
+<p>{{ .Params.desc_integrations }}</p>
 <table class="table table-fixed">
 {{ range $integration := $.Site.Data.thirdparty.integrations }}
   <tr>
@@ -41,7 +41,7 @@
 <br/><br/>
 
 <h2>Training</h2>
-<div>{{ .Params.desc_training }}</div>
+<p>{{ .Params.desc_training }}</p>
 <table class="table table-fixed">
 {{ range $training := $.Site.Data.thirdparty.training }}
   <tr>
@@ -54,13 +54,27 @@
 <br/><br/>
 
 <h2>Books</h2>
-<div>{{ .Params.desc_books }}</div>
+<p>{{ .Params.desc_books }}</p>
 <table class="table table-fixed">
 {{ range $book := $.Site.Data.thirdparty.books }}
   <tr>
   <td class="cell-35">{{ if $book.logo }}<img src="{{ $book.logo }}" width="50%" height="50%"/>{{ else }}{{ $book.name }}{{ end }}</td>
   <td class="cell-35"><a href="{{ $book.link }}">{{ $book.what }}</a></td>
   <td class="cell-30"><a href="/supporters/"><h5>{{ $book.supporter }}</h5></a></td>
+  </tr>
+{{ end }}
+</table>
+<br/><br/>
+
+<h2>Services (unsupportive)</h2>
+<p>{{ .Params.desc_services_minus }}</p>
+
+<table class="table table-fixed">
+{{ range $service := $.Site.Data.thirdparty.services_minus }}
+  <tr>
+  <td class="cell-35"><a href="{{ $service.link }}">{{ $service.name }}</a></td>
+  <td class="cell-35">{{ $service.license }}</td>
+  <td class="cell-30">{{ if $service.notes }}{{ $service.notes }}{{ end }}</td>
   </tr>
 {{ end }}
 </table>
