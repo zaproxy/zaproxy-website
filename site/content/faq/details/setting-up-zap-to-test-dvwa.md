@@ -53,6 +53,9 @@ function sendAndReceive(helper, url, postData) {
     var requestUri = new org.apache.commons.httpclient.URI(url, true);
     var requestHeader = new org.parosproxy.paros.network.HttpRequestHeader(method, requestUri, "HTTP/1.0");
     msg.setRequestHeader(requestHeader);
+    if (postData) {
+        msg.getRequestHeader().setContentLength(msg.getRequestBody().length());
+    }
 
     helper.sendAndReceive(msg);
 
