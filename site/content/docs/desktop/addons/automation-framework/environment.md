@@ -66,7 +66,9 @@ env:                                   # The environment, mandatory
     progressToStdout: true             # If set will write job progress to stdout
 ```
 
-System environment variables can also be used in the config in the same manner as above. In case there are two variables with the same name, the value of the system variable would be preferred.
+### Variables
+
+Variables can be defined in the 'vars' section. They can be hardcoded, refer to other variables or refer to system environment variables in the same way as above, e.g. '${envvar}'. In case there are two variables with the same name, the value of the system variable would be preferred.
 
 ### Format Changes
 
