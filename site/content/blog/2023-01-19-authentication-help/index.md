@@ -93,13 +93,13 @@ In addition to that, if the request is in a context which is set to “Manual Au
 
 ### What is Coming Next?
 
-The following changes are planned:
+The following changes ~~are planned~~ have been implemented - see [Authentication Auto-Detection](/blog/2023-05-02-authentication-auto-detection/) for more details:
 
 * ~~Header based session handling~~ - added in [Authentication Helper v0.2.0](https://github.com/zaproxy/zap-extensions/releases/tag/authhelper-v0.2.0).
-* Session handling detection - automatically detecting common session management methods.
-* Session handling configuration - automatically configuring ZAP to handle session management in a similar way to the authentication handling above.
-* Verification detection - reporting a set of URLs that appear to be suitable for authentication verification.
-* Verification configuration - automatically configuring ZAP to handle authentication verification.
+* ~~Session handling detection~~ - added in [Authentication Helper v0.4.0](https://github.com/zaproxy/zap-extensions/releases/tag/authhelper-v0.4.0).
+* ~~Session handling configuration~~ - added in [Authentication Helper v0.4.0](https://github.com/zaproxy/zap-extensions/releases/tag/authhelper-v0.4.0).
+* ~~Verification detection~~ - added in [Authentication Helper v0.4.0](https://github.com/zaproxy/zap-extensions/releases/tag/authhelper-v0.4.0).
+* ~~Verification configuration~~ - added in [Authentication Helper v0.4.0](https://github.com/zaproxy/zap-extensions/releases/tag/authhelper-v0.4.0).
 
 These changes will hopefully allow ZAP to automatically configure itself to handle a range of common authentication and session management strategies.
 

@@ -58,3 +58,7 @@ Unfortunately authentication is hard, especially as there are so many different 
 
 These pages will tell you everything you need to know about testing an app with valid credentials in ZAP,
 they do not cover testing the authentication mechanism itself.
+
+For the latest enhancements to ZAP to make authentication easier see:
+
+* Blog: [Authentication Auto-Detection](/blog/2023-05-02-authentication-auto-detection/)

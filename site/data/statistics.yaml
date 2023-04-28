@@ -226,6 +226,20 @@
   code: main/zap/src/main/java/org/parosproxy/paros/core/scanner/PluginStats.java
   desc: The number of URLs that the given active scan rule has requested - from 2.11.0
 
+- key: stats.auth.browser.nouserfield
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthUtils.java
+  desc: The number of times Browser Based Authentication failed to find a username field
+
+- key: stats.auth.browser.nopasswordfield
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthUtils.java
+  desc: The number of times Browser Based Authentication failed to find a password field
+
 - key: stats.auth.configure.auth.form
   scope: global
   type: counter
@@ -246,6 +260,20 @@
   repo: zaproxy/zap-extensions
   code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java
   desc: The number of errors when automatically configuring context authentication
+
+- key: stats.auth.configure.session.header
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/SessionDetectionScanRule.java
+  desc: The number of contexts automatically configured header based session management
+
+- key: stats.auth.configure.verification
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/VerificationDetectionProcessor.java
+  desc: The number of contexts automatically configured for verification
 
 - key: stats.auth.detect.auth.form
   scope: global
@@ -268,12 +296,33 @@
   code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthenticationDetectionScanRule.java
   desc: The number of registration requests identified
 
+- key: stats.auth.detect.session.<token-key>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/SessionDetectionScanRule.java
+  desc: The number of times a session has been detected with the token-key
+
 - key: stats.auth.failure
   scope: site
   type: counter
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/zaproxy/zap/authentication/AuthenticationHelper.java
   desc: The number of authentication failures
+
+- key: stats.auth.session.set.header
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/HeaderBasedSessionManagementMethodType.java
+  desc: The number of times a message has been processed to add an authentication header
+
+- key: stats.auth.sessiontoken.<session-token>
+  scope: site
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/AuthUtils.java
+  desc: The number of times the specified session token has been identified 
 
 - key: stats.auth.state.assumedin
   scope: site
