@@ -11,10 +11,11 @@ This [add-on](/docs/desktop/addons/authentication-helper/) includes a passive sc
 It identifies authentication requests by the presence of commonly used username and password field names. It also uses commonly used URL segments to identify more likely authentication requests, and uses commonly used registration URL segments to ignore registration requests.
 
 The rule will not attempt to identify very unusual authentication requests - automation is one of the end goals so false negatives
-(missing unusual authentication requests) is more desirable than false positives (incorrectly identifying an authentication request).
+(missing unusual authentication requests) are more desirable than false positives (incorrectly identifying an authentication request).
 
-If this rule identifies an authentication request that is part of the context you have defined then an informational alert will be raised and the
-authentication method should be correctly set in the context you have created.  
+If this rule identifies an authentication request that is part of the context that you have set to use the
+[Auto-Detect Authentication Method](/docs/desktop/addons/authentication-helper/autodetect-auth/) then this rule will update the context to use the authentication method identified.
+
 If an authentication request is not identified then check to make sure it is made to a site which is included in the context.  
 If it is not then add the site to the context and authenticate again via your browser.
 
