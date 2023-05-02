@@ -16,7 +16,7 @@ Due to the way the ZAP core works it is not currently possible to add a new Veri
 Instead you will need to:
 
 * Set the Session Management Method to [Auto-Detect Session Management Method](/docs/desktop/addons/authentication-helper/autodetect-session/)
-* Set the Verification Strategy to "Poll every Request or Response"
+* Set the Verification Strategy to "Poll the Specified URL"
 * Not specify a URL to poll
 
 The rule works by identifying requests that behave differently when a valid session management token is supplied, but also behave consistently when a token is supplied and when one is not supplied.
