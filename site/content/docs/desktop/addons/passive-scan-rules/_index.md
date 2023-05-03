@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 47.0.0
+    version: 48.0.0
 ---
 
 # Passive Scan Rules
@@ -17,6 +17,7 @@ cascade:
 
 You can specify a comma separated list of URL regex patterns using the `rules.domains.trusted` parameter via the Options 'Rule configuration' panel. Any link URL that matches one of these patterns will be considered to be in a trusted domain and will therefore not be reported. Following rules supports **Trusted Domains** :
 
+* Cross Domain Script Inclusion
 * Reverse Tabnabbing
 
 *** ** * ** ***
@@ -43,7 +44,7 @@ Latest code: [AntiClickjackingScanRule.java](https://github.com/zaproxy/zap-exte
 
 Check server responses for HTTP 500 - Internal Server Error type responses or those that contain a known error string.   
 **Note:** Matches made within script blocks or files are against the entire content not only comments.  
-At HIGH Threshold don’t alert on HTTP 500 (but do for other error patterns).  
+At HIGH Threshold don’t alert on HTTP 500 (but do for other error patterns). Also, such known error strings are much less likely to be relevant in static pages like JS / CSS so these files are only scanned at LOW threshold.  
 For Internal Server Error (HTTP 500) the Alert is set to Low risk and in other case it is set to Medium risk.
 
 **Note:** If the Custom Payloads addon is installed you can add your own Application Error strings (payloads) in the Custom Payloads options panel.
@@ -150,6 +151,7 @@ Allowed Cross-Domain scripts:
 
 * Any script with a non-empty "integrity" attribute is ignored - the integrity value is not checked as this will be checked by the browser
 * At MEDIUM and HIGH thresholds if a script URL falls within a context that also includes the URL of the base message no alerts will be raised.
+* This rule supports **Trusted Domains**, check "General Configuration" for more information.
 
 Latest code: [CrossDomainScriptInclusionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CrossDomainScriptInclusionScanRule.java)
 

@@ -33,8 +33,9 @@ The *graphql* job allows you to import GraphQL schemas locally or from a URL. It
 
 ## See also
 
-|   |                                                                  |                                                |
-|---|------------------------------------------------------------------|------------------------------------------------|
-|   | [GraphQL](/docs/desktop/addons/graphql-support/)                 | for an overview of the GraphQL add-on.         |
-|   | [GraphQL Options](/docs/desktop/addons/graphql-support/options/) | for information about the optional parameters. |
-|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/)   | for information about the bundled script.      |
+|   |                                                                  |                                                    |
+|---|------------------------------------------------------------------|----------------------------------------------------|
+|   | [GraphQL](/docs/desktop/addons/graphql-support/)                 | for an overview of the GraphQL add-on.             |
+|   | [GraphQL Options](/docs/desktop/addons/graphql-support/options/) | for information about the optional parameters.     |
+|   | [GraphQL Variant](/docs/desktop/addons/graphql-support/variant/) | for information about the GraphQL variant.         |
+|   | [GraphQL Alerts](/docs/desktop/addons/graphql-support/alerts/)   | for information about alerts raised by the add-on. |

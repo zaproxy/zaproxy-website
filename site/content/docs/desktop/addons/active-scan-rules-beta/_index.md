@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 45.0.0
+    version: 46.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -86,7 +86,7 @@ Latest code: [HttpParameterPollutionScanRule.java](https://github.com/zaproxy/za
 
 ## Insecure HTTP Method
 
-Detects (and exploits, depending on the scan settings) known insecure HTTP methods enabled for the URL.
+Detects (and exploits, depending on the scan settings) known insecure HTTP methods enabled for the URL. It considers PUT/PATCH as insecure methods by default, but allows them if they return structured data like JSON or XML in response.
 
 Latest code: [InsecureHttpMethodScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/InsecureHttpMethodScanRule.java)
 
