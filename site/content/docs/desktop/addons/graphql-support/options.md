@@ -58,5 +58,6 @@ The requests made to the endpoint can be of the following types:
 |   |                                                                        |                                                         |
 |---|------------------------------------------------------------------------|---------------------------------------------------------|
 |   | [GraphQL](/docs/desktop/addons/graphql-support/)                       | for an overview of the GraphQL add-on.                  |
-|   | [GraphQL Script](/docs/desktop/addons/graphql-support/script/)         | for information about the bundled script.               |
+|   | [GraphQL Variant](/docs/desktop/addons/graphql-support/variant/)       | for information about the GraphQL variant.              |
 |   | [GraphQL Automation](/docs/desktop/addons/graphql-support/automation/) | for information about the automation framework support. |
+|   | [GraphQL Alerts](/docs/desktop/addons/graphql-support/alerts/)         | for information about alerts raised by the add-on.      |
