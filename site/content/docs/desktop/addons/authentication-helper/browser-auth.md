@@ -11,9 +11,8 @@ This [add-on](/docs/desktop/addons/authentication-helper/) adds a new authentica
 
 It uses the first field with a type of "text" or "email" for the user name and the first field with a type
 of "password" for the password.
-It does not currently support login pages where the password field is only made visible when the username has been entered.
-It also does not support login pages which do not submit when `Return` is used in the password field.
-Support for all such login pages will be added in a future release.
+It does support login pages where the password field is only made visible when the username has been entered.
+It does not support login pages which do not submit when `Return` is used in the password field.
 
 The response containing the session token is identified by choosing the first response following a login which contains any of:
 

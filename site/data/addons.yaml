@@ -88,9 +88,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.5.0/authhelper-alpha-0.5.0.zap
-  date: 2023-05-04
-  version: 0.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.6.0/authhelper-alpha-0.6.0.zap
+  date: 2023-05-09
+  version: 0.6.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -241,9 +241,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/dev-add-on/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.1.0/dev-alpha-0.1.0.zap
-  date: 2023-04-28
-  version: 0.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.2.0/dev-alpha-0.2.0.zap
+  date: 2023-05-09
+  version: 0.2.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
