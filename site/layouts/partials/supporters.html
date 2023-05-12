@@ -3,7 +3,7 @@
     <a href="{{ $supporter.link }}" class="pt-30 px-30 card flex jc-c ai-c fd-c br-def">
         {{ if $supporter.logo }}
         <div class="mb-30">
-            <img class="supporter-logo" src="{{ $supporter.logo }}" style="width:100%;" />
+            <img class="supporter-logo" src="{{ $supporter.logo }}" alt="{{ $supporter.name }} logo" style="width:100%;" />
         </div>
         {{ else }}
         <h3> {{ $supporter.name }} </h3>
