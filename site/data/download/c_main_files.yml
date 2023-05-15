@@ -16,7 +16,7 @@
   id: nix-p
   size: 237 MB
   link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0_Linux.tar.gz
-- name: MacOS Installer
+- name: macOS (amd64) Installer
   id: osx-i
   size: 355 MB
   link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0.dmg
