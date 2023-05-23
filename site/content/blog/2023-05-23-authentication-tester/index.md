@@ -3,7 +3,7 @@ title: "Authentication Tester Dialog"
 summary: >
   There is now a _really_ easy way to check if ZAP can handle your app's authentication.
 images:
-- https://www.zaproxy.org/blog/2023-05-23-authentication-tester/images/blog-auth-dialog-1-test.png
+- https://www.zaproxy.org/blog/2023-05-23-authentication-tester/images/auth-dialog-1-test.png
 type: post
 tags:
 - blog
