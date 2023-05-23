@@ -85,12 +85,12 @@
   name: Authentication Helper
   description: Authentication Helper
   author: ZAP Dev Team
-  status: alpha
+  status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.6.0/authhelper-alpha-0.6.0.zap
-  date: 2023-05-09
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.7.0/authhelper-beta-0.7.0.zap
+  date: 2023-05-23
+  version: 0.7.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
