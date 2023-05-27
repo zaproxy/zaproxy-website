@@ -292,7 +292,7 @@ details:
 - path: /test/javascript/interactive/js-put.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
 - path: /test/javascript/interactive/listener-and-event-attribute-first.found
   scheme: https
   standard: FAIL
@@ -328,7 +328,7 @@ details:
 - path: /test/javascript/interactive/multi-step-request-remove-button.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
 - path: /test/javascript/interactive/multi-step-request-remove-event-listener.found
   scheme: https
   standard: FAIL
@@ -366,8 +366,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 91
-passes: 76
+passes: 74
 standardPasses: 61
-ajaxPasses: 36
-fails: 15
-score: 84%
+ajaxPasses: 34
+fails: 17
+score: 81%
