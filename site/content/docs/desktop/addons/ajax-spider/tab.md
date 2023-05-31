@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: AJAX Spider tab
 type: userguide
-weight: 4
+weight: 5
 ---
 
 # AJAX Spider tab

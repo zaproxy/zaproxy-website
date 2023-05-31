@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: AJAX Spider dialog
 type: userguide
-weight: 2
+weight: 3
 ---
 
 # AJAX Spider dialog
