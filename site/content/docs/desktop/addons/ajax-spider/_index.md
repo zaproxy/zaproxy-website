@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: spiderAjax
-    version: 23.13.1
+    version: 23.14.0
 ---
 
 # AJAX Spider
@@ -34,3 +34,4 @@ This add-on supports the [Automation Framework](/docs/desktop/addons/ajax-spider
 |   | [Options AJAX Spider screen](/docs/desktop/addons/ajax-spider/options/) | for an overview of the AJAX Spider Options |
 |   | [AJAX Spider tab](/docs/desktop/addons/ajax-spider/tab/)                | for an overview of the AJAX Spider Tab     |
 |   | [AJAX Spider dialog](/docs/desktop/addons/ajax-spider/scandialog/)      | for an overview of the AJAX Spider Dialog  |
+|   | [AJAX Spider Context](/docs/desktop/addons/ajax-spider/context/)        | for the Context related configurations     |
