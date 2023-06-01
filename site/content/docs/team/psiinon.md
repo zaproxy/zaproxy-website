@@ -21,9 +21,9 @@ Simon has worked on nearly every part of the ZAP code base.
 
 He is currently focusing on:
 
+* Handling modern web apps more effectively
 * [Automation Framework](/docs/automate/automation-framework/)
 * [Test Scans](/docs/scans/)
-* Handling modern web apps more effectively
 
 #### Talks and Videos
 
