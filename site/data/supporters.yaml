@@ -58,6 +58,11 @@ bronzeV2:
     logo: /img/supporters/tenebris.png
     notes: Sponsoring Rick
 
+  - name: 'NightVision'
+    link: https://nightvision.net/
+    logo: /img/supporters/nightvision.png
+    notes: Sponsored thc202
+
 bronzeV1:
   - name: 'Segment'
     link: https://segment.com/
