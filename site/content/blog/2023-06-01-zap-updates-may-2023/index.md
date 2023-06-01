@@ -43,7 +43,7 @@ The HUD is no longer under active development.
 The HUD is a unique and innovative interface that we know some people love. However, it also needs a non trivial amount of maintenance and we don’t have enough volunteers to maintain it.
 If you are interested in becoming a maintainer of the HUD, please [reach out](https://groups.google.com/group/zaproxy-hud)!
 
-Read the full announcement [here](https://github.com/zaproxy/zap-hud).
+Read the full announcement [here](https://github.com/zaproxy/zap-hud#the-hud-is-no-longer-under-active-development).
 
 ## Other Significant Changes
 
@@ -63,7 +63,7 @@ The AMF add-on is being retired. Dependencies of the add-on are no longer reliab
 Zest has been updated to use the latest version. Other add-ons will be updated soon.
 
 ### Improved Modern Web App Handling Support
-{{< callout-lavender >}} This feature was sponsored by [**Jit**](https://www.jit.io/zap?utm_source=zapproxy&utm_medium=banner&utm_campaign=zap-proxy-website-banner). {{< /callout-lavender >}}
+{{< callout-lavender >}} This feature is sponsored by [**Jit**](https://www.jit.io/zap?utm_source=zapproxy&utm_medium=banner&utm_campaign=zap-proxy-website-banner). {{< /callout-lavender >}}
 
 We're actively working on making it easier for ZAP to test modern web applications.
 
