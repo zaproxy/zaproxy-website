@@ -18,6 +18,7 @@
   url: https://summerofcode.withgoogle.com/programs/2023/projects/OlBxaE5X
   sponsor: Google Summer of Code
   sponsorlink: https://summerofcode.withgoogle.com/
+  year: 2023
 - item: Automation Framework enhancements
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/6461
