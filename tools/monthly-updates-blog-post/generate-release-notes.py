@@ -26,7 +26,7 @@ print()
 count = 0
 
 with open(sys.argv[1], 'r') as f:
-    releases = json.load(f)
+    releases = sorted(json.load(f), key=lambda k: k['name'])
 
     # TODO: Merge releases per add-on
     for release in releases:
