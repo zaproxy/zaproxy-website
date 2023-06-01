@@ -36,6 +36,11 @@
   status: 🗓 Not started
   year: 2023
 
+- item: AJAX Spider Element Exclusion
+  status: 🎉 Finished
+  sponsor: NightVision
+  sponsorlink: https://www.nightvision.net/
+  year: 2023
 - item: Networking overhaul
   status: 🎉 Finished
   url: https://www.zaproxy.org/blog/2022-02-10-new-zap-networking-layer/
