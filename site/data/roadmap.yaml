@@ -1,16 +1,23 @@
 
-- item: Authentication handling improvements
-  status: ⚡ In progress
-  url: /blog/2023-01-19-authentication-help/
-  sponsor: Jit
-  sponsorlink: https://www.jit.io
-  year: 2023
 - item: Update to latest Crawljax
   status: ⚡ In progress
   year: 2023
 - item: Improve modern web app handling
   status: ⚡ In progress
+  sponsor: Jit
+  sponsorlink: https://www.jit.io
   year: 2023
+- item: Browser Recorder
+  status: ⚡ In progress
+  url: https://summerofcode.withgoogle.com/programs/2023/projects/lx6XL1Rd
+  sponsor: Google Summer of Code
+  sponsorlink: https://summerofcode.withgoogle.com/
+  year: 2023
+- item: Import Postman API Definitions into OWASP ZAP 
+  status: ⚡ In progress
+  url: https://summerofcode.withgoogle.com/programs/2023/projects/OlBxaE5X
+  sponsor: Google Summer of Code
+  sponsorlink: https://summerofcode.withgoogle.com/
 - item: Automation Framework enhancements
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/6461
@@ -31,6 +38,10 @@
   status: ♻ Ongoing
   url: /docs/contribute/scan-rules/
   year: n/a
+- item: Continue improving authentication handling
+  status: ♻ Ongoing
+  url: /blog/2023-01-19-authentication-help/
+  year: n/a
 
 - item: Release 2.13
   status: 🗓 Not started
@@ -40,6 +51,12 @@
   status: 🎉 Finished
   sponsor: NightVision
   sponsorlink: https://www.nightvision.net/
+  year: 2023
+- item: Authentication handling improvements
+  status: 🎉 Finished
+  url: /blog/2023-01-19-authentication-help/
+  sponsor: Jit
+  sponsorlink: https://www.jit.io
   year: 2023
 - item: Networking overhaul
   status: 🎉 Finished
