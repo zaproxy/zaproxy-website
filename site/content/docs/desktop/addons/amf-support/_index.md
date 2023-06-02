@@ -9,8 +9,4 @@ cascade:
     version: 3.0.0
 ---
 
-# AMF Support
-
-Adds support for AMF messages.
-
-Displays decoded AMF requests and responses.
+This add-on has been retired.
