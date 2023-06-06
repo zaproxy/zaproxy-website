@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: paramdigger
-    version: 0.1.0
+    version: 0.2.0
 ---
 
 # Parameter Digger
@@ -36,5 +36,6 @@ A basic status panel.
 An API component that adds an action endpoint.
 
 ## Also see:
-- [The Param Digger Add-on GSOC 2022](https://www.zaproxy.org/blog/2022-08-22-the-param-digger-addon/).
-- Latest code: [paramdigger](https://github.com/zaproxy/zap-extensions/tree/main/addOns/paramdigger).
+
+* [The Param Digger Add-on GSOC 2022](/blog/2022-08-22-the-param-digger-addon/).
+* Latest code: [paramdigger](https://github.com/zaproxy/zap-extensions/tree/main/addOns/paramdigger).
