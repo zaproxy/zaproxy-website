@@ -47,9 +47,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v54/ascanrules-release-54.zap
-  date: 2023-05-03
-  version: 54
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v55/ascanrules-release-55.zap
+  date: 2023-06-06
+  version: 55
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -88,9 +88,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.7.0/authhelper-beta-0.7.0.zap
-  date: 2023-05-23
-  version: 0.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.8.0/authhelper-beta-0.8.0.zap
+  date: 2023-06-06
+  version: 0.8.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -108,9 +108,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.28.0/automation-beta-0.28.0.zap
-  date: 2023-05-04
-  version: 0.28.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.29.0/automation-beta-0.29.0.zap
+  date: 2023-06-06
+  version: 0.29.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -139,9 +139,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/forced-browse/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v12/bruteforce-beta-12.zap
-  date: 2022-10-27
-  version: 12
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v13/bruteforce-beta-13.zap
+  date: 2023-06-06
+  version: 13
 - id: bugtracker
   name: Bug Tracker
   description: Bug Tracker extension.
@@ -668,9 +668,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.8.0/network-beta-0.8.0.zap
-  date: 2023-05-03
-  version: 0.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.9.0/network-beta-0.9.0.zap
+  date: 2023-06-06
+  version: 0.9.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -732,9 +732,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/parameter-digger/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/paramdigger-v0.1.0/paramdigger-alpha-0.1.0.zap
-  date: 2022-08-22
-  version: 0.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/paramdigger-v0.2.0/paramdigger-alpha-0.2.0.zap
+  date: 2023-06-06
+  version: 0.2.0
 - id: plugnhack
   name: Plug-n-Hack Configuration
   description: 'Supports the Mozilla Plug-n-Hack standard: https://developer.mozilla.org/en-US/docs/Plug-n-Hack.'
@@ -762,9 +762,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v48/pscanrules-release-48.zap
-  date: 2023-05-03
-  version: 48
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v49/pscanrules-release-49.zap
+  date: 2023-06-06
+  version: 49
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -832,9 +832,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.20.0/reports-release-0.20.0.zap
-  date: 2023-04-04
-  version: 0.20.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.21.0/reports-release-0.21.0.zap
+  date: 2023-06-06
+  version: 0.21.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
@@ -1034,9 +1034,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.21.0/wappalyzer-release-21.21.0.zap
-  date: 2023-05-03
-  version: 21.21.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.22.0/wappalyzer-release-21.22.0.zap
+  date: 2023-06-06
+  version: 21.22.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.

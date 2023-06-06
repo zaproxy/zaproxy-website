@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 48.0.0
+    version: 49.0.0
 ---
 
 # Passive Scan Rules
@@ -243,6 +243,8 @@ Latest code: [InformationDisclosureReferrerScanRule.java](https://github.com/zap
 ## Information Disclosure: Suspicious Comments
 
 Analyzes web content to identify comments which contain potentially sensitive details. Which may lead to further attack or exposure of unintended data.
+
+**Note:** The strings to look for can be extended by using the Custom Payloads addon.
 
 Latest code: [InformationDisclosureSuspiciousCommentsScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/InformationDisclosureSuspiciousCommentsScanRule.java)
 

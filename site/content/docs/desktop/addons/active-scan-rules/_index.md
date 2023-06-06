@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 54.0.0
+    version: 55.0.0
 ---
 
 # Active Scan Rules
