@@ -33,4 +33,7 @@ The report job allows you to generate reports using any of the installed report 
       - low
       - falsepositive
     sections:                          # List: The template sections to include in this report - see the relevant template, default all
+    sites:                             # List: The sites to include in this report, default all
 ```
+
+The sites do not have to be full URLs - any site that contains one of the strings in the sites list is included. The sites list also supports variables.

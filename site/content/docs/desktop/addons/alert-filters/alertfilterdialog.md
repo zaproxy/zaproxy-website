@@ -64,6 +64,11 @@ If specified then this rule will be applied if the evidence exactly matches the 
 If set and a evidence is specified then the evidence will be treated as a regex expression when compared with the evidence of the alert.  
 If it is not set then any specified evidence must exactly match the evidence of the alert.
 
+### Method
+
+An optional method.  
+If specified then this rule will be applied if the method matches (case insensitive) the method of a raised alert.  
+
 ### Enabled
 
 If set then this rule will be applied to all alerts raise against the given context.
