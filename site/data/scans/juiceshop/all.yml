@@ -1,0 +1,88 @@
+# Comment which should cause the file to be updated when regenerated
+section: All URLs
+target: OWASP Juice Shop
+details:
+- path: GET http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css
+  ajax: Pass
+- path: GET http://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js
+  ajax: Pass
+- path: GET http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js
+  ajax: Pass
+- path: GET http://localhost:3000/
+  ajax: Pass
+- path: GET http://localhost:3000/MaterialIcons-Regular.woff2
+  ajax: Pass
+- path: GET http://localhost:3000/api/Challenges/(name)
+  ajax: Pass
+- path: GET http://localhost:3000/api/Quantitys/
+  ajax: Pass
+- path: GET http://localhost:3000/assets/i18n/en.json
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/favicon_js.ico
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/JuiceShop_Logo.png
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/hackingInstructor.png
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/apple_juice.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/apple_pressings.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/artwork2.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/banana_juice.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/carrot_juice.jpeg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/fan_facemask.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/fruit_press.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/green_smoothie.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/lemon_juice.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/melon_bike.jpeg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/permafrost.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/font-mfizz.woff
+  ajax: Pass
+- path: GET http://localhost:3000/main.js
+  ajax: Pass
+- path: GET http://localhost:3000/polyfills.js
+  ajax: Pass
+- path: GET http://localhost:3000/rest/admin/application-configuration
+  ajax: Pass
+- path: GET http://localhost:3000/rest/admin/application-version
+  ajax: Pass
+- path: GET http://localhost:3000/rest/captcha/
+  ajax: Pass
+- path: GET http://localhost:3000/rest/languages
+  ajax: Pass
+- path: GET http://localhost:3000/rest/products/search(q)
+  ajax: Pass
+- path: GET http://localhost:3000/rest/user/whoami
+  ajax: Pass
+- path: GET http://localhost:3000/runtime.js
+  ajax: Pass
+- path: GET http://localhost:3000/socket.io/(EIO,sid,t,transport)
+  ajax: Pass
+- path: GET http://localhost:3000/socket.io/(EIO,sid,transport)
+  ajax: Pass
+- path: GET http://localhost:3000/socket.io/(EIO,t,transport)
+  ajax: Pass
+- path: GET http://localhost:3000/styles.css
+  ajax: Pass
+- path: GET http://localhost:3000/tutorial.js
+  ajax: Pass
+- path: GET http://localhost:3000/vendor.js
+  ajax: Pass
+- path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
+  ajax: Pass
+tests: 40
+passes: 40
+fails: 0
+score: 100%

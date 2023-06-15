@@ -23,8 +23,10 @@
       <td><a href="{{ $test.scheme}}://{{ $data.target}}{{ $test.path}}">{{ $test.path}}</a></td>
       {{ if eq $test.standard "FAIL" }} 
         <td align="center"><div class="scan-result-fail">&#10060; {{ $test.standard}} </div></td>
-      {{ else }}
+      {{ else if eq $test.standard "Pass" }} 
         <td align="center"><div class="scan-result-pass">&#10003; {{ $test.standard}} </div></td>
+      {{ else }}
+        <td align="center"></td>
       {{ end }} 
       {{ if eq $test.ajax "FAIL" }} 
         <td align="center"><div class="scan-result-fail">&#10060; {{ $test.ajax}} </div></td>
