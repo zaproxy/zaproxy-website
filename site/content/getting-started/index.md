@@ -181,7 +181,7 @@ If you would like to use any of your browsers with an existing profile, for exam
 By default the ZAP Heads Up Display (HUD) will be enabled. Unchecking the relevant option on this screen before launching a browser will disable the HUD.
 
 ## The Heads Up Display
-The Heads Up Display (HUD) is a new an innovative interface that provides access to ZAP functionality directly in the browser. It is ideal for people new to web security and also allows experienced penetration testers to focus on an applications functionality while providing key security information and functionality.
+The Heads Up Display (HUD) is a new and innovative interface that provides access to ZAP functionality directly in the browser. It is ideal for people new to web security and also allows experienced penetration testers to focus on an applications functionality while providing key security information and functionality.
 
 {{< img "images/hud-welcome.png" >}}
 
