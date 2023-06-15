@@ -708,6 +708,23 @@
 
 # Misc videos, confs and online
 
+- title: 'A Deep Dive into OWASP ZAP (feat. Simon Bennetts) - The Big Fix 2023 by Snyk'
+  id: 2EgwFBGHY-4
+  site: youtube
+  date: '2023/03/29'
+  length: 14:38
+  tags:
+  - intro
+
+- title: 'GitHub DemoDays: Visual application security testing with ZAP and Simon Bennetts'
+  id: 4xBJsRNV9ds
+  site: youtube
+  date: '2022/01/20'
+  length: 48:31
+  tags:
+  - hud
+  - demodays
+
 - title: 'OWASP Outstanding Project 2021'
   id: iz1EAwaV0gI
   site: youtube
