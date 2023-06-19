@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.16.0
+    version: 0.17.0
 ---
 
 # GraphQL Support
@@ -44,6 +44,7 @@ The following operations are added to the API:
 * optionMaxQueryDepth
 * optionOptionalArgsEnabled
 * optionQuerySplitType
+* optionQueryGenEnabled
 * optionRequestMethod
 
 ### Actions
@@ -54,6 +55,7 @@ The following operations are added to the API:
 * setOptionMaxArgsDepth (Integer\*)
 * setOptionMaxQueryDepth (Integer\*)
 * setOptionOptionalArgsEnabled (Boolean\*)
+* setOptionQueryGenEnabled (Boolean\*)
 * setOptionQuerySplitType (String\*)
 * setOptionRequestMethod (String\*)
 

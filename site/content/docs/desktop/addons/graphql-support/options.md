@@ -9,27 +9,31 @@ weight: 1
 
 In this document, a 'Query' may refer to a GraphQL query, subscription or mutation.
 
-## Maximum Query Depth
+## Query Generator Configuration
+
+The query generator uses the imported schema to generate queries for the target endpoint. If enabled, it may be configured with the following options.
+
+### Maximum Query Depth
 
 The maximum depth of a generated query.
 
-## Lenient Maximum Query Depth
+### Lenient Maximum Query Depth
 
 If enabled, this option prevents invalid queries by allowing additional depth for fields with no leaf types. If disabled, Maximum Query Depth is enforced strictly, even if it means generating an invalid query.
 
-## Additional Query Depth
+### Additional Query Depth
 
 The value for this option is used only if the "Lenient Maximum Query Depth" option is enabled. The maximum additional depth used to search for leaf-type fields. If a leaf type is not found, the generated query may be invalid and a message is logged.
 
-## Maximum Arguments Depth
+### Maximum Arguments Depth
 
 The maximum depth of specified arguments. This is useful when a field has an input object as an argument.
 
-## Specify Optional Arguments
+### Specify Optional Arguments
 
 If this option is selected then optional (nullable) arguments will be specified too.
 
-## Specify Arguments
+### Specify Arguments
 
 Choose how the field arguments should be added in the generated query,
 
@@ -37,7 +41,7 @@ Choose how the field arguments should be added in the generated query,
 * Using Variables
 * Both - each query will be sent twice, once with inline arguments and once with variables
 
-## Generate Query For
+### Generate Query For
 
 A separate query may be generated for either of the following in the provided schema,
 
@@ -45,7 +49,7 @@ A separate query may be generated for either of the following in the provided sc
 * each field under a root operation type (Query, Mutation or Subscription); or
 * each root operation type.
 
-## Request Method
+### Request Method
 
 The requests made to the endpoint can be of the following types:
 
