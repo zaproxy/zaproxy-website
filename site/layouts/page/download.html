@@ -91,9 +91,10 @@
                   <tr>
                     <td>{{ .name }}</td>
                     <td>{{ .notes }}</td>
-                    <td><code>{{ .cmd }}</code></td>
+                    <td><code>{{ .cmd }}</code><br><code>{{ .ghcr.cmd }}</code></td>
                     <td>
                       <a track-event="download.core.{{ .id }}" href="{{ .link }}" class="button button--orange">Docker Hub Page</a>
+                      <a track-event="download.core.{{ .ghcr.id }}" href="{{ .ghcr.link }}" class="button button--orange">GHCR Page</a>
                     </td>
                   </tr>
                 {{ end }}

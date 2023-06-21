@@ -22,6 +22,7 @@ changes are included.
 
 ```bash
 docker pull owasp/zap2docker-stable
+docker pull ghcr.io/zaproxy/zaproxy:stable
 ```
 
 #### Weekly
@@ -31,15 +32,17 @@ core and add-ons. It is the same as the [Cross Platform Weekly Release](/downloa
 
 ```bash
 docker pull owasp/zap2docker-weekly
+docker pull ghcr.io/zaproxy/zaproxy:weekly
 ```
 
-#### Live
+#### Nightly
 
-The live image is updated at least once a day, and includes the very latest changes to the ZAP
+The nightly image is updated at least once a day, and includes the very latest changes to the ZAP
 core and add-ons.
 
 ```bash
 docker pull owasp/zap2docker-live
+docker pull ghcr.io/zaproxy/zaproxy:nightly
 ```
 
 #### Bare
@@ -49,6 +52,7 @@ It is updated on the same schedule as the stable image.
 
 ```bash
 docker pull owasp/zap2docker-bare
+docker pull ghcr.io/zaproxy/zaproxy:bare
 ```
 The Dockerfiles can be found [here](https://github.com/zaproxy/zaproxy/tree/main/docker).
 
