@@ -11,7 +11,11 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/MaterialIcons-Regular.woff2
   ajax: Pass
+- path: GET http://localhost:3000/ae.svg
+  ajax: FAIL
 - path: GET http://localhost:3000/api/Challenges/(name)
+  ajax: Pass
+- path: GET http://localhost:3000/api/Feedbacks/
   ajax: Pass
 - path: GET http://localhost:3000/api/Quantitys/
   ajax: Pass
@@ -20,6 +24,20 @@ details:
 - path: GET http://localhost:3000/assets/public/favicon_js.ico
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/JuiceShop_Logo.png
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/carousel/1.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/carousel/2.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/carousel/3.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/carousel/4.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/carousel/5.png
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/carousel/6.jpg
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/carousel/7.jpg
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/hackingInstructor.png
   ajax: Pass
@@ -37,6 +55,8 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/fan_facemask.jpg
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/fan_girlie.jpg
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/products/fruit_press.jpg
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/green_smoothie.jpg
@@ -47,8 +67,12 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/permafrost.jpg
   ajax: Pass
+- path: GET http://localhost:3000/az.svg
+  ajax: FAIL
 - path: GET http://localhost:3000/font-mfizz.woff
   ajax: Pass
+- path: GET http://localhost:3000/ftp/legal.md
+  ajax: FAIL
 - path: GET http://localhost:3000/main.js
   ajax: Pass
 - path: GET http://localhost:3000/polyfills.js
@@ -61,6 +85,8 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/rest/languages
   ajax: Pass
+- path: GET http://localhost:3000/rest/products/1/reviews
+  ajax: FAIL
 - path: GET http://localhost:3000/rest/products/search(q)
   ajax: Pass
 - path: GET http://localhost:3000/rest/user/whoami
@@ -81,7 +107,7 @@ details:
   ajax: Pass
 - path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
   ajax: Pass
-tests: 40
-passes: 40
-fails: 0
-score: 100%
+tests: 53
+passes: 48
+fails: 5
+score: 91%
