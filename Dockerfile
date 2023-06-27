@@ -1,4 +1,4 @@
-FROM node:14.18-stretch
+FROM node:18
 
 COPY package-lock.json package.json  /app/
 
