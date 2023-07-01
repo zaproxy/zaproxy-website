@@ -72,7 +72,7 @@ details:
 - path: GET http://localhost:3000/font-mfizz.woff
   ajax: Pass
 - path: GET http://localhost:3000/ftp/legal.md
-  ajax: FAIL
+  ajax: Pass
 - path: GET http://localhost:3000/main.js
   ajax: Pass
 - path: GET http://localhost:3000/polyfills.js
@@ -108,6 +108,6 @@ details:
 - path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
   ajax: Pass
 tests: 53
-passes: 48
-fails: 5
-score: 91%
+passes: 49
+fails: 4
+score: 92%
