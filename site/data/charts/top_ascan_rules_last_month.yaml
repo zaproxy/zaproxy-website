@@ -2,240 +2,240 @@
 - id: 10104
   name: "User Agent Fuzzer"
   status: "release"
-  alerts: "27478922"
-  fps: 0.051
-  num: 154348
-  time: 141
-
-- id: 40025
-  name: "Proxy Disclosure"
-  status: "beta"
-  alerts: "493962"
-  fps: 0.0
-  num: 62318
-  time: 40
-
-- id: 90027
-  name: "Cookie Slack Detector"
-  status: "beta"
-  alerts: "487378"
-  fps: 0.0
-  num: 62064
-  time: 12
-
-- id: 40035
-  name: "Hidden File Found"
-  status: "release"
-  alerts: "352472"
-  fps: 0.01
-  num: 168358
-  time: 50
-
-- id: 40032
-  name: ".htaccess Information Leak"
-  status: "release"
-  alerts: "258327"
-  fps: 0.0
-  num: 271491
-  time: 8
+  alerts: "28303708"
+  fps: 0.057
+  num: 121957
+  time: 382
 
 - id: 10095
   name: "Backup File Disclosure"
   status: "beta"
-  alerts: "256044"
-  fps: 0.737
-  num: 98955
-  time: 28
+  alerts: "510588"
+  fps: 0.389
+  num: 89853
+  time: 60
 
-- id: 40018
-  name: "SQL Injection"
-  status: "release"
-  alerts: "235694"
-  fps: 0.002
-  num: 288090
-  time: 203
-
-- id: 0
-  name: "Directory Browsing"
-  status: "release"
-  alerts: "220446"
-  fps: 0.0
-  num: 274012
-  time: 30
-
-- id: 40040
-  name: "CORS Header"
+- id: 90027
+  name: "Cookie Slack Detector"
   status: "beta"
-  alerts: "212739"
-  fps: 0.037
-  num: 65110
-  time: 22
+  alerts: "507323"
+  fps: 0.0
+  num: 27766
+  time: 27
 
-- id: 40024
-  name: "SQL Injection - SQLite"
-  status: "release"
-  alerts: "158439"
-  fps: 0.001
-  num: 236005
-  time: 86
+- id: 40025
+  name: "Proxy Disclosure"
+  status: "beta"
+  alerts: "491273"
+  fps: 0.0
+  num: 28128
+  time: 84
 
 - id: 20012
   name: "Anti-CSRF Tokens Check"
   status: "beta"
-  alerts: "157693"
-  fps: 2.924
-  num: 63523
-  time: 11
+  alerts: "418924"
+  fps: 0.861
+  num: 30218
+  time: 23
+
+- id: 40035
+  name: "Hidden File Found"
+  status: "release"
+  alerts: "307377"
+  fps: 0.006
+  num: 134636
+  time: 92
 
 - id: 40012
   name: "Cross Site Scripting (Reflected)"
   status: "release"
-  alerts: "155604"
-  fps: 0.005
-  num: 214828
-  time: 80
-
-- id: 90028
-  name: "Insecure HTTP Method"
-  status: "beta"
-  alerts: "154924"
-  fps: 0.0
-  num: 61687
-  time: 11
-
-- id: 90017
-  name: "XSLT Injection"
-  status: "release"
-  alerts: "139096"
-  fps: 0.0
-  num: 199914
-  time: 66
-
-- id: 6
-  name: "Path Traversal"
-  status: "release"
-  alerts: "73769"
-  fps: 0.026
-  num: 268124
-  time: 244
-
-- id: 10051
-  name: "Relative Path Confusion"
-  status: "beta"
-  alerts: "67045"
-  fps: 0.0
-  num: 62884
-  time: 7
-
-- id: 40021
-  name: "SQL Injection - Oracle"
-  status: "release"
-  alerts: "65501"
-  fps: 0.0
-  num: 199012
-  time: 66
-
-- id: 30001
-  name: "Buffer Overflow"
-  status: "release"
-  alerts: "58259"
-  fps: 0.0
-  num: 201600
-  time: 16
-
-- id: 40019
-  name: "SQL Injection - MySQL"
-  status: "release"
-  alerts: "54253"
-  fps: 0.0
-  num: 238764
-  time: 98
-
-- id: 90034
-  name: "Cloud Metadata Potentially Exposed"
-  status: "release"
-  alerts: "47002"
+  alerts: "279107"
   fps: 0.002
-  num: 206435
-  time: 7
+  num: 189984
+  time: 104
+
+- id: 40032
+  name: ".htaccess Information Leak"
+  status: "release"
+  alerts: "279040"
+  fps: 0.0
+  num: 274648
+  time: 12
+
+- id: 40024
+  name: "SQL Injection - SQLite"
+  status: "release"
+  alerts: "204671"
+  fps: 0.003
+  num: 238876
+  time: 74
 
 - id: 10047
   name: "HTTPS Content Available via HTTP"
   status: "beta"
-  alerts: "46953"
+  alerts: "201090"
   fps: 0.0
-  num: 98482
-  time: 7
+  num: 90216
+  time: 10
 
-- id: 40038
-  name: "Bypassing 403"
+- id: 10051
+  name: "Relative Path Confusion"
   status: "beta"
-  alerts: "44623"
-  fps: 0.003
-  num: 63992
-  time: 9
-
-- id: 20019
-  name: "External Redirect"
-  status: "release"
-  alerts: "34875"
-  fps: 0.067
-  num: 250598
-  time: 84
-
-- id: 40020
-  name: "SQL Injection - Hypersonic SQL"
-  status: "release"
-  alerts: "33898"
+  alerts: "183858"
   fps: 0.0
-  num: 197771
-  time: 59
+  num: 30290
+  time: 22
 
-- id: 10058
-  name: "GET for POST"
+- id: 40040
+  name: "CORS Header"
+  status: "beta"
+  alerts: "172520"
+  fps: 0.053
+  num: 31689
+  time: 52
+
+- id: 90017
+  name: "XSLT Injection"
   status: "release"
-  alerts: "33514"
+  alerts: "167033"
   fps: 0.0
-  num: 236232
-  time: 8
+  num: 178509
+  time: 93
 
-- id: 7
-  name: "Remote File Inclusion"
+- id: 40018
+  name: "SQL Injection"
   status: "release"
-  alerts: "31026"
+  alerts: "158392"
+  fps: 0.074
+  num: 292985
+  time: 169
+
+- id: 90028
+  name: "Insecure HTTP Method"
+  status: "beta"
+  alerts: "136411"
   fps: 0.0
-  num: 296529
-  time: 109
+  num: 27929
+  time: 14
 
-- id: 20017
-  name: "Source Code Disclosure - CVE-2012-1823"
+- id: 0
+  name: "Directory Browsing"
   status: "release"
-  alerts: "27099"
+  alerts: "127744"
   fps: 0.0
-  num: 207839
-  time: 114
-
-- id: 40022
-  name: "SQL Injection - PostgreSQL"
-  status: "release"
-  alerts: "26010"
-  fps: 0.0
-  num: 236108
-  time: 49
-
-- id: 90024
-  name: "Generic Padding Oracle"
-  status: "release"
-  alerts: "25457"
-  fps: 0.003
-  num: 189091
-  time: 19
+  num: 283006
+  time: 41
 
 - id: 30002
   name: "Format String Error"
   status: "release"
-  alerts: "25082"
-  fps: 0.088
-  num: 201701
-  time: 24
+  alerts: "100439"
+  fps: 0.029
+  num: 170741
+  time: 34
+
+- id: 6
+  name: "Path Traversal"
+  status: "release"
+  alerts: "74672"
+  fps: 0.043
+  num: 270728
+  time: 284
+
+- id: 7
+  name: "Remote File Inclusion"
+  status: "release"
+  alerts: "73958"
+  fps: 0.0
+  num: 300416
+  time: 117
+
+- id: 40021
+  name: "SQL Injection - Oracle"
+  status: "release"
+  alerts: "66611"
+  fps: 0.0
+  num: 174399
+  time: 86
+
+- id: 10058
+  name: "GET for POST"
+  status: "release"
+  alerts: "53332"
+  fps: 0.0
+  num: 241084
+  time: 34
+
+- id: 40019
+  name: "SQL Injection - MySQL"
+  status: "release"
+  alerts: "52682"
+  fps: 0.0
+  num: 242314
+  time: 87
+
+- id: 90034
+  name: "Cloud Metadata Potentially Exposed"
+  status: "release"
+  alerts: "44464"
+  fps: 0.0
+  num: 200422
+  time: 5
+
+- id: 40038
+  name: "Bypassing 403"
+  status: "beta"
+  alerts: "38123"
+  fps: 0.011
+  num: 30339
+  time: 42
+
+- id: 40026
+  name: "Cross Site Scripting (DOM Based)"
+  status: "release"
+  alerts: "37988"
+  fps: 0.0
+  num: 133332
+  time: 738
+
+- id: 40020
+  name: "SQL Injection - Hypersonic SQL"
+  status: "release"
+  alerts: "35046"
+  fps: 0.0
+  num: 173306
+  time: 116
+
+- id: 90024
+  name: "Generic Padding Oracle"
+  status: "release"
+  alerts: "32863"
+  fps: 0.003
+  num: 167132
+  time: 36
+
+- id: 30001
+  name: "Buffer Overflow"
+  status: "release"
+  alerts: "31850"
+  fps: 0.0
+  num: 170698
+  time: 27
+
+- id: 30003
+  name: "Integer Overflow Error"
+  status: "beta"
+  alerts: "30428"
+  fps: 0.0
+  num: 29284
+  time: 36
+
+- id: 40022
+  name: "SQL Injection - PostgreSQL"
+  status: "release"
+  alerts: "23172"
+  fps: 0.0
+  num: 240502
+  time: 61
 
