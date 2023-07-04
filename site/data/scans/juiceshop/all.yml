@@ -105,6 +105,8 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/vendor.js
   ajax: Pass
+- path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(1)
+  ajax: New
 - path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
   ajax: Pass
 tests: 53
