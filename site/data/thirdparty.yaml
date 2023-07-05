@@ -108,6 +108,10 @@ services_plus:
 services_minus:
   # Closed source services which have never supported ZAP
   # Commercial, free option tools, alphabetic
+  - name: "Aikido"
+    link: https://www.aikido.dev/
+    license: 'Commercial, free option'
+  
   - name: 'Cyber Tzar'
     link: https://www.cybertzar.com/
     license: 'Commercial, free option'
