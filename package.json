@@ -29,7 +29,7 @@
     "@babel/preset-env": "^7.22.7",
     "@babel/register": "^7.22.5",
     "assets-webpack-plugin": "^7.1.1",
-    "babel-loader": "^9.1.2",
+    "babel-loader": "^9.1.3",
     "badger-accordion": "^1.2.4",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
