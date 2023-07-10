@@ -35,11 +35,21 @@
   height: 28px;
 }
 
-@media screen and (max-width: 825px) {
+@media only screen and (max-width: 1023px) {
+
   .site-footer {
-    display: none;
+    position: static;
+    height: auto;
+    padding: 20px;
+    text-align: center;
   }
   .footer-social {
     display: none;
+  }
+  .footer-left {
+    display: none;
+  }
+  .OutroFooter {
+    font-size: 0.85em;
   }
 }
