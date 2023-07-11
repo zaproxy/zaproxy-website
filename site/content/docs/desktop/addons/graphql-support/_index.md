@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.17.0
+    version: 0.18.0
 ---
 
 # GraphQL Support
@@ -18,10 +18,9 @@ The spider is supported on ZAP 2.10.0 and later.
 
 ## UI
 
-2 menu items are added to the Import menu:
+A menu item is added to the Import menu:
 
-* Import a GraphQL schema from a File
-* Import a GraphQL schema from a URL
+* Import a GraphQL schema
 
 ### Endpoint URL Format
 

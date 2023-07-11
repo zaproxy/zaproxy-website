@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Server Certificates
 type: userguide
-weight: 4
+weight: 6
 ---
 
 # Server Certificates
@@ -222,6 +222,41 @@ are 1 to 281.474.976.710.656 that when restarting ZAP, the serial number
 offset is a different one.
 So in the rare case, you are discovering that you browser complains about
 a broken serial number within the certificate, just restart your browser ;-)*.
+
+### CRL Distribution Point
+
+Sometimes, a valid certificate is not enough to have a working TLS MITM.
+For example, `libcurl` on Windows uses `schannel` as its backend,
+which by default will check if a valid Certificate Revocation List Distribution Point
+is provided in the certificate, and try to contact and retrieve this CRL.
+If you're lucky the binary is verbose, and the error message will be clear enough :
+
+`
+PS C:\Users\alice> curl.exe https://ifconfig.me/`  
+`
+curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x80092012) - The revocation function was unable to check revocation for the certificate.`  
+`
+`
+
+This may also manifest as a TLS Handshake Failure at the network level :
+
+`
+6 0.023470 192.168.56.104 1.2.3.4 TLSv1.2 273 Client Hello`  
+`
+8 0.033465 1.2.3.4 192.168.56.104 TLSv1.2 144 Server Hello`  
+`
+11 0.033875 1.2.3.4 192.168.56.104 TLSv1.2 527 Certificate`  
+`
+13 0.084581 1.2.3.4 192.168.56.104 TLSv1.2 401 Server Key Exchange, Server Hello Done`  
+`
+16 0.158961 1.2.3.4 192.168.56.104 TLSv1.2 61 Alert (Level: Fatal, Description: Handshake Failure)`  
+`
+`
+
+This option enables you to specify a CRL Distribution Point that will be added in each of the generated certificates.
+Obviously, you need to create a custom Root Certificate Authority, using for example <https://github.com/kaysond/spki>,
+a wrapper for OpenSSL that generates and manages a simple PKI suitable for small deployments, support CRLs and OCSP, and make the CRL available to the victim client,
+using for example a tiny HTTP server.
 
 ## Install ZAP Root CA certificate {#install}
 
