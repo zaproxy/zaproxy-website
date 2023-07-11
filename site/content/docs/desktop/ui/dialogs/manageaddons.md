@@ -20,8 +20,8 @@ You can also uninstall add-ons from this tab - typically add-ons are dynamically
 
 ## Marketplace
 
-This tab shows you all of the add-ons that you dont have installed which are available from the Add-on Marketplace.  
-You will need to 'Check for updates' before you can see the add-ons available.  
+This tab shows you all of the add-ons that you don't have installed which are available from the Add-on Marketplace.  
+You will need to 'Check for Updates' before you can see the add-ons available.  
 Hovering over an add-on will show you more information about it.   
 You can install any of the add-ons listed - typically add-ons are dynamically added to the ZAP UI as soon as you install them.
 

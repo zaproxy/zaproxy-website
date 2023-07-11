@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Scripts
 type: userguide
-weight: 22
+weight: 21
 ---
 
 # Scripts
@@ -29,7 +29,7 @@ Different types of scripts are supported:
 * Active Rules - these run as part of the Active Scanner and can be individually enabled
 * Authentication - scripts that are invoked when authentication is performed for a Context. To be used, they need to be selected when configuring the Script-Based Authentication Method for a Context.
 * Extender - scripts which can add new functionality, including graphical elements and new API end points
-* HTTP Sender - scripts that run against every request/response sent/received by ZAP. This includes the proxied messages, messages sent during active scanner, fuzzer, ...
+* HTTP Sender - scripts that run against every request/response sent/received by ZAP. This includes the proxied messages, messages sent during active scan, fuzzer, ...
 * Input Vector - scripts for defining exactly what ZAP should attack. They can also change how any URL is represented in the Sites Tree
 * Passive Rules - these run as part of the Passive Scanner and can be individually enabled
 * Proxy - these run 'inline', can change every request and response and can be individually enabled. They can also trigger break points

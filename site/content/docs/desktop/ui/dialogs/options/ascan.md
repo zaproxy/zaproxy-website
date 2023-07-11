@@ -27,6 +27,11 @@ Displaying a large number of results can significantly increase the time a scan 
 
 The maximum time any individual rule can run for in minutes. Zero means no limit. This can be used to prevent rules that are taking an excessive amount of time.
 
+### Max alerts any rule can raise
+
+The maximum number of alerts any rule can raise during the active scan, scan rules that reach this value are skipped.  
+**Note:** The maximum might be exceed due to threading.
+
 ### Maximum Scan Duration (minutes; 0 is unlimited)
 
 The maximum time that the whole scan can run for in minutes. Zero means no limit. This can be used to ensure that a scan is completed around a set time.
@@ -34,11 +39,12 @@ The maximum time that the whole scan can run for in minutes. Zero means no limit
 ### Delay When Scanning (In Milliseconds)
 
 The delay in milliseconds between each request.  
-Setting this to a non zero value will increase the time an active scan takes, but will put less of a strain on the target host.
+Setting this to a non zero value will increase the time an active scan takes, but will put less of a strain on the target host.   
+**Note:** This option has been deprecated and it will be removed in a future release. Use the Network \> Rate Limit option instead. The latter option allows to enforce the rate at which the requests are sent while the Delay When Scanning doesn't.
 
 ### Inject plugin ID in header for all active scan requests.
 
-If this option is selected the active scanner will inject the request header `X-ZAP-Scan-ID` with the ID of the scanner that's sending the HTTP requests.
+If this option is selected the active scanner will inject the request header `X-ZAP-Scan-ID` with the ID of the scan rule that's sending the HTTP requests.
 
 ### Handle anti-CSRF tokens.
 

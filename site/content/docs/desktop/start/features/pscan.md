@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Passive Scan
 type: userguide
-weight: 19
+weight: 18
 ---
 
 # Passive Scan
@@ -37,3 +37,5 @@ The alerts raised by passive scan rules can be configured using the
 |   |                                                                                                |
 |---|------------------------------------------------------------------------------------------------|
 |   | [ZAP In Ten: Passive Scanning](https://play.sonatype.com/watch/vDWpoYjHi7fSLYFDQPWgMF) (10:27) |
+|   | [ZAP In Ten: Passive Scan Scripts](https://play.vidyard.com/HfENJ3GJB3zbD6sMscDrjD) (11:53)    |
+|   | [Deep Dive: Passive Scanning](https://www.youtube.com/watch?v=Rx42kyrB0nk) (27:35)             |

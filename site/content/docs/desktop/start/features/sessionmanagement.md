@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Session Management
 type: userguide
-weight: 23
+weight: 22
 ---
 
 # Session Management

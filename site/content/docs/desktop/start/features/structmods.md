@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Structural Modifiers
 type: userguide
-weight: 26
+weight: 25
 ---
 
 # Structural Modifiers

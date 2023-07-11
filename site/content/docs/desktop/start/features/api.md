@@ -26,4 +26,5 @@ Future versions of ZAP will increase the functionality available via the APi.
 |   |                                           |                                       |
 |---|-------------------------------------------|---------------------------------------|
 |   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
+|   | [API Overview](/docs/api/#introduction)   | for an overview of the API            |
 |   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |

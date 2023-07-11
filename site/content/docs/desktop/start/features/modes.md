@@ -2,17 +2,17 @@
 # This page was generated from the add-on.
 title: Modes
 type: userguide
-weight: 17
+weight: 16
 ---
 
 # Modes
 
 ZAP has a 'mode' which can be:
 
-* Safe - no potentially dangerous operations permitted
-* Protected - you can only perform (potentially) dangerous actions on URLs in the [Scope](/docs/desktop/start/features/scope/)
-* Standard - as in previous releases, you can do anything
-* ATTACK - new nodes that are in [Scope](/docs/desktop/start/features/scope/) are [actively scanned](/docs/desktop/start/features/ascan/) as soon as they are discovered
+* Safe - no potentially dangerous operations permitted.
+* Protected - you can only perform (potentially) dangerous actions on URLs in the [scope](/docs/desktop/start/features/scope/).
+* Standard - does not restrict anything.
+* ATTACK - new nodes that are in [scope](/docs/desktop/start/features/scope/) are [actively scanned](/docs/desktop/start/features/ascan/) as soon as they are discovered.
 
 It is recommended that you use the Protected mode to ensure that you only attack sites that you mean to.  
 

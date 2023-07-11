@@ -18,7 +18,7 @@ Displays a dialog that contains information which is useful when troubleshooting
 Version, installed add-ons and versions, operating system, java version, locale info, and ZAP Home Directory path. This information can be copied and pasted.   
 The dialog includes an "Open" button, which assuming the OS supports the necessary functionality, will open the ZAP Home Directory (for logs or configuration files) when clicked.
 
-### Check For Updates...
+### Check for Updates...
 
 This checks to see if you are running the latest version of ZAP.
 

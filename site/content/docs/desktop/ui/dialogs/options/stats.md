@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Statistics screen
 type: userguide
-weight: 22
+weight: 21
 ---
 
 # Options Statistics screen

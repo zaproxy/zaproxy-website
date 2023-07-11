@@ -17,32 +17,32 @@ It is strongly recommended that you check this box.
 If for any reason you choose not to then you should manually check for updates frequently.  
 ZAP will only make one request, and the only information included will be the current version you are on.
 
-### Automatically download new ZAP releases
+### Automatically download new ZAP releases.
 
 If selected then ZAP will automatically download new ZAP releases when they are available and prompt you to install them.
 
-### Automatically install updates to the add-ons you have installed
+### Automatically install updates to the add-ons you have installed.
 
 If selected then ZAP will automatically download and install any updates to the add-ons you have installed.
 
-### Automatically install updates to the scanner rules you have installed
+### Automatically install updates to the scan rules you have installed.
 
-If selected then ZAP will automatically download and install any updates to the scanner rules you have installed.  
+If selected then ZAP will automatically download and install any updates to the scan rules you have installed.  
 These are a subset of the full set of add-ons installed.
 
-### Report new release status add-ons
+### Report new Release status add-ons.
 
 If selected then ZAP will inform you if and when any add-ons are promoted to 'release' status.  
 These add-ons will have been thoroughly tested and reviewed, and you can be sure they are of the highest status.
 
-### Report new beta status add-ons
+### Report new Beta status add-ons.
 
 If selected then ZAP will inform you if and when any add-ons are promoted to 'beta' status.  
 These add-ons will have been tested and reviewed, and are considered to be of a reasonable status and mostly fit for purpose.  
 However they may be incomplete or need further testing.  
 Some of the add-ons included with ZAP by default are still at the beta level.
 
-### Report new alpha status add-ons
+### Report new Alpha status add-ons.
 
 If selected then ZAP will inform you if and when any new add-ons are added at 'alpha' status.  
 These add-ons will have been reviewed but they are typically at an early stage of development.  

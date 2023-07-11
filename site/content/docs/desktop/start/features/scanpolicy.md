@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Scan Policy
 type: userguide
-weight: 20
+weight: 19
 ---
 
 # Scan Policy

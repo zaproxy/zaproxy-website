@@ -35,7 +35,7 @@ All options below can be passed to any of these.
 
 ## Options
 
-ZAP supports the following command line options:
+ZAP (core) supports the following command line options:
 
 |   |                             |                                                                                                                                                                                                                                          |
 |---|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -50,8 +50,6 @@ ZAP supports the following command line options:
 |   | -help                       | The same as -h                                                                                                                                                                                                                           |
 |   | -newsession \<path\>        | Creates a new session at the given location                                                                                                                                                                                              |
 |   | -session \<path\>           | Opens the given session after starting ZAP                                                                                                                                                                                               |
-|   | -host \<host\>              | Overrides the host used for proxying specified in the configuration file                                                                                                                                                                 |
-|   | -port \<port\>              | Overrides the port used for proxying specified in the configuration file                                                                                                                                                                 |
 |   | -lowmem                     | Use the database instead of memory as much as possible - this is still experimental                                                                                                                                                      |
 |   | -experimentaldb             | Use the experimental generic database code, which is not surprisingly also still experimental                                                                                                                                            |
 |   | -nostdout                   | Disables the default logging through standard output                                                                                                                                                                                     |
@@ -73,8 +71,6 @@ Configuration keys should be specified using the dot notation based their locati
 <zap-script> -config api.key=12345
 ```
 
-Note that add-ons can add extra command line options.
-
 
 Examples:
 
@@ -90,9 +86,22 @@ Examples:
     <zap-script> -session /full/path/to/existing/session -script /full/path/to/script.js -cmd
     ```
 
+## Add-ons
+
+Add-ons can add extra command line options which are described in their own help pages.
+
+
+For the command line options that allow to configure the main local proxy, refer to the [Network Command Line](/docs/desktop/addons/network/cmdline/) help page.
+
 ## See also
 
 |   |                                          |                                 |
 |---|------------------------------------------|---------------------------------|
 |   | [Introduction](/docs/desktop/)           | the introduction to ZAP         |
 |   | [API](/docs/desktop/start/features/api/) | to control ZAP programmatically |
+
+## Official Videos
+
+|   |                                                                                                     |
+|---|-----------------------------------------------------------------------------------------------------|
+|   | [ADDO Automation: Automation Command Line](https://play.vidyard.com/g97SccHH52RXnAcBYBmDGA) (14:03) |

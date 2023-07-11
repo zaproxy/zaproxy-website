@@ -22,7 +22,6 @@ It include the following screens:
 |   | [Database](/docs/desktop/ui/dialogs/options/database/)                    |   |
 |   | [Display](/docs/desktop/ui/dialogs/options/view/)                         |   |
 |   | [Extensions](/docs/desktop/ui/dialogs/options/ext/)                       |   |
-|   | [Global Exclude URL](/docs/desktop/ui/dialogs/options/globalexcludeurl/)  |   |
 |   | [HTTP Sessions](/docs/desktop/ui/dialogs/options/httpsessions/)           |   |
 |   | [JVM](/docs/desktop/ui/dialogs/options/jvm/)                              |   |
 |   | [Keyboard](/docs/desktop/ui/dialogs/options/keyboard/)                    |   |
