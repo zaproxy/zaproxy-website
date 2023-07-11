@@ -427,9 +427,9 @@
   status: release
   infoUrl: /docs/desktop/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help-v15/help-release-15.zap
-  date: 2022-10-27
-  version: 15
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help-v16/help-release-16.zap
+  date: 2023-07-11
+  version: 16
 - id: help_ar_SA
   name: Help - Arabic
   description: Arabic version of the ZAP help file.

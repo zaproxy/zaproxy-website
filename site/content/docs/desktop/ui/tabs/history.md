@@ -102,6 +102,10 @@ The nodes can be included again via the [Session Properties](/docs/desktop/ui/di
 
 This will bring up the [Manage History Tags dialog](/docs/desktop/ui/dialogs/managetags/) which allows you to change the [tags](/docs/desktop/start/features/tags/) associated with the request.
 
+### Jump to History ID...
+
+This will bring up a dialog prompting for the ID (number) of a history entry you wish to jump to. If the entered ID value is not a visible history item then the nearest ID above the entry will be displayed, if it is beyond the end of the list then the last item in the table will be displayed. Also accessible via CTRL + ALT + J.
+
 ### Note...
 
 This will bring up the [Add Note dialog](/docs/desktop/ui/dialogs/addnote/) which allows you to record [notes](/docs/desktop/start/features/notes/) related to the request.

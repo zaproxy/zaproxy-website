@@ -49,7 +49,7 @@ This button reveals all of the hidden tabs.
 
 This button hides all of the tabs that are 'unpinned'. Tabs can be pinned and unpinned via the small 'pin' icon that is shown when the tab is selected.
 
-## ![](/docs/desktop/images/ui_tab_text.png) Show tab names and icons
+## ![](/docs/desktop/images/ui_tab_text.png) Show Tab Names and Icons
 
 This button toggles the displaying of the tab names.
 
@@ -68,34 +68,34 @@ This will reduce the amount of space available to the 'tree' window.
 This changes the display so that the selected tab takes up the full screen.  
 This is useful when using ZAP on small screens.
 
-## ![](/docs/desktop/images/layout_tabbed.png) Request and Response tabs side by side
+## ![](/docs/desktop/images/layout_tabbed.png) Request and Response Tabs Side by Side
 
 This changes the display so that the request and response tabs are side by side.  
 This increases the information that can be displayed but means you cannot see both the request and response at the same time.
 
-## ![](/docs/desktop/images/layout_tabbed_split.png) Request and Response panels side by side in the same tab
+## ![](/docs/desktop/images/layout_tabbed_split.png) Request and Response Panels Side by Side in the Same Tab
 
 This changes the display so that the request and response panels are shown side by side in the same tab.  
 This decreases the information that can be displayed but means you can see both the request and response at the same time.
 
-## ![](/docs/desktop/images/layout_vertical_split.png) Request shown above Response
+## ![](/docs/desktop/images/layout_vertical_split.png) Request Shown above Response
 
 This changes the display so that the request panel is shown above the response panel.  
 This decreases the information that can be displayed but means you can see both the request and response at the same time.
 
-## ![](/docs/desktop/images/layout_horizontal_split.png) Request and Response panels side by side
+## ![](/docs/desktop/images/layout_horizontal_split.png) Request and Response Panels Side by Side
 
 This changes the display so that the request panel is shown to the left of the response panel.  
 This decreases the information that can be displayed but means you can see both the request and response at the same time.
 
-## ![](/docs/desktop/images/16/152.png) / ![](/docs/desktop/images/16/151.png) Set / Unset break on all requests and responses
+## ![](/docs/desktop/images/16/152.png) / ![](/docs/desktop/images/16/151.png) Set / Unset Break on All Requests and Responses
 
 This sets and unsets a 'global' [breakpoint](/docs/desktop/start/features/breakpoints/) that will trap and display the next request or response in the [Break tab](/docs/desktop/ui/tabs/break/).  
 You can then change any part of the request or response that you want to and send it to the target application by pressing either of the 'Step' or 'Continue' buttons.  
 Alternatively you can press the 'Drop' button to dispose of the request or response.  
 You can switch between a single 'combined' break button and separates ones for requests and responses via the [Options breakpoints screen](/docs/desktop/ui/dialogs/options/breakpoints/)
 
-## ![](/docs/desktop/images/16/105.png) / ![](/docs/desktop/images/16/105r.png) Set / Unset break on all requests
+## ![](/docs/desktop/images/16/105.png) / ![](/docs/desktop/images/16/105r.png) Set / Unset Break on All Requests
 
 This sets and unsets a 'global' [breakpoint](/docs/desktop/start/features/breakpoints/) that will trap and display the next request in the [Break tab](/docs/desktop/ui/tabs/break/).  
 You can then change any part of the request that you want to and send it to the target application by pressing either of the 'Step' or 'Continue' buttons.  

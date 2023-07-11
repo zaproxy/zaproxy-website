@@ -47,3 +47,9 @@ The next thing to do is to start a
 |   | [Introduction](/docs/desktop/)                      | the introduction to ZAP                                         |
 |   | [Features](/docs/desktop/start/features/)           | provided by ZAP                                                 |
 |   | [Scanner Rules](/docs/desktop/start/checks/)        | supported by default                                            |
+
+## Official Videos
+
+|   |                                                                                       |
+|---|---------------------------------------------------------------------------------------|
+|   | [ZAPCon 2022: ZAP for Everybody](https://www.youtube.com/watch?v=32W_hm30dsg) (44:05) |

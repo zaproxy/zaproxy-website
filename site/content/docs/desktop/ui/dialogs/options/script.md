@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options Scripts screen
 type: userguide
-weight: 20
+weight: 19
 ---
 
 # Options Scripts screen

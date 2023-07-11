@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Options JVM screen
 type: userguide
-weight: 13
+weight: 12
 ---
 
 # Options JVM screen

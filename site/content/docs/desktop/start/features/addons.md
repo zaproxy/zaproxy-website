@@ -41,3 +41,9 @@ To make an add-on available to ZAP it must be in one of the following locations:
 |   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
 |   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
 |   | [Marketplace](/addons/)                   | to browse the add-ons online          |
+
+## Official Videos
+
+|   |                                                                                                                    |
+|---|--------------------------------------------------------------------------------------------------------------------|
+|   | [ZAPCon 2022: More Power to "ZAP" - Demystifying ZAP Add-ons](https://www.youtube.com/watch?v=N4OEtVCda6s) (40:29) |

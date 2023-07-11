@@ -107,7 +107,7 @@ Instructions for the latest versions of the most commonly used browsers:
 
 |   |              |                                                                     |
 |---|--------------|---------------------------------------------------------------------|
-|   | Select the   | 'Web Proxy (HTTP)                                                   |
+|   | Select the   | 'Web proxy (HTTP)'                                                  |
 |   | Enter in the | 'Address:' field the 'Address' you configured in the options screen |
 |   | Enter in the | 'Port' field the 'Port' you configured in the options screen        |
 |   | Press the    | Proxies Setting 'OK' button                                         |
