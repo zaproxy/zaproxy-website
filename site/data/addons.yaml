@@ -872,9 +872,9 @@
   status: release
   infoUrl: /docs/desktop/addons/reveal/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reveal-v5/reveal-release-5.zap
-  date: 2022-10-27
-  version: 5
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reveal-v6/reveal-release-6.zap
+  date: 2023-07-11
+  version: 6
 - id: revisit
   name: Revisit
   description: Revisit a site at any time in the past using the session history
@@ -902,9 +902,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v38/scripts-release-38.zap
-  date: 2023-03-29
-  version: 38
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v39/scripts-release-39.zap
+  date: 2023-07-11
+  version: 39
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -912,9 +912,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.12.1/selenium-release-15.12.1.zap
-  date: 2023-05-26
-  version: 15.12.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.13.0/selenium-release-15.13.0.zap
+  date: 2023-07-11
+  version: 15.13.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -932,9 +932,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/soap-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v17/soap-beta-17.zap
-  date: 2023-02-09
-  version: 17
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v18/soap-beta-18.zap
+  date: 2023-07-11
+  version: 18
 - id: spider
   name: Spider
   description: Spider used for automatically finding URIs on a site.
@@ -942,9 +942,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.4.0/spider-release-0.4.0.zap
-  date: 2023-05-03
-  version: 0.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.5.0/spider-release-0.5.0.zap
+  date: 2023-07-11
+  version: 0.5.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
@@ -953,9 +953,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.14.1/spiderAjax-release-23.14.1.zap
-  date: 2023-06-02
-  version: 23.14.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.15.0/spiderAjax-release-23.15.0.zap
+  date: 2023-07-11
+  version: 23.15.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
@@ -993,9 +993,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/tips-and-tricks/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tips-v10/tips-beta-10.zap
-  date: 2022-10-27
-  version: 10
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tips-v11/tips-beta-11.zap
+  date: 2023-07-11
+  version: 11
 - id: tokengen
   name: Token Generation and Analysis
   description: Allows you to generate and analyze pseudo random tokens, such as those
@@ -1044,9 +1044,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v56/webdriverlinux-release-56.zap
-  date: 2023-06-01
-  version: 56
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v57/webdriverlinux-release-57.zap
+  date: 2023-07-11
+  version: 57
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1054,9 +1054,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v56/webdrivermacos-release-56.zap
-  date: 2023-06-01
-  version: 56
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v57/webdrivermacos-release-57.zap
+  date: 2023-07-11
+  version: 57
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1064,9 +1064,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v55/webdriverwindows-release-55.zap
-  date: 2023-06-01
-  version: 55
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v56/webdriverwindows-release-56.zap
+  date: 2023-07-11
+  version: 56
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
@@ -1074,9 +1074,9 @@
   status: release
   infoUrl: /docs/desktop/addons/websockets/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v28/websocket-release-28.zap
-  date: 2023-01-03
-  version: 28
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v29/websocket-release-29.zap
+  date: 2023-07-11
+  version: 29
 - id: zest
   name: Zest - Graphical Security Scripting Language
   description: A graphical security scripting language, ZAPs macro language on steroids
@@ -1084,6 +1084,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v38/zest-beta-38.zap
-  date: 2023-01-03
-  version: 38
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v39/zest-beta-39.zap
+  date: 2023-07-11
+  version: 39

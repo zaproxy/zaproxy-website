@@ -11,18 +11,16 @@ The 'selenium' API allows to set and view the paths to the required WebDrivers a
 
 ## API actions/views
 
-|             Name             |  Type  | Parameters |                       Description                        |
-|------------------------------|--------|------------|----------------------------------------------------------|
-| optionChromeBinaryPath       | view   |            | Returns the current path to Chrome binary                |
-| optionChromeDriverPath       | view   |            | Returns the current path to ChromeDriver                 |
-| optionFirefoxBinaryPath      | view   |            | Returns the current path to Firefox binary               |
-| optionFirefoxDriverPath      | view   |            | Returns the current path to Firefox driver (geckodriver) |
-| optionPhantomJsBinaryPath    | view   |            | Returns the current path to PhantomJS binary             |
-| setOptionChromeBinaryPath    | action | String\*   | Sets the current path to Chrome binary                   |
-| setOptionChromeDriverPath    | action | String\*   | Sets the current path to ChromeDriver                    |
-| setOptionFirefoxBinaryPath   | action | String\*   | Sets the current path to Firefox binary                  |
-| setOptionFirefoxDriverPath   | action | String\*   | Sets the current path to Firefox driver (geckodriver)    |
-| setOptionPhantomJsBinaryPath | action | String\*   | Sets the current path to PhantomJS binary                |
+|            Name            |  Type  | Parameters |                       Description                        |
+|----------------------------|--------|------------|----------------------------------------------------------|
+| optionChromeBinaryPath     | view   |            | Returns the current path to Chrome binary                |
+| optionChromeDriverPath     | view   |            | Returns the current path to ChromeDriver                 |
+| optionFirefoxBinaryPath    | view   |            | Returns the current path to Firefox binary               |
+| optionFirefoxDriverPath    | view   |            | Returns the current path to Firefox driver (geckodriver) |
+| setOptionChromeBinaryPath  | action | String\*   | Sets the current path to Chrome binary                   |
+| setOptionChromeDriverPath  | action | String\*   | Sets the current path to ChromeDriver                    |
+| setOptionFirefoxBinaryPath | action | String\*   | Sets the current path to Firefox binary                  |
+| setOptionFirefoxDriverPath | action | String\*   | Sets the current path to Firefox driver (geckodriver)    |
 
 Starred parameters are mandatory
 
