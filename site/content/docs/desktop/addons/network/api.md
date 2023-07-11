@@ -32,6 +32,13 @@ The following operations are added to the API:
     * filePath: The file path.
     * password: The password for the file.
     * index: The index of the certificate in the file, defaults to 0.
+* addRateLimitRule (description\* enabled\* matchRegex matchString requestsPerSecond\* groupBy\*): Adds a rule to the rate limiter.
+    * description: A description that allows you to identify the rule. Each rule must have a unique description.
+    * enabled: The enabled state, true or false.
+    * matchRegex: Determines if matchString is a regular expression or a plain string: true or false.
+    * matchString: A plain string match is handled based on DNS conventions. If the string has one or two components. If matchRegex is true, this is a regular expression.
+    * requestsPerSecond: The maximum number of requests per second.
+    * groupBy: How to group hosts when applying rate limiting: rule or host
 * generateRootCaCert: Generates a new Root CA certificate, used to issue server certificates.
 * importRootCaCert (filePath\*): Imports a Root CA certificate to be used to issue server certificates.
     * filePath: The file system path to the PEM file, containing the certificate and private key.
@@ -44,6 +51,8 @@ The following operations are added to the API:
     * port: The port of the local server/proxy.
 * removePassThrough (authority\*): Removes a pass-through.
     * authority: The value of the authority.
+* removeRateLimitRule (description\*): Removes a rule from the rate limiter.
+    * description: The description of the rule.
 * setAliasEnabled (name\* enabled): Sets whether or not an alias is enabled.
     * name: The name of the alias.
     * enabled: The enabled state, true or false.
@@ -68,6 +77,9 @@ The following operations are added to the API:
     * enabled: The enabled state, true or false.
 * setPassThroughEnabled (authority\* enabled): Sets whether or not a pass-through is enabled.
     * authority: The value of the authority.
+    * enabled: The enabled state, true or false.
+* setRateLimitRuleEnabled (description\*, enabled\*): Set enabled state for a rate limit rule.
+    * description: The description of the rule.
     * enabled: The enabled state, true or false.
 * setRootCaCertValidity (validity\*): Sets the Root CA certificate validity. Used when generating a new Root CA certificate.
     * validity: The number of days that the generated Root CA certificate will be valid for.
@@ -97,6 +109,7 @@ The following operations are added to the API:
 * getHttpProxyExclusions: Gets the HTTP proxy exclusions.
 * getLocalServers: Gets the local servers/proxies.
 * getPassThroughs: Gets the authorities that will pass-through the local proxies.
+* getRateLimitRules: Gets the rate limit rules.
 * getRootCaCertValidity: Gets the Root CA certificate validity, in days. Used when generating a new Root CA certificate.
 * getServerCertValidity: Gets the server certificate validity, in days. Used when generating server certificates.
 * getSocksProxy: Gets the SOCKS proxy.

@@ -13,7 +13,9 @@ The Network add-on provides the following options screens:
 |---|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
 |   | [Client Certificates](/docs/desktop/addons/network/options/clientcertificates/) | Allows to configure the client certificates, PKCS#11 and PKCS#12.               |
 |   | [Connection](/docs/desktop/addons/network/options/connection/)                  | Allows to configure the connection.                                             |
+|   | [Global Exclusions](/docs/desktop/addons/network/options/globalexclusions/)     | Allows to configure the global exclusions.                                      |
 |   | [Local Servers/Proxies](/docs/desktop/addons/network/options/localservers/)     | Allows to manage and configure the local servers/proxies.                       |
+|   | [Rate Limit](/docs/desktop/addons/network/options/ratelimit/)                   | Allows to configure rate limiting for domains and hosts.                        |
 |   | [Server Certificates](/docs/desktop/addons/network/options/servercertificates/) | Allows to manage and configure the root CA certificate and issued certificates. |
 
 ## See also
