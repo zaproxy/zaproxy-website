@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.5.0
+    version: 0.6.0
 ---
 
 # Copy URLs to Clipboard

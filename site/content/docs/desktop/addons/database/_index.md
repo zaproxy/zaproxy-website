@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: database
-    version: 0.1.0
+    version: 0.2.0
 ---
 
 # Database Add-on

@@ -34,12 +34,18 @@ Browser Based Authentication can be configured in the environment section of an 
           browserId:                   # String, Browser Id to use, default: firefox-headless
 ```
 
+## AJAX Spider Integration
+
+The AJAX Spider with automatically login if a user is specified which is in a context that uses Browser Based Authentication.
+
+Note that this uses the Selenium integration detailed below, so any browsers launched manually will also be logged in if the
+AJAX spider is performing an authenticated scan using Browser Based Authentication.
+
 ## Selenium Integration
 
 Any browsers launched by ZAP can be configured to always first login using the details configured in a context. This is disabled by default.
 
-This feature can be controlled by the following static methods, which can be called from scripts.
-A cleaner integration will be added in a future release.
+This feature can be controlled by the following static methods, which are used by the AJAX Spider and can also be called from scripts.
 
 ```
 org.zaproxy.addon.authhelper.AuthUtils.enableBrowserAuthentication(Context context, String userName)
