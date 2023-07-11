@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 1.1.0
+    version: 1.2.0
 ---
 
 # Encode / Decode / Hash dialog

@@ -9,6 +9,9 @@ weight: 6
 
 This [add-on](/docs/desktop/addons/authentication-helper/) adds a new session management type which supports an arbitrary number of headers.
 
+If used in conjunction with [Browser Based Authentication](/docs/desktop/addons/authentication-helper/browser-auth/) then it will also maintain all
+of the cookies set as part of authentication.
+
 The header values can include the following tokens:
 
 |   |                         |                                   |
