@@ -2,10 +2,9 @@ const path = require('path')
 const fs = require('fs')
 const core = require('@actions/core')
 const exec = require('@actions/exec')
-const github = require('@actions/github')
+const { getOctokit, context } = require('@actions/github')
 const glob = require('@actions/glob')
 const io = require('@actions/io')
-const { Octokit } = require("@octokit/rest")
 
 async function git(dir, args, options) {
   return exec.exec('git', args, { ...{ cwd: dir }, ...options })
@@ -48,8 +47,8 @@ async function copy(from, to) {
 
 async function run() {
   try {
-    const owner = github.context.repo.owner
-    const repo = github.context.repo.repo
+    const owner = context.repo.owner
+    const repo = context.repo.repo
 
     const sourceDir = path.resolve(process.env.GITHUB_WORKSPACE, repo)
     const websiteRepoName = getRequiredInput('repo')
@@ -78,7 +77,7 @@ async function run() {
       head: `${user}:${branch}`
     }
 
-    const octokit = new Octokit({ auth: authToken })
+    const octokit = getOctokit(authToken).rest;
 
     const pulls = await octokit.pulls.list({
       ...pullRequestParams,
@@ -93,7 +92,7 @@ async function run() {
 
     const gitHubBaseUrl = 'https://github.com'
     const title = 'Update site content'
-    const body = `From:\n${owner}/${repo}@${github.context.sha}`
+    const body = `From:\n${owner}/${repo}@${context.sha}`
     const commitMessage = `${title}\n\n${body}`
 
     core.info('Setting user configs...')
