@@ -7,6 +7,10 @@ links:
     link: make-your-life-easier/
     desc: authentication is hard, don't make it harder than it needs to be
 
+  - name: 'Auto-Detection'
+    link: auto-detection/
+    desc: if this works for you then it will make your life so much easier
+
   - name: 'Documented SSO Solutions'
     link: documented-sso-solutions/
     desc: these SSO providers have documented ways to make integration with tools like ZAP easier
@@ -32,12 +36,10 @@ links:
     desc: how to configure ZAP to maintain sessions
 
   - name: Authentication methods
-    desc: Coming Soon
+    link: authentication-methods/
+    desc: how ZAP authenticates to an app
 
   - name: Verification strategies
-    desc: Coming Soon
-
-  - name: Authentication in the browser
     desc: Coming Soon
 
   - name: Diagnosing authentication problems
@@ -58,7 +60,3 @@ Unfortunately authentication is hard, especially as there are so many different 
 
 These pages will tell you everything you need to know about testing an app with valid credentials in ZAP,
 they do not cover testing the authentication mechanism itself.
-
-For the latest enhancements to ZAP to make authentication easier see:
-
-* Blog: [Authentication Auto-Detection](/blog/2023-05-02-authentication-auto-detection/)

@@ -16,4 +16,4 @@ If you would like to help with this effort then please get in touch :grin:.
 * Documentation: https://lemonldap-ng.org/documentation/latest/testopenidconnect.html
 * Test service: https://oidctest.wsweet.org/
 
-{{<prevnext prevUrl="../make-your-life-easier/" prevTitle="How to make your life easier" nextUrl="../manual-auth/" nextTitle="Manual authentication">}}
+{{<prevnext prevUrl="../auto-detection/" prevTitle="Auto Detection" nextUrl="../manual-auth/" nextTitle="Manual authentication">}}
