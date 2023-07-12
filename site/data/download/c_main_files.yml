@@ -2,29 +2,33 @@
 ---
 - name: Windows (64) Installer
   id: win-64-i
-  size: 239 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2_12_0_windows.exe
+  size: 195 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2_13_0_windows.exe
 - name: Windows (32) Installer
   id: win-32-i
-  size: 239 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2_12_0_windows-x32.exe
+  size: 195 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2_13_0_windows-x32.exe
 - name: Linux Installer
   id: nix-i
-  size: 240 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2_12_0_unix.sh
+  size: 199 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2_13_0_unix.sh
 - name: Linux Package
   id: nix-p
-  size: 237 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0_Linux.tar.gz
+  size: 196 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2.13.0_Linux.tar.gz
 - name: macOS (amd64) Installer
   id: osx-i
-  size: 355 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0.dmg
+  size: 224 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2.13.0.dmg
+- name: macOS (aarch64) Installer
+  id: osx-aarch64-i
+  size: 223 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2.13.0_aarch64.dmg
 - name: Cross Platform Package
   id: cp-p
-  size: 266 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0_Crossplatform.zip
+  size: 225 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2.13.0_Crossplatform.zip
 - name: Core Cross Platform Package
   id: cp-c
-  size: 112 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.12.0/ZAP_2.12.0_Core.zip
+  size: 88 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.13.0/ZAP_2.13.0_Core.zip
