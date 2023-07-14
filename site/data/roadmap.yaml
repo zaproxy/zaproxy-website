@@ -45,9 +45,9 @@
   year: n/a
 
 - item: Release 2.13
-  status: 🗓 Not started
+  status: 🎉 Finished
+  url: /blog/2023-07-12-zap-2.13.0/
   year: 2023
-
 - item: AJAX Spider Element Exclusion
   status: 🎉 Finished
   sponsor: NightVision
