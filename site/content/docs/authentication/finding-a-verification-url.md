@@ -8,6 +8,8 @@ type: page
 
 If you need to set up ZAP to handle authentication then you really need to find a suitable verification URL in your app.
 
+You should always try [Auto Detection](../auto-detection) first as if this works it will find a suitable verification URL for you.
+
 The verification URL will be one that you can request from the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/) and which will send a response that allows you to work out whether you are logged in or not. What that looks like will entirely depend on your app, but could be something like:
 
 * Any page or API endpoint which returns the authenticated user's Id

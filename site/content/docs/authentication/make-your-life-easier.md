@@ -40,4 +40,4 @@ Although you probably want to use authentication in automation it is still much 
 
 You will be able to see the requests and responses sent through ZAP and be able to change them on the fly in order to see what works and what does not work.
 
-{{<prevnext nextUrl="../documented-sso-solutions/" nextTitle="Documented SSO Solutions">}}
+{{<prevnext nextUrl="../auto-detection/" nextTitle="Auto Detection">}}
