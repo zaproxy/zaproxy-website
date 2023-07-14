@@ -7,12 +7,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - run: sudo apt-get update && sudo apt-get install -y nginx && sudo systemctl start nginx
       
       - name: Install node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '20'
       
@@ -30,7 +30,7 @@ jobs:
       - run: google-chrome --headless --disable-gpu --screenshot --window-size=1280,1600 http://localhost
       
       - name: 'Upload screenshot'
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           name: screenshots
           path: ./screenshot.png
