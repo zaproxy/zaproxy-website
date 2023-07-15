@@ -316,7 +316,7 @@ details:
 - path: /test/javascript/interactive/multi-step-request-event-listener-dom.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
 - path: /test/javascript/interactive/multi-step-request-event-listener.found
   scheme: https
   standard: FAIL
@@ -366,8 +366,8 @@ details:
   standard: Pass
   ajax: FAIL
 tests: 91
-passes: 76
+passes: 75
 standardPasses: 61
-ajaxPasses: 36
-fails: 15
-score: 84%
+ajaxPasses: 35
+fails: 16
+score: 82%
