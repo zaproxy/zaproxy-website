@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: 33.0.0
+    version: 34.0.0
 ---
 
 # Passive Scan Rules - Beta
@@ -68,11 +68,37 @@ Redirects are ignored except at the Low threshold.
 
 Latest code: [PermissionsPolicyScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/PermissionsPolicyScanRule.java)
 
+## Site Isolation Scan Rule
+
+Spectre is a side-channel attack allowing an attacker to read data from memory. One of the counter-measures is to prevent sensitive data from entering the memory and to separate trusted and untrusted documents in different browsing contexts. Three headers have been defined to enable that:
+
+* Cross-Origin-Resource-Policy
+* Cross-Origin-Embedder-Policy
+* Cross-Origin-Opener-Policy
+
+The Cross-Origin-Embedder-Policy (COEP) header prevents a document from loading any non-same-origin resources which don't explicitly grant the document permission to be loaded. (from [COOP and COEP explained](https://docs.google.com/document/d/1zDlfvfTJ_9e8Jdc8ehuV4zMEu9ySMCiTGMS9y0GU92k/edit)). The Cross-Origin-Resource-Policy (CORP) header allows you to control the set of origins that are empowered to include a resource. It is a robust defense against attacks like Spectre, as it allows browsers to block a given response before it enters an attacker's process.
+For example, an attacker site can include an image tag with an attribute src to an internal content. The browser will load the data. With a side-channel attack, an attacker will be able to read it. The Cross-Origin-Opener-Policy (COOP) header forces the browser to create multiple browsing contexts to separate trusted and untrusted documents. Site Isolation is complementary with Cross-Origin-Resource-Blocking, a mechanism managed independently by the browser.
+
+Alerts generated:
+
+* **Cross-Origin-Resource-Policy Header Missing or Invalid**
+* **Cross-Origin-Embedder-Policy Header Missing or Invalid**
+* **Cross-Origin-Opener-Policy Header Missing or Invalid**
+
+Latest code: [SiteIsolationScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/SiteIsolationScanRule.java)
+
 ## Servlet Parameter Pollution
 
 Searches response content for HTML forms which fail to specify an action element. Version 3 of the Java Servlet spec calls for aggregation of query string and post data elements which may result in unintended handling of user controlled data. This may impact other frameworks and technologies as well. **Note:** This scan rule will only analyze responses on LOW Threshold, and in Context URLs for which the Tech JSP/Servlet is applicable.
 
 Latest code: [ServletParameterPollutionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/ServletParameterPollutionScanRule.java)
+
+## Source Code Disclosure
+
+Application Source Code was disclosed by the web server.  
+NOTE: Ignores CSS, JavaScript, images, and font files.
+
+Latest code: [SourceCodeDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/SourceCodeDisclosureScanRule.java)
 
 ## Sub Resource Integrity Attribute Missing
 
