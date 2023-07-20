@@ -57,9 +57,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v42/ascanrulesAlpha-alpha-42.zap
-  date: 2022-12-13
-  version: 42
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v43/ascanrulesAlpha-alpha-43.zap
+  date: 2023-07-20
+  version: 43
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta status Active Scanner rules
@@ -67,9 +67,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v46/ascanrulesBeta-beta-46.zap
-  date: 2023-05-03
-  version: 46
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v47/ascanrulesBeta-beta-47.zap
+  date: 2023-07-20
+  version: 47
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -772,9 +772,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v39/pscanrulesAlpha-alpha-39.zap
-  date: 2023-05-03
-  version: 39
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v40/pscanrulesAlpha-alpha-40.zap
+  date: 2023-07-20
+  version: 40
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta status Passive Scanner rules
@@ -782,9 +782,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v33/pscanrulesBeta-beta-33.zap
-  date: 2023-05-03
-  version: 33
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v34/pscanrulesBeta-beta-34.zap
+  date: 2023-07-20
+  version: 34
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
