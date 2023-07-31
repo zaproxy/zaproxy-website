@@ -1,7 +1,7 @@
 baseurl: "/"
 languageCode: "en-us"
 languageLang: "en"
-title: "OWASP ZAP"
+title: "ZAP"
 enableEmoji: true
 summaryLength: 48
 disableHugoGeneratorInject: true

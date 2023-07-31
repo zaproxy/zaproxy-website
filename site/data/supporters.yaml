@@ -1,13 +1,17 @@
 ---
 
 platinum:
+  - name: 'The Software Security Project'
+    link: https://softwaresecurityproject.org/
+    logo: /img/supporters/ssp.png
+    notes: Sponsor Simon and Ricardo's work on ZAP
+
+gold:
   - name: 'Jit'
     link: https://www.jit.io/zap?utm_source=zapproxy&utm_medium=banner&utm_campaign=zap-proxy-website-banner
     logo: /img/supporters/jit.png
-    license: 'Commercial'
-    notes: Sponsoring Simon's work on ZAP
+    notes: Sponsored Simon's work on ZAP for 1 year
 
-gold:
   - name: 'Mozilla'
     link: https://www.mozilla.org/
     logo: /img/supporters/mozilla.png

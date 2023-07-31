@@ -13,7 +13,7 @@ Simon released ZAP in 2010 and has been working on it ever since.
 
 #### Sponsor
 
-Simon's work on ZAP is sponsored by [Jit](https://jit.io) where he works as a Distinguished Engineer.
+Simon's work on ZAP is supported by [The Software Security Project](https://softwaresecurityproject.org/).
 
 #### Expertise
 
@@ -43,6 +43,3 @@ All of Simon’s publicly available videos are linked off the [Videos](/videos/)
 * 2015/05/18 [FLOSS Weekly 329: OWASP ZAP](https://twit.tv/shows/floss-weekly/episodes/329)
 * 2013/02/02 [FOSDEM: Simon Bennetts: Practical Security for developers, using OWASP ZAP](https://archive.fosdem.org/2013/interviews/2013-simon-bennetts/)
 
-#### Other Work
-
-Simon is an active member of the [OWASP Project Committee](https://owasp.org/www-committee-project/).

@@ -1,7 +1,7 @@
 {
   "name": "zaproxy-website",
   "version": "1.0.0",
-  "description": "Website for OWASP ZAP one of the world's most popular free security tools",
+  "description": "Website for ZAP one of the world's most popular free security tools",
   "repository": "zaproxy/zaproxy-website",
   "main": "index.js",
   "scripts": {

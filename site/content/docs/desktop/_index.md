@@ -1,6 +1,6 @@
 ---
 # This page was generated from the add-on.
-title: The OWASP ZAP Desktop User Guide
+title: The ZAP Desktop User Guide
 type: userguide
 weight: 1
 cascade:
@@ -9,9 +9,9 @@ cascade:
     version: 16.0.0
 ---
 
-# OWASP ZAP Desktop User Guide
+# ZAP Desktop User Guide
 
-Welcome to the OWASP Zed Attack Proxy (ZAP) Desktop User Guide.  
+Welcome to the Zed Attack Proxy (ZAP) Desktop User Guide.  
 
 This is available both as context sensitive help within ZAP and online at
 [https://www.zaproxy.org/docs/desktop/](/docs/desktop/)
@@ -45,7 +45,6 @@ ZAP is a fork of the open source variant of the [Paros Proxy](/docs/desktop/paro
 |   |                                                                           |
 |---|---------------------------------------------------------------------------|
 |   | [Main ZAP website](/)                                                     |
-|   | [OWASP ZAP homepage](https://owasp.org/www-project-zap/)                  |
 |   | [Wikipedia entry for proxies](https://en.wikipedia.org/wiki/Proxy_server) |
 
 ## Official Videos

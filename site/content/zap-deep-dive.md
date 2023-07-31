@@ -67,6 +67,6 @@ links:
     uuid: 8liaCddrb8s
 ---
 A series of longer videos (~20-30 mins each) about different ZAP features produced in conjunction with [StackHawk](https://www.stackhawk.com).
-These are included in the [OWASP ZAP Tutorial videos](https://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB) playlist along with older ZAP videos 
-and their own [OWASP ZAP Deep Dive](https://www.youtube.com/playlist?list=PLEBitBW-HlstiimJoOyOxunpt79q0l4Ku) playlist.
+These are included in the [ZAP Tutorial videos](https://www.youtube.com/playlist?list=PLEBitBW-Hlsv8cEIUntAO8st2UGhmrjUB) playlist along with older ZAP videos 
+and their own [ZAP Deep Dive](https://www.youtube.com/playlist?list=PLEBitBW-HlstiimJoOyOxunpt79q0l4Ku) playlist.
 

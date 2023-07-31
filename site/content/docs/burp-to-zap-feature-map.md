@@ -33,8 +33,6 @@ The following significant features are available in Burp but currently not in ZA
 * HTTP Host Header manipulation
   * due to limitations in the current ZAP networking stack it was not possible to manipulate some part of the HTTP header
     * __Update:__ this is now possible programmatically but not in the desktop UI - this is being worked on so this restriction will be removed
-* HTTP/2 Support
-  * __Update:__ this is now supported in the weekly / development versions
 
 ### Burp Missing Features
 
