@@ -77,7 +77,7 @@ The [services](/faq/what-calls-home-does-zap-make/) we maintain for ZAP are curr
 
 If you do have any questions or concerns then please reach out to me and/or the rest of the team, using all the usual ways: 
 
-* ZAP User Group thread (TBA - will create this once this blog post has been published)
+* [ZAP User Group thread](https://groups.google.com/g/zaproxy-users/c/8-c0h2JtCXI/m/-ZC6sYTfAAAJ)
 * [ZAP Core Team Email](mailto:zaproxy-admin@googlegroups.com)
 * [My Email](mailto:psiinon@gmail.com)
 * [My Twitter](https://twitter.com/psiinon) (DM's open)
