@@ -7,7 +7,7 @@ type: docker
 ---
 
 # Introduction
-Docker image with OWASP Zed Attack Proxy preinstalled.
+Docker image with Zed Attack Proxy preinstalled.
 
 # Details
 

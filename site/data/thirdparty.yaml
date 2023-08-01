@@ -7,7 +7,7 @@ services_plus:
     link: https://www.jit.io/zap?utm_source=zapproxy&utm_medium=banner&utm_campaign=zap-proxy-website-banner
     logo: /img/supporters/jit.png
     license: 'Commercial'
-    supporter: ZAP Platinum Supporter
+    supporter: ZAP Gold Supporter
 
   - name: 'SOOS'
     link: https://soos.io/soos-dast-no-limit/

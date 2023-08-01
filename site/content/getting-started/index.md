@@ -45,7 +45,8 @@ Pentesting usually follows these stages:
 The ultimate goal of pentesting is to search for vulnerabilities so that these vulnerabilities can be addressed. It can also verify that a system is not vulnerable to a known class or specific defect; or, in the case of vulnerabilities that have been reported as fixed, verify that the system is no longer vulnerable to that defect.
 
 ### Introducing ZAP
-Zed Attack Proxy (ZAP) is a free, open-source penetration testing tool being maintained under the umbrella of the Open Worldwide Application Security Project (OWASP). ZAP is designed specifically for testing web applications and is both flexible and extensible.
+Zed Attack Proxy (ZAP) is a free, open-source penetration testing tool being maintained under the umbrella of 
+The Software Security Project (SSP). ZAP is designed specifically for testing web applications and is both flexible and extensible.
 
 At its core, ZAP is what is known as a “man-in-the-middle proxy.” It stands between the tester’s browser and the web application so that it can intercept and inspect messages sent between browser and web application, modify the contents if needed, and then forward those packets on to the destination. It can be used as a stand-alone application, and as a daemon process.
 
@@ -59,7 +60,8 @@ ZAP provides functionality for a range of skill levels – from developers, to t
 
 Because ZAP is open-source, the source code can be examined to see exactly how the functionality is implemented. Anyone can volunteer to work on ZAP, fix bugs, add features, create pull requests to pull fixes into the project, and author add-ons to support specialized situations.
 
-As with most open source projects, donations are welcome to help with costs for the projects. You can find a donate button on the owasp.org page for ZAP at [https://owasp.org/www-project-zap/](https://owasp.org/www-project-zap/).
+As with most open source projects, donations are welcome to help with costs for the projects. For more details see the 
+[Sponsor](/sponsor/) page.
 
 ### Install and Configure ZAP
 ZAP has installers for Windows, Linux, and macOS. There are also Docker images available on the download site listed below.
@@ -72,7 +74,7 @@ Note that ZAP requires Java 11+ in order to run. The macOS installer includes an
 Once the installation is complete, launch ZAP and read the license terms. Click **Agree** if you accept the terms, and ZAP will finish installing, then ZAP will automatically start.
 
 ###### macOS
-OWASP ZAP is currently not a verified developer with Apple. On macOS, you will see a message like: 
+ZAP is currently not a verified developer with Apple. On macOS, you will see a message like: 
 > “OWASP ZAP.app” cannot be opened because the developer cannot be verified.
 
 To circumvent this warning, you would need to go to **System Preferences** &gt; **Security & Privacy** at the bottom of the dialog. You will see a message saying that "OWASP ZAP" was blocked. Next to it, if you trust the downloaded installer, you can click **Open anyway**.

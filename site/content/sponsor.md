@@ -19,11 +19,10 @@ community of users who really care about web security.
 
 ## How to Sponsor ZAP
 
-You can sponsor the ZAP project via [OWASP](https://owasp.org/donate/?reponame=www-project-zap&title=OWASP+ZAP).
+The best way to support the ZAP project is to join [The Software Security Project](https://softwaresecurityproject.org/).
 
 You can also sponsor the following members of the Core team directly - these contributions also count as donations to the ZAP project:
 
-* [thc202](https://github.com/sponsors/thc202)
 * [kingthorin](https://github.com/sponsors/kingthorin)
 * [ricekot](https://github.com/sponsors/ricekot)
 
