@@ -12,7 +12,7 @@ authors:
     - nirojan
 ---
 
-[![zap-action](./images/zap-action.png)](https://github.com/marketplace/actions/owasp-zap-baseline-scan)
+[![zap-action](./images/zap-action.png)](https://github.com/marketplace/actions/zap-baseline-scan)
 
 With the increasing number of web application security breaches, it is essential to keep your web application secure at all times. 
 Furthermore having security integrated into your CI/CD pipeline (DevSecOps) will become a lifesaver if you are actively 
@@ -25,7 +25,7 @@ such as — creating a new issue, pushing a commit, or on a scheduled basis. Thi
 without involving any of your own infrastructures. The ZAP baseline action is available in the GitHub Marketplace under 
 the actions/security category.
 
-The [ZAP baseline-action](https://github.com/marketplace/actions/owasp-zap-baseline-scan) can be configured to periodically 
+The [ZAP baseline-action](https://github.com/marketplace/actions/zap-baseline-scan) can be configured to periodically 
 scan a publicly available web application. Also, ZAP baseline-action can be configured to public and private repositories as well.
 Based on the scan results ZAP will maintain an active issue in GitHub repository. The action will update the issue if it identifies 
 any new or resolved alerts and will close the issue if all the alerts have been resolved. A detailed report is attached to the 
@@ -110,6 +110,6 @@ Also, you can view the scan logs by navigating to the ZAP [scan job](https://git
 
 
 We are excited to hear your thoughts and feedback for the new ZAP Baseline Action. If you find the action useful please star the action.
-Also, checkout our [ZAP full scan action](https://github.com/marketplace/actions/owasp-zap-full-scan) on how to perform active scanning 
+Also, checkout our [ZAP full scan action](https://github.com/marketplace/actions/zap-full-scan) on how to perform active scanning 
 on your web applications. Reach us through the [user group](https://groups.google.com/forum/#!forum/zaproxy-users) or for any additional 
 enhancements please feel free to create an issue in the [following repository](https://github.com/zaproxy/action-baseline).
