@@ -12,7 +12,7 @@ Does this mean ZAP has attacked those other domains?
 
 No. ZAP will only attack the sites you specify.
 
-However the [AJAX Spider](/docs/desktop/addons/ajax-spider/) and the 
+However, the [AJAX Spider](/docs/desktop/addons/ajax-spider/) and the 
 [DOM XSS Scan Rule](/docs/desktop/addons/dom-xss-active-scan-rule/) both launch browsers.
 We allow the browsers to access certain off domain resources such as JavaScript files - blocking these
 often breaks the target sites and mean the AJAX Spider or DOM XSS Scan Rule would not work.
