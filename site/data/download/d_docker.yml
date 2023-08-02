@@ -1,40 +1,44 @@
 title: Docker
 table:
   - name: Stable
-    id: dc-s
     notes: The standard release
-    cmd: docker pull owasp/zap2docker-stable
-    link: https://hub.docker.com/r/owasp/zap2docker-stable/
     ghcr:
       id: docker-ghcr-stable
       cmd: docker pull ghcr.io/zaproxy/zaproxy:stable
       link: https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy/versions?filters[version_type]=tagged
+    ssp:
+      id: docker-ssp-stable
+      cmd: docker pull softwaresecurityproject/zap-stable
+      link: https://hub.docker.com/r/softwaresecurityproject/zap-stable
   - name: Bare
-    id: dc-b
     notes: Minimal release, ideal for CI
-    cmd: docker pull owasp/zap2docker-bare
-    link: https://hub.docker.com/r/owasp/zap2docker-bare/
     ghcr:
       id: docker-ghcr-bare
       cmd: docker pull ghcr.io/zaproxy/zaproxy:bare
       link: https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy/versions?filters[version_type]=tagged
+    ssp:
+      id: docker-ssp-bare
+      cmd: docker pull softwaresecurityproject/zap-bare
+      link: https://hub.docker.com/r/softwaresecurityproject/zap-bare
   - name: Weekly
-    id: dc-w
     notes: Updated every week
-    cmd: docker pull owasp/zap2docker-weekly
-    link: https://hub.docker.com/r/owasp/zap2docker-weekly/
     ghcr:
       id: docker-ghcr-weekly
       cmd: docker pull ghcr.io/zaproxy/zaproxy:weekly
       link: https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy/versions?filters[version_type]=tagged
+    ssp:
+      id: docker-ssp-weekly
+      cmd: docker pull softwaresecurityproject/zap-weekly
+      link: https://hub.docker.com/r/softwaresecurityproject/zap-weekly
   - name: Nightly
-    id: dc-n
     notes: The very latest source code
-    cmd: docker pull owasp/zap2docker-live
-    link: https://hub.docker.com/r/owasp/zap2docker-live/
     ghcr:
       id: docker-ghcr-nightly
       cmd: docker pull ghcr.io/zaproxy/zaproxy:nightly
       link: https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy/versions?filters[version_type]=tagged
+    ssp:
+      id: docker-ssp-nightly
+      cmd: docker pull softwaresecurityproject/zap-nightly
+      link: https://hub.docker.com/r/softwaresecurityproject/zap-nightly
 info:
 - See [Docker](/docs/docker/) for more information.

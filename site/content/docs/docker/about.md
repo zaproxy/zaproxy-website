@@ -9,6 +9,9 @@ type: docker
 # Introduction
 Docker image with Zed Attack Proxy preinstalled.
 
+Please note that ZAP Docker images are available on Docker Hub as well as GitHub Container Registry (GHCR).
+While the `docker run` commands on this page use the Docker Hub images, either can be used interchangeably.
+
 # Details
 
 ## Install Instructions
@@ -21,8 +24,8 @@ The monthly updates pull in the latest base Docker image and also any updated ZA
 changes are included.
 
 ```bash
-docker pull owasp/zap2docker-stable
 docker pull ghcr.io/zaproxy/zaproxy:stable
+docker pull softwaresecurityproject/zap-stable
 ```
 
 #### Weekly
@@ -31,8 +34,8 @@ The weekly image is typically updated every Monday, and includes the very latest
 core and add-ons. It is the same as the [Cross Platform Weekly Release](/download/#weekly).
 
 ```bash
-docker pull owasp/zap2docker-weekly
 docker pull ghcr.io/zaproxy/zaproxy:weekly
+docker pull softwaresecurityproject/zap-weekly
 ```
 
 #### Nightly
@@ -41,8 +44,8 @@ The nightly image is updated at least once a day, and includes the very latest c
 core and add-ons.
 
 ```bash
-docker pull owasp/zap2docker-live
 docker pull ghcr.io/zaproxy/zaproxy:nightly
+docker pull softwaresecurityproject/zap-nightly
 ```
 
 #### Bare
@@ -51,8 +54,8 @@ The bare image is a very small Docker image and contains only the necessary requ
 It is updated on the same schedule as the stable image.
 
 ```bash
-docker pull owasp/zap2docker-bare
 docker pull ghcr.io/zaproxy/zaproxy:bare
+docker pull softwaresecurityproject/zap-bare
 ```
 The Dockerfiles can be found [here](https://github.com/zaproxy/zaproxy/tree/main/docker).
 
@@ -94,27 +97,27 @@ For more details see the blog posts:
 These GitHub actions are a simple way to run the packaged scans, especially if you already use GitHub.
 
 ### Automation Framework
-The [AutomationFramework](/docs/automate/automation-framework/) allows you to control ZAP via a single YAML file.
+The [Automation Framework](/docs/automate/automation-framework/) allows you to control ZAP via a single YAML file.
 It is under active development and will in time exceed the capabilities of the packaged scans and become the recommended option
 for people who want more control over ZAP. The packaged scans will not be removed but are being migrated to use the Automation Framework.
 
 You can run the Automation Framework in docker using the zap.yaml file in the current directory using:
 
 ```bash
-docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap.sh -cmd -autorun /zap/wrk/zap.yaml
+docker run -v $(pwd):/zap/wrk/:rw -t softwaresecurityproject/zap-stable zap.sh -cmd -autorun /zap/wrk/zap.yaml
 ```
 Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory (ex: `C:\your\working\directory\`).
 
 If you want to make sure that ZAP is up to date before running the yaml file then the recommended approach is:
 
 ```bash
-docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable bash -c "zap.sh -cmd -addonupdate; zap.sh -cmd -autorun /zap/wrk/zap.yaml"
+docker run -v $(pwd):/zap/wrk/:rw -t softwaresecurityproject/zap-stable bash -c "zap.sh -cmd -addonupdate; zap.sh -cmd -autorun /zap/wrk/zap.yaml"
 ```
 
 The latest version of the Automation Framework will set the ZAP exit value based on the result of the plan, in order to have access to this you need to use a command like:
 
 ```bash
-docker container run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap.sh -cmd -autorun /zap/wrk/zap.yaml
+docker container run -v $(pwd):/zap/wrk/:rw -t softwaresecurityproject/zap-weekly zap.sh -cmd -autorun /zap/wrk/zap.yaml
 ```
 
 ### ZAP GUI in a Browser
@@ -124,7 +127,7 @@ See the [Webswing](../webswing/) page for details.
 ### ZAP Headless
 You can also start the ZAP in headless mode with following command:
 ```bash
-docker run -u zap -p 8080:8080 -i owasp/zap2docker-stable zap.sh -daemon -host 0.0.0.0 -port 8080 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.key=<api-key>
+docker run -u zap -p 8080:8080 -i softwaresecurityproject/zap-stable zap.sh -daemon -host 0.0.0.0 -port 8080 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.key=<api-key>
 ```
 <sub>**Note**: `-config api.addrs.addr.name=.*` opens the API up for connections from any other host, it is prudent to configure this more specifically for your network/setup.</sub>
 
@@ -132,7 +135,7 @@ docker run -u zap -p 8080:8080 -i owasp/zap2docker-stable zap.sh -daemon -host 0
 You can start the ZAP in headless mode with xvfb following command:
 
 ```bash
-docker run -u zap -p 8080:8080 -i owasp/zap2docker-stable zap-x.sh -daemon -host 0.0.0.0 -port 8080 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
+docker run -u zap -p 8080:8080 -i softwaresecurityproject/zap-stable zap-x.sh -daemon -host 0.0.0.0 -port 8080 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
 ```
 <sub>**Note**: `-config api.addrs.addr.name=.*` opens the API up for connections from any other host, it is prudent to configure this more specifically for your network/setup.</sub>
 
@@ -146,7 +149,7 @@ Docker appears to assign 'random' IP addresses, so an approach that appears to w
 Run ZAP as a daemon listening on "0.0.0.0":
 
 ```bash
-docker run -p 8090:8090 -i owasp/zap2docker-stable zap.sh -daemon -port 8090 -host 0.0.0.0
+docker run -p 8090:8090 -i softwaresecurityproject/zap-stable zap.sh -daemon -port 8090 -host 0.0.0.0
 ```
 Find out the container id:
 ```bash
@@ -172,7 +175,7 @@ $(ip -f inet -o addr show docker0 | awk '{print $4}' | cut -d '/' -f 1)
 ```
 For example:
 ```bash
-docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://$(ip -f inet -o addr show docker0 | awk '{print $4}' | cut -d '/' -f 1):10080
+docker run -t softwaresecurityproject/zap-weekly zap-baseline.py -t http://$(ip -f inet -o addr show docker0 | awk '{print $4}' | cut -d '/' -f 1):10080
 ```
 
 ### Scanning an app running in another Docker container
