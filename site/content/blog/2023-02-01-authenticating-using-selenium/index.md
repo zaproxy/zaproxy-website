@@ -72,7 +72,7 @@ The solution is quite complex, and requires several scripts to make it work.
 
 The full set of scripts and instructions on how to run them are available in the 
 [Community Scripts](https://github.com/zaproxy/community-scripts/) repo in the 
-[af-plans/juiceshop-selenium-auth](https://github.com/zaproxy/community-scripts/tree/main/af-plans/juiceshop-selenium-auth) directory.
+[af-plans/juiceshop-selenium-auth](https://github.com/zaproxy/community-scripts/tree/main/other/af-plans/juiceshop-selenium-auth) directory.
 
 As you will see we plan to make this process easier, which is one reason for not giving the set-up instructions here - we will be updating the example as we add features which simplify the process.
 
@@ -85,7 +85,7 @@ We actually handle the 2 cases differently:
 
 #### The Test Plan
 
-[juiceshop-test.yaml](https://github.com/zaproxy/community-scripts/tree/main/af-plans/juiceshop-selenium-auth/juiceshop-test.yaml) is an AF plan which just checks that authentication is set up correctly for a single direct request.
+[juiceshop-test.yaml](https://github.com/zaproxy/community-scripts/tree/main/other/af-plans/juiceshop-selenium-auth/juiceshop-test.yaml) is an AF plan which just checks that authentication is set up correctly for a single direct request.
 
 It sets up the Juice Shop context (including the authentication) and registers all of the scripts.
 
@@ -97,7 +97,7 @@ If you change the plan or scripts to break the authentication (e.g. by removing 
 
 #### The Full Plan
 
-[juiceshop-auth.yaml](https://github.com/zaproxy/community-scripts/tree/main/af-plans/juiceshop-selenium-auth/juiceshop-auth.yaml) is an AF plan which checks that authentication is set up correctly for both the standard and AJAX Spiders.
+[juiceshop-auth.yaml](https://github.com/zaproxy/community-scripts/tree/main/other/af-plans/juiceshop-selenium-auth/juiceshop-auth.yaml) is an AF plan which checks that authentication is set up correctly for both the standard and AJAX Spiders.
 
 It sets up the context and scripts as per the test plan.
 
@@ -108,7 +108,7 @@ In both cases a set of statistics are checked to make sure that authentication i
 
 #### The Authentication Script
 
-The [JuiceShopAuthentication.js](https://github.com/zaproxy/community-scripts/tree/main/af-plans/juiceshop-selenium-auth/JuiceShopAuthentication.js) script is run when ZAP detects that a direct request is not currently authenticated.
+The [JuiceShopAuthentication.js](https://github.com/zaproxy/community-scripts/tree/main/other/af-plans/juiceshop-selenium-auth/JuiceShopAuthentication.js) script is run when ZAP detects that a direct request is not currently authenticated.
 
 The first time it runs it creates a new proxy for the authentication requests - this is how ZAP can tell that these requests are for authentication.
 
@@ -126,7 +126,7 @@ This is another place you will need to change for your apps.
 
 #### The HttpSender Script
 
-The [JuiceShopHttpSender.js](https://github.com/zaproxy/community-scripts/tree/main/af-plans/juiceshop-selenium-auth/JuiceShopHttpSender.js) script is run for all of the requests and responses proxied through ZAP.
+The [JuiceShopHttpSender.js](https://github.com/zaproxy/community-scripts/tree/main/other/af-plans/juiceshop-selenium-auth/JuiceShopHttpSender.js) script is run for all of the requests and responses proxied through ZAP.
 
 It is needed so that we add the authentication token and cookie to the verification requests that ZAP uses to check if we are logged in.
 
@@ -134,7 +134,7 @@ We also use it to update statistics which will help us tell if requests from the
 
 #### The Selenium Script
 
-The [JuiceShopSelenium.js](https://github.com/zaproxy/community-scripts/tree/main/af-plans/juiceshop-selenium-auth/JuiceShopSelenium.js) script is run whenever ZAP launches a browser. This will happen when the AJAX Spider and DOM XSS rule run, but also when we launch a browser via the authentication script.
+The [JuiceShopSelenium.js](https://github.com/zaproxy/community-scripts/tree/main/other/af-plans/juiceshop-selenium-auth/JuiceShopSelenium.js) script is run whenever ZAP launches a browser. This will happen when the AJAX Spider and DOM XSS rule run, but also when we launch a browser via the authentication script.
 
 The script also logs in to Juice Shop in the same way as the authentication script. This sets up the client side authentication state correctly - without this the AJAX Spider would not be able to explore authenticated content.
 
@@ -142,7 +142,7 @@ If your apps set client side authentication state then you will need to authenti
 
 #### The Session Management Script
 
-The [JuiceShopSession.js](https://github.com/zaproxy/community-scripts/tree/main/af-plans/juiceshop-selenium-auth/JuiceShopSession.js) script is run when direct requests are made by ZAP. 
+The [JuiceShopSession.js](https://github.com/zaproxy/community-scripts/tree/main/other/af-plans/juiceshop-selenium-auth/JuiceShopSession.js) script is run when direct requests are made by ZAP. 
 
 It updates the requests with the authentication token and cookie.
 
@@ -150,7 +150,7 @@ It will not run when the AJAX Spider runs as we are running that 'unauthenticate
 
 #### The Reset Script
 
-The [JuiceShopReset.js](https://github.com/zaproxy/community-scripts/tree/main/af-plans/juiceshop-selenium-auth/JuiceShopReset.js) script is not actually used when automating ZAP. However, it is very useful when you are testing and debugging a set up like this using the ZAP desktop.
+The [JuiceShopReset.js](https://github.com/zaproxy/community-scripts/tree/main/other/af-plans/juiceshop-selenium-auth/JuiceShopReset.js) script is not actually used when automating ZAP. However, it is very useful when you are testing and debugging a set up like this using the ZAP desktop.
 
 The script stops the proxy started by the authentication script, clears the session tokens stored in global script variables, and resets the authentication states for all of the users.
 
