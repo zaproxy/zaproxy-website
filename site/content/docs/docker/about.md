@@ -85,9 +85,9 @@ The `zap_tuned()` [Scan Hook](../scan-hooks/) is called after these changes have
 ### GitHub Actions
 The following GitHub Actions wrap the above packaged scans and also support raising GitHub issues for potential vulnerabilities found:
 
-* [OWASP ZAP Baseline Scan](https://github.com/marketplace/actions/owasp-zap-baseline-scan)
-* [OWASP ZAP Full Scan](https://github.com/marketplace/actions/owasp-zap-full-scan)
-* [OWASP ZAP API Scan](https://github.com/marketplace/actions/owasp-zap-api-scan)
+* [ZAP Baseline Scan](https://github.com/marketplace/actions/zap-baseline-scan)
+* [ZAP Full Scan](https://github.com/marketplace/actions/zap-full-scan)
+* [ZAP API Scan](https://github.com/marketplace/actions/zap-api-scan)
   
 For more details see the blog posts:
 
