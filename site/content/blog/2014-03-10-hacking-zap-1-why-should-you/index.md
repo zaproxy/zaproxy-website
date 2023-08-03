@@ -12,7 +12,7 @@ helping you “hack the ZAP source code”.
   
 ZAP is an open source tool for finding vulnerabilities in web applications. It is the [most active OWASP
 project](https://www.openhub.net/orgs/OWASP) and is very community focused - it probably has more
-[contributors](https://www.openhub.net/p/zaproxy/contributors/summary) than any other web application security tool. It is being [continually enhanced](https://www.openhub.net/p/zaproxy/commits/summary) and, unusually for a security tool, has been translated into over [25 languages](https://crowdin.com/project/owasp-zap) thanks to over 70 translators.  
+[contributors](https://www.openhub.net/p/zaproxy/contributors/summary) than any other web application security tool. It is being [continually enhanced](https://www.openhub.net/p/zaproxy/commits/summary) and, unusually for a security tool, has been translated into over [25 languages](https://crowdin.com/project/zaproxy) thanks to over 70 translators.  
 This series is designed to help newcomers dive head-first into the ZAP source code. However for this first blog post I thought I’d take a step back and give some reasons why you might want to change the ZAP source code in the first place.
 
 ##  You help others
