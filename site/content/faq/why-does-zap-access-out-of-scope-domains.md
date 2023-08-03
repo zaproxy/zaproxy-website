@@ -19,7 +19,7 @@ often breaks the target sites and mean the AJAX Spider or DOM XSS Scan Rule woul
 
 This is perfectly safe and no different from just opening the relevant URLs in your own browser.
 
-Browsers also make lots of "calls home". Most of these can be ignored by using the Network
+Browsers also make lots of "calls home", most of which can be ignored by using the Network
 [Global Exclusions](/docs/desktop/addons/network/options/globalexclusions/).
 
 It is also worth noting that you can choose which sites are included in a [report](/docs/desktop/addons/report-generation/#sites).
