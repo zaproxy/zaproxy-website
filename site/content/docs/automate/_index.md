@@ -12,7 +12,7 @@ links:
     desc: the easiest way to get started with ZAP automation with lots of flexibility
 
   - name: 'GitHub Actions'
-    link: https://github.com/marketplace?query=owasp+zap
+    link: https://github.com/marketplace?query=zap&verification=verified_creator
     desc: the associated packaged scans available on the GitHub Marketplace
 
   - name: 'Automation Framework'

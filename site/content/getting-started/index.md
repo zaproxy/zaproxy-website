@@ -214,7 +214,7 @@ All of the add-ons on the marketplace are completely free.
 ### Automation
 ZAP is an ideal tool to use in automation and supports a range of options:
 - [Docker Packaged Scans](/docs/docker/)
-- [GitHub Actions](https://github.com/marketplace?query=owasp+zap)
+- [GitHub Actions](https://github.com/marketplace?query=zap&verification=verified_creator)
 - [Automation Framework](/docs/automate/automation-framework/)
 - [API and Daemon mode](/docs/api/)
 
