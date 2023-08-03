@@ -33,4 +33,4 @@ exploration but which is not listed then please [raise an issue](https://github.
 
 #### Settings
 
-The latest [Live ZAP Docker image](https://hub.docker.com/r/owasp/zap2docker-live/) is run with the default settings against this app with no exceptions.
+The latest [Nightly ZAP Docker image](https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy) is run with the default settings against this app with no exceptions.
