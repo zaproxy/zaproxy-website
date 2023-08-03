@@ -47,6 +47,6 @@ see Issue [#7122](https://github.com/zaproxy/zaproxy/issues/7122) for more detai
 
 #### Settings
 
-The latest [Live ZAP Docker image](https://hub.docker.com/r/owasp/zap2docker-live/) is run with the default settings against this app with the following exceptions:
+The latest [Nightly ZAP Docker image](https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy) is run with the default settings against this app with the following exceptions:
 
 * The [XSS](/docs/alerts/40012/) rule is set to use LOW threshold in order to detect 2 cases which are not strictly vulnerable.
