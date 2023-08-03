@@ -9,7 +9,7 @@ We believe that security tools should be available to everyone, which is why ZAP
 
 ### ZAP Desktop
 
-You can help translate the ZAP Desktop via the [Crowdin: zaproxy](https://crowdin.com/project/owasp-zap) project.
+You can help translate the ZAP Desktop via the [Crowdin: zaproxy](https://crowdin.com/project/zaproxy) project.
 
 You can signup to Crowdin for free, and if you'd like to translate ZAP to a language not on the list then let us know and we'll add it in.
 
@@ -25,7 +25,7 @@ The Live and Weekly ZAP releases will automatically pick up the latest translati
 
 ### ZAP Desktop User Guide
 
-You can help translate the ZAP [Desktop User Guide](/docs/desktop/) via the [Crowdin: zaproxy](https://crowdin.com/project/owasp-zap-help) project.
+You can help translate the ZAP [Desktop User Guide](/docs/desktop/) via the [Crowdin: zaproxy](https://crowdin.com/project/zap-help) project.
 
 Translating the Desktop User Guide is significantly more work than translating the ZAP Desktop so we now tend to only add the option
 to translate to new languages once the ZAP Desktop has been mostly translated into the relevant language.

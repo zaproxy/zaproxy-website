@@ -67,11 +67,11 @@ groups:
         desc: for all ZAP related projects
     
       - name: 'Crowdin (GUI)'
-        link: https://crowdin.com/project/owasp-zap
+        link: https://crowdin.com/project/zaproxy
         desc: help translate the ZAP GUI 
     
       - name: 'Crowdin (Desktop User Guide)'
-        link: https://crowdin.com/project/owasp-zap-help
+        link: https://crowdin.com/project/zap-help
         desc: help translate the ZAP Desktop User Guide
     
       - name: 'Student Hall of Fame'
