@@ -93,7 +93,7 @@ If this is not possible, or if it works in the Desktop but not in Docker, then y
 If you are using one of the Packaged Scans then you just need to:
 
 1. Copy the following files to your CWD
-    * [LogMessagesHook.py](https://github.com/zaproxy/community-scripts/blob/main/scan-hooks/LogMessagesHook.py)
+    * [LogMessagesHook.py](https://github.com/zaproxy/community-scripts/blob/main/other/scan-hooks/LogMessagesHook.py)
     * [LogMessages.js](https://github.com/zaproxy/community-scripts/blob/main/httpsender/LogMessages.js)
 2. Run your packaged scan mapping the CWD to `/zap/wrk/` and passing in the above scan hook, e.g.
    ```bash
