@@ -50,11 +50,11 @@ Options:
 ```
 To run it with no 'file' params use:
 ```
-docker run -t owasp/zap2docker-stable zap-baseline.py -t https://www.example.com
+docker run -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t https://www.example.com
 ```
 If you use 'file' params then you need to mount the directory those file are in or will be generated in, eg
 ```
-docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
+docker run -v $(pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py \
     -t https://www.example.com -g gen.conf -r testreport.html
 ```
 
@@ -62,7 +62,7 @@ Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will ne
 
 ### Example Output
 ```
-docker run -t owasp/zap2docker-stable zap-baseline.py -t https://www.example.com
+docker run -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t https://www.example.com
 May 17, 2016 1:24:32 PM java.util.prefs.FileSystemPreferences$1 run
 INFO: Created user preferences directory.
 Total of 3 URLs

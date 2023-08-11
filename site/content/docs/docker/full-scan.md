@@ -48,11 +48,11 @@ Options:
 ```
 To run it with no 'file' params use:
 ```
-docker run -t owasp/zap2docker-stable zap-full-scan.py -t https://www.example.com
+docker run -t ghcr.io/zaproxy/zaproxy:stable zap-full-scan.py -t https://www.example.com
 ```
 If you use 'file' params then you need to mount the directory those file are in or will be generated in, eg
 ```
-docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-full-scan.py \
+docker run -v $(pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable zap-full-scan.py \
     -t https://www.example.com -g gen.conf -r testreport.html
 ```
 

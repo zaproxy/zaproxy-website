@@ -15,7 +15,7 @@ If ZAP cannot connect to your target app then the first thing to do is to see if
 To do that you can just use the `curl` command to make a request to the target. Change the Docker image name if you are not using the stable one:
 
 ```bash
-docker run -t owasp/zap2docker-stable curl https://www.example.com
+docker run -t ghcr.io/zaproxy/zaproxy:stable curl https://www.example.com
 ```
 
 If `curl` cannot access your target app then this is a Docker networking issue rather than a problem with ZAP.
@@ -38,7 +38,7 @@ If you cannot see files that should be being created then first check to make su
 If they are then check that any file can be created - the following command should create the file `test.txt` in the CWD on Linux / MacOS.
 
 ```bash
-docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable touch /zap/wrk/test.txt
+docker run -v $(pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable touch /zap/wrk/test.txt
 ```
 
 If this does not work then there is a permission issue in your environment - no ZAP options will be able to work around that.
@@ -55,13 +55,13 @@ Once that has completed you will be able to access the ZAP log file.
 So instead of running:
 
 ```bash
-docker run -t owasp/zap2docker-stable zap-baseline.py -t https://www.example.com
+docker run -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t https://www.example.com
 ```
 
 You need to run:
 
 ```bash
-docker run -i -t owasp/zap2docker-stable bash 
+docker run -i -t ghcr.io/zaproxy/zaproxy:stable bash 
 ```
 
 From the bash prompt then your command, e.g.:
@@ -97,7 +97,7 @@ If you are using one of the Packaged Scans then you just need to:
     * [LogMessages.js](https://github.com/zaproxy/community-scripts/blob/main/httpsender/LogMessages.js)
 2. Run your packaged scan mapping the CWD to `/zap/wrk/` and passing in the above scan hook, e.g.
    ```bash
-    docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py -t https://www.example.com --hook=LogMessagesHook.py
+    docker run -v $(pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t https://www.example.com --hook=LogMessagesHook.py
     ```
     
 All of the requests and responses made by or proxied through ZAP will be written to the `req-resp-log.txt` file in your CWD.

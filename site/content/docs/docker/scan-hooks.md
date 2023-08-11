@@ -48,7 +48,7 @@ def zap_ajax_spider(zap, target, max_time):
 zap-baseline.py -t https://example.com --hook=my-hooks.py
 
 # or using Docker 
-docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-stable zap-baseline.py \
+docker run -v $(pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable zap-baseline.py \
     -t https://www.example.com -g gen.conf -r testreport.html --hook=/zap/wrk/my-hooks.py
 ```
 
