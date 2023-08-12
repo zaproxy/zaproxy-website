@@ -16,7 +16,7 @@ Can you connect to your application from the same machine using another tool lik
 If you are using one of the ZAP Docker images then be aware that using Docker will change the networking.
 In this case make sure that you run `curl` from the Docker image, e.g. using a command like:    
     
-    docker run --rm owasp/zap2docker-weekly /usr/bin/curl https://www.example.com/
+    docker run --rm ghcr.io/zaproxy/zaproxy:weekly /usr/bin/curl https://www.example.com/
     
 If `curl` fails to connect as well then try to find out if there are any firewalls installed which could be preventing access to your application.
 This will be a networking problem and not anything to do with ZAP.
