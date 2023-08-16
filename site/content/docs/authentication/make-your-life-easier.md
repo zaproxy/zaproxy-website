@@ -28,7 +28,7 @@ If you can use a simpler authentication mechanism like HTTP auth or a simple POS
 easier to set up and much less likely to break your testing.
 Some SSO providers do document ways to authenticate automatically - see the next page.
 
-Two factor authentication (2AF) can be even harder to work with.
+Two factor authentication (2FA) can be even harder to work with.
 ZAP does not work by magic - if you want to perform automated scanning but need a 2FA token then you are going to need to be able to 
 get that token to ZAP. If you cannot do that then you will not be able to automate your authentication.
 
