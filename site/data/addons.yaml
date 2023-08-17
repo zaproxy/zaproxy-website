@@ -832,9 +832,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.23.0/reports-release-0.23.0.zap
-  date: 2023-07-11
-  version: 0.23.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.24.0/reports-release-0.24.0.zap
+  date: 2023-08-17
+  version: 0.24.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.

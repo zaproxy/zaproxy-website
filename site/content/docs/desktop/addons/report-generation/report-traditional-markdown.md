@@ -72,15 +72,18 @@ CSRF has primarily been used to perform an action against a target site using th
   * Parameter: ``
   * Attack: ``
   * Evidence: `<form id="advanced" name="advanced" method="POST" onsubmit="return validateForm(this);false;">`
+  * Other Info: ``
 * URL: http://localhost:8080/bodgeit/advanced.jsp
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
   * Evidence: `<form id="query" name="advanced" method="POST">`
+  * Other Info: ``
 * URL: http://localhost:8080/bodgeit/basket.jsp
   * Method: `GET`
   * Parameter: ``
   * Attack: ``
   * Evidence: `<form action="basket.jsp" method="post">`
+  * Other Info: ``
 
 ```
