@@ -758,6 +758,20 @@
   code: main/zap/src/main/java/org/zaproxy/zap/extension/script/ExtensionScript.java
   desc: The number of times the given type of script has been returned an error - from 2.11.0
 
+- key: stats.selenium.launch.<requester-id>.<browser-id>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/selenium/src/main/java/org/zaproxy/zap/extension/selenium/ExtensionSelenium.java
+  desc: The number of times the given browser has been successfully launched for the requester
+
+- key: stats.selenium.launch.<requester-id>.<browser-id>.failure
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/selenium/src/main/java/org/zaproxy/zap/extension/selenium/ExtensionSelenium.java
+  desc: The number of times the given browser has failed to launch for the requester
+
 - key: stats.selenium.launch.<browser-id>
   scope: global
   type: counter
