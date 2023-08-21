@@ -6,7 +6,6 @@ images:
 type: post
 tags:
 - blog
-- release
 date: "2023-08-01"
 authors:
     - simon
