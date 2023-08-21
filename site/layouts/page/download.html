@@ -142,14 +142,15 @@
 
 <section class="bg--blue-lightest">
   <div class="wrapper py-20">
+    <h3>Officially Supported Repos</h3>
     <div class="grid grid__two-col">
 
       {{ with .Site.Data.download.f_others }}
         <div>
-        {{ range .column_1 }}
+        {{ range .maint_column_1 }}
           {{ range .items }}
             <div>
-              <h3>{{ .title }}</h3>
+              <h4>{{ .title }}</h4>
               <strong>{{ .subtitle }}</strong>
               <ul class="bullet-list">
               {{ range .info }}
@@ -164,10 +165,10 @@
         {{ end }}
         </div>
         <div>
-        {{ range .column_2 }}
+        {{ range .maint_column_2 }}
         {{ range .items }}
         <div>
-          <h3>{{ .title }}</h3>
+          <h4>{{ .title }}</h4>
             <strong>{{ .subtitle }}</strong>
           <ul class="bullet-list">
           {{ range .info }}
@@ -186,6 +187,52 @@
 </section>
 
 <section>
+  <div class="wrapper py-20">
+    <h3>3rd Party Repos (Unsupported)</h3>
+    <div class="grid grid__two-col">
+
+      {{ with .Site.Data.download.f_others }}
+        <div>
+        {{ range .unmaint_column_1 }}
+          {{ range .items }}
+            <div>
+              <h4>{{ .title }}</h4>
+              <strong>{{ .subtitle }}</strong>
+              <ul class="bullet-list">
+              {{ range .info }}
+
+                <li>{{ . | markdownify}}</li>
+
+              {{ end }}
+            </ul>
+            </div>
+          {{ end }}
+
+        {{ end }}
+        </div>
+        <div>
+        {{ range .unmaint_column_2 }}
+        {{ range .items }}
+        <div>
+          <h4>{{ .title }}</h4>
+            <strong>{{ .subtitle }}</strong>
+          <ul class="bullet-list">
+          {{ range .info }}
+
+              <li>{{ . | markdownify}}</li>
+
+          {{ end }}
+          </ul>
+        </div>
+        {{ end }}
+        {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="bg--blue-lightest">
   <div class="wrapper py-20">
   <a name="latest-versions"></a> 
 
