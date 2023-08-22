@@ -13,7 +13,7 @@ By default ZAP makes a set of [calls home](/faq/what-calls-home-does-zap-make/),
 display news items, and collect telemetry.
 As explained in that FAQ all of these calls can be disabled.
 
-ZAP does not and will not collect any Personally identifiable information (PII) data.
+ZAP does not and will not collect any Personally Identifiable Information (PII) data.
 
 The ZAP team will not sell any of the data we collect.
 
