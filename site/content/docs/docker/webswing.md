@@ -40,7 +40,7 @@ When you do this ZAP will create 2 files on your mapped drive:
 * zap_root_ca.key - the private ZAP Root CA certificate
 
 You will then need to configure one of your browsers to [proxy via ZAP](/docs/desktop/start/proxies/) 
-and [import the public ZAP Root CA certificate](/docs/desktop/ui/dialogs/options/dynsslcert/#install) so that it is trusted to sign websites.
+and [import the public ZAP Root CA certificate](/docs/desktop/addons/network/options/servercertificates/#install) so that it is trusted to sign websites.
 
 It is recommended that you keep a separate browser profile for proxying through ZAP.
 
