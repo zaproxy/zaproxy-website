@@ -1,11 +1,16 @@
 
+- item: Rebrand
+  status: ⚡ In progress
+  year: 2023
+- item: Release 2.14
+  status: ⚡ In progress
+  url: https://github.com/zaproxy/zaproxy/milestone/10
+  year: 2023
 - item: Update to latest Crawljax
   status: ⚡ In progress
   year: 2023
 - item: Improve modern web app handling
   status: ⚡ In progress
-  sponsor: Jit
-  sponsorlink: https://www.jit.io
   year: 2023
 - item: Browser Recorder
   status: ⚡ In progress
@@ -13,7 +18,7 @@
   sponsor: Google Summer of Code
   sponsorlink: https://summerofcode.withgoogle.com/
   year: 2023
-- item: Import Postman API Definitions into OWASP ZAP 
+- item: Import Postman API Definitions into ZAP 
   status: ⚡ In progress
   url: https://summerofcode.withgoogle.com/programs/2023/projects/OlBxaE5X
   sponsor: Google Summer of Code
