@@ -4,7 +4,7 @@
 Go to https://github.com/search and enter the following query with the correct month:
 
 ```
-org:zaproxy type:pr state:closed -author:zapbot -author:app/dependabot sort:updated-asc closed:2023-03
+org:zaproxy type:pr -author:zapbot -author:app/dependabot sort:updated-asc closed:2023-03 is:merged
 ```
 
 to list all non-automated closed ZAP PRs updated in that month.
