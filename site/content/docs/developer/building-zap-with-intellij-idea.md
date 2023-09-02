@@ -18,12 +18,12 @@ Working with ZAP in IntelliJ IDEA may need a bit more Java resources for the Gra
 
 For Linux/OSX
 ```bash
-echo 'org.gradle.jvmargs=-Xmx4g -XX:MaxPermSize=1g' >> ~/.gradle/gradle.properties
+echo 'org.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=1g' >> ~/.gradle/gradle.properties
 ```  
 
 For Windows
 ```powershell
-echo "org.gradle.jvmargs=-Xmx4g -XX:MaxPermSize=1g" >> %USERPROFILE%\.gradle\gradle.properties
+echo "org.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=1g" >> %USERPROFILE%\.gradle\gradle.properties
 ```  
 
 ## Import the ZAP Repositories
