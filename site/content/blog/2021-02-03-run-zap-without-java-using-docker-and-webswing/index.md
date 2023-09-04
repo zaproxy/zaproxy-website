@@ -51,15 +51,15 @@ Note that on Windows you will need to replace `$(pwd)` with the full current wor
 
 When you do this ZAP will create 2 files on your mapped drive:
 
-* `owasp_zap_root_ca.crt` - the public ZAP Root CA certificate
-* `owasp_zap_root_ca.key` - the private ZAP Root CA certificate
+* `zap_root_ca.crt` - the public ZAP Root CA certificate
+* `zap_root_ca.key` - the private ZAP Root CA certificate
 
 You will need to use 2 browsers / profiles - one to proxy through ZAP and one to control the ZAP Desktop that you can now access via [Webswing](https://www.webswing.org/).
 
 Launch the browser you want to proxy through ZAP (we recommend that you use a new browser profile e.g. in [Firefox](https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles) or [Chrome](https://support.google.com/chrome/answer/2364824?co=GENIE.Platform%3DDesktop&hl=en)) then point it at `http://localhost:8080/zap`
 
 Configure it to [proxy via ZAP](/docs/desktop/start/proxies/)
-and [import the public ZAP Root CA certificate](/docs/desktop/ui/dialogs/options/dynsslcert/#install) so that it is trusted to sign websites.
+and [import the public ZAP Root CA certificate](/docs/desktop/addons/network/options/servercertificates/#install) so that it is trusted to sign websites.
 
 And there you have it, a local browser proxying through ZAP which can handle https sites and another browser which has full control of the ZAP Desktop, all without having to install Java!
 
