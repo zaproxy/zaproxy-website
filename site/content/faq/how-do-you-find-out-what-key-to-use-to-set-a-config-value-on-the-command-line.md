@@ -10,7 +10,7 @@ The [ZAP command line](/docs/desktop/cmdline/) allows you to set individual valu
 
     
     
-    -config api.key=12345 -config connection.timeoutInSecs=60
+    -config api.key=12345 -config network.connection.timeoutInSecs=60
     
 
 How can you find out what keys to use to set the values you want?
