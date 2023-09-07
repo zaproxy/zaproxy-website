@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: 18.0.0
+    version: 19.0.0
 ---
 
 # SOAP Support
@@ -19,12 +19,11 @@ It also supports the [Automation Framework](/docs/desktop/addons/soap-support/au
 
 The add-on will automatically detect any SOAP definitions and spider them as long as they are in scope.   
 
-2 menu items are also added to the Import menu:
+A menu item is added to the Import menu:
 
-* Import a WSDL file from local file system
-* Import a WSDL file from a URL
+* Import a WSDL File
 
-These operations are also available via the API.   
+Operations to import a WSDL file from the local filesystem or from a URL are also available via the API.   
 
 **NOTE:** As of version 6 of this add-on, only encoded URLs are supported.
 
