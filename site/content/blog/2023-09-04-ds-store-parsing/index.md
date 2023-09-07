@@ -167,12 +167,12 @@ for the `.DS_Store` files, but the result is now publicly accessible in the
 ## Probing .DS_Store Files with ZAP
 
 ZAP has a tool called the Spider which enables to discover new resources on a
-website. Basically, it works by scanning a first web page for references to
-other resources and then proceeds recursively until exhausting all remaining
-links. Additionally, the Spider tries to access some resources which are not
-referenced by any web pages, like `robots.txt` or Git metadata files. To do so,
-it sends requests targeting those hidden files in the folders it has already
-discovered on the remote web server.
+website. Basically, it works by scanning a web page for references to other
+resources and then proceeds recursively until exhausting all remaining links.
+Additionally, the Spider tries to access some resources which are not referenced
+by any web pages, like `robots.txt` or Git metadata files. To do so, it sends
+requests targeting those hidden files in the folders it has already discovered
+on the remote web server.
 
 Once the Spider has detected a file named `.DS_Store` on a remote server and
 made sure it starts with the right alignment bytes, it starts the parsing
