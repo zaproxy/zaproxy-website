@@ -5,7 +5,7 @@ simon:
   is_core: true
 
 ricardo:
-  name: Ricardo
+  name: Ricardo 
   picture: /img/authors/zap_400x400.png
   twitter: thc202
   is_core: true
@@ -36,13 +36,13 @@ david:
 jordan:
   name: Jordan GS
   picture: /img/authors/zap_400x400.png
-  twitter:
+  twitter: 
   is_core: false
 
 alberto:
   name: Alberto Verza
   picture: /img/authors/zap_400x400.png
-  twitter:
+  twitter: 
   is_core: false
 
 diogo:
@@ -50,18 +50,18 @@ diogo:
   picture: /img/authors/zap_400x400.png
   twitter: Dimiresi
   is_core: false
-
+  
 nirojan:
   name: Nirojan Selvanathan
   picture: /img/authors/nirojan-selvanathan_400x400.png
   twitter: sshniro
-  is_core: false
+  is_core: false  
 
 preetkaran20:
   name: Karan Preet Singh Sasan
   picture: /img/authors/karan-preet-singh-sasan_400x400.jpeg
   twitter: sasan_karan
-  is_core: false
+  is_core: false 
 
 BlazingWind:
   name: Sylwia Budzynska
@@ -72,7 +72,7 @@ BlazingWind:
 pranavsaxena:
   name: Pranav Saxena
   picture: /img/authors/zap_400x400.png
-  twitter:
+  twitter: 
   is_core: false
 
 bemodtwz:
@@ -92,27 +92,27 @@ eingengraou:
   picture: /img/authors/zap_400x400.png
   twitter: eingengraou
   is_core: false
-
+ 
 cabelo:
   name: Alessandro de Oliveira Faria
   picture: /img/authors/cabelo_400x400.jpg
-  twitter: cabelo_linux
+  twitter: cabelo_linux 
   is_core: false
 
 njmulsqb:
   name: Najam Ul Saqib
   picture: /img/authors/njmulsqb_400x400.jpg
-  twitter: njmulsqb
-  is_core: false
-
-skyper:
-  name: Paul-Emmanuel Raoul (a.k.a Skyper)
-  picture: /img/authors/skyper_256x256.jpg
-  twitter: SkypLabs
+  twitter: njmulsqb 
   is_core: false
 
 zapbot:
   name: ZAPbot
   picture: /img/authors/zapbot_400x400.jpg
   twitter: zaproxybot
+  is_core: false
+
+skyper:
+  name: Paul-Emmanuel Raoul (a.k.a Skyper)
+  picture: /img/authors/skyper_256x256.jpg
+  twitter: SkypLabs
   is_core: false
