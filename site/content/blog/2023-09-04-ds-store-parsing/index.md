@@ -147,7 +147,7 @@ class Gif(KaitaiStruct):
 Note that the code produced relies on an external dependency from the Kaitai
 Struct project, so the result is not standalone.
 
-In comparison, the internal structure of a `.DS_Store` file is immensity more
+In comparison, the internal structure of a `.DS_Store` file is immensely more
 complex as the following diagram can attest (also programmatically generated
 thanks to the Kaitai Struct project):
 
