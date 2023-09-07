@@ -241,9 +241,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/dev-add-on/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.2.0/dev-alpha-0.2.0.zap
-  date: 2023-05-09
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.3.0/dev-alpha-0.3.0.zap
+  date: 2023-09-07
+  version: 0.3.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
@@ -628,9 +628,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/python-scripting/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v12/jython-beta-12.zap
-  date: 2021-10-07
-  version: 12
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v13/jython-beta-13.zap
+  date: 2023-09-07
+  version: 13
 - id: kotlin
   name: Kotlin Support
   description: Allows Kotlin to be used for ZAP scripting
@@ -1034,9 +1034,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.23.0/wappalyzer-release-21.23.0.zap
-  date: 2023-08-14
-  version: 21.23.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.24.0/wappalyzer-release-21.24.0.zap
+  date: 2023-09-07
+  version: 21.24.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
