@@ -37,8 +37,8 @@ never been made public, but [thanks to community-driven
 efforts][0day-parsing-ds-store], most parts have been reverse engineered,
 enabling people to create custom parsers. Nevertheless, writing a parser for
 `.DS_Store` files is not a trivial task given the complexity of the format. This
-is why not much implementations can be found online, and most of them are in
-Python, Go and Perl only.
+is why few implementations can be found online, and most of them are in
+Python, Go, or Perl only.
 
 Instead of writing a file parser from scratch, the [Kaitai Struct
 project][kaitai-struct] allows to write a generic description of a binary file
