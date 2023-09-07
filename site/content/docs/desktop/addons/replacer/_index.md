@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: replacer
-    version: 13.0.0
+    version: 14.0.0
 ---
 
 # Replacer
@@ -14,6 +14,8 @@ cascade:
 The replacer is an easy way to replace strings in requests and responses.
 
 It is accessible via the Options and by default it can be quickly accessed via the '\<ctrl\> R' hotkey.
+
+It also supports the [Automation Framework](/docs/desktop/addons/replacer/automation/).
 
 The Replacer Options panel allows you to define as many replacement rules as you need.  
 Each rule is defined by the following fields:
@@ -82,6 +84,13 @@ When enabled, the Replacement String may contain a single token which is replace
 | {{RINT\|MIN\|MAX}} | Random Integer. `MIN` and `MAX` are each optional. `MIN` defaults to `0` `MAX` defaults to [Integer.maxValue](https://docs.oracle.com/javase/8/docs/api/constant-values.html#java.lang.Integer.MAX_VALUE) |
 | {{UUID}}           | Random UUID generated using [java.util.UUID.randomUUID()](https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html#randomUUID--)                                                                     |
 | {{TICKS}}          | Unix epoch milliseconds using [System.currentTimeMillis()](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#currentTimeMillis--)                                                           |
+
+**Note:** This option applies only to the following Match Types:
+
+* Request Header String
+* Request Body String
+* Response Header String
+* Response Body String
 
 ### Initiators tab
 

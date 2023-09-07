@@ -37,7 +37,7 @@ You are strongly advised to test this via the ZAP desktop GUI.
 ## Configuring Authentication
 
 The recommended way to configure authentication is to do so via the ZAP desktop GUI - this gives you complete control over all aspects and allows you to test it in place.  
-Then you can create a new Authentication Framework job using the context(s) you have tested - the authentication elements will be correctly initialised for all aspects supported.
+Then you can create a new Automation Framework plan using the context(s) you have tested - the authentication elements will be correctly initialised for all aspects supported.
 
 It is worth noting that the authentication elements cannot be edited via the Automation Framework [GUI](/docs/desktop/addons/automation-framework/gui/),
 but they will not get lost if you use the GUI as long as you do not use it to delete the contexts.

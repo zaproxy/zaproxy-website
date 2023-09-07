@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 35.0.0
+    version: 36.0.0
 ---
 
 # OpenAPI Support
@@ -20,12 +20,11 @@ It also supports the [Automation Framework](/docs/desktop/addons/openapi-support
 
 ## UI
 
-2 menu items are added to the Import menu:
+A menu item is added to the Import menu:
 
-* Import an OpenAPI definition from the local file system
-* Import an OpenAPI definition from a URL
+* Import an OpenAPI definition
 
-Both dialogues allow to override the server URL present in the OpenAPI definition (or specify one if not present) through the Target URL field. The import progress is shown in the progress tab.
+The dialogue allows overriding the server URL present in the OpenAPI definition (or specify one if not present) through the Target URL field. The import progress is shown in the progress tab.
 
 ### Context for Adding DDNs
 
