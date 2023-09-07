@@ -11,6 +11,7 @@ date: "2023-09-04"
 authors:
     - skyper
 ---
+
 macOS has been using [`.DS_Store`][wikipedia-ds-store] hidden files for many
 years to store metadata about files and folders on a file system. These metadata
 are mainly created and used by the [Finder][wikipedia-finder] to store
@@ -29,7 +30,7 @@ reconnaissance task as part of the ZAP Spider tool, enabling the process to be
 fully automated and saving time during security engagements. But first things
 first, one needs to parse the internal structure of such files.
 
-## Parsing .DS_Store files
+## Parsing .DS_Store Files
 
 The specifications detailing the internal structure of `.DS_Store` files have
 never been made public, but [thanks to community-driven
@@ -163,7 +164,7 @@ It took me some time to write a functional Kaitai Struct format specification
 for the `.DS_Store` files, but the result is now publicly accessible in the
 [Kaitai Struct's Format Gallery][kaitai-struct-format-gallery].
 
-## Probing .DS_Store files with ZAP
+## Probing .DS_Store Files with ZAP
 
 ZAP has a tool called the Spider which enables to discover new resources on a
 website. Basically, it works by scanning a first web page for references to
