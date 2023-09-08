@@ -2,6 +2,7 @@
 title: "Parsing .DS_Store files with ZAP"
 summary: "ZAP Spider can now probe and parse macOS' .DS_Store files."
 images:
+- https://www.zaproxy.org/blog/2023-09-08-ds-store-parsing/images/zapbot-ds-store.png
 type: post
 tags:
 - blog
@@ -22,6 +23,8 @@ positions of the files it contains.
 can leak information about the structure of a file hierarchy, leading to
 potential information disclosure vulnerabilities. It is often the case when
 stored in the Git repository of a website.
+
+![ZAPbot stumbling upon a .DS_Store file](images/zapbot-ds-store.png)
 
 Discovering and reading the contents of `.DS_Store` files present on a website
 can prove to be a valuable asset when conducting web security audits and
