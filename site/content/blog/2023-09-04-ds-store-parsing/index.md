@@ -206,13 +206,13 @@ try {
 For each directory (B-tree) in the `.DS_Store` file, the master block is read to
 obtain the location of the root block. The B-tree is then traversed recursively
 from its root block ([see on
-GitHub](https://github.com/zaproxy/zap-extensions/blob/5e078b1770c888a1bd6071e2a314d86c3128ddb0/addOns/spider/src/main/java/org/zaproxy/addon/spider/parser/DsStoreParser.java#L64-L78)):
+GitHub](https://github.com/zaproxy/zap-extensions/blob/86462afb267aceea74a8d3d65e39809d7c26f2f5/addOns/spider/src/main/java/org/zaproxy/addon/spider/parser/DsStoreParser.java#L64-L78)):
 
 ```java
 for (MasterBlockRef masterBlockRef : dsStore.buddyAllocatorBody().directories()) {
     // Each B-tree directory has one master block comprising metadata.
     MasterBlock masterBlock = masterBlockRef.masterBlock();
-    getLogger().debug("Rcords: {}", masterBlock.numRecords());
+    getLogger().debug("Records: {}", masterBlock.numRecords());
 
     Block rootBlock = masterBlock.rootBlock();
 
