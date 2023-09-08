@@ -275,7 +275,7 @@ to the format gallery regarding the `.DS_Store` description, the idea of using
 it to enhance the ZAP Spider and our collaboration with
 [kingthorin][gh-kingthorin] on the implementation.
 
- [0day-parsing-ds-store]: https://0day.work/parsing-the-ds_store-file-format/ "Parsing the .DS_Store file format | Sebastian Neef - 0day.work"
+ [0day-parsing-ds-store]: https://web.archive.org/web/20230607153117/https://0day.work/parsing-the-ds_store-file-format/ "Parsing the .DS_Store file format | Sebastian Neef - 0day.work"
  [gh-kingthorin]: https://github.com/kingthorin "kingthorin - GitHub profile"
  [kaitai-struct]: https://kaitai.io/ "Kaitai Struct"
  [kaitai-struct-format-gallery]: https://formats.kaitai.io/ds_store/index.html "Kaitai Struct - Format Gallery"
