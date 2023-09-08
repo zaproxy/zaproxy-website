@@ -155,7 +155,7 @@ In comparison, the internal structure of a `.DS_Store` file is immensely more
 complex as the following diagram can attest (also programmatically generated
 thanks to the Kaitai Struct project):
 
-![Diagram of the internal structure of a .DS_Store file](./images/ds_store.png)
+[![Diagram of the internal structure of a .DS_Store file](./images/ds_store.png)](./images/ds_store.png)
 
 Basically, a `.DS_Store` file structures its data as
 [B-trees][wikipedia-b-tree], with each B-tree referred to as a "directory" in
