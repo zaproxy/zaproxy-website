@@ -110,3 +110,9 @@ zapbot:
   picture: /img/authors/zapbot_400x400.jpg
   twitter: zaproxybot
   is_core: false
+
+skyper:
+  name: Paul-Emmanuel Raoul (a.k.a Skyper)
+  picture: /img/authors/skyper_256x256.jpg
+  twitter: SkypLabs
+  is_core: false
