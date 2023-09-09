@@ -1,18 +1,19 @@
 ---
-title: "Parsing .DS_Store files with ZAP"
-summary: "ZAP Spider can now probe and parse macOS' .DS_Store files."
+title: "GSoC 2023 Browser Recorder"
+summary: "ZAP has released new addon called client addOn for browser recording which be empower users to create Zest Scripts."
 images:
-- https://www.zaproxy.org/blog/2023-09-09-browser-extension/images/zapgsoc.png
+- https://www.zaproxy.org/blog/2023-09-11-browser-extension/images/zapgsoc.png
 type: post
 tags:
 - blog
-- browser extension
-- gsoc 2023
-date: "2023-09-09"
+- browser recorder
+- client
+- GSoC 2023
+date: "2023-09-11"
 authors:
     - Aryan Gupta
 ---
-# Browser Recorder - Exploring My Google Summer of Code 2023 Journey
+# GSoC 2023 Browser Recorder
 
 ![ZAP GSoC Image](images/zapgsoc.png)
 
