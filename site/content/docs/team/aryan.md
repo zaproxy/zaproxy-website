@@ -18,6 +18,6 @@ Aryan's proficiency as a full-stack developer, particularly in the MERN stack, r
 
 His inquisitiveness extends to the realm of cybersecurity, where he thrives on the challenge of identifying and mitigating online vulnerabilities.
 
-He was the Google Summer of Code 2023 student contributor for the [Browser Recorder](/blog/2023-09-11-browser-recorder) feature for ZAP. 
+He was the Google Summer of Code 2023 student contributor for the [Browser Recorder](/blog/2023-09-11-browser-recorder/) feature for ZAP. 
 
 Contact Him Here: [GitHub](https://www.github.com/aryangupta701) | [LinkedIn](https://www.linkedin.com/in/aryan-gupta-78273a1b6/) | [Twitter](https://twitter.com/aryangupta_701)
