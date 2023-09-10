@@ -37,7 +37,7 @@ The proposed solution is simple yet powerful: a browser extension that records u
 
 ## The ZAP Browser Recorder Project: A Closer Look
 
-The ZAP Browser Recorder project is comprised of two main components: the browser extension and the [Client Side Integration add-on](/docs/desktop/addons/client-side-integration/). The browser extension is responsible for recording user interactions, while the Client add on facilitates communication between the browser extension and ZAP. Together, these components form a cohesive solution that streamlines the website testing process. 
+The ZAP Browser Recorder project is comprised of two main components: the browser extension and the [Client Side Integration add-on](/docs/desktop/addons/client-side-integration/). The browser extension is responsible for recording user interactions, while the Client add-on facilitates communication between the browser extension and ZAP. Together, these components form a cohesive solution that streamlines the website testing process. 
 
 As of now the browser extension supports recording mainly the following types of user interactions: 
 
@@ -54,11 +54,11 @@ Here is how the browser extension looks like:
 The [Client Side Integration add-on](/docs/desktop/addons/client-side-integration/) helps to integrate with the browser extension. The Client add-on is responsible for the following tasks:
 
 * Responsible for the communication between the browser extension and ZAP. 
-* Used by the [Zest add-on](https://www.zaproxy.org/docs/desktop/addons/zest/) to record the user interactions and generate the Zest script.
+* Used by the [Zest add-on](/docs/desktop/addons/zest/) to record the user interactions and generate the Zest script.
 
 ## Integration with Zest add-on 
 
-The [Zest add-on](/docs/desktop/addons/zest/) is extended to provide a new record type called `Client (browser) side script`. This record type is used to record the user interactions and generate the Zest script. The Zest add-on leverages the power of the client add-on and the browser extension to record the user interactions and generate the Zest script. 
+The [Zest add-on](/docs/desktop/addons/zest/) is extended to provide a new record type called `Client (browser) side script`. This record type is used to record the user interactions and generate the Zest script. The Zest add-on leverages the power of the Client add-on and the browser extension to record the user interactions and generate the Zest script. 
 
 ## Features and Benefits
 
@@ -97,7 +97,8 @@ The browser recorder feature can be used in two ways:
 
 ### 2. Using the Browser Extension
 
-- First of all you need to install the browser extension from the Chrome/Firefox web store.
+- For ease, users can use the existing ZAP browsers from the [Quick Start](/docs/desktop/addons/quick-start/) section which will already have extension install.
+- Alternatively, first of all you need to install the browser extension from the Chrome/Firefox web store.
 - You will see the browser extension icon in the top right corner of the browser as shown in the image below:
 
 ![Browser Extension Icon](images/zap-browser-extension-icon.png)
