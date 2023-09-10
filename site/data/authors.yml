@@ -16,6 +16,12 @@ thorin:
   twitter: kingthorin_rm
   is_core: true
 
+aryangupta701:
+  name: Aryan Gupta
+  picture: /img/authors/aryangupta_400x400.jpg
+  twitter: aryangupta_701
+  is_core: false
+
 akshath:
   name: Akshath Kothari
   picture: /img/authors/akshath-kothari_400x400.jpg
