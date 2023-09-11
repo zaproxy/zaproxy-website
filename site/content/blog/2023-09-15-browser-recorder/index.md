@@ -4,12 +4,9 @@ summary: "ZAP has introduced a new feature to record pre-task activities such as
 type: post
 tags:
 - blog
-- browser recorder
-- client
-- GSoC 2023
+- browser
+- gsoc
 date: "2023-09-15"
-authors:
-    - aryangupta701
 unlisted: true
 ---
 
