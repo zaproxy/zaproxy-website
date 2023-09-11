@@ -25,7 +25,7 @@ This summer, I embarked on an amazing adventure: Google Summer of Code 2023. For
 
 Imagine this scenario: you're a web developer or a cybersecurity enthusiast, determined to ensure a website's security by using the renowned Zed Attack Proxy (ZAP). But, before you even start testing for vulnerabilities, you need to navigate through various pre-task activities like logging in or setting up a user session. These activities not only consume valuable time but can also lead to frustration, hindering the overall testing process. This is where the ZAP Browser Recorder project comes in. By automating the script generation process, this project aims to streamline the website testing process, making it more efficient and user-friendly.
 
-## Streamlining Website Testing: Introducing the ZAP Browser Recorder Project
+## Introducing Browser Recorder Project
 
 In the ever-evolving landscape of web development and cybersecurity, the importance of comprehensive testing cannot be overstated. However, testing websites often involves repetitive pre-task activities like logging in, which can be time-consuming and cumbersome. Recognizing this challenge, the ZAP Browser Recorder project sets out to revolutionize the way websites are tested by addressing the inconvenience users face during these initial steps.
 
@@ -35,7 +35,7 @@ Enter the ZAP Browser Recorder project - a visionary solution to this often-over
 
 The proposed solution is simple yet powerful: a browser extension that records user interactions while navigating a website. These interactions are then intelligently transformed into a Zest script, a human-readable format used in ZAP. This script is generated in JSON format, ensuring compatibility and ease of use with ZAP's existing infrastructure. This innovative approach eliminates the need for manual scripting, allowing users to focus solely on testing for vulnerabilities. 
 
-## The ZAP Browser Recorder Project: A Closer Look
+## ZAP Browser Recorder: A Closer Look
 
 The ZAP Browser Recorder project is comprised of two main components: the browser extension and the [Client Side Integration add-on](/docs/desktop/addons/client-side-integration/). The browser extension is responsible for recording user interactions, while the Client add-on facilitates communication between the browser extension and ZAP. Together, these components form a cohesive solution that streamlines the website testing process. 
 
@@ -99,7 +99,7 @@ The browser recorder feature can be used in two ways:
 
 ### 2. Using the Browser Extension
 
-- For ease, users can use the existing ZAP browsers from the [Quick Start](/docs/desktop/addons/quick-start/) section which will already have extension install.
+- For ease, users can launch browsers from ZAP using the [Quick Start add-on](/docs/desktop/addons/quick-start/#manual-explore), which will already have the extension installed.
 - Alternatively, first of all you need to install the browser extension from the Chrome/Firefox web store.
 - You will see the browser extension icon in the top right corner of the browser as shown in the image below:
 
@@ -110,7 +110,6 @@ The browser recorder feature can be used in two ways:
 ![Browser Extension Popup](images/zap-browser-extension-popup.png)
 
 - Before starting the recording go to settings icon and make sure that the `enable` option is turned off (disabling this will prevent from unnecessarily recording the server side recording). You do not need to do this step if you record using the Zest add-on. 
-
 - Then you can start the recording by clicking on the `Record` button.
 - Now you can do whatever you want to record and when you are done with the recording you can click on the `Stop` button.
 - Then you can click on the `Download` button to download the Zest script.
