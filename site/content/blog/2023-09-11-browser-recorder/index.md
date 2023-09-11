@@ -39,11 +39,13 @@ The proposed solution is simple yet powerful: a browser extension that records u
 
 The ZAP Browser Recorder project is comprised of two main components: the browser extension and the [Client Side Integration add-on](/docs/desktop/addons/client-side-integration/). The browser extension is responsible for recording user interactions, while the Client add-on facilitates communication between the browser extension and ZAP. Together, these components form a cohesive solution that streamlines the website testing process. 
 
+We have submitted a newer version of the extension with Chrome Web Store and it is currently under review.
+
 As of now the browser extension supports recording mainly the following types of user interactions: 
 
 1. Clicking
 2. Typing
-3. Frame Switches 
+3. Frame Switches (in the newer version)
 
 Here is how the browser extension looks like:
 
@@ -73,7 +75,7 @@ The ZAP Browser Extension project offers a number of features and benefits, incl
 
 The ZAP Browser Recorder's first verison has been released and can be used by the users. We have released the browser extension for the following browsers:
 
-* Chrome (Under Review by the Chrome Web Store)
+* Chrome (Latest version under review by the Chrome Web Store)
 * Firefox (Published)
 
 The browser recorder feature can be used in two ways: 
@@ -81,7 +83,7 @@ The browser recorder feature can be used in two ways:
 ### 1. Using the Zest add-on
 
 - First of all you need to install the Client and Zest add-on from the ZAP marketplace. 
-- Then you need to make sure that the browser extension has been enabled for Chrome as we currently only support integration with Chrome browser. 
+- Then you need to make sure that the browser extension has been enabled for Chrome as we currently only support integration with Chrome browser because of the permission issues in Firefox. We are working on to provide support for firefox as well. 
 - Then you will have to go to the `Record a Zest Script` option as shown in the image below:
 
 ![Zest Record Button](images/zest-record.png)
