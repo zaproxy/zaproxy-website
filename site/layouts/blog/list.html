@@ -9,7 +9,7 @@
       <div class="flex on-sm-stack">
         <div class="col-2-3 pr-30">
             {{ range .Pages }}
-            {{ if not .Params.unlisted }}
+             {{ if not .Params.unlisted }}
             <article class="blog-post-preview flex pt-40 pb-40">
               <div class="col-1-4">
                 {{ range first 1 (where (.Resources.ByType "image") ".Height" ">=" 240) }} 
