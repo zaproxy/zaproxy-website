@@ -37,6 +37,7 @@ All of Simon’s publicly available videos are linked off the [Videos](/videos/)
 
 #### Interviews
 
+* 2023/09/12 [Application Security Weekly: Building a Scanner and a Community with Zed Attack Proxy - Simon Bennetts - ASW #254](https://www.youtube.com/watch?v=alIBoz7AooI)
 * 2023/06/14 [Software Engineering Radio 568: Simon Bennetts on OWASP Dynamic Application Security Testing Tool ZAP](https://www.se-radio.net/2023/06/se-radio-568-simon-bennetts-on-owasp-dynamic-application-security-testing-tool-zap/)
 * 2023/05/12 [Stack Overflow Podcast: Stung by OWASP? Chatting with the creator of the most popular web app scanner](https://stackoverflow.blog/2023/05/12/stung-by-owasp-chatting-with-the-creator-of-the-most-popular-web-app-scanner-ep-570/)
 * 2022/09/14 [TFiR: Zed Attack Proxy (ZAP) Founder Simon Bennetts Joins Jit.io](https://www.tfir.io/zed-attack-proxy-zap-founder-simon-bennetts-joins-jit-io/)
