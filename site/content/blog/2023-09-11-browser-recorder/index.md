@@ -19,7 +19,7 @@ authors:
 
 ## Embarking on a New Adventure with Google Summer of Code 2023
 
-Hey! I am [Aryan Gupta](/docs/team/aryan/). This summer, I embarked on an amazing adventure: Google Summer of Code 2023. For a developer like me, this program is the epitome of innovation and learning. What could be more exciting than collaborating with brilliant minds from around the world on projects that push the boundaries of technology? As I delved into the program, I found myself drawn to an exceptional project: the ZAP Browser Recorder.
+Hey! I am [Aryan Gupta](/docs/team/aryan/). This summer, I embarked on an amazing adventure: [Google Summer of Code 2023](https://summerofcode.withgoogle.com/). For a developer like me, this program is the epitome of innovation and learning. What could be more exciting than collaborating with brilliant minds from around the world on projects that push the boundaries of technology? As I delved into the program, I found myself drawn to an exceptional project: the ZAP Browser Recorder.
 
 ## The Challenge
 
@@ -28,6 +28,8 @@ Imagine this scenario: you're a web developer or a cybersecurity enthusiast, det
 ## Introducing Browser Recorder Project
 
 In the ever-evolving landscape of web development and cybersecurity, the importance of comprehensive testing cannot be overstated. However, testing websites often involves repetitive pre-task activities like logging in, which can be time-consuming and cumbersome. Recognizing this challenge, the ZAP Browser Recorder project sets out to revolutionize the way websites are tested by addressing the inconvenience users face during these initial steps.
+
+If you're curious about my contributions during GSoC 2023, you can check out my [Pull Requests on GitHub](https://github.com/search?q=org%3Azaproxy+type%3Apr+sort%3Aupdated-asc+created%3A2023-05..2023-09-11+author%3Aaryangupta701&type=pullrequests). You can also find more details about my project by visiting the [Project link](https://summerofcode.withgoogle.com/programs/2023/projects/lx6XL1Rd).
 
 ## The Solution
 
