@@ -11,7 +11,9 @@
     {{ range sort $.Site.Data.videos "date" "desc" }}
     <tr>
         <td >
-            {{if eq .series "Deep Dive" }}
+            {{if eq .series "ZAP Chat" }}
+            <a href="https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
+            {{else if eq .series "Deep Dive" }}
             <a href="https://www.youtube.com/playlist?list=PLz_NN8o2uh8AQ7VyUEN1GCCnpzl5_FaJA" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
             {{else if or (eq .series "ZAP in Ten") (eq .series "ADDO Automation") }}
             <a href="https://www.alldaydevops.com/zap-in-ten" target="_blank" rel="noopener noreferrer">{{ .series }}</a>
