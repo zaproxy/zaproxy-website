@@ -62,3 +62,16 @@ The full set of jobs currently supported by the framework and other add-ons are:
 * [spiderAjax](/docs/desktop/addons/ajax-spider/automation/) - runs the ajax spider, provided with the [Ajax Spider](/docs/desktop/addons/ajax-spider/) add-on
 
 For details of future changes planned see the [tracker issue](https://github.com/zaproxy/zaproxy/issues/6461).
+
+### Exit Value
+
+If you run the framework from the command line then ZAP will exit with:
+
+* 0: The plan ran without any problems reported
+* 1: The plan failed with an error
+* 2: The plan ran but there were warnings
+
+The framework will exit with `2` if there are warnings even if the [environment](/docs/desktop/addons/automation-framework/environment/) `failOnWarning` parameter is set to `false`.
+If you need ZAP to exit with `0` in this case then you can run ZAP with a Linux / macOS command line like:
+
+* `bash -c "./zap.sh -cmd -autorun /path/to/your/af-plan.yaml" || [ $? -ne 1 ]`
