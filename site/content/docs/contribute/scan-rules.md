@@ -78,7 +78,7 @@ For any fields not mentioned below see the [Add Alert dialog](/docs/desktop/ui/d
 
 Alert names must not be dynamic.
 
-A rule can raise alerts with differing names but it must then implement the [getExampleAlerts()](https://javadoc.io/doc/org.zaproxy/zap/latest/org/zaproxy/zap/extension/alert/ExampleAlertProvider.html) method (which is used to populate the [alert pages](/docs/alerts/)) and [set the AlertRef](https://javadoc.io/static/org.zaproxy/zap/2.11.1/org/parosproxy/paros/core/scanner/Alert.html#setAlertRef-java.lang.String-) field correctly.
+A rule can raise alerts with differing names but it must then implement the [getExampleAlerts()](https://javadoc.io/doc/org.zaproxy/zap/latest/org/zaproxy/zap/extension/alert/ExampleAlertProvider.html) method (which is used to populate the [alert pages](/docs/alerts/)) and [set the AlertRef](https://javadoc.io/doc/org.zaproxy/zap/latest/org/parosproxy/paros/core/scanner/Alert.html#setAlertRef(java.lang.String)) field correctly.
 
 #### Parameter
 
