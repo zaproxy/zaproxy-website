@@ -2,6 +2,37 @@
 # Note that videos are grouped by series in reverse date order to make them a bit easier to manage
 ---
 
+# ZAP Chat Series
+
+- title: 'ZAP Chat 03 Break Points'
+  id: cKG4UWa082A
+  site: youtube
+  series: 'ZAP Chat'
+  date: '2023/09/15'
+  length: 12:46
+  tags:
+  - breakpoints
+  - manual
+
+- title: 'ZAP Chat 02 Authentication Tester'
+  id: RCi9W77bGpI
+  site: youtube
+  series: 'ZAP Chat'
+  date: '2023/09/15'
+  length: 14:48
+  tags:
+  - authentication
+  - automation
+
+- title: 'ZAP Chat 01 Introduction'
+  id: qrAJ32rdi14
+  site: youtube
+  series: 'ZAP Chat'
+  date: '2023/09/15'
+  length: 1:03
+  tags:
+  - intro
+
 # Deep Dive Series
 
 - title: 'ZAP 2.11.0'

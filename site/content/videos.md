@@ -5,6 +5,10 @@ layout: group-links
 groups:
   - header: 'Official ZAP Videos'
     links:
+      - name: 'ZAP Chat'
+        link: /zap-chat/
+        desc: A new and ongoing set of videos focusing on ZAP features, new and old.
+
       - name: 'ZAP Deep Dive Series'
         link: /zap-deep-dive/
         desc: A series of longer videos about ZAP features
