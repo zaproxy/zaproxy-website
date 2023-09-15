@@ -23,6 +23,7 @@ Subscribe to the [ZAP YouTube channel](https://www.youtube.com/@psiinon) to be n
 
 Also please let us know what else you would like us to cover in this series - either by:
 
+* Commenting on the [ZAP User Group thread](https://groups.google.com/g/zaproxy-users/c/R4as_7fTvAc/m/CCCIS49NBAAJ)
 * Commenting on any of the [ZAP Chat videos on YouTube](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX)
 * Pinging me on [Twitter](https://twitter.com/psiinon)
 
