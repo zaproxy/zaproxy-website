@@ -28,6 +28,12 @@ akshath:
   twitter: ricekot_
   is_core: true
 
+vitikasoni:
+  name: Vitika Soni
+  picture: /img/authors/vitika-soni_400x400.jpg
+  twitter:
+  is_core: false
+
 arkaprabha:
   name: Arkaprabha Chakraborty
   picture: /img/authors/arkaprabha_400x400.jpg
