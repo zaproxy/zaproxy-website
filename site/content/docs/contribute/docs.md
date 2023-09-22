@@ -38,6 +38,6 @@ You will see that the translations for the add-on help files also live with each
 
 ### API Pages
 
-The manually maintained parts of the [API](/docs/api/) pages is under https://github.com/zaproxy/zap-api-docs/tree/master/source/includes
+The manually maintained parts of the [API](/docs/api/) pages is under https://github.com/zaproxy/zap-api-docs/tree/main/source/includes
 
 The majority of the pages are generated - details of how to update the data used for these pages will be added soon.

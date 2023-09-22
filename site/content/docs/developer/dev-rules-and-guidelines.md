@@ -20,7 +20,7 @@ but if you plan to make bigger contributions then you should check them before m
 * ZAP and ZAP add-ons should not depend on an internet connection to work, so all resources required should be bundled with ZAP or the add-on
 * Add-ons should not make unsolicited external requests except for the purposes of checking for updates to resources, and even then only if explicitly approved by the user
 * Please create [Issues](https://github.com/zaproxy/zaproxy/issues) for all significant changes and post messages to the [development group](https://groups.google.com/group/zaproxy-develop) so that everyone knows whats going on
-* All functionality should be fully documented in the [help pages](https://github.com/zaproxy/zap-core-help/tree/master/addOns/help/). However the documentation can be added after the code has been checked in as long as this is done before the next release. Note that the wiki help pages must not be changed manually - these reflect the last release, and are generated from the help pages using a script.
+* All functionality should be fully documented in the [help pages](https://github.com/zaproxy/zap-core-help/tree/main/addOns/help/). However the documentation can be added after the code has been checked in as long as this is done before the next release. Note that the wiki help pages must not be changed manually - these reflect the last release, and are generated from the help pages using a script.
 
 ### Licensing Guidelines
 
