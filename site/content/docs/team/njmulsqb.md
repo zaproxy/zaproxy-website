@@ -19,10 +19,10 @@ Blog: https://njmulsqb.github.io
 
 #### Talks & Videos
 
-Najam runs a [YouTube channel](https://youtube.com/channel/UC1igugJ0bSePPDqIWOje2ZA) in which he presents walkthroughs for vulnerable machines in his mother language i.e. Urdu. 
+Najam runs a [YouTube channel](https://youtube.com/channel/UC1igugJ0bSePPDqIWOje2ZA) in which he presents walkthroughs for vulnerable machines in his local language i.e. Urdu. 
 
 
 #### Other Work
 
-1. Works full time as an Application Security Engineer
+1. Owns a software company named [Tecvity](https://tecvity.co) that provides software development and cybersecurity services
 1. Hunts for security issues in free time, have found security bugs in different companies.
