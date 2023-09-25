@@ -766,6 +766,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/portscan-v10/portscan-beta-10.zap
   date: 2022-10-27
   version: 10
+- id: postman
+  name: Postman Support
+  description: Imports and spiders Postman collections.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/postman-support/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.0.1/postman-alpha-0.0.1.zap
+  date: 2023-09-25
+  version: 0.0.1
 - id: pscanrules
   name: Passive scanner rules
   description: The release status Passive Scanner rules

@@ -1,0 +1,37 @@
+---
+# This page was generated from the add-on.
+title: Postman Support
+type: userguide
+weight: 1
+cascade:
+  addon:
+    id: postman
+    version: 0.0.1
+---
+
+# Postman Support
+
+This add-on will allow you to import Postman collections through the UI, importing through the API and command line is under development.
+
+## UI
+
+A menu item is added to the Import menu:
+
+* Import a Postman Collection
+
+The dialog allows providing a comma-separated list of variables as key-value pairs in the format `key1=value1,key2=value2,...`
+
+## API
+
+The following operations are added to the API:
+
+* ACTION importFile (file, endpointUrl)
+* ACTION importUrl (url, endpointUrl)
+
+## Command Line
+
+The following Command Line options are added:
+
+* -postmanfile \<filename\> : Imports a Postman collection from the specified file name
+* -postmanurl \<url\> : Imports a Postman collection from the specified URL
+* -postmanendpointurl \<url\> : The endpoint URL, to override the base URLs present in the Postman collection
