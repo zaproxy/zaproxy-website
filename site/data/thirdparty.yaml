@@ -27,6 +27,12 @@ services_plus:
     license: 'Commercial, free community edition'
     supporter: ZAP Silver Supporter
 
+  - name: 'Tecvity'
+    link: https://tecvity.co/
+    logo: /img/supporters/tecvity.png
+    license: 'Software Services Provider'
+    supporter: ZAP Bronze Supporter
+
   - name: 'HostedScan'
     link: https://hostedscan.com/
     license: 'Commercial, free option'
