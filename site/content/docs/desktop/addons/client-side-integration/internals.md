@@ -2,14 +2,14 @@
 # This page was generated from the add-on.
 title: Client Side Integration - Internals
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # Client Side Integration - Internals
 
 ## Browser Extension
 
-This add-on depends on a [ZAP browser extension](https://github.com/zaproxy/browser-extension) which runs in Firefox and Chrome - if this extension is not present then this add-on will not be able to do anything.
+This [add-on](/docs/desktop/addons/client-side-integration/) depends on a [ZAP browser extension](https://github.com/zaproxy/browser-extension) which runs in Firefox and Chrome - if this extension is not present then this add-on will not be able to do anything.
 
 The browser extension needs to be able to communicate with ZAP,
 but it must do it in a secure way so that malicious targets cannot abuse the API end points that this add-on defines.
