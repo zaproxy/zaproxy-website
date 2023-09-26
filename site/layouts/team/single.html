@@ -43,6 +43,7 @@
                 </a>
               </td>
             </tr>
+            {{ if $authorRec.twitter }}
             <tr>
               <td>
                 <strong>Twitter</strong>
@@ -53,6 +54,7 @@
                 </a>
               </td>
             </tr>
+            {{ end }}
             {{ if .Params.linkedin }}
             <tr>
               <td>
