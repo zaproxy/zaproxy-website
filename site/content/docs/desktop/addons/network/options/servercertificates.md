@@ -9,7 +9,7 @@ weight: 6
 
 This screens allows to manage and configure the root CA certificate and issued certificates.
 
-OWASP ZAP allows you to transparently decrypt SSL connections.
+ZAP allows you to transparently decrypt SSL connections.
 For doing so, ZAP has to encrypt each request before sending
 to the server and decrypt each response, which comes back.
 But, this is already done by the browser.
@@ -64,13 +64,13 @@ Every generated Root CA certificate starts with serial number "1".
 Every generated Root CA certificate consists of the following identifiers:
 
 `
-CN = OWASP Zed Attack Proxy Root CA`  
+CN = Zed Attack Proxy Root CA`  
 `
 L = 87b77fe834b0a301`  
 `
-O = OWASP Root CA`  
+O = ZAP Root CA`  
 `
-OU = OWASP ZAP Root CA`  
+OU = ZAP Root CA`  
 `
 C = XX`  
 `
@@ -84,9 +84,9 @@ But there's no way, that anyone can figure out your name from this hash code.
 ### Import
 
 When you're using multiple ZAP installation and you want to use the same
-Root CA certificate, so you can import it. Simply use one installation of OWASP ZAP
+Root CA certificate, so you can import it. Simply use one installation of ZAP
 to generate one Root CA certificate.  
-Copy the file 'OWASP ZAP/config.xml' from your users home directory to
+Copy the file 'config.xml' from ZAP's home directory to
 the PC, where you want to use the same certificate and press 'import' to import it.
 
 Alternatively you can use the [command line](/docs/desktop/addons/network/cmdline/) options:
@@ -174,11 +174,11 @@ The option "view" tries to use your system's default
 viewing tool for ".CER" files. On Windows, this is typically the same,
 when exporting the certificate and double clicking on it.
 
-### Save
+### Save {#save}
 
 In the options dialog of ZAP you're seeing the raw bytes (hexa-decimal encoded)
 of the certificate. Many programs are using this simple format for import/export
-functions. When clicking 'export', these bytes are saved to disk.
+functions. When clicking Save, these bytes are saved to disk.
 This is equal to selecting all and doing CTRL+C (copy to clipboard) and
 save it into a new .CER file (which is simple text as you see in the dialog).
 
@@ -198,11 +198,11 @@ The issued certificates consists of the following identifiers:
 `
 CN = www.example.com`  
 `
-E = owasp-zed-attack-proxy@lists.owasp.org`  
+E = zaproxy-develop@googlegroups.com`  
 `
 C = XX`  
 `
-O = OWASP`  
+O = ZAP`  
 `
 OU = Zed Attack Proxy Project`  
 `
@@ -260,20 +260,22 @@ using for example a tiny HTTP server.
 
 ## Install ZAP Root CA certificate {#install}
 
-Any HTTPS client you want to use, has to know the OWASP Root CA certificate
+Any HTTPS client you want to use, has to know the ZAP Root CA certificate
 as 'trusted root certificate'. Typically you have to install manually the
 ZAP certificate into your browser's list of trusted root certificates.
 
 ### Windows / Internet Explorer
 
-The easiest way is to click on [view](#view) and choose
-'Install certificate'. Alternatively, you can save/export your generated
-certificate (copy it to you target computer) and double click the .CER file.
+The easiest way is to click on [View](#view) and choose
+'Install certificate'. Alternatively, you can [Save](#save) your generated
+certificate and double click the .CER file.
 When doing so, the regular Windows wizard for certificate installation
 assistance is popping up.
 In this wizard manually choose the certificate store. Do NOT let
 Windows choose automatically the certificate store.
 Choose 'trusted root certificates' as store and finalize the wizard.
+
+You can also copy the saved file and install it in other computers as needed.
 
 After successfully installation, you can check the certificate.
 
@@ -281,12 +283,12 @@ After successfully installation, you can check the certificate.
 2. Tab Content
 3. Click certificates
 4. Click tab trusted root certificates
-5. The OWASP ZAP Root CA should be there
+5. The ZAP Root CA should be there
 
 ### Mozilla Firefox
 
-Firefox is using it's own certificate store. Thats why you have to
-import it twice, when you're using both browser on windows.
+Firefox is using it's own certificate store. That's why you have to
+import it twice, when you're using both browsers on Windows.
 Installation and late on validation is done in the same preferences dialog:
 
 1. Go to Preferences
@@ -294,7 +296,7 @@ Installation and late on validation is done in the same preferences dialog:
 3. Tab Cryptography/Certificates
 4. Click View Certificates
 5. Click Authorities tab
-6. Click Import and choose the saved owasp_zap_root_ca.cer file
+6. Click Import and choose the [saved](#save) zap_root_ca.cer file
 7. In the wizard choose to trust this certificate to identify web sites (check on the boxes)
 8. Finalize the wizard
 

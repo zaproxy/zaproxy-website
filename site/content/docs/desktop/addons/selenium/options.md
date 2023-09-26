@@ -29,6 +29,19 @@ This screen allows you to setup the requirements of some of the WebDrivers.
 
 More details about the bundled WebDrivers can be found on the overview page.
 
+#### Browser Arguments
+
+Both Chrome and Firefox binaries can have additional (CLI) arguments specified through the `Arguments...` button.
+
+**Note:** Adding invalid arguments might cause the browser to fail to start. ZAP already adds some arguments (e.g. headless).
+
+#### Browser Profiles
+
+You can choose which Firefox profile to use by default. The `<temporary>` profile is one which is created by Selenium each time the browser is launched.
+
+**Note:** The 'client' add-on creates a profile called zap-client-profile -
+if you choose another profile then the Client add-on will not work without manual configuration.
+
 ### Browser Extensions
 
 You can add, remove, enable, or disable browser extensions via the relevant buttons on this screen. Supported browsers and file extensions are:
