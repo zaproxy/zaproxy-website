@@ -154,7 +154,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Guifre Ruiz Utges                                                                                                     |
 |   | Dobin Rutishauser - Compass Security AG                                                                               |
 |   | Bunyanuch Saengnet                                                                                                    |
-|   | Najam Ul Saqib ([@njmulsqb](https://www.infosec.exchange/@cybersoldier))                                              |
+|   | Najam Ul Saqib ([@njmulsqb](https://www.twitter.com/njmulsqb))                                              |
 |   | Goran Sarenkapa (JordanGS)                                                                                            |
 |   | Karan Preet Singh Sasan ([@preetkaran20](https://github.com/preetkaran20))                                            |
 |   | Pranav Saxena ([@pranavsaxena17](https://github.com/pranavsaxena17))                                                  |
