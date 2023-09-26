@@ -14,6 +14,7 @@ Quick Start add-on supports the following command line options:
 |   | -quickurl      | Specifies the URL of the target application that will be attacked.                                                                                                                                                                                                                                                                                    |
 |   | -quickout      | Specifies the file to write the report to. The report format will depend on the file extension - supported file extensions are ``` .html ``` , ``` .json ``` , ``` .md ``` , ``` .xml ``` . If none of these extensions are used then the format will be XML. If not set in 'inline' and daemon modes the report is written to default output stream. |
 |   | -quickprogress | Show ascii progress bars, if started with the -cmd flag.                                                                                                                                                                                                                                                                                              |
+|   | -zapit         | Perform a quick ['ZAPit'](/docs/desktop/addons/quick-start/zapit/) 'reconnaissance' scan of URL specified, the -cmd flag must also be set.                                                                                                                                                                                                            |
 
 
 Examples:

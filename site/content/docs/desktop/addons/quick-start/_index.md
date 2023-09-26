@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: 38.0.0
+    version: 40.0.0
 ---
 
 # Quick Start
@@ -66,7 +66,8 @@ Occasional news items will be displayed underneath the 3 buttons. Clicking on th
 
 ## See also
 
-|   |                                                                   |                                       |
-|---|-------------------------------------------------------------------|---------------------------------------|
-|   | [Command Line](/docs/desktop/addons/quick-start/cmdline/)         | description of command line arguments |
-|   | [Launch Options](/docs/desktop/addons/quick-start/launchoptions/) | the Quick Start Launch Options        |
+|   |                                                                   |                                                    |
+|---|-------------------------------------------------------------------|----------------------------------------------------|
+|   | [Command Line](/docs/desktop/addons/quick-start/cmdline/)         | description of command line arguments              |
+|   | ['ZAPit'](/docs/desktop/addons/quick-start/zapit/)                | a quick 'reconnaissance' scan of the URL specified |
+|   | [Launch Options](/docs/desktop/addons/quick-start/launchoptions/) | the Quick Start Launch Options                     |
