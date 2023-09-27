@@ -1,5 +1,27 @@
 ---
 
+- name: Vitika Soni
+  email: 
+  twitter: VitikaSoni_
+  linkedin: https://www.linkedin.com/in/vitika-soni/
+  program: GSoC
+  title: Postman Support
+  date: 2023 Summer
+  links: >
+    <a href="/blog/2023-09-25-postman-add-on/">Blog</a>,
+    <a href="/docs/desktop/addons/postman-support/">add-on</a>
+
+- name: Aryan Gupta
+  email: 
+  twitter: aryangupta_701
+  linkedin: https://www.linkedin.com/in/aryan-gupta-78273a1b6/
+  program: GSoC
+  title: Browser Recorder
+  date: 2023 Summer
+  links: >
+    <a href="/blog/2023-09-11-browser-recorder/">Blog</a>,
+    <a href="/docs/desktop/addons/client-side-integration/">add-on</a>
+
 - name: Arkaprabha Chakraborty
   email: 
   twitter: FValkyrie_17
