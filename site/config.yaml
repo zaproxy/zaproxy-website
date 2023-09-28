@@ -24,7 +24,7 @@ params:
     Actively maintained by a dedicated international team of volunteers.
     A GitHub Top 1000 project.
   EditContent:
-    BaseUrl: https://github.com/zaproxy/zaproxy-website/blob/master/site/content/
+    BaseUrl: https://github.com/zaproxy/zaproxy-website/blob/main/site/content/
     Label: Edit on GitHub
 
 # Menu

@@ -169,7 +169,7 @@ So in the end I chose a simpler option - creating charts directly on this static
 We have another GitHub action [update-website-stats.yml](https://github.com/zapbot/zap-mgmt-scripts/blob/master/.github/workflows/update-website-stats.yml) 
 which runs once a month. This calls the [stats.py](https://github.com/zapbot/zap-mgmt-scripts/blob/master/stats/stats.py) script passing in the ‘website’ parameter.
 The sub-scripts process the monthly files and generate data files for our website.
-This is implemented using Hugo and I implemented a simple Hugo shortcode [chart.html](https://github.com/zaproxy/zaproxy-website/blob/master/site/layouts/shortcodes/chart.html) which creates a chart using [Google Charts](https://developers.google.com/chart) and the data file supplied. 
+This is implemented using Hugo and I implemented a simple Hugo shortcode [chart.html](https://github.com/zaproxy/zaproxy-website/blob/main/site/layouts/shortcodes/chart.html) which creates a chart using [Google Charts](https://developers.google.com/chart) and the data file supplied. 
 The action then submits a pull request which we need to manually approve before it will be applied to the site. We do this for all of the other data that we update on this site.
 
 And that is it! You can see all of the ZAP public stats on [/statistics/](/statistics/)
