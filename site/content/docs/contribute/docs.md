@@ -11,11 +11,11 @@ The latest ZAP docs are now all available on this site but the source of those p
 
 ### Website Pages
 
-The source for the main website pages is under https://github.com/zaproxy/zaproxy-website/tree/master/site/content
+The source for the main website pages is under https://github.com/zaproxy/zaproxy-website/tree/main/site/content
 
 Many of the pages (including this one) have an 'Edit on GitHub' link in the bottom left hand corner.
 
-Data for some of the pages is under https://github.com/zaproxy/zaproxy-website/tree/master/site/data - some of this data is maintained manually while some is maintained by automated scripts.
+Data for some of the pages is under https://github.com/zaproxy/zaproxy-website/tree/main/site/data - some of this data is maintained manually while some is maintained by automated scripts.
 
 ### Desktop User Guide - Core
 
