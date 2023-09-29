@@ -16,6 +16,8 @@
                <th data-suggest>Status</th>
                <th data-suggest>Risk</th>
                <th data-suggest>Type</th>
+               <th class='th-non-mobile'>CWE</th>
+               <th class='th-non-mobile'>WASC</th>
             </tr>
          </thead>
          <tbody>
@@ -26,6 +28,8 @@
                   <td>{{ .Params.status }}</td>
                   <td>{{ .Params.risk }}</td>
                   <td>{{ .Params.alerttype }}</td>
+                  <td class='td-non-mobile'>{{ .Params.cwe }}</td>
+                  <td class='td-non-mobile'>{{ .Params.wasc }}</td>
                </tr>
             {{ end }}
          </tbody>

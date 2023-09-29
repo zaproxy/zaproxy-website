@@ -16,3 +16,5 @@ Many alerts support [tags](/alerttags/) which allow you to see which alerts are 
 
 Some alerts are only relevant for specific [technologies](/techtags/) - if you know your target app does _not_ use some of these technologies then you can configure ZAP
 to skip those tests.
+
+The CWE and WASC columns are only shown on wider screens - if you are using a mobile phone then try turning your screen sideways if you want to see them.
