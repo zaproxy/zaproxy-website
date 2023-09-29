@@ -150,3 +150,13 @@ $grid_widths: 2 3 4 5 6 8;
 .embed-youtube iframe, .embed-youtube object, .embed-youtube embed { 
 	position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
 }
+
+// Hide columns on smaller screens
+@media only screen and (max-width: 650px) {
+  td.td-non-mobile {
+    display:none;
+  }
+  th.th-non-mobile {
+    display:none;
+  }
+}
