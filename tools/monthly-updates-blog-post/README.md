@@ -22,3 +22,8 @@ Tweak the date in the `generate-release-notes.py` script and run it against the 
 ```shell
 ./generate-release-notes.py releases.json
 ```
+
+## List new Contributors
+
+https://github.com/zaproxy/zap-core-help/pulls?q=is%3Apr+credits+is%3Aclosed
+
