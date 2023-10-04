@@ -9,7 +9,7 @@ weight: 5
 
 This allows you to select the payload generators to use when [fuzzing](/docs/desktop/addons/fuzzer/) a request.   
 
-Payload generators generate the raw attacks that the fuzzer submits to the target application.   
+Payload generators generate the raw values or attacks that the fuzzer submits to the target application.   
 
 The following types of generators are provided by default:
 

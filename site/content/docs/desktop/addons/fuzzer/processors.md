@@ -9,7 +9,7 @@ weight: 6
 
 This allows you to select the payload processors to use with specific payload generators.   
 
-Built in payload processors include:
+Built-in payload processors include:
 
 * Base64 Decode
 * Base64 Encode

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: postman
-    version: 0.0.1
+    version: 0.1.0
 ---
 
 # Postman Support
@@ -19,7 +19,7 @@ A menu item is added to the Import menu:
 
 * Import a Postman Collection
 
-The dialog allows providing a comma-separated list of variables as key-value pairs in the format `key1=value1,key2=value2,...`
+Any variables defined in the collection will be replaced with their values. Additionally, the dialog allows providing a comma-separated list of variables as key-value pairs in the format `key1=value1,key2=value2,...`, these variables will have precedence over the collection ones.
 
 ## API
 

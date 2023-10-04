@@ -15,6 +15,9 @@ You can specify multiple URLs by specifying the option multiple times:
 
 The `-cmd` option must be specified, if it is not then the `-zapit` option will be ignored.
 
+If you do not specify a URL beginning with either `http://` or `https://` then ZAP will
+scan both of those schemes.
+
 The ZAPit Scan will start a new ZAP session before it performs a scan, so do not start ZAP with a session that you want to keep.
 
 The ZAPit scan currently:

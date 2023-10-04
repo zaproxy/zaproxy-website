@@ -9,7 +9,7 @@ weight: 4
 
 This allows you to select the payload processors to use with all payload generators.   
 
-The built in payload processors included are the same that are available via the [Payload Processors dialog](/docs/desktop/addons/fuzzer/processors/).
+The built-in payload processors included are the same that are available via the [Payload Processors dialog](/docs/desktop/addons/fuzzer/processors/).
 
 ## Accessed via
 

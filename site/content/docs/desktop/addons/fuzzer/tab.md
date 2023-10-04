@@ -7,8 +7,8 @@ weight: 7
 
 # Fuzzer tab
 
-The Fuzzer tab shows you the requests and responses performed when you [fuzz](/docs/desktop/addons/fuzzer/) a string.   
-Selecting a row see the full requests and responses. You can also search for strings in the fuzz results using the Search tab.   
+The Fuzzer tab shows you the requests and responses performed when you [fuzz](/docs/desktop/addons/fuzzer/) a message.   
+Select a row to see the full requests and responses. You can also search for strings in the fuzz results using the 'Search' tab.   
 
 ## HTTP Fuzzer results
 

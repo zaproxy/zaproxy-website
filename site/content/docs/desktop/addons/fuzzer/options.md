@@ -29,7 +29,7 @@ The number of retries when an input/output error occurs sending a request to the
 
 ### Max. Errors Allowed
 
-If the number of errors exceed this limit, fuzzer will stop its execution.
+If the number of errors exceed this limit, the fuzzer will stop its execution.
 
 ### Payload Replacement Strategy
 

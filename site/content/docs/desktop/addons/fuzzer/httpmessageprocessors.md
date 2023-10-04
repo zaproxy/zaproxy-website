@@ -7,7 +7,7 @@ weight: 3
 
 # HTTP Message Processors
 
-The HTTP Message Processors can access and change the HTTP messages being fuzzed, control the fuzzing process and interact with the ZAP UI.
+HTTP Message Processors can access and change the HTTP messages being fuzzed, control the fuzzing process, and interact with the ZAP UI.
 
 Built-in HTTP Message Processors include:
 
@@ -43,11 +43,11 @@ Updates (or adds, if not already present) the `Content-Length` request header wi
 
 ### Tag Creator
 
-Allows to add custom ‘tags’, based on contents of the response, to the State column of the results table
+Allows to add custom ‘tags’, based on contents of the response, to the State column of the results table.
 
 ### User Message Processor
 
-Allows to fuzz as a user, using one of the users defined in the contexts that include the HTTP message being fuzzed. Users must exist to be able to select and add this processor.
+Allows to fuzz as a user, using one of the users defined in the Contexts that include the HTTP message being fuzzed. Users must exist to be able to select and add this processor.
 
 Other add-ons can define additional HTTP Message Processors.
 

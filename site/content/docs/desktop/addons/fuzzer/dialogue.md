@@ -20,7 +20,7 @@ To configure the fuzzing:
 * Click on the 'Start Fuzzer' button to start the fuzzing
 * The results will then be listed in the [Fuzzer tab](/docs/desktop/addons/fuzzer/tab/) select them to see the full requests and responses.
 
-You can also search for strings in the fuzz results using the 'Search tab'.
+You can also search for strings in the fuzz results using the 'Search' tab.
 
 Click on the 'Edit' button to edit the message you have selected for fuzzing.
 Note that this will remove all of the fuzz locations that you have defined.
@@ -37,7 +37,7 @@ Indicates whether or not the Fuzzer should follow redirect responses (only visib
 
 ### Message Processors tab
 
-Message Processors can access and change the messages being fuzzed, control the fuzzing process and interact with the ZAP UI.  
+Message Processors can access and change the messages being fuzzed, control the fuzzing process, and interact with the ZAP UI.  
 The message processors available depend on the type of message being fuzzed, this add-on includes the [default HTTP Messages processors](/docs/desktop/addons/fuzzer/httpmessageprocessors/).
 
 Add-ons can also define additional payload generators.
