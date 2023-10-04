@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Scripts tree tab
 type: userguide
-weight: 3
+weight: 4
 ---
 
 # Scripts tree tab

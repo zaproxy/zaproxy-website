@@ -108,9 +108,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.31.0/automation-beta-0.31.0.zap
-  date: 2023-09-07
-  version: 0.31.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.32.0/automation-beta-0.32.0.zap
+  date: 2023-10-04
+  version: 0.32.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -367,9 +367,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.10.0/fuzz-beta-13.10.0.zap
-  date: 2023-07-11
-  version: 13.10.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.11.0/fuzz-beta-13.11.0.zap
+  date: 2023-10-04
+  version: 13.11.0
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer
@@ -773,9 +773,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/postman-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.0.1/postman-alpha-0.0.1.zap
-  date: 2023-09-25
-  version: 0.0.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.1.0/postman-alpha-0.1.0.zap
+  date: 2023-10-04
+  version: 0.1.0
 - id: pscanrules
   name: Passive scanner rules
   description: The release status Passive Scanner rules
@@ -813,9 +813,9 @@
   status: release
   infoUrl: /docs/desktop/addons/quick-start/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v41/quickstart-release-41.zap
-  date: 2023-09-28
-  version: 41
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v42/quickstart-release-42.zap
+  date: 2023-10-04
+  version: 42
 - id: reflect
   name: Reflect
   description: Finds reflected parameters
@@ -853,9 +853,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.24.0/reports-release-0.24.0.zap
-  date: 2023-08-17
-  version: 0.24.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.25.0/reports-release-0.25.0.zap
+  date: 2023-10-04
+  version: 0.25.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
@@ -923,9 +923,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v40/scripts-release-40.zap
-  date: 2023-09-11
-  version: 40
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v41/scripts-release-41.zap
+  date: 2023-10-04
+  version: 41
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser

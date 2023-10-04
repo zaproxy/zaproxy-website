@@ -68,12 +68,12 @@ The following data items are available to all reports. These can be accessed via
 
 A tree containing all of the alerts that should be included in the report. This is a copy of the standard ZAP alert tree shown in the Desktop 'Alerts' tab but pruned to remove any alerts that do not match the criteria selected.
 
-Every node in the tree is an [AlertNode](https://javadoc.io/static/org.zaproxy/zap/2.10.0/org/zaproxy/zap/extension/alert/AlertNode.html).
+Every node in the tree is an [AlertNode](https://javadoc.io/doc/org.zaproxy/zap/latest/org/zaproxy/zap/extension/alert/AlertNode.html).
 
 The top level node does not include any useful data.
 
 There is one second level node for each type of alert found. These
-nodes have a 'userObject' of type [Alert](https://javadoc.io/static/org.zaproxy/zap/2.10.0/org/parosproxy/paros/core/scanner/Alert.html)
+nodes have a 'userObject' of type [Alert](https://javadoc.io/doc/org.zaproxy/zap/latest/org/parosproxy/paros/core/scanner/Alert.html)
 which gives you access to all of the alert data and the associated
 request and response.
 

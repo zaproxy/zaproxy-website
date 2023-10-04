@@ -6,16 +6,16 @@ weight: 1
 cascade:
   addon:
     id: fuzz
-    version: 13.10.0
+    version: 13.11.0
 ---
 
 # Fuzzing
 
-Fuzzing is a technique of submitting lots of invalid or unexpected data to a target.
+Fuzzing is a technique of submitting lots of data to a target (often in the form of invalid or unexpected inputs).
 
-ZAP allows you to fuzz any request still using:
+ZAP allows you to fuzz any request using:
 
-* A build in set of payloads
+* A built-in set of payloads
 * Payloads defined by optional add-ons
 * Custom scripts
 
@@ -28,30 +28,30 @@ To access the [Fuzzer dialog](/docs/desktop/addons/fuzzer/dialogue/) you can eit
 
 ### Payload Generators
 
-Payload Generators generate the raw attacks that the fuzzer submits to the target application.   
+Payload Generators generate the raw values or attacks that the fuzzer submits to the target application.   
 
-They are managed via the [Payloads dialog](/docs/desktop/addons/fuzzer/payloads/)
+They are managed via the [Payloads dialog](/docs/desktop/addons/fuzzer/payloads/).
 
 ### Payload Processors
 
 Payload Processors can be used to change specific payloads before they are submitted.   
 
-They are managed via the [Payload Processors dialog](/docs/desktop/addons/fuzzer/processors/)
+They are managed via the [Payload Processors dialog](/docs/desktop/addons/fuzzer/processors/).
 
 ### Fuzz Location Processors
 
 Fuzz Location Processors can be used to change all of the payloads before they are submitted.   
 
-They are managed via the [Location Processors dialog](/docs/desktop/addons/fuzzer/locations/)
+They are managed via the [Location Processors dialog](/docs/desktop/addons/fuzzer/locations/).
 
 ### Message Processors
 
-Message Processors can access and change the messages being fuzzed, control the fuzzing process and interact with the ZAP UI.   
+Message Processors can access and change the messages being fuzzed, control the fuzzing process, and interact with the ZAP UI.   
 
 They are managed via the [Fuzzer dialog](/docs/desktop/addons/fuzzer/dialogue/) 'Message Processors' tab.
 
-This functionality is based on code from the OWASP JBroFuzz project and includes files from the fuzzdb project.  
-Note that some fuzzdb files have been left out as they cause common anti virus scanners to flag them as containing viruses.  
+Some of this functionality is based on code from the OWASP JBroFuzz project and includes files from the fuzzdb project.  
+Note that some fuzzdb files have been left out as they cause common anti-virus scanners to flag them as containing viruses.  
 You can replace them (and upgrade fuzzdb) by downloading the latest version of fuzzdb and expanding it in the 'fuzzers' library.
 
 ## See also
