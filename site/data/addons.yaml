@@ -662,6 +662,16 @@
   downloadUrl: https://github.com/levoai/levoai-zap-addon/releases/download/v0.2.0/levoai-zap-addon-alpha-0.2.0.zap
   date: 2022-12-26
   version: 0.2.0
+- id: maplocal
+  name: Map Local
+  description: Allows mapping of responses to content of a chosen local file.
+  author: Keindel (Andrey Maksimov)
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/Keindel/owasp-zap-maplocal-addon
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/maplocal-alpha-0.0.1.zap
+  date: 2023-10-05
+  version: 0.0.1
 - id: neonmarker
   name: Neonmarker
   description: Colors history table items based on tags
