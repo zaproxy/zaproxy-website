@@ -13,6 +13,8 @@ If they work for your apps then it will make your life considerably easier, so t
 The [Authentication Tester Dialog](/blog/2023-05-23-authentication-tester/) is a quick and easy way to check if ZAP can 
 automatically detect all of the information it needs - you only need to provide the URL of your login page and valid credentials.
 
+{{< youtube uuid="RCi9W77bGpI" >}}
+
 If everything passes then auto-detection is probably going to be your best option.
 
 If it fails then the dialog will collect sanitised diagnostics which you can safely share with us in order to help identify what is going wrong.
