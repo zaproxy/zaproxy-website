@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdriverwindows
-    version: '63'
+    version: '64'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v63/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v64/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -33,10 +33,10 @@ sbom:
     version: 2.12.3
     licenses: Apache-2.0
   - name: auto-common
-    version: 1.2.1
+    version: '1.2'
     licenses: Apache-2.0
   - name: auto-common
-    version: '1.2'
+    version: 1.2.1
     licenses: Apache-2.0
   - name: auto-service
     version: 1.0.1
@@ -54,10 +54,10 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: checker-qual
-    version: 3.19.0
+    version: 3.12.0
     licenses: MIT
   - name: checker-qual
-    version: 3.12.0
+    version: 3.19.0
     licenses: MIT
   - name: commons-beanutils
     version: 1.9.4
@@ -87,7 +87,7 @@ sbom:
     version: '2.6'
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.12.0
+    version: 3.13.0
     licenses: Apache-2.0
   - name: commons-logging
     version: '1.2'
@@ -126,7 +126,7 @@ sbom:
     version: 1.0.1
     licenses: Apache-2.0
   - name: flatlaf
-    version: 3.1.1
+    version: 3.2.1
     licenses: Apache-2.0
   - name: guava
     version: 31.0.1-jre
@@ -198,6 +198,9 @@ sbom:
     version: 2.20.0
     licenses: Apache-2.0
   - name: log4j-core
+    version: 2.20.0
+    licenses: Apache-2.0
+  - name: log4j-jul
     version: 2.20.0
     licenses: Apache-2.0
   - name: netty-buffer
@@ -312,7 +315,7 @@ sbom:
     version: 1.0.3
     licenses: CC0-1.0
   - name: rsyntaxtextarea
-    version: 3.3.3
+    version: 3.3.4
     licenses: BSD-3-Clause
   - name: selenium-api
     version: 4.1.2
@@ -381,7 +384,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.13.0
+    version: 2.14.0-SNAPSHOT
     licenses: Apache-2.0
 ---
 

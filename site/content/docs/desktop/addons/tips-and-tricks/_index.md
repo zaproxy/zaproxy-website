@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: tips
-    version: 11.0.0
+    version: 12.0.0
 ---
 
 # Tips and Tricks
@@ -108,7 +108,7 @@ If you dont want it to happen automatically then make sure you manually check fo
 ZAP can display, intercept and even fuzz client side messages including postMessages - 'right click' a subtree in the Sites tree and select a suitable submenu under 'Monitor clients'.  
 Force a browser refresh and your open pages will be displayed in the 'Clients' tab along with all of the client side messages they generate.
 
-ZAP has comprehensive help pages accessible via the 'Help / OWASP ZAP User Guide' menu.  
+ZAP has comprehensive help pages accessible via the 'Help / ZAP User Guide' menu.  
 The F1 key will also bring up the help pages and take you straight to the relevant section for the selected tab.
 
 Zest scripts are a great way to automate tasks.  
