@@ -8,7 +8,7 @@ type: userguide
 
 This menu gives access to the 'about' dialog and this help file.
 
-### About OWASP ZAP
+### About ZAP
 
 This displayed the 'about' dialog.
 
@@ -16,13 +16,14 @@ This displayed the 'about' dialog.
 
 Displays a dialog that contains information which is useful when troubleshooting or seeking support. Such as:  
 Version, installed add-ons and versions, operating system, java version, locale info, and ZAP Home Directory path. This information can be copied and pasted.   
-The dialog includes an "Open" button, which assuming the OS supports the necessary functionality, will open the ZAP Home Directory (for logs or configuration files) when clicked.
+The dialog includes an "Open ZAP Home" button, which assuming the OS supports the necessary functionality, will open the ZAP Home Directory (for logs or configuration files) when clicked.   
+The dialog includes a "Save SBOM zip..." button, which will prompt you for the name of a zip file which it will generate containing all of the available [SBOM](/docs/desktop/start/features/sbom/) files.
 
 ### Check for Updates...
 
 This checks to see if you are running the latest version of ZAP.
 
-### OWASP Desktop ZAP User Guide
+### Desktop ZAP User Guide
 
 Displays this help file.
 

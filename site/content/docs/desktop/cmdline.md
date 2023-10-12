@@ -11,7 +11,7 @@ To run ZAP via the command line, you will need to locate the ZAP startup script.
 **Windows:**   
 
 ```
-C:\Program Files (x86)\OWASP\Zed Attack Proxy\zap.bat
+C:\Program Files (x86)\ZAP\Zed Attack Proxy\zap.bat
 ```
 
 **Note:** The command line options are not used by the executable (`zap.exe`) only the bat file.  
@@ -19,7 +19,7 @@ C:\Program Files (x86)\OWASP\Zed Attack Proxy\zap.bat
 **Mac:**   
 
 ```
-/Applications/OWASP\ ZAP.app/Contents/Java/zap.sh
+/Applications/ZAP.app/Contents/Java/zap.sh
 ```
 
 **Linux:**   
@@ -61,6 +61,7 @@ ZAP (core) supports the following command line options:
 |   | -addonlist                  | List all of the installed add-ons                                                                                                                                                                                                        |
 |   | -script \<script\>          | Run the specified script (file system path) if command line/daemon, or just load it if GUI                                                                                                                                               |
 |   | -suppinfo                   | Outputs details relevant for support and troubleshooting (to the console/standard out). Such as: ZAP version, java version, installed add-ons and version, locale info, operating system, etc.                                           |
+|   | -sbomzip \<path\>           | Creates a zip file containing all of the available [SBOMs](/docs/desktop/start/features/sbom/)                                                                                                                                           |
 
 
 The options `-session` and `-newsession` are mutually exclusive. An error will be shown and ZAP exit (if not in GUI) when both options are set.   

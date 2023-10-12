@@ -28,6 +28,7 @@ ZAP provides the following features:
 |   | [Modes](/docs/desktop/start/features/modes/)                                           |   |
 |   | [Notes](/docs/desktop/start/features/notes/)                                           |   |
 |   | [Passive Scan](/docs/desktop/start/features/pscan/)                                    |   |
+|   | [Software Bill of Materials](/docs/desktop/start/features/sbom/)                       |   |
 |   | [Scan Policy](/docs/desktop/start/features/scanpolicy/)                                |   |
 |   | [Scope](/docs/desktop/start/features/scope/)                                           |   |
 |   | [Scripts](/docs/desktop/start/features/scripts/)                                       |   |

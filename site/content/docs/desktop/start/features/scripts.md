@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Scripts
 type: userguide
-weight: 21
+weight: 22
 ---
 
 # Scripts

@@ -21,6 +21,18 @@ If enabled then the API Web UI is available to all machines that are able to acc
 
 If enabled then the API will only be available via HTTPS. Otherwise it will be available via both HTTP and HTTPS.  
 
+### File Transfer Enabled {#filexferenabled}
+
+If enabled then files can be transfered to and from ZAP via the API. This option is only available if the API key is *not* disabled. For more details see [File Transfer](/docs/desktop/start/features/api/#filexfer).
+
+You can also enable this option via the command line using the parameter: `-config api.filexfer=true`
+
+### Transfer Directory {#xferdir}
+
+The directory used to transfer files to and from ZAP via the API. This option is only available if the API key is *not* disabled. For more details see [File Transfer](/docs/desktop/start/features/api/#filexfer).
+
+You can also set the Transfer Directory via the command line using: `-config api.xferdir=/full/path/to/dir`
+
 ### API Key
 
 A key that must be specified on all API 'actions' and some 'other' operations.  
