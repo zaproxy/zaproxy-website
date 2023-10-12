@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 51.0.0
+    version: 52.0.0
 ---
 
 # Passive Scan Rules
@@ -172,7 +172,8 @@ Latest code: [ContentSecurityPolicyScanRule.java](https://github.com/zaproxy/zap
 
 ## CSRF Countermeasures
 
-This rule identifies "potential" vulnerabilities with the lack of known CSRF countermeasures in pages with forms.  
+This rule identifies "potential" vulnerabilities with the lack of known CSRF countermeasures in HTML pages with forms.  
+The rule does not scan messages that are not HTML pages.  
 At HIGH alert threshold only scans messages which are in scope.  
 Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms. Form element names are sorted and de-duplicated when they are printed in the Zap Report.
 

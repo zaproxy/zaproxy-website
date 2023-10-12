@@ -42,6 +42,10 @@ If selected automatically follows any redirects sent to the browser.
 
 By default ZAP will automatically update (or add) the Content-Length header to match the size of the data submitted. If this option is unselected then ZAP will not update the header allowing you to specify any value you like.   
 
+### ![](/docs/desktop/addons/requester/images/fugue/server.png) Update Host Header
+
+By default ZAP will automatically update (or add) the Host header to match the URL specified. If this option is unselected then ZAP will not update the header allowing you to specify any value you like.   
+
 ### ![](/docs/desktop/addons/requester/images/csrf-button.png) Regenerate Anti-CSRF Token
 
 If selected automatically regenerates Anti-CSRF tokens if any exist. Currently only supported in the message body and requires that the Anti-CSRF extension is enabled.   
