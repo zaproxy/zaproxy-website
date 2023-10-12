@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Statistics
 type: userguide
-weight: 24
+weight: 25
 ---
 
 # Statistics

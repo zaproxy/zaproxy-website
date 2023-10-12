@@ -57,6 +57,8 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | [ciceroff](https://github.com/ciceroff)                                                                               |
 |   | Jonathan Claudius ([@claudijd](https://twitter.com/claudijd))                                                         |
 |   | Adrian Clay                                                                                                           |
+|   | Kyle Cooper ([@FiveOFive](https://github.com/FiveOFive))                                                              |
+|   | Gustavo Covas ([@gustavocovas](https://github.com/gustavocovas))                                                      |
 |   | Baptiste Crépin - AXA Group Security                                                                                  |
 |   | Johanna Curiel                                                                                                        |
 |   | Chris Dailey ([@dailz-c](https://github.com/dailz-c))                                                                 |
@@ -88,6 +90,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Oleksandr Horokh                                                                                                      |
 |   | Daiki Ichinose ([@mahoyaya](https://twitter.com/mahoyaya))                                                            |
 |   | Taras Ivashchenko, OWASP Russia                                                                                       |
+|   | Shershon A J ([Shershon25](https://github.com/Shershon25))                                                            |
 |   | Eswarprasath Jayaraman ([ejayaraman](https://github.com/ejayaraman))                                                  |
 |   | Jon ([@flibustier](https://twitter.com/flibustier))                                                                   |
 |   | Tan Jin ([@tjtanjin](https://github.com/tjtanjin))                                                                    |
@@ -112,6 +115,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Chandaluri Vamsi Krishna ([@Vamsikrishna99C](https://twitter.com/Vamsikrishna99C))                                    |
 |   | Lars Kristensen                                                                                                       |
 |   | Erik de Kuijper ([@edkpr](https://github.com/edkpr))                                                                  |
+|   | Laurent Laubin - Quarkslab                                                                                            |
 |   | Gwilym Lewis – Appsecco                                                                                               |
 |   | Sajeeb Lohani (sml555) - Bulletproof ZDS                                                                              |
 |   | Dejan Lukan (eleanor)                                                                                                 |
@@ -154,7 +158,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Guifre Ruiz Utges                                                                                                     |
 |   | Dobin Rutishauser - Compass Security AG                                                                               |
 |   | Bunyanuch Saengnet                                                                                                    |
-|   | Najam Ul Saqib ([@njmulsqb](https://www.twitter.com/njmulsqb))                                              |
+|   | Najam Ul Saqib ([@cybersoldier](https://infosec.exchange/@cybersoldier))                                              |
 |   | Goran Sarenkapa (JordanGS)                                                                                            |
 |   | Karan Preet Singh Sasan ([@preetkaran20](https://github.com/preetkaran20))                                            |
 |   | Pranav Saxena ([@pranavsaxena17](https://github.com/pranavsaxena17))                                                  |
