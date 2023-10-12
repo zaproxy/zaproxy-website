@@ -335,9 +335,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.6.0/exim-beta-0.6.0.zap
-  date: 2023-07-11
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.7.0/exim-beta-0.7.0.zap
+  date: 2023-10-12
+  version: 0.7.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -357,9 +357,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/value-generator/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.4.0/formhandler-beta-6.4.0.zap
-  date: 2023-07-11
-  version: 6.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.5.0/formhandler-beta-6.5.0.zap
+  date: 2023-10-12
+  version: 6.5.0
 - id: fuzz
   name: Fuzzer
   description: Advanced fuzzer for manual testing
@@ -367,9 +367,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.11.0/fuzz-beta-13.11.0.zap
-  date: 2023-10-04
-  version: 13.11.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.12.0/fuzz-beta-13.12.0.zap
+  date: 2023-10-12
+  version: 13.12.0
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer
@@ -398,9 +398,9 @@
   status: release
   infoUrl: /docs/desktop/addons/getting-started-guide/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v15/gettingStarted-release-15.zap
-  date: 2023-07-11
-  version: 15
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v16/gettingStarted-release-16.zap
+  date: 2023-10-12
+  version: 16
 - id: graaljs
   name: GraalVM JavaScript
   description: Provides the GraalVM JavaScript engine for ZAP scripting.
@@ -408,9 +408,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graalvm-javascript/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.4.0/graaljs-alpha-0.4.0.zap
-  date: 2023-07-11
-  version: 0.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.5.0/graaljs-alpha-0.5.0.zap
+  date: 2023-10-12
+  version: 0.5.0
 - id: graphql
   name: GraphQL Support
   description: Inspect and attack GraphQL endpoints.
@@ -418,9 +418,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.19.0/graphql-alpha-0.19.0.zap
-  date: 2023-09-07
-  version: 0.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.20.0/graphql-alpha-0.20.0.zap
+  date: 2023-10-12
+  version: 0.20.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -599,9 +599,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/invoke-applications/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/invoke-v13/invoke-beta-13.zap
-  date: 2023-07-11
-  version: 13
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/invoke-v14/invoke-beta-14.zap
+  date: 2023-10-12
+  version: 14
 - id: jruby
   name: Ruby Scripting
   description: Allows Ruby to be used for ZAP scripting - templates included
@@ -689,9 +689,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.11.2/network-beta-0.11.2.zap
-  date: 2023-09-27
-  version: 0.11.2
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.12.0/network-beta-0.12.0.zap
+  date: 2023-10-12
+  version: 0.12.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -699,9 +699,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.16.0/oast-beta-0.16.0.zap
-  date: 2023-07-11
-  version: 0.16.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.17.0/oast-beta-0.17.0.zap
+  date: 2023-10-12
+  version: 0.17.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
@@ -709,9 +709,9 @@
   status: release
   infoUrl: /docs/desktop/addons/online-menu/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/onlineMenu-v11/onlineMenu-release-11.zap
-  date: 2023-07-11
-  version: 11
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/onlineMenu-v12/onlineMenu-release-12.zap
+  date: 2023-10-12
+  version: 12
 - id: openapi
   name: OpenAPI Support
   description: Imports and spiders OpenAPI definitions.
@@ -721,9 +721,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v36/openapi-beta-36.zap
-  date: 2023-09-07
-  version: 36
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v37/openapi-beta-37.zap
+  date: 2023-10-12
+  version: 37
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -793,9 +793,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v51/pscanrules-release-51.zap
-  date: 2023-09-08
-  version: 51
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v52/pscanrules-release-52.zap
+  date: 2023-10-12
+  version: 52
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -823,9 +823,9 @@
   status: release
   infoUrl: /docs/desktop/addons/quick-start/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v42/quickstart-release-42.zap
-  date: 2023-10-04
-  version: 42
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v43/quickstart-release-43.zap
+  date: 2023-10-12
+  version: 43
 - id: reflect
   name: Reflect
   description: Finds reflected parameters
@@ -853,9 +853,9 @@
   status: release
   infoUrl: /docs/desktop/addons/replacer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v14/replacer-release-14.zap
-  date: 2023-09-07
-  version: 14
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v15/replacer-release-15.zap
+  date: 2023-10-12
+  version: 15
 - id: reports
   name: Report Generation
   description: Official ZAP Reports.
@@ -863,9 +863,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.25.0/reports-release-0.25.0.zap
-  date: 2023-10-04
-  version: 0.25.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.26.0/reports-release-0.26.0.zap
+  date: 2023-10-12
+  version: 0.26.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
@@ -873,9 +873,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/requester/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v7.3.0/requester-beta-7.3.0.zap
-  date: 2023-07-11
-  version: 7.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v7.4.0/requester-beta-7.4.0.zap
+  date: 2023-10-12
+  version: 7.4.0
 - id: retest
   name: Retest
   description: An add-on to retest for presence/absence of previously generated alerts.

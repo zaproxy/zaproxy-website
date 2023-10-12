@@ -6,14 +6,14 @@ weight: 1
 cascade:
   addon:
     id: formhandler
-    version: 6.4.0
+    version: 6.5.0
 ---
 
 # Value Generator
 
 This Value Generator extension allows for the custom configuration of values used in sites/apps based on field/input names.
 
-**Note:**The word "Field" is used throughout this help documentation interchangeably with parameter or input.
+**Note:** The word "Field" is used throughout this help documentation interchangeably with parameter or input.
 
 ## Description
 

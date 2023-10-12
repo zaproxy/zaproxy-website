@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: fuzz
-    version: 13.11.0
+    version: 13.12.0
 ---
 
 # Fuzzing
