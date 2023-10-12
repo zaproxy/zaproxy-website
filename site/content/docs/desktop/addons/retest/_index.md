@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: retest
-    version: 0.7.0
+    version: 0.8.0
 ---
 
 # Support for Retesting alerts
