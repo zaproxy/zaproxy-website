@@ -1,0 +1,45 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+{{ define "main" }}
+{{ $addOn := index (where .Site.Data.addons "id" "==" $.Params.cascade.addon.id) 0 }}
+<section class="bolt-header">
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+<div class="wrapper py-20" data-kind="{{ .Kind }}">
+  <header class="breadcrumbs">
+    <a href="/docs/">Docs</a> &gt;
+    SBOM &gt;
+    <a href="/docs/sbom/{{ $addOn.id }}">{{ $addOn.name }}</a>
+  </header>
+  <br>
+  <p>This page contains a list of all the libraries involved in building version <code>{{ $addOn.version }}</code> of the
+    "{{ $addOn.name }}" add-on.
+  <p>You may download the full <a href="{{ $.Params.sbom.downloadUrl }}">Software Bill Of Materials (SBOM) JSON file</a>
+    for this add-on.
+  <div class="flex">
+    <table>
+      <colgroup>
+        <col span="1" style="width: 34%;">
+        <col span="1" style="width: 33%;">
+        <col span="1" style="width: 33%;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Name
+          <th>Version
+          <th>License(s)
+      </thead>
+      <tbody>
+        {{ range $.Params.sbom.components }}
+        <tr>
+          <td>{{ .name }}</td>
+          <td align="center">{{ .version }}</td>
+          <td>{{ .licenses }}</td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+</div>
+{{ end }}
