@@ -19,6 +19,8 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/api/Quantitys/
   ajax: Pass
+- path: GET http://localhost:3000/api/SecurityQuestions/
+  ajax: New
 - path: GET http://localhost:3000/assets/i18n/en.json
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/favicon_js.ico
@@ -72,7 +74,7 @@ details:
 - path: GET http://localhost:3000/font-mfizz.woff
   ajax: Pass
 - path: GET http://localhost:3000/ftp/legal.md
-  ajax: FAIL
+  ajax: Pass
 - path: GET http://localhost:3000/main.js
   ajax: Pass
 - path: GET http://localhost:3000/polyfills.js
@@ -102,7 +104,7 @@ details:
 - path: GET http://localhost:3000/styles.css
   ajax: Pass
 - path: GET http://localhost:3000/tutorial.js
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/vendor.js
   ajax: Pass
 - path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
