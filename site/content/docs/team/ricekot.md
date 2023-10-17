@@ -7,6 +7,7 @@ type: team
 github: ricekot
 linkedin: ricekot
 mastodon: https://infosec.exchange/@ricekot
+bluesky: https://bsky.app/profile/ricekot.com
 weight: 4
 ---
 Akshath is the author of the [GraphQL](/docs/desktop/addons/graphql-support/) and 

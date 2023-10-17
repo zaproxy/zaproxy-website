@@ -79,6 +79,18 @@
               </td>
             </tr>
             {{ end }}
+            {{ if .Params.bluesky }}
+            <tr>
+              <td>
+                <strong>Bluesky</strong>
+              </td>
+              <td>
+                <a href="{{ .Params.bluesky }}">
+                  {{ .Params.bluesky }}
+                </a>
+              </td>
+            </tr>
+            {{ end }}
             {{ if $.Scratch.Get "blogCounter" }}
             <tr>
               <td>

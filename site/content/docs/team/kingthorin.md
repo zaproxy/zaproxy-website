@@ -7,6 +7,7 @@ type: team
 github: kingthorin
 linkedin: rmitchel
 mastodon: https://infosec.exchange/@kingthorin_rm
+bluesky: https://bsky.app/profile/kingthorin.bsky.social
 weight: 3
 ---
 Rick started contributing to ZAP in 2014.
