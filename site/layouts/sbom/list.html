@@ -1,0 +1,30 @@
+{{ define "main" }}
+<section class="bolt-header">
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+  <div class="wrapper py-70">
+  	{{- .Content -}}
+  	
+  	<table class="table">
+    <thead  align="left">
+    <tr>
+        <th style="width: 80%">Name</th>
+        <th style="width: 20%">Components</th>
+    </tr>
+    </thead>
+    
+    {{ range .Pages }}
+    <tr>
+          <td>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+          </td>
+          <td>
+            {{ len .Params.sbom.components }}
+          </td>
+    </tr>
+    {{ end }}
+    
+</table>
+{{ end }}
