@@ -51,6 +51,10 @@ groups:
         link: /docs/statistics/
         desc: public ZAP usage statistics
     
+      - name: 'Software Bill of Materials'
+        link: /docs/sbom/
+        desc: ZAP add-on SBOMs
+    
   - header: 'Internal Details'
     links:
 
