@@ -567,3 +567,13 @@
   has_talks: N
   has_training: N
   notes: Threat Hunting; ZAP for general Web Application Security usage/pen testing/vulnerability detection
+  
+- name: Rafał Krząpa
+  email: rafal@krzapa.pl
+  twitter: https://twitter.com/DTesterow
+  linkedin: https://www.linkedin.com/in/rafal-krzapa/
+  locations: Swietochlowice, Poland
+  language: English, Polish
+  has_talks: N
+  has_training: N
+  notes: Sharing knowledge on https://www.dlatesterow.pl/, learning people
