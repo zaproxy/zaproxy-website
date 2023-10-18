@@ -1,12 +1,12 @@
 ---
 # This page was generated from the add-on.
-title: Technology Detection
+title: Technology Detection - Wappalyzer
 type: userguide
 weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.25.0
+    version: 21.26.0
 ---
 
 # Technology Detection Using Wappalyzer
@@ -35,11 +35,12 @@ This enabled state is persisted between ZAP sessions.
 
 ## Reporting
 
-Technology data is available to reports via the [WappalyzerJobResultData](https://github.com/zaproxy/zap-extensions/tree/main/addOns/wappalyzer/src/main/java/org/zaproxy/zap/extension/wappalyzer/automation/WappalyzerJobResultData) class.
+Technology data is available to reports via the [WappalyzerJobResultData](https://github.com/zaproxy/zap-extensions/tree/main/addOns/wappalyzer/src/main/java/org/zaproxy/zap/extension/wappalyzer/automation/WappalyzerJobResultData.java) class.
 
 ## External Links
 
-|   |                                            |                           |
-|---|--------------------------------------------|---------------------------|
-|   | <https://www.wappalyzer.com/>              | The Wappalyzer Homepage   |
-|   | <https://github.com/wappalyzer/wappalyzer> | The Wappalyzer Repository |
+|   |                                                                   |                                                                                           |
+|---|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+|   | <https://www.wappalyzer.com/>                                     | The Wappalyzer Homepage                                                                   |
+|   | https://github.com/wappalyzer/wappalyzer                          | As of early August 2023 the The Wappalyzer Repository is no longer public.                |
+|   | [Enthec Webappanalyzer](https://github.com/enthec/webappanalyzer) | This project is a continuation of the iconic Wappalyzer that went private in August 2023. |
