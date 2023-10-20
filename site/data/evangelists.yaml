@@ -570,10 +570,10 @@
   
 - name: Rafał Krząpa
   email: rafal.krzapa@gmail.com
-  twitter: https://twitter.com/DTesterow
+  twitter: DTesterow
   linkedin: https://www.linkedin.com/in/rafal-krzapa/
   locations: Swietochlowice, Poland
   language: English, Polish
-  has_talks: N
-  has_training: N
+  has_talks: Y
+  has_training: Y
   notes: Sharing knowledge on <a href="https://www.dlatesterow.pl/" rel="nofollow">https://www.dlatesterow.pl/</a>, learning people
