@@ -180,9 +180,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.2.0/client-alpha-0.2.0.zap
-  date: 2023-09-26
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.3.0/client-alpha-0.3.0.zap
+  date: 2023-10-23
+  version: 0.3.0
 - id: codedx
   name: Code Dx Extension
   description: Includes request and response data in XML reports and provides the
@@ -721,9 +721,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v37/openapi-beta-37.zap
-  date: 2023-10-12
-  version: 37
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v38/openapi-beta-38.zap
+  date: 2023-10-23
+  version: 38
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -913,9 +913,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/revisit/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/revisit-v4/revisit-alpha-4.zap
-  date: 2021-10-07
-  version: 4
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/revisit-v5/revisit-alpha-5.zap
+  date: 2023-10-23
+  version: 5
 - id: saml
   name: SAML Support
   description: Detect, Show, Edit, Fuzz SAML requests
@@ -953,9 +953,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/sequence-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sequence-v6/sequence-alpha-6.zap
-  date: 2021-10-07
-  version: 6
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sequence-v7/sequence-alpha-7.zap
+  date: 2023-10-23
+  version: 7
 - id: soap
   name: SOAP Support
   description: Imports and scans WSDL files containing SOAP endpoints.
