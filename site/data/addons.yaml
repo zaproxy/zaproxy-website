@@ -345,9 +345,9 @@
   status: alpha
   infoUrl: /blog/2021-08-20-zap-fileupload-addon/
   repoUrl: https://github.com/SasanLabs/owasp-zap-fileupload-addon/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/fileupload-alpha-1.1.0.zap
-  date: 2021-09-17
-  version: 1.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/fileupload-alpha-1.2.1.zap
+  date: 2023-10-23
+  version: 1.2.1
 - id: formhandler
   name: Value Generator
   description: This Value Generator Add-on allows a user to define field names and
