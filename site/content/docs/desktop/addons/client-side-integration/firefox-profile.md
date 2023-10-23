@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Client Side Integration - Firefox Profile
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # Client Side Integration - Firefox Profile

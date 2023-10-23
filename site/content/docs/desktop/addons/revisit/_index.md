@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: revisit
-    version: 4.0.0
+    version: 5.0.0
 ---
 
 # Revisit
