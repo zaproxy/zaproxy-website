@@ -343,7 +343,7 @@
   description: Detect File upload requests and scan them to find related vulnerabilities
   author: KSASAN preetkaran20@gmail.com
   status: alpha
-  infoUrl: /blog/2021-08-20-zap-fileupload-addon/
+  infoUrl: ''
   repoUrl: https://github.com/SasanLabs/owasp-zap-fileupload-addon/
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/fileupload-alpha-1.2.1.zap
   date: 2023-10-23
