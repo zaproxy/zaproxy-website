@@ -5,369 +5,461 @@ details:
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: Pass
 - path: /javascript/frameworks/angular/router-outlet.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: Pass
 - path: /javascript/frameworks/angularjs/ng-href.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /javascript/frameworks/polymer/event-handler.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /javascript/frameworks/polymer/polymer-router.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /javascript/frameworks/react/index.html/search.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /javascript/frameworks/react/route-path.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: Pass
 - path: /test/css/font-face.found
   scheme: http
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/headers/content-location.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/headers/link.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/headers/location.found
   scheme: http
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/headers/refresh.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/a/href.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: Pass
 - path: /test/html/body/a/ping.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/applet/archive.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/applet/codebase.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/audio/source/src.found
   scheme: https
   standard: FAIL
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/audio/source/srcset1x.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/audio/source/srcset2x.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/audio/src.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/background.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/blockquote/cite.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/embed/src.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/form/action-get.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/form/action-post.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/form/button/formaction.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/frameset/frame/src.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/iframe/src.found
   scheme: https
   standard: Pass
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/html/body/iframe/srcdoc.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/img/dynsrc.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/img/longdesc.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/img/lowsrc.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/img/src-data.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/img/src.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/img/srcset1x.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/img/srcset2x.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/input/src.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/isindex/action.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/map/area/ping.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/object/codebase.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/object/data.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/object/param/value.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/body/script/src.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/svg/image/xlink.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/svg/script/xlink.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/table/background.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/table/td/background.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/video/poster.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/video/src.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/body/video/track/src.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /test/html/doctype.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/head/base/href.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/head/comment-conditional.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/head/import/implementation.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/head/link/href.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/head/meta/content-csp.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/head/meta/content-pinned-websites.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/head/meta/content-reading-view.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/head/meta/content-redirect.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/head/profile.found
   scheme: https
   standard: Pass
   ajax: Pass
+  client: FAIL
 - path: /test/html/manifest.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/misc/string/dot-dot-slash-prefix.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/misc/string/dot-slash-prefix.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/misc/string/string-known-extension.pdf
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/misc/string/url-string.found
   scheme: http
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/misc/url/full-url.found
   scheme: http
   standard: Pass
   ajax: FAIL
+  client: Pass
 - path: /test/html/misc/url/path-relative-url.found
   scheme: http
   standard: Pass
   ajax: FAIL
+  client: Pass
 - path: /test/html/misc/url/protocol-relative-url.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/html/misc/url/root-relative-url.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/js-delete.found
   scheme: https
   standard: FAIL
   ajax: Pass
+  client: FAIL
 - path: /test/javascript/interactive/js-post-event-listener.found
   scheme: https
   standard: FAIL
   ajax: Pass
+  client: FAIL
 - path: /test/javascript/interactive/js-post.found
   scheme: https
   standard: FAIL
   ajax: Pass
+  client: FAIL
 - path: /test/javascript/interactive/js-put.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/listener-and-event-attribute-first.found
   scheme: https
   standard: FAIL
   ajax: Pass
+  client: FAIL
 - path: /test/javascript/interactive/listener-and-event-attribute-second.found
   scheme: https
   standard: FAIL
   ajax: Pass
+  client: FAIL
 - path: /test/javascript/interactive/multi-step-request-event-attribute.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/multi-step-request-event-listener-div-dom.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/multi-step-request-event-listener-div.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/multi-step-request-event-listener-dom.found
   scheme: https
   standard: FAIL
   ajax: Pass
+  client: FAIL
 - path: /test/javascript/interactive/multi-step-request-event-listener.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/multi-step-request-redefine-event-attribute.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/multi-step-request-remove-button.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/multi-step-request-remove-event-listener.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/two-listeners-first.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/javascript/interactive/two-listeners-second.found
   scheme: https
   standard: FAIL
-  ajax: Pass
+  ajax: FAIL
+  client: FAIL
 - path: /test/javascript/misc/automatic-post.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /test/javascript/misc/comment.found
   scheme: http
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/javascript/misc/string-concat-variable.found
   scheme: https
   standard: FAIL
   ajax: FAIL
+  client: FAIL
 - path: /test/javascript/misc/string-variable.found
   scheme: http
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/misc/known-files/robots.txt.found
   scheme: https
   standard: Pass
   ajax: FAIL
+  client: FAIL
 - path: /test/misc/known-files/sitemap.xml.found
   scheme: http
   standard: Pass
   ajax: FAIL
+  client: FAIL
 tests: 91
-passes: 76
+passes: 71
 standardPasses: 61
-ajaxPasses: 36
-fails: 15
-score: 84%
+ajaxPasses: 27
+clientPasses: 6
+fails: 20
+score: 78%
