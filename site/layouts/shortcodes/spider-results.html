@@ -6,17 +6,20 @@
     <tr>
       <td><h5><a href="#section-{{ $section }}" onclick="showHide('scan-{{ $section }}')" id="section-{{ $section }}">{{ $data.section}}</a></h5></td>
       <td></td>
+      <td></td>
       <td align="center"><h5>{{ $data.score}}</h5></td>
     </tr>
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
-      <th style="width: 70%">Individual Tests</th>
+      <th style="width: 55%">Individual Tests</th>
       <th>Standard</th>
       <th>Ajax</th>
+      <th>Client</th>
     </tr>
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
       <td>Top Level: <a href="https://{{ $data.target}}/" id="section-{{ $section }}">https://{{ $data.target}}</a></td>
       <td align="center">{{ $data.standardPasses}}</td>
       <td align="center">{{ $data.ajaxPasses}}</td>
+      <td align="center">{{ $data.clientPasses}}</td>
     </tr>
     {{ range $test := $data.details }} 
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
@@ -32,6 +35,13 @@
         <td align="center"><div class="scan-result-fail">&#10060; {{ $test.ajax}} </div></td>
       {{ else }}
         <td align="center"><div class="scan-result-pass">&#10003; {{ $test.ajax}} </div></td>
+      {{ end }} 
+      {{ if eq $test.client "FAIL" }} 
+        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.client}} </div></td>
+      {{ else if eq $test.client "Pass" }} 
+        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.client}} </div></td>
+      {{ else }}
+        <td align="center"></td>
       {{ end }} 
     </tr>
     {{ end }}
