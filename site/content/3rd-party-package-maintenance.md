@@ -13,7 +13,7 @@ To be added to this page submit a PR via the "Edit on GitHub" link in the footer
 | Package                                                                                            | Instructions                                                                                              |
 |:---------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------|
 | [BackBox](https://www.backbox.org/)                                                                | Maintained by [@raffaele_forte](https://twitter.com/raffaele_forte)                                       |
-| [Brew](https://formulae.brew.sh/cask/owasp-zap)                                                    | Submit a PR on [owasp-zap-rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/owasp-zap.rb) |
+| [Brew](https://formulae.brew.sh/cask/zap)                                                          | Submit a PR on [zap-rb](https://github.com/Homebrew/homebrew-cask/blob/master/Casks/z/zap.rb) |
 | [Chocolatey](https://community.chocolatey.org/packages/zap)                                        | Raise an issue on [chocolatey-packages](https://github.com/jtcmedia/chocolatey-packages)                 |
 | [Flathub](https://flathub.org/apps/details/org.zaproxy.ZAP)                                        | Submit a PR on [ZAP](https://github.com/flathub/org.zaproxy.ZAP)                                          |
 | [FreeBSD](https://www.freshports.org/security/zaproxy/)                                            | Maintained by [Alonso Cárdenas](mailto:acm@FreeBSD.org)                                          |
