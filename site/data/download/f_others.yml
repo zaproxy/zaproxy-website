@@ -25,8 +25,8 @@ maint_column_2:
         - Updated by the ZAP Team
     - title: Homebrew Cask
       info:
-        - On macOS you can also install ZAP using [Homebrew Cask](https://formulae.brew.sh/cask/owasp-zap)
-        - "To install: `brew install --cask owasp-zap`"
+        - On macOS you can also install ZAP using [Homebrew Cask](https://formulae.brew.sh/cask/zap)
+        - "To install: `brew install --cask zap`"
         - Updated by the ZAP Team
     - title: Scoop
       info:
