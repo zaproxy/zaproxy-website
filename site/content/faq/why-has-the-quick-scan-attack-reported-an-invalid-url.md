@@ -15,7 +15,7 @@ If the Quick Start Attack fails with the message:
 then the first thing to do is check your URL in a browser.
 
 If it works ok then open the ZAP [Manual Request
-Editor](/docs/desktop/ui/dialogs/man_req/),
+Editor](/docs/desktop/addons/requester/dialogs/),
 replace the default URL with the one you are trying and send the request.
 
 The response may well explain the problem.

@@ -45,7 +45,7 @@ If you use ZAP via these companies please get in touch with them and ask them ho
 
 ### Form Handler RegEx Support
 You can now match parameters names in HTTP requests using regular expressions using the 
-[Form Handler](/docs/desktop/addons/form-handler/) add-on.
+[Form Handler](/docs/desktop/addons/value-generator/) add-on.
 
 
 ### Automation Framework Job Times

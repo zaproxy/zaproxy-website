@@ -24,7 +24,7 @@ The component links take you to the relevant places in an online version of the 
 |--|--|--|
 | {{< heading level="5" heading="Common Components" >}}   |  | The 'common components' can be used for pretty much everything, so can be used to help detect all of the Top 10   |
 |   | Manual | [Manipulator-in-the-middle proxy](/docs/desktop/start/features/intercept/)   |
-|   | Manual | [Manual request](/docs/desktop/ui/dialogs/man_req/) / resend   |
+|   | Manual | [Manual request](/docs/desktop/addons/requester/dialogs/) / resend   |
 |   | Manual | [Scripts](/docs/desktop/addons/script-console/) |
 |   | Manual | [Search](/docs/desktop/ui/tabs/search/)   |
 | [{{< heading level="5" heading="A1 Injection" >}}](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection) |  | |
@@ -33,7 +33,7 @@ The component links take you to the relevant places in an online version of the 
 |   | Manual | [Fuzzer](/docs/desktop/addons/fuzzer/), combined with the [FuzzDb*](/docs/desktop/addons/fuzzdb-files/) and [SVN Digger*](/docs/desktop/addons/svn-digger-files/) files |
 | [{{< heading level="5" heading="A2 Broken Authentication" >}}](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication) |  | |
 |   | Manual | [HTTP Sessions](/docs/desktop/start/features/httpsessions/) |
-|   | Manual | [Spider](/docs/desktop/start/features/spider/)  |
+|   | Manual | [Spider](/docs/desktop/addons/spider/)  |
 |   | Manual | [Forced Browse](/docs/desktop/addons/forced-browse/)  |
 |   | Manual | [Token Generator*](/docs/desktop/addons/token-generator/)   |
 |   | Automatic | [Access Control Testing*](/docs/desktop/addons/access-control-testing/) |
@@ -50,7 +50,7 @@ The component links take you to the relevant places in an online version of the 
 |   | Manual | [Port Scanner*](/docs/desktop/addons/port-scan/)   |
 |   | Manual | [Wappalyzer - Technology detection*](/docs/desktop/addons/technology-detection/) |
 | [{{< heading level="5" heading="A6 Security Misconfiguration" >}}](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration)  |  | |
-|   | Manual | [Spider](/docs/desktop/start/features/spider/)  |
+|   | Manual | [Spider](/docs/desktop/addons/spider/)  |
 |   | Manual | [Ajax Spider](/docs/desktop/addons/ajax-spider/)   |
 |   | Manual | [Session comparison](/docs/desktop/ui/tlmenu/report/#compare-with-another-session)  |
 |   | Manual | [Access Control Testing*](/docs/desktop/addons/access-control-testing/) |

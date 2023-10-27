@@ -11,9 +11,9 @@ There are a number of ways to accomplish selective proxying.
 
   * Such as FoxyProxy: <https://getfoxyproxy.org/>
 
-####  2 - Via Global Excludes
+####  2 - Via Global Exclusions
 
-  * Leveraging [Global Excludes](/docs/desktop/start/features/globalexcludeurl/) you can specify URLs that ZAP should not intercept.
+  * Leveraging [Global Exclusions](/docs/desktop/addons/network/options/globalexclusions/) you can specify URLs that ZAP should not intercept.
 
 ####  3 - Via a PAC (Proxy Auto-Config) File
 

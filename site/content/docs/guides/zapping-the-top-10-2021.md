@@ -26,7 +26,7 @@ The component links take you to the relevant places in an online version of the 
 |--|--|--|
 | {{< heading level="5" heading="Common Components" >}}   |  | The 'common components' can be used for pretty much everything, so can be used to help detect all of the Top 10 |
 |   | Manual | [Manipulator-in-the-middle proxy](/docs/desktop/start/features/intercept/)   |
-|   | Manual | [Manual request](/docs/desktop/ui/dialogs/man_req/) / resend   |
+|   | Manual | [Manual request](/docs/desktop/addons/requester/dialogs/) / resend   |
 |   | Manual | [Scripts](/docs/desktop/addons/script-console/) |
 |   | Manual | [Community Scripts](/docs/desktop/addons/community-scripts/) |
 |   | Manual | [Search](/docs/desktop/ui/tabs/search/) 
@@ -45,7 +45,7 @@ The component links take you to the relevant places in an online version of the 
 |   | Automated | Scan Rules tagged with: [OWASP_2021_A04](/alerttags/owasp_2021_a04/)  |
 | [{{< heading level="5" heading="A5 Security Misconfiguration" >}}](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2021/Top_10-2021_A5-Security_Misconfiguration)  |  | |
 |   | Automated | Scan Rules tagged with: [OWASP_2021_A05](/alerttags/owasp_2021_a05/)  |
-|   | Manual | [Spider](/docs/desktop/start/features/spider/)  |
+|   | Manual | [Spider](/docs/desktop/addons/spider/)  |
 |   | Manual | [Ajax Spider](/docs/desktop/addons/ajax-spider/)   |
 |   | Manual | [Session comparison](/docs/desktop/ui/tlmenu/report/#compare-with-another-session)  |
 |   | Manual | [Access Control Testing*](/docs/desktop/addons/access-control-testing/) |
@@ -54,7 +54,7 @@ The component links take you to the relevant places in an online version of the 
 |   | Manual | [Wappalyzer - Technology detection*](/docs/desktop/addons/technology-detection/) |
 | [{{< heading level="5" heading="A7 Identification and Authentication Failure" >}}](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/) |  | |
 |   | Manual | [HTTP Sessions](/docs/desktop/start/features/httpsessions/) |
-|   | Manual | [Spider](/docs/desktop/start/features/spider/)  |
+|   | Manual | [Spider](/docs/desktop/addons/spider/)  |
 |   | Manual | [Forced Browse](/docs/desktop/addons/forced-browse/)  |
 |   | Manual | [Token Generator*](/docs/desktop/addons/token-generator/)   |
 |   | Automated | [Access Control Testing*](/docs/desktop/addons/access-control-testing/) |
