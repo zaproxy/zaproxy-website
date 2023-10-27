@@ -41,7 +41,7 @@ If used in conjunction with [Browser Based Authentication](/docs/desktop/addons/
 
 If you can see any `Set-Cookie` headers being returned then it is likely that your app is using cookie-based session management.
 
-Make a request to your [verification URL](../finding-a-verification-url/) while authenticated and then open that request in the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/).
+Make a request to your [verification URL](../finding-a-verification-url/) while authenticated and then open that request in the [Manual Request Editor dialog](/docs/desktop/addons/requester/dialogs/).
 
 Check that there is a `Cookie` header in the request and that when you `Send` the request then it indicates you are logged in.
 
@@ -53,7 +53,7 @@ Configure your context to use this - you do not need any other configuration, su
 
 If you see a `WWW-Authenticate` response header and then a `Authorization` header then your app is using [HTTP Authentication](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication).
 
-As above, make a request to your [verification URL](../finding-a-verification-url/) while authenticated and then open that request in the [Manual Request Editor dialog](/docs/desktop/ui/dialogs/man_req/).
+As above, make a request to your [verification URL](../finding-a-verification-url/) while authenticated and then open that request in the [Manual Request Editor dialog](/docs/desktop/addons/requester/dialogs/).
 
 Check that there is an `Authorization` header in the request and that when you `Send` the request then it indicates you are logged in.
 

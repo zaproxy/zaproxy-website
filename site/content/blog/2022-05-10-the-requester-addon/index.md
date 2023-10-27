@@ -21,7 +21,7 @@ Once you have it installed you will see a new Requester tab next to the standard
 ![Requester Tab](images/requester.png)
 
 
-The new tab is like the built in [Manual Request Editor](/docs/desktop/ui/dialogs/man_req/) dialog but it also supports any number of Request/Response tabs.
+The new tab is like the built in [Manual Request Editor](/docs/desktop/addons/requester/dialogs/) dialog but it also supports any number of Request/Response tabs.
 
 While you can create requests from scratch you will find it much easier to right click on existing requests in any of the other ZAP tabs and select "Open in Requester Tab..." - the request will then open in a new Requester tab.
 You can also use the Control / Command + "W" key to do the same thing via the keyboard.
