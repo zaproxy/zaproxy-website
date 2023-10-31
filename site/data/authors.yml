@@ -127,3 +127,9 @@ skyper:
   picture: /img/authors/skyper_256x256.jpg
   twitter: SkypLabs
   is_core: false
+
+keindel:
+  name: Andrey Maksimov
+  picture: /img/authors/keindel_460x460.jpeg
+  twitter:
+  is_core: false
