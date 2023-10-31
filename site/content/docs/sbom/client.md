@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.3.0
+    version: 0.4.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.3.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.4.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -108,10 +108,10 @@ sbom:
     version: '2.6'
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.13.0
+    version: 3.12.0
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.12.0
+    version: 3.13.0
     licenses: Apache-2.0
   - name: commons-logging
     version: '1.2'
@@ -132,10 +132,10 @@ sbom:
     version: 2.20.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.18.0
+    version: 2.20.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.20.0
+    version: 2.18.0
     licenses: Apache-2.0
   - name: error_prone_check_api
     version: 2.20.0
@@ -162,10 +162,10 @@ sbom:
     version: 2.8.5
     licenses: Apache-2.0
   - name: guava
-    version: 31.1-jre
+    version: 32.1.2-jre
     licenses: Apache-2.0
   - name: guava
-    version: 32.1.2-jre
+    version: 31.1-jre
     licenses: Apache-2.0
   - name: guice
     version: 5.1.0
@@ -222,10 +222,10 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: j2objc-annotations
-    version: '2.8'
+    version: '1.3'
     licenses: Apache-2.0
   - name: j2objc-annotations
-    version: '1.3'
+    version: '2.8'
     licenses: Apache-2.0
   - name: jackson-annotations
     version: 2.15.2
@@ -555,11 +555,11 @@ sbom:
     version: 2.14.0
     licenses: Apache-2.0
   - name: zest
-    version: '43'
-    licenses: ''
-  - name: zest
     version: 0.20.0
     licenses: MPL-2.0-no-copyleft-exception
+  - name: zest
+    version: '43'
+    licenses: ''
   - name: zest
     version: '43'
     licenses: ''

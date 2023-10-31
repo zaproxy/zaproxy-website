@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.3.0
+    version: 0.4.0
 ---
 
 # Client Side Integration
@@ -37,6 +37,24 @@ client side structure of the sites.
 Any leaf nodes in the Map with a small red 'minus' sign represent URLs which have been found in the DOM but which have not been directly accessed by ZAP.
 
 Selecting a node that has been visited by ZAP will display details about that node in the Client Details tab.
+
+The following context menu items are supported:
+
+#### Copy URLs to Clipboard
+
+Copies the URLs of the selected nodes into the clipboard, separated by newlines.
+
+#### Delete
+
+Deletes the selected nodes.
+
+#### Open in Browser
+
+Opens the selected node in the chosen browser. This menu item is disabled if multiple nodes are selected. If the URL contains a fragment then this will be passed to the browser.
+
+#### Show in Sites Tree
+
+Opens the selected node in the Sites Tree. The message in the Sites Tree does not necessarily match the same message which created the Site Node. This menu item is disabled if multiple nodes are selected or if the URL has not yet been visited. If the URL contains a fragment then this will be ignored.
 
 ### Client Details
 
