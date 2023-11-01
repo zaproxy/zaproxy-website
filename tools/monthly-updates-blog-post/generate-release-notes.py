@@ -20,15 +20,12 @@ if today.day < 10:
 		month = 12
 		year = year - 1
 
-print("In " + calendar.month_name[month] + " " + str(year) + ", we released updated versions of *TBA add-ons:")
-print()
-
-count = 0
+release_notes = ""
+seen_addons = set()
 
 with open(sys.argv[1], 'r') as f:
-    releases = sorted(json.load(f), key=lambda k: k['name'])
+    releases = sorted(json.load(f), key=lambda k: k['name'].partition(' version ')[0])
 
-    # TODO: Merge releases per add-on
     for release in releases:
         created_date = datetime.fromisoformat(release['created_at'][:-1])
         if created_date >= datetime(year,month,1):
@@ -36,9 +33,13 @@ with open(sys.argv[1], 'r') as f:
             name = name_parts[0]
             version = name_parts[2]
 
-            print(f"##### {name} (v{version})")
-            print(release['body'].replace('### ', ''))
-            print()
-            count += 1
+            if name not in seen_addons:
+                release_notes += f"##### {name}\n"
+                seen_addons.add(name)
+
+            release_notes += f"**v{version}**  \n"
+            release_notes += release['body'].replace('### ', '') + "\n\n"
             
-print("*TBA = " + str(count))
+release_notes = f"In {calendar.month_name[month]} {year}, we released updated versions of {len(seen_addons)} add-ons:\n\n{release_notes.strip()}"
+
+print(release_notes)
