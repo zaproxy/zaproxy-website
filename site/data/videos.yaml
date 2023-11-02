@@ -4,12 +4,22 @@
 
 # ZAP Chat Series
 
+- title: 'ZAP Chat 05 Modern Apps Part 1'
+  id: Rq_d7OLmMfw
+  site: youtube
+  series: 'ZAP Chat'
+  date: '2023/11/03'
+  length: 20:41
+  tags:
+  - browser
+  - modern
+
 - title: 'ZAP Chat 04 ZAPit'
   id: 9RbmkT9rG5w
   site: youtube
   series: 'ZAP Chat'
   date: '2023/10/18'
-  length: 02:49
+  length: 20:50
   tags:
   - automation
   - reconnaissance
