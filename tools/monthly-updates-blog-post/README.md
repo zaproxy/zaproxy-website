@@ -14,7 +14,7 @@ to list all non-automated closed ZAP PRs updated in that month.
 Get the most recent releases using the GitHub API and save the response to a JSON file.
 
 ```shell
-gh api -H "Accept: application/vnd.github+json"  -H "X-GitHub-Api-Version: 2022-11-28" /repos/zaproxy/zap-extensions/releases > releases.json
+gh api -H "Accept: application/vnd.github+json"  -H "X-GitHub-Api-Version: 2022-11-28" /repos/zaproxy/zap-extensions/releases?per_page=100 > releases.json
 ```
 
 Tweak the date in the `generate-release-notes.py` script and run it against the json file.
@@ -27,3 +27,10 @@ Tweak the date in the `generate-release-notes.py` script and run it against the 
 
 https://github.com/zaproxy/zap-core-help/pulls?q=is%3Apr+credits+is%3Aclosed
 
+## List new Website pages
+
+In the root of the cloned zaproxy-website repo, run the following command:
+
+```bash
+git diff --stat --diff-filter=A $(git rev-list -n1 --first-parent --until="1.month.ago" HEAD) | grep -E "(md|html)"
+```
