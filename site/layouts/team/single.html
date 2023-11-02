@@ -11,9 +11,9 @@
 
 {{ $posts := where .Site.Pages "Type" "post" }}
 {{ range $posts}}
-	{{ if in .Params.authors $author }}
+	{{- if in .Params.authors $author -}}
 		{{ $.Scratch.Add "blogCounter" 1 }}
-	{{ end }}
+	{{- end -}}
 {{ end }}
 
 <div class="wrapper py-20" data-kind="{{ .Kind }}">
