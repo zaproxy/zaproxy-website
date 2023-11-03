@@ -115,4 +115,4 @@ We would love to hear your feedback about this add-on, for example:
 * Does it display all of the information clearly
 * What else would you like it to do?
 
-Let us know via the ZAP User Group: conversation link to be added once this blog has been published..
+Let us know via the [ZAP User Group](https://groups.google.com/g/zaproxy-users/c/eEywuGeuSxg/m/CUnMXN44AQAJ).
