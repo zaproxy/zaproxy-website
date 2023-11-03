@@ -15,6 +15,9 @@ links:
   - name: '04 ZAPit'
     uuid: 9RbmkT9rG5w
 
+  - name: '05 Modern Apps Part 1'
+    uuid: Rq_d7OLmMfw
+
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
 

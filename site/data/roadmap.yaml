@@ -1,15 +1,9 @@
 
-- item: Rebrand
-  status: ⚡ In progress
-  year: 2023
-- item: Release 2.14
-  status: ⚡ In progress
-  url: https://github.com/zaproxy/zaproxy/milestone/10
-  year: 2023
 - item: Update to latest Crawljax
   status: ⚡ In progress
   year: 2023
 - item: Improve modern web app handling
+  url: /blog/2023-11-03-handling-modern-web-apps-better-part1/
   status: ⚡ In progress
   year: 2023
 - item: Browser Recorder
@@ -49,6 +43,13 @@
   url: /blog/2023-01-19-authentication-help/
   year: n/a
 
+- item: Rebrand
+  status: 🎉 Finished
+  year: 2023
+- item: Release 2.14
+  status: 🎉 Finished
+  url: /blog/2023-10-12-zap-2-14-0/
+  year: 2023
 - item: Release 2.13
   status: 🎉 Finished
   url: /blog/2023-07-12-zap-2.13.0/
