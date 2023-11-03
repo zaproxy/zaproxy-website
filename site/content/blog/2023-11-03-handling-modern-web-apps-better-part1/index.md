@@ -26,7 +26,7 @@ So we have a brand new [Client Side Integration](/docs/desktop/addons/client-sid
 
 {{<youtube uuid="Rq_d7OLmMfw">}}
 
-Staring [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
+Starring [OWASP Juice Shop](https://owasp.org/www-project-juice-shop/)
 
 ### Client Visibility
 
