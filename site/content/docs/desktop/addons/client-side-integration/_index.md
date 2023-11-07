@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.4.0
+    version: 0.5.0
 ---
 
 # Client Side Integration
@@ -68,6 +68,20 @@ The types of data displayed include:
 * Input: Input elements detected in the DOM
 * Link: Links detected in the DOM
 
+The following context menu items are supported:
+
+#### Copy HREFs to Clipboard
+
+Copies the HREFs of the selected entries into the clipboard, separated by newlines.
+
+#### Copy IDs to Clipboard
+
+Copies the IDs of the selected entries into the clipboard, separated by newlines.
+
+#### Copy Texts to Clipboard
+
+Copies the Texts of the selected entries into the clipboard, separated by newlines.
+
 ### Client History
 
 The Client History tab shows all of the client side events sent from the browser extension to ZAP.
@@ -78,6 +92,28 @@ In addition to the data displayed in the Client Details tab it also includes:
 * Node Added: A DOM node added to the specified URL
 * Page Load: Browser [load](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event) event
 * Page Unload: Browser [unload](https://developer.mozilla.org/en-US/docs/Web/API/Window/unload_event) event
+
+The following context menu items are supported:
+
+#### Copy Node IDs to Clipboard
+
+Copies the Node IDs of the selected entries into the clipboard, separated by newlines.
+
+#### Copy Node Names to Clipboard
+
+Copies the Node Names of the selected entries into the clipboard, separated by newlines.
+
+#### Copy Source URLs to Clipboard
+
+Copies the Source URLs of the selected entries into the clipboard, separated by newlines.
+
+#### Copy Texts to Clipboard
+
+Copies the Texts of the selected entries into the clipboard, separated by newlines.
+
+#### Copy Types to Clipboard
+
+Copies the Types of the selected entries into the clipboard, separated by newlines.
 
 ## AJAX Spider Enhancement
 
