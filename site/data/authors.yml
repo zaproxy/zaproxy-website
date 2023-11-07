@@ -133,3 +133,9 @@ keindel:
   picture: /img/authors/keindel_460x460.jpeg
   twitter:
   is_core: false
+
+yiannis:
+  name: Yiannis Pavlosoglou
+  picture: /img/authors/yiannis_400x400.jpg
+  twitter: KibernaSecurity
+  is_core: false
