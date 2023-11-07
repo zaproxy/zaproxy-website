@@ -21,7 +21,7 @@ links:
 
   - name: 'Automation Framework'
     link: automation-framework/
-    desc: a flexible option not tied to any container technology - recommended for most non trivial automation
+    desc: a flexible option not tied to any container technology - recommended for most non-trivial automation
 
   - name: 'API and Daemon mode'
     link: /docs/api/
