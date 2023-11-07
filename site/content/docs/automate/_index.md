@@ -3,9 +3,13 @@ title: "Automate ZAP"
 type: page
 layout: links
 links:
+  - name: 'ZAPit'
+    link: /blog/2023-10-18-zapit/
+    desc: a quick ‘reconnaissance’ scan of the URL specified
+
   - name: 'Quick Start command line'
     link: /docs/desktop/addons/quick-start/cmdline/
-    desc: quick and easy, but only suitable for simple scans
+    desc: easy to run, but with very limited options so only suitable for simple scans
 
   - name: 'Docker Packaged Scans'
     link: /docs/docker/
@@ -17,7 +21,7 @@ links:
 
   - name: 'Automation Framework'
     link: automation-framework/
-    desc: a new framework which is not tied to any container technology and will in time replace the Command Line and Packaged Scan options
+    desc: a flexible option not tied to any container technology - recommended for most non trivial automation
 
   - name: 'API and Daemon mode'
     link: /docs/api/
