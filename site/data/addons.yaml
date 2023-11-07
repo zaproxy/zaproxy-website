@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.4.0/client-alpha-0.4.0.zap
-  date: 2023-10-31
-  version: 0.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.5.0/client-alpha-0.5.0.zap
+  date: 2023-11-07
+  version: 0.5.0
 - id: codedx
   name: Code Dx Extension
   description: Includes request and response data in XML reports and provides the
