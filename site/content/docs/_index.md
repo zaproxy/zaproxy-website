@@ -9,6 +9,10 @@ groups:
         link: /getting-started/
         desc: a good place to start if you are new to ZAP
     
+      - name: 'Getting Further Guides'
+        link: /docs/getting-further/
+        desc: in depth guides covering different ways you can use ZAP
+    
       - name: 'Desktop User Guide'
         link: /docs/desktop/
         desc: the help included with the ZAP desktop application 
