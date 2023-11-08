@@ -29,4 +29,6 @@ links:
 cascade:
   EditableContent: true
 ---
-There are various ways you can automate ZAP:
+There are various ways you can automate ZAP, which are explored in more detail on the 
+[Getting Further - Automation Options](/docs/getting-further/automation/automation-options/) page:
+
