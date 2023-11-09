@@ -9,7 +9,7 @@ type: page
 If you want to use ZAP for automated security scanning then you have a wide range of options, also listed on the main 
 [Automate](/docs/automate/) page.
 
-Also see the [ZAP Char 06 Automation Introduction](https://www.youtube.com/watch?v=W8ogRTUZPTk) video which talks about 
+Also see the [ZAP Chat 06 Automation Introduction](https://www.youtube.com/watch?v=W8ogRTUZPTk) video which talks about 
 and demonstrates all of these options in more detail.
 
 Each of these options provides a different balance between ease of use and flexibility + functionality:
