@@ -577,3 +577,12 @@
   has_talks: Y
   has_training: Y
   notes: Sharing knowledge on <a href="https://www.dlatesterow.pl/" rel="nofollow">https://www.dlatesterow.pl/</a>, learning people
+
+- name: HAHWUL
+  email: hahwul@gmail.com
+  twitter: hahwul
+  locations: South Korea
+  language: Korean, English
+  has_talks: N
+  has_training: N
+  notes: Security/Software Engineer and ZAP Lover ⚡️
