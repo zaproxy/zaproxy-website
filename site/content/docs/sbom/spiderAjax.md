@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: spiderAjax
-    version: 23.17.0
+    version: 23.18.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.17.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.18.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -33,10 +33,10 @@ sbom:
     version: 1.2.1
     licenses: Apache-2.0
   - name: auto-service-annotations
-    version: 1.1.1
+    version: 1.0.1
     licenses: Apache-2.0
   - name: auto-service-annotations
-    version: 1.0.1
+    version: 1.1.1
     licenses: Apache-2.0
   - name: auto-value-annotations
     version: '1.9'
@@ -69,13 +69,13 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: checker-qual
-    version: 3.33.0
+    version: 3.19.0
     licenses: MIT
   - name: checker-qual
     version: 3.5.0
     licenses: MIT
   - name: checker-qual
-    version: 3.19.0
+    version: 3.33.0
     licenses: MIT
   - name: commonlib
     version: 1.19.0
@@ -144,13 +144,13 @@ sbom:
     version: 2.20.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.20.0
-    licenses: Apache-2.0
-  - name: error_prone_annotations
     version: 2.18.0
     licenses: Apache-2.0
   - name: error_prone_annotations
     version: 2.3.4
+    licenses: Apache-2.0
+  - name: error_prone_annotations
+    version: 2.20.0
     licenses: Apache-2.0
   - name: error_prone_check_api
     version: 2.20.0
@@ -186,10 +186,10 @@ sbom:
     version: 32.1.2-jre
     licenses: Apache-2.0
   - name: guice
-    version: 5.0.1
+    version: 5.1.0
     licenses: Apache-2.0
   - name: guice
-    version: 5.1.0
+    version: 5.0.1
     licenses: Apache-2.0
   - name: guice-assistedinject
     version: 5.0.1
@@ -492,64 +492,64 @@ sbom:
     version: 3.0.1
     licenses: Apache-2.0
   - name: selenium
-    version: 15.15.0
+    version: 15.16.0
     licenses: ''
   - name: selenium
-    version: 15.15.0
+    version: 15.16.0
     licenses: ''
   - name: selenium-api
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.14.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v116
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-devtools-v117
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-devtools-v118
-    version: 4.14.0
+    version: 4.15.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v119
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-devtools-v85
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.14.0
+    version: 4.15.0
     licenses: Apache-2.0
   - name: slf4j-api
     version: 1.7.32
@@ -603,7 +603,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.14.0-SNAPSHOT
+    version: 2.14.0
     licenses: Apache-2.0
 ---
 

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.7.0
+    version: 0.8.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.7.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.8.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -138,7 +138,7 @@ sbom:
     version: 3.2.1
     licenses: Apache-2.0
   - name: formhandler
-    version: 6.5.0
+    version: 6.6.0
     licenses: ''
   - name: guava
     version: 31.1-jre
@@ -309,7 +309,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.12.0
+    version: 0.13.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -369,7 +369,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.14.0-SNAPSHOT
+    version: 2.14.0
     licenses: Apache-2.0
 ---
 
