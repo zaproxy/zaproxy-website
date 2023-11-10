@@ -19,7 +19,7 @@ links:
     uuid: Rq_d7OLmMfw
 
   - name: '06 Automation Introduction'
-    uuid: W8ogRTUZPTk
+    uuid: PnCbIAnauD8
 
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
