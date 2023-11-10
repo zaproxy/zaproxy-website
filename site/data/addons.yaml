@@ -191,9 +191,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.18.0/commonlib-release-1.18.0.zap
-  date: 2023-10-12
-  version: 1.18.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.19.0/commonlib-release-1.19.0.zap
+  date: 2023-11-10
+  version: 1.19.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -219,12 +219,12 @@
   description: Ability to add, edit or remove payloads that are used i.e. by active
     scanners
   author: ZAP Dev Team
-  status: alpha
+  status: beta
   infoUrl: /docs/desktop/addons/custom-payloads/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.12.0/custompayloads-alpha-0.12.0.zap
-  date: 2022-09-23
-  version: 0.12.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.13.0/custompayloads-beta-0.13.0.zap
+  date: 2023-11-10
+  version: 0.13.0
 - id: database
   name: Database
   description: Provides database engines and related infrastructure.
@@ -325,9 +325,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.7.0/exim-beta-0.7.0.zap
-  date: 2023-10-12
-  version: 0.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.8.0/exim-beta-0.8.0.zap
+  date: 2023-11-10
+  version: 0.8.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -408,9 +408,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.20.0/graphql-alpha-0.20.0.zap
-  date: 2023-10-12
-  version: 0.20.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.21.0/graphql-alpha-0.21.0.zap
+  date: 2023-11-10
+  version: 0.21.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -933,9 +933,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.15.0/selenium-release-15.15.0.zap
-  date: 2023-10-12
-  version: 15.15.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.16.0/selenium-release-15.16.0.zap
+  date: 2023-11-10
+  version: 15.16.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -974,9 +974,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.17.0/spiderAjax-release-23.17.0.zap
-  date: 2023-10-12
-  version: 23.17.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.18.0/spiderAjax-release-23.18.0.zap
+  date: 2023-11-10
+  version: 23.18.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
