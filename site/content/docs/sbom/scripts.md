@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: scripts
-    version: '42'
+    version: '43'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v42/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v43/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -69,10 +69,10 @@ sbom:
     version: 3.19.0
     licenses: MIT
   - name: commonlib
-    version: 1.19.0
+    version: 1.20.0
     licenses: ''
   - name: commonlib
-    version: 1.19.0
+    version: 1.20.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -369,7 +369,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.14.0-SNAPSHOT
+    version: 2.14.0
     licenses: Apache-2.0
 ---
 

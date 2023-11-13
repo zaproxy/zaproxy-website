@@ -14,9 +14,6 @@ It is made up of:
 * A text area (top) in which you can write your scripts
 * An output text area (bottom) for debug and error messages, with "print" statements.
 
-You can run 'Stand Alone' scripts from within this tab using the 'Run' button on the tab toolbar.  
-All other types of scripts will be run when enabled or if explicitly invoked.  
-
 To create a new script or to load or switch scripts see the [The Scripts 'tree' tab](/docs/desktop/addons/script-console/tree/).
 
 Right-click in the script area for display and editing options.
@@ -27,6 +24,22 @@ If a script is changed by another program when it is not being displayed and has
 then that script will be loaded and the new contents will be used when the script is run.
 
 Templates can be viewed in the console but cannot be edited.  
+
+## Toolbar Buttons
+
+### Save Script
+
+This button allows you to save the script currently displayed in the console to a file.  
+The shortcut \`ctrl+S\` (or \`cmd+S\` on macOS) may also be used for this purpose.  
+
+### Enable / Disable Script
+
+This button may be used to enable or disable the script currently displayed in the console.  
+
+### Run and Stop Buttons
+
+You can run 'Stand Alone' scripts using the 'Run' button on the tab toolbar.  
+All other types of scripts will be run when enabled or if explicitly invoked.  
 
 ### Auto-complete
 
