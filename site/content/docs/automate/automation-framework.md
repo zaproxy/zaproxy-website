@@ -11,6 +11,8 @@ It allows you to control ZAP via one YAML file and provides more flexibility whi
 The Automation Framework is included with the latest version of ZAP as well as the stable docker image.
 The framework is plugable and many of the existing add-ons have been enhanced to support it.
 
+For an introduction see the video: [ZAP Chat 07 Automation Framework Part 1](https://youtu.be/19Rptj2be1Y)
+
 ### Updating Add-ons
 
 The [addOns](/docs/desktop/addons/automation-framework/job-addons/) job has been found to cause
