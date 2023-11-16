@@ -87,6 +87,16 @@
               {{ end }}
               </td>
             </tr>
+            {{ if isset .Params "help" }}
+            <tr> 
+              <td>
+                <strong>More Info</strong>
+              </td>
+              <td>
+              	<a href="{{ .Params.help  }}">Scan Rule Help</a><br>
+              </td>
+            </tr>
+            {{ end }}
           </tbody>
         </table>
 
