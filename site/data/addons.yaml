@@ -17,9 +17,9 @@
   status: release
   infoUrl: /docs/desktop/addons/alert-filters/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v18/alertFilters-release-18.zap
-  date: 2023-10-12
-  version: 18
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v19/alertFilters-release-19.zap
+  date: 2023-11-16
+  version: 19
 - id: allinonenotes
   name: All In One Notes
   description: A simple extension to view all notes in one pane.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.33.0/automation-beta-0.33.0.zap
-  date: 2023-10-12
-  version: 0.33.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.34.0/automation-beta-0.34.0.zap
+  date: 2023-11-16
+  version: 0.34.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
