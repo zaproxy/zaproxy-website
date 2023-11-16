@@ -222,6 +222,10 @@ integrations:
     link: https://plextrac.com/platform/integrations/
     license: 'Commercial'
  
+  - name: 'Riscosity'
+    link: https://www.riscosity.com/
+    license: 'Commercial'
+ 
   - name: 'Sn1per Pro'
     link: https://sn1persecurity.com/wordpress/sn1per-professional-v10-released/
     license: 'Commercial'
