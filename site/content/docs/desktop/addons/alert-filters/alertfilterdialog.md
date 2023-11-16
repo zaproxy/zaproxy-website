@@ -18,7 +18,7 @@ This can either be 'Global' for a Global Alert Filter or the name of an existing
 
 ### Alert Type
 
-A pull down containing all of the active and passive alert rules currently installed.
+The first pull down lists all of the active and passive alert rules currently installed along with their (known) alert references. The second pull down lists all known IDs (scan rules and alert references). It also allows to manually specify one, if not listed (e.g. custom rule or not yet installed).
 
 ### New Risk Level
 
