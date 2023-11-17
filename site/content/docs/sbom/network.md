@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: network
-    version: 0.12.0
+    version: 0.13.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.12.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.13.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -50,6 +50,9 @@ sbom:
   - name: bcutil-jdk18on
     version: '1.76'
     licenses: Bouncy Castle Licence
+  - name: brotli4j
+    version: 1.13.0
+    licenses: Apache-2.0
   - name: byte-buddy
     version: 1.12.22
     licenses: Apache-2.0
@@ -236,6 +239,18 @@ sbom:
   - name: mockito-junit-jupiter
     version: 5.1.1
     licenses: MIT
+  - name: native-linux-x86_64
+    version: 1.13.0
+    licenses: Apache-2.0
+  - name: native-osx-aarch64
+    version: 1.13.0
+    licenses: Apache-2.0
+  - name: native-osx-x86_64
+    version: 1.13.0
+    licenses: Apache-2.0
+  - name: native-windows-x86_64
+    version: 1.13.0
+    licenses: Apache-2.0
   - name: netty-buffer
     version: 4.1.100.Final
     licenses: Apache-2.0
@@ -293,6 +308,9 @@ sbom:
   - name: rsyntaxtextarea
     version: 3.3.4
     licenses: BSD-3-Clause
+  - name: service
+    version: 1.13.0
+    licenses: Apache-2.0
   - name: slf4j-api
     version: 1.7.36
     licenses: MIT
@@ -306,7 +324,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.14.0-SNAPSHOT
+    version: 2.14.0
     licenses: Apache-2.0
 ---
 
