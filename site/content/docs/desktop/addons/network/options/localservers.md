@@ -63,7 +63,12 @@ Also, the API needs to be configured to accept external IP addresses (i.e. the I
 
 Allows the proxy to remove the "Accept-Encoding" request-header field, so no (unsupported) encoding transformations are done to the response.  
 This option should be always enabled unless when testing the encoding transformations.  
-The messages encoded with unsupported encodings will not be correctly scanned (either by passive and active scanners).
+The messages encoded with unsupported encodings will not be correctly scanned (either by passive or active scanners).  
+Supported content encodings:
+
+* `br`, on Linux x64, macOS (Intel and Apple Silicon), and Windows x64
+* `deflate`
+* `gzip`
 
 #### Decode Response
 
