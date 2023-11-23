@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.5.0
+    version: 0.6.0
 ---
 
 # Client Side Integration
@@ -21,6 +21,10 @@ If you do not launch your browser(s) from ZAP then you can still install these e
 * Chrome [ZAP Browser Extension](https://chrome.google.com/webstore/detail/zap-browser-extension/cnmficmodhagepcmhogkbdakncebckho)
 
 Note that you may need to configure the extensions via their options pages to update the host and API key.
+
+## Passive Scanning
+
+This add-on provides a [Passive Scanner](/docs/desktop/addons/client-side-integration/pscan/) which passively scans all of the data received from the browser.
 
 ## User Interface
 
@@ -40,7 +44,7 @@ Selecting a node that has been visited by ZAP will display details about that no
 
 The following context menu items are supported:
 
-#### Copy URLs to Clipboard
+#### Copy URLs
 
 Copies the URLs of the selected nodes into the clipboard, separated by newlines.
 
@@ -70,15 +74,15 @@ The types of data displayed include:
 
 The following context menu items are supported:
 
-#### Copy HREFs to Clipboard
+#### Copy HREFs
 
 Copies the HREFs of the selected entries into the clipboard, separated by newlines.
 
-#### Copy IDs to Clipboard
+#### Copy IDs
 
 Copies the IDs of the selected entries into the clipboard, separated by newlines.
 
-#### Copy Texts to Clipboard
+#### Copy Texts
 
 Copies the Texts of the selected entries into the clipboard, separated by newlines.
 
@@ -95,23 +99,23 @@ In addition to the data displayed in the Client Details tab it also includes:
 
 The following context menu items are supported:
 
-#### Copy Node IDs to Clipboard
+#### Copy Node IDs
 
 Copies the Node IDs of the selected entries into the clipboard, separated by newlines.
 
-#### Copy Node Names to Clipboard
+#### Copy Node Names
 
 Copies the Node Names of the selected entries into the clipboard, separated by newlines.
 
-#### Copy Source URLs to Clipboard
+#### Copy Source URLs
 
 Copies the Source URLs of the selected entries into the clipboard, separated by newlines.
 
-#### Copy Texts to Clipboard
+#### Copy Texts
 
 Copies the Texts of the selected entries into the clipboard, separated by newlines.
 
-#### Copy Types to Clipboard
+#### Copy Types
 
 Copies the Types of the selected entries into the clipboard, separated by newlines.
 
