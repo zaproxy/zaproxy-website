@@ -65,6 +65,32 @@ If you are running ZAP with port other than the default `8080`, you need to set 
 
 ## Usage Instructions
 
+### Mounting the Current Directory
+Many of the examples require that you mount the `/zap/wrk` directory, and these examples show how you can mount your **[current working directory](https://en.wikipedia.org/wiki/Working_directory) (CWD)**.
+One can _get_ the CWD using various forms of _printing_ the (current) working directory (PWD).
+
+```bash
+# ...linux / MacOS / PowerShell
+#    The $(pwd) command substitution will get the current directory as a variable
+#    The classic form `pwd` must be used for csh and tsch / is still supported in bash/zsh/etc.
+docker run -v $(pwd):/zap/wrk/:rw -t softwaresecurityproject/zap-stable zap.sh ...
+
+# ...linux / MacOS / PowerShell
+#    The ${PWD} _environment variable_ is your current directory
+docker run -v ${PWD}:/zap/wrk/:rw -t softwaresecurityproject/zap-stable zap.sh ...
+
+# ...windows CMD
+#    The %cd% Windows CMD environment variable is your current directory
+docker run -v %cd%:/zap/wrk/:rw -t softwaresecurityproject/zap-stable zap.sh ...
+```
+
+The examples use `$(pwd)` [command substitution](https://en.wikipedia.org/wiki/Command_substitution), which runs the `pwd` command, substituting the _result_.
+Command substitution, and the `pwd` command works in _most_ Linux and MacOS shells (bash, zsh, fish(>3.4.0), etc), and in Windows PowerShell.
+
+Many environments _also_ support the $PWD / ${PWD} _environment variable_.
+
+Finding working solutions for _all_ environments is outside the scope of this document.
+
 ### Packaged Scans
 All of the docker images (apart from the 'bare' one) provide a set of packaged scan scripts:
 
@@ -106,7 +132,11 @@ You can run the Automation Framework in docker using the zap.yaml file in the cu
 ```bash
 docker run -v $(pwd):/zap/wrk/:rw -t softwaresecurityproject/zap-stable zap.sh -cmd -autorun /zap/wrk/zap.yaml
 ```
-Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory (ex: `C:\your\working\directory\`).
+
+Note that `$(pwd)` is supported on Linux, MacOS and PowerShell.
+See [Docker About - Mounting the current directory](/docs/docker/about/#mounting-the-current-directory) for Windows, etc.
+
+Remaining examples use the Linux approach.
 
 If you want to make sure that ZAP is up to date before running the yaml file then the recommended approach is:
 
