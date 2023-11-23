@@ -23,6 +23,9 @@ links:
 
   - name: '07 Automation Framework Part 1'
     uuid: 19Rptj2be1Y
+
+  - name: '08 Automation Framework Part 2'
+    uuid: 1fcpU54N-mA
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
 
