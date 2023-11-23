@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.5.0
+    version: 0.6.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.5.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.6.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -53,6 +53,9 @@ sbom:
   - name: bcutil-jdk18on
     version: '1.76'
     licenses: Bouncy Castle Licence
+  - name: brotli4j
+    version: 1.13.0
+    licenses: Apache-2.0
   - name: byte-buddy
     version: 1.14.5
     licenses: Apache-2.0
@@ -69,7 +72,7 @@ sbom:
     version: 3.19.0
     licenses: MIT
   - name: commonlib
-    version: 1.19.0
+    version: 1.20.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -99,10 +102,10 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.13.0
+    version: 2.10.0
     licenses: Apache-2.0
   - name: commons-io
-    version: 2.10.0
+    version: 2.13.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -132,10 +135,10 @@ sbom:
     version: 2.20.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.18.0
+    version: 2.20.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.20.0
+    version: 2.18.0
     licenses: Apache-2.0
   - name: error_prone_check_api
     version: 2.20.0
@@ -222,10 +225,10 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: j2objc-annotations
-    version: '2.8'
+    version: '1.3'
     licenses: Apache-2.0
   - name: j2objc-annotations
-    version: '1.3'
+    version: '2.8'
     licenses: Apache-2.0
   - name: jackson-annotations
     version: 2.15.2
@@ -347,6 +350,18 @@ sbom:
   - name: nanohttpd-websocket
     version: 2.3.1
     licenses: BSD-3-Clause
+  - name: native-linux-x86_64
+    version: 1.13.0
+    licenses: Apache-2.0
+  - name: native-osx-aarch64
+    version: 1.13.0
+    licenses: Apache-2.0
+  - name: native-osx-x86_64
+    version: 1.13.0
+    licenses: Apache-2.0
+  - name: native-windows-x86_64
+    version: 1.13.0
+    licenses: Apache-2.0
   - name: neko-htmlunit
     version: 2.70.0
     licenses: Apache-2.0
@@ -378,10 +393,10 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.13.0
+    version: 0.14.0
     licenses: ''
   - name: network
-    version: 0.13.0
+    version: 0.14.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -456,64 +471,67 @@ sbom:
     version: 3.0.1
     licenses: Apache-2.0
   - name: selenium
-    version: 15.16.0
+    version: 15.17.0
     licenses: ''
   - name: selenium
-    version: 15.16.0
+    version: 15.17.0
     licenses: ''
   - name: selenium-api
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.14.1
-    licenses: Apache-2.0
-  - name: selenium-devtools-v116
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-devtools-v117
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-devtools-v118
-    version: 4.14.1
+    version: 4.15.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v119
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-devtools-v85
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.14.1
+    version: 4.15.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.14.1
+    version: 4.15.0
+    licenses: Apache-2.0
+  - name: service
+    version: 1.13.0
     licenses: Apache-2.0
   - name: slf4j-api
     version: 1.7.36
@@ -555,11 +573,11 @@ sbom:
     version: 2.14.0
     licenses: Apache-2.0
   - name: zest
-    version: '43'
-    licenses: ''
-  - name: zest
     version: 0.20.0
     licenses: MPL-2.0-no-copyleft-exception
+  - name: zest
+    version: '43'
+    licenses: ''
   - name: zest
     version: '43'
     licenses: ''

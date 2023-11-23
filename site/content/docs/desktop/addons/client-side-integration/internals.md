@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Client Side Integration - Internals
 type: userguide
-weight: 3
+weight: 4
 ---
 
 # Client Side Integration - Internals
