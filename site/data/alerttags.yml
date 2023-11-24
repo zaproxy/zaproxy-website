@@ -19,6 +19,123 @@ CVE-2022-22965:
 CVE-2022-42889:
   link: https://nvd.nist.gov/vuln/detail/CVE-2022-42889
 
+CWE-1004:
+  link: https://cwe.mitre.org/data/definitions/1004.html
+
+CWE-1021:
+  link: https://cwe.mitre.org/data/definitions/1021.html
+
+CWE-117:
+  link: https://cwe.mitre.org/data/definitions/117.html
+
+CWE-120:
+  link: https://cwe.mitre.org/data/definitions/120.html
+
+CWE-134:
+  link: https://cwe.mitre.org/data/definitions/134.html
+
+CWE-16:
+  link: https://cwe.mitre.org/data/definitions/16.html
+
+CWE-20:
+  link: https://cwe.mitre.org/data/definitions/20.html
+
+CWE-200:
+  link: https://cwe.mitre.org/data/definitions/200.html
+
+CWE-205:
+  link: https://cwe.mitre.org/data/definitions/205.html
+
+CWE-22:
+  link: https://cwe.mitre.org/data/definitions/22.html
+
+CWE-284:
+  link: https://cwe.mitre.org/data/definitions/284.html
+
+CWE-287:
+  link: https://cwe.mitre.org/data/definitions/287.html
+
+CWE-311:
+  link: https://cwe.mitre.org/data/definitions/311.html
+
+CWE-345:
+  link: https://cwe.mitre.org/data/definitions/345.html
+
+CWE-352:
+  link: https://cwe.mitre.org/data/definitions/352.html
+
+CWE-359:
+  link: https://cwe.mitre.org/data/definitions/359.html
+
+CWE-472:
+  link: https://cwe.mitre.org/data/definitions/472.html
+
+CWE-502:
+  link: https://cwe.mitre.org/data/definitions/502.html
+
+CWE-524:
+  link: https://cwe.mitre.org/data/definitions/524.html
+
+CWE-525:
+  link: https://cwe.mitre.org/data/definitions/525.html
+
+CWE-538:
+  link: https://cwe.mitre.org/data/definitions/538.html
+
+CWE-540:
+  link: https://cwe.mitre.org/data/definitions/540.html
+
+CWE-541:
+  link: https://cwe.mitre.org/data/definitions/541.html
+
+CWE-548:
+  link: https://cwe.mitre.org/data/definitions/548.html
+
+CWE-565:
+  link: https://cwe.mitre.org/data/definitions/565.html
+
+CWE-601:
+  link: https://cwe.mitre.org/data/definitions/601.html
+
+CWE-614:
+  link: https://cwe.mitre.org/data/definitions/614.html
+
+CWE-642:
+  link: https://cwe.mitre.org/data/definitions/642.html
+
+CWE-693:
+  link: https://cwe.mitre.org/data/definitions/693.html
+
+CWE-749:
+  link: https://cwe.mitre.org/data/definitions/749.html
+
+CWE-776:
+  link: https://cwe.mitre.org/data/definitions/776.html
+
+CWE-78:
+  link: https://cwe.mitre.org/data/definitions/78.html
+
+CWE-79:
+  link: https://cwe.mitre.org/data/definitions/79.html
+
+CWE-829:
+  link: https://cwe.mitre.org/data/definitions/829.html
+
+CWE-918:
+  link: https://cwe.mitre.org/data/definitions/918.html
+
+CWE-933:
+  link: https://cwe.mitre.org/data/definitions/933.html
+
+CWE-94:
+  link: https://cwe.mitre.org/data/definitions/94.html
+
+CWE-942:
+  link: https://cwe.mitre.org/data/definitions/942.html
+
+CWE-98:
+  link: https://cwe.mitre.org/data/definitions/98.html
+
 OUT_OF_BAND:
   link: https://www.zaproxy.org/docs/desktop/addons/oast-support/
 
