@@ -11,29 +11,11 @@ It allows you to control ZAP via one YAML file and provides more flexibility whi
 The Automation Framework is included with the latest version of ZAP as well as the stable docker image.
 The framework is plugable and many of the existing add-ons have been enhanced to support it.
 
-For an introduction see the video: [ZAP Chat 07 Automation Framework Part 1](https://youtu.be/19Rptj2be1Y)
+The framework is covered in the following [ZAP Chat](/zap-chat/) videos:
 
-### Updating Add-ons
-
-The [addOns](/docs/desktop/addons/automation-framework/job-addons/) job has been found to cause
-problems when updating add-ons which are defined in the current plan. This job has been depreciated and no longer does anything.
-
-From 2.12 you can use the standard ZAP [command line](/docs/desktop/cmdline/) 
-options with the AF `-autorun` option:
-
-* `-addoninstall <addOnId>` to install an add-on
-* `-addonuninstall <addOnId>` to uninstall an add-on
-* `-addonupdate` to update all add-ons
-
-You can use `-addoninstall` and `-addonuninstall` as many times as you need:
-
-```bash
-./zap.sh -addonupdate\
-    -addoninstall example-1 \
-    -addoninstall example-2 \
-    -addonuninstall example-3 \
-    -cmd -autorun zap.yaml <any other ZAP options>
-```
+* [ZAP Chat 07 Automation Framework Part 1](https://youtu.be/19Rptj2be1Y) An introduction to the framework
+* [ZAP Chat 08 Automation Framework Part 2](https://youtu.be/1fcpU54N-mA) Details on the environment, passiveScan-config job, and alertFilter job
+* [ZAP Chat 09 Automation Framework Part 3](https://youtu.be/4phnMy9iCPY) Details on the requester job and replacer job
 
 ### Framework Overview
 
@@ -65,6 +47,28 @@ The full set of jobs currently supported by the framework and other add-ons are:
 
 For details of future changes planned see the [tracker issue](https://github.com/zaproxy/zaproxy/issues/6461).
 
+### Updating Add-ons
+
+The [addOns](/docs/desktop/addons/automation-framework/job-addons/) job has been found to cause
+problems when updating add-ons which are defined in the current plan. This job has been depreciated and no longer does anything.
+
+From 2.12 you can use the standard ZAP [command line](/docs/desktop/cmdline/) 
+options with the AF `-autorun` option:
+
+* `-addoninstall <addOnId>` to install an add-on
+* `-addonuninstall <addOnId>` to uninstall an add-on
+* `-addonupdate` to update all add-ons
+
+You can use `-addoninstall` and `-addonuninstall` as many times as you need:
+
+```bash
+./zap.sh -addonupdate\
+    -addoninstall example-1 \
+    -addoninstall example-2 \
+    -addonuninstall example-3 \
+    -cmd -autorun zap.yaml <any other ZAP options>
+```
+
 ### Exit Value
 
 If you run the framework from the command line then ZAP will exit with:
@@ -77,3 +81,4 @@ The framework will exit with `2` if there are warnings even if the [environment]
 If you need ZAP to exit with `0` in this case then you can run ZAP with a Linux / macOS command line like:
 
 * `bash -c "./zap.sh -cmd -autorun /path/to/your/af-plan.yaml" || [ $? -ne 1 ]`
+
