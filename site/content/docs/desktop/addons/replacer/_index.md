@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: replacer
-    version: 15.0.0
+    version: 16.0.0
 ---
 
 # Replacer
@@ -40,6 +40,10 @@ In this case the 'Match String' will be treated as a header name. If the header 
 #### Request Header String
 
 In this case the 'Match String' will be treated as a string or regex expression. If it is present in the request header then it will be replaced by the replacement text.
+
+##### Host Header
+
+Both the Request Header and Request Header String match types can change/remove the Host header, while sending the message to the original request-target.
 
 #### Request Body String
 
