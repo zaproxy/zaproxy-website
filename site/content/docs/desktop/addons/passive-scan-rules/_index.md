@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 52.0.0
+    version: 53.0.0
 ---
 
 # Passive Scan Rules
@@ -44,6 +44,7 @@ Latest code: [AntiClickjackingScanRule.java](https://github.com/zaproxy/zap-exte
 
 Check server responses for HTTP 500 - Internal Server Error type responses or those that contain a known error string.   
 **Note:** Matches made within script blocks or files are against the entire content not only comments.  
+Skips responses that contain ISO control characters (those which are likely binary files).  
 At HIGH Threshold don’t alert on HTTP 500 (but do for other error patterns). Also, such known error strings are much less likely to be relevant in static pages like JS / CSS so these files are only scanned at LOW threshold.  
 For Internal Server Error (HTTP 500) the Alert is set to Low risk and in other case it is set to Medium risk.
 
