@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.6.0
+    version: 0.7.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.6.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.7.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -33,10 +33,10 @@ sbom:
     version: 1.2.1
     licenses: Apache-2.0
   - name: auto-service-annotations
-    version: 1.0.1
+    version: 1.1.1
     licenses: Apache-2.0
   - name: auto-service-annotations
-    version: 1.1.1
+    version: 1.0.1
     licenses: Apache-2.0
   - name: auto-value-annotations
     version: '1.9'
@@ -57,10 +57,13 @@ sbom:
     version: 1.13.0
     licenses: Apache-2.0
   - name: byte-buddy
+    version: 1.14.9
+    licenses: Apache-2.0
+  - name: byte-buddy
     version: 1.14.5
     licenses: Apache-2.0
   - name: byte-buddy-agent
-    version: 1.12.22
+    version: 1.14.9
     licenses: Apache-2.0
   - name: caffeine
     version: 3.0.5
@@ -68,9 +71,9 @@ sbom:
   - name: checker-qual
     version: 3.33.0
     licenses: MIT
-  - name: checker-qual
-    version: 3.19.0
-    licenses: MIT
+  - name: commonlib
+    version: 1.20.0
+    licenses: ''
   - name: commonlib
     version: 1.20.0
     licenses: ''
@@ -78,10 +81,10 @@ sbom:
     version: 1.9.4
     licenses: Apache-2.0
   - name: commons-codec
-    version: '1.15'
+    version: 1.16.0
     licenses: Apache-2.0
   - name: commons-codec
-    version: 1.16.0
+    version: '1.15'
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
@@ -102,7 +105,7 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.10.0
+    version: 2.15.0
     licenses: Apache-2.0
   - name: commons-io
     version: 2.13.0
@@ -111,10 +114,10 @@ sbom:
     version: '2.6'
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.13.0
+    version: 3.12.0
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.12.0
+    version: 3.13.0
     licenses: Apache-2.0
   - name: commons-logging
     version: '1.2'
@@ -132,22 +135,22 @@ sbom:
     version: 0.1.2
     licenses: MIT
   - name: error_prone_annotation
-    version: 2.20.0
-    licenses: Apache-2.0
-  - name: error_prone_annotations
-    version: 2.20.0
+    version: 2.23.0
     licenses: Apache-2.0
   - name: error_prone_annotations
     version: 2.18.0
     licenses: Apache-2.0
+  - name: error_prone_annotations
+    version: 2.23.0
+    licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.20.0
+    version: 2.23.0
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.20.0
+    version: 2.23.0
     licenses: Apache-2.0
   - name: error_prone_type_annotations
-    version: 2.20.0
+    version: 2.23.0
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
@@ -161,11 +164,14 @@ sbom:
   - name: flatlaf
     version: 3.2.1
     licenses: Apache-2.0
+  - name: formhandler
+    version: 6.6.0
+    licenses: ''
   - name: gson
     version: 2.8.5
     licenses: Apache-2.0
   - name: guava
-    version: 31.1-jre
+    version: 32.1.1-jre
     licenses: Apache-2.0
   - name: guava
     version: 32.1.2-jre
@@ -225,34 +231,31 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: j2objc-annotations
-    version: '1.3'
-    licenses: Apache-2.0
-  - name: j2objc-annotations
     version: '2.8'
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: 2.15.2
+    version: 2.16.0
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.15.2
+    version: 2.16.0
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.15.2
+    version: 2.16.0
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.15.2
+    version: 2.16.0
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.15.2
+    version: 2.16.0
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.15.2
+    version: 2.16.0
     licenses: Apache-2.0
   - name: java-diff-utils
-    version: '4.0'
+    version: '4.12'
     licenses: Apache-2.0
   - name: java-semver
     version: 0.9.0
@@ -297,25 +300,25 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-jupiter
-    version: 5.9.3
+    version: 5.10.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 5.9.3
+    version: 5.10.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 5.9.3
+    version: 5.10.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 5.9.3
+    version: 5.10.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 1.9.3
+    version: 1.10.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 1.9.3
+    version: 1.10.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 1.9.3
+    version: 1.10.1
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -336,10 +339,10 @@ sbom:
     version: 2.20.0
     licenses: Apache-2.0
   - name: mockito-core
-    version: 5.1.1
+    version: 5.7.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.1.1
+    version: 5.7.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
@@ -441,11 +444,8 @@ sbom:
     version: 1.28.0-alpha
     licenses: Apache-2.0
   - name: opentest4j
-    version: 1.2.0
+    version: 1.3.0
     licenses: Apache-2.0
-  - name: org.eclipse.jgit
-    version: 4.4.1.201607150455-r
-    licenses: BSD-3-Clause
   - name: org.jacoco.agent
     version: 0.8.8
     licenses: EPL-2.0
@@ -537,7 +537,7 @@ sbom:
     version: 1.7.36
     licenses: MIT
   - name: snakeyaml
-    version: '2.0'
+    version: '2.2'
     licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
