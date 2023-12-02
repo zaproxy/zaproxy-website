@@ -18,4 +18,4 @@
 - id: "sqliplugin"
 - id: "fuzzdb"
 - id: "directorylistv2_3"
-- id: "directorylistv2_3_lc"
+- id: "jwt"
