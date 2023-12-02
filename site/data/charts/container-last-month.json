@@ -1,21 +1,21 @@
 {
-  "title": "News Pings by Container in October 2023",
-  "description": "The number of News pings from ZAP by container in October 2023",
+  "title": "News Pings by Container in November 2023",
+  "description": "The number of News pings from ZAP by container in November 2023",
   "data": [
     ["Container", "Count"],
-    ["zap2docker-stable", 1808657],
-    ["None", 676286],
-    ["zap2docker-weekly", 165540],
-    ["Unknown", 24640],
-    ["zap2docker-live", 16212],
-    ["zap2docker-bare", 12546],
-    ["snapcraft", 6094],
-    ["zap2docker-stable.webswing", 2440],
-    ["flatpak", 1158],
-    ["zap2docker-weekly.webswing", 133],
-    ["conquest/zap-weekly", 76],
-    ["zap2docker-live.webswing", 7],
-    ["zap", 6],
-    ["zap2docker_nogui", 1]
+    ["zap2docker-stable", 2686296],
+    ["None", 683856],
+    ["zap2docker-weekly", 169739],
+    ["Unknown", 24182],
+    ["zap2docker-bare", 15214],
+    ["zap2docker-live", 14141],
+    ["snapcraft", 6311],
+    ["zap2docker-stable.webswing", 4478],
+    ["flatpak", 1331],
+    ["zap2docker-weekly.webswing", 101],
+    ["conquest/zap-weekly", 72],
+    ["zap", 61],
+    ["awnwebscanner", 18],
+    ["zap2docker-live.webswing", 4]
   ]
 }
