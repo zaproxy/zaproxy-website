@@ -1,0 +1,16 @@
+{
+  "title": "ZAP Development Focus Totals 2023",
+  "description": "Total scores - 3x 1st + 2x 2nd + 3rd choices",
+  "data": [
+    ["Category", "Votes"],
+    ["Auth", 93],
+    ["Automation", 92],
+    ["Docs", 33],
+    ["Ease", 83],
+    ["3rd party", 22],
+    ["Manual", 66],
+    ["Modern", 106],
+    ["Rules", 59],
+    ["Scalability", 15]
+  ]
+}
