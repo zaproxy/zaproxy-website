@@ -1,0 +1,16 @@
+{
+  "title": "Third Most Important Aspect?",
+  "description": "",
+  "data": [
+    ["Category", "Votes"],
+    ["Auth", 12],
+    ["Automation", 15],
+    ["Docs", 7],
+    ["Ease", 13],
+    ["3rd party", 10],
+    ["Manual", 7],
+    ["Modern", 13],
+    ["Rules", 11],
+    ["Scalability", 5]
+  ]
+}
