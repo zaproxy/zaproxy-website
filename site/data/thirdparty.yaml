@@ -241,7 +241,7 @@ integrations:
   - name: 'Lombiq UI Testing Toolbox for Orchard Core'
     link: https://github.com/Lombiq/UI-Testing-Toolbox
     license: 'Free, open source'
-    notes: UI testing library for the ASP.NET Core web CMS and framework [Orchard Core](https://orchardcore.net/)
+    notes: UI testing library for the ASP.NET Core web CMS and framework Orchard Core (https://orchardcore.net/)
 
 training:
   - name: 'The XSS Rat'
