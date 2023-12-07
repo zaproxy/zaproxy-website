@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '65'
+    version: '66'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v65/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v66/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -54,7 +54,7 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: checker-qual
-    version: 3.19.0
+    version: 3.33.0
     licenses: MIT
   - name: checker-qual
     version: 3.12.0
@@ -99,22 +99,22 @@ sbom:
     version: 3.34.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
   - name: error_prone_annotation
-    version: 2.20.0
+    version: 2.23.0
+    licenses: Apache-2.0
+  - name: error_prone_annotations
+    version: 2.23.0
     licenses: Apache-2.0
   - name: error_prone_annotations
     version: 2.7.1
     licenses: Apache-2.0
-  - name: error_prone_annotations
-    version: 2.20.0
-    licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.20.0
+    version: 2.23.0
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.20.0
+    version: 2.23.0
     licenses: Apache-2.0
   - name: error_prone_type_annotations
-    version: 2.20.0
+    version: 2.23.0
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
@@ -129,10 +129,10 @@ sbom:
     version: 3.2.1
     licenses: Apache-2.0
   - name: guava
-    version: 31.1-jre
+    version: 31.0.1-jre
     licenses: Apache-2.0
   - name: guava
-    version: 31.0.1-jre
+    version: 32.1.1-jre
     licenses: Apache-2.0
   - name: guice
     version: 5.1.0
@@ -153,7 +153,7 @@ sbom:
     version: 1.2.2
     licenses: BSD-3-Clause
   - name: java-diff-utils
-    version: '4.0'
+    version: '4.12'
     licenses: Apache-2.0
   - name: java-semver
     version: 0.9.0
@@ -290,9 +290,6 @@ sbom:
   - name: opentelemetry-semconv
     version: 1.10.1-alpha
     licenses: Apache-2.0
-  - name: org.eclipse.jgit
-    version: 4.4.1.201607150455-r
-    licenses: BSD-3-Clause
   - name: org.jacoco.agent
     version: 0.8.8
     licenses: EPL-2.0
