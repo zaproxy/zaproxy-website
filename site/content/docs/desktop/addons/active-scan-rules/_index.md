@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 58.0.0
+    version: 59.0.0
 ---
 
 # Active Scan Rules
@@ -60,6 +60,8 @@ Note:
 This rule only scans HTTP PUT requests at LOW threshold.  
 If the alert threshold is set to LOW, XSS injection located in a JSON response results in a LOW risk and LOW confidence alert is raised. For other response content-types a LOW confidence alert is raised.  
 If the alert threshold is set to either MEDIUM or HIGH, XSS injection located in non-HTML responses do not generate alerts.  
+
+If specific characters are stripped out of a reflected payload then the attacks will be repeated with alternative characters that might have the same effect.
 
 Latest code: [CrossSiteScriptingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/CrossSiteScriptingScanRule.java)
 
