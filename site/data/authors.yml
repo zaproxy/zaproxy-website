@@ -139,3 +139,9 @@ yiannis:
   picture: /img/authors/yiannis_400x400.jpg
   twitter: KibernaSecurity
   is_core: false
+
+zoltan:
+  name: Zoltán Lehóczky
+  picture: /img/authors/zoltan-lehoczky_400x400.jpg
+  twitter: zlehoczky
+  is_core: false
