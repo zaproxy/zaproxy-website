@@ -22,7 +22,7 @@
 
     {
     "url": "{{ .Permalink }}",
-    "title": "{{ .Title }}",
+    "title": {{ .Title | jsonify }},
     "keywords": {{ $keywords }},
     "tags": {{ .Param "tags" | jsonify }},
     "summary": {{ .Summary | jsonify }},
