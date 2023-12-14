@@ -21,14 +21,21 @@ links:
   - name: '06 Automation Introduction'
     uuid: PnCbIAnauD8
 
-  - name: '07 Automation Framework Part 1'
+  - name: '07 Automation Framework Part 1 - Introduction'
     uuid: 19Rptj2be1Y
 
-  - name: '08 Automation Framework Part 2'
+  - name: '08 Automation Framework Part 2 - Environment'
     uuid: 1fcpU54N-mA
 
-  - name: '09 Automation Framework Part 3'
+  - name: '09 Automation Framework Part 3 - Requests'
     uuid: 4phnMy9iCPY
+
+  - name: '10 Automation Framework Part 4 - Spidering'
+    uuid: WivoyVerBCo
+
+  - name: '11 Automation Framework Part 5 - APIs'
+    uuid: xuP00Ri460k
+
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
 
