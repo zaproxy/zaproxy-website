@@ -4,7 +4,27 @@
 
 # ZAP Chat Series
 
-- title: 'ZAP Chat 09 Automation Framework Part 3'
+- title: 'ZAP Chat 11 Automation Framework Part 5 - APIs'
+  id: xuP00Ri460k
+  site: youtube
+  series: 'ZAP Chat'
+  date: '2023/12/14'
+  length: 15:42
+  tags:
+  - automation
+  - api
+
+- title: 'ZAP Chat 10 Automation Framework Part 4 - Spidering'
+  id: WivoyVerBCo
+  site: youtube
+  series: 'ZAP Chat'
+  date: '2023/12/14'
+  length: 24:25
+  tags:
+  - automation
+  - spider
+
+- title: 'ZAP Chat 09 Automation Framework Part 3 - Requests'
   id: 4phnMy9iCPY
   site: youtube
   series: 'ZAP Chat'
@@ -13,7 +33,7 @@
   tags:
   - automation
 
-- title: 'ZAP Chat 08 Automation Framework Part 2'
+- title: 'ZAP Chat 08 Automation Framework Part 2 - Environment'
   id: 1fcpU54N-mA
   site: youtube
   series: 'ZAP Chat'
@@ -22,7 +42,7 @@
   tags:
   - automation
 
-- title: 'ZAP Chat 07 Automation Framework Part 1'
+- title: 'ZAP Chat 07 Automation Framework Part 1 - Introduction'
   id: 19Rptj2be1Y
   site: youtube
   series: 'ZAP Chat'
@@ -30,6 +50,7 @@
   length: 27:05
   tags:
   - automation
+  - introduction
 
 - title: 'ZAP Chat 06 Automation Introduction'
   id: PnCbIAnauD8
@@ -39,6 +60,7 @@
   length: 36:59
   tags:
   - automation
+  - introduction
 
 - title: 'ZAP Chat 05 Modern Apps Part 1'
   id: Rq_d7OLmMfw
