@@ -43,6 +43,9 @@ CWE-20:
 CWE-200:
   link: https://cwe.mitre.org/data/definitions/200.html
 
+CWE-201:
+  link: https://cwe.mitre.org/data/definitions/201.html
+
 CWE-205:
   link: https://cwe.mitre.org/data/definitions/205.html
 
