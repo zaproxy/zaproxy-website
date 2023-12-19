@@ -1,15 +1,15 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: GraphQL Support Add-on SBOM
+title: Python Scripting Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: graphql
-    version: 0.22.0
+    id: jython
+    version: '14'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.22.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v14/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -35,12 +35,6 @@ sbom:
   - name: auto-value-annotations
     version: '1.9'
     licenses: Apache-2.0
-  - name: automation
-    version: 0.35.0
-    licenses: ''
-  - name: automation
-    version: 0.35.0
-    licenses: ''
   - name: bcmail-jdk18on
     version: '1.76'
     licenses: Bouncy Castle Licence
@@ -68,12 +62,6 @@ sbom:
   - name: checker-qual
     version: 3.33.0
     licenses: MIT
-  - name: commonlib
-    version: 1.21.0
-    licenses: ''
-  - name: commonlib
-    version: 1.21.0
-    licenses: ''
   - name: commons-beanutils
     version: 1.9.4
     licenses: Apache-2.0
@@ -82,9 +70,6 @@ sbom:
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
-    licenses: Apache-2.0
-  - name: commons-collections4
-    version: '4.4'
     licenses: Apache-2.0
   - name: commons-configuration
     version: '1.10'
@@ -95,9 +80,6 @@ sbom:
   - name: commons-httpclient
     version: '3.1'
     licenses: Apache-1.0
-  - name: commons-io
-    version: 2.15.0
-    licenses: Apache-2.0
   - name: commons-io
     version: 2.13.0
     licenses: Apache-2.0
@@ -113,24 +95,9 @@ sbom:
   - name: commons-text
     version: 1.10.0
     licenses: Apache-2.0
-  - name: database
-    version: 0.4.0
-    licenses: ''
   - name: dataflow-errorprone
     version: 3.34.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
-  - name: datanucleus-api-jdo
-    version: 6.0.1
-    licenses: Apache-2.0
-  - name: datanucleus-core
-    version: 6.0.4
-    licenses: Apache-2.0
-  - name: datanucleus-jdo-query
-    version: 6.0.1
-    licenses: Apache-2.0
-  - name: datanucleus-rdbms
-    version: 6.0.4
-    licenses: Apache-2.0
   - name: error_prone_annotation
     version: 2.23.0
     licenses: Apache-2.0
@@ -154,21 +121,6 @@ sbom:
     licenses: Apache-2.0
   - name: flatlaf
     version: 3.2.1
-    licenses: Apache-2.0
-  - name: flyway-core
-    version: 9.20.0
-    licenses: Apache-2.0
-  - name: formhandler
-    version: 6.6.0
-    licenses: ''
-  - name: glassfish-corba-omgapi
-    version: 4.2.2
-    licenses: BSD-3-Clause
-  - name: graphql-java
-    version: '21.3'
-    licenses: MIT
-  - name: gson
-    version: 2.10.1
     licenses: Apache-2.0
   - name: guava
     version: 32.1.1-jre
@@ -203,29 +155,8 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
-  - name: jackson-annotations
-    version: 2.16.0
-    licenses: Apache-2.0
-  - name: jackson-core
-    version: 2.16.0
-    licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
-    licenses: Apache-2.0
-  - name: jackson-databind
-    version: 2.16.0
-    licenses: Apache-2.0
-  - name: jackson-dataformat-xml
-    version: 2.16.0
-    licenses: Apache-2.0
-  - name: jackson-dataformat-yaml
-    version: 2.16.0
-    licenses: Apache-2.0
-  - name: jackson-datatype-jdk8
-    version: 2.16.0
-    licenses: Apache-2.0
-  - name: java-dataloader
-    version: 3.2.1
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -242,12 +173,6 @@ sbom:
   - name: javax.inject
     version: '1'
     licenses: Apache-2.0
-  - name: javax.jdo
-    version: 3.2.1
-    licenses: Apache-2.0
-  - name: javax.transaction-api
-    version: '1.3'
-    licenses: (CDDL-1.0 OR GPL-2.0-with-classpath-exception)
   - name: jericho-html
     version: '3.4'
     licenses: GNU Lesser General Public License (LGPL), Apache-1.0, EPL-1.0
@@ -284,9 +209,9 @@ sbom:
   - name: junit-platform-launcher
     version: 1.10.1
     licenses: EPL-2.0
-  - name: kaitai-struct-runtime
-    version: '0.10'
-    licenses: MIT
+  - name: jython-standalone
+    version: 2.7.2
+    licenses: Jython Software License
   - name: log4j-1.2-api
     version: 2.20.0
     licenses: Apache-2.0
@@ -300,9 +225,6 @@ sbom:
     version: 2.20.0
     licenses: Apache-2.0
   - name: log4j-slf4j-impl
-    version: 2.20.0
-    licenses: Apache-2.0
-  - name: log4j-slf4j2-impl
     version: 2.20.0
     licenses: Apache-2.0
   - name: mockito-core
@@ -386,9 +308,6 @@ sbom:
   - name: protobuf-java
     version: 3.19.6
     licenses: BSD-3-Clause
-  - name: reactive-streams
-    version: 1.0.3
-    licenses: CC0-1.0
   - name: rsyntaxtextarea
     version: 3.3.4
     licenses: BSD-3-Clause
@@ -396,29 +315,11 @@ sbom:
     version: 1.13.0
     licenses: Apache-2.0
   - name: slf4j-api
-    version: 2.0.7
+    version: 1.7.36
     licenses: MIT
-  - name: slf4j-api
-    version: 2.0.6
-    licenses: MIT
-  - name: snakeyaml
-    version: '2.2'
-    licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT
-  - name: spider
-    version: 0.8.0
-    licenses: ''
-  - name: spider
-    version: 0.8.0
-    licenses: ''
-  - name: sqlite-jdbc
-    version: 3.42.0.0
-    licenses: Apache-2.0
-  - name: stax2-api
-    version: 4.2.1
-    licenses: BSD-4-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
@@ -428,9 +329,6 @@ sbom:
   - name: testutils
     version: unspecified
     licenses: ''
-  - name: woodstox-core
-    version: 6.5.1
-    licenses: Apache-2.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1

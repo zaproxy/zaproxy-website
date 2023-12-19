@@ -6,25 +6,22 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: '66'
+    version: '67'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v66/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v67/bom.json
   components:
   - name: aopalliance
     version: '1.0'
     licenses: Public Domain
   - name: asm
-    version: '9.2'
-    licenses: BSD-3-Clause
-  - name: asm-analysis
-    version: '9.2'
+    version: '9.5'
     licenses: BSD-3-Clause
   - name: asm-commons
-    version: '9.2'
+    version: '9.5'
     licenses: BSD-3-Clause
   - name: asm-tree
-    version: '9.2'
+    version: '9.5'
     licenses: BSD-3-Clause
   - name: async-http-client
     version: 2.12.3
@@ -33,10 +30,10 @@ sbom:
     version: 2.12.3
     licenses: Apache-2.0
   - name: auto-common
-    version: 1.2.1
+    version: '1.2'
     licenses: Apache-2.0
   - name: auto-common
-    version: '1.2'
+    version: 1.2.1
     licenses: Apache-2.0
   - name: auto-service
     version: 1.0.1
@@ -291,16 +288,16 @@ sbom:
     version: 1.10.1-alpha
     licenses: Apache-2.0
   - name: org.jacoco.agent
-    version: 0.8.8
+    version: 0.8.9
     licenses: EPL-2.0
   - name: org.jacoco.ant
-    version: 0.8.8
+    version: 0.8.9
     licenses: EPL-2.0
   - name: org.jacoco.core
-    version: 0.8.8
+    version: 0.8.9
     licenses: EPL-2.0
   - name: org.jacoco.report
-    version: 0.8.8
+    version: 0.8.9
     licenses: EPL-2.0
   - name: pcollections
     version: 3.1.4
