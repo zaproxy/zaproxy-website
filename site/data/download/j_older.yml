@@ -1,0 +1,8 @@
+---
+title: Older Versions
+info:
+- We can only support the very latest ZAP full release.
+- The previous full release and the last 4 weekly releases are available via [https://github.com/zaproxy/zaproxy/releases](https://github.com/zaproxy/zaproxy/releases)
+- Older full releases are available via [https://github.com/zaproxy/zap-archive](https://github.com/zaproxy/zap-archive)
+- Older Docker stable images are available via [https://github.com/zaproxy/zap-archive/pkgs/container/zap-archives:zap2docker-stable](https://github.com/zaproxy/zap-archive/pkgs/container/zap-archives%2Fzap2docker-stable)
+- Older weekly releases will be deleted.

@@ -256,9 +256,20 @@
           </div>
       </div>
     </div>
+  {{ end }}
+  </div>
+</section>
 
-
-
+<section>
+  <div class="wrapper py-20">
+  <a name="older-versions"></a> 
+  {{ with .Site.Data.download.j_older }}
+          <h3>{{ .title }}</h3>
+          <ul class="bullet-list">
+              {{ range .info }}
+                <li> {{ . | markdownify }} </li>
+              {{ end }}
+          </ul>
   {{ end }}
   </div>
 </section>
@@ -287,9 +298,10 @@
           </div>
         {{ end }}
     </div>
-  </section>
+</section>
 
-  <section class="py-20">
+<section class="bg--blue-lightest">
+  <div class="wrapper py-20">
     <div class="wrapper">
       <h5>A big thank you to our Platinum Sponsor(s):</h5>
       {{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.platinum) }}
@@ -297,8 +309,8 @@
       {{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.gold) }}
       <h5>For details of other ZAP sponsors see the <a href="/supporters/">Supporters</a> page.</h5>
     </div>
-  </section>
-
+  </div>
+</section>
 
 {{ end }}
 
