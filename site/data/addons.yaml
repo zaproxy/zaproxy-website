@@ -242,9 +242,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/dev-add-on/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.3.0/dev-alpha-0.3.0.zap
-  date: 2023-09-07
-  version: 0.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.4.0/dev-alpha-0.4.0.zap
+  date: 2023-12-19
+  version: 0.4.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
@@ -408,9 +408,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.21.0/graphql-alpha-0.21.0.zap
-  date: 2023-11-10
-  version: 0.21.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.22.0/graphql-alpha-0.22.0.zap
+  date: 2023-12-19
+  version: 0.22.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -629,9 +629,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/python-scripting/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v13/jython-beta-13.zap
-  date: 2023-09-07
-  version: 13
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v14/jython-beta-14.zap
+  date: 2023-12-19
+  version: 14
 - id: kotlin
   name: Kotlin Support
   description: Allows Kotlin to be used for ZAP scripting
@@ -853,9 +853,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.26.0/reports-release-0.26.0.zap
-  date: 2023-10-12
-  version: 0.26.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.27.0/reports-release-0.27.0.zap
+  date: 2023-12-19
+  version: 0.27.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
@@ -923,9 +923,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v43/scripts-release-43.zap
-  date: 2023-11-13
-  version: 43
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v44/scripts-release-44.zap
+  date: 2023-12-19
+  version: 44
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -953,9 +953,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/soap-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v20/soap-beta-20.zap
-  date: 2023-10-12
-  version: 20
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v21/soap-beta-21.zap
+  date: 2023-12-19
+  version: 21
 - id: spider
   name: Spider
   description: Spider used for automatically finding URIs on a site.
@@ -963,9 +963,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.7.0/spider-release-0.7.0.zap
-  date: 2023-10-12
-  version: 0.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.8.0/spider-release-0.8.0.zap
+  date: 2023-12-19
+  version: 0.8.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
@@ -1065,9 +1065,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v66/webdriverlinux-release-66.zap
-  date: 2023-12-07
-  version: 66
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v67/webdriverlinux-release-67.zap
+  date: 2023-12-19
+  version: 67
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1075,9 +1075,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v66/webdrivermacos-release-66.zap
-  date: 2023-12-07
-  version: 66
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v67/webdrivermacos-release-67.zap
+  date: 2023-12-19
+  version: 67
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1085,9 +1085,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v66/webdriverwindows-release-66.zap
-  date: 2023-12-07
-  version: 66
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v67/webdriverwindows-release-67.zap
+  date: 2023-12-19
+  version: 67
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
@@ -1105,6 +1105,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v42/zest-beta-42.zap
-  date: 2023-10-12
-  version: 42
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v43/zest-beta-43.zap
+  date: 2023-12-19
+  version: 43

@@ -6,12 +6,12 @@ weight: 1
 cascade:
   addon:
     id: dev
-    version: 0.3.0
+    version: 0.4.0
 ---
 
 # Dev Add-On
 
-An add-on to help with development of ZAP.
+An add-on to help with development of ZAP. It starts a simple test web service, which by default will be accessible via http://localhost:9091
 
 It provides:
 
@@ -22,3 +22,7 @@ Two simple OpenAPI specs, both of which require no authentication. One of the AP
 ## Authentication Pages
 
 A growing set of authentication pages, for use in testing ZAP authentication handling.
+
+## HTML Pages
+
+A set of pages which store various types of data in localStorage and sessionStorage.
