@@ -42,4 +42,12 @@ links:
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
 
+Subtitles are available for all except for the latest videos - these are also available in the ZAP
+[zap-media-resources](https://github.com/zaproxy/zap-media-resources/tree/main/subtitles/ZAP%20Chat) repo.
+This means that YouTube should auto-translate to other languages much more accurately.
+
+These were transcribed by [blinkz](https://twitter.com/blinkZ03272259) who has published a video on how that can be done: 
+[Tutorial: Create subtitles with Whisper for Youtube and others](https://www.youtube.com/watch?v=4-GIz4XTP3Y) -
+it is in German, but obviously has great subtitles :grin:.
+
 The image used in the opening and closing clips is "[Futuristic Abstract Circle](https://wallpapers.com/wallpapers/futuristic-abstract-circle-technology-r2jpndc499avsbtv.html)" by [Wallpapers.com](https://wallpapers.com) and is licensed under [cc by 2.0](https://creativecommons.org/licenses/by/2.0/).
