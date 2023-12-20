@@ -18,6 +18,7 @@ The framework is covered in the following [ZAP Chat](/zap-chat/) videos:
 * [ZAP Chat 09 Automation Framework Part 3](https://youtu.be/4phnMy9iCPY) Details on the requester job and replacer job
 * [ZAP Chat 10 Automation Framework Part 4](https://youtu.be/WivoyVerBCo) Details on the spider job and spiderAjax job
 * [ZAP Chat 11 Automation Framework Part 5](https://youtu.be/xuP00Ri460k) Details on the openapi, soap, and graphql jobs
+* [ZAP Chat 12 Automation Framework Part 6](https://youtu.be/hcftgjz_Vgc) Details on the passiveScan-wait, delay, and activeScan jobs
 
 ### Framework Overview
 

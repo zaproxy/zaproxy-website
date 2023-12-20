@@ -36,6 +36,9 @@ links:
   - name: '11 Automation Framework Part 5 - APIs'
     uuid: xuP00Ri460k
 
+  - name: '12 Automation Framework Part 6 - Delays and Active Scan'
+    uuid: hcftgjz_Vgc
+
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
 
