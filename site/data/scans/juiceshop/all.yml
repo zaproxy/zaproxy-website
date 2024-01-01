@@ -16,7 +16,7 @@ details:
 - path: GET http://localhost:3000/api/Challenges/(name)
   ajax: Pass
 - path: GET http://localhost:3000/api/Feedbacks/
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/api/Quantitys/
   ajax: Pass
 - path: GET http://localhost:3000/assets/i18n/en.json
@@ -26,21 +26,23 @@ details:
 - path: GET http://localhost:3000/assets/public/images/JuiceShop_Logo.png
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/carousel/1.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/2.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/3.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/4.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/5.png
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/6.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/7.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/hackingInstructor.png
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/3d_keychain.jpg
+  ajax: New
 - path: GET http://localhost:3000/assets/public/images/products/apple_juice.jpg
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/apple_pressings.jpg
@@ -49,24 +51,44 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/banana_juice.jpg
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/card_alpha.jpg
+  ajax: New
 - path: GET http://localhost:3000/assets/public/images/products/carrot_juice.jpeg
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/coaster.jpg
+  ajax: New
 - path: GET http://localhost:3000/assets/public/images/products/eggfruit_juice.jpg
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/fan_facemask.jpg
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/fan_girlie.jpg
-  ajax: FAIL
+  ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/fan_hoodie.jpg
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/products/fan_mug.jpg
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/products/fan_shirt.jpg
+  ajax: New
 - path: GET http://localhost:3000/assets/public/images/products/fruit_press.jpg
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/green_smoothie.jpg
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/holo_sticker.png
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/products/iron-on.jpg
+  ajax: New
 - path: GET http://localhost:3000/assets/public/images/products/lemon_juice.jpg
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/magnets.jpg
+  ajax: New
 - path: GET http://localhost:3000/assets/public/images/products/melon_bike.jpeg
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/permafrost.jpg
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/sticker_page.jpg
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/products/sticker_single.jpg
+  ajax: New
 - path: GET http://localhost:3000/az.svg
   ajax: FAIL
 - path: GET http://localhost:3000/font-mfizz.woff
@@ -102,12 +124,12 @@ details:
 - path: GET http://localhost:3000/styles.css
   ajax: Pass
 - path: GET http://localhost:3000/tutorial.js
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/vendor.js
   ajax: Pass
 - path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
   ajax: Pass
 tests: 53
-passes: 48
-fails: 5
-score: 91%
+passes: 40
+fails: 13
+score: 75%
