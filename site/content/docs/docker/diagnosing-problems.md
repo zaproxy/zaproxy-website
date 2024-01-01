@@ -31,7 +31,8 @@ For the packaged scans you need to map a drive to `/zap/wrk`.
 
 On Linux / MacOS you can do this using the Docker option `-v $(pwd):/zap/wrk/:rw`.
 
-On Windows you need to specify the full local directory name e.g. `-v C:\temp:/zap/wrk/:rw`.
+Note that `$(pwd)` is supported on Linux, MacOS and PowerShell.
+See [Docker About - Mounting the current directory](/docs/docker/about/#mounting-the-current-directory) for Windows, etc.
 
 If you cannot see files that should be being created then first check to make sure they are created in the mapped drive.
 

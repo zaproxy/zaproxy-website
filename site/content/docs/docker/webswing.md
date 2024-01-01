@@ -39,6 +39,9 @@ When you do this ZAP will create 2 files on your mapped drive:
 * zap_root_ca.crt - the public ZAP Root CA certificate
 * zap_root_ca.key - the private ZAP Root CA certificate
 
+Note that `$(pwd)` is supported on Linux, MacOS and PowerShell.
+See [Docker About - Mounting the current directory](/docs/docker/about/#mounting-the-current-directory) for Windows, etc.
+
 You will then need to configure one of your browsers to [proxy via ZAP](/docs/desktop/start/proxies/) 
 and [import the public ZAP Root CA certificate](/docs/desktop/addons/network/options/servercertificates/#install) so that it is trusted to sign websites.
 

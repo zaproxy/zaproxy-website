@@ -56,7 +56,8 @@ docker run -v $(pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable zap-full-sca
     -t https://www.example.com -g gen.conf -r testreport.html
 ```
 
-Note that `$(pwd)` is only supported on Linux and MacOS - on Windows you will need to replace this with the full current working directory.
+Note that `$(pwd)` is supported on Linux, MacOS and PowerShell.
+See [Docker About - Mounting the current directory](/docs/docker/about/#mounting-the-current-directory) for Windows, etc.
 
 ### Scan Hooks
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
