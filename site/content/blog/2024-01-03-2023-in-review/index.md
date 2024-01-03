@@ -17,7 +17,7 @@ Happy New Year, and welcome to the ZAP review for 2023!
 
 ### ZAP Chat Video
 
-This year we decided review the year as a [ZAP Chat](/zap-chat/) episode: 
+This year we decided to review the year as a [ZAP Chat](/zap-chat/) episode: 
 
 {{<youtube uuid="VPVuxftv99A">}}
 
