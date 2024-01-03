@@ -883,9 +883,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.28.0/retire-release-0.28.0.zap
-  date: 2023-12-04
-  version: 0.28.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.29.0/retire-release-0.29.0.zap
+  date: 2024-01-03
+  version: 0.29.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -1055,9 +1055,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.28.0/wappalyzer-release-21.28.0.zap
-  date: 2023-12-04
-  version: 21.28.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.29.0/wappalyzer-release-21.29.0.zap
+  date: 2024-01-03
+  version: 21.29.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
@@ -1065,9 +1065,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v67/webdriverlinux-release-67.zap
-  date: 2023-12-19
-  version: 67
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v68/webdriverlinux-release-68.zap
+  date: 2024-01-03
+  version: 68
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1075,9 +1075,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v67/webdrivermacos-release-67.zap
-  date: 2023-12-19
-  version: 67
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v68/webdrivermacos-release-68.zap
+  date: 2024-01-03
+  version: 68
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1085,9 +1085,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v67/webdriverwindows-release-67.zap
-  date: 2023-12-19
-  version: 67
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v68/webdriverwindows-release-68.zap
+  date: 2024-01-03
+  version: 68
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.

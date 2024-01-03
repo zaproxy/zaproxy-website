@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: '67'
+    version: '68'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v67/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v68/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -51,10 +51,10 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: checker-qual
-    version: 3.33.0
+    version: 3.12.0
     licenses: MIT
   - name: checker-qual
-    version: 3.12.0
+    version: 3.33.0
     licenses: MIT
   - name: commons-beanutils
     version: 1.9.4
