@@ -39,6 +39,9 @@ links:
   - name: '12 Automation Framework Part 6 - Delays and Active Scan'
     uuid: hcftgjz_Vgc
 
+  - name: '13 2023 Review'
+    uuid: VPVuxftv99A
+
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
 
