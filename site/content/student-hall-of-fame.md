@@ -22,6 +22,6 @@ If you would like to work on ZAP as part of a student project then just post to 
 Program codes:
 
   - Direct: Directly mentored by the ZAP team
-  - GSoC: Google Summer of Code
+  - GSoC: [Google Summer of Code](/docs/gsoc/)
   - GSoD: Google Season of Docs
   - MWoS: Mozilla Winter of Security

@@ -74,6 +74,10 @@ groups:
         link: https://crowdin.com/project/zap-help
         desc: help translate the ZAP Desktop User Guide
     
+      - name: 'GSoC'
+        link: /docs/gsoc/
+        desc: Google Summer of Code
+
       - name: 'Student Hall of Fame'
         link: /student-hall-of-fame/
         desc: Students who have made significant contributions to ZAP 
