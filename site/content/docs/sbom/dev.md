@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: dev
-    version: 0.4.0
+    version: 0.5.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.4.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.5.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -56,9 +56,6 @@ sbom:
   - name: commonlib
     version: 1.21.0
     licenses: ''
-  - name: commonlib
-    version: 1.21.0
-    licenses: ''
   - name: commons-beanutils
     version: 1.9.4
     licenses: Apache-2.0
@@ -81,10 +78,10 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.15.0
+    version: 2.13.0
     licenses: Apache-2.0
   - name: commons-io
-    version: 2.13.0
+    version: 2.15.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -257,9 +254,6 @@ sbom:
   - name: netty-transport-native-unix-common
     version: 4.1.100.Final
     licenses: Apache-2.0
-  - name: network
-    version: 0.14.0
-    licenses: ''
   - name: network
     version: 0.14.0
     licenses: ''
