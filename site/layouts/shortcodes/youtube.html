@@ -1,3 +1,5 @@
+{{ if isset .Params `small` }}<div class="grid grid__two-col grid_row_gap">{{ end }}
 <div class='embed-youtube'>
-  <iframe src='https://www.youtube.com/embed/{{ .Get "uuid" }}' frameborder='0' allowfullscreen></iframe>
+<iframe src='https://www.youtube.com/embed/{{ .Get "uuid" }}' frameborder='0' allowfullscreen></iframe>
 </div>
+{{ if isset .Params `small` }}</div>{{ end }}

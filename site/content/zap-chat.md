@@ -42,6 +42,9 @@ links:
   - name: '13 2023 Review'
     uuid: VPVuxftv99A
 
+  - name: '14 Google Summer of Code'
+    uuid: Cm_ol-PA738
+
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
 
