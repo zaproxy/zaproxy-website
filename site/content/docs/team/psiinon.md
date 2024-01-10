@@ -43,6 +43,7 @@ All of Simon’s publicly available videos are linked off the [Videos](/videos/)
 
 #### Interviews and Panels
 
+* 2023/01/04 [IWCON2023: A decade plus of maintaining ZAP - Simon Bennetts](https://www.youtube.com/watch?v=pQLd7Qka330)
 * 2023/10/25 [Evo Cyber Security #51 – Changes in Software Supply Chain Regulations](https://evolutionjobs.com/exchange/evo-cyber-security-51-changes-in-software-supply-chain-regulations/)
 * 2023/09/12 [Application Security Weekly: Building a Scanner and a Community with Zed Attack Proxy - Simon Bennetts - ASW #254](https://www.youtube.com/watch?v=alIBoz7AooI)
 * 2023/06/14 [Software Engineering Radio 568: Simon Bennetts on OWASP Dynamic Application Security Testing Tool ZAP](https://www.se-radio.net/2023/06/se-radio-568-simon-bennetts-on-owasp-dynamic-application-security-testing-tool-zap/)
