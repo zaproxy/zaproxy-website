@@ -6,9 +6,11 @@ weight: 1
 cascade:
   addon:
     id: fuzzdboffensive
-    version: 3.0.0
+    version: 5.0.0
 ---
 
 # FuzzDB Offensive
 
 [FuzzDB](https://github.com/fuzzdb-project/fuzzdb/) web backdoors and attack files which can be used with the ZAP fuzzer or for manual penetration testing.
+
+**This add-on contains files that may be flagged by anti-virus tools.**
