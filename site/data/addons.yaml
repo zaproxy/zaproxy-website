@@ -373,14 +373,15 @@
 - id: fuzzdboffensive
   name: FuzzDB Offensive
   description: FuzzDB web backdoors and attack files which can be used with the ZAP
-    fuzzer or for manual penetration testing
+    fuzzer or for manual penetration testing - contains files that may well be flagged
+    by anti-virus tools
   author: ZAP Dev Team
   status: release
   infoUrl: /docs/desktop/addons/fuzzdb-offensive/
   repoUrl: https://github.com/zaproxy/fuzzdb-offensive/
-  downloadUrl: https://github.com/zaproxy/fuzzdb-offensive/releases/download/v4/fuzzdboffensive-release-4.zap
-  date: 2021-06-11
-  version: 4
+  downloadUrl: https://github.com/zaproxy/fuzzdb-offensive/releases/download/v5/fuzzdboffensive-release-5.zap
+  date: 2024-01-11
+  version: 5
 - id: gettingStarted
   name: Getting Started with ZAP Guide
   description: A short Getting Started with ZAP Guide
