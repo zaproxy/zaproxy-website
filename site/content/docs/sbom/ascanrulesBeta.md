@@ -1,15 +1,15 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Active scanner rules Add-on SBOM
+title: Active scanner rules (beta) Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: ascanrules
-    version: '60'
+    id: ascanrulesBeta
+    version: '49'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v60/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v49/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -104,9 +104,6 @@ sbom:
   - name: commons-text
     version: 1.10.0
     licenses: Apache-2.0
-  - name: custompayloads
-    version: 0.14.0
-    licenses: ''
   - name: database
     version: 0.4.0
     licenses: ''
@@ -275,6 +272,9 @@ sbom:
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
+  - name: jsoup
+    version: 1.14.3
+    licenses: MIT
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
@@ -395,12 +395,6 @@ sbom:
   - name: pcollections
     version: 3.1.4
     licenses: MIT
-  - name: procyon-compilertools
-    version: 0.6.0
-    licenses: Apache-2.0
-  - name: procyon-core
-    version: 0.6.0
-    licenses: Apache-2.0
   - name: protobuf-java
     version: 3.19.6
     licenses: BSD-3-Clause

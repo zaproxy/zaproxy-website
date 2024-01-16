@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v59/ascanrules-release-59.zap
-  date: 2023-12-07
-  version: 59
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v60/ascanrules-release-60.zap
+  date: 2024-01-16
+  version: 60
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -47,9 +47,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v44/ascanrulesAlpha-alpha-44.zap
-  date: 2023-09-08
-  version: 44
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v45/ascanrulesAlpha-alpha-45.zap
+  date: 2024-01-16
+  version: 45
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta status Active Scanner rules
@@ -57,9 +57,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v48/ascanrulesBeta-beta-48.zap
-  date: 2023-09-08
-  version: 48
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v49/ascanrulesBeta-beta-49.zap
+  date: 2024-01-16
+  version: 49
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.34.0/automation-beta-0.34.0.zap
-  date: 2023-11-16
-  version: 0.34.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.35.0/automation-beta-0.35.0.zap
+  date: 2024-01-16
+  version: 0.35.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.7.0/client-alpha-0.7.0.zap
-  date: 2023-12-01
-  version: 0.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.8.0/client-alpha-0.8.0.zap
+  date: 2024-01-16
+  version: 0.8.0
 - id: codedx
   name: Code Dx Extension
   description: Includes request and response data in XML reports and provides the
@@ -191,9 +191,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.20.0/commonlib-release-1.20.0.zap
-  date: 2023-12-07
-  version: 1.20.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.21.0/commonlib-release-1.21.0.zap
+  date: 2024-01-16
+  version: 1.21.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -784,9 +784,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v53/pscanrules-release-53.zap
-  date: 2023-11-30
-  version: 53
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v54/pscanrules-release-54.zap
+  date: 2024-01-16
+  version: 54
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -794,9 +794,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v41/pscanrulesAlpha-alpha-41.zap
-  date: 2023-09-08
-  version: 41
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v42/pscanrulesAlpha-alpha-42.zap
+  date: 2024-01-16
+  version: 42
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta status Passive Scanner rules
@@ -804,9 +804,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v35/pscanrulesBeta-beta-35.zap
-  date: 2023-09-08
-  version: 35
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v36/pscanrulesBeta-beta-36.zap
+  date: 2024-01-16
+  version: 36
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
@@ -854,9 +854,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.27.0/reports-release-0.27.0.zap
-  date: 2023-12-19
-  version: 0.27.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.28.0/reports-release-0.28.0.zap
+  date: 2024-01-16
+  version: 0.28.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.

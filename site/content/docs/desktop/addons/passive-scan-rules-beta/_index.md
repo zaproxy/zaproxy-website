@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: 35.0.0
+    version: 36.0.0
 ---
 
 # Passive Scan Rules - Beta
@@ -96,7 +96,7 @@ Latest code: [ServletParameterPollutionScanRule.java](https://github.com/zaproxy
 ## Source Code Disclosure
 
 Application Source Code was disclosed by the web server.  
-NOTE: Ignores CSS, JavaScript, images, and font files.
+NOTE: Ignores CSS, JavaScript, images, font files, and responses that contain ISO control characters (those which are likely binary files).
 
 Latest code: [SourceCodeDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/SourceCodeDisclosureScanRule.java)
 

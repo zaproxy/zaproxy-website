@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 53.0.0
+    version: 54.0.0
 ---
 
 # Passive Scan Rules
@@ -56,11 +56,13 @@ It is also possible to add patterns to the `xml/application_errors.xml` file in 
 
 Latest code: [ApplicationErrorScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ApplicationErrorScanRule.java)
 
-## Big Redirect Detected (Potential Sensitive Information Leak)
+## Big Redirect Detected (Potential Sensitive Information Leak) {#id-10044}
 
-This check predicts the size of various redirect type responses and generates an alert if the response is greater than the predicted size. A large redirect response may indicate that although a redirect has taken place the page actually contained content (which may reveal sensitive information, PII, etc.).
+This check predicts the size of various redirect type responses and generates an alert if the response is greater than the predicted size. A large redirect response may indicate that although a redirect has taken place the page actually contained content (which may reveal sensitive information, PII, etc.). It will also raise an alert if the body of the redirect response contains multiple HREFs.
 
 Latest code: [BigRedirectsScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/BigRedirectsScanRule.java)
+
+Alert ID: [10044](/docs/alerts/10044/).
 
 ## Cache Control
 
@@ -176,7 +178,8 @@ Latest code: [ContentSecurityPolicyScanRule.java](https://github.com/zaproxy/zap
 This rule identifies "potential" vulnerabilities with the lack of known CSRF countermeasures in HTML pages with forms.  
 The rule does not scan messages that are not HTML pages.  
 At HIGH alert threshold only scans messages which are in scope.  
-Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms. Form element names are sorted and de-duplicated when they are printed in the Zap Report.
+Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms. Form element names are sorted and de-duplicated when they are printed in the ZAP Report.   
+Note: The rule also takes into account the Partial match setting within the Anti-CSRF Options.
 
 Latest code: [CsrfCountermeasuresScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CsrfCountermeasuresScanRule.java)
 
@@ -283,10 +286,16 @@ Latest code: [UserControlledOpenRedirectScanRule.java](https://github.com/zaprox
 
 ## PII Disclosure
 
-PII is information like credit card number, SSN etc. This check currently reports only numbers which match credit card numbers and pass Luhn checksum, which gives high confidence, that this is a credit card number (images and CSS are ignored).   
+PII is information like credit card number, SSN etc. This check currently reports only numbers which match credit card numbers and pass Luhn checksum, which gives high confidence, that this is a credit card number.   
 At MEDIUM and HIGH threshold it attempts to use three characters of context on each side of potential matches to exclude matches within decimal like content. At LOW threshold, alerts will be raised for such matches.
 
-PDFs are only evaluated at LOW threshold.
+At MEDIUM and HIGH threshold, the following content types are evaluated:
+
+* HTML
+* JSON
+* XML
+
+Image and CSS files are always ignored. Every other content type is evaluated at LOW threshold.
 
 Note: In the case of suspected credit card values, the potential credit card numbers are looked up against a Bank Identification Number List
 (BINList). If a match is found the alert is raised at High confidence and additional details are added to the 'Other Information' field in the

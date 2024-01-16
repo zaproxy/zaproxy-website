@@ -8,6 +8,8 @@ type: userguide
 
 This job sends specifically crafted requests to a target url, with a custom request method and body. The user can also specify an expected response code, against which the actual response is compared, and the user is warned in case it does not match. The user can add additional headers to the request e.g. Authorization Tokens, etc.
 
+It is covered in the video: [ZAP Chat 09 Automation Framework Part 3 - Requests](https://youtu.be/4phnMy9iCPY).
+
 ## YAML
 
 ```

@@ -9,6 +9,8 @@ type: userguide
 This job waits for a specified time unless one of a specific set of conditions are met.  
 It can be used to wait for regression tests being proxied through ZAP in order to explore your application more thoroughly.
 
+It is covered in the video: [ZAP Chat 12 Automation Framework Part 6 - Delays and Active Scan](https://youtu.be/hcftgjz_Vgc).
+
 The time parameter supports the formats `hh:mm:ss`, `mm:ss` and `ss`, so "5" is 5 seconds,
 "1:30" is one minute and 30 seconds and "2:20:30" is 2 hours, 20 minutes and 30 seconds.
 
