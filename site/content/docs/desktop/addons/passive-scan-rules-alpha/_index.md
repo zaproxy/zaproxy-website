@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: 41.0.0
+    version: 42.0.0
 ---
 
 # Passive Scan Rules - Alpha
@@ -20,7 +20,7 @@ For more details see: [Hacking ZAP Part 3: Passive Scan Rules](/blog/2014-04-03-
 
 Latest code: [ExampleFilePassiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanRule.java)
 
-## Base64 Disclosure
+## Base64 Disclosure {#id-10094}
 
 * **ASP.NET ViewState Disclosure:** An ASP.NET ViewState was disclosed by the application/web server
 * **ASP.NET ViewState Integrity:** The application does not use a Message Authentication Code (MAC) to protect the integrity of the ASP.NET ViewState, which can be tampered with by a malicious client
@@ -28,7 +28,8 @@ Latest code: [ExampleFilePassiveScanRule.java](https://github.com/zaproxy/zap-ex
 
 **Note:** At Low Threshold all occurrences within each response will be included.
 
-Latest code: [Base64Disclosure.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/Base64Disclosure.java)
+Latest code: [Base64Disclosure.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/Base64Disclosure.java)  
+Alert ID: [10094](/docs/alerts/10094/).
 
 ## Example Passive Scan Rule: Denial of Service
 
@@ -37,7 +38,7 @@ For more details see: [Hacking ZAP Part 3: Passive Scan Rules](/blog/2014-04-03-
 
 Latest code: [ExampleSimplePassiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanRule.java)
 
-## Fetch Metadata Request Headers Scan Rule
+## Fetch Metadata Request Headers Scan Rule {#id-90005}
 
 Fetch Metadata Request headers are HTTP request headers that provide additional information about a request's origin. This additional information helps the server to implement resource isolation policy, allowing external sites to request only those resources that are intended for sharing, and that are used appropriately. This approach can help mitigate common cross-site web vulnerabilities such as CSRF, Cross-site Script Inclusion, timing attacks, and cross-origin information leaks. The Fetch Metadata Request headers are:
 
@@ -72,4 +73,17 @@ Alerts generated:
 * **Sec-Fetch-User Header is Missing**
 * **Sec-Fetch-User Header Has an Invalid Value**
 
-Latest code: [FetchMetadataRequestHeadersScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/FetchMetadataRequestHeadersScanRule.java)
+Latest code: [FetchMetadataRequestHeadersScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/FetchMetadataRequestHeadersScanRule.java)  
+Alert ID: [90005](/docs/alerts/90005/).
+
+## Full Path Disclosure Scan Rule {#id-110009}
+
+A Full Path Disclosure vulnerability is where the path to the root of the application providing valuable information for attackers.
+Examples of Full Path Disclosure Vulnerabilities are : /home/omg/htdocs/file/ or C:\\Users\\username\\server\\
+
+The attacker could use this path to steal credentials or other private information. For more information visit : [OWASP article.](https://owasp.org/www-community/attacks/Full_Path_Disclosure)
+
+Latest code:
+[FullPathDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/FullPathDisclosureScanRule.java)
+
+Alert ID: [110009](/docs/alerts/110009/).

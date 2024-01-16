@@ -9,6 +9,8 @@ weight: 8
 
 This job runs the active scanner. This actively attacks your applications and should therefore only be used against applications that you have permission to test.
 
+It is covered in the video: [ZAP Chat 12 Automation Framework Part 6 - Delays and Active Scan](https://youtu.be/hcftgjz_Vgc).
+
 By default this job will actively scan the first context defined in the [environment](/docs/desktop/addons/automation-framework/environment/) and so none of the parameters are mandatory.
 
 This job supports [monitor](/docs/desktop/addons/automation-framework/test-monitor/) tests.

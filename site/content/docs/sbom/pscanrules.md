@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: '53'
+    version: '54'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v53/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v54/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -18,16 +18,13 @@ sbom:
     version: 1.1.2
     licenses: Apache-2.0
   - name: asm
-    version: '9.2'
-    licenses: BSD-3-Clause
-  - name: asm-analysis
-    version: '9.2'
+    version: '9.5'
     licenses: BSD-3-Clause
   - name: asm-commons
-    version: '9.2'
+    version: '9.5'
     licenses: BSD-3-Clause
   - name: asm-tree
-    version: '9.2'
+    version: '9.5'
     licenses: BSD-3-Clause
   - name: auto-common
     version: 1.2.1
@@ -66,10 +63,7 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.20.0
-    licenses: ''
-  - name: commonlib
-    version: 1.20.0
+    version: 1.21.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -110,9 +104,6 @@ sbom:
   - name: commons-text
     version: 1.10.0
     licenses: Apache-2.0
-  - name: custompayloads
-    version: 0.14.0
-    licenses: ''
   - name: custompayloads
     version: 0.14.0
     licenses: ''
@@ -330,16 +321,16 @@ sbom:
     version: 1.3.0
     licenses: Apache-2.0
   - name: org.jacoco.agent
-    version: 0.8.8
+    version: 0.8.9
     licenses: EPL-2.0
   - name: org.jacoco.ant
-    version: 0.8.8
+    version: 0.8.9
     licenses: EPL-2.0
   - name: org.jacoco.core
-    version: 0.8.8
+    version: 0.8.9
     licenses: EPL-2.0
   - name: org.jacoco.report
-    version: 0.8.8
+    version: 0.8.9
     licenses: EPL-2.0
   - name: pcollections
     version: 3.1.4
@@ -374,9 +365,6 @@ sbom:
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
-  - name: testutils
-    version: unspecified
-    licenses: ''
   - name: testutils
     version: unspecified
     licenses: ''

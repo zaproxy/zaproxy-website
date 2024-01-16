@@ -1,15 +1,15 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Active scanner rules Add-on SBOM
+title: Active scanner rules (alpha) Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: ascanrules
-    version: '60'
+    id: ascanrulesAlpha
+    version: '45'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v60/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v45/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -104,36 +104,9 @@ sbom:
   - name: commons-text
     version: 1.10.0
     licenses: Apache-2.0
-  - name: custompayloads
-    version: 0.14.0
-    licenses: ''
-  - name: database
-    version: 0.4.0
-    licenses: ''
   - name: dataflow-errorprone
     version: 3.34.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
-  - name: datanucleus-api-jdo
-    version: 6.0.1
-    licenses: Apache-2.0
-  - name: datanucleus-core
-    version: 6.0.4
-    licenses: Apache-2.0
-  - name: datanucleus-jdo-query
-    version: 6.0.1
-    licenses: Apache-2.0
-  - name: datanucleus-rdbms
-    version: 6.0.4
-    licenses: Apache-2.0
-  - name: delight-graaljs-sandbox
-    version: 0.1.2
-    licenses: Apache-2.0, MIT, LGPL
-  - name: delight-nashorn-sandbox
-    version: 0.1.27
-    licenses: Apache-2.0, MIT, LGPL
-  - name: diffutils
-    version: 1.3.0
-    licenses: Apache-2.0
   - name: error_prone_annotation
     version: 2.23.0
     licenses: Apache-2.0
@@ -158,24 +131,9 @@ sbom:
   - name: flatlaf
     version: 3.2.1
     licenses: Apache-2.0
-  - name: flyway-core
-    version: 9.20.0
-    licenses: Apache-2.0
   - name: formhandler
     version: 6.6.0
     licenses: ''
-  - name: glassfish-corba-omgapi
-    version: 4.2.2
-    licenses: BSD-3-Clause
-  - name: graal-sdk
-    version: 22.3.3
-    licenses: UPL-1.0
-  - name: graaljs
-    version: 0.6.0
-    licenses: ''
-  - name: gson
-    version: 2.10.1
-    licenses: Apache-2.0
   - name: guava
     version: 32.1.1-jre
     licenses: Apache-2.0
@@ -209,9 +167,6 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
-  - name: icu4j
-    version: '71.1'
-    licenses: Unicode/ICU License
   - name: jackson-annotations
     version: 2.16.0
     licenses: Apache-2.0
@@ -248,12 +203,6 @@ sbom:
   - name: javax.inject
     version: '1'
     licenses: Apache-2.0
-  - name: javax.jdo
-    version: 3.2.1
-    licenses: Apache-2.0
-  - name: javax.transaction-api
-    version: '1.3'
-    licenses: (CDDL-1.0 OR GPL-2.0-with-classpath-exception)
   - name: jericho-html
     version: '3.4'
     licenses: GNU Lesser General Public License (LGPL), Apache-1.0, EPL-1.0
@@ -263,15 +212,6 @@ sbom:
   - name: jgrapht-core
     version: 0.9.0
     licenses: LGPL-2.1-only, EPL-1.0
-  - name: js
-    version: 22.3.3
-    licenses: UPL-1.0, MIT
-  - name: js-beautify
-    version: 1.6.12
-    licenses: MIT
-  - name: js-scriptengine
-    version: 22.3.3
-    licenses: UPL-1.0
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
@@ -371,9 +311,6 @@ sbom:
   - name: network
     version: 0.14.0
     licenses: ''
-  - name: oast
-    version: 0.18.0
-    licenses: ''
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
@@ -395,18 +332,9 @@ sbom:
   - name: pcollections
     version: 3.1.4
     licenses: MIT
-  - name: procyon-compilertools
-    version: 0.6.0
-    licenses: Apache-2.0
-  - name: procyon-core
-    version: 0.6.0
-    licenses: Apache-2.0
   - name: protobuf-java
     version: 3.19.6
     licenses: BSD-3-Clause
-  - name: regex
-    version: 22.3.3
-    licenses: UPL-1.0
   - name: rsyntaxtextarea
     version: 3.3.4
     licenses: BSD-3-Clause
@@ -422,9 +350,6 @@ sbom:
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT
-  - name: sqlite-jdbc
-    version: 3.42.0.0
-    licenses: Apache-2.0
   - name: stax2-api
     version: 4.2.1
     licenses: BSD-4-Clause
@@ -434,9 +359,6 @@ sbom:
   - name: testutils
     version: unspecified
     licenses: ''
-  - name: truffle-api
-    version: 22.3.3
-    licenses: UPL-1.0
   - name: woodstox-core
     version: 6.5.1
     licenses: Apache-2.0

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 48.0.0
+    version: 49.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -95,12 +95,6 @@ Latest code: [InsecureHttpMethodScanRule.java](https://github.com/zaproxy/zap-ex
 Looks for indicators of integer overflows in compiled code that causes the web server to crash. It does this by putting out multiple strings of integers designed to try and stimulate bad responses.
 
 Latest code: [IntegerOverflowScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/IntegerOverflowScanRule.java)
-
-## Java Spring Actuators
-
-This rule attempts to identify if the Spring Actuators are enabled. Tests for the default /actuator/health route in the application.
-
-Latest code: [SpringActuatorScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SpringActuatorScanRule.java)
 
 ## Out of Band XSS
 

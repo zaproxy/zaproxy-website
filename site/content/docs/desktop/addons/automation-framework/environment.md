@@ -9,6 +9,8 @@ weight: 3
 
 This section of the YAML configuration file defines the applications which the rest of the jobs can act on.
 
+The environment is covered in the video: [ZAP Chat 08 Automation Framework Part 2 - Environment](https://youtu.be/1fcpU54N-mA).
+
 The Automation Framework supports all of the [authentication](/docs/desktop/addons/automation-framework/authentication/) mechanisms supported by ZAP.
 
 **Note** When testing targets that operate on default ports (80 for http, 443 for https), the colon port portion of the URL should not be included.
@@ -52,6 +54,7 @@ env:                                   # The environment, mandatory
           scriptEngine:                # String, the name of the script engine to use, only for 'script' session management
       technology:
         exclude:                       # List of tech to exclude, as per https://www.zaproxy.org/techtags/ (just use last names)
+        include:                       # List of tech to include, should only be used when targeting specific techs, the exclude takes precedence when configuring the context.
       users:                           # List of one or more users available to use for authentication
       - name:                          # String, the name to be used by the jobs
         credentials:                   # List of user credentials - may include any required for scripts
