@@ -33,3 +33,5 @@ groups:
         link: /videos-list/
         desc: All of the Official ZAP videos, tagged and searchable
 ---
+### Latest Video
+{{<youtube-latest>}}

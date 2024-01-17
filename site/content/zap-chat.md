@@ -2,6 +2,7 @@
 type: page
 title: ZAP Chat Videos
 layout: youtube-videos
+featured: s8DKKTTHsGM
 links:
   - name: '01 Introduction'
     uuid: qrAJ32rdi14
@@ -44,6 +45,9 @@ links:
 
   - name: '14 Google Summer of Code'
     uuid: Cm_ol-PA738
+
+  - name: '15 New Web GUI?'
+    uuid: s8DKKTTHsGM
 
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
