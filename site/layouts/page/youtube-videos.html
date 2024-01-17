@@ -11,6 +11,15 @@
   <article>
     <main>{{- .Content -}}</main>
     
+    {{ if .Params.featured }}
+    <h3>Featured Video</h3>
+    <div class="grid grid__two-col grid_row_gap">
+      <div class='embed-youtube'>
+        <iframe src='https://www.youtube.com/embed/{{ .Params.featured }}' frameborder='0' allowfullscreen></iframe>
+      </div>
+    </div>
+    <h3>All Videos</h3>
+    {{ end }}
     
     <div class="grid grid__two-col grid_row_gap">
       {{ with .Params }}

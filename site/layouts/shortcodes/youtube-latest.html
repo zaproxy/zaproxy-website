@@ -1,0 +1,7 @@
+{{ range first 1 ( sort $.Site.Data.videos "date" "desc") }}
+<div class="grid grid__two-col grid_row_gap">
+  <div class='embed-youtube'>
+    <iframe src='https://www.youtube.com/embed/{{ .id }}' frameborder='0' allowfullscreen></iframe>
+  </div>
+</div>
+{{ end }}
