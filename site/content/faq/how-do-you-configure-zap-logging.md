@@ -52,3 +52,9 @@ Configurator.setLevel({
   "org.zaproxy.addon.spider" : Level.DEBUG,
 });
 ```
+
+Since ZAP 2.15.0 (or in weeklies released after Jan 17, 2024), the logging for ZAP classes may be configured via the `-loglevel` CLI option. For example,
+
+```shell
+zap.sh -daemon -loglevel debug
+```
