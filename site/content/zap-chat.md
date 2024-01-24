@@ -2,7 +2,7 @@
 type: page
 title: ZAP Chat Videos
 layout: youtube-videos
-featured: s8DKKTTHsGM
+featured: _CKzFqDi33A
 links:
   - name: '01 Introduction'
     uuid: qrAJ32rdi14
@@ -48,6 +48,9 @@ links:
 
   - name: '15 New Web GUI?'
     uuid: s8DKKTTHsGM
+
+  - name: '16 Automation Framework Part 7 - Authentication'
+    uuid: _CKzFqDi33A
 
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
