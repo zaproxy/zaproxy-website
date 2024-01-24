@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '60'
+    version: '61'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v60/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v61/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -63,7 +63,7 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.21.0
+    version: 1.22.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4

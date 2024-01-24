@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '69'
+    version: '70'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v69/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v70/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -240,12 +240,6 @@ sbom:
     version: 4.1.73.Final
     licenses: Apache-2.0
   - name: netty-transport-native-epoll
-    version: 4.1.73.Final
-    licenses: Apache-2.0
-  - name: netty-transport-native-epoll
-    version: 4.1.73.Final
-    licenses: Apache-2.0
-  - name: netty-transport-native-kqueue
     version: 4.1.73.Final
     licenses: Apache-2.0
   - name: netty-transport-native-kqueue
