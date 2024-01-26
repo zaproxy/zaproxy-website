@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v61/ascanrules-release-61.zap
-  date: 2024-01-24
-  version: 61
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v62/ascanrules-release-62.zap
+  date: 2024-01-26
+  version: 62
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -47,9 +47,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v45/ascanrulesAlpha-alpha-45.zap
-  date: 2024-01-16
-  version: 45
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v46/ascanrulesAlpha-alpha-46.zap
+  date: 2024-01-26
+  version: 46
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta status Active Scanner rules
@@ -57,9 +57,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v49/ascanrulesBeta-beta-49.zap
-  date: 2024-01-16
-  version: 49
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v50/ascanrulesBeta-beta-50.zap
+  date: 2024-01-26
+  version: 50
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -191,9 +191,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.21.0/commonlib-release-1.21.0.zap
-  date: 2024-01-16
-  version: 1.21.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.22.0/commonlib-release-1.22.0.zap
+  date: 2024-01-26
+  version: 1.22.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -712,9 +712,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v38/openapi-beta-38.zap
-  date: 2023-10-23
-  version: 38
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v39/openapi-beta-39.zap
+  date: 2024-01-26
+  version: 39
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -784,9 +784,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v54/pscanrules-release-54.zap
-  date: 2024-01-16
-  version: 54
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v55/pscanrules-release-55.zap
+  date: 2024-01-26
+  version: 55
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -934,9 +934,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.17.0/selenium-release-15.17.0.zap
-  date: 2024-01-18
-  version: 15.17.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.18.0/selenium-release-15.18.0.zap
+  date: 2024-01-26
+  version: 15.18.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -964,9 +964,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.8.0/spider-release-0.8.0.zap
-  date: 2023-12-19
-  version: 0.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.9.0/spider-release-0.9.0.zap
+  date: 2024-01-26
+  version: 0.9.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using

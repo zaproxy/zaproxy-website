@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 38.0.0
+    version: 39.0.0
 ---
 
 # OpenAPI Support

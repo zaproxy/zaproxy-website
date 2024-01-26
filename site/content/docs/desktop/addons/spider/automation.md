@@ -13,6 +13,8 @@ This add-on supports the Automation Framework.
 
 The Spider job runs the Traditional Spider. This is fast but does not handle modern applications as effectively.
 
+It is covered in the video: [ZAP Chat 10 Automation Framework Part 4 - Spidering](https://youtu.be/WivoyVerBCo).
+
 By default this job will spider the first context defined in the environment and so none of the parameters are mandatory.
 
 This job supports monitor tests.
