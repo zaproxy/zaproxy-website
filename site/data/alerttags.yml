@@ -37,6 +37,9 @@ CWE-119:
 CWE-120:
   link: https://cwe.mitre.org/data/definitions/120.html
 
+CWE-1275:
+  link: https://cwe.mitre.org/data/definitions/1275.html
+
 CWE-134:
   link: https://cwe.mitre.org/data/definitions/134.html
 
