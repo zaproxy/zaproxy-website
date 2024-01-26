@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: '54'
+    version: '55'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v54/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v55/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -63,7 +63,7 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.21.0
+    version: 1.22.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -158,6 +158,9 @@ sbom:
   - name: hsqldb
     version: 2.7.2
     licenses: HSQLDB License, a BSD open source license
+  - name: htmlunit-csp
+    version: 3.10.0
+    licenses: Apache-2.0
   - name: httpclient5
     version: 5.2.1
     licenses: Apache-2.0
@@ -344,9 +347,6 @@ sbom:
   - name: rsyntaxtextarea
     version: 3.3.4
     licenses: BSD-3-Clause
-  - name: salvation2
-    version: 3.0.1
-    licenses: Apache-2.0
   - name: service
     version: 1.13.0
     licenses: Apache-2.0

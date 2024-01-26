@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 61.0.0
+    version: 62.0.0
 ---
 
 # Active Scan Rules
@@ -274,7 +274,7 @@ Latest code: [SourceCodeDisclosureCve20121823ScanRule.java](https://github.com/z
 
 Alert ID: [20017](/docs/alerts/20017/).
 
-## Source Code Disclosure - /WEB-INF {#id-10045}
+## Source Code Disclosure - /WEB-INF Folder {#id-10045}
 
 Exploit the presence of an unprotected /WEB-INF folder to download and decompile Java classes, to disclose Java source code.
 

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: commonlib
-    version: 1.21.0
+    version: 1.22.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.21.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.22.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'

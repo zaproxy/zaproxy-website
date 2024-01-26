@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 54.0.0
+    version: 55.0.0
 ---
 
 # Passive Scan Rules
@@ -167,7 +167,7 @@ Latest code: [CrossDomainMisconfigurationScanRule.java](https://github.com/zapro
 
 ## CSP (Content Security Policy)
 
-The Content Security Policy (CSP) passive scan rule parses and analyzes CSP headers and META definitions for potential misconfiguration or weakness. This rule leverages Shape Security's [Salvation](https://github.com/shapesecurity/salvation) library to perform it's parsing and assessment of CSPs.
+The Content Security Policy (CSP) passive scan rule parses and analyzes CSP headers and META definitions for potential misconfiguration or weakness. This rule leverages HtmlUnit's [htmlunit-csp](https://github.com/HtmlUnit/htmlunit-csp) library to perform it's parsing and assessment of CSPs.
 
 If a response has multiple CSPs they are analyzed individually, as there is no sure way to intersect/merge the policies and further different browsers have varying levels of CSP support and enforcement.
 
