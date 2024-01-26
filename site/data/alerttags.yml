@@ -37,6 +37,9 @@ CWE-119:
 CWE-120:
   link: https://cwe.mitre.org/data/definitions/120.html
 
+CWE-1275:
+  link: https://cwe.mitre.org/data/definitions/1275.html
+
 CWE-134:
   link: https://cwe.mitre.org/data/definitions/134.html
 
@@ -148,6 +151,9 @@ CWE-94:
 CWE-942:
   link: https://cwe.mitre.org/data/definitions/942.html
 
+CWE-943:
+  link: https://cwe.mitre.org/data/definitions/943.html
+
 CWE-98:
   link: https://cwe.mitre.org/data/definitions/98.html
 
@@ -204,6 +210,9 @@ OWASP_2021_A08:
 
 OWASP_2021_A10:
   link: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
+
+TEST_TIMING:
+  link: 
 
 WSTG-v42-ATHN-01:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel
