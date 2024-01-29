@@ -201,9 +201,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/community-scripts/
   repoUrl: https://github.com/zaproxy/community-scripts/
-  downloadUrl: https://github.com/zaproxy/community-scripts/releases/download/v17/communityScripts-alpha-17.zap
-  date: 2023-06-28
-  version: 17
+  downloadUrl: https://github.com/zaproxy/community-scripts/releases/download/v18/communityScripts-alpha-18.zap
+  date: 2024-01-29
+  version: 18
 - id: coreLang
   name: Core Language Files
   description: Translations of the core language files
