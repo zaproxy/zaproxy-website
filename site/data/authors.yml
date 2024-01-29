@@ -145,3 +145,9 @@ zoltan:
   picture: /img/authors/zoltan-lehoczky_400x400.jpg
   twitter: zlehoczky
   is_core: false
+
+mwalkowski:
+  name: Michal Walkowski
+  picture: /img/authors/mwalkowski_400x400.jpg
+  twitter: mwalkowski
+  is_core: false
