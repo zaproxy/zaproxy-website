@@ -11,3 +11,4 @@ site/data/webpack.json
 build-*
 
 site/.hugo_build.lock
+.idea
