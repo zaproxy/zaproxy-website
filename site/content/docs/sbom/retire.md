@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: retire
-    version: 0.29.0
+    version: 0.30.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.29.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.30.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -63,10 +63,7 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.21.0
-    licenses: ''
-  - name: commonlib
-    version: 1.21.0
+    version: 1.23.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -90,10 +87,10 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.15.0
+    version: 2.13.0
     licenses: Apache-2.0
   - name: commons-io
-    version: 2.13.0
+    version: 2.15.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -359,9 +356,6 @@ sbom:
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
-  - name: testutils
-    version: unspecified
-    licenses: ''
   - name: testutils
     version: unspecified
     licenses: ''
