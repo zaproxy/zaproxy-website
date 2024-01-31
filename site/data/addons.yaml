@@ -180,7 +180,7 @@
   author: Code Dx, Inc.
   status: alpha
   infoUrl: /docs/desktop/addons/code-dx/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
+  repoUrl: ''
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/codedx-v9/codedx-alpha-9.zap
   date: 2021-10-07
   version: 9
