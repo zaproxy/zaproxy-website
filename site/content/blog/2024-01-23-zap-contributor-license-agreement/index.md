@@ -9,6 +9,8 @@ tags:
 date: "2024-01-23"
 authors: 
     - simon
+aliases:
+  /blog/2024-10-23-zap-contributor-license-agreement/
 ---
 
 We are in the process of introducing a ZAP [Contributor License Agreement](http://oss-watch.ac.uk/resources/cla),
