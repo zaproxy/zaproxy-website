@@ -1,34 +1,32 @@
 
+- item: Secure Funding for ZAP Development
+  status: ⚡ In progress
+  year: 2024
+- item: Automation Framework GitHub Action
+  status: ⚡ In progress
+  year: 2024
+- item: Scripts as First Class Scan Rules
+  status: ⚡ In progress
+  url: https://github.com/zaproxy/zaproxy/issues/7105
+  year: 2024
 - item: Update to latest Crawljax
   status: ⚡ In progress
-  year: 2023
+  year: 2024
 - item: Improve modern web app handling
   url: /blog/2023-11-03-handling-modern-web-apps-better-part1/
   status: ⚡ In progress
-  year: 2023
-- item: Browser Recorder
-  status: ⚡ In progress
-  url: https://summerofcode.withgoogle.com/programs/2023/projects/lx6XL1Rd
-  sponsor: Google Summer of Code
-  sponsorlink: https://summerofcode.withgoogle.com/
-  year: 2023
-- item: Import Postman API Definitions into ZAP 
-  status: ⚡ In progress
-  url: https://summerofcode.withgoogle.com/programs/2023/projects/OlBxaE5X
-  sponsor: Google Summer of Code
-  sponsorlink: https://summerofcode.withgoogle.com/
-  year: 2023
+  year: 2024
 - item: Automation Framework enhancements
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/6461
-  year: 2023
+  year: 2024
 - item: Move core functionality to add-ons
   status: ⚡ In progress
-  year: 2023
+  year: 2024
 - item: "OpenSSF Best Practices: Silver"
   status: ⚡ In progress
   url: https://bestpractices.coreinfrastructure.org/en/projects/24?criteria_level=1
-  year: 2023
+  year: 2024
 
 - item: Continue working on issues
   status: ♻ Ongoing
@@ -43,28 +41,47 @@
   url: /blog/2023-01-19-authentication-help/
   year: n/a
 
+- item: Browser Recorder
+  status: 🎉 Finished
+  url: https://summerofcode.withgoogle.com/programs/2023/projects/lx6XL1Rd
+  sponsor: Google Summer of Code
+  sponsorlink: https://summerofcode.withgoogle.com/
+  year: 2023
+  archive: true
+- item: Import Postman API Definitions into ZAP
+  status: 🎉 Finished
+  url: https://summerofcode.withgoogle.com/programs/2023/projects/OlBxaE5X
+  sponsor: Google Summer of Code
+  sponsorlink: https://summerofcode.withgoogle.com/
+  year: 2023
+  archive: true
 - item: Rebrand
   status: 🎉 Finished
   year: 2023
+  archive: true
 - item: Release 2.14
   status: 🎉 Finished
   url: /blog/2023-10-12-zap-2-14-0/
   year: 2023
+  archive: true
 - item: Release 2.13
   status: 🎉 Finished
   url: /blog/2023-07-12-zap-2.13.0/
   year: 2023
+  archive: true
 - item: AJAX Spider Element Exclusion
   status: 🎉 Finished
   sponsor: NightVision
   sponsorlink: https://www.nightvision.net/
   year: 2023
+  archive: true
 - item: Authentication handling improvements
   status: 🎉 Finished
   url: /blog/2023-01-19-authentication-help/
   sponsor: Jit
   sponsorlink: https://www.jit.io
   year: 2023
+  archive: true
 - item: Networking overhaul
   status: 🎉 Finished
   url: https://www.zaproxy.org/blog/2022-02-10-new-zap-networking-layer/
