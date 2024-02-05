@@ -1,17 +1,17 @@
 ---
 # This page was generated from the add-on.
-title: Technology Detection - Wappalyzer
+title: Technology Detection
 type: userguide
 weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.29.0
+    version: 21.30.0
 ---
 
-# Technology Detection Using Wappalyzer
+# Technology Detection
 
-The Technology Detection add-on uses the Wappalyzer rules to detect the technologies used by applications.
+The Technology Detection add-on uses various patterns and finger prints to detect the technologies used by applications.
 
 It works in a very similar way to the Wappalyzer browser add-ons with the following exceptions:
 
@@ -27,7 +27,7 @@ Right clicking on a technology will display a 'Show evidence' menu under which a
 Selecting a regex will switch to the 'Search' tab and search through the history for that regex. Note: If multiple rows are selected the menu will not be displayed.
 
 Beside the site selection drop down is an Export button which can be used to export a CSV (comma separated values) file based on the
-table information currently being displayed. There is also a toggle button which allows users to easily Enable/Disable the Wappalyzer
+table information currently being displayed. There is also a toggle button which allows users to easily Enable/Disable the Technology Detection
 passive scanner.
 
 The toolbar includes an enable/disable toggle button which controls whether the technology detection passive scan rule is functioning or not.
@@ -41,6 +41,6 @@ Technology data is available to reports via the [WappalyzerJobResultData](https:
 
 |   |                                                                   |                                                                                           |
 |---|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+|   | [Enthec Webappanalyzer](https://github.com/enthec/webappanalyzer) | This project is a continuation of the iconic Wappalyzer that went private in August 2023. |
 |   | <https://www.wappalyzer.com/>                                     | The Wappalyzer Homepage                                                                   |
 |   | https://github.com/wappalyzer/wappalyzer                          | As of early August 2023 the The Wappalyzer Repository is no longer public.                |
-|   | [Enthec Webappanalyzer](https://github.com/enthec/webappanalyzer) | This project is a continuation of the iconic Wappalyzer that went private in August 2023. |
