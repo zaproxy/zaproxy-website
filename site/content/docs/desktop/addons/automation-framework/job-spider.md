@@ -26,7 +26,7 @@ This job supports [monitor](/docs/desktop/addons/automation-framework/test-monit
       maxChildren:                     # Int: The maximum number of children to add to each node in the tree
       acceptCookies:                   # Bool: Whether the spider will accept cookies, default: true
       handleODataParametersVisited:    # Bool: Whether the spider will handle OData responses, default: false
-      handleParameters:                # Enum [ignore_completely, ignore_value, use_all]: How query string parameters are used when checking if a URI has already been visited, default: use_all
+      handleParameters:                # Enum [IGNORE_COMPLETELY, IGNORE_VALUE, USE_ALL]: How query string parameters are used when checking if a URI has already been visited, default: USE_ALL
       maxParseSizeBytes:               # Int: The max size of a response that will be parsed, default: 2621440 - 2.5 Mb
       parseComments:                   # Bool: Whether the spider will parse HTML comments in order to find URLs, default: true
       parseGit:                        # Bool: Whether the spider will parse Git metadata in order to find URLs, default: false
