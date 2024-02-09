@@ -79,6 +79,9 @@ CWE-311:
 CWE-319:
   link: https://cwe.mitre.org/data/definitions/319.html
 
+CWE-326:
+  link: https://cwe.mitre.org/data/definitions/326.html
+
 CWE-345:
   link: https://cwe.mitre.org/data/definitions/345.html
 
