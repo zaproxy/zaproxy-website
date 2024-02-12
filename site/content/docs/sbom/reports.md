@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.28.0
+    version: 0.29.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.28.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.29.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -39,25 +39,25 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.35.0
+    version: 0.36.0
     licenses: ''
   - name: bcmail-jdk14
     version: '1.76'
     licenses: Bouncy Castle Licence
   - name: bcmail-jdk18on
-    version: '1.76'
+    version: '1.77'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk14
     version: '1.76'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.76'
+    version: '1.77'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk14
     version: '1.76'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.76'
+    version: '1.77'
     licenses: Bouncy Castle Licence
   - name: bctsp-jdk14
     version: '1.46'
@@ -66,10 +66,10 @@ sbom:
     version: '1.76'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.76'
+    version: '1.77'
     licenses: Bouncy Castle Licence
   - name: brotli4j
-    version: 1.13.0
+    version: 1.16.0
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.14.9
@@ -84,7 +84,7 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.21.0
+    version: 1.23.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -306,16 +306,16 @@ sbom:
     version: 2.3.1
     licenses: BSD-3-Clause
   - name: native-linux-x86_64
-    version: 1.13.0
+    version: 1.16.0
     licenses: Apache-2.0
   - name: native-osx-aarch64
-    version: 1.13.0
+    version: 1.16.0
     licenses: Apache-2.0
   - name: native-osx-x86_64
-    version: 1.13.0
+    version: 1.16.0
     licenses: Apache-2.0
   - name: native-windows-x86_64
-    version: 1.13.0
+    version: 1.16.0
     licenses: Apache-2.0
   - name: netty-buffer
     version: 4.1.100.Final
@@ -378,7 +378,7 @@ sbom:
     version: 3.3.4
     licenses: BSD-3-Clause
   - name: service
-    version: 1.13.0
+    version: 1.16.0
     licenses: Apache-2.0
   - name: slf4j-api
     version: 2.0.9
