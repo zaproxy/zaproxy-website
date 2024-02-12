@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v62/ascanrules-release-62.zap
-  date: 2024-01-26
-  version: 62
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v63/ascanrules-release-63.zap
+  date: 2024-02-12
+  version: 63
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -804,9 +804,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v36/pscanrulesBeta-beta-36.zap
-  date: 2024-01-16
-  version: 36
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v37/pscanrulesBeta-beta-37.zap
+  date: 2024-02-12
+  version: 37
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
@@ -854,9 +854,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.28.0/reports-release-0.28.0.zap
-  date: 2024-01-16
-  version: 0.28.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.29.0/reports-release-0.29.0.zap
+  date: 2024-02-12
+  version: 0.29.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
@@ -884,9 +884,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.30.0/retire-release-0.30.0.zap
-  date: 2024-01-29
-  version: 0.30.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.31.0/retire-release-0.31.0.zap
+  date: 2024-02-12
+  version: 0.31.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -924,9 +924,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v44/scripts-release-44.zap
-  date: 2023-12-19
-  version: 44
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.0.0/scripts-release-45.0.0.zap
+  date: 2024-02-12
+  version: 45.0.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -964,9 +964,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.9.0/spider-release-0.9.0.zap
-  date: 2024-01-26
-  version: 0.9.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.10.0/spider-release-0.10.0.zap
+  date: 2024-02-12
+  version: 0.10.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
