@@ -163,10 +163,6 @@ services_minus:
     link: https://www.namicsoft.com/
     license: 'Commercial'
 
-  - name: 'Nucleus'
-    link: https://www.nucleussec.com/integrations
-    license: 'Commercial'
-
   - name: 'Scan Factory'
     link: https://in.scanfactory.io/
     license: 'Commercial'
@@ -177,7 +173,7 @@ services_minus:
 
 integrations:
   - name: 'ThreadFix'
-    link: https://threadfix.it/
+    link: https://www.coalfire.com/services/offensive-security/threadfix
     license: 'Commercial'
     supporter: ZAP Bronze Supporter
 
@@ -202,6 +198,10 @@ integrations:
     link: https://appsecphoenix.com/
     license: 'Commercial, free option'
  
+  - name: 'Harness'
+    link: https://developer.harness.io/docs/security-testing-orchestration/sto-techref-category/zap-scanner-reference/
+    license: 'Commercial, free option'
+ 
   - name: 'Uleska'
     link: https://www.uleska.com/docs/zapproxy
     license: 'Commercial, free option'
@@ -218,6 +218,10 @@ integrations:
     link: https://kondukto.io/integrations
     license: 'Commercial'
  
+  - name: 'Nucleus'
+    link: https://www.nucleussec.com/integrations
+    license: 'Commercial'
+
   - name: 'PlexTrac'
     link: https://plextrac.com/platform/integrations/
     license: 'Commercial'
