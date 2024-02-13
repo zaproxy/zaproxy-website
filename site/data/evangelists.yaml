@@ -586,3 +586,12 @@
   has_talks: N
   has_training: N
   notes: Security/Software Engineer and ZAP Lover ⚡️
+
+- name: Najam Ul Saqib
+  email: njmulsqb@protonmail.com
+  linkedin: https://www.linkedin.com/in/njmulsqb
+  locations: Pakistan / Worldwide / Remote
+  language: Urdu, English
+  has_talks: Y
+  has_training: Y
+  notes: ZAP Development Team Member
