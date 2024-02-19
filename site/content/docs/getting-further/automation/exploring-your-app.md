@@ -20,7 +20,7 @@ Apps change over time and your manual session will gradually get more and more o
 
 ### Proxying Integration Tests
 
-On the other hand proxying integration texts through ZAP is a very good option, if you have suitable tests.
+On the other hand proxying integration tests through ZAP is a very good option, if you have suitable tests.
 The more complete your tests then the better ZAP will understand your app.
 It is still recommended that you use any of the other exploring options that are suitable rather than just relying on your tests.
 
