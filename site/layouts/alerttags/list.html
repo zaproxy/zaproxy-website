@@ -1,11 +1,15 @@
 {{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
 {{ define "main" }}
+{{- $temp := newScratch -}}
+{{- range $key, $val := $.Site.Data.alerttags }}{{ $temp.Set (lower $key) (dict "id" $key "link" $val.link) }}{{ end -}}
+{{- $alerttags := $temp.Values -}}
+{{- $alerttag := index $alerttags (lower .Title) }}
 <section class="bolt-header">
   <div class="wrapper py-20">
     {{ if eq .Title "Alerttags" }}
       <h1 class="text--white">Alert Tags</h1>
     {{ else }}
-      <h1 class="text--white">Alert Tag:  {{ .Title }}</h1>
+      <h1 class="text--white">Alert Tag:  {{ $alerttag.id }}</h1>
     {{ end }}
   </div>
 </section>
@@ -13,7 +17,7 @@
     <header class="breadcrumbs">
         <a href="/alerttags/">Alert Tags</a> &gt;
         {{ if ne .Title "Alerttags" }}
-        <a href="/alerttags/{{ lower .Title }}">{{ .Title }}</a>
+        <a href="/alerttags/{{ lower .Title }}">{{ $alerttag.id }}</a>
         {{ end }}
     </header>
    {{ .Content }}
@@ -21,11 +25,11 @@
     {{ if eq .Title "Alerttags" }}
       All of the defined Alert Tags:
     {{ else }}
-      {{ $alerttag := index $.Site.Data.alerttags .Title }}
+      
       {{ if $alerttag.link }}
         <h4><a href="{{ $alerttag.link }}">{{ $alerttag.link }}</a></h4>
       {{ else }}
-        <h4>{{ .Title }}</h4>
+        <h4>{{ $alerttag.id }}</h4>
       {{ end }}
       All of the alerts which use this tag:
     {{ end }}
@@ -40,9 +44,9 @@
          </thead>
          <tbody>
             {{ range .Pages }}
-               {{ $alerttag := index $.Site.Data.alerttags .Title }}
+               {{ $alerttag := index $alerttags (lower .Title) }}
                <tr>
-                  <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+                  <td><a href="{{ .Permalink }}">{{ default .Title $alerttag.id }}</a></td>
                   <td><a href="{{ $alerttag.link }}">{{ $alerttag.link }}</a></td>
                </tr>
             {{ end }}
