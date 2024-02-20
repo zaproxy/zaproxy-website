@@ -37,7 +37,7 @@
     {{- if not $deprecated }}
         <ul class="tree-branch">
         {{- range (readDir .path) }}
-            {{- if in .Name "image" }}
+            {{- if in .Name "image" | or (eq .Name "_index.md") }}
             {{- else }}
                 {{- $fullPath := (printf "%s/%s" $.path .Name) }}
                 {{- $fullUrl := replace $fullPath "/content" "" }}
