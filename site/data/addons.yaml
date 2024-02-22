@@ -409,9 +409,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.22.0/graphql-alpha-0.22.0.zap
-  date: 2023-12-19
-  version: 0.22.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.23.0/graphql-alpha-0.23.0.zap
+  date: 2024-02-22
+  version: 0.23.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -934,9 +934,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.18.0/selenium-release-15.18.0.zap
-  date: 2024-01-26
-  version: 15.18.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.19.0/selenium-release-15.19.0.zap
+  date: 2024-02-22
+  version: 15.19.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -1066,9 +1066,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v70/webdriverlinux-release-70.zap
-  date: 2024-01-24
-  version: 70
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v71/webdriverlinux-release-71.zap
+  date: 2024-02-22
+  version: 71
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1076,9 +1076,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v70/webdrivermacos-release-70.zap
-  date: 2024-01-24
-  version: 70
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v71/webdrivermacos-release-71.zap
+  date: 2024-02-22
+  version: 71
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1086,9 +1086,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v70/webdriverwindows-release-70.zap
-  date: 2024-01-24
-  version: 70
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v71/webdriverwindows-release-71.zap
+  date: 2024-02-22
+  version: 71
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
