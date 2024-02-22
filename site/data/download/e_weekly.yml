@@ -4,4 +4,4 @@ info:
 - These are just intended for people who want to use all of the features we've added since the last 'full' release but don't want the hassle of building ZAP from the source code.
 - While we endeavor to ensure that weekly releases are robust, things may be broken or only partially implemented.
 - It is cross platform (Windows, Linux and macOS) but does not include any installers.
-- It requires Java 11 or higher to run.
+- It requires [Java 11 or higher](https://adoptium.net/) to run.
