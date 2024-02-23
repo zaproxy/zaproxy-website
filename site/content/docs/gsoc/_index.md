@@ -9,7 +9,7 @@ links:
 
   - name: '2024'
     link: 2024/
-    desc: Start getting involved now!
+    desc: Unfortunately ZAP was not selected as a mentoring organisation
 
   - name: '2023'
     link: 2023/
