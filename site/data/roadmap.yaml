@@ -9,6 +9,10 @@
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/7105
   year: 2024
+- item: gRPC Support
+  status: ⚡ In progress
+  url: https://github.com/zaproxy/zaproxy/issues/7695
+  year: 2024
 - item: Update to latest Crawljax
   status: ⚡ In progress
   year: 2024
