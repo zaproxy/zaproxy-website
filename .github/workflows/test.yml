@@ -25,7 +25,7 @@ jobs:
       - name: Copy to www 
         run: sudo rm /var/www/html/*.html && sudo cp -rf ./dist/* /var/www/html
 
-      - run: curl http://localhost/
+      - run: curl --fail-with-body http://localhost/
       
       - run: google-chrome --headless --disable-gpu --screenshot --window-size=1280,1600 http://localhost
       
