@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '72'
+    version: '73'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v72/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v73/bom.json
   components:
   - name: aopalliance
     version: '1.0'
