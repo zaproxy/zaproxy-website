@@ -1,5 +1,4 @@
 ---
-headless: true
 addSocialPreview: true
 description: Welcome to ZAP!
 summary: Welcome to ZAP!
