@@ -8,7 +8,7 @@ weight: 3
 False positives are where ZAP raises alerts for things that are not really vulnerabilities.
 You should make sure that you understand the potential vulnerability being reported and manually test it before concluding that it is not a real vulnerability.
 
-Please [report](https://github.com/zaproxy/zaproxy/issues/new?labels=bug&template=Bug_report.md) any false positives that you identify supplying as much information as you can, while obfuscating any sensitive information. New issues should just cover one scan rule and should include enough information for us to reproduce the problem. This will help us improve ZAP.
+Please [report](https://github.com/zaproxy/zaproxy/issues/new?assignees=&labels=bug&projects=&template=bug-report.yml) any false positives that you identify supplying as much information as you can, while obfuscating any sensitive information. New issues should just cover one scan rule and should include enough information for us to reproduce the problem. This will help us improve ZAP.
 
 Many scan rules support [Alert Thresholds](/docs/desktop/ui/dialogs/scanpolicy/#threshold) and specific [Rule Configuration options](/docs/desktop/ui/dialogs/options/ruleconfig/) which allow you to configure some of the conditions under which alerts are reported. Check the help for the relevant rule - this is included with ZAP and is also available [online](/docs/desktop/addons/).
 

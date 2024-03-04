@@ -7,11 +7,11 @@ weight: 3
 
 False Negatives are where ZAP fails to identify an issue when it should.
 
-Reporting these problems to us for passive scan rules is straightforward -
+[Reporting](https://github.com/zaproxy/zaproxy/issues/new?assignees=&labels=bug&projects=&template=bug-report.yml) these problems to us for passive scan rules is straightforward -
 just let us know the full request and/or response that ZAP should have raised
 the problem for.
 
-Reporting problems with active scan rules is a bit more tricky, as ZAP will
+[Reporting](https://github.com/zaproxy/zaproxy/issues/new?assignees=&labels=bug&projects=&template=bug-report.yml) problems with active scan rules is a bit more tricky, as ZAP will
 potentially send several requests to detect a specific problem and we need to
 know how your application responded to each one.
 
