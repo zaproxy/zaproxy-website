@@ -1,7 +1,7 @@
 ---
 title: "ZAP Updates - February 2024"
 summary: >
-  Restructured desktop menu, OWASP Docker Hub depreciation, Funding, and GSoC.
+  Restructured desktop menus, OWASP Docker Hub depreciation, Funding, and GSoC.
 images:
 - https://www.zaproxy.org/blog/2024-03-04-zap-updates-february-2024/images/zapbot-monthly-updates.png
 type: post
@@ -40,7 +40,7 @@ A lot of time and effort has once again been spent on securing ZAP's future - ex
 
 ### Google Summer of Code
 
-Unfortunately we were not chosen to be a Google Summer of Code mentoring organisation :frown:.
+Unfortunately we were not chosen to be a Google Summer of Code mentoring organisation 😞.
 
 However the good news it that a student still wants to work on one of the proposed GSoC projects, 
 [gRPC support](https://github.com/zaproxy/zaproxy/issues/7695), so we will be mentoring them outside of GSoC :grin:.
