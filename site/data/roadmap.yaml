@@ -9,6 +9,10 @@
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/7105
   year: 2024
+- item: Import PCAP files
+  status: ⚡ In progress
+  url: https://github.com/zaproxy/zaproxy/issues/4812
+  year: 2024
 - item: gRPC Support
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/7695
@@ -30,6 +34,10 @@
 - item: "OpenSSF Best Practices: Silver"
   status: ⚡ In progress
   url: https://bestpractices.coreinfrastructure.org/en/projects/24?criteria_level=1
+  year: 2024
+- item: Ensure alert details and examples are complete and up to date
+  status: ⚡ In progress
+  url: /alerts/
   year: 2024
 
 - item: Continue working on issues
