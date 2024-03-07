@@ -21,8 +21,7 @@ taxonomies:
 params:
   description: 
     The world’s most widely used web app scanner. Free and open source. 
-    Actively maintained by a dedicated international team of volunteers.
-    A GitHub Top 1000 project.
+    ZAP is a community project actively maintained by a dedicated international team, and a GitHub Top 1000 project.
   EditContent:
     BaseUrl: https://github.com/zaproxy/zaproxy-website/blob/main/site/content/
     Label: Edit on GitHub
@@ -30,10 +29,6 @@ params:
 # Menu
 menu:
   nav:
-    - name:  "Home"
-      URL:  "/"
-      weight:  1
-
     - name:  "Blog"
       URL:  "/blog/"
       weight:  2
@@ -50,15 +45,11 @@ menu:
       URL: /community/
       weight:  5
 
-    - name:  Sponsor
-      URL: /sponsor/
+    - name:  Support
+      URL: /support/
       weight:  5
 
   footer: 
-    - name:  "Home"
-      URL:  "/"
-      weight:  1
-
     - name:  "Blog"
       URL:  "/blog/"
       weight:  2
@@ -71,8 +62,8 @@ menu:
       URL: /community/
       weight:  4
 
-    - name:  Sponsor
-      URL: /sponsor/
+    - name:  Support
+      URL: /support/
       weight:  5
 
     - name:  Statistics

@@ -14,33 +14,16 @@
 
 {{- .Content -}}
 
-<h2 id="platinum">Platinum</h2>
-{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.platinum) }}
+<h2 id="main">Main Sponsor</h2>
+{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.main) }}
 <br/><br/>
 
-<h2 id="gold">Gold</h2>
-{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.gold) }}
-<br/><br/>
-
-<h2 id="silver">Silver</h2>
-{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.silver) }}
-<br/><br/>
-
-<h2 id="bronze">Bronze</h2>
-{{ partial "supporters.html" (dict "supporters" $.Site.Data.supporters.bronzeV2) }}
-<ul>
-{{ range $supporter := $.Site.Data.supporters.bronzeV1 }}
+<h3 id="others">Previous Supporters</h2>
+{{ range $supporter := $.Site.Data.supporters.prev }}
     <li><a href="{{ $supporter.link }}">{{ $supporter.name }}</a></li>
 {{ end }}
-</ul>
 
-<h2 id="community">Community</h2>
-
-<ul>
-{{ range $supporter := $.Site.Data.supporters.community }}
-    <li>{{ $supporter.name }}</li>
-{{ end }}
-</ul>
+<br/><br/>
 
   </article>
 </section>
