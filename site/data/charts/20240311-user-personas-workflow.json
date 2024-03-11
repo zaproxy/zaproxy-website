@@ -1,0 +1,12 @@
+{
+  "title": "Considering your role, how easy or difficult is it to integrate ZAP into your workflow?",
+  "description": "",
+  "data": [
+    ["Difficulty", "Answers"],
+    ["Very Difficult", 21],
+    ["Difficult", 30],
+    ["Average", 116],
+    ["Easy", 93],
+    ["Very Easy", 64]
+  ]
+}

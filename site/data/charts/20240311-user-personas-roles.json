@@ -1,0 +1,16 @@
+{
+  "title": "Main User Roles",
+  "description": "",
+  "data": [
+    ["Role", "Answers"],
+    ["Cybersecurity Student", 174],
+    ["Freelance Security Consultant", 69],
+    ["Penetration Tester or Red Team Member", 121],
+    ["Quality Assurance Tester", 53],
+    ["Security Researcher", 68],
+    ["Corporate IT Security Analyst", 62],
+    ["DevSecOps Engineer / Automation Engineer", 47],
+    ["Open Source Project Maintainer", 22],
+    ["Bug Bounty Hunter", 74]
+  ]
+}
