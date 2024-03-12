@@ -50,7 +50,7 @@ ZAP has grown from a very small project to become what is
 Initially I hoped that if we made ZAP useful enough to enough people and companies then those who benefit from ZAP would donate enough money to the project to allow us to grow. Sadly that has not proved to be the case.
 
 We need to be able to pay more people to work full time on ZAP if it is to continue to provide real value.
-In order to do that we need reliable sources of income, ideally recurring income rather than one- offs.
+In order to do that we need reliable sources of income, ideally recurring income rather than one-offs.
 As a result we have been investigating all of the potential options for us to raise more funding, as summarised below.
 
 I would like to stress that the whole purpose here is to fund ZAP development as a non profit entity. We are not looking to get rich!
@@ -60,7 +60,7 @@ We have investigated a lot of options. The main ones are detailed here, includin
 
 ### Donations
 ZAP has traditionally raised money via donations, previously managed by OWASP.
-While these were of course very welcome, we have not been able to raise anywhere near enough money this way.
+While these were of course very welcome, we have not been able to raise anywhere near enough money to sustain ZAP development.
 
 ##### Positives
 * No additional cost to the ZAP project
@@ -108,7 +108,7 @@ You will see from the poll results that there do appear to be companies who woul
 * Will take time away from ZAP development
 * It will potentially impact the free support we can provide
 
-__Conclusion: We will be introducing Support Contracts as part of Plan A[LINK].__
+__Conclusion: We will be introducing Support Contracts as part of [Plan A](#plan-a---support).__
 
 ### Sponsored Developments
 We have in the past accepted money in order to implement specific ZAP developments.
@@ -140,7 +140,7 @@ __Conclusion: We will be available for Consultancy as part of [Plan A](#plan-a--
 
 ### Licensing
 
-We know that a significant number of companies[/third-party-services/] use ZAP to provide online commercial services.
+We know that a significant number of [companies](/third-party-services/) use ZAP to provide online commercial services.
 This is permitted by the Apache v2 licence under which the majority of the ZAP code base has been released.
 While some of the smaller companies have been supporting ZAP, the majority of the larger companies have either never supported ZAP or have not done so recently.
 
@@ -208,7 +208,7 @@ The first thing we are going to try is offering professional services, including
 * Sponsored Developments
 * Consultancy
 
-While we do not expect a very fast take up of these services we do want to see that there is enough initial takeup to give us confidence that this could provide the funding we need.
+While we do not expect a very fast take-up of these services we do want to see that there is enough initial take-up to give us confidence that this could provide the funding we need.
 
 If we have not had enough interest in these services within 3 months then we will start planning for Plan B *in addition* to Plan A. 
 
@@ -225,7 +225,7 @@ We understand that there is a danger that companies may just not update to using
 If we go down this route then we are likely to charge for the ZAP commercial licence on a sliding scale based on company size.
 The most expensive licence for very large companies is still likely to be significantly less than the cost to them of maintaining and enhancing ZAP themselves.
 
-As noted above we will only be considering this option if there has been minimal takeup of the services in Plan A after 3 months.
+As noted above we will only be considering this option if there has been minimal take-up of the services in Plan A after 3 months.
 We would expect the planning and associated changes to take another 3 months, so the licensing changes are at least 6 months away. 
 
 If this option looks likely then we will publish another blog post which will go into this in more depth, but in the meantime this is something we would like your feedback on ASAP.

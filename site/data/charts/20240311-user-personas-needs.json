@@ -1,0 +1,12 @@
+{
+  "title": "How well does ZAP meet your current needs in your role?",
+  "description": "",
+  "data": [
+    ["Grade", "Answers"],
+    ["Poorly", 12],
+    ["Insufficiently", 17],
+    ["Average", 89],
+    ["Well", 142],
+    ["Very Well", 121]
+  ]
+}
