@@ -4,7 +4,6 @@ title: Community
 layout: group-links
 aliases:
   - /get-involved/
-  - /support/
 groups:
   - header: 'About ZAP'
     links:
@@ -15,6 +14,10 @@ groups:
       - name: 'Team'
         link: /docs/team/
         desc: the key people working on ZAP right now
+
+      - name: 'Support'
+        link: /support/
+        desc: how the ZAP team can support you, and how you can support ZAP
 
       - name: 'Roadmap'
         link: /docs/roadmap/
