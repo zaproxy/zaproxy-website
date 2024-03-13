@@ -159,9 +159,9 @@
   status: release
   infoUrl: /docs/desktop/addons/call-home/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.10.0/callhome-release-0.10.0.zap
-  date: 2023-11-03
-  version: 0.10.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.11.0/callhome-release-0.11.0.zap
+  date: 2024-03-13
+  version: 0.11.0
 - id: client
   name: Client Side Integration
   description: Exposes client (browser) side information in ZAP using Firefox and
@@ -814,9 +814,9 @@
   status: release
   infoUrl: /docs/desktop/addons/quick-start/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v43/quickstart-release-43.zap
-  date: 2023-10-12
-  version: 43
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v44/quickstart-release-44.zap
+  date: 2024-03-13
+  version: 44
 - id: reflect
   name: Reflect
   description: Finds reflected parameters
@@ -854,9 +854,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.29.0/reports-release-0.29.0.zap
-  date: 2024-02-12
-  version: 0.29.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.30.0/reports-release-0.30.0.zap
+  date: 2024-03-13
+  version: 0.30.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
@@ -1066,9 +1066,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v74/webdriverlinux-release-74.zap
-  date: 2024-03-08
-  version: 74
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v75/webdriverlinux-release-75.zap
+  date: 2024-03-13
+  version: 75
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1076,9 +1076,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v74/webdrivermacos-release-74.zap
-  date: 2024-03-08
-  version: 74
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v75/webdrivermacos-release-75.zap
+  date: 2024-03-13
+  version: 75
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1086,9 +1086,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v74/webdriverwindows-release-74.zap
-  date: 2024-03-08
-  version: 74
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v75/webdriverwindows-release-75.zap
+  date: 2024-03-13
+  version: 75
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.

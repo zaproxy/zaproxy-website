@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: callhome
-    version: 0.10.0
+    version: 0.11.0
 ---
 
 # Call Home
