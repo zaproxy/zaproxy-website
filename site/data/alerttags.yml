@@ -166,6 +166,9 @@ CWE-942:
 CWE-943:
   link: https://cwe.mitre.org/data/definitions/943.html
 
+CWE-97:
+  link: https://cwe.mitre.org/data/definitions/97.html
+
 CWE-98:
   link: https://cwe.mitre.org/data/definitions/98.html
 
