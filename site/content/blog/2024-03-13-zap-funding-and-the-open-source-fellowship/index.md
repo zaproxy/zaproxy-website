@@ -30,7 +30,7 @@ Over the last few years we have struggled to get enough funding for ZAP, and the
 The withdrawal of the Linux Foundation funding did put ZAP in a very precarious position.
 
 However, I am delighted to be able to announce that ZAP is now sponsored by the 
-__[Crash Override Open Source Fellowship](https://crashoverride.com/open-source?zap=web)__!
+__[Crash Override](https://crashoverride.com?zap=web) Open Source Fellowship__!
 This means that both [myself](/docs/team/psiinon/) and [Ricardo](/docs/team/thc202) are able to spend 80% of our time working on ZAP for the next 2 years.
 Not only that, but the remaining 20% of our time will be spent on other open source developments, some of which will directly benefit ZAP!
 
@@ -38,7 +38,7 @@ The sponsorship does not change anything to do with the governance of the projec
 
 ##### This is an amazing investment in ZAP and one that saves the ZAP project from potential closure.
 
-For more details see [https://crashoverride.com/open-source](https://crashoverride.com/open-source?zap=web)
+For more details see [https://crashoverride.com](https://crashoverride.com?zap=web)
 
 ## Helping ZAP Thrive
 
@@ -75,7 +75,7 @@ __Conclusion: We will not be accepting donations directly at this stage.__
 
 I have relied on sponsorship for funding my work on ZAP since 2012.
 
-As explained above both myself and Ricardo are now sponsored by the [Crash Override Open Source Fellowship](https://crashoverride.com/open-source?zap=web).
+As explained above both myself and Ricardo are now sponsored by the [Crash Override Open Source Fellowship](https://crashoverride.com?zap=web).
 We have not been able to get anyone else sponsored on ZAP since the project started, so this is similar to (large) donations.
 
 ### Grants
