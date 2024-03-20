@@ -2,7 +2,7 @@
 
 main:
   - name: 'Crash Override Open Source Fellowship'
-    link: https://crashoverride.com/open-source
+    link: https://crashoverride.com/open-source?zap=web
     logo: /img/supporters/co-osf.png
     notes: Sponsor Simon and Ricardo's work on ZAP
 

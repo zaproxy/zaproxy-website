@@ -9,7 +9,7 @@ ZAP is a complex and ambitious non-profit project. Commercial companies that mai
 
 ### Main Sponsor
 
-ZAP development is supported by the [Crash Override Open Source Fellowship](https://crashoverride.com/open-source).
+ZAP development is supported by the [Crash Override Open Source Fellowship](https://crashoverride.com/open-source?zap=web).
 
 For more details also see associated [blog post](/blog/2024-03-13-zap-funding-and-the-open-source-fellowship/).
 
