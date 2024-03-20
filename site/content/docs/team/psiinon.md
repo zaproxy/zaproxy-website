@@ -14,7 +14,7 @@ Simon released ZAP in 2010 and has been working on it ever since.
 
 #### Sponsor
 
-Simon's work on ZAP is sponsored by [The Crash Override Open Source Fellowship](https://crashoverride.com/open-source).
+Simon's work on ZAP is sponsored by [The Crash Override Open Source Fellowship](https://crashoverride.com/open-source?zap=web).
 
 #### Expertise
 
