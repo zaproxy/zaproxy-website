@@ -38,7 +38,7 @@ The sponsorship does not change anything to do with the governance of the projec
 
 ##### This is an amazing investment in ZAP and one that saves the ZAP project from potential closure.
 
-For more details see https://crashoverride.com/open-source?zap=web
+For more details see [https://crashoverride.com/open-source](https://crashoverride.com/open-source?zap=web)
 
 ## Helping ZAP Thrive
 
