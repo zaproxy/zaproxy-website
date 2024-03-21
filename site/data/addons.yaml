@@ -884,9 +884,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.32.0/retire-release-0.32.0.zap
-  date: 2024-03-04
-  version: 0.32.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.33.0/retire-release-0.33.0.zap
+  date: 2024-03-21
+  version: 0.33.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -1066,9 +1066,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v75/webdriverlinux-release-75.zap
-  date: 2024-03-13
-  version: 75
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v76/webdriverlinux-release-76.zap
+  date: 2024-03-21
+  version: 76
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1076,9 +1076,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v75/webdrivermacos-release-75.zap
-  date: 2024-03-13
-  version: 75
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v76/webdrivermacos-release-76.zap
+  date: 2024-03-21
+  version: 76
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1086,9 +1086,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v75/webdriverwindows-release-75.zap
-  date: 2024-03-13
-  version: 75
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v76/webdriverwindows-release-76.zap
+  date: 2024-03-21
+  version: 76
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
