@@ -4,4 +4,11 @@ updates:
   directory: "/"
   schedule:
     interval: daily
-  open-pull-requests-limit: 10
+  groups:
+    dependencies:
+      applies-to: version-updates
+      update-types:
+      - "minor"
+      - "patch"
+      patterns:
+      - "*"
