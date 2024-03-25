@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: '44'
+    version: '45'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v44/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v45/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -78,7 +78,7 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: callhome
-    version: 0.11.0
+    version: 0.12.0
     licenses: ''
   - name: checker-qual
     version: 3.33.0
@@ -492,7 +492,7 @@ sbom:
     version: 3.19.6
     licenses: BSD-3-Clause
   - name: reports
-    version: 0.30.0
+    version: 0.31.0
     licenses: ''
   - name: rsyntaxtextarea
     version: 3.3.4

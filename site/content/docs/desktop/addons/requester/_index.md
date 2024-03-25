@@ -6,14 +6,14 @@ weight: 1
 cascade:
   addon:
     id: requester
-    version: 7.4.0
+    version: 7.5.0
 ---
 
 # Requester Add-on
 
 An add-on that allows to manually edit and send messages.
 
-By default it provides a [workspace tab](/docs/desktop/addons/requester/tab/) and [dialogs](/docs/desktop/addons/requester/dialogs/) for HTTP messages.
+By default it provides a [workspace tab](/docs/desktop/addons/requester/tab/) and a [dialog](/docs/desktop/addons/requester/dialogs/) for HTTP messages.
 
 Other add-ons might build on top of the provided infrastructure
 to support their own specific messages (e.g. WebSocket).

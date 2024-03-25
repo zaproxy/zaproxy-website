@@ -50,6 +50,10 @@ By default ZAP will automatically update (or add) the Host header to match the U
 
 If selected automatically regenerates Anti-CSRF tokens if any exist. Currently only supported in the message body and requires that the Anti-CSRF extension is enabled.   
 
+### ![](/docs/desktop/addons/requester/images/lowercase-header-button.png) Lowercase Header Names
+
+This will lowercase all the header names, making them compliant with HTTP/2.   
+
 ### ![](/docs/desktop/addons/requester/images/layout-tabbed.png) Request and Response tabs side by side
 
 This changes the display so that the request and response tabs are side by side.   
