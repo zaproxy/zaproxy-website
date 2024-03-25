@@ -15,6 +15,8 @@ The add-on will import WSDL files containing SOAP endpoints if they are found wh
 
 The soap job allows you to import WSDL files locally or from a URL.
 
+It is covered in the video: [ZAP Chat 11 Automation Framework Part 5 - APIs](https://youtu.be/xuP00Ri460k).
+
 ```
   - type: soap                         # SOAP WSDL import
     parameters:

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: 21.0.0
+    version: 22.0.0
 ---
 
 # SOAP Support
@@ -30,17 +30,17 @@ Operations to import a WSDL file from the local filesystem or from a URL are als
 ### Form Handler Add-on Support
 
 The SOAP add-on supports overriding default parameter values based on field names via the Form Handler add-on. For example,   
-![Form Handler Example](/docs/desktop/addons/soap-support/images/formHandlerExample.png)
-
-## Scanning
-
-The scan rules added by this add-on are:
-
-* Action Spoofing : <http://www.ws-attacks.org/index.php/SOAPAction_Spoofing>
-* XML Injection : <http://www.ws-attacks.org/index.php/XML_Injection>
+![Form Handler Example](/docs/desktop/addons/soap-support/images/formHandlerExample.png) Latest code: [SOAP Support](https://github.com/zaproxy/zap-extensions/tree/main/addOns/soap)
 
 ## Statistics
 
 This add-on maintains the following statistics:
 
 * soap.urls.added: The total number of URLs (or SOAP Actions) added from imported WSDL files.
+
+## See also
+
+|   |                                                                    |                                                                  |
+|---|--------------------------------------------------------------------|------------------------------------------------------------------|
+|   | [Alert \& Rule Details](/docs/desktop/addons/soap-support/alerts/) | for details of the Alerts and rules for the SOAP support add-on. |
+|   | [SOAP Automation](/docs/desktop/addons/soap-support/automation/)   | for information about the automation framework support.          |

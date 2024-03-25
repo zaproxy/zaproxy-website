@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: accessControl
-    version: 9.0.0
+    version: 10.0.0
 ---
 
 # Access Control Testing
@@ -18,7 +18,7 @@ attack aimed to help identify sections of a web application which are accessible
 There are two main concepts related to this add-on that should be explained: the **Access Rules** and the **testing
 procedure**.
 
-### Access Rules
+## Access Rules
 
 In order to identify potential access control issues, ZAP needs to know which parts of the web application are
 supposed to be accessed by which user. In ZAP, the name for these rules is: *Access Rules* and generally have
@@ -37,7 +37,7 @@ parent in the URL if no particular rules are defined. This means that, when conf
 rule needs to be set explicitly for an entire subtree, while for the other nodes rules are inferred. More details
 about this can be found on the Access Control [Context options](/docs/desktop/addons/access-control-testing/contextoptions/) help page.
 
-### Testing procedure
+## Testing procedure
 
 As a whole, in order to fully perform access control testing for a web application, the next steps should be
 followed:
@@ -50,6 +50,26 @@ followed:
 * in the corresponding Status Tab, the results are displayed, showing which pages were accessed successfully by which users and marking the cases where the access rules where not followed.
 
 **Note:** Access control testing is not allowed in `Safe` mode nor `Protected` if the context is not in scope.
+
+## Alerts {#alerts}
+
+The following Alerts may be raised by the add-on:
+
+### Access Control Issue - Improper Authentication {#id-10101}
+
+Insufficient Authentication occurs when a web site permits an attacker to access sensitive content or functionality without having to properly authenticate. Web-based administration tools are a good example of web sites providing access to sensitive functionality. Depending on the specific online resource, these web applications should not be directly accessible without requiring the user to properly verify their identity.
+
+Latest Code: [AccessControlScannerThread.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/accessControl/src/main/java/org/zaproxy/zap/extension/accessControl/AccessControlScannerThread.java)
+
+Alert ID: [10101](/docs/alerts/10101/).
+
+### Access Control Issue - Improper Authorization {#id-10102}
+
+Insufficient Authorization results when an application does not perform adequate authorization checks to ensure that the user is performing a function or accessing data in a manner consistent with the security policy. Authorization procedures should enforce what a user, service or application is permitted to do. When a user is authenticated to a web site, it does not necessarily mean that the user should have full access to all content and functionality.
+
+Latest Code: [AccessControlScannerThread.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/accessControl/src/main/java/org/zaproxy/zap/extension/accessControl/AccessControlScannerThread.java)
+
+Alert ID: [10102](/docs/alerts/10102/).
 
 ## API
 

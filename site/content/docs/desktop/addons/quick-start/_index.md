@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: 44.0.0
+    version: 45.0.0
 ---
 
 # Quick Start

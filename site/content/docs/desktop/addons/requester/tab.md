@@ -10,7 +10,7 @@ weight: 2
 The Requester tab in the workspace panel, next to the standard "Request" and "Response" tabs.
 
 The Requester tab acts like the [Manual
-Request Editor dialogs](/docs/desktop/addons/requester/dialogs/) but supports as many sub-tabs as you need.
+Request Editor dialog](/docs/desktop/addons/requester/dialogs/) but supports as many sub-tabs as you need.
 
 Right click on a request in any of the other ZAP tabs and select
 "Open in Requester Tab..." to open that request in a new Requester

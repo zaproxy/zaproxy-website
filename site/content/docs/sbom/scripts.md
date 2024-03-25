@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: scripts
-    version: 45.0.0
+    version: 45.1.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.0.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.1.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -312,7 +312,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.14.0
+    version: 0.15.0
     licenses: ''
   - name: objenesis
     version: '3.3'
