@@ -112,7 +112,7 @@
   type: counter
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/zaproxy/zap/db/sql/DbSQL.java
-  desc: The number of times the ZAP db has been openned
+  desc: The number of times the ZAP db has been opened
 
 - key: sqldb.<key>.calls
   scope: global
@@ -685,14 +685,14 @@
   scope: global
   type: counter
   repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanThread.java
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanTask.java
   desc: The number of requests that have not been passively scanned as they exceed the configured max body size to scan
 
 - key: stats.pscan.respBodyTooBig
   scope: global
   type: counter
   repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanThread.java
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanTask.java
   desc: The number of responses that have not been passively scanned as they exceed the configured max body size to scan
 
 - key: stats.pscan.<rule-id>.alerts
@@ -706,14 +706,14 @@
   scope: global
   type: counter
   repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanThread.java
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanTask.java
   desc: The cumulative number of milliseconds taken to run the given scan rule - from 2.11.0
 
 - key: stats.pscan.<rule-name>
   scope: global
   type: counter
   repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanThread.java
+  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanTask.java
   desc: The cumulative number of milliseconds taken to run the given scan rule - DEPRECATED - use stats.pscan.<rule-id>.time instead
 
 - key: stats.reports.error.<template-name>
@@ -742,7 +742,7 @@
   type: counter
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/StatsPassiveScanner.java
-  desc: The number of messages with response times in milliseconds the given (logerithmic) time slice (1, 2, 4, 8 etc)
+  desc: The number of messages with response times in milliseconds the given (logarithmic) time slice (1, 2, 4, 8 etc)
 
 - key: stats.script.call.<engine-name>.<type>
   scope: global
@@ -782,36 +782,36 @@
 - key: stats.spider.started
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  repo: zaproxy/zap-extensions
+  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The number of times the spider has been started - from 2.11.0
 
 - key: stats.spider.stopped
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  repo: zaproxy/zap-extensions
+  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The number of times the spider has been stopped (as opposed to completing) - from 2.11.0
 
 - key: stats.spider.time
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  repo: zaproxy/zap-extensions
+  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The total number of milliseconds the spider has run for across all scans - from 2.11.0
 
 - key: stats.spider.url.error
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  repo: zaproxy/zap-extensions
+  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The number of URLs the spider has found but failed to access - from 2.11.0
 
 - key: stats.spider.url.found
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderScan.java
+  repo: zaproxy/zap-extensions
+  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The number of URLs the spider has found and accessed - from 2.11.0
 
 - key: stats.tag.<tag-name>
