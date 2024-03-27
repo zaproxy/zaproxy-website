@@ -179,7 +179,7 @@ integrations:
     notes: OWASP Tool
  
   - name: 'Dradis'
-    link: https://dradisframework.com/ce/
+    link: https://dradis.com/ce/
     license: 'Open source community edition'
  
   - name: 'Faraday'
