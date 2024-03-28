@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.19.0
+    version: 15.20.0
 ---
 
 # Selenium
@@ -18,7 +18,7 @@ web browser.
 It adds a 'Selenium' script type - these scripts are invoked whenever selenium launches a browser,
 for example for the Ajax Spider or for manual browsing.
 
-The add-on also adds a right click option to ZAP panels that list URLs (such at the History and Sites tree)
+The add-on also adds a right click option to ZAP panels that list URLs (such as the History and Sites tree)
 which allows you to open the selected URL in any of the supported browsers. The Selenium scripts have access to the
 launched browser and can interact with it, for example, run JavaScript scripts, access URLs, fill forms, click buttons...
 
