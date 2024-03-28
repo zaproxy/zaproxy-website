@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v64/ascanrules-release-64.zap
-  date: 2024-03-25
-  version: 64
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v65/ascanrules-release-65.zap
+  date: 2024-03-28
+  version: 65
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -47,9 +47,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v46/ascanrulesAlpha-alpha-46.zap
-  date: 2024-01-26
-  version: 46
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v47/ascanrulesAlpha-alpha-47.zap
+  date: 2024-03-28
+  version: 47
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta status Active Scanner rules
@@ -57,9 +57,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v52/ascanrulesBeta-beta-52.zap
-  date: 2024-03-25
-  version: 52
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v53/ascanrulesBeta-beta-53.zap
+  date: 2024-03-28
+  version: 53
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.36.0/automation-beta-0.36.0.zap
-  date: 2024-03-25
-  version: 0.36.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.37.0/automation-beta-0.37.0.zap
+  date: 2024-03-28
+  version: 0.37.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -784,9 +784,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v56/pscanrules-release-56.zap
-  date: 2024-02-16
-  version: 56
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v57/pscanrules-release-57.zap
+  date: 2024-03-28
+  version: 57
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -934,9 +934,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.19.0/selenium-release-15.19.0.zap
-  date: 2024-02-22
-  version: 15.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.20.0/selenium-release-15.20.0.zap
+  date: 2024-03-28
+  version: 15.20.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -1056,9 +1056,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.32.0/wappalyzer-release-21.32.0.zap
-  date: 2024-03-04
-  version: 21.32.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.33.0/wappalyzer-release-21.33.0.zap
+  date: 2024-03-28
+  version: 21.33.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
@@ -1066,9 +1066,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v76/webdriverlinux-release-76.zap
-  date: 2024-03-21
-  version: 76
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v77/webdriverlinux-release-77.zap
+  date: 2024-03-28
+  version: 77
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1076,9 +1076,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v76/webdrivermacos-release-76.zap
-  date: 2024-03-21
-  version: 76
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v77/webdrivermacos-release-77.zap
+  date: 2024-03-28
+  version: 77
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1086,9 +1086,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v76/webdriverwindows-release-76.zap
-  date: 2024-03-21
-  version: 76
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v77/webdriverwindows-release-77.zap
+  date: 2024-03-28
+  version: 77
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
