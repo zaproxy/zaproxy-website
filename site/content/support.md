@@ -17,7 +17,8 @@ For more details also see associated [blog post](/blog/2024-03-13-zap-funding-an
 
 While the Crash Override Open Source Fellowship support means that ZAP can survive, we still need to find a long term independent and scalable funding model in order for ZAP to thrive.
 
-The following commercial support options now are available.
+The following commercial support options are now available. These are provided by 
+[ZAProxy Ltd](https://www.zaproxy.com) a non profit dedicated to raising money for ZAP.
 
 All of the money raised for any of these services will help fund ZAP development - ZAP is a non-profit open source project.
 
@@ -33,7 +34,7 @@ Support packages are designed for supporting ZAP existing features. They will gi
 
 All companies who purchase support packages will get more visibility and input into the ZAP roadmap.
 
-[Get in touch](mailto:zaproxy-admin@googlegroups.com) to purchase one of these packages or if you would like additional support.
+[Get in touch](mailto:support@zaproxy.com) to purchase one of these packages or if you would like additional support.
 
 ##### Community Support
 
@@ -50,7 +51,7 @@ Developments not on the roadmap can also be sponsored, but the cost will increas
 
 We are also available to implement ZAP related features that are company specific, and these developments can be closed source. However the cost will again increase. 
 
-For more details [get in touch](mailto:zaproxy-admin@googlegroups.com).
+For more details [get in touch](mailto:support@zaproxy.com).
 
 #### Consultancy
 
@@ -64,7 +65,7 @@ This can be for anything ZAP related, for example:
 
 The consultancy rate will depend on the work to be performed, and will be per day with a discount for a full week's work.
 
-For more details [get in touch](mailto:zaproxy-admin@googlegroups.com).
+For more details [get in touch](mailto:support@zaproxy.com).
 
 #### Donations
 
