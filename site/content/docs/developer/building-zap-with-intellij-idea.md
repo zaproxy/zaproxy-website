@@ -28,13 +28,19 @@ echo "org.gradle.jvmargs=-Xmx4g -XX:MaxMetaspaceSize=1g" >> %USERPROFILE%\.gradl
 
 ## Import the ZAP Repositories
 
-On the welcome screen of IntelliJ IDEA, click on 'New Project'. In the New Project window, select 'Empty Project' and click on Next. Choose a Project name (e.g. "ZAP Development Environment") and pick a location of your choice. Click on Finish.  
+On the welcome screen of IntelliJ IDEA, click on ‘New Project’.  
 
-![IntelliJ New Project](/img/docs/developer/intellij-new-project.png)
+![IntelliJ Welcome Window](/img/docs/developer/intellij-welcome-window.png)
 
-In the 'Project Structure' window that pops up next, pick an installed JDK.  
+Then, in the ‘New Project’ window, with ‘Empty Project’ as automatically selected, choose a Project name (e.g. “ZAP Development Environment”) and pick a location of your choice. (No need to tick the checkbox ‘Create Git repository’ as the ZAP projects you downloaded are already Git repositories.)  Click on ‘Create’.
 
-![Pick installed JDK](/img/docs/developer/intellij-jdk.png)
+![IntelliJ New Empty Project](/img/docs/developer/intellij-new-empty-project.png)
+
+After creating the empty project, click the settings gear icon on the upper right and go to ‘Project Structure’. On the next window that pops up, pick an installed SDK.  
+
+![IntelliJ Project Structure from Settings Menu](/img/docs/developer/intellij-settings-project-structure.png)
+
+![Pick installed SDK](/img/docs/developer/intellij-sdk.png)
 
 In the same window, select the 'Modules' tab under 'Project Settings', click on the ➕ button, and select 'Import Module'.  
 
