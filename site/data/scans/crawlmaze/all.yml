@@ -359,7 +359,7 @@ details:
 - path: /test/javascript/interactive/js-post.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
+  ajax: Pass
   client: FAIL
 - path: /test/javascript/interactive/js-put.found
   scheme: https
@@ -379,7 +379,7 @@ details:
 - path: /test/javascript/interactive/multi-step-request-event-attribute.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
+  ajax: Pass
   client: FAIL
 - path: /test/javascript/interactive/multi-step-request-event-listener-div-dom.found
   scheme: https
@@ -399,7 +399,7 @@ details:
 - path: /test/javascript/interactive/multi-step-request-event-listener.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
+  ajax: Pass
   client: FAIL
 - path: /test/javascript/interactive/multi-step-request-redefine-event-attribute.found
   scheme: https
@@ -424,7 +424,7 @@ details:
 - path: /test/javascript/interactive/two-listeners-second.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
+  ajax: Pass
   client: FAIL
 - path: /test/javascript/misc/automatic-post.found
   scheme: https
@@ -457,9 +457,9 @@ details:
   ajax: FAIL
   client: FAIL
 tests: 91
-passes: 75
+passes: 79
 standardPasses: 61
-ajaxPasses: 32
+ajaxPasses: 36
 clientPasses: 8
-fails: 16
-score: 82%
+fails: 12
+score: 87%
