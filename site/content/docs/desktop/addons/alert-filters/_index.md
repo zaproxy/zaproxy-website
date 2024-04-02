@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: alertFilters
-    version: 19.0.0
+    version: 20.0.0
 ---
 
 # Alert Filters

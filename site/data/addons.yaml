@@ -17,9 +17,9 @@
   status: release
   infoUrl: /docs/desktop/addons/alert-filters/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v19/alertFilters-release-19.zap
-  date: 2023-11-16
-  version: 19
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v20/alertFilters-release-20.zap
+  date: 2024-04-02
+  version: 20
 - id: allinonenotes
   name: All In One Notes
   description: A simple extension to view all notes in one pane.
@@ -774,9 +774,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/postman-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.2.0/postman-alpha-0.2.0.zap
-  date: 2023-10-12
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.3.0/postman-alpha-0.3.0.zap
+  date: 2024-04-02
+  version: 0.3.0
 - id: pscanrules
   name: Passive scanner rules
   description: The release status Passive Scanner rules
@@ -884,9 +884,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.33.0/retire-release-0.33.0.zap
-  date: 2024-03-21
-  version: 0.33.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.34.0/retire-release-0.34.0.zap
+  date: 2024-04-02
+  version: 0.34.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -934,9 +934,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.20.0/selenium-release-15.20.0.zap
-  date: 2024-03-28
-  version: 15.20.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.21.0/selenium-release-15.21.0.zap
+  date: 2024-04-02
+  version: 15.21.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.

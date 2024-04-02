@@ -13,6 +13,8 @@ This add-on supports the Automation Framework.
 
 The alertFilter job allows you to define global and context specific alert filters.
 
+It is covered in the video: [ZAP Chat 08 Automation Framework Part 2 - Environment](https://youtu.be/1fcpU54N-mA).
+
 ```
   - type: alertFilter                  # Used to change the risk levels of alerts
     parameters:
