@@ -6,12 +6,14 @@ weight: 1
 cascade:
   addon:
     id: postman
-    version: 0.2.0
+    version: 0.3.0
 ---
 
 # Postman Support
 
-This add-on will allow you to import Postman collections through the UI, importing through the API and command line is under development.
+This add-on will allow you to import Postman collections through the UI, importing through the API and command line is under development.   
+
+It also supports the [Automation Framework](/docs/desktop/addons/postman-support/automation/).
 
 ## UI
 
