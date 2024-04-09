@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/authentication-methods/
 ---
 Authentication Methods are the means by which ZAP actually authenticates to a web app.
 

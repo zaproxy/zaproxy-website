@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/make-your-life-easier/
 ---
 
 Authentication is a key way of restricting access to an app.

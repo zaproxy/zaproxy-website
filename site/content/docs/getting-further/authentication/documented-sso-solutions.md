@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/documented-sso-solutions/
 ---
 
 The following SSO providers have documented solutions for automation.

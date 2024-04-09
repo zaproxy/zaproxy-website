@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/auto-detection/
 ---
 ZAP has options for auto-detecting all of the different parts of authentication that it requires.
 If they work for your apps then it will make your life considerably easier, so this is the best place for you to start.

@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/concepts/
 ---
 
 These are the concepts that you will need to understand in order to configure authentication in ZAP.

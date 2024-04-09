@@ -1,0 +1,29 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<section class="bolt-header">
+    <div class="wrapper py-20">
+      <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+
+  <section>
+    <div class="wrapper py-70">
+      {{ if .Params.addBreadcrumbs }}{{partial "crumbs.html" . }}{{ end }}
+      <h3>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40px"><g data-name="Layer 2"><circle cx="20" cy="20" r="20" fill="#4389ff"/>
+        <style>
+          .heavy {
+            font: bold 30px sans-serif;
+            fill: white;
+          }
+        </style>
+        <text x="15" y="30"  class="heavy">!</text></g></svg>
+        Action: {{ .Params.action }}
+      </h3>
+      {{ .Content }}
+    </div>
+  </section>
+
+{{ end }}
