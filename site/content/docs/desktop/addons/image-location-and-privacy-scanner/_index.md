@@ -6,14 +6,14 @@ weight: 1
 cascade:
   addon:
     id: imagelocationscanner
-    version: 4.0.0
+    version: 5.0.0
 ---
 
 # Image Location and Privacy Scanner
 
 The following passive scan rule is included in this add-on:
 
-## Image Location and Privacy Scanner
+## Image Location and Privacy Scanner {#id-10103}
 
 Passively scans for GPS location and other privacy-related exposures in images during normal security assessments of websites. Image Location and Privacy Scanner (ILS) assists in situations where end users may post profile images and possibly give away their home location, e.g. a dating site or children's chatroom.
 
@@ -25,3 +25,6 @@ Some Notes:
 
 * Before ZAP 2.7.x, you must manually enabled image scanning with: Tools → Options → Display → Process images in the HTTP requests/responses pane.
 * If you have images disabled in Global Exclude URL, then any passive image scanner, like ILS, will be unable to see the images and report on privacy issues.
+
+Latest code: [imagelocationscanner](https://github.com/zaproxy/zap-extensions/tree/main/addOns/imagelocationscanner)   
+Alert ID: [10103](/docs/alerts/10103/).

@@ -1,15 +1,15 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: GraalVM JavaScript Add-on SBOM
+title: Image Location and Privacy Scanner Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: graaljs
-    version: 0.6.0
+    id: imagelocationscanner
+    version: '5'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.6.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v5/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -35,9 +35,6 @@ sbom:
   - name: auto-value-annotations
     version: '1.9'
     licenses: Apache-2.0
-  - name: automation
-    version: 0.38.0
-    licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
     licenses: Bouncy Castle Licence
@@ -52,9 +49,6 @@ sbom:
     licenses: Bouncy Castle Licence
   - name: brotli4j
     version: 1.16.0
-    licenses: Apache-2.0
-  - name: byte-buddy
-    version: 1.14.13
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.14.9
@@ -113,12 +107,6 @@ sbom:
   - name: dataflow-errorprone
     version: 3.34.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
-  - name: delight-graaljs-sandbox
-    version: 0.1.2
-    licenses: Apache-2.0, MIT, LGPL
-  - name: delight-nashorn-sandbox
-    version: 0.1.27
-    licenses: Apache-2.0, MIT, LGPL
   - name: error_prone_annotation
     version: 2.23.0
     licenses: Apache-2.0
@@ -146,9 +134,6 @@ sbom:
   - name: formhandler
     version: 6.6.0
     licenses: ''
-  - name: graal-sdk
-    version: 22.3.3
-    licenses: UPL-1.0
   - name: guava
     version: 32.1.1-jre
     licenses: Apache-2.0
@@ -182,9 +167,6 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
-  - name: icu4j
-    version: '71.1'
-    licenses: Unicode/ICU License
   - name: jackson-annotations
     version: 2.16.0
     licenses: Apache-2.0
@@ -230,15 +212,6 @@ sbom:
   - name: jgrapht-core
     version: 0.9.0
     licenses: LGPL-2.1-only, EPL-1.0
-  - name: js
-    version: 22.3.3
-    licenses: UPL-1.0, MIT
-  - name: js-beautify
-    version: 1.6.12
-    licenses: MIT
-  - name: js-scriptengine
-    version: 22.3.3
-    licenses: UPL-1.0
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
@@ -280,6 +253,9 @@ sbom:
     licenses: Apache-2.0
   - name: log4j-slf4j-impl
     version: 2.20.0
+    licenses: Apache-2.0
+  - name: metadata-extractor
+    version: 2.13.0
     licenses: Apache-2.0
   - name: mockito-core
     version: 5.7.0
@@ -362,21 +338,12 @@ sbom:
   - name: protobuf-java
     version: 3.19.6
     licenses: BSD-3-Clause
-  - name: regex
-    version: 22.3.3
-    licenses: UPL-1.0
   - name: rsyntaxtextarea
     version: 3.3.4
     licenses: BSD-3-Clause
-  - name: scripts
-    version: 45.2.0
-    licenses: ''
   - name: service
     version: 1.16.0
     licenses: Apache-2.0
-  - name: slf4j-api
-    version: 1.7.25
-    licenses: MIT
   - name: slf4j-api
     version: 1.7.36
     licenses: MIT
@@ -395,12 +362,12 @@ sbom:
   - name: testutils
     version: unspecified
     licenses: ''
-  - name: truffle-api
-    version: 22.3.3
-    licenses: UPL-1.0
   - name: woodstox-core
     version: 6.5.1
     licenses: Apache-2.0
+  - name: xmpcore
+    version: 6.0.6
+    licenses: BSD-4-Clause
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1

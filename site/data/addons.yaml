@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.37.0/automation-beta-0.37.0.zap
-  date: 2024-03-28
-  version: 0.37.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.38.0/automation-beta-0.38.0.zap
+  date: 2024-04-11
+  version: 0.38.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -191,9 +191,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.23.0/commonlib-release-1.23.0.zap
-  date: 2024-03-25
-  version: 1.23.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.24.0/commonlib-release-1.24.0.zap
+  date: 2024-04-11
+  version: 1.24.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -399,9 +399,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graalvm-javascript/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.5.0/graaljs-alpha-0.5.0.zap
-  date: 2023-10-12
-  version: 0.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.6.0/graaljs-alpha-0.6.0.zap
+  date: 2024-04-11
+  version: 0.6.0
 - id: graphql
   name: GraphQL Support
   description: Inspect and attack GraphQL endpoints.
@@ -419,9 +419,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/groovy-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/groovy-v3.1.0/groovy-beta-3.1.0.zap
-  date: 2021-10-07
-  version: 3.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/groovy-v3.2.0/groovy-beta-3.2.0.zap
+  date: 2024-04-11
+  version: 3.2.0
 - id: help
   name: Help - English
   description: English version of the ZAP help file.
@@ -579,9 +579,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/image-location-and-privacy-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v4/imagelocationscanner-beta-4.zap
-  date: 2022-09-23
-  version: 4
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v5/imagelocationscanner-beta-5.zap
+  date: 2024-04-11
+  version: 5
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such
@@ -630,9 +630,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/python-scripting/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v14/jython-beta-14.zap
-  date: 2023-12-19
-  version: 14
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/jython-v15/jython-beta-15.zap
+  date: 2024-04-11
+  version: 15
 - id: kotlin
   name: Kotlin Support
   description: Allows Kotlin to be used for ZAP scripting
@@ -924,9 +924,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.1.0/scripts-release-45.1.0.zap
-  date: 2024-03-25
-  version: 45.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.2.0/scripts-release-45.2.0.zap
+  date: 2024-04-11
+  version: 45.2.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -1056,9 +1056,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.33.0/wappalyzer-release-21.33.0.zap
-  date: 2024-03-28
-  version: 21.33.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.34.0/wappalyzer-release-21.34.0.zap
+  date: 2024-04-11
+  version: 21.34.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
@@ -1066,9 +1066,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v78/webdriverlinux-release-78.zap
-  date: 2024-04-05
-  version: 78
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v79/webdriverlinux-release-79.zap
+  date: 2024-04-11
+  version: 79
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1076,9 +1076,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v78/webdrivermacos-release-78.zap
-  date: 2024-04-05
-  version: 78
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v79/webdrivermacos-release-79.zap
+  date: 2024-04-11
+  version: 79
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1086,9 +1086,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v78/webdriverwindows-release-78.zap
-  date: 2024-04-05
-  version: 78
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v79/webdriverwindows-release-79.zap
+  date: 2024-04-11
+  version: 79
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
@@ -1106,6 +1106,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v43/zest-beta-43.zap
-  date: 2023-12-19
-  version: 43
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v44/zest-beta-44.zap
+  date: 2024-04-11
+  version: 44

@@ -1,16 +1,28 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: GraalVM JavaScript Add-on SBOM
+title: Groovy Support Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: graaljs
-    version: 0.6.0
+    id: groovy
+    version: 3.2.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.6.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/groovy-v3.2.0/bom.json
   components:
+  - name: ant
+    version: 1.10.12
+    licenses: Apache-2.0
+  - name: ant-antlr
+    version: 1.10.12
+    licenses: Apache-2.0
+  - name: ant-junit
+    version: 1.10.12
+    licenses: Apache-2.0
+  - name: ant-launcher
+    version: 1.10.12
+    licenses: Apache-2.0
   - name: aopalliance
     version: '1.0'
     licenses: Public Domain
@@ -113,12 +125,6 @@ sbom:
   - name: dataflow-errorprone
     version: 3.34.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
-  - name: delight-graaljs-sandbox
-    version: 0.1.2
-    licenses: Apache-2.0, MIT, LGPL
-  - name: delight-nashorn-sandbox
-    version: 0.1.27
-    licenses: Apache-2.0, MIT, LGPL
   - name: error_prone_annotation
     version: 2.23.0
     licenses: Apache-2.0
@@ -146,9 +152,72 @@ sbom:
   - name: formhandler
     version: 6.6.0
     licenses: ''
-  - name: graal-sdk
-    version: 22.3.3
-    licenses: UPL-1.0
+  - name: groovy
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-ant
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-astbuilder
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-cli-picocli
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-console
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-datetime
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-docgenerator
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-groovydoc
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-groovysh
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-jmx
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-json
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-jsr223
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-macro
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-nio
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-servlet
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-sql
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-swing
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-templates
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-test
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-test-junit5
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-testng
+    version: 3.0.14
+    licenses: Apache-2.0
+  - name: groovy-xml
+    version: 3.0.14
+    licenses: Apache-2.0
   - name: guava
     version: 32.1.1-jre
     licenses: Apache-2.0
@@ -157,6 +226,9 @@ sbom:
     licenses: Apache-2.0
   - name: hamcrest
     version: '2.2'
+    licenses: BSD-3-Clause
+  - name: hamcrest-core
+    version: '1.3'
     licenses: BSD-3-Clause
   - name: hamcrest-core
     version: '2.2'
@@ -182,9 +254,6 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
-  - name: icu4j
-    version: '71.1'
-    licenses: Unicode/ICU License
   - name: jackson-annotations
     version: 2.16.0
     licenses: Apache-2.0
@@ -218,8 +287,14 @@ sbom:
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
+  - name: javaparser-core
+    version: 3.24.2
+    licenses: GNU Lesser General Public License, Apache-2.0
   - name: javax.inject
     version: '1'
+    licenses: Apache-2.0
+  - name: jcommander
+    version: '1.78'
     licenses: Apache-2.0
   - name: jericho-html
     version: '3.4'
@@ -230,29 +305,35 @@ sbom:
   - name: jgrapht-core
     version: 0.9.0
     licenses: LGPL-2.1-only, EPL-1.0
-  - name: js
-    version: 22.3.3
-    licenses: UPL-1.0, MIT
-  - name: js-beautify
-    version: 1.6.12
+  - name: jline
+    version: 2.14.6
+    licenses: BSD-4-Clause
+  - name: jquery
+    version: 3.5.1
     licenses: MIT
-  - name: js-scriptengine
-    version: 22.3.3
-    licenses: UPL-1.0
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
+  - name: junit
+    version: 4.13.2
+    licenses: EPL-1.0
   - name: junit-jupiter
     version: 5.10.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
     version: 5.10.1
     licenses: EPL-2.0
+  - name: junit-jupiter-api
+    version: 5.9.1
+    licenses: EPL-2.0
   - name: junit-jupiter-engine
     version: 5.10.1
+    licenses: EPL-2.0
+  - name: junit-jupiter-engine
+    version: 5.9.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
     version: 5.10.1
@@ -260,11 +341,20 @@ sbom:
   - name: junit-platform-commons
     version: 1.10.1
     licenses: EPL-2.0
+  - name: junit-platform-commons
+    version: 1.9.1
+    licenses: EPL-2.0
   - name: junit-platform-engine
     version: 1.10.1
     licenses: EPL-2.0
+  - name: junit-platform-engine
+    version: 1.9.1
+    licenses: EPL-2.0
   - name: junit-platform-launcher
     version: 1.10.1
+    licenses: EPL-2.0
+  - name: junit-platform-launcher
+    version: 1.9.1
     licenses: EPL-2.0
   - name: log4j-1.2-api
     version: 2.20.0
@@ -342,6 +432,9 @@ sbom:
     version: '3.3'
     licenses: Apache-2.0
   - name: opentest4j
+    version: 1.2.0
+    licenses: Apache-2.0
+  - name: opentest4j
     version: 1.3.0
     licenses: Apache-2.0
   - name: org.jacoco.agent
@@ -359,12 +452,15 @@ sbom:
   - name: pcollections
     version: 3.1.4
     licenses: MIT
+  - name: picocli
+    version: 4.6.3
+    licenses: Apache-2.0
   - name: protobuf-java
     version: 3.19.6
     licenses: BSD-3-Clause
-  - name: regex
-    version: 22.3.3
-    licenses: UPL-1.0
+  - name: qdox
+    version: 1.12.1
+    licenses: Apache-2.0
   - name: rsyntaxtextarea
     version: 3.3.4
     licenses: BSD-3-Clause
@@ -375,7 +471,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: slf4j-api
-    version: 1.7.25
+    version: 1.7.32
     licenses: MIT
   - name: slf4j-api
     version: 1.7.36
@@ -392,12 +488,15 @@ sbom:
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
+  - name: testng
+    version: '7.5'
+    licenses: Apache-2.0
   - name: testutils
     version: unspecified
     licenses: ''
-  - name: truffle-api
-    version: 22.3.3
-    licenses: UPL-1.0
+  - name: websocket
+    version: '31'
+    licenses: ''
   - name: woodstox-core
     version: 6.5.1
     licenses: Apache-2.0
