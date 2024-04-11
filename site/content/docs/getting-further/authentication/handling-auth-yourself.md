@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/handling-auth-yourself/
 ---
 
 If you can generate an authentication token (e.g. to use in a header or cookie) and you know that your app

@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/manual-auth/
 ---
 
 If you are just performing manual testing then authentication is generally easier.

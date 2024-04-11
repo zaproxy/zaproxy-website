@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/diagnosing-auth-problems/
 ---
 
 If you ask a question related to authentication on one of the ZAP forums then you will be directed here.

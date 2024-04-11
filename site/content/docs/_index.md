@@ -39,9 +39,9 @@ groups:
         link: /docs/automate/
         desc: the various options for automating ZAP 
     
-      - name: 'Authenticate'
+      - name: 'Authentication Decision Tree'
         link: /docs/authentication/
-        desc: everything you need to know about authentication in ZAP 
+        desc: the best place to start if you need ZAP to authenticate to your app 
     
       - name: 'Docker'
         link: /docs/docker/

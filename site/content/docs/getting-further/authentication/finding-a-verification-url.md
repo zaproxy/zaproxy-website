@@ -4,6 +4,8 @@ tags:
 - authentication
 - guide
 type: page
+aliases:
+  /docs/authentication/finding-a-verification-url/
 ---
 
 If you need to set up ZAP to handle authentication then you really need to find a suitable verification URL in your app.
