@@ -16,9 +16,11 @@ details:
 - path: GET http://localhost:3000/api/Challenges/(name)
   ajax: Pass
 - path: GET http://localhost:3000/api/Feedbacks/
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/api/Quantitys/
   ajax: Pass
+- path: GET http://localhost:3000/api/SecurityQuestions/
+  ajax: New
 - path: GET http://localhost:3000/assets/i18n/en.json
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/favicon_js.ico
@@ -26,19 +28,19 @@ details:
 - path: GET http://localhost:3000/assets/public/images/JuiceShop_Logo.png
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/carousel/1.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/2.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/3.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/4.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/5.png
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/6.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/7.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/hackingInstructor.png
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/apple_juice.jpg
@@ -82,7 +84,7 @@ details:
 - path: GET http://localhost:3000/rest/admin/application-version
   ajax: Pass
 - path: GET http://localhost:3000/rest/captcha/
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/rest/languages
   ajax: Pass
 - path: GET http://localhost:3000/rest/products/1/reviews
@@ -90,7 +92,7 @@ details:
 - path: GET http://localhost:3000/rest/products/search(q)
   ajax: Pass
 - path: GET http://localhost:3000/rest/user/whoami
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/runtime.js
   ajax: Pass
 - path: GET http://localhost:3000/socket.io/(EIO,sid,t,transport)
@@ -102,12 +104,14 @@ details:
 - path: GET http://localhost:3000/styles.css
   ajax: Pass
 - path: GET http://localhost:3000/tutorial.js
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/vendor.js
   ajax: Pass
+- path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(1)
+  ajax: New
 - path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
   ajax: Pass
 tests: 53
-passes: 48
-fails: 5
-score: 91%
+passes: 37
+fails: 16
+score: 70%
