@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: 45.0.0
+    version: 46.0.0
 ---
 
 # Quick Start
@@ -30,8 +30,14 @@ The traditional spider explores the application by finding links in HTML pages. 
 
 ### Use ajax spider
 
-The ajax spider explores the application by launching the browser you have chosen and clicking on the links it finds. Is is slower than the traditional spider but handles JavaScript well.  
-This option is only shown if the ajax spider add-on is installed. If it is not available then you can download and install it for free from the ZAP Marketplace.
+The ajax spider explores the application by launching the browser you have chosen and clicking on the links it finds. It is slower than the traditional spider but handles JavaScript well.  
+This option is only shown if the ajax spider add-on is installed. If it is not available then you can download and install it for free from the ZAP Marketplace.   
+
+The options available are:
+
+* Never: you will then need to use the traditional spider
+* If Modern: will run if ZAP identifies the target as a modern app - for this you need to use the traditional spider
+* Always: if you choose this option then you do not need to run the traditional spider
 
 ## Manual Explore
 

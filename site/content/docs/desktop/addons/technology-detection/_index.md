@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.34.0
+    version: 21.35.0
 ---
 
 # Technology Detection
@@ -43,4 +43,4 @@ Technology data is available to reports via the [WappalyzerJobResultData](https:
 |---|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 |   | [Enthec Webappanalyzer](https://github.com/enthec/webappanalyzer) | This project is a continuation of the iconic Wappalyzer that went private in August 2023. |
 |   | <https://www.wappalyzer.com/>                                     | The Wappalyzer Homepage                                                                   |
-|   | https://github.com/wappalyzer/wappalyzer                          | As of early August 2023 the The Wappalyzer Repository is no longer public.                |
+|   | https://github.com/wappalyzer/wappalyzer                          | As of early August 2023 the Wappalyzer Repository is no longer public.                    |
