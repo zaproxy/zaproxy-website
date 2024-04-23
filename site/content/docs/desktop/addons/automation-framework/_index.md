@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.38.0
+    version: 0.39.0
 ---
 
 # Automation Framework
@@ -15,7 +15,7 @@ This add-on provides a framework that allows ZAP to be automated in an easy and 
 
 It provides the following command line options:
 
-* -autorun \<filename\> Run the automation jobs specified in the file.
+* -autorun \<source\> Run the automation jobs specified in the file or from the URL.
 * -autogenmin \<filename\> Generate template automation file with the key parameters.
 * -autogenmax \<filename\> Generate template automation file with all parameters.
 * -autogenconf \<filename\> Generate template automation file using the current configuration.

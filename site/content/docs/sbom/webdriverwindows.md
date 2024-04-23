@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdriverwindows
-    version: '79'
+    version: '80'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v79/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v80/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -33,7 +33,7 @@ sbom:
     version: '1.2'
     licenses: Apache-2.0
   - name: auto-common
-    version: 1.2.1
+    version: 1.2.2
     licenses: Apache-2.0
   - name: auto-service
     version: 1.0.1
@@ -93,25 +93,25 @@ sbom:
     version: 1.10.0
     licenses: Apache-2.0
   - name: dataflow-errorprone
-    version: 3.34.0-eisop1
+    version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
   - name: error_prone_annotation
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_annotations
     version: 2.7.1
     licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_type_annotations
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
@@ -294,7 +294,7 @@ sbom:
     version: 0.8.9
     licenses: EPL-2.0
   - name: pcollections
-    version: 3.1.4
+    version: 4.0.1
     licenses: MIT
   - name: protobuf-java
     version: 3.19.6

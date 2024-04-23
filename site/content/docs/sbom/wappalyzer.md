@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.34.0
+    version: 21.35.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.34.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.35.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -27,7 +27,7 @@ sbom:
     version: '9.5'
     licenses: BSD-3-Clause
   - name: auto-common
-    version: 1.2.1
+    version: 1.2.2
     licenses: Apache-2.0
   - name: auto-service-annotations
     version: 1.0.1
@@ -36,7 +36,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.38.0
+    version: 0.39.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -66,7 +66,7 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.24.0
+    version: 1.25.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -93,7 +93,7 @@ sbom:
     version: 2.13.0
     licenses: Apache-2.0
   - name: commons-io
-    version: 2.15.0
+    version: 2.16.1
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -108,22 +108,22 @@ sbom:
     version: 1.10.0
     licenses: Apache-2.0
   - name: dataflow-errorprone
-    version: 3.34.0-eisop1
+    version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
   - name: error_prone_annotation
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_type_annotations
-    version: 2.23.0
+    version: 2.26.1
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
@@ -171,25 +171,25 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: 2.16.0
+    version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.16.0
+    version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.16.0
+    version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.16.0
+    version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.16.0
+    version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.16.0
+    version: 2.17.0
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -219,13 +219,13 @@ sbom:
     version: '2.4'
     licenses: Apache-2.0
   - name: jsoup
-    version: 1.16.2
+    version: 1.17.2
     licenses: MIT
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
   - name: jsvg
-    version: 1.2.0
+    version: 1.4.0
     licenses: MIT
   - name: junit-jupiter
     version: 5.10.1
@@ -339,7 +339,7 @@ sbom:
     version: 0.8.9
     licenses: EPL-2.0
   - name: pcollections
-    version: 3.1.4
+    version: 4.0.1
     licenses: MIT
   - name: protobuf-java
     version: 3.19.6
@@ -363,8 +363,8 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: stax2-api
-    version: 4.2.1
-    licenses: BSD-4-Clause
+    version: 4.2.2
+    licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
@@ -372,7 +372,7 @@ sbom:
     version: unspecified
     licenses: ''
   - name: woodstox-core
-    version: 6.5.1
+    version: 6.6.1
     licenses: Apache-2.0
   - name: xom
     version: 1.3.9
