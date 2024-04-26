@@ -183,7 +183,7 @@ If you would like to use any of your browsers with an existing profile, for exam
 By default the ZAP Heads Up Display (HUD) will be enabled. Unchecking the relevant option on this screen before launching a browser will disable the HUD.
 
 ## The Heads Up Display
-The Heads Up Display (HUD) is a new and innovative interface that provides access to ZAP functionality directly in the browser. It is ideal for people new to web security and also allows experienced penetration testers to focus on an applications functionality while providing key security information and functionality.
+The Heads Up Display (HUD) is an innovative interface that provides access to ZAP functionality directly in the browser. It is ideal for people new to web security and also allows experienced penetration testers to focus on an applications functionality while providing key security information and functionality.
 
 {{< img "images/hud-welcome.png" >}}
 
@@ -217,6 +217,13 @@ ZAP is an ideal tool to use in automation and supports a range of options:
 - [GitHub Actions](https://github.com/marketplace?query=zap&verification=verified_creator)
 - [Automation Framework](/docs/automate/automation-framework/)
 - [API and Daemon mode](/docs/api/)
+
+### Support
+The available support options are summarised in the ‘Support’ screen.
+
+ZAP is a non profit organisation, and any money raised by these services will help fund ZAP developments.
+
+{{< img "images/zap-qstart-support.png" >}}
 
 ### Learn More About ZAP
 Now that you are familiar with a few basic capabilities of ZAP, you can learn more about ZAP’s capabilities and how to use them from ZAP’s [Desktop User Guide](/docs/desktop/). The User Guide provides step-by-step instructions, references for the API and command-line programming, instructional videos, and tips and tricks for using ZAP.
