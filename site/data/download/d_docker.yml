@@ -10,6 +10,10 @@ table:
       id: docker-ssp-stable
       cmd: docker pull softwaresecurityproject/zap-stable
       link: https://hub.docker.com/r/softwaresecurityproject/zap-stable
+    zaproxy:
+      id: docker-zaproxy-stable
+      cmd: docker pull zaproxy/zap-stable
+      link: https://hub.docker.com/r/zaproxy/zap-stable
   - name: Bare
     notes: Minimal release, ideal for CI
     ghcr:
@@ -20,6 +24,10 @@ table:
       id: docker-ssp-bare
       cmd: docker pull softwaresecurityproject/zap-bare
       link: https://hub.docker.com/r/softwaresecurityproject/zap-bare
+    zaproxy:
+      id: docker-zaproxy-bare
+      cmd: docker pull zaproxy/zap-bare
+      link: https://hub.docker.com/r/zaproxy/zap-bare
   - name: Weekly
     notes: Updated every week
     ghcr:
@@ -30,6 +38,10 @@ table:
       id: docker-ssp-weekly
       cmd: docker pull softwaresecurityproject/zap-weekly
       link: https://hub.docker.com/r/softwaresecurityproject/zap-weekly
+    zaproxy:
+      id: docker-zaproxy-weekly
+      cmd: docker pull zaproxy/zap-weekly
+      link: https://hub.docker.com/r/zaproxy/zap-weekly
   - name: Nightly
     notes: The very latest source code
     ghcr:
@@ -40,5 +52,9 @@ table:
       id: docker-ssp-nightly
       cmd: docker pull softwaresecurityproject/zap-nightly
       link: https://hub.docker.com/r/softwaresecurityproject/zap-nightly
+    zaproxy:
+      id: docker-zaproxy-nightly
+      cmd: docker pull zaproxy/zap-nightly
+      link: https://hub.docker.com/r/zaproxy/zap-nightly
 info:
 - See [Docker](/docs/docker/) for more information.
