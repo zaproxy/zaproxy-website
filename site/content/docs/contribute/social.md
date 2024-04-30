@@ -16,11 +16,11 @@ links:
     desc: follow the official ZAP Twitter account (low volume)
 
   - name: 'Docker: ZAP Stable'
-    link: https://hub.docker.com/r/softwaresecurityproject/zap-stable/
+    link: https://hub.docker.com/r/zaproxy/zap-stable/
     desc: like the ZAP stable Docker image
 
   - name: 'Docker: ZAP Weekly'
-    link: https://hub.docker.com/r/softwaresecurityproject/zap-weekly/
+    link: https://hub.docker.com/r/zaproxy/zap-weekly/
     desc: like the ZAP weekly Docker image
     
   - name: 'OpenHub: zaproxy'
