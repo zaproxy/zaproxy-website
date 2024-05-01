@@ -74,7 +74,10 @@ We'll publish a blog post telling you all about it in the not too distant future
 
 ### Funding
 
-Funding continues to be a significant focus, and I am delighted to announce that the first ZAP 
+The main funding for ZAP development is thanks to the 
+[Crash Override Open Source Fellowship](https://crashoverride.com/?zap=web).
+
+Working towards self sustainability continues to be a significant focus, and I am delighted to announce that the first ZAP 
 [Support Package Contracts](/support/#support-packages) have been signed!
 
 If you need ZAP support then head over to the [Support](/support/) page.
