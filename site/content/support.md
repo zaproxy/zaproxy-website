@@ -20,7 +20,7 @@ While the Crash Override Open Source Fellowship support means that ZAP can survi
 The following commercial support options are now available. These are provided by 
 [ZAProxy Ltd](https://www.zaproxy.com) a non profit dedicated to raising money for ZAP.
 
-All of the money raised for any of these services will help fund ZAP development - ZAP is a non-profit open source project.
+All of the money raised from any of these services will help fund ZAP development - ZAP is a non-profit open source project.
 
 #### Support Packages
 
