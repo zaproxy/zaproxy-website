@@ -1056,9 +1056,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.35.0/wappalyzer-release-21.35.0.zap
-  date: 2024-04-23
-  version: 21.35.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.36.0/wappalyzer-release-21.36.0.zap
+  date: 2024-05-02
+  version: 21.36.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
