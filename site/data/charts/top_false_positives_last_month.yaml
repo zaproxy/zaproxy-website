@@ -27,24 +27,12 @@
   name: "Strict-Transport-Security Header"
   status: "release"
   type: "Passive"
-- id: 10104
-  name: "User Agent Fuzzer"
-  status: "release"
-  type: "Active"
 - id: 10038
   name: "Content Security Policy (CSP) Header Not Set"
   status: "release"
   type: "Passive"
 - id: 10015
   name: "Re-examine Cache-control Directives"
-  status: "release"
-  type: "Passive"
-- id: 10202
-  name: "Absence of Anti-CSRF Tokens"
-  status: "release"
-  type: "Passive"
-- id: 10017
-  name: "Cross-Domain JavaScript Source File Inclusion"
   status: "release"
   type: "Passive"
 - id: 10054
@@ -55,12 +43,24 @@
   name: "Anti-clickjacking Header"
   status: "release"
   type: "Passive"
-- id: 90033
-  name: "Loosely Scoped Cookie"
+- id: 10202
+  name: "Absence of Anti-CSRF Tokens"
   status: "release"
   type: "Passive"
+- id: 10017
+  name: "Cross-Domain JavaScript Source File Inclusion"
+  status: "release"
+  type: "Passive"
+- id: 10104
+  name: "User Agent Fuzzer"
+  status: "release"
+  type: "Active"
 - id: 10109
   name: "Modern Web Application"
+  status: "release"
+  type: "Passive"
+- id: 90033
+  name: "Loosely Scoped Cookie"
   status: "release"
   type: "Passive"
 - id: 10055
