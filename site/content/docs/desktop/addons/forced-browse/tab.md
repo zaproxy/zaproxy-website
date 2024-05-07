@@ -10,7 +10,7 @@ weight: 2
 The Forced Browse tab allows you to perform a [Forced Browse](/docs/desktop/addons/forced-browse/) scan on any of the sites that have been accessed.   
 
 Sites can be selected via the toolbar or the *Sites tab* .   
-Any sites that have have been are are currently being scanned are marked in bold in the toolbar Sites pulldown control.   
+Any sites that have have been or are currently being scanned are marked in bold in the toolbar Sites pulldown control.   
 The toolbar provides a set of buttons which allow you to start, stop, pause and resume the scan.   
 A progress bar shows how far the scan of the selected site has progressed.   
 The 'Current scans' value shows how many scans are currently active - hovering over this value will show a list of the sites being scanned in a popup.   

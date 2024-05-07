@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: graaljs
-    version: 0.6.0
+    version: 0.7.0
 ---
 
 # GraalVM JavaScript
