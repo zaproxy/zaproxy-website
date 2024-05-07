@@ -27,7 +27,7 @@ initially has a generated name, but it can be changed by selecting the
 Each of the entries in the Sessions table can be right clicked,
 which activates the Popup Menu, with the following options:
 
-* Copy Session Token Value to Clipboard - copies the value of the selected session to the clipboard.
+* Copy Session Token Value - copies the value of the selected session to the clipboard.
 * Remove Session - deletes the session
 * Find Related Messages - Will cause the [Search tab](/docs/desktop/ui/tabs/search/) to become active, displaying results based on a search with the string displayed in the "Session Tokens' Values" column for the session which was right clicked.
 * Set as active (available only on non-active sessions) - marks this session as active. If any session was previously set as active, it will be unset as active and, if it doesn't specify any token values, it is deleted.

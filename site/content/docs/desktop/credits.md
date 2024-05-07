@@ -28,11 +28,13 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | 70pointer                                                                                                             |
 |   | Mostafa AbdelMoez                                                                                                     |
 |   | Jean Abed                                                                                                             |
+|   | Zuhair Abid ([@zuhairabid](https://github.com/zuhairabid))                                                            |
 |   | Bilal Achahbar                                                                                                        |
 |   | Tushar Aggarwal                                                                                                       |
 |   | Amro Alolaqi                                                                                                          |
 |   | [Matthias Altmann](https://secf00tprint.github.io/blog) ([@secf00tprint](https://twitter.com/secf00tprint))           |
 |   | André Alves ([@andrealvesdev](https://twitter.com/andrealvesdev))                                                     |
+|   | Sébastien Amelinckx ([@Sebitosh](https://github.com/Sebitosh))                                                        |
 |   | Mário Areias                                                                                                          |
 |   | Matt Austin ([@mattaustin](https://twitter.com/mattaustin))                                                           |
 |   | Abdelhadi Azouni                                                                                                      |
@@ -49,6 +51,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Artemy Bogdanov ([@Abr1k0s](https://twitter.com/Abr1k0s))                                                             |
 |   | Yvan Boily                                                                                                            |
 |   | Rodrigo Bonifácio                                                                                                     |
+|   | Adrean Boyadzhiev ([@aboyadzhiev](https://www.linkedin.com/in/adrean-boyadzhiev))                                     |
 |   | Glib Briia (@glib-briia)                                                                                              |
 |   | Rauf Butt                                                                                                             |
 |   | Ailton Caetano                                                                                                        |
@@ -61,10 +64,12 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Gustavo Covas ([@gustavocovas](https://github.com/gustavocovas))                                                      |
 |   | Baptiste Crépin - AXA Group Security                                                                                  |
 |   | Johanna Curiel                                                                                                        |
+|   | Ganesh Dagadi ([LinkedIn](https://www.linkedin.com/in/ganesh-dagadi))                                                 |
 |   | Chris Dailey ([@dailz-c](https://github.com/dailz-c))                                                                 |
 |   | Karl Dalley ([@gnirlos](https://github.com/gnirlos))                                                                  |
 |   | Anamika Das ([@AnamikaD](https://twitter.com/AnamikaD))                                                               |
 |   | Patrick Double ([@double16](https://github.com/double16))                                                             |
+|   | [@drighty](https://github.com/drighty)                                                                                |
 |   | Mike Emery - Portcullis Security                                                                                      |
 |   | Leandro Ferrari - Talsoft SRL                                                                                         |
 |   | Freakyclown - Portcullis Security                                                                                     |
@@ -91,6 +96,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Daiki Ichinose ([@mahoyaya](https://twitter.com/mahoyaya))                                                            |
 |   | Taras Ivashchenko, OWASP Russia                                                                                       |
 |   | Shershon A J ([Shershon25](https://github.com/Shershon25))                                                            |
+|   | Divyansh Jain ([@itsdivyanshjain](https://twitter.com/itsdivyanshjain)) - Astra Security                              |
 |   | Eswarprasath Jayaraman ([ejayaraman](https://github.com/ejayaraman))                                                  |
 |   | Jon ([@flibustier](https://twitter.com/flibustier))                                                                   |
 |   | Tan Jin ([@tjtanjin](https://github.com/tjtanjin))                                                                    |
@@ -140,6 +146,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Stefan Østergaard Pedersen                                                                                            |
 |   | Adrien PAILHES                                                                                                        |
 |   | Anthon Pang                                                                                                           |
+|   | Amit Panwar, amitpanwar789                                                                                            |
 |   | Alan Parkinson                                                                                                        |
 |   | David Petrasovic                                                                                                      |
 |   | Yvan Phélizot                                                                                                         |
@@ -186,6 +193,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Cosmin Stefan-Dobrin                                                                                                  |
 |   | Sunny (darkowlzz) [indiasuny000@gmail.com](mailto:indiasuny000@gmail.com)                                             |
 |   | Daniel Thompson-Yvetot ([@nothingismagick](https://github.com/nothingismagick))                                       |
+|   | Tib3rius (<https://tib3rius.com/>)                                                                                    |
 |   | Stefan Tobler                                                                                                         |
 |   | Ken Treimann, Cyber Ninja                                                                                             |
 |   | Marvin Uta                                                                                                            |

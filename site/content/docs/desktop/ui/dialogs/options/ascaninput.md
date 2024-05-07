@@ -44,6 +44,10 @@ Allows to scan the HTTP Headers of all requests. Not just requests that send par
 
 Request cookies.
 
+##### Encode Cookie Values
+
+If selected the cookie values will be URL encoded when attacked. By default they will not be encoded - this is new in ZAP 2.15.0, previously they were always encoded.
+
 ### Build-in Input Vector Handlers
 
 The data formats that the active scanner will target:
