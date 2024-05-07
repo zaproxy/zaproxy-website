@@ -25,7 +25,6 @@ changes are included.
 
 ```bash
 docker pull ghcr.io/zaproxy/zaproxy:stable
-docker pull softwaresecurityproject/zap-stable
 docker pull zaproxy/zap-stable
 ```
 
@@ -36,7 +35,6 @@ core and add-ons. It is the same as the [Cross Platform Weekly Release](/downloa
 
 ```bash
 docker pull ghcr.io/zaproxy/zaproxy:weekly
-docker pull softwaresecurityproject/zap-weekly
 docker pull zaproxy/zap-weekly
 ```
 
@@ -47,7 +45,6 @@ core and add-ons.
 
 ```bash
 docker pull ghcr.io/zaproxy/zaproxy:nightly
-docker pull softwaresecurityproject/zap-nightly
 docker pull zaproxy/zap-nightly
 ```
 
@@ -58,7 +55,6 @@ It is updated on the same schedule as the stable image.
 
 ```bash
 docker pull ghcr.io/zaproxy/zaproxy:bare
-docker pull softwaresecurityproject/zap-bare
 docker pull zaproxy/zap-bare
 ```
 The Dockerfiles can be found [here](https://github.com/zaproxy/zaproxy/tree/main/docker).
