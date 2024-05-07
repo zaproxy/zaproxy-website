@@ -9,6 +9,10 @@ weight: 19
 
 This screen allows you to configure the script options:
 
+### Enable scripts loaded from directories
+
+If this option is selected then all of the scripts loaded from the specified directories will be enabled by default.
+
 ### Directories
 
 A list of directories from which scripts will be loaded. ZAP will read (and write) the scripts using the character encoding UTF-8.

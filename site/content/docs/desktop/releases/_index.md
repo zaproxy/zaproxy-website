@@ -11,6 +11,7 @@ The following releases have been made:
 
 |   |                                          |                                                                                                              |
 |---|------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+|   | [2.15.0](/docs/desktop/releases/2.15.0/) | bug fix and enhancement release                                                                              |
 |   | [2.14.0](/docs/desktop/releases/2.14.0/) | bug fix and enhancement release                                                                              |
 |   | [2.13.0](/docs/desktop/releases/2.13.0/) | bug fix and enhancement release                                                                              |
 |   | [2.12.0](/docs/desktop/releases/2.12.0/) | ten thousand star bug fix and enhancement release                                                            |

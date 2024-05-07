@@ -53,6 +53,7 @@ ZAP (core) supports the following command line options:
 |   | -lowmem                     | Use the database instead of memory as much as possible - this is still experimental                                                                                                                                                      |
 |   | -experimentaldb             | Use the experimental generic database code, which is not surprisingly also still experimental                                                                                                                                            |
 |   | -nostdout                   | Disables the default logging through standard output                                                                                                                                                                                     |
+|   | -loglevel \<level\>         | Sets the log level, overriding the values specified in the log4j2.properties file in the home directory                                                                                                                                  |
 |   | -silent                     | Ensures ZAP does not make any unsolicited requests, including check for updates                                                                                                                                                          |
 |   | -addoninstall \<addOnId\>   | Installs the add-on with specified ID from the ZAP Marketplace. The IDs of the add-ons available in the marketplace can be consulted in the Marketplace tab of [Manage Add-ons dialogue](/docs/desktop/ui/dialogs/manageaddons/).        |
 |   | -addoninstallall            | Install all available add-ons from the ZAP Marketplace                                                                                                                                                                                   |
@@ -71,6 +72,8 @@ Configuration keys should be specified using the dot notation based their locati
 ```
 <zap-script> -config api.key=12345
 ```
+
+The `-loglevel` option supports the following values: `OFF`, `FATAL`, `ERROR`, `WARN`, `INFO`, `DEBUG`, `TRACE`, and `ALL`, in order of increasing verbosity.
 
 
 Examples:
