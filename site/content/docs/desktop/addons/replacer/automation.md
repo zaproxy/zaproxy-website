@@ -13,6 +13,8 @@ This add-on supports the Automation Framework.
 
 The replacer job allows you to add replacer rules.
 
+It is covered in the video: [ZAP Chat 09 Automation Framework Part 3 - Requests](https://youtu.be/4phnMy9iCPY).
+
 ```
   - type: "replacer"                   # Replacer rules
     parameters:

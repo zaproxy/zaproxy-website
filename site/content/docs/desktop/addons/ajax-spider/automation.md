@@ -13,6 +13,8 @@ This add-on supports the Automation Framework.
 
 The spiderAjax job allows you to run the Ajax Spider - it is slower than the traditional spider but handles modern web applications well.
 
+It is covered in the video: [ZAP Chat 10 Automation Framework Part 4 - Spidering](https://youtu.be/WivoyVerBCo).
+
 This job supports monitor tests.
 
 ```
