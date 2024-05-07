@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: postman
-    version: 0.3.0
+    version: 0.4.0
 ---
 
 # Postman Support

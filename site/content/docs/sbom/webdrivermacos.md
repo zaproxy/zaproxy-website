@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '81'
+    version: '82'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v81/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v82/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -60,7 +60,7 @@ sbom:
     version: 1.9.4
     licenses: Apache-2.0
   - name: commons-codec
-    version: 1.16.0
+    version: 1.16.1
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
@@ -78,19 +78,22 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.13.0
+    version: 2.16.1
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.13.0
+    version: 3.14.0
     licenses: Apache-2.0
   - name: commons-logging
     version: '1.2'
     licenses: Apache-2.0
+  - name: commons-logging
+    version: 1.3.1
+    licenses: Apache-2.0
   - name: commons-text
-    version: 1.10.0
+    version: 1.12.0
     licenses: Apache-2.0
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
@@ -123,7 +126,7 @@ sbom:
     version: 1.0.1
     licenses: Apache-2.0
   - name: flatlaf
-    version: 3.2.1
+    version: 3.4.1
     licenses: Apache-2.0
   - name: guava
     version: 31.0.1-jre
@@ -153,7 +156,7 @@ sbom:
     version: '4.12'
     licenses: Apache-2.0
   - name: java-semver
-    version: 0.9.0
+    version: 0.10.2
     licenses: MIT
   - name: javac
     version: 9+181-r4173-1
@@ -303,7 +306,7 @@ sbom:
     version: 1.0.3
     licenses: CC0-1.0
   - name: rsyntaxtextarea
-    version: 3.3.4
+    version: 3.4.0
     licenses: BSD-3-Clause
   - name: selenium-api
     version: 4.1.2
@@ -372,7 +375,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.14.0
+    version: 2.15.0-SNAPSHOT
     licenses: Apache-2.0
 ---
 

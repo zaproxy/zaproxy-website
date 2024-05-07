@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: spider
-    version: 0.10.0
+    version: 0.11.0
 ---
 
 # Spider
@@ -18,7 +18,7 @@ started. The Spider then visits these URLs, it identifies all the
 hyperlinks in the page and adds them to the list of URLs to visit and
 the process continues recursively as long as new resources are found.
 
-The Spider can configured and started using the [Spider dialogue](/docs/desktop/addons/spider/dialog/).
+The Spider can be configured and started using the [Spider dialogue](/docs/desktop/addons/spider/dialog/).
 
 During the processing of an URL, the Spider makes a request to
 fetch the resource and then parses the response, identifying
