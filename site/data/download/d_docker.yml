@@ -6,10 +6,6 @@ table:
       id: docker-ghcr-stable
       cmd: docker pull ghcr.io/zaproxy/zaproxy:stable
       link: https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy/versions?filters[version_type]=tagged
-    ssp:
-      id: docker-ssp-stable
-      cmd: docker pull softwaresecurityproject/zap-stable
-      link: https://hub.docker.com/r/softwaresecurityproject/zap-stable
     zaproxy:
       id: docker-zaproxy-stable
       cmd: docker pull zaproxy/zap-stable
@@ -20,10 +16,6 @@ table:
       id: docker-ghcr-bare
       cmd: docker pull ghcr.io/zaproxy/zaproxy:bare
       link: https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy/versions?filters[version_type]=tagged
-    ssp:
-      id: docker-ssp-bare
-      cmd: docker pull softwaresecurityproject/zap-bare
-      link: https://hub.docker.com/r/softwaresecurityproject/zap-bare
     zaproxy:
       id: docker-zaproxy-bare
       cmd: docker pull zaproxy/zap-bare
@@ -34,10 +26,6 @@ table:
       id: docker-ghcr-weekly
       cmd: docker pull ghcr.io/zaproxy/zaproxy:weekly
       link: https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy/versions?filters[version_type]=tagged
-    ssp:
-      id: docker-ssp-weekly
-      cmd: docker pull softwaresecurityproject/zap-weekly
-      link: https://hub.docker.com/r/softwaresecurityproject/zap-weekly
     zaproxy:
       id: docker-zaproxy-weekly
       cmd: docker pull zaproxy/zap-weekly
@@ -48,10 +36,6 @@ table:
       id: docker-ghcr-nightly
       cmd: docker pull ghcr.io/zaproxy/zaproxy:nightly
       link: https://github.com/zaproxy/zaproxy/pkgs/container/zaproxy/versions?filters[version_type]=tagged
-    ssp:
-      id: docker-ssp-nightly
-      cmd: docker pull softwaresecurityproject/zap-nightly
-      link: https://hub.docker.com/r/softwaresecurityproject/zap-nightly
     zaproxy:
       id: docker-zaproxy-nightly
       cmd: docker pull zaproxy/zap-nightly
