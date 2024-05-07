@@ -1,10 +1,10 @@
 # The ZAP version is automatically updated by zaproxy/zap-admin repo.
 ---
-title: ZAP 2.14.0
+title: ZAP 2.15.0
 info:
   - Most of the files contain the default set of functionality, and you can add more functionality at any time via the [ZAP Marketplace](/addons/).
   - The core package contains the minimal set of functionality you need to get you started.
   - The Windows and Linux versions require [Java 11 or higher](https://adoptium.net/) to run.
   - The macOS version includes Java 11 - you can use the Linux or Cross Platform versions if you do not want to download this.
   - The installers are built using a [multi-platform installer builder](https://www.ej-technologies.com/products/install4j/overview.html) which provides an [unattended mode](https://www.ej-technologies.com/resources/install4j/help/doc/installers/installerModes.html).
-  - For more information about this release see the [release notes](/docs/desktop/releases/2.14.0/).
+  - For more information about this release see the [release notes](/docs/desktop/releases/2.15.0/).
