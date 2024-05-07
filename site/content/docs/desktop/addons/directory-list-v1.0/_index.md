@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: directorylistv1
-    version: 7.0.0
+    version: 8.0.0
 ---
 
 # Directory List v1.0

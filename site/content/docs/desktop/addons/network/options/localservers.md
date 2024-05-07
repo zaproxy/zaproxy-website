@@ -44,7 +44,7 @@ Allows to enable and select the application protocols negotiated during a TLS ha
 
 #### Mode
 
-Allows to specify if the API should be exposed or if it should be allowed to proxy requests. For example, one can configure a server exposing just the the API to external addresses (i.e. remote control) while having a proxy for local addresses only.
+Allows to specify if the API should be exposed or if it should be allowed to proxy requests. For example, one can configure a server exposing just the API to external addresses (i.e. remote control) while having a proxy for local addresses only.
 
 #### Behind NAT
 

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.8.0
+    version: 0.9.0
 ---
 
-# Copy URLs to Clipboard
+# Copy URLs
 
 A context menu item to Copy URLs to the system clipboard.
 

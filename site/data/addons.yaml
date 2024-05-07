@@ -17,9 +17,9 @@
   status: release
   infoUrl: /docs/desktop/addons/alert-filters/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v20/alertFilters-release-20.zap
-  date: 2024-04-02
-  version: 20
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v21/alertFilters-release-21.zap
+  date: 2024-05-07
+  version: 21
 - id: allinonenotes
   name: All In One Notes
   description: A simple extension to view all notes in one pane.
@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v65/ascanrules-release-65.zap
-  date: 2024-03-28
-  version: 65
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v66/ascanrules-release-66.zap
+  date: 2024-05-07
+  version: 66
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.12.0/authhelper-beta-0.12.0.zap
-  date: 2024-02-06
-  version: 0.12.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.13.0/authhelper-beta-0.13.0.zap
+  date: 2024-05-07
+  version: 0.13.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.39.0/automation-beta-0.39.0.zap
-  date: 2024-04-23
-  version: 0.39.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.40.0/automation-beta-0.40.0.zap
+  date: 2024-05-07
+  version: 0.40.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -129,9 +129,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/forced-browse/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v15/bruteforce-beta-15.zap
-  date: 2023-10-12
-  version: 15
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v16/bruteforce-beta-16.zap
+  date: 2024-05-07
+  version: 16
 - id: bugtracker
   name: Bug Tracker
   description: Bug Tracker extension.
@@ -159,9 +159,9 @@
   status: release
   infoUrl: /docs/desktop/addons/call-home/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.11.0/callhome-release-0.11.0.zap
-  date: 2024-03-13
-  version: 0.11.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.12.0/callhome-release-0.12.0.zap
+  date: 2024-05-07
+  version: 0.12.0
 - id: client
   name: Client Side Integration
   description: Exposes client (browser) side information in ZAP using Firefox and
@@ -191,9 +191,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.24.0/commonlib-release-1.24.0.zap
-  date: 2024-04-11
-  version: 1.24.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.25.0/commonlib-release-1.25.0.zap
+  date: 2024-05-07
+  version: 1.25.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -232,9 +232,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/database/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.3.0/database-alpha-0.3.0.zap
-  date: 2023-10-12
-  version: 0.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.4.0/database-alpha-0.4.0.zap
+  date: 2024-05-07
+  version: 0.4.0
 - id: dev
   name: Dev Add-on
   description: An add-on to help with development of ZAP.
@@ -253,9 +253,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/diff/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/diff-v14/diff-beta-14.zap
-  date: 2023-10-12
-  version: 14
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/diff-v15/diff-beta-15.zap
+  date: 2024-05-07
+  version: 15
 - id: directorylistv1
   name: Directory List v1.0
   description: List of directory names to be used with Forced Browse or Fuzzer add-on.
@@ -263,9 +263,9 @@
   status: release
   infoUrl: /docs/desktop/addons/directory-list-v1.0/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/directorylistv1-v7/directorylistv1-release-7.zap
-  date: 2023-10-12
-  version: 7
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/directorylistv1-v8/directorylistv1-release-8.zap
+  date: 2024-05-07
+  version: 8
 - id: directorylistv2_3
   name: Directory List v2.3
   description: Lists of directory names to be used with Forced Browse or Fuzzer add-on.
@@ -294,9 +294,9 @@
   status: release
   infoUrl: /docs/desktop/addons/dom-xss-active-scan-rule/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v18/domxss-release-18.zap
-  date: 2023-10-12
-  version: 18
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v19/domxss-release-19.zap
+  date: 2024-05-07
+  version: 19
 - id: encoder
   name: Encoder
   description: Adds encode/decode/hash dialog and support for scripted processors
@@ -305,9 +305,9 @@
   status: release
   infoUrl: /docs/desktop/addons/encode-decode-hash/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v1.4.0/encoder-release-1.4.0.zap
-  date: 2023-10-12
-  version: 1.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v1.5.0/encoder-release-1.5.0.zap
+  date: 2024-05-07
+  version: 1.5.0
 - id: evalvillain
   name: Eval Villain
   description: Adds the Eval Villain extension to Firefox when launched from ZAP.
@@ -325,9 +325,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.8.0/exim-beta-0.8.0.zap
-  date: 2023-11-10
-  version: 0.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.9.0/exim-beta-0.9.0.zap
+  date: 2024-05-07
+  version: 0.9.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -347,9 +347,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/value-generator/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.5.0/formhandler-beta-6.5.0.zap
-  date: 2023-10-12
-  version: 6.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.6.0/formhandler-beta-6.6.0.zap
+  date: 2024-05-07
+  version: 6.6.0
 - id: fuzz
   name: Fuzzer
   description: Advanced fuzzer for manual testing
@@ -357,9 +357,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.12.0/fuzz-beta-13.12.0.zap
-  date: 2023-10-12
-  version: 13.12.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.13.0/fuzz-beta-13.13.0.zap
+  date: 2024-05-07
+  version: 13.13.0
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer
@@ -389,9 +389,9 @@
   status: release
   infoUrl: /docs/desktop/addons/getting-started-guide/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v16/gettingStarted-release-16.zap
-  date: 2023-10-12
-  version: 16
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/gettingStarted-v17/gettingStarted-release-17.zap
+  date: 2024-05-07
+  version: 17
 - id: graaljs
   name: GraalVM JavaScript
   description: Provides the GraalVM JavaScript engine for ZAP scripting.
@@ -399,9 +399,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graalvm-javascript/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.6.0/graaljs-alpha-0.6.0.zap
-  date: 2024-04-11
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.7.0/graaljs-alpha-0.7.0.zap
+  date: 2024-05-07
+  version: 0.7.0
 - id: graphql
   name: GraphQL Support
   description: Inspect and attack GraphQL endpoints.
@@ -409,9 +409,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.23.0/graphql-alpha-0.23.0.zap
-  date: 2024-02-22
-  version: 0.23.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.24.0/graphql-alpha-0.24.0.zap
+  date: 2024-05-07
+  version: 0.24.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -590,9 +590,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/invoke-applications/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/invoke-v14/invoke-beta-14.zap
-  date: 2023-10-12
-  version: 14
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/invoke-v15/invoke-beta-15.zap
+  date: 2024-05-07
+  version: 15
 - id: jruby
   name: Ruby Scripting
   description: Allows Ruby to be used for ZAP scripting - templates included
@@ -680,9 +680,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.15.0/network-beta-0.15.0.zap
-  date: 2024-03-25
-  version: 0.15.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.16.0/network-beta-0.16.0.zap
+  date: 2024-05-07
+  version: 0.16.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
