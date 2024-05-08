@@ -844,9 +844,9 @@
   status: release
   infoUrl: /docs/desktop/addons/replacer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v17/replacer-release-17.zap
-  date: 2024-05-07
-  version: 17
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v18/replacer-release-18.zap
+  date: 2024-05-08
+  version: 18
 - id: reports
   name: Report Generation
   description: Official ZAP Reports.

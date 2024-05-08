@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: replacer
-    version: '17'
+    version: '18'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v17/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v18/bom.json
   components:
   - name: aopalliance
     version: '1.0'
