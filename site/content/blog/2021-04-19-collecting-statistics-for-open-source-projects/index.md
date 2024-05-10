@@ -51,7 +51,7 @@ How often is your app downloaded? This doesn’t tell us how many people actuall
 This was initially all I recorded. When we had to move our downloads then a key requirement was that whatever platform we chose gave us download stats.
 All of the ZAP downloads are hosted on GitHub so we can use their public APIs to access them. GitHub does not provide any history so recording these stats regularly is important.
 
-This is of course more complicated if your app can be downloaded from different places. For example ZAP can be downloaded or accessed via a wide range of options including [Linux repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=owasp-zap), 
+This is of course more complicated if your app can be downloaded from different places. For example ZAP can be downloaded or accessed via a wide range of options including [Linux repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=zap), 
 [Homebrew](https://formulae.brew.sh/cask/zap), [Snapcraft](https://snapcraft.io/zaproxy), [Flathub](https://flathub.org/apps/details/org.zaproxy.ZAP) 
 and bundled in [Kali](https://tools.kali.org/web-applications/zaproxy). 
 Very few of these options provide any stats so we do not really know how many people use ZAP in these ways.
