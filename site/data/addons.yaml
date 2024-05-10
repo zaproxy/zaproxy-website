@@ -191,9 +191,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.25.0/commonlib-release-1.25.0.zap
-  date: 2024-05-07
-  version: 1.25.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.26.0/commonlib-release-1.26.0.zap
+  date: 2024-05-10
+  version: 1.26.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -712,9 +712,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v40/openapi-beta-40.zap
-  date: 2024-05-07
-  version: 40
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v41/openapi-beta-41.zap
+  date: 2024-05-10
+  version: 41
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -1066,9 +1066,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v83/webdriverlinux-release-83.zap
-  date: 2024-05-08
-  version: 83
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v84/webdriverlinux-release-84.zap
+  date: 2024-05-10
+  version: 84
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1076,9 +1076,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v83/webdrivermacos-release-83.zap
-  date: 2024-05-08
-  version: 83
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v84/webdrivermacos-release-84.zap
+  date: 2024-05-10
+  version: 84
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1086,9 +1086,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v83/webdriverwindows-release-83.zap
-  date: 2024-05-08
-  version: 83
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v84/webdriverwindows-release-84.zap
+  date: 2024-05-10
+  version: 84
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.

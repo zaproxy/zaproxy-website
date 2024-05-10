@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: '40'
+    version: '41'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v40/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v41/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -465,7 +465,7 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: spider
-    version: 0.11.0
+    version: 0.12.0
     licenses: ''
   - name: sqlite-jdbc
     version: 3.42.0.0
@@ -534,7 +534,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.15.0-SNAPSHOT
+    version: 2.15.0
     licenses: Apache-2.0
 ---
 
