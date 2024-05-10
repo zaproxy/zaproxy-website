@@ -18,6 +18,6 @@ To be added to this page submit a PR via the "Edit on GitHub" link in the footer
 | [Flathub](https://flathub.org/apps/details/org.zaproxy.ZAP)                                        | Submit a PR on [ZAP](https://github.com/flathub/org.zaproxy.ZAP)                                          |
 | [FreeBSD](https://www.freshports.org/security/zaproxy/)                                            | Maintained by [Alonso Cárdenas](mailto:acm@FreeBSD.org)                                          |
 | [Kali](https://www.kali.org/tools/zaproxy/)                                                        | Raise a new issue on the [Kali Linux Bug Tracker](https://bugs.kali.org/my_view_page.php)                  |
-| [Linux repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=owasp-zap) | Maintained by [Cabelo](https://en.opensuse.org/User:Cabelo) on behalf of the ZAP Core Team       |
+| [Linux repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=zap)       | Maintained by [Cabelo](https://en.opensuse.org/User:Cabelo) on behalf of the ZAP Core Team       |
 | [OpenSUSE](https://build.opensuse.org/package/show/security/owasp-zap)                             | Raise a Request on that page            |
 | [Scoop](https://github.com/lukesampson/scoop-extras/blob/master/bucket/zaproxy.json)               | Submit a PR on [zaproxy.json](https://github.com/ScoopInstaller/Extras/blob/master/bucket/zaproxy.json) |
