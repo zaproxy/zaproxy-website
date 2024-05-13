@@ -65,14 +65,28 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/melon_bike.jpeg
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/products/no-results.png
+  ajax: New
 - path: GET http://localhost:3000/assets/public/images/products/permafrost.jpg
   ajax: Pass
+- path: GET http://localhost:3000/assets/public/images/uploads/BeeHaven.png
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/uploads/IMG_4253.jpg
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/uploads/favorite-hiking-place.png
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/uploads/magn(et)ificent!-1571814229653.jpg
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/uploads/my-rare-collectors-item!-[̲̅$̲̅(̲̅-͡°-͜ʖ-͡°̲̅)̲̅$̲̅]-1572603645543.jpg
+  ajax: New
+- path: GET http://localhost:3000/assets/public/images/uploads/😼-
+  ajax: New
 - path: GET http://localhost:3000/az.svg
   ajax: FAIL
 - path: GET http://localhost:3000/font-mfizz.woff
   ajax: Pass
 - path: GET http://localhost:3000/ftp/legal.md
-  ajax: FAIL
+  ajax: Pass
 - path: GET http://localhost:3000/main.js
   ajax: Pass
 - path: GET http://localhost:3000/polyfills.js
@@ -85,6 +99,8 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/rest/languages
   ajax: Pass
+- path: GET http://localhost:3000/rest/memories/
+  ajax: New
 - path: GET http://localhost:3000/rest/products/1/reviews
   ajax: FAIL
 - path: GET http://localhost:3000/rest/products/search(q)
@@ -102,7 +118,7 @@ details:
 - path: GET http://localhost:3000/styles.css
   ajax: Pass
 - path: GET http://localhost:3000/tutorial.js
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/vendor.js
   ajax: Pass
 - path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
