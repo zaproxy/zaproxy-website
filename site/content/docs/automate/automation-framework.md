@@ -41,6 +41,7 @@ The full set of jobs currently supported by the framework and other add-ons are:
 * [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided with the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
+* [postman](/docs/desktop/addons/postman-support/automation/) - Postman definition import, provided with the [Postman](/docs/desktop/addons/postman-support/) add-on
 * [replacer](/docs/desktop/addons/replacer/automation/) - replace strings in requests and responses
 * [report](/docs/desktop/addons/report-generation/automation/) - report generation, provided with the [Report Generation](/docs/desktop/addons/report-generation/) add-on
 * [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - sends specific requests to targets
