@@ -15,14 +15,16 @@ The script job allows you to execute various actions with scripts:
 
 ## Action: add
 
-Adds the specified script to ZAP. Scripts are enabled but not configured to be loaded when ZAP restarts.   
+Adds the specified script to ZAP. Scripts are enabled but not configured to be loaded when ZAP restarts.
 
 By default the default script engine for the file extension (if any) will be used - this may be overridden using the 'engine' parameter.
 
 * type: mandatory, can be any of the script types supported by ZAP
 * engine: optional, can be used to override the default engine for the file extension
 * name: optional, defaults to the file name, can be used to specify the script in another job
-* file: mandatory, the path to the file (absolute or relative to the plan), must be a readable text file
+* source: mandatory, the path to the file (absolute or relative to the plan), must be a readable text file
+
+The `source` parameter was previously called `file`, both will work.
 
 ## Action: remove
 
@@ -38,6 +40,15 @@ Runs the specified script to ZAP. The script must already be available in ZAP, f
 * name: mandatory, the name of the script in ZAP
 * engine: optional, can be used to override the default engine for the file extension
 * target: mandatory, if type is 'targeted', the target URL to be invoked for 'targeted' script
+
+## Action: loaddir
+
+Loads all of the scripts in the subdirectories under the specified source path to ZAP. Scripts are enabled but not configured to be loaded when ZAP restarts.
+
+The scripts must be in subdirectories named after the relevant script type (such as ‘active’, ‘passive’, ‘proxy’ etc)
+and must have an appropriate extension for the script language used.
+
+* source: mandatory, the path to the directory (absolute or relative to the plan).
 
 ## Action: enable
 
@@ -62,11 +73,13 @@ Not all of the parameters are valid for all of the actions, see above for detail
       type:                      # String: The type of the script
       engine:                    # String: The script engine to use - can be used to override the default engine for the file extension
       name:                      # String: The name of the script, defaults to the file name
-      file:                      # String: The full or relative file path, must be readable
+      source:                    # String: The full or relative file path, must be readable
       inline:                    # String: The full script (may be multi-line) - supply this or 'file' not both
       target:                    # String: The URL to be invoked for "targeted" script type
 	
 ```
+
+The `source` parameter was previously called `file`, both will work.
 
 ## Inline Scripts
 
