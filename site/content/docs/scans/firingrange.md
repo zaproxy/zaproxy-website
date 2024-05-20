@@ -29,7 +29,7 @@ see Issue [#7122](https://github.com/zaproxy/zaproxy/issues/7122) for more detai
 
   {{< scan-results target= "firingrange" section="leakedcookie">}}
 
-  {{< scan-results target= "firingrange" section="invalidframingconfig">}}
+  {{< scan-results target= "firingrange" section="clickjacking">}}
 
 {{< /scan-table >}}
 
