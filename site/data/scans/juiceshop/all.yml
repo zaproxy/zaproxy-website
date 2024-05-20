@@ -12,13 +12,15 @@ details:
 - path: GET http://localhost:3000/MaterialIcons-Regular.woff2
   ajax: Pass
 - path: GET http://localhost:3000/ae.svg
-  ajax: FAIL
+  ajax: Pass
 - path: GET http://localhost:3000/api/Challenges/(name)
   ajax: Pass
 - path: GET http://localhost:3000/api/Feedbacks/
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/api/Quantitys/
   ajax: Pass
+- path: GET http://localhost:3000/api/SecurityQuestions/
+  ajax: New
 - path: GET http://localhost:3000/assets/i18n/en.json
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/favicon_js.ico
@@ -26,19 +28,19 @@ details:
 - path: GET http://localhost:3000/assets/public/images/JuiceShop_Logo.png
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/carousel/1.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/2.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/3.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/4.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/5.png
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/6.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/carousel/7.jpg
-  ajax: Pass
+  ajax: FAIL
 - path: GET http://localhost:3000/assets/public/images/hackingInstructor.png
   ajax: Pass
 - path: GET http://localhost:3000/assets/public/images/products/apple_juice.jpg
@@ -68,15 +70,77 @@ details:
 - path: GET http://localhost:3000/assets/public/images/products/permafrost.jpg
   ajax: Pass
 - path: GET http://localhost:3000/az.svg
-  ajax: FAIL
+  ajax: Pass
+- path: GET http://localhost:3000/bd.svg
+  ajax: New
+- path: GET http://localhost:3000/bg.svg
+  ajax: New
+- path: GET http://localhost:3000/br.svg
+  ajax: New
+- path: GET http://localhost:3000/ch.svg
+  ajax: New
+- path: GET http://localhost:3000/cn.svg
+  ajax: New
+- path: GET http://localhost:3000/cz.svg
+  ajax: New
+- path: GET http://localhost:3000/de.svg
+  ajax: New
+- path: GET http://localhost:3000/dk.svg
+  ajax: New
+- path: GET http://localhost:3000/ee.svg
+  ajax: New
+- path: GET http://localhost:3000/es-ct.svg
+  ajax: New
+- path: GET http://localhost:3000/es.svg
+  ajax: New
+- path: GET http://localhost:3000/fi.svg
+  ajax: New
 - path: GET http://localhost:3000/font-mfizz.woff
   ajax: Pass
+- path: GET http://localhost:3000/fr.svg
+  ajax: New
 - path: GET http://localhost:3000/ftp/legal.md
   ajax: FAIL
+- path: GET http://localhost:3000/gb.svg
+  ajax: New
+- path: GET http://localhost:3000/ge.svg
+  ajax: New
+- path: GET http://localhost:3000/gr.svg
+  ajax: New
+- path: GET http://localhost:3000/hk.svg
+  ajax: New
+- path: GET http://localhost:3000/hu.svg
+  ajax: New
+- path: GET http://localhost:3000/id.svg
+  ajax: New
+- path: GET http://localhost:3000/ie.svg
+  ajax: New
+- path: GET http://localhost:3000/il.svg
+  ajax: New
+- path: GET http://localhost:3000/in.svg
+  ajax: New
+- path: GET http://localhost:3000/it.svg
+  ajax: New
+- path: GET http://localhost:3000/jp.svg
+  ajax: New
+- path: GET http://localhost:3000/kr.svg
+  ajax: New
+- path: GET http://localhost:3000/lv.svg
+  ajax: New
 - path: GET http://localhost:3000/main.js
   ajax: Pass
+- path: GET http://localhost:3000/mm.svg
+  ajax: New
+- path: GET http://localhost:3000/nl.svg
+  ajax: New
+- path: GET http://localhost:3000/no.svg
+  ajax: New
+- path: GET http://localhost:3000/pl.svg
+  ajax: New
 - path: GET http://localhost:3000/polyfills.js
   ajax: Pass
+- path: GET http://localhost:3000/pt.svg
+  ajax: New
 - path: GET http://localhost:3000/rest/admin/application-configuration
   ajax: Pass
 - path: GET http://localhost:3000/rest/admin/application-version
@@ -91,8 +155,16 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/rest/user/whoami
   ajax: Pass
+- path: GET http://localhost:3000/ro.svg
+  ajax: New
+- path: GET http://localhost:3000/ru.svg
+  ajax: New
 - path: GET http://localhost:3000/runtime.js
   ajax: Pass
+- path: GET http://localhost:3000/se.svg
+  ajax: New
+- path: GET http://localhost:3000/si.svg
+  ajax: New
 - path: GET http://localhost:3000/socket.io/(EIO,sid,t,transport)
   ajax: Pass
 - path: GET http://localhost:3000/socket.io/(EIO,sid,transport)
@@ -101,13 +173,25 @@ details:
   ajax: Pass
 - path: GET http://localhost:3000/styles.css
   ajax: Pass
+- path: GET http://localhost:3000/th.svg
+  ajax: New
+- path: GET http://localhost:3000/tn.svg
+  ajax: New
+- path: GET http://localhost:3000/tr.svg
+  ajax: New
 - path: GET http://localhost:3000/tutorial.js
-  ajax: Pass
+  ajax: FAIL
+- path: GET http://localhost:3000/tw.svg
+  ajax: New
+- path: GET http://localhost:3000/ua.svg
+  ajax: New
+- path: GET http://localhost:3000/us.svg
+  ajax: New
 - path: GET http://localhost:3000/vendor.js
   ajax: Pass
 - path: POST http://localhost:3000/socket.io/(EIO,sid,t,transport)(40)
   ajax: Pass
 tests: 53
-passes: 48
-fails: 5
-score: 91%
+passes: 41
+fails: 12
+score: 77%
