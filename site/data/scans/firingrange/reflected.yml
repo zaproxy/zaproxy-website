@@ -76,9 +76,6 @@ details:
 - path: /parameter/css_style_value
   result: Pass
   rule: 40012
-- path: /parameter/form()
-  result: Pass
-  rule: 40012
 - path: /parameter/head
   result: Pass
   rule: 40012
@@ -142,7 +139,7 @@ details:
 - path: /url/script_src
   result: Pass
   rule: 40012
-tests: 47
-passes: 46
+tests: 46
+passes: 45
 fails: 1
 score: 98%
