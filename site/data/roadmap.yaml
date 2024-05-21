@@ -2,6 +2,8 @@
 - item: Secure Funding for ZAP Development
   status: ⚡ In progress
   year: 2024
+  sponsor: Crash Override
+  sponsorlink: https://crashoverride.com/?zap=web
 - item: Automation Framework GitHub Action
   status: ⚡ In progress
   year: 2024
@@ -17,6 +19,8 @@
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/7695
   year: 2024
+  sponsor: Crash Override
+  sponsorlink: https://crashoverride.com/?zap=web
 - item: Update to latest Crawljax
   status: ⚡ In progress
   year: 2024
@@ -52,6 +56,11 @@
   status: ♻ Ongoing
   url: /blog/2023-01-19-authentication-help/
   year: n/a
+
+- item: Release 2.15
+  status: 🎉 Finished
+  url: /blog/2024-05-07-zap-2-15-0/
+  year: 2024
 
 - item: Browser Recorder
   status: 🎉 Finished
