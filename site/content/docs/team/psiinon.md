@@ -44,6 +44,7 @@ All of Simon’s publicly available videos are linked off the [Videos](/videos/)
 
 #### Interviews and Panels
 
+* 2024/05/21 [Mark Curphey and Simon Bennetts -- Riding the Coat Tails of ZAP, without Open Source Funding](https://www.youtube.com/watch?v=j1B3Qgq4D-k)
 * 2023/01/04 [IWCON2023: A decade plus of maintaining ZAP - Simon Bennetts](https://www.youtube.com/watch?v=pQLd7Qka330)
 * 2023/10/25 [Evo Cyber Security #51 – Changes in Software Supply Chain Regulations](https://evolutionjobs.com/exchange/evo-cyber-security-51-changes-in-software-supply-chain-regulations/)
 * 2023/09/12 [Application Security Weekly: Building a Scanner and a Community with Zed Attack Proxy - Simon Bennetts - ASW #254](https://www.youtube.com/watch?v=alIBoz7AooI)
