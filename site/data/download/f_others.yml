@@ -2,7 +2,7 @@ maint_column_1:
   - items:
     - title: Linux Repos
       info:
-        - The official [ZAP Linux Repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=owasp-zap)
+        - The official [ZAP Linux Repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=zap)
         - Maintained by the ZAP Team
     - title: Flathub
       info:
