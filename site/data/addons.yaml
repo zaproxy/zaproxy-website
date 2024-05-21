@@ -944,9 +944,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.23.0/selenium-release-15.23.0.zap
-  date: 2024-05-07
-  version: 15.23.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.24.0/selenium-release-15.24.0.zap
+  date: 2024-05-21
+  version: 15.24.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -1005,9 +1005,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/server-sent-events/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v12/sse-alpha-12.zap
-  date: 2022-10-28
-  version: 12
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v13/sse-alpha-13.zap
+  date: 2024-05-21
+  version: 13
 - id: svndigger
   name: SVN Digger Files
   description: SVN Digger files which can be used with ZAP forced browsing
@@ -1060,15 +1060,15 @@
   date: 2021-10-07
   version: 3
 - id: wappalyzer
-  name: Wappalyzer - Technology Detection
-  description: 'Technology detection using Wappalyzer: wappalyzer.com'
+  name: Technology Detection
+  description: Technology detection using various fingerprints and identifiers.
   author: ZAP Dev Team
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.36.0/wappalyzer-release-21.36.0.zap
-  date: 2024-05-02
-  version: 21.36.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.37.0/wappalyzer-release-21.37.0.zap
+  date: 2024-05-21
+  version: 21.37.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.

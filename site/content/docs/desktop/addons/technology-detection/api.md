@@ -1,17 +1,17 @@
 ---
 # This page was generated from the add-on.
-title: Wappalyzer API
+title: Technology Detection API
 type: userguide
 weight: 1
 ---
 
-# Wappalyzer API
+# Technology Detection API
 
 The following views are available via the API:
 
 ### Views
 
-* listSites: Lists all the sites recognized by the wappalyzer addon.
+* listSites: Lists all the sites recognized by the Technology Detection add-on.
 * listAll: Lists all sites and their associated applications (technologies).
 * listSite (site\*): Lists all the applications (technologies) associated with the specified site.
 
