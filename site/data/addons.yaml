@@ -422,6 +422,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/groovy-v3.2.0/groovy-beta-3.2.0.zap
   date: 2024-04-11
   version: 3.2.0
+- id: grpc
+  name: gRPC Support
+  description: Inspect, attack gRPC endpoints, and decode protobuf messages.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/grpc-support/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/grpc-v0.0.1/grpc-alpha-0.0.1.zap
+  date: 2024-05-21
+  version: 0.0.1
 - id: help
   name: Help - English
   description: English version of the ZAP help file.
