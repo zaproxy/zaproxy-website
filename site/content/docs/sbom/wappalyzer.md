@@ -1,15 +1,15 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Wappalyzer - Technology Detection Add-on SBOM
+title: Technology Detection Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.36.0
+    version: 21.37.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.36.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.37.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -36,7 +36,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.40.0
+    version: 0.41.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -66,13 +66,13 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.25.0
+    version: 1.27.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
     licenses: Apache-2.0
   - name: commons-codec
-    version: 1.16.0
+    version: 1.16.1
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
@@ -90,22 +90,22 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.13.0
-    licenses: Apache-2.0
-  - name: commons-io
     version: 2.16.1
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.13.0
+    version: 3.14.0
     licenses: Apache-2.0
   - name: commons-logging
     version: '1.2'
     licenses: Apache-2.0
+  - name: commons-logging
+    version: 1.3.1
+    licenses: Apache-2.0
   - name: commons-text
-    version: 1.10.0
+    version: 1.12.0
     licenses: Apache-2.0
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
@@ -132,10 +132,10 @@ sbom:
     version: 1.0.1
     licenses: Apache-2.0
   - name: flatlaf
-    version: 3.2.1
+    version: 3.4.1
     licenses: Apache-2.0
   - name: formhandler
-    version: 6.6.0
+    version: 6.7.0
     licenses: ''
   - name: guava
     version: 32.1.1-jre
@@ -191,11 +191,14 @@ sbom:
   - name: jackson-datatype-jdk8
     version: 2.17.0
     licenses: Apache-2.0
+  - name: jackson-datatype-jsr310
+    version: 2.17.0
+    licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
     licenses: Apache-2.0
   - name: java-semver
-    version: 0.9.0
+    version: 0.10.2
     licenses: MIT
   - name: javac
     version: 9+181-r4173-1
@@ -318,7 +321,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.16.0
+    version: 0.17.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -348,7 +351,7 @@ sbom:
     version: '1.7'
     licenses: Go License
   - name: rsyntaxtextarea
-    version: 3.3.4
+    version: 3.4.0
     licenses: BSD-3-Clause
   - name: service
     version: 1.16.0
@@ -378,7 +381,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.14.0
+    version: 2.15.0
     licenses: Apache-2.0
 ---
 
