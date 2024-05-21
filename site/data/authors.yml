@@ -151,3 +151,9 @@ mwalkowski:
   picture: /img/authors/mwalkowski_400x400.jpg
   twitter: walkowskimichal
   is_core: false
+
+amit:
+  name: Amit Panwar 
+  picture: /img/authors/amit_400x400.png
+  twitter: amitpanwar02705
+  is_core: false
