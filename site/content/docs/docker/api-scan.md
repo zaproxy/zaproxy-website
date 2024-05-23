@@ -53,6 +53,18 @@ Options:
     --schema          GraphQL schema location, URL or file, e.g. https://www.example.com/schema.graphqls
 ```
 
+### Exit Value
+
+The script will exit with codes of:
+* 0:	Success
+* 1:	At least 1 FAIL
+* 2:	At least one WARN and no FAILs
+* 3:	Any other failure
+
+By default all alerts found by ZAP will be treated as WARNings.
+
+You can use the `-c` or `-u` parameters to specify a configuration file to override this.
+
 ### Configuration
 The configuration works in a very similar way as the [Baseline Scan](../baseline-scan/) so see the Baseline page for more details.
 

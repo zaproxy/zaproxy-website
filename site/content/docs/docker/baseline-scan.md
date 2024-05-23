@@ -107,6 +107,19 @@ WARN: X-Content-Type-Options Header Missing [10021] x 3
 	https://www.example.com/sitemap.xml
 FAIL: 0	WARN: 4	IGNORE: 0	PASS: 22
 ```
+
+### Exit Value
+
+The script will exit with codes of:
+* 0:	Success
+* 1:	At least 1 FAIL
+* 2:	At least one WARN and no FAILs
+* 3:	Any other failure
+
+By default all alerts found by ZAP will be treated as WARNings.
+
+You can use the `-c` or `-u` parameters to specify a configuration file to override this.
+
 ### Configuration File
 You can configure how the baseline scan runs with a configuration file. A default configuration file can be created using the '-g' parameter.
 ```

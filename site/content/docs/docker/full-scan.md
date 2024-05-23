@@ -59,6 +59,25 @@ docker run -v $(pwd):/zap/wrk/:rw -t ghcr.io/zaproxy/zaproxy:stable zap-full-sca
 Note that `$(pwd)` is supported on Linux, MacOS and PowerShell.
 See [Docker About - Mounting the current directory](/docs/docker/about/#mounting-the-current-directory) for Windows, etc.
 
+### Exit Value
+
+The script will exit with codes of:
+* 0:	Success
+* 1:	At least 1 FAIL
+* 2:	At least one WARN and no FAILs
+* 3:	Any other failure
+
+By default all alerts found by ZAP will be treated as WARNings.
+
+You can use the `-c` or `-u` parameters to specify a configuration file to override this.
+
+### Configuration
+The configuration works in a very similar way as the [Baseline Scan](../baseline-scan/) so see the Baseline page for more details.
+
+### Configuration File
+You can configure how the full scan runs with a configuration file. A default configuration file can be created using the '-g' parameter.
+Unlike the baseline configuration file the full scan configuration file handles both active and passive scan rules.
+
 ### Scan Hooks
 This script supports [scan hooks](../scan-hooks/) which allow you to override or modify behaviour of the script components instead of having to write a new script.
 
