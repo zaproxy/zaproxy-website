@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.40.0/automation-beta-0.40.0.zap
-  date: 2024-05-07
-  version: 0.40.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.40.1/automation-beta-0.40.1.zap
+  date: 2024-05-28
+  version: 0.40.1
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
