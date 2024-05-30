@@ -173,17 +173,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.8.0/client-alpha-0.8.0.zap
   date: 2024-01-16
   version: 0.8.0
-- id: codedx
-  name: Code Dx Extension
-  description: Includes request and response data in XML reports and provides the
-    ability to upload reports directly to a Code Dx server
-  author: Code Dx, Inc.
-  status: alpha
-  infoUrl: /docs/desktop/addons/code-dx/
-  repoUrl: ''
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/codedx-v9/codedx-alpha-9.zap
-  date: 2021-10-07
-  version: 9
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
