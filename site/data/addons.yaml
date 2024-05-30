@@ -767,16 +767,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/plugnhack-v13/plugnhack-beta-13.zap
   date: 2022-10-27
   version: 13
-- id: portscan
-  name: Port Scanner
-  description: Allows to port scan a target server
-  author: ZAP Dev Team
-  status: beta
-  infoUrl: /docs/desktop/addons/port-scan/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/portscan-v10/portscan-beta-10.zap
-  date: 2022-10-27
-  version: 10
 - id: postman
   name: Postman Support
   description: Imports and spiders Postman collections.
