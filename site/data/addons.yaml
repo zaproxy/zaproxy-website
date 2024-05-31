@@ -923,9 +923,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.24.0/selenium-release-15.24.0.zap
-  date: 2024-05-21
-  version: 15.24.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.25.0/selenium-release-15.25.0.zap
+  date: 2024-05-31
+  version: 15.25.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -1055,9 +1055,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v88/webdriverlinux-release-88.zap
-  date: 2024-05-25
-  version: 88
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v89/webdriverlinux-release-89.zap
+  date: 2024-05-31
+  version: 89
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1065,9 +1065,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v88/webdrivermacos-release-88.zap
-  date: 2024-05-25
-  version: 88
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v89/webdrivermacos-release-89.zap
+  date: 2024-05-31
+  version: 89
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1075,9 +1075,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v88/webdriverwindows-release-88.zap
-  date: 2024-05-25
-  version: 88
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v89/webdriverwindows-release-89.zap
+  date: 2024-05-31
+  version: 89
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
