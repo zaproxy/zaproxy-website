@@ -17,7 +17,8 @@ The Check for Update requests that ZAP makes are detailed in the FAQ: [What 'cal
 
 {{< chart name="docker" stacked="true">}}
 
-No, we don't know why there were so many Docker pulls from May 2021 either &#128539;.
- 
+In April 2024 we removed the OWASP images, created a new zaproxy DockerHub org, 
+deprecated the SSP docker images, and started collecting stats for the GHCR image.
+
 {{< chart name="user-group" stacked="false">}}
  
