@@ -43,4 +43,5 @@ So, my questions to you, the ZAP user, are:
 I want to stress that the idea here is not for us to build an “open core” company, 
 but rather to just earn enough money to keep making ZAP better for everyone.
 
-Please reply to this thread on the user group (TBA once the blog post has been published), or email us directly on zaproxy-admin@googlegroups.com
+Please reply to [this thread on the user group](https://groups.google.com/g/zaproxy-users/c/4zrpfbA8-Es/m/w7zWBh3yAAAJ), 
+or email us directly on zaproxy-admin@googlegroups.com
