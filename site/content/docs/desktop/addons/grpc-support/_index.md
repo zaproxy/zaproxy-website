@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: grpc
-    version: 0.0.1
+    version: 0.1.0
 ---
 
 # gRPC Support
@@ -61,3 +61,9 @@ On the left side, we have the original message retrieved by the gRPC endpoint in
 You can only edit this Decoded Message in Requester and Manual request editor window simply change the part after ("::") which contain value or you can write new fields by following above mentioned rules.
 
 ![EditDemo](/docs/desktop/addons/grpc-support/images/edit-demo.gif)
+
+## See also
+
+|   |                                                            |                                         |
+|---|------------------------------------------------------------|-----------------------------------------|
+|   | [gRPC Variant](/docs/desktop/addons/grpc-support/variant/) | for information about the gRPC variant. |

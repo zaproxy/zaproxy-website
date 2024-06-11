@@ -418,9 +418,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/grpc-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/grpc-v0.0.1/grpc-alpha-0.0.1.zap
-  date: 2024-05-21
-  version: 0.0.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/grpc-v0.1.0/grpc-alpha-0.1.0.zap
+  date: 2024-06-11
+  version: 0.1.0
 - id: help
   name: Help - English
   description: English version of the ZAP help file.
