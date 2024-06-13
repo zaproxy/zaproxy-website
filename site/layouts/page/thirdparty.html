@@ -14,14 +14,52 @@
 <h5>{{ .Params.warning }}</h5>
 
 <h2>Services (Supportive)</h2>
-<p>{{ .Params.desc_services_plus }}</p>
+
+These companies use ZAP, and do the right thing by paying for a <a href="/support/#support-packages">Support Package</a> -
+these will help us become sustainable.
+<p>
+If you are interested in a commercial product based on ZAP then please check them out.
 
 <table class="table table-fixed">
 {{ range $service := $.Site.Data.thirdparty.services_plus }}
   <tr>
   <td class="cell-35"><a href="{{ $service.link }}">{{ if $service.logo }}<img src="{{ $service.logo }}"/>{{ else }}{{ $service.name }}{{ end }}</a></td>
   <td class="cell-35">{{ $service.license }}</td>
-  <td class="cell-30">{{ if $service.supporter }}<a href="/supporters/"><h5>{{ $service.supporter }}</h5></a>{{ end }}{{ if $service.notes }}{{ $service.notes }}{{ end }}</td>
+  <td class="cell-30">{{ if $service.supporter }}<a href="/support/#support-packages"><h5>{{ $service.supporter }}</h5></a>{{ end }}{{ if $service.notes }}{{ $service.notes }}{{ end }}</td>
+  </tr>
+{{ end }}
+</table>
+<br/><br/>
+
+<h2>Services (Unsupportive)</h2>
+
+These companies use ZAP but do not currently support us in any way (except where noted).
+<p>
+If you already use one of these services then please encourage them to support us financially.
+<p>
+If you are looking for commercial DAST solution then please first consider one of the companies that support us financially, listed above.
+
+<table class="table table-fixed">
+{{ range $service := $.Site.Data.thirdparty.services_minus }}
+  <tr>
+  <td class="cell-35"><a href="{{ $service.link }}">{{ $service.name }}</a></td>
+  <td class="cell-35">{{ $service.license }}</td>
+  <td class="cell-30">{{ if $service.notes }}{{ $service.notes }}{{ end }}</td>
+  </tr>
+{{ end }}
+</table>
+<br/><br/>
+
+<h2>Open Source Services</h2>
+
+Open Source projects which use ZAP.
+
+<table class="table table-fixed">
+{{ range $service := $.Site.Data.thirdparty.services_oss }}
+  <tr>
+  <td class="cell-35"><a href="{{ $service.link }}">{{ $service.name }}</a></td>
+  <td class="cell-35">{{ $service.license }}</td>
+  <td class="cell-30">{{ if $service.notes }}{{ $service.notes }}{{ end }}</td>
   </tr>
 {{ end }}
 </table>
@@ -66,18 +104,6 @@
 </table>
 <br/><br/>
 
-<h2>Services (Unsupportive)</h2>
-<p>{{ .Params.desc_services_minus }}</p>
-
-<table class="table table-fixed">
-{{ range $service := $.Site.Data.thirdparty.services_minus }}
-  <tr>
-  <td class="cell-35"><a href="{{ $service.link }}">{{ $service.name }}</a></td>
-  <td class="cell-35">{{ $service.license }}</td>
-  <td class="cell-30">{{ if $service.notes }}{{ $service.notes }}{{ end }}</td>
-  </tr>
-{{ end }}
-</table>
 
   </article>
 </section>

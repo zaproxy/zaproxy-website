@@ -1,10 +1,10 @@
 ---
 
 services_plus:
-  # ZAP Supporters or open source :)
-  # ZAP Supporters - ordered by supporter level, alphabetic
-  - name: 'Jit'
-    link: https://www.jit.io/zap?utm_source=zapproxy&utm_medium=banner&utm_campaign=zap-proxy-website-banner
+  # ZAP Supporters - ordered by support level, alphabetic
+
+  - name: 'NightVision'
+    link: https://www.nightvision.net/
     license: 'Commercial'
     supporter: ZAP Supporter
 
@@ -13,46 +13,97 @@ services_plus:
     license: 'Commercial'
     supporter: ZAP Supporter
 
+services_minus:
+  # Closed source services who are not supporting ZAP
+  # Commercial, free option tools, alphabetic
   - name: 'Astra'
     link: https://www.getastra.com/
     license: 'Commercial'
-    supporter: ZAP Supporter
-
-  - name: 'DeepFactor'
-    link: https://deepfactor.io/
-    license: 'Commercial, free community edition'
-    supporter: ZAP Supporter
-
-  - name: 'Tecvity'
-    link: https://tecvity.co/
-    license: 'Software Services Provider'
-    supporter: ZAP Supporter
+    notes: 'Limited GitHub sponsorship'
 
   - name: 'HostedScan'
     link: https://hostedscan.com/
     license: 'Commercial, free option'
-    supporter: ZAP Supporter
+    notes: 'Limited GitHub sponsorship'
+
+  - name: 'Tecvity'
+    link: https://tecvity.co/
+    license: 'Software Services Provider'
+    notes: 'Ongoing code contributions'
+
+  - name: "Aikido"
+    link: https://www.aikido.dev/
+    license: 'Commercial, free option'
+  
+  - name: 'Blacklock'
+    link: https://blacklock.io/
+    license: 'Commercial'
+
+  - name: 'Checkmarx DAST'
+    link: https://checkmarx.com/checkmarx-dast/
+    license: 'Commercial'
+
+  - name: 'Cyber Tzar'
+    link: https://www.cybertzar.com/
+    license: 'Commercial, free option'
+
+  - name: 'DeepFactor'
+    link: https://deepfactor.io/
+    license: 'Commercial, free community edition'
+
+  - name: 'Idyllum'
+    link: https://www.idyllum.com/
+    license: 'Commercial, free option'
+
+  - name: 'Forward Security'
+    link: https://forwardsecurity.com/eureka-devsecops-service/
+    license: 'Commercial'
 
   - name: 'Intruder'
     link: https://www.intruder.io/
     license: 'Commercial'
-    supporter: ZAP Supporter
 
   - name: 'IOTHREAT'
     link: https://iothreat.com/
     license: 'Commercial'
-    supporter: ZAP Supporter
 
   - name: 'Probely'
     link: https://probely.com/
     license: 'Commercial, free option'
-    supporter: ZAP Supporter
+
+  - name: 'Jit'
+    link: https://www.jit.io/zap
+    license: 'Commercial'
+
+  - name: 'Levo.ai'
+    link: https://levo.ai/
+    license: 'Commercial, free option'
+
+  - name: 'NamicSoft'
+    link: https://www.namicsoft.com/
+    license: 'Commercial'
+
+  - name: 'PatrOwl'
+    link: https://patrowl.io/
+    license: 'Commercial, free for open source projects'
+
+  - name: 'Scan Factory'
+    link: https://in.scanfactory.io/
+    license: 'Commercial'
+
+  - name: 'Sken.ai'
+    link: https://www.sken.ai/
+    license: 'Commercial, free option'
 
   - name: 'StackHawk'
     link: https://www.stackhawk.com/
     license: 'Commercial, free option'
-    supporter: ZAP Supporter
 
+  - name: 'Traceable'
+    link: https://docs.traceable.ai/docs/security-testing
+    license: 'Commercial'
+
+services_oss:
   # OWASP tools, non-commercial, alphabetic
   - name: 'SecureCodeBox'
     link: https://www.securecodebox.io/
@@ -111,68 +162,8 @@ services_plus:
     license: 'Free, open source'
     notes: No longer maintained?
 
-services_minus:
-  # Closed source services which have never supported ZAP
-  # Commercial, free option tools, alphabetic
-  - name: "Aikido"
-    link: https://www.aikido.dev/
-    license: 'Commercial, free option'
-  
-  - name: 'Cyber Tzar'
-    link: https://www.cybertzar.com/
-    license: 'Commercial, free option'
-
-  - name: 'Idyllum'
-    link: https://www.idyllum.com/
-    license: 'Commercial, free option'
-
-  - name: 'Levo.ai'
-    link: https://levo.ai/
-    license: 'Commercial, free option'
-
-  - name: 'PatrOwl'
-    link: https://patrowl.io/
-    license: 'Commercial, free for open source projects'
-
-  - name: 'Sken.ai'
-    link: https://www.sken.ai/
-    license: 'Commercial, free option'
-
-  # Commercial, alphabetic
-  - name: 'Blacklock'
-    link: https://blacklock.io/
-    license: 'Commercial'
-
-  - name: 'Checkmarx DAST'
-    link: https://checkmarx.com/checkmarx-dast/
-    license: 'Commercial'
-
-  - name: 'GitLab'
-    link: https://docs.gitlab.com/ee/user/application_security/dast/
-    license: 'Commercial'
-
-  - name: 'Forward Security'
-    link: https://forwardsecurity.com/eureka-devsecops-service/
-    license: 'Commercial'
-
-  - name: 'NamicSoft'
-    link: https://www.namicsoft.com/
-    license: 'Commercial'
-
-  - name: 'Scan Factory'
-    link: https://in.scanfactory.io/
-    license: 'Commercial'
-
-  - name: 'Traceable'
-    link: https://docs.traceable.ai/docs/security-testing
-    license: 'Commercial'
 
 integrations:
-  - name: 'ThreadFix'
-    link: https://www.coalfire.com/services/offensive-security/threadfix
-    license: 'Commercial'
-    supporter: ZAP Supporter
-
   - name: 'DefectDojo'
     link: https://www.defectdojo.org/
     license: 'Free, open source'
@@ -234,6 +225,10 @@ integrations:
     link: https://www.strobes.co/integrations
     license: 'Commercial'
  
+  - name: 'ThreadFix'
+    link: https://www.coalfire.com/services/offensive-security/threadfix
+    license: 'Commercial'
+
   - name: 'Virtuoso'
     link: https://docs.virtuoso.qa/guide/advanced-topics/virtuoso-bridge/#virtuoso-bridge-proxy-support
     license: 'Commercial'
