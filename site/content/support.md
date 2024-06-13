@@ -26,14 +26,16 @@ All of the money raised from any of these services will help fund ZAP developmen
 
 Support packages are designed for supporting ZAP existing features. They will give you prioritised access to the ZAP developers in order to resolve any problems or bugs you may find while using ZAP.
 
-|                  | Bronze          | Silver                |
-| ---              | ---             | ---                   |
-| Price (per year) | $10,000         | $20,000               |
-| Support Type     | Slack, Email    | Slack, Email, Video   |
-| Response Time    | 2 Business Days | 1 Business Day        |
+They are also a way for companies to help ZAP become sustainable.
+
+|                  | Bronze          | Silver                | Gold                |
+| ---              | ---             | ---                   | ---                 |
+| Price (per year) | $10,000         | $25,000               | $50,000             | 
+| Support Type     | Slack, Email    | Slack, Email, Video   | Slack, Email, Video |
+| Response Time    | 3 Business Days | 2 Business Days       | 1 Business Day      |
 
 All companies who purchase support packages will get a dedicated private Slack channel, 
-and more visibility and input into the ZAP roadmap.
+and more visibility and input into the ZAP roadmap, in proportion to the support level.
 
 [Get in touch](mailto:support@zaproxy.com) to purchase one of these packages or if you would like additional support.
 
