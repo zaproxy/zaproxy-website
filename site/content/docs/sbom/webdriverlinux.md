@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: '90'
+    version: '91'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v90/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v91/bom.json
   components:
   - name: aopalliance
     version: '1.0'
