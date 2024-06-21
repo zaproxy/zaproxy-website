@@ -40,6 +40,9 @@ CWE-120:
 CWE-1275:
   link: https://cwe.mitre.org/data/definitions/1275.html
 
+CWE-1336:
+  link: https://cwe.mitre.org/data/definitions/1336.html
+
 CWE-134:
   link: https://cwe.mitre.org/data/definitions/134.html
 
@@ -330,6 +333,9 @@ WSTG-v42-INPV-12:
 
 WSTG-v42-INPV-15:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/15-Testing_for_HTTP_Splitting_Smuggling
+
+WSTG-v42-INPV-18:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server-side_Template_Injection
 
 WSTG-v42-INPV-19:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery
