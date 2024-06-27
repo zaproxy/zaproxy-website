@@ -793,9 +793,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v37/pscanrulesBeta-beta-37.zap
-  date: 2024-02-12
-  version: 37
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v38/pscanrulesBeta-beta-38.zap
+  date: 2024-06-27
+  version: 38
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
