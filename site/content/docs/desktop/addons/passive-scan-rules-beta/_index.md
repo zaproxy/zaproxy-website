@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: 37.0.0
+    version: 38.0.0
 ---
 
 # Passive Scan Rules - Beta
@@ -72,6 +72,15 @@ Redirects are ignored except at the Low threshold.
 
 Latest code: [PermissionsPolicyScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/PermissionsPolicyScanRule.java)  
 Alert ID: [10063](/docs/alerts/10063/)
+
+## Script Served From Malicious polyfill.io Domain {#id-10115}
+
+This checks for scripts being served from the polyfill.io domain, which is known to have been compromised.  
+It will raise an alert with a High confidence if a script is loaded from a polyfill.io domain, and a Low confidence if it just finds an apparent reference to a polyfill.io domain in the script contents.
+
+Latest code: [PolyfillCdnScriptScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/PolyfillCdnScriptScanRule.java)
+
+Alert ID: [10115](/docs/alerts/10115/).
 
 ## Site Isolation Scan Rule {#id-90004}
 
