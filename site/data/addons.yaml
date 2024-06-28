@@ -793,9 +793,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v38/pscanrulesBeta-beta-38.zap
-  date: 2024-06-27
-  version: 38
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v39/pscanrulesBeta-beta-39.zap
+  date: 2024-06-28
+  version: 39
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
@@ -853,9 +853,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/requester/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v7.6.0/requester-beta-7.6.0.zap
-  date: 2024-05-07
-  version: 7.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v7.7.0/requester-beta-7.7.0.zap
+  date: 2024-06-28
+  version: 7.7.0
 - id: retest
   name: Retest
   description: An add-on to retest for presence/absence of previously generated alerts.
@@ -1095,6 +1095,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v45/zest-beta-45.zap
-  date: 2024-05-07
-  version: 45
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v46/zest-beta-46.zap
+  date: 2024-06-28
+  version: 46
