@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: zest
-    version: 45.0.0
+    version: 46.0.0
 ---
 
 # Zest
@@ -15,6 +15,10 @@ Zest is an experimental specialized scripting language (also known as a domain-s
 originally developed by the Mozilla security team and is intended to be used in web oriented security tools.
 
 It is included by default with ZAP.  
+
+## Engine Name
+
+The engine is named `Mozilla Zest`, which should be used when manually/programmatically configuring ZAP.
 
 ## Creating Zest scripts
 
