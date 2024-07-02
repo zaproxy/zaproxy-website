@@ -19,28 +19,24 @@
   name: "Timestamp Disclosure"
   status: "release"
   type: "Passive"
-- id: 10050
-  name: "Retrieved from Cache"
-  status: "release"
-  type: "Passive"
 - id: 10038
   name: "Content Security Policy (CSP) Header Not Set"
+  status: "release"
+  type: "Passive"
+- id: 10050
+  name: "Retrieved from Cache"
   status: "release"
   type: "Passive"
 - id: 10035
   name: "Strict-Transport-Security Header"
   status: "release"
   type: "Passive"
-- id: 10015
-  name: "Re-examine Cache-control Directives"
-  status: "release"
-  type: "Passive"
-- id: 10104
-  name: "User Agent Fuzzer"
-  status: "release"
-  type: "Active"
 - id: 10017
   name: "Cross-Domain JavaScript Source File Inclusion"
+  status: "release"
+  type: "Passive"
+- id: 10015
+  name: "Re-examine Cache-control Directives"
   status: "release"
   type: "Passive"
 - id: 10202
@@ -51,31 +47,35 @@
   name: "Anti-clickjacking Header"
   status: "release"
   type: "Passive"
-- id: 90033
-  name: "Loosely Scoped Cookie"
+- id: 10104
+  name: "User Agent Fuzzer"
+  status: "release"
+  type: "Active"
+- id: 10054
+  name: "Cookie without SameSite Attribute"
   status: "release"
   type: "Passive"
 - id: 10109
   name: "Modern Web Application"
   status: "release"
   type: "Passive"
-- id: 10095
-  name: "Backup File Disclosure"
-  status: "beta"
-  type: "Active"
-- id: 90003
-  name: "Sub Resource Integrity Attribute Missing"
-  status: "beta"
-  type: "Passive"
-- id: 10054
-  name: "Cookie without SameSite Attribute"
+- id: 90033
+  name: "Loosely Scoped Cookie"
   status: "release"
   type: "Passive"
 - id: 10055
   name: "CSP"
   status: "release"
   type: "Passive"
-- id: 10036
-  name: "HTTP Server Response Header"
+- id: 10010
+  name: "Cookie No HttpOnly Flag"
   status: "release"
   type: "Passive"
+- id: 90003
+  name: "Sub Resource Integrity Attribute Missing"
+  status: "beta"
+  type: "Passive"
+- id: 20012
+  name: "Anti-CSRF Tokens Check"
+  status: "beta"
+  type: "Active"
