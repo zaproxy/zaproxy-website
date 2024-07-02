@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: grpc
-    version: 0.1.0
+    version: 0.2.0
 ---
 
 # gRPC Support
@@ -64,6 +64,7 @@ You can only edit this Decoded Message in Requester and Manual request editor wi
 
 ## See also
 
-|   |                                                            |                                         |
-|---|------------------------------------------------------------|-----------------------------------------|
-|   | [gRPC Variant](/docs/desktop/addons/grpc-support/variant/) | for information about the gRPC variant. |
+|   |                                                                |                                                   |
+|---|----------------------------------------------------------------|---------------------------------------------------|
+|   | [gRPC Variant](/docs/desktop/addons/grpc-support/variant/)     | for information about the gRPC variant.           |
+|   | [gRPC WebSocket](/docs/desktop/addons/grpc-support/websocket/) | for information about the gRPC WebSocket Support. |
