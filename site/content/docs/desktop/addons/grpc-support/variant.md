@@ -15,6 +15,7 @@ Custom Values are injected into all key-value pairs in all gRPC values that are 
 
 ## See also
 
-|   |                                            |                                     |
-|---|--------------------------------------------|-------------------------------------|
-|   | [gRPC](/docs/desktop/addons/grpc-support/) | for an overview of the gRPC add-on. |
+|   |                                                                |                                                   |
+|---|----------------------------------------------------------------|---------------------------------------------------|
+|   | [gRPC](/docs/desktop/addons/grpc-support/)                     | for an overview of the gRPC add-on.               |
+|   | [gRPC WebSocket](/docs/desktop/addons/grpc-support/websocket/) | for information about the gRPC WebSocket Support. |
