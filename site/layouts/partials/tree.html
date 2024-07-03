@@ -1,61 +1,81 @@
 <section class="tree-menu">
-<input type="text" name="filter" data-tree-filter placeholder="Filter links" />
-<ul class="tree-root">
-{{- $here := .dir }}
-{{- range (readDir $here) }}
-    {{ if in .Name "image" }}
-    {{ else }}
-        {{- $fullPath := (printf "%s%s" $here .Name) }}
-        {{- $fullUrl := replace $fullPath "/content" "" }}
-        {{- $stat := os.Stat $fullPath }}
-        {{ if $stat.IsDir }}
-            {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" 1 }}
-        {{ end }}
-    {{ end }}
-{{- end -}}
-</ul>
-</section>
-{{ define "treemenu" }}
-    {{ $nextDepth := add .depth 1 }}
-    {{- $activeLink := $.root.Permalink }}
-    {{- $className := "" }}
-    {{- $deprecated := true }}
-    {{- with $.root.Site.GetPage .url }}
-        {{- if not .Params.deprecated }}
-            {{- $deprecated = false }}
-            {{- $branchLink := .Permalink }}
-            {{- if in $activeLink $branchLink  }}
-                {{- $className = "tree-branch-active" -}}
-            {{ end }}
-            {{- if eq $activeLink $branchLink  }}
-                {{- $className = "tree-active tree-branch-active" -}}
-            {{- end -}}
-            <li data-depth="{{ $.depth }}" class="{{ $className }}">
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
-        {{- end }}
-    {{- end }}
-    {{- if not $deprecated }}
-        <ul class="tree-branch">
-        {{- range (readDir .path) }}
-            {{- if in .Name "image" | or (eq .Name "_index.md") }}
-            {{- else }}
-                {{- $fullPath := (printf "%s/%s" $.path .Name) }}
+    <input type="text" name="filter" data-tree-filter placeholder="Filter links" />
+    <ul class="tree-root">
+        {{- $here := .dir }}
+        {{- range (readDir $here) }}
+            {{- if not (in .Name "image") }}
+                {{- $fullPath := (printf "%s%s" $here .Name) }}
                 {{- $fullUrl := replace $fullPath "/content" "" }}
-                {{- $fullUrl = replace $fullUrl ".md" "" }}
                 {{- $stat := os.Stat $fullPath }}
                 {{- if $stat.IsDir }}
-                    {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" $nextDepth }}
-                {{- else }}
-                    {{- with $.root.Site.GetPage $fullUrl }}
-                        {{- $link := printf "%s" .Permalink }}  
-                        <li{{- if in $activeLink $link }} class="tree-active"{{ end }}> 
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                        </li>
-                    {{- end }}
+                    {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" 1 }}
                 {{- end }}
             {{- end }}
         {{- end }}
-        </ul>
-    </li>
-    {{- end }}
+    </ul>
+</section>
+
+{{ define "treemenu" }}
+    {{ $nextDepth := add .depth 1 }}
+    {{ $activeLink := $.root.Permalink }}
+    {{ $className := "" }}
+    {{ $deprecated := true }}
+    {{ with $.root.Site.GetPage .url }}
+        {{ if not .Params.deprecated }}
+            {{ $deprecated = false }}
+            {{ $branchLink := .Permalink }}
+            {{ if in $activeLink $branchLink }}
+                {{ $className = "tree-branch-active" }}
+            {{ end }}
+            {{ if eq $activeLink $branchLink }}
+                {{ $className = "tree-active tree-branch-active" }}
+            {{ end }}
+            <li data-depth="{{ $.depth }}" class="{{ $className }}">
+                <a href="{{ .Permalink }}" data-toggle="tree-branch">{{ .Title }}</a>
+                {{ if lt $.depth 3 }}
+                    <ul class="tree-branch" style="display:none;">
+                        {{ range (readDir $.path) }}
+                            {{ if not (in .Name "image" | or (eq .Name "_index.md")) }}
+                                {{ $fullPath := printf "%s/%s" $.path .Name }}
+                                {{ $fullUrl := replace $fullPath "/content" "" }}
+                                {{ $fullUrl = replace $fullUrl ".md" "" }}
+                                {{ $stat := os.Stat $fullPath }}
+                                {{ if $stat.IsDir }}
+                                    {{ template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" $nextDepth }}
+                                {{ else }}
+                                    {{ with $.root.Site.GetPage $fullUrl }}
+                                        {{ $link := printf "%s" .Permalink }}
+                                        <li{{ if in $activeLink $link }} class="tree-active"{{ end }}>
+                                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                        </li>
+                                    {{ end }}
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                {{ end }}
+            </li>
+        {{ end }}
+    {{ end }}
 {{ end }}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggles = document.querySelectorAll('[data-toggle="tree-branch"]');
+        
+        toggles.forEach(function(toggle) {
+            toggle.addEventListener("mouseover", function(event) {
+                const branch = this.nextElementSibling;
+                if (branch && branch.classList.contains('tree-branch')) {
+                    branch.style.display = "block";
+                }
+            });
+
+            toggle.parentElement.addEventListener("mouseleave", function(event) {
+                const branch = toggle.nextElementSibling;
+                if (branch && branch.classList.contains('tree-branch')) {
+                    branch.style.display = "block";
+                }
+            });
+        });
+    });
+</script>
