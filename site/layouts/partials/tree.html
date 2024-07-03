@@ -3,79 +3,119 @@
     <ul class="tree-root">
         {{- $here := .dir }}
         {{- range (readDir $here) }}
-            {{- if not (in .Name "image") }}
+            {{ if in .Name "image" }}
+            {{ else }}
                 {{- $fullPath := (printf "%s%s" $here .Name) }}
                 {{- $fullUrl := replace $fullPath "/content" "" }}
                 {{- $stat := os.Stat $fullPath }}
-                {{- if $stat.IsDir }}
+                {{ if $stat.IsDir }}
                     {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" 1 }}
-                {{- end }}
-            {{- end }}
-        {{- end }}
+                {{ end }}
+            {{ end }}
+        {{- end -}}
     </ul>
 </section>
 
 {{ define "treemenu" }}
     {{ $nextDepth := add .depth 1 }}
-    {{ $activeLink := $.root.Permalink }}
-    {{ $className := "" }}
-    {{ $deprecated := true }}
-    {{ with $.root.Site.GetPage .url }}
-        {{ if not .Params.deprecated }}
-            {{ $deprecated = false }}
-            {{ $branchLink := .Permalink }}
-            {{ if in $activeLink $branchLink }}
-                {{ $className = "tree-branch-active" }}
+    {{- $activeLink := $.root.Permalink }}
+    {{- $className := "" }}
+    {{- $deprecated := true }}
+    {{- with $.root.Site.GetPage .url }}
+        {{- if not .Params.deprecated }}
+            {{- $deprecated = false }}
+            {{- $branchLink := .Permalink }}
+            {{- if in $activeLink $branchLink  }}
+                {{- $className = "tree-branch-active" -}}
             {{ end }}
-            {{ if eq $activeLink $branchLink }}
-                {{ $className = "tree-active tree-branch-active" }}
-            {{ end }}
+            {{- if eq $activeLink $branchLink  }}
+                {{- $className = "tree-active tree-branch-active" -}}
+            {{- end -}}
             <li data-depth="{{ $.depth }}" class="{{ $className }}">
                 <a href="{{ .Permalink }}" data-toggle="tree-branch">{{ .Title }}</a>
-                {{ if lt $.depth 3 }}
-                    <ul class="tree-branch" style="display:none;">
-                        {{ range (readDir $.path) }}
-                            {{ if not (in .Name "image" | or (eq .Name "_index.md")) }}
-                                {{ $fullPath := printf "%s/%s" $.path .Name }}
-                                {{ $fullUrl := replace $fullPath "/content" "" }}
-                                {{ $fullUrl = replace $fullUrl ".md" "" }}
-                                {{ $stat := os.Stat $fullPath }}
-                                {{ if $stat.IsDir }}
-                                    {{ template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" $nextDepth }}
-                                {{ else }}
-                                    {{ with $.root.Site.GetPage $fullUrl }}
-                                        {{ $link := printf "%s" .Permalink }}
-                                        <li{{ if in $activeLink $link }} class="tree-active"{{ end }}>
-                                            <a href="{{ .Permalink }}">{{ .Title }}</a>
-                                        </li>
-                                    {{ end }}
-                                {{ end }}
-                            {{ end }}
-                        {{ end }}
-                    </ul>
-                {{ end }}
-            </li>
-        {{ end }}
-    {{ end }}
+        {{- end }}
+    {{- end }}
+    {{- if not $deprecated }}
+        <ul class="tree-branch" style="display:none;">
+        {{- range (readDir .path) }}
+            {{- if in .Name "image" | or (eq .Name "_index.md") }}
+            {{- else }}
+                {{- $fullPath := (printf "%s/%s" $.path .Name) }}
+                {{- $fullUrl := replace $fullPath "/content" "" }}
+                {{- $fullUrl = replace $fullUrl ".md" "" }}
+                {{- $stat := os.Stat $fullPath }}
+                {{- if $stat.IsDir }}
+                    {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" $nextDepth }}
+                {{- else }}
+                    {{- with $.root.Site.GetPage $fullUrl }}
+                        {{- $link := printf "%s" .Permalink }}  
+                        <li{{- if in $activeLink $link }} class="tree-active"{{ end }}> 
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </li>
+                    {{- end }}
+                {{- end }}
+            {{- end }}
+        {{- end }}
+        </ul>
+    </li>
+    {{- end }}
 {{ end }}
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const toggles = document.querySelectorAll('[data-toggle="tree-branch"]');
-        
-        toggles.forEach(function(toggle) {
-            toggle.addEventListener("mouseover", function(event) {
-                const branch = this.nextElementSibling;
-                if (branch && branch.classList.contains('tree-branch')) {
-                    branch.style.display = "block";
-                }
-            });
+        const filterInput = document.querySelector('[data-tree-filter]');
 
-            toggle.parentElement.addEventListener("mouseleave", function(event) {
-                const branch = toggle.nextElementSibling;
+        let clickedOnce = false;
+
+        toggles.forEach(function(toggle) {
+            toggle.addEventListener("click", function(event) {
+                const branch = this.nextElementSibling;
+
                 if (branch && branch.classList.contains('tree-branch')) {
-                    branch.style.display = "block";
+                    if (clickedOnce) {
+                        window.location.href = this.href;
+                    } else {
+                        event.preventDefault();
+                        branch.style.display = branch.style.display === "none" || branch.style.display === "" ? "block" : "none";
+                        clickedOnce = true;
+                        setTimeout(() => clickedOnce = false, 300);
+                    }
                 }
             });
+        });
+
+        filterInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                const filter = this.value.trim().toLowerCase();
+                const items = document.querySelectorAll('.tree-root li');
+
+                items.forEach(function(item) {
+                    const text = item.textContent.toLowerCase();
+                    const parent = item.closest('ul.tree-branch');
+
+                    if (filter === '') {
+                        item.style.display = 'list-item';
+                        if (parent) {
+                            parent.style.display = 'block';
+                        }
+                    } else if (text.includes(filter)) {
+                        item.style.display = 'list-item';
+                        if (parent) {
+                            parent.style.display = 'block';
+                        }
+                    } else {
+                        item.style.display = 'none';
+                    }
+
+                    if (item.querySelectorAll('li[style="display: list-item;"]').length > 0) {
+                        item.style.display = 'list-item';
+                        if (item.closest('ul.tree-branch')) {
+                            item.closest('ul.tree-branch').style.display = 'block';
+                        }
+                    }
+                });
+            }
         });
     });
 </script>
