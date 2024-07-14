@@ -32,7 +32,8 @@
                 {{- $className = "tree-active tree-branch-active" -}}
             {{- end -}}
             <li data-depth="{{ $.depth }}" class="{{ $className }}">
-                <a href="{{ .Permalink }}" data-toggle="tree-branch">{{ .Title }}</a>
+                <span class="toggle-btn" data-toggle="tree-branch">[+]</span>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
         {{- end }}
     {{- end }}
     {{- if not $deprecated }}
@@ -61,26 +62,25 @@
     {{- end }}
 {{ end }}
 
+<style>
+    .toggle-btn {
+        cursor: pointer;
+    }
+</style>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const toggles = document.querySelectorAll('[data-toggle="tree-branch"]');
         const filterInput = document.querySelector('[data-tree-filter]');
 
-        let clickedOnce = false;
-
         toggles.forEach(function(toggle) {
             toggle.addEventListener("click", function(event) {
-                const branch = this.nextElementSibling;
-
-                if (branch && branch.classList.contains('tree-branch')) {
-                    if (clickedOnce) {
-                        window.location.href = this.href;
-                    } else {
-                        event.preventDefault();
-                        branch.style.display = branch.style.display === "none" || branch.style.display === "" ? "block" : "none";
-                        clickedOnce = true;
-                        setTimeout(() => clickedOnce = false, 300);
-                    }
+                event.stopPropagation();
+                const branch = this.parentElement.querySelector('.tree-branch');
+                if (branch) {
+                    const isOpen = branch.style.display === "block";
+                    branch.style.display = isOpen ? "none" : "block";
+                    this.textContent = isOpen ? "[+]" : "[-]";
                 }
             });
         });
@@ -92,27 +92,29 @@
 
                 items.forEach(function(item) {
                     const text = item.textContent.toLowerCase();
-                    const parent = item.closest('ul.tree-branch');
+                    const parentBranch = item.closest('ul.tree-branch');
+                    const toggleBtn = parentBranch ? parentBranch.previousElementSibling.querySelector('.toggle-btn') : null;
 
                     if (filter === '') {
                         item.style.display = 'list-item';
-                        if (parent) {
-                            parent.style.display = 'block';
-                        }
+                        if (parentBranch) parentBranch.style.display = 'block';
+                        if (toggleBtn) toggleBtn.textContent = "[+]";
                     } else if (text.includes(filter)) {
                         item.style.display = 'list-item';
-                        if (parent) {
-                            parent.style.display = 'block';
-                        }
+                        if (parentBranch) parentBranch.style.display = 'block';
+                        if (toggleBtn) toggleBtn.textContent = "[-]";
                     } else {
                         item.style.display = 'none';
                     }
+                });
 
-                    if (item.querySelectorAll('li[style="display: list-item;"]').length > 0) {
-                        item.style.display = 'list-item';
-                        if (item.closest('ul.tree-branch')) {
-                            item.closest('ul.tree-branch').style.display = 'block';
-                        }
+                document.querySelectorAll('.tree-branch').forEach(function(branch) {
+                    if (branch.querySelectorAll('li[style="display: list-item;"]').length > 0) {
+                        branch.style.display = 'block';
+                        const toggleBtn = branch.previousElementSibling.querySelector('.toggle-btn');
+                        if (toggleBtn) toggleBtn.textContent = "[-]";
+                    } else {
+                        branch.style.display = 'none';
                     }
                 });
             }
