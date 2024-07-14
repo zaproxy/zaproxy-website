@@ -647,11 +647,11 @@
   description: Build OpenAPI Specs with ZAP traffic using Levo.ai.
   author: Levo.ai
   status: alpha
-  infoUrl: https://docs.levo.ai/api-observability/quickstart/quickstart-zap-addon
+  infoUrl: https://levo.ai
   repoUrl: https://github.com/levoai/levoai-zap-addon
-  downloadUrl: https://github.com/levoai/levoai-zap-addon/releases/download/v0.2.0/levoai-zap-addon-alpha-0.2.0.zap
-  date: 2022-12-26
-  version: 0.2.0
+  downloadUrl: https://github.com/levoai/levoai-zap-addon/releases/download/v0.3.0/levoai-zap-addon-alpha-0.3.0.zap
+  date: 2024-07-10
+  version: 0.3.0
 - id: maplocal
   name: Map Local
   description: Allows mapping of responses to content of a chosen local file.
@@ -711,9 +711,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v41/openapi-beta-41.zap
-  date: 2024-05-10
-  version: 41
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v42/openapi-beta-42.zap
+  date: 2024-07-04
+  version: 42
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -803,9 +803,9 @@
   status: release
   infoUrl: /docs/desktop/addons/quick-start/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v47/quickstart-release-47.zap
-  date: 2024-05-07
-  version: 47
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v48/quickstart-release-48.zap
+  date: 2024-07-08
+  version: 48
 - id: reflect
   name: Reflect
   description: Finds reflected parameters
@@ -873,9 +873,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.36.0/retire-release-0.36.0.zap
-  date: 2024-06-03
-  version: 0.36.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.37.0/retire-release-0.37.0.zap
+  date: 2024-07-04
+  version: 0.37.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -1045,9 +1045,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.38.0/wappalyzer-release-21.38.0.zap
-  date: 2024-06-03
-  version: 21.38.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.39.0/wappalyzer-release-21.39.0.zap
+  date: 2024-07-04
+  version: 21.39.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
