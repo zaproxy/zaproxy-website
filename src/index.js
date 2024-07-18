@@ -1,3 +1,6 @@
+/* eslint-disable max-len */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable indent */
 // JS Goes here - ES6 supported
 
 import "./css/main.css";
@@ -73,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const label = el.innerText.toLowerCase();
       el.appendChild(document.createElement('br'));
       addInput(el, label, idx);
+      addSortButton(el, idx);
       
       if (isSuggested) {
         setupDatalist(el, label, idx);      
@@ -94,6 +98,50 @@ document.addEventListener("DOMContentLoaded", function() {
         columns, // Needed for filtered
       };
     });
+
+    /* rows.map((r) => {
+      console.log(`${JSON.stringify(r.columns)}`);
+    }); */
+  
+    function addSortButton(el, idx) {
+      const button = document.createElement('button');
+      if (idx === 0 || idx === 5 || idx === 6) {
+        button.innerText = 'Sort';
+          button.addEventListener("click", function() {
+              sortTable(idx);
+          });
+          button.setAttribute('style', 'justify-content: center');
+        }
+        el.appendChild(button);
+    }
+
+    let direction = false;
+    function sortTable(columnIndex) {
+      removeAllChildNodes(tbody);
+      if (columnIndex === 0) {
+        rows.sort((a, b) => {
+          a = a.columns[columnIndex].split("-");
+          b = b.columns[columnIndex].split("-");
+          if (a[0] === b[0]) {
+            return direction ? a[1] - b[1] : b[1] - a[1];
+          } else {
+            return direction ? a[0] - b[0] : b[0] - a[0];
+          }
+        });
+        
+        for (let i = 0; i <= rows.length - 1; i++) {
+          tbody.appendChild(rows[i].el);
+        }
+      } else {
+        rows.sort((a, b) => {
+          return direction ? a.columns[columnIndex] - b.columns[columnIndex] : b.columns[columnIndex] - a.columns[columnIndex];
+        });
+        for (let i = 0; i <= rows.length - 1; i++) {
+          tbody.appendChild(rows[i].el);
+        }
+      }
+      direction = !direction;
+    }
 
     // Go through options elements and populate lists with column aggregates
     // gathered in previous loop
