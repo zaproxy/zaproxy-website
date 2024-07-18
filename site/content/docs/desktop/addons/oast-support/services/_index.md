@@ -15,5 +15,5 @@ The OAST add-on currently supports the following services:
 
 ### Default Services
 
-* BOAST - https://odiss.eu:1337/events
+* BOAST - https://odiss.eu:2096/events
 * Interactsh - https://interactsh.com

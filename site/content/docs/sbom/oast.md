@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: oast
-    version: 0.18.0
+    version: 0.19.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.18.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.19.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -18,13 +18,13 @@ sbom:
     version: 1.1.2
     licenses: Apache-2.0
   - name: asm
-    version: '9.5'
+    version: '9.6'
     licenses: BSD-3-Clause
   - name: asm-commons
-    version: '9.5'
+    version: '9.6'
     licenses: BSD-3-Clause
   - name: asm-tree
-    version: '9.5'
+    version: '9.6'
     licenses: BSD-3-Clause
   - name: auto-common
     version: 1.2.2
@@ -66,7 +66,7 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.26.0
+    version: 1.27.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -107,23 +107,20 @@ sbom:
   - name: commons-text
     version: 1.12.0
     licenses: Apache-2.0
-  - name: database
-    version: 0.5.0
-    licenses: ''
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
   - name: datanucleus-api-jdo
-    version: 6.0.1
+    version: 6.0.2
     licenses: Apache-2.0
   - name: datanucleus-core
-    version: 6.0.4
+    version: 6.0.7
     licenses: Apache-2.0
   - name: datanucleus-jdo-query
     version: 6.0.1
     licenses: Apache-2.0
   - name: datanucleus-rdbms
-    version: 6.0.4
+    version: 6.0.7
     licenses: Apache-2.0
   - name: delight-graaljs-sandbox
     version: 0.1.2
@@ -156,7 +153,7 @@ sbom:
     version: 3.4.1
     licenses: Apache-2.0
   - name: flyway-core
-    version: 9.20.0
+    version: 9.22.3
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -164,9 +161,6 @@ sbom:
   - name: graal-sdk
     version: 22.3.3
     licenses: UPL-1.0
-  - name: graaljs
-    version: 0.8.0
-    licenses: ''
   - name: gson
     version: 2.10.1
     licenses: Apache-2.0
@@ -207,7 +201,13 @@ sbom:
     version: '71.1'
     licenses: Unicode/ICU License
   - name: jackson-annotations
+    version: 2.15.2
+    licenses: Apache-2.0
+  - name: jackson-annotations
     version: 2.17.0
+    licenses: Apache-2.0
+  - name: jackson-core
+    version: 2.15.2
     licenses: Apache-2.0
   - name: jackson-core
     version: 2.17.0
@@ -216,6 +216,15 @@ sbom:
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
+    version: 2.15.2
+    licenses: Apache-2.0
+  - name: jackson-databind
+    version: 2.17.0
+    licenses: Apache-2.0
+  - name: jackson-dataformat-toml
+    version: 2.15.2
+    licenses: Apache-2.0
+  - name: jackson-dataformat-toml
     version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
@@ -225,6 +234,9 @@ sbom:
     version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
+    version: 2.17.0
+    licenses: Apache-2.0
+  - name: jackson-datatype-jsr310
     version: 2.17.0
     licenses: Apache-2.0
   - name: java-diff-utils
@@ -362,9 +374,6 @@ sbom:
   - name: netty-transport-native-unix-common
     version: 4.1.100.Final
     licenses: Apache-2.0
-  - name: network
-    version: 0.17.0
-    licenses: ''
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
@@ -372,16 +381,16 @@ sbom:
     version: 1.3.0
     licenses: Apache-2.0
   - name: org.jacoco.agent
-    version: 0.8.9
+    version: 0.8.11
     licenses: EPL-2.0
   - name: org.jacoco.ant
-    version: 0.8.9
+    version: 0.8.11
     licenses: EPL-2.0
   - name: org.jacoco.core
-    version: 0.8.9
+    version: 0.8.11
     licenses: EPL-2.0
   - name: org.jacoco.report
-    version: 0.8.9
+    version: 0.8.11
     licenses: EPL-2.0
   - name: pcollections
     version: 4.0.1
@@ -396,7 +405,7 @@ sbom:
     version: 3.4.0
     licenses: BSD-3-Clause
   - name: scripts
-    version: 45.3.0
+    version: 45.5.0
     licenses: ''
   - name: service
     version: 1.16.0
@@ -411,7 +420,7 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: sqlite-jdbc
-    version: 3.42.0.0
+    version: 3.45.3.0
     licenses: Apache-2.0
   - name: stax2-api
     version: 4.2.2
@@ -419,9 +428,6 @@ sbom:
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
-  - name: testutils
-    version: unspecified
-    licenses: ''
   - name: truffle-api
     version: 22.3.3
     licenses: UPL-1.0
@@ -432,7 +438,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.15.0-SNAPSHOT
+    version: 2.15.0
     licenses: Apache-2.0
 ---
 
