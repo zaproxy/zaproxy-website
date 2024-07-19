@@ -88,14 +88,29 @@ CWE-319:
 CWE-326:
   link: https://cwe.mitre.org/data/definitions/326.html
 
+CWE-327:
+  link: https://cwe.mitre.org/data/definitions/327.html
+
 CWE-345:
   link: https://cwe.mitre.org/data/definitions/345.html
+
+CWE-346:
+  link: https://cwe.mitre.org/data/definitions/346.html
+
+CWE-347:
+  link: https://cwe.mitre.org/data/definitions/347.html
 
 CWE-352:
   link: https://cwe.mitre.org/data/definitions/352.html
 
 CWE-359:
   link: https://cwe.mitre.org/data/definitions/359.html
+
+CWE-425:
+  link: https://cwe.mitre.org/data/definitions/425.html
+
+CWE-434:
+  link: https://cwe.mitre.org/data/definitions/434.html
 
 CWE-472:
   link: https://cwe.mitre.org/data/definitions/472.html
@@ -133,11 +148,17 @@ CWE-601:
 CWE-614:
   link: https://cwe.mitre.org/data/definitions/614.html
 
+CWE-615:
+  link: https://cwe.mitre.org/data/definitions/615.html
+
 CWE-642:
   link: https://cwe.mitre.org/data/definitions/642.html
 
 CWE-693:
   link: https://cwe.mitre.org/data/definitions/693.html
+
+CWE-74:
+  link: https://cwe.mitre.org/data/definitions/74.html
 
 CWE-749:
   link: https://cwe.mitre.org/data/definitions/749.html
@@ -265,6 +286,9 @@ WSTG-v42-CLNT-07:
 WSTG-v42-CLNT-09:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking
 
+WSTG-v42-CLNT-10:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/10-Testing_WebSockets
+
 WSTG-v42-CONF-04:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
 
@@ -285,6 +309,9 @@ WSTG-v42-CRYP-02:
 
 WSTG-v42-CRYP-03:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/03-Testing_for_Sensitive_Information_Sent_via_Unencrypted_Channels
+
+WSTG-v42-CRYP-04:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption
 
 WSTG-v42-ERRH-01:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling
