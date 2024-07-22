@@ -22,7 +22,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.24.8",
+    "@babel/core": "^7.24.9",
     "@babel/eslint-parser": "^7.24.8",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
@@ -41,7 +41,7 @@
     "exports-loader": "^5.0.0",
     "fancy-log": "^2.0.0",
     "file-loader": "^6.2.0",
-    "hugo-bin": "^0.125.2",
+    "hugo-bin": "^0.126.0",
     "imports-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.9.0",
     "node-sass": "^9.0.0",
