@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v66/ascanrules-release-66.zap
-  date: 2024-05-07
-  version: 66
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v67/ascanrules-release-67.zap
+  date: 2024-07-22
+  version: 67
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -57,9 +57,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v53/ascanrulesBeta-beta-53.zap
-  date: 2024-03-28
-  version: 53
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v54/ascanrulesBeta-beta-54.zap
+  date: 2024-07-22
+  version: 54
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -231,9 +231,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/dev-add-on/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.5.0/dev-alpha-0.5.0.zap
-  date: 2024-01-10
-  version: 0.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.6.0/dev-alpha-0.6.0.zap
+  date: 2024-07-22
+  version: 0.6.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
@@ -314,9 +314,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.9.0/exim-beta-0.9.0.zap
-  date: 2024-05-07
-  version: 0.9.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.10.0/exim-beta-0.10.0.zap
+  date: 2024-07-22
+  version: 0.10.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -913,9 +913,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.4.0/scripts-release-45.4.0.zap
-  date: 2024-05-16
-  version: 45.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.5.0/scripts-release-45.5.0.zap
+  date: 2024-07-22
+  version: 45.5.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -923,9 +923,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.26.0/selenium-release-15.26.0.zap
-  date: 2024-06-21
-  version: 15.26.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.27.0/selenium-release-15.27.0.zap
+  date: 2024-07-22
+  version: 15.27.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -964,9 +964,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.19.0/spiderAjax-release-23.19.0.zap
-  date: 2024-05-07
-  version: 23.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.20.0/spiderAjax-release-23.20.0.zap
+  date: 2024-07-22
+  version: 23.20.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)

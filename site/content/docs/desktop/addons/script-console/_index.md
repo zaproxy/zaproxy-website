@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: scripts
-    version: 45.4.0
+    version: 45.5.0
 ---
 
 # Script Console
