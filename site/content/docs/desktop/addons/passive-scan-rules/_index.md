@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 58.0.0
+    version: 59.0.0
 ---
 
 # Passive Scan Rules
@@ -397,6 +397,27 @@ This rule supports **Trusted Domains** , check "General Configuration" for more 
 Latest code: [LinkTargetScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/LinkTargetScanRule.java)
 
 Alert ID: [10108](/docs/alerts/10108/).
+
+## Script Served From Malicious Domain (polyfill) {#id-10115}
+
+This checks for scripts being served from one of the 'polyfill' domains, which are known to have been compromised.  
+It will raise an alert with a High confidence if a script is loaded from one of the malicious domains, and a Low confidence if it just finds an apparent reference to one of the malicious domains in the script contents.
+
+The known malicious 'polyfill' domains are:
+
+* polyfill.io
+* bootcdn.net
+* bootcss.com
+* staticfile.net
+* staticfile.org
+* unionadjs.com
+* xhsbpza.com
+* union.macoms.la
+* newcrbpc.com
+
+Latest code: [PolyfillCdnScriptScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/PolyfillCdnScriptScanRule.java)
+
+Alert ID: [10115](/docs/alerts/10115/).
 
 ## Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s) {#id-10037}
 
