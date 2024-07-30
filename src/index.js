@@ -56,6 +56,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Add input for filtering
     function addInput(el, label, idx) {
+      const container = document.createElement('div');
+      container.setAttribute('style', 'display: flex; align-items: center;');
+
       const input = document.createElement('input');
       input.addEventListener("change", function(e) {
         widget.filters[idx] = e.target.value;
@@ -68,7 +71,11 @@ document.addEventListener("DOMContentLoaded", function() {
       input.setAttribute('type', 'text');
       input.setAttribute('name', 'filter_'  + label);
       input.setAttribute('list', 'opts_for_'  + label);
-      el.appendChild(input);
+
+      container.appendChild(input);
+      addSortButton(container, idx);  
+
+      el.appendChild(container);
     }
     const tbody = el.querySelector('tbody');
     const headings = Array.from(el.querySelectorAll('thead th')).map((el, idx) => {
@@ -76,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function() {
       const label = el.innerText.toLowerCase();
       el.appendChild(document.createElement('br'));
       addInput(el, label, idx);
-      addSortButton(el, idx);
       
       if (isSuggested) {
         setupDatalist(el, label, idx);      
@@ -104,18 +110,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }); */
   
     function addSortButton(el, idx) {
-      const button = document.createElement('button');
       const img = document.createElement('img');
-      button.innerText = 'Sort';
-        button.addEventListener("click", function() {
-            sortTable(idx);
-        });
-        img.addEventListener("click", function() {
-          sortTable(idx);
-        }); 
-        button.setAttribute('style', 'justify-content: center');
+      img.src = "https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/up-down-arrows-icon.png"
+      img.addEventListener("click", function() {
+        sortTable(idx);
+      });
+      img.setAttribute('style', 'width: 16px; margin-left: 5px' )
     
-        el.appendChild(button);
+      el.appendChild(img)
     }
 
     let direction = false;
