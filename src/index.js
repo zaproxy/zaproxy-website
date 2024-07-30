@@ -105,40 +105,45 @@ document.addEventListener("DOMContentLoaded", function() {
   
     function addSortButton(el, idx) {
       const button = document.createElement('button');
-      if (idx === 0 || idx === 5 || idx === 6) {
-        button.innerText = 'Sort';
-          button.addEventListener("click", function() {
-              sortTable(idx);
-          });
-          button.setAttribute('style', 'justify-content: center');
-        }
+      const img = document.createElement('img');
+      button.innerText = 'Sort';
+        button.addEventListener("click", function() {
+            sortTable(idx);
+        });
+        img.addEventListener("click", function() {
+          sortTable(idx);
+        }); 
+        button.setAttribute('style', 'justify-content: center');
+    
         el.appendChild(button);
     }
 
     let direction = false;
     function sortTable(columnIndex) {
       removeAllChildNodes(tbody);
-      if (columnIndex === 0) {
+      if (isNaN(rows[0].columns[columnIndex][0]) && isNaN(rows[rows.length - 1].columns[columnIndex][0])) {
         rows.sort((a, b) => {
-          a = a.columns[columnIndex].split("-");
-          b = b.columns[columnIndex].split("-");
-          if (a[0] === b[0]) {
-            return direction ? a[1] - b[1] : b[1] - a[1];
-          } else {
-            return direction ? a[0] - b[0] : b[0] - a[0];
-          }
+          a = a.columns[columnIndex];
+          b = b.columns[columnIndex];
+          return direction ? a.localeCompare(b) : b.localeCompare(a);
         });
-        
-        for (let i = 0; i <= rows.length - 1; i++) {
-          tbody.appendChild(rows[i].el);
-        }
       } else {
-        rows.sort((a, b) => {
-          return direction ? a.columns[columnIndex] - b.columns[columnIndex] : b.columns[columnIndex] - a.columns[columnIndex];
-        });
-        for (let i = 0; i <= rows.length - 1; i++) {
-          tbody.appendChild(rows[i].el);
+        if (!columnIndex && window.location.href.includes("docs/alerts")) {
+          rows.sort((a, b) => {
+            a = a.columns[columnIndex].split("-");
+            b = b.columns[columnIndex].split("-");
+            return direction ? a[0] - b[0] : b[0] - a[0];
+          });
+        } else {
+          rows.sort((a, b) => {
+            a = a.columns[columnIndex];
+            b = b.columns[columnIndex];
+            return direction ? a - b : b - a;
+          });
         }
+      }
+      for (let i = 0; i <= rows.length - 1; i++) {
+        tbody.appendChild(rows[i].el);
       }
       direction = !direction;
     }
