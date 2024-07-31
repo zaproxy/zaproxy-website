@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.13.0/authhelper-beta-0.13.0.zap
-  date: 2024-05-07
-  version: 0.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.14.0/authhelper-beta-0.14.0.zap
+  date: 2024-07-31
+  version: 0.14.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.40.1/automation-beta-0.40.1.zap
-  date: 2024-05-28
-  version: 0.40.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.41.0/automation-beta-0.41.0.zap
+  date: 2024-07-31
+  version: 0.41.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -1055,9 +1055,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v96/webdriverlinux-release-96.zap
-  date: 2024-07-24
-  version: 96
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v97/webdriverlinux-release-97.zap
+  date: 2024-07-31
+  version: 97
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1065,9 +1065,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v96/webdrivermacos-release-96.zap
-  date: 2024-07-24
-  version: 96
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v97/webdrivermacos-release-97.zap
+  date: 2024-07-31
+  version: 97
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1075,9 +1075,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v96/webdriverwindows-release-96.zap
-  date: 2024-07-24
-  version: 96
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v97/webdriverwindows-release-97.zap
+  date: 2024-07-31
+  version: 97
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.
