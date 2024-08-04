@@ -335,7 +335,7 @@
   language: English
   has_talks: Y
   has_training: Y
-  notes: '<a href="https://thetestdoctor.co.uk/" rel="nofollow">Blog: The Test Doctor</a>'
+  notes: '<a href="https://thetestdoctor.wordpress.com/" rel="nofollow">Blog: The Test Doctor</a>'
 
 - name: Jess Vermont
   email: jess.vermont.stl@gmail.com
@@ -417,7 +417,7 @@
   language: English / Hebrew
   has_talks: Y
   has_training: Y
-  notes: ZAP Evangelist, <a href="https://www.omerlh.info/" rel="nofollow">Personal Site with previous talks</a>
+  notes: ZAP Evangelist
 
 - name: Chhagan Lal Mathuriya
   email: clmathuriya@gmail.com 
