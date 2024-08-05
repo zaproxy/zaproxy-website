@@ -221,9 +221,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/database/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.4.0/database-alpha-0.4.0.zap
-  date: 2024-05-07
-  version: 0.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.5.0/database-alpha-0.5.0.zap
+  date: 2024-08-05
+  version: 0.5.0
 - id: dev
   name: Dev Add-on
   description: An add-on to help with development of ZAP.
@@ -873,9 +873,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.37.0/retire-release-0.37.0.zap
-  date: 2024-07-04
-  version: 0.37.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.38.0/retire-release-0.38.0.zap
+  date: 2024-08-05
+  version: 0.38.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields

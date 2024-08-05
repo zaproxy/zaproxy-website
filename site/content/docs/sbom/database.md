@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: database
-    version: 0.4.0
+    version: 0.5.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.4.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.5.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -18,13 +18,13 @@ sbom:
     version: 1.1.2
     licenses: Apache-2.0
   - name: asm
-    version: '9.5'
+    version: '9.6'
     licenses: BSD-3-Clause
   - name: asm-commons
-    version: '9.5'
+    version: '9.6'
     licenses: BSD-3-Clause
   - name: asm-tree
-    version: '9.5'
+    version: '9.6'
     licenses: BSD-3-Clause
   - name: auto-common
     version: 1.2.2
@@ -102,16 +102,16 @@ sbom:
     version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
   - name: datanucleus-api-jdo
-    version: 6.0.1
+    version: 6.0.2
     licenses: Apache-2.0
   - name: datanucleus-core
-    version: 6.0.4
+    version: 6.0.7
     licenses: Apache-2.0
   - name: datanucleus-jdo-query
     version: 6.0.1
     licenses: Apache-2.0
   - name: datanucleus-rdbms
-    version: 6.0.4
+    version: 6.0.7
     licenses: Apache-2.0
   - name: error_prone_annotation
     version: 2.26.1
@@ -138,7 +138,7 @@ sbom:
     version: 3.4.1
     licenses: Apache-2.0
   - name: flyway-core
-    version: 9.20.0
+    version: 9.22.3
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -179,8 +179,20 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
+  - name: jackson-annotations
+    version: 2.15.2
+    licenses: Apache-2.0
+  - name: jackson-core
+    version: 2.15.2
+    licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
+    licenses: Apache-2.0
+  - name: jackson-databind
+    version: 2.15.2
+    licenses: Apache-2.0
+  - name: jackson-dataformat-toml
+    version: 2.15.2
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -309,7 +321,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.16.0
+    version: 0.17.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -318,16 +330,16 @@ sbom:
     version: 1.3.0
     licenses: Apache-2.0
   - name: org.jacoco.agent
-    version: 0.8.9
+    version: 0.8.11
     licenses: EPL-2.0
   - name: org.jacoco.ant
-    version: 0.8.9
+    version: 0.8.11
     licenses: EPL-2.0
   - name: org.jacoco.core
-    version: 0.8.9
+    version: 0.8.11
     licenses: EPL-2.0
   - name: org.jacoco.report
-    version: 0.8.9
+    version: 0.8.11
     licenses: EPL-2.0
   - name: pcollections
     version: 4.0.1
@@ -348,19 +360,16 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: sqlite-jdbc
-    version: 3.42.0.0
+    version: 3.45.3.0
     licenses: Apache-2.0
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
-  - name: testutils
-    version: unspecified
-    licenses: ''
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.15.0-SNAPSHOT
+    version: 2.15.0
     licenses: Apache-2.0
 ---
 
