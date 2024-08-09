@@ -128,8 +128,7 @@
   program: GSoC
   title: Scanning websockets (phase 1)
   date: 2018 Summer
-  links: >
-    <a href="https://manosmagnus.github.io/posts/websocket-passive-scan-using-scripts-with-zap/" rel="nofollow">Blog</a>
+  links: 
 
 - name:  Ryan Wehe
   email: 
