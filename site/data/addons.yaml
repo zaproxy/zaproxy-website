@@ -923,9 +923,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.27.0/selenium-release-15.27.0.zap
-  date: 2024-07-22
-  version: 15.27.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.28.0/selenium-release-15.28.0.zap
+  date: 2024-08-12
+  version: 15.28.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
