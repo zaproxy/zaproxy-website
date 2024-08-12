@@ -66,6 +66,6 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.2",
-    "postcss": "^8.4.40"
+    "postcss": "^8.4.41"
   }
 }
