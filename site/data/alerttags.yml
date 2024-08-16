@@ -175,6 +175,9 @@ CWE-79:
 CWE-829:
   link: https://cwe.mitre.org/data/definitions/829.html
 
+CWE-917:
+  link: https://cwe.mitre.org/data/definitions/917.html
+
 CWE-918:
   link: https://cwe.mitre.org/data/definitions/918.html
 
