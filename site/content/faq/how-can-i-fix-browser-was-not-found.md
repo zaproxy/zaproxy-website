@@ -3,6 +3,8 @@ title: "How can I fix 'browser was not found'?"
 type: faq
 category: Howtos
 weight: 4
+aliases:
+  - no-browser/
 ---
 
 If you want to manually explore your target app then the easiest way is to launch your favourite browser
