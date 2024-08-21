@@ -7,9 +7,6 @@
   year: 2024
   sponsor: Crash Override
   sponsorlink: https://crashoverride.com/?zap=web
-- item: Automation Framework GitHub Action
-  status: ⚡ In progress
-  year: 2024
 - item: Import PCAP files
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/4812
@@ -20,9 +17,6 @@
   year: 2024
   sponsor: Crash Override
   sponsorlink: https://crashoverride.com/?zap=web
-- item: Update to latest Crawljax
-  status: ⚡ In progress
-  year: 2024
 - item: Improve modern web app handling
   url: /blog/2023-11-03-handling-modern-web-apps-better-part1/
   status: ⚡ In progress
@@ -64,6 +58,10 @@
   url: /blog/2023-01-19-authentication-help/
   year: n/a
 
+- item: Automation Framework GitHub Action
+  status: 🎉 Finished
+  url: https://github.com/marketplace/actions/zap-automation-framework-scan
+  year: 2024
 - item: Scripts as First Class Scan Rules
   status: 🎉 Finished
   url: https://github.com/zaproxy/zaproxy/issues/7105
@@ -72,7 +70,6 @@
   status: 🎉 Finished
   url: /blog/2024-05-07-zap-2-15-0/
   year: 2024
-
 - item: Browser Recorder
   status: 🎉 Finished
   url: https://summerofcode.withgoogle.com/programs/2023/projects/lx6XL1Rd
