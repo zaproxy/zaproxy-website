@@ -63,9 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
       input.addEventListener("change", function(e) {
         widget.filters[idx] = e.target.value;
         removeAllChildNodes(tbody);
+        elements = [];
         rows.filter(isFilterMatch).map(r => {
           tbody.appendChild(r.el)
+          elements.push(r)
         });
+        console.log(elements);
       });
       input.setAttribute('style', 'width:100%;display:block')
       input.setAttribute('type', 'text');
@@ -104,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
         columns, // Needed for filtered
       };
     });
+    let elements = rows;
 
     function addSortButton(el, idx) {
       const img = document.createElement('img');
@@ -118,30 +122,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let direction = false;
     function sortTable(columnIndex) {
+      console.log(elements);
       removeAllChildNodes(tbody);
-      if (isNaN(rows[0].columns[columnIndex][0]) && isNaN(rows[rows.length - 1].columns[columnIndex][0])) {
-        rows.sort((a, b) => {
+      if (isNaN(elements[0].columns[columnIndex][0]) && isNaN(elements[elements.length - 1].columns[columnIndex][0])) {
+        elements.sort((a, b) => {
           a = a.columns[columnIndex];
           b = b.columns[columnIndex];
           return direction ? a.localeCompare(b) : b.localeCompare(a);
         });
       } else {
         if (!columnIndex && window.location.href.includes("docs/alerts")) {
-          rows.sort((a, b) => {
+          elements.sort((a, b) => {
             a = a.columns[columnIndex].split("-");
             b = b.columns[columnIndex].split("-");
             return direction ? a[0] - b[0] : b[0] - a[0];
           });
         } else {
-          rows.sort((a, b) => {
+          elements.sort((a, b) => {
             a = a.columns[columnIndex];
             b = b.columns[columnIndex];
             return direction ? a - b : b - a;
           });
         }
       }
-      for (let i = 0; i <= rows.length - 1; i++) {
-        tbody.appendChild(rows[i].el);
+      for (let i = 0; i <= elements.length - 1; i++) {
+        tbody.appendChild(elements[i].el);
       }
       direction = !direction;
     }
