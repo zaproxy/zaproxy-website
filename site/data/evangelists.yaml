@@ -595,3 +595,12 @@
   has_talks: Y
   has_training: Y
   notes: ZAP Development Team Member
+
+- name: Fabio Carletti Ryuw
+  email: fabiocarlettiryuw@gmail.com
+  linkedin: https://www.linkedin.com/in/fabio-carletti-ryuw/
+  locations: Italy / Worldwide / Remote
+  language: Italian, English
+  has_talks: Y
+  has_training: Y
+  notes: ZAP evangelist
