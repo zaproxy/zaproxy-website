@@ -13,7 +13,7 @@
 <h5>{{ .Params.description }}</h5>
 <h5>{{ .Params.warning }}</h5>
 
-<h2>Services (Supportive)</h2>
+<h2 id="support">Services (Supportive)</h2>
 
 These companies use ZAP, and do the right thing by paying for a <a href="/support/#support-packages">Support Package</a> -
 these will help us become sustainable.
@@ -31,7 +31,7 @@ If you are interested in a commercial product based on ZAP then please check the
 </table>
 <br/><br/>
 
-<h2>Services (Unsupportive)</h2>
+<h2 id="nonsupport">Services (Unsupportive)</h2>
 
 These companies use ZAP but do not currently support us in any way (except where noted).
 <p>
@@ -50,7 +50,7 @@ If you are looking for commercial DAST solution then please first consider one o
 </table>
 <br/><br/>
 
-<h2>Open Source Services</h2>
+<h2 id="oss">Open Source Services</h2>
 
 Open Source projects which use ZAP.
 
@@ -65,7 +65,7 @@ Open Source projects which use ZAP.
 </table>
 <br/><br/>
 
-<h2>Integrations</h2>
+<h2 id="integrate">Integrations</h2>
 <p>{{ .Params.desc_integrations }}</p>
 <table class="table table-fixed">
 {{ range $integration := $.Site.Data.thirdparty.integrations }}
@@ -78,7 +78,7 @@ Open Source projects which use ZAP.
 </table>
 <br/><br/>
 
-<h2>Training</h2>
+<h2 id="train">Training</h2>
 <p>{{ .Params.desc_training }}</p>
 <table class="table table-fixed">
 {{ range $training := $.Site.Data.thirdparty.training }}
@@ -91,7 +91,7 @@ Open Source projects which use ZAP.
 </table>
 <br/><br/>
 
-<h2>Books</h2>
+<h2 id="books">Books</h2>
 <p>{{ .Params.desc_books }}</p>
 <table class="table table-fixed">
 {{ range $book := $.Site.Data.thirdparty.books }}

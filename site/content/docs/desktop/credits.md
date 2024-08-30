@@ -46,7 +46,6 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Jay Ball                                                                                                              |
 |   | Adrien de Beaupre                                                                                                     |
 |   | Florian Beijers ([@zersiax](https://twitter.com/zersiax))                                                             |
-|   | KC Berg ([@kberg108](https://twitter.com/kberg108)) - StackHawk                                                       |
 |   | Alla Bezroutchko - Gremwell                                                                                           |
 |   | Artemy Bogdanov ([@Abr1k0s](https://twitter.com/Abr1k0s))                                                             |
 |   | Yvan Boily                                                                                                            |
@@ -76,7 +75,6 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Michael Gabriel ([shamashel](https://github.com/shamashel))                                                           |
 |   | Patrick Galley                                                                                                        |
 |   | Lakshya Garg ([@LakiG](https://www.linkedin.com/in/lakshyaagarg/))                                                    |
-|   | Scott Gerlach ([@sgerlach](https://twitter.com/sgerlach)) - StackHawk                                                 |
 |   | Giothysham                                                                                                            |
 |   | Thiago Gomes                                                                                                          |
 |   | Mark Goodwin                                                                                                          |

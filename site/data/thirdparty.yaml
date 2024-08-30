@@ -55,6 +55,10 @@ services_minus:
     link: https://www.idyllum.com/
     license: 'Commercial, free option'
 
+  - name: 'IronSky'
+    link: https://www.ironsky.co.za/
+    license: 'Commercial'
+
   - name: 'Forward Security'
     link: https://forwardsecurity.com/eureka-devsecops-service/
     license: 'Commercial'
@@ -87,16 +91,16 @@ services_minus:
     link: https://patrowl.io/
     license: 'Commercial, free for open source projects'
 
+  - name: 'RoboShadow'
+    link: https://www.roboshadow.com/
+    license: 'Commercial, free option'
+
   - name: 'Scan Factory'
     link: https://in.scanfactory.io/
     license: 'Commercial'
 
   - name: 'Sken.ai'
     link: https://www.sken.ai/
-    license: 'Commercial, free option'
-
-  - name: 'StackHawk'
-    link: https://www.stackhawk.com/
     license: 'Commercial, free option'
 
   - name: 'Traceable'

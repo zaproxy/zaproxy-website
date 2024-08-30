@@ -56,5 +56,3 @@ There is currently no ETA for these changes but they are a priority for us.
 
 In the meantime please [download](/download/) the Weekly or Live releases, give them a go and let us know if you have any problems or spot any differences in the network handling.
 
-Many thanks to [StackHawk](https://www.stackhawk.com/) who sponsored this work.
-

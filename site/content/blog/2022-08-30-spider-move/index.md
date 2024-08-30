@@ -23,8 +23,8 @@ To facilitate more frequent functional enhancements and bug fixes the core Spide
 
 ## Functional Improvements for 2.12
 
-A large number of functional improvements have been made since 2.11. Most of which have been a result of efforts related to [Issue 7152](https://github.com/zaproxy/zaproxy/issues/7152) which is backed by bounties via the StackHawk [ZAP Fund](https://www.stackhawk.com/zap-fund/).
-Please feel free to jump in and claim some bounties yourself! The following table lists the changes in the Spider's behaviour after said updates.
+A large number of functional improvements have been made since 2.11. Most of which have been a result of efforts related to [Issue 7152](https://github.com/zaproxy/zaproxy/issues/7152).
+The following table lists the changes in the Spider's behaviour after said updates.
 
 The next weekly will include changes allowing users to specify [Irrelevant parameters](https://github.com/zaproxy/zaproxy/pull/4398) which the Spider should ignore when [determining what resources were already visited](/docs/desktop/ui/dialogs/options/spider/#query-parameters-handling).
 
