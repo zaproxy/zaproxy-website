@@ -1,15 +1,15 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Automation Framework Add-on SBOM
+title: Passive Scanner Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: automation
-    version: 0.42.0
+    id: pscan
+    version: 0.0.1
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.42.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscan-v0.0.1/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -308,6 +308,9 @@ sbom:
   - name: netty-transport-native-unix-common
     version: 4.1.100.Final
     licenses: Apache-2.0
+  - name: network
+    version: 0.17.0
+    licenses: ''
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0

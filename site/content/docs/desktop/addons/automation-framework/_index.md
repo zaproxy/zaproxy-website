@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.41.0
+    version: 0.42.0
 ---
 
 # Automation Framework
@@ -71,8 +71,6 @@ The following automation jobs are supported by this add-on:
 
 * [addOns](/docs/desktop/addons/automation-framework/job-addons/) - add-on management, now deprecated
 * [delay](/docs/desktop/addons/automation-framework/job-delay/) - pauses the plan for a specified period of time or a specific condition is met
-* [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
-* [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
 * [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - crafts specific requests to send to the corresponding targets
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
 

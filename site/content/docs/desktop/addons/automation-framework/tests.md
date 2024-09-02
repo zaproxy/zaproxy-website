@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - Job Tests
 type: userguide
-weight: 9
+weight: 7
 ---
 
 # Automation Framework - Job Outcome Tests

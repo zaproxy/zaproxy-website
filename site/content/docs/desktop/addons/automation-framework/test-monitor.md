@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - Monitor Job Test
 type: userguide
-weight: 11
+weight: 9
 ---
 
 # Automation Framework - Monitor Job Test

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: 47.0.0
+    version: 48.0.0
 ---
 
 # Active Scan Rules - Alpha
@@ -29,7 +29,7 @@ Latest code: [ExampleSimpleActiveScanRule.java](https://github.com/zaproxy/zap-e
 
 ## LDAP Injection {#id-40015}
 
-LDAP Injection may be possible. It may be possible for an attacker to bypass authentication controls, and to view and modify arbitrary data in the LDAP directory.
+LDAP Injection may be possible. It may be possible for an attacker to bypass authentication controls, and to view and modify arbitrary data in the LDAP directory. Skips messages which originally resulted in a client or server error response status code.
 
 Latest code: [LdapInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/LdapInjectionScanRule.java)
 
