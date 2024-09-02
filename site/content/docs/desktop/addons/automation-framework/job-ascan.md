@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - activeScan Job
 type: userguide
-weight: 8
+weight: 6
 ---
 
 # Automation Framework - activeScan Job

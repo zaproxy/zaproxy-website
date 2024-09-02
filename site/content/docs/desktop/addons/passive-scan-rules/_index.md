@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 59.0.0
+    version: 60.0.0
 ---
 
 # Passive Scan Rules
@@ -225,7 +225,7 @@ Alert ID: [10033](/docs/alerts/10033/).
 
 Passively scans for password hashes disclosed by the web server.   
 Various formats are including, including some formats such as MD4, MD5, and SHA\*, which are sometimes used for purposes other than to contain password hashes.   
-**Note:** This scan rule will only analyze JavaScript responses on LOW Threshold.
+**Note:** This scan rule will only analyze text responses, and only analyze JavaScript responses on LOW Threshold.
 
 Latest code: [HashDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/HashDisclosureScanRule.java)
 
@@ -375,6 +375,8 @@ such as vp09.02.51.10.01.09.16, where the latter 4 octets appear to be a RFC 191
 After review an analyst can mark such alerts as False Positives in ZAP. For handling during
 repeated scans the "Context Alert Filters" add-on could be leveraged.
 
+This scan rule will only analyze text responses.
+
 Latest code: [InfoPrivateAddressDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/InfoPrivateAddressDisclosureScanRule.java)
 
 Alert ID: [2](/docs/alerts/2/).
@@ -498,6 +500,8 @@ They will also be hashed and searched for in responses as they're passively scan
 amount of time needed to passively scan. (The default payloads are "Admin" and "admin".)  
 
 Discovery of any such value may represent an Insecure Direct Object Reference (IDOR) vulnerability. Alerts are only raised as informational items as further manual testing is required in order to confirm and assess impact.
+
+This scan rule will only analyze text responses.
 
 Latest code: [UsernameIdorScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/UsernameIdorScanRule.java)
 

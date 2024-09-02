@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - Statistics Job Test
 type: userguide
-weight: 12
+weight: 10
 ---
 
 # Automation Framework - Statistics Job Test

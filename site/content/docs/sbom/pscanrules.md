@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: '59'
+    version: '60'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v59/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v60/bom.json
   components:
   - name: aopalliance
     version: '1.0'

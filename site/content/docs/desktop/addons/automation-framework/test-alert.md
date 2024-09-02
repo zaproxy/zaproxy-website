@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Automation Framework - Alert Job Test
 type: userguide
-weight: 10
+weight: 8
 ---
 
 # Automation Framework - Alert Job Test

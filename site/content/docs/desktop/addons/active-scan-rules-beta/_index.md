@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 54.0.0
+    version: 55.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -180,7 +180,7 @@ Alert ID: [42](/docs/alerts/42/).
 
 ## Source Code Disclosure - File Inclusion {#id-43}
 
-Uses local file inclusion techniques to scan for files containing source code on the web server.
+Uses local file inclusion techniques to scan for files containing source code on the web server. Skips messages which originally resulted in a client or server error response status code.
 
 Latest code: [SourceCodeDisclosureFileInclusionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SourceCodeDisclosureFileInclusionScanRule.java)
 

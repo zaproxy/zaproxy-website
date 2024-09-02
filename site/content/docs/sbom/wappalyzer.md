@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.40.0
+    version: 21.41.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.40.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.41.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'

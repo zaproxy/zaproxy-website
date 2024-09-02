@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.40.0
+    version: 21.41.0
 ---
 
 # Technology Detection
