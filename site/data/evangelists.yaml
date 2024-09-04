@@ -97,16 +97,6 @@
   has_training: Y
   notes: ''
 
-- name: Adrien de Beaupre
-  email: adriendb@gmail.com
-  twitter: adriendb
-  linkedin: https://www.linkedin.com/in/adrien-de-beaupre-b04828/
-  locations: Canada
-  language: English, French
-  has_talks: Y
-  has_training: Y
-  notes: SANS teacher, SANS Sec542 course
-
 - name: Mateo Martínez
   email: mateomar@gmail.com
   locations: Latin America
