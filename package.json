@@ -37,11 +37,11 @@
     "css-loader": "^7.1.2",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-import": "^2.30.0",
     "exports-loader": "^5.0.0",
     "fancy-log": "^2.0.0",
     "file-loader": "^6.2.0",
-    "hugo-bin": "^0.130.1",
+    "hugo-bin": "^0.131.1",
     "imports-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.9.1",
     "node-sass": "^9.0.0",
@@ -58,7 +58,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.94.0",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4",
+    "webpack-dev-server": "^5.1.0",
     "webpack-merge": "^6.0.1"
   },
   "resolutions": {
@@ -66,6 +66,6 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.6.2",
-    "postcss": "^8.4.43"
+    "postcss": "^8.4.45"
   }
 }
