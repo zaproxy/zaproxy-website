@@ -97,7 +97,7 @@
   title: Scanning websockets (phase 2)
   date: 2019 Summer
   links: >
-    <a href="https://manosmagnus.github.io/posts/websocket-passive-scan-using-scripts-with-zap/" rel="nofollow">Blog</a>,
+    <a href="https://web.archive.org/web/20210803233322/https://manosmagnus.github.io/posts/websocket-passive-scan-using-scripts-with-zap/" rel="nofollow">Blog</a>,
     <a href="https://github.com/zaproxy/zaproxy/wiki/GSoC2019_WebSocketScanning" rel="nofollow">wiki</a>
 
 - name: David Scrobonia
