@@ -254,12 +254,6 @@
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/parosproxy/paros/network/HttpSender.java
 
-- name: 'Check For Updates'
-  type: 'Request Initiator'
-  value: 7
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/parosproxy/paros/network/HttpSender.java
-
 - name: 'Bean Shell'
   type: 'Request Initiator'
   value: 8
