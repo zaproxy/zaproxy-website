@@ -58,4 +58,4 @@ If you need to configure ZAP to know about arbitrary requests that the other opt
 * ZAP Log Files
 * URL Files
 
-{{<prevnext prevUrl="../automation-options" prevTitle="Automation Options" nextUrl="" nextTitle="Authentication (coming soon)">}}
+{{<prevnext prevUrl="../automation-options/" prevTitle="Automation Options" nextUrl="../target-scanning-issues/" nextTitle="Target Scanning Issues">}}
