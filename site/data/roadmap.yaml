@@ -15,8 +15,8 @@
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/7695
   year: 2024
-  sponsor: Crash Override
-  sponsorlink: https://crashoverride.com/?zap=web
+  sponsor: ZAProxy Ltd
+  sponsorlink: https://zaproxy.com/
 - item: Improve modern web app handling
   url: /blog/2023-11-03-handling-modern-web-apps-better-part1/
   status: ⚡ In progress
@@ -58,6 +58,22 @@
   url: /blog/2023-01-19-authentication-help/
   year: n/a
 
+- item: Document Target Scanning Issues
+  status: 🎉 Finished
+  url: /docs/getting-further/automation/target-scanning-issues/
+  sponsor: NightVision
+  sponsorlink: https://www.nightvision.net/
+  year: 2024
+- item: OpenAPI Authenticated Import
+  status: 🎉 Finished
+  sponsor: NightVision
+  sponsorlink: https://www.nightvision.net/
+  year: 2024
+- item: OAST API
+  status: 🎉 Finished
+  sponsor: NightVision
+  sponsorlink: https://www.nightvision.net/
+  year: 2024
 - item: Automation Framework GitHub Action
   status: 🎉 Finished
   url: https://github.com/marketplace/actions/zap-automation-framework-scan

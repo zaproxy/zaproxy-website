@@ -11,6 +11,10 @@ links:
     link: exploring-your-app/
     desc: why it is important and how you can do it
 
+  - name: Target Scanning Issues
+    link: target-scanning-issues/
+    desc: what sort of target issues can occur and how to handle them
+
   - name: Authentication
     desc: Coming Soon
 
