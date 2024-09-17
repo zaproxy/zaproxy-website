@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: database
-    version: 0.5.0
+    version: 0.6.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.5.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.6.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -321,7 +321,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.17.0
+    version: 0.18.0
     licenses: ''
   - name: objenesis
     version: '3.3'

@@ -221,9 +221,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/database/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.5.0/database-alpha-0.5.0.zap
-  date: 2024-08-05
-  version: 0.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.6.0/database-alpha-0.6.0.zap
+  date: 2024-09-17
+  version: 0.6.0
 - id: dev
   name: Dev Add-on
   description: An add-on to help with development of ZAP.
@@ -689,9 +689,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.19.0/oast-beta-0.19.0.zap
-  date: 2024-07-18
-  version: 0.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.20.0/oast-beta-0.20.0.zap
+  date: 2024-09-17
+  version: 0.20.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items

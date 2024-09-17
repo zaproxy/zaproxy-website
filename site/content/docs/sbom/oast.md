@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: oast
-    version: 0.19.0
+    version: 0.20.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.19.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.20.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -66,7 +66,7 @@ sbom:
     version: 3.33.0
     licenses: MIT
   - name: commonlib
-    version: 1.27.0
+    version: 1.28.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -405,7 +405,7 @@ sbom:
     version: 3.4.0
     licenses: BSD-3-Clause
   - name: scripts
-    version: 45.5.0
+    version: 45.7.0
     licenses: ''
   - name: service
     version: 1.16.0
