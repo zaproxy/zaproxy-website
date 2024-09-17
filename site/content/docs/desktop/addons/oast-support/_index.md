@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: oast
-    version: 0.19.0
+    version: 0.20.0
 ---
 
 # Out-of-band Application Security Testing Support
@@ -27,6 +27,8 @@ If the *Script Console* and the *GraalVM JavaScript* add-ons are installed, a ne
 
 ## See also
 
-|   |                                                    |   |
-|---|----------------------------------------------------|---|
-|   | [OAST Tab](/docs/desktop/addons/oast-support/tab/) |   |
+|   |                                                            |                                         |
+|---|------------------------------------------------------------|-----------------------------------------|
+|   | [OAST API](/docs/desktop/addons/oast-support/api/)         | for more details about the OAST API     |
+|   | [OAST Options](/docs/desktop/addons/oast-support/options/) | for more details about the OAST Options |
+|   | [OAST Tab](/docs/desktop/addons/oast-support/tab/)         |                                         |
