@@ -14,7 +14,7 @@ Rick started contributing to ZAP in 2014.
 
 #### Sponsor
 
-Rick can be sponsored directly via his [GitHub Sponsors](https://github.com/sponsors/kingthorin/) page.
+Rick is employed by [Checkmarx](https://checkmarx.com/) to work on ZAP.
 
 #### Other Work
 

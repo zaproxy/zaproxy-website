@@ -1,40 +1,14 @@
 ---
 
-services_plus:
-  # ZAP Supporters - ordered by support level, alphabetic
-
-  - name: 'NightVision'
-    link: https://www.nightvision.net/
-    license: 'Commercial'
-    supporter: ZAP Supporter
-
-  - name: 'SOOS'
-    link: https://soos.io/soos-dast-no-limit/
-    license: 'Commercial'
-    supporter: ZAP Supporter
-
-services_minus:
-  # Closed source services who are not supporting ZAP
-  # Commercial, free option tools, alphabetic
-  - name: 'Astra'
-    link: https://www.getastra.com/
-    license: 'Commercial'
-    notes: 'Limited GitHub sponsorship'
-
-  - name: 'HostedScan'
-    link: https://hostedscan.com/
-    license: 'Commercial, free option'
-    notes: 'Limited GitHub sponsorship'
-
-  - name: 'Tecvity'
-    link: https://tecvity.co/
-    license: 'Software Services Provider'
-    notes: 'Ongoing code contributions'
-
+services:
   - name: "Aikido"
     link: https://www.aikido.dev/
     license: 'Commercial, free option'
   
+  - name: 'Astra'
+    link: https://www.getastra.com/
+    license: 'Commercial'
+
   - name: 'Blacklock'
     link: https://blacklock.io/
     license: 'Commercial'
@@ -63,6 +37,10 @@ services_minus:
     link: https://forwardsecurity.com/eureka-devsecops-service/
     license: 'Commercial'
 
+  - name: 'HostedScan'
+    link: https://hostedscan.com/
+    license: 'Commercial, free option'
+
   - name: 'Intruder'
     link: https://www.intruder.io/
     license: 'Commercial'
@@ -87,6 +65,11 @@ services_minus:
     link: https://www.namicsoft.com/
     license: 'Commercial'
 
+  - name: 'NightVision'
+    link: https://www.nightvision.net/
+    license: 'Commercial'
+    supporter: ZAP Supporter
+
   - name: 'PatrOwl'
     link: https://patrowl.io/
     license: 'Commercial, free for open source projects'
@@ -102,6 +85,14 @@ services_minus:
   - name: 'Sken.ai'
     link: https://www.sken.ai/
     license: 'Commercial, free option'
+
+  - name: 'SOOS'
+    link: https://soos.io/soos-dast-no-limit/
+    license: 'Commercial'
+
+  - name: 'Tecvity'
+    link: https://tecvity.co/
+    license: 'Software Services Provider'
 
   - name: 'Traceable'
     link: https://docs.traceable.ai/docs/security-testing

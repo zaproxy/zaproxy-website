@@ -73,6 +73,14 @@
   link: https://github.com/zaproxy/zaproxy/blob/main/zap/src/main/java/org/zaproxy/zap/extension/spider/SpiderEventPublisher.java
   event: scan.completed
 
+- publisher: org.zaproxy.zap.extension.spiderAjax.SpiderEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/spiderAjax/src/main/java/org/zaproxy/zap/extension/spiderAjax/SpiderEventPublisher.java
+  event: scan.started
+
+- publisher: org.zaproxy.zap.extension.spiderAjax.SpiderEventPublisher
+  link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/spiderAjax/src/main/java/org/zaproxy/zap/extension/spiderAjax/SpiderEventPublisher.java
+  event: scan.stopped
+
 - publisher: org.zaproxy.zap.extension.websocket.WebSocketEventPublisher
   link: https://github.com/zaproxy/zap-extensions/blob/main/addOns/websocket/src/main/java/org/zaproxy/zap/extension/websocket/WebSocketEventPublisher.java
   event: ws.stateChange

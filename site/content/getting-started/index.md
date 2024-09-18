@@ -45,10 +45,10 @@ Pentesting usually follows these stages:
 The ultimate goal of pentesting is to search for vulnerabilities so that these vulnerabilities can be addressed. It can also verify that a system is not vulnerable to a known class or specific defect; or, in the case of vulnerabilities that have been reported as fixed, verify that the system is no longer vulnerable to that defect.
 
 ### Introducing ZAP
-Zed Attack Proxy (ZAP) is a free, open-source penetration testing tool being maintained under the umbrella of 
-The Software Security Project (SSP). ZAP is designed specifically for testing web applications and is both flexible and extensible.
+Zed Attack Proxy (ZAP) by Checkmarx is a free, open-source penetration testing tool.
+ZAP is designed specifically for testing web applications and is both flexible and extensible.
 
-At its core, ZAP is what is known as a “man-in-the-middle proxy.” It stands between the tester’s browser and the web application so that it can intercept and inspect messages sent between browser and web application, modify the contents if needed, and then forward those packets on to the destination. It can be used as a stand-alone application, and as a daemon process.
+At its core, ZAP is what is known as a “manipulator-in-the-middle proxy.” It stands between the tester’s browser and the web application so that it can intercept and inspect messages sent between browser and web application, modify the contents if needed, and then forward those packets on to the destination. It can be used as a stand-alone application, and as a daemon process.
 
 {{< img "images/browser-no-proxy.png" >}}  
 
@@ -59,9 +59,6 @@ If there is another network proxy already in use, as in many corporate environme
 ZAP provides functionality for a range of skill levels – from developers, to testers new to security testing, to security testing specialists. ZAP has versions for each major OS and Docker, so you are not tied to a single OS. Additional functionality is freely available from a variety of add-ons in the ZAP Marketplace, accessible from within the ZAP client.
 
 Because ZAP is open-source, the source code can be examined to see exactly how the functionality is implemented. Anyone can volunteer to work on ZAP, fix bugs, add features, create pull requests to pull fixes into the project, and author add-ons to support specialized situations.
-
-As with most open source projects, donations are welcome to help with costs for the projects. For more details see the 
-[Sponsor](/sponsor/) page.
 
 ### Install and Configure ZAP
 ZAP has installers for Windows, Linux, and macOS. There are also Docker images available on the download site listed below.
@@ -75,9 +72,9 @@ Once the installation is complete, launch ZAP and read the license terms. Click 
 
 ###### macOS
 ZAP is currently not a verified developer with Apple. On macOS, you will see a message like: 
-> “OWASP ZAP.app” cannot be opened because the developer cannot be verified.
+> “ZAP.app” cannot be opened because the developer cannot be verified.
 
-To circumvent this warning, you would need to go to **System Preferences** &gt; **Security & Privacy** at the bottom of the dialog. You will see a message saying that "OWASP ZAP" was blocked. Next to it, if you trust the downloaded installer, you can click **Open anyway**.
+To circumvent this warning, you would need to go to **System Preferences** &gt; **Security & Privacy** at the bottom of the dialog. You will see a message saying that "ZAP" was blocked. Next to it, if you trust the downloaded installer, you can click **Open anyway**.
 
 ##### Persisting a Session
 When you first start ZAP, you will be asked if you want to persist the ZAP session. By default, ZAP sessions are always recorded to disk in a HSQLDB database with a default name and location. If you do not persist the session, those files are deleted when you exit ZAP.
@@ -217,13 +214,6 @@ ZAP is an ideal tool to use in automation and supports a range of options:
 - [GitHub Actions](https://github.com/marketplace?query=zap&verification=verified_creator)
 - [Automation Framework](/docs/automate/automation-framework/)
 - [API and Daemon mode](/docs/api/)
-
-### Support
-The available support options are summarised in the ‘Support’ screen.
-
-ZAP is a non profit organisation, and any money raised by these services will help fund ZAP developments.
-
-{{< img "images/zap-qstart-support.png" >}}
 
 ### Learn More About ZAP
 Now that you are familiar with a few basic capabilities of ZAP, you can learn more about ZAP’s capabilities and how to use them from ZAP’s [Desktop User Guide](/docs/desktop/). The User Guide provides step-by-step instructions, references for the API and command-line programming, instructional videos, and tips and tricks for using ZAP.
