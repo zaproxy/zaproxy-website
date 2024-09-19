@@ -113,6 +113,18 @@ Instructions for the latest versions of the most commonly used browsers:
 |   | Press the    | Proxies Setting 'OK' button                                         |
 |   | Press the    | Network Options 'Apply' button                                      |
 
+### Linux Gnome Proxy settings
+
+|   |              |                                                                                     |
+|---|--------------|-------------------------------------------------------------------------------------|
+|   | Select the   | 'Gnome Settings'                                                                    |
+|   | Enter in the | 'Network'                                                                           |
+|   | Enter in the | 'Proxy' in the 'Proxy' section                                                      |
+|   | Press the    | 'Network Proxy' toggle                                                              |
+|   | Select       | 'Manual' in the 'Configuration' section                                             |
+|   | Enter in the | HTTP (or HTTPs) Proxy 'URL' field the 'URL' you configured in the options screen    |
+|   | Enter in the | HTTP (or HTTPs) Proxy 'Port' field the 'Port' you configured in the options screen  |
+
 ### Windows LAN Settings
 
 |   |              |                                                                     |
