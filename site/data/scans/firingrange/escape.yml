@@ -80,7 +80,7 @@ details:
   result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/attribute_script
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/attribute_singlequoted
   result: Pass
@@ -137,6 +137,6 @@ details:
   result: FAIL
   rule: 40012
 tests: 45
-passes: 13
-fails: 32
-score: 29%
+passes: 12
+fails: 33
+score: 27%
