@@ -42,7 +42,7 @@
   year: 2024
 - item: Ensure alert details and examples are complete and up to date
   status: ⚡ In progress
-  url: /alerts/
+  url: /docs/alerts/
   year: 2024
 
 - item: Continue working on issues
@@ -66,11 +66,13 @@
   year: 2024
 - item: OpenAPI Authenticated Import
   status: 🎉 Finished
+  url: /docs/desktop/addons/openapi-support/
   sponsor: NightVision
   sponsorlink: https://www.nightvision.net/
   year: 2024
 - item: OAST API
   status: 🎉 Finished
+  url: /docs/desktop/addons/oast-support/api/
   sponsor: NightVision
   sponsorlink: https://www.nightvision.net/
   year: 2024
