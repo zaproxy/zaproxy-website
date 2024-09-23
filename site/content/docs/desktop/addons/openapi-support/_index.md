@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 42.0.0
+    version: 43.0.0
 ---
 
 # OpenAPI Support
@@ -26,13 +26,19 @@ A menu item is added to the Import menu:
 
 The dialogue allows overriding the server URL present in the OpenAPI definition (or specify one if not present) through the Target URL field. The import progress is shown in the progress tab.
 
-### Context for Adding DDNs
+### Context
 
 The dialogues also allow selecting a Context, optionally. If a context is selected,
 
 * each imported endpoint is included in the context, unless its URL matches an already existing *Include in Context* regex entry.
 * the imported spec is saved to the session database
 * data driven nodes are generated for endpoints with path parameters
+
+**Note:** Endpoints excluded by the Context will not be imported.
+
+### User
+
+The dialogues also allow selecting a User, optionally, to do authenticated imports.
 
 ### Target URL Format
 
@@ -50,8 +56,8 @@ Following some examples, overriding:
 
 The following operations are added to the API:
 
-* ACTION importFile (file, target, contextId)
-* ACTION importUrl (url, hostOverride, contextId)
+* ACTION importFile (file, target, contextId, userId)
+* ACTION importUrl (url, hostOverride, contextId, userId)
 
 Both `target` and `hostOverride` support the `Target URL` format explained earlier. The definitions will be imported synchronously and any warnings will be returned.
 
