@@ -711,9 +711,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v42/openapi-beta-42.zap
-  date: 2024-07-04
-  version: 42
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v43/openapi-beta-43.zap
+  date: 2024-09-23
+  version: 43
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -963,9 +963,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.11.0/spider-release-0.11.0.zap
-  date: 2024-05-07
-  version: 0.11.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.12.0/spider-release-0.12.0.zap
+  date: 2024-09-23
+  version: 0.12.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
