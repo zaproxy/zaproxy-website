@@ -639,6 +639,20 @@
   code: main/addOns/quickstart/src/main/java/org/zaproxy/zap/extension/quickstart/QuickStartPanel.java
   desc: The number of times the given news item has been clicked on
 
+- key: stats.network.send.failure
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/network/src/main/java/org/zaproxy/addon/network/internal/client/BaseHttpSender.java
+  desc: The number of times ZAP has failed to send an HTTP request
+
+- key: stats.network.send.success
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/network/src/main/java/org/zaproxy/addon/network/internal/client/BaseHttpSender.java
+  desc: The number of times ZAP has sucessfully sent an HTTP request
+
 - key: stats.oast.boast.interactions
   scope: global
   type: counter
@@ -820,6 +834,20 @@
   repo: zaproxy/zaproxy
   code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/RegexAutoTagScanner.java
   desc: The number of messages containing the given tag
+
+- key: stats.tech.reqcount.id
+  scope: site
+  type: highwatermark
+  repo: zaproxy/zap-extensions
+  code: main/addOns/wappalyzer/src/main/java/org/zaproxy/zap/extension/wappalyzer/TechPassiveScanner.java
+  desc: The highest request count the successfully identified a new technology for the site
+  
+- key: stats.tech.reqcount.total
+  scope: site
+  type: highwatermark
+  repo: zaproxy/zap-extensions
+  code: main/addOns/wappalyzer/src/main/java/org/zaproxy/zap/extension/wappalyzer/TechPassiveScanner.java
+  desc: The total number of requests analysed to detect technology for the site
 
 - key: stats.websockets.bytes.incoming
   scope: site

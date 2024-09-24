@@ -1,12 +1,6 @@
 - item: Release 2.16
   status: ⌚ Planned
   year: 2024
-
-- item: Secure Funding for ZAP Development
-  status: ⚡ In progress
-  year: 2024
-  sponsor: Crash Override
-  sponsorlink: https://crashoverride.com/?zap=web
 - item: Import PCAP files
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/4812
@@ -16,7 +10,7 @@
   url: https://github.com/zaproxy/zaproxy/issues/7695
   year: 2024
   sponsor: ZAProxy Ltd
-  sponsorlink: https://zaproxy.com/
+  sponsorlink: https://www.zaproxy.com/
 - item: Improve modern web app handling
   url: /blog/2023-11-03-handling-modern-web-apps-better-part1/
   status: ⚡ In progress
@@ -58,6 +52,12 @@
   url: /blog/2023-01-19-authentication-help/
   year: n/a
 
+- item: Secure Funding for ZAP Development
+  status: 🎉 Finished
+  url: /blog/2024-09-24-zap-has-joined-forces-with-checkmarx/
+  year: 2024
+  sponsor: CrashOverride
+  sponsorlink: https://crashoverride.com/?zap=web
 - item: Document Target Scanning Issues
   status: 🎉 Finished
   url: /docs/getting-further/automation/target-scanning-issues/

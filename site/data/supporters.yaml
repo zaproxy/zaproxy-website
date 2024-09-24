@@ -1,15 +1,27 @@
 ---
 
 main:
-  - name: 'Crash Override Open Source Fellowship'
-    link: https://crashoverride.com?zap=web
-    logo: /img/supporters/co-osf.png
-    notes: Sponsor Simon and Ricardo's work on ZAP
+  - name: 'Checkmarx'
+    link: https://checkmarx.com/
+    logo: /img/zap-by-checkmarx.png
+    notes: "Employ Simon, Ricardo, and Rick to work on ZAP"
 
 prev:
+  - name: 'CrashOverride'
+    link: https://crashoverride.com?zap=web
+    notes: "Sponsored Simon and Ricardo's work on ZAP for 8 months"
+
+  - name: 'NightVision'
+    link: https://nightvision.net/
+    notes: Sponsored Simon and Ricardo via support contract and sponsored developments
+
+  - name: 'SOOS'
+    link: https://soos.io/soos-dast-no-limit/
+    notes: GitHub direct sponsorship, OWASP donation and support contract
+
   - name: 'Jit'
     link: https://www.jit.io/zap?utm_source=zapproxy&utm_medium=banner&utm_campaign=zap-proxy-website-banner
-    notes: Sponsored Simon's work on ZAP for 1 year
+    notes: "Sponsored Simon's work on ZAP for 1 year"
 
   - name: 'Mozilla'
     link: https://www.mozilla.org/
@@ -26,10 +38,6 @@ prev:
   - name: 'OWASP'
     link: https://www.owasp.org/
     notes: 2010-2023 umbrella organization
-
-  - name: 'SOOS'
-    link: https://soos.io/soos-dast-no-limit/
-    notes: GitHub direct sponsorship + $1,500 via OWASP donation
 
   - name: 'Dave Wichers'
     link: https://www.linkedin.com/in/wichers/
@@ -54,10 +62,6 @@ prev:
   - name: 'Tenebris'
     link: https://tenebris.com/
     notes: Sponsoring Rick
-
-  - name: 'NightVision'
-    link: https://nightvision.net/
-    notes: Sponsored thc202
 
   - name: 'Ramesh Jha'
     link: https://rameshjha.com/

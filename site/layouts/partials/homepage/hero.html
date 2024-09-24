@@ -8,6 +8,12 @@
             <div class="homepage-hero__item-content">
               <hgroup class="flex fd-c mb-40">
                 <h1>{{ .headline }}</h1>
+                <h5 class="text--grey-medium">by 
+                  <a href="https://checkmarx.com/" aria-label="Checkmarx">
+                    <img height="30" align="top" src="/img/checkmarx.svg" alt="Checkmarx"/>
+                  </a>
+                </h5>
+
                 <h2 class="on-sm-hide mt-20">
                   {{ .subhead }}
                   <span class="small-text">{{ .quote_source | markdownify }}</span>

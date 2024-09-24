@@ -45,10 +45,6 @@ menu:
       URL: /community/
       weight:  5
 
-    - name:  Support
-      URL: /support/
-      weight:  5
-
   footer: 
     - name:  "Blog"
       URL:  "/blog/"
@@ -61,10 +57,6 @@ menu:
     - name:  Community
       URL: /community/
       weight:  4
-
-    - name:  Support
-      URL: /support/
-      weight:  5
 
     - name:  Statistics
       URL: /docs/statistics/

@@ -1,8 +1,9 @@
 heroItems:
   - headline: Zed Attack Proxy (ZAP)
+    byline: by Checkmarx
     subhead: 
-      The world’s most widely used web app scanner. Free and open source. 
-      Actively maintained by a dedicated international team of volunteers.
-      A GitHub Top 1000 project.
+      The world’s most widely used web app scanner. 
+      Free and open source. 
+      A community based GitHub Top 1000 project that anyone can contribute to.
     image: hero-illustration-1.svg
     imageSize: 290
