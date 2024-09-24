@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.29.0
+    version: 15.30.0
 ---
 
 # Selenium

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.10.0
+    version: 0.11.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.10.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.11.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -152,6 +152,9 @@ sbom:
   - name: harlib
     version: 1.1.3
     licenses: Apache-2.0
+  - name: hektor-fsm
+    version: 0.0.5
+    licenses: MIT
   - name: hsqldb
     version: 2.7.2
     licenses: HSQLDB License, a BSD open source license
@@ -168,22 +171,13 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: 2.16.0
-    licenses: Apache-2.0
-  - name: jackson-annotations
     version: 2.17.0
-    licenses: Apache-2.0
-  - name: jackson-core
-    version: 2.16.0
     licenses: Apache-2.0
   - name: jackson-core
     version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
-    licenses: Apache-2.0
-  - name: jackson-databind
-    version: 2.16.0
     licenses: Apache-2.0
   - name: jackson-databind
     version: 2.17.0
@@ -321,7 +315,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.17.0
+    version: 0.18.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -354,11 +348,17 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: slf4j-api
+    version: 1.7.25
+    licenses: MIT
+  - name: slf4j-api
     version: 1.7.36
     licenses: MIT
   - name: snakeyaml
     version: '2.2'
     licenses: Apache-2.0
+  - name: snice-commons
+    version: 0.1.10
+    licenses: MIT
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT

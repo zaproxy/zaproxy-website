@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: gettingStarted
-    version: 17.0.0
+    version: 18.0.0
 ---
 
 # Getting Started Guide

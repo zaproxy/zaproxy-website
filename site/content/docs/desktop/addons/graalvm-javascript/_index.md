@@ -6,9 +6,13 @@ weight: 1
 cascade:
   addon:
     id: graaljs
-    version: 0.7.0
+    version: 0.8.0
 ---
 
 # GraalVM JavaScript
 
 Allows to use [GraalVM](https://www.graalvm.org/) JavaScript engine for ZAP scripting.
+
+## Engine Name
+
+The engine is named `Graal.js`, which should be used when manually/programmatically configuring ZAP.

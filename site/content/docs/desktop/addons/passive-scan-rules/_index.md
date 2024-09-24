@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 60.0.0
+    version: 61.0.0
 ---
 
 # Passive Scan Rules
@@ -207,7 +207,12 @@ This rule identifies "potential" vulnerabilities with the lack of known CSRF cou
 The rule does not scan messages that are not HTML pages.  
 At HIGH alert threshold only scans messages which are in scope.  
 Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms. Form element names are sorted and de-duplicated when they are printed in the ZAP Report.   
-Note: The rule also takes into account the Partial match setting within the Anti-CSRF Options.
+Note:
+
+* The rule also takes into account the Partial match setting within the Anti-CSRF Options.
+* GET requests are only evaluated at Low Threshold.
+
+\]
 
 Latest code: [CsrfCountermeasuresScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/CsrfCountermeasuresScanRule.java)
 
@@ -224,8 +229,12 @@ Alert ID: [10033](/docs/alerts/10033/).
 ## Hash Disclosure {#id-10097}
 
 Passively scans for password hashes disclosed by the web server.   
-Various formats are including, including some formats such as MD4, MD5, and SHA\*, which are sometimes used for purposes other than to contain password hashes.   
-**Note:** This scan rule will only analyze text responses, and only analyze JavaScript responses on LOW Threshold.
+Various formats are included, including some formats such as MD4, MD5, and SHA\*, which are sometimes used for purposes other than to contain password hashes.   
+**Note:**
+
+* This scan rule will only analyze text responses, and only analyze JavaScript responses on LOW Threshold.
+* 
+* The selection of Hash patterns which are evaluated is tied to the Confidence we have in the pattern and the Threshold set for the scan rule. In other words: Low confidence patterns will only be included for evaluation at Low Threshold, etc.
 
 Latest code: [HashDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/HashDisclosureScanRule.java)
 

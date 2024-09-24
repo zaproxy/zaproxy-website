@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '67'
+    version: '68'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v67/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v68/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -102,7 +102,7 @@ sbom:
     version: 1.12.0
     licenses: Apache-2.0
   - name: database
-    version: 0.5.0
+    version: 0.7.0
     licenses: ''
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
