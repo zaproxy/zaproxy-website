@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: retire
-    version: 0.39.0
+    version: 0.40.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.39.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.40.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -309,7 +309,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.17.0
+    version: 0.18.0
     licenses: ''
   - name: objenesis
     version: '3.3'

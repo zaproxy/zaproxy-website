@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 55.0.0
+    version: 56.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -51,6 +51,8 @@ Scans HTML based messages for the existence of Anti-CSRF tokens.
 Alerts on requests which do not appear to contain Anti-CSRF tokens.  
 At HIGH alert threshold only scans messages which are in scope.  
 Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.csrf.ignorelist` parameter via the Options 'Rule configuration' panel. Any FORMs with a name or ID that matches one of these identifiers will be ignored when scanning for missing Anti-CSRF tokens. Only use this feature to ignore FORMs that you know are safe, for example search forms.
+
+Note: GET requests are only evaluated at Low Threshold.
 
 Latest code: [CsrfTokenScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/CsrfTokenScanRule.java)
 
