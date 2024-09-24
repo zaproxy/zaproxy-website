@@ -12,5 +12,4 @@ Amit is an undergraduate student pursuing a degree in Electronics and Communicat
 
 His interest in security and vulnerabilities has led him to contribute to ZAP and deepen his knowledge in the field of security.
 
-He is currently working on the [gRPC Support](https://github.com/zaproxy/zaproxy/issues/7695), sponsored by
-[Crash Override](https://crashoverride.com/?zap=web).
+He is currently working on the [gRPC Support](https://github.com/zaproxy/zaproxy/issues/7695), sponsored by ZAProxy Ltd.
