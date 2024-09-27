@@ -148,6 +148,9 @@ CWE-565:
 CWE-601:
   link: https://cwe.mitre.org/data/definitions/601.html
 
+CWE-611:
+  link: https://cwe.mitre.org/data/definitions/611.html
+
 CWE-614:
   link: https://cwe.mitre.org/data/definitions/614.html
 
