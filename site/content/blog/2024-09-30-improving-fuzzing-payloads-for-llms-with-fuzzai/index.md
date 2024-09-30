@@ -46,7 +46,7 @@ We believe that community feedback is crucial to improving and optimizing FuzzAI
 Here’s how you can get involved:
 
 * **Test FuzzAI** - Download the [FuzzAI](/docs/desktop/addons/fuzzai-files/) add-on from the ZAP marketplace and start testing LLM models in your own environment. Your unique use cases and feedback will provide invaluable insights into how well the payloads perform across different scenarios.
-* **Provide Feedback** - Whether you find a bug, suggest a new feature, or propose an improvement to existing payloads, we want to hear from you! Share your thoughts via our [User Group](https://groups.google.com/group/zaproxy-users) or contribute directly to our project.
+* **Provide Feedback** - Whether you find a bug, suggest a new feature, or propose an improvement to existing payloads, we want to hear from you! Share your thoughts via our [User Group](https://groups.google.com/g/zaproxy-users/c/hp1oBbhyRg0/m/xqW8RIQoBQAJ) or contribute directly to our project.
 * **Help Build New Payloads** - Do you have specific payloads that work for specific LLMs or new fuzzing strategies or payloads that could push LLMs even further? We invite you to collaborate with us in developing new modules and payloads that target untested vulnerabilities.
 
 ### What’s Next?
