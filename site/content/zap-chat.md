@@ -2,7 +2,7 @@
 type: page
 title: ZAP Chat Videos
 layout: youtube-videos
-featured: _CKzFqDi33A
+featured: hZ9yeXK2DLY
 links:
   - name: '01 Introduction'
     uuid: qrAJ32rdi14
@@ -51,6 +51,9 @@ links:
 
   - name: '16 Automation Framework Part 7 - Authentication'
     uuid: _CKzFqDi33A
+
+  - name: '17 Fuzz AI Files'
+    uuid: hZ9yeXK2DLY
 
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
