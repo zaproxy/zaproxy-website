@@ -17,9 +17,9 @@
   status: release
   infoUrl: /docs/desktop/addons/alert-filters/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v21/alertFilters-release-21.zap
-  date: 2024-05-07
-  version: 21
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v22/alertFilters-release-22.zap
+  date: 2024-10-07
+  version: 22
 - id: allinonenotes
   name: All In One Notes
   description: A simple extension to view all notes in one pane.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.42.0/automation-beta-0.42.0.zap
-  date: 2024-09-02
-  version: 0.42.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.43.0/automation-beta-0.43.0.zap
+  date: 2024-10-07
+  version: 0.43.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -231,9 +231,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/dev-add-on/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.6.0/dev-alpha-0.6.0.zap
-  date: 2024-07-22
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.7.0/dev-alpha-0.7.0.zap
+  date: 2024-10-07
+  version: 0.7.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
@@ -242,9 +242,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/diff/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/diff-v15/diff-beta-15.zap
-  date: 2024-05-07
-  version: 15
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/diff-v16/diff-beta-16.zap
+  date: 2024-10-07
+  version: 16
 - id: directorylistv1
   name: Directory List v1.0
   description: List of directory names to be used with Forced Browse or Fuzzer add-on.
@@ -314,9 +314,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.11.0/exim-beta-0.11.0.zap
-  date: 2024-09-24
-  version: 0.11.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.12.0/exim-beta-0.12.0.zap
+  date: 2024-10-07
+  version: 0.12.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -346,9 +346,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.13.0/fuzz-beta-13.13.0.zap
-  date: 2024-05-07
-  version: 13.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.14.0/fuzz-beta-13.14.0.zap
+  date: 2024-10-07
+  version: 13.14.0
 - id: fuzzai
   name: FuzzAI Files
   description: FuzzAI files which can be used with the ZAP fuzzer
@@ -853,9 +853,9 @@
   status: release
   infoUrl: /docs/desktop/addons/replacer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v18/replacer-release-18.zap
-  date: 2024-05-08
-  version: 18
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v19/replacer-release-19.zap
+  date: 2024-10-07
+  version: 19
 - id: reports
   name: Report Generation
   description: Official ZAP Reports.
@@ -863,9 +863,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.33.0/reports-release-0.33.0.zap
-  date: 2024-09-02
-  version: 0.33.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.34.0/reports-release-0.34.0.zap
+  date: 2024-10-07
+  version: 0.34.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
@@ -893,9 +893,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.40.0/retire-release-0.40.0.zap
-  date: 2024-09-24
-  version: 0.40.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.41.0/retire-release-0.41.0.zap
+  date: 2024-10-07
+  version: 0.41.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -933,9 +933,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.6.0/scripts-release-45.6.0.zap
-  date: 2024-09-02
-  version: 45.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.7.0/scripts-release-45.7.0.zap
+  date: 2024-10-07
+  version: 45.7.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser

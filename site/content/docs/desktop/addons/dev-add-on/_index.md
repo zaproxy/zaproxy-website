@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: dev
-    version: 0.6.0
+    version: 0.7.0
 ---
 
 # Dev Add-On
@@ -26,3 +26,7 @@ A growing set of authentication pages, for use in testing ZAP authentication han
 ## HTML Pages
 
 A set of pages which store various types of data in localStorage and sessionStorage.
+
+## Sequence Pages
+
+A set of pages for testing the sequence add-on.

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: dev
-    version: 0.6.0
+    version: 0.7.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.6.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.7.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'

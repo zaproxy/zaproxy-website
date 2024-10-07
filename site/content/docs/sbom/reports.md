@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.33.0
+    version: 0.34.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.33.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.34.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -342,7 +342,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.17.0
+    version: 0.19.0
     licenses: ''
   - name: objenesis
     version: '3.3'
