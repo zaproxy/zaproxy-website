@@ -14,7 +14,7 @@ This header is a combination identifier, showing Risk followed by Confidence. Fo
 
 ```
 
-# ZAP Scanning Report
+# ZAP by Checkmarx Scanning Report
 
 ## Summary of Alerts
 
