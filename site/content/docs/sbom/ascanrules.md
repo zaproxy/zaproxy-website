@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '68'
+    version: '69'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v68/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v69/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -165,7 +165,7 @@ sbom:
     version: 22.3.3
     licenses: UPL-1.0
   - name: graaljs
-    version: 0.8.0
+    version: 0.9.0
     licenses: ''
   - name: gson
     version: 2.10.1
