@@ -1,0 +1,54 @@
+name: Generate Monthly Updates Blog Post Template
+on:
+  schedule:
+    - cron: '0 0 1 * *'  # Run on the first day of every month
+  workflow_dispatch:
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install script dependencies
+        run: |
+          pip install requests
+
+      - name: Generate blog post and raise PR
+        env:
+          GITHUB_USER: zapbot
+          GITHUB_TOKEN: ${{ secrets.ZAPBOT_TOKEN }}
+          BRANCH_NAME: monthly-updates-blog-post
+        run: |
+          current_date=$(date +%Y-%m-%d)
+          day_of_month=$(date +%d)
+          if [ "$day_of_month" -ge 10 ]; then
+            month_year=$(date +%B-%Y)  # Current month and year
+          else
+            month_year=$(date --date='-1 month' +%B-%Y)  # Previous month and year
+          fi
+          month_year=$(echo "$month_year" | tr '[:upper:]' '[:lower:]')
+          DIR="site/content/blog/${current_date}-zap-updates-${month_year}"
+          mkdir -p $DIR
+          python tools/monthly-updates-blog-post/generate-blog-post.py > $DIR/index.md
+          # Set up git
+          git config --global user.email "12745184+zapbot@users.noreply.github.com"
+          git config --global user.name $GITHUB_USER
+          git checkout -b $BRANCH_NAME
+          # Update the index to be sure git is aware of changes
+          git update-index -q --refresh
+          # Commit and push
+          git remote set-url origin https://$GITHUB_USER:$GITHUB_TOKEN@github.com/$GITHUB_USER/zaproxy-website.git
+          git add $DIR
+          git commit -sm "blog: Add monthly updates post"
+          git push --set-upstream origin $BRANCH_NAME --force-with-lease
+          # Create a draft PR
+          gh pr create --repo zaproxy/zaproxy-website --fill --draft
