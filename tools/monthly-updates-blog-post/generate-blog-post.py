@@ -52,7 +52,7 @@ def get_release_notes():
     if os.environ.get("GITHUB_TOKEN"):
         headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
     response = requests.get(
-        "https://api.github.com/repos/zaproxy/zap-extensions/releases?per_page=200"
+        "https://api.github.com/repos/zaproxy/zap-extensions/releases?per_page=100"
     )
     releases_json = response.json()
     release_notes = ""
@@ -81,7 +81,7 @@ def get_blog_post_text():
 ---
 title: "ZAP Updates - {month_name} {year}"
 summary: >
-TODO
+  TODO
 images:
 - https://www.zaproxy.org/blog/{today.strftime('%Y-%m-%d-zap-updates-%B-%Y').lower()}/images/zapbot-monthly-updates.png
 type: post
