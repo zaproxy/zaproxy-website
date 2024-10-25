@@ -13,6 +13,10 @@ This guide explains how to make changes to ZAP using IntelliJ IDEA.
 ## Preparation
 You will need to have followed the [Quick Start Guide to Building ZAP](../quick-start-build/) and installed a version of [IntelliJ IDEA](https://www.jetbrains.com/idea/download/).
 
+## Install Lombok
+
+Follow the instructions on https://projectlombok.org/setup/intellij
+
 ##### Gradle Resources
 Working with ZAP in IntelliJ IDEA may need a bit more Java resources for the Gradle actions. To adjust how much memory Gradle can use on your machine set the option in [gradle.properties](https://docs.gradle.org/current/userguide/build_environment.html)
 

@@ -13,6 +13,10 @@ If you want to make changes to ZAP using the Eclipse IDE then you are in the rig
 ## Preparation
 You will need to have followed the [Quick Start Guide to Building ZAP](../quick-start-build/) and installed a version of [Eclipse](https://www.eclipse.org/) suitable for Java development. We would suggest the "Eclipse IDE for Java Developers" [package](https://www.eclipse.org/downloads/packages/).
 
+## Install Lombok
+
+Follow the instructions on https://projectlombok.org/setup/eclipse#via-eclipse-plugin-installer
+
 ## Import the ZAP Repositories
 In Eclipse select the 'File' menu, then 'Import...', and then 'Gradle' &#8594; 'Existing Gradle Project':
 
