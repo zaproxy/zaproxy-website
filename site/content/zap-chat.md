@@ -2,7 +2,7 @@
 type: page
 title: ZAP Chat Videos
 layout: youtube-videos
-featured: hZ9yeXK2DLY
+featured: 7kqg7x7d6os
 links:
   - name: '01 Introduction'
     uuid: qrAJ32rdi14
@@ -54,6 +54,9 @@ links:
 
   - name: '17 Fuzz AI Files'
     uuid: hZ9yeXK2DLY
+
+  - name: '18 Antero, The New ZAP Project Manager'
+    uuid: 7kqg7x7d6os
 
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.

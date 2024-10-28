@@ -44,6 +44,7 @@ All of Simon’s publicly available videos are linked off the [Videos](/videos/)
 
 #### Interviews and Panels
 
+* 2024/10/07 [The Future of Zed Attack Proxy – Simon Bennetts, Ori Bendet – ASW #302](https://www.scworld.com/podcast-segment/13268-the-future-of-zed-attack-proxy-simon-bennetts-ori-bendet-asw-302)
 * 2024/05/21 [Mark Curphey and Simon Bennetts -- Riding the Coat Tails of ZAP, without Open Source Funding](https://www.youtube.com/watch?v=j1B3Qgq4D-k)
 * 2023/01/04 [IWCON2023: A decade plus of maintaining ZAP - Simon Bennetts](https://www.youtube.com/watch?v=pQLd7Qka330)
 * 2023/10/25 [Evo Cyber Security #51 – Changes in Software Supply Chain Regulations](https://evolutionjobs.com/exchange/evo-cyber-security-51-changes-in-software-supply-chain-regulations/)
