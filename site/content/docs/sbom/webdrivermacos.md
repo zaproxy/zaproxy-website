@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '110'
+    version: '111'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v110/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v111/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -203,6 +203,9 @@ sbom:
   - name: log4j-jul
     version: 2.20.0
     licenses: Apache-2.0
+  - name: lombok
+    version: 1.18.34
+    licenses: MIT
   - name: netty-buffer
     version: 4.1.73.Final
     licenses: Apache-2.0
