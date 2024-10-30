@@ -12,8 +12,8 @@ updates:
       - "patch"
       patterns:
       - "*"
-- package-ecosystem: "github-actions" # See documentation for possible values
-  directory: "/" # Location of package manifests
+- package-ecosystem: "github-actions"
+  directory: "/"
   schedule:
     interval: "weekly"
   groups:
