@@ -83,7 +83,7 @@ title: "ZAP Updates - {month_name} {year}"
 summary: >
   TODO
 images:
-- https://www.zaproxy.org/blog/{today.strftime('%Y-%m-%d-zap-updates-%B-%Y').lower()}/images/zapbot-monthly-updates.png
+- https://www.zaproxy.org/blog/{today.strftime('%Y-%m-%d-zap-updates')}-{month_name.lower()}-{year}/images/zapbot-monthly-updates.png
 type: post
 tags:
 - blog
