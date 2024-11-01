@@ -49,6 +49,6 @@ jobs:
           git remote set-url origin https://$GITHUB_USER:$GITHUB_TOKEN@github.com/$GITHUB_USER/zaproxy-website.git
           git add $DIR
           git commit -sm "blog: Add monthly updates post"
-          git push --set-upstream origin $BRANCH_NAME --force-with-lease
+          git push --set-upstream origin $BRANCH_NAME --force
           # Create a draft PR
           gh pr create --repo zaproxy/zaproxy-website --fill --draft
