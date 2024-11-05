@@ -44,7 +44,7 @@ This job supports monitor tests.
       processForm:                     # Bool: Whether the spider will process forms, default: true
       requestWaitTime:                 # Int: The time between the requests sent to a server in milliseconds, default: 200
       sendRefererHeader:               # Bool: Whether the spider will send the referer header, default: true
-      threadCount:                     # Int: The number of spider threads, default: 2
+      threadCount:                     # Int: The number of spider threads, default: 2 * Number of available processor cores
       userAgent:                       # String: The user agent to use in requests, default: '' - use the default ZAP one 
     tests:
       - name: 'At least 100 URLs found'                 # String: Name of the test, default: statistic + operator + value
