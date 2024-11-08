@@ -25,7 +25,7 @@
             {{end}}
             {{ $bomMdFilePath := print "docs/sbom/" .id ".md" }}
             {{ if os.FileExists $bomMdFilePath }}
-            <a class="no-border" title="SBOM" href="/docs/sbom/{{ .id }}" target="_blank" rel="noopener noreferrer"><img alt="SBOM" src="/img/addons/sbom.png" /></a>
+            <a class="no-border" title="SBOM" href="/docs/sbom/{{ .id | lower }}" target="_blank" rel="noopener noreferrer"><img alt="SBOM" src="/img/addons/sbom.png" /></a>
             {{end}}
             <br>
             {{ .description }}
