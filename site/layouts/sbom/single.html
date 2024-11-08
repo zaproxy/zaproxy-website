@@ -10,7 +10,7 @@
   <header class="breadcrumbs">
     <a href="/docs/">Docs</a> &gt;
     <a href="/docs/sbom/">SBOM</a> &gt;
-    <a href="/docs/sbom/{{ $addOn.id }}">{{ $addOn.name }}</a>
+    <a href="/docs/sbom/{{ $addOn.id | lower }}">{{ $addOn.name }}</a>
   </header>
   <br>
   <p>This page contains a list of all the libraries involved in building version <code>{{ $addOn.version }}</code> of the
