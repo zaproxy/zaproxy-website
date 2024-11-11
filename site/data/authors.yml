@@ -157,3 +157,9 @@ amit:
   picture: /img/authors/amit_400x400.png
   twitter: amitpanwar02705
   is_core: false
+
+hahwul:
+  name: hahwul
+  picture: /img/authors/hahwul_400x400.jpg
+  twitter: hahwul
+  is_core: false
