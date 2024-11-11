@@ -72,7 +72,7 @@ noir -b ~/app_source -f oas3 --no-log -o doc.json
 
 ![](./images/output.png)
 
-#### Docker image
+#### Docker Image
 In [zap-baseline.py](https://www.zaproxy.org/docs/docker/baseline-scan/#usage), [zap-full-scan.py](https://www.zaproxy.org/docs/docker/full-scan/#usage) and [zap-api-scan.py](https://www.zaproxy.org/docs/docker/api-scan/#usage) of the zaproxy/zap-stable docker image, you can pass the argument value of zap.sh through the `-z` flag. Consequently, you can pass the OAS file obtained using noir to zap.
 
 ```sh
