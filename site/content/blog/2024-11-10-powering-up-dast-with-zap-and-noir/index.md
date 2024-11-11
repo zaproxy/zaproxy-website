@@ -56,7 +56,7 @@ noir -b <SOURCE> -f oas3 --no-log -o <OUTPUT>
 
 In this article, we will use the OAS format.
 
-#### Command line
+#### Command Line
 
 ZAP can then use these results by setting endpoint details through the `-openapifile` and `-openapitargeturl` flags when executed via the command line. With these two flags, you can configure the automation scan to include additional endpoints discovered through Noir, as shown in the command below.
 
