@@ -1,6 +1,6 @@
 ---
 title: "Powering Up DAST with ZAP and Noir"
-date: "2024-11-10"
+date: "2024-11-11"
 summary: "Integrating Noir, a tool for discovering hidden endpoints in source code, with ZAP enhances dynamic application security testing (DAST)."
 type: post
 tags:
@@ -9,6 +9,9 @@ tags:
   - recon
 authors:
   - hahwul
+images:
+- https://www.zaproxy.org/blog/2024-11-11-powering-up-dast-with-zap-and-noir/images/0-preview.jpg
+addSocialPreview: true
 ---
 
 Endpoint discovery is a crucial task for any dynamic application security testing (DAST) tool. An endpoint refers to a specific part of the application that can be tested by tools or people. It plays a vital role in security, especially in DevSecOps and AppSec, as many vulnerabilities are discovered in endpoints, such as APIs, that are often overlooked during operation or development.
