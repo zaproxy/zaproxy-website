@@ -231,9 +231,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/dev-add-on/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.7.0/dev-alpha-0.7.0.zap
-  date: 2024-10-07
-  version: 0.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.8.0/dev-alpha-0.8.0.zap
+  date: 2024-11-13
+  version: 0.8.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.
@@ -1075,9 +1075,9 @@
   status: release
   infoUrl: /docs/desktop/addons/linux-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v113/webdriverlinux-release-113.zap
-  date: 2024-11-07
-  version: 113
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v114/webdriverlinux-release-114.zap
+  date: 2024-11-13
+  version: 114
 - id: webdrivermacos
   name: MacOS WebDrivers
   description: MacOS WebDrivers for Firefox and Chrome.
@@ -1085,9 +1085,9 @@
   status: release
   infoUrl: /docs/desktop/addons/macos-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v113/webdrivermacos-release-113.zap
-  date: 2024-11-07
-  version: 113
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v114/webdrivermacos-release-114.zap
+  date: 2024-11-13
+  version: 114
 - id: webdriverwindows
   name: Windows WebDrivers
   description: Windows WebDrivers for Firefox and Chrome.
@@ -1095,9 +1095,9 @@
   status: release
   infoUrl: /docs/desktop/addons/windows-webdrivers/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v113/webdriverwindows-release-113.zap
-  date: 2024-11-07
-  version: 113
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v114/webdriverwindows-release-114.zap
+  date: 2024-11-13
+  version: 114
 - id: websocket
   name: WebSockets
   description: Allows you to inspect WebSocket communication.

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: dev
-    version: 0.7.0
+    version: 0.8.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.7.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.8.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -254,6 +254,9 @@ sbom:
   - name: log4j-slf4j-impl
     version: 2.20.0
     licenses: Apache-2.0
+  - name: lombok
+    version: 1.18.34
+    licenses: MIT
   - name: mockito-core
     version: 5.7.0
     licenses: MIT
