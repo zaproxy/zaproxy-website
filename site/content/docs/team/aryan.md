@@ -6,7 +6,7 @@ author: aryangupta701
 type: team
 github: aryangupta701
 linkedin: aryan-gupta-78273a1b6
-weight: 11
+weight: 22
 ---
 Aryan Gupta is a highly motivated undergraduate student pursuing a degree in Computer Science Engineering.
 

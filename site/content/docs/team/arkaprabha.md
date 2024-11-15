@@ -6,7 +6,7 @@ author: arkaprabha
 type: team
 github: ArkaprabhaChakraborty
 linkedin: arkaprabhachakraborty
-weight: 11
+weight: 22
 ---
 Arkaprabha is an undergraduate computer science engineering student. 
 
