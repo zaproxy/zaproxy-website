@@ -6,7 +6,7 @@ author: amit
 type: team
 github: amitpanwar789
 linkedin: amit-panwar-0526b722b
-weight: 14
+weight: 28
 ---
 Amit is an undergraduate student pursuing a degree in Electronics and Communication Engineering. 
 

@@ -7,7 +7,7 @@ type: team
 github: njmulsqb
 linkedin: njmulsqb
 mastodon: https://infosec.exchange/@cybersoldier
-weight: 12
+weight: 24
 ---
 
 Najam (also known as: CyberSoldier) is a software developer and security engineer. 

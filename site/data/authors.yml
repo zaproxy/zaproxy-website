@@ -1,3 +1,9 @@
+zaproxy:
+  name: ZAP by Checkmarx
+  picture: /img/authors/zap_400x400.png
+  twitter: zaproxy
+  is_core: true
+
 simon:
   name: Simon Bennetts
   picture: /img/authors/simon-bennetts_400x400.jpg
@@ -6,7 +12,7 @@ simon:
 
 ricardo:
   name: Ricardo
-  picture: /img/authors/zap_400x400.png
+  picture: /img/authors/thc202_400x400.jpg
   twitter: thc202
   is_core: true
 

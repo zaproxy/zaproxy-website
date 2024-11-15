@@ -8,7 +8,7 @@ github: ricekot
 linkedin: ricekot
 mastodon: https://infosec.exchange/@ricekot
 bluesky: https://bsky.app/profile/ricekot.com
-weight: 4
+weight: 8
 ---
 Akshath is the author of the [GraphQL](/docs/desktop/addons/graphql-support/) and 
 [OAST](/docs/desktop/addons/oast-support/) add-ons for ZAP.

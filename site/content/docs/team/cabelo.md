@@ -6,7 +6,7 @@ author: cabelo
 type: team
 github: cabelo
 linkedin: alessandro-de-oliveira-faria
-weight: 10
+weight: 20
 ---
 Cabelo started contributing to ZAP in 2016 and maintains the 
 [Official ZAP Linux Repos](https://software.opensuse.org/download.html?project=home%3Acabelo&package=zap).
