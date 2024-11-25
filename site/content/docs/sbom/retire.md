@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: retire
-    version: 0.41.0
+    version: 0.42.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.41.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.42.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -128,9 +128,6 @@ sbom:
   - name: flatlaf
     version: 3.4.1
     licenses: Apache-2.0
-  - name: formhandler
-    version: 6.7.0
-    licenses: ''
   - name: guava
     version: 32.1.1-jre
     licenses: Apache-2.0
@@ -254,6 +251,9 @@ sbom:
   - name: log4j-slf4j-impl
     version: 2.20.0
     licenses: Apache-2.0
+  - name: lombok
+    version: 1.18.34
+    licenses: MIT
   - name: mockito-core
     version: 5.7.0
     licenses: MIT
