@@ -1,22 +1,19 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Technology Detection Add-on SBOM
+title: Eval Villain Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: wappalyzer
-    version: 21.43.0
+    id: evalvillain
+    version: 0.4.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.43.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/evalvillain-v0.4.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
     licenses: Public Domain
-  - name: apiguardian-api
-    version: 1.1.2
-    licenses: Apache-2.0
   - name: asm
     version: '9.6'
     licenses: BSD-3-Clause
@@ -35,27 +32,6 @@ sbom:
   - name: auto-value-annotations
     version: '1.9'
     licenses: Apache-2.0
-  - name: bcmail-jdk18on
-    version: '1.77'
-    licenses: Bouncy Castle Licence
-  - name: bcpkix-jdk18on
-    version: '1.77'
-    licenses: Bouncy Castle Licence
-  - name: bcprov-jdk18on
-    version: '1.77'
-    licenses: Bouncy Castle Licence
-  - name: bcutil-jdk18on
-    version: '1.77'
-    licenses: Bouncy Castle Licence
-  - name: brotli4j
-    version: 1.16.0
-    licenses: Apache-2.0
-  - name: byte-buddy
-    version: 1.14.9
-    licenses: Apache-2.0
-  - name: byte-buddy-agent
-    version: 1.14.9
-    licenses: Apache-2.0
   - name: caffeine
     version: 3.0.5
     licenses: Apache-2.0
@@ -70,9 +46,6 @@ sbom:
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
-    licenses: Apache-2.0
-  - name: commons-collections4
-    version: '4.4'
     licenses: Apache-2.0
   - name: commons-configuration
     version: '1.10'
@@ -134,56 +107,14 @@ sbom:
   - name: guice
     version: 5.1.0
     licenses: Apache-2.0
-  - name: hamcrest
-    version: '2.2'
-    licenses: BSD-3-Clause
-  - name: hamcrest-core
-    version: '2.2'
-    licenses: BSD-3-Clause
-  - name: hamcrest-library
-    version: '2.2'
-    licenses: BSD-3-Clause
   - name: harlib
     version: 1.1.3
     licenses: Apache-2.0
   - name: hsqldb
     version: 2.7.2
     licenses: HSQLDB License, a BSD open source license
-  - name: httpclient5
-    version: 5.2.1
-    licenses: Apache-2.0
-  - name: httpcore5
-    version: '5.2'
-    licenses: Apache-2.0
-  - name: httpcore5-h2
-    version: '5.2'
-    licenses: Apache-2.0
-  - name: ice4j
-    version: 3.0-24-g34c2ce5
-    licenses: Apache-2.0
-  - name: jackson-annotations
-    version: 2.17.0
-    licenses: Apache-2.0
-  - name: jackson-core
-    version: 2.17.0
-    licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
-    licenses: Apache-2.0
-  - name: jackson-databind
-    version: 2.17.0
-    licenses: Apache-2.0
-  - name: jackson-dataformat-xml
-    version: 2.17.0
-    licenses: Apache-2.0
-  - name: jackson-dataformat-yaml
-    version: 2.17.0
-    licenses: Apache-2.0
-  - name: jackson-datatype-jdk8
-    version: 2.17.0
-    licenses: Apache-2.0
-  - name: jackson-datatype-jsr310
-    version: 2.17.0
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -212,36 +143,9 @@ sbom:
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
-  - name: jsoup
-    version: 1.17.2
-    licenses: MIT
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
-  - name: jsvg
-    version: 1.4.0
-    licenses: MIT
-  - name: junit-jupiter
-    version: 5.10.1
-    licenses: EPL-2.0
-  - name: junit-jupiter-api
-    version: 5.10.1
-    licenses: EPL-2.0
-  - name: junit-jupiter-engine
-    version: 5.10.1
-    licenses: EPL-2.0
-  - name: junit-jupiter-params
-    version: 5.10.1
-    licenses: EPL-2.0
-  - name: junit-platform-commons
-    version: 1.10.1
-    licenses: EPL-2.0
-  - name: junit-platform-engine
-    version: 1.10.1
-    licenses: EPL-2.0
-  - name: junit-platform-launcher
-    version: 1.10.1
-    licenses: EPL-2.0
   - name: log4j-1.2-api
     version: 2.20.0
     licenses: Apache-2.0
@@ -254,75 +158,9 @@ sbom:
   - name: log4j-jul
     version: 2.20.0
     licenses: Apache-2.0
-  - name: log4j-slf4j-impl
-    version: 2.20.0
-    licenses: Apache-2.0
   - name: lombok
     version: 1.18.34
     licenses: MIT
-  - name: mockito-core
-    version: 5.7.0
-    licenses: MIT
-  - name: mockito-junit-jupiter
-    version: 5.7.0
-    licenses: MIT
-  - name: nanohttpd
-    version: 2.3.1
-    licenses: BSD-3-Clause
-  - name: nanohttpd-webserver
-    version: 2.3.1
-    licenses: BSD-3-Clause
-  - name: nanohttpd-websocket
-    version: 2.3.1
-    licenses: BSD-3-Clause
-  - name: native-linux-x86_64
-    version: 1.16.0
-    licenses: Apache-2.0
-  - name: native-osx-aarch64
-    version: 1.16.0
-    licenses: Apache-2.0
-  - name: native-osx-x86_64
-    version: 1.16.0
-    licenses: Apache-2.0
-  - name: native-windows-x86_64
-    version: 1.16.0
-    licenses: Apache-2.0
-  - name: netty-buffer
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: netty-codec
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: netty-codec-http
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: netty-codec-http2
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: netty-common
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: netty-handler
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: netty-resolver
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: netty-transport
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: netty-transport-native-unix-common
-    version: 4.1.100.Final
-    licenses: Apache-2.0
-  - name: network
-    version: 0.19.0
-    licenses: ''
-  - name: objenesis
-    version: '3.3'
-    licenses: Apache-2.0
-  - name: opentest4j
-    version: 1.3.0
-    licenses: Apache-2.0
   - name: org.jacoco.agent
     version: 0.8.11
     licenses: EPL-2.0
@@ -341,33 +179,15 @@ sbom:
   - name: protobuf-java
     version: 3.19.6
     licenses: BSD-3-Clause
-  - name: re2j
-    version: '1.7'
-    licenses: Go License
   - name: rsyntaxtextarea
     version: 3.4.0
     licenses: BSD-3-Clause
-  - name: service
-    version: 1.16.0
-    licenses: Apache-2.0
-  - name: slf4j-api
-    version: 1.7.36
-    licenses: MIT
-  - name: snakeyaml
-    version: '2.2'
-    licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT
-  - name: stax2-api
-    version: 4.2.2
-    licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
-  - name: woodstox-core
-    version: 6.6.1
-    licenses: Apache-2.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
