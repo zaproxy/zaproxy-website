@@ -41,7 +41,7 @@
     "exports-loader": "^5.0.0",
     "fancy-log": "^2.0.0",
     "file-loader": "^6.2.0",
-    "hugo-bin": "^0.135.0",
+    "hugo-bin": "^0.136.2",
     "imports-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.9.2",
     "node-sass": "^9.0.0",
@@ -65,7 +65,7 @@
     "natives": "1.1.6"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.6.2",
+    "@glidejs/glide": "^3.7.1",
     "postcss": "^8.4.49"
   }
 }
