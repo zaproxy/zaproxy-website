@@ -265,6 +265,27 @@ OWASP_2021_A08:
 OWASP_2021_A10:
   link: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
 
+POLICY_API:
+  link: 
+
+POLICY_DEV_CICD:
+  link: 
+
+POLICY_DEV_FULL:
+  link: 
+
+POLICY_DEV_STD:
+  link: 
+
+POLICY_QA_FULL:
+  link: 
+
+POLICY_QA_STD:
+  link: 
+
+POLICY_SEQUENCE:
+  link: 
+
 TEST_TIMING:
   link: 
 
