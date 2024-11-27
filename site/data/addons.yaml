@@ -926,6 +926,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/saml-v10/saml-alpha-10.zap
   date: 2022-10-28
   version: 10
+- id: scanpolicies
+  name: Scan Policies
+  description: A set of standard scan policies.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/scan-policies/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.1.0/scanpolicies-alpha-0.1.0.zap
+  date: 2024-11-27
+  version: 0.1.0
 - id: scripts
   name: Script Console
   description: Supports all JSR 223 scripting languages
