@@ -41,7 +41,7 @@
     "exports-loader": "^5.0.0",
     "fancy-log": "^2.0.0",
     "file-loader": "^6.2.0",
-    "hugo-bin": "^0.136.2",
+    "hugo-bin": "^0.136.3",
     "imports-loader": "^5.0.0",
     "mini-css-extract-plugin": "^2.9.2",
     "node-sass": "^9.0.0",
