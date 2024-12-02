@@ -1,28 +1,54 @@
 ---
 title: "ZAP Updates - November 2024"
 summary: >
-  TODO
+  A brand new Scan Policies add-on, how to integrate ZAP with OWASP Noir and ZAP 2.16.0 is getting very close..
 images:
-- https://www.zaproxy.org/blog/2024-12-01-zap-updates-november-2024/images/zapbot-monthly-updates.png
+- https://www.zaproxy.org/blog/2024-12-02-zap-updates-november-2024/images/zapbot-monthly-updates.png
 type: post
 tags:
 - blog
 - update
-date: "2024-12-01"
+date: "2024-12-02"
 authors:
-- TODO
+- psiinon
 ---
 
 ## Highlights
-TODO
+
+### Scan Policies Add-On
+
+This month we released a new [Scan Policies](/docs/desktop/addons/scan-policies/) add-on which provides a set of
+Scan Policies tuned for different purposes.
+
+This will be included as standard in 2.16.0 but you can try it out on 2.15.0, and it is also included in the 
+[weekly and nightly](/download/#docker) releases.
+
+We would love to hear your [feedback](https://groups.google.com/g/zaproxy-users/c/Sa-9L9lSYd4/m/7wae8ilSAAAJ) on them!
+
+### Using Noir with ZAP
+
+Are you having problems getting ZAP to detect your application endpoints?
+
+If so you should see the [Powering Up DAST with ZAP and Noir](/blog/2024-11-11-powering-up-dast-with-zap-and-noir/)
+blog post, which explains how you can use [OWASP Noir](https://owasp.org/www-project-noir/) to find endpoints in your
+source code and then generate an OpenAPI definition which you can feed into ZAP.
+
+### Community Links
+
+We updated the [ZAP Team](/docs/team/) pages to include all of the social accounts used for the 
+[ZAP project](/docs/team/zaproxy/) and to include the ZAP Product Manager: [Antero Silva](/docs/team/antero/).
 
 ## Ongoing Work
-TODO
+
+### 2.16.0 Coming Very Soon
+
+The next full ZAP release, 2.16.0 is coming very soon!
+You can follow the [Release 2.16](https://github.com/zaproxy/zaproxy/issues/8706) tracker issue to see exactly how it is progressing.
 
 ## New Contributors
 A very warm welcome to the people who started to contribute to ZAP this month!
 
-TODO: Add from https://github.com/zaproxy/zap-core-help/pulls?q=is%3Apr+credits+is%3Aclosed
+* [Dragos-Stefan Necula](https://dragosstefannecula.co.uk)
 
 ## GitHub Pulse
 Here are some statistics for the two main ZAP repositories:
