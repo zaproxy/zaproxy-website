@@ -34,3 +34,7 @@ In the root of the cloned zaproxy-website repo, run the following command:
 ```bash
 git diff --stat --diff-filter=A $(git rev-list -n1 --first-parent --until="1.month.ago" HEAD) | grep -E "(md|html)"
 ```
+
+## TODO to push back to zapbot..
+
+git push zapbot zapbot-monthly-updates-blog-post:monthly-updates-blog-post 
