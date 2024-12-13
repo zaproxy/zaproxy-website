@@ -5,7 +5,7 @@ category: Automation
 weight: 8
 ---
 
-For most use cases the best way to automated ZAP is using the 
+For most use cases, the best way to automate ZAP is using the 
 [Automation Framework](/docs/automate/automation-framework/).
 
 For a comparison of the different automation options see 
