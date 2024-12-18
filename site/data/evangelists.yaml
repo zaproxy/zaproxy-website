@@ -594,3 +594,13 @@
   has_talks: Y
   has_training: Y
   notes: ZAP evangelist
+  
+- name: Abdelkhalek Beraoud
+  email: ka_beraoud@esi.dz
+  linkedin: https://www.linkedin.com/in/abdelkhalek-beraoud-707567245/
+  locations: Algeria / Worldwide / Remote
+  language: English, Arabic, French
+  has_talks: Y
+  has_training: Y
+  notes: Pentester, CTF player @noreply, Cybersecurity, Open source
+  
