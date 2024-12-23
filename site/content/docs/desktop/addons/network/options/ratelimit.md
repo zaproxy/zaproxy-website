@@ -11,8 +11,10 @@ weight: 5
 
 The Rate Limit feature limits the request rate of HTTP/HTTPS (not web sockets) traffic to hosts or domains to prevent overloading the target or being blocked. The limit is applied using a matcher against the request host to pick an individual host, an entire domain, or anything between. In the case a host matches multiple rules, the rule with the most restrictive rate is used.
 
+
 Limits for a domain or host may be quickly added via the context menu. Open the context menu on a message to add a
 rule to limit by the host or domain.
+
 
 Each rule is defined by the following fields:
 

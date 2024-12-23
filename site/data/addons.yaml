@@ -180,9 +180,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.28.0/commonlib-release-1.28.0.zap
-  date: 2024-09-24
-  version: 1.28.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.29.0/commonlib-release-1.29.0.zap
+  date: 2024-12-23
+  version: 1.29.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -283,9 +283,9 @@
   status: release
   infoUrl: /docs/desktop/addons/dom-xss-active-scan-rule/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v19/domxss-release-19.zap
-  date: 2024-05-07
-  version: 19
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v20/domxss-release-20.zap
+  date: 2024-12-23
+  version: 20
 - id: encoder
   name: Encoder
   description: Adds encode/decode/hash dialog and support for scripted processors
@@ -689,9 +689,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.18.0/network-beta-0.18.0.zap
-  date: 2024-09-24
-  version: 0.18.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.19.0/network-beta-0.19.0.zap
+  date: 2024-12-23
+  version: 0.19.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -893,9 +893,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.42.0/retire-release-0.42.0.zap
-  date: 2024-11-25
-  version: 0.42.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.43.0/retire-release-0.43.0.zap
+  date: 2024-12-23
+  version: 0.43.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -953,9 +953,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.30.0/selenium-release-15.30.0.zap
-  date: 2024-09-24
-  version: 15.30.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.31.0/selenium-release-15.31.0.zap
+  date: 2024-12-23
+  version: 15.31.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
