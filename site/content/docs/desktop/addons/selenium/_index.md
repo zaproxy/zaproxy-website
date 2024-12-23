@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.30.0
+    version: 15.31.0
 ---
 
 # Selenium
@@ -43,11 +43,13 @@ have them installed in your system. The ID of the browser can be used to choose 
 browser when configuring ZAP through the command line or using the ZAP API (for example,
 to set the AJAX Spider to use one or other browser).
 
+
 Some of the requirements (e.g. WebDrivers) of the browsers can be configured in the [Options Selenium screen](/docs/desktop/addons/selenium/options/).
 
 ## Bundled WebDrivers
 
 ZAP provides add-ons with the WebDrivers, when those add-ons are installed ZAP will attempt to use those bundled WebDrivers by default. Some OSs might not have a WebDriver for some of the browsers, in those cases ZAP will inform, in the options panel, that there's no bundled WebDriver available. The bundled WebDrivers can also be (re)set with the 'Bundled' button (for example, if another WebDriver was manually set). Not all browser versions are supported with the bundled WebDrivers, it's recommended that newer/latest versions of the browsers be used whenever possible.
+
 
 **Note:** ZAP add-ons can add additional browsers.
 

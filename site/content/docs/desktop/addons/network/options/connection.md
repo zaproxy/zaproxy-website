@@ -108,6 +108,7 @@ The hosts that should be excluded from the HTTP proxy. The `host` is a regular e
 
 This tab allows you to configure an outgoing SOCKS proxy, by default the SOCKS proxy configuration applies to all connections made by ZAP, taking precedence over the HTTP proxy.
 
+
 The SOCKS proxy system properties (e.g. `socksProxyHost`, `socksProxyPort`) take precedence over the persisted
 configurations for compatibility with older ZAP versions. ZAP will use and display the values of the system's properties when defined at
 startup, the configurations can still be changed in this panel.
