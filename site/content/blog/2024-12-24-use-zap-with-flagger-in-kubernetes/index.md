@@ -92,7 +92,7 @@ The podinfo container will be used as our application that Flagger will be coord
 ## Deploy ZAP resources
 Flagger will be triggering ZAP, but we need to set up the resources ahead of time.
 
-1. Copy the following `PersistentVolumeClaim`, substituting the `storageClassName` value with an appropriate `StorageClass` on your cluster. Save as `zap-pvc.yaml` and apply with `kubectl apply -f zap-pvc.yaml`. This will be where the ZAP reports will be saved it. I'm saving mine to Azure Blob Storage, which is where I will be reading the report from.
+1. Copy the following `PersistentVolumeClaim`, substituting the `storageClassName` value with an appropriate `StorageClass` on your cluster. Save as `zap-pvc.yaml` and apply with `kubectl apply -f zap-pvc.yaml`. This is where the ZAP reports will be saved. I'm saving mine to Azure Blob Storage, which is where I will be reading the report from.
     ```
     apiVersion: v1
     kind: PersistentVolumeClaim
@@ -109,7 +109,7 @@ Flagger will be triggering ZAP, but we need to set up the resources ahead of tim
           storage: 50Mi
       storageClassName: dynamic-slrs-blob-fuse
     ```
-2. Create the following `CronJob` as `zap.yaml` and apply with `kubectl apply -f zap.yaml`. We are created it suspended, so it will never run on the schedule, however we will be using it for Flagger to create the ZAP `Job`.
+2. Create the following `CronJob` as `zap.yaml` and apply with `kubectl apply -f zap.yaml`. We are creating it suspended, so it will never run on the schedule, however we will be using it for Flagger to create the ZAP `Job`.
     ```
     apiVersion: batch/v1
     kind: CronJob
@@ -356,7 +356,7 @@ The Flagger Canary definition will provide the instructions that Flagger needs t
     ```
     - The Canary targets the podinfo deployment. It then takes control over the podinfo `Service` as well as creates a `podinfo-canary` and `podinfo-primary` service.
     - When a change to the podinfo deployment is detected, Flagger will first send a webhook to our flagger-loadtester service, with instructions for it to create the ZAP job, and then wait for the job to be ready.
-    - After ZAP gets started up, The loadtester is given instructions to send over some traffic to the canary service, which sends traffic to the new deployment. Flagger looks at the metrics of from that traffic to ensure it was successful before moving on.
+    - After ZAP gets started up, the loadtester is given instructions to send over some traffic to the canary service, which sends traffic to the new deployment. Flagger looks at the metrics of from that traffic to ensure it was successful before moving on.
     - After it's done 2 iterations of the load test (as we've defined), Flagger spins up new pods with the new deployment configuration to replace the primary deployment.
     - After the rollout is completed, the flagger-loadtester is used once again for the webhook, which then instructs it to hit the `endDelayJob` endpoint on our ZAP deployment. Which will end the delay in the ZAP Automation Plan. (Flagger is not being used to hit the `endDelayJob` endpoint directly because it includes a payload with the content type of `application/json`)
     - Now that the Flagger rollout is complete, ZAP will begin to attack the new deployment.
@@ -386,7 +386,7 @@ The Flagger Canary definition will provide the instructions that Flagger needs t
     ![openapi-summary.png](./images/openapi-summary.png)
 
 ## Proxy Requests Through ZAP
-Integration and smoke tests can be running during Flagger's deployment process when they are triggered off of a webhook. The requests from those tests can be proxied through ZAP and ZAP can use those endpoints and payloads to start it's attacks using valid requests, giving ZAP the opportunity to find more vulnerabilities. The ZAP Automation Plan and the Canary definition can be updated to support this.
+Integration and smoke tests can be run during Flagger's deployment process when they are triggered off of a webhook. The requests from those tests can be proxied through ZAP and ZAP can use those endpoints and payloads to start its attacks using valid requests, giving ZAP the opportunity to find more vulnerabilities. The ZAP Automation Plan and the Canary definition can be updated to support this.
 
 1. Update  `zap-config.yaml` and apply with `kubectl apply -f zap-config.yaml`
     ```
