@@ -356,7 +356,7 @@ The Flagger Canary definition will provide the instructions that Flagger needs t
     ```
     - The Canary targets the podinfo deployment. It then takes control over the podinfo `Service` as well as creates a `podinfo-canary` and `podinfo-primary` service.
     - When a change to the podinfo deployment is detected, Flagger will first send a webhook to our flagger-loadtester service, with instructions for it to create the ZAP job, and then wait for the job to be ready.
-    - After ZAP gets started up, the loadtester is given instructions to send over some traffic to the canary service, which sends traffic to the new deployment. Flagger looks at the metrics of from that traffic to ensure it was successful before moving on.
+    - After ZAP gets started up, the loadtester is given instructions to send over some traffic to the canary service, which sends traffic to the new deployment. Flagger looks at the metrics of that traffic to ensure it was successful before moving on.
     - After it's done 2 iterations of the load test (as we've defined), Flagger spins up new pods with the new deployment configuration to replace the primary deployment.
     - After the rollout is completed, the flagger-loadtester is used once again for the webhook, which then instructs it to hit the `endDelayJob` endpoint on our ZAP deployment. Which will end the delay in the ZAP Automation Plan. (Flagger is not being used to hit the `endDelayJob` endpoint directly because it includes a payload with the content type of `application/json`)
     - Now that the Flagger rollout is complete, ZAP will begin to attack the new deployment.
@@ -554,7 +554,7 @@ Integration and smoke tests can be run during Flagger's deployment process when 
           metadata:
             cmd: "curl http://zap:8080/JSON/automation/action/endDelayJob"
     ```
-    - Before the load test, a integration test was added. This is just a placeholder running a test suite. It's using the flagger-loadtester for the webhook and giving it instructions to send a request to the podinfo-canary service, proxying the request through ZAP. If using a container with a test suite, the proxy server can often be set using the HTTP_PROXY environment variable.
+    - Before the load test, an integration test was added. This is just a placeholder running a test suite. It's using the flagger-loadtester for the webhook and giving it instructions to send a request to the podinfo-canary service, proxying the request through ZAP. If using a container with a test suite, the proxy server can often be set using the HTTP_PROXY environment variable.
     - The outcome of the defined webhooks is that the ZAP Job gets started up, then the integration test is ran on podinfo-canary while being proxied through ZAP. The load test then runs on the podinfo-canary, and when the rollout is complete, ZAP's Automation Plan's delay is ended and ZAP uses the requests to podinfo-canary to attack podinfo.
 
 3. To see this in action, update the podinfo image back to the previous version
