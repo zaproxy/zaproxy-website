@@ -1,6 +1,6 @@
-FROM node:18
+FROM node:22
 
-COPY package-lock.json package.json  /app/
+COPY package-lock.json package.json /app/
 
 WORKDIR /app
 
@@ -13,9 +13,10 @@ COPY .babelrc \
     webpack.common.js \
     webpack.dev.js \
     webpack.prod.js /app/
-    
+
 COPY site/ /app/site
 COPY src/ /app/src
 
 RUN npm run build
-CMD npm run preview
+
+CMD ["npm", "run", "preview"]
