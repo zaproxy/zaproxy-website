@@ -2,240 +2,240 @@
 - id: 10104
   name: "User Agent Fuzzer"
   status: "release"
-  alerts: "38693201"
-  fps: 0.049
-  num: 180128
-  time: 82
+  alerts: "35084124"
+  fps: 0.052
+  num: 163589
+  time: 83
 
 - id: 90027
   name: "Cookie Slack Detector"
   status: "beta"
-  alerts: "820114"
-  fps: 0.033
-  num: 34186
-  time: 17
+  alerts: "621369"
+  fps: 0.027
+  num: 31508
+  time: 15
 
 - id: 40025
   name: "Proxy Disclosure"
   status: "beta"
-  alerts: "751052"
-  fps: 0.104
-  num: 33425
-  time: 57
+  alerts: "584015"
+  fps: 0.086
+  num: 30995
+  time: 60
 
 - id: 40035
   name: "Hidden File Found"
   status: "release"
-  alerts: "505124"
-  fps: 0.173
-  num: 279340
-  time: 47
+  alerts: "467222"
+  fps: 0.115
+  num: 237737
+  time: 66
 
 - id: 10095
   name: "Backup File Disclosure"
   status: "beta"
-  alerts: "449212"
-  fps: 0.319
-  num: 37710
-  time: 70
-
-- id: 40018
-  name: "SQL Injection"
-  status: "release"
-  alerts: "368347"
-  fps: 0.128
-  num: 268305
-  time: 110
+  alerts: "376512"
+  fps: 0.392
+  num: 33054
+  time: 65
 
 - id: 40040
   name: "CORS Header"
   status: "beta"
-  alerts: "323906"
-  fps: 0.194
-  num: 40777
-  time: 32
+  alerts: "265301"
+  fps: 0.068
+  num: 38273
+  time: 29
 
-- id: 10058
-  name: "GET for POST"
+- id: 40018
+  name: "SQL Injection"
   status: "release"
-  alerts: "284247"
-  fps: 0.0
-  num: 239027
-  time: 14
-
-- id: 0
-  name: "Directory Browsing"
-  status: "release"
-  alerts: "214756"
-  fps: 0.0
-  num: 252706
-  time: 25
-
-- id: 40024
-  name: "SQL Injection - SQLite"
-  status: "release"
-  alerts: "179336"
-  fps: 0.046
-  num: 191446
-  time: 38
+  alerts: "240765"
+  fps: 0.163
+  num: 246146
+  time: 113
 
 - id: 90017
   name: "XSLT Injection"
   status: "release"
-  alerts: "146669"
-  fps: 0.333
-  num: 243665
-  time: 62
+  alerts: "185596"
+  fps: 0.254
+  num: 229003
+  time: 67
 
-- id: 40012
-  name: "Cross Site Scripting (Reflected)"
+- id: 10058
+  name: "GET for POST"
   status: "release"
-  alerts: "103504"
-  fps: 0.006
-  num: 251166
-  time: 59
+  alerts: "164552"
+  fps: 0.0
+  num: 220290
+  time: 13
+
+- id: 40024
+  name: "SQL Injection - SQLite"
+  status: "release"
+  alerts: "156463"
+  fps: 0.042
+  num: 171304
+  time: 36
+
+- id: 0
+  name: "Directory Browsing"
+  status: "release"
+  alerts: "132860"
+  fps: 0.0
+  num: 235034
+  time: 26
 
 - id: 90028
   name: "Insecure HTTP Method"
   status: "beta"
-  alerts: "85847"
-  fps: 0.026
-  num: 33821
-  time: 12
+  alerts: "85550"
+  fps: 0.014
+  num: 31560
+  time: 10
 
-- id: 6
-  name: "Path Traversal"
+- id: 40012
+  name: "Cross Site Scripting (Reflected)"
   status: "release"
-  alerts: "84690"
-  fps: 0.126
-  num: 257675
-  time: 182
+  alerts: "83478"
+  fps: 0.007
+  num: 231143
+  time: 53
 
 - id: 40032
   name: ".htaccess Information Leak"
   status: "release"
-  alerts: "81392"
-  fps: 0.031
-  num: 242981
+  alerts: "74302"
+  fps: 0.022
+  num: 224223
   time: 13
 
-- id: 30001
-  name: "Buffer Overflow"
+- id: 6
+  name: "Path Traversal"
   status: "release"
-  alerts: "66261"
-  fps: 0.0
-  num: 205810
-  time: 8
-
-- id: 90034
-  name: "Cloud Metadata Potentially Exposed"
-  status: "release"
-  alerts: "62805"
-  fps: 0.201
-  num: 201349
-  time: 5
+  alerts: "69710"
+  fps: 0.183
+  num: 237516
+  time: 227
 
 - id: 20012
   name: "Anti-CSRF Tokens Check"
   status: "beta"
-  alerts: "58301"
-  fps: 0.116
-  num: 36614
+  alerts: "53966"
+  fps: 0.123
+  num: 33723
+  time: 9
+
+- id: 90026
+  name: "SOAP Action Spoofing"
+  status: "beta"
+  alerts: "49878"
+  fps: 0.0
+  num: 188565
   time: 10
+
+- id: 90034
+  name: "Cloud Metadata Potentially Exposed"
+  status: "release"
+  alerts: "47122"
+  fps: 0.327
+  num: 182031
+  time: 8
+
+- id: 10051
+  name: "Relative Path Confusion"
+  status: "beta"
+  alerts: "44238"
+  fps: 0.0
+  num: 33677
+  time: 11
 
 - id: 40034
   name: ".env Information Leak"
   status: "release"
-  alerts: "56687"
-  fps: 0.045
-  num: 237306
+  alerts: "43848"
+  fps: 0.037
+  num: 220302
   time: 12
 
 - id: 40029
   name: "Trace.axd Information Leak"
   status: "release"
-  alerts: "55439"
-  fps: 0.049
-  num: 237285
-  time: 15
+  alerts: "43281"
+  fps: 0.041
+  num: 221084
+  time: 14
 
-- id: 10051
-  name: "Relative Path Confusion"
-  status: "beta"
-  alerts: "50585"
-  fps: 0.0
-  num: 36386
-  time: 12
-
-- id: 40021
-  name: "SQL Injection - Oracle"
+- id: 30001
+  name: "Buffer Overflow"
   status: "release"
-  alerts: "44359"
-  fps: 0.086
-  num: 188941
-  time: 38
+  alerts: "42954"
+  fps: 0.0
+  num: 189582
+  time: 14
 
 - id: 40038
   name: "Bypassing 403"
   status: "beta"
-  alerts: "43732"
-  fps: 0.203
-  num: 38554
-  time: 23
+  alerts: "42679"
+  fps: 0.149
+  num: 35792
+  time: 20
+
+- id: 40021
+  name: "SQL Injection - Oracle"
+  status: "release"
+  alerts: "38375"
+  fps: 0.06
+  num: 171196
+  time: 38
 
 - id: 30002
   name: "Format String Error"
   status: "release"
-  alerts: "39825"
-  fps: 0.392
-  num: 206031
-  time: 12
+  alerts: "37576"
+  fps: 0.375
+  num: 189691
+  time: 22
 
 - id: 10047
   name: "HTTPS Content Available via HTTP"
   status: "beta"
-  alerts: "34888"
+  alerts: "34583"
   fps: 0.0
-  num: 37559
-  time: 12
+  num: 32871
+  time: 11
+
+- id: 90018
+  name: "Advanced SQL Injection"
+  status: "beta"
+  alerts: "19562"
+  fps: 0.005
+  num: 13309
+  time: 1010
 
 - id: 40026
   name: "Cross Site Scripting (DOM Based)"
   status: "release"
-  alerts: "24931"
-  fps: 0.002
-  num: 196274
-  time: 248
-
-- id: 90024
-  name: "Generic Padding Oracle"
-  status: "release"
-  alerts: "20302"
-  fps: 0.001
-  num: 228016
-  time: 15
-
-- id: 40045
-  name: "Spring4Shell"
-  status: "release"
-  alerts: "19938"
-  fps: 0.058
-  num: 190034
-  time: 27
+  alerts: "15579"
+  fps: 0.0
+  num: 179098
+  time: 533
 
 - id: 43
   name: "Source Code Disclosure - File Inclusion"
   status: "beta"
-  alerts: "19301"
-  fps: 0.296
-  num: 34990
-  time: 8
+  alerts: "15307"
+  fps: 0.162
+  num: 33200
+  time: 6
 
-- id: 90035
-  name: "Server Side Template Injection"
+- id: 40008
+  name: "Parameter Tampering"
   status: "release"
-  alerts: "16606"
+  alerts: "12630"
   fps: 0.0
-  num: 246334
-  time: 77
+  num: 236609
+  time: 37
 
