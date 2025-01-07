@@ -11,11 +11,11 @@ details:
   standard: FAIL
   ajax: FAIL
   client: Pass
-- path: /javascript/frameworks/angularjs/ng-href.found
+- path: /javascript/frameworks/angularjs/index.html#!/ng-href.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
-  client: FAIL
+  ajax: Pass
+  client: Pass
 - path: /javascript/frameworks/polymer/event-handler.found
   scheme: https
   standard: FAIL
@@ -26,11 +26,11 @@ details:
   standard: FAIL
   ajax: FAIL
   client: FAIL
-- path: /javascript/frameworks/react/index.html/search.found
+- path: /javascript/frameworks/react/search.found
   scheme: https
   standard: FAIL
   ajax: FAIL
-  client: FAIL
+  client: Pass
 - path: /javascript/frameworks/react/route-path.found
   scheme: https
   standard: FAIL
@@ -55,7 +55,7 @@ details:
   scheme: http
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/headers/refresh.found
   scheme: https
   standard: Pass
@@ -100,12 +100,12 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/background.found
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/blockquote/cite.found
   scheme: https
   standard: Pass
@@ -115,7 +115,7 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/form/action-get.found
   scheme: https
   standard: Pass
@@ -140,12 +140,12 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/iframe/srcdoc.found
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/img/dynsrc.found
   scheme: https
   standard: Pass
@@ -185,7 +185,7 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/isindex/action.found
   scheme: https
   standard: Pass
@@ -205,7 +205,7 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/object/param/value.found
   scheme: https
   standard: Pass
@@ -230,7 +230,7 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/table/td/background.found
   scheme: https
   standard: Pass
@@ -240,12 +240,12 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/video/src.found
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/video/track/src.found
   scheme: https
   standard: FAIL
@@ -275,7 +275,7 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/head/meta/content-csp.found
   scheme: https
   standard: Pass
@@ -300,7 +300,7 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/manifest.found
   scheme: https
   standard: Pass
@@ -368,9 +368,9 @@ details:
   client: FAIL
 - path: /test/javascript/interactive/listener-and-event-attribute-first.found
   scheme: https
-  standard: FAIL
-  ajax: Pass
-  client: FAIL
+  standard: Pass
+  ajax: FAIL
+  client: Pass
 - path: /test/javascript/interactive/listener-and-event-attribute-second.found
   scheme: https
   standard: FAIL
@@ -379,7 +379,7 @@ details:
 - path: /test/javascript/interactive/multi-step-request-event-attribute.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
+  ajax: Pass
   client: FAIL
 - path: /test/javascript/interactive/multi-step-request-event-listener-div-dom.found
   scheme: https
@@ -424,7 +424,7 @@ details:
 - path: /test/javascript/interactive/two-listeners-second.found
   scheme: https
   standard: FAIL
-  ajax: FAIL
+  ajax: Pass
   client: FAIL
 - path: /test/javascript/misc/automatic-post.found
   scheme: https
@@ -457,9 +457,9 @@ details:
   ajax: FAIL
   client: FAIL
 tests: 91
-passes: 75
-standardPasses: 61
-ajaxPasses: 32
-clientPasses: 8
-fails: 16
-score: 82%
+passes: 79
+standardPasses: 62
+ajaxPasses: 34
+clientPasses: 24
+fails: 12
+score: 87%
