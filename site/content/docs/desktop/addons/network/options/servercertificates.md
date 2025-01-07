@@ -9,6 +9,7 @@ weight: 6
 
 This screens allows to manage and configure the root CA certificate and issued certificates.
 
+
 ZAP allows you to transparently decrypt SSL connections.
 For doing so, ZAP has to encrypt each request before sending
 to the server and decrypt each response, which comes back.
@@ -18,7 +19,9 @@ is to do a 'manipulator in the middle' approach.
 
 ## Overview
 
+
 ![manipulator in the middle](/docs/desktop/addons/network/images/manipulatorinthemiddle.png)
+
 
 In short words, every data send to and received from the server
 is encrypted/decrypted by using the original server's certificate
@@ -32,12 +35,14 @@ will do regular SSL encryption.
 
 ## Root CA certificate
 
+
 Imagine you're visiting multiple SSL protected sites. Every time your
 browser connects such a site, a new SSL certificate is created.
 But, these certificates are not trusted by anyone (because self created by ZAP).
 In other words, your browser will not accept such certificates in the first place.
 You may familiar with such situations, when your browser complains certificate
 error but you manually can create an exception rule for that server.
+
 
 Every certificate created by ZAP is in the direct chain of trust
 from the "ZAP Root CA" certificate.
@@ -47,21 +52,27 @@ and any further certificates are automatically trusted. In other words,
 once you've added the ZAP Root CA certificate to your list of trusted
 Root CAs, your browser doesn't recognize the man in the middle.
 
+
 **Note:**
 > On iOS 10.3 and onwards, you also need to enable full trust for the root certificate: Go to Settings \> General \> About \> Certificate Trust Settings. Under “Enable full trust for root certificates”, turn on trust for the certificate.
 
 ### Generate
+
 
 When you are running ZAP for the first time then it will generate a Root CA certificate just for you.
 If you do not use the 'browser launch' feature then you have to install it within your browser
 or HTTP client application. See section [installation](#install)
 for more details.
 
+
 The generated Root CA certificate is valid, by default, for one year. After that period you have
 to create a new one.  
+
 Every generated Root CA certificate is 2048 bit strong (RSA with SHA1).  
+
 Every generated Root CA certificate starts with serial number "1".
 Every generated Root CA certificate consists of the following identifiers:
+
 
 `
 CN = Zed Attack Proxy Root CA`  
@@ -76,6 +87,7 @@ C = XX`
 `
 `
 
+
 As you can see, there's a Location identifier (L) which is only a hexadecimal number.
 This number is constructed out of two 32bit hash codes: user's name and user's home directory.
 This way you can identify your own certificate when using multiple installations.
@@ -83,19 +95,24 @@ But there's no way, that anyone can figure out your name from this hash code.
 
 ### Import
 
+
 When you're using multiple ZAP installation and you want to use the same
 Root CA certificate, so you can import it. Simply use one installation of ZAP
 to generate one Root CA certificate.  
+
 Copy the file 'config.xml' from ZAP's home directory to
 the PC, where you want to use the same certificate and press 'import' to import it.
+
 
 Alternatively you can use the [command line](/docs/desktop/addons/network/cmdline/) options:
 
 * -certfulldump \<path\> to dump the certificate from one ZAP instance
 * -certload \<path\> to load the certificate into another ZAP instance
 
+
 You can also import certificates stored in pem files as long as they include both
 the certificate and the unencrypted private key in the following format:  
+
 
 `
 -----BEGIN CERTIFICATE-----`  
@@ -165,9 +182,11 @@ yemZE/ua8wm34SKvDHf5uxcmofShW17PLICrsLJ7P35y/A== `
 -----END PRIVATE KEY-----`  
 `
 `  
+
 And yes, that example will work - it's the Superfish certificate!
 
 ### View {#view}
+
 
 In the options dialog of ZAP you're seeing the certificate in PEM format.
 The option "view" tries to use your system's default
@@ -175,6 +194,7 @@ viewing tool for ".CER" files. On Windows, this is typically the same,
 when exporting the certificate and double clicking on it.
 
 ### Save {#save}
+
 
 In the options dialog of ZAP you're seeing the raw bytes (hexa-decimal encoded)
 of the certificate. Many programs are using this simple format for import/export
@@ -184,16 +204,21 @@ save it into a new .CER file (which is simple text as you see in the dialog).
 
 ## Issued Certificates {#issued_certificates}
 
+
 Each ZAP instance is using it's own root certificate. Of course, you can
 import root certificates, to use them on multiple machines.
 When running, there will be sub-certificated created, each time an HTTPS
 resource is requested.
 That means, the Root CA certificate is used as an issuer.
 
+
 The issued certificates are valid, by default, for 368 days.  
+
 The issued certificates is 2048 bit strong (RSA with SHA1).  
+
 The issued certificates has a random serial number.
 The issued certificates consists of the following identifiers:
+
 
 `
 CN = www.example.com`  
@@ -207,6 +232,7 @@ O = ZAP`
 OU = Zed Attack Proxy Project`  
 `
 `
+
 
 *Side note:
 Each time you start ZAP, internally a random serial number offset is generated.
@@ -225,11 +251,13 @@ a broken serial number within the certificate, just restart your browser ;-)*.
 
 ### CRL Distribution Point
 
+
 Sometimes, a valid certificate is not enough to have a working TLS MITM.
 For example, `libcurl` on Windows uses `schannel` as its backend,
 which by default will check if a valid Certificate Revocation List Distribution Point
 is provided in the certificate, and try to contact and retrieve this CRL.
 If you're lucky the binary is verbose, and the error message will be clear enough :
+
 
 `
 PS C:\Users\alice> curl.exe https://ifconfig.me/`  
@@ -238,7 +266,9 @@ curl: (35) schannel: next InitializeSecurityContext failed: Unknown error (0x800
 `
 `
 
+
 This may also manifest as a TLS Handshake Failure at the network level :
+
 
 `
 6 0.023470 192.168.56.104 1.2.3.4 TLSv1.2 273 Client Hello`  
@@ -253,6 +283,7 @@ This may also manifest as a TLS Handshake Failure at the network level :
 `
 `
 
+
 This option enables you to specify a CRL Distribution Point that will be added in each of the generated certificates.
 Obviously, you need to create a custom Root Certificate Authority, using for example <https://github.com/kaysond/spki>,
 a wrapper for OpenSSL that generates and manages a simple PKI suitable for small deployments, support CRLs and OCSP, and make the CRL available to the victim client,
@@ -260,11 +291,13 @@ using for example a tiny HTTP server.
 
 ## Install ZAP Root CA certificate {#install}
 
+
 Any HTTPS client you want to use, has to know the ZAP Root CA certificate
 as 'trusted root certificate'. Typically you have to install manually the
 ZAP certificate into your browser's list of trusted root certificates.
 
 ### Windows / Internet Explorer
+
 
 The easiest way is to click on [View](#view) and choose
 'Install certificate'. Alternatively, you can [Save](#save) your generated
@@ -275,7 +308,9 @@ In this wizard manually choose the certificate store. Do NOT let
 Windows choose automatically the certificate store.
 Choose 'trusted root certificates' as store and finalize the wizard.
 
+
 You can also copy the saved file and install it in other computers as needed.
+
 
 After successfully installation, you can check the certificate.
 
@@ -286,6 +321,7 @@ After successfully installation, you can check the certificate.
 5. The ZAP Root CA should be there
 
 ### Mozilla Firefox
+
 
 Firefox is using it's own certificate store. That's why you have to
 import it twice, when you're using both browsers on Windows.
@@ -302,7 +338,9 @@ Installation and late on validation is done in the same preferences dialog:
 
 ## Risks
 
+
 **Attention, there are risks!**   
+
 When adding self generated Root CA certificates to your list of trusted
 root certificates, everyone with the root certificate can smuggle data
 into your system (browser).

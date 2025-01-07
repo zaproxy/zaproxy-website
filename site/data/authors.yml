@@ -175,3 +175,9 @@ antero:
   picture: /img/authors/antero_400x400.jpg
   twitter:
   is_core: false
+
+trevor:
+  name: Trevor Mountney
+  picture: /img/authors/trevor-mountney_400x400.png
+  twitter:
+  is_core: false

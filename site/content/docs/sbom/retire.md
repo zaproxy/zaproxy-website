@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: retire
-    version: 0.42.0
+    version: 0.43.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.42.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.43.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -47,6 +47,9 @@ sbom:
   - name: bcutil-jdk18on
     version: '1.77'
     licenses: Bouncy Castle Licence
+  - name: biz.aQute.bnd.annotation
+    version: 6.4.1
+    licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
     licenses: Apache-2.0
@@ -125,6 +128,9 @@ sbom:
   - name: failureaccess
     version: 1.0.1
     licenses: Apache-2.0
+  - name: findbugs-annotations
+    version: 3.0.1
+    licenses: GNU Lesser Public License
   - name: flatlaf
     version: 3.4.1
     licenses: Apache-2.0
@@ -249,7 +255,7 @@ sbom:
     version: 2.20.0
     licenses: Apache-2.0
   - name: log4j-slf4j-impl
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
     version: 1.18.34
@@ -329,6 +335,12 @@ sbom:
   - name: org.jacoco.report
     version: 0.8.11
     licenses: EPL-2.0
+  - name: org.osgi.resource
+    version: 1.0.0
+    licenses: Apache-2.0
+  - name: org.osgi.service.serviceloader
+    version: 1.0.0
+    licenses: Apache-2.0
   - name: pcollections
     version: 4.0.1
     licenses: MIT

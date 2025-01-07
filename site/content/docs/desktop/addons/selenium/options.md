@@ -27,17 +27,20 @@ This screen allows you to setup the requirements of some of the WebDrivers.
 
 **Note:** It's also possible to set the above locations (binaries and WebDrivers) using Java system properties, in which case the above options will be overridden and those values shown instead.
 
+
 More details about the bundled WebDrivers can be found on the overview page.
 
 #### Browser Arguments
 
 Both Chrome and Firefox binaries can have additional (CLI) arguments specified through the `Arguments...` button.
 
+
 **Note:** Adding invalid arguments might cause the browser to fail to start. ZAP already adds some arguments (e.g. headless).
 
 #### Browser Profiles
 
 You can choose which Firefox profile to use by default. The `<temporary>` profile is one which is created by Selenium each time the browser is launched.
+
 
 **Note:** The 'client' add-on creates a profile called zap-client-profile -
 if you choose another profile then the Client add-on will not work without manual configuration.

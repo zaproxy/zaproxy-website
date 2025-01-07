@@ -50,10 +50,12 @@ Allows to specify if the API should be exposed or if it should be allowed to pro
 
 Indicates that the server/proxy (ZAP) is behind NAT. When selected ZAP will attempt to determine the public IP address, to properly detect and handle requests with the public IP address (for example, to be served by the ZAP API). Alternatively you can manually add the IP address as an Alias (refer to Aliases section).
 
+
 **Note:** This option is only supported when ZAP is running in an AWS EC2 instance.
 ZAP will obtain the public IP address from
 [AWS EC2
 instance's metadata](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-instance-addressing.html#working-with-ip-addresses).  
+
 ZAP should be started with this option enabled if access to the API, through the public IP address, is required:
 > zap.sh -daemon -port 8080 -host 0.0.0.0 -config network.localServers.mainProxy.behindNat=true
 
@@ -77,6 +79,7 @@ Allows the proxy to automatically decode (i.e. gzip, deflate) the response. This
 ### Intercepting/Transparent Proxy
 
 The local proxies can be used as intercepting/transparent proxies for both HTTP and HTTPS. For HTTPS the client applications (e.g. browser) need to use the TLS extension [Server Name Indication](https://tools.ietf.org/html/rfc6066#section-3). This allows you to set up a testing LANs (or VMs) where all HTTP and HTTPS traffic is proxied regardless of software settings.
+
 
 For example, if you have a Linux machine you use for testing, you can do something like the following to forward all HTTP and
 HTTPS traffic to a local proxy listening on `192.168.0.14:8080`:
