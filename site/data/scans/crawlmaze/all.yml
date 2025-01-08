@@ -3,12 +3,12 @@ target: security-crawl-maze.app
 details:
 - path: /javascript/frameworks/angular/event-handler.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
   client: Pass
 - path: /javascript/frameworks/angular/router-outlet.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
   client: Pass
 - path: /javascript/frameworks/angularjs/index.html#!/ng-href.found
@@ -33,7 +33,7 @@ details:
   client: Pass
 - path: /javascript/frameworks/react/route-path.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
   client: Pass
 - path: /test/css/font-face.found
@@ -85,7 +85,7 @@ details:
   scheme: https
   standard: FAIL
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/audio/source/srcset1x.found
   scheme: https
   standard: FAIL
@@ -120,7 +120,7 @@ details:
   scheme: https
   standard: Pass
   ajax: FAIL
-  client: FAIL
+  client: Pass
 - path: /test/html/body/form/action-post.found
   scheme: https
   standard: Pass
@@ -130,12 +130,12 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/frameset/frame/src.found
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/iframe/src.found
   scheme: https
   standard: Pass
@@ -220,12 +220,12 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/svg/script/xlink.found
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/table/background.found
   scheme: https
   standard: Pass
@@ -235,7 +235,7 @@ details:
   scheme: https
   standard: Pass
   ajax: Pass
-  client: FAIL
+  client: Pass
 - path: /test/html/body/video/poster.found
   scheme: https
   standard: Pass
@@ -348,33 +348,33 @@ details:
   client: Pass
 - path: /test/javascript/interactive/js-delete.found
   scheme: https
-  standard: Pass
-  ajax: FAIL
+  standard: FAIL
+  ajax: Pass
   client: Pass
 - path: /test/javascript/interactive/js-post-event-listener.found
   scheme: https
-  standard: Pass
-  ajax: FAIL
+  standard: FAIL
+  ajax: Pass
   client: Pass
 - path: /test/javascript/interactive/js-post.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
   client: Pass
 - path: /test/javascript/interactive/js-put.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
   client: Pass
 - path: /test/javascript/interactive/listener-and-event-attribute-first.found
   scheme: https
-  standard: Pass
-  ajax: FAIL
+  standard: FAIL
+  ajax: Pass
   client: Pass
 - path: /test/javascript/interactive/listener-and-event-attribute-second.found
   scheme: https
-  standard: Pass
-  ajax: FAIL
+  standard: FAIL
+  ajax: Pass
   client: Pass
 - path: /test/javascript/interactive/multi-step-request-event-attribute.found
   scheme: https
@@ -418,12 +418,12 @@ details:
   client: FAIL
 - path: /test/javascript/interactive/two-listeners-first.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
   client: Pass
 - path: /test/javascript/interactive/two-listeners-second.found
   scheme: https
-  standard: Pass
+  standard: FAIL
   ajax: FAIL
   client: Pass
 - path: /test/javascript/misc/automatic-post.found
@@ -458,8 +458,8 @@ details:
   client: FAIL
 tests: 91
 passes: 77
-standardPasses: 72
-ajaxPasses: 25
-clientPasses: 35
+standardPasses: 61
+ajaxPasses: 29
+clientPasses: 42
 fails: 14
 score: 85%
