@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: '117'
+    version: '118'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v117/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v118/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -321,7 +321,7 @@ sbom:
     version: 1.0.3
     licenses: CC0-1.0
   - name: rsyntaxtextarea
-    version: 3.5.2
+    version: 3.5.3
     licenses: BSD-3-Clause
   - name: selenium-api
     version: 4.1.2
