@@ -34,21 +34,29 @@ The framework supports:
 The full set of jobs currently supported by the framework and other add-ons are:
 
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
+* [activeScan-config](/docs/desktop/addons/automation-framework/job-ascanconfig/) - configures the active scanner, for custom active scans (e.g. Sequence)
+* [activeScan-policy](/docs/desktop/addons/automation-framework/job-ascanpolicy/) - defines an active scan policy
 * [alertFilter](/docs/desktop/addons/alert-filters/automation/) - alert filter configuration, provided with the [Alert Filters](/docs/desktop/addons/alert-filters/) add-on
 * [delay](/docs/desktop/addons/automation-framework/job-delay/) - waits for a specified time or until a condition is met
+* [exitStatus](/docs/desktop/addons/automation-framework/job-exitstatus/) - sets ZAP's exit code based on scan results
+* [export](/docs/desktop/addons/import-export/automation/) - allows you to export messages and the Sites Tree, provided with the [Import/Export](/docs/desktop/addons/import-export/) add-on
 * [graphql](/docs/desktop/addons/graphql-support/automation/) - GraphQL schema import, provided with the [GraphQL](/docs/desktop/addons/graphql-support/) add-on
-* [import](/docs/desktop/addons/import-export/automation/) - allows you to import HAR(HTTP Archive File), ModSecurity2 Logs, ZAP Messages or a file containing URLs locally
+* [import](/docs/desktop/addons/import-export/automation/) - allows you to import files in various formats, provided with the [Import/Export](/docs/desktop/addons/import-export/) add-on
 * [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided with the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
 * [postman](/docs/desktop/addons/postman-support/automation/) - Postman definition import, provided with the [Postman](/docs/desktop/addons/postman-support/) add-on
+* [prune](/docs/desktop/addons/import-export/automation/) - The prune job allows you to remove nodes from the Sites Tree, provided with the [Import/Export](/docs/desktop/addons/import-export/) add-on
 * [replacer](/docs/desktop/addons/replacer/automation/) - replace strings in requests and responses
 * [report](/docs/desktop/addons/report-generation/automation/) - report generation, provided with the [Report Generation](/docs/desktop/addons/report-generation/) add-on
 * [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - sends specific requests to targets
-* [script](/docs/desktop/addons/script-console/automation/) - adds, removes and runs scripts
+* [script](/docs/desktop/addons/script-console/automation/) - adds, removes and runs scripts, provided with the [Script Console](/docs/desktop/addons/script-console/) add-on
+* [sequence-activeScan](/docs/desktop/addons/sequence-scanner/automation/) - allows you to active scan sequences, provided with the [Sequence](/docs/desktop/addons/sequence-scanner/) add-on
+* [sequence-import](/docs/desktop/addons/sequence-scanner/automation/) - allows you to create a sequence from an HAR file, provided with the [Sequence](/docs/desktop/addons/sequence-scanner/) add-on
 * [soap](/docs/desktop/addons/soap-support/automation/) - SOAP WSDL import, provided with the [SOAP](/docs/desktop/addons/soap-support/) add-on
-* [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider
+* [spider](/docs/desktop/addons/automation-framework/job-spider/) - runs the traditional spider, provided with the [Spider](/docs/desktop/addons/spider/) add-on
 * [spiderAjax](/docs/desktop/addons/ajax-spider/automation/) - runs the ajax spider, provided with the [Ajax Spider](/docs/desktop/addons/ajax-spider/) add-on
+* [spiderClient](/docs/desktop/addons/client-side-integration/automation/) - allows you to run the client spider
 
 For details of future changes planned see the [tracker issue](https://github.com/zaproxy/zaproxy/issues/6461).
 
@@ -57,8 +65,7 @@ For details of future changes planned see the [tracker issue](https://github.com
 The [addOns](/docs/desktop/addons/automation-framework/job-addons/) job has been found to cause
 problems when updating add-ons which are defined in the current plan. This job has been depreciated and no longer does anything.
 
-From 2.12 you can use the standard ZAP [command line](/docs/desktop/cmdline/) 
-options with the AF `-autorun` option:
+You can use the standard ZAP [command line](/docs/desktop/cmdline/) options with the AF `-autorun` option:
 
 * `-addoninstall <addOnId>` to install an add-on
 * `-addonuninstall <addOnId>` to uninstall an add-on
@@ -76,14 +83,12 @@ You can use `-addoninstall` and `-addonuninstall` as many times as you need:
 
 ### Exit Value
 
-If you run the framework from the command line then ZAP will exit with:
+If you run the framework from the command line then ZAP will by default exit with:
 
 * 0: The plan ran without any problems reported
 * 1: The plan failed with an error
 * 2: The plan ran but there were warnings
 
 The framework will exit with `2` if there are warnings even if the [environment](/docs/desktop/addons/automation-framework/environment/) `failOnWarning` parameter is set to `false`.
-If you need ZAP to exit with `0` in this case then you can run ZAP with a Linux / macOS command line like:
 
-* `bash -c "./zap.sh -cmd -autorun /path/to/your/af-plan.yaml" || [ $? -ne 1 ]`
-
+The [exitStatus](/docs/desktop/addons/automation-framework/job-exitstatus/) job allows you to set ZAP's exit code based on scan results.

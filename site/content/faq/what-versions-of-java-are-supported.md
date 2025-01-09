@@ -6,7 +6,7 @@ weight: 2
 ---
 
 ZAP should be able to run with all/newer Java versions, but might require a minimum for certain ZAP versions:
-- ZAP 2.16.0 and later will require a minimum of Java 17
+- ZAP 2.16.0 and later requires a minimum of Java 17
 - ZAP 2.12.0 and later requires a minimum of Java 11
 - ZAP 2.7.0 and later requires a minimum of Java 8
 - ZAP 2.0.0 and later requires a minimum of Java 7
