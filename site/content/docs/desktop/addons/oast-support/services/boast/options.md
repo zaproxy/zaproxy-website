@@ -7,6 +7,7 @@ weight: 1
 
 # BOAST Options
 
+
 The BOAST Options screen allows you to configure the settings that affect how ZAP interacts with BOAST servers.
 
 ### Server URI

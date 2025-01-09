@@ -6,11 +6,12 @@ weight: 1
 cascade:
   addon:
     id: directorylistv1
-    version: 8.0.0
+    version: 9.0.0
 ---
 
 # Directory List v1.0
 
 Provides a file with directory names to be used with Forced Browse or Fuzzer add-on.
+
 
 The lists were compiled by DirBuster authors.

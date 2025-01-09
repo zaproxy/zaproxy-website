@@ -9,7 +9,7 @@ EditableContent: true
 
 This guide is intended to serve as a basic introduction for using ZAP to perform security testing, even if you don’t have a background in security testing. To that end, some security testing concepts and terminology is included but this document is not intended to be a comprehensive guide to either ZAP or security testing.
 
-It is also available as a [pdf](/pdf/ZAPGettingStartedGuide-2.15.pdf) to make it easier to print.
+It is also available as a [pdf](/pdf/ZAPGettingStartedGuide-2.16.pdf) to make it easier to print.
 
 ### Security Testing Basics
 Software security testing is the process of assessing and testing a system to discover security risks and vulnerabilities of the system and its data. There is no universal terminology but for our purposes, we define assessments as the analysis and discovery of vulnerabilities without attempting to actually exploit those vulnerabilities. We define testing as the discovery and attempted exploitation of vulnerabilities.

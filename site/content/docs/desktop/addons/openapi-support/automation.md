@@ -17,6 +17,7 @@ The targetUrl parameter works in the same way per ['Target URL Format'](/docs/de
 
 The openapi job allows you to import OpenAPI definitions via a URL or file.
 
+
 It is covered in the video: [ZAP Chat 11 Automation Framework Part 5 - APIs](https://youtu.be/xuP00Ri460k).
 
 ```

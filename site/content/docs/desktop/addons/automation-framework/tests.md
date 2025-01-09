@@ -2,12 +2,13 @@
 # This page was generated from the add-on.
 title: Automation Framework - Job Tests
 type: userguide
-weight: 7
+weight: 12
 ---
 
 # Automation Framework - Job Outcome Tests
 
 The automation framework supports testing the job outcomes based on conditions that you can set in the YAML file.
+
 
 The currently supported tests are:
 

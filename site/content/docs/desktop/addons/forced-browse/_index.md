@@ -6,15 +6,19 @@ weight: 1
 cascade:
   addon:
     id: bruteforce
-    version: 16.0.0
+    version: 17.0.0
 ---
 
 # Forced Browse
 
+
 ZAP allows you to try to discover directories and files using forced browsing.  
+
 A set of files are provided which contain a large number of file and directory names.  
+
 ZAP attempts to directly access all of the files and directories listed in the selected
 file directly rather than relying on finding links to them.
+
 
 Forced Browse is configured using the [Options
 Forced Browse screen](/docs/desktop/addons/forced-browse/options/).  

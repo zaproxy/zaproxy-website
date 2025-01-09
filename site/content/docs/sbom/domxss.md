@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: domxss
-    version: '20'
+    version: '21'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v20/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/domxss-v21/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -75,9 +75,6 @@ sbom:
     version: 1.9.4
     licenses: Apache-2.0
   - name: commons-codec
-    version: 1.16.1
-    licenses: Apache-2.0
-  - name: commons-codec
     version: 1.17.1
     licenses: Apache-2.0
   - name: commons-collections
@@ -95,6 +92,9 @@ sbom:
   - name: commons-csv
     version: 1.10.0
     licenses: Apache-2.0
+  - name: commons-csv
+    version: 1.12.0
+    licenses: Apache-2.0
   - name: commons-exec
     version: 1.4.0
     licenses: Apache-2.0
@@ -102,22 +102,13 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.16.1
-    licenses: Apache-2.0
-  - name: commons-io
     version: 2.18.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.14.0
-    licenses: Apache-2.0
-  - name: commons-lang3
     version: 3.17.0
-    licenses: Apache-2.0
-  - name: commons-logging
-    version: 1.3.1
     licenses: Apache-2.0
   - name: commons-logging
     version: 1.3.4
@@ -183,7 +174,7 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.4.1
+    version: 3.5.4
     licenses: Apache-2.0
   - name: gson
     version: 2.10.1
@@ -210,7 +201,7 @@ sbom:
     version: 1.1.3
     licenses: Apache-2.0
   - name: hsqldb
-    version: 2.7.2
+    version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit
     version: 4.7.0
@@ -303,7 +294,7 @@ sbom:
     version: '3.4'
     licenses: GNU Lesser General Public License (LGPL), Apache-1.0, EPL-1.0
   - name: jfreechart
-    version: 1.5.4
+    version: 1.5.5
     licenses: GNU Lesser General Public Licence
   - name: jgrapht-core
     version: 0.9.0
@@ -345,16 +336,16 @@ sbom:
     version: 9999.0-empty-to-avoid-conflict-with-guava
     licenses: Apache-2.0
   - name: log4j-1.2-api
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: log4j-api
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: log4j-core
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: log4j-jul
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: log4j-slf4j-impl
     version: 2.24.2
@@ -486,7 +477,7 @@ sbom:
     version: 3.19.6
     licenses: BSD-3-Clause
   - name: rsyntaxtextarea
-    version: 3.4.0
+    version: 3.5.3
     licenses: BSD-3-Clause
   - name: selenium-api
     version: 4.27.0
@@ -573,7 +564,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.15.0
+    version: 2.16.0-SNAPSHOT
     licenses: Apache-2.0
 ---
 

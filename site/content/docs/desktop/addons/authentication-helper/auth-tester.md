@@ -49,12 +49,15 @@ The results panel show the progress and what has been identified. All elements n
 
 The Diagnostics tab will contain a summary of the requests and responses sent and received as part of the authentication testing. It is recommended that you do not perform any other operations in ZAP while testing the authentication otherwise that may result in unrelated messages being recorded.
 
+
 Only the absolute minimum information is recorded, and host name and parameter values are replaced by safe tokens.
 You can copy all of the data and review it to make sure it does not include any sensitive data
 before you share it with us.
 
+
 Is ZAP fails to detect either the Username or Password field then we will need more details about the login page.
 If you can share that with us then it will it much easier to debug.
+
 
 If ZAP detects both of the required fields then please share the data from the diagnostic tab with us -
 we will hopefully be able to diagnose what's going wrong with just that information.

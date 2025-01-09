@@ -6,12 +6,13 @@ weight: 1
 cascade:
   addon:
     id: callhome
-    version: 0.13.0
+    version: 0.14.0
 ---
 
 # Call Home
 
 This add-on will be used for all "calls home".
+
 
 It currently supports:
 
@@ -27,6 +28,7 @@ The News call is used to find out the latest news item about ZAP - this is displ
 
 The Telemetry call reports the add-ons being used and some of the ZAP internal statistics. It will never collect details of the sites ZAP is being used on, details of the vulnerabilities or any personal identifiable information (PII).
 
+
 For more background see the blog post [ZAP Telemetry Plans](/blog/2021-10-25-zap-telemetry-plans/).
 
 ## Command Line option: -notel
@@ -36,6 +38,7 @@ If `-notel` is specified on the command line then no telemetry calls will be mad
 ## Call Home Options Panel
 
 This panel allows you to turn telemetry support on and off.
+
 
 It also displays the last set of telemetry data transmitted.
 The telemetry data is also logged at DEBUG level in the ZAP log file.

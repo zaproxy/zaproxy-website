@@ -7,6 +7,7 @@ weight: 1
 
 # Options Applications screen
 
+
 This screen allows you to configure the [applications](/docs/desktop/addons/invoke-applications/) that
 can be invoked.  
 By default there are no applications available, you need to add

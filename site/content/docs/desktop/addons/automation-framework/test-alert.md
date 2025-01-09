@@ -2,12 +2,13 @@
 # This page was generated from the add-on.
 title: Automation Framework - Alert Job Test
 type: userguide
-weight: 8
+weight: 13
 ---
 
 # Automation Framework - Alert Job Test
 
 Alert tests are supported by the activeScan and passiveScan-wait jobs. These tests can be used to validate the presence/absence of specific alerts in the active/passive scan. It is mandatory for the alerts specified in the plan to have a scanRuleId, against which the generated alerts will always be matched. All other fields describing an alert are optional regexes, and will be matched against only if they are specified.
+
 
 A job can have tests for multiple alerts, and multiple tests can be created for alerts having the same scanRuleId.
 
