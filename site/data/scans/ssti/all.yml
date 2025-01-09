@@ -266,7 +266,7 @@ details:
   any: Pass
 - title: '{ } Ruby Eval'
   rule_40012: Pass
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: Pass
   rule_90035: Pass
@@ -314,7 +314,7 @@ details:
   any: Pass
 score: 97%
 rule_40012_score: 29
-rule_40026_score: 34
+rule_40026_score: 33
 rule_90019_score: 1
 rule_90025_score: 7
 rule_90035_score: 27
