@@ -7,6 +7,7 @@ weight: 1
 
 # Options Forced Browse screen
 
+
 This screen allows you to configure the [Forced Browse](/docs/desktop/addons/forced-browse/)
 options:
 

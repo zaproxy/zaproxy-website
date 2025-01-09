@@ -15,6 +15,7 @@ The add-on will import GraphQL schemas using introspection if endpoints are foun
 
 The *graphql* job allows you to import GraphQL schemas locally or from a URL. It supports the following parameters:
 
+
 It is covered in the video: [ZAP Chat 11 Automation Framework Part 5 - APIs](https://youtu.be/xuP00Ri460k).
 
 ```

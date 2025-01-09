@@ -22,8 +22,10 @@ To configure the fuzzing:
 
 You can also search for strings in the fuzz results using the 'Search' tab.
 
+
 Click on the 'Edit' button to edit the message you have selected for fuzzing.
 Note that this will remove all of the fuzz locations that you have defined.
+
 
 You will need to 'Save' the message before you can define new fuzz locations.
 
@@ -39,6 +41,7 @@ Indicates whether or not the Fuzzer should follow redirect responses (only visib
 
 Message Processors can access and change the messages being fuzzed, control the fuzzing process, and interact with the ZAP UI.  
 The message processors available depend on the type of message being fuzzed, this add-on includes the [default HTTP Messages processors](/docs/desktop/addons/fuzzer/httpmessageprocessors/).
+
 
 Add-ons can also define additional payload generators.
 

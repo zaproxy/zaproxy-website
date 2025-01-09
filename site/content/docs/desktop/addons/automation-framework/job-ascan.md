@@ -2,16 +2,19 @@
 # This page was generated from the add-on.
 title: Automation Framework - activeScan Job
 type: userguide
-weight: 6
+weight: 8
 ---
 
 # Automation Framework - activeScan Job
 
 This job runs the active scanner. This actively attacks your applications and should therefore only be used against applications that you have permission to test.
 
+
 It is covered in the video: [ZAP Chat 12 Automation Framework Part 6 - Delays and Active Scan](https://youtu.be/hcftgjz_Vgc).
 
+
 By default this job will actively scan the first context defined in the [environment](/docs/desktop/addons/automation-framework/environment/) and so none of the parameters are mandatory.
+
 
 This job supports [monitor](/docs/desktop/addons/automation-framework/test-monitor/) tests.
 
@@ -31,7 +34,7 @@ This job supports [monitor](/docs/desktop/addons/automation-framework/test-monit
       handleAntiCSRFTokens:            # Bool: If set then automatically handle anti CSRF tokens, default: false
       injectPluginIdInHeader:          # Bool: If set then the relevant rule Id will be injected into the X-ZAP-Scan-ID header of each request, default: false
       scanHeadersAllRequests:          # Bool: If set then the headers of requests that do not include any parameters will be scanned, default: false
-      threadPerHost:                   # Int: The max number of threads per host, default: 2
+      threadPerHost:                   # Int: The max number of threads per host, default: 2 * Number of available processor cores
       maxAlertsPerRule:                # Int: Maximum number of alerts to raise per rule, default: 0 unlimited
     policyDefinition:                  # The policy definition - only used if the 'policy' is not set
       defaultStrength:                 # String: The default Attack Strength for all rules, one of Low, Medium, High, Insane (not recommended), default: Medium
@@ -42,6 +45,12 @@ This job supports [monitor](/docs/desktop/addons/automation-framework/test-monit
         strength:                      # String: The Attack Strength for this rule, one of Low, Medium, High, Insane, default: Medium
         threshold:                     # String: The Alert Threshold for this rule, one of Off, Low, Medium, High, default: Medium
 ```
+
+**Note** : Unless the `defaultThreshold` of the `policyDefinition` is `OFF` all rules will be enabled to start with.
+
+
+The policy can be one defined by a previous [activeScan-policy](/docs/desktop/addons/automation-framework/job-ascanpolicy/) job, or by a scan policy file
+that has been put in `policies` directory under ZAP's [HOME directory](/faq/what-is-the-default-directory-that-zap-uses/) .
 
 ## Job Data
 

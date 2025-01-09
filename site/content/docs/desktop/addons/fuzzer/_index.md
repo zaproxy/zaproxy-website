@@ -6,12 +6,14 @@ weight: 1
 cascade:
   addon:
     id: fuzz
-    version: 13.14.0
+    version: 13.15.0
 ---
 
 # Fuzzing
 
+
 Fuzzing is a technique of submitting lots of data to a target (often in the form of invalid or unexpected inputs).
+
 
 ZAP allows you to fuzz any request using:
 
@@ -50,8 +52,11 @@ Message Processors can access and change the messages being fuzzed, control the 
 
 They are managed via the [Fuzzer dialog](/docs/desktop/addons/fuzzer/dialogue/) 'Message Processors' tab.
 
+
 Some of this functionality is based on code from the OWASP JBroFuzz project and includes files from the fuzzdb project.  
+
 Note that some fuzzdb files have been left out as they cause common anti-virus scanners to flag them as containing viruses.  
+
 You can replace them (and upgrade fuzzdb) by downloading the latest version of fuzzdb and expanding it in the 'fuzzers' library.
 
 ## See also

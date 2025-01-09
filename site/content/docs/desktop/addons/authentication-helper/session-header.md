@@ -9,8 +9,10 @@ weight: 6
 
 This [add-on](/docs/desktop/addons/authentication-helper/) adds a new session management type which supports an arbitrary number of headers.
 
+
 If used in conjunction with [Browser Based Authentication](/docs/desktop/addons/authentication-helper/browser-auth/) then it will also maintain all
 of the cookies set as part of authentication.
+
 
 The header values can include the following tokens:
 
@@ -35,11 +37,13 @@ Header Based Session Management can be configured in the environment section of 
           Authorization: "Bearer: {%json:AuthenticationResult.AccessToken%}"
 ```
 
+
 Note that due to restrictions in the core:
 
 * Existing contexts are not updated in the GUI if you add or remove this add-on
 * Header Based Session Management cannot be added to a context via the API
 
 These restrictions will be addressed in a future release.
+
 
 Latest code: [HeaderBasedSessionManagementMethodType.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/authhelper/src/main/java/org/zaproxy/addon/authhelper/HeaderBasedSessionManagementMethodType.java)

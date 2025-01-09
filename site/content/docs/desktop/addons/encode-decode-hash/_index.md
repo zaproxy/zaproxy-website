@@ -6,10 +6,11 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 1.5.0
+    version: 1.6.0
 ---
 
 # Encode / Decode / Hash dialog
+
 
 This allows you to encode, decode or hash text.
 
@@ -137,6 +138,10 @@ Will display the full URL encoding of the text you enter (all characters convert
 
 Will display the unescaped Unicode characters. For example, the text `%u0041%u00e7%u006f%u0072%u0065%u0073` would be decoded as `Açores`.
 
+#### Morse Code Encoder
+
+Will display dits (.) and dahs (-) and word breaks (/) representing the provided Alpha Numeric (including space) input. For example, the text `SOS SOS` would be encoded as `... --- .../... --- ...`.
+
 ### Decoders
 
 #### ASCII Hex Decode
@@ -147,7 +152,7 @@ If there is no valid decoding then the field will be disabled.
 #### Base 64 Decode
 
 Will display the base 64 decoding of the text you enter.  
-Leveraging a [Mime decoder](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Base64.html#getMimeDecoder()) to handle wrapped lines.
+Leveraging a [Mime decoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Base64.html#getMimeDecoder()) to handle wrapped lines.
 
 #### Base 64 URL Decode
 
@@ -168,6 +173,10 @@ Will display the URL decoding of the text you enter.
 #### Full URL Decode
 
 Will display the URL decoding of the text you enter (percent signs removed and HEX decoded).
+
+#### Morse Code Decoder
+
+Will display Alpha Numeric (including space) output representing the provided morse code input. For example, the text `... --- .../... --- ...` would be encoded as `SOS SOS`.
 
 ### Hashers
 
@@ -199,7 +208,7 @@ Converts the input to all lower case characters.
 
 #### Remove Whitespace
 
-Removes all whitespace characters from the text, based on [Character.isWhiteSpace(char)](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Character.html#isWhitespace(char)).
+Removes all whitespace characters from the text, based on [Character.isWhiteSpace(char)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Character.html#isWhitespace(char)).
 
 #### Reverse
 
@@ -208,6 +217,15 @@ Reverses the order of the input.
 #### To Upper Case
 
 Converts the input to all upper case characters.
+
+#### ASCify
+
+Converts text removing accents/diacritics/ligatures (perhaps not fully, due to operation in compatibility mode) leaving only ASCII characters. Examples:
+* `Tĥïŝ ĩš â fůňķŷ Šťŕĭńġ: ﬁ. étrange.` becomes `This is a funky String: fi. etrange.`.
+* `鸟儿` becomes an empty string (all characters are dropped).
+See also:  
+* [Normalizer JavaDoc](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/Normalizer.html).
+* [Wikipedia: Transliteration](https://en.wikipedia.org/wiki/Transliteration)
 
 ### Miscellaneous
 

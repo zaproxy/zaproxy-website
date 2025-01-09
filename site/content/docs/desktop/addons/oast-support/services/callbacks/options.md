@@ -7,8 +7,10 @@ weight: 1
 
 # Callback Options
 
+
 The Callback Options screen allows you to configure the address used to detect vulnerabilities that allow an
 attacker to call remote URLs.  
+
 In previous versions the ZAP API was used for this purpose, but from 2.6.0 onwards a separate endpoint is used so
 that target systems no longer need access to the API.
 

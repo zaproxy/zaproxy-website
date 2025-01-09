@@ -6,9 +6,11 @@ type: userguide
 
 # Alert Filter Dialog
 
+
 This dialog is shown when you add or modify a
 [Context Alert Filter](/docs/desktop/addons/alert-filters/contextalertfilter/)
 or a [Global Alert Filter](/docs/desktop/addons/alert-filters/globalalertfilter/)
+
 
 It has the following fields:
 

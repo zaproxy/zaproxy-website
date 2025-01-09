@@ -7,6 +7,7 @@ weight: 1
 
 # Options Encode/Decode screen
 
+
 This screen allows you to configure the [Encode/Decode/Hash](/docs/desktop/addons/encode-decode-hash/) options:
 
 ### Base64 - Charset

@@ -13,4 +13,5 @@ The following options are available:
 
 If selected then the [Automation tab](/docs/desktop/addons/automation-framework/gui/) will automatically load the last plan opened when the GUI starts. This can be useful if you need to regularly use the same plan.
 
+
 This option has no effect if the desktop GUI is not used.

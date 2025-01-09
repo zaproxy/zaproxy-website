@@ -7,10 +7,13 @@ weight: 1
 
 # BOAST
 
+
 BOAST is a server built to receive and report Out-of-Band Application Security Testing interactions.
+
 
 BOAST features DNS, HTTP, and HTTPS protocol receivers with support for multiple simultaneous ports for each
 receiver.
+
 
 Requests made to BOAST by the target web application can be viewed in the [OAST Callbacks
 Tab](/docs/desktop/addons/oast-support/tab/) in the ZAP GUI.

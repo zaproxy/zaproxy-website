@@ -9,9 +9,12 @@ weight: 3
 
 This section of the YAML configuration file defines the applications which the rest of the jobs can act on.
 
+
 The environment is covered in the video: [ZAP Chat 08 Automation Framework Part 2 - Environment](https://youtu.be/1fcpU54N-mA).
 
+
 The Automation Framework supports all of the [authentication](/docs/desktop/addons/automation-framework/authentication/) mechanisms supported by ZAP.
+
 
 **Note** When testing targets that operate on default ports (80 for http, 443 for https), the colon port portion of the URL should not be included.
 Including that portion (for example: http://example.com:80) may result in an inability to crawl or test the target. If a 'default' port is specified both
@@ -86,7 +89,9 @@ Variables can be defined in the 'vars' section. They can be hardcoded, refer to 
 
 Originally the 'engine' and 'scriptEngine' fields were directly under the 'sessionManagement' element - this is still supported when reading plans but they will now always be output under the 'parameters' element.
 
+
 Originally the 'username' and 'password' fields were directly under the user element - this is still supported when reading plans but they
 will now always be output under the 'credentials' element.
+
 
 When specifying technology the tech names are given on https://www.zaproxy.org/techtags/ - only specify the last name, e.g. "C".

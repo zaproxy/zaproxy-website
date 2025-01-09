@@ -7,6 +7,7 @@ weight: 1
 
 # Options Fuzzer screen
 
+
 This screen allows you to configure the [fuzzing](/docs/desktop/addons/fuzzer/) options:
 
 ### Default Category

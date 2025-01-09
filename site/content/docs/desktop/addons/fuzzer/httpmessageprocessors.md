@@ -9,6 +9,7 @@ weight: 3
 
 HTTP Message Processors can access and change the HTTP messages being fuzzed, control the fuzzing process, and interact with the ZAP UI.
 
+
 Built-in HTTP Message Processors include:
 
 ### Anti-CSRF Token Refresher
@@ -48,6 +49,7 @@ Allows to add custom ‘tags’, based on contents of the response, to the State
 ### User Message Processor
 
 Allows to fuzz as a user, using one of the users defined in the Contexts that include the HTTP message being fuzzed. Users must exist to be able to select and add this processor.
+
 
 Other add-ons can define additional HTTP Message Processors.
 

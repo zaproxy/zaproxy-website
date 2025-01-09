@@ -13,6 +13,7 @@ The Automation Framework has a GUI that is in the process of being developed.
 
 This tab allows you to create, load, edit and run automation jobs. It has 2 sub tabs.
 
+
 A toolbar provides the following buttons:
 
 * New Plan... - this launches the New Plan dialog
