@@ -13,9 +13,12 @@ This add-on supports the Automation Framework.
 
 The Spider job runs the Traditional Spider. This is fast but does not handle modern applications as effectively.
 
+
 It is covered in the video: [ZAP Chat 10 Automation Framework Part 4 - Spidering](https://youtu.be/WivoyVerBCo).
 
+
 By default this job will spider the first context defined in the environment and so none of the parameters are mandatory.
+
 
 This job supports monitor tests.
 
@@ -42,9 +45,8 @@ This job supports monitor tests.
       parseSVNEntries:                 # Bool: Whether the spider will parse SVN metadata in order to find URLs, default: false
       postForm:                        # Bool: Whether the spider will submit POST forms, default: true
       processForm:                     # Bool: Whether the spider will process forms, default: true
-      requestWaitTime:                 # Int: The time between the requests sent to a server in milliseconds, default: 200
       sendRefererHeader:               # Bool: Whether the spider will send the referer header, default: true
-      threadCount:                     # Int: The number of spider threads, default: 2
+      threadCount:                     # Int: The number of spider threads, default: 2 * Number of available processor cores
       userAgent:                       # String: The user agent to use in requests, default: '' - use the default ZAP one 
     tests:
       - name: 'At least 100 URLs found'                 # String: Name of the test, default: statistic + operator + value

@@ -6,12 +6,13 @@ weight: 1
 cascade:
   addon:
     id: scanpolicies
-    version: 0.1.0
+    version: 0.2.0
 ---
 
 # Scan Policies
 
 This add-on provides a set of Scan Policies tuned for different purposes.
+
 
 These policies are initialised as detailed in the relevant pages, but you can tune them as required.
 

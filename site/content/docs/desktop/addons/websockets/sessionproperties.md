@@ -7,6 +7,7 @@ weight: 3
 
 # WebSocket specific session properties
 
+
 ## Exclude from WebSocket
 
 This allows you to manage the URLs where WebSocket communication is not processed in ZAP.   

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Client Side Integration - Internals
 type: userguide
-weight: 4
+weight: 6
 ---
 
 # Client Side Integration - Internals
@@ -10,6 +10,7 @@ weight: 4
 ## Browser Extension
 
 This [add-on](/docs/desktop/addons/client-side-integration/) depends on a [ZAP browser extension](https://github.com/zaproxy/browser-extension) which runs in Firefox and Chrome - if this extension is not present then this add-on will not be able to do anything.
+
 
 The browser extension needs to be able to communicate with ZAP,
 but it must do it in a secure way so that malicious targets cannot abuse the API end points that this add-on defines.
@@ -25,6 +26,7 @@ http://zap/zapCallBackUrl/12345678901234567890
 ```
 
 - this URL is regenerated every time ZAP is started and is considered safe as it is impractical for malicious targets to discover.
+
 
 The browser extension detects URLs of this format in the context script
 [index.ts](https://github.com/zaproxy/browser-extension/blob/main/source/ContentScript/index.ts)

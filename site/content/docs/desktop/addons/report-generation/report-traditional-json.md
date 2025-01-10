@@ -60,3 +60,46 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                 },
 
 ```
+
+The report can also include details of Sequences and related active scanning results, for example:
+
+```
+    "sequences": [
+      {
+        "name": "Seq name",
+        "steps": [
+          {
+            "step": "1",
+            "pass": "true",
+            "resultDetails": "Pass",
+            "alertIds": [],
+            "original": {
+              "uri": "https://www.example.com/step1",
+              "method": "GET"
+            },
+            "replay": {
+              "uri": "https://www.example.com/step1",
+              "method": "GET"
+            }
+          },
+          {
+            "step": "2",
+            "pass": "false",
+            "resultDetails": "Fail",
+            "alertIds": [
+              2,
+              4
+            ],
+            "original": {
+              "uri": "https://www.example.com/step2",
+              "method": "GET"
+            },
+            "replay": {
+              "uri": "https://www.example.com/step2",
+              "method": "GET"
+            }
+          }
+        ]
+      }
+    ]
+```

@@ -13,6 +13,7 @@ This screen allows you to manage Context data for the AJAX Spider.
 
 Allows to configure the elements that should be excluded from the crawling.
 
+
 An excluded element needs the Description, the Element (i.e. tag name), and one of:
 XPath, Text (of the element, exact match and case sensitive), and Attribute (both its name and value).
 

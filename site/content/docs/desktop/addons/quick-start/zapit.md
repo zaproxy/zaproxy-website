@@ -9,16 +9,20 @@ weight: 2
 
 Quick Start add-on supports the following [Command Line](/docs/desktop/addons/quick-start/cmdline/) option to perform a quick 'reconnaissance' scan of the URL specified.
 
+
 You can specify multiple URLs by specifying the option multiple times:
 
 * `-zapit https://www.example1.com -zapit http://example2.com/ -cmd`
 
 The `-cmd` option must be specified, if it is not then the `-zapit` option will be ignored.
 
+
 If you do not specify a URL beginning with either `http://` or `https://` then ZAP will
 scan both of those schemes.
 
+
 The ZAPit Scan will start a new ZAP session before it performs a scan, so do not start ZAP with a session that you want to keep.
+
 
 The ZAPit scan currently:
 
@@ -27,6 +31,7 @@ The ZAPit scan currently:
 3. Reports any technology found by the [Technology Detection](/docs/desktop/addons/technology-detection/) add-on (if installed)
 4. Reports a summary of the alerts found
 5. Reports some stats from the root URL
+
 
 Example output:
 

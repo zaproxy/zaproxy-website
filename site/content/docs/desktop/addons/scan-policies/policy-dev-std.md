@@ -17,6 +17,8 @@ A developer focused policy meant to perform fairly quickly while providing a gre
 * No informational only rules
 * Can include longer running rules
 
+
 For the list of scan rules included see the [Alert Tag: POLICY_DEV_STD](/alerttags/policy_dev_std/) page.
+
 
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

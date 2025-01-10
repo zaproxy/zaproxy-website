@@ -6,21 +6,25 @@ weight: 1
 cascade:
   addon:
     id: websocket
-    version: 31.0.0
+    version: 32.0.0
 ---
 
 # WebSockets
 
+
 WebSockets can be used by web applications or web sites to setup a
 bi-directional (two-way), full duplex communication channel over a
 single TCP connection.  
+
 It features a lightweight protocol, allowing developers to realize
 realtime use cases. WebSockets do also provide an alternative to
 heavy use of Ajax, HTTP Long Polling or Comet.  
 
+
 After an initial HTTP based handshake, the TCP connection is kept open,
 allowing applications to send \& receive arbitrary data. Often port
 80 or 443 for encrypted WebSocket channels are used.
+
 
 The WebSocket standard is defined in
 
@@ -29,6 +33,7 @@ The WebSocket standard is defined in
 
 [The WebSocket Protocol (RFC6455) (https://tools.ietf.org/html/rfc6455)](https://tools.ietf.org/html/rfc6455)
 :   describes the structure of WebSocket frames upon TCP
+
 
 ZAP is able to:
 

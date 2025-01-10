@@ -29,6 +29,7 @@ Allows to select one of the users available from the selected context, to perfor
 
 If set then any URLs which are out of scope will be ignored.
 
+
 **Note:** The option `Just In Scope` is mutually exclusive with `Context` option, if one is used the other is ignored.
 
 ### Spider Subtree Only

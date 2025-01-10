@@ -7,6 +7,7 @@ weight: 2
 
 # WebSocket specific options
 
+
 This screen allows you to configure the WebSocket options:
 
 ### Forward all

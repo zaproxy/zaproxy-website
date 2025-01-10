@@ -9,6 +9,7 @@ weight: 2
 
 The Requester tab in the workspace panel, next to the standard "Request" and "Response" tabs.
 
+
 The Requester tab acts like the [Manual
 Request Editor dialog](/docs/desktop/addons/requester/dialogs/) but supports as many sub-tabs as you need.
 

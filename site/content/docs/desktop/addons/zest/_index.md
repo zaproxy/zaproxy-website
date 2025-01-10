@@ -6,15 +6,18 @@ weight: 1
 cascade:
   addon:
     id: zest
-    version: 47.0.0
+    version: 48.0.0
 ---
 
 # Zest
 
+
 Zest is an experimental specialized scripting language (also known as a domain-specific language)
 originally developed by the Mozilla security team and is intended to be used in web oriented security tools.
 
+
 It is included by default with ZAP.  
+
 
 ## Engine Name
 
@@ -39,7 +42,7 @@ Note that you can only record 'Stand Alone' Zest scripts in this way. If you wan
 
 You can also right click any Stand Alone Zest script and use the 'Start recording' and 'Stop recording' buttons.   
 
-There are two primary methods for script recording: server-side and client-side. For client-side recording, we leverage the ZAP browser extension and a dedicated client Addon.   
+There are two primary methods for script recording: server-side and client-side. For client-side recording, we leverage the ZAP browser extension and a dedicated client add-on.   
 This combination allows us to efficiently capture and save user interactions in Zest scripts.
 
 ### New Script Button

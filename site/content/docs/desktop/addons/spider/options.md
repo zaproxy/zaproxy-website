@@ -7,6 +7,7 @@ weight: 4
 
 # Options Spider screen
 
+
 This screen allows you to configure the [Spider](/docs/desktop/addons/spider/) options.
 
 It should be noted that modifying most of these options also affects
@@ -15,6 +16,7 @@ the running Spider.
 ### Maximum depth to crawl
 
 The parameter defines the maximum depth in the crawling process where a page must be found in order for it to be processed. Resources found deeper than this level are not fetched and parsed by the spider. The value zero means unlimited depth.
+
 
 The depth is calculated starting from the seeds, so, if a Spider scan
 starts with only a single URL (eg. URL manually specified), the depth is
@@ -101,6 +103,7 @@ This options defines whether the Spider should try to detect OData-specific para
 ### Irrelevant Parameters
 
 Allows to manage the parameters that should be removed when canonicalising the URLs found.
+
 
 The session names defined in the HTTP Sessions options are taken into account and removed.
 

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: 118.0.0
+    version: 119.0.0
 ---
 
 # Linux WebDrivers
