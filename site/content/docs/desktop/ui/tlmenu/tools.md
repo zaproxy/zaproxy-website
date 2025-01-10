@@ -16,6 +16,7 @@ Opens the [ZAP API](/docs/desktop/start/features/api/) in the system's default b
 
 This displays the [Options dialog](/docs/desktop/ui/dialogs/options/).
 
+
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional menu items.
 
 ## See also

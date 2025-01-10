@@ -8,7 +8,9 @@ type: userguide
 
 This menu gives access to a set of online resources.
 
+
 These links may be disabled if Java does not support opening URLs in a browser on your platform.
+
 
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional menu items.
 

@@ -7,6 +7,7 @@ weight: 13
 
 # Session Properties dialog
 
+
 This allows you to set the session properties and is made up of the following screens:
 
 ### General

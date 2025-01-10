@@ -7,6 +7,7 @@ weight: 7
 
 # Authentication Methods
 
+
 ZAP handles multiple types of authentication (called **Authentication
 Methods** ) that can be used for websites / webapps. Each **[Context](/docs/desktop/start/features/contexts/)** has an Authentication Method
 defined which dictates how authentication is handled. The
@@ -39,6 +40,7 @@ require choosing an authenticated HTTP session.
 
 ## Form-Based Authentication {#formBased}
 
+
 This method is used for websites / webapps where authentication is
 done by submitting a form or performing a GET request to a 'login url'
 using a 'username/password' pair of authentication credentials.
@@ -50,11 +52,13 @@ When using this authentication method, configuring a User for the context requir
 setting up the *username/password* pair of credentials that are used for the form based
 authentication.
 
+
 If the application requires submitting the anti-CSRF token presented in the login page, ZAP will
 handle it automatically. Make sure the token
 name is configured in [Options Anti CSRF screen](/docs/desktop/ui/dialogs/options/anticsrf/).
 
 ## JSON-Based Authentication {#jsonBased}
+
 
 This method is used for websites / webapps where authentication is
 done by submitting a JSON object to a 'login url' using a 'username/password'
@@ -69,6 +73,7 @@ authentication.
 
 ## HTTP/NTLM Authentication {#httpAuth}
 
+
 This method is used for websites / webapps where authentication is
 enforced using the HTTP or NTLM Authentication mechanisms employing HTTP message headers.
 Three authentication schemes are supported: Basic, Digest and NTLM.
@@ -80,6 +85,7 @@ When using this authentication method, configuring a User for the context requir
 setting up the *username/password* pair of credentials that are used for the HTTP/NTLM authentication.
 
 ## Script-Based Authentication {#scriptBased}
+
 
 This method is useful for websites / webapps where the authentication is a more complex one and some custom
 scripts that handle the authentication process are beneficial. To use this method, you must first define an Authentication

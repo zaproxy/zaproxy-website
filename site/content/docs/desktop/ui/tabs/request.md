@@ -7,11 +7,14 @@ weight: 2
 
 # Request tab
 
+
 The Request tab shows you the data sent by your browser for the request that you have
 highlighted in either the [Sites tab](/docs/desktop/ui/tabs/sites/) or the
 [History tab](/docs/desktop/ui/tabs/history/).  
+
 The top panel shows the request header and the bottom panel shows any data also sent, for
 example as a result of a POST request.  
+
 
 Pull downs allow you to select different [Views](/docs/desktop/ui/views/) for the Request header and body.
 

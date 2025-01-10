@@ -8,12 +8,14 @@ type: userguide
 
 This menu handles the scan policy.
 
+
 The spider and scan options that were in this menu in an earlier version are now available via the
 [Sites tab](/docs/desktop/ui/tabs/sites/) 'Right click' menu.
 
 ### Scan Policy Manager...
 
 This displays the [Scan Policy Manager dialog](/docs/desktop/ui/dialogs/scanpolicymgr/).
+
 
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional menu items.
 

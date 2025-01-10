@@ -2,10 +2,11 @@
 # This page was generated from the add-on.
 title: Options Search screen
 type: userguide
-weight: 20
+weight: 17
 ---
 
 # Options Search screen
+
 
 This screen allows you to configure the search options:
 

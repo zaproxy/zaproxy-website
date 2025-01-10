@@ -26,9 +26,6 @@ It include the following screens:
 |   | [JVM](/docs/desktop/ui/dialogs/options/jvm/)                              |   |
 |   | [Keyboard](/docs/desktop/ui/dialogs/options/keyboard/)                    |   |
 |   | [Language](/docs/desktop/ui/dialogs/options/language/)                    |   |
-|   | [Passive Scan Rules](/docs/desktop/ui/dialogs/options/pscanrules/)        |   |
-|   | [Passive Scan Tags](/docs/desktop/ui/dialogs/options/pscan/)              |   |
-|   | [Passive Scanner](/docs/desktop/ui/dialogs/options/pscanner/)             |   |
 |   | [Rule Configuration](/docs/desktop/ui/dialogs/options/ruleconfig/)        |   |
 |   | [Scripts](/docs/desktop/ui/dialogs/options/script/)                       |   |
 |   | [Search](/docs/desktop/ui/dialogs/options/search/)                        |   |

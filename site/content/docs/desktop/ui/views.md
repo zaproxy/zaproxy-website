@@ -6,7 +6,9 @@ type: userguide
 
 # Views
 
+
 ZAP provides a set of plugable views which allows you to display the requests and responses in different ways.  
+
 The following views are included by default:
 
 |   |                |                                                                                                                                                                                                                                                                                                                   |
@@ -18,6 +20,7 @@ The following views are included by default:
 |   | Table (adv)    | A table with one row per attribute and value plus additional functions. For editable screens values will not be automatically be URL encoded when they are submitted, but this can be done 'manually' via 'URLEncode' function.                                                                                   |
 |   | Large Request  | A placeholder view used to prevent the UI trying to load a very large request body. You will need to switch to a different view to display the actual contents. The threshold for the view can be changed via the [Display Options screen](/docs/desktop/ui/dialogs/options/view/)                                |
 |   | Large Response | A placeholder view used to prevent the UI trying to load a very large response body. You will need to switch to a different view to display the actual contents. The threshold for the view can be changed via the [Display Options screen](/docs/desktop/ui/dialogs/options/view/)                               |
+
 
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional views.
 

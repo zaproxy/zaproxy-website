@@ -7,7 +7,9 @@ weight: 6
 
 # History Filter dialog
 
+
 This dialog allows you to restrict which requests are displayed in the [History tab](/docs/desktop/ui/tabs/history/).  
+
 
 ## Fields
 

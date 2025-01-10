@@ -7,7 +7,9 @@ weight: 2
 
 # Session Context screens
 
+
 These screens allows you manage [contexts](/docs/desktop/start/features/contexts/).
+
 
 There is a set of screens for each context you define.
 

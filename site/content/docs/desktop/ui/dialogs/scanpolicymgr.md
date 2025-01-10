@@ -7,8 +7,10 @@ weight: 11
 
 # Scan Policy Manager dialog
 
+
 This allows you to manage the [scan policies](/docs/desktop/start/features/scanpolicy/) that define the rules that are run when
 performing an [active scan](/docs/desktop/start/features/ascan/).  
+
 You can have as many scan policies as you like, and choose which one of them is run when you perform an active scan.
 
 ### Add

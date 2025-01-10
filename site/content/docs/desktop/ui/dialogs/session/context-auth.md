@@ -7,12 +7,14 @@ weight: 3
 
 # Session Context Authentication screen
 
+
 This is one of the [Session Context screens](/docs/desktop/ui/dialogs/session/contexts/)
 which allows you to manage the way in which [Authentication](/docs/desktop/start/features/authentication/) is being done for the Context.
 
 ## Authentication Method
 
 After selecting the [Authentication Method](/docs/desktop/start/features/authmethods/) type, the options that need to be configured depend on the Authentication Method.
+
 
 **Note:** Changing the authentication method after Users have been defined might cause its credentials to be reset,
 as the type of user credentials need to match the authentication scheme. A confirmation dialogue will be shown when that happens.

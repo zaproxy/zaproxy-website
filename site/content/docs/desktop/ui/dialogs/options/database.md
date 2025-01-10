@@ -7,6 +7,7 @@ weight: 8
 
 # Options Database screen
 
+
 This screen allows you to configure the database options:
 
 ### Compact (on exit)

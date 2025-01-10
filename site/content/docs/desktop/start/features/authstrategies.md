@@ -31,6 +31,7 @@ When this strategy is used then ZAP will poll the specified URL at the given fre
 
 All of the strategies use 2 Regex Patterns to tell if a specified message is logged in or not. You can supply one or both regexes - if you do not supply either then the Authentication Strategy will not be used.
 
+
 To set one of the **Logged in/out Indicators** , either type the regex
 directly in the *[Session
 Context Authentication screen](/docs/desktop/ui/dialogs/session/context-auth/) dialog -\> Authentication panel -\> Logged In/Out Indicator field* ,

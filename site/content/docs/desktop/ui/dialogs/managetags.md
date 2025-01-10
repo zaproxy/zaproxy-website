@@ -7,6 +7,7 @@ weight: 8
 
 # Manage History Tags dialog
 
+
 This allows you to manage the [tags](/docs/desktop/start/features/tags/)
 associated with a request.
 

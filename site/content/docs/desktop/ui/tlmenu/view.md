@@ -32,6 +32,7 @@ This allows you to pin all visible tabs.
 
 This allows you unpin all tabs.
 
+
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional menu items.
 
 ## See also

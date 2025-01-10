@@ -64,6 +64,7 @@ A warning dialog will be displayed to ensure you really meant to choose this opt
 This will exit ZAP.  
 If you have not saved the current session then you will be given the option to do so.
 
+
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional menu items.
 
 ## See also

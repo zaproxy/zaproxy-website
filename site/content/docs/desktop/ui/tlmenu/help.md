@@ -27,6 +27,7 @@ This checks to see if you are running the latest version of ZAP.
 
 Displays this help file.
 
+
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional menu items.
 
 ## See also

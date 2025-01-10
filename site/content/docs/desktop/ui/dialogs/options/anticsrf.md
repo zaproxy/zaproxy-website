@@ -7,6 +7,7 @@ weight: 4
 
 # Options Anti CRSF Tokens screen
 
+
 This screen allows you to configure the [anti CSRF tokens](/docs/desktop/start/features/anticsrf/) options:
 
 ### Tokens

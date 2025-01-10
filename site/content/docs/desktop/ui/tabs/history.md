@@ -7,7 +7,9 @@ weight: 5
 
 # History tab
 
+
 The History tab shows a list of all of the requests in the order in which they were made.  
+
 For each request you can see:
 
 |   |                                                                            |

@@ -7,6 +7,7 @@ weight: 3
 
 # Options Alerts screen
 
+
 This screen allows you to configure the alerts options:
 
 ### Merge related alerts in report

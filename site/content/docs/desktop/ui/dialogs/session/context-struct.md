@@ -7,6 +7,7 @@ weight: 4
 
 # Session Context Structure screen
 
+
 This is one of the [Session Context screens](/docs/desktop/ui/dialogs/session/contexts/)
 which allows you to manage ZAP's understanding of the structure of the application.
 

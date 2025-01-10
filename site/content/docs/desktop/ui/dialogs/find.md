@@ -7,7 +7,9 @@ weight: 5
 
 # Find dialog
 
+
 This allows you to find the text you enter in the selected tab.
+
 
 ## Accessed via
 

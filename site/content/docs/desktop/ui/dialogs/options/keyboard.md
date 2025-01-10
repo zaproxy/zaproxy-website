@@ -7,7 +7,9 @@ weight: 13
 
 # Options Keyboard screen
 
+
 This screen allows you to configure keyboard shortcuts for all of the ZAP menus.
+
 
 
 Clicking on any of the table rows will bring up a dialog box which allows you to change the keyboard shortcuts.

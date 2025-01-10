@@ -7,8 +7,10 @@ weight: 4
 
 # Break tab
 
+
 The Break tab allows you to change a request or response when it has been caught by ZAP via
 a [breakpoint](/docs/desktop/start/features/breakpoints/).  
+
 It allows you to change elements that you would not normally be able to change via your
 browser, including:
 
@@ -21,17 +23,23 @@ browser, including:
 
 This functionality is key to effectively pen testing your application.
 
+
 The 2 panels will only contain anything if ZAP has caught a request or response.  
+
 You can change anything in these 2 panels and then forward the request or response using
 the buttons on the [Top Level Toolbar](/docs/desktop/ui/tltoolbar/).
 
+
 Pull downs allow you to select different [Views](/docs/desktop/ui/views/) for the request or response header and body.
+
 
 While the Break tab is not in use its icon is a grey cross:
 ![](/docs/desktop/images/16/101grey.png) .  
+
 When a [breakpoint](/docs/desktop/start/features/breakpoints/) is hit the tab icon is changed
 to a red cross:
 ![](/docs/desktop/images/16/101.png) .  
+
 
 If you have selected "Show buttons to select the requests you don't want ZAP to break on" in the
 [options menu](/docs/desktop/ui/dialogs/options/breakpoints/) you will be able to select if you just want to break

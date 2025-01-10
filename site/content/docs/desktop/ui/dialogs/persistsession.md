@@ -10,9 +10,13 @@ weight: 10
 This dialog is shown by default whenever you start a new session, which always happens when ZAP starts.  
 It allows you to specify how you would like this session persisted, you can also set the default choice so that you are not prompted again.
 
+
 Persisting a session means it will be stored in a local database that you can access at a later date.  
+
 You do not need to keep 'saving' a session as everything that happens in the session is continually recorded.  
+
 It is much faster to persist a session at the start, but you can always persist a session later if you need to.  
+
 If you close ZAP without persisting your session then you will not be able to access it again.
 
 ### Yes, I want to persist this session with name based on the current timestamp

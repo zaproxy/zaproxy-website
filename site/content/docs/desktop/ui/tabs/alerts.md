@@ -7,10 +7,12 @@ weight: 8
 
 # Alerts tab
 
+
 The Alerts tab show the [Alerts](/docs/desktop/start/features/alerts/)
 that have been raised in this session.
 The alerts are displayed in a tree in risk order in the left hand pane, and each
 node of the tree shows the total number of alerts underneath it.
+
 
 Selecting an alert with one click will display it in the right hand pane.
 Double clicking an alert will display the [Add Alert](/docs/desktop/ui/dialogs/addalert/)
@@ -28,12 +30,14 @@ Allows to show only the alerts of URLs that are in [scope](/docs/desktop/start/f
 
 Allows to show only the alerts of the [Sites tab](/docs/desktop/ui/tabs/sites/) selected tree node.
 
+
 **Note:** Selecting one filter will disable the other as they are mutually
 exclusive.
 
 ### ![](/docs/desktop/images/16/018.png) Edit Alert
 
 Will display the [Add Alert](/docs/desktop/ui/dialogs/addalert/) dialog which will allow you to change the alert details, for the selected alert.
+
 
 **Note:** If multiple alerts are selected in the tree, the most recently selected
 item is edited.
