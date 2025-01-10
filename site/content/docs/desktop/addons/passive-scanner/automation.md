@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Passive Scanner Automation Framework Support
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # Passive Scanner Automation Framework Support

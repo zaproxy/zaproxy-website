@@ -9,6 +9,7 @@ weight: 2
 
 This job waits for the passive scanner to finishing scanning the requests and responses in the current queue. You should typically run this job after the jobs that explore you application, such as the spider jobs or those that import API definitions. If any more requests are sent by ZAP or proxied through ZAP after this job has run then they will be processed by the passive scanner. You can run this job as many times as you need to.
 
+
 It is covered in the video: [ZAP Chat 12 Automation Framework Part 6 - Delays and Active Scan](https://youtu.be/hcftgjz_Vgc).
 
 ## YAML
