@@ -7,16 +7,23 @@ weight: 2
 
 # Add-ons
 
+
 Add-ons add additional functionality to ZAP.  
+
 They have full access to all of the ZAP internals, and so can provide very powerful new features.  
+
 You can dynamically install add-ons from the online Add-on Marketplace via the
 [Manage Add-ons dialog](/docs/desktop/ui/dialogs/manageaddons/).  
+
 You can typically add and remove add-ons to and from the ZAP UI without having to restart it.  
 
+
 Add-ons can provide context sensitive help which is dynamically integrated with the help file.  
+
 If you are reading this page via a ZAP help file (as opposed to reading it online) then any
 help pages associated with the add-ons you have installed will be available under
 [here](/docs/desktop/addons/).  
+
 
 Add-ons are assigned a status which may be one of:
 

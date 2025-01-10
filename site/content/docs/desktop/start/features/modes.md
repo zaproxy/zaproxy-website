@@ -7,6 +7,7 @@ weight: 16
 
 # Modes
 
+
 ZAP has a 'mode' which can be:
 
 * Safe - no potentially dangerous operations permitted.

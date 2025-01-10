@@ -7,6 +7,7 @@ weight: 9
 
 # Options Display screen
 
+
 The Display screen allows you to configure:
 
 ### Images

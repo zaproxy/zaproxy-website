@@ -7,11 +7,14 @@ weight: 12
 
 # Data Driven Content
 
+
 Data driven content is type of [Structural Modifier](/docs/desktop/start/features/structmods/)
 which identifies URL paths that represent data.  
 
+
 In 'traditional' web applications the structure of the application is typically defined by the URL paths
 and the data is contained in the URL parameters and POST data.  
+
 URLs like:
 
 * https://www.example.com/app/aaa?ddd=eee

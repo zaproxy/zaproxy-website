@@ -7,10 +7,13 @@ weight: 21
 
 # Scope
 
+
 The Scope is the set of URLs you are testing, and is defined by the [Contexts](/docs/desktop/start/features/contexts/)
 you have specified.  
 
+
 By default nothing is in scope.
+
 
 The Scope potentially changes:
 

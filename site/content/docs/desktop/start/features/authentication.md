@@ -8,6 +8,9 @@ weight: 6
 # Authentication
 
 ZAP can handle a wide range of authentication mechanisms.  
+If you are new to ZAP automation then the best place to start is the ZAP [Authentication Decision Tree](/docs/authentication/) (external link).
+
+
 Each [Context](/docs/desktop/start/features/contexts/) has:
 
 * an [Authentication Method](/docs/desktop/start/features/authmethods/) which defines how authentication is handled. The authentication is used to create Web Sessions that correspond to authenticated webapp [Users](/docs/desktop/start/features/users/).
@@ -15,11 +18,13 @@ Each [Context](/docs/desktop/start/features/contexts/) has:
 
 You can use any combination of Authentication Method and Verification Strategy which works for your webapp.
 
+
 In order to perform the authentication of a user on a website /
 in a webapp, the Authentication Method and Verification Strategy define how the authentication
 is done (the process), while the necessary credentials (the exact
 identifiers) are dependent on the user, so, in ZAP, they are
 configured in the Users.
+
 
 The generic **main steps** that are needed to configure authentication for a web application
 are the following:
@@ -48,8 +53,14 @@ A configuration example showing how to fully configure a webapp that uses *form-
     2. Select the relevant text, right click on it and select either 'Flag as Context... Authentication Logged-in Indicator' or 'Flag as Context... Authentication Logged-out Indicator' as appropriate
 8. Define as many users as you need in the Session Properties -\> Users section.
 
-After configuring authentication, various actions are available in ZAP. For example, you can now select the user in the Spider dialogue. Or, using the Forced User Mode, you can force all the interactions that go through ZAP for a given Context to be from the perspective of a User. The Forced User Mode is enabled via a button in the toolbar (the one with the user and the lock) and is configured via Session Properties -\> Forced User Mode.   
+After configuring authentication, various actions are available in ZAP. For example, you can now select the user in the Spider dialogue.   
 Most of the steps above apply as well for other authentication methods. The only things that change when trying to configure authentication using a different method is step 6. Instead of that, select the authentication method required from the drop-down list and configure it as needed. More details about configuring each type of authentication can be found in the [Authentication Methods](/docs/desktop/start/features/authmethods/) page and in the [Context Session screens](/docs/desktop/ui/dialogs/session/contexts/).
+
+## Forced User Mode {#forceduser}
+
+When Forced User Mode is enabled then all interactions that go through ZAP for a given context will be updated to be from the perspective of the specified User.  
+The Forced User Mode is enabled via a button in the toolbar (the one with the user and the lock) and is configured via Session Properties -\> Forced User Mode.  
+**Important:** Forced User Mode is just intended for manual testing and should not be used in automation - there are much better alternatives.
 
 ## Authentication Header Environmental Variables {#envvars}
 

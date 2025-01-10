@@ -7,8 +7,10 @@ weight: 7
 
 # Manage Add-ons
 
+
 This allows you to manage the [add-ons](/docs/desktop/start/features/addons/)
 that you have installed and download new ones from the Add-on Marketplace.
+
 
 Two tabs are available:
 

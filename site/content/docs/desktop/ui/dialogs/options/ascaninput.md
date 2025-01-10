@@ -7,8 +7,11 @@ weight: 2
 
 # Options Active Scan Input Vectors screen
 
+
 This screen allows you to configure the [active scan](/docs/desktop/start/features/ascan/) input vectors.  
+
 These are the elements that the active scanner will attack.  
+
 Scanning all of the elements supported will take longer, but not scanning some elements may cause some vulnerabilities to be missed.
 
 ### Injectable Targets
@@ -65,7 +68,9 @@ The data formats that the active scanner will target:
 If this option is selected then the active scanner will use any enabled script input vectors.  
 Script input vectors are scripts which you have written or imported into ZAP and allow you to target elements which are not supported by default.
 
+
 This screen also allows you to configure the parameters which will be ignored by the active scanner.
+
 
 Refer to `Parameter` section in [Add Alert](/docs/desktop/ui/dialogs/addalert/) dialogue for more details about the
 parameter names.

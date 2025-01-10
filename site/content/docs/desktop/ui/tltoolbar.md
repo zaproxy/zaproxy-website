@@ -7,6 +7,7 @@ weight: 3
 
 # Top Level Toolbar
 
+
 This toolbar provides a set of controls for commonly used functionality.
 
 ## Mode pulldown
@@ -142,6 +143,7 @@ It also allows you to uninstall add-ons.
 
 This switches forced user mode on and off.  
 The button is only enabled when you have defined a forced user for at least one [context](/docs/desktop/start/features/contexts/), which can be done via the [Session Contexts](/docs/desktop/ui/dialogs/session/contexts/) dialog.
+
 
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional buttons.
 

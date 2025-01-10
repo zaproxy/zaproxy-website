@@ -7,6 +7,7 @@ weight: 1
 
 # Options Active Scan screen
 
+
 This screen allows you to configure the [active scan](/docs/desktop/start/features/ascan/) options:
 
 ### Number of Hosts Scanned Concurrently

@@ -9,6 +9,7 @@ weight: 7
 
 The Breakpoints tab shows you all of the
 [breakpoints](/docs/desktop/start/features/breakpoints/) that you have set.  
+
 Breakpoints can be set via the [History](/docs/desktop/ui/tabs/history/) and
 [Sites](/docs/desktop/ui/tabs/sites/) tabs as well as the 'Add a custom HTTP breakpoint' button on the
 [top level toolbar](/docs/desktop/ui/tltoolbar/)

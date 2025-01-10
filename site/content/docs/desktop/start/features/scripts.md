@@ -7,8 +7,10 @@ weight: 22
 
 # Scripts
 
+
 ZAP supports scripts that can be embedded within ZAP and can access internal ZAP data structures and classes.
 These scripts allow you to dynamically enhance ZAP from within ZAP.
+
 
 ZAP supports any scripting language that supports JSR 223 (http://www.jcp.org/en/jsr/detail?id=223) , including:
 
@@ -38,6 +40,7 @@ Different types of scripts are supported:
 * Targeted - scripts that are invoked with a target URL and are only run when your start them manually
 
 **Note:** Add-ons can add additional types of scripts, which should be described in the help of the corresponding add-on.
+
 
 For more details on how to run ZAP scripts see the Script Console add-on help pages.
 

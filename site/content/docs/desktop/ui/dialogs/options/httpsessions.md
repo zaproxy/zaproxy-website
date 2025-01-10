@@ -7,6 +7,7 @@ weight: 11
 
 # Options HTTP Sessions screen
 
+
 This screen allows you to configure the [HTTP Sessions
 Extension's](/docs/desktop/start/features/httpsessions/) options:
 

@@ -7,9 +7,11 @@ weight: 11
 
 # HTTP Sessions tab
 
+
 This tab shows you the set of identified HTTP sessions for each Site,
 as detected by the [HTTP
 Sessions extension](/docs/desktop/start/features/httpsessions/).
+
 
 The current Site the information is referring to can be selected via
 the toolbar or the [Sites tab](/docs/desktop/ui/tabs/sites/).

@@ -7,6 +7,7 @@ weight: 7
 
 # Options Check for Updates screen
 
+
 This screen allows you to configure whether ZAP checks to see if you are running
 the latest version when it starts, and if so what it does.
 

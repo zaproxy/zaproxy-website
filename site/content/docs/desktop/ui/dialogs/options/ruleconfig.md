@@ -2,17 +2,21 @@
 # This page was generated from the add-on.
 title: Options Rule Configuration screen
 type: userguide
-weight: 18
+weight: 15
 ---
 
 # Options Rule Configuration screen
 
+
 This screen allows you to configure the behaviour of specific active and passive scan rules.
+
 
 Select any of the listed rows to see details of the specific configuration and to change the associated value.
 Both individual and all rules can be reset.
 
+
 The built-in rules include:  
+
 
 |            Name            | Default |                                                                                                                           Description                                                                                                                            |
 |----------------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

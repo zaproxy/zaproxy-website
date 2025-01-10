@@ -7,12 +7,14 @@ weight: 29
 
 # Users
 
+
 Users are the ZAP representations of websites/webapps' users. They
 allow certain actions to be performed from the point of view of an
 user of the webapps. For each **[Context](/docs/desktop/start/features/contexts/)**,
 a set of Users can be defined, which can then be used in actions
 related to the context. Most commonly, during various scans the
 request messages can be sent from the point of view of a User.
+
 
 The concept of Users is tightly tied to the concepts of [Session Management](/docs/desktop/start/features/sessionmanagement/) and [Authentication](/docs/desktop/start/features/authentication/). When a User is first
 used somewhere in ZAP, an authentication is performed (according to

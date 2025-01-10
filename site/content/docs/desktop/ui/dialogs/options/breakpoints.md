@@ -7,6 +7,7 @@ weight: 6
 
 # Options Breakpoints screen
 
+
 This screen allows you to configure the [breakpoint](/docs/desktop/start/features/breakpoints/) options:
 
 ### Confirm drop trapped message

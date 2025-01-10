@@ -7,7 +7,9 @@ weight: 12
 
 # Scan Progress Dialog
 
+
 This shows you the status of an [active scan](/docs/desktop/start/features/ascan/).  
+
 
 ### Progress tab
 

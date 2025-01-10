@@ -7,6 +7,7 @@ weight: 5
 
 # Options API screen
 
+
 This screen allows you to configure the [API](/docs/desktop/start/features/api/) options:
 
 ### Enabled
@@ -25,11 +26,13 @@ If enabled then the API will only be available via HTTPS. Otherwise it will be a
 
 If enabled then files can be transfered to and from ZAP via the API. This option is only available if the API key is *not* disabled. For more details see [File Transfer](/docs/desktop/start/features/api/#filexfer).
 
+
 You can also enable this option via the command line using the parameter: `-config api.filexfer=true`
 
 ### Transfer Directory {#xferdir}
 
 The directory used to transfer files to and from ZAP via the API. This option is only available if the API key is *not* disabled. For more details see [File Transfer](/docs/desktop/start/features/api/#filexfer).
+
 
 You can also set the Transfer Directory via the command line using: `-config api.xferdir=/full/path/to/dir`
 

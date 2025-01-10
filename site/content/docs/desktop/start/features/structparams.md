@@ -7,11 +7,14 @@ weight: 27
 
 # Structural Parameters
 
+
 Structural parameters are a type of [Structural Modifier](/docs/desktop/start/features/structmods/)
 which identify parameters that represent application structure instead of user data.  
 
+
 In 'traditional' web applications the structure of the application is typically defined by the URL paths
 and the data is contained in the URL parameters and POST data.  
+
 URLs like:
 
 * https://www.example.com/app/aaa?ddd=eee

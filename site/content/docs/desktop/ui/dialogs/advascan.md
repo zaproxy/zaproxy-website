@@ -7,7 +7,9 @@ weight: 1
 
 # Active Scan dialog
 
+
 This dialog launches the [active scanner](/docs/desktop/start/features/ascan/).  
+
 
 ### Scope
 

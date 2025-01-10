@@ -19,6 +19,7 @@ the requests, the responses or everything.
 
 All URLs, requests or responses which contain the search pattern will
 be displayed in the tab.  
+
 You may find it useful to add .\* to your search term -
 this will give you more context e.g. password.\*
 

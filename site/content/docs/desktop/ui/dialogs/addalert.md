@@ -7,6 +7,7 @@ weight: 2
 
 # Add Alert dialog
 
+
 This dialog allows you to manually add or change an [Alert](/docs/desktop/start/features/alerts/) associated
 with a specific request.  
 

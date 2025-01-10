@@ -36,8 +36,9 @@ The relevant message will be selected in the Search tab and the string will be d
 
 ### Enable / Disable Forced User Mode
 
-This switches forced user mode on and off.  
+This switches [Forced User Mode](/docs/desktop/start/features/authentication/#forceduser) on and off.  
 The menu item is only enabled when you have defined a forced user for at least one [context](/docs/desktop/start/features/contexts/), which can be done via the [Session Contexts](/docs/desktop/ui/dialogs/session/contexts/) dialog.
+
 
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional menu items.
 

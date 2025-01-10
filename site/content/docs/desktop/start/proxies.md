@@ -7,8 +7,15 @@ weight: 1
 
 # Configuring Proxies
 
-You will need to configure your browser to use ZAP as a proxy.  
+
+The best way to use a browser with ZAP is to launch it from ZAP.
+It will then be automatically configured to proxy through ZAP and to ignore certificate warnings.
+
+
+If for any reason you are unable or unwilling to do that then you will need to configure your browser to use ZAP as a proxy.  
+
 By default, ZAP uses an Address of 'localhost' and a Port of '8080', but these can be changed via the Options \> Network \> Local Servers/Proxies screen.
+
 Instructions for the latest versions of the most commonly used browsers:
 
 ### Chrome (on Windows)
@@ -112,6 +119,18 @@ Instructions for the latest versions of the most commonly used browsers:
 |   | Enter in the | 'Port' field the 'Port' you configured in the options screen        |
 |   | Press the    | Proxies Setting 'OK' button                                         |
 |   | Press the    | Network Options 'Apply' button                                      |
+
+### Linux Gnome Proxy settings
+
+|   |              |                                                                                    |
+|---|--------------|------------------------------------------------------------------------------------|
+|   | Press the    | 'Gnome Settings' in the top corner                                                 |
+|   | Select the   | 'Network' item in the left                                                         |
+|   | Enter in the | 'Proxy' in the 'Proxy' section                                                     |
+|   | Press the    | 'Network Proxy' toggle                                                             |
+|   | Select       | 'Manual' in the 'Configuration' dropdown                                           |
+|   | Enter in the | HTTP (or HTTPs) Proxy 'URL' field the 'URL' you configured in the options screen   |
+|   | Enter in the | HTTP (or HTTPs) Proxy 'Port' field the 'Port' you configured in the options screen |
 
 ### Windows LAN Settings
 

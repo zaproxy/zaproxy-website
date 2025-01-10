@@ -7,11 +7,13 @@ weight: 23
 
 # Session Management
 
+
 ZAP handles multiple types of session management (called **Session
 Management Methods** ) that can be used for websites / webapps. Each **[Context](/docs/desktop/start/features/contexts/)** has a Session Management
 Method defined which dictates how sessions are kept.
 
 ### Cookie-Based Session Management {#cbsm}
+
 
 In the case of this method the session is being tracked through
 cookies. Currently, the session tokens that are used are imported from
@@ -19,9 +21,11 @@ the [HTTP Sessions](/docs/desktop/start/features/httpsessions/) Extension.
 
 ### HTTP Authentication Session Management {#hasm}
 
+
 In the case of this method the session is managed with HTTP request header `Authorization`.
 
 ### Script-Based Session Management {#sbsm}
+
 
 This method is useful for websites / webapps where the session management is a more complex one and some custom
 scripts that handle the process are beneficial. To use this method, you must first define a Session Management script

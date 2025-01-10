@@ -36,6 +36,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | André Alves ([@andrealvesdev](https://twitter.com/andrealvesdev))                                                     |
 |   | Sébastien Amelinckx ([@Sebitosh](https://github.com/Sebitosh))                                                        |
 |   | Mário Areias                                                                                                          |
+|   | Arjen ([@atezet](https://github.com/atezet))                                                                          |
 |   | Matt Austin ([@mattaustin](https://twitter.com/mattaustin))                                                           |
 |   | Abdelhadi Azouni                                                                                                      |
 |   | Mennouchi Islam Azeddine                                                                                              |
@@ -135,8 +136,10 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Steve Milner (ashcrow)                                                                                                |
 |   | Liang Mingqiang ([@mqliang](https://twitter.com/mqliang))                                                             |
 |   | Gustavo Mitsuichi                                                                                                     |
+|   | Pyae Hlian Moe ([@PyaeHlianMoe](https://github.com/PyaeHlianMoe))                                                     |
 |   | Kajan Mohanagandhirasa ([@GM_K4J4N](https://twitter.com/GM_K4J4N))                                                    |
 |   | Vladimir Molotkov (BrandMaker GmbH)                                                                                   |
+|   | Dragos-Stefan Necula ([dragosstefannecula.co.uk](https://dragosstefannecula.co.uk))                                   |
 |   | rnehra01 (Ravinder Nehra)                                                                                             |
 |   | Jonathan Ness                                                                                                         |
 |   | Axel Neumann                                                                                                          |
@@ -201,6 +204,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Kevin Wall                                                                                                            |
 |   | Martin Walton - Laterooms.com                                                                                         |
 |   | Dave Wichers                                                                                                          |
+|   | Aayush Yadav ([@aayushkyadav](https://www.linkedin.com/in/aayushkyadav/))                                             |
 |   | Hichem Yagoubi ([@jini0x](https://github.com/jini0x))                                                                 |
 |   | Joset Zamora ([@setzamora](https://twitter.com/setzamora))                                                            |
 |   | Alexander Zapasnik                                                                                                    |

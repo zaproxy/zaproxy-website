@@ -8,6 +8,7 @@ type: userguide
 
 This gives access to menus that allow to import data into ZAP.
 
+
 Note that [add-ons](/docs/desktop/start/features/addons/) can add additional menu items.
 
 ## See also
