@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.34.0
+    version: 0.35.0
 ---
 
 # Report Generation
@@ -16,6 +16,7 @@ This add-on allows you to generate a [variety of reports](/docs/desktop/addons/r
 It provides a dialog that can be accessed via menu "Report /
 Generate Report..." menu item or via the "Generate Report..." toolbar
 button.
+
 
 It also supports the [Automation
 Framework](/docs/desktop/addons/report-generation/automation/).

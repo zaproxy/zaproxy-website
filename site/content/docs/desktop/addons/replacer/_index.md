@@ -6,18 +6,22 @@ weight: 1
 cascade:
   addon:
     id: replacer
-    version: 19.0.0
+    version: 20.0.0
 ---
 
 # Replacer
 
 The replacer is an easy way to replace strings in requests and responses.
 
+
 It is accessible via the Options and by default it can be quickly accessed via the '\<ctrl\> R' hotkey.
+
 
 It also supports the [Automation Framework](/docs/desktop/addons/replacer/automation/).
 
+
 The Replacer Options panel allows you to define as many replacement rules as you need.  
+
 Each rule is defined by the following fields:
 
 ### Description
@@ -71,6 +75,7 @@ If set then the Match String will be treated as a regex expression. This option 
 
 ### Replacement String
 
+
 The new string that will replace the specified selection.
 Hexadecimal bytes are represented with "\\x00 - \\xFF".
 The literal string "\\x00" can be kept with "\\\\x00".
@@ -81,6 +86,7 @@ If not set then the rule will not apply.
 
 ### Token Processing
 
+
 When enabled, the Replacement String may contain a single token which is replaced with a dynamic value:
 
 |       Token        |                                                                                                Description                                                                                                |
@@ -88,6 +94,7 @@ When enabled, the Replacement String may contain a single token which is replace
 | {{RINT\|MIN\|MAX}} | Random Integer. `MIN` and `MAX` are each optional. `MIN` defaults to `0` `MAX` defaults to [Integer.maxValue](https://docs.oracle.com/javase/8/docs/api/constant-values.html#java.lang.Integer.MAX_VALUE) |
 | {{UUID}}           | Random UUID generated using [java.util.UUID.randomUUID()](https://docs.oracle.com/javase/8/docs/api/java/util/UUID.html#randomUUID--)                                                                     |
 | {{TICKS}}          | Unix epoch milliseconds using [System.currentTimeMillis()](https://docs.oracle.com/javase/8/docs/api/java/lang/System.html#currentTimeMillis--)                                                           |
+
 
 **Note:** This option applies only to the following Match Types:
 
@@ -99,6 +106,7 @@ When enabled, the Replacement String may contain a single token which is replace
 ### Initiators tab
 
 Allows you to specify which 'initiators' the rule should apply to. Each ZAP component which can send and receive messages is a separate initiator, so this gives you a very fine grain control over exactly when the rule should apply.
+
 
 If you need even more control over when and how text should be replaced then you can use the ZAP Script Console which
 gives you complete control over the ZAP messages.

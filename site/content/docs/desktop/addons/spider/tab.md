@@ -7,10 +7,14 @@ weight: 3
 
 # Spider tab
 
+
 The Spider tab shows you the set of unique URIs found by the [Spider](/docs/desktop/addons/spider/) during the scans.
+
 
 The 'New Scan' button launches the [Spider dialog](/docs/desktop/addons/spider/dialog/) which allows you
 to specify exactly what should be scanned.  
+
+
 The Spider can be run on multiple Sites in parallel and the results for each scan are
 shown by selecting the scan via the 'Progress' pull-down.
 

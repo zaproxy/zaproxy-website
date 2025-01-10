@@ -17,6 +17,7 @@ The script job allows you to execute various actions with scripts:
 
 Adds the specified script to ZAP. Scripts are enabled but not configured to be loaded when ZAP restarts.
 
+
 By default the default script engine for the file extension (if any) will be used - this may be overridden using the 'engine' parameter.
 
 * type: mandatory, can be any of the script types supported by ZAP
@@ -44,6 +45,7 @@ Runs the specified script to ZAP. The script must already be available in ZAP, f
 ## Action: loaddir
 
 Loads all of the scripts in the subdirectories under the specified source path to ZAP. Scripts are enabled but not configured to be loaded when ZAP restarts.
+
 
 The scripts must be in subdirectories named after the relevant script type (such as ‘active’, ‘passive’, ‘proxy’ etc)
 and must have an appropriate extension for the script language used.
@@ -117,3 +119,4 @@ Scripts can interact with running plans using code like:
     } else {
       print('No running plans');
     }
+    	

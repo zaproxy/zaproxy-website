@@ -9,4 +9,5 @@ weight: 2
 
 A policy which enables all of the installed active scan rules.
 
+
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

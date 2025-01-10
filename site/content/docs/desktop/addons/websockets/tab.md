@@ -7,6 +7,7 @@ weight: 1
 
 # WebSocket tab
 
+
 The WebSockets tab displays all messages from WebSocket connections.
 While ZAP is active, visit e.g.: [Mozilla's BrowserQuest](http://browserquest.mozilla.org/)
 to see WebSockets in action.

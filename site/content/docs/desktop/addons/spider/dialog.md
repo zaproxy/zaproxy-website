@@ -7,7 +7,9 @@ weight: 2
 
 # Spider dialog
 
+
 This dialog launches the [Spider](/docs/desktop/addons/spider/).  
+
 
 ## Scope
 

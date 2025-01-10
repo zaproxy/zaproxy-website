@@ -12,6 +12,8 @@ A quality assurance focused policy, including a superset of the [QA standard](/d
 * Intended to run in a QA / Staging environment which is close to production
 * A superset of Developer Full (and QA Standard) but with more env / server rules enabled
 
+
 For the list of scan rules included see the [Alert Tag: POLICY_QA_FULL](/alerttags/policy_qa_full/) page.
+
 
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

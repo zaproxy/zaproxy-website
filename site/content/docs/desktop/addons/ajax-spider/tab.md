@@ -7,6 +7,7 @@ weight: 5
 
 # AJAX Spider tab
 
+
 The AJAX Spider tab shows you the set of unique URIs found by [AJAX
 Spider](/docs/desktop/addons/ajax-spider/).
 

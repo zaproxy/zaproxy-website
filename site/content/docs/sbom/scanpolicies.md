@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: scanpolicies
-    version: 0.1.0
+    version: 0.2.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.1.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.2.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -32,6 +32,9 @@ sbom:
   - name: auto-value-annotations
     version: '1.9'
     licenses: Apache-2.0
+  - name: biz.aQute.bnd.annotation
+    version: 6.4.1
+    licenses: (Apache-2.0 OR EPL-2.0)
   - name: caffeine
     version: 3.0.5
     licenses: Apache-2.0
@@ -42,7 +45,7 @@ sbom:
     version: 1.9.4
     licenses: Apache-2.0
   - name: commons-codec
-    version: 1.16.1
+    version: 1.17.1
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
@@ -51,25 +54,25 @@ sbom:
     version: '1.10'
     licenses: Apache-2.0
   - name: commons-csv
-    version: 1.10.0
+    version: 1.12.0
     licenses: Apache-2.0
   - name: commons-httpclient
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.16.1
+    version: 2.18.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
     licenses: Apache-2.0
   - name: commons-lang3
-    version: 3.14.0
+    version: 3.17.0
     licenses: Apache-2.0
   - name: commons-logging
     version: '1.2'
     licenses: Apache-2.0
   - name: commons-logging
-    version: 1.3.1
+    version: 1.3.4
     licenses: Apache-2.0
   - name: commons-text
     version: 1.12.0
@@ -98,8 +101,11 @@ sbom:
   - name: failureaccess
     version: 1.0.1
     licenses: Apache-2.0
+  - name: findbugs-annotations
+    version: 3.0.1
+    licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.4.1
+    version: 3.5.4
     licenses: Apache-2.0
   - name: guava
     version: 32.1.1-jre
@@ -111,7 +117,7 @@ sbom:
     version: 1.1.3
     licenses: Apache-2.0
   - name: hsqldb
-    version: 2.7.2
+    version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: jackson-core-asl
     version: 1.9.13
@@ -135,7 +141,7 @@ sbom:
     version: '3.4'
     licenses: GNU Lesser General Public License (LGPL), Apache-1.0, EPL-1.0
   - name: jfreechart
-    version: 1.5.4
+    version: 1.5.5
     licenses: GNU Lesser General Public Licence
   - name: jgrapht-core
     version: 0.9.0
@@ -147,16 +153,16 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: log4j-1.2-api
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: log4j-api
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: log4j-core
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: log4j-jul
-    version: 2.20.0
+    version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
     version: 1.18.34
@@ -173,6 +179,12 @@ sbom:
   - name: org.jacoco.report
     version: 0.8.11
     licenses: EPL-2.0
+  - name: org.osgi.resource
+    version: 1.0.0
+    licenses: Apache-2.0
+  - name: org.osgi.service.serviceloader
+    version: 1.0.0
+    licenses: Apache-2.0
   - name: pcollections
     version: 4.0.1
     licenses: MIT
@@ -180,7 +192,7 @@ sbom:
     version: 3.19.6
     licenses: BSD-3-Clause
   - name: rsyntaxtextarea
-    version: 3.4.0
+    version: 3.5.3
     licenses: BSD-3-Clause
   - name: software-and-algorithms
     version: '1.0'
@@ -192,7 +204,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.15.0
+    version: 2.16.0-SNAPSHOT
     licenses: Apache-2.0
 ---
 

@@ -7,7 +7,9 @@ weight: 2
 
 # Script Console Tab
 
+
 The Scripts Console allows you to write scripts which run within ZAP.  
+
 It is made up of:
 
 * A toolbar
@@ -16,14 +18,19 @@ It is made up of:
 
 To create a new script or to load or switch scripts see the [The Scripts 'tree' tab](/docs/desktop/addons/script-console/tree/).
 
+
 Right-click in the script area for display and editing options.
+
 
 In ZAP versions after 2.7.0 if the script currently displayed in the console is changed by another program then you
 will be given the option to keep the script in the console or replace it with the changed script.  
+
 If a script is changed by another program when it is not being displayed and has not previously been changed in the script console
 then that script will be loaded and the new contents will be used when the script is run.
 
+
 Templates can be viewed in the console but cannot be edited.  
+
 
 ## Toolbar Buttons
 

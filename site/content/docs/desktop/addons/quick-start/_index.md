@@ -6,12 +6,14 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: 50.0.0
+    version: 51.0.0
 ---
 
 # Quick Start
 
+
 The Quick Start tab provides you with an easy way to quickly test a web application.  
+
 The top screen shows 3 buttons that take you to the following screens.
 
 ## Automated Scan
@@ -48,6 +50,7 @@ ZAP will remember the last browser you chose when you restart it.
 A button will also be added to the toolbar which will launch the latest browser chosen. The icon will change to represent the relevant browser   
 
 Note that launched browsers will stop working if you change the address or port that ZAP is listening on.
+
 
 If you do not have selenium add-on installed then you will see instructions for configuring your browser
 to proxy via ZAP manually.

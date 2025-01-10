@@ -9,9 +9,11 @@ weight: 3
 
 You can easily create your own reports.
 
+
 The add-on uses the [Thymeleaf](https://www.thymeleaf.org/)
 templating engine, so see their documentation for details of the
 templating syntax.
+
 
 The built in reports are copied into the 'reports' directory
 underneath the ZAP [default
@@ -68,9 +70,11 @@ The following data items are available to all reports. These can be accessed via
 
 A tree containing all of the alerts that should be included in the report. This is a copy of the standard ZAP alert tree shown in the Desktop 'Alerts' tab but pruned to remove any alerts that do not match the criteria selected.
 
+
 Every node in the tree is an [AlertNode](https://javadoc.io/doc/org.zaproxy/zap/latest/org/zaproxy/zap/extension/alert/AlertNode.html).
 
 The top level node does not include any useful data.
+
 
 There is one second level node for each type of alert found. These
 nodes have a 'userObject' of type [Alert](https://javadoc.io/doc/org.zaproxy/zap/latest/org/parosproxy/paros/core/scanner/Alert.html)

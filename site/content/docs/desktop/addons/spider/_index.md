@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: spider
-    version: 0.12.0
+    version: 0.13.0
 ---
 
 # Spider
@@ -91,6 +91,7 @@ Currently, the Spider does not process this type of resources.
 * When checking if an URL was already visited, the behaviour regarding how parameters are handled can be configured on the Spider Options screen.
 * When checking if an URL was already visited, there are a few common parameters which are ignored: jsessionid, phpsessid, aspsessionid, utm_\*
 * The Spider's behaviour regarding cookies depends on how the Spider is started and which options are enabled. For more details refer to the Spider Options screen.
+
 
 The spider is configured using the [Spider Options screen](/docs/desktop/addons/spider/options/).
 

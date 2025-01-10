@@ -13,6 +13,8 @@ A quality assurance focused policy meant to perform fairly quickly while providi
 * A superset of Developer Standard but with important env / server rules enabled
 * Not env issues that should have been fixed by everyone
 
+
 For the list of scan rules included see the [Alert Tag: POLICY_QA_STD](/alerttags/policy_qa_std/) page.
+
 
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

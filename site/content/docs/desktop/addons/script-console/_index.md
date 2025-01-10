@@ -6,12 +6,14 @@ weight: 1
 cascade:
   addon:
     id: scripts
-    version: 45.7.0
+    version: 45.8.0
 ---
 
 # Script Console
 
+
 The Script Console add-on allows you to run scripts that can be embedded within ZAP and can access internal ZAP data structures.  
+
 It supports any scripting language that supports JSR 223 (http://www.jcp.org/en/jsr/detail?id=223) , including:
 
 * ECMAScript / JavaScript (using [Nashorn engine](https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/), included by default)
@@ -39,14 +41,20 @@ Different types of scripts are supported:
 
 **Note:** Add-ons can add additional types of scripts, which should be described in the help of the corresponding add-on.
 
+
 All scripts that are run automatically are initially 'disabled' - you must enable them via the [The Scripts 'tree' tab](/docs/desktop/addons/script-console/tree/)
 before they will run.  
+
 If an error occurs when they run then they will be disabled.  
+
 When you select the script then the last error will be shown in the [Script Console tab](/docs/desktop/addons/script-console/console/).  
+
 Targeted scripts can be invoked by right clicking on a record in the Sites or History tabs and selecting the 'Invoke with script...' menu item.
+
 
 All scripting languages can be used for all script types, but only those languages that have been downloaded from the ZAP Marketplace
 will typically have templates. However you may well be able to adapt a template for another language.  
+
 If your favourite language is not available on the Marketplace then please raise a new issue via the "Online/Report an issue" menu item.  
 
 ## Global Variables
@@ -88,8 +96,10 @@ In JavaScript they are accessed/set as follows:
 
 `
 var ScriptVars = Java.type("org.zaproxy.zap.extension.script.ScriptVars")
+
 ScriptVars.setScriptCustomVar(this.context, "var.name", {x: 1, y: 3})
 print(ScriptVars.getScriptCustomVar(this.context, "var.name").y) // Prints 3
+
 ScriptVars.setGlobalCustomVar("var.name", ["A", "B", "C", "D"])
 print(ScriptVars.getGlobalCustomVar("var.name")[2]) // Prints C
 `

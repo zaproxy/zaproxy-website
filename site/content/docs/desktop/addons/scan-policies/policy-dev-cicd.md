@@ -17,6 +17,8 @@ This policy is designed to be used by developers in a CI/CD pipeline.
 * No informational only rules
 * Minimal overlap
 
+
 For the list of scan rules included see the [Alert Tag: POLICY_DEV_CICD](/alerttags/policy_dev_cicd/) page.
+
 
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

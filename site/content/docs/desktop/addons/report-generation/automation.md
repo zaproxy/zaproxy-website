@@ -16,7 +16,8 @@ The report job allows you to generate reports using any of the installed report 
 ```
   - type: report                       # Report generation
     parameters:
-      template:                        # String: The template id, default : traditional-html
+      template:                        # String: The template id, default: risk-confidence-html
+      theme:                           # String: The template theme, default: the first theme defined for the template (if any)
       reportDir:                       # String: The directory into which the report will be written
       reportFile:                      # String: The report file name pattern, default: {{yyyy-MM-dd}}-ZAP-Report-[[site]]
       reportTitle:                     # String: The report title
