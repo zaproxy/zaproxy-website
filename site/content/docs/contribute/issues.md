@@ -21,11 +21,9 @@ Please include as much information as you can to help us diagnose the problem.
 
 ## Reporting a Vulnerability
 
-If you think you have found a security vulnerability in ZAP then please report it via our [bug bounty program](https://bugcrowd.com/owaspzap).
+If you think you have found a security vulnerability in ZAP then please report it via [email](mailto:zaproxy-admin@googlegroups.com).
 
 We are always very grateful to researchers who report vulnerabilities responsibly and will be very happy to give credit for the valuable assistance they provide.
-
-We do also reward specific serious vulnerabilities - see the bug bounty program for the latest details.
 
 ## Request a New Feature
 

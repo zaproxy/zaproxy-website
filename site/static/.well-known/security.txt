@@ -1,2 +1,2 @@
-# If you would like to report a security issue you may report it to us via Bugcrowd
-Contact: https://bugcrowd.com/owaspzap
+# If you would like to report a security issue you may report it to us via email
+Contact: mailto:zaproxy-admin@googlegroups.com
