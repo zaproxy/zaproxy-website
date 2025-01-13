@@ -33,11 +33,4 @@ Known or intentional weaknesses such as allowing weak TLS/SSL connections or wea
 
 ### Common Implementation Security Weaknesses Countered
 
-In addition to the design principals mentioned above ZAP is subject to a [Bug Bounty](https://bugcrowd.com/owaspzap) program via BugCrowd. Issues identified via the BugBounty program are triaged and addressed appropriately. Examples of items tackled in the manner, thus far, include:
-- Installer DLL hijacking/side-jacking.
-- HTML Injection.
-- RCE and Info leaks via HUD.
-- API Key bypasses in shortcut handling.
-- XSS.
-
-Further, ZAP's codebase is regularly tested via multiple Static Analyzers and issues addressed.
+ZAP's codebase is regularly tested via multiple Static Analyzers and issues addressed.

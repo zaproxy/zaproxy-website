@@ -55,10 +55,6 @@ groups:
         link: https://github.com/zaproxy/zaproxy/issues
         desc: see known issues and feature requests and raise new ones 
 
-      - name: 'Bug Bounty Program'
-        link: https://bugcrowd.com/owaspzap
-        desc: for reporting any vulnerabilities 
-
   - header: 'Get Involved'
     links:
       - name: 'Contributing Guide'

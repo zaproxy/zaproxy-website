@@ -25,8 +25,5 @@ so it is not surprising that make AV tools flag it.
 
 Any issues raised about ZAP or its add-ons being flagged by AV tools will be closed with a link to this FAQ.
 
-If you have hard evidence that there is an actual virus in ZAP or its add-ons then please report that with the evidence to 
-the ZAP [Bug Bounty Program](https://bugcrowd.com/owaspzap).
-
 __If you work for an AV tool vendor and would like to discuss how you can make sure your tool does not incorrectly flag ZAP then please
 [get in touch](mailto:support@zaproxy.com).__
