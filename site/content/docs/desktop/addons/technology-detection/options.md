@@ -7,6 +7,7 @@ weight: 2
 
 # Options Tech Detection screen
 
+
 This screen allows you to configure the [Tech Detection](/docs/desktop/addons/technology-detection/) options:
 
 ### Mode
@@ -20,6 +21,8 @@ The Mode which controls the behavior of the technology detection passive scan ru
 
 Allows the user to select whether or not the technology detection passive scan rule should raise alerts as technologies are identified (Enabled by default). Alerts are Informational and include the Tech Name, a Description of the tech if available, Other Info may include CPE or version details, and References may contain Tech specific URLs.
 
+
 Latest code: [TechPassiveScanner.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/wappalyzer/src/main/java/org/zaproxy/zap/extension/wappalyzer/TechPassiveScanner.java)
+
 
 Alert ID: [10004](/docs/alerts/10004/)

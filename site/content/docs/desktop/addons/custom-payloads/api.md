@@ -5,7 +5,7 @@ type: userguide
 weight: 1
 ---
 
-# Cusotm Payloads API
+# Custom Payloads API
 
 The following views are available via the API:
 
