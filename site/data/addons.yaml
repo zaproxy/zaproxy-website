@@ -57,9 +57,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v56/ascanrulesBeta-beta-56.zap
-  date: 2024-09-24
-  version: 56
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v57/ascanrulesBeta-beta-57.zap
+  date: 2025-01-15
+  version: 57
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -208,12 +208,12 @@
   description: Ability to add, edit or remove payloads that are used i.e. by active
     scanners
   author: ZAP Dev Team
-  status: beta
+  status: release
   infoUrl: /docs/desktop/addons/custom-payloads/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.13.0/custompayloads-beta-0.13.0.zap
-  date: 2023-11-10
-  version: 0.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/custompayloads-v0.14.0/custompayloads-release-0.14.0.zap
+  date: 2025-01-15
+  version: 0.14.0
 - id: database
   name: Database
   description: Provides database engines and related infrastructure.
@@ -813,9 +813,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v41/pscanrulesBeta-beta-41.zap
-  date: 2024-09-02
-  version: 41
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v42/pscanrulesBeta-beta-42.zap
+  date: 2025-01-15
+  version: 42
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
@@ -1075,9 +1075,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.43.0/wappalyzer-release-21.43.0.zap
-  date: 2024-11-25
-  version: 21.43.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.44.0/wappalyzer-release-21.44.0.zap
+  date: 2025-01-15
+  version: 21.44.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
