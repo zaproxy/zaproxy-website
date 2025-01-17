@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.10.0
+    version: 0.11.0
 ---
 
 # Client Side Integration
@@ -28,7 +28,7 @@ The extensions stream significant browser based events back to ZAP, giving ZAP a
 If you do not launch your browser(s) from ZAP then you can still install these extensions directly from the relevant stores:
 
 * Firefox [ZAP Browser Extension](https://addons.mozilla.org/en-GB/firefox/addon/zap-browser-extension)
-* Chrome [ZAP Browser Extension](https://chromewebstore.google.com/detail/zap-by-checkmarx-browser/hkjompcghnoikggknlpadkiphjbffilc)
+* Chrome [ZAP Browser Extension](https://chromewebstore.google.com/detail/zap-by-checkmarx-browser/cgkggmillbmmpokepnicllalaohphffo)
 
 Note that you may need to configure the extensions via their options pages to update the host and API key.
 
@@ -65,6 +65,10 @@ Selecting a node that has been visited by ZAP will display details about that no
 
 
 The following context menu items are supported:
+
+#### Export Client Map
+
+Allows users to export a representation of the Client Map in YAML format. Including all children and the associated component details of each node.
 
 #### Copy URLs
 
