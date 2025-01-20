@@ -1,43 +1,56 @@
-- item: Release 2.16
+- item: Release 2.18
   status: ⌚ Planned
-  year: 2024
-- item: Import PCAP files
-  status: ⚡ In progress
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Release 2.17
+  status: ⌚ Planned
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Expand Custom Payloads support to additional rules
+  url: /docs/desktop/addons/custom-payloads/
+  status: ⌚ Planned
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Expand PCAP import support
+  status: ⌚ Planned
   url: https://github.com/zaproxy/zaproxy/issues/4812
-  year: 2024
-- item: gRPC Support
-  status: ⚡ In progress
+  year: 2025
+- item: Expand gRPC support
+  status: ⌚ Planned
   url: https://github.com/zaproxy/zaproxy/issues/7695
-  year: 2024
-  sponsor: ZAProxy Ltd
-  sponsorlink: https://www.zaproxy.com/
-- item: Improve modern web app handling
-  url: /blog/2023-11-03-handling-modern-web-apps-better-part1/
+  year: 2025
+- item: Improved Authentication Handling
   status: ⚡ In progress
-  year: 2024
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Continue to improve modern web app handling
+  url: /docs/desktop/addons/client-side-integration/
+  status: ⚡ In progress
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
 - item: Automation Framework enhancements
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/6461
-  year: 2024
-- item: Move core functionality to add-ons
-  status: ⚡ In progress
-  year: 2024
-- item: Move Passive Scanner to an add-on
-  status: ⚡ In progress
-  url: https://github.com/zaproxy/zaproxy/issues/7959
-  year: 2024
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
 - item: Move Break Functionality to an add-on
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/8153
-  year: 2024
-- item: "OpenSSF Best Practices: Silver"
+  year: 2025
+- item: "OpenSSF Best Practices: Silver Currently 54 of 55 criteria met"
   status: ⚡ In progress
   url: https://bestpractices.coreinfrastructure.org/en/projects/24?criteria_level=1
-  year: 2024
+  year: 2025
 - item: Ensure alert details and examples are complete and up to date
   status: ⚡ In progress
   url: /docs/alerts/
-  year: 2024
+  year: 2025
 
 - item: Continue working on issues
   status: ♻ Ongoing
@@ -51,7 +64,43 @@
   status: ♻ Ongoing
   url: /blog/2023-01-19-authentication-help/
   year: n/a
+- item: Move core functionality to add-ons
+  status: ♻ Ongoing
+  year: n/a
 
+- item: Initial PCAP import support
+  status: 🎉 Finished
+  url: https://github.com/zaproxy/zaproxy/issues/4812
+  year: 2024
+- item: Initial gRPC Support
+  status: 🎉 Finished
+  url: https://github.com/zaproxy/zaproxy/issues/7695
+  year: 2024
+  sponsor: ZAProxy Ltd
+  sponsorlink: https://www.zaproxy.com/
+- item: Improve modern web app handling
+  url: /blog/2023-11-03-handling-modern-web-apps-better-part1/
+  status: 🎉 Finished
+  year: 2024
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Release 2.16
+  status: 🎉 Finished
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Move Passive Scanner to an add-on
+  status: 🎉 Finished
+  url: https://github.com/zaproxy/zaproxy/issues/7959
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Promote the Custom Payloads add-on to Release
+  url: /docs/desktop/addons/custom-payloads/
+  status: 🎉 Finished
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
 - item: Secure Funding for ZAP Development
   status: 🎉 Finished
   url: /blog/2024-09-24-zap-has-joined-forces-with-checkmarx/
