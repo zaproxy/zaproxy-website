@@ -2,7 +2,7 @@
 type: page
 title: ZAP Chat Videos
 layout: youtube-videos
-featured: 7kqg7x7d6os
+featured: o_IgsCaaQMo
 links:
   - name: '01 Introduction'
     uuid: qrAJ32rdi14
@@ -57,6 +57,9 @@ links:
 
   - name: '18 Antero, The New ZAP Project Manager'
     uuid: 7kqg7x7d6os
+
+  - name: '19 Release 2.16.0'
+    uuid: o_IgsCaaQMo
 
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.
