@@ -13,7 +13,7 @@ If ZAP is handling authentication then it needs to handle sessions as well - log
 [Session management](/docs/desktop/start/features/sessionmanagement/) configuration is part of a ZAP context.
 
 * In the ZAP desktop it is configured via the Context [Session Management](/docs/desktop/ui/dialogs/session/contexts/) screen.
-* In the [Authentication Framework](/docs/automate/automation-framework/) it is part of a context defined in the [environment](/docs/desktop/addons/automation-framework/environment/).
+* In the [Automation Framework](/docs/automate/automation-framework/) it is part of a context defined in the [environment](/docs/desktop/addons/automation-framework/environment/).
 * In the API it is configured via endpoints underneath the [sessionManagement](/docs/api/#zap-api-sessionmanagement) component.
 
 ZAP supports Cookie and HTTP Authentication Session Management out of the box.
