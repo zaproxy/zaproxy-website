@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.17.0
+    version: 0.18.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.17.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.18.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -39,7 +39,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.44.0
+    version: 0.45.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -60,7 +60,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: byte-buddy
-    version: 1.15.10
+    version: 1.15.11
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.14.9
@@ -135,7 +135,7 @@ sbom:
     version: 2.26.1
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.28.0
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_check_api
     version: 2.26.1
@@ -148,9 +148,6 @@ sbom:
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
-    licenses: Apache-2.0
-  - name: failsafe
-    version: 3.3.2
     licenses: Apache-2.0
   - name: failureaccess
     version: 1.0.1
@@ -171,7 +168,7 @@ sbom:
     version: 32.1.1-jre
     licenses: Apache-2.0
   - name: guava
-    version: 33.3.1-jre
+    version: 33.4.0-jre
     licenses: Apache-2.0
   - name: guice
     version: 5.0.1
@@ -420,40 +417,40 @@ sbom:
     version: '3.3'
     licenses: Apache-2.0
   - name: opentelemetry-api
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-api-incubator
-    version: 1.44.1-alpha
+    version: 1.46.0-alpha
     licenses: Apache-2.0
   - name: opentelemetry-context
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-exporter-logging
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-common
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-extension-autoconfigure
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-extension-autoconfigure-spi
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-logs
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-metrics
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-trace
-    version: 1.44.1
+    version: 1.46.0
     licenses: Apache-2.0
   - name: opentelemetry-semconv
-    version: 1.25.0-alpha
+    version: 1.28.0-alpha
     licenses: Apache-2.0
   - name: opentest4j
     version: 1.3.0
@@ -486,58 +483,58 @@ sbom:
     version: 3.5.3
     licenses: BSD-3-Clause
   - name: selenium-api
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.27.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v129
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-devtools-v130
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-devtools-v131
-    version: 4.27.0
+    version: 4.28.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v132
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-devtools-v85
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: service
     version: 1.16.0
@@ -576,13 +573,13 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.16.0-SNAPSHOT
+    version: 2.16.0
     licenses: Apache-2.0
   - name: zest
-    version: 0.22.0
+    version: 0.23.0
     licenses: MPL-2.0
   - name: zest
-    version: 48.0.0
+    version: 48.2.0
     licenses: ''
 ---
 

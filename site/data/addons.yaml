@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.17.0/authhelper-beta-0.17.0.zap
-  date: 2025-01-09
-  version: 0.17.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.18.0/authhelper-beta-0.18.0.zap
+  date: 2025-01-27
+  version: 0.18.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
