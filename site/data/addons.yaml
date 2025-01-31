@@ -231,9 +231,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/dev-add-on/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.8.0/dev-alpha-0.8.0.zap
-  date: 2024-11-13
-  version: 0.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/dev-v0.9.0/dev-alpha-0.9.0.zap
+  date: 2025-01-31
+  version: 0.9.0
 - id: diff
   name: Diff
   description: Displays a dialog showing the differences between 2 requests or responses.

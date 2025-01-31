@@ -6,12 +6,13 @@ weight: 1
 cascade:
   addon:
     id: dev
-    version: 0.8.0
+    version: 0.9.0
 ---
 
 # Dev Add-On
 
 An add-on to help with development of ZAP. It starts a simple test web service, which by default will be accessible via http://localhost:9091
+
 
 It provides:
 
