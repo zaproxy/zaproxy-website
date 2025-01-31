@@ -2,7 +2,7 @@
 type: page
 title: ZAP Chat Videos
 layout: youtube-videos
-featured: o_IgsCaaQMo
+featured: OkELONAQyAY
 links:
   - name: '01 Introduction'
     uuid: qrAJ32rdi14
@@ -60,6 +60,9 @@ links:
 
   - name: '19 Release 2.16.0'
     uuid: o_IgsCaaQMo
+
+  - name: '20 Client Spider'
+    uuid: OkELONAQyAY
 
 ---
 A new and ongoing [set of videos](https://www.youtube.com/playlist?list=PLEBitBW-HlsvFEfyWdpLe6IlQoitjaPCX) focusing on ZAP features, new and old.

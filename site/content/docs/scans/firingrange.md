@@ -11,9 +11,6 @@ It does not appear to be being actively maintained and some of the tests no long
 
 Click on the Sections to see the full set of results, which also link to the online test page and the scan rule which should find the vulnerability.
 
-Changes which find any of the missed vulnerabilities are eligible for a bounty: 
-see Issue [#7122](https://github.com/zaproxy/zaproxy/issues/7122) for more details.
-
 
 {{< scan-table >}}
 

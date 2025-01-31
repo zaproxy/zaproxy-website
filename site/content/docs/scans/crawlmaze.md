@@ -10,9 +10,6 @@ It does appear to be being actively maintained and has merged a fix that we subm
 
 As long as one of the ZAP spiders finds the relevant page we count that as a pass, but ideally both spiders will find as many of the URLs as possible.
 
-Changes which find any of the missed URLs for either spider are eligible for a bounty: 
-see Issue [#7152](https://github.com/zaproxy/zaproxy/issues/7152) for more details.
-
 {{< spider-table >}}
 
   {{< spider-results target= "crawlmaze" section="all" expand="true" >}}
