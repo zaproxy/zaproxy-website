@@ -93,7 +93,7 @@ We also need to actually use the Client Map when attacking sites, especially for
 ### We Need Your Feedback
 While we have tested the Client Spider against various deliberately vulnerable modern web apps, the key measure of success is how well it runs against real world apps.
 
-For this we need your feedback on this ZAP User Group thread: TODO add link once the blog post has been published.
+For this we need your feedback on this [ZAP User Group thread](https://groups.google.com/g/zaproxy-users/c/xcL656sglG8/m/6py_R6mQDwAJ).
 
 Please run the Client Spider against your apps and let us know how well it works, either on its own or in comparison to the AJAX Spider.
 
