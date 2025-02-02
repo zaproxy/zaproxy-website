@@ -11,10 +11,6 @@
   name: "Cross-Domain Misconfiguration"
   status: "release"
   type: "Passive"
-- id: 10054
-  name: "Cookie without SameSite Attribute"
-  status: "release"
-  type: "Passive"
 - id: 10021
   name: "X-Content-Type-Options Header Missing"
   status: "release"
@@ -27,6 +23,10 @@
   name: "Retrieved from Cache"
   status: "release"
   type: "Passive"
+- id: 10054
+  name: "Cookie without SameSite Attribute"
+  status: "release"
+  type: "Passive"
 - id: 10035
   name: "Strict-Transport-Security Header"
   status: "release"
@@ -35,14 +35,14 @@
   name: "Re-examine Cache-control Directives"
   status: "release"
   type: "Passive"
-- id: 10096
-  name: "Timestamp Disclosure - Unix"
-  status: "release"
-  type: "Passive"
 - id: 10055
   name: "CSP"
   status: "release"
   type: "Passive"
+- id: 40018
+  name: "SQL Injection"
+  status: "release"
+  type: "Active"
 - id: 10017
   name: "Cross-Domain JavaScript Source File Inclusion"
   status: "release"
@@ -51,18 +51,14 @@
   name: "HTTP Server Response Header"
   status: "release"
   type: "Passive"
-- id: 10104
-  name: "User Agent Fuzzer"
-  status: "release"
-  type: "Active"
 - id: 90033
   name: "Loosely Scoped Cookie"
   status: "release"
   type: "Passive"
-- id: 10010
-  name: "Cookie No HttpOnly Flag"
+- id: 10104
+  name: "User Agent Fuzzer"
   status: "release"
-  type: "Passive"
+  type: "Active"
 - id: 10020
   name: "Anti-clickjacking Header"
   status: "release"
@@ -75,7 +71,11 @@
   name: "Session Management Response Identified"
   status: "beta"
   type: "Passive"
-- id: 10062
-  name: "PII Disclosure"
+- id: 10096
+  name: "Timestamp Disclosure - Unix"
+  status: "release"
+  type: "Passive"
+- id: 10010
+  name: "Cookie No HttpOnly Flag"
   status: "release"
   type: "Passive"

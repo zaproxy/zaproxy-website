@@ -1,13 +1,13 @@
 {
-  "title": "News Pings by OS in December 2024",
-  "description": "The number of News pings from ZAP by OS in December 2024",
+  "title": "News Pings by OS in January 2025",
+  "description": "The number of News pings from ZAP by OS in January 2025",
   "data": [
     ["OS", "Count"],
-    ["Linux", 4141414],
-    ["Windows", 246461],
-    ["Kali", 120584],
-    ["MacOS", 31315],
-    ["BackBox", 749],
-    ["Unknown", 53]
+    ["Linux", 4508718],
+    ["Windows", 211382],
+    ["Kali", 106581],
+    ["MacOS", 26234],
+    ["BackBox", 934],
+    ["Unknown", 84]
   ]
 }
