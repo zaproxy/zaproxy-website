@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: postman
-    version: 0.5.0
+    version: 0.6.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.5.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.6.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -381,7 +381,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.16.0-SNAPSHOT
+    version: 2.16.0
     licenses: Apache-2.0
 ---
 

@@ -773,9 +773,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/postman-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.5.0/postman-alpha-0.5.0.zap
-  date: 2025-01-10
-  version: 0.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.6.0/postman-alpha-0.6.0.zap
+  date: 2025-02-03
+  version: 0.6.0
 - id: pscan
   name: Passive Scanner
   description: Provides core passive scanning capabilities.
