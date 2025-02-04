@@ -38,7 +38,7 @@ Browser Based Authentication can be configured in the environment section of an 
 
 ## AJAX Spider Integration
 
-The AJAX Spider with automatically login if a user is specified which is in a context that uses Browser Based Authentication.
+The AJAX Spider will automatically login if a user is specified which is in a context that uses Browser Based Authentication.
 
 
 Note that this uses the Selenium integration detailed below, so any browsers launched manually will also be logged in if the

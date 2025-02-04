@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: zest
-    version: 48.1.0
+    version: 48.2.0
 ---
 
 # Zest

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Verification Request Identification
 type: userguide
-weight: 7
+weight: 8
 ---
 
 # Verification Request Identification

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.18.0
+    version: 0.19.0
 ---
 
 # Authentication Helper
@@ -26,6 +26,7 @@ The features currently supported are:
 * [Authentication Request Identification](/docs/desktop/addons/authentication-helper/auth-req-id/)
 * [Auto-Detect Authentication](/docs/desktop/addons/authentication-helper/autodetect-auth/)
 * [Browser Based Authentication](/docs/desktop/addons/authentication-helper/browser-auth/)
+* [Client Script Authentication](/docs/desktop/addons/authentication-helper/client-script/)
 * [Session Management Identification](/docs/desktop/addons/authentication-helper/session-mgmt-id/)
 * [Auto-Detect Session Management](/docs/desktop/addons/authentication-helper/autodetect-session/)
 * [Header Based Session Management](/docs/desktop/addons/authentication-helper/session-header/)
