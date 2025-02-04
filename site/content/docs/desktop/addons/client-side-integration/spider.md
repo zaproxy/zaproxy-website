@@ -14,8 +14,7 @@ The Client Spider works in a similar way to the AJAX Spider but it has access to
 which means that it can find content which the AJAX Spider cannot find.
 
 
-The Client Spider supports all of the authentication options supported by ZAP (including Browser Based Authentication),
-and will run any enabled Selenium scripts in the browsers that it launches.
+The Client Spider supports all of the authentication options supported by ZAP, and will run any enabled Selenium scripts in the browsers that it launches.
 
 
 While it is still at an early stage we believe it is a more effective approach than the AJAX Spider.

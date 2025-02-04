@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.44.0
+    version: 0.45.0
 ---
 
 # Automation Framework

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.18.0
+    version: 0.19.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.18.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.19.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -78,7 +78,13 @@ sbom:
     version: 1.9.4
     licenses: Apache-2.0
   - name: commons-codec
+    version: '1.15'
+    licenses: Apache-2.0
+  - name: commons-codec
     version: 1.17.1
+    licenses: Apache-2.0
+  - name: commons-codec
+    version: 1.17.2
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
@@ -115,9 +121,6 @@ sbom:
     licenses: Apache-2.0
   - name: commons-math
     version: '1.2'
-    licenses: Apache-2.0
-  - name: commons-net
-    version: 3.11.1
     licenses: Apache-2.0
   - name: commons-text
     version: 1.12.0
@@ -195,25 +198,25 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit
-    version: 4.7.0
+    version: 4.9.0
     licenses: Apache-2.0
   - name: htmlunit-core-js
-    version: 4.7.0
+    version: 4.9.0
     licenses: Apache-2.0
   - name: htmlunit-csp
-    version: 4.7.0
+    version: 4.9.0
     licenses: Apache-2.0
   - name: htmlunit-cssparser
-    version: 4.7.0
+    version: 4.9.0
     licenses: Apache-2.0
   - name: htmlunit-websocket-client
-    version: 4.7.0
+    version: 4.9.0
     licenses: Apache-2.0
   - name: htmlunit-xpath
-    version: 4.7.0
+    version: 4.9.0
     licenses: Apache-2.0
   - name: htmlunit3-driver
-    version: 4.27.0
+    version: 4.28.0
     licenses: Apache-2.0
   - name: httpclient
     version: 4.5.14
@@ -381,7 +384,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: neko-htmlunit
-    version: 4.7.0
+    version: 4.9.0
     licenses: Apache-2.0
   - name: nekohtml
     version: 1.9.22
@@ -473,6 +476,9 @@ sbom:
   - name: org.osgi.service.serviceloader
     version: 1.0.0
     licenses: Apache-2.0
+  - name: otp-java
+    version: 2.1.0
+    licenses: MIT
   - name: pcollections
     version: 4.0.1
     licenses: MIT
@@ -482,59 +488,62 @@ sbom:
   - name: rsyntaxtextarea
     version: 3.5.3
     licenses: BSD-3-Clause
+  - name: scripts
+    version: 45.9.0
+    licenses: ''
   - name: selenium-api
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-devtools-v130
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-devtools-v131
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-devtools-v132
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-devtools-v85
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.28.0
+    version: 4.28.1
     licenses: Apache-2.0
   - name: service
     version: 1.16.0
@@ -578,8 +587,5 @@ sbom:
   - name: zest
     version: 0.23.0
     licenses: MPL-2.0
-  - name: zest
-    version: 48.2.0
-    licenses: ''
 ---
 

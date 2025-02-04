@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Authentication Tester Dialog
 type: userguide
-weight: 8
+weight: 9
 ---
 
 # Authentication Tester Dialog

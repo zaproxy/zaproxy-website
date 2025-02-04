@@ -27,6 +27,13 @@ The Automation Framework supports the following methods of authentication suppor
 * JSON-based
 * Script
 
+The Automation Framework supports the following methods of authentication provided by the Authentication Helper add-on:
+
+
+* Auto-Detect Authentication
+* Browser-based Authentication
+* Client Script Authentication
+
 ## Authentication Statistics
 
 ZAP maintains authentication statistics - search for 'auth' in the key field on the [ZAP Internal Statistics](/docs/internal-statistics/) website page. These are ideal to use in [tests](/docs/desktop/addons/automation-framework/tests/) to make sure the authentication is working as you expect.
