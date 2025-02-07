@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.19.0
+    version: 0.20.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.19.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.20.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -39,7 +39,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.45.0
+    version: 0.46.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -76,9 +76,6 @@ sbom:
     licenses: MIT
   - name: commons-beanutils
     version: 1.9.4
-    licenses: Apache-2.0
-  - name: commons-codec
-    version: '1.15'
     licenses: Apache-2.0
   - name: commons-codec
     version: 1.17.1
