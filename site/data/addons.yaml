@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.19.0/authhelper-beta-0.19.0.zap
-  date: 2025-02-04
-  version: 0.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.20.0/authhelper-beta-0.20.0.zap
+  date: 2025-02-07
+  version: 0.20.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -1125,6 +1125,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.2.0/zest-beta-48.2.0.zap
-  date: 2025-02-04
-  version: 48.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.3.0/zest-beta-48.3.0.zap
+  date: 2025-02-07
+  version: 48.3.0
