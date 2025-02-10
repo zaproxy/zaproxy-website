@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.20.0/authhelper-beta-0.20.0.zap
-  date: 2025-02-07
-  version: 0.20.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.21.0/authhelper-beta-0.21.0.zap
+  date: 2025-02-10
+  version: 0.21.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.45.0/automation-beta-0.45.0.zap
-  date: 2025-02-04
-  version: 0.45.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.46.0/automation-beta-0.46.0.zap
+  date: 2025-02-10
+  version: 0.46.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console

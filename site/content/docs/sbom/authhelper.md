@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.20.0
+    version: 0.21.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.20.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.21.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
