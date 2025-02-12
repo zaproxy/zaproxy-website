@@ -14,10 +14,10 @@ cascade:
 
 The Script Console add-on allows you to run scripts that can be embedded within ZAP and can access internal ZAP data structures.  
 
-It supports any scripting language that supports JSR 223 (http://www.jcp.org/en/jsr/detail?id=223) , including:
+It supports any scripting language that supports [JSR 223](https://www.jcp.org/en/jsr/detail?id=223), including:
 
-* ECMAScript / JavaScript (using [Nashorn engine](https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/), included by default)
-* Zest <https://developer.mozilla.org/en-US/docs/zest> (included by default)
+* ECMAScript / JavaScript (through the [GraalVM JavaScript add-on](/docs/desktop/addons/graalvm-javascript/))
+* [Zest](/docs/desktop/addons/zest/)
 * Groovy <http://groovy-lang.org/>
 * Python <http://www.jython.org>
 * Ruby - <http://jruby.org/>
