@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.21.0
+    version: 0.22.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.21.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.22.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -26,6 +26,9 @@ sbom:
   - name: asm-tree
     version: '9.6'
     licenses: BSD-3-Clause
+  - name: attoparser
+    version: 2.0.7.RELEASE
+    licenses: Apache-2.0
   - name: auto-common
     version: 1.2.2
     licenses: Apache-2.0
@@ -38,17 +41,29 @@ sbom:
   - name: auto-value-annotations
     version: '1.9'
     licenses: Apache-2.0
-  - name: automation
-    version: 0.46.0
-    licenses: ''
+  - name: bcmail-jdk14
+    version: '1.76'
+    licenses: Bouncy Castle Licence
   - name: bcmail-jdk18on
     version: '1.77'
+    licenses: Bouncy Castle Licence
+  - name: bcpkix-jdk14
+    version: '1.76'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
     version: '1.77'
     licenses: Bouncy Castle Licence
+  - name: bcprov-jdk14
+    version: '1.76'
+    licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
     version: '1.77'
+    licenses: Bouncy Castle Licence
+  - name: bctsp-jdk14
+    version: '1.46'
+    licenses: Bouncy Castle Licence
+  - name: bcutil-jdk14
+    version: '1.76'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
     version: '1.77'
@@ -161,6 +176,12 @@ sbom:
   - name: flatlaf
     version: 3.5.4
     licenses: Apache-2.0
+  - name: flying-saucer-core
+    version: 9.3.1
+    licenses: LGPL-2.1-or-later
+  - name: flying-saucer-pdf
+    version: 9.3.1
+    licenses: LGPL-2.1-or-later
   - name: gson
     version: 2.8.5
     licenses: Apache-2.0
@@ -236,6 +257,9 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
+  - name: itext
+    version: 2.1.7
+    licenses: MPL-1.0
   - name: j2objc-annotations
     version: 3.0.0
     licenses: Apache-2.0
@@ -275,6 +299,9 @@ sbom:
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
+  - name: javassist
+    version: 3.29.0-GA
+    licenses: MPL-1.1, LGPL-2.1-only, Apache-2.0
   - name: javax.inject
     version: '1'
     licenses: Apache-2.0
@@ -347,6 +374,9 @@ sbom:
   - name: log4j-slf4j-impl
     version: 2.24.2
     licenses: Apache-2.0
+  - name: log4j-slf4j2-impl
+    version: 2.24.2
+    licenses: Apache-2.0
   - name: lombok
     version: 1.18.34
     licenses: MIT
@@ -415,6 +445,9 @@ sbom:
     licenses: Apache-2.0
   - name: objenesis
     version: '3.3'
+    licenses: Apache-2.0
+  - name: ognl
+    version: 3.3.4
     licenses: Apache-2.0
   - name: opentelemetry-api
     version: 1.46.0
@@ -546,7 +579,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: slf4j-api
-    version: 1.7.36
+    version: 2.0.16
     licenses: MIT
   - name: slf4j-log4j12
     version: 1.7.32
@@ -563,6 +596,12 @@ sbom:
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
+  - name: thymeleaf
+    version: 3.1.2.RELEASE
+    licenses: Apache-2.0
+  - name: unbescape
+    version: 1.1.6.RELEASE
+    licenses: Apache-2.0
   - name: woodstox-core
     version: 6.6.1
     licenses: Apache-2.0
