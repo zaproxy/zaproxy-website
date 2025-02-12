@@ -6,13 +6,14 @@ weight: 1
 cascade:
   addon:
     id: neonmarker
-    version: 1.6.0
+    version: 1.7.0
 ---
 
 # Neonmarker
 
 Neonmarker add-on, which colours History table entries based on
 tags.
+
 
 The add-on also facilitates colouring arbitrary messages in the
 History table via a right-click context menu. Tags are added to the
