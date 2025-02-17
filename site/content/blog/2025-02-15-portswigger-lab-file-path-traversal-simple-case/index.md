@@ -9,19 +9,23 @@ authors:
     - Bash Bunny
 ---
 
-The lab tells you to retrieve the content of the `/etc/passwd` file with a path traversal vulnerability on the display of product images.
+This [Portswigger Lab](https://portswigger.net/web-security/file-path-traversal/lab-simple) has a path traversal vulnerability, which allows anyone to retrieve any file from the system the webpage is hosted in. In this particular case the laboratory consist on retrieving the `/etc/passwd` file, demonstrating this way the vulnerability.
 
-The path traversal vulnerability allows you to retrieve any file from the file system of the machine.
+If you wan to know more about Path Traversal, I suggest looking at the [ZAP Path Traversal](https://www.zaproxy.org/docs/alerts/6-2/) website.
 
-To do that:
-- Access the URL with the proxy enabled.
-- Look in the site Tree the request made by your browser.
+To solve the lab, you have to do the following steps:
+- Access the URL provided by Portswigger, which is something like `https:[random_letter_numbers].web-security-academy.net/`, with the proxy enabled.
+- Look in the Site Tree for the requests made by your browser.
 
 ![ZAP Site Tree GET Image](images/zap-site-tree.png)
 
 - Notice there is a `GET: image(filename)` on those requests, that loads the image for the products.
 - Send that request to the requester (`Ctrl+W`).
-- Change what's behind the `filename` parameter to `../../../etc/passwd` to trigger the vulnerability.
-- Change the `Body` type of the response to `Text` to see that the `/etc/passwd` is returned.
+- Change the value of the `filename` parameter to `../../../etc/passwd` to trigger the vulnerability.
+- In the Response tab, change the `Body` type of the response to `Text` to see that the `/etc/passwd` is returned.
+
+Congratulations, you solve the lab!!
+
+Here is a video step by step with the explanations:
 
 {{< youtube uuid="MT01x-vyCJU" >}}
