@@ -181,3 +181,9 @@ trevor:
   picture: /img/authors/trevor-mountney_400x400.png
   twitter:
   is_core: false
+
+chibbyalucard:
+  name: Jemimah O.
+  picture: /img/authors/zap_400x400.png
+  twitter:
+  is_core: false
