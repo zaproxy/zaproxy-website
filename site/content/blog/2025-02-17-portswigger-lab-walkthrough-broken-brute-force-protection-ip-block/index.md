@@ -65,17 +65,12 @@ Copy-paste the lab URL into the *URL to explore* field and click *Launch Browser
 ![launch-test-site-ZAP-configured-browser.png](images/launch-test-site-ZAP-configured-browser.png)
 &nbsp;
 
-<!-- > [!NOTE]
-> Useful information that users should know, even when skimming content. -->
-
-<aside>
-
-💡 If you have any issues launching your browser from ZAP, see the following pages for help debugging the problem. Note that ZAP uses add-ons to enhance its core features, and one of these is the Selenium add-on, which provides drivers for interfacing with supported browsers. It is installed by default and exposes some configurable options:
-
-1. [How can I fix 'browser was not found'?](https://www.zaproxy.org/faq/how-can-i-fix-browser-was-not-found/) - Zaproxy Docs (FAQ)
-2. [Manual Explore](https://www.zaproxy.org/docs/desktop/addons/quick-start/#manual-explore) - Zaproxy Docs
-3. [Selenium](https://www.zaproxy.org/docs/desktop/addons/selenium/) - Zaproxy Docs
-</aside>
+> [!NOTE]
+> If you have any issues launching your browser from ZAP, see the following pages for help debugging the problem. Note that ZAP uses add-ons to enhance its core features, and one of these is the Selenium add-on, which provides drivers for interfacing with supported browsers. It is installed by default and exposes some configurable options:
+>
+> 1. [How can I fix 'browser was not found'?](https://www.zaproxy.org/faq/how-can-i-fix-browser-was-not-found/) - Zaproxy Docs (FAQ)
+> 2. [Manual Explore](https://www.zaproxy.org/docs/desktop/addons/quick-start/#manual-explore) - Zaproxy Docs
+> 3. [Selenium](https://www.zaproxy.org/docs/desktop/addons/selenium/) - Zaproxy Docs
 
 Assuming you’ve opened the lab in a browser configured to proxy through ZAP, let’s try to log in with a random password. We want to capture a POST request we can work with in ZAP. I’ll try “randompass”. We’re notified that this is an “Incorrect password”, which is expected:
 
@@ -127,11 +122,8 @@ What about changing our IP address? In the screenshot below,  I’ve added and s
 
 However, we still get the same error message: “You have made too many incorrect login attempts. Please try again in 1 minute(s).” This indicates that changing our IP won’t work here either. So, what we can do is wait one minute between requests.
 
-<aside>
-
-💡 Make sure to test with the correct credentials and the "X-Forwarded-For" header within one minute of the last failed login attempt. Since the account lockout resets automatically after one minute, waiting too long will make it difficult to verify whether the bypass works.
-
-</aside>
+> [!NOTE]
+> Make sure to test with the correct credentials and the "X-Forwarded-For" header within one minute of the last failed login attempt. Since the account lockout resets automatically after one minute, waiting too long will make it difficult to verify whether the bypass works.
 
 ## Brute-forcing the Password
 
@@ -236,11 +228,8 @@ function getOptionalParamsNames() {
 
 There are a few points to note here. First, ZAP requires specific functions to be implemented for different script types. For our Fuzzer HTTP Processor type, we have four functions to implement. We’re really only interested in `processMessage`; however, the other three functions must still be implemented and return truthy values.
 
-<aside>
-
-💡 Refer to the default templates for the functions that must be implemented for each script type. You can find these in the Templates section of the Scripts tab; they contain documentation comments describing each function and its parameters. You can also create new scripts from the templates. 
-
-</aside>
+> [!NOTE]
+> Refer to the default templates for the functions that must be implemented for each script type. You can find these in the Templates section of the Scripts tab; they contain documentation comments describing each function and its parameters. You can also create new scripts from the templates.
 
 `processMessage` is executed on each message before it is sent to the server. This allows us to dynamically alter our payloads or add delays between requests.
 
