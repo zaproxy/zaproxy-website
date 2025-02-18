@@ -119,7 +119,7 @@ However, entering correct credentials doesn’t unlock the account. We’re stil
 ![entering-correct-credentials-doesn't-work.png](images/entering-correct-credentials-doesnt-work.png)
 &nbsp;
 
-What about changing our IP address? In the screenshot below,  I’ve added and set the “X-Forwarded-For” header to a random integer: 
+What about changing our IP address? In the screenshot below,  I’ve added and set the “[X-Forwarded-For](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For)” header to a random integer: 
 
 &nbsp;
 ![attempt-bypass-with-ip-change.png](images/attempt-bypass-with-ip-change.png)
