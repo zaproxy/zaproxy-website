@@ -125,7 +125,7 @@ What about changing our IP address? In the screenshot below,  I’ve added and s
 ![attempt-bypass-with-ip-change.png](images/attempt-bypass-with-ip-change.png)
 &nbsp;
 
-However, we still get the same error message: “You have made too many incorrect login attempts. Please try again in 1 minute(s).”. This indicates that changing our IP won’t work here either. So, what we can do is wait one minute between requests.
+However, we still get the same error message: “You have made too many incorrect login attempts. Please try again in 1 minute(s).” This indicates that changing our IP won’t work here either. So, what we can do is wait one minute between requests.
 
 <aside>
 
