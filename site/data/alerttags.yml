@@ -40,6 +40,9 @@ CWE-120:
 CWE-1275:
   link: https://cwe.mitre.org/data/definitions/1275.html
 
+CWE-1295:
+  link: https://cwe.mitre.org/data/definitions/1295.html
+
 CWE-1336:
   link: https://cwe.mitre.org/data/definitions/1336.html
 
@@ -121,6 +124,9 @@ CWE-434:
 CWE-472:
   link: https://cwe.mitre.org/data/definitions/472.html
 
+CWE-489:
+  link: https://cwe.mitre.org/data/definitions/489.html
+
 CWE-497:
   link: https://cwe.mitre.org/data/definitions/497.html
 
@@ -136,6 +142,9 @@ CWE-525:
 CWE-530:
   link: https://cwe.mitre.org/data/definitions/530.html
 
+CWE-532:
+  link: https://cwe.mitre.org/data/definitions/532.html
+
 CWE-538:
   link: https://cwe.mitre.org/data/definitions/538.html
 
@@ -148,8 +157,14 @@ CWE-541:
 CWE-548:
   link: https://cwe.mitre.org/data/definitions/548.html
 
+CWE-550:
+  link: https://cwe.mitre.org/data/definitions/550.html
+
 CWE-565:
   link: https://cwe.mitre.org/data/definitions/565.html
+
+CWE-598:
+  link: https://cwe.mitre.org/data/definitions/598.html
 
 CWE-601:
   link: https://cwe.mitre.org/data/definitions/601.html
