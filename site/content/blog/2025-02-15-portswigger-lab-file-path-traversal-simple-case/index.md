@@ -24,7 +24,7 @@ To solve the lab, you have to do the following steps:
 - Change the value of the `filename` parameter to `../../../etc/passwd` to trigger the vulnerability.
 - In the Response tab, change the `Body` type of the response to `Text` to see that the `/etc/passwd` is returned.
 
-Congratulations, you solve the lab!!
+Congratulations, you solve the lab!! 
 
 Here is a video step by step with the explanations:
 
