@@ -1,5 +1,5 @@
 ---
-title: "2025 02 15 Solving Portswigger Lab File Path Traversal Simple Case with ZAP"
+title: "Solving Portswigger Lab File Path Traversal Simple Case with ZAP"
 summary: "Video and explanation of How to Solve the Portswigger labs using ZAP, in this case: 'Path Traversal Simple Case'"
 date: 2025-02-15
 tags:
