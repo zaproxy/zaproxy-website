@@ -37,13 +37,13 @@ groups:
         link: https://groups.google.com/group/zaproxy-develop
         desc: ask questions about the ZAP internals 
     
-      - name: 'HUD Group'
-        link: https://groups.google.com/group/zaproxy-hud
-        desc: ask questions about the ZAP Heads Up Display internals 
-    
-      - name: 'IRC'
-        link: https://web.libera.chat/#zaproxy
-        desc: 'chat with core ZAP developers on the #zaproxy Libera Chat channel (European office hours usually best)' 
+      - name: 'Slack'
+        link: /slack/
+        desc: 'chat with core ZAP developers on the ZAP Slack' 
+
+      - name: 'Slack Invite'
+        link: /slack/invite
+        desc: 'join the ZAP Slack' 
 
       - name: 'Evangelists'
         link: /evangelists/
