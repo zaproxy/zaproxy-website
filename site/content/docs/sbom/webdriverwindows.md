@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdriverwindows
-    version: '125'
+    version: '126'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v125/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v126/bom.json
   components:
   - name: aopalliance
     version: '1.0'
