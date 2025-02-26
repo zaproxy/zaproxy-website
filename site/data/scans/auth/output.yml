@@ -1,0 +1,201 @@
+aspnet:
+  site: "http://aspnet.testsparker.com"
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+bluesky:
+  site: "https://bsky.app"
+  note: "BBA is failing verification detection."
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: false
+ctflearn:
+  site: "https://ctflearn.com"
+  note: "BBA is passing all of the parts but failing overall."
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: true
+deftheweb:
+  site: "https://defendtheweb.net"
+  note: "BBA is failing verification detection."
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+ginnjuice:
+  site: "https://ginandjuice.shop"
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+hackyourself:
+  site: "https://hack-yourself-first.com"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: true
+infosecex:
+  site: "https://infosec.exchange"
+  note: "BBA is passing all of the parts but failing overall."
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+insta:
+  site: "https://www.instagram.com"
+  note: "BBA is failing due to popups."
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: false
+linkedin:
+  site: "https://www.linkedin.com"
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+mozbugz:
+  site: "https://bugzilla.mozilla.org"
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+phpspark:
+  site: "http://php.testsparker.com"
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+reddit:
+  site: "https://www.reddit.com"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: true
+spotify:
+  site: "https://accounts.spotify.com"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: true
+testasp:
+  site: "http://testasp.vulnweb.com"
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+testfire:
+  site: "http://testfire.net"
+  note: "CSA is failing due to use of autodetect."
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+    bbaplus:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: false
+    csa:
+      auth: false
+      username:
+      password:
+      session: false
+      verification: false
+testhtml5:
+  site: "http://testhtml5.vulnweb.com"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: false
+      verification: false
+testphp:
+  site: "http://testphp.vulnweb.com"
+  note: ""
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+webappsec:
+  site: "http://zero.webappsecurity.com"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: false
+      verification: false
+wikipedia:
+  site: "https://en.wikipedia.org"
+  note: "BBA is failing verification detection."
+  plans:
+    stdbba:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+zoom:
+  site: "https://zoom.us"
+  note: "BBA is failing due to popups."
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: false

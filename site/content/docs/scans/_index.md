@@ -21,6 +21,9 @@ links:
   - name: 'Yahoo Webseclab'
     link: webseclab
     desc: a set of web security test cases (unmaintained)
+  - name: 'ZAP Authentication Tests'
+    link: auth
+    desc: a set of authentication test cases
 EditableContent: true
 cascade:
   addBreadcrumbs: true
