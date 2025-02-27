@@ -181,3 +181,9 @@ trevor:
   picture: /img/authors/trevor-mountney_400x400.png
   twitter:
   is_core: false
+
+bashbunny:
+  name: bashbunny
+  picture: /img/authors/bash-bunny_400x400.png
+  twitter: _BashBunny_
+  is_core: false
