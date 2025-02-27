@@ -2,11 +2,12 @@
 title: "Solving Portswigger Lab File Path Traversal Simple Case with ZAP"
 summary: "Video and explanation of How to Solve the Portswigger labs using ZAP, in this case: 'Path Traversal Simple Case'"
 date: 2025-02-27
+post: post
 tags:
 - blog
 - portswigger-lab
 authors:
-    - Bash Bunny
+    - bashbunny
 ---
 
 This [Portswigger Lab](https://portswigger.net/web-security/file-path-traversal/lab-simple) has a path traversal vulnerability, which allows anyone to retrieve any file from the system the webpage is hosted in. In this particular case the laboratory consist on retrieving the `/etc/passwd` file, demonstrating this way the vulnerability.
