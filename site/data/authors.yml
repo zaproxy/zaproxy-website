@@ -183,7 +183,7 @@ trevor:
   is_core: false
 
 bashbunny:
-  name: Bash Bunny
+  name: bashbunny
   picture: /img/authors/bash-bunny_400x400.png
   twitter: _BashBunny_
   is_core: false
