@@ -19,17 +19,17 @@ bluesky:
       verification: false
 ctflearn:
   site: "https://ctflearn.com"
-  note: "BBA is passing all of the parts but failing overall."
+  note: ""
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
       verification: true
 deftheweb:
   site: "https://defendtheweb.net"
-  note: "BBA is failing verification detection."
+  note: ""
   plans:
     stdbba:
       auth: true
@@ -50,14 +50,14 @@ hackyourself:
   site: "https://hack-yourself-first.com"
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
       verification: true
 infosecex:
   site: "https://infosec.exchange"
-  note: "BBA is passing all of the parts but failing overall."
+  note: ""
   plans:
     stdbba:
       auth: true
@@ -115,7 +115,7 @@ spotify:
   site: "https://accounts.spotify.com"
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -140,11 +140,11 @@ testfire:
       session: true
       verification: true
     bbaplus:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
-      verification: false
+      verification: true
     csa:
       auth: false
       username:
@@ -181,7 +181,7 @@ webappsec:
       verification: false
 wikipedia:
   site: "https://en.wikipedia.org"
-  note: "BBA is failing verification detection."
+  note: ""
   plans:
     stdbba:
       auth: true
