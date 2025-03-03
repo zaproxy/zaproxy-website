@@ -1,7 +1,6 @@
 <table>
   <tr>
     <th>Site</th>
-    <th>URL</th>
     <th>Type</th>
     <th>Auth</th>
     <th>Username</th>
@@ -13,8 +12,6 @@
   {{- range $key, $site := .Site.Data.scans.auth.output -}}
     {{- range $key2, $plan := $site.plans -}}
     <tr>
-      <!-- Target name -->
-      <td>{{- $key -}}</td>
       <!-- URL -->
       <td><a href="{{- $site.site -}}">{{- $site.site -}}</a></td>
       <!-- Plan Type -->
@@ -29,42 +26,42 @@
       {{- end -}}
       <!-- Username status -->
       {{- if eq $plan.username nil -}} 
-        <td><div class="scan-result-na">&mdash; N/A </div></td>
+        <td align="center"><div class="scan-result-na">&mdash; </div></td>
       {{- else -}}
         {{- if $plan.username -}}
-          <td><div class="scan-result-pass">&#10003; Passed </div></td>
+          <td align="center"><div class="scan-result-pass">&#10003; </div></td>
         {{- else -}}
-          <td><div class="scan-result-fail">&#10060; Failed </div></td>
+          <td align="center"><div class="scan-result-fail">&#10060; </div></td>
         {{- end -}}
       {{- end -}}
       <!-- Password status -->
       {{- if eq $plan.password nil -}} 
-        <td><div class="scan-result-na">&mdash; N/A </div></td>
+        <td align="center"><div class="scan-result-na">&mdash; </div></td>
       {{- else -}}
         {{- if $plan.password -}}
-          <td><div class="scan-result-pass">&#10003; Passed </div></td>
+          <td align="center"><div class="scan-result-pass">&#10003; </div></td>
         {{- else -}}
-          <td><div class="scan-result-fail">&#10060; Failed </div></td>
+          <td align="center"><div class="scan-result-fail">&#10060; </div></td>
         {{- end -}}
       {{- end -}}
       <!-- Session mgmt status -->
       {{- if eq $plan.session nil -}} 
-        <td><div class="scan-result-na">&mdash; N/A </div></td>
+        <td align="center"><div class="scan-result-na">&mdash; </div></td>
       {{- else -}}
         {{- if $plan.session -}}
-          <td><div class="scan-result-pass">&#10003; Passed </div></td>
+          <td align="center"><div class="scan-result-pass">&#10003; </div></td>
         {{- else -}}
-          <td><div class="scan-result-fail">&#10060; Failed </div></td>
+          <td align="center"><div class="scan-result-fail">&#10060; </div></td>
         {{- end -}}
       {{- end -}}
       <!-- Verification status -->
       {{- if eq $plan.verification nil -}} 
-        <td><div class="scan-result-na">&mdash; N/A </div></td>
+        <td align="center"><div class="scan-result-na">&mdash; </div></td>
       {{- else -}}
         {{- if $plan.verification -}}
-          <td><div class="scan-result-pass">&#10003; Passed </div></td>
+          <td align="center"><div class="scan-result-pass">&#10003; </div></td>
         {{- else -}}
-          <td><div class="scan-result-fail">&#10060; Failed </div></td>
+          <td align="center"><div class="scan-result-fail">&#10060; </div></td>
         {{- end -}}
       {{- end -}}
       <!-- Note(s) -->
