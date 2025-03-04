@@ -122,7 +122,7 @@ icon:
 > [!NOTE]
 > You can highlight important information in your articles or docs using different types of callouts (also known as admonitions – or alerts, as used in [the Hugo docs](https://gohugo.io/render-hooks/blockquotes/#alerts)).
 
-The examples below use the same syntax as in Github Markdown. The template responsible for rendering them is at `site\layouts\_default\_markup\render-blockquote.html:`
+The examples below use the same syntax as in Github Markdown. The template responsible for rendering them is at `site/layouts/_default/_markup/render-blockquote.html`
 
 ```
 > [!NOTE]
