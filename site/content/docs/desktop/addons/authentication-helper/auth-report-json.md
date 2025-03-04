@@ -29,18 +29,18 @@ Session handling and verification can be left as "autodetect" - this report will
 
 The following summary items are used:
 
-| Key                | Description                     |
-|:-------------------|:--------------------------------|
-| auth.auth.fail     | Authentication failed           |
-| auth.auth.pass     | Authentication appeared to work |
-| auth.password.fail | Password field not identified   |
-| auth.password.pass | Password field identified       |
-| auth.session.fail  | Session Handling not identified |
-| auth.session.pass  | Session Handling identified     |
-| auth.username.fail | Username field not identified   |
-| auth.username.pass | Username field identified       |
-| auth.verif.fail    | Verification URL not identified |
-| auth.verif.pass    | Verification URL identified     |
+| Key                   | Passed | Description                     |
+|:----------------------|:-------|:--------------------------------|
+| auth.summary.auth     | false  | Authentication failed           |
+| auth.summary.auth     | true   | Authentication appeared to work |
+| auth.summary.password | false  | Password field not identified   |
+| auth.summary.password | true   | Password field identified       |
+| auth.summary.session  | false  | Session Handling not identified |
+| auth.summary.session  | true   | Session Handling identified     |
+| auth.summary.username | false  | Username field not identified   |
+| auth.summary.username | true   | Username field identified       |
+| auth.summary.verif    | false  | Verification URL not identified |
+| auth.summary.verif    | true   | Verification URL identified     |
 
 ### Automation Framework Environment
 
@@ -66,22 +66,22 @@ For more details of what they mean see [https://www.zaproxy.org/docs/internal-st
 	,"summaryItems": [
 		{
 			"description": "Username field identified",
-			"passed": "true",
+			"passed": true,
 			"key": "auth.summary.username"
 		},
 		{
 			"description": "Password field identified",
-			"passed": "true",
+			"passed": true,
 			"key": "auth.summary.password"
 		},
 		{
 			"description": "Session Handling identified",
-			"passed": "true",
+			"passed": true,
 			"key": "auth.summary.session"
 		},
 		{
 			"description": "Verification URL identified",
-			"passed": "true",
+			"passed": true,
 			"key": "auth.summary.verif"
 		}
 	]
@@ -90,72 +90,72 @@ For more details of what they mean see [https://www.zaproxy.org/docs/internal-st
 		{
 			"key": "stats.auth.browser.foundfields",
 			"scope": "site",
-			"value": "1"
+			"value": 1
 		},
 		{
 			"key": "stats.auth.browser.passed",
 			"scope": "site",
-			"value": "1"
+			"value": 1
 		},
 		{
 			"key": "stats.auth.configure.session.header",
 			"scope": "global",
-			"value": "1"
+			"value": 1
 		},
 		{
 			"key": "stats.auth.configure.verification",
 			"scope": "global",
-			"value": "1"
+			"value": 1
 		},
 		{
 			"key": "stats.auth.detect.auth.json",
 			"scope": "global",
-			"value": "5"
+			"value": 5
 		},
 		{
 			"key": "stats.auth.detect.session.accesstoken",
 			"scope": "global",
-			"value": "5"
+			"value": 5
 		},
 		{
 			"key": "stats.auth.detect.session.authorization",
 			"scope": "global",
-			"value": "1"
+			"value": 1
 		},
 		{
 			"key": "stats.auth.detect.session.token",
 			"scope": "global",
-			"value": "7"
+			"value": 7
 		},
 		{
 			"key": "stats.auth.session.set.header",
 			"scope": "global",
-			"value": "20"
+			"value": 20
 		},
 		{
 			"key": "stats.auth.sessiontoken.accesstoken",
 			"scope": "site",
-			"value": "9"
+			"value": 9
 		},
 		{
 			"key": "stats.auth.sessiontoken.token",
 			"scope": "site",
-			"value": "6"
+			"value": 6
 		},
 		{
 			"key": "stats.auth.sessiontokens.max",
 			"scope": "global",
-			"value": "2"
+			"value": 2
 		},
 		{
 			"key": "stats.auth.state.loggedin",
 			"scope": "site",
-			"value": "2"
+			"value": 2
 		},
 		{
 			"key": "stats.auth.success",
 			"scope": "site",
-			"value": "1"
+			"value": 1
 		}
 	]
 }

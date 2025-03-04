@@ -6,25 +6,22 @@ weight: 1
 cascade:
   addon:
     id: database
-    version: 0.7.0
+    version: 0.8.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.7.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/database-v0.8.0/bom.json
   components:
-  - name: aopalliance
-    version: '1.0'
-    licenses: Public Domain
   - name: apiguardian-api
     version: 1.1.2
     licenses: Apache-2.0
   - name: asm
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: asm-commons
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: asm-tree
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: auto-common
     version: 1.2.2
@@ -63,7 +60,7 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: checker-qual
-    version: 3.33.0
+    version: 3.37.0
     licenses: MIT
   - name: commons-beanutils
     version: 1.9.4
@@ -104,6 +101,9 @@ sbom:
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
+  - name: datanucleus-accessplatform-jdo-rdbms
+    version: 6.0.7
+    licenses: Apache-2.0
   - name: datanucleus-api-jdo
     version: 6.0.2
     licenses: Apache-2.0
@@ -117,19 +117,19 @@ sbom:
     version: 6.0.7
     licenses: Apache-2.0
   - name: error_prone_annotation
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_type_annotations
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
@@ -149,14 +149,14 @@ sbom:
   - name: glassfish-corba-omgapi
     version: 4.2.2
     licenses: BSD-3-Clause
+  - name: google-java-format
+    version: 1.19.1
+    licenses: Apache-2.0
   - name: gson
     version: 2.10.1
     licenses: Apache-2.0
   - name: guava
-    version: 32.1.1-jre
-    licenses: Apache-2.0
-  - name: guice
-    version: 5.1.0
+    version: 32.1.3-jre
     licenses: Apache-2.0
   - name: hamcrest
     version: '2.2'
@@ -186,6 +186,9 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: jackson-annotations
+    version: 2.15.2
+    licenses: Apache-2.0
+  - name: jackson-bom
     version: 2.15.2
     licenses: Apache-2.0
   - name: jackson-core
@@ -220,7 +223,7 @@ sbom:
     licenses: Apache-2.0
   - name: javax.transaction-api
     version: '1.3'
-    licenses: (CDDL-1.0 OR GPL-2.0-with-classpath-exception)
+    licenses: ''
   - name: jericho-html
     version: '3.4'
     licenses: GNU Lesser General Public License (LGPL), Apache-1.0, EPL-1.0
@@ -233,9 +236,15 @@ sbom:
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
+  - name: jspecify
+    version: 1.0.0
+    licenses: Apache-2.0
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
+  - name: junit-bom
+    version: 5.10.1
+    licenses: EPL-2.0
   - name: junit-jupiter
     version: 5.10.1
     licenses: EPL-2.0
@@ -257,6 +266,9 @@ sbom:
   - name: junit-platform-launcher
     version: 1.10.1
     licenses: EPL-2.0
+  - name: listenablefuture
+    version: 9999.0-empty-to-avoid-conflict-with-guava
+    licenses: Apache-2.0
   - name: log4j-1.2-api
     version: 2.24.2
     licenses: Apache-2.0
@@ -273,7 +285,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.34
+    version: 1.18.36
     licenses: MIT
   - name: mockito-core
     version: 5.7.0
@@ -330,7 +342,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.20.0
+    version: 0.21.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -339,16 +351,16 @@ sbom:
     version: 1.3.0
     licenses: Apache-2.0
   - name: org.jacoco.agent
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.ant
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.core
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.report
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.osgi.resource
     version: 1.0.0
@@ -360,7 +372,7 @@ sbom:
     version: 4.0.1
     licenses: MIT
   - name: protobuf-java
-    version: 3.19.6
+    version: 3.25.5
     licenses: BSD-3-Clause
   - name: rsyntaxtextarea
     version: 3.5.3
@@ -380,11 +392,14 @@ sbom:
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
+  - name: testutils
+    version: unspecified
+    licenses: ''
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.16.0-SNAPSHOT
+    version: 2.16.0
     licenses: Apache-2.0
 ---
 

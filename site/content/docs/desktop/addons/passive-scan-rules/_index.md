@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 62.0.0
+    version: 63.0.0
 ---
 
 # Passive Scan Rules
@@ -247,7 +247,7 @@ Post 2.5.0 you can specify a comma separated list of identifiers in the `rules.c
 Note:
 
 * The rule also takes into account the Partial match setting within the Anti-CSRF Options.
-* GET requests are only evaluated at Low Threshold.
+* Forms submitted via GET are only evaluated at Low Threshold.
 
 \]
 
@@ -562,6 +562,7 @@ Alert ID: [10035](/docs/alerts/10035/).
 
 A timestamp was disclosed by the application/web server.  
 At HIGH threshold this rule does not alert on potential timestamps that are not within a range of plus or minus one year.  
+At HIGH threshold this rule ignores timestamps in JavaScript files.  
 At MEDIUM threshold this rule does not alert on potential timestamps beyond 10 years.  
 At all thresholds, this rule will not alert on timestamps beyond the Y2038 epoch edge.  
 
