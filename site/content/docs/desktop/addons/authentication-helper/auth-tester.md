@@ -41,6 +41,10 @@ The number of seconds to wait after submitting the login form before closing the
 
 This just adds 2 second delays between filling in each field and before submitting the form. It has no other effect than making it easier to see what is going on when a non-headless browser is used.
 
+### Reset Button
+
+The reset button allows you to reset all the fields on the Test tab, and disable all Steps in the Steps tab (steps are only disabled not removed as recreating them might be tedious).
+
 ## Results Panel
 
 The results panel show the progress and what has been identified. All elements need to be identified in order for ZAP to be able to automatically handle authentication for this site.

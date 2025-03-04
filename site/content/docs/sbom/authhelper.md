@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.22.0
+    version: 0.23.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.22.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.23.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -18,13 +18,13 @@ sbom:
     version: 1.1.2
     licenses: Apache-2.0
   - name: asm
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: asm-commons
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: asm-tree
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: attoparser
     version: 2.0.7.RELEASE
@@ -41,6 +41,9 @@ sbom:
   - name: auto-value-annotations
     version: '1.9'
     licenses: Apache-2.0
+  - name: automation
+    version: 0.48.0
+    licenses: ''
   - name: bcmail-jdk14
     version: '1.76'
     licenses: Bouncy Castle Licence
@@ -84,11 +87,17 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: checker-qual
-    version: 3.33.0
+    version: 3.37.0
     licenses: MIT
   - name: checker-qual
     version: 3.43.0
     licenses: MIT
+  - name: client
+    version: 0.14.0
+    licenses: ''
+  - name: commonlib
+    version: 1.31.0
+    licenses: ''
   - name: commons-beanutils
     version: 1.9.4
     licenses: Apache-2.0
@@ -96,13 +105,16 @@ sbom:
     version: 1.17.1
     licenses: Apache-2.0
   - name: commons-codec
-    version: 1.17.2
+    version: 1.18.0
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
     licenses: Apache-2.0
   - name: commons-collections4
     version: '4.4'
+    licenses: Apache-2.0
+  - name: commons-compress
+    version: 1.26.2
     licenses: Apache-2.0
   - name: commons-configuration
     version: '1.10'
@@ -131,35 +143,68 @@ sbom:
   - name: commons-logging
     version: 1.3.4
     licenses: Apache-2.0
+  - name: commons-logging
+    version: 1.3.5
+    licenses: Apache-2.0
   - name: commons-math
     version: '1.2'
     licenses: Apache-2.0
   - name: commons-text
     version: 1.12.0
     licenses: Apache-2.0
+  - name: database
+    version: 0.8.0
+    licenses: ''
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
+  - name: datanucleus-accessplatform-jdo-rdbms
+    version: 6.0.7
+    licenses: Apache-2.0
+  - name: datanucleus-api-jdo
+    version: 6.0.2
+    licenses: Apache-2.0
+  - name: datanucleus-core
+    version: 6.0.7
+    licenses: Apache-2.0
+  - name: datanucleus-jdo-query
+    version: 6.0.1
+    licenses: Apache-2.0
+  - name: datanucleus-rdbms
+    version: 6.0.7
+    licenses: Apache-2.0
   - name: dec
     version: 0.1.2
     licenses: MIT
-  - name: error_prone_annotation
-    version: 2.26.1
+  - name: docker-java
+    version: 3.3.6
     licenses: Apache-2.0
-  - name: error_prone_annotations
-    version: 2.26.1
+  - name: docker-java-api
+    version: 3.3.6
+    licenses: Apache-2.0
+  - name: docker-java-core
+    version: 3.3.6
+    licenses: Apache-2.0
+  - name: docker-java-transport
+    version: 3.3.6
+    licenses: Apache-2.0
+  - name: docker-java-transport-httpclient5
+    version: 3.3.6
+    licenses: Apache-2.0
+  - name: error_prone_annotation
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_annotations
     version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_type_annotations
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
@@ -182,20 +227,29 @@ sbom:
   - name: flying-saucer-pdf
     version: 9.3.1
     licenses: LGPL-2.1-or-later
+  - name: flyway-core
+    version: 9.22.3
+    licenses: Apache-2.0
+  - name: glassfish-corba-omgapi
+    version: 4.2.2
+    licenses: BSD-3-Clause
+  - name: google-java-format
+    version: 1.19.1
+    licenses: Apache-2.0
   - name: gson
-    version: 2.8.5
+    version: 2.10.1
+    licenses: Apache-2.0
+  - name: gson
+    version: 2.11.0
     licenses: Apache-2.0
   - name: guava
-    version: 32.1.1-jre
+    version: 32.1.3-jre
     licenses: Apache-2.0
   - name: guava
     version: 33.4.0-jre
     licenses: Apache-2.0
   - name: guice
     version: 5.0.1
-    licenses: Apache-2.0
-  - name: guice
-    version: 5.1.0
     licenses: Apache-2.0
   - name: guice-assistedinject
     version: 5.0.1
@@ -216,25 +270,25 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit
-    version: 4.9.0
+    version: 4.10.0
     licenses: Apache-2.0
   - name: htmlunit-core-js
-    version: 4.9.0
+    version: 4.10.0
     licenses: Apache-2.0
   - name: htmlunit-csp
-    version: 4.9.0
+    version: 4.10.0
     licenses: Apache-2.0
   - name: htmlunit-cssparser
-    version: 4.9.0
+    version: 4.10.0
     licenses: Apache-2.0
   - name: htmlunit-websocket-client
-    version: 4.9.0
+    version: 4.10.0
     licenses: Apache-2.0
   - name: htmlunit-xpath
-    version: 4.9.0
+    version: 4.10.0
     licenses: Apache-2.0
   - name: htmlunit3-driver
-    version: 4.28.0
+    version: 4.29.0
     licenses: Apache-2.0
   - name: httpclient
     version: 4.5.14
@@ -266,6 +320,9 @@ sbom:
   - name: jackson-annotations
     version: 2.17.0
     licenses: Apache-2.0
+  - name: jackson-bom
+    version: 2.17.0
+    licenses: Apache-2.0
   - name: jackson-core
     version: 2.17.0
     licenses: Apache-2.0
@@ -273,6 +330,9 @@ sbom:
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
+    version: 2.17.0
+    licenses: Apache-2.0
+  - name: jackson-dataformat-toml
     version: 2.17.0
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
@@ -305,12 +365,21 @@ sbom:
   - name: javax.inject
     version: '1'
     licenses: Apache-2.0
+  - name: javax.jdo
+    version: 3.2.1
+    licenses: Apache-2.0
+  - name: javax.transaction-api
+    version: '1.3'
+    licenses: ''
   - name: jbrofuzz-core
     version: 2.5.1
     licenses: GPL-3.0-only
   - name: jcip-annotations
     version: '1.0'
     licenses: ''
+  - name: jcl-over-slf4j
+    version: 1.7.30
+    licenses: Apache-2.0
   - name: jcl-over-slf4j
     version: 1.7.32
     licenses: Apache-2.0
@@ -323,6 +392,9 @@ sbom:
   - name: jgrapht-core
     version: 0.9.0
     licenses: LGPL-2.1-only, EPL-1.0
+  - name: jna
+    version: 5.13.0
+    licenses: LGPL-2.1-or-later, Apache-2.0
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
@@ -335,6 +407,9 @@ sbom:
   - name: jul-to-slf4j
     version: 1.7.32
     licenses: MIT
+  - name: junit-bom
+    version: 5.10.1
+    licenses: EPL-2.0
   - name: junit-jupiter
     version: 5.10.1
     licenses: EPL-2.0
@@ -378,7 +453,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.34
+    version: 1.18.36
     licenses: MIT
   - name: metrics-core
     version: 3.0.2
@@ -411,7 +486,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: neko-htmlunit
-    version: 4.9.0
+    version: 4.10.0
     licenses: Apache-2.0
   - name: nekohtml
     version: 1.9.22
@@ -443,6 +518,9 @@ sbom:
   - name: netty-transport-native-unix-common
     version: 4.1.100.Final
     licenses: Apache-2.0
+  - name: network
+    version: 0.21.0
+    licenses: ''
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
@@ -489,16 +567,16 @@ sbom:
     version: 1.3.0
     licenses: Apache-2.0
   - name: org.jacoco.agent
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.ant
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.core
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.report
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.osgi.resource
     version: 1.0.0
@@ -513,71 +591,89 @@ sbom:
     version: 4.0.1
     licenses: MIT
   - name: protobuf-java
-    version: 3.19.6
+    version: 3.25.5
     licenses: BSD-3-Clause
+  - name: pscan
+    version: 0.2.1
+    licenses: ''
+  - name: reports
+    version: 0.38.0
+    licenses: ''
   - name: rsyntaxtextarea
     version: 3.5.3
     licenses: BSD-3-Clause
   - name: scripts
     version: 45.9.0
     licenses: ''
+  - name: selenium
+    version: 15.35.0
+    licenses: ''
   - name: selenium-api
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.28.1
-    licenses: Apache-2.0
-  - name: selenium-devtools-v130
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-devtools-v131
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-devtools-v132
-    version: 4.28.1
+    version: 4.29.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v133
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-devtools-v85
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.28.1
+    version: 4.29.0
+    licenses: Apache-2.0
+  - name: selenium-jupiter
+    version: 5.1.1
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.28.1
+    version: 4.29.0
     licenses: Apache-2.0
   - name: service
     version: 1.16.0
     licenses: Apache-2.0
+  - name: slf4j-api
+    version: 1.7.36
+    licenses: MIT
+  - name: slf4j-api
+    version: 2.0.13
+    licenses: MIT
   - name: slf4j-api
     version: 2.0.16
     licenses: MIT
@@ -590,17 +686,29 @@ sbom:
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT
+  - name: spiderAjax
+    version: 23.23.0
+    licenses: ''
+  - name: sqlite-jdbc
+    version: 3.45.3.0
+    licenses: Apache-2.0
   - name: stax2-api
     version: 4.2.2
     licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
+  - name: testutils
+    version: unspecified
+    licenses: ''
   - name: thymeleaf
     version: 3.1.2.RELEASE
     licenses: Apache-2.0
   - name: unbescape
     version: 1.1.6.RELEASE
+    licenses: Apache-2.0
+  - name: webdrivermanager
+    version: 5.9.1
     licenses: Apache-2.0
   - name: woodstox-core
     version: 6.6.1
@@ -621,7 +729,10 @@ sbom:
     version: 2.16.0
     licenses: Apache-2.0
   - name: zest
-    version: 0.23.0
+    version: 0.24.0
     licenses: MPL-2.0
+  - name: zest
+    version: 48.5.0
+    licenses: ''
 ---
 
