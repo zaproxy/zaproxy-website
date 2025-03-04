@@ -117,6 +117,30 @@ icon:
 ---
 ```
 
+##### Highlighting Important Content
+
+> [!NOTE]
+> You can highlight important information in your articles or docs using different types of callouts (also known as admonitions – or alerts, as used in [the Hugo docs](https://gohugo.io/render-hooks/blockquotes/#alerts)).
+
+The examples below use the same syntax as in Github Markdown. The template responsible for rendering them is at `site/layouts/_default/_markup/render-blockquote.html`
+
+```
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes.
+```
+
 #### Layouts
 For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
 

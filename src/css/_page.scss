@@ -117,3 +117,58 @@ article {
 #content-wrap {
   padding-bottom: var(--footer-height);
 }
+
+/* Styles for blockquote alerts, aka admonitions or callouts */
+// Source: https://github.com/KKKZOZ/hugo-admonitions
+
+// Alert colors
+$alert-colors: (
+  caution:    #e64553,
+  important:  #7D4DDA,
+  note:       #096ae1,
+  tip:        #179299,
+  warning:    #df8e1d
+);
+
+// Base alert styles
+.alert {
+  margin: 1rem 0;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  border-left-width: 4px;
+  border-left-style: solid;
+  padding: 0.8rem 1rem;
+  background: rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  
+  p {
+    margin: 0;
+  }
+}
+
+// Alert headers
+.alert-heading {
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+// Alert content
+.alert-content > p {
+  padding-top: 0.5rem;;
+}
+
+// Generate alert types
+@each $type, $color in $alert-colors {
+  .alert-#{$type} {
+    border-left-color: $color;
+
+    .alert-heading {
+      color: $color;
+    }
+  }
+}
+
+/* END Styles for blockquote alerts */
