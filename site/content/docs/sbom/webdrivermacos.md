@@ -6,22 +6,19 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '127'
+    version: '128'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v127/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v128/bom.json
   components:
-  - name: aopalliance
-    version: '1.0'
-    licenses: Public Domain
   - name: asm
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: asm-commons
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: asm-tree
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: async-http-client
     version: 2.12.3
@@ -57,7 +54,7 @@ sbom:
     version: 3.12.0
     licenses: MIT
   - name: checker-qual
-    version: 3.33.0
+    version: 3.37.0
     licenses: MIT
   - name: commons-beanutils
     version: 1.9.4
@@ -102,22 +99,22 @@ sbom:
     version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
   - name: error_prone_annotation
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_annotations
     version: 2.7.1
     licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_type_annotations
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
@@ -134,14 +131,14 @@ sbom:
   - name: flatlaf
     version: 3.5.4
     licenses: Apache-2.0
+  - name: google-java-format
+    version: 1.19.1
+    licenses: Apache-2.0
   - name: guava
     version: 31.0.1-jre
     licenses: Apache-2.0
   - name: guava
-    version: 32.1.1-jre
-    licenses: Apache-2.0
-  - name: guice
-    version: 5.1.0
+    version: 32.1.3-jre
     licenses: Apache-2.0
   - name: harlib
     version: 1.1.3
@@ -188,6 +185,9 @@ sbom:
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
+  - name: jspecify
+    version: 1.0.0
+    licenses: Apache-2.0
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
@@ -210,7 +210,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.34
+    version: 1.18.36
     licenses: MIT
   - name: netty-buffer
     version: 4.1.73.Final
@@ -294,16 +294,16 @@ sbom:
     version: 1.10.1-alpha
     licenses: Apache-2.0
   - name: org.jacoco.agent
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.ant
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.core
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.report
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.osgi.resource
     version: 1.0.0
@@ -315,7 +315,7 @@ sbom:
     version: 4.0.1
     licenses: MIT
   - name: protobuf-java
-    version: 3.19.6
+    version: 3.25.5
     licenses: BSD-3-Clause
   - name: reactive-streams
     version: 1.0.3
