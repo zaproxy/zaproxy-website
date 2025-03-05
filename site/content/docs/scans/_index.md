@@ -3,6 +3,9 @@ title: "ZAP Scans"
 type: page
 layout: links
 links:
+  - name: 'ZAP Authentication Tests'
+    link: auth
+    desc: a set of authentication test cases
   - name: 'Google Firing Range'
     link: firingrange
     desc: a test bed for automated web application security scanners (unmaintained)
@@ -21,9 +24,6 @@ links:
   - name: 'Yahoo Webseclab'
     link: webseclab
     desc: a set of web security test cases (unmaintained)
-  - name: 'ZAP Authentication Tests'
-    link: auth
-    desc: a set of authentication test cases
 EditableContent: true
 cascade:
   addBreadcrumbs: true
