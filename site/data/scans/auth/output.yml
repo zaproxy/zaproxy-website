@@ -112,14 +112,6 @@ reddit:
       session: true
       verification: true
 spotify:
-  site: "https://accounts.spotify.com"
-  plans:
-    stdbba:
-      auth: true
-      username: true
-      password: true
-      session: true
-      verification: true
 testasp:
   site: "http://testasp.vulnweb.com"
   plans:
