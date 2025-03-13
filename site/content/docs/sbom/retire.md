@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: retire
-    version: 0.45.0
+    version: 0.46.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.45.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.46.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -333,7 +333,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.21.0
+    version: 0.22.0
     licenses: ''
   - name: objenesis
     version: '3.3'
