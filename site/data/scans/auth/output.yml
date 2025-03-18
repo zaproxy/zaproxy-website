@@ -12,11 +12,11 @@ bluesky:
   note: "BBA is failing verification detection."
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
-      verification: false
+      verification: true
 ctflearn:
   site: "https://ctflearn.com"
   note: ""
@@ -60,7 +60,7 @@ infosecex:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
@@ -151,7 +151,7 @@ testhtml5:
       username: true
       password: true
       session: false
-      verification: false
+      verification: true
 testphp:
   site: "http://testphp.vulnweb.com"
   note: ""
@@ -168,7 +168,7 @@ wikipedia:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
