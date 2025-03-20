@@ -24,7 +24,7 @@ Columns:
 
 | Config | Details |
 | --- | --- |
-| Frequency | On-demand |
+| Frequency | Daily & On-demand |
 | Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/auth/ |
 | Action | https://github.com/zapbot/zap-mgmt-scripts/blob/master/.github/workflows/auth-tests.yml | 
 
