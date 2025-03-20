@@ -7,6 +7,36 @@ aspnet:
       password: true
       session: true
       verification: true
+authtestcomplex:
+  site: "https://authenticationtest.com/complexAuth/"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: false
+    bbaplus:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+authtestsimple:
+  site: "https://authenticationtest.com/simpleFormAuth/"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: false
+    bbaplus:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
 bluesky:
   site: "https://bsky.app"
   note: "BBA is failing verification detection."
@@ -138,11 +168,11 @@ testfire:
       session: true
       verification: true
     csa:
-      auth: false
+      auth: true
       username:
       password:
-      session: false
-      verification: false
+      session: true
+      verification: true
 testhtml5:
   site: "http://testhtml5.vulnweb.com"
   plans:
