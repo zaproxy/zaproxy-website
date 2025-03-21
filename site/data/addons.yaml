@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.23.0/authhelper-beta-0.23.0.zap
-  date: 2025-03-04
-  version: 0.23.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.24.0/authhelper-beta-0.24.0.zap
+  date: 2025-03-21
+  version: 0.24.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -408,9 +408,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.26.0/graphql-alpha-0.26.0.zap
-  date: 2025-01-09
-  version: 0.26.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.27.0/graphql-alpha-0.27.0.zap
+  date: 2025-03-21
+  version: 0.27.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP

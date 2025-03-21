@@ -41,6 +41,10 @@ The number of seconds to wait after submitting the login form before closing the
 
 This just adds 2 second delays between filling in each field and before submitting the form. It has no other effect than making it easier to see what is going on when a non-headless browser is used.
 
+### Record Diagnostics
+
+Enables the recording of diagnostic data during the authentication. Refer to the [Authentication Report](/docs/desktop/addons/authentication-helper/auth-report-json/) for more details on the diagnostics.
+
 ### Reset Button
 
 The reset button allows you to reset all the fields on the Test tab, and disable all Steps in the Steps tab (steps are only disabled not removed as recreating them might be tedious).
