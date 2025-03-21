@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.23.0
+    version: 0.24.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.23.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.24.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -42,7 +42,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.48.0
+    version: 0.49.0
     licenses: ''
   - name: bcmail-jdk14
     version: '1.76'
@@ -93,7 +93,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: client
-    version: 0.14.0
+    version: 0.15.0
     licenses: ''
   - name: commonlib
     version: 1.31.0
@@ -153,7 +153,7 @@ sbom:
     version: 1.12.0
     licenses: Apache-2.0
   - name: database
-    version: 0.8.0
+    version: 0.9.0
     licenses: ''
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
@@ -519,7 +519,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.21.0
+    version: 0.22.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -597,7 +597,7 @@ sbom:
     version: 0.2.1
     licenses: ''
   - name: reports
-    version: 0.38.0
+    version: 0.39.0
     licenses: ''
   - name: rsyntaxtextarea
     version: 3.5.3
@@ -606,7 +606,7 @@ sbom:
     version: 45.9.0
     licenses: ''
   - name: selenium
-    version: 15.35.0
+    version: 15.36.0
     licenses: ''
   - name: selenium-api
     version: 4.29.0

@@ -19,11 +19,17 @@ Session handling and verification can be left as "autodetect" - this report will
 
 ### Sections
 
-| Section                          | ID         |
-|:---------------------------------|:-----------|
-| Summary                          | summary    |
-| Automation Framework Environment | afenv      |
-| Statistics                       | statistics |
+| Section                          | ID                        |
+|:---------------------------------|:--------------------------|
+| Summary                          | summary                   |
+| Automation Framework Environment | afenv                     |
+| Statistics                       | statistics                |
+| Diagnostics                      | diagnostics               |
+| HTTP Messages for Diagnostics    | diagnosticsmessages       |
+| Local Storage for Diagnostics    | diagnosticslocalstorage   |
+| Screenshots for Diagnostics      | diagnosticsscreenshots    |
+| Session Storage for Diagnostics  | diagnosticssessionstorage |
+| Web Elements for Diagnostics     | diagnosticswebelements    |
 
 ### Summary
 
@@ -52,8 +58,127 @@ environment will have been updated with the values that ZAP has detected.
 
 ### Statistics
 
-These are all of the statistcis that have been recorded by ZAP.  
+These are all of the statistics that have been recorded by ZAP.  
 For more details of what they mean see [https://www.zaproxy.org/docs/internal-statistics/](/docs/internal-statistics/)
+
+### Diagnostics
+
+The [Browser Based](/docs/desktop/addons/authentication-helper/browser-auth/) and [Client Script](/docs/desktop/addons/authentication-helper/client-script/) authentication methods allow to record diagnostic data, which can be included in the Authentication Report, to help diagnose authentication problems.
+
+
+Diagnostic data can also be recorded with the [Authentication Tester Dialog](/docs/desktop/addons/authentication-helper/auth-tester/).
+
+
+The report will contain an array of diagnostic objects, one for each recorded authentication attempt. The diagnostic objet has the authentication method used, the name of the context and user, and each step performed during the authentication.
+
+```
+	"diagnostics": [
+		{
+			"created": "0000-00-00T00:00:00.000000Z",
+			"authenticationMethod": "Browser-based Authentication",
+			"context": "Context Name",
+			"user": "User Name",
+			"steps": [
+				{ … }
+			]
+		}
+	]
+```
+
+
+Each step has at least the URL and the description, it can, optionally, contain also the input element that's being acted upon (e.g. username field being filled).
+
+```
+	{
+		"created": "0000-00-00T00:00:00.000000Z",
+		"url": "http://example.com/login/",
+		"description": "Auto Fill Username",
+		"webElement": {
+			"formIndex": 1,
+			"attributeType": "text",
+			"attributeId": "email",
+			"attributeName": "email",
+			"attributeValue": "",
+			"text": "",
+			"displayed": true,
+			"enabled": true
+		}
+		…
+	}
+```
+
+More data can be included in each step depending on the additional diagnostics sections enabled for the report.
+
+#### HTTP Messages for Diagnostics
+
+When this section is enabled the step can, optionally, include HTTP messages that were sent during the step. Each message contains the request/response headers and bodies.
+
+```
+	"messages": [
+		{
+			"created": "0000-00-00T00:00:00.000000Z",
+			"requestHeader": "GET http://example.com/login HTTP/1.1",
+			"requestBody": "",
+			"responseHeader": "HTTP/1.1 200 OK",
+			"responseBody": ""
+		}
+	]
+```
+
+#### Local Storage for Diagnostics
+
+When this section is enabled the step can, optionally, include the browser's local storage.
+
+```
+	"localStorage": [
+		{
+			"created": "0000-00-00T00:00:00.000000Z",
+			"key": "key",
+			"value": "value"
+		}
+	]
+```
+
+#### Screenshots for Diagnostics
+
+When this section is enabled the step can, optionally, include a screenshot of the page with the image data Base64 encoded.
+
+```
+	"screenshot": "…"
+```
+
+#### Session Storage for Diagnostics
+
+When this section is enabled the step can, optionally, include the browser's session storage.
+
+```
+	"sessionStorage": [
+		{
+			"created": "0000-00-00T00:00:00.000000Z",
+			"key": "key",
+			"value": "value"
+		}
+	]
+```
+
+#### Web Elements for Diagnostics
+
+When this section is enabled the step can, optionally, include all the input elements present in the page.
+
+```
+	"webElements": [
+		{
+			"formIndex": 0,
+			"attributeType": "text",
+			"attributeId": "id",
+			"attributeName": "name",
+			"attributeValue": "",
+			"text": "",
+			"displayed": true,
+			"enabled": true
+		}
+	]
+```
 
 ### Sample
 
