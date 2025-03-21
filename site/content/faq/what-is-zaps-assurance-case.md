@@ -34,3 +34,7 @@ Known or intentional weaknesses such as allowing weak TLS/SSL connections or wea
 ### Common Implementation Security Weaknesses Countered
 
 ZAP's codebase is regularly tested via multiple Static Analyzers and issues addressed.
+
+### Scripting
+
+ZAP has a powerful scripting capability, for more details see the [Script Security](/docs/getting-further/script-security/) page.

@@ -12,6 +12,10 @@ links:
     link: /docs/getting-further/authentication/
     desc: everything you need to know about authentication in ZAP
 
+  - name: 'Script Security'
+    link: /docs/getting-further/script-security/
+    desc: details about the security implications of ZAP scripts
+
 cascade:
   EditableContent: true
 ---
