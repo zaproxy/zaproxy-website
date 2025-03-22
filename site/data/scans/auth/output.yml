@@ -52,11 +52,11 @@ ctflearn:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
-      verification: true
+      verification: false
 deftheweb:
   site: "https://defendtheweb.net"
   note: ""
