@@ -2,33 +2,33 @@
 ---
 - name: Windows (64) Installer
   id: win-64-i
-  size: 233 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2_16_0_windows.exe
+  size: 234 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2_16_1_windows.exe
 - name: Windows (32) Installer
   id: win-32-i
-  size: 233 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2_16_0_windows-x32.exe
+  size: 234 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2_16_1_windows-x32.exe
 - name: Linux Installer
   id: nix-i
-  size: 227 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2_16_0_unix.sh
+  size: 226 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2_16_1_unix.sh
 - name: Linux Package
   id: nix-p
   size: 224 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2.16.0_Linux.tar.gz
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_Linux.tar.gz
 - name: macOS (Intel - amd64) Installer
   id: osx-i
-  size: 253 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2.16.0.dmg
+  size: 251 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1.dmg
 - name: macOS (Apple Silicon - aarch64) Installer
   id: osx-aarch64-i
-  size: 257 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2.16.0_aarch64.dmg
+  size: 255 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_aarch64.dmg
 - name: Cross Platform Package
   id: cp-p
-  size: 265 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2.16.0_Crossplatform.zip
+  size: 263 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_Crossplatform.zip
 - name: Core Cross Platform Package
   id: cp-c
-  size: 101 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.0/ZAP_2.16.0_Core.zip
+  size: 102 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_Core.zip
