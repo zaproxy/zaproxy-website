@@ -48,6 +48,19 @@ The following summary items are used:
 | auth.summary.verif    | false  | Verification URL not identified |
 | auth.summary.verif    | true   | Verification URL identified     |
 
+#### Failure Details
+
+The following failure detail items are used:
+
+| Key                               | Description                                                                            |
+|:----------------------------------|:---------------------------------------------------------------------------------------|
+| auth.failure.overall              | All authentication elements passed yet authentication was deemed a failure in the end. |
+| auth.failure.pass_count           | No successful browser logins.                                                          |
+| auth.failure.session_mgmt         | Failed to identify session management.                                                 |
+| auth.failure.login_failures       | One or more failed logins.                                                             |
+| auth.failure.no_successful_logins | No successful browser logins.                                                          |
+| auth.failure.verif_ident          | Failed to identify verification URL.                                                   |
+
 ### Automation Framework Environment
 
 This is the [Automation Framework environment](/docs/desktop/addons/automation-framework/environment/) that can be used to recreate the context being tested.
@@ -190,6 +203,11 @@ When this section is enabled the step can, optionally, include all the input ele
 	"site":  "http:\/\/localhost:9091"
 	,"summaryItems": [
 		{
+			"description": "Authentication appeared to work",
+			"passed": true,
+			"key": "auth.summary.auth"
+		},
+		{
 			"description": "Username field identified",
 			"passed": true,
 			"key": "auth.summary.username"
@@ -208,6 +226,12 @@ When this section is enabled the step can, optionally, include all the input ele
 			"description": "Verification URL identified",
 			"passed": true,
 			"key": "auth.summary.verif"
+		}
+	]
+	,"failureReasons": [
+		{
+			"key": "auth.failure.no_successful_logins",
+			"description": "No successful logins."
 		}
 	]
 	,"afEnv": "env:\n  contexts:\n  - name: simple-json-bearer-cookie\n    urls:\n    - http:\/\/localhost:9091\/auth\/simple-json-bearer-cookie\n    includePaths:\n    - http:\/\/localhost:9091\/auth\/simple-json-bearer-cookie.*\n    authentication:\n      method: browser\n      parameters:\n        loginPageUrl: http:\/\/localhost:9091\/auth\/simple-json-bearer-cookie\/\n        loginPageWait: 5\n        browserId: firefox-headless\n        steps: []\n      verification:\n        method: poll\n        loggedInRegex: \\Q 200 OK\\E\n        loggedOutRegex: \\Q 403 Forbidden\\E\n        pollFrequency: 0\n        pollUnits: seconds\n        pollUrl: http:\/\/localhost:9091\/auth\/simple-json-bearer-cookie\/user\n        pollPostData: \"\"\n    sessionManagement:\n      method: headers\n      parameters:\n        Authorization: \"Bearer {%json:accesstoken%}\"\n        Cookie: \"token={%json:accesstoken%}\"\n    technology: {}\n    structure: {}\n    users:\n    - name: test\n      credentials:\n        password: password123\n        username: test@test.com\n  parameters: {}\n"

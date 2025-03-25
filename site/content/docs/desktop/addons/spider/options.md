@@ -40,7 +40,7 @@ By default this is set to zero which means there are no limits applied to the nu
 
 ### Maximum parse size
 
-Defines the maximum size, in bytes, that a response might have to be parsed. This allows the Spider to skip big responses/files.
+Defines the maximum size, in bytes, that a response might have to be parsed. This allows the Spider to skip big responses/files. Zero means unlimited size.
 
 ### Domains Always in Scope
 

@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.24.0/authhelper-beta-0.24.0.zap
-  date: 2025-03-21
-  version: 0.24.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.25.0/authhelper-beta-0.25.0.zap
+  date: 2025-03-25
+  version: 0.25.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.48.0/automation-beta-0.48.0.zap
-  date: 2025-03-04
-  version: 0.48.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.49.0/automation-beta-0.49.0.zap
+  date: 2025-03-25
+  version: 0.49.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.14.0/client-alpha-0.14.0.zap
-  date: 2025-03-04
-  version: 0.14.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.15.0/client-alpha-0.15.0.zap
+  date: 2025-03-25
+  version: 0.15.0
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
@@ -180,9 +180,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.30.0/commonlib-release-1.30.0.zap
-  date: 2025-01-09
-  version: 1.30.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.31.0/commonlib-release-1.31.0.zap
+  date: 2025-03-25
+  version: 1.31.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -314,9 +314,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.13.0/exim-beta-0.13.0.zap
-  date: 2025-01-09
-  version: 0.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.14.0/exim-beta-0.14.0.zap
+  date: 2025-03-25
+  version: 0.14.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -783,9 +783,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscan-v0.2.0/pscan-alpha-0.2.0.zap
-  date: 2025-02-12
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscan-v0.2.1/pscan-alpha-0.2.1.zap
+  date: 2025-03-25
+  version: 0.2.1
 - id: pscanrules
   name: Passive scanner rules
   description: The release status Passive Scanner rules
@@ -793,9 +793,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v63/pscanrules-release-63.zap
-  date: 2025-03-04
-  version: 63
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v64/pscanrules-release-64.zap
+  date: 2025-03-25
+  version: 64
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -943,9 +943,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.8.0/scripts-release-45.8.0.zap
-  date: 2025-01-10
-  version: 45.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.9.0/scripts-release-45.9.0.zap
+  date: 2025-03-25
+  version: 45.9.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -953,9 +953,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.35.0/selenium-release-15.35.0.zap
-  date: 2025-03-11
-  version: 15.35.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.36.0/selenium-release-15.36.0.zap
+  date: 2025-03-25
+  version: 15.36.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -983,9 +983,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.13.0/spider-release-0.13.0.zap
-  date: 2025-01-10
-  version: 0.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.14.0/spider-release-0.14.0.zap
+  date: 2025-03-25
+  version: 0.14.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
@@ -994,9 +994,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.22.0/spiderAjax-release-23.22.0.zap
-  date: 2025-01-10
-  version: 23.22.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.23.0/spiderAjax-release-23.23.0.zap
+  date: 2025-03-25
+  version: 23.23.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
@@ -1125,6 +1125,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.4.0/zest-beta-48.4.0.zap
-  date: 2025-02-27
-  version: 48.4.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.5.0/zest-beta-48.5.0.zap
+  date: 2025-03-25
+  version: 48.5.0
