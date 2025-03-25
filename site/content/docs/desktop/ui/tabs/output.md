@@ -7,10 +7,15 @@ weight: 12
 
 # Output tab
 
-This show various informational messages.
+This show various informational messages in a set of sub-tabs.
 
-These can include the stack traces of unexpected exceptions - please include any stack traces
+
+There is one "General" tab which can include the stack traces of unexpected exceptions - please include any stack traces
 if you report a bug.
+
+
+Other ZAP add-ons can add their own sub-tabs. In particular the "Script Console" add-on will add one tab for each script that
+generates any output.
 
 ## Right click menu
 
