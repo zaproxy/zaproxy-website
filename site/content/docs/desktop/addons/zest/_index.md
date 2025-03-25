@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: zest
-    version: 48.4.0
+    version: 48.5.0
 ---
 
 # Zest
@@ -98,6 +98,10 @@ There are also some right click options available when you select text in the Re
 
 Zest includes a set of 'built in' variables as well as allowing you to declare your own.  
 A right click menu is provided (where relevant) in the edit dialogs to allow you to paste in any of the available variable names.  
+
+## Authentication Scripts
+
+Authentication scripts can use a custom ZAP variable, called `TOTP`, to send a value to an input field with a TOTP code generated from the user's credentials TOTP data.
 
 ## External links
 

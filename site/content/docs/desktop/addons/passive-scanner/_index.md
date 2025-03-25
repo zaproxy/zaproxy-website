@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscan
-    version: 0.2.0
+    version: 0.2.1
 ---
 
 # Passive Scanner Add-on

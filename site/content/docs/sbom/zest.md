@@ -6,25 +6,22 @@ weight: 1
 cascade:
   addon:
     id: zest
-    version: 48.4.0
+    version: 48.5.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.4.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.5.0/bom.json
   components:
-  - name: aopalliance
-    version: '1.0'
-    licenses: Public Domain
   - name: apiguardian-api
     version: 1.1.2
     licenses: Apache-2.0
   - name: asm
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: asm-commons
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: asm-tree
-    version: '9.6'
+    version: '9.7'
     licenses: BSD-3-Clause
   - name: auto-common
     version: 1.2.2
@@ -39,7 +36,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.48.0
+    version: 0.49.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -60,7 +57,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: byte-buddy
-    version: 1.15.11
+    version: 1.17.2
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.14.9
@@ -69,11 +66,11 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: checker-qual
-    version: 3.33.0
+    version: 3.37.0
     licenses: MIT
-  - name: checker-qual
-    version: 3.43.0
-    licenses: MIT
+  - name: commonlib
+    version: 1.31.0
+    licenses: ''
   - name: commons-beanutils
     version: 1.9.4
     licenses: Apache-2.0
@@ -135,22 +132,19 @@ sbom:
     version: 0.1.2
     licenses: MIT
   - name: error_prone_annotation
-    version: 2.26.1
-    licenses: Apache-2.0
-  - name: error_prone_annotations
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_annotations
     version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: error_prone_type_annotations
-    version: 2.26.1
+    version: 2.36.0
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
@@ -159,7 +153,7 @@ sbom:
     version: 1.0.1
     licenses: Apache-2.0
   - name: failureaccess
-    version: 1.0.2
+    version: 1.0.3
     licenses: Apache-2.0
   - name: findbugs-annotations
     version: 3.0.1
@@ -167,17 +161,17 @@ sbom:
   - name: flatlaf
     version: 3.5.4
     licenses: Apache-2.0
+  - name: google-java-format
+    version: 1.19.1
+    licenses: Apache-2.0
   - name: gson
     version: 2.8.5
     licenses: Apache-2.0
   - name: guava
-    version: 32.1.1-jre
+    version: 32.1.3-jre
     licenses: Apache-2.0
   - name: guava
-    version: 33.4.0-jre
-    licenses: Apache-2.0
-  - name: guice
-    version: 5.1.0
+    version: 33.4.5-jre
     licenses: Apache-2.0
   - name: hamcrest
     version: '2.2'
@@ -248,6 +242,9 @@ sbom:
   - name: jackson-annotations
     version: 2.17.0
     licenses: Apache-2.0
+  - name: jackson-bom
+    version: 2.17.0
+    licenses: Apache-2.0
   - name: jackson-core
     version: 2.17.0
     licenses: Apache-2.0
@@ -305,6 +302,9 @@ sbom:
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
+  - name: junit-bom
+    version: 5.10.1
+    licenses: EPL-2.0
   - name: junit-jupiter
     version: 5.10.1
     licenses: EPL-2.0
@@ -345,7 +345,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.34
+    version: 1.18.36
     licenses: MIT
   - name: mockito-core
     version: 5.7.0
@@ -404,59 +404,56 @@ sbom:
   - name: netty-transport-native-unix-common
     version: 4.1.100.Final
     licenses: Apache-2.0
+  - name: network
+    version: 0.22.0
+    licenses: ''
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
   - name: opentelemetry-api
-    version: 1.46.0
-    licenses: Apache-2.0
-  - name: opentelemetry-api-incubator
-    version: 1.46.0-alpha
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-context
-    version: 1.46.0
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-exporter-logging
-    version: 1.46.0
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk
-    version: 1.46.0
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-common
-    version: 1.46.0
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-extension-autoconfigure
-    version: 1.46.0
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-extension-autoconfigure-spi
-    version: 1.46.0
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-logs
-    version: 1.46.0
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-metrics
-    version: 1.46.0
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-trace
-    version: 1.46.0
-    licenses: Apache-2.0
-  - name: opentelemetry-semconv
-    version: 1.28.0-alpha
+    version: 1.48.0
     licenses: Apache-2.0
   - name: opentest4j
     version: 1.3.0
     licenses: Apache-2.0
   - name: org.jacoco.agent
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.ant
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.core
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.jacoco.report
-    version: 0.8.11
+    version: 0.8.12
     licenses: EPL-2.0
   - name: org.osgi.resource
     version: 1.0.0
@@ -468,64 +465,70 @@ sbom:
     version: 4.0.1
     licenses: MIT
   - name: protobuf-java
-    version: 3.19.6
+    version: 3.25.5
     licenses: BSD-3-Clause
+  - name: pscan
+    version: 0.2.1
+    licenses: ''
   - name: rsyntaxtextarea
     version: 3.5.3
     licenses: BSD-3-Clause
+  - name: scripts
+    version: 45.9.0
+    licenses: ''
+  - name: selenium
+    version: 15.36.0
+    licenses: ''
   - name: selenium-api
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.29.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v131
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-devtools-v132
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-devtools-v133
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
-  - name: selenium-devtools-v85
-    version: 4.29.0
+  - name: selenium-devtools-v134
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.29.0
+    version: 4.30.0
     licenses: Apache-2.0
   - name: service
     version: 1.16.0
@@ -545,6 +548,9 @@ sbom:
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
+  - name: testutils
+    version: unspecified
+    licenses: ''
   - name: woodstox-core
     version: 6.6.1
     licenses: Apache-2.0
@@ -555,7 +561,7 @@ sbom:
     version: 2.16.0
     licenses: Apache-2.0
   - name: zest
-    version: 0.24.0
+    version: 0.25.0
     licenses: MPL-2.0
 ---
 
