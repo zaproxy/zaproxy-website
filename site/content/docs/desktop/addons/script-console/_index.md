@@ -16,7 +16,7 @@ The Script Console add-on allows you to run scripts that can be embedded within 
 
 It supports any scripting language that supports JSR 223 (http://www.jcp.org/en/jsr/detail?id=223) , including:
 
-* ECMAScript / JavaScript (using [Nashorn engine](https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/), included by default)
+* ECMAScript / JavaScript (using [Graal.js engine](https://www.graalvm.org/), included by default)
 * Zest <https://developer.mozilla.org/en-US/docs/zest> (included by default)
 * Groovy <http://groovy-lang.org/>
 * Python <http://www.jython.org>
