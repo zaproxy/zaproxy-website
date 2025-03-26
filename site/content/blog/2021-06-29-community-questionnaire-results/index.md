@@ -197,4 +197,4 @@ And it looks like articles on __scripting__ and the __APIs__ are well overdue!
 
 We will be __following up__ with people who said they might be interested in contributing the the ZAP [Success Stories](/success/) but if you did not reply but would still like to be featured then just get in touch with us as per the links on that page.
 
-The positive feedback was great to receive, and to the person who (rightly) complained about the reporting - hopefully the new [Report Generation](/docs/desktop/addons/report-generation/) add-on has addressed this long standing problem. If not then let us know what [enhancements](https://github.com/zaproxy/zaproxy/issues/new?assignees=&labels=enhancement&template=Feature_request.md) you would like to see!
+The positive feedback was great to receive, and to the person who (rightly) complained about the reporting - hopefully the new [Report Generation](/docs/desktop/addons/report-generation/) add-on has addressed this long standing problem. If not then let us know what [enhancements](https://github.com/zaproxy/zaproxy/issues/new?template=feature-request.yml) you would like to see!

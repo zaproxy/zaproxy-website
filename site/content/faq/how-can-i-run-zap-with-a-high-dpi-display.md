@@ -24,5 +24,5 @@ graphical elements such as checkboxes and tree expand/collapse controls may
 not scale.
 
 If none of these solutions work for you then raise an
-[issue](https://github.com/zaproxy/zaproxy/issues/new) stating exactly which
+[issue](https://github.com/zaproxy/zaproxy/issues/new/choose) stating exactly which
 system and versions of Java you are using.

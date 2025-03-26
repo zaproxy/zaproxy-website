@@ -15,7 +15,7 @@ In particular:
 
 ## Raising an Issue
 
-If you have found a new bug then raise a [new issue](https://github.com/zaproxy/zaproxy/issues/new/choose).
+If you have found a new bug then raise a [new issue](https://github.com/zaproxy/zaproxy/issues/new?template=bug-report.yml).
 
 Please include as much information as you can to help us diagnose the problem.
 
@@ -27,6 +27,6 @@ We are always very grateful to researchers who report vulnerabilities responsibl
 
 ## Request a New Feature
 
-For new features or functionality raise a [feature request](https://github.com/zaproxy/zaproxy/issues/new?assignees=&labels=enhancement&template=Feature_request.md).
+For new features or functionality raise a [feature request](https://github.com/zaproxy/zaproxy/issues/new?template=feature-request.yml).
 
 Again, the more details you can supply the better.

@@ -11,7 +11,7 @@ It is actively maintained.
 
 In this case we use it to check that the [AJAX Spider](/docs/desktop/addons/ajax-spider/) finds all of the expected pages.
 Juice Shop was manually explored using a browser - if you find a new URL in Juice Shop that can be discovered by 'normal'
-exploration but which is not listed then please [raise an issue](https://github.com/zaproxy/zaproxy/issues/new?assignees=&labels=bug&projects=&template=bug-report.yml).
+exploration but which is not listed then please [raise an issue](https://github.com/zaproxy/zaproxy/issues/new?template=bug-report.yml).
 
 {{< spider-table >}}
 
