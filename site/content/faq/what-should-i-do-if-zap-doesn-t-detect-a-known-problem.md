@@ -14,6 +14,6 @@ those in our regression tests.
 
 You can let us know via:
 
-  * A [new issue](https://github.com/zaproxy/zaproxy/issues/new)
+  * A [new issue](https://github.com/zaproxy/zaproxy/issues/new/choose)
   * The [developers group](https://groups.google.com/group/zaproxy-develop)
   * A private email to psiinon at gmail dot com

@@ -93,7 +93,7 @@ By default ZAP supports ECMAScript (JavaScipt) and [Zest](https://developer.mozi
 scripting language from the Mozilla Security team.  
 You can also download add-ons which extend support to Jython and JRuby. ZAP will be able to support any language that supports [JSR
 223](https://www.jcp.org/en/jsr/detail?id=223) so if there's another scripting language you would like us to support then please raise an
-[enhancement request issue](https://github.com/zaproxy/zaproxy/issues/new).  
+[enhancement request issue](https://github.com/zaproxy/zaproxy/issues/new?template=feature-request.yml).  
 To use ZAP scripts from the UI you need to use the Scripts and Script Console tabs, which are hidden by default and can be accessed via the
 relevant tabs with the green plus sign.  
   

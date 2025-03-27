@@ -67,4 +67,4 @@ dependent.
 ###  Raise an Issue
 
 You can raise issues (bugs or new features) at the [issue
-tracker](https://github.com/zaproxy/zaproxy/issues/new).
+tracker](https://github.com/zaproxy/zaproxy/issues/new/choose).
