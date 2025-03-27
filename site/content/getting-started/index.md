@@ -66,7 +66,7 @@ ZAP has installers for Windows, Linux, and macOS. There are also Docker images a
 ##### Install ZAP
 The first thing to do is install ZAP on the system you intend to perform pentesting on. Download the appropriate installer from the [Download](/download/) page.
 
-Note that ZAP requires Java 11+ in order to run. The macOS installer includes an appropriate version of Java but you must install Java 11+ separately for Windows, Linux, and Cross-Platform versions. The Docker versions do not require you to install Java.
+Note that ZAP requires Java 17+ in order to run. The macOS installer includes an appropriate version of Java but you must install Java 17+ separately for Windows, Linux, and Cross-Platform versions. The Docker versions do not require you to install Java.
 
 Once the installation is complete, launch ZAP and read the license terms. Click **Agree** if you accept the terms, and ZAP will finish installing, then ZAP will automatically start.
 
