@@ -54,17 +54,14 @@ you.
 
 Be aware that lots of webapps do weird and wonderful things, often in bizarre ways. We can't second guess them, so when asking for help you'll need to give us sanitized examples to help us figure out what's going on.
 
-###  Ask on IRC
+###  Ask on Slack
 
-Many of ZAP contributors hang out on the Libera Chat [#zaproxy](https://web.libera.chat/#zaproxy) channel which you can access via that link or your favourite irc client.
-
-###  Ask on Twitter
-
-You can ask [@psiinon](https://twitter.com/psiinon) short questions directly
-on twitter, although whether he's online will be timezone and holiday
-dependent.
+You can chat with the ZAP team on [Slack](/slack/), if you have not already joined then you will need an [invite](/slack/invite/).
 
 ###  Raise an Issue
 
 You can raise issues (bugs or new features) at the [issue
 tracker](https://github.com/zaproxy/zaproxy/issues/new/choose).
+
+> [!WARNING]
+> Please do not ask questions as issues - they will be closed and you will be redirected to the [ZAP user group](https://groups.google.com/group/zaproxy-users).

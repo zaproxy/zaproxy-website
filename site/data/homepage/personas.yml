@@ -1,8 +1,8 @@
 personaItems:
   - title: Intro to ZAP
-    text: If you are new to security testing, then ZAP has you very much in mind. Check out our ZAP in Ten video series to learn more!
+    text: If you are new to security testing, then ZAP has you very much in mind. Check out our ZAP Quick Start Guide to learn more!
     icon: new.svg
-    link: /zap-in-ten/
+    link: /getting-started/
 
   - title: Automate with ZAP
     text: ZAP provides range of options for security automation. Check out the automation docs to start automating!
