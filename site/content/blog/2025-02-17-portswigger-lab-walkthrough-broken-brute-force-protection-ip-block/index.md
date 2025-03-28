@@ -783,7 +783,7 @@ Rate-limiting with IP blocking is a common defense against brute-force attacks. 
 
 ## Resources
 
-1.  [Authentication vulnerabilities](https://portswigger.net/web-security/authentication) - PortSwigger Web Security Academy
+1. [Authentication vulnerabilities](https://portswigger.net/web-security/authentication) - PortSwigger Web Security Academy
 2. [Burp to ZAP Feature Map](https://www.zaproxy.org/docs/burp-to-zap-feature-map/) - Zaproxy Docs
 3. [PortSwigger Lab Walkthroughs With ZAP](https://www.zaproxy.org/tags/portswigger-lab/) - Zaproxy Docs
 4. [Zaproxy Docs](https://www.zaproxy.org/docs/)
