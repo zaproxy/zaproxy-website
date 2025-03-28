@@ -783,10 +783,10 @@ Rate-limiting with IP blocking is a common defense against brute-force attacks. 
 
 ## Resources
 
-1. [Authentication vulnerabilities](https://portswigger.net/web-security/authentication) - PortSwigger Web Security Academy
-2. [Burp to ZAP Feature Map](https://www.zaproxy.org/docs/burp-to-zap-feature-map/) - Zaproxy Docs
-3. [PortSwigger Lab Walkthroughs With ZAP](https://www.zaproxy.org/tags/portswigger-lab/) - Zaproxy Docs
+1. [Authentication vulnerabilities](https://portswigger.net/web-security/authentication)
+2. [Burp to ZAP Feature Map](https://www.zaproxy.org/docs/burp-to-zap-feature-map/)
+3. [PortSwigger Lab Walkthroughs With ZAP](https://www.zaproxy.org/tags/portswigger-lab/)
 4. [Zaproxy Docs](https://www.zaproxy.org/docs/)
-5. [Migration Guide from Nashorn to GraalJS](https://www.graalvm.org/latest/reference-manual/js/NashornMigrationGuide/) - GraalJS Docs
-6. [GraalJS Compatibility](https://www.graalvm.org/latest/reference-manual/js/JavaScriptCompatibility/) - GraalJS Docs
-7. [Java Interoperability](https://www.graalvm.org/jdk21/reference-manual/js/JavaInteroperability/) - GraalJS Docs
+5. [Migration Guide from Nashorn to GraalJS](https://www.graalvm.org/latest/reference-manual/js/NashornMigrationGuide/)
+6. [GraalJS Compatibility](https://www.graalvm.org/latest/reference-manual/js/JavaScriptCompatibility/)
+7. [Java Interoperability](https://www.graalvm.org/jdk21/reference-manual/js/JavaInteroperability/)
