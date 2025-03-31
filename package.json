@@ -23,7 +23,7 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.26.10",
-    "@babel/eslint-parser": "^7.26.10",
+    "@babel/eslint-parser": "^7.27.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
     "@babel/preset-env": "^7.26.9",
@@ -58,7 +58,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.98.0",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.0",
+    "webpack-dev-server": "^5.2.1",
     "webpack-merge": "^6.0.1"
   },
   "resolutions": {
