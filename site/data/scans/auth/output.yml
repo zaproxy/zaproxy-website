@@ -22,8 +22,53 @@ authtestcomplex:
       password: true
       session: true
       verification: true
+authtestdelay:
+  site: "https://authenticationtest.com/delayChallenge/"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: false
+    bbaplus:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+authtestmulti:
+  site: "https://authenticationtest.com/multiStepAuth/"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: false
+      session: true
+      verification: false
+    bbaplus:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
 authtestsimple:
   site: "https://authenticationtest.com/simpleFormAuth/"
+  plans:
+    stdbba:
+      auth: false
+      username: true
+      password: true
+      session: true
+      verification: false
+    bbaplus:
+      auth: true
+      username: true
+      password: true
+      session: true
+      verification: true
+authtesttotp:
+  site: "https://authenticationtest.com/totpChallenge/"
   plans:
     stdbba:
       auth: false
@@ -198,7 +243,7 @@ wikipedia:
   note: ""
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
