@@ -1,4 +1,8 @@
 ---
+- id: 10054
+  name: "Cookie without SameSite Attribute"
+  status: "release"
+  type: "Passive"
 - id: 10027
   name: "Information Disclosure - Suspicious Comments"
   status: "release"
@@ -35,12 +39,12 @@
   name: "Re-examine Cache-control Directives"
   status: "release"
   type: "Passive"
-- id: 10017
-  name: "Cross-Domain JavaScript Source File Inclusion"
-  status: "release"
-  type: "Passive"
 - id: 10055
   name: "CSP"
+  status: "release"
+  type: "Passive"
+- id: 10017
+  name: "Cross-Domain JavaScript Source File Inclusion"
   status: "release"
   type: "Passive"
 - id: 10036
@@ -55,27 +59,23 @@
   name: "User Agent Fuzzer"
   status: "release"
   type: "Active"
-- id: 10054
-  name: "Cookie without SameSite Attribute"
+- id: 10096
+  name: "Timestamp Disclosure - Unix"
   status: "release"
   type: "Passive"
 - id: 10112
   name: "Session Management Response Identified"
   status: "beta"
   type: "Passive"
+- id: 10109
+  name: "Modern Web Application"
+  status: "release"
+  type: "Passive"
 - id: 10020
   name: "Anti-clickjacking Header"
   status: "release"
   type: "Passive"
-- id: 10096
-  name: "Timestamp Disclosure - Unix"
-  status: "release"
-  type: "Passive"
-- id: 10031
-  name: "User Controllable HTML Element Attribute (Potential XSS)"
-  status: "release"
-  type: "Passive"
-- id: 10109
-  name: "Modern Web Application"
+- id: 10010
+  name: "Cookie No HttpOnly Flag"
   status: "release"
   type: "Passive"
