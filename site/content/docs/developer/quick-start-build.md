@@ -35,7 +35,8 @@ git clone https://github.com/zaproxy/zap-extensions.git
 ## Installing ZAP Add-ons
 As the name suggests, ZAP add-ons are a way to enhance ZAP functionality. There are several add-ons that allow you to do many different things. Some add-ons which are required by ZAP to work properly are called mandatory add-ons. These add-ons need to be installed first to be able to run ZAP from source.
 
-The *zap-extensions* repository contains the source code for the add-ons maintained by the core team, including the mandatory add-ons.
+> [!NOTE]
+> The *zap-extensions* repository contains the source code for the add-ons maintained by the core team, including the mandatory add-ons.
 
 ZAP uses the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) that downloads all the dependencies for the projects.
 
