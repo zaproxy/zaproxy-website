@@ -45,7 +45,7 @@ However, poor implementation can undermine even the best defense mechanisms. If 
 
 This can be in the form of a logic flaw — a vulnerability that allows users to manipulate normal application functionality or workflow to achieve results the developer neither intended nor expected.
 
-In this lab, we’ll exploit a logic flaw to access another user’s account. The lab provides us with a specific username, “carlos”. So, we don’t need to guess a valid username — we can focus on brute-forcing the password.
+In this lab, we’ll exploit a logic flaw to access another user’s account. The lab provides us with a specific username, “carlos”. So, we don’t need to guess a valid username — we can focus on brute-forcing Carlos’ password.
 
 Visit [the lab page](https://portswigger.net/web-security/authentication/password-based/lab-broken-bruteforce-protection-ip-block) and click “Access the Lab” to launch the test site. The URL for the lab will look something like `https://0a19000b0319d4b784b7a40400f800ed.web-security-academy.net/`. You’ll want to copy it.
 
@@ -689,7 +689,7 @@ Finally, because ZAP runs on the Java Virtual Machine (JVM), we can access the J
 
 Our code sample above imports the `Thread` class using `Java.type('java.lang.Thread')`. We’ve used it to implement the one-minute delay between requests. For more details on available JavaScript features and the Java APIs accessible in your script, see [GraalJS Compatibility](https://www.graalvm.org/latest/reference-manual/js/JavaScriptCompatibility/) and [Java Interoperability](https://www.graalvm.org/jdk21/reference-manual/js/JavaInteroperability/).
 
-If you’ve modified the script as stated, save it and ensure it is enabled. Aside from right-clicking the script's name in the Scripts tab, you can also enable it with the gray cross-in-circle icon in the Script Console tab (it is a green check icon when the script is enabled).
+If you’ve modified the script as stated, save it and ensure it is enabled. Aside from right-clicking the script's name in the Scripts tab, you can also enable it with the gray cross-in-circle icon in the *Script Console* tab (it is a green check icon when the script is enabled).
 
 #### Step 3: Add the Payload
 
