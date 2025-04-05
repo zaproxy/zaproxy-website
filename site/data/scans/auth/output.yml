@@ -47,9 +47,9 @@ authtestmulti:
       session: true
       verification: false
     bbaplus:
-      auth: true
-      username: true
-      password: true
+      auth: false
+      username: false
+      password: false
       session: true
       verification: true
 authtestsimple:
@@ -135,7 +135,7 @@ infosecex:
   note: ""
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -213,7 +213,7 @@ testfire:
       session: true
       verification: true
     csa:
-      auth: true
+      auth: false
       username:
       password:
       session: true
