@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: scripts
-    version: 45.9.0
+    version: 45.10.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.9.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.10.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -33,7 +33,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.49.0
+    version: 0.50.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -69,7 +69,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.31.0
+    version: 1.32.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -372,7 +372,7 @@ sbom:
     version: 3.25.5
     licenses: BSD-3-Clause
   - name: pscan
-    version: 0.2.1
+    version: 0.3.0
     licenses: ''
   - name: rsyntaxtextarea
     version: 3.5.3
