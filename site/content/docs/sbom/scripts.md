@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: scripts
-    version: 45.10.0
+    version: 45.11.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.10.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.11.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -69,7 +69,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.32.0
+    version: 1.33.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
