@@ -47,9 +47,9 @@ authtestmulti:
       session: true
       verification: false
     bbaplus:
-      auth: true
-      username: true
-      password: true
+      auth: false
+      username: false
+      password: false
       session: true
       verification: true
 authtestsimple:
