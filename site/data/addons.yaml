@@ -1004,9 +1004,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/advanced-sqlinjection-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sqliplugin-v15/sqliplugin-beta-15.zap
-  date: 2021-10-20
-  version: 15
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sqliplugin-v16/sqliplugin-beta-16.zap
+  date: 2025-04-30
+  version: 16
 - id: sse
   name: Server-Sent Events
   description: Allows you to view Server-Sent Events (SSE) communication.
