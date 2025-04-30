@@ -13,7 +13,7 @@ company:
   twitter: we45
 ---
 
-We at we45 and our training venture, AppSecEngineer use and train on ZAP extensively. We strongly believe OWASP ZAP to be the most programmable DAST tool in its class, regardless of commercial or OSS alternatives. 
+We at we45 and our training venture, AppSecEngineer use and train on ZAP extensively. We strongly believe ZAP to be the most programmable DAST tool in its class, regardless of commercial or OSS alternatives. 
 
 One of the things we do with our clients is to implement continuous DAST scanning as part of their DevSecOps initiatives. Many of our clients run a bevy of automated scans on a periodic basis, triggered through CI tooling with ZAP as the tool. For some of those that have End-to-End Test Automation Scripts with Selenium, Cypress, etc, we set up ZAP to be able to run authenticated, completely automated scanning, which is something we find unique in the DAST space 
 
