@@ -21,10 +21,10 @@ One of the SAMM requirements, defined in the _Verification / Security Testing_ p
 maturity level, states that an organization should _embed security testing as part of the
 development and deployment processes_. We use a number of commercial tools for both static
 and dynamic application security scans, software composition analysis and for measuring other
-metrics. OWASP ZAP has been added to our security toolset, fitting the needs of many
+metrics. ZAP has been added to our security toolset, fitting the needs of many
 application teams within the company.
 
-A major strength of the OWASP ZAP is the ease of deployment. Being a standalone Java
+A major strength of the ZAP is the ease of deployment. Being a standalone Java
 application, and running smoothly from a Docker container, means ZAP can be easily installed
 closely to the scanned application. Regardless if the targeted service runs in a closed
 on-premise lab, or on a Kubernetes cluster hosted in the public cloud, ZAP can be easily
