@@ -19,8 +19,8 @@
   name: "X-Content-Type-Options Header Missing"
   status: "release"
   type: "Passive"
-- id: 10038
-  name: "Content Security Policy (CSP) Header Not Set"
+- id: 10050
+  name: "Retrieved from Cache"
   status: "release"
   type: "Passive"
 - id: 40018
@@ -31,14 +31,26 @@
   name: "Strict-Transport-Security Header"
   status: "release"
   type: "Passive"
-- id: 10050
-  name: "Retrieved from Cache"
+- id: 10038
+  name: "Content Security Policy (CSP) Header Not Set"
   status: "release"
   type: "Passive"
 - id: 10015
   name: "Re-examine Cache-control Directives"
   status: "release"
   type: "Passive"
+- id: 90033
+  name: "Loosely Scoped Cookie"
+  status: "release"
+  type: "Passive"
+- id: 10036
+  name: "HTTP Server Response Header"
+  status: "release"
+  type: "Passive"
+- id: 10104
+  name: "User Agent Fuzzer"
+  status: "release"
+  type: "Active"
 - id: 10055
   name: "CSP"
   status: "release"
@@ -47,25 +59,17 @@
   name: "Cross-Domain JavaScript Source File Inclusion"
   status: "release"
   type: "Passive"
-- id: 10036
-  name: "HTTP Server Response Header"
-  status: "release"
+- id: 10112
+  name: "Session Management Response Identified"
+  status: "beta"
   type: "Passive"
-- id: 90033
-  name: "Loosely Scoped Cookie"
-  status: "release"
-  type: "Passive"
-- id: 10104
-  name: "User Agent Fuzzer"
-  status: "release"
-  type: "Active"
 - id: 10096
   name: "Timestamp Disclosure - Unix"
   status: "release"
   type: "Passive"
-- id: 10112
-  name: "Session Management Response Identified"
-  status: "beta"
+- id: 10010
+  name: "Cookie No HttpOnly Flag"
+  status: "release"
   type: "Passive"
 - id: 10109
   name: "Modern Web Application"
@@ -73,9 +77,5 @@
   type: "Passive"
 - id: 10020
   name: "Anti-clickjacking Header"
-  status: "release"
-  type: "Passive"
-- id: 10010
-  name: "Cookie No HttpOnly Flag"
   status: "release"
   type: "Passive"
