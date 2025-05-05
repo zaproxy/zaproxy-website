@@ -122,24 +122,156 @@ icon:
 > [!NOTE]
 > You can highlight important information in your articles or docs using different types of callouts (also known as admonitions – or alerts, as used in [the Hugo docs](https://gohugo.io/render-hooks/blockquotes/#alerts)).
 
-The examples below use the same syntax as in Github Markdown. The template responsible for rendering them is at `site/layouts/_default/_markup/render-blockquote.html`
+For compatibility with both content and layout files, we use a mix of shortcodes and partials to display blockquote alerts. Partials work in layout, but not content files. Shortcodes work in content, but not layout files. Use the partial in layout files, and the shortcode (which internally calls the partial) in content files.
 
+The partial is at `site/layouts/partials/blockquote-alert.html`, and the shortcode is at `site/layouts/shortcodes/blockquote-alert.html`.
+
+There are five available alert types as shown in the examples below:
+
+- note
+- tip
+- important
+- warning
+- caution
+
+Omit the `title` parameter to keep the alert type as the default title (for example, a note alert will have "Note" as its title):
+
+```md
+<!-- Shortcodes in content files -->
+
+{{< blockquote-alert type="note" title="Optional custom title">}}
+Useful information that users should know, even when skimming content.
+{{< /blockquote-alert >}}
+
+{{< blockquote-alert type="tip" title="Optional custom title">}}
+Helpful advice for doing things better or more easily.
+{{< /blockquote-alert >}}
+
+{{< blockquote-alert type="important" title="Optional custom title">}}
+Key information users need to know to achieve their goal.
+{{< /blockquote-alert >}}
+
+{{< blockquote-alert type="warning" title="Optional custom title">}}
+Urgent info that needs immediate user attention to avoid problems.
+{{< /blockquote-alert >}}
+
+{{< blockquote-alert type="caution" title="Optional custom title">}}
+Advises about risks or negative outcomes.
+{{< /blockquote-alert >}}
 ```
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
 
-> [!TIP]
-> Helpful advice for doing things better or more easily.
+In layout files, call the partial directly. Just like shortcode content, anything passed to the  `content` parameter is parsed as Markdown. To pass raw HTML instead, use the `html` parameter. Again, the title parameter is optional and will default to the alert type:
+
+```html
+<!-- Partials in layout files -->
+
+<!-- Anything passed via `content` is interpreted as Markdown -->
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "note"
+    "title" "Optional custom title"
+    "content" "Useful information that users should know, even when skimming content."
+) }}
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "tip"
+    "title" "Optional custom title"
+    "content" "Helpful advice for doing things better or more easily."
+) }}
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "important"
+    "title" "Optional custom title"
+    "content" "Key information users need to know to achieve their goal."
+) }}
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "warning"
+    "title" "Optional custom title"
+    "content" "Urgent info that needs immediate user attention to avoid problems."
+) }}
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "caution"
+    "title" "Optional custom title"
+    "content" "Advises about risks or negative outcomes."
+) }}
+```
+
+In addition to simple string content as shown above, you can also pass in complex nested content with multiple paragraphs and elements:
+
+```md
+<!-- Shortcode example with more complex content -->
+
+{{< blockquote-alert type="tip" title="Optional custom Title" >}}
+This is a tip with **bold text** and _italic_ text.
+
+This is a second paragraph in the same alert.
+
+- List item 1
+- List item 2
+{{< /blockquote-alert >}}
+```
+
+You can do similar in partials. These are all valid options. Additionally, you can assign content to a variable before passing it in, which helps with formatting in longer templates:
+
+```html
+<!-- You can wrap your markdown content in backticks if it doesn't itself contain backticks -->
+<!-- Note that indented lines could be interpreted as a preformatted code block. -->
+{{ $alertContent := `This is a tip with **bold text** and _italic_ text.
+
+This is a second paragraph in the same alert.
+            
+- List item 1
+- List item 2
+`}}
+
+{{ partial "blockquote-alert.html" (dict
+  "type" "tip"
+  "title" "Optional custom title"
+  "content" $alertContent
+) }}
+
+<!-- Concatenate multi-line strings (markdown) -->
+{{ $alertContent := add
+  "This is a tip with **bold text** and _italic_ text.\n\n"
+  "This is a second paragraph in the same alert.\n"
+  "- List item 1\n"
+  "- List item 2\n\n"
+  "`Here's some text in backticks.`"
+}}
+
+{{ partial "blockquote-alert.html" (dict
+  "type" "tip"
+  "title" "Optional custom title"
+  "content" $alertContent
+) }}
+
+<!-- Pass HTML with nested elements -->
+{{ partial "blockquote-alert" (dict 
+    "type" "caution" 
+    "title" "Be Careful!" 
+    "html" "<p>This is a <strong>caution</strong> message.</p><p>It has multiple paragraphs.</p>"
+) }}
+```
+
 
 > [!IMPORTANT]
-> Key information users need to know to achieve their goal.
+> When working with complex content, make sure to handle line breaks properly within the strings passed to the `content` or `html` parameters. For example, the following will throw a parse error (`html: overlay: parse failed unterminated quoted string in action`):
 
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
-
-> [!CAUTION]
-> Advises about risks or negative outcomes.
 ```
+{{ partial "blockquote-alert" (dict
+    "type" "caution"
+    "title" "Be Careful!"
+    "html" "<p>This is a <strong>caution</strong> message.</p>
+    <p>It has multiple paragraphs.</p>"
+) }}
+```
+
+To avoid this, you can use either of the following options:
+
+- Keep everything on a single line
+- Use string concatenation (whether in a variable or directly)
 
 #### Layouts
 For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
