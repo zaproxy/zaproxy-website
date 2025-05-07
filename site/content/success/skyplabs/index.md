@@ -32,6 +32,6 @@ subscription plans to proprietary services, if any, into donations to the ZAP
 project. We think it is the most sustainable way to invest into the software
 solutions that run businesses.
 
- [burp-missing-features]: https://www.zaproxy.org/docs/burp-to-zap-feature-map/#burp-missing-features "Burp Missing Features - ZAP Documentation"
- [ds-store-parsing]: https://www.zaproxy.org/blog/2023-09-08-ds-store-parsing/ "Parsing .DS_Store files with ZAP - The ZAP Blog"
+ [burp-missing-features]: /docs/burp-to-zap-feature-map/#burp-missing-features "Burp Missing Features - ZAP Documentation"
+ [ds-store-parsing]: /blog/2023-09-08-ds-store-parsing/ "Parsing .DS_Store files with ZAP - The ZAP Blog"
  [gh-kingthorin]: https://github.com/kingthorin "kingthorin's GitHub profile"
