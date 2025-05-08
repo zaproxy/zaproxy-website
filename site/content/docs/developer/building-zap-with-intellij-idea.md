@@ -40,25 +40,28 @@ Then, in the ‘New Project’ window, with ‘Empty Project’ as automatically
 
 ![IntelliJ New Empty Project](/img/docs/developer/intellij-new-empty-project.png)
 
-After creating the empty project, click the settings gear icon on the upper right and go to ‘Project Structure’. On the next window that pops up, pick an installed SDK.  
+After creating the empty project, click the settings gear icon on the upper right and go to ‘Project Structure’. On the next window that pops up, pick an installed SDK and click ok.  
 
 ![IntelliJ Project Structure from Settings Menu](/img/docs/developer/intellij-settings-project-structure.png)
 
 ![Pick installed SDK](/img/docs/developer/intellij-sdk.png)
 
-In the same window, select the 'Modules' tab under 'Project Settings', click on the ➕ button, and select 'Import Module'.  
+Now Negivate to the top left and click on file-->new--> "Module From Existing Sources", then go the zaproxy folder and select the ‘build.gradle.kts’ file that is present in the root of its directory, and click on OK.
 
-![Import Module](/img/docs/developer/intellij-import-module.png)
+![Import Module](/img/docs/developer/select-file-grade.png)   
 
 Then, in the 'Select File or Directory to Import' window, navigate to any one of the cloned ZAP repositories, select the 'build.gradle.kts' file that is present in the root of its directory, and click on OK.  
 
-![Select Gradle Build Script](/img/docs/developer/intellij-select-gradle-build-script.png)
-
-Repeat the last two steps until you have imported all of the ZAP repositories as modules. Then, click on OK in the 'Project Structure' window.
+Repeat the steps until you have imported all of the ZAP repositories as modules. Then, click on OK in the 'Select File or Directory to Import' window.
 
 You should now be able to see all the imported repositories in the IntelliJ IDEA Project tab.
 
 It is worth noting that some of the _zap-extensions_ add-ons may fail to compile if you do not have the required environment for them. This is to be expected and is not a problem unless you want to work on those add-ons, in which case see their READMEs for more details.
+
+![Import Module](/img/docs/developer/CONF.png)  
+
+Now we have to configure the IDE, On the top right bar, open "Run and debug configuration" by selecting "edit configuration", a new dialog box will appear, in the working directory set the path to zaproxy/zap/src/main/dist and click ok.
+
 
 ## Running ZAP
 In the IntelliJ Project tab navigate to:
