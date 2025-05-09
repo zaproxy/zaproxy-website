@@ -122,23 +122,135 @@ icon:
 > [!NOTE]
 > You can highlight important information in your articles or docs using different types of callouts (also known as admonitions – or alerts, as used in [the Hugo docs](https://gohugo.io/render-hooks/blockquotes/#alerts)).
 
-The examples below use the same syntax as in Github Markdown. The template responsible for rendering them is at `site/layouts/_default/_markup/render-blockquote.html`
+For compatibility with HTML and Markdown in both content and layout files, we use a mix of shortcodes and partials to display blockquote alerts. Shortcodes on their own don't work in layout files, so you'll want to call a partial in layout files but use a shortcode (that calls the partial) in Markdown and HTML content files.
+
+The partial is at `site/layouts/partials/blockquote-alert.html`, and the shortcode is at `site/layouts/shortcodes/blockquote-alert.html`.
+
+There are five alert types. You can use these directly in Markdown and HTML cotent files. Omit the `title` parameter to keep the alert type as the default title (for example, a note alert will have "Note" as its title):
 
 ```
-> [!NOTE]
-> Useful information that users should know, even when skimming content.
+{{< blockquote-alert type="note" title="Optional custom title">}}
+Useful information that users should know, even when skimming content.
+{{< /blockquote-alert >}}
 
-> [!TIP]
-> Helpful advice for doing things better or more easily.
+----------------
 
-> [!IMPORTANT]
-> Key information users need to know to achieve their goal.
+{{< blockquote-alert type="tip" title="Optional custom title">}}
+Helpful advice for doing things better or more easily.
+{{< /blockquote-alert >}}
 
-> [!WARNING]
-> Urgent info that needs immediate user attention to avoid problems.
+----------------
 
-> [!CAUTION]
-> Advises about risks or negative outcomes.
+{{< blockquote-alert type="important" title="Optional custom title">}}
+Key information users need to know to achieve their goal.
+{{< /blockquote-alert >}}
+
+----------------
+
+{{< blockquote-alert type="warning" title="This is the title">}}
+Urgent info that needs immediate user attention to avoid problems.
+{{< /blockquote-alert >}}
+
+----------------
+
+{{< blockquote-alert type="caution" title="This is the title">}}
+Advises about risks or negative outcomes.
+{{< /blockquote-alert >}}
+```
+
+You can include both simple string content, as shown above, and complex nested content with multiple paragraphs and HTML elements:
+
+Shortcode:
+
+```
+{{< blockquote-alert type="tip" title="Custom Title" >}}
+This is a tip with **bold text** and _italic_ text.
+
+This is a second paragraph in the same alert.
+
+- List item 1
+- List item 2
+{{< /blockquote-alert >}}
+```
+
+For layout files, you can call the partial like so::
+
+```
+{{ partial "blockquote-alert.html" (dict
+    "type" "tip"
+    "title" "Pro Tip"
+    "content" "<p>Use partials to avoid repeating logic.</p>"
+) }}
+```
+
+
+**In Layout Files (calling partial directly)**
+
+```go-html-template
+<!-- Simple text -->
+{{ partial "blockquote-alert" (dict "type" "important" "content" "This is an important message.") }}
+
+<!-- HTML content -->
+{{ partial "blockquote-alert" (dict 
+    "type" "caution" 
+    "title" "Be Careful!" 
+    "content" "<p>This is a <strong>caution</strong> message.</p><p>It has multiple paragraphs.</p>"
+) }}
+
+<!-- Dynamic content -->
+{{ $alertContent := printf "<p>Page last updated: %s</p><p>Author: %s</p>" (.Lastmod.Format "January 2, 2006") .Params.author }}
+{{ partial "blockquote-alert" (dict "type" "note" "title" "Page Info" "content" $alertContent) }}
+```
+
+**In Other Partials:**
+
+```go-html-template
+{{ define "partials/footer-notice.html" }}
+  {{ partial "blockquote-alert" (dict 
+      "type" "important" 
+      "title" "Subscribe" 
+      "content" "<p>Want to stay updated? <a href='/subscribe'>Join our newsletter</a>.</p>"
+  ) }}
+{{ end }}
+```
+
+**NOTE:**
+
+You'll want to handle line breaks properly within the HTML content string when working with complex content. For example, the following will throw a parse error (`html: overlay: parse failed unterminated quoted string in action`):
+
+```
+{{ partial "blockquote-alert" (dict
+    "type" "caution"
+    "title" "Be Careful!"
+    "content" "<p>This is a <strong>caution</strong> message.</p>
+    <p>It has multiple paragraphs.</p>"
+) }}
+```
+
+To fix this, you can:
+
+- Keep everything on a single line
+- Use string concatenation (whether in a variable or directly)
+
+```
+{{ partial "blockquote-alert" (dict
+    "type" "caution"
+    "title" "Be Careful!"
+    "content" "<p>This is a <strong>caution</strong> message.</p><p>It has multiple paragraphs.</p>"
+) }}
+
+---------------
+
+{{ $alertContent := add
+  "<p>This is a <strong>caution</strong> message.</p>"
+  "<p>It has multiple paragraphs.</p>"
+}}
+
+{{ partial "blockquote-alert.html" (dict
+  "type" "caution"
+  "title" "Be Careful!"
+  "content" $alertContent
+) }}
 ```
 
 #### Layouts
