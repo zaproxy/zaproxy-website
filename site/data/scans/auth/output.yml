@@ -107,11 +107,11 @@ deftheweb:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
-      session: true
-      verification: true
+      session: false
+      verification: false
 ginnjuice:
   site: "https://ginandjuice.shop"
   plans:
@@ -213,7 +213,7 @@ testfire:
       session: true
       verification: true
     csa:
-      auth: true
+      auth: false
       username:
       password:
       session: true
@@ -232,7 +232,7 @@ testphp:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
