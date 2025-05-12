@@ -4,7 +4,7 @@
 To work on the website you'll need to have either node.js or Docker installed. In your development environment  `npm run preview` will start up a webpack-dev-server on port 3000 for development which will hot-reload the site as file changes are detected.
 
 ### Docker
-The suggested setup for development is using the Docker.
+The recommended setup for development is using Docker.
 
 ```sh
 # Build image
@@ -59,7 +59,11 @@ https://gohugo.io/getting-started/directory-structure/
 ```
 
 #### Content
-For adding & modifying content the place to be is  `site/content/`. Content is written in the form of markdown files with YAML headers including details about the post such as title, date & layout. The name of the file is tranformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. Additionally, any folder structure you create in that directory will be reflected in the sites' url heirarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`. 
+To add or modify content, go to `site/content/`. 
+
+Content is written in the form of markdown files with YAML headers including details about the post such as title, date & layout. The name of the file is transformed into a url when the site is generated. A file named `site/content/download.md` becomes `/download`. 
+
+Additionally, any folder structure you create in that directory will be reflected in the sites' url hierarchy. That means `site/content/blog/2017-08-22-zap-browser-launch.md` becomes `/blog/2017-08-22-zap-browser-launch`. 
 
 **Sample**  
 ```markdown
@@ -89,14 +93,16 @@ hugo new contributing.md
 hugo new blog/$(date -v +7d '+%Y-%m-%d')-learning-zap-api/index.md
 ```
 
-For keeping content organized you also have the option of encapsulating the content of a post in a directory. If a post has a number of images or other assets related to it, it is much cleaner to include those assets with the post instead of putting them all in the assets directory. For example instead of having `site/content/download.md`, you could have `site/content/download/index.md` & all the post's related images would also live in that same `download` directory.
+For keeping content organized you also have the option of encapsulating the content of a post in a directory. If a post has a number of images or other assets related to it, it is much cleaner to include those assets with the post instead of putting them all in the assets directory.
+
+For example instead of having `site/content/download.md`, you could have `site/content/download/index.md` & all the post's related images would also live in that same `download` directory.
 
 ##### New Content
 For adding new categories of content such as addons or wiki entries follow the pattern below using addons as an example
 
 - Create the content directory `mkdir -p site/content/addons/{images,icons}`
 - If there IS NOT  a lot of media within that section, copy images into the images directory
-- If the content IS media heavy, insteading of creating a single markdown file per post, create a directory with the post name 
+- If the content IS media heavy, instead of creating a single markdown file per post, create a directory with the post name 
   - `site/content/addons/active-scan-rules/images/`
 - If there is sub pages of content, then you will also need to create the directories that reflect the content structure
   - For example for Access Control Context Options you would use one of the structures depending on the depth of the content
@@ -144,7 +150,7 @@ The examples below use the same syntax as in Github Markdown. The template respo
 #### Layouts
 For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
 
-For generic  posts, the lookup resolution works great, but sometimes you have posts that requires custom layouts, such as the downloads page. In those cases, you can specifiy the layout in the content markdown file & it will lookup the template.
+For generic  posts, the lookup resolution works great, but sometimes you have posts that requires custom layouts, such as the downloads page. In those cases, you can specify the layout in the content markdown file & it will lookup the template.
 
 This is what `site/content/download.md` currently looks like which resolves to the template found `site/layouts/page/download.html`.
 
@@ -162,7 +168,7 @@ Data that is shared across the site lives in `site/data/`. For example, a list o
 
 ```yaml
 ---
-- name: 'Simon Bennets'
+- name: 'Simon Bennetts'
   picture: 'https://pbs.twimg.com/profile_images/2186782633/simonbennetts2_400x400.jpg'
   twitter: '@psiinon'
   is_core: true
