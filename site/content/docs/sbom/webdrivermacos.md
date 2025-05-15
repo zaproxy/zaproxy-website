@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '138'
+    version: '139'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v138/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v139/bom.json
   components:
   - name: asm
     version: '9.7'
