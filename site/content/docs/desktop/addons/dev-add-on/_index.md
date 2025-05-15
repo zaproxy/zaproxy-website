@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: dev
-    version: 0.9.0
+    version: 0.10.0
 ---
 
 # Dev Add-On
@@ -23,6 +23,10 @@ Two simple OpenAPI specs, both of which require no authentication. One of the AP
 ## Authentication Pages
 
 A growing set of authentication pages, for use in testing ZAP authentication handling.
+
+## CSRF Pages
+
+A set of pages with forms and CSRF tokens that are checked on POST requests.
 
 ## HTML Pages
 
