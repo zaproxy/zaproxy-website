@@ -59,13 +59,12 @@ groups:
         link: /docs/sbom/
         desc: ZAP add-on SBOMs
     
-  - header: 'Internal Details'
-    links:
-
       - name: 'Alert Details'
         link: /docs/alerts/
         desc: detailed information on the alerts ZAP can raise 
 
+  - header: 'Internal Details'
+    links:
       - name: 'Constants'
         link: /docs/constants/
         desc: defined in the ZAP codebase that are exposed via the API and/or scripts 

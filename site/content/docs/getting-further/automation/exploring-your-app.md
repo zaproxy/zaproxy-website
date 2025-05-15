@@ -37,6 +37,12 @@ It is an effective way of exploring modern web apps but will take longer than th
 By default it will only click on “a”, “button” and “input” elements, so if your target app uses other elements for 
 navigation then you may need to enable additional elements in the [AJAX Spider Options](/docs/desktop/addons/ajax-spider/options/)
 
+### The Client Spider
+
+The [Client Spider](/docs/desktop/addons/client-side-integration/spider/) works in a very similar way to the AJAX Spider.
+However, it can also access the DOM using the ZAP [Browser Extension](https://github.com/zaproxy/browser-extension?tab=readme-ov-file#the-full-extension)
+which can make it more effective than the AJAX Spider in some cases.
+
 ### Importing API Definitions
 
 If your app has an API definition then you are strongly recommended to import that, in addition to any of the other options that apply.
