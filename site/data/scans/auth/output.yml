@@ -38,16 +38,8 @@ authtestdelay:
       session: true
       verification: true
 authtestmulti:
-  site: "https://authenticationtest.com/multiStepAuth/"
-  plans:
-    stdbba:
-      auth: false
-      username: true
-      password: false
-      session: true
-      verification: false
     bbaplus:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
@@ -107,11 +99,11 @@ deftheweb:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
-      session: true
-      verification: true
+      session: false
+      verification: false
 ginnjuice:
   site: "https://ginandjuice.shop"
   plans:
