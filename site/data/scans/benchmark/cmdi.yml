@@ -3,9 +3,9 @@ url: https://localhost:8443/benchmark
 details:
 - path: /cmdi-00/BenchmarkTest00006
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00007
   vulnerable: true
   reported: false
@@ -13,14 +13,14 @@ details:
   result: FAIL
 - path: /cmdi-00/BenchmarkTest00015
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00017
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00051
   vulnerable: false
   reported: false
@@ -28,9 +28,9 @@ details:
   result: Pass
 - path: /cmdi-00/BenchmarkTest00077
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00090
   vulnerable: false
   reported: false
@@ -38,14 +38,14 @@ details:
   result: Pass
 - path: /cmdi-00/BenchmarkTest00091
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00092
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00093
   vulnerable: false
   reported: false
@@ -58,9 +58,9 @@ details:
   result: Pass
 - path: /cmdi-00/BenchmarkTest00159
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00171
   vulnerable: false
   reported: false
@@ -88,9 +88,9 @@ details:
   result: Pass
 - path: /cmdi-00/BenchmarkTest00176
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00177
   vulnerable: false
   reported: false
@@ -98,34 +98,34 @@ details:
   result: Pass
 - path: /cmdi-00/BenchmarkTest00293
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00294
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00295
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00302
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00303
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00304
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-00/BenchmarkTest00305
   vulnerable: false
   reported: false
@@ -448,9 +448,9 @@ details:
   result: Pass
 - path: /cmdi-01/BenchmarkTest00968
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-01/BenchmarkTest00969
   vulnerable: false
   reported: false
@@ -468,9 +468,9 @@ details:
   result: Pass
 - path: /cmdi-01/BenchmarkTest00979
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-01/BenchmarkTest00980
   vulnerable: false
   reported: false
@@ -478,9 +478,9 @@ details:
   result: Pass
 - path: /cmdi-01/BenchmarkTest00981
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-01/BenchmarkTest00982
   vulnerable: false
   reported: false
@@ -488,14 +488,14 @@ details:
   result: Pass
 - path: /cmdi-01/BenchmarkTest00983
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-01/BenchmarkTest01064
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-01/BenchmarkTest01065
   vulnerable: false
   reported: false
@@ -548,9 +548,9 @@ details:
   result: Pass
 - path: /cmdi-01/BenchmarkTest01194
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-01/BenchmarkTest01269
   vulnerable: false
   reported: false
@@ -858,24 +858,24 @@ details:
   result: Pass
 - path: /cmdi-02/BenchmarkTest01850
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01851
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01852
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01864
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01865
   vulnerable: false
   reported: false
@@ -883,19 +883,19 @@ details:
   result: Pass
 - path: /cmdi-02/BenchmarkTest01928
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01929
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01936
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01937
   vulnerable: false
   reported: false
@@ -903,9 +903,9 @@ details:
   result: Pass
 - path: /cmdi-02/BenchmarkTest01938
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01939
   vulnerable: false
   reported: false
@@ -913,9 +913,9 @@ details:
   result: Pass
 - path: /cmdi-02/BenchmarkTest01940
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01941
   vulnerable: false
   reported: false
@@ -923,9 +923,9 @@ details:
   result: Pass
 - path: /cmdi-02/BenchmarkTest01942
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest01943
   vulnerable: false
   reported: false
@@ -933,9 +933,9 @@ details:
   result: Pass
 - path: /cmdi-02/BenchmarkTest01944
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest02058
   vulnerable: false
   reported: false
@@ -943,9 +943,9 @@ details:
   result: Pass
 - path: /cmdi-02/BenchmarkTest02059
   vulnerable: true
-  reported: true
+  reported: false
   rule: 90020
-  result: Pass
+  result: FAIL
 - path: /cmdi-02/BenchmarkTest02067
   vulnerable: false
   reported: false
@@ -1018,9 +1018,9 @@ details:
   result: Pass
 - path: /cmdi-02/BenchmarkTest02155
   vulnerable: true
-  reported: false
+  reported: true
   rule: 90020
-  result: FAIL
+  result: Pass
 - path: /cmdi-02/BenchmarkTest02156
   vulnerable: false
   reported: false
@@ -1257,6 +1257,6 @@ details:
   rule: 90020
   result: Pass
 tests: 251
-passes: 224
-fails: 27
-score: 89%
+passes: 193
+fails: 58
+score: 77%
