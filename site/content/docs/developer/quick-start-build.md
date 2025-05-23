@@ -22,8 +22,7 @@ You can also follow along with Simon Bennetts as he sets the ZAP development env
 Let’s jump right into it!
 
 ## Preparation
-All you need is a working local installation of [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [JDK 11 or later](https://adoptium.net/).
-Note that non-LTS versions might not work.
+All you need is a working local installation of [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [JDK 17](https://adoptium.net/).
 
 ## Clone the Repo Locally
 Create a new directory on your system and run the following commands in that directory to clone the main ZAP repositories.
