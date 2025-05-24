@@ -37,21 +37,6 @@ authtestdelay:
       password: true
       session: true
       verification: true
-authtestmulti:
-  site: "https://authenticationtest.com/multiStepAuth/"
-  plans:
-    stdbba:
-      auth: false
-      username: true
-      password: false
-      session: true
-      verification: false
-    bbaplus:
-      auth: true
-      username: true
-      password: true
-      session: true
-      verification: true
 authtestsimple:
   site: "https://authenticationtest.com/simpleFormAuth/"
   plans:
@@ -94,16 +79,6 @@ bluesky:
       verification: true
 ctflearn:
   site: "https://ctflearn.com"
-  note: ""
-  plans:
-    stdbba:
-      auth: true
-      username: true
-      password: true
-      session: true
-      verification: true
-deftheweb:
-  site: "https://defendtheweb.net"
   note: ""
   plans:
     stdbba:
@@ -237,7 +212,6 @@ testphp:
       password: true
       session: true
       verification: true
-webappsec:
 wikipedia:
   site: "https://en.wikipedia.org"
   note: ""
@@ -253,8 +227,8 @@ zoom:
   note: "BBA is failing due to popups."
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
-      verification: false
+      verification: true
