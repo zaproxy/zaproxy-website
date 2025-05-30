@@ -15,6 +15,10 @@ groups:
         link: /docs/team/
         desc: the key people working on ZAP right now
 
+      - name: 'Ownership'
+        link: /docs/zap-ownership/
+        desc: who controls the project
+
       - name: 'Support'
         link: /support/
         desc: how the ZAP team can support you, and how you can support ZAP
