@@ -91,11 +91,11 @@ ginnjuice:
   site: "https://ginandjuice.shop"
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
-      verification: true
+      verification: false
 hackyourself:
   site: "https://hack-yourself-first.com"
   plans:
@@ -124,7 +124,7 @@ insta:
       username: true
       password: true
       session: true
-      verification: false
+      verification: true
 linkedin:
   site: "https://www.linkedin.com"
   plans:
