@@ -1,8 +1,8 @@
 ---
 - id: "exim"
 - id: "database"
-- id: "requester"
 - id: "spider"
+- id: "requester"
 - id: "authhelper"
 - id: "postman"
 - id: "pscanrulesBeta"
@@ -16,6 +16,6 @@
 - id: "plugnhack"
 - id: "grpc"
 - id: "custompayloads"
-- id: "wappalyzer"
 - id: "ascanrulesAlpha"
+- id: "wappalyzer"
 - id: "sqliplugin"
