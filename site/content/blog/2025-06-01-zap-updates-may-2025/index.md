@@ -1,7 +1,7 @@
 ---
 title: "ZAP Updates - May 2025"
 summary: >
-  TODO
+  May 2025 updates and ongoing feature development statuses.
 images:
 - https://www.zaproxy.org/blog/2025-06-01-zap-updates-may-2025/images/zapbot-monthly-updates.png
 type: post
@@ -10,19 +10,24 @@ tags:
 - update
 date: "2025-06-01"
 authors:
-- TODO
+- thorin
 ---
 
 ## Highlights
-TODO
+
+We've published [Is My App Security Testable?](/docs/getting-further/is-my-app-testable/) covering topics such as: Provisioning, Performance, Authentication, Exploration, API Definitions, Anti-Automation, etc. Have a look :eyes: and let us know if you think we've overlooked anything.
+
+As well as a page clarifying [ZAP's ownership](/docs/zap-ownership/) and naming.
 
 ## Ongoing Work
-TODO
 
-## New Contributors
-A very warm welcome to the people who started to contribute to ZAP this month!
+### LLM Add-on Pull Request
+This experimental feature aims to leverage Large Language Models (LLMs)  within ZAP in a meaningful way.
+:tada: Since last month [Akshath](/docs/team/ricekot/) has added some functionality to the PR to facilitate testing and use with local LLMs (for example via Ollama) :tada:
 
-TODO: Add from https://github.com/zaproxy/zap-core-help/pulls?q=is%3Apr+credits+is%3Aclosed
+### Continued Enhancements to Authentication
+Work is steadily progressing to make authentication even more reliable and adaptable.
+We continue to find new challenges in how the world performs authentication, but are evolving continually.
 
 ## GitHub Pulse
 Here are some statistics for the two main ZAP repositories:
