@@ -32,7 +32,7 @@ authtestdelay:
       session: true
       verification: false
     bbaplus:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
@@ -100,17 +100,17 @@ hackyourself:
   site: "https://hack-yourself-first.com"
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
-      verification: true
+      verification: false
 infosecex:
   site: "https://infosec.exchange"
   note: ""
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -124,7 +124,7 @@ insta:
       username: true
       password: true
       session: true
-      verification: false
+      verification: true
 linkedin:
   site: "https://www.linkedin.com"
   plans:
@@ -173,7 +173,6 @@ testasp:
       verification: true
 testfire:
   site: "http://testfire.net"
-  note: "CSA is failing due to use of autodetect."
   plans:
     stdbba:
       auth: true
