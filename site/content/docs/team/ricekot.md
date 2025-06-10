@@ -6,7 +6,6 @@ author: akshath
 type: team
 github: ricekot
 linkedin: ricekot
-mastodon: https://infosec.exchange/@ricekot
 bluesky: https://bsky.app/profile/ricekot.com
 weight: 8
 ---
