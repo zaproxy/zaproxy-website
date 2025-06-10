@@ -63,6 +63,10 @@ groups:
         link: /docs/alerts/
         desc: detailed information on the alerts ZAP can raise 
 
+      - name: 'ZAP Vs Test Apps'
+        link: /docs/testapps/
+        desc: how to configure ZAP to scan commonly used vulnerable applications 
+
   - header: 'Internal Details'
     links:
       - name: 'Constants'
