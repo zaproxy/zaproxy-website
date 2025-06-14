@@ -32,7 +32,7 @@ authtestdelay:
       session: true
       verification: false
     bbaplus:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -124,7 +124,7 @@ insta:
       username: true
       password: true
       session: true
-      verification: true
+      verification: false
 linkedin:
   site: "https://www.linkedin.com"
   plans:
