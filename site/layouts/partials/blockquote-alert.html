@@ -1,0 +1,36 @@
+{{ $emojis := dict
+"caution" ":bangbang:"
+"important" ":information_source:"
+"note" ":memo:"
+"tip" ":bulb:"
+"warning" ":warning:"
+}}
+
+{{ $type := .type | default "note" }}
+{{ $title := .title | default "" }}
+{{ $content := .content | default "" }}
+
+{{/* Handle inner content from shortcodes */}}
+{{ if .inner }}
+{{ $content = .inner }}
+{{ end }}
+
+{{ if $type }}
+<blockquote class="alert alert-{{ $type }}">
+    <p class="alert-heading">
+        {{ transform.Emojify (index $emojis $type) }}
+        {{ if $title }}
+        {{ $title }}
+        {{ else }}
+        {{ or (i18n $type) (title $type) }}
+        {{ end }}
+    </p>
+    <div class="alert-content">
+        {{ $content | safeHTML }}
+    </div>
+</blockquote>
+{{ else }}
+<blockquote>
+    {{ $content | safeHTML }}
+</blockquote>
+{{ end }}
