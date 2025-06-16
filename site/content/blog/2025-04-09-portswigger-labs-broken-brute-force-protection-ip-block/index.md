@@ -693,7 +693,7 @@ If you’ve modified the script as stated, save it and ensure it is enabled. Asi
 
 #### Step 3: Add the Payload
 
-xt, let’s open the Fuzzer dialog. Right-click the captured POST request from the *Sites* tab and select *Attack* > *Fuzz*. In the *Fuzzer Locations* tab, we’ll select the password value as the position we want to fuzz. Highlight it to activate the *Add* button:
+Next, let’s open the Fuzzer dialog. Right-click the captured POST request from the *Sites* tab and select *Attack* > *Fuzz*. In the *Fuzzer Locations* tab, we’ll select the password value as the position we want to fuzz. Highlight it to activate the *Add* button:
 
 ![fuzz-password.png](images/fuzz-password.png)
 
