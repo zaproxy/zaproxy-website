@@ -122,13 +122,15 @@ icon:
 > [!NOTE]
 > You can highlight important information in your articles or docs using different types of callouts (also known as admonitions – or alerts, as used in [the Hugo docs](https://gohugo.io/render-hooks/blockquotes/#alerts)).
 
-For compatibility with HTML and Markdown in both content and layout files, we use a mix of shortcodes and partials to display blockquote alerts. Shortcodes on their own don't work in layout files, so you'll want to call a partial in layout files but use a shortcode (that calls the partial) in Markdown and HTML content files.
+For compatibility with both content and layout files, we use a mix of shortcodes and partials to display blockquote alerts. Partials work in layout, but not content files. Shortcodes work in content, but not layout files. So you'll want to call the partial in layout files but use the shortcode (it calls the partial) in content files.
 
 The partial is at `site/layouts/partials/blockquote-alert.html`, and the shortcode is at `site/layouts/shortcodes/blockquote-alert.html`.
 
-There are five alert types. You can use these directly in Markdown and HTML cotent files. Omit the `title` parameter to keep the alert type as the default title (for example, a note alert will have "Note" as its title):
+There are five alert types as shown in the examples below. Omit the `title` parameter to keep the alert type as the default title (for example, a note alert will have "Note" as its title). The descriptions for the alert types are borrowed from the Hugo docs:
 
 ```
+# Shortcodes in content files
+
 {{< blockquote-alert type="note" title="Optional custom title">}}
 Useful information that users should know, even when skimming content.
 {{< /blockquote-alert >}}
@@ -147,23 +149,91 @@ Key information users need to know to achieve their goal.
 
 ----------------
 
-{{< blockquote-alert type="warning" title="This is the title">}}
+{{< blockquote-alert type="warning" title="Optional custom title">}}
 Urgent info that needs immediate user attention to avoid problems.
 {{< /blockquote-alert >}}
 
 ----------------
 
-{{< blockquote-alert type="caution" title="This is the title">}}
+{{< blockquote-alert type="caution" title="Optional custom title">}}
 Advises about risks or negative outcomes.
 {{< /blockquote-alert >}}
 ```
 
-You can include both simple string content, as shown above, and complex nested content with multiple paragraphs and HTML elements:
-
-Shortcode:
+For layout files, you can call the partial as shown in the examples below. Just like in the shortcode examples, any string passed into the `content` parameter is interpreted as markdown. Use `html` instead `to pass in HTML. Again, the title parameter is optional and will default to the alert type:
 
 ```
-{{< blockquote-alert type="tip" title="Custom Title" >}}
+# Partials in layout files
+
+{{/* These are interpreted as Markdown */}}
+{{ partial "blockquote-alert.html" (dict
+    "type" "note"
+    "title" "Optional custom title"
+    "content" "Useful information that users should know, even when skimming content."
+) }}
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "tip"
+    "title" "Optional custom title"
+    "content" "Helpful advice for doing things better or more easily."
+) }}
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "important"
+    "title" "Optional custom title"
+    "content" "Key information users need to know to achieve their goal."
+) }}
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "warning"
+    "title" "Optional custom title"
+    "content" "Urgent info that needs immediate user attention to avoid problems."
+) }}
+
+{{ partial "blockquote-alert.html" (dict
+    "type" "caution"
+    "title" "Optional custom title"
+    "content" "Advises about risks or negative outcomes."
+) }}
+
+These are also valid:
+
+{{ $alertContent := `This is a tip with **bold text** and _italic_ text.
+
+This is a second paragraph in the same alert.
+            
+- List item 1
+- List item 2
+`}}
+
+{{ partial "blockquote-alert.html" (dict
+  "type" "tip"
+  "title" "Optional custom title"
+  "content" $alertContent
+) }}
+
+
+{{ $alertContent := add
+  "This is a tip with **bold text** and _italic_ text.\n\n"
+  "This is a second paragraph in the same alert.\n"
+  "- List item 1\n"
+  "- List item 2\n\n"
+  "`Here's some text in backticks.`"
+}}
+
+{{ partial "blockquote-alert.html" (dict
+  "type" "tip"
+  "title" "Optional custom title"
+  "content" $alertContent
+) }}
+```
+
+You can include simple string content, as shown above, or complex nested content with multiple paragraphs and HTML elements:
+
+```
+# Shortcode in content files
+
+{{< blockquote-alert type="tip" title="Optional custom Title" >}}
 This is a tip with **bold text** and _italic_ text.
 
 This is a second paragraph in the same alert.
@@ -171,52 +241,43 @@ This is a second paragraph in the same alert.
 - List item 1
 - List item 2
 {{< /blockquote-alert >}}
-```
 
-For layout files, you can call the partial like so::
+# Partial in layout files
 
-```
 {{ partial "blockquote-alert.html" (dict
     "type" "tip"
-    "title" "Pro Tip"
-    "content" "<p>Use partials to avoid repeating logic.</p>"
+    "title" "Optional custom title"
+    "content" "<p>Helpful advice for doing things better or more easily.</p>"
 ) }}
-```
 
-
-**In Layout Files (calling partial directly)**
-
-```go-html-template
-<!-- Simple text -->
-{{ partial "blockquote-alert" (dict "type" "important" "content" "This is an important message.") }}
-
-<!-- HTML content -->
 {{ partial "blockquote-alert" (dict 
     "type" "caution" 
     "title" "Be Careful!" 
     "content" "<p>This is a <strong>caution</strong> message.</p><p>It has multiple paragraphs.</p>"
 ) }}
-
-<!-- Dynamic content -->
-{{ $alertContent := printf "<p>Page last updated: %s</p><p>Author: %s</p>" (.Lastmod.Format "January 2, 2006") .Params.author }}
-{{ partial "blockquote-alert" (dict "type" "note" "title" "Page Info" "content" $alertContent) }}
 ```
 
-**In Other Partials:**
-
-```go-html-template
-{{ define "partials/footer-notice.html" }}
-  {{ partial "blockquote-alert" (dict 
-      "type" "important" 
-      "title" "Subscribe" 
-      "content" "<p>Want to stay updated? <a href='/subscribe'>Join our newsletter</a>.</p>"
-  ) }}
-{{ end }}
 ```
+{{ $alertContent := `This is a tip with **bold text** and _italic_ text.
+
+This is a second paragraph in the same alert.
+            
+- List item 1
+- List item 2
+`}}
+
+
+{{ $alertContent := add
+  "This is a tip with **bold text** and _italic_ text.\n\n"
+  "This is a second paragraph in the same alert.\n"
+  "- List item 1\n"
+  "- List item 2\n\n"
+  "`Here's some text in backticks.`"
+}}
 
 **NOTE:**
 
-You'll want to handle line breaks properly within the HTML content string when working with complex content. For example, the following will throw a parse error (`html: overlay: parse failed unterminated quoted string in action`):
+You'll want to handle line breaks properly within the content string in partials when working with complex content. For example, the following will throw a parse error (`html: overlay: parse failed unterminated quoted string in action`):
 
 ```
 {{ partial "blockquote-alert" (dict
@@ -227,12 +288,13 @@ You'll want to handle line breaks properly within the HTML content string when w
 ) }}
 ```
 
-To fix this, you can:
+To fix this, use either of these options:
 
 - Keep everything on a single line
 - Use string concatenation (whether in a variable or directly)
 
 ```
+<!-- Option #1: Keep everything on a single line -->
 {{ partial "blockquote-alert" (dict
     "type" "caution"
     "title" "Be Careful!"
@@ -240,6 +302,7 @@ To fix this, you can:
 ) }}
 
 ---------------
+<!-- Option #2: Use string concatenation (whether in a variable or directly) -->
 
 {{ $alertContent := add
   "<p>This is a <strong>caution</strong> message.</p>"
@@ -251,7 +314,62 @@ To fix this, you can:
   "title" "Be Careful!"
   "content" $alertContent
 ) }}
-```
+
+This is a tip with **bold text** and _italic_ text.
+
+This is a second paragraph in the same alert.
+
+- List item 1
+- List item 2
+```\
+
+
+-------------------------------------------------------
+You can pass Markdown through the shortcode or the partial. In fact, if you use the `content` parameter, it's assumed
+you've passed either plain text or markdown and your content is treated as such (passed through markdownify).
+To pass and have your content be treated as HTML, use the `html` parameter instead.
+
+(Looking for a cleaner, more readable way to format the content so it doesn't include so many tags)
+
+{{ $alertContent := add
+  "On **Windows**, you will see a message like:\n\n"
+  "`ZAP_<version>_windows.exe isn't commonly downloaded.`\n\n"
+  "To circumvent this warning, click **...** → **Keep** → **Show more** → **Keep anyway**.\n\n"
+  "On **macOS**, you will see a message like:\n\n"
+  "`\"ZAP.app\" cannot be opened because the developer cannot be verified.`\n\n"
+  "To circumvent this warning, go to **System Preferences** > **Security & Privacy**. "
+  "You will see a message saying that \"ZAP\" was blocked. Click **Open anyway** if you trust the installer.\n"
+}}
+
+{{ $alertContent := `
+On **Windows**, you will see a message like:
+
+`ZAP_<version>_windows.exe isn't commonly downloaded. Make sure you trust ZAP_<version>_windows.exe before you open it.`
+
+To circumvent this warning, you would need to click on **...** and then **Keep**,  
+then **Show more** and then **Keep anyway**.
+
+On **macOS**, you will see a message like:
+
+`"ZAP.app" cannot be opened because the developer cannot be verified.`
+
+To circumvent this warning, go to **System Preferences** > **Security & Privacy** at the bottom of the dialog.  
+You will see a message saying that "ZAP" was blocked. If you trust the installer, click **Open anyway**.
+` }}
+
+{{ $alertContent := add
+  "<p><strong>The ZAP releases are currently unsigned</strong></p>"
+  "<p>On <strong>Windows</strong>, you will see a message like: "
+  "<code>ZAP_&lt;version&gt;_windows.exe isn't commonly downloaded. Make sure you trust ZAP_&lt;version&gt;_windows.exe before you open it.</code><br>"
+  "To circumvent this warning, you would need to click on <strong>...</strong> and then <strong>Keep</strong>, then "
+  "<strong>Show more</strong> and then <strong>Keep anyway</strong>.</p>"
+  "<p>On <strong>macOS</strong>, you will see a message like: "
+  "<code>&quot;ZAP.app&quot; cannot be opened because the developer cannot be verified.</code><br>"
+  "To circumvent this warning, you would need to go to <strong>System Preferences</strong> &gt; <strong>Security & Privacy</strong> at "
+  "the bottom of the dialog. You will see a message saying that &quot;ZAP&quot; was blocked. Next to it, if you trust the "
+  "downloaded installer, you can click <strong>Open anyway</strong>.</p>"
+}}
+-------------------------------------------------------
 
 #### Layouts
 For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 

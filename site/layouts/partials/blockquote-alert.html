@@ -9,6 +9,7 @@
 {{ $type := .type | default "note" }}
 {{ $title := .title | default "" }}
 {{ $content := .content | default "" }}
+{{ $html := .html | default "" }}
 
 {{/* Handle inner content from shortcodes */}}
 {{ if .inner }}
@@ -26,11 +27,17 @@
         {{ end }}
     </p>
     <div class="alert-content">
-        {{ $content | safeHTML }}
+        {{ if $html }}
+        {{ $html | safeHTML }}
+        {{ else if $content }}
+        {{ $content | markdownify }}
+        {{ else }}
+        {{ i18n "no-content" }}
+        {{ end }}
     </div>
 </blockquote>
 {{ else }}
 <blockquote>
-    {{ $content | safeHTML }}
+    {{ $content | markdownify }}
 </blockquote>
 {{ end }}

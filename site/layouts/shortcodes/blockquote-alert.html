@@ -1,6 +1,6 @@
 {{ $type := .Get "type" | default "note" }}
 {{ $title := .Get "title" | default "" }}
-{{ $inner := .Inner | markdownify }}
+{{ $inner := .Inner }}
 
 {{ partial "blockquote-alert" (dict
   "type" $type
