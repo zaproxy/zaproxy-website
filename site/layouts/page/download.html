@@ -54,27 +54,23 @@
           </ul>
         {{ end }}
 
-          <blockquote class="alert alert-warning">
-            <p class="alert-heading">
-              ⚠️ Warning - The ZAP releases are currently unsigned
-            </p>
-            <div class="alert-content">
-                <p>
-                On <strong>Windows</strong>, you will see a message like:
-                  <code>
-                    ZAP_&lt;version&gt;_windows.exe isn't commonly downloaded.
-                    Make sure you trust ZAP_&lt;version&gt;_windows.exe before you open it.
-                  </code><br>
-                  To circumvent this warning, you would need to click on <strong>...</strong> and then <strong>Keep</strong>,
-                  then <strong>Show more</strong> and then <strong>Keep anyway</strong>.
-                <p>
-                On <strong>macOS</strong>, you will see a message like: 
-                  <code>"ZAP.app" cannot be opened because the developer cannot be verified.</code><br>
-                To circumvent this warning, you would need to go to <strong>System Preferences</strong> &gt; <strong>Security & Privacy</strong> 
-                at the bottom of the dialog. You will see a message saying that "ZAP" was blocked. 
-                Next to it, if you trust the downloaded installer, you can click <strong>Open anyway</strong>.
-            </div>
-          </blockquote>
+        {{ $alertContent := add
+          "On **Windows**, you will see a message like: "
+          "`ZAP_<version>_windows.exe isn't commonly downloaded. Make sure you trust ZAP_<version>_windows.exe before you open it.`\n\n"
+          "To circumvent this warning, you would need to click on **...** and then **Keep**, then "
+          "**Show more** and then **Keep anyway**.\n\n"
+          "On **macOS**, you will see a message like: "
+          "`\"ZAP.app\" cannot be opened because the developer cannot be verified.`\n\n"
+          "To circumvent this warning, you would need to go to **System Preferences** > **Security & Privacy** at "
+          "the bottom of the dialog. You will see a message saying that\"ZAP\" was blocked. Next to it, if you trust the "
+          "downloaded installer, you can click **Open anyway**."
+        }}
+        
+        {{ partial "blockquote-alert.html" (dict
+        "type" "warning"
+        "title" "Warning - The ZAP releases are currently unsigned"
+        "content" $alertContent
+        ) }}
       </div>
   </section>
 

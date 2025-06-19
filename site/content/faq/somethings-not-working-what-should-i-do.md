@@ -63,5 +63,6 @@ You can chat with the ZAP team on [Slack](/slack/), if you have not already join
 You can raise issues (bugs or new features) at the [issue
 tracker](https://github.com/zaproxy/zaproxy/issues/new/choose).
 
-> [!WARNING]
-> Please do not ask questions as issues - they will be closed and you will be redirected to the [ZAP user group](https://groups.google.com/group/zaproxy-users).
+{{< blockquote-alert type="warning">}}
+Please do not ask questions as issues - they will be closed and you will be redirected to the [ZAP user group](https://groups.google.com/group/zaproxy-users).
+{{< /blockquote-alert >}}

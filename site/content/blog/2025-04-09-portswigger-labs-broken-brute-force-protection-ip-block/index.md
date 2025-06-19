@@ -61,12 +61,13 @@ Copy-paste the lab URL into the *URL to explore* field and launch your browser w
 
 ![launch-test-site-ZAP-configured-browser.png](images/launch-test-site-ZAP-configured-browser.png)
 
-> [!NOTE]
-> If you have any issues launching your browser from ZAP, see the following pages for help. ZAP uses add-ons to enhance its core features, including ones which provide webdrivers for interfacing with supported browsers. These are installed by default and expose some configurable options:
->
-> 1. [How can I fix 'browser was not found'?](/faq/how-can-i-fix-browser-was-not-found/) - ZAP Docs (FAQ)
-> 2. [Manual Explore](/docs/desktop/addons/quick-start/#manual-explore) - ZAP Docs
-> 3. [Selenium](/docs/desktop/addons/selenium/) - ZAP Docs
+{{< blockquote-alert type="note">}}
+If you have any issues launching your browser from ZAP, see the following pages for help. ZAP uses add-ons to enhance its core features, including ones which provide webdrivers for interfacing with supported browsers. These are installed by default and expose some configurable options:
+
+1. [How can I fix 'browser was not found'?](/faq/how-can-i-fix-browser-was-not-found/) - ZAP Docs (FAQ)
+2. [Manual Explore](/docs/desktop/addons/quick-start/#manual-explore) - ZAP Docs
+3. [Selenium](/docs/desktop/addons/selenium/) - ZAP Docs
+{{< /blockquote-alert >}}
 
 Assuming you’ve opened the lab in a browser configured to proxy through ZAP, let’s try to log in with a random password. We want to capture a POST request we can work with in ZAP. I’ll try “randompass”. We’re notified that this is an “Incorrect password”, which is expected:
 
@@ -96,8 +97,9 @@ After one minute, we can indeed make more login attempts. The idea is that if we
 
 If we enter our own credentials, `wiener:peter`, on every third login attempt, the IP block never activates. Each successful login resets the counter tracking the number of failed login attempts. We can keep going until we’ve tried enough passwords from our wordlist to find the right one for Carlos' account.
 
-> [!NOTE]
-> This bypass — taking advantage of a logic flaw to reset the failure counter — enables us to brute-force Carlos’ password and successfully solve this lab. Although not the point of the lab, we can also wait out the IP block since we’re dealing with only a few credentials. This is covered in “Method 2: Wait Out the IP Block”.
+{{< blockquote-alert type="note">}}
+This bypass — taking advantage of a logic flaw to reset the failure counter — enables us to brute-force Carlos’ password and successfully solve this lab. Although not the point of the lab, we can also wait out the IP block since we’re dealing with only a few credentials. This is covered in “Method 2: Wait Out the IP Block”.
+{{< /blockquote-alert >}}
 
 What about changing our IP address? I used the [`X-Forwarded-For`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/X-Forwarded-For) header successfully in another lab. But the server here appears to block IPs based on the client's actual IP address (determined by the network layer rather than HTTP headers from the application layer), which makes sense in the context of rate-limiting. Rotating IP addresses via a proxy or VPN could work, but we won’t explore that here.
 
@@ -564,8 +566,9 @@ All functions, except the `log` function, are part of a required interface that 
 
 ![implementation-error.png](images/implementation-error.png)
 
-> [!NOTE]
-> Refer to the default templates for the interfaces required for each script type. You can find these in the Templates section of the Scripts tab. They include documentation comments describing each function and its parameters. You can also create new scripts from the templates. 
+{{< blockquote-alert type="note">}}
+Refer to the default templates for the interfaces required for each script type. You can find these in the Templates section of the Scripts tab. They include documentation comments describing each function and its parameters. You can also create new scripts from the templates.
+{{< /blockquote-alert >}}
 
 You can save the file now. Also, check that the script is enabled, as disabled scripts won’t be available for selection when needed. If you missed the *Enable* checkbox earlier, you can right-click the filename in the *Scripts* tab and select *Enable Script(s)*.
 
@@ -583,10 +586,11 @@ After you open the *Add Payload* dialog, you can add the Payload Generator scrip
 
 Save the payload and return to the main Fuzzer dialog. Then, run the Fuzzer with *Start Fuzzer*.
 
-> [!IMPORTANT]
-> You might notice that even though the payloads are generated correctly (as the logs in the script output panel show), the requests are sent in the wrong order. This causes an unexpected IP block early on. As a result, most of the requests are rejected with the message: `You have made too many incorrect login attempts. Please try again in 1 minute(s).`
->
-> This is due to the Fuzzer’s concurrency settings. You can enable sequential execution by setting the number of execution threads to 1. However, this slows down the Fuzzer a great deal. An alternative is to throttle requests with a small delay of 100–200 milliseconds. See [Options Fuzzer screen](/docs/desktop/addons/fuzzer/options/) for more detail.
+{{< blockquote-alert type="important">}}
+You might notice that even though the payloads are generated correctly (as the logs in the script output panel show), the requests are sent in the wrong order. This causes an unexpected IP block early on. As a result, most of the requests are rejected with the message: `You have made too many incorrect login attempts. Please try again in 1 minute(s).`
+
+This is due to the Fuzzer’s concurrency settings. You can enable sequential execution by setting the number of execution threads to 1. However, this slows down the Fuzzer a great deal. An alternative is to throttle requests with a small delay of 100–200 milliseconds. See [Options Fuzzer screen](/docs/desktop/addons/fuzzer/options/) for more detail.
+{{< /blockquote-alert >}}
 
 You can skip over the next section and head to [Have Username, Got Password](#have-username-got-password).
 
@@ -715,8 +719,9 @@ You can optionally move the script to the top of the processor list. Then, run t
 
 Once the Fuzzer is done, we can inspect the results. We’re looking for indications of a successful login. So, we’ll sort the results in descending order using the status code column (simply “*Code”* in the UI).
 
-> [!NOTE]
-> Both of these solutions are valid. As you might have noticed if you’ve solved a lab more than once, different lab instances can have different password solutions. So, you could see different passwords than shown below.
+{{< blockquote-alert type="note">}}
+Both of these solutions are valid. As you might have noticed if you’ve solved a lab more than once, different lab instances can have different password solutions. So, you could see different passwords than shown below.
+{{< /blockquote-alert >}}
 
 ### Method 1: Interleave Wordlists With Valid Credentials
 
