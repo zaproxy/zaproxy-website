@@ -584,13 +584,13 @@
 - id: imagelocationscanner
   name: Image Location and Privacy Scanner
   description: Image Location and Privacy Passive Scanner
-  author: Jay Ball (veggiespam) and the ZAP Dev Team
+  author: Jay Ball (@veggiespam) and the ZAP Dev Team
   status: beta
   infoUrl: /docs/desktop/addons/image-location-and-privacy-scanner/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v5/imagelocationscanner-beta-5.zap
-  date: 2024-04-11
-  version: 5
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/imagelocationscanner-v6/imagelocationscanner-beta-6.zap
+  date: 2025-06-19
+  version: 6
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such
