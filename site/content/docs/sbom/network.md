@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: network
-    version: 0.21.0
+    version: 0.22.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.21.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.22.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2

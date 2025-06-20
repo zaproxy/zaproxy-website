@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Client Side Integration - Client Spider
 type: userguide
-weight: 2
+weight: 3
 ---
 
 # Client Side Integration - Client Spider
@@ -33,6 +33,24 @@ The spider can be invoked via:
 * Context specific "Attack" menu
 * "Tools / Client Spider" menu item
 * Automation Framework [spiderClient](/docs/desktop/addons/client-side-integration/automation/) job
+
+### Client Spider dialog
+
+The dialog for starting the Client Spider provides 2 sub tabs:
+
+#### Scope
+
+This tab allows you to define what the spider will attempt to explore.
+
+
+The Scope Check can be either:
+
+* `Strict` - enforces that all requests need to be in scope to be accessed.
+* `Flexible` - allows all requests to be accessed. This scope check has the side effect of allowing out of scope domains to be accessed, but not crawled.
+
+#### Options
+
+This tab allows you to define the options that control how the spider works.
 
 ### Client Spider tab
 

@@ -8,7 +8,7 @@ type: userguide
 
 ### Sections
 
-| Section          | Id              |
+| Section          | ID              |
 |:-----------------|:----------------|
 | Chart            | chart           |
 | Alert Count      | alertcount      |
@@ -31,7 +31,7 @@ If "Sequence Details" are included in the report. Both a summary section and det
 
 ### Themes
 
-| Theme | Id    |
+| Theme | ID    |
 |:------|:------|
 | Light | light |
 | Dark  | dark  |

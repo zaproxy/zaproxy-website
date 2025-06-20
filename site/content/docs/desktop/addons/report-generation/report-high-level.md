@@ -8,7 +8,7 @@ type: userguide
 
 ### Sections
 
-| Section                      | Id                  |
+| Section                      | ID                  |
 |:-----------------------------|:--------------------|
 | Risk Summary Chart           | riskSummaryChart    |
 | No. of Bug Occurrences Count | bugsCountChart      |

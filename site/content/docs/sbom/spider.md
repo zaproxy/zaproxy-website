@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: spider
-    version: 0.14.0
+    version: 0.15.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.14.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.15.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -33,7 +33,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.49.0
+    version: 0.50.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -66,7 +66,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.31.0
+    version: 1.33.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4

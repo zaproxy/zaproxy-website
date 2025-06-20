@@ -34,7 +34,7 @@ When the authentication method is not able to find suitable fields, or requires 
 | Send Escape         | `ESCAPE`       | Sends the escape to the web element, for example, to dismiss a popup.                                                                                                                                                                                                                        |
 | Send Return         | `RETURN`       | Sends return to the web element, for example, to submit the login form.                                                                                                                                                                                                                      |
 
-Each step is executed sequentially in the order they are specified. Steps that act on a web element need to be identified with either its CSS Selector or XPath, both of which can be obtained, for example, through browser dev tools. Those steps have a timeout which allow to wait up to the given number of milliseconds for the web element to be shown and be interactable (when the login page takes some time to load).
+Each step is executed sequentially in the order they are specified. Steps that act on a web element need to be identified with either its CSS Selector or XPath, both of which can be obtained, for example, through browser dev tools. Those steps have a timeout which allow to wait up to the given number of milliseconds for the web element to be shown and be interactable (when the login page takes some time to load). The `CUSTOM_FIELD`, `PASSWORD` and `USERNAME` steps all clear any existing values from the corresponding field, so you will need to specify the full value you want.
 
 ### Session Identification
 

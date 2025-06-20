@@ -8,7 +8,7 @@ type: userguide
 
 ### Sections
 
-| Section        | Id            |
+| Section        | ID            |
 |:---------------|:--------------|
 | Chart          | chart         |
 | Alert Count    | alertcount    |
@@ -20,7 +20,7 @@ type: userguide
 
 ### Themes
 
-| Theme                           | Id           |
+| Theme                           | ID           |
 |:--------------------------------|:-------------|
 | Console \[Dark / Green\]        | console      |
 | Construction \[Light / Orange\] | construction |

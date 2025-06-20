@@ -100,12 +100,19 @@ This option controls whether the Spider should also parse .DS_Store files and tr
 
 This options defines whether the Spider should try to detect OData-specific parameters (i.e. resources identifiers) in order to properly process them according to the rule defined by the "Query parameters handling" option.
 
+### Logout Avoidance
+
+Whether or not the Spider should attempt to avoid logout related paths/functionality, default: false.
+
 ### Irrelevant Parameters
 
-Allows to manage the parameters that should be removed when canonicalising the URLs found.
+Allows to manage the parameters that should be removed when canonicalising the URLs found or request bodies generated (`x-www-form-urlencoded`).
 
 
-The session names defined in the HTTP Sessions options are taken into account and removed.
+The parameters with names matching the following are automatically considered irrelevant:
+
+* Session names defined in the HTTP Sessions options.
+* Token names defined in the Anti-CSRF Tokens options.
 
 ## See also
 

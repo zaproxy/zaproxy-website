@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: retire
-    version: 0.46.0
+    version: 0.47.0
 ---
 
 # Retire.js {#id-10003}

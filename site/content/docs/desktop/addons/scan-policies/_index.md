@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: scanpolicies
-    version: 0.2.0
+    version: 0.3.0
 ---
 
 # Scan Policies
@@ -22,4 +22,5 @@ These policies are initialised as detailed in the relevant pages, but you can tu
 * [Developer Full Policy](/docs/desktop/addons/scan-policies/policy-dev-full/) : a developer focused policy, including a superset of the dev standard with a greater variety of potential findings and only minimal environmental/server related rules (intended for use in a dev environment)
 * [QA Standard Policy](/docs/desktop/addons/scan-policies/policy-qa-std/) : a quality assurance focused policy meant to perform fairly quickly while providing a greater set of results than developer policies, intended for use in a QA/staging environment
 * [QA Full Policy](/docs/desktop/addons/scan-policies/policy-qa-full/) : a more comprehensive quality assurance focused policy, including a superset of the QA standard with a greater variety of potential findings with more environmental/server related rules, intended for use in a QA/Staging environment
-* [API Policy](/docs/desktop/addons/scan-policies/policy-api/) : a policy focusing on issues likely to impact APIs and not UI.
+* [API Policy](/docs/desktop/addons/scan-policies/policy-api/) : a policy focusing on issues likely to impact APIs and not UI
+* [Penetration Tester Policy](/docs/desktop/addons/scan-policies/policy-pentest/) : a policy which includes all installed active scan rules (except the Examples)
