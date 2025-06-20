@@ -78,7 +78,7 @@ Allows the proxy to automatically decode (i.e. gzip, deflate) the response. This
 
 ### Intercepting/Transparent Proxy
 
-The local proxies can be used as intercepting/transparent proxies for both HTTP and HTTPS. For HTTPS the client applications (e.g. browser) need to use the TLS extension [Server Name Indication](https://tools.ietf.org/html/rfc6066#section-3). This allows you to set up a testing LANs (or VMs) where all HTTP and HTTPS traffic is proxied regardless of software settings.
+The local proxies can be used as intercepting/transparent proxies for both HTTP and HTTPS. For HTTPS the client applications (e.g. browser) need to use the TLS extension [Server Name Indication](https://tools.ietf.org/html/rfc6066#section-3). This allows you to set up testing LANs (or VMs) where all HTTP and HTTPS traffic is proxied regardless of software settings.
 
 
 For example, if you have a Linux machine you use for testing, you can do something like the following to forward all HTTP and

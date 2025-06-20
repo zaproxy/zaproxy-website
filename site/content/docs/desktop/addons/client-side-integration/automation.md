@@ -30,4 +30,5 @@ This job supports monitor tests.
       initialLoadTime:                 # Int: The time in seconds to wait after the initial URL is loaded, default: 5
       pageLoadTime:                    # Int: The time in seconds to wait after a new URL is loaded, default: 1
       shutdownTime:                    # Int: The time in seconds to wait after no activity before shutting down, default: 5
+      scopeCheck:                      # String: The scope check, either Flexible or Strict, default: Flexible
 ```

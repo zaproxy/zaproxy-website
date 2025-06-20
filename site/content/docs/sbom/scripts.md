@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: scripts
-    version: 45.11.0
+    version: 45.12.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.11.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.12.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2

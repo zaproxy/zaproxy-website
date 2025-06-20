@@ -12,12 +12,12 @@ The Interactsh Options screen allows you to configure the settings that affect h
 
 ### Server URL
 
-This address should point to the URL that will be used for registrations and polling.
+This address (provided by the user) should point to the URL that will be used for registrations and polling.
 
 A valid URI will include at least the scheme and the host. The host must be running a working instance of
 Interactsh.
 
-An example of a valid URI is: `https://interact.sh`.
+An example of a valid URI is: `https://oast.live`.
 
 ### Authorization Token
 
@@ -48,7 +48,8 @@ A web application that ends up using the canary value somewhere may be susceptib
 
 ## See also
 
-|   |                                                                           |   |
-|---|---------------------------------------------------------------------------|---|
-|   | [Interactsh Help](/docs/desktop/addons/oast-support/services/interactsh/) |   |
-|   | [Interactsh on GitHub](https://github.com/projectdiscovery/interactsh)    |   |
+|   |                                                                               |   |
+|---|-------------------------------------------------------------------------------|---|
+|   | [Interactsh Help](/docs/desktop/addons/oast-support/services/interactsh/)     |   |
+|   | [Interactsh on GitHub](https://github.com/projectdiscovery/interactsh)        |   |
+|   | [Interactsh Docs](https://docs.projectdiscovery.io/tools/interactsh/overview) |   |

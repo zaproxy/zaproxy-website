@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.25.0
+    version: 0.26.0
 ---
 
 # Authentication Helper
@@ -14,10 +14,12 @@ cascade:
 This add-on helps identify and set up authentication handling in ZAP.  
 
 
-The add-on can be used in 2 ways:
+The add-on can be used in various ways:
 
 * To passively detect authentication features.
+* To support newer browser based authentication mechanisms.
 * To automatically configure ZAP to handle the authentication features discovered.
+* To generate a detailed authentication report.
 
 The features currently supported are:
 
@@ -31,6 +33,7 @@ The features currently supported are:
 * [Auto-Detect Session Management](/docs/desktop/addons/authentication-helper/autodetect-session/)
 * [Header Based Session Management](/docs/desktop/addons/authentication-helper/session-header/)
 * [Verification Identification](/docs/desktop/addons/authentication-helper/verification-id/)
+* [Authentication Report (JSON)](/docs/desktop/addons/authentication-helper/auth-report-json/)
 
 
 This add-on does not currently perform any exploring on its own - it relies upon requests being proxied through ZAP

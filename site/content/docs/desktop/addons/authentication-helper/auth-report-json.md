@@ -60,6 +60,7 @@ The following failure detail items are used:
 | auth.failure.login_failures       | One or more failed logins.                                                             |
 | auth.failure.no_successful_logins | No successful browser logins.                                                          |
 | auth.failure.verif_ident          | Failed to identify verification URL.                                                   |
+| auth.failure.af_plan_errors       | There were Automation Framework plan errors.                                           |
 
 ### Automation Framework Environment
 

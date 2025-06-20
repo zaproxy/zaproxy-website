@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Client Side Integration - AJAX Spider Enhancement
 type: userguide
-weight: 4
+weight: 6
 ---
 
 # Client Side Integration - AJAX Spider Enhancement

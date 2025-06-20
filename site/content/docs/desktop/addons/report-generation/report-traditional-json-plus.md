@@ -6,6 +6,13 @@ type: userguide
 
 # Traditional JSON Report with Requests and Responses
 
+### Sections
+
+| Section          | ID              |
+|:-----------------|:----------------|
+| Statistics       | statistics      |
+| Sequence Details | sequencedetails |
+
 ### Sample
 
 #### About riskdesc
@@ -80,6 +87,18 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                         }
                     ]
                 },
+                ...
+            ],
+            "statistics": {
+                "site.specific.stat.a": 1,
+                "site.specific.stat.b": 2
+            }
+        }
+    ],
+    "statistics": {
+        "global.stat.a": 1,
+        "global.stat.b": 2
+    }
 
 ```
 

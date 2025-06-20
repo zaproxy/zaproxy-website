@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: commonlib
-    version: 1.32.0
+    version: 1.33.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.32.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.33.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2

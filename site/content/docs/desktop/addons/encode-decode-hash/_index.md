@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 1.6.0
+    version: 1.7.0
 ---
 
 # Encode / Decode / Hash dialog
@@ -221,6 +221,7 @@ Converts the input to all upper case characters.
 #### ASCify
 
 Converts text removing accents/diacritics/ligatures (perhaps not fully, due to operation in compatibility mode) leaving only ASCII characters. Examples:
+
 * `Tĥïŝ ĩš â fůňķŷ Šťŕĭńġ: ﬁ. étrange.` becomes `This is a funky String: fi. etrange.`.
 * `鸟儿` becomes an empty string (all characters are dropped).
 See also:  

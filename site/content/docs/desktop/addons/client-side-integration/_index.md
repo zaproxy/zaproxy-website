@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.15.0
+    version: 0.16.0
 ---
 
 # Client Side Integration
@@ -25,10 +25,13 @@ This add-on adds a ZAP browser extension to both Firefox and Chrome when they ar
 The extensions stream significant browser based events back to ZAP, giving ZAP an insight into what is going on in the browser.
 
 
+They also allow you to [Record Client Side Scripts](/docs/desktop/addons/client-side-integration/record/), for example for authentication.
+
+
 If you do not launch your browser(s) from ZAP then you can still install these extensions directly from the relevant stores:
 
-* Firefox [ZAP Browser Extension](https://addons.mozilla.org/en-GB/firefox/addon/zap-browser-extension)
-* Chrome [ZAP Browser Extension](https://chromewebstore.google.com/detail/zap-by-checkmarx-browser/cgkggmillbmmpokepnicllalaohphffo)
+* Firefox [ZAP by Checkmarx Browser Extension](https://addons.mozilla.org/en-GB/firefox/addon/zap-browser-extension)
+* Chrome [ZAP by Checkmarx Browser Extension](https://chromewebstore.google.com/detail/zap-by-checkmarx-browser/cgkggmillbmmpokepnicllalaohphffo)
 
 Note that you may need to configure the extensions via their options pages to update the host and API key.
 

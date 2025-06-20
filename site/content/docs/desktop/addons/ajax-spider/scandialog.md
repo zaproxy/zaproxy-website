@@ -75,6 +75,10 @@ The time to wait after a client side event is fired.
 
 The time to wait after URL is loaded.
 
+### Scope Check
+
+How the scope is checked, for more information refer to the Options AJAX Spider screen.
+
 ### Allowed Resources
 
 The list of allowed resources. The allowed resources are always fetched even if out of scope, allowing to include necessary resources (e.g. scripts) from 3rd-parties.

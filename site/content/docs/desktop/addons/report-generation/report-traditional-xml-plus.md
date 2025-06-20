@@ -189,6 +189,26 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                                                         </tags>
                                                 </alertitem>
                                 </alerts>
+                                <statistics>
+                                        <statistic>
+                                                <key>site.specific.stat.a</key>
+                                                <value>1</value>
+                                        </statistic>
+                                        <statistic>
+                                                <key>site.specific.stat.b</key>
+                                                <value>2</value>
+                                        </statistic>
+                                </statistics>
                         </site>
+                        <statistics>
+                                <statistic>
+                                        <key>global.stat.a</key>
+                                        <value>1</value>
+                                </statistic>
+                                <statistic>
+                                        <key>global.stat.b</key>
+                                        <value>2</value>
+                                </statistic>
+                        </statistics>
         </OWASPZAPReport>                
 ```

@@ -8,23 +8,23 @@ type: userguide
 
 ### Sections
 
-| Section                                 | Id                   |
+| Section                                 | ID                   |
 |:----------------------------------------|:---------------------|
 | Contents                                | contents             |
-| About this report                       | aboutThisReport      |
-| Report description                      | reportDescription    |
-| Report parameters                       | reportParameters     |
+| About This Report                       | aboutThisReport      |
+| Report Description                      | reportDescription    |
+| Report Parameters                       | reportParameters     |
 | Summaries                               | summaries            |
-| Alert counts by risk and confidence     | riskConfidenceCounts |
-| Alert counts by site and risk           | siteRiskCounts       |
-| Alert counts by alert type              | alertTypeCounts      |
+| Alert Counts by Risk and Confidence     | riskConfidenceCounts |
+| Alert Counts by Site and Risk           | siteRiskCounts       |
+| Alert Counts by Alert Type              | alertTypeCounts      |
 | Alerts                                  | alerts               |
-| Request request line and header section | requestHeader        |
-| Request body                            | requestBody          |
-| Response status line and header section | responseHeader       |
-| Response body                           | responseBody         |
+| Request Line and Header Section         | requestHeader        |
+| Request Body                            | requestBody          |
+| Response Status Line and Header Section | responseHeader       |
+| Response Body                           | responseBody         |
 | Appendix                                | appendix             |
-| Alert types                             | alertTypes           |
+| Alert Types                             | alertTypes           |
 
 ### Screenshot
 

@@ -9,7 +9,7 @@ weight: 1
 
 The following templates are available:   
 
-| Name / Link to Details, Screenshot/Sample                                                                                   | Id                    | Format   | Sections | Themes |
+| Name / Link to Details, Screenshot/Sample                                                                                   | ID                    | Format   | Sections | Themes |
 |:----------------------------------------------------------------------------------------------------------------------------|:----------------------|:---------|:---------|:-------|
 | [High Level Report Sample](/docs/desktop/addons/report-generation/report-high-level/)                                       | high-level-report     | HTML     | Yes      |        |
 | [Modern HTML Report with themes and options](/docs/desktop/addons/report-generation/report-modern/)                         | modern                | HTML     | Yes      | Yes    |
@@ -17,7 +17,7 @@ The following templates are available:
 | [Traditional HTML Report](/docs/desktop/addons/report-generation/report-traditional-html/)                                  | traditional-html      | HTML     | Yes      |        |
 | [Traditional HTML Report with Requests and Responses](/docs/desktop/addons/report-generation/report-traditional-html-plus/) | traditional-html-plus | HTML     | Yes      | Yes    |
 | [Traditional JSON Report](/docs/desktop/addons/report-generation/report-traditional-json/)                                  | traditional-json      | JSON     |          |        |
-| [Traditional JSON Report with Requests and Responses](/docs/desktop/addons/report-generation/report-traditional-json-plus/) | traditional-json-plus | JSON     |          |        |
+| [Traditional JSON Report with Requests and Responses](/docs/desktop/addons/report-generation/report-traditional-json-plus/) | traditional-json-plus | JSON     | Yes      |        |
 | [SARIF JSON Report](/docs/desktop/addons/report-generation/report-sarif-json/)                                              | sarif-json            | JSON     |          |        |
 | [Traditional Markdown Report](/docs/desktop/addons/report-generation/report-traditional-markdown/)                          | traditional-md        | Markdown | Yes      |        |
 | [Traditional PDF Report](/docs/desktop/addons/report-generation/report-traditional-pdf/)                                    | traditional-pdf       | PDF      | Yes      |        |

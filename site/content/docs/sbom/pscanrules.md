@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: '64'
+    version: '65'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v64/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v65/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -63,7 +63,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.31.0
+    version: 1.33.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4

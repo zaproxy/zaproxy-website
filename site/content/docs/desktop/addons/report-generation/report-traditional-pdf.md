@@ -8,7 +8,7 @@ type: userguide
 
 ### Sections
 
-| Section        | Id            |
+| Section        | ID            |
 |:---------------|:--------------|
 | Alert Count    | alertcount    |
 | Instance Count | instancecount |

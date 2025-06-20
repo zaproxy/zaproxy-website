@@ -30,7 +30,12 @@ The progress bar shows how far the selected Spider scan has progressed. It is al
 
 For each URI found you can see:
 
-* Processed - Whether the URI was processed by the Spider or was skipped from fetching because of a rule (e.g. it was out of scope)
+* Processed - Whether the URI was processed by the Spider or was skipped from fetching because of a rule. Skipped reasons include:
+    * ![no parse](/docs/desktop/addons/spider/images/red_dot.png)Out of Context - the message was not part of the targetted context
+    * ![no parse](/docs/desktop/addons/spider/images/red_dot.png)Out of Scope - the message was not in scope
+    * ![no parse](/docs/desktop/addons/spider/images/red_dot.png)Illegal Protocol - the message was neither HTTP nor HTTPS
+    * ![no parse](/docs/desktop/addons/spider/images/red_dot.png)User Rules - the message was skipped due to user defined exclude
+    * ![no parse](/docs/desktop/addons/spider/images/red_dot.png)Logout Avoidance - the message was skipped because the user indicated that logout related paths/functionality should be avoided
 * Method - The HTTP method, e.g. GET or POST, through which the resource should be accessed
 * URI - the resource found
 * Flags - any information about the URI (e.g. if it's a seed or why was it not processed)
