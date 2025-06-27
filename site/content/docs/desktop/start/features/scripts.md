@@ -12,10 +12,10 @@ ZAP supports scripts that can be embedded within ZAP and can access internal ZAP
 These scripts allow you to dynamically enhance ZAP from within ZAP.
 
 
-ZAP supports any scripting language that supports JSR 223 (http://www.jcp.org/en/jsr/detail?id=223) , including:
+ZAP supports any scripting language that supports [JSR 223](https://www.jcp.org/en/jsr/detail?id=223), including:
 
-* ECMAScript / JavaScript (using [Nashorn engine](https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/nashorn/), included by default)
-* Zest <https://developer.mozilla.org/en-US/docs/zest> (included by default)
+* ECMAScript / JavaScript (through the [GraalVM JavaScript add-on](/docs/desktop/addons/graalvm-javascript/))
+* [Zest](/docs/desktop/addons/zest/)
 * Groovy <https://groovy-lang.org/>
 * Kotlin <https://kotlinlang.org/>
 * Python <https://www.jython.org>
