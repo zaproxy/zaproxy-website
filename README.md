@@ -134,7 +134,7 @@ There are five available alert types as shown in the examples below:
 - warning
 - caution
 
-Omit the `title` parameter to keep the alert type as the default title (for example, a note alert will have "Note" as its title):
+You can pass in simple string content or complex content with multiple paragraphs and nested elements. Omit the `title` parameter to keep the alert type as the default title (for example, a note alert will have "Note" as its title):
 
 ```md
 <!-- Shortcodes in content files -->
@@ -145,6 +145,13 @@ Useful information that users should know, even when skimming content.
 
 {{< blockquote-alert type="tip" title="Optional custom title">}}
 Helpful advice for doing things better or more easily.
+
+This is some **bold text** and _italic_ text.
+
+This is a third paragraph in the same alert, followed by list items below.
+
+- List item 1
+- List item 2
 {{< /blockquote-alert >}}
 
 {{< blockquote-alert type="important" title="Optional custom title">}}
@@ -160,7 +167,7 @@ Advises about risks or negative outcomes.
 {{< /blockquote-alert >}}
 ```
 
-In layout files, call the partial directly. Just like shortcode content, anything passed to the  `content` parameter is parsed as Markdown. To pass raw HTML instead, use the `html` parameter. Again, the title parameter is optional and will default to the alert type:
+In layout files, call the partial directly. Anything passed to the `content` parameter is parsed as Markdown. To pass raw HTML instead, use the `html` parameter. Again, the title parameter is optional and will default to the alert type:
 
 ```html
 <!-- Partials in layout files -->
@@ -185,35 +192,21 @@ In layout files, call the partial directly. Just like shortcode content, anythin
     "content" "Key information users need to know to achieve their goal."
 ) }}
 
-{{ partial "blockquote-alert.html" (dict
+<!-- Pass HTML -->
+ {{ partial "blockquote-alert.html" (dict
     "type" "warning"
     "title" "Optional custom title"
-    "content" "Urgent info that needs immediate user attention to avoid problems."
+    "html" "<p>Urgent info that needs immediate user attention to avoid problems.</p>"
 ) }}
 
-{{ partial "blockquote-alert.html" (dict
-    "type" "caution"
-    "title" "Optional custom title"
-    "content" "Advises about risks or negative outcomes."
+{{ partial "blockquote-alert" (dict 
+    "type" "caution" 
+    "title" "Optional custom title" 
+    "html" "<p>Advises about <strong>risks</strong> or negative outcomes.</p>"
 ) }}
 ```
 
-In addition to simple string content as shown above, you can also pass in complex nested content with multiple paragraphs and elements:
-
-```md
-<!-- Shortcode example with more complex content -->
-
-{{< blockquote-alert type="tip" title="Optional custom Title" >}}
-This is a tip with **bold text** and _italic_ text.
-
-This is a second paragraph in the same alert.
-
-- List item 1
-- List item 2
-{{< /blockquote-alert >}}
-```
-
-You can do similar in partials. These are all valid options. Additionally, you can assign content to a variable before passing it in, which helps with formatting in longer templates:
+You can assign content to a variable before passing it to the partial, which helps with formatting in longer templates:
 
 ```html
 <!-- You can wrap your markdown content in backticks if it doesn't itself contain backticks -->
@@ -232,7 +225,7 @@ This is a second paragraph in the same alert.
   "content" $alertContent
 ) }}
 
-<!-- Concatenate multi-line strings (markdown) -->
+<!-- Concatenate multi-line Markdown strings -->
 {{ $alertContent := add
   "This is a tip with **bold text** and _italic_ text.\n\n"
   "This is a second paragraph in the same alert.\n"
@@ -246,15 +239,7 @@ This is a second paragraph in the same alert.
   "title" "Optional custom title"
   "content" $alertContent
 ) }}
-
-<!-- Pass HTML with nested elements -->
-{{ partial "blockquote-alert" (dict 
-    "type" "caution" 
-    "title" "Be Careful!" 
-    "html" "<p>This is a <strong>caution</strong> message.</p><p>It has multiple paragraphs.</p>"
-) }}
 ```
-
 
 > [!IMPORTANT]
 > When working with complex content, make sure to handle line breaks properly within the strings passed to the `content` or `html` parameters. For example, the following will throw a parse error (`html: overlay: parse failed unterminated quoted string in action`):
@@ -268,10 +253,7 @@ This is a second paragraph in the same alert.
 ) }}
 ```
 
-To avoid this, you can use either of the following options:
-
-- Keep everything on a single line
-- Use string concatenation (whether in a variable or directly)
+To avoid this, you can either keep everything on a single line or use string concatenation.
 
 #### Layouts
 For controlling what HTML is rendered, you need to work with the site templates. In the directory, `site/layouts/`, you'll find a number of HTML files with various template tags. The first file to check out is `site/layouts/_default/baseof.html` - this is the base layout Hugo uses to build your site that templates extend. Hugo has a lookup order for associating a content entry to a template. A single entry whose type is post (`type: post`), Hugo will look for a layout in `site/layouts/post/single.html`, and if that does not exist, it will fallback to `site/layouts/_default/single.html`. 
