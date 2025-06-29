@@ -22,8 +22,9 @@ For more details on ZAP’s security posture see the
 ### Script Capabilities
 As noted on the [Script Console](/docs/desktop/addons/script-console/) page:
 
-> [!WARNING]
-> Scripts run with the same permissions as ZAP, so do not run any scripts that you do not trust!
+{{< blockquote-alert type="warning">}}
+Scripts run with the same permissions as ZAP, so do not run any scripts that you do not trust!
+{{< /blockquote-alert >}}
 
 All scripts can call other scripts and any command line tools that are accessible to them based on OS permissions.
 Scripts can access any online services unless restricted by firewalls or similar.

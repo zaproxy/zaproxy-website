@@ -1,0 +1,9 @@
+{{ $type := .Get "type" | default "note" }}
+{{ $title := .Get "title" | default "" }}
+{{ $inner := .Inner }}
+
+{{ partial "blockquote-alert" (dict
+  "type" $type
+  "title" $title
+  "inner" $inner
+) }}

@@ -15,8 +15,9 @@ authors:
 
 ## Highlights
 
-> [!IMPORTANT]
-> The big news last month was the release of [2.16.1](/blog/2025-03-25-zap-2-16-1/)!
+{{< blockquote-alert type="important">}}
+The big news last month was the release of [2.16.1](/blog/2025-03-25-zap-2-16-1/)!
+{{< /blockquote-alert >}}
 
 As part of this release the [Script Console](/docs/desktop/addons/script-console/) now uses the main 
 [Output](/docs/desktop/ui/tabs/output/) tab instead of its own "Script Output" panel.
@@ -45,8 +46,9 @@ The following significant changes have been made to this website:
 * A new [Script Security](/docs/getting-further/script-security/) advanced guide
 * Even more [Authentication Tests](/docs/scans/auth/)
 
-> [!NOTE]
-> We now have the option to highlight important information, as demonstrated here!
+{{< blockquote-alert type="note">}}
+We now have the option to highlight important information, as demonstrated here!
+{{< /blockquote-alert >}}
 
 ## GitHub Pulse
 Here are some statistics for the two main ZAP repositories:
