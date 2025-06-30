@@ -2,6 +2,14 @@
 # Note that videos are grouped by series in reverse date order to make them a bit easier to manage
 ---
 
+- title: 'An Introduction to ZAP by Checkmarx - Official Version'
+  id: yywD8ebNn6o
+  site: youtube
+  date: '2025/06/30'
+  length: 6:56
+  tags:
+  - introduction
+
 # ZAP Chat Series
 
 - title: '20 Client Spider'
