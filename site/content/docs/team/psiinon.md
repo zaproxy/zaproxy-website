@@ -38,7 +38,6 @@ Simon has given ZAP talks at conferences all over the world and has recorded num
 
 * [ZAP Chat Series](/zap-chat/)
 * [ZAP Deep Dive Series](/zap-deep-dive/)
-* [ZAP in Ten](/zap-in-ten/)
 
 All of Simon’s publicly available videos are linked off the [Videos](/videos/) page.
 
