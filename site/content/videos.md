@@ -21,14 +21,6 @@ groups:
         link: /zapcon-2021/
         desc: All of the videos from ZAPCon 2021
 
-      - name: 'ZAP in Ten'
-        link: /zap-in-ten/
-        desc:  An series of short videos about different ZAP features produced in conjunction with All Day DevOps
-
-      - name: 'ADDO ZAP Automation Workshop'
-        link: /addo-auth-workshop/
-        desc: A set of ZAP workshops on automation and authentication produced in conjunction with All Day DevOps
-
       - name: 'All Official ZAP Videos'
         link: /videos-list/
         desc: All of the Official ZAP videos, tagged and searchable
