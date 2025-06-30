@@ -5,6 +5,17 @@ category: General Questions
 weight: 2
 ---
 
+### ZAP Downloads
+
+As of April 2025 browsers appear to be flagging the ZAP downloads as potentially dangerous.
+
+This appears to be the 'fault' of the [Google SafeBrowsing service](https://issues.chromium.org/issues/410883065).
+
+Exactly why ZAP has been flagged in this way is unclear, but to date we have not been able to convince anyone to change this.
+The recommendation in the above issue ("host your own downloads") are not a practical option for us.
+
+### Anti Virus Tools
+
 We know that many Antivirus (AV) tools flag ZAP and some of the ZAP add-ons.
 
 For example the ZAP 2.15 Windows installer was 
