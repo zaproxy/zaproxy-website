@@ -36,6 +36,10 @@ get that token to ZAP. If you cannot do that then you will not be able to automa
 
 If you are testing your own app then seriously consider what options you have you making it easier for you to test it using automation.
 
+### Disable Popups
+
+If you can then disable any popups in your application, for example ones that ask the user to accept cookies, or sign up to a newsletter. These can make it harder for ZAP to explore the app.
+
 ### Test with the ZAP Desktop
 
 Although you probably want to use authentication in automation it is still much easier to test it in the ZAP Desktop.

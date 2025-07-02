@@ -14,4 +14,3 @@ There are currently no easy options available to you, but we have lots of guides
 * [Video: Automation Simple Auth JuiceShop](https://play.vidyard.com/igf3A8UdZ6QAGiFjEpLH86)
 * [Video: Automation Auth Scripts](https://play.vidyard.com/gYz7LxioR54i2gY9Ze7c4F)
 
-Also note that paid for [Consultancy](/support/#consultancy) is available from the ZAP Core Team.

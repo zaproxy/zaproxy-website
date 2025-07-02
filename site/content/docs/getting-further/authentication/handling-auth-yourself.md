@@ -43,7 +43,12 @@ In order to use scripts in automation see the FAQ [How do you add a script to ZA
 
 [Replacer Rules](/docs/desktop/addons/replacer/) are an easy way to replace and insert strings in requests and responses.
 
-The easiest way to create and test them is via the Desktop UI. You can still use them in automation - see the 
+If you are doing anything non-trivial with ZAP from the command line then you should use the 
+[Automation Framework](/docs/automate/automation-framework/).
+This has direct support for the [replacer](/docs/desktop/addons/replacer/automation/).
+
+If you cannot use the Automation Framework for any reason then the easiest way to create and test them is via the Desktop UI. 
+You can still use them in automation - see the 
 FAQ [How do you find out what key to use to set a config value on the command line?](/faq/how-do-you-find-out-what-key-to-use-to-set-a-config-value-on-the-command-line/) which includes an example for a Replacer rule.
 
 ### Verification

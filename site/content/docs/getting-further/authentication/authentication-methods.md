@@ -22,11 +22,22 @@ This is the default method, and means that you are [handling authentication your
 
 ### Browser Based Authentication
 
-[Browser Based Authentication](/docs/desktop/addons/authentication-helper/browser-auth/) launches a browser which will attempt 
+[Browser Based Authentication](/docs/desktop/addons/authentication-helper/browser-auth/) works in the browser and will attempt 
 to fill in the correct credentials for the specified user.
 
 This is often the most effective option, especially for modern apps which you need to explore using the 
 [Ajax Spider](/docs/desktop/addons/ajax-spider/).
+
+Browser Based Authentication can be configured with manual authentication steps.
+These can handle any number of forms and fields, as well as TOTP.
+
+### Client Script Authentication
+
+[Client Script Authentication](/docs/desktop/addons/authentication-helper/client-script/) works in the browser
+and runs the configured client side Zest script, which will typically have been [recorded in a browser](/docs/desktop/addons/client-side-integration/record/).
+
+This is a good option for modern apps which have a more complex authentication flow than can be handled by 
+Browser Based Authentication.
 
 ### HTTP / NTLM Authentication
 
@@ -36,13 +47,22 @@ You will need to supply the hostname, port and realm.
 
 ### Form-based Authentication
 
+> [!WARNING]
+> This is no longer recommended as it is not effective for modern apps.
+
 [Form-based Authentication](/docs/desktop/ui/dialogs/session/context-auth/#form-based-authentication) handles traditional HTML FORMs with user and password fields which are submitted using a standard HTTP GET or POST.
 
 ### JSON-based Authentication
 
-[SON-based Authentication](/docs/desktop/ui/dialogs/session/context-auth/#json-based-authentication) handles form-based authentication where the user and password fields are submitted as a JSON object using an HTTP POST.
+> [!WARNING]
+> This is no longer recommended as it is not effective for modern apps.
+
+[JSON-based Authentication](/docs/desktop/ui/dialogs/session/context-auth/#json-based-authentication) handles form-based authentication where the user and password fields are submitted as a JSON object using an HTTP POST.
 
 ### Script-based Authentication
+
+> [!CAUTION]
+> This option gives you complete control, but it is hard to get right, and so only recommended as a last resort.
 
 [Script-based Authentication](/docs/desktop/ui/dialogs/session/context-auth/#script-based-authentication) allows you to use a script which will give you complete control over the authentication process.
 
