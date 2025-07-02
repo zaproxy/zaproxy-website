@@ -1,13 +1,13 @@
 {
-  "title": "Desktop News Pings by OS in May 2025",
-  "description": "The number of News pings from ZAP Desktops by OS in May 2025",
+  "title": "Desktop News Pings by OS in June 2025",
+  "description": "The number of News pings from ZAP Desktops by OS in June 2025",
   "data": [
     ["OS", "Count"],
-    ["Windows", 175533],
-    ["Kali", 79037],
-    ["Linux", 54392],
-    ["MacOS", 25521],
-    ["BackBox", 1000],
-    ["Unknown", 37]
+    ["Windows", 179675],
+    ["Kali", 80258],
+    ["Linux", 54811],
+    ["MacOS", 27627],
+    ["BackBox", 684],
+    ["Unknown", 13]
   ]
 }
