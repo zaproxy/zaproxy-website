@@ -21,25 +21,48 @@ The URL of the login page. It is mandatory and must start with "http://" or "htt
 
 The name of the context which will be configured to handle the authentication. If the context already exists then it will be deleted and recreated.
 
-### Username
+### Auth Method
 
-The username to use for authentication. The username and password must be valid for the login to work.
+The authentication method to use:
 
-### Password
+* Browser Based - ZAP will try to identify and fill in the credentials automatically.
+* Client Script - ZAP will use the Client Script you have chosen to authenticate.
 
-The password to use for authentication. The username and password must be valid for the login to work.
+### Client Script
+
+The script to use for authenticating - this will only be enabled if you have selected the "Client Script" Auth Method.
+
+
+If you do not already have a suitable script then you can use the "Record" button - this will launch the selected browser,
+start recording your actions and open the specified URL.  
+
+You will need to manually close the browser when you have finished.  
+
+The script you have just recorded will automatically be selected.
 
 ### Browser
 
-The browser to use for authentication. The browser you choose will need to be installed and be able to be launched from ZAP.
+The browser to use for authentication.  
+The browser you choose will need to be installed and be able to be launched from ZAP.
+
+### Username
+
+The username to use for authentication - this will only be enabled if you have selected the "Browser Based" Auth Method.  
+The username and password must be valid for the login to work.
+
+### Password
+
+The password to use for authentication - this will only be enabled if you have selected the "Browser Based" Auth Method.  
+The username and password must be valid for the login to work.
 
 ### Time to Wait (seconds)
 
-The number of seconds to wait after submitting the login form before closing the browser. If the browser is closed before the application has loaded then ZAP may not be able to identify the session handling or find a suitable verification URL.
+The number of seconds to wait after submitting the login form before closing the browser.  
+If the browser is closed before the application has loaded then ZAP may not be able to identify the session handling or find a suitable verification URL.
 
 ### Demo Mode
 
-This just adds 2 second delays between filling in each field and before submitting the form. It has no other effect than making it easier to see what is going on when a non-headless browser is used.
+This just adds 2 second delays between filling in each field and before submitting the form. It has no other effect than making it easier to see what is going on when a non-headless browser is used. It will only be enabled if you have selected the "Browser Based" Auth Method.
 
 ### Record Diagnostics
 
