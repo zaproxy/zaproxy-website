@@ -9,4 +9,5 @@ We want to make sure that ZAP can automatically fill in as many different types 
 
 We will want to know the HTML fragments for the form and all of the input fields in it. Feel free to obfuscate any sensitive information.
 
-#### Next Step: [What type of app?](../what-app-type)
+#### Next Step: [Record a Login Script](../record-a-login-script/)
+

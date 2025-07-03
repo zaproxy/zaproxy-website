@@ -21,3 +21,6 @@ These pages detail how to set up ZAP to scan a variety of test vulnerable web ap
 ZAP is primarily designed to scan “real world” apps, but we understand why people like testing against deliberately vulnerable apps.
 
 Some of these apps act in "unusual" ways that are not often seen in real world app. Hence these pages :grin:
+
+If you have questions about using ZAP to test a specific vulnerable app, that
+isn't answered here, please ask in the [User Group](https://groups.google.com/group/zaproxy-users).

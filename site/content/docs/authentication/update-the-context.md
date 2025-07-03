@@ -46,4 +46,4 @@ If you had to explore the app manually before ZAP could identify the session han
 If you had to manually identify the session handling then you will need to identify and configure the correct
 session management details.
 
-#### Next Step: [Test Your Context](../test-the-context)
+#### Next Step: [Test Your Context](../test-the-context/)

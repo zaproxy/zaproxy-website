@@ -5,13 +5,14 @@ category: Howtos
 weight: 4
 ---
 
+If you need to set options via the command line then have a look at the 
+[Automation Framework](/docs/automate/automation-framework/) first.
+This is well documented and has support for all of the most commonly needed configuration parameters.
+
 
 The [ZAP command line](/docs/desktop/cmdline/) allows you to set individual values as follows:
-
-    
     
     -config api.key=12345 -config network.connection.timeoutInSecs=60
-    
 
 How can you find out what keys to use to set the values you want?
 
@@ -35,15 +36,11 @@ For example, the maximum number of threads per host for the active is in:
 ```
 
 Which in dot notation is:
-
-    
     
     scanner.threadPerHost=2
     
 
 Note that you can set 'arrays' using keys like:
-
-    
     
     -config replacer.full_list\(0\).description=auth1 \
     -config replacer.full_list\(0\).enabled=true \
@@ -61,15 +58,11 @@ Note that you can set 'arrays' using keys like:
 
 You can also put all of the keys you want to set in a file and use that file
 on the command line:
-
-    
     
     -configfile conf
     
 
 for the above example the file `conf` would contain:
-
-    
     
     replacer.full_list(0).description=auth1
     replacer.full_list(0).enabled=true

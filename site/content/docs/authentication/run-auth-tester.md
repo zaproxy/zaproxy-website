@@ -12,4 +12,10 @@ as it will help us understand which parts of the authentication process ZAP can 
 
 If ZAP can automatically handle things then it will make your life easier.
 
-#### Next Step: [Authentication Tester Outcome](../auth-tester-results)
+To start with leave the "Auth Method" as "Browser Based" and just fill in the fields:
+
+* Login URL
+* Username
+* Password
+
+#### Next Step: [Authentication Tester Outcome](../auth-tester-results/)

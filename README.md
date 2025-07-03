@@ -130,6 +130,8 @@ icon:
 
 The examples below use the same syntax as in Github Markdown. The template responsible for rendering them is at `site/layouts/_default/_markup/render-blockquote.html`
 
+A test page showing them all in action is available at https://www.zaproxy.org/docs/md-callout-examples/
+
 ```
 > [!NOTE]
 > Useful information that users should know, even when skimming content.

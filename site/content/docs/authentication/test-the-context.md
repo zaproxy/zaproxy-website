@@ -59,4 +59,4 @@ The last 'Auth' message should be to the 'verification URL' and should have succ
 
 You can select any of the messages in the History tab and then see all of their details in the 'Request' and 'Response' tabs.
 
-#### Next Step: [Use The Context](../use-the-context)
+#### Next Step: [Use The Context](../use-the-context/)
