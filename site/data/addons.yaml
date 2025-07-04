@@ -180,9 +180,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.33.0/commonlib-release-1.33.0.zap
-  date: 2025-06-20
-  version: 1.33.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.34.0/commonlib-release-1.34.0.zap
+  date: 2025-07-04
+  version: 1.34.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
