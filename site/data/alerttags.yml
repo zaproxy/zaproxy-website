@@ -25,6 +25,9 @@ CWE-1004:
 CWE-1021:
   link: https://cwe.mitre.org/data/definitions/1021.html
 
+CWE-1022:
+  link: https://cwe.mitre.org/data/definitions/1022.html
+
 CWE-113:
   link: https://cwe.mitre.org/data/definitions/113.html
 
@@ -36,6 +39,9 @@ CWE-119:
 
 CWE-120:
   link: https://cwe.mitre.org/data/definitions/120.html
+
+CWE-1230:
+  link: https://cwe.mitre.org/data/definitions/1230.html
 
 CWE-1275:
   link: https://cwe.mitre.org/data/definitions/1275.html
@@ -108,6 +114,9 @@ CWE-346:
 
 CWE-347:
   link: https://cwe.mitre.org/data/definitions/347.html
+
+CWE-348:
+  link: https://cwe.mitre.org/data/definitions/348.html
 
 CWE-352:
   link: https://cwe.mitre.org/data/definitions/352.html
