@@ -245,7 +245,7 @@ CWE-98:
   link: https://cwe.mitre.org/data/definitions/98.html
 
 HIPAA:
-  link: https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html
+  link: https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance
 
 OUT_OF_BAND:
   link: https://www.zaproxy.org/docs/desktop/addons/oast-support/
@@ -302,7 +302,7 @@ OWASP_2021_A10:
   link: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
 
 PCI_DSS:
-  link: https://www.pcisecuritystandards.org/standards/pci-dss/
+  link: https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance
 
 POLICY_API:
   link: 
