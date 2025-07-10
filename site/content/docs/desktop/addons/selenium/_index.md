@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.38.0
+    version: 15.39.0
 ---
 
 # Selenium
@@ -29,16 +29,18 @@ with the crawler later, it's up to the scripts to access the required URLs.
 
 The following web browsers are supported:
 
-|       Name       |        ID        |                                                                                                                                                                                                          Requirements/Notes                                                                                                                                                                                                           |
-|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Chrome           | chrome           | The following versions are known to work: 59 and 60 (older versions might work too). Requires ChromeDriver, if not on the system's PATH, it can be set in the options. For more information on ChromeDriver and how to obtain it refer to the [ChromeDriver website](https://sites.google.com/a/chromium.org/chromedriver/).                                                                                                          |
-| Chrome Headless  | chrome-headless  | Starts Chrome without GUI.                                                                                                                                                                                                                                                                                                                                                                                                            |
-| Firefox          | firefox          | The following versions are known to work: 45 (ESR), 46, 47.0.1, 54, and 55 (older versions might work too). Some versions are known to not work, for example, 47.0. Newer versions (≥ 48) require geckodriver, it can be set in the options. For more information on geckodriver and how to obtain it refer to the [geckodriver website](https://github.com/mozilla/geckodriver) (see footer note for caveat when using geckodriver). |
-| Firefox Headless | firefox-headless | Starts Firefox without GUI.                                                                                                                                                                                                                                                                                                                                                                                                           |
-| HtmlUnit         | htmlunit         | Bundled browser, does not have any requirement.                                                                                                                                                                                                                                                                                                                                                                                       |
-| Safari           | safari           |                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|       Name       |        ID        |                                                                                                                Requirements/Notes                                                                                                                 |
+|------------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Chrome           | chrome           | Requires ChromeDriver, if not on the system's PATH, it can be set in the options. For more information on ChromeDriver and how to obtain it refer to the [ChromeDriver website](https://sites.google.com/a/chromium.org/chromedriver/).           |
+| Chrome Headless  | chrome-headless  | Starts Chrome without GUI.                                                                                                                                                                                                                        |
+| Edge             | edge             | Requires EdgeDriver, if not on the system's PATH, it can be set in the options. For more information on EdgeDriver and how to obtain it refer to the [EdgeDriver website](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/). |
+| Edge Headless    | edge-headless    | Starts Edge without GUI.                                                                                                                                                                                                                          |
+| Firefox          | firefox          | Requires geckodriver, it can be set in the options. For more information on geckodriver and how to obtain it refer to the [geckodriver website](https://github.com/mozilla/geckodriver),                                                          |
+| Firefox Headless | firefox-headless | Starts Firefox without GUI.                                                                                                                                                                                                                       |
+| HtmlUnit         | htmlunit         | Bundled browser, does not have any requirement.                                                                                                                                                                                                   |
+| Safari           | safari           |                                                                                                                                                                                                                                                   |
 
-To use Firefox, Chrome, and Safari, you must
+To use Firefox, Chrome, Edge, and Safari, you must
 have them installed in your system. The ID of the browser can be used to choose the
 browser when configuring ZAP through the command line or using the ZAP API (for example,
 to set the AJAX Spider to use one or other browser).
