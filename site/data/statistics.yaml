@@ -583,6 +583,48 @@
   code: main/addOns/exim/src/main/java/org/zaproxy/addon/exim/urls/UrlsImporter.java
   desc: The number of URLs imported via a file
 
+- key: stats.formhandler.add
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/formhandler/src/main/java/org/zaproxy/zap/extension/formhandler
+  desc: The number of Value Generator field configurations added
+
+- key: stats.formhandler.add.<name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/formhandler/src/main/java/org/zaproxy/zap/extension/formhandler
+  desc: The number of Value Generator field configurations added (by name)
+
+- key: stats.formhandler.modify
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/formhandler/src/main/java/org/zaproxy/zap/extension/formhandler
+  desc: The number of Value Generator field configurations modified
+
+- key: stats.formhandler.modify.<name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/formhandler/src/main/java/org/zaproxy/zap/extension/formhandler
+  desc: The number of Value Generator field configurations modified (by name)
+
+- key: stats.formhandler.remove
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/formhandler/src/main/java/org/zaproxy/zap/extension/formhandler
+  desc: The number of Value Generator field configurations removed
+
+- key: stats.formhandler.remove.<name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/formhandler/src/main/java/org/zaproxy/zap/extension/formhandler
+  desc: The number of Value Generator field configurations removed (by name)
+
 - key: stats.fuzz.payload.processors.error
   scope: global
   type: counter
@@ -631,6 +673,48 @@
   repo: zaproxy/zap-extensions
   code: main/addOns/fuzzer/src/main/java/org/zaproxy/zap/extension/fuzz/AbstractFuzzer.java
   desc: The number of fuzzers started by message type
+
+# - key: stats.llm.alertreview.call
+#   scope: global
+#   type: counter
+#   repo: zaproxy/zap-extensions
+#   code: main/addOns/llm/src/main/java/org/zaproxy/addon/llm/services/LlmCommunicationService.java
+#   desc: The number of times the Alert Review functionality is invoked
+# 
+# - key: stats.llm.alertreview.result.changed
+#   scope: global
+#   type: counter
+#   repo: zaproxy/zap-extensions
+#   code: main/addOns/llm/src/main/java/org/zaproxy/addon/llm/services/LlmCommunicationService.java
+#   desc: The number of times the Alert Review functionality returns a changed result
+# 
+# - key: stats.llm.alertreview.result.same
+#   scope: global
+#   type: counter
+#   repo: zaproxy/zap-extensions
+#   code: main/addOns/llm/src/main/java/org/zaproxy/addon/llm/services/LlmCommunicationService.java
+#   desc: The number of times the Alert Review functionality returns an unchanged result
+# 
+# - key: stats.llm.openapiseq.call
+#   scope: global
+#   type: counter
+#   repo: zaproxy/zap-extensions
+#   code: main/addOns/llm/src/main/java/org/zaproxy/addon/llm/services/LlmCommunicationService.java
+#   desc: The number of times the Open API Sequence functionality is invoked
+# 
+# - key: stats.llm.openapiseq.fail
+#   scope: global
+#   type: counter
+#   repo: zaproxy/zap-extensions
+#   code: main/addOns/llm/src/main/java/org/zaproxy/addon/llm/services/LlmCommunicationService.java
+#   desc: The number of times the Open API Sequence functionality fails
+# 
+# - key: stats.llm.openapiseq.result.count
+#   scope: global
+#   type: counter
+#   repo: zaproxy/zap-extensions
+#   code: main/addOns/llm/src/main/java/org/zaproxy/addon/llm/services/LlmCommunicationService.java
+#   desc: The number of HTTP requests imported
 
 - key: stats.quickstart.news.<news-id>
   scope: global
