@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: domxss
-    version: 21.0.0
+    version: 22.0.0
 ---
 
 # DOM XSS Active Scan Rule
@@ -20,9 +20,10 @@ It launches browser windows and sends attack payloads to all of the relevant DOM
 As it launches browser windows it will take significantly longer than other (non browser based) rules.
 
 
-This version supports Firefox (the default) and Chrome. They can be run with GUI or headless (default), it can be changed with
+This version supports Firefox (the default), Chrome, and Edge. They can be run with GUI or headless (default), it can be changed with
 the rule `rules.domxss.browserid`, via the Options 'Rule configuration' panel, with values
-`firefox`, `firefox-headless`, `chrome` and `chrome-headless`.
+`firefox`, `firefox-headless`, `chrome`, `chrome-headless`,
+`edge`, and `edge-headless`.
 
 ### Strengths and Thresholds
 

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.38.0
+    version: 15.39.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.38.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.39.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -69,7 +69,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.34.0
+    version: 1.35.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
