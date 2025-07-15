@@ -9,6 +9,9 @@ links:
   - name: 'Gin & Juice Shop'
     link: ginnjuiceshop/
     desc: a well maintained modern app
+  - name: 'OWASP crAPI'
+    link: crapi/
+    desc: the Completely Ridiculous API
   - name: 'OWASP Juice Shop'
     link: juiceshop/
     desc: a well maintained modern app
