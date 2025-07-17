@@ -32,6 +32,12 @@ A toolbar provides the following buttons:
 A graphical representation of the plan which also shows the state of the plan when it is run.  
 You can edit any of the elements of the plan by double clicking on them.
 
+
+You can also change the following general job options via the plan table:
+
+* Enabled - only jobs that are enabled will run.
+* Always Run - enabled jobs with this option will run even if the plan exits early.
+
 ### Output sub-tab
 
 Any output generated when you load or run the plan.
