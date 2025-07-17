@@ -44,6 +44,8 @@ This job supports [monitor](/docs/desktop/addons/automation-framework/test-monit
         name:                          # String: The name of the rule for documentation purposes - this is not required or actually used
         strength:                      # String: The Attack Strength for this rule, one of Low, Medium, High, Insane, default: Medium
         threshold:                     # String: The Alert Threshold for this rule, one of Off, Low, Medium, High, default: Medium
+    enabled:                           # Bool: If set to false the job will not be run, default: true
+    alwaysRun:                         # Bool: If set and the job is enabled then it will run even if the plan exits early, default: false
 ```
 
 **Note** : Unless the `defaultThreshold` of the `policyDefinition` is `OFF` all rules will be enabled to start with.

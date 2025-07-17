@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.50.0
+    version: 0.51.0
 ---
 
 # Automation Framework
@@ -79,8 +79,6 @@ All file and directory paths can either be absolute or relative to the directory
 
 ## Jobs {#jobs}
 
-The jobs can be enabled/disabled through the GUI and the automation plan, with the `enabled` flag. Jobs are enabled by default.
-
 
 The following automation jobs are supported by this add-on:
 
@@ -91,6 +89,13 @@ The following automation jobs are supported by this add-on:
 * [requestor](/docs/desktop/addons/automation-framework/job-requestor/) - crafts specific requests to send to the corresponding targets
 * [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) - runs the active scanner
 * [exitStatus](/docs/desktop/addons/automation-framework/job-exitstatus/) - sets ZAP's exit code based on scan results
+
+### General Job Options {#gen-options}
+
+The following options can be applied to all jobs, via the automation plan or the [GUI](/docs/desktop/addons/automation-framework/gui/):
+
+* `enabled` - only jobs that are enabled will run.
+* `alwaysRun` - enabled jobs with this option will run even if the plan exits early.
 
 ### Importance of Job Order
 

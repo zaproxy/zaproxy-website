@@ -27,4 +27,6 @@ It is covered in the video: [ZAP Chat 09 Automation Framework Part 3 - Requests]
             - "header1:value1"
         data:                          # String: Optional data to send in the request body, supports vars
         responseCode:                  # Int: An optional, expected response code against which the actual response code will be matched
+    enabled:                           # Bool: If set to false the job will not be run, default: true
+    alwaysRun:                         # Bool: If set and the job is enabled then it will run even if the plan exits early, default: false
 ```
