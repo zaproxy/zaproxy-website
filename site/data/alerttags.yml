@@ -28,6 +28,9 @@ CWE-1021:
 CWE-1022:
   link: https://cwe.mitre.org/data/definitions/1022.html
 
+CWE-1104:
+  link: https://cwe.mitre.org/data/definitions/1104.html
+
 CWE-113:
   link: https://cwe.mitre.org/data/definitions/113.html
 
