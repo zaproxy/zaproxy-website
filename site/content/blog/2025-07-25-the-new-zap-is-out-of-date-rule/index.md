@@ -58,4 +58,4 @@ You are of course free to ignore them, but don't say we didn't warn you!
 
 Are there specific reasons why you have not upgraded from an old version of ZAP?
 
-If so please let us know via the [User Group](https://groups.google.com/group/zaproxy-users).
+If so please let us know via the [User Group](https://groups.google.com/g/zaproxy-users/c/SqWBMLk2Z78/m/M7F0pS6rAQAJ).
