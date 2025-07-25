@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 65.0.0
+    version: 66.0.0
 ---
 
 # Passive Scan Rules
@@ -694,3 +694,19 @@ Latest code: [XDebugTokenScanRule.java](https://github.com/zaproxy/zap-extension
 
 
 Alert ID: [10056](/docs/alerts/10056/).
+
+## ZAP is Out of Date {#id-10116}
+
+This checks to make sure you are using the latest version of ZAP.  
+If your ZAP install is out of date then it will raise one alert on each domain with a severity based on how many versions out of date it is.  
+
+* 1 version: Low Risk
+* 2 versions: Medium Risk
+* 3+ versions: High Risk
+* More that one year: High Risk (just for date stamped versions, such as the nightly or weekly releases)
+
+
+Latest code: [ZapVersionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ZapVersionScanRule.java)
+
+
+Alert ID: [10116](/docs/alerts/10116/).

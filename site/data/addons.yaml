@@ -793,9 +793,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v65/pscanrules-release-65.zap
-  date: 2025-06-20
-  version: 65
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v66/pscanrules-release-66.zap
+  date: 2025-07-25
+  version: 66
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
