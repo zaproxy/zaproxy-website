@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: '149'
+    version: '150'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v149/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v150/bom.json
   components:
   - name: asm
     version: '9.7'
