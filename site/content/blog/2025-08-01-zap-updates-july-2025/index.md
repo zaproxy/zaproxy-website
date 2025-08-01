@@ -1,7 +1,7 @@
 ---
 title: "ZAP Updates - July 2025"
 summary: >
-  TODO
+  Authentication improvements, Edge support, timing rule changes, Docker news, and a new scan rule.
 images:
 - https://www.zaproxy.org/blog/2025-08-01-zap-updates-july-2025/images/zapbot-monthly-updates.png
 type: post
@@ -10,19 +10,51 @@ tags:
 - update
 date: "2025-08-01"
 authors:
-- TODO
+- simon
 ---
 
 ## Highlights
-TODO
 
-## Ongoing Work
-TODO
+### Authentication Changes
 
-## New Contributors
-A very warm welcome to the people who started to contribute to ZAP this month!
+We published a blog on the [Authentication improvements](/blog/2025-07-03-authentication-improvements/) at the start
+of the month, but we have also been carrying on with more improvements.
 
-TODO: Add from https://github.com/zaproxy/zap-core-help/pulls?q=is%3Apr+credits+is%3Aclosed
+More news about these improvements soon!
+
+### Edge Support
+
+ZAP now [supports Microsoft Edge](/blog/2025-07-10-edge-support/) as a “tier 1” browser, joining Firefox and Chrome.
+
+### Timing Rule Changes
+
+This month we also announced a set of [Time Based Scan Rule Changes](/blog/2025-07-22-timing-rule-changes/).
+These changes will provide you with greater flexibility in creating scan policies.
+
+### New "ZAP is Out of Date" Scan Rule
+
+Last week we published a [New 'ZAP is Out of Date' Rule](/blog/2025-07-25-the-new-zap-is-out-of-date-rule/),
+and back-ported it to ZAP versions 2.14 and 2.15.
+
+Based on our telemetry we can see that on Wednesday 30th July over __25 thousand__ of these alerts were raised!
+
+Hopefully they will encourage more of you to update to the [latest version of ZAP](/download/)!
+
+### SSP Docker Images 
+
+In another attempt to encourage you all to use the latest version of ZAP, we announced on the 
+[ZAP User Group](https://groups.google.com/g/zaproxy-users/c/59-3Sd9OW4c/m/CV4VBZOMAgAJ), 
+[Twitter/X](https://x.com/zaproxy/status/1949776277554057683), 
+[Mastodon](https://infosec.exchange/@zaproxy/114930343459572118), and 
+[Bluesky](https://bsky.app/profile/zaproxy.org/post/3luzegzcqps2i) 
+that we will be deleting the Software Security Project Docker Hub Docker images.
+
+Don't worry, we still maintain ZAP Docker images on both Docker Hub and GHCR as per the 
+[Docker](/download/#docker) section of the Download page.
+
+### The Origin of ZAPbot
+
+Last, but definitely not least, those of you on LinkedIn can read about how [Lisa Raynaud created ZAPbot](https://www.linkedin.com/posts/lisa-raynaud-studio_branddesign-mascotdesign-techbranding-activity-7355973895960596481-cVtq) :grin:
 
 ## GitHub Pulse
 Here are some statistics for the two main ZAP repositories:
