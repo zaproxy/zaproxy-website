@@ -3,12 +3,12 @@
   name: "Cookie without SameSite Attribute"
   status: "release"
   type: "Passive"
-- id: 3
-  name: "Session ID in URL Rewrite"
-  status: "release"
-  type: "Passive"
 - id: 10027
   name: "Information Disclosure - Suspicious Comments"
+  status: "release"
+  type: "Passive"
+- id: 3
+  name: "Session ID in URL Rewrite"
   status: "release"
   type: "Passive"
 - id: 10098
@@ -23,14 +23,18 @@
   name: "X-Content-Type-Options Header Missing"
   status: "release"
   type: "Passive"
-- id: 10038
-  name: "Content Security Policy (CSP) Header Not Set"
-  status: "release"
-  type: "Passive"
 - id: 10035
   name: "Strict-Transport-Security Header"
   status: "release"
   type: "Passive"
+- id: 10038
+  name: "Content Security Policy (CSP) Header Not Set"
+  status: "release"
+  type: "Passive"
+- id: 40018
+  name: "SQL Injection"
+  status: "release"
+  type: "Active"
 - id: 90033
   name: "Loosely Scoped Cookie"
   status: "release"
@@ -39,33 +43,25 @@
   name: "Re-examine Cache-control Directives"
   status: "release"
   type: "Passive"
-- id: 40018
-  name: "SQL Injection"
-  status: "release"
-  type: "Active"
-- id: 10036
-  name: "HTTP Server Response Header"
-  status: "release"
-  type: "Passive"
-- id: 10104
-  name: "User Agent Fuzzer"
-  status: "release"
-  type: "Active"
 - id: 10017
   name: "Cross-Domain JavaScript Source File Inclusion"
-  status: "release"
-  type: "Passive"
-- id: 10096
-  name: "Timestamp Disclosure - Unix"
   status: "release"
   type: "Passive"
 - id: 10055
   name: "CSP"
   status: "release"
   type: "Passive"
-- id: 10112
-  name: "Session Management Response Identified"
-  status: "beta"
+- id: 10104
+  name: "User Agent Fuzzer"
+  status: "release"
+  type: "Active"
+- id: 10036
+  name: "HTTP Server Response Header"
+  status: "release"
+  type: "Passive"
+- id: 10096
+  name: "Timestamp Disclosure - Unix"
+  status: "release"
   type: "Passive"
 - id: 10010
   name: "Cookie No HttpOnly Flag"
@@ -74,6 +70,10 @@
 - id: 10109
   name: "Modern Web Application"
   status: "release"
+  type: "Passive"
+- id: 10112
+  name: "Session Management Response Identified"
+  status: "beta"
   type: "Passive"
 - id: 10062
   name: "PII Disclosure"
