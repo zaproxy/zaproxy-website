@@ -1,0 +1,28 @@
+section: Reflected XSS GET False Positives
+url: /RXSS-FalsePositives-GET/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-FalsePositives-GET/Case01-DoubleQuotesAndCrLfEncodingInProperty.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-FalsePositives-GET/Case02-SingleQuotesAndCrLfEncodingInProperty.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-FalsePositives-GET/Case03-DoubleQuotesEqualityAndBracketsEncodingInProperty.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-FalsePositives-GET/Case04-SingleQuotesEqualityAndBracketsEncodingInProperty.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-FalsePositives-GET/Case05-CrlfRemovalInHttpHeader.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-FalsePositives-GET/Case06-QuotesBracketsAndCrLfEncodingInTextProperty.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-FalsePositives-GET/Case07-AngleBracketsEncodingInBody.jsp
+  result: Pass
+  rule: null
+tests: 7
+passes: 7
+fails: 0
+score: 100%

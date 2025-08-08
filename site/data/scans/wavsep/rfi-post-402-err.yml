@@ -1,0 +1,34 @@
+section: Remote File Include POST 500 Error
+url: /RFI-Detection-Evaluation-POST-500Error/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 7
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 7
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 7
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 7
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp
+  result: Pass
+  rule: 7
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp
+  result: Pass
+  rule: 7
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp
+  result: Pass
+  rule: 7
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 7
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-500Error/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 7
+tests: 9
+passes: 9
+fails: 0
+score: 100%

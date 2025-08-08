@@ -30,7 +30,7 @@
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
       {{ if $nolinks }}
       <td>{{ $test.path}}</td>
-      <td>{{ $test.rule}}</td>
+      <td><a href="/docs/alerts/{{ $test.rule}}/">{{ $test.rule}}</a></td>
       {{ else }}
       <td><a href="{{ $data.url}}{{ $test.path}}">{{ $test.path}}</a></td>
       <td><a href="/docs/alerts/{{ $test.rule}}/">{{ $test.rule}}</a></td>

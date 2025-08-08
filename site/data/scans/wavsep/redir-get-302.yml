@@ -1,0 +1,52 @@
+section: Unvalidated Redirect GET 200
+url: /Redirect-Detection-Evaluation-GET-302Redirect/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case01-Redirect-RedirectMethod-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case02-Redirect-RedirectMethod-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case03-Redirect-RedirectMethod-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case04-Redirect-RedirectMethod-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case05-Redirect-RedirectMethod-FilenameContext-Unrestricted-HttpURL-DefaultPartialInput-PartialPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case06-Redirect-RedirectMethod-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-PartialPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case07-Redirect-RedirectMethod-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-PartialPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case08-Redirect-RedirectMethod-FilenameContext-HttpInputValidation-HttpURL-DefaultPartialInput-PartialPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case09-Redirect-RedirectMethod-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case10-Redirect-RedirectMethod-FilenameContext-HttpInputValidation-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case11-Redirect-RedirectMethod-FilenameContext-HttpInputValidation-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case12-Redirect-RedirectMethod-FilenameContext-HttpInputRemoval-HttpURL-DefaultPartialInput-PartialPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case13-Redirect-RedirectMethod-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case14-Redirect-RedirectMethod-FilenameContext-HttpInputRemoval-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-Detection-Evaluation-GET-302Redirect/Case15-Redirect-RedirectMethod-FilenameContext-HttpInputRemoval-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+tests: 15
+passes: 15
+fails: 0
+score: 100%

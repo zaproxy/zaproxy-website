@@ -1,0 +1,25 @@
+section: Remote File Include GET False Positives
+url: /RFI-FalsePositives-GET/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-FalsePositives-GET/Case01-RFI-FalsePositive-Forward-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-FalsePositives-GET/Case02-RFI-FalsePositive-OpenRedirect-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-FalsePositives-GET/Case03-RFI-FalsePositive-UrlClass-TextHtmlValidResponse-FilenameContext-WhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-FalsePositives-GET/Case04-RFI-FalsePositive-UrlClass-TextHtmlValidResponse-FilenameContext-TraversalRemovalAndWhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-FalsePositives-GET/Case05-RFI-FalsePositive-UrlClass-TextHtmlValidResponse-FilenameContext-EnumerationResponseOnly-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-FalsePositives-GET/Case06-RFI-FalsePositive-UrlClass-TextHtmlValidResponse-FilenameContext-InputNotUsed-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+tests: 6
+passes: 6
+fails: 0
+score: 100%

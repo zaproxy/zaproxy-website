@@ -1,0 +1,10 @@
+section: SQL Injection POST 200 Error Experimental
+url: /SInjection-Detection-Evaluation-POST-200Error-Experimental/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp
+  result: Pass
+  rule: 40018
+tests: 1
+passes: 1
+fails: 0
+score: 100%
