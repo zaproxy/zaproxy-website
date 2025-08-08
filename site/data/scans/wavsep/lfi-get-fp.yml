@@ -1,0 +1,31 @@
+section: Local File Include GET False Positives 
+url: /LFI-FalsePositives-GET/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case01-LFI-FalsePositive-Forward-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: 6
+- path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case02-LFI-FalsePositive-OpenRedirect-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: 6
+- path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case03-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-WhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case04-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-TraversalRemovalAndWhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case05-LFI-FalsePositive-ContextStream-TextHtmlValidResponse-FilenameContext-WhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case06-LFI-FalsePositive-ContextStream-TextHtmlValidResponse-FilenameContext-TraversalRemovalAndWhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case07-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-EnumerationResponseOnly-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case08-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-InputNotUsed-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+tests: 8
+passes: 8
+fails: 0
+score: 100%

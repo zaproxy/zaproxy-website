@@ -1,0 +1,34 @@
+section: Unvalidated Redirect GET False Positives
+url: /Redirect-FalsePositives-GET/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case01-Redirect-FalsePositive-Forward-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case02-Redirect-FalsePositive-NoLogic-TextHtmlValidResponse-NoContext-Unrestricted-NoPath-DefaultFullInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case03-Redirect-FalsePositive-NoLogic-TextHtmlValidResponse-NoContext-Unrestricted-NoPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case04-Redirect-FalsePositive-NoLogic-TextHtmlValidResponse-NoContext-Unrestricted-NoPath-DefaultPartialInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case05-Redirect-FalsePositive-InactiveJavascriptRedirect-FilenameContext-InputValidation-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: 20019
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case06-Redirect-FalsePositive-RFI-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultFullInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case07-Redirect-FalsePositive-LFI-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case08-Redirect-FalsePositive-RedirectMethod-FilenameContext-WhiteList-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: null
+- path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case09-Redirect-FalsePositive-RedirectMethod-FilenameContext-DomainConcat-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp
+  result: Pass
+  rule: null
+tests: 9
+passes: 9
+fails: 0
+score: 100%

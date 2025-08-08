@@ -1,0 +1,40 @@
+section: Reflected XSS GET Experimental
+url: /RXSS-Detection-Evaluation-GET-Experimental/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp
+  result: Pass
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case04-Tag2HtmlPageScope-ChangingAntiCSRFToken.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case04-Tag2HtmlPageScope-ChangingAntiCSRFToken.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case05-ScriptlessInjectionInFormTagActionAttribute.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case06-ScriptlessInjectionInBaseTagHrefAttribute.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case07-ScriptlessInjectionInScriptTagSrcAttribute.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case08-InjectionInToCssSelector.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case09-InjectionInToCssSelectorAttributeName.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case10-InjectionInToCssProperty.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-GET-Experimental/Case11-InjectionInToCssPropertyValue.jsp
+  result: FAIL
+  rule: 40012
+tests: 11
+passes: 1
+fails: 10
+score: 9%

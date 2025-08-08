@@ -18,6 +18,9 @@ links:
   - name: 'OWASP Juice Shop'
     link: juiceshop
     desc: a deliberately vulnerable modern web app (maintained)
+  - name: 'WAVSEP'
+    link: wavsep
+    desc: the most comprehensive OSS DAST specific test suite that we know of (maintained by the ZAP team)
   - name: 'Websites Vulnerable to SSTI'
     link: ssti
     desc: a set of simple servers which are vulnerable to Server Side Template Injection (maintained)

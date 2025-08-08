@@ -1,0 +1,19 @@
+section: Reflected XSS POST Experimental
+url: /RXSS-Detection-Evaluation-POST-Experimental/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp
+  result: Pass
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case02-Tag2HtmlPageScope-SecretVectorGET.jsp
+  result: FAIL
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp
+  result: Pass
+  rule: 40012
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case04-Tag2HtmlPageScope-ChangingAntiCSRFToken.jsp
+  result: FAIL
+  rule: 40012
+tests: 4
+passes: 2
+fails: 2
+score: 50%

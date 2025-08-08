@@ -1,0 +1,31 @@
+section: SQL Injection GET 200 Identical
+url: /SInjection-Detection-Evaluation-GET-200Identical/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp
+  result: Pass
+  rule: 40018
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp
+  result: Pass
+  rule: 40018
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp
+  result: Pass
+  rule: 40018
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp
+  result: FAIL
+  rule: 40018
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case05-InjectionInUpdate-String-TimeDelayExploit-200Identical.jsp
+  result: FAIL
+  rule: 40018
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case06-InjectionInUpdate-Date-TimeDelayExploit-200Identical.jsp
+  result: FAIL
+  rule: 40018
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case07-InjectionInUpdate-NumericWithoutQuotes-TimeDelayExploit-200Identical.jsp
+  result: FAIL
+  rule: 40018
+- path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case08-InjectionInUpdate-DateWithoutQuotes-TimeDelayExploit-200Identical.jsp
+  result: FAIL
+  rule: 40018
+tests: 8
+passes: 3
+fails: 5
+score: 38%

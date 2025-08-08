@@ -1,0 +1,10 @@
+section: Reflected XSS Cookie Experimental
+url: /RXSS-Detection-Evaluation-COOKIE-Experimental/
+details:
+- path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-COOKIE-Experimental/Case01-Tag2HtmlPageScope.jsp
+  result: FAIL
+  rule: 40012
+tests: 1
+passes: 0
+fails: 1
+score: 0%
