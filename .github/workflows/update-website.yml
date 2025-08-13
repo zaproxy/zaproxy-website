@@ -15,11 +15,11 @@ jobs:
       with:
         node-version: '20'
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         path: zaproxy-website
     - name: Checkout zaproxy.github.io
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         repository: zaproxy/zaproxy.github.io
         persist-credentials: false
