@@ -779,18 +779,25 @@
   code: main/addOns/oast/src/main/java/org/zaproxy/addon/oast/services/interactsh/InteractshService.java
   desc: The number of Interactsh payloads generated
 
+- key: stats.pscan.recordsToScan
+  scope: global
+  type: highwatermark
+  repo: zaproxy/zap-extensions
+  code: main/addOns/pscan/src/main/java/org/zaproxy/addon/pscan/internal/scanner/PassiveScanController.java
+  desc: The highest message count queued to passive scan
+
 - key: stats.pscan.reqBodyTooBig
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanTask.java
+  repo: zaproxy/zap-extensions
+  code: main/addOns/pscan/src/main/java/org/zaproxy/addon/pscan/internal/scanner/PassiveScanTask.java
   desc: The number of requests that have not been passively scanned as they exceed the configured max body size to scan
 
 - key: stats.pscan.respBodyTooBig
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanTask.java
+  repo: zaproxy/zap-extensions
+  code: main/addOns/pscan/src/main/java/org/zaproxy/addon/pscan/internal/scanner/PassiveScanTask.java
   desc: The number of responses that have not been passively scanned as they exceed the configured max body size to scan
 
 - key: stats.pscan.<rule-id>.alerts
@@ -803,16 +810,16 @@
 - key: stats.pscan.<rule-id>.time
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanTask.java
+  repo: zaproxy/zap-extensions
+  code: main/addOns/pscan/src/main/java/org/zaproxy/addon/pscan/internal/scanner/PassiveScanTask.java
   desc: The cumulative number of milliseconds taken to run the given scan rule - from 2.11.0
 
 - key: stats.pscan.<rule-name>
   scope: global
   type: counter
-  repo: zaproxy/zaproxy
-  code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/PassiveScanTask.java
-  desc: The cumulative number of milliseconds taken to run the given scan rule - DEPRECATED - use stats.pscan.<rule-id>.time instead
+  repo: zaproxy/zap-extensions
+  code: main/addOns/pscan/src/main/java/org/zaproxy/addon/pscan/internal/scanner/PassiveScanTask.java
+  desc: The cumulative number of milliseconds taken to run the given passive scanner, for scan rules use stats.pscan.<rule-id>.time
 
 - key: stats.reports.error.<template-name>
   scope: global
@@ -881,35 +888,35 @@
   scope: global
   type: counter
   repo: zaproxy/zap-extensions
-  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
+  code: main/addOns/spider/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The number of times the spider has been started - from 2.11.0
 
 - key: stats.spider.stopped
   scope: global
   type: counter
   repo: zaproxy/zap-extensions
-  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
+  code: main/addOns/spider/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The number of times the spider has been stopped (as opposed to completing) - from 2.11.0
 
 - key: stats.spider.time
   scope: global
   type: counter
   repo: zaproxy/zap-extensions
-  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
+  code: main/addOns/spider/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The total number of milliseconds the spider has run for across all scans - from 2.11.0
 
 - key: stats.spider.url.error
   scope: global
   type: counter
   repo: zaproxy/zap-extensions
-  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
+  code: main/addOns/spider/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The number of URLs the spider has found but failed to access - from 2.11.0
 
 - key: stats.spider.url.found
   scope: global
   type: counter
   repo: zaproxy/zap-extensions
-  code: main/zap/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
+  code: main/addOns/spider/src/main/java/org/zaproxy/addon/spider/SpiderScan.java
   desc: The number of URLs the spider has found and accessed - from 2.11.0
 
 - key: stats.tag.<tag-name>
