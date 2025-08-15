@@ -1,0 +1,9 @@
+  {{ $target := .Get "target" }}
+  {{ $data := index .Site.Data.scans ($target) "totals" }}
+
+    <tr>
+      <td><h5>Total</h5></td>
+      <td></td>
+      <td></td>
+      <td><h5>{{ $data.score}}</h5></td>
+    </tr>
