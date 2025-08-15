@@ -33,7 +33,7 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp
   result: Pass
-  rule: 40018
+  rule: 40019
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp
   result: Pass
   rule: 40018
