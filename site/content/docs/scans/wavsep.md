@@ -16,6 +16,8 @@ Click on the Sections to see the full set of results, which also give the local 
 
 {{< scan-table >}}
 
+  {{< scan-total target= "wavsep">}}
+
   {{< scan-results target= "wavsep" section="dom-xss-get-exp" nolinks=true >}}
   
   {{< scan-results target= "wavsep" section="lfi-get-200-err" nolinks=true >}}
@@ -77,10 +79,15 @@ Click on the Sections to see the full set of results, which also give the local 
 
 #### Configuration
 
-TBA - this has not yet been set up.
+| Config | Details |
+| --- | --- |
+| Frequency | Manual |
+| Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/wavsep |
+| Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-wavsep.yml | 
 
 &nbsp;  
 
 #### Settings
 
-All of the relevant rules were run at HIGH strength.
+All of the relevant rules were run at HIGH strength, with the exception of Path Traversal which is run at insane.
+However because we are excluding the `Windows` technology, the [Path Traversal](/docs/alerts/6/) rule actually makes the same number of requests that it would do at High with no technology excluded.
