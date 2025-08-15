@@ -2,10 +2,10 @@ section: Local File Include GET False Positives
 url: /LFI-FalsePositives-GET/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case01-LFI-FalsePositive-Forward-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
-  result: Pass
+  result: FAIL
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case02-LFI-FalsePositive-OpenRedirect-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
-  result: Pass
+  result: FAIL
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case03-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-WhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   result: Pass
@@ -26,6 +26,6 @@ details:
   result: Pass
   rule: null
 tests: 8
-passes: 8
-fails: 0
-score: 100%
+passes: 6
+fails: 2
+score: 75%
