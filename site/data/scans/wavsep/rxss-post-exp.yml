@@ -11,9 +11,9 @@ details:
   result: Pass
   rule: 40012
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case04-Tag2HtmlPageScope-ChangingAntiCSRFToken.jsp
-  result: FAIL
+  result: Pass
   rule: 40012
 tests: 4
-passes: 2
-fails: 2
-score: 50%
+passes: 3
+fails: 1
+score: 75%
