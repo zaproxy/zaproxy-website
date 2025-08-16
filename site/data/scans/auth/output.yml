@@ -32,7 +32,7 @@ authtestdelay:
       session: true
       verification: false
     bbaplus:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -100,11 +100,11 @@ hackyourself:
   site: "https://hack-yourself-first.com"
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
-      verification: false
+      verification: true
 infosecex:
   site: "https://infosec.exchange"
   note: ""
@@ -120,7 +120,7 @@ insta:
   note: "BBA is failing due to popups."
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -156,7 +156,7 @@ reddit:
   site: "https://www.reddit.com"
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -187,7 +187,7 @@ testfire:
       session: true
       verification: true
     csa:
-      auth: true
+      auth: false
       username:
       password:
       session: true
