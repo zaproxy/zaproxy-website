@@ -48,7 +48,7 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-WithErrors.jsp
   result: Pass
-  rule: 40018
+  rule: 40019
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithErrors.jsp
   result: Pass
   rule: 40018
@@ -57,7 +57,7 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp
   result: Pass
-  rule: 40018
+  rule: 40019
 tests: 19
 passes: 19
 fails: 0

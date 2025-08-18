@@ -18,7 +18,7 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp
   result: Pass
-  rule: 40018
+  rule: 40019
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp
   result: Pass
   rule: 40018

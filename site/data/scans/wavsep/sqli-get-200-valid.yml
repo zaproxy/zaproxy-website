@@ -15,7 +15,7 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp
   result: Pass
   rule: 40018
@@ -26,8 +26,8 @@ details:
   result: Pass
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp
-  result: FAIL
-  rule: 40018
+  result: Pass
+  rule: 40019
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp
   result: Pass
   rule: 40018
@@ -42,7 +42,7 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case14-InjectionInUpdate-Date-CommandInjection-WithDifferent200Responses.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp
   result: Pass
   rule: 40018
@@ -51,7 +51,7 @@ details:
   rule: 40019
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-WithDifferent200Responses.jsp
   result: Pass
-  rule: 40018
+  rule: 40019
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-WithDifferent200Responses.jsp
   result: Pass
   rule: 40018
@@ -59,6 +59,6 @@ details:
   result: Pass
   rule: 40019
 tests: 19
-passes: 17
-fails: 2
-score: 89%
+passes: 18
+fails: 1
+score: 95%
