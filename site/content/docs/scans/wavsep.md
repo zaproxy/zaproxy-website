@@ -14,6 +14,8 @@ Click on the Sections to see the full set of results, which also give the local 
 > [!WARNING]
 > We are still in the process of configuring and checking this scan, so you should not rely on the results just yet.
 
+We are also aware that some tests are broken - they are shown as "⚠️ Broken" and do not count as failures.
+
 {{< scan-table >}}
 
   {{< scan-total target= "wavsep">}}

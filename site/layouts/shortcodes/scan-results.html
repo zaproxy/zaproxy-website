@@ -38,9 +38,15 @@
       {{ if eq $test.result "Pass" }} 
         <td><div class="scan-result-pass">&#10003; {{ $test.result}} </div></td>
         <td></td>
-      {{ else }}
+      {{ else if eq $test.result "Broken" }}
+        <td></td>
+        <td><div class="scan-result-fail">⚠️ {{ $test.result}} </div></td>
+      {{ else if eq $test.result "FAIL" }}
         <td></td>
         <td><div class="scan-result-fail">&#10060; {{ $test.result}} </div></td>
+      {{ else }}
+        <td></td>
+        <td><div class="scan-result-fail">‼️ {{ $test.result}} </div></td>
       {{ end }} 
     </tr>
     {{ end }}
