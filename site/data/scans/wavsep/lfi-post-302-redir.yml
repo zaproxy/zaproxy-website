@@ -29,37 +29,37 @@ details:
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case10-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultFullInput-NoPathReq-Read.jsp
-  result: FAIL
+  result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case11-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultInvalidInput-NoPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case12-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultInvalidInput-NoPathReq-Read.jsp
-  result: FAIL
+  result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case13-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultEmptyInput-NoPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case14-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultEmptyInput-NoPathReq-Read.jsp
-  result: FAIL
+  result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case15-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case16-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultFullInput-SlashPathReq-Read.jsp
-  result: FAIL
+  result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case17-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultInvalidInput-SlashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case18-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultInvalidInput-SlashPathReq-Read.jsp
-  result: FAIL
+  result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case19-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultEmptyInput-SlashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case20-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultEmptyInput-SlashPathReq-Read.jsp
-  result: FAIL
+  result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case21-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
   result: Pass
@@ -71,7 +71,7 @@ details:
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case24-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultFullInput-BackslashPathReq-Read.jsp
-  result: FAIL
+  result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-302Redirect/Case25-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   result: Pass
@@ -206,6 +206,6 @@ details:
   result: Pass
   rule: 6
 tests: 68
-passes: 45
-fails: 23
-score: 66%
+passes: 52
+fails: 16
+score: 76%
