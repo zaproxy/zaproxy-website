@@ -1,4 +1,4 @@
-tests: 1240
+tests: 1048
 passes: 1007
-fails: 233
-score: 81%
+fails: 41
+score: 96%

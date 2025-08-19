@@ -18,10 +18,10 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case06-InjectionInView-Numeric-PermissionBypass-WithErrors.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case07-InjectionInSearch-Numeric-UnionExploit-WithErrors.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-500Error/Case08-InjectionInCalc-Numeric-BooleanExploit-WithErrors.jsp
   result: Pass
   rule: 40018

@@ -110,102 +110,102 @@ details:
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case37-LFI-FileClass-FilenameContext-SlashTraversalValidation-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case38-LFI-FileClass-FilenameContext-BackslashTraversalValidation-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case39-LFI-FileClass-FilenameContext-UnixTraversalValidation-OSPath-DefaultFullInput-NoPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case40-LFI-FileClass-FilenameContext-WindowsTraversalValidation-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case41-LFI-FileClass-FilenameContext-UnixTraversalValidation-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case42-LFI-FileClass-FilenameContext-WindowsTraversalValidation-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case43-LFI-FileClass-FilenameContext-UnixTraversalValidation-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case44-LFI-FileClass-FilenameContext-WindowsTraversalValidation-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case45-LFI-ContextStream-FilenameContext-SlashTraversalValidation-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case46-LFI-ContextStream-FilenameContext-BackslashTraversalValidation-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case47-LFI-ContextStream-FilenameContext-UnixTraversalValidation-OSPath-DefaultFullInput-NoPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case48-LFI-ContextStream-FilenameContext-WindowsTraversalValidation-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case49-LFI-ContextStream-FilenameContext-UnixTraversalValidation-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case50-LFI-ContextStream-FilenameContext-WindowsTraversalValidation-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case51-LFI-ContextStream-FilenameContext-UnixTraversalValidation-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case52-LFI-ContextStream-FilenameContext-WindowsTraversalValidation-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case53-LFI-FileClass-FilenameContext-SlashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case54-LFI-FileClass-FilenameContext-BackslashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case55-LFI-FileClass-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case56-LFI-FileClass-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case57-LFI-FileClass-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case58-LFI-FileClass-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case59-LFI-FileClass-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case60-LFI-FileClass-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case61-LFI-ContextStream-FilenameContext-SlashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case62-LFI-ContextStream-FilenameContext-BackslashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case63-LFI-ContextStream-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case64-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case65-LFI-ContextStream-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case66-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case67-LFI-ContextStream-FilenameContext-UnixTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
-  result: FAIL
+  result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-POST-500Error/Case68-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
   result: Pass
   rule: 6
-tests: 68
+tests: 52
 passes: 52
-fails: 16
-score: 76%
+fails: 0
+score: 100%
