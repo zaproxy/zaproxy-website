@@ -438,129 +438,129 @@
   status: release
   infoUrl: /docs/desktop/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help-v20/help-release-20.zap
-  date: 2025-03-25
-  version: 20
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help-v21/help-release-21.zap
+  date: 2025-08-21
+  version: 21
 - id: help_ar_SA
   name: Help - Arabic
   description: Arabic version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  infoUrl: ''
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ar_SA-v1/help_ar_SA-alpha-1.zap
-  date: 2022-01-18
-  version: 1
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ar_SA-v2/help_ar_SA-alpha-2.zap
+  date: 2025-08-21
+  version: 2
 - id: help_bs_BA
   name: Help - Bosnian
   description: Bosnian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  infoUrl: ''
-  repoUrl: ''
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/help_bs_BA-alpha-9.zap
-  date: 2018-02-08
-  version: 9
+  infoUrl: /docs/contribute/translate/
+  repoUrl: https://github.com/zaproxy/zap-core-help/
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_bs_BA-v10/help_bs_BA-alpha-10.zap
+  date: 2025-08-21
+  version: 10
 - id: help_es_ES
   name: Help - Spanish
   description: Spanish version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  infoUrl: ''
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_es_ES-v10/help_es_ES-release-10.zap
-  date: 2022-01-18
-  version: 10
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_es_ES-v11/help_es_ES-release-11.zap
+  date: 2025-08-21
+  version: 11
 - id: help_fil_PH
   name: Help - Filipino
   description: Filipino version of the ZAP help file.
   author: ZAP Crowdin Team
-  status: alpha
-  infoUrl: ''
+  status: release
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_fil_PH-v3/help_fil_PH-alpha-3.zap
-  date: 2022-01-18
-  version: 3
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_fil_PH-v4/help_fil_PH-release-4.zap
+  date: 2025-08-21
+  version: 4
 - id: help_fr_FR
   name: Help - French
   description: French version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  infoUrl: ''
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_fr_FR-v10/help_fr_FR-alpha-10.zap
-  date: 2022-01-18
-  version: 10
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_fr_FR-v11/help_fr_FR-alpha-11.zap
+  date: 2025-08-21
+  version: 11
 - id: help_id_ID
   name: Help - Indonesian
   description: Indonesian version of the ZAP help file.
   author: ZAP Crowdin Team
-  status: beta
-  infoUrl: ''
+  status: release
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_id_ID-v3/help_id_ID-beta-3.zap
-  date: 2022-01-18
-  version: 3
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_id_ID-v4/help_id_ID-release-4.zap
+  date: 2025-08-21
+  version: 4
 - id: help_ja_JP
   name: Help - Japanese
   description: Japanese version of the ZAP help file.
   author: ZAP Crowdin Team
   status: beta
-  infoUrl: ''
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ja_JP-v10/help_ja_JP-beta-10.zap
-  date: 2022-01-18
-  version: 10
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ja_JP-v11/help_ja_JP-beta-11.zap
+  date: 2025-08-21
+  version: 11
 - id: help_ms_MY
   name: Help - Malay
   description: Malay version of the ZAP help file.
   author: ZAP Crowdin Team
   status: alpha
-  infoUrl: ''
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ms_MY-v1/help_ms_MY-alpha-1.zap
-  date: 2022-01-18
-  version: 1
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ms_MY-v2/help_ms_MY-alpha-2.zap
+  date: 2025-08-21
+  version: 2
 - id: help_pt_BR
   name: Help - Portuguese, Brazilian
   description: Portuguese, Brazilian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  infoUrl: ''
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_pt_BR-v11/help_pt_BR-release-11.zap
-  date: 2022-01-18
-  version: 11
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_pt_BR-v12/help_pt_BR-release-12.zap
+  date: 2025-08-21
+  version: 12
 - id: help_ru_RU
   name: Help - Russian
   description: Russian version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  infoUrl: ''
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ru_RU-v2/help_ru_RU-release-2.zap
-  date: 2022-02-24
-  version: 2
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_ru_RU-v3/help_ru_RU-release-3.zap
+  date: 2025-08-21
+  version: 3
 - id: help_tr_TR
   name: Help - Turkish
   description: Turkish version of the ZAP help file.
   author: ZAP Crowdin Team
   status: release
-  infoUrl: ''
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_tr_TR-v2/help_tr_TR-release-2.zap
-  date: 2022-01-18
-  version: 2
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_tr_TR-v3/help_tr_TR-release-3.zap
+  date: 2025-08-21
+  version: 3
 - id: help_zh_CN
   name: Help - Chinese Simplified
   description: Chinese Simplified version of the ZAP help file.
   author: ZAP Crowdin Team
-  status: beta
-  infoUrl: ''
+  status: release
+  infoUrl: /docs/contribute/translate/
   repoUrl: https://github.com/zaproxy/zap-core-help/
-  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_zh_CN-v3/help_zh_CN-beta-3.zap
-  date: 2022-01-18
-  version: 3
+  downloadUrl: https://github.com/zaproxy/zap-core-help/releases/download/help_zh_CN-v4/help_zh_CN-release-4.zap
+  date: 2025-08-21
+  version: 4
 - id: highlighter
   name: Highlighter
   description: Allows you to highlight strings in the request and response tabs.

@@ -44,7 +44,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Yang Bai ([@Geekby](https://www.geekby.site/))                                                                        |
 |   | Florent Baillais ([@flocurity](https://twitter.com/flocurity))                                                        |
 |   | Adam Baldwin ([@adamhawkbaldwin](https://twitter.com/adamhawkbaldwin))                                                |
-|   | Jay Ball                                                                                                              |
+|   | Jay Ball ([@veggiespam](https://www.linktr.ee/veggiespam))                                                            |
 |   | Adrien de Beaupre                                                                                                     |
 |   | Florian Beijers ([@zersiax](https://twitter.com/zersiax))                                                             |
 |   | Alla Bezroutchko - Gremwell                                                                                           |
