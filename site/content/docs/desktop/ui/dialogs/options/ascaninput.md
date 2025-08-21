@@ -31,6 +31,10 @@ When selected ZAP will add a query parameter to GET requests which did not origi
 
 Key value pairs in the request POST data.
 
+#### Plain Body Data
+
+When selected ZAP will process requests with body content and either no or text/plain content-type as a single input/parameter for testing purposes.
+
 #### URL Path
 
 Path elements in the request URL, ie the elements separated by `/`.
