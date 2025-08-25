@@ -35,8 +35,8 @@ The commands I used in the above video were:
 
 Download and run bash in the ZAP stable docker image (not required if you have ZAP installed locally):
 ```bash
-docker pull softwaresecurityproject/zap-stable
-docker run -it softwaresecurityproject/zap-stable bash
+docker pull zaproxy/zap-stable
+docker run -it zaproxy/zap-stable bash
 ```
 
 Update ZAP and install [Wappalyzer](/docs/desktop/addons/technology-detection/) and the [Beta Passive Scan Rules](/docs/desktop/addons/passive-scan-rules-beta/):

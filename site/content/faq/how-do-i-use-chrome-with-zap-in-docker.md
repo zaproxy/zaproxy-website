@@ -10,7 +10,7 @@ to install and run Chrome with ZAP in a Docker container, to be used by its tool
 
 1. Create a `Dockerfile` using one of the ZAP images and installing Chrome, e.g.:
 ```
-FROM --platform=linux/amd64 softwaresecurityproject/zap-stable:latest
+FROM --platform=linux/amd64 zaproxy/zap-stable:latest
 
 USER root
 
