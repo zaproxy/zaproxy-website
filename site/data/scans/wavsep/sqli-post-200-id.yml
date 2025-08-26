@@ -9,7 +9,7 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp
   result: Pass
-  rule: 40018
+  rule: 40019
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp
   result: FAIL
   rule: 40018

@@ -26,8 +26,8 @@ details:
   result: Pass
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case09-InjectionInUpdate-Numeric-CommandInjection-WithDifferent200Responses.jsp
-  result: Pass
-  rule: 40019
+  result: FAIL
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp
   result: Pass
   rule: 40018
@@ -59,6 +59,6 @@ details:
   result: Pass
   rule: 40019
 tests: 19
-passes: 18
-fails: 1
-score: 95%
+passes: 17
+fails: 2
+score: 89%
