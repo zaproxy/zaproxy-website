@@ -27,19 +27,19 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case09-InjectionInUpdate-Numeric-CommandInjection-WithErrors.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithErrors.jsp
   result: Pass
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case11-InjectionInView-Date-PermissionBypass-WithErrors.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case12-InjectionInSearch-Date-UnionExploit-WithErrors.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case13-InjectionInCalc-Date-BooleanExploit-WithErrors.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case14-InjectionInUpdate-Date-CommandInjection-WithErrors.jsp
   result: Pass
   rule: 40018
@@ -57,7 +57,7 @@ details:
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-500Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-WithErrors.jsp
   result: Pass
-  rule: 40019
+  rule: 40018
 tests: 19
 passes: 19
 fails: 0
