@@ -129,9 +129,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/forced-browse/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v17/bruteforce-beta-17.zap
-  date: 2025-01-09
-  version: 17
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v18/bruteforce-beta-18.zap
+  date: 2025-08-27
+  version: 18
 - id: bugtracker
   name: Bug Tracker
   description: Bug Tracker extension.
