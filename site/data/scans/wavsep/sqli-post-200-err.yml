@@ -2,63 +2,63 @@ section: SQL Injection POST 200 Error
 url: /SInjection-Detection-Evaluation-POST-200Error/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case01-InjectionInLogin-String-LoginBypass-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case02-InjectionInSearch-String-UnionExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case03-InjectionInCalc-String-BooleanExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case04-InjectionInUpdate-String-CommandInjection-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case06-InjectionInView-Numeric-PermissionBypass-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case07-InjectionInSearch-Numeric-UnionExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case08-InjectionInCalc-Numeric-BooleanExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case09-InjectionInUpdate-Numeric-CommandInjection-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case11-InjectionInView-Date-PermissionBypass-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case12-InjectionInSearch-Date-UnionExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case13-InjectionInCalc-Date-BooleanExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case14-InjectionInUpdate-Date-CommandInjection-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case15-InjectionInSearch-DateWithoutQuotes-UnionExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case16-InjectionInView-NumericWithoutQuotes-PermissionBypass-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case17-InjectionInSearch-NumericWithoutQuotes-UnionExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case18-InjectionInCalc-NumericWithoutQuotes-BooleanExploit-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Error/Case19-InjectionInUpdate-NumericWithoutQuotes-CommandInjection-With200Errors.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 tests: 19
-passes: 19
-fails: 0
-score: 100%
+passes: 0
+fails: 19
+score: 0%

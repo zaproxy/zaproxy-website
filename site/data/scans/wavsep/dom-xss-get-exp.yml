@@ -11,9 +11,9 @@ details:
   result: Pass
   rule: 40026
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case04-InjectionInToVariableBeingAssignedToDomXssSinkLocation.jsp
-  result: Pass
+  result: FAIL
   rule: 40026
 tests: 4
-passes: 4
-fails: 0
-score: 100%
+passes: 3
+fails: 1
+score: 75%
