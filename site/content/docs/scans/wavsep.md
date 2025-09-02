@@ -20,6 +20,11 @@ We are also aware that some tests are broken - they are shown as "⚠️ Broken"
 
   {{< scan-total target= "wavsep">}}
 
+  {{< scan-results target= "wavsep" section="cmdi-get-200-error" nolinks=true >}}
+  {{< scan-results target= "wavsep" section="cmdi-get-500-error" nolinks=true >}}
+  {{< scan-results target= "wavsep" section="cmdi-post-200-error" nolinks=true >}}
+  {{< scan-results target= "wavsep" section="cmdi-post-500-error" nolinks=true >}}
+
   {{< scan-results target= "wavsep" section="dom-xss-get-exp" nolinks=true >}}
   
   {{< scan-results target= "wavsep" section="lfi-get-200-err" nolinks=true >}}
