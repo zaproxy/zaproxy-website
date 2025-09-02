@@ -19,17 +19,19 @@ Session handling and verification can be left as "autodetect" - this report will
 
 ### Sections
 
-| Section                          | ID                        |
-|:---------------------------------|:--------------------------|
-| Summary                          | summary                   |
-| Automation Framework Environment | afenv                     |
-| Statistics                       | statistics                |
-| Diagnostics                      | diagnostics               |
-| HTTP Messages for Diagnostics    | diagnosticsmessages       |
-| Local Storage for Diagnostics    | diagnosticslocalstorage   |
-| Screenshots for Diagnostics      | diagnosticsscreenshots    |
-| Session Storage for Diagnostics  | diagnosticssessionstorage |
-| Web Elements for Diagnostics     | diagnosticswebelements    |
+| Section                                   | ID                        |
+|:------------------------------------------|:--------------------------|
+| Summary                                   | summary                   |
+| Automation Framework Environment          | afenv                     |
+| Statistics                                | statistics                |
+| Diagnostics                               | diagnostics               |
+| Automation Framework Plan for Diagnostics | diagnosticsafplan         |
+| HTTP Messages for Diagnostics             | diagnosticsmessages       |
+| Local Storage for Diagnostics             | diagnosticslocalstorage   |
+| Screenshots for Diagnostics               | diagnosticsscreenshots    |
+| Session Storage for Diagnostics           | diagnosticssessionstorage |
+| Web Elements for Diagnostics              | diagnosticswebelements    |
+| ZAP Log File for Diagnostics              | diagnosticslogfile        |
 
 ### Summary
 
@@ -83,7 +85,7 @@ The [Browser Based](/docs/desktop/addons/authentication-helper/browser-auth/) an
 Diagnostic data can also be recorded with the [Authentication Tester Dialog](/docs/desktop/addons/authentication-helper/auth-tester/).
 
 
-The report will contain an array of diagnostic objects, one for each recorded authentication attempt. The diagnostic objet has the authentication method used, the name of the context and user, and each step performed during the authentication.
+The report will contain an array of diagnostic objects, one for each recorded authentication attempt. The diagnostic objet has the authentication method used, the name of the context and user, the script if Client Script Authentication, the Automation Framework plan, and each step performed during the authentication.
 
 ```
 	"diagnostics": [
@@ -92,6 +94,7 @@ The report will contain an array of diagnostic objects, one for each recorded au
 			"authenticationMethod": "Browser-based Authentication",
 			"context": "Context Name",
 			"user": "User Name",
+			"script": "Script used by Client Script Authentication",
 			"steps": [
 				{ … }
 			]
@@ -108,6 +111,7 @@ Each step has at least the URL and the description, it can, optionally, contain 
 		"url": "http://example.com/login/",
 		"description": "Auto Fill Username",
 		"webElement": {
+			"selector": {"type": "CSS", "value": "body > div > span > input"},
 			"formIndex": 1,
 			"attributeType": "text",
 			"attributeId": "email",
@@ -122,6 +126,23 @@ Each step has at least the URL and the description, it can, optionally, contain 
 ```
 
 More data can be included in each step depending on the additional diagnostics sections enabled for the report.
+
+The selector can be of type `CSS` or `XPATH` with the value containing the respective selector.
+
+
+#### Automation Framework Plan for Diagnostics
+
+When this section is enabled the diagnostic object can, optionally, include the Automation Framework plan used during the authentication.
+
+```
+	"diagnostics": [
+		{
+			…
+			"afPlan": "Content Automation Framework Plan",
+			…
+		}
+	]
+```
 
 #### HTTP Messages for Diagnostics
 
@@ -182,6 +203,7 @@ When this section is enabled the step can, optionally, include all the input ele
 ```
 	"webElements": [
 		{
+			"selector": {"type": "XPATH", "value": "\/html\/body\/div\/input[4]"},
 			"formIndex": 0,
 			"attributeType": "text",
 			"attributeId": "id",
@@ -192,6 +214,14 @@ When this section is enabled the step can, optionally, include all the input ele
 			"enabled": true
 		}
 	]
+```
+
+#### ZAP Log File for Diagnostics
+
+When this section is enabled a top level property is added to the report containing the contents of the log file.
+
+```
+	"logFile": "Log file content..."
 ```
 
 ### Sample

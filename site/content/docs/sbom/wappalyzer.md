@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.47.0
+    version: 21.48.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.47.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.48.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -33,7 +33,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.51.0
+    version: 0.52.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'

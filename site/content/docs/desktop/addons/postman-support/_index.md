@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: postman
-    version: 0.6.0
+    version: 0.7.0
 ---
 
 # Postman Support
@@ -27,8 +27,8 @@ Any variables defined in the collection will be replaced with their values. Addi
 
 The following operations are added to the API:
 
-* ACTION importFile (file, endpointUrl)
-* ACTION importUrl (url, endpointUrl)
+* ACTION importFile (file)
+* ACTION importUrl (url)
 
 ## Command Line
 

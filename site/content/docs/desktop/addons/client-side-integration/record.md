@@ -19,6 +19,7 @@ You can also manually install these add-on, or the cut down "Browser Recorder" e
 * Firefox [ZAP by Checkmarx Browser Recorder](https://addons.mozilla.org/en-GB/firefox/addon/zap-by-checkmarx-recorder/)
 * Chrome [ZAP by Checkmarx Browser Extension](https://chromewebstore.google.com/detail/zap-by-checkmarx-browser/cgkggmillbmmpokepnicllalaohphffo)
 * Chrome [ZAP by Checkmarx Browser Recorder](https://chromewebstore.google.com/detail/zap-by-checkmarx-recorder/belmenkmkfloppjbbgibipmgcmnkaiki)
+* Edge [ZAP by Checkmarx Browser Recorder](https://microsoftedge.microsoft.com/addons/detail/zap-by-checkmarx-recorder/okgkpllibfpmngdhhponlojjgeabfeee)
 
 The Browser Recorder extension only allows you to record a Zest script and will not attempt to communicate with ZAP.
 

@@ -60,9 +60,11 @@ The username and password must be valid for the login to work.
 The number of seconds to wait after submitting the login form before closing the browser.  
 If the browser is closed before the application has loaded then ZAP may not be able to identify the session handling or find a suitable verification URL.
 
-### Demo Mode
+### Step Delay (seconds)
 
-This just adds 2 second delays between filling in each field and before submitting the form. It has no other effect than making it easier to see what is going on when a non-headless browser is used. It will only be enabled if you have selected the "Browser Based" Auth Method.
+The number of seconds to wait in-between each step, either the implicit steps (filling in the username field, then password, then submitting), or the ones specified on the Steps tab.  
+This can help if the target application is running too slowly and does not react in time to handle ZAP's input.  
+Setting this to 2 will have the same effect as the previous "Demo Mode".
 
 ### Record Diagnostics
 

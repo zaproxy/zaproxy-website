@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '72'
+    version: '73'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v72/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v73/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -63,7 +63,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.33.0
+    version: 1.35.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -219,34 +219,34 @@ sbom:
     version: '71.1'
     licenses: Unicode/ICU License
   - name: jackson-annotations
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-dataformat-toml
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -396,10 +396,10 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.22.0
+    version: 0.23.0
     licenses: ''
   - name: oast
-    version: 0.22.0
+    version: 0.23.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -450,7 +450,7 @@ sbom:
     version: 1.7.36
     licenses: MIT
   - name: snakeyaml
-    version: '2.2'
+    version: '2.4'
     licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
@@ -471,7 +471,7 @@ sbom:
     version: 22.3.3
     licenses: UPL-1.0
   - name: woodstox-core
-    version: 6.6.1
+    version: 7.1.1
     licenses: Apache-2.0
   - name: xom
     version: 1.3.9

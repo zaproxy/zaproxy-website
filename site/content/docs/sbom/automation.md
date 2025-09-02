@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.51.0
+    version: 0.52.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.51.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.52.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2

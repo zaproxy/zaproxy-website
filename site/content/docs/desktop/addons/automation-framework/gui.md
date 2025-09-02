@@ -18,8 +18,9 @@ A toolbar provides the following buttons:
 
 * New Plan... - this launches the New Plan dialog
 * Load Plan... - this allows you to load a plan from a yaml file
-* Save Plan... - this saves the current plan to a yaml file
-* Run Plan... - this runs the current plan
+* Save Plan - this saves the current plan to a yaml file
+* Run Plan - this runs the current plan
+* Stop Plan - this stops the current plan
 * Add Job... - this launches the Add Job dialog to add a job to the current plan
 * Remove Job... - this removes the selected job from the current plan
 * Move Job Up - this moves the selected job up one place in the current plan

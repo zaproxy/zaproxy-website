@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: '25'
+    version: '26'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v25/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v26/bom.json
   components:
   - name: angus-activation
     version: 1.0.0
@@ -36,7 +36,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.50.0
+    version: 0.52.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -69,7 +69,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.33.0
+    version: 1.35.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -228,34 +228,34 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-dataformat-toml
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.17.0
+    version: 2.19.1
     licenses: Apache-2.0
   - name: jakarta.activation-api
     version: 2.1.0
@@ -408,7 +408,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.22.0
+    version: 0.23.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -453,7 +453,7 @@ sbom:
     version: 1.7.36
     licenses: MIT
   - name: snakeyaml
-    version: '2.2'
+    version: '2.4'
     licenses: Apache-2.0
   - name: soa-model-core
     version: 2.0.1
@@ -462,7 +462,7 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: spider
-    version: 0.15.0
+    version: 0.16.0
     licenses: ''
   - name: sqlite-jdbc
     version: 3.45.3.0
@@ -480,7 +480,7 @@ sbom:
     version: unspecified
     licenses: ''
   - name: woodstox-core
-    version: 6.6.1
+    version: 7.1.1
     licenses: Apache-2.0
   - name: xom
     version: 1.3.9

@@ -19,6 +19,9 @@ The plan is to keep enhancing this authentication method to handle all of the mo
 If it does not work with your application's login page then please inform the ZAP team via the
 [ZAP User Group](https://groups.google.com/group/zaproxy-users) giving as many details as possible.
 
+
+This method also supports HTTP Basic Authentication for Firefox only (due to Selenium restrictions).
+
 ### Authentication Steps
 
 When the authentication method is not able to find suitable fields, or requires extra steps they can be manually specified by the user. The following steps are supported:
@@ -33,6 +36,7 @@ When the authentication method is not able to find suitable fields, or requires 
 | Fill Username Field | `USERNAME`     | Fills the username in a field, for when no suitable field was automatically identified.                                                                                                                                                                                                      |
 | Send Escape         | `ESCAPE`       | Sends the escape to the web element, for example, to dismiss a popup.                                                                                                                                                                                                                        |
 | Send Return         | `RETURN`       | Sends return to the web element, for example, to submit the login form.                                                                                                                                                                                                                      |
+| Wait For Timeout    | `WAIT`         | Waits for the specified timeout.                                                                                                                                                                                                                                                             |
 
 Each step is executed sequentially in the order they are specified. Steps that act on a web element need to be identified with either its CSS Selector or XPath, both of which can be obtained, for example, through browser dev tools. Those steps have a timeout which allow to wait up to the given number of milliseconds for the web element to be shown and be interactable (when the login page takes some time to load). The `CUSTOM_FIELD`, `PASSWORD` and `USERNAME` steps all clear any existing values from the corresponding field, so you will need to specify the full value you want.
 
@@ -53,11 +57,12 @@ Browser Based Authentication can be configured in the environment section of an 
         parameters:
           loginPageUrl:                # String, the URL of the login page, mandatory
           loginPageWait:               # Int, the time in seconds to wait after the login form has been submitted, default: 5
+          stepDelay:                   # Int, the time in seconds to wait in-between each step, default: 0
           browserId:                   # String, Browser Id to use, default: firefox-headless
           diagnostics:                 # Bool, enables the recording of diagnostic data during the authentication. Default: false.
           steps:                       # List of custom steps.
           - description:               # String, the description of the step.
-            type:                      # The type of the step, one of: AUTO_STEPS, CLICK, CUSTOM_FIELD, ESCAPE, PASSWORD, RETURN, TOTP_FIELD, USERNAME
+            type:                      # The type of the step, one of: AUTO_STEPS, CLICK, CUSTOM_FIELD, ESCAPE, PASSWORD, RETURN, TOTP_FIELD, USERNAME, WAIT
             cssSelector:               # String, the CSS Selector to the web element.
             xpath:                     # String, the XPath to the web element.
             value:                     # String, the value to fill in the web element.
