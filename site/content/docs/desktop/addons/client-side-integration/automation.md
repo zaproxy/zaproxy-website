@@ -32,3 +32,7 @@ This job supports monitor tests.
       shutdownTime:                    # Int: The time in seconds to wait after no activity before shutting down, default: 5
       scopeCheck:                      # String: The scope check, either Flexible or Strict, default: Flexible
 ```
+
+## Passive Scan Rules
+
+The Client [Passive Scan Rules](/docs/desktop/addons/client-side-integration/pscan/) can be set via the standard passiveScan-config job.

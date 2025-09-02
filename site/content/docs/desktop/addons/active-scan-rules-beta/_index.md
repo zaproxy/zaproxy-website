@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 59.0.0
+    version: 60.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -241,7 +241,10 @@ Alert ID: [41](/docs/alerts/41/).
 
 ## Server Side Request Forgery {#id-40046}
 
-This rule attempts to find Server Side Request Forgery vulnerabilities by injecting out-of-band payloads in request parameters.
+This rule attempts to find Server Side Request Forgery vulnerabilities by injecting out-of-band payloads from the OAST add-on in request parameters.
+
+
+See also: [OAST](/docs/desktop/addons/oast-support/#alerts).
 
 
 Latest code: [SsrfScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/SsrfScanRule.java)
@@ -252,6 +255,9 @@ Alert ID: [40046](/docs/alerts/40046/).
 ## Text4shell (CVE-2022-42889) {#id-40047}
 
 This rule attempts to discover the Text4shell ([CVE-2022-42889](https://nvd.nist.gov/vuln/detail/CVE-2022-42889)) vulnerability. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions.
+
+
+See also: [OAST](/docs/desktop/addons/oast-support/#alerts).
 
 
 Latest code: [Text4ShellScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/Text4ShellScanRule.java)

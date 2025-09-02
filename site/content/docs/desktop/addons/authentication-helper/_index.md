@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.27.0
+    version: 0.28.0
 ---
 
 # Authentication Helper

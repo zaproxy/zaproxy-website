@@ -24,6 +24,8 @@ The following operations are added to the API:
     * enabled: The enabled state, true or false.
 * setMaxAlertsPerRule (maxAlerts\*): Sets the maximum number of alerts a passive scan rule can raise.
     * maxAlerts: The maximum number of alerts.
+* setMaxBodySizeInBytes (maxSize\*): Sets the maximum body size in bytes that the passive scanner will scan.
+    * maxSize: The maximum size in bytes, 0 to unset.
 * setScanOnlyInScope (onlyInScope\*): Sets whether or not the passive scan should be performed only on messages that are in scope.
     * onlyInScope: The scan state, true or false.
 * setScannerAlertThreshold (id\* alertThreshold\*): Sets the alert threshold of a passive scan rule.
@@ -34,6 +36,7 @@ The following operations are added to the API:
 
 * currentTasks: Shows information about the passive scan tasks currently being run (if any).
 * maxAlertsPerRule: Gets the maximum number of alerts a passive scan rule should raise.
+* maxBodySizeInBytes: Gets the maximum body size in bytes that the passive scanner will scan.
 * recordsToScan: The number of records the passive scanner still has to scan.
 * scanOnlyInScope: Tells whether or not the passive scan should be performed only on messages that are in scope.
 * scanners: Lists all passive scan rules with their ID, name, enabled state, and alert threshold.

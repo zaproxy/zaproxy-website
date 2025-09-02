@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.51.0
+    version: 0.52.0
 ---
 
 # Automation Framework
@@ -64,10 +64,15 @@ The [Automation Options](/docs/desktop/addons/automation-framework/options/) scr
 
 The following API endpoints are provided by this add-on:
 
+* Action: endDelayJob() - ends the currently running delay job, if any
 * Action: runPlan(filePath) - loads and asynchronously runs the plan in the specified file, returning a planId
+* Action: stopPlan(planId) - stops the running plan identified by the planId
 * View: planProgress(planId) - returns the progress details for the specified planId
 
 If the ZAP desktop is being used then the plan will also be shown in the GUI to make it easier to diagnose any problems.
+
+
+Note that some jobs may not stop immediately, for example if authentication is being handled.
 
 ## Environment {#environment}
 

@@ -8,16 +8,17 @@ type: userguide
 
 ### Sections
 
-| Section          | ID              |
-|:-----------------|:----------------|
-| Statistics       | statistics      |
-| Sequence Details | sequencedetails |
+| Section                    | ID              |
+|:---------------------------|:----------------|
+| Statistics                 | statistics      |
+| Sequence Details           | sequencedetails |
+| Automation Framework State | afstate         |
 
-### Sample
-
-#### About riskdesc
+### About riskdesc
 
 riskdesc - Is a combination identifier, showing Risk followed by Confidence (in brackets). For example `High (Medium)` would indicate a High risk issue identified with Medium confidence.
+
+### Sample
 
 ```
 {
@@ -88,7 +89,22 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
                     ]
                 },
                 ...
-            ],
+            ]
+        }
+    ]
+}
+```
+
+#### Statistics Section
+
+The report can also include statistics, per site and global, for example:
+
+```
+{
+    ...
+    "site":[
+        {
+            ...
             "statistics": {
                 "site.specific.stat.a": 1,
                 "site.specific.stat.b": 2
@@ -99,12 +115,16 @@ riskdesc - Is a combination identifier, showing Risk followed by Confidence (in 
         "global.stat.a": 1,
         "global.stat.b": 2
     }
-
+}
 ```
+
+#### Sequence Details Section
 
 The report can also include details of Sequences and related active scanning results, for example:
 
 ```
+{
+    ...
     "sequences": [
       {
         "name": "Seq name",
@@ -159,4 +179,21 @@ The report can also include details of Sequences and related active scanning res
         ]
       }
     ]
+}
+```
+
+#### Automation Framework State Section
+
+The report can also include Automation Framework errors and warnings, for example:
+
+```
+{
+    ...
+    "afPlanErrors": [
+        "AError A"
+    ],
+    "afPlanWarns": [
+        "Warning B"
+    ]
+}
 ```

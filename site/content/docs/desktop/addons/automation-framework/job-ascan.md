@@ -25,6 +25,7 @@ This job supports [monitor](/docs/desktop/addons/automation-framework/test-monit
     parameters:
       context:                         # String: Name of the context to attack, default: first context
       user:                            # String: An optional user to use for authentication, must be defined in the env
+      url:                             # String: The subtree to active scan, default: all URLs of the context
       policy:                          # String: Name of the scan policy to be used, default: Default Policy
       maxRuleDurationInMins:           # Int: The max time in minutes any individual rule will be allowed to run for, default: 0 unlimited
       maxScanDurationInMins:           # Int: The max time in minutes the active scanner will be allowed to run for, default: 0 unlimited
@@ -39,6 +40,11 @@ This job supports [monitor](/docs/desktop/addons/automation-framework/test-monit
     policyDefinition:                  # The policy definition - only used if the 'policy' is not set
       defaultStrength:                 # String: The default Attack Strength for all rules, one of Low, Medium, High, Insane (not recommended), default: Medium
       defaultThreshold:                # String: The default Alert Threshold for all rules, one of Off, Low, Medium, High, default: Medium
+      alertTags:                       # Add rules based on alert tags; does not override or remove rules listed explicitly under "rules"
+        include: []                    # List of alert tags to include, regex supported
+        exclude: []                    # List of alert tags to exclude from this include list, regex supported
+        strength:                      # String: The Attack Strength for this set of rules, one of Low, Medium, High, Insane, default: Medium
+        threshold:                     # String: The Alert Threshold for this set of rules, one of Off, Low, Medium, High, default: Medium
       rules:                           # A list of one or more active scan rules and associated settings which override the defaults
       - id:                            # Int: The rule id as per https://www.zaproxy.org/docs/alerts/
         name:                          # String: The name of the rule for documentation purposes - this is not required or actually used
@@ -53,6 +59,7 @@ This job supports [monitor](/docs/desktop/addons/automation-framework/test-monit
 
 The policy can be one defined by a previous [activeScan-policy](/docs/desktop/addons/automation-framework/job-ascanpolicy/) job, or by a scan policy file
 that has been put in `policies` directory under ZAP's [HOME directory](/faq/what-is-the-default-directory-that-zap-uses/) .
+For more information on how ZAP processes the policy definition, see the [activeScan-policy](/docs/desktop/addons/automation-framework/job-ascanpolicy/) job documentation.
 
 ## Job Data
 
