@@ -26,9 +26,9 @@ details:
   result: Pass
   rule: null
 - path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case09-Redirect-FalsePositive-RedirectMethod-FilenameContext-DomainConcat-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp
-  result: FAIL
-  rule: 20019
+  result: Pass
+  rule: null
 tests: 9
-passes: 7
-fails: 2
-score: 78%
+passes: 8
+fails: 1
+score: 89%
