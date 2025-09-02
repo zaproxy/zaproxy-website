@@ -32,7 +32,7 @@ authtestdelay:
       session: true
       verification: false
     bbaplus:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -72,11 +72,11 @@ bluesky:
   note: "BBA is failing verification detection."
   plans:
     stdbba:
-      auth: true
-      username: true
+      auth: false
+      username: false
       password: true
       session: true
-      verification: true
+      verification: false
 ctflearn:
   site: "https://ctflearn.com"
   note: ""
@@ -156,7 +156,7 @@ reddit:
   site: "https://www.reddit.com"
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -206,7 +206,7 @@ testphp:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
