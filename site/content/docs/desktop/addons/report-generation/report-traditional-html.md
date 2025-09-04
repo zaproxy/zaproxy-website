@@ -24,7 +24,7 @@ type: userguide
 If "Sequence Details" are included in the report. Both a summary section and details section will be included.
 
 
-![Traditional HTML - Sequences Summary](/docs/desktop/addons/report-generation/images/report-traditional-html-sequence-summary.png)
+![Sequences Summary](/docs/desktop/addons/report-generation/images/report-traditional-html-sequence-summary.png)
 
 
-![Traditional HTML - Sequences Details](/docs/desktop/addons/report-generation/images/report-traditional-html-sequence-details.png)
+![Sequences Details](/docs/desktop/addons/report-generation/images/report-traditional-html-sequence-details.png)

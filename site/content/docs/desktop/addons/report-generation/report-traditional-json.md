@@ -8,14 +8,11 @@ type: userguide
 
 ### Sample
 
-#### About riskdesc
-
-riskdesc - Is a combination identifier, showing Risk followed by Confidence (in brackets). For example `High (Medium)` would indicate a High risk issue identified with Medium confidence.
-
 ```
 {
     "@version": "Dev Build",
     "@generated": "Fri, 4 Feb 2022 13:04:51",
+    "created": "2022-02-04T13:04:51.236211400Z",
     "site":[
         {
             "@name": "http://localhost:8080",

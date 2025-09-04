@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.40.0
+    version: 0.41.0
 ---
 
 # Report Generation
@@ -112,6 +112,16 @@ The pattern that will be used to generate the report name.
 ### Template Directory
 
 The directory from which templates will be loaded. You should not typically need to change unless you are designing new reports, in which case it can be useful to change to point to your local source code reports directory. The "reports" folder in your ZAP home directory is used by default.
+
+### Field Descriptions
+
+#### riskdesc
+
+riskdesc - Is a combination identifier, showing Risk followed by Confidence (in brackets). For example `High (Medium)` would indicate a High risk issue identified with Medium confidence.
+
+#### created
+
+The `created` field is an instant in the ISO-8601 representation.
 
 ## See also
 

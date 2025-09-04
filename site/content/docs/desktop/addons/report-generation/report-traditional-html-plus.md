@@ -24,10 +24,10 @@ type: userguide
 If "Sequence Details" are included in the report. Both a summary section and details section will be included.
 
 
-![Traditional HTML Plus - Sequences Summary](/docs/desktop/addons/report-generation/images/report-traditional-html-sequence-summary.png)
+![Sequences Summary](/docs/desktop/addons/report-generation/images/report-traditional-html-sequence-summary.png)
 
 
-![Traditional HTML OPlus - Sequences Details](/docs/desktop/addons/report-generation/images/report-traditional-html-plus-sequence-details.png)
+![Sequences Details](/docs/desktop/addons/report-generation/images/report-traditional-html-plus-sequence-details.png)
 
 ### Themes
 
