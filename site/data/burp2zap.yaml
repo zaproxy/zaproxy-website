@@ -50,7 +50,7 @@
   comSupport: true
   comNotes:
   zap1: Manual Request Editor
-  zap1Link:
+  zap1Link: /docs/desktop/addons/requester/dialogs/
   zap2: Requester Add-on
   zap2Link: /docs/desktop/addons/requester/
 - burp: Scanner
