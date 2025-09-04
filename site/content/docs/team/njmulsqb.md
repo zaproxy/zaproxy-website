@@ -19,10 +19,10 @@ Blog: https://njmulsqb.github.io
 
 #### Talks & Videos
 
-Najam runs a [YouTube channel](https://youtube.com/channel/UC1igugJ0bSePPDqIWOje2ZA) in which he presents walkthroughs for vulnerable machines in his local language i.e. Urdu. 
+Najam posts informative content related to cybersecurity in his [YouTube channel](https://youtube.com/channel/UC1igugJ0bSePPDqIWOje2ZA). 
 
 
 #### Other Work
 
-1. Owns a software company named [Tecvity](https://tecvity.co) that provides software development and cybersecurity services
+1. Runs a cybersecurity business named [Exfiltra](https://exfiltra.com) that provides application & cloud security services
 1. Hunts for security issues in free time, have found security bugs in different companies.
