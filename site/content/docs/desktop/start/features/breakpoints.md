@@ -8,7 +8,7 @@ weight: 9
 # Breakpoints
 
 A breakpoint allows you to intercept a request from your browser and to change it before
-is is submitted to the web application you are testing.  
+it is submitted to the web application you are testing.  
 
 You can also change the responses received from the application  
 
