@@ -1,5 +1,5 @@
 ---
-title: "ZAP vs Wavsep"
+title: "ZAP vs WAVSEP"
 type: page
 EditableContent: true
 ---
@@ -88,7 +88,7 @@ We are also aware that some tests are broken - they are shown as "⚠️ Broken"
 
 | Config | Details |
 | --- | --- |
-| Frequency | Manual |
+| Frequency | Daily |
 | Scripts | https://github.com/zapbot/zap-mgmt-scripts/blob/master/scans/wavsep |
 | Action | https://github.com/zapbot/zap-mgmt-scripts/actions/workflows/zap-vs-wavsep.yml | 
 
