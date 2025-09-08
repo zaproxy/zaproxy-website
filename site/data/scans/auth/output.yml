@@ -32,7 +32,7 @@ authtestdelay:
       session: true
       verification: false
     bbaplus:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -82,7 +82,7 @@ ctflearn:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
@@ -156,7 +156,7 @@ reddit:
   site: "https://www.reddit.com"
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
