@@ -80,6 +80,10 @@ We are also aware that some tests are broken - they are shown as "⚠️ Broken"
   {{< scan-results target= "wavsep" section="redir-post-200-valid" nolinks=true >}}
   {{< scan-results target= "wavsep" section="redir-post-302" nolinks=true >}}
 
+  {{< scan-results target= "wavsep" section="xxe-post-500-error" nolinks=true >}}
+  {{< scan-results target= "wavsep" section="xxe-post-input-500-error" nolinks=true >}}
+  {{< scan-results target= "wavsep" section="xxe-post-intercept-500-error" nolinks=true >}}
+
 {{< /scan-table >}}
 
 &nbsp;  
