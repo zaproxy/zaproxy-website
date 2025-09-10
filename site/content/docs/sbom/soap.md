@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: '26'
+    version: '27'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v26/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v27/bom.json
   components:
   - name: angus-activation
     version: 1.0.0
@@ -36,7 +36,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.52.0
+    version: 0.53.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -69,7 +69,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.35.0
+    version: 1.36.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -408,7 +408,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.23.0
+    version: 0.24.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -462,7 +462,7 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: spider
-    version: 0.16.0
+    version: 0.17.0
     licenses: ''
   - name: sqlite-jdbc
     version: 3.45.3.0

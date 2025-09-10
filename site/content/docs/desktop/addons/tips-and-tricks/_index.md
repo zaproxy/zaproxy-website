@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: tips
-    version: 14.0.0
+    version: 15.0.0
 ---
 
 # Tips and Tricks
@@ -86,7 +86,7 @@ Use keyboard shortcuts to speed up your testing - you can define your own combin
 
 Want to chat to someone about ZAP?  
 
-Many of the ZAP core developers hang out on the Libera Chat #zaproxy irc channel: https://web.libera.chat/#zaproxy
+The ZAP core team hang out on Slack: https://zaproxy.slack.com (https://www.zaproxy.org/slack/invite)
 
 Want to script ZAP in a scripting language other than Java Script and Zest?  
 
