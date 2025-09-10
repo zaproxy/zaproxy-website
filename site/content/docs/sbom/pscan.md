@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: pscan
-    version: 0.4.0
+    version: 0.5.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscan-v0.4.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscan-v0.5.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -33,7 +33,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.52.0
+    version: 0.53.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -66,7 +66,7 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: commonlib
-    version: 1.35.0
+    version: 1.36.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -336,7 +336,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.23.0
+    version: 0.24.0
     licenses: ''
   - name: objenesis
     version: '3.3'

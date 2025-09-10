@@ -17,7 +17,7 @@ It is covered in the video: [ZAP Chat 12 Automation Framework Part 6 - Delays an
 ```
   - type: passiveScan-wait             # Passive scan wait for the passive scanner to finish
     parameters:
-      maxDuration: 5                   # Int: The max time in minutes to wait for the passive scanner, default: 0 unlimited
+      maxDuration:                     # Int: The max time in minutes to wait for the passive scanner, default: 0 unlimited
 ```
 
 ## Job Data
