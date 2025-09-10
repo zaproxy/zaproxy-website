@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: webdriverwindows
-    version: 156.0.0
+    version: 157.0.0
 ---
 
 # Windows WebDrivers
