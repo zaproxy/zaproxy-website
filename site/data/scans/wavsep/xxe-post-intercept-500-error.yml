@@ -23,9 +23,9 @@ details:
   result: Pass
   rule: 90023
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-Intercept-500Error/Case04-XXE-Injection-SSRF-WithErrors.jsp
-  result: Pass
+  result: FAIL
   rule: 90023
 tests: 8
-passes: 8
-fails: 0
-score: 100%
+passes: 7
+fails: 1
+score: 88%
