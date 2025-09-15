@@ -24,7 +24,7 @@ To get started with Eval Villain launch Firefox from ZAP, select the Eval Villai
 
 More likely that's not the case, so let's fake an interaction just to see what it’s like. For the sake of example, let's put something into `eval` and see if Eval Villain can catch it. You can quickly experiment with Eval Villain by typing into the console.
 
-Imagine the website uses `eval` to pop an alert box and welcome you to the site. Try typing this into the console: `eval(‘alert("welcome to the website")’)`. You’ll see the alert box work, but you’ll also get a notification from Eval Villain. If you expand all the console groups, you should see something like this:
+Imagine the website uses `eval` to pop an alert box and welcome you to the site. Try typing this into the console: `eval('alert("welcome to the website")')`. You’ll see the alert box work, but you’ll also get a notification from Eval Villain. If you expand all the console groups, you should see something like this:
 
 ![Eval Villain start](images/ev_first.png)
 
