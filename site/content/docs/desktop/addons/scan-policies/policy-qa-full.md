@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: QA Full Policy
 type: userguide
-weight: 7
+weight: 8
 ---
 
 # QA Full Policy

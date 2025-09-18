@@ -24,6 +24,7 @@ Session handling and verification can be left as "autodetect" - this report will
 | Summary                                   | summary                   |
 | Automation Framework Environment          | afenv                     |
 | Statistics                                | statistics                |
+| Domains                                   | domains                   |
 | Diagnostics                               | diagnostics               |
 | Automation Framework Plan for Diagnostics | diagnosticsafplan         |
 | HTTP Messages for Diagnostics             | diagnosticsmessages       |
@@ -59,6 +60,7 @@ The following failure detail items are used:
 | auth.failure.overall              | All authentication elements passed yet authentication was deemed a failure in the end. |
 | auth.failure.pass_count           | No successful browser logins.                                                          |
 | auth.failure.session_mgmt         | Failed to identify session management.                                                 |
+| auth.failure.logged_in            | No indication found of being logged in.                                                |
 | auth.failure.login_failures       | One or more failed logins.                                                             |
 | auth.failure.no_successful_logins | No successful browser logins.                                                          |
 | auth.failure.verif_ident          | Failed to identify verification URL.                                                   |
@@ -270,11 +272,13 @@ When this section is enabled a top level property is added to the report contain
 		{
 			"key": "stats.auth.browser.foundfields",
 			"scope": "site",
+			"site:" "https://www.example.org",
 			"value": 1
 		},
 		{
 			"key": "stats.auth.browser.passed",
 			"scope": "site",
+			"site:" "https://www.example.org",
 			"value": 1
 		},
 		{
@@ -315,11 +319,13 @@ When this section is enabled a top level property is added to the report contain
 		{
 			"key": "stats.auth.sessiontoken.accesstoken",
 			"scope": "site",
+			"site:" "https://www.example.org",
 			"value": 9
 		},
 		{
 			"key": "stats.auth.sessiontoken.token",
 			"scope": "site",
+			"site:" "https://www.example.org",
 			"value": 6
 		},
 		{
@@ -330,13 +336,19 @@ When this section is enabled a top level property is added to the report contain
 		{
 			"key": "stats.auth.state.loggedin",
 			"scope": "site",
+			"site:" "https://www.example.org",
 			"value": 2
 		},
 		{
 			"key": "stats.auth.success",
 			"scope": "site",
+			"site:" "https://www.example.org",
 			"value": 1
 		}
+	]
+	,"domains": [
+		"https://www.example.org",
+		"https://api.example.org"
 	]
 }
 ```

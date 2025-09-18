@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: scanpolicies
-    version: 0.4.0
+    version: 0.5.0
 ---
 
 # Scan Policies

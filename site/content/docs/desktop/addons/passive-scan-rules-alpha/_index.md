@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: 45.0.0
+    version: 46.0.0
 ---
 
 # Passive Scan Rules - Alpha
@@ -55,20 +55,20 @@ Fetch Metadata Request headers are HTTP request headers that provide additional 
 
 
 Sec-Fetch-Site indicates the relationship between a request initiator's origin and the origin of requested resource.
-(from [Sec-Fetch-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site))
+(from [Sec-Fetch-Site](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Site))
 
 
 Sec-Fetch-Mode allows the server to distinguish between requests originating from a user navigating between HTML
 pages and requests to load images and other resources.
-(from [Sec-Fetch-Mode](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode))
+(from [Sec-Fetch-Mode](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Mode))
 
 
 Sec-Fetch-Dest indicates where and how the requested resource will be used.
-(from [Sec-Fetch-Dest](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest))
+(from [Sec-Fetch-Dest](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-Dest))
 
 
 Sec-Fetch-User is only sent for requests initiated by user activation.
-(from [Sec-Fetch-User](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User))
+(from [Sec-Fetch-User](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Sec-Fetch-User))
 
 
 Alerts generated:

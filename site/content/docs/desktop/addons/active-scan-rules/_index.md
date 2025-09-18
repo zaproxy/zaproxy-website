@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 73.0.0
+    version: 74.0.0
 ---
 
 # Active Scan Rules
@@ -441,7 +441,10 @@ This rule is time sensitive, and should only be used in an attempt to find stubb
 For this reason, the number of active scan threads should be set to the minimum when using this rule, to minimise load on the web server, application server, and database, in order to avoid false positives caused by load delays rather than by SQL injection delays.   
 The scan rule tests only for time-based SQL injection vulnerabilities.  
 
-Note that this rule does not currently allow you to change the length of time used for the timing attacks due to the way the delay is caused.
+The scan rule tests only for time-based SQL injection vulnerabilities.  
+
+
+Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
 
 
 Latest code: [SqlInjectionOracleTimingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/SqlInjectionOracleTimingScanRule.java)

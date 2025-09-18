@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: imagelocationscanner
-    version: 6.0.0
+    version: 7.0.0
 ---
 
 # Image Location and Privacy Scanner
@@ -41,6 +41,6 @@ Configure the web browser to proxy through ZAP and then browse to a few sample s
 
 Latest code: [ZAP Extension "imagelocationscanner" Source](https://github.com/zaproxy/zap-extensions/tree/main/addOns/imagelocationscanner)   
 Project Source Code Origin with more information: [Veggiespam's Image Location Scanner on GitHub](https://github.com/veggiespam/ImageLocationScanner)  
-Project Home Page: [Veggiespam's Image Location Scanner](https://www.veggiespam.com/ils/)   
+Project Home Page: [Veggiespam's Image Location Scanner](https://www.veggiespam.com/tag/ils/)   
 Keywords: Infosec, Audit, Information Exposure, Data Leakage, Vulnerability, GPS, Exif, IPTC, PII, OpSec, Privacy   
 Alert ID: [10103](/docs/alerts/10103/).
