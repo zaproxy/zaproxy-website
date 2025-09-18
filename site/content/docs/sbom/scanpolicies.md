@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: scanpolicies
-    version: 0.4.0
+    version: 0.5.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.4.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.5.0/bom.json
   components:
   - name: asm
     version: '9.7'

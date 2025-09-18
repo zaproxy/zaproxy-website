@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: '27'
+    version: '28'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v27/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v28/bom.json
   components:
   - name: angus-activation
     version: 1.0.0

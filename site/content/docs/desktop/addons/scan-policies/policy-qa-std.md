@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: QA Standard Policy
 type: userguide
-weight: 6
+weight: 7
 ---
 
 # QA Standard Policy

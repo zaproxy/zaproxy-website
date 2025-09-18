@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.28.0
+    version: 0.29.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.28.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.29.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -42,7 +42,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.52.0
+    version: 0.53.0
     licenses: ''
   - name: bcmail-jdk14
     version: '1.76'
@@ -90,10 +90,10 @@ sbom:
     version: 3.37.0
     licenses: MIT
   - name: client
-    version: 0.17.0
+    version: 0.18.0
     licenses: ''
   - name: commonlib
-    version: 1.35.0
+    version: 1.36.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -522,7 +522,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.23.0
+    version: 0.24.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -594,19 +594,19 @@ sbom:
     version: 3.25.5
     licenses: BSD-3-Clause
   - name: pscan
-    version: 0.4.0
+    version: 0.6.0
     licenses: ''
   - name: reports
-    version: 0.40.0
+    version: 0.42.0
     licenses: ''
   - name: rsyntaxtextarea
     version: 3.5.3
     licenses: BSD-3-Clause
   - name: scripts
-    version: 45.13.0
+    version: 45.14.0
     licenses: ''
   - name: selenium
-    version: 15.40.0
+    version: 15.41.0
     licenses: ''
   - name: selenium-api
     version: 4.35.0
@@ -684,7 +684,7 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: spiderAjax
-    version: 23.26.0
+    version: 23.27.0
     licenses: ''
   - name: sqlite-jdbc
     version: 3.45.3.0
@@ -729,7 +729,7 @@ sbom:
     version: 0.31.0
     licenses: MPL-2.0
   - name: zest
-    version: 48.9.0
+    version: 48.10.0
     licenses: ''
 ---
 
