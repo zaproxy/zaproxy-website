@@ -322,6 +322,9 @@ POLICY_DEV_STD:
 POLICY_PENTEST:
   link: 
 
+POLICY_QA_CICD:
+  link: 
+
 POLICY_QA_FULL:
   link: 
 
