@@ -2,11 +2,11 @@ section: SQL Injection GET False Positives
 url: /SInjection-FalsePositives-GET/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case01-FalsePositiveInjectionInLogin-PsAndIv-500ErrorOnIvFailure.jsp
-  result: FAIL
-  rule: 40018
+  result: Pass
+  rule: null
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case02-FalsePositiveInjectionInLogin-PsAndIv-500SyntaxErrorOnIvFailure.jsp
-  result: FAIL
-  rule: 40018
+  result: Pass
+  rule: null
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case03-FalsePositiveInjectionInLogin-PsAndIv-200ErrorOnIvFailure.jsp
   result: Pass
   rule: null
@@ -32,6 +32,6 @@ details:
   result: Pass
   rule: null
 tests: 10
-passes: 7
-fails: 3
-score: 70%
+passes: 9
+fails: 1
+score: 90%
