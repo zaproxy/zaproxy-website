@@ -64,9 +64,9 @@ Of course these types are not necessarily limited to specific status code or sim
 
 The functionality also allows for various options in definition:
 - Location: URL or response (content).
-- Match type: Regex or plain string<sup>*</sup>. 
+- Match type: Regex or plain string¹. 
 
-<sup>*</sup> Obviously a complex regex pattern may impact scan performance.
+¹ Obviously a complex regex pattern may impact scan performance.
 
 ![Custom Page definition dialogs](images/custom-page-defn.png)
 

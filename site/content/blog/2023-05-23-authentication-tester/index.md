@@ -22,7 +22,7 @@ It is now _much_ easier to test if ZAP can handle your app's authentication with
 
 ## Authentication Tester Dialog
 
-The [Authentication Helper](/docs/desktop/addons/authentication-helper/) add-on now adds a new Authentication Tester dialog which can be accessed via the Tools menu item or the key combination: <Control> T. 
+The [Authentication Helper](/docs/desktop/addons/authentication-helper/) add-on now adds a new Authentication Tester dialog which can be accessed via the Tools menu item or the key combination: \<Control> T. 
 
 ![Authentication Tester Dialog - Test tab](images/auth-dialog-1-test.png)
 
