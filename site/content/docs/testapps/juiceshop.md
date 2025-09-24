@@ -119,3 +119,5 @@ For the AJAX Spider you need to exclude the logout link:
 Although Juice Shop has lots of vulnerabilities, many of them can be very challenging for a DAST tool to identify.
 
 The only significant vulnerability that we are aware of which ZAP should be able to identify but cannot is the DOM XSS vulnerability in the Search box.
+
+Not too surprisingly you will need to configure the [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) job, and you will probably want to generate a [report](/docs/desktop/addons/report-generation/automation/).

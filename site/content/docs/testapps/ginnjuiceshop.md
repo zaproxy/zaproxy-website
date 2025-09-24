@@ -102,3 +102,8 @@ For the AJAX Spider you need to exclude the logout link:
 ### Scanning
 
 Gin & Juice Shop has a well documented set of [vulnerabilities](https://ginandjuice.shop/vulnerabilities).
+
+Not too surprisingly you will need to configure the [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) job, and you will probably want to generate a [report](/docs/desktop/addons/report-generation/automation/).
+
+Some of the Gin N Juice shop vulnerabilities can only be found using [OAST](/blog/2021-08-23-oast-with-owasp-zap/). You will need to configure ZAP to use OAST as it is disabled by default, 
+due to the fact that it will send data to 3rd party services.
