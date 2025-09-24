@@ -102,3 +102,5 @@ For the [AJAX Spider](/docs/desktop/addons/ajax-spider/) you need to exclude the
 ### Scanning
 
 We are not aware of a definitive list of the vulnerabilities in AltoroJ. 
+
+Not too surprisingly you will need to configure the [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) job, and you will probably want to generate a [report](/docs/desktop/addons/report-generation/automation/).

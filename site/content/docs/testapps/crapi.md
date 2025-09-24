@@ -129,3 +129,4 @@ The only significant vulnerabilities that we are aware of which ZAP should be ab
 - The NoSQL Injection in the coupon validation functionality.
 - The SSRF in the contact mechanic functionality.
 
+Not too surprisingly you will need to configure the [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) job, and you will probably want to generate a [report](/docs/desktop/addons/report-generation/automation/).
