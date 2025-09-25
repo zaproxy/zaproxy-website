@@ -1,7 +1,6 @@
 // JS Goes here - ES6 supported
 
 import "./css/main.css";
-import "./js/prism.js";
 import BadgerAccordion from "badger-accordion";
 
 new BadgerAccordion(".js-badger-accordion", {
