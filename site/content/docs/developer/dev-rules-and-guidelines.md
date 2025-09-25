@@ -41,7 +41,6 @@ but if you plan to make bigger contributions then you should check them before m
 
 * If it is possible avoid introducing [un/boxings](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html) in new code.
 * The @Override annotation should precede all the method declarations that are intended to implement or override another method declaration.
-<a name="cleancode"></a>
 * Check in code that is cleaner than you checked out, aka ['Clean Code'](http://www.cleancoders.com/)
 * Do not add "(non-Javadoc)" comments to overriding methods (the default comment automatically added when overriding a method).
 * Scan rule classes should be named with the suffix `ScanRule` for consistency. There is no need for a prefix such as `Test` or `Scan`, and acronyms within class names should follow camelCase (not be full caps).

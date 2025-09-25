@@ -151,7 +151,7 @@ docker container run -v $(pwd):/zap/wrk/:rw -t zaproxy/zap-weekly zap.sh -cmd -a
 ```
 
 ### ZAP GUI in a Browser
-Yes, you can run the ZAP Desktop GUI in a browser. You can use it in just the same way as the Swing UI and can even proxy via it.<br>
+Yes, you can run the ZAP Desktop GUI in a browser. You can use it in just the same way as the Swing UI and can even proxy via it.  
 See the [Webswing](../webswing/) page for details.
 
 ### ZAP Headless
@@ -159,7 +159,7 @@ You can also start the ZAP in headless mode with following command:
 ```bash
 docker run -u zap -p 8080:8080 -i zaproxy/zap-stable zap.sh -daemon -host 0.0.0.0 -port 8080 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true -config api.key=<api-key>
 ```
-<sub>**Note**: `-config api.addrs.addr.name=.*` opens the API up for connections from any other host, it is prudent to configure this more specifically for your network/setup.</sub>
+**Note**: `-config api.addrs.addr.name=.*` opens the API up for connections from any other host, it is prudent to configure this more specifically for your network/setup.
 
 ### ZAP Headless with xvfb
 You can start the ZAP in headless mode with xvfb following command:
@@ -167,7 +167,7 @@ You can start the ZAP in headless mode with xvfb following command:
 ```bash
 docker run -u zap -p 8080:8080 -i zaproxy/zap-stable zap-x.sh -daemon -host 0.0.0.0 -port 8080 -config api.addrs.addr.name=.* -config api.addrs.addr.regex=true
 ```
-<sub>**Note**: `-config api.addrs.addr.name=.*` opens the API up for connections from any other host, it is prudent to configure this more specifically for your network/setup.</sub>
+**Note**: `-config api.addrs.addr.name=.*` opens the API up for connections from any other host, it is prudent to configure this more specifically for your network/setup.
 
 This first starts xvfb (X virtual frame buffer) which allows add-ons that use Selenium (like the Ajax Spider and DOM XSS scanner) to run in a headless environment. Firefox is also installed so can be used with these add-ons.
 Note that by default add-ons which use Selenium will default to using headless browsers when running in docker so this option is not usually required.
