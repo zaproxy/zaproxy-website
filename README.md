@@ -205,7 +205,7 @@ use the `site/static` folder. Images, font-files, etc, all go there. Files in th
 will end up being available as `/favicon.ico` and so on...
 
 ##### CSS/SCSS
-All the CSS is written in SCSS ("Sassy CSS") with all the files in `src/css/` with `src/css/main.css` being the entrypoint, defining main variables & importing the needed styles.
+All the CSS is written in SCSS ("Sassy CSS") with all the files in `src/css/` with `src/css/main.scss` being the entrypoint, defining main variables & importing the needed styles.
 
 Styles are separated by broad category, component and post specific styles. For example, if you need to change the typography across the entire site, `src/css/_type.scss` is the file to edit.
 
