@@ -1007,6 +1007,17 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sqliplugin-v16/sqliplugin-beta-16.zap
   date: 2025-04-30
   version: 16
+- id: srm
+  name: Software Risk Manager Extension
+  description: Includes request and response data in XML reports and provides the
+    ability to upload reports directly to a Software Risk Manager server
+  author: Black Duck, Inc.
+  status: alpha
+  infoUrl: /docs/desktop/addons/software-risk-manager/
+  repoUrl: https://github.com/codedx/zap-extensions/
+  downloadUrl: https://github.com/zaproxy-addons/srm/releases/download/v2025.9.0/srm-alpha-2025.9.0.zap
+  date: 2025-09-26
+  version: 2025.9.0
 - id: sse
   name: Server-Sent Events
   description: Allows you to view Server-Sent Events (SSE) communication.
