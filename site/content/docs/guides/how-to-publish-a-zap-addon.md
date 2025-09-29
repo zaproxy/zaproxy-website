@@ -17,6 +17,10 @@ You can create your add-on in any way, but we recommend copying the
 The main [README](https://github.com/zaproxy/addon-java?tab=readme-ov-file#zap-template-java-add-on) 
 in that repo explains what you need to do next.
 
+If you would like to implement your add-on in another JVM compatible language then please get in touch 
+with us via the [ZAP Developer Group](https://groups.google.com/group/zaproxy-develop).
+ZAP add-ons can include scripts written in any of the scripting languages supported by ZAP.
+
 ### Raise a 3rd Party Add-on Issue
 
 When you are happy that your add-on is ready to be published then raise a 
@@ -28,10 +32,6 @@ issue and fill in all of the fields.
 The ZAP team will nominate someone in the team to lead the review and assign your issue to them.
 
 They will clone your repo into https://github.com/zaproxy-addons and let you know that the review process has started.
-
-If you would like to implement your add-on in another JVM compatible language then please get in touch 
-with us via the [ZAP Developer Group](https://groups.google.com/group/zaproxy-develop).
-ZAP add-ons can include scripts written in any of the scripting languages supported by ZAP.
 
 The review lead will ensure that at least 2 of the Core Team review your add-on and then will update the issue
 to let you know if it passed the review.
