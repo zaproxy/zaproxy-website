@@ -13,6 +13,11 @@ Despite claiming to be a modern app is is actually relatively traditional (it is
 
 * Online: https://ginandjuice.shop/
 
+> [!WARNING]
+> We are aware that a 3rd Party has published a blog post claiming that ZAP is not effective when scanning Gin & Juice Shop.
+> We have pointed out the mistakes that they have made but to date they have not corrected their misinformation.
+> Luckily as ZAP is Open Source you should be able to easily test this for yourself given the information below. 
+
 ### Potential Pitfalls
 
 This is an online app which may be unavailable or broken at any point.
@@ -103,7 +108,8 @@ For the AJAX Spider you need to exclude the logout link:
 
 Gin & Juice Shop has a well documented set of [vulnerabilities](https://ginandjuice.shop/vulnerabilities).
 
-Not too surprisingly you will need to configure the [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) job, and you will probably want to generate a [report](/docs/desktop/addons/report-generation/automation/).
+We have a simple example Automation Framework Plan for performing an authenticated scan:
+[FullScanGinNJuiceAuth.yaml](https://github.com/zaproxy/community-scripts/blob/main/other/af-plans/FullScanGinNJuiceAuth.yaml)
 
 Some of the Gin N Juice shop vulnerabilities can only be found using [OAST](/blog/2021-08-23-oast-with-owasp-zap/). You will need to configure ZAP to use OAST as it is disabled by default, 
 due to the fact that it will send data to 3rd party services.
