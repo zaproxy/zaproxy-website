@@ -110,4 +110,4 @@ of a count.
 These changes will be made in a future weekly release, and then from ZAP 2.17.0.
 
 If you have any questions or concerns about these changes then please post to the
-[ZAP User Group](https://groups.google.com/group/zaproxy-users).
+[ZAP User Group](https://groups.google.com/g/zaproxy-users/c/CNpQyHBIfrk/m/ec0LlQdCAAAJ).
