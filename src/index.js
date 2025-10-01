@@ -1,6 +1,6 @@
 // JS Goes here - ES6 supported
 
-import "./css/main.css";
+import "./css/main.scss";
 import BadgerAccordion from "badger-accordion";
 
 new BadgerAccordion(".js-badger-accordion", {

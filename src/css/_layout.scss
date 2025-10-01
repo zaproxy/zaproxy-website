@@ -1,3 +1,4 @@
+@use "sass:math";
 .flex {
   display: flex;
 }
@@ -60,7 +61,7 @@ $grid_widths: 2 3 4 5 6 8;
 @each $size in $grid_widths  {
   @for $i from 1 through ($size - 1) {
     .col-#{$i}-#{$size} {
-      width:  percentage($i  / $size);
+      width:  math.percentage(math.div($i, $size));
     }
   }
 }
