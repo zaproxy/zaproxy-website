@@ -1,5 +1,4 @@
 ---
-# This page was generated from the add-on.
 title: Log File Importer
 type: userguide
 weight: 1
@@ -9,6 +8,4 @@ cascade:
     version: 6.0.0
 ---
 
-# Log File Importer
-
-Allows you to import log files from ModSecurity and files previously exported from ZAP.
+This add-on has been superseded by the [Import/Export](/docs/desktop/addons/import-export/) add-on.

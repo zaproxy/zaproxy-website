@@ -1,5 +1,4 @@
 ---
-# This page was generated from the add-on.
 title: Save XML Message
 type: userguide
 weight: 1
@@ -9,6 +8,4 @@ cascade:
     version: 0.3.0
 ---
 
-# Save XML Message
-
-Provides a context menu to save content of HTTP messages as XML.
+This add-on has been superseded by the [Import/Export](/docs/desktop/addons/import-export/) add-on.
