@@ -1,5 +1,4 @@
 ---
-# This page was generated from the add-on.
 title: Save Raw Message
 type: userguide
 weight: 1
@@ -9,6 +8,4 @@ cascade:
     version: 7.0.0
 ---
 
-# Save Raw Message
-
-Provides a context menu to save content of HTTP messages as binary.
+This add-on has been superseded by the [Import/Export](/docs/desktop/addons/import-export/) add-on.
