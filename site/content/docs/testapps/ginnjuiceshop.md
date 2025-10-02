@@ -18,6 +18,36 @@ Despite claiming to be a modern app is is actually relatively traditional (it is
 > We have pointed out the mistakes that they have made but to date they have not corrected their misinformation.
 > Luckily as ZAP is Open Source you should be able to easily test this for yourself given the information below. 
 
+### Quick Start
+
+New to ZAP and just want to quickly run ZAP against Gin &amp; Juice Shop?
+
+Just run these commands:
+
+```bash
+# Download the recommended plan using curl, or use any other suitable tool
+curl -O https://raw.githubusercontent.com/zaproxy/community-scripts/refs/heads/main/other/af-plans/FullScanGinNJuiceAuth.yaml
+
+# Run ZAP using the stable Docker image, mapping the CWD so that Docker can access the file and export the report
+docker run -v $(pwd):/zap/wrk/:rw -t zaproxy/zap-stable zap.sh -cmd -autorun wrk/FullScanGinNJuiceAuth.yaml
+```
+
+To run this command on Windows see the [relevant documentation](/docs/docker/about/#mounting-the-current-directory).
+
+You will need to have Docker installed. If you do not want to use Docker then you can of course install ZAP locally.
+
+This command should take around 25 minutes (once the Docker image has been downloaded) on a MacBook M2 and should find the following High and Medium risk alerts:
+
+* 🔴 [Cross Site Scripting (DOM Based)](/docs/alerts/40026/)
+* 🔴 [Cross Site Scripting (Reflected](/docs/alerts/40012/)
+* 🔴 [SQL Injection](/docs/alerts/40018/)
+* 🔴 [Vulnerable JS Library](/docs/alerts/10003/)
+* 🟠 [Absence of Anti-CSRF Tokens](/docs/alerts/10202/)
+* 🟠 [CRLF Injection](/docs/alerts/40003/)
+* 🟠 [Content Security Policy (CSP) Header Not Set](/docs/alerts/10038/)
+
+It will create an HTML file in your CWD containing full details of all of the issues found.
+
 ### Potential Pitfalls
 
 This is an online app which may be unavailable or broken at any point.
