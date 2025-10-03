@@ -28,7 +28,7 @@ Just run these commands:
 # Download the recommended plan using curl, or use any other suitable tool
 curl -O https://raw.githubusercontent.com/zaproxy/community-scripts/refs/heads/main/other/af-plans/FullScanGinNJuiceAuth.yaml
 
-# Run ZAP using the stable Docker image, mapping the CWD so that Docker can access the file and export the report
+# Run ZAP using the stable Docker image, mapping the CWD so that Docker can access the file system and export the report
 docker run -v $(pwd):/zap/wrk/:rw -t zaproxy/zap-stable zap.sh -cmd -autorun wrk/FullScanGinNJuiceAuth.yaml
 ```
 
@@ -46,7 +46,7 @@ This command should take around 25 minutes (once the Docker image has been downl
 * 🟠 [CRLF Injection](/docs/alerts/40003/)
 * 🟠 [Content Security Policy (CSP) Header Not Set](/docs/alerts/10038/)
 
-It will create an HTML file in your CWD containing full details of all of the issues found.
+It will create an HTML report in your CWD containing full details of all of the issues found.
 
 ### Potential Pitfalls
 

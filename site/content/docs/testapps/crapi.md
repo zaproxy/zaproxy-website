@@ -15,6 +15,45 @@ It is open source, and maintained by OWASP and the community. It’s fairly well
 * Repo - https://github.com/OWASP/crAPI
 * Docker - https://hub.docker.com/u/crapi
 
+### Quick Start
+
+New to ZAP and just want to quickly run ZAP against crAPI?
+
+Just run these commands:
+
+```bash
+# Creating and using a directory called "crapi" is important, dont skip this step!
+mkdir crapi
+cd crapi
+curl -o docker-compose.yml https://raw.githubusercontent.com/OWASP/crAPI/refs/heads/main/deploy/docker/docker-compose.yml
+
+# Start crapi
+docker-compose up
+
+# Download the recommended plan using curl, or use any other suitable tool
+curl -O https://raw.githubusercontent.com/zaproxy/community-scripts/refs/heads/main/other/af-plans/FullScanCrApiAuth.yaml
+
+# Run ZAP using the stable Docker image, the crapi docker network, 
+# mapping the CWD so that Docker can access the file system and export the report.
+# The network name is based on the cwd name, which is why creating and using "crapi" is important
+docker run --network crapi_default -v $(pwd):/zap/wrk/:rw -t zaproxy/zap-stable zap.sh -cmd -autorun wrk/FullScanCrApiAuth.yaml
+```
+
+Note that the yaml file includes the requests needed to register the user used for authentication.
+
+To run this command on Windows see the [relevant documentation](/docs/docker/about/#mounting-the-current-directory).
+
+You will need to have Docker installed. If you do not want to use Docker then you can of course install both crAPI and ZAP locally.
+
+This command only take a few minutes to run and should find the following Medium risk alerts:
+
+* 🟠 [.env Information Leak](/docs/alerts/40034/)
+* 🟠 [Content Security Policy (CSP) Header Not Set](/docs/alerts/10038/)
+* 🟠 [Cross-Domain Misconfiguration](/docs/alerts/10098/)
+* 🟠 [Missing Anti-clickjacking Header](/docs/alerts/10020/)
+
+It will create an HTML report in your CWD containing full details of all of the issues found.
+
 ### Potential Pitfalls
 
 While we are aware of at least one Third Party online instance you can never be sure how up-to-date or stable it is and will be in the future. The project makes Docker images available as well as a docker-compose for easy local usage.
@@ -124,6 +163,12 @@ It may also make sense to exclude the Forgot Password functionality (in the envi
 ### Scanning
 
 Although crAPI has a number of vulnerabilities, many of them can be very challenging for a DAST tool to identify.
+
+We have a simple example Automation Framework Plan for performing an authenticated scan:
+[FullScanCrApiAuth.yaml](https://github.com/zaproxy/community-scripts/blob/main/other/af-plans/FullScanCrApiAuth.yaml)
+
+Note that the yaml file includes the requests needed to register the user used for authentication.
+
 
 The only significant vulnerabilities that we are aware of which ZAP should be able to identify but cannot (currently) are:
 - The NoSQL Injection in the coupon validation functionality.
