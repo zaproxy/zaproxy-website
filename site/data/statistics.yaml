@@ -436,6 +436,13 @@
   code: main/zap/src/main/java/org/zaproxy/zap/extension/pscan/scanner/StatsPassiveScanner.java
   desc: The number of messages which include the given content type
 
+- key: stats.error.core.uncaught
+  scope: global
+  type: counter
+  repo: zaproxy/zaproxy
+  code: main/zap/src/main/java/org/zaproxy/zap/ZAP.java
+  desc: The number of uncaught exceptions
+
 - key: stats.exim.copy.url
   scope: global
   type: counter
