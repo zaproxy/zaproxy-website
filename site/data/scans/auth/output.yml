@@ -32,7 +32,7 @@ authtestdelay:
       session: true
       verification: false
     bbaplus:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -72,11 +72,11 @@ bluesky:
   note: "BBA is failing verification detection."
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
-      verification: true
+      verification: false
 ctflearn:
   site: "https://ctflearn.com"
   note: ""
@@ -124,12 +124,12 @@ insta:
       username: true
       password: true
       session: true
-      verification: true
+      verification: false
 linkedin:
   site: "https://www.linkedin.com"
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
@@ -138,7 +138,7 @@ mozbugz:
   site: "https://bugzilla.mozilla.org"
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
@@ -156,7 +156,7 @@ reddit:
   site: "https://www.reddit.com"
   plans:
     stdbba:
-      auth: false
+      auth: true
       username: true
       password: true
       session: true
@@ -216,7 +216,7 @@ wikipedia:
   note: ""
   plans:
     stdbba:
-      auth: true
+      auth: false
       username: true
       password: true
       session: true
