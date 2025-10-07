@@ -78,7 +78,7 @@ env:
         loggedInRegex: "\\Qtest@test.com\\E"
         loggedOutRegex: ""
         pollFrequency: 60
-        pollUnits: "requests"
+        pollUnits: "seconds"
         pollUrl: "https://preview.owasp-juice.shop/rest/user/whoami"
         pollPostData: ""
     sessionManagement:

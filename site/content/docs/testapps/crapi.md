@@ -100,7 +100,7 @@ env:
         loggedInRegex: \Q 200\E
         loggedOutRegex: \Q 401\E
         pollFrequency: 60
-        pollUnits: requests
+        pollUnits: seconds
         pollUrl: http://localhost:8888/identity/api/v2/user/dashboard
         pollPostData: ""
         pollAdditionalHeaders:
