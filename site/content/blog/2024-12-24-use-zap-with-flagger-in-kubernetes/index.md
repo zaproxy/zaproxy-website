@@ -212,7 +212,7 @@ The ZAP Automation Plan is created as a `ConfigMap` which then Kubernetes attach
               verification:
                 method: response
                 pollFrequency: 60
-                pollUnits: requests
+                pollUnits: seconds
             excludePaths:
             - http://podinfo:9898/panic
             - http://podinfo:9898/status/10
@@ -406,7 +406,7 @@ Integration and smoke tests can be run during Flagger's deployment process when 
               verification:
                 method: response
                 pollFrequency: 60
-                pollUnits: requests
+                pollUnits: seconds
             excludePaths:
             - http://podinfo:9898/panic
             - http://podinfo:9898/status/10
