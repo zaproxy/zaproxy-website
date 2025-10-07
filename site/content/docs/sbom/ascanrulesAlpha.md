@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: '51'
+    version: '52'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v51/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v52/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -51,10 +51,13 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: byte-buddy
-    version: 1.14.9
+    version: 1.14.11
+    licenses: Apache-2.0
+  - name: byte-buddy
+    version: 1.14.13
     licenses: Apache-2.0
   - name: byte-buddy-agent
-    version: 1.14.9
+    version: 1.14.11
     licenses: Apache-2.0
   - name: caffeine
     version: 3.0.5
@@ -62,8 +65,11 @@ sbom:
   - name: checker-qual
     version: 3.37.0
     licenses: MIT
+  - name: collections
+    version: 25.0.0
+    licenses: UPL-1.0
   - name: commonlib
-    version: 1.36.0
+    version: 1.37.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -143,6 +149,9 @@ sbom:
   - name: google-java-format
     version: 1.19.1
     licenses: Apache-2.0
+  - name: graaljs
+    version: 0.10.0
+    licenses: ''
   - name: guava
     version: 32.1.3-jre
     licenses: Apache-2.0
@@ -173,6 +182,9 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
+  - name: icu4j
+    version: 25.0.0
+    licenses: Unicode/ICU License
   - name: jackson-annotations
     version: 2.19.1
     licenses: Apache-2.0
@@ -224,6 +236,21 @@ sbom:
   - name: jgrapht-core
     version: 0.9.0
     licenses: LGPL-2.1-only, EPL-1.0
+  - name: jniutils
+    version: 25.0.0
+    licenses: UPL-1.0
+  - name: js
+    version: 25.0.0
+    licenses: UPL-1.0, MIT
+  - name: js-community
+    version: 25.0.0
+    licenses: MIT, UPL-1.0
+  - name: js-language
+    version: 25.0.0
+    licenses: UPL-1.0, MIT
+  - name: js-scriptengine
+    version: 25.0.0
+    licenses: UPL-1.0
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
@@ -234,28 +261,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 1.10.1
+    version: 1.10.2
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 1.10.1
+    version: 1.10.2
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 1.10.1
+    version: 1.10.2
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -279,10 +306,10 @@ sbom:
     version: 1.18.36
     licenses: MIT
   - name: mockito-core
-    version: 5.7.0
+    version: 5.10.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.7.0
+    version: 5.10.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
@@ -305,6 +332,9 @@ sbom:
   - name: native-windows-x86_64
     version: 1.16.0
     licenses: Apache-2.0
+  - name: nativeimage
+    version: 25.0.0
+    licenses: UPL-1.0
   - name: netty-buffer
     version: 4.1.100.Final
     licenses: Apache-2.0
@@ -362,12 +392,21 @@ sbom:
   - name: pcollections
     version: 4.0.1
     licenses: MIT
+  - name: polyglot
+    version: 25.0.0
+    licenses: UPL-1.0
   - name: protobuf-java
     version: 3.25.5
     licenses: BSD-3-Clause
+  - name: regex
+    version: 25.0.0
+    licenses: UPL-1.0
   - name: rsyntaxtextarea
     version: 3.5.3
     licenses: BSD-3-Clause
+  - name: scripts
+    version: 45.14.0
+    licenses: ''
   - name: service
     version: 1.16.0
     licenses: Apache-2.0
@@ -389,12 +428,27 @@ sbom:
   - name: testutils
     version: unspecified
     licenses: ''
+  - name: truffle-api
+    version: 25.0.0
+    licenses: UPL-1.0
+  - name: truffle-compiler
+    version: 25.0.0
+    licenses: UPL-1.0
+  - name: truffle-runtime
+    version: 25.0.0
+    licenses: UPL-1.0
   - name: woodstox-core
     version: 7.1.1
     licenses: Apache-2.0
+  - name: word
+    version: 25.0.0
+    licenses: UPL-1.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
+  - name: xz
+    version: 25.0.0
+    licenses: UPL-1.0
   - name: zap
     version: 2.16.0
     licenses: Apache-2.0

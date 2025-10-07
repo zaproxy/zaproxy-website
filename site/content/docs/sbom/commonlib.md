@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: commonlib
-    version: 1.36.0
+    version: 1.37.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.36.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.37.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -51,10 +51,10 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: byte-buddy
-    version: 1.14.9
+    version: 1.14.11
     licenses: Apache-2.0
   - name: byte-buddy-agent
-    version: 1.14.9
+    version: 1.14.11
     licenses: Apache-2.0
   - name: caffeine
     version: 3.0.5
@@ -231,28 +231,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 5.10.1
+    version: 5.10.2
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 1.10.1
+    version: 1.10.2
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 1.10.1
+    version: 1.10.2
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 1.10.1
+    version: 1.10.2
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -276,10 +276,10 @@ sbom:
     version: 1.18.36
     licenses: MIT
   - name: mockito-core
-    version: 5.7.0
+    version: 5.10.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.7.0
+    version: 5.10.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1

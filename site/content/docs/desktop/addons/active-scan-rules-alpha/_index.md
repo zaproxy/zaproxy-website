@@ -6,28 +6,12 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: 51.0.0
+    version: 52.0.0
 ---
 
 # Active Scan Rules - Alpha
 
 The following alpha status active scan rules are included in this add-on:
-
-## An example active scan rule which loads data from a file {#id-60101}
-
-This implements an example active scan rule that loads strings from a file that the user can edit.  
-For more details see: [Hacking ZAP Part 4: Active Scan Rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/).
-
-
-Latest code: [ExampleFileActiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleFileActiveScanRule.java)
-
-## Example Active Scan Rule: Denial of Service {#id-60100}
-
-This implements a very simple example active scan rule.  
-For more details see: [Hacking ZAP Part 4: Active Scan Rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/).
-
-
-Latest code: [ExampleSimpleActiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/ExampleSimpleActiveScanRule.java)
 
 ## LDAP Injection {#id-40015}
 
@@ -67,3 +51,18 @@ This rule attempts to identify Web Cache Deception vulnerabilities. It checks wh
 
 Latest code: [WebCacheDeceptionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/WebCacheDeceptionScanRule.java)   
 Alert ID: [40039](/docs/alerts/40039/).
+
+## Suspicious Input Transformation {#id-100044}
+
+This is an active script scan rule. It detects various types of suspicious input transformations that may indicate potential security vulnerabilities such as template injection, expression evaluation, quote consumption, and issues related to unicode normalization.
+
+
+This rule is largely adapted from the "Suspect Transform" check included in the ActiveScan++ extension for Burp
+Suite by
+Albinowax: [SuspectTransform.java](https://github.com/albinowax/ActiveScanPlusPlus/blob/master/src/burp/SuspectTransform.java).
+
+
+Latest code: [SuspiciousInputTransformation.js](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/zapHomeFiles/scripts/scripts/active/SuspiciousInputTransformation.js)
+
+
+Alert ID: [100044](/docs/alerts/100044/).
