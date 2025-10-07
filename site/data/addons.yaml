@@ -47,9 +47,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v51/ascanrulesAlpha-alpha-51.zap
-  date: 2025-09-18
-  version: 51
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v52/ascanrulesAlpha-alpha-52.zap
+  date: 2025-10-07
+  version: 52
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta status Active Scanner rules
@@ -180,9 +180,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.36.0/commonlib-release-1.36.0.zap
-  date: 2025-09-18
-  version: 1.36.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.37.0/commonlib-release-1.37.0.zap
+  date: 2025-10-07
+  version: 1.37.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -398,9 +398,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graalvm-javascript/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.9.0/graaljs-alpha-0.9.0.zap
-  date: 2025-01-09
-  version: 0.9.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.10.0/graaljs-alpha-0.10.0.zap
+  date: 2025-10-07
+  version: 0.10.0
 - id: graphql
   name: GraphQL Support
   description: Inspect and attack GraphQL endpoints.
@@ -943,9 +943,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.13.0/scripts-release-45.13.0.zap
-  date: 2025-09-02
-  version: 45.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.14.0/scripts-release-45.14.0.zap
+  date: 2025-10-07
+  version: 45.14.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
