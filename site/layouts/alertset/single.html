@@ -46,16 +46,23 @@
       </section>
       <section class="col-2-3">
         <h3 class="mb-10">Alerts</h3>
+        {{- $alertSlice := slice -}}
+        {{- range $alertRef, $alert := .Params.alerts -}}
+        {{- $parts := split $alertRef "-" -}}
+        {{- $alertRefQualifier := index $parts 1 | int -}}
+        {{- $alertSlice = $alertSlice | append (dict "qualifier" $alertRefQualifier "alert" $alert) -}}
+        {{- end -}}
+        {{ $sortedAlerts := sort $alertSlice "qualifier" }}
         <ul data-attr="alerts">
-        {{ range .Params.alerts }}
+        {{ range $sortedAlerts }}
           <li>
-            <a href="/docs/alerts/{{ .alertid }}">{{ .alertid }}</a> {{ .name }}
+            <a href="/docs/alerts/{{ .alert.alertid }}">{{ .alert.alertid }}</a> {{ .alert.name }}
           </li>
         {{ end }}
         </ul>
         <h4 class="mb-10">Code</h4>
           <a href='{{ .Params.code  }}'>
-            {{ index (split .Params.code "main/java/") 1 }}
+            {{ .Params.linktext }}
           </a>
       </section>
   </main>
