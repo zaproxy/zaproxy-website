@@ -1,7 +1,7 @@
 ---
-title: "Solving caido labs"
+title: "Solving Caido Labs"
 summary: >
-  On this blog we show how to solve all current Caido labs using Zaproxy.
+  On this blog we show how to solve all current Caido labs using ZAP.
 images:
 - https://www.zaproxy.org/blog/2025-10-07-solving-caido-labs/images/image-header.png
 type: post
@@ -15,7 +15,7 @@ authors:
     - 5ubterranean
 ---
 
-On this blog post we will solve all currently available challenges on [Caido labs](https://labs.cai.do/), while this first batch only showcases some easy vulnerabilities we will use some interesting features of Zaproxy to solve them.
+On this blog post we will solve all currently available challenges on [Caido labs](https://labs.cai.do/), while this first batch only showcases some easy vulnerabilities we will use some interesting features of ZAP to solve them.
 
 ## Match and Replace
 
@@ -27,7 +27,7 @@ On this challenge we are shown the next site.
 
 ![matchrepsite.png](images/matchrepsite.png)
 
-If we read the HTML code we can see that there is a function that checks the current role, and if it happens to be admin it executes "displayAdminUI()".
+If we read the HTML code we can see that there is a function that checks the current role, and if it happens to be admin it executes `displayAdminUI()`.
 
 ![matchcode.png](images/matchcode.png)
 
@@ -35,7 +35,7 @@ We can validate what that function does by executing it manually.
 
 ![matchadmin.png](images/matchadmin.png)
 
-While this uncovers the *hidden* panel, when testing a website, things are not usually that easy, and also we don't have the time to check everything, on this scenario we can create a rule to replace the text "basic" to "admin" on the responses so the javascript code gets executed with that role, we can do that by creating a rule on the replacer AddOn (Ctrl + R as shortcut).
+While this uncovers the *hidden* panel, when testing a website, things are not usually that easy, and also we don't have the time to check everything, on this scenario we can create a rule to replace the text "basic" with "admin" on the responses so the JavaScript code gets executed with that role, we can do that by creating a rule on the Replacer add-on (Ctrl + R as shortcut).
 
 ![matchreplacer.png](images/matchreplacer.png)
 
@@ -47,7 +47,7 @@ With that the challenge is solved.
 
 ![matchsolve.png](images/matchsolve.png)
 
-Notice that the replacer rule stays active even if you close Zaproxy, so it's always good to disable the rules when you are done with them.
+Notice that the Replacer rule stays active even if you close ZAP, so it's always good to disable the rules when you are done with them.
 
 ## IDOR Vulnerability
 
@@ -63,7 +63,7 @@ If we click the button the next information gets retrieved.
 
 ![idorinfo.png](images/idorinfo.png)
 
-Checking the HTTP request we see that "user_id" is sent in a POST request.
+Checking the HTTP request we see that `user_id` is sent in a POST request.
 
 ![idorreq.png](images/idorreq.png)
 
@@ -114,12 +114,12 @@ function getOptionalParamsNames(){
 }
 ```
 
-All this script does is look for the word "super" on the response of the body and add a state that flags it, notice this is a very basic example and these scripts are really flexible, also if you want to know what every function does you can read the example script on Zaproxy since it is detailed there.
-Once we have our script loaded **and** enabled we can add it before executing the fuzzer.
+All this script does is look for the word "super" on the response of the body and add a state that flags it, notice this is a very basic example and these scripts are really flexible, also if you want to know what every function does you can read the example script on ZAP since it is detailed there.
+Once we have our script loaded **and** enabled we can add it before executing the Fuzzer.
 
 ![idorprocessor.png](images/idorprocessor.png)
 
-After we run the fuzzer we can see that the responses that included the word "super" were flagged.
+After we run the Fuzzer we can see that the responses that included the word "super" were flagged.
 
 ![idorsuperfuzz.png](images/idorsuperfuzz.png)
 
@@ -182,7 +182,7 @@ We can see that the hash value is calculated by getting the SHA256 sum of the st
 
 ![shalocal.png](images/shalocal.png)
 
-Now that we know how the hash is calculated we can Fuzz the values, if we were using Burpsuite we could create the list of hashes and use a *pitchfork* attack, however on Zaproxy if we add more than one payload it treats it as a *Cluster Bomb* attack, since this is not what we want we'll have to use a single payload field and create a **Payload Generator** script that generates the whole body. Here is the script that we will use, all is done on the "next()" function, to calculate the hash we are using the java "MessageDigest" class, since using it is not as straightforward as just calling it you can ask your favorite IA agent to write that part for you.
+Now that we know how the hash is calculated we can Fuzz the values, if we were using Burpsuite we could create the list of hashes and use a *pitchfork* attack, however on ZAP if we add more than one payload it treats it as a *Cluster Bomb* attack, since this is not what we want we'll have to use a single payload field and create a **Payload Generator** script that generates the whole body. Here is the script that we will use, all is done on the `next()` function, to calculate the hash we are using the java `MessageDigest` class, since using it is not as straightforward as just calling it you can ask your favorite AI agent to write that part for you.
 
 ```js
 var MessageDigest = Java.type("java.security.MessageDigest");
@@ -264,11 +264,11 @@ function sha256(message) {
 }
 ```
 
-Once we have the script ready and enabled we can start a fuzzer by selecting the whole post body and selecting our script as the payload.
+Once we have the script ready and enabled we can start a Fuzzer by selecting the whole post body and selecting our script as the payload.
 
 ![shapayload.png](images/shapayload.png)
 
-After running the fuzzer we can see the requests that included "super" on the response.
+After running the Fuzzer we can see the requests that included "super" on the response.
 
 ![shafuzzed.png](images/shafuzzed.png)
 
@@ -310,7 +310,7 @@ Now we can use the community script [json_csrf_poc_generator](https://github.com
 ```
 
 We can see that the HTML adds the value `,"ignore_me":"' value='something"}` to the request, this is because the browser expects to send a POST form as a request, not a JSON, if the request does not look like a post form one the browser will try to format it, and that would send an invalid request.
-Now we change the value of "name" and host the page using python and open it on our browser. After opening it we see that it opens the csrf site.
+Now we change the value of "name" and host the page using python and open it on our browser. After opening it we see that it opens the CSRF site.
 
 ![csrfpoc.png](images/csrfpoc.png)
 
@@ -328,7 +328,7 @@ This challenge can be found on the next URL:
 
 [https://labs.cai.do/sessionMonitor.php](https://labs.cai.do/sessionMonitor.php)
 
-The purpose of this challenge is to learn how to store changing values from requests to a environment variable, while I don't know how Caido can make use of this information Zaproxy can achieve something similar using [global variables](https://www.zaproxy.org/docs/desktop/addons/script-console/#global-variables), so let's store the current cookie session on a new one.
+The purpose of this challenge is to learn how to store changing values from requests to a environment variable, while I don't know how Caido can make use of this information ZAP can achieve something similar using [global variables](/docs/desktop/addons/script-console/#global-variables), so let's store the current session cookie value in a new one.
 
 When we access we are shown the next site.
 
@@ -357,7 +357,7 @@ function proxyResponse(msg) {
 ```
 
 As we see all it does is extracting the cookies from the responses and if it finds the cookie "PHPSESSID" it saves it on a variable called "currentSession".
-We can access to this variable from any other script, on this case we make a simple print on python as a **Stand Alone** script.
+We can access to this variable from any other script, in this case we make a simple print on python as a **Stand Alone** script.
 
 ```python
 from org.zaproxy.zap.extension.script import ScriptVars
@@ -372,7 +372,7 @@ We can check the site to validate we got the correct values.
 
 ![monitorpy.png](images/monitorsolve.png)
 
-While this lab looked like a scenario to use a passive script instead of a proxy one, trying to track a changing value using passive scripts could end up not working properly, if the value changes to quick we could end up storing a previous value due the parallel nature of passive scripts, also there can be a significant delay between receiveing the cookie and the value being updated if there are many request being analyzed, given that by default there are some passive rules loaded that would need to be run on every request.
+While this lab looked like a scenario to use a passive script instead of a proxy one, trying to track a changing value using passive scripts could end up not working properly, if the value changes too quick we could end up storing a previous value due the default parallel nature of passive scanning, also there can be a significant delay between receiving the cookie and the value being updated if there are many request being analyzed, given that by default there are some passive rules loaded that would need to be run on every request.
 
 ## Reflected XSS Lab
 
@@ -390,7 +390,7 @@ If we set the classic xss poc as name `<script>alert(1)</script>` we can validat
 
 On the main page the description of the challenge is the next one:
 `Learn the basics of how to identify reflected XSS with two different vulnerabilities in the same lab.`
-It says that there are **two** vulnerabilities, while on this case we could find the other value by reading the HTML code, that's not always possible, so we will use param digger (equivalent of Burp's param miner) to find the other parameter, since the default wordlist is too small we will use Burp's list from Seclist.
+It says that there are **two** vulnerabilities, while on this case we could find the other value by reading the HTML code, that's not always possible, so we will use Param Digger (equivalent of Burp's Param Miner) to find the other parameter, since the default wordlist is too small we will use Burp's list from Seclist.
 
 ![xssparam.png](images/xssparam.png)
 
