@@ -192,3 +192,9 @@ chibbyalucard:
   picture: /img/authors/zap_400x400.png
   twitter:
   is_core: false
+
+5ubterranean:
+  name: 5ubterranean
+  picture: /img/authors/5ubterranean_400x400.png
+  twitter: 5ubterranean_
+  is_core: false
