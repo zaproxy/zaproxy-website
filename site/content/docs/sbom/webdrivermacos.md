@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '161'
+    version: '162'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v161/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v162/bom.json
   components:
   - name: asm
     version: '9.7'
@@ -30,13 +30,13 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: biz.aQute.bnd.annotation
-    version: 6.4.1
+    version: 7.1.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: caffeine
     version: 3.0.5
     licenses: Apache-2.0
   - name: checker-qual
-    version: 3.37.0
+    version: 3.43.0
     licenses: MIT
   - name: commons-beanutils
     version: 1.9.4
@@ -78,25 +78,22 @@ sbom:
     version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
   - name: error_prone_annotation
-    version: 2.36.0
+    version: 2.42.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.36.0
+    version: 2.42.0
     licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.36.0
+    version: 2.42.0
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.36.0
-    licenses: Apache-2.0
-  - name: error_prone_type_annotations
-    version: 2.36.0
+    version: 2.42.0
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
     licenses: Apache-2.0
   - name: failureaccess
-    version: 1.0.1
+    version: 1.0.2
     licenses: Apache-2.0
   - name: findbugs-annotations
     version: 3.0.1
@@ -105,10 +102,10 @@ sbom:
     version: 3.5.4
     licenses: Apache-2.0
   - name: google-java-format
-    version: 1.19.1
+    version: 1.27.0
     licenses: Apache-2.0
   - name: guava
-    version: 32.1.3-jre
+    version: 33.4.0-jre
     licenses: Apache-2.0
   - name: harlib
     version: 1.1.3
@@ -116,6 +113,9 @@ sbom:
   - name: hsqldb
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
+  - name: j2objc-annotations
+    version: 3.0.0
+    licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
@@ -168,7 +168,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.36
+    version: 1.18.40
     licenses: MIT
   - name: org.jacoco.agent
     version: 0.8.12
