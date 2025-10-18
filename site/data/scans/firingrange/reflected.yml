@@ -29,7 +29,7 @@ details:
   result: Pass
   rule: 40012
 - path: /filteredstrings/body/caseSensitive/script
-  result: Pass
+  result: FAIL
   rule: 40012
 - path: /parameter/attribute_name
   result: Pass
@@ -140,6 +140,6 @@ details:
   result: Pass
   rule: 40012
 tests: 46
-passes: 45
-fails: 1
-score: 98%
+passes: 44
+fails: 2
+score: 96%
