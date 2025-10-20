@@ -33,16 +33,9 @@ To run this command on Windows see the [relevant documentation](/docs/docker/abo
 
 You will need to have Docker installed. If you do not want to use Docker then you can of course install ZAP locally.
 
-The scan should find the following High and Medium risk alerts:
-
-* 🔴 [Cross Site Scripting (Reflected](/docs/alerts/40012/)
-* 🔴 [SQL Injection](/docs/alerts/40018/)
-* 🟠 [Absence of Anti-CSRF Tokens](/docs/alerts/10202/)
-* 🟠 [Missing Anti-clickjacking Header](/docs/alerts/10020/)
-* 🟠 [Content Security Policy (CSP) Header Not Set](/docs/alerts/10038/)
-* 🟠 [Secure Pages Include Mixed Content (Including Scripts)](/docs/alerts/10040/)
-
 It will create an HTML report in your CWD containing full details of all of the issues found.
+
+For further details see [Results](#results] below.
 
 ### Potential Pitfalls
 
@@ -142,3 +135,29 @@ For the [AJAX Spider](/docs/desktop/addons/ajax-spider/) you need to exclude the
 We believe this is a definitive list of the vulnerabilities in Testfire (AltoroJ): https://help.hcl-software.com/appscan/ASoC/ja/PDF/Sample_DAST_Report.pdf
 
 Not too surprisingly you will need to configure the [activeScan](/docs/desktop/addons/automation-framework/job-ascan/) job, and you will probably want to generate a [report](/docs/desktop/addons/report-generation/automation/).
+
+### Results
+
+| Vuln | Disposition |
+|------|-------------|
+| 🔴 [Cross Site Scripting (Reflected)](/docs/alerts/40012/) |  |
+| 　➖ http://testfire.net/bank/customize.jsp | ✅ True Positive |
+| 　➖ http://testfire.net/bank/queryxpath.jsp | ✅ True Positive |
+| 　➖ http://testfire.net/search.jsp | ✅ True Positive |
+| 　➖ http://testfire.net/sendFeedback | ✅ True Positive |
+| 🔴 [SQL Injection](/docs/alerts/40018/) | |
+| 　➖ http://testfire.net/bank/ccApply | ✅ True Positive |
+| 　➖ https://testfire.net/doLogin | ✅ True Positive |
+| 　➖ https://demo.testfire.net/bank/showTransactions | ❌➖ False Negative |
+| 🔴 [External Redirect](/docs/alerts/20019-1/) | |
+| 　➖ http://testfire.net/bank/customize.jsp | ✅ True Positive |
+| 🔴 [PII Disclosure](/docs/alerts/10062) | |
+| 　➖ https://testfire.net/bank/main.jsp | ✅ True Positive |
+| 🟠 [Content Security Policy (CSP) Header Not Set](/docs/alerts/10038/) | ✅ True Positive |
+| 🟠 [Absence of Anti-CSRF Tokens](/docs/alerts/10202/) | ✅ True Positive |
+| 🟠 [Missing Anti-clickjacking Header](/docs/alerts/10020/) | ✅ True Positive |
+| 🟠 [Relative Path Confusion](/docs/alerts/10051/) | ✅ True Positive |
+| 🟠 [Secure Pages Include Mixed Content (Including Scripts)](/docs/alerts/10040/) | ✅ True Positive |
+| 🟠 [Sub Resource Integrity Attribute Missing](/docs/alerts/90003) | ✅ True Positive |
+| 🟠 [Insecure HTTP Method](/docs/alerts/90028/) | ❌➕ False Positive |
+| 🟠 [Source Code Disclosure - SQL](/docs/alerts/10099/) | ❌➕ False Positive |
