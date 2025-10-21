@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 67.0.0
+    version: 68.0.0
 ---
 
 # Passive Scan Rules
@@ -431,16 +431,16 @@ Alert ID: [10028](/docs/alerts/10028/).
 ## PII Disclosure {#id-10062}
 
 PII is information like credit card number, SSN etc. This check currently reports only numbers which match credit card numbers and pass Luhn checksum, which gives high confidence, that this is a credit card number.   
-At MEDIUM and HIGH threshold it attempts to use three characters of context on each side of potential matches to exclude matches within decimal like content. At LOW threshold, alerts will be raised for such matches.
+At MEDIUM and HIGH threshold it attempts to use three characters of context on each side of potential matches to exclude matches within decimal like content or content which includes underscores. At LOW threshold, alerts will be raised for such matches.
 
 
 At MEDIUM and HIGH threshold, the following content types are evaluated:
 
-* HTML
+* HTML (visible text and script blocks)
 * JSON
 * XML
 
-Image and CSS files are always ignored. Every other content type is evaluated at LOW threshold.
+Image and CSS files are always ignored. Every other content type is evaluated at LOW threshold. Additionally at LOW threshold the entire HTML response is evaluated.
 
 
 Note: In the case of suspected credit card values, the potential credit card numbers are looked up against a Bank Identification Number List
