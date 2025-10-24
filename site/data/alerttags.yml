@@ -334,6 +334,9 @@ POLICY_QA_STD:
 POLICY_SEQUENCE:
   link: 
 
+SYSTEMIC:
+  link: https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#systemic
+
 TEST_TIMING:
   link: 
 
