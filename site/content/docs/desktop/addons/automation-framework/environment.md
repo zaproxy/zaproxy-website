@@ -53,7 +53,7 @@ env:                                   # The environment, mandatory
             value:                     # The header value
       sessionManagement:
         method:                        # String, one of 'cookie', 'http', 'script'
-        parameters:                    # List of 0 or more parameters - may include any required for scripts
+        parameters:                    # List of parameters - may include any required for scripts
           script:                      # String, path to script, only for 'script' session management
           scriptEngine:                # String, the name of the script engine to use, only for 'script' session management
       technology:
@@ -74,9 +74,10 @@ env:                                   # The environment, mandatory
             period:                    # Int, the period. Default: 30
             digits:                    # Int, the number of digits. Default: 6
             algorithm:                 # String, the algorithm. Default: SHA1
-  vars:                                # List of 0 or more custom variables to be used throughout the config file
+  vars:                                # List of custom variables to be used throughout the config file
     myVarOne: CustomConfigVarOne       # Can be used as ${myVarOne} anywhere throughout the config
     myVarTwo: ${myVarOne}.VarTwo       # Can refer other vars
+  configs:                             # List of generic config parameters, as per the ZAP "-config" cmd line option
   parameters:
     failOnError: true                  # If set exit on an error
     failOnWarning: false               # If set exit on a warning
@@ -93,6 +94,31 @@ env:                                   # The environment, mandatory
 ### Variables
 
 Variables can be defined in the 'vars' section. They can be hardcoded, refer to other variables or refer to system environment variables in the same way as above, e.g. '${envvar}'. In case there are two variables with the same name, the value of the system variable would be preferred.
+
+### Configs
+
+The 'configs' section can be used to define any value that can be set in the ZAP configuration file, which works in the same way as the ZAP '-config' command line option.
+
+
+The advantages of using this section instead of the command line are:
+
+1. The configuration will be self contained in the plan
+2. The ZAP team will monitor the keys used in this way (when telemetry is enabled) and prioritise adding full support for the most frequently used ones
+3. Warnings will be raised when a key being used has a better solution available
+
+No validation is performed on the keys and values, so you are responsible for checking that your configuration is correct. Invalid keys will be silently ignored.
+
+
+The recommended way to determine the keys is documented in the FAQ:
+[How do you find out what key to use to set a config value on the command line?](/faq/how-do-you-find-out-what-key-to-use-to-set-a-config-value-on-the-command-line/)
+
+
+A working example, which sets the number of passive scan threads, is:
+
+```
+configs:
+  pscans.threads: 8
+```
 
 ### Format Changes
 
