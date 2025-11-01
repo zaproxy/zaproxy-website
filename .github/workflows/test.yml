@@ -12,7 +12,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install -y nginx && sudo systemctl start nginx
       
       - name: Install node.js
-        uses: actions/setup-node@v5
+        uses: actions/setup-node@v6
         with:
           node-version: '24'
       
@@ -30,7 +30,7 @@ jobs:
       - run: google-chrome --headless --disable-gpu --screenshot --window-size=1280,1600 http://localhost
       
       - name: 'Upload screenshot'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: screenshots
           path: ./screenshot.png
