@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.48.0
+    version: 21.49.0
 ---
 
 # Technology Detection
@@ -29,22 +29,26 @@ Right clicking on a technology will display a 'Show evidence' menu under which a
 Selecting a regex will switch to the 'Search' tab and search through the history for that regex. Note: If multiple rows are selected the menu will not be displayed.
 
 
-Beside the site selection drop down is an Export button which can be used to export a CSV (comma separated values) file based on the
+Beside the site selection drop down is a button (with a Globe icon) which controls whether or not the Technology tab's display is linked to the selection in the Sites Tree.
+
+
+Next is an Export button which can be used to export a CSV (comma separated values) file based on the
 table information currently being displayed.
 
 
 The toolbar also includes:
 
 * An enable/disable toggle button which controls whether the technology detection passive scan rule is functioning or not. This enabled state is persisted between ZAP sessions.
+* A button (with a gear icon) which will open the add-on's Options panel when clicked.
 
-    ## Reporting
+## Reporting
 
-    Technology data is available to reports via the [TechJobResultData](https://github.com/zaproxy/zap-extensions/tree/main/addOns/wappalyzer/src/main/java/org/zaproxy/zap/extension/wappalyzer/automation/TechJobResultData.java) class.
+Technology data is available to reports via the [TechJobResultData](https://github.com/zaproxy/zap-extensions/tree/main/addOns/wappalyzer/src/main/java/org/zaproxy/zap/extension/wappalyzer/automation/TechJobResultData.java) class.
 
-    ## External Links
+## External Links
 
-    |   |                                                                   |                                                                                           |
-    |---|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-    |   | [Enthec Webappanalyzer](https://github.com/enthec/webappanalyzer) | This project is a continuation of the iconic Wappalyzer that went private in August 2023. |
-    |   | <https://www.wappalyzer.com/>                                     | The Wappalyzer Homepage                                                                   |
-    |   | https://github.com/wappalyzer/wappalyzer                          | As of early August 2023 the Wappalyzer Repository is no longer public.                    |
+|   |                                                                   |                                                                                           |
+|---|-------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+|   | [Enthec Webappanalyzer](https://github.com/enthec/webappanalyzer) | This project is a continuation of the iconic Wappalyzer that went private in August 2023. |
+|   | <https://www.wappalyzer.com/>                                     | The Wappalyzer Homepage                                                                   |
+|   | https://github.com/wappalyzer/wappalyzer                          | As of early August 2023 the Wappalyzer Repository is no longer public.                    |

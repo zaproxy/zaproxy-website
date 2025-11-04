@@ -17,9 +17,9 @@
   status: release
   infoUrl: /docs/desktop/addons/alert-filters/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v24/alertFilters-release-24.zap
-  date: 2025-06-20
-  version: 24
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v25/alertFilters-release-25.zap
+  date: 2025-11-04
+  version: 25
 - id: allinonenotes
   name: All In One Notes
   description: A simple extension to view all notes in one pane.
@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v74/ascanrules-release-74.zap
-  date: 2025-09-18
-  version: 74
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v75/ascanrules-release-75.zap
+  date: 2025-11-04
+  version: 75
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -47,9 +47,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/active-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v52/ascanrulesAlpha-alpha-52.zap
-  date: 2025-10-07
-  version: 52
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v53/ascanrulesAlpha-alpha-53.zap
+  date: 2025-11-04
+  version: 53
 - id: ascanrulesBeta
   name: Active scanner rules (beta)
   description: The beta status Active Scanner rules
@@ -57,9 +57,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/active-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v62/ascanrulesBeta-beta-62.zap
-  date: 2025-09-18
-  version: 62
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesBeta-v63/ascanrulesBeta-beta-63.zap
+  date: 2025-11-04
+  version: 63
 - id: attacksurfacedetector
   name: Attack Surface Detector
   description: The Attack Surface Detector analyzes web application source code to
@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.29.0/authhelper-beta-0.29.0.zap
-  date: 2025-09-18
-  version: 0.29.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.30.0/authhelper-beta-0.30.0.zap
+  date: 2025-11-04
+  version: 0.30.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -159,9 +159,9 @@
   status: release
   infoUrl: /docs/desktop/addons/call-home/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.16.0/callhome-release-0.16.0.zap
-  date: 2025-10-22
-  version: 0.16.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.17.0/callhome-release-0.17.0.zap
+  date: 2025-11-04
+  version: 0.17.0
 - id: client
   name: Client Side Integration
   description: Exposes client (browser) side information in ZAP using Firefox and
@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.17.0/client-alpha-0.17.0.zap
-  date: 2025-09-02
-  version: 0.17.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.18.0/client-alpha-0.18.0.zap
+  date: 2025-11-04
+  version: 0.18.0
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
@@ -398,9 +398,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graalvm-javascript/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.10.0/graaljs-alpha-0.10.0.zap
-  date: 2025-10-07
-  version: 0.10.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.11.0/graaljs-alpha-0.11.0.zap
+  date: 2025-11-04
+  version: 0.11.0
 - id: graphql
   name: GraphQL Support
   description: Inspect and attack GraphQL endpoints.
@@ -699,9 +699,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.22.0/oast-beta-0.22.0.zap
-  date: 2025-06-20
-  version: 0.22.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.23.0/oast-beta-0.23.0.zap
+  date: 2025-11-04
+  version: 0.23.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
@@ -721,9 +721,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v46/openapi-beta-46.zap
-  date: 2025-09-10
-  version: 46
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v47/openapi-beta-47.zap
+  date: 2025-11-04
+  version: 47
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -793,9 +793,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v68/pscanrules-release-68.zap
-  date: 2025-10-21
-  version: 68
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v69/pscanrules-release-69.zap
+  date: 2025-11-04
+  version: 69
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -803,9 +803,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/passive-scan-rules-alpha/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v46/pscanrulesAlpha-alpha-46.zap
-  date: 2025-09-18
-  version: 46
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v47/pscanrulesAlpha-alpha-47.zap
+  date: 2025-11-04
+  version: 47
 - id: pscanrulesBeta
   name: Passive scanner rules (beta)
   description: The beta status Passive Scanner rules
@@ -813,9 +813,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v46/pscanrulesBeta-beta-46.zap
-  date: 2025-09-18
-  version: 46
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v47/pscanrulesBeta-beta-47.zap
+  date: 2025-11-04
+  version: 47
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
@@ -893,9 +893,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.49.0/retire-release-0.49.0.zap
-  date: 2025-09-18
-  version: 0.49.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.50.0/retire-release-0.50.0.zap
+  date: 2025-11-04
+  version: 0.50.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -933,9 +933,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/scan-policies/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.5.0/scanpolicies-alpha-0.5.0.zap
-  date: 2025-09-18
-  version: 0.5.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.6.0/scanpolicies-alpha-0.6.0.zap
+  date: 2025-11-04
+  version: 0.6.0
 - id: scripts
   name: Script Console
   description: Supports all JSR 223 scripting languages
@@ -943,9 +943,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.14.0/scripts-release-45.14.0.zap
-  date: 2025-10-07
-  version: 45.14.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.15.0/scripts-release-45.15.0.zap
+  date: 2025-11-04
+  version: 45.15.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -983,9 +983,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.16.0/spider-release-0.16.0.zap
-  date: 2025-09-02
-  version: 0.16.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.17.0/spider-release-0.17.0.zap
+  date: 2025-11-04
+  version: 0.17.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
@@ -994,9 +994,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.26.0/spiderAjax-release-23.26.0.zap
-  date: 2025-09-02
-  version: 23.26.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.27.0/spiderAjax-release-23.27.0.zap
+  date: 2025-11-04
+  version: 23.27.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
@@ -1086,9 +1086,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.48.0/wappalyzer-release-21.48.0.zap
-  date: 2025-09-02
-  version: 21.48.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.49.0/wappalyzer-release-21.49.0.zap
+  date: 2025-11-04
+  version: 21.49.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
@@ -1126,9 +1126,9 @@
   status: release
   infoUrl: /docs/desktop/addons/websockets/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v33/websocket-release-33.zap
-  date: 2025-06-20
-  version: 33
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v34/websocket-release-34.zap
+  date: 2025-11-04
+  version: 34
 - id: zest
   name: Zest - Graphical Security Scripting Language
   description: A graphical security scripting language, ZAPs macro language on steroids

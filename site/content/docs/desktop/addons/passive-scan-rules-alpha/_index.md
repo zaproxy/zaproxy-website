@@ -6,20 +6,12 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: 46.0.0
+    version: 47.0.0
 ---
 
 # Passive Scan Rules - Alpha
 
 The following alpha status passive scan rules are included in this add-on:
-
-## An example passive scan rule which loads data from a file
-
-This implements an example passive scan rule that loads strings from a file that the user can edit.  
-For more details see: [Hacking ZAP Part 3: Passive Scan Rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/).
-
-
-Latest code: [ExampleFilePassiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanRule.java)
 
 ## Base64 Disclosure {#id-10094}
 
@@ -33,14 +25,6 @@ Latest code: [ExampleFilePassiveScanRule.java](https://github.com/zaproxy/zap-ex
 Latest code: [Base64Disclosure.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/Base64Disclosure.java)  
 
 Alert ID: [10094](/docs/alerts/10094/).
-
-## Example Passive Scan Rule: Denial of Service
-
-This implements a very simple example passive scan rule.  
-For more details see: [Hacking ZAP Part 3: Passive Scan Rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/).
-
-
-Latest code: [ExampleSimplePassiveScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanRule.java)
 
 ## Fetch Metadata Request Headers Scan Rule {#id-90005}
 

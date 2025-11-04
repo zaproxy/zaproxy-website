@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: oast
-    version: 0.22.0
+    version: 0.23.0
 ---
 
 # Out-of-band Application Security Testing Support
@@ -24,6 +24,10 @@ A context menu, "Insert OAST Payload", is available in editable text components 
 ## Scripts
 
 If the *Script Console* and the *GraalVM JavaScript* add-ons are installed, a new Extender script template called "OAST Request Handler.js" is added to ZAP. Using this template, you can create a script that performs an action whenever an out-of-band request is discovered. This action could be anything like sending yourself an email or executing another script in ZAP.
+
+## Alerts
+
+Scan rules which leverage OAST may result in alerts which are not immediately seen, or are not attributed to a specific active scan, since they happen out of band and potentially at a later time.
 
 ## See also
 

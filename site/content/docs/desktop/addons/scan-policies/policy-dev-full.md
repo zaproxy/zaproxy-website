@@ -19,4 +19,7 @@ A developer focused policy, including a superset of the [dev standard](/docs/des
 For the list of scan rules included see the [Alert Tag: POLICY_DEV_FULL](/alerttags/policy_dev_full/) page.
 
 
+Programmatic Name: `Dev Full`
+
+
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

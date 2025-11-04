@@ -18,7 +18,7 @@ The API is accessible via `clientSpider` API prefix.
 
 ## Actions
 
-* `scan (browser url contextName userName subtreeOnly maxCrawlDepth pageLoadTime)`: Runs the Client Spider against the given URL and/or context. Returns the scanId.
+* `scan (browser url contextName userName subtreeOnly maxCrawlDepth pageLoadTime numberOfBrowsers scopeCheck)`: Runs the Client Spider against the given URL and/or context. Returns the scanId.
 * `stop (scanId*)`: Stops a Client Spider scan.
 
 ## Parameters
@@ -30,6 +30,8 @@ The API is accessible via `clientSpider` API prefix.
 * `subtreeOnly`: If set to 'true', the spider will only scan URLs under the specified URL. Default: 'false'.
 * `maxCrawlDepth`: The maximum depth the spider should crawl, where 0 is unlimited. Defaults to client options.
 * `pageLoadTime`: The time in seconds to wait for a page to load. Defaults to client options.
+* `numberOfBrowsers`: Number of Browser Windows to Open (concurrency). Integer, defaults to client options.
+* `scopeCheck`: Scope Check mode, either `FLEXIBLE` (default) or `STRICT`.
 * `scanId`: The ID of the scan to query or manage.
 
 ## Examples
@@ -37,7 +39,7 @@ The API is accessible via `clientSpider` API prefix.
 ### Start a scan:
 
 
-    https://zap/JSON/clientSpider/action/scan/?url=https://example.com&maxCrawlDepth=5&pageLoadTime=30
+    https://zap/JSON/clientSpider/action/scan/?url=https://example.com&maxCrawlDepth=5&pageLoadTime=30&numberOfBrowsers=1&scopeCheck=STRICT
 
 ### Check status:
 

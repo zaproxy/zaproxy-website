@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: '46'
+    version: '47'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v46/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v47/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -33,7 +33,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.53.0
+    version: 0.55.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.77'
@@ -48,7 +48,7 @@ sbom:
     version: '1.77'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 6.4.1
+    version: 7.1.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -57,10 +57,10 @@ sbom:
     version: '1.3'
     licenses: LGPL-3.0-or-later, Apache-2.0
   - name: byte-buddy
-    version: 1.14.9
+    version: 1.17.7
     licenses: Apache-2.0
   - name: byte-buddy-agent
-    version: 1.14.9
+    version: 1.17.7
     licenses: Apache-2.0
   - name: caffeine
     version: 3.0.5
@@ -68,8 +68,11 @@ sbom:
   - name: checker-qual
     version: 3.37.0
     licenses: MIT
+  - name: checker-qual
+    version: 3.43.0
+    licenses: MIT
   - name: commonlib
-    version: 1.36.0
+    version: 1.39.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -80,38 +83,41 @@ sbom:
   - name: commons-codec
     version: 1.17.1
     licenses: Apache-2.0
+  - name: commons-codec
+    version: 1.19.0
+    licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
     licenses: Apache-2.0
   - name: commons-collections4
-    version: '4.4'
+    version: 4.5.0
     licenses: Apache-2.0
   - name: commons-configuration
     version: '1.10'
     licenses: Apache-2.0
   - name: commons-csv
-    version: 1.10.0
+    version: 1.12.0
     licenses: Apache-2.0
   - name: commons-csv
-    version: 1.12.0
+    version: 1.14.1
     licenses: Apache-2.0
   - name: commons-httpclient
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.16.1
-    licenses: Apache-2.0
-  - name: commons-io
-    version: 2.17.0
-    licenses: Apache-2.0
-  - name: commons-io
     version: 2.18.0
+    licenses: Apache-2.0
+  - name: commons-io
+    version: 2.20.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
     licenses: Apache-2.0
   - name: commons-lang3
     version: 3.17.0
+    licenses: Apache-2.0
+  - name: commons-lang3
+    version: 3.18.0
     licenses: Apache-2.0
   - name: commons-logging
     version: '1.2'
@@ -129,43 +135,43 @@ sbom:
     version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
   - name: datanucleus-accessplatform-jdo-rdbms
-    version: 6.0.7
+    version: 6.0.10
     licenses: Apache-2.0
   - name: datanucleus-api-jdo
-    version: 6.0.2
+    version: 6.0.5
     licenses: Apache-2.0
   - name: datanucleus-core
-    version: 6.0.7
+    version: 6.0.11
     licenses: Apache-2.0
   - name: datanucleus-jdo-query
     version: 6.0.1
     licenses: Apache-2.0
   - name: datanucleus-rdbms
-    version: 6.0.7
+    version: 6.0.10
     licenses: Apache-2.0
   - name: error_prone_annotation
-    version: 2.36.0
+    version: 2.42.0
     licenses: Apache-2.0
   - name: error_prone_annotations
     version: 2.21.1
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.36.0
+    version: 2.42.0
     licenses: Apache-2.0
   - name: error_prone_check_api
-    version: 2.36.0
+    version: 2.42.0
     licenses: Apache-2.0
   - name: error_prone_core
-    version: 2.36.0
-    licenses: Apache-2.0
-  - name: error_prone_type_annotations
-    version: 2.36.0
+    version: 2.42.0
     licenses: Apache-2.0
   - name: ezmorph
     version: 1.0.6
     licenses: Apache-2.0
   - name: failureaccess
     version: 1.0.1
+    licenses: Apache-2.0
+  - name: failureaccess
+    version: 1.0.2
     licenses: Apache-2.0
   - name: findbugs-annotations
     version: 3.0.1
@@ -174,31 +180,31 @@ sbom:
     version: 3.5.4
     licenses: Apache-2.0
   - name: flyway-core
-    version: 9.22.3
+    version: 11.15.0
+    licenses: Apache-2.0
+  - name: flyway-database-hsqldb
+    version: 11.15.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
     licenses: BSD-3-Clause
   - name: google-java-format
-    version: 1.19.1
-    licenses: Apache-2.0
-  - name: gson
-    version: 2.10.1
+    version: 1.27.0
     licenses: Apache-2.0
   - name: guava
     version: 32.1.3-android
     licenses: Apache-2.0
   - name: guava
-    version: 32.1.3-jre
+    version: 33.4.0-jre
     licenses: Apache-2.0
   - name: hamcrest
-    version: '2.2'
+    version: '3.0'
     licenses: BSD-3-Clause
   - name: hamcrest-core
-    version: '2.2'
+    version: '3.0'
     licenses: BSD-3-Clause
   - name: hamcrest-library
-    version: '2.2'
+    version: '3.0'
     licenses: BSD-3-Clause
   - name: harlib
     version: 1.1.3
@@ -227,14 +233,17 @@ sbom:
   - name: j2objc-annotations
     version: '2.8'
     licenses: Apache-2.0
+  - name: j2objc-annotations
+    version: 3.0.0
+    licenses: Apache-2.0
   - name: jackson-annotations
-    version: 2.19.1
+    version: '2.20'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.19.1
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.19.1
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
@@ -246,22 +255,19 @@ sbom:
     version: '1.0'
     licenses: LGPL-3.0-or-later, Apache-2.0
   - name: jackson-databind
-    version: 2.19.1
-    licenses: Apache-2.0
-  - name: jackson-dataformat-toml
-    version: 2.19.1
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.19.1
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.19.1
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.19.1
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.19.1
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jakarta.activation-api
     version: 1.2.2
@@ -327,31 +333,31 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 5.10.1
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 5.10.1
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 5.10.1
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 5.10.1
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 5.10.1
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 1.10.1
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 1.10.1
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 1.10.1
+    version: 6.0.1
     licenses: EPL-2.0
   - name: kaitai-struct-runtime
-    version: '0.10'
+    version: '0.11'
     licenses: MIT
   - name: libphonenumber
     version: 8.11.1
@@ -378,16 +384,16 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.36
+    version: 1.18.40
     licenses: MIT
   - name: mailapi
     version: 1.6.2
     licenses: ''
   - name: mockito-core
-    version: 5.7.0
+    version: 5.20.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.7.0
+    version: 5.20.0
     licenses: MIT
   - name: msg-simple
     version: '1.2'
@@ -486,9 +492,6 @@ sbom:
     version: 2.0.16
     licenses: MIT
   - name: snakeyaml
-    version: '2.3'
-    licenses: Apache-2.0
-  - name: snakeyaml
     version: '2.4'
     licenses: Apache-2.0
   - name: software-and-algorithms
@@ -498,52 +501,52 @@ sbom:
     version: 0.17.0
     licenses: ''
   - name: sqlite-jdbc
-    version: 3.45.3.0
+    version: 3.50.3.0
     licenses: Apache-2.0
   - name: stax2-api
     version: 4.2.2
     licenses: BSD-2-Clause
   - name: swagger-annotations
-    version: 1.6.14
+    version: 1.6.16
     licenses: Apache-2.0
   - name: swagger-annotations
-    version: 2.2.25
+    version: 2.2.37
     licenses: Apache-2.0
   - name: swagger-compat-spec-parser
-    version: 1.0.71
+    version: 1.0.75
     licenses: Apache-2.0
   - name: swagger-core
-    version: 1.6.14
+    version: 1.6.16
     licenses: Apache-2.0
   - name: swagger-core
-    version: 2.2.25
+    version: 2.2.37
     licenses: Apache-2.0
   - name: swagger-models
-    version: 1.6.14
+    version: 1.6.16
     licenses: Apache-2.0
   - name: swagger-models
-    version: 2.2.25
+    version: 2.2.37
     licenses: Apache-2.0
   - name: swagger-parser
-    version: 1.0.71
+    version: 1.0.75
     licenses: Apache-2.0
   - name: swagger-parser
-    version: 2.1.23
+    version: 2.1.35
     licenses: Apache-2.0
   - name: swagger-parser-core
-    version: 2.1.23
+    version: 2.1.35
     licenses: Apache-2.0
   - name: swagger-parser-safe-url-resolver
-    version: 1.0.71
+    version: 1.0.75
     licenses: Apache-2.0
   - name: swagger-parser-safe-url-resolver
-    version: 2.1.23
+    version: 2.1.35
     licenses: Apache-2.0
   - name: swagger-parser-v2-converter
-    version: 2.1.23
+    version: 2.1.35
     licenses: Apache-2.0
   - name: swagger-parser-v3
-    version: 2.1.23
+    version: 2.1.35
     licenses: Apache-2.0
   - name: swingx-all
     version: 1.6.5-1
