@@ -351,14 +351,14 @@
   version: 13.16.0
 - id: fuzzai
   name: FuzzAI Files
-  description: FuzzAI files which can be used with the ZAP fuzzer
-  author: ZAP Dev Team
-  status: release
+  description: FuzzAI files which can be used with the ZAP fuzzer!!!
+  author: Marios Gyftos & Yiannis Pavlosoglou
+  status: alpha
   infoUrl: /docs/desktop/addons/fuzzai-files/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzzai-v0.0.1/fuzzai-release-0.0.1.zap
-  date: 2024-09-24
-  version: 0.0.1
+  repoUrl: https://github.com/CyberRiskEngineering/zap-fuzzai-addon
+  downloadUrl: https://github.com/zaproxy-addons/fuzzai/releases/download/v0.0.2/fuzzai-alpha-0.0.2.zap
+  date: 2025-11-04
+  version: 0.0.2
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer
