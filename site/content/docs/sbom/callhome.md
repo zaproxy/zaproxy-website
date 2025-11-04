@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: callhome
-    version: 0.16.0
+    version: 0.17.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.16.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.17.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -198,28 +198,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava

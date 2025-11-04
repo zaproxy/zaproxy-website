@@ -10,4 +10,7 @@ weight: 2
 A policy which enables all of the installed active scan rules.
 
 
+Programmatic Name: `Default Policy`
+
+
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

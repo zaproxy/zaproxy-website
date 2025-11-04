@@ -16,4 +16,7 @@ A quality assurance focused policy, including a superset of the [QA standard](/d
 For the list of scan rules included see the [Alert Tag: POLICY_QA_FULL](/alerttags/policy_qa_full/) page.
 
 
+Programmatic Name: `QA Full`
+
+
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

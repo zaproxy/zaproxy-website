@@ -53,10 +53,10 @@ This job supports monitor tests.
     tests:
       - name: 'At least 100 URLs found'      # String: Name of the test, default: statistic + operator + value
         type: 'stats'                        # String: Type of test, only 'stats' is supported for now
-        statistic: 'spiderAjax.urls.added'   # String: Name of an integer / long statistic, currently supported: 'spiderAjax.urls.added'
+        statistic: 'stats.spiderAjax.urls.added'   # String: Name of an integer / long statistic, currently supported: 'stats.spiderAjax.urls.added'
         operator: '>='                       # String ['==', '!=', '>=', '>', '<', '<=']: Operator used for testing
         value: 100                           # Int: Change this to the number of URLs you expect to find
         onFail: 'info'                       # String [warn, error, info]: Change this to 'warn' or 'error' for the test to take effect
 ```
 
-If the 'runOnlyIfModern' is set to 'True' then the [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) job MUST be run before this one (as well as after it) and the [Modern Web Application](/docs/alerts/10109/) rule installed and enabled. If either of those things are not done then the ajax spider will always run and a warning output. If they are both done and no "Modern Web Application" alert is raised then the assumption is made that this is a tradition app and therefore the ajax spider is not needed.
+If the 'runOnlyIfModern' is set to 'True' then the [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) job MUST be run before this one (as well as after it) and the [Modern Web Application](/docs/alerts/10109/) rule installed and enabled. If either of those things are not done then the ajax spider will always run and a warning output. If they are both done and no "Modern Web Application" alert is raised then the assumption is made that this is a tradition app and therefore the ajax spider is not needed. Previously the statistic "spiderAjax.urls.started" was specified. This is no longer recommended and will be removed at some point in the future.

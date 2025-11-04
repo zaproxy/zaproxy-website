@@ -17,4 +17,7 @@ A quality assurance focused policy meant to perform fairly quickly while providi
 For the list of scan rules included see the [Alert Tag: POLICY_QA_STD](/alerttags/policy_qa_std/) page.
 
 
+Programmatic Name: `QA Standard`
+
+
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

@@ -21,4 +21,7 @@ This policy is designed to be used by developers in a CI/CD pipeline.
 For the list of scan rules included see the [Alert Tag: POLICY_DEV_CICD](/alerttags/policy_dev_cicd/) page.
 
 
+Programmatic Name: `Dev CICD`
+
+
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

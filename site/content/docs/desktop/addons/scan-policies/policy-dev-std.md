@@ -21,4 +21,7 @@ A developer focused policy meant to perform fairly quickly while providing a gre
 For the list of scan rules included see the [Alert Tag: POLICY_DEV_STD](/alerttags/policy_dev_std/) page.
 
 
+Programmatic Name: `Dev Standard`
+
+
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

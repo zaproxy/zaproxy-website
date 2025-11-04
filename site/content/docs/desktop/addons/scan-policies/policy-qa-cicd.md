@@ -22,4 +22,7 @@ A quality assurance focused policy meant to perform fairly quickly while providi
 For the list of scan rules included see the [Alert Tag: POLICY_QA_CICD](/alerttags/policy_qa_cicd/) page.
 
 
+Programmatic Name: `QA CICD`
+
+
 Return to [main scan policies page](/docs/desktop/addons/scan-policies/).

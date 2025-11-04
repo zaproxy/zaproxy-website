@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: '68'
+    version: '69'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v68/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v69/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -63,7 +63,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.38.0
+    version: 1.39.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -165,7 +165,7 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit-csp
-    version: 4.17.0
+    version: 4.18.0
     licenses: Apache-2.0
   - name: httpclient5
     version: 5.2.1
@@ -186,28 +186,28 @@ sbom:
     version: '2.20'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -243,28 +243,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
