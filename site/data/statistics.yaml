@@ -723,6 +723,48 @@
 #   code: main/addOns/llm/src/main/java/org/zaproxy/addon/llm/services/LlmCommunicationService.java
 #   desc: The number of HTTP requests imported
 
+- key: stats.log.error
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/callhome/src/main/java/org/zaproxy/addon/callhome/ExtensionCallHome.java
+  desc: The number of logged errors
+
+- key: stats.log.error.<logger-name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/callhome/src/main/java/org/zaproxy/addon/callhome/ExtensionCallHome.java
+  desc: The number of logged errors for the specific logger
+
+- key: stats.log.fatal
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/callhome/src/main/java/org/zaproxy/addon/callhome/ExtensionCallHome.java
+  desc: The number of logged fatals
+
+- key: stats.log.fatal.<logger-name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/callhome/src/main/java/org/zaproxy/addon/callhome/ExtensionCallHome.java
+  desc: The number of logged fatals for the specific logger
+
+- key: stats.log.warn
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/callhome/src/main/java/org/zaproxy/addon/callhome/ExtensionCallHome.java
+  desc: The number of logged warns
+
+- key: stats.log.warn.<logger-name>
+  scope: global
+  type: counter
+  repo: zaproxy/zap-extensions
+  code: main/addOns/callhome/src/main/java/org/zaproxy/addon/callhome/ExtensionCallHome.java
+  desc: The number of logged warns for the specific logger
+
 - key: stats.quickstart.news.<news-id>
   scope: global
   type: counter
