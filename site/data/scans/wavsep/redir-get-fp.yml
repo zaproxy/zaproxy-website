@@ -14,8 +14,8 @@ details:
   result: Pass
   rule: null
 - path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case05-Redirect-FalsePositive-InactiveJavascriptRedirect-FilenameContext-InputValidation-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp
-  result: FAIL
-  rule: 20019
+  result: Pass
+  rule: null
 - path: http://127.0.0.1:8080/wavsep/active/Unvalidated-Redirect/Redirect-FalsePositives-GET/Case06-Redirect-FalsePositive-RFI-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   result: Pass
   rule: null
@@ -29,6 +29,6 @@ details:
   result: Pass
   rule: null
 tests: 9
-passes: 8
-fails: 1
-score: 89%
+passes: 9
+fails: 0
+score: 100%
