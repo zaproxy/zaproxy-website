@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.30.0
+    version: 0.31.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.30.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.31.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -129,7 +129,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: client
-    version: 0.18.0
+    version: 0.19.0
     licenses: ''
   - name: commonlib
     version: 1.39.0
@@ -649,7 +649,7 @@ sbom:
     version: 3.5.3
     licenses: BSD-3-Clause
   - name: scripts
-    version: 45.15.0
+    version: 45.16.0
     licenses: ''
   - name: selenium
     version: 15.42.0
@@ -730,7 +730,7 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: spiderAjax
-    version: 23.27.0
+    version: 23.28.0
     licenses: ''
   - name: sqlite-jdbc
     version: 3.50.3.0
