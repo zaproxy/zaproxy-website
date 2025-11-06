@@ -28,7 +28,7 @@ Payloads simulate scenarios where model training data security may be compromise
 Expected system behavior is detailed for each scenario.
 
 
-Fuzzing File: [001-architecture.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/001-architecture.txt)
+Fuzzing File: [001-architecture.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/001-architecture.txt)
 
 
 Author:
@@ -50,7 +50,7 @@ Training specifics - Queries related to batch size, epochs, gradient clipping, a
 Training techniques - Attempts to infer whether early stopping, data augmentation, or mixed-precision training were used.
 
 
-Fuzzing File: [002-hyperparams.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/002-hyperparams.txt)
+Fuzzing File: [002-hyperparams.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/002-hyperparams.txt)
 
 
 Author:
@@ -74,7 +74,7 @@ Social media data - Payloads focus on revealing memorized handles, conversations
 or other user-generated content.
 
 
-Fuzzing File: [003-prompt-based-extraction.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/003-prompt-based-extraction.txt)
+Fuzzing File: [003-prompt-based-extraction.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/003-prompt-based-extraction.txt)
 
 
 Author:
@@ -97,7 +97,7 @@ Sensitive information prevention - The payloads test if the model can provide hi
 responses without revealing memorized or proprietary data.
 
 
-Fuzzing File: [004-conditional-prompts.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/004-conditional-prompts.txt)
+Fuzzing File: [004-conditional-prompts.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/004-conditional-prompts.txt)
 
 
 Author:
@@ -117,7 +117,7 @@ Exploiting misclassifications - Prompts target incorrect classifications and vul
 Adversarial text generation - Some payloads are aimed at crafting text that could be used to deceive systems like chatbots, spam filters, or medical models.
 
 
-Fuzzing File: [005-adversarial-ml.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/005-adversarial-ml.txt)
+Fuzzing File: [005-adversarial-ml.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/005-adversarial-ml.txt)
 
 
 Author:
@@ -141,7 +141,7 @@ Energy efficiency and performance - Queries also focus on proprietary methods th
 energy consumption in large models.
 
 
-Fuzzing File: [006-ip-theft.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/006-ip-theft.txt)
+Fuzzing File: [006-ip-theft.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/006-ip-theft.txt)
 
 
 Author:
@@ -161,7 +161,7 @@ Training process details - Probes target information related to the data annotat
 Security and infrastructure - Payloads focus on extracting information about hardware infrastructure, funding, and data privacy handling during training.
 
 
-Fuzzing File: [007-data-privacy.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/007-data-privacy.txt)
+Fuzzing File: [007-data-privacy.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/007-data-privacy.txt)
 
 
 Author:
@@ -190,7 +190,7 @@ Convergence and training dynamics - Several payloads probe for insights into lea
 hyperparameter tuning through visual patterns in plots.
 
 
-Fuzzing File: [008-visual-representation-leakage.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/008-visual-representation-leakage.txt)
+Fuzzing File: [008-visual-representation-leakage.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/008-visual-representation-leakage.txt)
 
 
 Author:
@@ -210,7 +210,7 @@ Data privacy violations - The payloads aim to assess whether the model can inadv
 Protected healthcare and legal data - Prompts target sensitive health records, legal contracts, and proprietary business strategies.
 
 
-Fuzzing File: [009-privacy-violations.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/009-privacy-violations.txt)
+Fuzzing File: [009-privacy-violations.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-model-information/009-privacy-violations.txt)
 
 
 Author:
