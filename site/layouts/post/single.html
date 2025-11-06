@@ -45,12 +45,12 @@
                 </div>
                 <div class="author-name col-4-5">
                   {{ if $author.name }}
-                    {{ $author.name }}
+                    <a href="/authors/{{ $name }}/">{{ $author.name }}</a>
                   {{ else }}
                     {{ $name }}
                   {{ end }}
                   {{ if $author.twitter }}
-                  <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">@{{ $author.twitter }}</a>
+                  (<a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">@{{ $author.twitter }}</a>)
                   {{ end }}
                 </div>
               </section>
