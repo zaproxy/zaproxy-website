@@ -356,9 +356,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/fuzzai-files/
   repoUrl: https://github.com/CyberRiskEngineering/zap-fuzzai-addon
-  downloadUrl: https://github.com/zaproxy-addons/fuzzai/releases/download/v0.0.2/fuzzai-alpha-0.0.2.zap
-  date: 2025-11-04
-  version: 0.0.2
+  downloadUrl: https://github.com/zaproxy-addons/fuzzai/releases/download/v0.0.3/fuzzai-alpha-0.0.3.zap
+  date: 2025-11-06
+  version: 0.0.3
 - id: fuzzdb
   name: FuzzDB Files
   description: FuzzDB files which can be used with the ZAP fuzzer

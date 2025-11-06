@@ -16,7 +16,7 @@ Payloads simulate scenarios where model training data security may be compromise
 Expected system behavior is detailed for each scenario.
 
 
-Fuzzing File: [001-by-asking.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/001-by-asking.txt)
+Fuzzing File: [001-by-asking.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/001-by-asking.txt)
 
 
 Author:
@@ -36,7 +36,7 @@ References:
 
 * [Scalable Extraction of Training Data from (Production) Language Models](https://arxiv.org/pdf/2311.17035.pdf)
 
-Fuzzing File: [002-through-hypnosis.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/002-through-hypnosis.txt)
+Fuzzing File: [002-through-hypnosis.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/002-through-hypnosis.txt)
 
 
 Author:
@@ -66,7 +66,7 @@ References
 
 * [Scalable Extraction of Training Data from (Production) Language Models](https://arxiv.org/pdf/2311.17035.pdf)
 
-Fuzzing File: [003-divergence-attack.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/003-divergence-attack.txt)
+Fuzzing File: [003-divergence-attack.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/003-divergence-attack.txt)
 
 
 Author:
@@ -91,7 +91,7 @@ References
 
 * [Special Characters Attack: Toward Scalable Training Data Extraction from LLMs](https://arxiv.org/pdf/2405.05990.pdf)
 
-Fuzzing File: [004-SCA.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/004-SCA.txt)
+Fuzzing File: [004-SCA.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/004-SCA.txt)
 
 
 Author:
@@ -111,7 +111,7 @@ References:
 
 * [The Secret Sharer: Evaluating and Testing Unintended Memorization in Neural Networks](https://arxiv.org/pdf/1802.08232v3.pdf)
 
-Fuzzing File: [005-the-secret-sharer.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/005-the-secret-sharer.txt)
+Fuzzing File: [005-the-secret-sharer.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/005-the-secret-sharer.txt)
 
 
 Author:
@@ -130,7 +130,7 @@ References:
 
 * [Quantifying Memorization Across Neural Language Models](https://arxiv.org/pdf/2202.07646v3.pdf)
 
-Fuzzing File: [006-quantifying-memorization.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/006-quantifying-memorization.txt)
+Fuzzing File: [006-quantifying-memorization.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/006-quantifying-memorization.txt)
 
 
 Author:
@@ -156,7 +156,7 @@ References:
 
 * [Auditing Differentially Private Machine Learning: How Private is Private SGD?](https://arxiv.org/pdf/2006.07709v1.pdf)
 
-Fuzzing File: [007-data-poisoning-attacks.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/007-data-poisoning-attacks.txt)
+Fuzzing File: [007-data-poisoning-attacks.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/007-data-poisoning-attacks.txt)
 
 
 Author:
@@ -175,7 +175,7 @@ References:
 
 * [Auditing Differentially Private Machine Learning: How Private is Private SGD?](https://arxiv.org/pdf/2006.07709v1.pdf)
 
-Fuzzing File: [008-membership-inference.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/008-membership-inference.txt)
+Fuzzing File: [008-membership-inference.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/008-membership-inference.txt)
 
 
 Author:
@@ -194,7 +194,7 @@ References:
 
 * [Auditing Differentially Private Machine Learning: How Private is Private SGD?](https://arxiv.org/pdf/2006.07709v1.pdf)
 
-Fuzzing File: [009-gradient-clipping.txt](https://github.com/zaproxy/zap-extensions/blob/main/addOns/fuzzai/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/009-gradient-clipping.txt)
+Fuzzing File: [009-gradient-clipping.txt](https://github.com/CyberRiskEngineering/zap-fuzzai-addon/tree/main/src/main/zapHomeFiles/fuzzers/fuzzai/AI/extract-training-data/009-gradient-clipping.txt)
 
 
 Author:

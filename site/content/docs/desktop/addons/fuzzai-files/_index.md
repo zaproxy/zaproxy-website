@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: fuzzai
-    version: 0.0.2
+    version: 0.0.3
 ---
 
 # Fuzz AI Files
