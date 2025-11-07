@@ -161,3 +161,73 @@ Not too surprisingly you will need to configure the [activeScan](/docs/desktop/a
 | 🟠 [Sub Resource Integrity Attribute Missing](/docs/alerts/90003) | ✅ True Positive |
 | 🟠 [Insecure HTTP Method](/docs/alerts/90028/) | ❌➕ False Positive |
 | 🟠 [Source Code Disclosure - SQL](/docs/alerts/10099/) | ❌➕ False Positive |
+
+### API Scanning
+
+Authentication is a bit different for the API.
+
+You need to make a `POST` request to the `/api/login` with the credentials in JSON format: `{"username":"jsmith","password":"demo1234"}`. Which responds with a an Authorization token which then needs to be sent via the `Authorization` header on requests to other parts of the API. Session/token validity can be verified by making a `GET` request to `/api/login` then checking the response code (200 OK vs 401 Unauthorized).
+
+#### Recommended Environment
+
+```yaml
+env:
+  contexts:
+  - name: testfire_api
+    urls:
+    - https://demo.testfire.net
+    includePaths:
+    - https://demo.testfire.net.*
+    excludePaths:
+    - https://demo.testfire.net/api/logout
+    authentication:
+      method: json
+      parameters:
+        loginRequestBody: "{\"username\":\"{%username%}\",\"password\":\"{%password%}\"\
+          }"
+        loginPageUrl: ""
+        loginRequestUrl: https://demo.testfire.net/api/login
+      verification:
+        method: poll
+        loggedInRegex: 200 OK
+        loggedOutRegex: 401 Unauthorized
+        pollFrequency: 60
+        pollUnits: seconds
+        pollUrl: https://demo.testfire.net/api/login
+        pollPostData: ""
+    sessionManagement:
+      method: headers
+      parameters:
+        Authorization: "{%json:Authorization%}"
+    technology: {}
+    structure: {}
+    users:
+    - name: jsmith
+      credentials:
+        password: demo1234
+        username: jsmith
+  parameters: {}
+  ```
+  
+#### OpenAPI Import
+
+You can then use an OpenAPI Import job to explore the API prior to active scanning.
+
+> [!NOTE]
+> The traffic will be passively scanned during import.
+
+```yaml
+- type: openapi
+  parameters:
+    apiUrl: https://demo.testfire.net/swagger/properties.json
+    context: testfire_api
+    user: jsmith
+```
+
+#### Scanning
+
+You can then active scan as you see fit.
+
+> [!NOTE]
+> If you have the [Scan Policies add-on](/docs/desktop/addons/scan-policies/) installed, this is a good opportunity to leverage the [API Policy](/docs/desktop/addons/scan-policies/policy-api/).
+
