@@ -28,6 +28,7 @@ type: userguide
                                                                 
                                                                         <instance>
                                                                                 <uri>http://localhost:8080/bodgeit/js</uri>
+                                                                                <nodeName>http://localhost:8080/bodgeit/js</nodeName>
                                                                                 <method>GET</method>
                                                                                 <param></param>
                                                                                 <attack></attack>
@@ -61,6 +62,7 @@ type: userguide
                                                                 
                                                                         <instance>
                                                                                 <uri>http://localhost:8080/bodgeit/js/util.js</uri>
+                                                                                <nodeName>http://localhost:8080/bodgeit/js/util.js</nodeName>
                                                                                 <method>GET</method>
                                                                                 <param></param>
                                                                                 <attack></attack>
@@ -157,6 +159,7 @@ type: userguide
                                                                 
                                                         </instances>
                                                         <count>3</count>
+                                                        <systemic>false</systemic>
                                                         <solution></solution>
                                                         <otherinfo>NOTE: Because of its name this cookie may be important, but dropping it appears to have no effect: [JSESSIONID] 
         Cookies that don&apos;t have expected effects can reveal flaws in application logic. In the worst case, this can reveal where authentication via cookie token(s) is not actually enforced.

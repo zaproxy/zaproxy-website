@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: automation
-    version: 0.55.0
+    version: 0.56.0
 ---
 
 # Automation Framework
@@ -21,6 +21,7 @@ It provides the following command line options:
 * -autogenmin \<filename\> Generate template automation file with the key parameters.
 * -autogenmax \<filename\> Generate template automation file with all parameters.
 * -autogenconf \<filename\> Generate template automation file using the current configuration.
+* -autocheck \<source\> Check the specified automation plan in the file or from the URL.
 
 ### Exit Codes {#exit-codes}
 

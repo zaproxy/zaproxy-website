@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.31.0/authhelper-beta-0.31.0.zap
-  date: 2025-11-05
-  version: 0.31.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.32.0/authhelper-beta-0.32.0.zap
+  date: 2025-11-07
+  version: 0.32.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.55.0/automation-beta-0.55.0.zap
-  date: 2025-11-05
-  version: 0.55.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.56.0/automation-beta-0.56.0.zap
+  date: 2025-11-07
+  version: 0.56.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -863,9 +863,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.41.0/reports-release-0.41.0.zap
-  date: 2025-09-04
-  version: 0.41.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.42.0/reports-release-0.42.0.zap
+  date: 2025-11-07
+  version: 0.42.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.
