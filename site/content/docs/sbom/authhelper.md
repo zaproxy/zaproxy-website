@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.31.0
+    version: 0.32.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.31.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.32.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -42,7 +42,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.55.0
+    version: 0.56.0
     licenses: ''
   - name: batik-anim
     version: '1.19'

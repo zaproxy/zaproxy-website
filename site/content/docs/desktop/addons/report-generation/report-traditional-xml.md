@@ -26,9 +26,9 @@ type: userguide
                         <confidencedesc>Medium</confidencedesc>
                         <desc><p>A cross-site request forgery is an attack that involves forcing a victim to send an HTTP request to a target destination without their knowledge...</desc>
                         <instances>
-
                                 <instance>
                                     <uri>http://localhost:8080/bodgeit/advanced.jsp</uri>
+                                    <nodeName>http://localhost:8080/bodgeit/advanced.jsp</nodeName>
                                     <method>GET</method>
                                     <param></param>
                                     <attack></attack>
@@ -38,6 +38,7 @@ type: userguide
 
                                 <instance>
                                     <uri>http://localhost:8080/bodgeit/advanced.jsp</uri>
+                                    <nodeName>http://localhost:8080/bodgeit/advanced.jsp</nodeName>
                                     <method>GET</method>
                                     <param></param>
                                     <attack></attack>
@@ -47,12 +48,16 @@ type: userguide
 
                                 <instance>
                                     <uri>http://localhost:8080/bodgeit/basket.jsp</uri>
+                                    <nodeName>http://localhost:8080/bodgeit/basket.jsp</nodeName>
                                     <method>GET</method>
                                     <param></param>
                                     <attack></attack>
                                     <evidence><form action="basket.jsp" method="post"></evidence>
                                     <otherinfo></otherinfo>
                                 </instance>
-
+                        <count>2</count>
+                        <systemic>false</systemic>
+                        <solution>The solution</solution>
+                        <otherinfo>The other info</otherinfo>
 
 ```
