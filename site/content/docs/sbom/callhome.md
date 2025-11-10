@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: callhome
-    version: 0.17.0
+    version: 0.18.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.17.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.18.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -240,7 +240,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.40
+    version: 1.18.42
     licenses: MIT
   - name: mockito-core
     version: 5.20.0

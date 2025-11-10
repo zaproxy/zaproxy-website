@@ -129,9 +129,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/forced-browse/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v18/bruteforce-beta-18.zap
-  date: 2025-08-27
-  version: 18
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/bruteforce-v19/bruteforce-beta-19.zap
+  date: 2025-11-10
+  version: 19
 - id: bugtracker
   name: Bug Tracker
   description: Bug Tracker extension.
@@ -159,9 +159,9 @@
   status: release
   infoUrl: /docs/desktop/addons/call-home/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.17.0/callhome-release-0.17.0.zap
-  date: 2025-11-04
-  version: 0.17.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.18.0/callhome-release-0.18.0.zap
+  date: 2025-11-10
+  version: 0.18.0
 - id: client
   name: Client Side Integration
   description: Exposes client (browser) side information in ZAP using Firefox and
@@ -773,9 +773,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/postman-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.7.0/postman-alpha-0.7.0.zap
-  date: 2025-09-02
-  version: 0.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/postman-v0.8.0/postman-alpha-0.8.0.zap
+  date: 2025-11-10
+  version: 0.8.0
 - id: pscan
   name: Passive Scanner
   description: Provides core passive scanning capabilities.
