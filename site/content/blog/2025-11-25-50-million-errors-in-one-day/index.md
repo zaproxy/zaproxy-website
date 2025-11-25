@@ -4,7 +4,7 @@ summary: >
   ZAP logged a LOT of errors yesterday - heres why, and what we have already done to address the underlying problems
 type: post
 images:
-- https://www.zaproxy.org/blog/2025-11-25-50-million-errors-in-one-day/error-counts.png
+- https://www.zaproxy.org/blog/2025-11-25-50-million-errors-in-one-day/images/error-counts.png
 tags:
 - blog
 date: "2025-11-25"
