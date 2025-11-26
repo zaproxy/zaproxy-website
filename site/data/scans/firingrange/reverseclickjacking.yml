@@ -5,13 +5,13 @@ details:
   result: FAIL
   rule: 10020
 - path: /multipage/ParameterInFragment/InCallback/WithoutXFO/
-  result: Pass
+  result: FAIL
   rule: 10020
 - path: /multipage/ParameterInFragment/OtherParameter/WithXFO/
   result: FAIL
   rule: 10020
 - path: /multipage/ParameterInFragment/OtherParameter/WithoutXFO/
-  result: Pass
+  result: FAIL
   rule: 10020
 - path: /multipage/ParameterInQuery/InCallback/WithXFO/
   result: FAIL
@@ -23,13 +23,13 @@ details:
   result: FAIL
   rule: 10020
 - path: /multipage/ParameterInQuery/OtherParameter/WithoutXFO/
-  result: Pass
+  result: FAIL
   rule: 10020
 - path: /singlepage/ParameterInFragment/InCallback/
   result: Pass
   rule: 10020
 - path: /singlepage/ParameterInFragment/OtherParameter/
-  result: Pass
+  result: FAIL
   rule: 10020
 - path: /singlepage/ParameterInQuery/InCallback/
   result: Pass
@@ -38,6 +38,6 @@ details:
   result: Pass
   rule: 10020
 tests: 12
-passes: 8
-fails: 4
-score: 67%
+passes: 4
+fails: 8
+score: 33%
