@@ -10,6 +10,7 @@ tags:
 - fuzzer
 - portswigger-lab
 - javascript
+- guest
 date: "2025-04-09"
 authors: 
     - chibbyalucard

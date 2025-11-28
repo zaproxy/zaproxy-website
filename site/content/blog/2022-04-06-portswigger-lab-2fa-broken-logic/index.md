@@ -9,6 +9,7 @@ tags:
 - blog
 - fuzzer
 - portswigger-lab
+- guest
 date: "2022-04-06"
 authors: 
     - jan

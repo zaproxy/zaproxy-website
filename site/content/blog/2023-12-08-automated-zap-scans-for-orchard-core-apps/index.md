@@ -10,6 +10,7 @@ tags:
 - automation
 - community
 - docker
+- guest
 date: "2023-12-08"
 authors:
 - zoltan

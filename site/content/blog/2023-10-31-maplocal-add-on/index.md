@@ -6,6 +6,7 @@ type: post
 tags:
 - blog
 - maplocal
+- guest
 date: "2023-10-31"
 authors:
     - keindel

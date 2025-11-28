@@ -6,6 +6,7 @@ images:
 type: post
 tags:
 - blog
+- guest
 date: "2020-09-03"
 addSocialPreview: true
 authors:

@@ -11,6 +11,7 @@ tags:
 - kubernetes
 - automation
 - docker
+- guest
 date: "2024-12-24"
 authors:
 - trevor
