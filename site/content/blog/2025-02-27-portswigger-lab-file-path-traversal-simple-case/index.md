@@ -6,6 +6,7 @@ type: post
 tags:
 - blog
 - portswigger-lab
+- guest
 authors:
     - bashbunny
 ---

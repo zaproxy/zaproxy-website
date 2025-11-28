@@ -10,6 +10,7 @@ tags:
 - fuzzer
 - caido-lab
 - javascript
+- guest
 date: "2025-10-15"
 authors: 
     - 5ubterranean

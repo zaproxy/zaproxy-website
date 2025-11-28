@@ -198,3 +198,9 @@ chibbyalucard:
   picture: /img/authors/5ubterranean_400x400.png
   twitter: 5ubterranean_
   is_core: false
+
+telmon:
+  name: Telmon Maluleka
+  picture: /img/authors/telmon_400x400.jpg
+  twitter: DEOXYRIBOSE404
+  is_core: false
