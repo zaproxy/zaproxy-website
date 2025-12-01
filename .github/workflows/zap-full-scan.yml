@@ -10,7 +10,7 @@ jobs:
     name: Full Scan ZAP website
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: main
       - name: ZAP Scan
