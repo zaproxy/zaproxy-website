@@ -1,28 +1,53 @@
 ---
 title: "ZAP Updates - November 2025"
 summary: >
-  TODO
+  2.17.0 is coming soon, along with Insights and fixes for some issues that caused ZAP to log 50 million errors in one day!
 images:
-- https://www.zaproxy.org/blog/2025-12-01-zap-updates-november-2025/images/zapbot-monthly-updates.png
+- https://www.zaproxy.org/blog/2025-12-03-zap-updates-november-2025/images/zapbot-monthly-updates.png
 type: post
 tags:
 - blog
 - update
-date: "2025-12-01"
+date: "2025-12-03"
 authors:
-- TODO
+- simon
 ---
 
 ## Highlights
-TODO
 
-## Ongoing Work
-TODO
+### ZAP 2.17.0 - Coming Very Soon
+
+Last week we announced that the weekly release [w2025-11-24](https://github.com/zaproxy/zaproxy/releases/tag/w2025-11-24) was the first 2.17.0 Release Candidate (RC)!
+
+Todays [w2025-12-03](https://github.com/zaproxy/zaproxy/releases/tag/w2025-12-03) weekly release is the second RC :grin:
+
+Your feedback really helps improve the quality of our releases, so please keep it coming!
+
+### Insights
+
+ZAP 2.17.0 will include a new [Insights](/docs/desktop/addons/insights/) add-on, which is (of course) included in the RC.
+
+Insights represent information that is likely to be very relevant to you, but which is not related to vulnerabilities, or potentially even related to the application in question.
+
+Insights tell you more about your applications, about the effectiveness of a scan, and can even stop a scan early if significant problems are identified.
+
+### 50 Million Errors in One Day?!
+
+Last week we also reported how we found out that ZAP logged [50 Million Errors in One Day](/blog/2025-11-25-50-million-errors-in-one-day/) and explained how the main issues will be fixed in 2.17.0.
+
+### Enhancing ZAP with AI
+
+We also shared a guest blog post from [Telmon Maluleka](https://twitter.com/DEOXYRIBOSE404) who explained 
+how he is [Enhancing ZAP with AI for Bug Bounty Hunting](/blog/2025-11-28-enhancing-zap-with-ai-for-bug-bounty-hunting/).
+
+If you have any ZAP related news that you would like to share then please get in touch!
 
 ## New Contributors
 A very warm welcome to the people who started to contribute to ZAP this month!
 
-TODO: Add from https://github.com/zaproxy/zap-core-help/pulls?q=is%3Apr+credits+is%3Aclosed
+* [bananabr](https://github.com/bananabr)
+* [j-sv](https://github.com/j-sv)
+* [LakshmiSHR](https://github.com/LakshmiSHR)
 
 ## GitHub Pulse
 Here are some statistics for the two main ZAP repositories:
