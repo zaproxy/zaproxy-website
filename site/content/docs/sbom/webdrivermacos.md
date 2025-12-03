@@ -1,15 +1,15 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: MacOS WebDrivers Add-on SBOM
+title: macOS WebDrivers Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '167'
+    version: '168'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v167/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v168/bom.json
   components:
   - name: asm
     version: '9.7'
