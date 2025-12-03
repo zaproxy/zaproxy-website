@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.49.0
+    version: 21.50.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.49.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.50.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -33,19 +33,19 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.55.0
+    version: 0.57.0
     licenses: ''
   - name: bcmail-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.1.0
@@ -99,7 +99,7 @@ sbom:
     version: 2.18.0
     licenses: Apache-2.0
   - name: commons-io
-    version: 2.20.0
+    version: 2.21.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -288,7 +288,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.40
+    version: 1.18.42
     licenses: MIT
   - name: mockito-core
     version: 5.20.0
@@ -345,7 +345,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.24.0
+    version: 0.25.0
     licenses: ''
   - name: objenesis
     version: '3.3'

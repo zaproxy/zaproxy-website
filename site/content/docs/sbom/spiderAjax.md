@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: spiderAjax
-    version: 23.27.0
+    version: 23.28.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.27.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.28.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -39,19 +39,19 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.55.0
+    version: 0.57.0
     licenses: ''
   - name: bcmail-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.1.0
@@ -112,6 +112,9 @@ sbom:
     licenses: Apache-2.0
   - name: commons-io
     version: 2.20.0
+    licenses: Apache-2.0
+  - name: commons-io
+    version: 2.21.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -305,9 +308,6 @@ sbom:
   - name: jcip-annotations
     version: '1.0'
     licenses: ''
-  - name: jcl-over-slf4j
-    version: 2.0.17
-    licenses: Apache-2.0
   - name: jericho-html
     version: '3.4'
     licenses: GNU Lesser General Public License (LGPL), Apache-1.0, EPL-1.0
@@ -371,8 +371,11 @@ sbom:
   - name: log4j-slf4j-impl
     version: 2.24.2
     licenses: Apache-2.0
+  - name: log4j-slf4j2-impl
+    version: 2.24.2
+    licenses: Apache-2.0
   - name: lombok
-    version: 1.18.40
+    version: 1.18.42
     licenses: MIT
   - name: metrics-core
     version: 3.0.2
@@ -438,7 +441,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.24.0
+    version: 0.25.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -503,9 +506,6 @@ sbom:
   - name: protobuf-java
     version: 3.25.5
     licenses: BSD-3-Clause
-  - name: reload4j
-    version: 1.2.22
-    licenses: Apache-2.0
   - name: rsyntaxtextarea
     version: 3.5.3
     licenses: BSD-3-Clause
@@ -570,12 +570,6 @@ sbom:
     version: 1.7.36
     licenses: MIT
   - name: slf4j-api
-    version: 2.0.17
-    licenses: MIT
-  - name: slf4j-log4j12
-    version: 2.0.17
-    licenses: MIT
-  - name: slf4j-reload4j
     version: 2.0.17
     licenses: MIT
   - name: snakeyaml

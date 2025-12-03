@@ -49,10 +49,10 @@ if you choose another profile then the Client add-on will not work without manua
 
 ### Browser Extensions
 
-You can add, remove, enable, or disable browser extensions via the relevant buttons on this screen. Supported browsers and file extensions are:
+You can add, remove, enable, or disable browser extensions via the relevant buttons on this screen. Supported browsers and extensions are:
 
 * Firefox: .xpi
-* Chrome/Edge: .crx
+* Chrome/Edge: unpacked, directory containing the extension files
 
 Add-ons can also add new browser extensions. If you delete a browser extension via this screen then it will be added again by the add-on so either just disable it or uninstall the add-on to remove the browser extension.
 

@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.41.0
+    version: 15.42.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.41.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.42.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -36,16 +36,16 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.1.0
@@ -66,7 +66,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.38.0
+    version: 1.39.0
     licenses: ''
   - name: commons-beanutils
     version: 1.9.4
@@ -106,6 +106,9 @@ sbom:
     licenses: Apache-2.0
   - name: commons-io
     version: 2.20.0
+    licenses: Apache-2.0
+  - name: commons-io
+    version: 2.21.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -237,28 +240,28 @@ sbom:
     version: '2.20'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.20.0
+    version: 2.20.1
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -294,28 +297,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.0
+    version: 6.0.1
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -336,7 +339,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.40
+    version: 1.18.42
     licenses: MIT
   - name: mockito-core
     version: 5.20.0
@@ -396,7 +399,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.24.0
+    version: 0.25.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -465,55 +468,55 @@ sbom:
     version: 3.5.3
     licenses: BSD-3-Clause
   - name: selenium-api
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.37.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v139
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-devtools-v140
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-devtools-v141
-    version: 4.37.0
+    version: 4.38.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v142
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.37.0
+    version: 4.38.0
     licenses: Apache-2.0
   - name: service
     version: 1.16.0
