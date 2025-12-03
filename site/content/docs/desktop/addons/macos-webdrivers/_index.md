@@ -1,20 +1,20 @@
 ---
 # This page was generated from the add-on.
-title: MacOS WebDrivers
+title: macOS WebDrivers
 type: userguide
 weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: 167.0.0
+    version: 168.0.0
 ---
 
-# MacOS WebDrivers
+# macOS WebDrivers
 
 
-The MacOS WebDrivers add-on provides WebDrivers for the following browsers:
+The macOS WebDrivers add-on provides WebDrivers for the following browsers:
 
-* Chrome - ChromeDriver 142.0.7444.175
+* Chrome - ChromeDriver 143.0.7499.40
 * Firefox - geckodriver 0.36.0
 
 ## See also
