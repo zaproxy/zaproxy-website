@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.32.0/authhelper-beta-0.32.0.zap
-  date: 2025-11-07
-  version: 0.32.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.33.0/authhelper-beta-0.33.0.zap
+  date: 2025-12-03
+  version: 0.33.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.56.0/automation-beta-0.56.0.zap
-  date: 2025-11-07
-  version: 0.56.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.57.0/automation-beta-0.57.0.zap
+  date: 2025-12-03
+  version: 0.57.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.18.0/client-alpha-0.18.0.zap
-  date: 2025-11-04
-  version: 0.18.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.19.0/client-alpha-0.19.0.zap
+  date: 2025-12-03
+  version: 0.19.0
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
@@ -893,9 +893,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.50.0/retire-release-0.50.0.zap
-  date: 2025-11-04
-  version: 0.50.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.51.0/retire-release-0.51.0.zap
+  date: 2025-12-03
+  version: 0.51.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -943,9 +943,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.15.0/scripts-release-45.15.0.zap
-  date: 2025-11-04
-  version: 45.15.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.16.0/scripts-release-45.16.0.zap
+  date: 2025-12-03
+  version: 45.16.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -953,9 +953,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.41.0/selenium-release-15.41.0.zap
-  date: 2025-10-21
-  version: 15.41.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.42.0/selenium-release-15.42.0.zap
+  date: 2025-12-03
+  version: 15.42.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -994,9 +994,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.27.0/spiderAjax-release-23.27.0.zap
-  date: 2025-11-04
-  version: 23.27.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.28.0/spiderAjax-release-23.28.0.zap
+  date: 2025-12-03
+  version: 23.28.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
@@ -1086,9 +1086,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.49.0/wappalyzer-release-21.49.0.zap
-  date: 2025-11-04
-  version: 21.49.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.50.0/wappalyzer-release-21.50.0.zap
+  date: 2025-12-03
+  version: 21.50.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.

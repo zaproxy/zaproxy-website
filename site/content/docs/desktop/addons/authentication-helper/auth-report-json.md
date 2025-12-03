@@ -19,20 +19,22 @@ Session handling and verification can be left as "autodetect" - this report will
 
 ### Sections
 
-| Section                                   | ID                        |
-|:------------------------------------------|:--------------------------|
-| Summary                                   | summary                   |
-| Automation Framework Environment          | afenv                     |
-| Statistics                                | statistics                |
-| Domains                                   | domains                   |
-| Diagnostics                               | diagnostics               |
-| Automation Framework Plan for Diagnostics | diagnosticsafplan         |
-| HTTP Messages for Diagnostics             | diagnosticsmessages       |
-| Local Storage for Diagnostics             | diagnosticslocalstorage   |
-| Screenshots for Diagnostics               | diagnosticsscreenshots    |
-| Session Storage for Diagnostics           | diagnosticssessionstorage |
-| Web Elements for Diagnostics              | diagnosticswebelements    |
-| ZAP Log File for Diagnostics              | diagnosticslogfile        |
+| Section                                   | ID                         |
+|:------------------------------------------|:---------------------------|
+| Summary                                   | summary                    |
+| Automation Framework Environment          | afenv                      |
+| Statistics                                | statistics                 |
+| Domains                                   | domains                    |
+| Domains Partially Out of Scope            | domainspartiallyoutofscope |
+| Domains Out of Scope                      | domainsoutofscope          |
+| Diagnostics                               | diagnostics                |
+| Automation Framework Plan for Diagnostics | diagnosticsafplan          |
+| HTTP Messages for Diagnostics             | diagnosticsmessages        |
+| Local Storage for Diagnostics             | diagnosticslocalstorage    |
+| Screenshots for Diagnostics               | diagnosticsscreenshots     |
+| Session Storage for Diagnostics           | diagnosticssessionstorage  |
+| Web Elements for Diagnostics              | diagnosticswebelements     |
+| ZAP Log File for Diagnostics              | diagnosticslogfile         |
 
 ### Summary
 
@@ -78,6 +80,37 @@ environment will have been updated with the values that ZAP has detected.
 
 These are all of the statistics that have been recorded by ZAP.  
 For more details of what they mean see [https://www.zaproxy.org/docs/internal-statistics/](/docs/internal-statistics/)
+
+### Domains
+
+This section contains an array with all the domains that were accessed while performing the authentication.
+
+```
+	"domains": [
+		"https://www.example.org",
+		"https://api.example.org"
+	]
+```
+
+### Domains Partially Out of Scope
+
+This section contains an array with the domains partially out of scope, that were accessed while performing the authentication. For example, when the context includes just a subset of the target (e.g. `https://www.example.org/frontend/`) and other resources were also accessed (e.g. `https://www.example.org/backend/`).
+
+```
+	"domainsPartiallyOutOfScope": [
+		"https://www.example.org"
+	]
+```
+
+### Domains Out of Scope
+
+This section contains an array with the domains out of scope (context), that were accessed while performing the authentication.
+
+```
+	"domainsOutOfScope": [
+		"https://api.example.org"
+	]
+```
 
 ### Diagnostics
 
@@ -345,10 +378,6 @@ When this section is enabled a top level property is added to the report contain
 			"site:" "https://www.example.org",
 			"value": 1
 		}
-	]
-	,"domains": [
-		"https://www.example.org",
-		"https://api.example.org"
 	]
 }
 ```
