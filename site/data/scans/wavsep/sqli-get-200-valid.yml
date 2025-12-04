@@ -35,7 +35,7 @@ details:
   result: Pass
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp
   result: Pass
@@ -59,6 +59,6 @@ details:
   result: FAIL
   rule: 40018
 tests: 19
-passes: 16
-fails: 3
-score: 84%
+passes: 15
+fails: 4
+score: 79%
