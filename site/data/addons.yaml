@@ -893,9 +893,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.51.0/retire-release-0.51.0.zap
-  date: 2025-12-03
-  version: 0.51.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.52.0/retire-release-0.52.0.zap
+  date: 2025-12-04
+  version: 0.52.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
