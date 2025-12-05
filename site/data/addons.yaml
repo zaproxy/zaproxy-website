@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v76/ascanrules-release-76.zap
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v77/ascanrules-release-77.zap
   date: 2025-12-05
-  version: 76
+  version: 77
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
