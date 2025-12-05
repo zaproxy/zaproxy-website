@@ -19,6 +19,12 @@ CVE-2022-22965:
 CVE-2022-42889:
   link: https://nvd.nist.gov/vuln/detail/CVE-2022-42889
 
+CVE-2025-55182:
+  link: https://nvd.nist.gov/vuln/detail/CVE-2025-55182
+
+CVE-2025-66478:
+  link: https://nvd.nist.gov/vuln/detail/CVE-2025-66478
+
 CWE-1004:
   link: https://cwe.mitre.org/data/definitions/1004.html
 
