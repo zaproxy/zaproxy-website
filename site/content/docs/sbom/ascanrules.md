@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '75'
+    version: '76'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v75/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v76/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -33,16 +33,16 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.77'
+    version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.1.0
@@ -99,7 +99,7 @@ sbom:
     version: 2.18.0
     licenses: Apache-2.0
   - name: commons-io
-    version: 2.20.0
+    version: 2.21.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -165,10 +165,10 @@ sbom:
     version: 3.5.4
     licenses: Apache-2.0
   - name: flyway-core
-    version: 11.15.0
+    version: 11.18.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 11.15.0
+    version: 11.18.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -177,7 +177,7 @@ sbom:
     version: 1.27.0
     licenses: Apache-2.0
   - name: graaljs
-    version: 0.11.0
+    version: 0.12.0
     licenses: ''
   - name: guava
     version: 33.4.0-jre
@@ -339,7 +339,7 @@ sbom:
     version: 2.24.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.40
+    version: 1.18.42
     licenses: MIT
   - name: mockito-core
     version: 5.20.0
@@ -399,10 +399,10 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.24.0
+    version: 0.25.0
     licenses: ''
   - name: oast
-    version: 0.23.0
+    version: 0.24.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -446,6 +446,9 @@ sbom:
   - name: regex
     version: 25.0.1
     licenses: UPL-1.0
+  - name: rhino
+    version: 1.8.0
+    licenses: MPL-2.0
   - name: rsyntaxtextarea
     version: 3.5.3
     licenses: BSD-3-Clause
@@ -462,7 +465,7 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: sqlite-jdbc
-    version: 3.50.3.0
+    version: 3.51.1.0
     licenses: Apache-2.0
   - name: stax2-api
     version: 4.2.2
