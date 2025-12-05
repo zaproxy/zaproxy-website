@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 75.0.0
+    version: 76.0.0
 ---
 
 # Active Scan Rules
@@ -283,6 +283,23 @@ Latest code: [PathTraversalScanRule.java](https://github.com/zaproxy/zap-extensi
 
 
 Alert ID: [6](/docs/alerts/6/).
+
+## Remote Code Execution (React2Shell) {#id-40048}
+
+This rule identifies servers running vulnerable versions of React Server Components with Next.js, which will allow remote attackers to execute arbitrary code.
+
+
+The rule is based on the PoC detailed on <https://slcyber.io/research-center/high-fidelity-detection-mechanism-for-rsc-next-js-rce-cve-2025-55182-cve-2025-66478/>.
+
+
+It verifies that the server is running vulnerable React Server Components with Next.js, and that the remote code execution (RCE) vulnerability is present without causing any damage.
+It forces an error via a malformed multipart request and checks for the presence of a string which confirms RCE is possible.
+
+
+Latest code: [React2ShellScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/React2ShellScanRule.java)
+
+
+Alert ID: [40048](/docs/alerts/40048/).
 
 ## Remote Code Execution - CVE-2012-1823 {#id-20018}
 
