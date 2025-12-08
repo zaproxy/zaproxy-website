@@ -339,6 +339,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/formhandler-v6.7.0/formhandler-beta-6.7.0.zap
   date: 2025-01-09
   version: 6.7.0
+- id: foxhound
+  name: Foxhound ZAP Add-on
+  description: Capture and analysis of client-side data flows from the Foxhound browser.
+  author: Thomas Barber
+  status: alpha
+  infoUrl: /docs/desktop/addons/foxhound/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/foxhound-v0.1.0/foxhound-alpha-0.1.0.zap
+  date: 2025-12-08
+  version: 0.1.0
 - id: fuzz
   name: Fuzzer
   description: Advanced fuzzer for manual testing
