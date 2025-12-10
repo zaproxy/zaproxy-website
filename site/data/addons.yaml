@@ -1024,10 +1024,10 @@
   author: Black Duck, Inc.
   status: alpha
   infoUrl: /docs/desktop/addons/software-risk-manager/
-  repoUrl: https://github.com/codedx/zap-extensions/
-  downloadUrl: https://github.com/zaproxy-addons/srm/releases/download/v2025.9.0/srm-alpha-2025.9.0.zap
-  date: 2025-09-26
-  version: 2025.9.0
+  repoUrl: https://github.com/codedx/srm-zap-extension/
+  downloadUrl: https://github.com/zaproxy-addons/srm-2/releases/download/v2025.12.0/srm-alpha-2025.12.0.zap
+  date: 2025-12-10
+  version: 2025.12.0
 - id: sse
   name: Server-Sent Events
   description: Allows you to view Server-Sent Events (SSE) communication.
