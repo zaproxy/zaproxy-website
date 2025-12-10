@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: srm
-    version: 2025.9.0
+    version: 2025.12.0
 ---
 
 # Software Risk Manager
