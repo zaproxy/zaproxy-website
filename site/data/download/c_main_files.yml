@@ -2,33 +2,33 @@
 ---
 - name: Windows (64) Installer
   id: win-64-i
-  size: 234 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2_16_1_windows.exe
+  size: 244 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2_17_0_windows.exe
 - name: Windows (32) Installer
   id: win-32-i
-  size: 234 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2_16_1_windows-x32.exe
+  size: 244 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2_17_0_windows-x32.exe
 - name: Linux Installer
   id: nix-i
-  size: 226 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2_16_1_unix.sh
+  size: 236 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2_17_0_unix.sh
 - name: Linux Package
   id: nix-p
-  size: 224 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_Linux.tar.gz
+  size: 233 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0_Linux.tar.gz
 - name: macOS (Intel - amd64) Installer
   id: osx-i
-  size: 251 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1.dmg
+  size: 260 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0.dmg
 - name: macOS (Apple Silicon - aarch64) Installer
   id: osx-aarch64-i
-  size: 255 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_aarch64.dmg
+  size: 264 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0_aarch64.dmg
 - name: Cross Platform Package
   id: cp-p
-  size: 263 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_Crossplatform.zip
+  size: 273 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0_Crossplatform.zip
 - name: Core Cross Platform Package
   id: cp-c
-  size: 102 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_Core.zip
+  size: 103 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0_Core.zip

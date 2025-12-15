@@ -7,7 +7,7 @@ info:
 - ZAP uses similar URLs when checking for updates.
 - The file [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions.xml) is version independent and always points to the latest release.
 - There are also version specific files that define the add-ons on the ZAP Marketplace for that release stream.
-- The 2.16 release stream uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.16.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.16.xml)
+- The 2.17 release stream uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.17.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-2.17.xml)
 - The development code uses [https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-dev.xml](https://raw.githubusercontent.com/zaproxy/zap-admin/master/ZapVersions-dev.xml)
 - These files are usually the same, but it does allow us to release add-ons which depend on core features which have been added since the current stable release.
 - See [3rd Party Package Maintenance](/3rd-party-package-maintenance) for details of how 3rd party packages which wrap ZAP are maintained.
