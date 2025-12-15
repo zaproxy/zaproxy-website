@@ -16,6 +16,10 @@ The first screen allows you to define the default levels as well as the levels f
 
 The category screens allow you to define the levels for every individual rule.  
 
+### Locked
+
+Locked policies do not allow the use of any other scan rules than the ones defined in their configuration, preventing the inadvertent use of other/new scan rules.
+
 ### Threshold
 
 This controls how likely ZAP is to report potential vulnerabilities.  

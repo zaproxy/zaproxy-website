@@ -103,9 +103,3 @@ For the command line options that allow to configure the main local proxy, refer
 |---|------------------------------------------|---------------------------------|
 |   | [Introduction](/docs/desktop/)           | the introduction to ZAP         |
 |   | [API](/docs/desktop/start/features/api/) | to control ZAP programmatically |
-
-## Official Videos
-
-|   |                                                                                                     |
-|---|-----------------------------------------------------------------------------------------------------|
-|   | [ADDO Automation: Automation Command Line](https://play.vidyard.com/g97SccHH52RXnAcBYBmDGA) (14:03) |

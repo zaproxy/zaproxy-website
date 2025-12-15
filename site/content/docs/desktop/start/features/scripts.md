@@ -56,13 +56,3 @@ For more details on how to run ZAP scripts see the Script Console add-on help pa
 |   |                                                                            |
 |---|----------------------------------------------------------------------------|
 |   | [ZAP Community Scripts repo](https://github.com/zaproxy/community-scripts) |
-
-## Official Videos
-
-|   |                                                                                                                            |
-|---|----------------------------------------------------------------------------------------------------------------------------|
-|   | [ZAP In Ten: ZAP Scripting - An Introduction](https://play.sonatype.com/watch/7gR4qYzUZ686wEDMBfxGdf) (9:33)               |
-|   | [ZAP In Ten: ZAP Scripting - Targeted Scripts](https://play.sonatype.com/watch/JzX1YkJqdk7BYTMHikh433) (10:01)             |
-|   | [ZAP In Ten: ZAP Scripting - Proxy and HttpSender Scripts](https://play.sonatype.com/watch/4no8EY1iB8RdnQLPFpYi2a) (10:14) |
-|   | [ZAP In Ten: ZAP Scripting - Passive Scan Scripts](https://play.sonatype.com/watch/HfENJ3GJB3zbD6sMscDrjD) (11:55)         |
-|   | [ZAP In Ten: ZAP Scripting - Active Scan Scripts](https://play.sonatype.com/watch/aEwqErXFMTYdDDQbTgnJeA) (11:38)          |

@@ -27,11 +27,13 @@ The Remove button deletes the selected scan policy if you confirm the warning di
 
 ### Import
 
-The Import button allows you to import a scan policy created by another instance of ZAP.  
+The Import button allows you to import a scan policy created by another instance of ZAP.
 
 ### Export
 
-The Export button allows you to export a scan policy so that you can import it into another instance of ZAP, which can be on another machine.  
+
+The Export button allows you to export a scan policy so that you can import it into another instance of ZAP,
+which can be on another machine.
 
 ## Accessed via
 
