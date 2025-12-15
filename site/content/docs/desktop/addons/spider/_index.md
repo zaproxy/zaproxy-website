@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: spider
-    version: 0.17.0
+    version: 0.18.0
 ---
 
 # Spider
@@ -100,10 +100,3 @@ The spider is configured using the [Spider Options screen](/docs/desktop/addons/
 |   |                                                               |                                       |
 |---|---------------------------------------------------------------|---------------------------------------|
 |   | [Spider Options screen](/docs/desktop/addons/spider/options/) | for an overview of the Spider Options |
-
-## Official Videos
-
-|   |                                                                                                         |
-|---|---------------------------------------------------------------------------------------------------------|
-|   | [ZAP In Ten: Explore Your Applications](https://play.sonatype.com/watch/rLq2nvgbuGwVn2BX9gA8r2) (10:36) |
-|   | [ZAP Deep Dive: Exploring Applications: Standard Spider](https://youtu.be/mz2nhYpU-sw) (34:35)          |

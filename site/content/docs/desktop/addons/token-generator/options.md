@@ -7,6 +7,7 @@ weight: 1
 
 # Options Token Generator screen
 
+
 This screen allows you to configure the [Token Generator](/docs/desktop/addons/token-generator/).
 
 ## Configuration Options

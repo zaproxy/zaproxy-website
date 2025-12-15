@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: saml
-    version: 10.0.0
+    version: 11.0.0
 ---
 
 # SAML Support

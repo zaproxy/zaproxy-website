@@ -18,6 +18,7 @@ type: userguide
 | Alert Counts by Risk and Confidence     | riskConfidenceCounts |
 | Alert Counts by Site and Risk           | siteRiskCounts       |
 | Alert Counts by Alert Type              | alertTypeCounts      |
+| Insights                                | insights             |
 | Alerts                                  | alerts               |
 | Request Line and Header Section         | requestHeader        |
 | Request Body                            | requestBody          |

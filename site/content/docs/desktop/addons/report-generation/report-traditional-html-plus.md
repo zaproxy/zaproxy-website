@@ -12,6 +12,7 @@ type: userguide
 |:-----------------|:----------------|
 | Chart            | chart           |
 | Alert Count      | alertcount      |
+| Insights         | insights        |
 | Instance Count   | instancecount   |
 | Passing Rules    | passingrules    |
 | Alert Details    | alertdetails    |

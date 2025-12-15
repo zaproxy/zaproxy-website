@@ -6,6 +6,15 @@ type: userguide
 
 # Traditional Markdown Report
 
+### Sections
+
+| Section        | ID            |
+|:---------------|:--------------|
+| Alert Count    | alertcount    |
+| Insights       | insights      |
+| Instance Count | instancecount |
+| Alert Details  | alertdetails  |
+
 ### Sample
 
 #### Header `Risk (Confidence)`

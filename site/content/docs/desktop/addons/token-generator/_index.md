@@ -6,12 +6,13 @@ weight: 1
 cascade:
   addon:
     id: tokengen
-    version: 15.0.0
+    version: 16.0.0
 ---
 
 # Token Generation and Analysis
 
 This add-on allows you to generate and analyse pseudo random tokens, such as those used for session handling or CSRF protection.
+
 
 To generate and analyse tokens:
 
