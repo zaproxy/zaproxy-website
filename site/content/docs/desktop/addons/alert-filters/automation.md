@@ -22,6 +22,7 @@ It is covered in the video: [ZAP Chat 08 Automation Framework Part 2 - Environme
       deleteGlobalAlerts: true         # Boolean, if true then will delete all existing global alerts, default false
     alertFilters:                      # A list of alertFilters to be applied
       - ruleId:                        # Int/String: Mandatory, the scan rule ID or the alert reference
+        ruleName:                      # String: Optional, the name of the rule
         newRisk:                       # String: Mandatory new risk level, one of 'False Positive', 'Info', 'Low', 'Medium', 'High'
         context:                       # String: Optional context name, if empty then a global alert filter will be created
         url:                           # String: Optional string to match against the alert, supports environment vars
@@ -32,4 +33,5 @@ It is covered in the video: [ZAP Chat 08 Automation Framework Part 2 - Environme
         attackRegex:                   # Boolean: Optional, if true then the attack is a regex
         evidence:                      # String: Optional string to match against the alert evidence field
         evidenceRegex:                 # Boolean: Optional, if true then the evidence is a regex
+        methods:                       # List: Optional, the HTTP methods
 ```

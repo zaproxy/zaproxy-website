@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 1.7.0
+    version: 1.8.0
 ---
 
 # Encode / Decode / Hash dialog
@@ -224,7 +224,9 @@ Converts text removing accents/diacritics/ligatures (perhaps not fully, due to o
 
 * `Tĥïŝ ĩš â fůňķŷ Šťŕĭńġ: ﬁ. étrange.` becomes `This is a funky String: fi. etrange.`.
 * `鸟儿` becomes an empty string (all characters are dropped).
+
 See also:  
+
 * [Normalizer JavaDoc](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/Normalizer.html).
 * [Wikipedia: Transliteration](https://en.wikipedia.org/wiki/Transliteration)
 
@@ -234,7 +236,9 @@ See also:
 
 Converted to UTF-16LE and base64 encoded. Equivalent to one of the following examples (encoding "dir"):
 
+
 ` printf "dir"| iconv -t UTF-16LE | base64 -w 0 -`
+
 
 
     $command = 'dir'
@@ -245,7 +249,9 @@ Converted to UTF-16LE and base64 encoded. Equivalent to one of the following exa
 
 Resulting in: `ZABpAHIA`.
 
+
 Which can be leveraged via something like the following (where `$encodedCommand` is set to the encoded value `ZABpAHIA`):  
+
 `powershell -exec bypass -enc $encodedCommand`
 
 ## Accessed via

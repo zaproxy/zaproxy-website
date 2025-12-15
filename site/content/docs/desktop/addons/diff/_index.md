@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: diff
-    version: 17.0.0
+    version: 18.0.0
 ---
 
 # Diff

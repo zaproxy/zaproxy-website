@@ -1,39 +1,21 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Groovy Support Add-on SBOM
+title: Insights Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: groovy
-    version: 4.0.0
+    id: insights
+    version: 0.0.1
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/groovy-v4.0.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.0.1/bom.json
   components:
-  - name: ant
-    version: 1.10.15
-    licenses: Apache-2.0
-  - name: ant-antlr
-    version: 1.10.15
-    licenses: Apache-2.0
-  - name: ant-junit
-    version: 1.10.15
-    licenses: Apache-2.0
-  - name: ant-launcher
-    version: 1.10.15
-    licenses: Apache-2.0
   - name: apiguardian-api
     version: 1.1.2
     licenses: Apache-2.0
   - name: asm
     version: '9.7'
-    licenses: BSD-3-Clause
-  - name: asm
-    version: '9.9'
-    licenses: BSD-3-Clause
-  - name: asm-analysis
-    version: '9.9'
     licenses: BSD-3-Clause
   - name: asm-commons
     version: '9.7'
@@ -41,12 +23,9 @@ sbom:
   - name: asm-tree
     version: '9.7'
     licenses: BSD-3-Clause
-  - name: asm-tree
-    version: '9.9'
-    licenses: BSD-3-Clause
-  - name: asm-util
-    version: '9.9'
-    licenses: BSD-3-Clause
+  - name: attoparser
+    version: 2.0.7.RELEASE
+    licenses: Apache-2.0
   - name: auto-common
     version: 1.2.2
     licenses: Apache-2.0
@@ -59,6 +38,60 @@ sbom:
   - name: automation
     version: 0.58.0
     licenses: ''
+  - name: batik-anim
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-awt-util
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-bridge
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-codec
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-constants
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-css
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-dom
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-ext
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-gvt
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-i18n
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-parser
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-script
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-shared-resources
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-svg-dom
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-svggen
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-transcoder
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-util
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-xml
+    version: '1.19'
+    licenses: Apache-2.0
   - name: bcmail-jdk18on
     version: '1.83'
     licenses: Bouncy Castle Licence
@@ -79,9 +112,6 @@ sbom:
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.17.7
-    licenses: Apache-2.0
-  - name: byte-buddy
-    version: 1.18.2
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.17.7
@@ -135,6 +165,9 @@ sbom:
     version: 1.1.1
     licenses: Apache-2.0
   - name: commons-logging
+    version: 1.3.0
+    licenses: Apache-2.0
+  - name: commons-logging
     version: 1.3.5
     licenses: Apache-2.0
   - name: commons-text
@@ -173,86 +206,20 @@ sbom:
   - name: flatlaf-swingx
     version: 3.6.2
     licenses: Apache-2.0
+  - name: flying-saucer-core
+    version: 9.13.3
+    licenses: LGPL-2.1-or-later
+  - name: flying-saucer-pdf
+    version: 9.13.3
+    licenses: LGPL-2.1-or-later
   - name: google-java-format
     version: 1.27.0
-    licenses: Apache-2.0
-  - name: groovy
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-all
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-ant
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-bom
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-cli-picocli
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-console
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-datetime
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-docgenerator
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-groovydoc
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-groovysh
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-jmx
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-json
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-jsr223
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-macro
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-nio
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-servlet
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-sql
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-swing
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-templates
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-test
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-test-junit5
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-xml
-    version: 5.0.3
-    licenses: Apache-2.0
-  - name: groovy-yaml
-    version: 5.0.3
     licenses: Apache-2.0
   - name: guava
     version: 33.4.0-jre
     licenses: Apache-2.0
   - name: hamcrest
     version: '3.0'
-    licenses: BSD-3-Clause
-  - name: hamcrest-core
-    version: '1.3'
     licenses: BSD-3-Clause
   - name: hamcrest-core
     version: '3.0'
@@ -277,9 +244,6 @@ sbom:
     licenses: Apache-2.0
   - name: ice4j
     version: 3.0-24-g34c2ce5
-    licenses: Apache-2.0
-  - name: ivy
-    version: 2.5.3
     licenses: Apache-2.0
   - name: j2objc-annotations
     version: 3.0.0
@@ -311,9 +275,6 @@ sbom:
   - name: jackson-datatype-jsr310
     version: 2.20.1
     licenses: Apache-2.0
-  - name: jansi
-    version: 3.30.6
-    licenses: BSD-4-Clause
   - name: java-diff-utils
     version: '4.12'
     licenses: Apache-2.0
@@ -326,9 +287,9 @@ sbom:
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
-  - name: javaparser-core
-    version: 3.27.1
-    licenses: GNU Lesser General Public License, Apache-2.0
+  - name: javassist
+    version: 3.29.0-GA
+    licenses: MPL-1.1, LGPL-2.1-only, Apache-2.0
   - name: javax.inject
     version: '1'
     licenses: Apache-2.0
@@ -341,36 +302,6 @@ sbom:
   - name: jgrapht-core
     version: 0.9.2
     licenses: LGPL-2.1-only, EPL-1.0
-  - name: jline-builtins
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jline-console
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jline-native
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jline-reader
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jline-style
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jline-terminal
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jline-terminal-jansi
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jline-terminal-jna
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jline-terminal-jni
-    version: 3.30.6
-    licenses: BSD-4-Clause
-  - name: jna
-    version: 5.18.1
-    licenses: LGPL-2.1-or-later, Apache-2.0
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
@@ -380,12 +311,6 @@ sbom:
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
-  - name: junit
-    version: 4.13.2
-    licenses: EPL-1.0
-  - name: junit-bom
-    version: 5.14.1
-    licenses: EPL-2.0
   - name: junit-bom
     version: 6.0.1
     licenses: EPL-2.0
@@ -393,13 +318,7 @@ sbom:
     version: 6.0.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 5.14.1
-    licenses: EPL-2.0
-  - name: junit-jupiter-api
     version: 6.0.1
-    licenses: EPL-2.0
-  - name: junit-jupiter-engine
-    version: 5.14.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
     version: 6.0.1
@@ -408,19 +327,10 @@ sbom:
     version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 1.14.1
-    licenses: EPL-2.0
-  - name: junit-platform-commons
     version: 6.0.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 1.14.1
-    licenses: EPL-2.0
-  - name: junit-platform-engine
     version: 6.0.1
-    licenses: EPL-2.0
-  - name: junit-platform-launcher
-    version: 1.14.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
     version: 6.0.1
@@ -441,6 +351,9 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: log4j-slf4j-impl
+    version: 2.25.2
+    licenses: Apache-2.0
+  - name: log4j-slf4j2-impl
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
@@ -506,12 +419,16 @@ sbom:
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
+  - name: ognl
+    version: 3.3.4
+    licenses: Apache-2.0
+  - name: openpdf
+    version: 2.0.5
+    licenses: GNU Lesser General Public License (LGPL), Version 2.1, Mozilla Public
+      License Version 2.0
   - name: opentest4j
     version: 1.3.0
     licenses: Apache-2.0
-  - name: org.abego.treelayout.core
-    version: 1.0.3
-    licenses: BSD-3-Clause
   - name: org.jacoco.agent
     version: 0.8.12
     licenses: EPL-2.0
@@ -539,29 +456,20 @@ sbom:
   - name: pcollections
     version: 4.0.1
     licenses: MIT
-  - name: picocli
-    version: 4.7.7
-    licenses: Apache-2.0
   - name: protobuf-java
     version: 3.25.5
     licenses: BSD-3-Clause
-  - name: pscan
-    version: 0.6.0
+  - name: reports
+    version: 0.43.0
     licenses: ''
-  - name: qdox
-    version: 2.2.0
-    licenses: Apache-2.0
   - name: rsyntaxtextarea
     version: 3.6.0
     licenses: BSD-3-Clause
-  - name: scripts
-    version: 45.17.0
-    licenses: ''
   - name: service
     version: 1.16.0
     licenses: Apache-2.0
   - name: slf4j-api
-    version: 1.7.36
+    version: 2.0.17
     licenses: MIT
   - name: snakeyaml
     version: '2.4'
@@ -581,11 +489,23 @@ sbom:
   - name: testutils
     version: unspecified
     licenses: ''
-  - name: websocket
-    version: '35'
-    licenses: ''
+  - name: thymeleaf
+    version: 3.1.3.RELEASE
+    licenses: Apache-2.0
+  - name: unbescape
+    version: 1.1.6.RELEASE
+    licenses: Apache-2.0
   - name: woodstox-core
     version: 7.1.1
+    licenses: Apache-2.0
+  - name: xml-apis
+    version: 1.4.01
+    licenses: Apache-2.0, SAX-PD, The W3C License
+  - name: xml-apis-ext
+    version: 1.3.04
+    licenses: Apache-2.0
+  - name: xmlgraphics-commons
+    version: '2.11'
     licenses: Apache-2.0
   - name: xom
     version: 1.3.9

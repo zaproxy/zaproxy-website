@@ -6,19 +6,22 @@ weight: 1
 cascade:
   addon:
     id: accessControl
-    version: 10.0.0
+    version: 11.0.0
 ---
 
 # Access Control Testing
+
 
 This add-on enables users to compare which parts of a web-application are available to some users, do access control
 testing and identify potential access control issues. It allows configuration of access rules and conducts a full
 attack aimed to help identify sections of a web application which are accessible by unauthorized clients.
 
+
 There are two main concepts related to this add-on that should be explained: the **Access Rules** and the **testing
 procedure**.
 
 ## Access Rules
+
 
 In order to identify potential access control issues, ZAP needs to know which parts of the web application are
 supposed to be accessed by which user. In ZAP, the name for these rules is: *Access Rules* and generally have
@@ -30,6 +33,7 @@ associated to one of the following values:
 * **Allowed** - the resource **can** be accessed by the User to which the rule refers
 * **Denied** - the resource **should not** be accessed by the User to which the rule refers
 * **Unknown** - there is **no information** regarding whether the resource should or shouldn't be accessible to the User to which the rule refers
+
 
 In order to simplify the access rules definition process, ZAP is making use of the tree-based structure of URLs.
 When analyzing the rules, an inference algorithm is used to detect the matching rules for each node based on its
@@ -59,7 +63,9 @@ The following Alerts may be raised by the add-on:
 
 Insufficient Authentication occurs when a web site permits an attacker to access sensitive content or functionality without having to properly authenticate. Web-based administration tools are a good example of web sites providing access to sensitive functionality. Depending on the specific online resource, these web applications should not be directly accessible without requiring the user to properly verify their identity.
 
+
 Latest Code: [AccessControlScannerThread.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/accessControl/src/main/java/org/zaproxy/zap/extension/accessControl/AccessControlScannerThread.java)
+
 
 Alert ID: [10101](/docs/alerts/10101/).
 
@@ -67,13 +73,15 @@ Alert ID: [10101](/docs/alerts/10101/).
 
 Insufficient Authorization results when an application does not perform adequate authorization checks to ensure that the user is performing a function or accessing data in a manner consistent with the security policy. Authorization procedures should enforce what a user, service or application is permitted to do. When a user is authenticated to a web site, it does not necessarily mean that the user should have full access to all content and functionality.
 
+
 Latest Code: [AccessControlScannerThread.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/accessControl/src/main/java/org/zaproxy/zap/extension/accessControl/AccessControlScannerThread.java)
+
 
 Alert ID: [10102](/docs/alerts/10102/).
 
 ## API
 
-The Addon exposes the following API endpoints:
+The add-on exposes the following API endpoints:
 
 ### Actions
 
