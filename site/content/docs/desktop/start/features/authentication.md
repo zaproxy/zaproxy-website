@@ -86,11 +86,3 @@ A set of environmental variables are available which allow you to easily add an 
 |   | [Session Contexts Dialog](/docs/desktop/ui/dialogs/session/contexts/) | for an overview of the Session Properties                                                                                         |
 |   | [Users](/docs/desktop/start/features/users/)                          | for an overview of Users                                                                                                          |
 |   | [Anti-CSRF tokens](/docs/desktop/start/features/anticsrf/)            | for an overview of anti-CSRF tokens                                                                                               |
-
-## Official Videos
-
-|   |                                                                                                               |
-|---|---------------------------------------------------------------------------------------------------------------|
-|   | [ZAP In Ten: Authentication: Basic and Digest](https://play.sonatype.com/watch/ttqKANDzJCAdBUkPrsz6Td) (9:57) |
-|   | [ZAP In Ten: Authentication: Form Based](https://play.sonatype.com/watch/B1vhaLSUsme7eA5hU8WeGB) (12:59)      |
-|   | [ZAP In Ten: ADDO Automation and Authentication Workshop](/addo-auth-workshop/) (8 videos)                    |

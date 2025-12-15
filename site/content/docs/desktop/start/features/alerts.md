@@ -35,7 +35,115 @@ the highest risk alert.
 All alerts are listed in the [Alerts tab](/docs/desktop/ui/tabs/alerts/)
 and a count of the total number of alerts by risk is shown in the [footer](/docs/desktop/ui/footer/).
 
-## Alert overrides
+
+The full set of alerts that ZAP can raise is available online at
+[https://www.zaproxy.org/docs/alerts/](/docs/alerts/)
+
+## Alert Fields
+
+The following fields are supported.
+
+### Name
+
+The name of the alert, for example "Cross Site Scripting (Reflected)"
+
+### URL
+
+The URL related to the alert.
+
+### Node Name
+
+A normalised version of the URL, which is also used in the [Sites Tree](/docs/desktop/start/features/sitestree/)
+
+### Risk
+
+The relative severity of the alert.
+
+
+One of:
+
+* Informational
+* Low
+* Medium
+* High
+
+The risk is automatically set for Alerts raised by ZAP. If you want to change the risk you can either do that manually for each alert or you can create an Alert Filter to do it automatically.
+
+### Confidence
+
+The relative confidence in the alert.
+
+
+One of:
+
+* False Positive
+* Low
+* Medium
+* High
+* Confirmed
+
+ZAP will not raise an alert with a confidence of either "False Positive" or "Confirmed". However you can set these levels either manually or via an Alert Filter.
+
+### Parameter
+
+The name of the parameter that was attacked. This will be empty if the alert is not associated with a specific parameter.
+
+### Attack
+
+The payload used to find the alert. This will be empty for passive alerts.
+
+### Evidence
+
+A string that appears in the request or response which was used to help identify the alert. This will be empty if there is no relevant string, for example for missing security headers.
+
+### CWE ID
+
+The [Common Weakness Enumeration](https://cwe.mitre.org/) ID.
+
+### WASC ID
+
+The [Web Application Security Consortium](http://projects.webappsec.org/w/page/13246978/Threat%20Classification) ID.
+
+### Source
+
+The component which raised the alert, and the ID of the rule.
+
+### Alert Reference
+
+The ID of the rule which raised the alert, optionally followed by a dash and the alert type.
+
+
+All of the alerts raised by ZAP are listed on
+[https://www.zaproxy.org/docs/alerts/](/docs/alerts/),
+and they all have a static page with a URL based on the Alert Reference.
+
+{#alert-input}
+
+### Input Vector
+
+The [Active Scan Input Vector](/docs/desktop/ui/dialogs/options/ascaninput/) used to identify the element attacked. This will be empty for passive alerts or if the alert is not associated with a specific parameter.
+
+### Description
+
+A detailed description of the alert. This will be the same text for all alert instances with the same reference.
+
+### Other Info
+
+Alert specific information, which is potentially different for each alert raised.
+
+### Solution
+
+Potential solutions to the underlying problem. Note that these solutions will be generic as ZAP does not access any source code. This will be the same text for all alert instances with the same reference.
+
+### Reference
+
+A set of links to more information about the alert online.
+
+### Alert Tags
+
+The tags associated with the alert. The full set of tags supported are listed on [https://www.zaproxy.org/alerttags/](/alerttags/).
+
+## Alert Overrides
 
 Alerts raised by ZAP include both generic and specific information about the alerts raised. The specific information relates directly to the potential issue found, such as the URL and the parameter affected. The generic information includes things like a description and links to related online resources.
 

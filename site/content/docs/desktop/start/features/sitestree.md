@@ -71,6 +71,136 @@ Finally there are cases where sites define custom parameters which ZAP does not 
 
 In these cases you can use Input Vector [Scripts](/docs/desktop/start/features/scripts/) which can represent request in the Sites Tree in any way you want.
 
+## Node Name Format
+
+### Top Level Nodes
+
+The top level node names include the protocol, host name and the port (if specified), e.g. `https://www.example.com:8080`
+
+### Intermediate Nodes
+
+Non leaf nodes will just have the name of the relevant part of the URL path, unless they are configured to be [Data Driven Content](/docs/desktop/start/features/ddc/) in which case then will have the format `«ddc-name»`.
+
+### Leaf Nodes
+
+Leaf node names are made up of:
+
+* The HTTP method (GET, POST, etc)
+* A colon
+* The last path element, or "/" if the last element is empty
+* A list of the URL parameter names in round brackets
+* An optional representation of the POST parameter names in round brackets
+
+A GET request to
+
+
+* `https://www.example.com/aaa/bbb?cc=dd&ee=ff`
+
+will be represented as 3 nodes:
+
+
+* https://www.example.com
+    * aaa
+        * GET:bbb(cc,ee)
+
+A POST request to
+
+
+* `https://www.example.com/aaa/bbb/ccc/?cc=dd`
+
+with "application/x-www-form-urlencoded" encoded data
+
+
+* `cc=dd&ee=ff&gg=hh`
+
+will be represented as 5 nodes:
+
+
+* https://www.example.com
+    * aaa
+        * bbb
+            * ccc
+                * POST:/(cc)(cc,ee,gg)
+
+A POST request to
+
+
+* `https://www.example.com/aaa/bbb/ccc`
+
+with the JSON encoded data
+
+
+* `{"aaa":{"bbb": "ccc", "ddd": "eee"}, fff: ["kkk", {"ggg":"hhh"}, {"iii":"jjj"}]}`
+
+will be represented as 4 nodes:
+
+
+* https://www.example.com
+    * aaa
+        * bbb
+            * POST:ccc()({aaa:{bbb,ddd},fff:\[{ggg},{iii}\]})
+
+A POST request to
+
+
+* `https://www.example.com/aaa/bbb/`
+
+with the XML encoded data
+
+
+* `<aaa><bbb>BBB</bbb><ccc>CCC</ccc><ddd>DDD</ddd></aaa>`
+
+will be represented as 4 nodes:
+
+
+* https://www.example.com
+    * aaa
+        * bbb
+            * POST:/()(\<aaa:\<bbb\>,\<ccc\>,\<ddd\>\>)
+
+For JSON and XML data repeated child elements may be represented using "`..`".  
+For example
+
+* `[{"a":{"b": "c", "d": "e"}},{"a":{"b": "f", "d": "g"}},{"a":{"b": "h", "d": "i"}}]`
+
+will be represented as
+
+
+* `[{a:{b,d}}..]`
+
+
+A POST request to
+
+* `https://www.example.com/aaa/`
+
+with multipart POST data like:
+
+```
+-----------------------------3973496743964376987349857345
+Content-Disposition: form-data; name="text"
+
+text default
+-----------------------------3973496743964376987349857345
+Content-Disposition: form-data; name="file1"; filename="a.txt"
+Content-Type: text/plain
+
+Content of a.txt.
+
+-----------------------------3973496743964376987349857345
+Content-Disposition: form-data; name="file2"; filename="a.html"
+Content-Type: text/html
+
+<!DOCTYPE html><title>Content of a.html.</title>
+
+-----------------------------3973496743964376987349857345--
+```
+
+will be represented as 3 nodes:
+
+* https://www.example.com
+    * aaa
+        * POST:/()(multipart:text,file1,file2)
+
 ## See also
 
 |   |                                           |                                       |

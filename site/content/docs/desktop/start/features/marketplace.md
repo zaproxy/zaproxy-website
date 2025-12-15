@@ -21,9 +21,3 @@ All of the add-ons on the ZAP Marketplace are, of course, free and open source.
 |---|-------------------------------------------|---------------------------------------|
 |   | [UI Overview](/docs/desktop/ui/)          | for an overview of the user interface |
 |   | [Features](/docs/desktop/start/features/) | provided by ZAP                       |
-
-## Official Videos
-
-|   |                                                                                                  |
-|---|--------------------------------------------------------------------------------------------------|
-|   | [ZAP In Ten: The ZAP Marketplace](https://play.sonatype.com/watch/u5Wv6KsoozBefCuEmrFDzC) (9:47) |

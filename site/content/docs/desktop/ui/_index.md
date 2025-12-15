@@ -69,10 +69,3 @@ Hidden tabs may also appear when 'activated' by another action.
 |   | [Getting Started](/docs/desktop/start/) | for details of how to start using ZAP |
 |   | [Dialogs](/docs/desktop/ui/dialogs/)    | for details of the dialogs or popups  |
 |   | [Introduction](/docs/desktop/)          | the introduction to ZAP               |
-
-## Official Videos
-
-|   |                                                                                                     |
-|---|-----------------------------------------------------------------------------------------------------|
-|   | [ZAP In Ten: The Desktop Interface](https://play.sonatype.com/watch/p35FK8Cri5A3EF3RBGoMAr) (10:05) |
-|   | [ZAP Deep Dive: The Desktop Interface](https://youtu.be/-kbY4k8eSd0) (31:53)                        |
