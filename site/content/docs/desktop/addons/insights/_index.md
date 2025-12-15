@@ -20,6 +20,10 @@ and can even stop a scan early if significant problems are identified.
 
 The add-on includes a full [set of insights](/docs/desktop/addons/insights/insights-list/) built in.
 
+## Automation
+
+This add-on supports the [Automation Framework](/docs/desktop/addons/insights/insights-job/).
+
 ## Insights Panel
 
 This shows all of the Insights reported along with the relevant [fields](/docs/desktop/addons/insights/insights-fields/)
@@ -27,3 +31,7 @@ This shows all of the Insights reported along with the relevant [fields](/docs/d
 ## Insights Options
 
 A screen which allows you to configure the Insight [options](/docs/desktop/addons/insights/insights-options/)
+
+## Reports
+
+Insights are available in the ZAP reports.

@@ -2,12 +2,26 @@
 # This page was generated from the add-on.
 title: Insights Options
 type: userguide
-weight: 3
+weight: 4
 ---
 
 # Insights Options
 
 This screen allows you to configure the [Insights](/docs/desktop/addons/insights/) options.
+
+### Exit Automation on High
+
+If set then a High Level Insight will stop automation.
+
+
+If the Desktop UI is being used then this option will have no effect.
+
+
+If the [insights](/docs/desktop/addons/insights/insights-job/) Automation Framework job has run and the plan is still running then the plan
+will be stopped. Any jobs that are flagged as "always run" will still run.
+
+
+In all other cases ZAP will be stopped.
 
 ### Message Low Threshold %
 
