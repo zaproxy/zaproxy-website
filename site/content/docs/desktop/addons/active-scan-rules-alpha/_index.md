@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: 53.0.0
+    version: 54.0.0
 ---
 
 # Active Scan Rules - Alpha
@@ -22,26 +22,6 @@ Latest code: [LdapInjectionScanRule.java](https://github.com/zaproxy/zap-extensi
 
 
 Alert ID: [40015](/docs/alerts/40015/).
-
-## NoSQL Injection - MongoDB {#id-40033}
-
-This rule attempts to identify MongoDB specific NoSQL Injection vulnerabilities. It attempts various types of attacks including: boolean based, error based, time based, and authentication bypass. It does not include time based attacks. It will also attempt JSON parameter specific payloads if the scan is configured to include JSON parameter variants.
-
-
-Latest code: [MongoDbInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/MongoDbInjectionScanRule.java)
-
-
-Alert ID: [40033](/docs/alerts/40033/).
-
-## NoSQL Injection - MongoDB (Time Based) {#id-90039}
-
-This rule attempts to identify MongoDB specific NoSQL Injection vulnerabilities using only time based attacks.
-
-
-Latest code: [MongoDbInjectionTimingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/MongoDbInjectionTimingScanRule.java)
-
-
-Alert ID: [90039](/docs/alerts/90039/).
 
 ## Web Cache Deception {#id-40039}
 

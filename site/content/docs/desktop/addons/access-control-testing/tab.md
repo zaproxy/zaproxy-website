@@ -7,6 +7,7 @@ weight: 1
 
 # Access Control Status Tab
 
+
 The Access Control Status Tab allows starting of new Access Control testing and displays the results obtained. For
 each User and for each URL attacked by ZAP, an entry is added with information about:
 

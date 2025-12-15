@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 63.0.0
+    version: 64.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -69,16 +69,6 @@ Latest code: [CsrfTokenScanRule.java](https://github.com/zaproxy/zap-extensions/
 
 Alert ID: [20012](/docs/alerts/20012/).
 
-## Exponential Entity Expansion (Billion Laughs Attack) {#id-40044}
-
-This rule attempts to identify the "Billion Laughs" vulnerability in servers that accept XML or YAML files.
-
-
-Latest code: [ExponentialEntityExpansionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/ExponentialEntityExpansionScanRule.java)
-
-
-Alert ID: [40044](/docs/alerts/40044/).
-
 ## Expression Language Injection {#id-90025}
 
 Checks if the web application is subject to Expression Language (EL) injection attacks, which occur when an application fails to sufficiently neutralize special elements that could modify the intended EL statement before it is executed.
@@ -88,16 +78,6 @@ Latest code: [ExpressionLanguageInjectionScanRule.java](https://github.com/zapro
 
 
 Alert ID: [90025](/docs/alerts/90025/).
-
-## HTTP Only Site {#id-10106}
-
-This active scan rule checks whether an HTTP site is served under HTTPS.
-
-
-Latest code: [HttpOnlySiteScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/HttpOnlySiteScanRule.java)
-
-
-Alert ID: [10106](/docs/alerts/10106/).
 
 ## HttPoxy - Proxy Header Misuse {#id-10107}
 
@@ -110,16 +90,6 @@ Latest code: [HttPoxyScanRule.java](https://github.com/zaproxy/zap-extensions/bl
 
 
 Alert ID: [10107](/docs/alerts/10107/).
-
-## HTTPS Content Available via HTTP {#id-10047}
-
-This active scan rule attempts to access content that was originally accessed via HTTPS (SSL/TLS) via HTTP.
-
-
-Latest code: [HttpsAsHttpScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/HttpsAsHttpScanRule.java)
-
-
-Alert ID: [10047](/docs/alerts/10047/).
 
 ## HTTP Parameter Pollution (HPP) {#id-20014}
 
@@ -150,6 +120,26 @@ Latest code: [IntegerOverflowScanRule.java](https://github.com/zaproxy/zap-exten
 
 
 Alert ID: [30003](/docs/alerts/30003/).
+
+## NoSQL Injection - MongoDB {#id-40033}
+
+This rule attempts to identify MongoDB specific NoSQL Injection vulnerabilities. It attempts various types of attacks including: boolean based, error based, time based, and authentication bypass. It does not include time based attacks. It will also attempt JSON parameter specific payloads if the scan is configured to include JSON parameter variants.
+
+
+Latest code: [MongoDbInjectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/MongoDbInjectionScanRule.java)
+
+
+Alert ID: [40033](/docs/alerts/40033/).
+
+## NoSQL Injection - MongoDB (Time Based) {#id-90039}
+
+This rule attempts to identify MongoDB specific NoSQL Injection vulnerabilities using only time based attacks.
+
+
+Latest code: [MongoDbInjectionTimingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/MongoDbInjectionTimingScanRule.java)
+
+
+Alert ID: [90039](/docs/alerts/90039/).
 
 ## Out of Band XSS {#id-40031}
 
@@ -194,19 +184,6 @@ Latest code: [SessionFixationScanRule.java](https://github.com/zaproxy/zap-exten
 
 
 Alert ID: [40013](/docs/alerts/40013/).
-
-## ShellShock - CVE-2014-6271 {#id-10048}
-
-This rule perform 2 attacks to detect servers vulnerable to CVE-2014-6271 aka ShellShock.  
-The first is a simple reflected attack and the second is a time based attack.  
-
-Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
-
-
-Latest code: [ShellShockScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesBeta/src/main/java/org/zaproxy/zap/extension/ascanrulesBeta/ShellShockScanRule.java)
-
-
-Alert ID: [10048](/docs/alerts/10048/).
 
 ## Source Code Disclosure - SVN {#id-42}
 

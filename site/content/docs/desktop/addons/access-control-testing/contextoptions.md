@@ -7,8 +7,10 @@ weight: 2
 
 # Access Control Context Options
 
+
 The Access Control Context options are present as a panel for each Context when opening the Session Properties
 dialog. This panel allows ZAP users to define the Access Rules for each User of each Context.
+
 
 As mentioned on the [concepts](/docs/desktop/addons/access-control-testing/) page, ZAP is making use of the tree-based
 structure of URLs. So, when configuring the access rules, only 1 rule needs to be set explicitly for an entire

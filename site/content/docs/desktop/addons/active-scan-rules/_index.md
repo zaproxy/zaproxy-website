@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 77.0.0
+    version: 78.0.0
 ---
 
 # Active Scan Rules
@@ -153,6 +153,16 @@ Latest code: [ElmahScanRule.java](https://github.com/zaproxy/zap-extensions/blob
 
 Alert ID: [40028](/docs/alerts/40028/).
 
+## Exponential Entity Expansion (Billion Laughs Attack) {#id-40044}
+
+This rule attempts to identify the "Billion Laughs" vulnerability in servers that accept XML or YAML files.
+
+
+Latest code: [ExponentialEntityExpansionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/ExponentialEntityExpansionScanRule.java)
+
+
+Alert ID: [40044](/docs/alerts/40044/).
+
 ## External Redirect {#id-20019}
 
 This rule submits a variety of URL redirect strings as parameter values in a request, then examines the headers and bodies of responses to determine whether or not a redirect occurred and of what type. The cause of redirect is searched for in the "Location" and "Refresh" header fields, as well as by HTML meta tags and Javascript in the body of the response. An alert is raised including the redirection type and the scanner returns immediately.
@@ -237,6 +247,26 @@ Latest code: [HiddenFilesScanRule.java](https://github.com/zaproxy/zap-extension
 
 
 Alert ID: [40035](/docs/alerts/40035/).
+
+## HTTP Only Site {#id-10106}
+
+This active scan rule checks whether an HTTP site is served under HTTPS.
+
+
+Latest code: [HttpOnlySiteScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/HttpOnlySiteScanRule.java)
+
+
+Alert ID: [10106](/docs/alerts/10106/).
+
+## HTTPS Content Available via HTTP {#id-10047}
+
+This active scan rule attempts to access content that was originally accessed via HTTPS (SSL/TLS) via HTTP.
+
+
+Latest code: [HttpsAsHttpScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/HttpsAsHttpScanRule.java)
+
+
+Alert ID: [10047](/docs/alerts/10047/).
 
 ## Log4Shell (CVE-2021-44228 and CVE-2021-45046) {#id-40043}
 
@@ -353,6 +383,19 @@ Latest code: [SstiBlindScanRule.java](https://github.com/zaproxy/zap-extensions/
 
 
 Alert ID: [90036](/docs/alerts/90036/).
+
+## ShellShock - CVE-2014-6271 {#id-10048}
+
+This rule performs 2 attacks to detect servers vulnerable to CVE-2014-6271 aka ShellShock.  
+The first is a simple reflected attack and the second is a time based attack.  
+
+Post 2.5.0 you can change the length of time used for the attack by changing the `rules.common.sleep` parameter via the Options 'Rule configuration' panel.
+
+
+Latest code: [ShellShockScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/ShellShockScanRule.java)
+
+
+Alert ID: [10048](/docs/alerts/10048/).
 
 ## Source Code Disclosure - CVE-2012-1823 {#id-20017}
 

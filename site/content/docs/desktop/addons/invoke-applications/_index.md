@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: invoke
-    version: 16.0.0
+    version: 17.0.0
 ---
 
 # Invoke Applications
