@@ -177,7 +177,7 @@ This option will launch any of the most common browsers that you have installed 
 
 If you would like to use any of your browsers with an existing profile, for example with other browser add-ons installed, then you will need to manually configure your browser to proxy via ZAP and import and trust the ZAP Root CA Certificate. See the ZAP Desktop User Guide for more details.
 
-By default the ZAP Heads Up Display (HUD) will be enabled. Unchecking the relevant option on this screen before launching a browser will disable the HUD.
+By default the ZAP Heads Up Display (HUD) will be disabled. Checking the relevant option on this screen before launching a browser will enable the HUD.
 
 ## The Heads Up Display
 The Heads Up Display (HUD) is an innovative interface that provides access to ZAP functionality directly in the browser. It is ideal for people new to web security and also allows experienced penetration testers to focus on an applications functionality while providing key security information and functionality.
@@ -210,9 +210,9 @@ All of the add-ons on the marketplace are completely free.
 
 ### Automation
 ZAP is an ideal tool to use in automation and supports a range of options:
+- [Automation Framework](/docs/automate/automation-framework/)
 - [Docker Packaged Scans](/docs/docker/)
 - [GitHub Actions](https://github.com/marketplace?query=zap&verification=verified_creator)
-- [Automation Framework](/docs/automate/automation-framework/)
 - [API and Daemon mode](/docs/api/)
 
 ### Learn More About ZAP
