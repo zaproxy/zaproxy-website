@@ -1,15 +1,15 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Report Generation Add-on SBOM
+title: Token Generation and Analysis Add-on SBOM
 type: sbom
 weight: 1
 cascade:
   addon:
-    id: reports
-    version: 0.43.0
+    id: tokengen
+    version: '16'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.43.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tokengen-v16/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -23,9 +23,6 @@ sbom:
   - name: asm-tree
     version: '9.7'
     licenses: BSD-3-Clause
-  - name: attoparser
-    version: 2.0.7.RELEASE
-    licenses: Apache-2.0
   - name: auto-common
     version: 1.2.2
     licenses: Apache-2.0
@@ -34,63 +31,6 @@ sbom:
     licenses: Apache-2.0
   - name: auto-value-annotations
     version: '1.9'
-    licenses: Apache-2.0
-  - name: automation
-    version: 0.59.0
-    licenses: ''
-  - name: batik-anim
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-awt-util
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-bridge
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-codec
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-constants
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-css
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-dom
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-ext
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-gvt
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-i18n
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-parser
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-script
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-shared-resources
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-svg-dom
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-svggen
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-transcoder
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-util
-    version: '1.19'
-    licenses: Apache-2.0
-  - name: batik-xml
-    version: '1.19'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
     version: '1.83'
@@ -122,9 +62,6 @@ sbom:
   - name: checker-qual
     version: 3.43.0
     licenses: MIT
-  - name: commonlib
-    version: 1.40.0
-    licenses: ''
   - name: commons-beanutils
     version: 1.11.0
     licenses: Apache-2.0
@@ -132,16 +69,10 @@ sbom:
     version: 1.8.0
     licenses: Apache-2.0
   - name: commons-codec
-    version: 1.19.0
-    licenses: Apache-2.0
-  - name: commons-codec
     version: 1.20.0
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
-    licenses: Apache-2.0
-  - name: commons-collections4
-    version: 4.5.0
     licenses: Apache-2.0
   - name: commons-configuration
     version: '1.10'
@@ -153,9 +84,6 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.17.0
-    licenses: Apache-2.0
-  - name: commons-io
     version: 2.21.0
     licenses: Apache-2.0
   - name: commons-lang
@@ -165,7 +93,7 @@ sbom:
     version: 3.19.0
     licenses: Apache-2.0
   - name: commons-logging
-    version: 1.3.0
+    version: 1.1.1
     licenses: Apache-2.0
   - name: commons-logging
     version: 1.3.5
@@ -206,12 +134,6 @@ sbom:
   - name: flatlaf-swingx
     version: 3.6.2
     licenses: Apache-2.0
-  - name: flying-saucer-core
-    version: 9.13.3
-    licenses: LGPL-2.1-or-later
-  - name: flying-saucer-pdf
-    version: 9.13.3
-    licenses: LGPL-2.1-or-later
   - name: google-java-format
     version: 1.27.0
     licenses: Apache-2.0
@@ -245,38 +167,11 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
-  - name: insights
-    version: 0.1.0
-    licenses: ''
   - name: j2objc-annotations
     version: 3.0.0
     licenses: Apache-2.0
-  - name: jackson-annotations
-    version: '2.20'
-    licenses: Apache-2.0
-  - name: jackson-bom
-    version: 2.20.1
-    licenses: Apache-2.0
-  - name: jackson-core
-    version: 2.20.1
-    licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
-    licenses: Apache-2.0
-  - name: jackson-databind
-    version: 2.20.1
-    licenses: Apache-2.0
-  - name: jackson-dataformat-xml
-    version: 2.20.1
-    licenses: Apache-2.0
-  - name: jackson-dataformat-yaml
-    version: 2.20.1
-    licenses: Apache-2.0
-  - name: jackson-datatype-jdk8
-    version: 2.20.1
-    licenses: Apache-2.0
-  - name: jackson-datatype-jsr310
-    version: 2.20.1
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -290,9 +185,6 @@ sbom:
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
-  - name: javassist
-    version: 3.29.0-GA
-    licenses: MPL-1.1, LGPL-2.1-only, Apache-2.0
   - name: javax.inject
     version: '1'
     licenses: Apache-2.0
@@ -354,9 +246,6 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: log4j-slf4j-impl
-    version: 2.25.2
-    licenses: Apache-2.0
-  - name: log4j-slf4j2-impl
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
@@ -422,13 +311,6 @@ sbom:
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
-  - name: ognl
-    version: 3.3.4
-    licenses: Apache-2.0
-  - name: openpdf
-    version: 2.0.5
-    licenses: GNU Lesser General Public License (LGPL), Version 2.1, Mozilla Public
-      License Version 2.0
   - name: opentest4j
     version: 1.3.0
     licenses: Apache-2.0
@@ -465,51 +347,24 @@ sbom:
   - name: rsyntaxtextarea
     version: 3.6.0
     licenses: BSD-3-Clause
-  - name: sequence
-    version: '9'
-    licenses: ''
   - name: service
     version: 1.16.0
     licenses: Apache-2.0
   - name: slf4j-api
-    version: 2.0.17
+    version: 1.7.36
     licenses: MIT
-  - name: snakeyaml
-    version: '2.4'
-    licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT
   - name: spotbugs-annotations
     version: 4.8.6
     licenses: LGPL-2.1-only
-  - name: stax2-api
-    version: 4.2.2
-    licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
   - name: testutils
     version: unspecified
     licenses: ''
-  - name: thymeleaf
-    version: 3.1.3.RELEASE
-    licenses: Apache-2.0
-  - name: unbescape
-    version: 1.1.6.RELEASE
-    licenses: Apache-2.0
-  - name: woodstox-core
-    version: 7.1.1
-    licenses: Apache-2.0
-  - name: xml-apis
-    version: 1.4.01
-    licenses: Apache-2.0, SAX-PD, The W3C License
-  - name: xml-apis-ext
-    version: 1.3.04
-    licenses: Apache-2.0
-  - name: xmlgraphics-commons
-    version: '2.11'
-    licenses: Apache-2.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1

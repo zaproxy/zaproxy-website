@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: 47.0.0
+    version: 48.0.0
 ---
 
 # Passive Scan Rules - Beta
@@ -50,30 +50,6 @@ The Custom Payloads category for this rule is: `JS-Function`.
 Latest code: [JsFunctionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/JsFunctionScanRule.java)  
 
 Alert ID: [10110](/docs/alerts/10110/)
-
-## In Page Banner Information Leak {#id-10009}
-
-Analyzes response body content for the presence of web or application server banners (when the responses have error status codes).  
-If the Threshold is Low then status 200 - Ok responses are analyzed as well.  
-The presence of such banners may facilitate more targeted attacks against known vulnerabilities.
-
-
-Latest code: [InPageBannerInfoLeakScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/InPageBannerInfoLeakScanRule.java)  
-
-Alert ID: [10009](/docs/alerts/10009/)
-
-## Java Serialization Object {#id-90002}
-
-Java Serialization Object (JSO) is a way to save and exchange objects between Java applications.  
-Different problems are associated with JSO. Sensitive data can leak to the stream of bytes.  
-An attacker can also modify the data and exploit JSO to do a Remote Code Execution on the server.  
-JSO should not be used by Java programs. Strong controls must be done on serialized data.  
-JSO are a type of vulnerabilities associated to A8:2017-Insecure Deserialization.
-
-
-Latest code: [JsoScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/JsoScanRule.java)  
-
-Alert ID: [90002](/docs/alerts/90002/)
 
 ## Permissions Policy Header Not Set {#id-10063}
 
@@ -126,17 +102,3 @@ NOTE: Ignores CSS, JavaScript, images, font files, and responses that contain IS
 Latest code: [SourceCodeDisclosureScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/SourceCodeDisclosureScanRule.java)  
 
 Alert ID: [10099](/docs/alerts/10099/)
-
-## Sub Resource Integrity Attribute Missing {#id-90003}
-
-This rule checks whether the integrity attribute in the script or the link element served by an external resource (for example: CDN) is missing.  
-It helps mitigate an attack where the CDN has been compromised and content has been replaced by malicious content.  
-Note: A suggested integrity hash value will be present in the relevant Alert's Other Info details if it can be resolved to a script in the Sites Tree.
-
-
-This rule supports **Trusted Domains**, check "General Configuration" for more information.
-
-
-Latest code: [SubResourceIntegrityAttributeScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesBeta/src/main/java/org/zaproxy/zap/extension/pscanrulesBeta/SubResourceIntegrityAttributeScanRule.java)  
-
-Alert ID: [90003](/docs/alerts/90003/)

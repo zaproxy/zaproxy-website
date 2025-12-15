@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: sequence
-    version: 8.0.0
+    version: 9.0.0
 ---
 
 # Sequence Scanner

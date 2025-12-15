@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: 28.0.0
+    version: 29.0.0
 ---
 
 # SOAP Support

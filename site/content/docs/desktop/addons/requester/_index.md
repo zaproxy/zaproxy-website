@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: requester
-    version: 7.8.0
+    version: 7.9.0
 ---
 
 # Requester Add-on

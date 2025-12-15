@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: replacer
-    version: 20.0.0
+    version: 21.0.0
 ---
 
 # Replacer

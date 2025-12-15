@@ -11,6 +11,7 @@ type: userguide
 | Section        | ID            |
 |:---------------|:--------------|
 | Alert Count    | alertcount    |
+| Insights       | insights      |
 | Instance Count | instancecount |
 | Alert Details  | alertdetails  |
 

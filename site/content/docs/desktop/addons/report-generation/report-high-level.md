@@ -12,6 +12,7 @@ type: userguide
 |:-----------------------------|:--------------------|
 | Risk Summary Chart           | riskSummaryChart    |
 | No. of Bug Occurrences Count | bugsCountChart      |
+| Insights                     | insights            |
 | Vulnerability Impact         | vulnerabilityImpact |
 
 ### Screenshot
