@@ -1,56 +1,55 @@
 - item: Release 2.18
   status: ⌚ Planned
-  year: 2025
+  year: 2026
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
-- item: Release 2.17
+- item: Improved Modern App Crawling
   status: ⌚ Planned
-  year: 2025
+  year: 2026
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Improved Client Side Vulnerability Detection
+  status: ⌚ Planned
+  year: 2026
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
 - item: Expand Custom Payloads support to additional rules
   url: /docs/desktop/addons/custom-payloads/
   status: ⌚ Planned
-  year: 2025
+  year: 2026
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
 - item: Expand PCAP import support
   status: ⌚ Planned
   url: https://github.com/zaproxy/zaproxy/issues/4812
-  year: 2025
+  year: 2026
 - item: Expand gRPC support
   status: ⌚ Planned
   url: https://github.com/zaproxy/zaproxy/issues/7695
-  year: 2025
+  year: 2026
 - item: Improved Authentication Handling
   status: ⚡ In progress
-  year: 2025
-  sponsor: Checkmarx Ltd.
-  sponsorlink: https://checkmarx.com/
-- item: Continue to improve modern web app handling
-  url: /docs/desktop/addons/client-side-integration/
-  status: ⚡ In progress
-  year: 2025
+  year: 2026
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
 - item: Automation Framework enhancements
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/6461
-  year: 2025
+  year: 2026
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
 - item: Move Break Functionality to an add-on
   status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/8153
-  year: 2025
+  year: 2026
 - item: "OpenSSF Best Practices: Silver Currently 54 of 55 criteria met"
   status: ⚡ In progress
   url: https://bestpractices.coreinfrastructure.org/en/projects/24?criteria_level=1
-  year: 2025
+  year: 2026
 - item: Ensure alert details and examples are complete and up to date
   status: ⚡ In progress
   url: /docs/alerts/
-  year: 2025
+  year: 2026
 
 - item: Continue working on issues
   status: ♻ Ongoing
@@ -64,6 +63,11 @@
   status: ♻ Ongoing
   year: n/a
 
+- item: Release 2.17
+  status: 🎉 Finished
+  year: 2025
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
 - item: Release 2.16
   status: 🎉 Finished
   year: 2025
@@ -81,47 +85,55 @@
   year: 2025
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
+
 - item: Improve sequence scanning functionality
   url: /docs/desktop/addons/sequence-scanner/
   status: 🎉 Finished
+  archive: true
   year: 2024
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
 - item: Initial PCAP import support
   status: 🎉 Finished
   url: https://github.com/zaproxy/zaproxy/issues/4812
+  archive: true
   year: 2024
 - item: Initial gRPC Support
   status: 🎉 Finished
   url: https://github.com/zaproxy/zaproxy/issues/7695
+  archive: true
   year: 2024
   sponsor: ZAProxy Ltd
   sponsorlink: https://www.zaproxy.com/
 - item: Improve modern web app handling
   url: /blog/2023-11-03-handling-modern-web-apps-better-part1/
   status: 🎉 Finished
+  archive: true
   year: 2024
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
 - item: Secure Funding for ZAP Development
   status: 🎉 Finished
   url: /blog/2024-09-24-zap-has-joined-forces-with-checkmarx/
+  archive: true
   year: 2024
   sponsor: CrashOverride
   sponsorlink: https://crashoverride.com/?zap=web
 - item: Automation Framework GitHub Action
   status: 🎉 Finished
   url: https://github.com/marketplace/actions/zap-automation-framework-scan
+  archive: true
   year: 2024
 - item: Scripts as First Class Scan Rules
   status: 🎉 Finished
   url: https://github.com/zaproxy/zaproxy/issues/7105
+  archive: true
   year: 2024
 - item: Release 2.15
   status: 🎉 Finished
   url: /blog/2024-05-07-zap-2-15-0/
+  archive: true
   year: 2024
-
 - item: Document Target Scanning Issues
   status: 🎉 Finished
   url: /docs/getting-further/automation/target-scanning-issues/
