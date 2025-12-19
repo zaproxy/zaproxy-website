@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '170'
+    version: '171'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v170/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v171/bom.json
   components:
   - name: asm
     version: '9.7'
@@ -105,10 +105,10 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flatlaf-swingx
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: google-java-format
     version: 1.27.0
@@ -225,7 +225,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.17.0-SNAPSHOT
+    version: 2.17.0
     licenses: Apache-2.0
 ---
 
