@@ -42,6 +42,7 @@
 @include meta.load-css('footer');
 @include meta.load-css('form.scss');
 @include meta.load-css('effects.scss');
+@include meta.load-css('tables');
 @include meta.load-css('pages/addons.scss');
 @include meta.load-css('pages/homepage.scss');
 @include meta.load-css('pages/download.scss');
