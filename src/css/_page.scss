@@ -22,7 +22,7 @@ a {
 }
 
 .bullet-list li {
-  margin-bottom: 0.6 rem;
+  margin-bottom: 0.6rem;
 }
 
 .bullet-list a {
@@ -31,7 +31,10 @@ a {
 }
 
 table {
-  width: 100%;
+  display: inline-block;
+  width: auto !important; 
+  max-width: 100%;   
+  overflow-x: auto;
   border-collapse: collapse;
 
   &.bordered {
