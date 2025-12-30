@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: 54.0.0
+    version: 55.0.0
 ---
 
 # Active Scan Rules - Alpha
@@ -22,6 +22,16 @@ Latest code: [LdapInjectionScanRule.java](https://github.com/zaproxy/zap-extensi
 
 
 Alert ID: [40015](/docs/alerts/40015/).
+
+## SQL Injection - SQLite (Time Based) {#id-40024}
+
+This active scan rule attempts to inject SQLite specific commands into parameter values and analyzes the timing of server responses to see if the commands were effectively executed on the server (indicating a successful SQL injection attack).
+
+
+Latest code: [SqlInjectionSqLiteTimingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/SqlInjectionSqLiteTimingScanRule.java)
+
+
+Alert ID: [40024](/docs/alerts/40024/).
 
 ## Web Cache Deception {#id-40039}
 

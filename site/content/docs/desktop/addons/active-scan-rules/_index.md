@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 78.0.0
+    version: 79.0.0
 ---
 
 # Active Scan Rules
@@ -527,16 +527,6 @@ Latest code: [SqlInjectionPostgreSqlTimingScanRule.java](https://github.com/zapr
 
 
 Alert ID: [40022](/docs/alerts/40022/).
-
-## SQL Injection - SQLite (Time Based) {#id-40024}
-
-This active scan rule attempts to inject SQLite specific commands into parameter values and analyzes the timing of server responses to see if the commands were effectively executed on the server (indicating a successful SQL injection attack).
-
-
-Latest code: [SqlInjectionSqLiteTimingScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrules/src/main/java/org/zaproxy/zap/extension/ascanrules/SqlInjectionSqLiteTimingScanRule.java)
-
-
-Alert ID: [40024](/docs/alerts/40024/).
 
 ## Trace.axd Information Leak {#id-40029}
 
