@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '78'
+    version: '79'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v78/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v79/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -45,7 +45,7 @@ sbom:
     version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.1.0
+    version: 7.2.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -66,7 +66,7 @@ sbom:
     version: 25.0.1
     licenses: UPL-1.0
   - name: commonlib
-    version: 1.39.0
+    version: 1.40.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -114,10 +114,10 @@ sbom:
     version: 1.14.0
     licenses: Apache-2.0
   - name: custompayloads
-    version: 0.16.0
+    version: 0.17.0
     licenses: ''
   - name: database
-    version: 0.9.0
+    version: 0.10.0
     licenses: ''
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
@@ -162,16 +162,16 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flatlaf-swingx
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 11.19.0
+    version: 11.20.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 11.19.0
+    version: 11.20.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -180,7 +180,7 @@ sbom:
     version: 1.27.0
     licenses: Apache-2.0
   - name: graaljs
-    version: 0.12.0
+    version: 0.13.0
     licenses: ''
   - name: guava
     version: 33.4.0-jre
@@ -402,10 +402,10 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.25.0
+    version: 0.26.0
     licenses: ''
   - name: oast
-    version: 0.24.0
+    version: 0.25.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -456,7 +456,7 @@ sbom:
     version: 25.0.1
     licenses: UPL-1.0
   - name: rhino
-    version: 1.8.1
+    version: 1.9.0
     licenses: MPL-2.0
   - name: rsyntaxtextarea
     version: 3.6.0
@@ -510,7 +510,7 @@ sbom:
     version: 25.0.1
     licenses: UPL-1.0
   - name: zap
-    version: 2.17.0-SNAPSHOT
+    version: 2.17.0
     licenses: Apache-2.0
 ---
 
