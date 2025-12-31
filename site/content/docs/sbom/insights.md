@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: insights
-    version: 0.0.1
+    version: 0.1.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.0.1/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.1.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -36,7 +36,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.58.0
+    version: 0.59.0
     licenses: ''
   - name: batik-anim
     version: '1.19'
@@ -105,7 +105,7 @@ sbom:
     version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.1.0
+    version: 7.2.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -123,7 +123,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.39.0
+    version: 1.40.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -201,10 +201,10 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flatlaf-swingx
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flying-saucer-core
     version: 9.13.3
@@ -414,7 +414,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.25.0
+    version: 0.26.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -460,7 +460,7 @@ sbom:
     version: 3.25.5
     licenses: BSD-3-Clause
   - name: reports
-    version: 0.43.0
+    version: 0.44.0
     licenses: ''
   - name: rsyntaxtextarea
     version: 3.6.0
@@ -511,7 +511,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.17.0-SNAPSHOT
+    version: 2.17.0
     licenses: Apache-2.0
 ---
 
