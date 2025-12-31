@@ -608,9 +608,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.0.1/insights-alpha-0.0.1.zap
-  date: 2025-12-15
-  version: 0.0.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.1.0/insights-alpha-0.1.0.zap
+  date: 2025-12-31
+  version: 0.1.0
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such
