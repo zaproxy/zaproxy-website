@@ -30,7 +30,7 @@ jobs:
       - run: google-chrome --headless --disable-gpu --screenshot --window-size=1280,1600 http://localhost
       
       - name: 'Upload screenshot'
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: screenshots
           path: ./screenshot.png
