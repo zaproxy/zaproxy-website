@@ -15,36 +15,36 @@
   name: "Cross-Domain Misconfiguration"
   status: "release"
   type: "Passive"
-- id: 10055
-  name: "CSP"
+- id: 10021
+  name: "X-Content-Type-Options Header Missing"
   status: "release"
   type: "Passive"
 - id: 10050
   name: "Retrieved from Cache"
   status: "release"
   type: "Passive"
-- id: 10021
-  name: "X-Content-Type-Options Header Missing"
-  status: "release"
-  type: "Passive"
 - id: 10099
   name: "Source Code Disclosure - PHP"
   status: "beta"
   type: "Passive"
-- id: 90033
-  name: "Loosely Scoped Cookie"
+- id: 10055
+  name: "CSP"
   status: "release"
   type: "Passive"
-- id: 10035
-  name: "Strict-Transport-Security Header"
+- id: 10015
+  name: "Re-examine Cache-control Directives"
+  status: "release"
+  type: "Passive"
+- id: 90033
+  name: "Loosely Scoped Cookie"
   status: "release"
   type: "Passive"
 - id: 10038
   name: "Content Security Policy (CSP) Header Not Set"
   status: "release"
   type: "Passive"
-- id: 10015
-  name: "Re-examine Cache-control Directives"
+- id: 10035
+  name: "Strict-Transport-Security Header"
   status: "release"
   type: "Passive"
 - id: 40018
@@ -63,14 +63,14 @@
   name: "Cross-Domain JavaScript Source File Inclusion"
   status: "release"
   type: "Passive"
-- id: 10104
-  name: "User Agent Fuzzer"
-  status: "release"
-  type: "Active"
 - id: 10112
   name: "Session Management Response Identified"
   status: "beta"
   type: "Passive"
+- id: 10104
+  name: "User Agent Fuzzer"
+  status: "release"
+  type: "Active"
 - id: 10109
   name: "Modern Web Application"
   status: "release"
