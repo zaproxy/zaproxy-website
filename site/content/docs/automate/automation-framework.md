@@ -42,6 +42,7 @@ The full set of jobs currently supported by the framework and other add-ons are:
 * [export](/docs/desktop/addons/import-export/automation/) - allows you to export messages and the Sites Tree, provided with the [Import/Export](/docs/desktop/addons/import-export/) add-on
 * [graphql](/docs/desktop/addons/graphql-support/automation/) - GraphQL schema import, provided with the [GraphQL](/docs/desktop/addons/graphql-support/) add-on
 * [import](/docs/desktop/addons/import-export/automation/) - allows you to import files in various formats, provided with the [Import/Export](/docs/desktop/addons/import-export/) add-on
+* [insights](/docs/desktop/addons/insights/insights-job/) - allows you to configure the insights options, provided with the [Insights](/docs/desktop/addons/insights/) add-on
 * [openapi](/docs/desktop/addons/openapi-support/automation/) - OpenAPI definition import, provided with the [OpenAPI](/docs/desktop/addons/openapi-support/) add-on
 * [passiveScan-config](/docs/desktop/addons/automation-framework/job-pscanconf/) - passive scan configuration
 * [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) - waits for the passive scanner to finish processing the current queue
