@@ -12,13 +12,13 @@ links:
     link: /docs/getting-further/authentication/
     desc: everything you need to know about authentication in ZAP
 
+  - name: 'Getting Further With Scripting'
+    link: /docs/getting-further/scripting/
+    desc: everything you need to know about scripting in ZAP
+
   - name: 'Is My App Security Testable?'
     link: /docs/getting-further/is-my-app-testable/
     desc: are you making life harder for yourself?
-
-  - name: 'Script Security'
-    link: /docs/getting-further/script-security/
-    desc: details about the security implications of ZAP scripts
 
 cascade:
   EditableContent: true

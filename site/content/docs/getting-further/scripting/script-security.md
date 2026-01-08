@@ -5,19 +5,10 @@ tags:
 - scripts
 EditableContent: true
 addBreadcrumbs: true
+
+aliases:
+  /docs/getting-further/script-security/
 ---
-
-ZAP has as very powerful scripting capability, and supports the following scripting languages:
-* [JavaScript](/docs/desktop/addons/graalvm-javascript/) - included by default
-* [Zest](/docs/desktop/addons/zest/) - included by default
-* [BeanShell](/docs/desktop/addons/bean-shell/) - optional
-* [Groovy](/docs/desktop/addons/groovy-support/) - optional
-* [Kotlin](/docs/desktop/addons/kotlin-support/) - optional
-* [Python](/docs/desktop/addons/python-scripting/) - optional
-* [Ruby](/docs/desktop/addons/ruby-scripting/) - optional
-
-For more details on ZAP’s security posture see the 
-[FAQ: What is ZAP's assurance case?](/faq/what-is-zaps-assurance-case/)
 
 ### Script Capabilities
 As noted on the [Script Console](/docs/desktop/addons/script-console/) page:
@@ -83,3 +74,7 @@ The following set of security fixes were implemented in [2.6.0](/docs/desktop/re
 * Allowing API keys and nonces to be supplied via headers
 
 It should be noted that non Zest scripts will still be able to load and run scripts from publicly mounted remote drives.
+
+### Security Posture
+For more details on ZAP’s security posture see the 
+[FAQ: What is ZAP's assurance case?](/faq/what-is-zaps-assurance-case/)
