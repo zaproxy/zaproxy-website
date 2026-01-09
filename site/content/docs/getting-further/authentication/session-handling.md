@@ -7,7 +7,6 @@ type: page
 aliases:
   /docs/authentication/session-handling/
 ---
-{{<vinyard-script>}}
 If ZAP is handling authentication then it needs to handle sessions as well - logging in is of no use if ZAP does not maintain the session as the target app will just treat ZAP as being unauthenticated.
 
 [Session management](/docs/desktop/start/features/sessionmanagement/) configuration is part of a ZAP context.
@@ -73,9 +72,5 @@ If this is used then authentication will automatically be performed in the brows
 
 If you cannot use Browser Based Authentication for any reason then you will typically need to inject authentication tokens into the browser using ZAP [selenium](https://github.com/zaproxy/community-scripts/tree/main/selenium) scripts.
 
-This video explains and demonstrates how to set ZAP up to handle both server-side and client-side session management with 
-[OWASP Juice Shop](https://owasp.org/www-project-juice-shop/):
-
-{{< vinyard uuid="igf3A8UdZ6QAGiFjEpLH86" >}}
 
 {{<prevnext prevUrl="../finding-a-verification-url/" prevTitle="Finding a verification URL" nextUrl="../authentication-methods" nextTitle="Authentication methods">}}

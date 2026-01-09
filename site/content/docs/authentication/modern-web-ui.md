@@ -16,5 +16,3 @@ A much better solution is to get the browser's launched by the AJAX Spider to lo
 Creating a Selenium Authentication Script is beyond the scope of this guide, but more details are available via:
 
 * Blog: [Authenticating Using Selenium](/blog/2023-02-01-authenticating-using-selenium/)
-* Video: [Automation Auth Scripts](https://play.vidyard.com/gYz7LxioR54i2gY9Ze7c4F)
-* Video: [Automation SSO with Juice Shop](https://play.vidyard.com/TMcBcuhyPt57sUqPcJUtpv)
