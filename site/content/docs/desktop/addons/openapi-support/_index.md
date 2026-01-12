@@ -6,12 +6,12 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 48.0.0
+    version: 49.0.0
 ---
 
 # OpenAPI Support
 
-This add-on allows you to spider and import OpenAPI (Swagger) definitions, versions 1.2, 2.0, and 3.0.   
+This add-on allows you to spider and import OpenAPI (Swagger) definitions, versions 1.2, 2.0, 3.0, and 3.1.   
 **Note:** Generation of XML content is currently not supported.   
 
 The add-on will automatically detect any OpenAPI definitions and spider them as long as they are in scope.   

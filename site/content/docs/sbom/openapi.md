@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: '48'
+    version: '49'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v48/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v49/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -35,6 +35,21 @@ sbom:
   - name: automation
     version: 0.59.0
     licenses: ''
+  - name: azure-ai-openai
+    version: 1.0.0-beta.16
+    licenses: MIT
+  - name: azure-core
+    version: 1.55.3
+    licenses: MIT
+  - name: azure-core-http-netty
+    version: 1.15.11
+    licenses: MIT
+  - name: azure-json
+    version: 1.5.0
+    licenses: MIT
+  - name: azure-xml
+    version: 1.2.0
+    licenses: MIT
   - name: bcmail-jdk18on
     version: '1.83'
     licenses: Bouncy Castle Licence
@@ -48,7 +63,7 @@ sbom:
     version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.1.0
+    version: 7.2.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -180,16 +195,16 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flatlaf-swingx
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 11.19.0
+    version: 11.20.1
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 11.19.0
+    version: 11.20.1
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -338,39 +353,66 @@ sbom:
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
+  - name: jtokkit
+    version: 1.1.0
+    licenses: MIT
   - name: junit-bom
-    version: 6.0.1
+    version: 6.0.2
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.1
+    version: 6.0.2
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.1
+    version: 6.0.2
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.1
+    version: 6.0.2
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.1
+    version: 6.0.2
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.1
+    version: 6.0.2
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.1
+    version: 6.0.2
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.1
+    version: 6.0.2
     licenses: EPL-2.0
   - name: kaitai-struct-runtime
     version: '0.11'
     licenses: MIT
+  - name: langchain4j
+    version: 1.10.0
+    licenses: Apache-2.0
+  - name: langchain4j-azure-open-ai
+    version: 1.10.0
+    licenses: Apache-2.0
+  - name: langchain4j-core
+    version: 1.10.0
+    licenses: Apache-2.0
+  - name: langchain4j-google-ai-gemini
+    version: 1.10.0
+    licenses: Apache-2.0
+  - name: langchain4j-http-client
+    version: 1.10.0
+    licenses: Apache-2.0
+  - name: langchain4j-http-client-jdk
+    version: 1.10.0
+    licenses: Apache-2.0
+  - name: langchain4j-ollama
+    version: 1.10.0
+    licenses: Apache-2.0
   - name: libphonenumber
     version: 8.11.1
     licenses: Apache-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
     licenses: Apache-2.0
+  - name: llm
+    version: 0.0.1
+    licenses: ''
   - name: log4j-1.2-api
     version: 2.25.2
     licenses: Apache-2.0
@@ -426,37 +468,76 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: netty-buffer
-    version: 4.1.100.Final
+    version: 4.1.128.Final
     licenses: Apache-2.0
   - name: netty-codec
-    version: 4.1.100.Final
+    version: 4.1.128.Final
+    licenses: Apache-2.0
+  - name: netty-codec-dns
+    version: 4.1.112.Final
     licenses: Apache-2.0
   - name: netty-codec-http
-    version: 4.1.100.Final
+    version: 4.1.128.Final
     licenses: Apache-2.0
   - name: netty-codec-http2
-    version: 4.1.100.Final
+    version: 4.1.128.Final
+    licenses: Apache-2.0
+  - name: netty-codec-socks
+    version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-common
-    version: 4.1.100.Final
+    version: 4.1.128.Final
     licenses: Apache-2.0
   - name: netty-handler
-    version: 4.1.100.Final
+    version: 4.1.128.Final
+    licenses: Apache-2.0
+  - name: netty-handler-proxy
+    version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-resolver
-    version: 4.1.100.Final
+    version: 4.1.128.Final
+    licenses: Apache-2.0
+  - name: netty-resolver-dns
+    version: 4.1.112.Final
+    licenses: Apache-2.0
+  - name: netty-resolver-dns-classes-macos
+    version: 4.1.112.Final
+    licenses: Apache-2.0
+  - name: netty-resolver-dns-native-macos
+    version: 4.1.112.Final
+    licenses: Apache-2.0
+  - name: netty-tcnative-boringssl-static
+    version: 2.0.70.Final
+    licenses: Apache-2.0
+  - name: netty-tcnative-classes
+    version: 2.0.70.Final
     licenses: Apache-2.0
   - name: netty-transport
-    version: 4.1.100.Final
+    version: 4.1.128.Final
+    licenses: Apache-2.0
+  - name: netty-transport-classes-epoll
+    version: 4.1.118.Final
+    licenses: Apache-2.0
+  - name: netty-transport-classes-kqueue
+    version: 4.1.118.Final
+    licenses: Apache-2.0
+  - name: netty-transport-native-epoll
+    version: 4.1.118.Final
+    licenses: Apache-2.0
+  - name: netty-transport-native-kqueue
+    version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-transport-native-unix-common
-    version: 4.1.100.Final
+    version: 4.1.128.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.25.0
+    version: 0.26.0
     licenses: ''
   - name: objenesis
     version: '3.3'
+    licenses: Apache-2.0
+  - name: opennlp-tools
+    version: 2.5.4
     licenses: Apache-2.0
   - name: opentest4j
     version: 1.3.0
@@ -491,6 +572,18 @@ sbom:
   - name: protobuf-java
     version: 3.25.5
     licenses: BSD-3-Clause
+  - name: reactive-streams
+    version: 1.0.4
+    licenses: MIT-0
+  - name: reactor-core
+    version: 3.4.41
+    licenses: Apache-2.0
+  - name: reactor-netty-core
+    version: 1.0.48
+    licenses: Apache-2.0
+  - name: reactor-netty-http
+    version: 1.0.48
+    licenses: Apache-2.0
   - name: rhino
     version: 1.7.7.2
     licenses: MPL-2.0
@@ -510,7 +603,7 @@ sbom:
     version: '1.0'
     licenses: MIT
   - name: spider
-    version: 0.18.0
+    version: 0.19.0
     licenses: ''
   - name: spotbugs-annotations
     version: 4.8.6
@@ -546,22 +639,22 @@ sbom:
     version: 1.0.75
     licenses: Apache-2.0
   - name: swagger-parser
-    version: 2.1.36
+    version: 2.1.37
     licenses: Apache-2.0
   - name: swagger-parser-core
-    version: 2.1.36
+    version: 2.1.37
     licenses: Apache-2.0
   - name: swagger-parser-safe-url-resolver
     version: 1.0.75
     licenses: Apache-2.0
   - name: swagger-parser-safe-url-resolver
-    version: 2.1.36
+    version: 2.1.37
     licenses: Apache-2.0
   - name: swagger-parser-v2-converter
-    version: 2.1.36
+    version: 2.1.37
     licenses: Apache-2.0
   - name: swagger-parser-v3
-    version: 2.1.36
+    version: 2.1.37
     licenses: Apache-2.0
   - name: swingx-all
     version: 1.6.5-1
@@ -582,7 +675,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.17.0-SNAPSHOT
+    version: 2.17.0
     licenses: Apache-2.0
 ---
 
