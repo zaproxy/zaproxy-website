@@ -741,9 +741,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v48/openapi-beta-48.zap
-  date: 2025-12-15
-  version: 48
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v49/openapi-beta-49.zap
+  date: 2026-01-12
+  version: 49
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
