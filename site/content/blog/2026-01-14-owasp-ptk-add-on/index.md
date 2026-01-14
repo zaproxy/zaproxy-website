@@ -59,7 +59,6 @@ This is especially effective on modern apps where coverage depends on real navig
 4. Click **Stop runtime scan**
 5. Triage findings and re-test interesting requests with PTK’s request tools
 
-![PTK DAST panel: Scan in runtime](images/ptk_dast_scan_in_runtime.png)
 ![PTK DAST results view](images/ptk_dast_results.png)
 
 ### Practical advice: stay in control of scan footprint
@@ -86,7 +85,6 @@ You run it in the same way: start, browse, stop, review — but the findings are
 3. Browse flows that matter (especially authenticated routes)
 4. Stop scan and review findings
 
-![PTK IAST panel: Scan in runtime](images/ptk_iast_scan_in_runtime.png)
 ![PTK IAST finding example](images/ptk_iast_finding.png)
 
 IAST is particularly useful when:
@@ -109,7 +107,6 @@ This is valuable when you don’t have repository access, or when production bun
 3. Review findings (e.g., dangerous sinks, risky patterns)
 4. Pivot from findings into targeted runtime testing (DAST/IAST) as needed
 
-![PTK SAST panel](images/ptk_sast_panel.png)
 ![PTK SAST findings view](images/ptk_sast_findings.png)
 
 This style of SAST shines for:
@@ -131,7 +128,6 @@ PTK SCA surfaces signals about **software components and dependency risk** relev
 3. Review packages/components and any vulnerability signals
 4. Use ZAP traffic context to validate origins and loading behavior
 
-![PTK SCA panel](images/ptk_sca_panel.png)
 ![PTK SCA results](images/ptk_sca_results.png)
 
 ---
@@ -175,7 +171,6 @@ decode, edit claims, switch algorithms (where relevant), and validate behavior c
    - PTK accelerates token manipulation and repeatability
 
 ![PTK JWT Inspector](images/ptk_jwt_inspector.png)
-![PTK JWT workflow example](images/ptk_jwt_workflow.png)
 
 ---
 
@@ -192,7 +187,6 @@ PTK provides a cookie workflow aimed at fast, repeatable testing.
 - Import/export cookie sets for repeatability
 
 ![PTK Cookie tool](images/ptk_cookie_tool.png)
-![PTK Cookie rules](images/ptk_cookie_rules.png)
 
 ---
 
@@ -207,8 +201,6 @@ If you want a simple routine that works well on real targets:
 5. Use PTK **SAST** to spot risky client-side patterns in loaded scripts
 6. Use PTK **SCA** for dependency-related signals
 7. Use PTK **JWT** and **Cookie** tools to validate auth/session assumptions quickly
-
-![Workflow overview](images/ptk_zap_workflow.png)
 
 ---
 
