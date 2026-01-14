@@ -836,6 +836,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v48/pscanrulesBeta-beta-48.zap
   date: 2025-12-15
   version: 48
+- id: ptk
+  name: OWASP PTK
+  description: Adds the OWASP PTK extension to browsers launched from ZAP.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/owasp-ptk/
+  repoUrl: ''
+  downloadUrl: https://github.com/zaproxy-addons/ptk/releases/download/v0.1.0/ptk-alpha-0.1.0.zap
+  date: 2026-01-14
+  version: 0.1.0
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
