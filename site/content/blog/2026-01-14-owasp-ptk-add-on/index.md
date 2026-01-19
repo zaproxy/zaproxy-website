@@ -1,5 +1,5 @@
 ---
-title: "OWASP PTK Add-on for ZAP: In-Browser DAST, IAST, SAST & SCA (Plus JWT and Cookie Workflows)"
+title: "OWASP PTK Integration with ZAP"
 summary: >
   OWASP PTK is now pre-installed in the browsers launched by ZAP (Chrome and Firefox).
   This post shows how to run PTK’s DAST, IAST, SAST, and SCA inside the same authenticated session you’re testing,
@@ -10,36 +10,34 @@ tags:
 - browser
 - chrome
 - firefox
-- zap
+- guest
 - dast
 - iast
 - sast
 - sca
 - jwt
 - cookies
-date: "2026-01-14"
+date: "2026-01-19"
 authors:
     - denispodgurskii
 ---
 
-[OWASP PTK howto](https://pentestkit.co.uk/howto.html)
-
-
-[OWASP PTK YouTube channel](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw)
 
 OWASP PTK (PenTest Kit) is a browser extension for practical application security testing where the **browser session is the truth**:
 authenticated navigation, SPA routing, client-side behavior, and the exact requests your app generates during real use.
 
-With this integration, **OWASP PTK is pre-installed in the browsers launched from ZAP** — **Chrome and Firefox**.
-You can launch a ZAP browser and immediately use PTK’s workflows (DAST, IAST, SAST, SCA, JWT tools, cookie tools) without manual setup.
+To enable this workflow, first install the **OWASP PTK add-on** from the **ZAP Marketplace**.
+Once installed, OWASP PTK will be **pre-installed in the browsers launched from ZAP** — **Chrome and Firefox**.
+You can launch a ZAP browser and immediately use PTK’s workflows (DAST, IAST, SAST, SCA, JWT tools, cookie tools) without any manual extension setup.
 
 ![ZAP launching a browser with OWASP PTK pre-installed](images/ptk_zap_launch.png)
 
 ## Getting Started
 
-1. Open ZAP and launch a browser (Chrome or Firefox) using ZAP’s browser launch feature.
-2. In the launched browser, confirm you can see the OWASP PTK extension icon.
-3. Navigate to your target and **log in** before starting any runtime scans.
+1. In ZAP, open **Marketplace**, search for **OWASP PTK**, and **install the add-on**.
+2. Launch a browser (Chrome or Firefox) using ZAP’s browser launch feature.
+3. In the launched browser, confirm you can see the OWASP PTK extension icon.
+4. Navigate to your target and **log in** before starting any runtime scans.
 
 ![OWASP PTK visible in a ZAP-launched browser](images/ptk_in_browser.png)
 
@@ -214,3 +212,8 @@ If you want a simple routine that works well on real targets:
 - Only use active scanning and exploit-style testing where you have permission.
 - Keep scope tight and use conservative rate/concurrency settings on production targets.
 - ZAP remains your traffic backbone; PTK adds browser-native runtime workflows that speed up discovery and triage.
+
+[OWASP PTK howto](https://pentestkit.co.uk/howto.html)
+
+
+[OWASP PTK YouTube channel](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw)

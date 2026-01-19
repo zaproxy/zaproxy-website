@@ -204,3 +204,9 @@ telmon:
   picture: /img/authors/telmon_400x400.jpg
   twitter: DEOXYRIBOSE404
   is_core: false
+
+denispodgurskii:
+  name: Denis Podgurskii
+  picture: /img/authors/denis-podgurskii_400x400.jpg
+  twitter: pentestkit
+  is_core: false
