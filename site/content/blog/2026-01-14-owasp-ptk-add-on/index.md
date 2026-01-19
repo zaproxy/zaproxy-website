@@ -22,6 +22,9 @@ authors:
     - denispodgurskii
 ---
 
+[OWASP PTK howto](https://pentestkit.co.uk/howto.html)
+[OWASP PTK YouTube channel](https://www.youtube.com/channel/UCbEcTounPkV1aitE1egXfqw)
+
 OWASP PTK (PenTest Kit) is a browser extension for practical application security testing where the **browser session is the truth**:
 authenticated navigation, SPA routing, client-side behavior, and the exact requests your app generates during real use.
 
