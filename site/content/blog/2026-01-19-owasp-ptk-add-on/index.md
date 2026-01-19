@@ -1,7 +1,7 @@
 ---
 title: "OWASP PTK Integration with ZAP"
 summary: >
-  OWASP PTK is now pre-installed in the browsers launched by ZAP (Chrome and Firefox).
+  OWASP PTK is now pre-installed in the browsers launched by ZAP (Chrome, Edge and Firefox).
   This post shows how to run PTK’s DAST, IAST, SAST, and SCA inside the same authenticated session you’re testing,
   plus practical JWT and cookie workflows—while ZAP remains your traffic and context hub.
 type: post
@@ -9,6 +9,7 @@ tags:
 - blog
 - browser
 - chrome
+- edge
 - firefox
 - guest
 - dast
@@ -27,7 +28,7 @@ OWASP PTK (PenTest Kit) is a browser extension for practical application securit
 authenticated navigation, SPA routing, client-side behavior, and the exact requests your app generates during real use.
 
 To enable this workflow, first install the **OWASP PTK add-on** from the **ZAP Marketplace**.
-Once installed, OWASP PTK will be **pre-installed in the browsers launched from ZAP** — **Chrome and Firefox**.
+Once installed, OWASP PTK will be **pre-installed in the browsers launched from ZAP** — **Chrome, Edge and Firefox**.
 You can launch a ZAP browser and immediately use PTK’s workflows (DAST, IAST, SAST, SCA, JWT tools, cookie tools) without any manual extension setup.
 
 ![ZAP launching a browser with OWASP PTK pre-installed](images/ptk_zap_launch.png)
@@ -35,7 +36,7 @@ You can launch a ZAP browser and immediately use PTK’s workflows (DAST, IAST, 
 ## Getting Started
 
 1. In ZAP, open **Marketplace**, search for **OWASP PTK**, and **install the add-on**.
-2. Launch a browser (Chrome or Firefox) using ZAP’s browser launch feature.
+2. Launch a browser (Chrome, Edge or Firefox) using ZAP’s browser launch feature.
 3. In the launched browser, confirm you can see the OWASP PTK extension icon.
 4. Navigate to your target and **log in** before starting any runtime scans.
 
@@ -197,7 +198,7 @@ PTK provides a cookie workflow aimed at fast, repeatable testing.
 
 If you want a simple routine that works well on real targets:
 
-1. Launch Chrome/Firefox from ZAP (proxied session)
+1. Launch Chrome/Edge/Firefox from ZAP (proxied session)
 2. Log in and browse the app normally
 3. Run PTK **DAST runtime scan** while you exercise key flows
 4. Run PTK **IAST runtime scan** for runtime context during the same flows
