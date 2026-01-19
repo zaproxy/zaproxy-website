@@ -6,12 +6,12 @@ weight: 1
 cascade:
   addon:
     id: ptk
-    version: 0.1.0
+    version: 0.2.0
 ---
 
 # OWASP PTK
 
-This add-on adds the [OWASP Penetration Testing Kit (PTK)](https://pentestkit.co.uk/) extension to Firefox when launched from ZAP.  
+This add-on adds the [OWASP Penetration Testing Kit (PTK)](https://pentestkit.co.uk/) extension to Firefox, Chrome, and Edge when launched from ZAP.  
 OWASP PTK is a browser-based application security tool that turns your browser into a comprehensive security testing platform.
 
 
