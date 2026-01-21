@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: '49'
+    version: '50'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v49/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v50/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -63,7 +63,7 @@ sbom:
     version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.2.0
+    version: 7.2.1
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -73,6 +73,9 @@ sbom:
     licenses: LGPL-3.0-or-later, Apache-2.0
   - name: byte-buddy
     version: 1.17.7
+    licenses: Apache-2.0
+  - name: byte-buddy
+    version: 1.18.4
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.17.7
@@ -86,6 +89,9 @@ sbom:
   - name: checker-qual
     version: 3.43.0
     licenses: MIT
+  - name: collections
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: commonlib
     version: 1.40.0
     licenses: ''
@@ -201,10 +207,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 11.20.1
+    version: 11.20.2
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 11.20.1
+    version: 11.20.2
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -212,6 +218,9 @@ sbom:
   - name: google-java-format
     version: 1.27.0
     licenses: Apache-2.0
+  - name: graaljs
+    version: 0.13.0
+    licenses: ''
   - name: guava
     version: 32.1.3-android
     licenses: Apache-2.0
@@ -251,6 +260,9 @@ sbom:
   - name: ice4j
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
+  - name: icu4j
+    version: 25.0.1
+    licenses: Unicode/ICU License
   - name: j2objc-annotations
     version: '2.8'
     licenses: Apache-2.0
@@ -258,13 +270,13 @@ sbom:
     version: 3.0.0
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: '2.20'
+    version: '2.21'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.20.1
+    version: 2.21.0
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.20.1
+    version: 2.21.0
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
@@ -276,19 +288,19 @@ sbom:
     version: '1.0'
     licenses: LGPL-3.0-or-later, Apache-2.0
   - name: jackson-databind
-    version: 2.20.1
+    version: 2.21.0
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.20.1
+    version: 2.21.0
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.20.1
+    version: 2.21.0
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.20.1
+    version: 2.21.0
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.20.1
+    version: 2.21.0
     licenses: Apache-2.0
   - name: jakarta.activation-api
     version: 1.2.2
@@ -329,12 +341,27 @@ sbom:
   - name: jgrapht-core
     version: 0.9.2
     licenses: LGPL-2.1-only, EPL-1.0
+  - name: jniutils
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: joda-time
     version: 2.10.5
     licenses: Apache-2.0
   - name: jopt-simple
     version: 5.0.4
     licenses: MIT
+  - name: js
+    version: 25.0.1
+    licenses: UPL-1.0, MIT
+  - name: js-community
+    version: 25.0.1
+    licenses: MIT, UPL-1.0
+  - name: js-language
+    version: 25.0.1
+    licenses: UPL-1.0, MIT
+  - name: js-scriptengine
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
@@ -467,6 +494,9 @@ sbom:
   - name: native-windows-x86_64
     version: 1.16.0
     licenses: Apache-2.0
+  - name: nativeimage
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: netty-buffer
     version: 4.1.128.Final
     licenses: Apache-2.0
@@ -569,6 +599,9 @@ sbom:
   - name: pcollections
     version: 4.0.1
     licenses: MIT
+  - name: polyglot
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: protobuf-java
     version: 3.25.5
     licenses: BSD-3-Clause
@@ -584,12 +617,18 @@ sbom:
   - name: reactor-netty-http
     version: 1.0.48
     licenses: Apache-2.0
+  - name: regex
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: rhino
     version: 1.7.7.2
     licenses: MPL-2.0
   - name: rsyntaxtextarea
     version: 3.6.0
     licenses: BSD-3-Clause
+  - name: scripts
+    version: 45.18.0
+    licenses: ''
   - name: service
     version: 1.16.0
     licenses: Apache-2.0
@@ -662,6 +701,15 @@ sbom:
   - name: testutils
     version: unspecified
     licenses: ''
+  - name: truffle-api
+    version: 25.0.1
+    licenses: UPL-1.0
+  - name: truffle-compiler
+    version: 25.0.1
+    licenses: UPL-1.0
+  - name: truffle-runtime
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: uri-template
     version: '0.10'
     licenses: LGPL-3.0-or-later, Apache-2.0
@@ -671,9 +719,15 @@ sbom:
   - name: woodstox-core
     version: 7.1.1
     licenses: Apache-2.0
+  - name: word
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
+  - name: xz
+    version: 25.0.1
+    licenses: UPL-1.0
   - name: zap
     version: 2.17.0
     licenses: Apache-2.0
