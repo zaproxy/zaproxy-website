@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 49.0.0
+    version: 50.0.0
 ---
 
 # OpenAPI Support
@@ -117,3 +117,17 @@ In most cases these will be simple values (like strings and integers) but in som
 The add-on maintains the following statistics:
 
 * openapi.urls.added : The total number of URLs added when importing OpenAPI definitions
+
+## Scripts
+
+The following scripts are included with the add-on:
+
+### Swagger Secret \& Vulnerability Detector {#id-100043}
+
+This is an active script scan rule. It attempts to find exposed OpenAPI documentation that leaks sensitive secrets such as API keys, OAuth client secrets, access tokens, or that runs vulnerable versions of Swagger UI.
+
+
+Latest code: [SwaggerSecretDetector.js](https://github.com/zaproxy/zap-extensions/blob/main/addOns/openapi/src/main/zapHomeFiles/scripts/scripts/active/SwaggerSecretDetector.js)
+
+
+Alert ID: [100043](/docs/alerts/100043/).
