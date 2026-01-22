@@ -140,18 +140,15 @@
   }
 }
 
-.site-header nav .sub-menu {
-  a {
-  }
-}
-
 .hamburger-click {
   cursor: pointer;
+  height: 45px;
+  width: 45px;
   opacity: 0.0;
   z-index: 2;
   position: absolute;
-  top: 36px;
-  right: 40px;
+  top: 20px;
+  right: 24px;
 }
 
 @media screen and (max-width: 825px) {
