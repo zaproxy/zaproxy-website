@@ -157,6 +157,9 @@ CWE-497:
 CWE-502:
   link: https://cwe.mitre.org/data/definitions/502.html
 
+CWE-522:
+  link: https://cwe.mitre.org/data/definitions/522.html
+
 CWE-524:
   link: https://cwe.mitre.org/data/definitions/524.html
 
