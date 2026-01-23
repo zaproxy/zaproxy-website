@@ -30,6 +30,10 @@ links:
     link: zap-session-db/
     desc: Details about the Session Database
 
+  - name: 'ZAP Browser Extension Integration'
+    link: browser-extension-integration
+    desc: How to create an add-on which includes a browser extension
+ 
   - name: 'Development Rules and Guidelines'
     link: dev-rules-and-guidelines/
     desc: To be followed when contributing ZAP code
