@@ -5,7 +5,7 @@ details:
   result: Pass
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp
   result: Pass
@@ -20,7 +20,7 @@ details:
   result: Pass
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case07-InjectionInSearch-Numeric-UnionExploit-WithDifferent200Responses.jsp
-  result: Pass
+  result: FAIL
   rule: 40018
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case08-InjectionInCalc-Numeric-BooleanExploit-WithDifferent200Responses.jsp
   result: Pass
@@ -59,6 +59,6 @@ details:
   result: FAIL
   rule: 40018
 tests: 19
-passes: 16
-fails: 3
-score: 84%
+passes: 14
+fails: 5
+score: 74%
