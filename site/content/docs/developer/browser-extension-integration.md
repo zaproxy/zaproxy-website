@@ -71,7 +71,7 @@ Control.getSingleton().getExtensionLoader().
 ```
 
 Your add-on will need to provide an object which implements the interface:
-* [org.zaproxy.addon.client.ClientCallbackImplementor](https://github.com/zaproxy/zap-extensions/blob/main/addOns/client/src/main/java/org/zaproxy/addon/client/ClientCallbackImplementor.java)
+* [org.zaproxy.addon.client.ClientCallBackImplementor](https://github.com/zaproxy/zap-extensions/blob/main/addOns/client/src/main/java/org/zaproxy/addon/client/ClientCallBackImplementor.java)
 
 The `getImplementorName()` method should return the name of your add-on.
 
