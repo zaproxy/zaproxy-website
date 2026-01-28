@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: '50'
+    version: '51'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v50/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v51/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -90,7 +90,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: collections
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: commonlib
     version: 1.40.0
@@ -207,10 +207,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 11.20.2
+    version: 11.20.3
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 11.20.2
+    version: 11.20.3
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -261,7 +261,7 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: icu4j
-    version: 25.0.1
+    version: 25.0.2
     licenses: Unicode/ICU License
   - name: j2objc-annotations
     version: '2.8'
@@ -342,7 +342,7 @@ sbom:
     version: 0.9.2
     licenses: LGPL-2.1-only, EPL-1.0
   - name: jniutils
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: joda-time
     version: 2.10.5
@@ -351,16 +351,16 @@ sbom:
     version: 5.0.4
     licenses: MIT
   - name: js
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0, MIT
   - name: js-community
-    version: 25.0.1
+    version: 25.0.2
     licenses: MIT, UPL-1.0
   - name: js-language
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0, MIT
   - name: js-scriptengine
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: json-lib
     version: '2.4'
@@ -495,7 +495,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: nativeimage
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: netty-buffer
     version: 4.1.128.Final
@@ -600,7 +600,7 @@ sbom:
     version: 4.0.1
     licenses: MIT
   - name: polyglot
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: protobuf-java
     version: 3.25.5
@@ -618,7 +618,7 @@ sbom:
     version: 1.0.48
     licenses: Apache-2.0
   - name: regex
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: rhino
     version: 1.7.7.2
@@ -702,13 +702,13 @@ sbom:
     version: unspecified
     licenses: ''
   - name: truffle-api
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: truffle-compiler
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: truffle-runtime
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: uri-template
     version: '0.10'
@@ -720,13 +720,13 @@ sbom:
     version: 7.1.1
     licenses: Apache-2.0
   - name: word
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: xz
-    version: 25.0.1
+    version: 25.0.2
     licenses: UPL-1.0
   - name: zap
     version: 2.17.0
