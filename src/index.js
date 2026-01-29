@@ -1,3 +1,6 @@
+/* eslint-disable max-len */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable indent */
 // JS Goes here - ES6 supported
 
 import "./css/main.scss";
@@ -52,19 +55,29 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Add input for filtering
     function addInput(el, label, idx) {
+      const container = document.createElement('div');
+      container.setAttribute('style', 'display: flex; align-items: center;');
+
       const input = document.createElement('input');
       input.addEventListener("change", function(e) {
         widget.filters[idx] = e.target.value;
         removeAllChildNodes(tbody);
+        elements = [];
         rows.filter(isFilterMatch).map(r => {
           tbody.appendChild(r.el)
+          elements.push(r)
         });
+        console.log(elements);
       });
       input.setAttribute('style', 'width:100%;display:block')
       input.setAttribute('type', 'text');
       input.setAttribute('name', 'filter_'  + label);
       input.setAttribute('list', 'opts_for_'  + label);
-      el.appendChild(input);
+
+      container.appendChild(input);
+      addSortButton(container, idx);  
+
+      el.appendChild(container);
     }
     const tbody = el.querySelector('tbody');
     const headings = Array.from(el.querySelectorAll('thead th')).map((el, idx) => {
@@ -93,6 +106,49 @@ document.addEventListener("DOMContentLoaded", function() {
         columns, // Needed for filtered
       };
     });
+    let elements = rows;
+
+    function addSortButton(el, idx) {
+      const img = document.createElement('img');
+      img.src = "/img/up-down-arrows-icon.png"
+      img.addEventListener("click", function() {
+        sortTable(idx);
+      });
+      img.setAttribute('style', 'width: 16px; margin-left: 5px' )
+    
+      el.appendChild(img)
+    }
+
+    let direction = false;
+    function sortTable(columnIndex) {
+      console.log(elements);
+      removeAllChildNodes(tbody);
+      if (isNaN(elements[0].columns[columnIndex][0]) && isNaN(elements[elements.length - 1].columns[columnIndex][0])) {
+        elements.sort((a, b) => {
+          a = a.columns[columnIndex];
+          b = b.columns[columnIndex];
+          return direction ? a.localeCompare(b) : b.localeCompare(a);
+        });
+      } else {
+        if (!columnIndex && window.location.href.includes("docs/alerts")) {
+          elements.sort((a, b) => {
+            a = a.columns[columnIndex].split("-");
+            b = b.columns[columnIndex].split("-");
+            return direction ? a[0] - b[0] : b[0] - a[0];
+          });
+        } else {
+          elements.sort((a, b) => {
+            a = a.columns[columnIndex];
+            b = b.columns[columnIndex];
+            return direction ? a - b : b - a;
+          });
+        }
+      }
+      for (let i = 0; i <= elements.length - 1; i++) {
+        tbody.appendChild(elements[i].el);
+      }
+      direction = !direction;
+    }
 
     // Go through options elements and populate lists with column aggregates
     // gathered in previous loop
