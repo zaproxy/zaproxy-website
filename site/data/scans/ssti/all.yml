@@ -178,12 +178,12 @@ details:
   any: Pass
 - title: 'Input rendered in other location'
   rule_40012: FAIL
-  rule_40026: Pass
+  rule_40026: FAIL
   rule_90019: FAIL
   rule_90025: FAIL
   rule_90035: FAIL
   rule_90036: FAIL
-  any: Pass
+  any: FAIL
 - title: 'Rendering result not visible to attacker'
   rule_40012: FAIL
   rule_40026: FAIL
@@ -312,11 +312,11 @@ details:
   rule_90035: Pass
   rule_90036: FAIL
   any: Pass
-score: 97%
+score: 94%
 rule_40012_score: 29
-rule_40026_score: 34
+rule_40026_score: 33
 rule_90019_score: 1
 rule_90025_score: 7
 rule_90035_score: 27
 rule_90036_score: 18
-any_score: 38
+any_score: 37
