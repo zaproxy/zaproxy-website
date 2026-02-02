@@ -15,7 +15,6 @@
          <colgroup>
             <col span="1" style="width: 10%;">
             <col span="1" style="width: 20%;">
-            <col span="1" style="width: 20%;">
             <col span="1" style="width: 50%;">
          </colgroup>
          <thead>
@@ -25,7 +24,6 @@
                   <input id="showarchived" class="togglehidetablerows" type="checkbox">
                   <label for="showarchived">Show Archived</label>
                </th>
-               <th>Sponsor</th>
                <th>Item</th>
             </tr>
          </thead>
@@ -34,7 +32,6 @@
                <tr {{ if ne .archive nil -}} class="togglehide" style="display:none;" {{- end }}>
                   <td align="center">{{ .year }}</td>
                   <td align="center">{{ .status }}</td>
-                  <td align="center"><a href="{{ .sponsorlink }}">{{ .sponsor }}</a></td>
                   <td>{{ if .url }} <a href="{{ .url }}">{{ .item }}</a> {{ else }} {{ .item }} {{ end }}</td>
                </tr>
             {{ end }}

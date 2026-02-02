@@ -19,10 +19,6 @@ groups:
         link: /docs/zap-ownership/
         desc: who controls the project
 
-      - name: 'Support'
-        link: /support/
-        desc: how the ZAP team can support you, and how you can support ZAP
-
       - name: 'Roadmap'
         link: /docs/roadmap/
         desc: where ZAP is headed
@@ -87,10 +83,6 @@ groups:
     
   - header: 'Supporters and Other Third Parties'
     links:
-      - name: 'Supporters'
-        link: /supporters/
-        desc: Companies who have supported ZAP in a variety of ways 
-    
       - name: 'Success Stories'
         link: /success/
         desc: See how companies are using ZAP right now 

@@ -1,9 +1,31 @@
-- item: Release 2.18
-  status: ⌚ Planned
+- item: Improved Modern App Crawling
+  status: ⚡ In progress
   year: 2026
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
-- item: Improved Modern App Crawling
+- item: 3rd Party Client Side Integration
+  status: ⚡ In progress
+  year: 2026
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: AI Integration
+  status: ⚡ In progress
+  year: 2026
+  sponsor: Checkmarx Ltd.
+  sponsorlink: https://checkmarx.com/
+- item: Move Break Functionality to an add-on
+  status: ⚡ In progress
+  url: https://github.com/zaproxy/zaproxy/issues/8153
+  year: 2026
+- item: "OpenSSF Best Practices: Silver Currently 54 of 55 criteria met"
+  status: ⚡ In progress
+  url: https://bestpractices.coreinfrastructure.org/en/projects/24?criteria_level=1
+  year: 2026
+- item: Ensure alert details and examples are complete and up to date
+  status: ⚡ In progress
+  url: /docs/alerts/
+  year: 2026
+- item: Release 2.18
   status: ⌚ Planned
   year: 2026
   sponsor: Checkmarx Ltd.
@@ -27,30 +49,18 @@
   status: ⌚ Planned
   url: https://github.com/zaproxy/zaproxy/issues/7695
   year: 2026
+
 - item: Improved Authentication Handling
-  status: ⚡ In progress
-  year: 2026
+  status: ♻ Ongoing
+  year: n/a
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
 - item: Automation Framework enhancements
-  status: ⚡ In progress
+  status: ♻ Ongoing
   url: https://github.com/zaproxy/zaproxy/issues/6461
-  year: 2026
+  year: n/a
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
-- item: Move Break Functionality to an add-on
-  status: ⚡ In progress
-  url: https://github.com/zaproxy/zaproxy/issues/8153
-  year: 2026
-- item: "OpenSSF Best Practices: Silver Currently 54 of 55 criteria met"
-  status: ⚡ In progress
-  url: https://bestpractices.coreinfrastructure.org/en/projects/24?criteria_level=1
-  year: 2026
-- item: Ensure alert details and examples are complete and up to date
-  status: ⚡ In progress
-  url: /docs/alerts/
-  year: 2026
-
 - item: Continue working on issues
   status: ♻ Ongoing
   url: https://github.com/zaproxy/zaproxy/issues
@@ -68,13 +78,16 @@
   year: 2025
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
+
 - item: Release 2.16
   status: 🎉 Finished
+  archive: true
   year: 2025
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
 - item: Move Passive Scanner to an add-on
   status: 🎉 Finished
+  archive: true
   url: https://github.com/zaproxy/zaproxy/issues/7959
   year: 2025
   sponsor: Checkmarx Ltd.
@@ -82,10 +95,10 @@
 - item: Promote the Custom Payloads add-on to Release
   url: /docs/desktop/addons/custom-payloads/
   status: 🎉 Finished
+  archive: true
   year: 2025
   sponsor: Checkmarx Ltd.
   sponsorlink: https://checkmarx.com/
-
 - item: Improve sequence scanning functionality
   url: /docs/desktop/addons/sequence-scanner/
   status: 🎉 Finished
