@@ -418,9 +418,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.29.0/graphql-alpha-0.29.0.zap
-  date: 2025-12-15
-  version: 0.29.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.30.0/graphql-alpha-0.30.0.zap
+  date: 2026-02-03
+  version: 0.30.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
