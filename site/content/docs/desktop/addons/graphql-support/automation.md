@@ -33,6 +33,8 @@ It is covered in the video: [ZAP Chat 11 Automation Framework Part 5 - APIs](htt
       argsType:                        # Enum [inline, variables, both]: How arguments are specified, default: both 
       querySplitType:                  # Enum [leaf, root_field, operation]: The level for which a single query is generated, default: leaf
       requestMethod:                   # Enum [post_json, post_graphql, get]: The request method, default: post_json
+      cycleDetectionMode:              # Enum [disabled, quick, exhaustive]: The cycle detection mode, default: quick
+      maxCycleDetectionAlerts:         # Int: The maximum number of alerts to raise for detected cycles, default: 100
 ```
 
 ## See also
