@@ -319,6 +319,9 @@ OWASP_2021_A08:
 OWASP_2021_A10:
   link: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
 
+OWASP_2023_API4:
+  link: https://owasp.org/API-Security/editions/2023/en/0xa4-unrestricted-resource-consumption/
+
 PCI_DSS:
   link: https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance
 
@@ -354,6 +357,9 @@ SYSTEMIC:
 
 TEST_TIMING:
   link: 
+
+WSTG-v42-APIT-01:
+  link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL
 
 WSTG-v42-ATHN-01:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel
