@@ -14,7 +14,7 @@ There are 3 options on Windows:
 1. Via the desktop icon (assuming you selected this option during installation)
 1. Via the 'Start' menu:
    * All Programs
-     * OWASP 
+     * ZAP 
        * Zed Attack Proxy 
          * `ZAP <version>`
 1. Via the 'zap.bat' command line script in the [installation directory](/faq/where-is-zap-installed/)
@@ -32,7 +32,7 @@ OS app that can be started as any other app: Double-Click on the app to start
 it. 
 
 If you have installed ZAP in '/Applications' then you can run it from the command line using 
-'/Applications/OWASP\ ZAP.app/Contents/Java/zap.sh'
+'/Applications/ZAP.app/Contents/Java/zap.sh'
 
 If you have installed ZAP in another directory then change the initial '/Applications' part accordingly.
 
