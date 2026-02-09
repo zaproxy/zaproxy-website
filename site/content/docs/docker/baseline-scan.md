@@ -47,6 +47,7 @@ Options:
     --hook            path to python file that define your custom hooks
     --auto            use the automation framework if supported for the given parameters (this will become the default soon)
     --autooff         do not use the automation framework even if supported for the given parameters
+    --plan-only       generate an automation framework plan but do not run it
 ```
 To run it with no 'file' params use:
 ```
