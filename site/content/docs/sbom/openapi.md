@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: '51'
+    version: '52'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v51/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v52/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -207,10 +207,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 11.20.3
+    version: 12.0.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 11.20.3
+    version: 12.0.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -219,7 +219,7 @@ sbom:
     version: 1.27.0
     licenses: Apache-2.0
   - name: graaljs
-    version: 0.13.0
+    version: 0.14.0
     licenses: ''
   - name: guava
     version: 32.1.3-android
@@ -317,9 +317,6 @@ sbom:
   - name: java-semver
     version: 0.10.2
     licenses: MIT
-  - name: javac
-    version: 9+181-r4173-1
-    licenses: GPL-2.0-with-classpath-exception
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
@@ -411,25 +408,25 @@ sbom:
     version: '0.11'
     licenses: MIT
   - name: langchain4j
-    version: 1.10.0
+    version: 1.11.0
     licenses: Apache-2.0
   - name: langchain4j-azure-open-ai
-    version: 1.10.0
+    version: 1.11.0
     licenses: Apache-2.0
   - name: langchain4j-core
-    version: 1.10.0
+    version: 1.11.0
     licenses: Apache-2.0
   - name: langchain4j-google-ai-gemini
-    version: 1.10.0
+    version: 1.11.0
     licenses: Apache-2.0
   - name: langchain4j-http-client
-    version: 1.10.0
+    version: 1.11.0
     licenses: Apache-2.0
   - name: langchain4j-http-client-jdk
-    version: 1.10.0
+    version: 1.11.0
     licenses: Apache-2.0
   - name: langchain4j-ollama
-    version: 1.10.0
+    version: 1.11.0
     licenses: Apache-2.0
   - name: libphonenumber
     version: 8.11.1
@@ -648,7 +645,7 @@ sbom:
     version: 4.8.6
     licenses: LGPL-2.1-only
   - name: sqlite-jdbc
-    version: 3.51.1.0
+    version: 3.51.2.0
     licenses: Apache-2.0
   - name: stax2-api
     version: 4.2.2
