@@ -140,11 +140,6 @@
   }
 }
 
-.site-header nav .sub-menu {
-  a {
-  }
-}
-
 .hamburger-click {
   cursor: pointer;
   opacity: 0.0;
@@ -154,7 +149,7 @@
   right: 40px;
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 1000px) {
   .header-social {
     display: none;
   }
@@ -174,7 +169,7 @@ input {
   margin-top: 4px;
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 1000px) {
   .hamburger-icon,
   .hamburger-click {
     display: block;
