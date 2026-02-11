@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.30.0
+    version: 0.31.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.30.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.31.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -165,10 +165,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 11.20.3
+    version: 12.0.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 11.20.3
+    version: 12.0.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -248,9 +248,6 @@ sbom:
   - name: java-semver
     version: 0.10.2
     licenses: MIT
-  - name: javac
-    version: 9+181-r4173-1
-    licenses: GPL-2.0-with-classpath-exception
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
@@ -459,7 +456,7 @@ sbom:
     version: 4.8.6
     licenses: LGPL-2.1-only
   - name: sqlite-jdbc
-    version: 3.51.1.0
+    version: 3.51.2.0
     licenses: Apache-2.0
   - name: stax2-api
     version: 4.2.2

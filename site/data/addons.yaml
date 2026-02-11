@@ -418,9 +418,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.30.0/graphql-alpha-0.30.0.zap
-  date: 2026-02-03
-  version: 0.30.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.31.0/graphql-alpha-0.31.0.zap
+  date: 2026-02-11
+  version: 0.31.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -741,9 +741,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v51/openapi-beta-51.zap
-  date: 2026-01-28
-  version: 51
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v52/openapi-beta-52.zap
+  date: 2026-02-11
+  version: 52
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
