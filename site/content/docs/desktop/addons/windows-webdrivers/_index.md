@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: webdriverwindows
-    version: 181.0.0
+    version: 182.0.0
 ---
 
 # Windows WebDrivers
@@ -14,7 +14,7 @@ cascade:
 
 The Windows WebDrivers add-on provides WebDrivers for the following browsers:
 
-* Chrome - ChromeDriver 145.0.7632.67
+* Chrome - ChromeDriver 145.0.7632.76
 * Firefox - geckodriver 0.36.0
 
 ## See also
