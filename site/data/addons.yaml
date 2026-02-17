@@ -833,9 +833,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/passive-scan-rules-beta/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v48/pscanrulesBeta-beta-48.zap
-  date: 2025-12-15
-  version: 48
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesBeta-v49/pscanrulesBeta-beta-49.zap
+  date: 2026-02-17
+  version: 49
 - id: ptk
   name: OWASP PTK
   description: Adds the OWASP PTK extension to browsers launched from ZAP.
