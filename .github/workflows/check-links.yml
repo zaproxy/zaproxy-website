@@ -22,5 +22,5 @@ jobs:
           git checkout v1.0.2
           wget -O evangelists.html https://www.zaproxy.org/evangelists/
           wget -O hof.html https://www.zaproxy.org/student-hall-of-fame/
-          python hydra.py file://$BASE/hydra-link-checker/evangelists.html $BASE/zaproxy-website/.github/workflows/conf/hydra.json
-          python hydra.py file://$BASE/hydra-link-checker/hof.html $BASE/zaproxy-website/.github/workflows/conf/hydra.json
+          python hydra.py file://$BASE/hydra-link-checker/evangelists.html $BASE/zaproxy-website/.github/workflows/conf/hydra.json 2>&1 >> $GITHUB_STEP_SUMMARY
+          python hydra.py file://$BASE/hydra-link-checker/hof.html $BASE/zaproxy-website/.github/workflows/conf/hydra.json 2>&1 >> $GITHUB_STEP_SUMMARY
