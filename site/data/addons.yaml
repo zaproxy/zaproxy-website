@@ -923,9 +923,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.53.0/retire-release-0.53.0.zap
-  date: 2026-01-08
-  version: 0.53.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.54.0/retire-release-0.54.0.zap
+  date: 2026-02-24
+  version: 0.54.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -983,9 +983,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.43.0/selenium-release-15.43.0.zap
-  date: 2025-12-15
-  version: 15.43.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.44.0/selenium-release-15.44.0.zap
+  date: 2026-02-24
+  version: 15.44.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -1013,9 +1013,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.18.0/spider-release-0.18.0.zap
-  date: 2025-12-15
-  version: 0.18.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.19.0/spider-release-0.19.0.zap
+  date: 2026-02-24
+  version: 0.19.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
@@ -1116,9 +1116,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.52.0/wappalyzer-release-21.52.0.zap
-  date: 2025-12-18
-  version: 21.52.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.53.0/wappalyzer-release-21.53.0.zap
+  date: 2026-02-24
+  version: 21.53.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
