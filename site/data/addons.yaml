@@ -37,9 +37,9 @@
   status: release
   infoUrl: /docs/desktop/addons/active-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v79/ascanrules-release-79.zap
-  date: 2025-12-30
-  version: 79
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrules-v80/ascanrules-release-80.zap
+  date: 2026-03-02
+  version: 80
 - id: ascanrulesAlpha
   name: Active scanner rules (alpha)
   description: The alpha status Active Scanner rules
@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.34.0/authhelper-beta-0.34.0.zap
-  date: 2025-12-15
-  version: 0.34.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.35.0/authhelper-beta-0.35.0.zap
+  date: 2026-03-02
+  version: 0.35.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -294,9 +294,9 @@
   status: release
   infoUrl: /docs/desktop/addons/encode-decode-hash/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v1.8.0/encoder-release-1.8.0.zap
-  date: 2025-12-15
-  version: 1.8.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/encoder-v1.9.0/encoder-release-1.9.0.zap
+  date: 2026-03-02
+  version: 1.9.0
 - id: evalvillain
   name: Eval Villain
   description: Adds the Eval Villain extension to Firefox when launched from ZAP.
@@ -314,9 +314,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.16.0/exim-beta-0.16.0.zap
-  date: 2025-12-15
-  version: 0.16.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.17.0/exim-beta-0.17.0.zap
+  date: 2026-03-02
+  version: 0.17.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -408,9 +408,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graalvm-javascript/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.13.0/graaljs-alpha-0.13.0.zap
-  date: 2026-01-29
-  version: 0.13.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graaljs-v0.14.0/graaljs-alpha-0.14.0.zap
+  date: 2026-03-02
+  version: 0.14.0
 - id: graphql
   name: GraphQL Support
   description: Inspect and attack GraphQL endpoints.
@@ -418,9 +418,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/graphql-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.31.0/graphql-alpha-0.31.0.zap
-  date: 2026-02-11
-  version: 0.31.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.32.0/graphql-alpha-0.32.0.zap
+  date: 2026-03-02
+  version: 0.32.0
 - id: groovy
   name: Groovy Support
   description: Adds Groovy support to ZAP
@@ -608,9 +608,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.1.0/insights-alpha-0.1.0.zap
-  date: 2025-12-31
-  version: 0.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.2.0/insights-alpha-0.2.0.zap
+  date: 2026-03-02
+  version: 0.2.0
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such
@@ -813,9 +813,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v70/pscanrules-release-70.zap
-  date: 2025-12-15
-  version: 70
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v71/pscanrules-release-71.zap
+  date: 2026-03-02
+  version: 71
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -853,9 +853,9 @@
   status: release
   infoUrl: /docs/desktop/addons/quick-start/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v53/quickstart-release-53.zap
-  date: 2025-12-15
-  version: 53
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v54/quickstart-release-54.zap
+  date: 2026-03-02
+  version: 54
 - id: reflect
   name: Reflect
   description: Finds reflected parameters
@@ -903,9 +903,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/requester/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v7.9.0/requester-beta-7.9.0.zap
-  date: 2025-12-15
-  version: 7.9.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/requester-v7.10.0/requester-beta-7.10.0.zap
+  date: 2026-03-02
+  version: 7.10.0
 - id: retest
   name: Retest
   description: An add-on to retest for presence/absence of previously generated alerts.
@@ -1156,9 +1156,9 @@
   status: release
   infoUrl: /docs/desktop/addons/websockets/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v35/websocket-release-35.zap
-  date: 2025-12-15
-  version: 35
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v36/websocket-release-36.zap
+  date: 2026-03-02
+  version: 36
 - id: zest
   name: Zest - Graphical Security Scripting Language
   description: A graphical security scripting language, ZAPs macro language on steroids

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: websocket
-    version: 35.0.0
+    version: 36.0.0
 ---
 
 # WebSockets

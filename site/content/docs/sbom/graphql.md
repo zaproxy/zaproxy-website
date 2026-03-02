@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.31.0
+    version: 0.32.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.31.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/graphql-v0.32.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -165,10 +165,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 12.0.0
+    version: 12.0.2
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 12.0.0
+    version: 12.0.2
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -216,28 +216,28 @@ sbom:
     version: '2.21'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.21.0
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.21.0
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.21.0
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.21.0
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.21.0
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.21.0
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.21.0
+    version: 2.21.1
     licenses: Apache-2.0
   - name: java-dataloader
     version: 6.0.0
@@ -285,28 +285,28 @@ sbom:
     version: 2.0.0
     licenses: MIT
   - name: junit-bom
-    version: 6.0.2
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.2
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.2
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.2
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.2
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.2
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.2
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.2
+    version: 6.0.3
     licenses: EPL-2.0
   - name: kaitai-struct-runtime
     version: '0.11'
@@ -444,13 +444,13 @@ sbom:
     version: 1.7.36
     licenses: MIT
   - name: snakeyaml
-    version: '2.4'
+    version: '2.5'
     licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT
   - name: spider
-    version: 0.19.0
+    version: 0.20.0
     licenses: ''
   - name: spotbugs-annotations
     version: 4.8.6
@@ -468,7 +468,7 @@ sbom:
     version: unspecified
     licenses: ''
   - name: wappalyzer
-    version: 21.53.0
+    version: 21.54.0
     licenses: ''
   - name: woodstox-core
     version: 7.1.1
