@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: encoder
-    version: 1.8.0
+    version: 1.9.0
 ---
 
 # Encode / Decode / Hash dialog
@@ -22,6 +22,10 @@ The dialog has one field that is common to all of the tabs:
 
 This field is for the text that you want to be encoded, decoded or hashed.  
 If any text is selected when the dialog is invoked then it will be put in this field. The other fields will be updated dynamically if you change the text  
+
+### Layout
+
+The boundary between the input text area and the output panels can be dragged to resize the areas. This position is saved together with your tab layout when you close the dialog.
 
 ## Toolbar
 

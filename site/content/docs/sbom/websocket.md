@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: websocket
-    version: '35'
+    version: '36'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v35/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v36/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -45,7 +45,7 @@ sbom:
     version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.1.0
+    version: 7.2.1
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -138,10 +138,10 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flatlaf-swingx
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: fuzz
     version: 13.17.0
@@ -186,31 +186,31 @@ sbom:
     version: 3.0.0
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: '2.20'
+    version: '2.21'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.20.1
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.20.1
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.20.1
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.20.1
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.20.1
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.20.1
+    version: 2.21.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.20.1
+    version: 2.21.1
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -218,9 +218,6 @@ sbom:
   - name: java-semver
     version: 0.10.2
     licenses: MIT
-  - name: javac
-    version: 9+181-r4173-1
-    licenses: GPL-2.0-with-classpath-exception
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
@@ -249,28 +246,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -348,7 +345,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.25.0
+    version: 0.26.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -387,7 +384,7 @@ sbom:
     version: 3.25.5
     licenses: BSD-3-Clause
   - name: requester
-    version: 7.9.0
+    version: 7.10.0
     licenses: ''
   - name: rgxgen
     version: '3.1'
@@ -402,7 +399,7 @@ sbom:
     version: 1.7.36
     licenses: MIT
   - name: snakeyaml
-    version: '2.4'
+    version: '2.5'
     licenses: Apache-2.0
   - name: snodge
     version: 2.1.2.2
@@ -429,7 +426,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.17.0-SNAPSHOT
+    version: 2.17.0
     licenses: Apache-2.0
 ---
 

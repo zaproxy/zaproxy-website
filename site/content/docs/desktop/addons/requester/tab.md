@@ -27,6 +27,9 @@ insensitive matches and allows you to loop through them. The footer
 also shows the time taken for the request, the body length, and the
 total length.
 
+Any options you set on the first tab will be saved, and set on
+subsequent tabs that you open.
+
 ## See also
 
 |   |                                              |                                      |

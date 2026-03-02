@@ -24,6 +24,9 @@ Each node has the following format:
 ```
 
 
+When exporting the Sites Tree with a context the nodes that are out of context but present in the tree will be absent of all properties except the node name and children (if any in context), to retain the tree structure.
+
+
 This format is used by the [Automation Framework](/docs/desktop/addons/import-export/automation/) export and prune jobs, and by the corresponding
 [desktop menus](/docs/desktop/addons/import-export/).
 
