@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.44.0
+    version: 15.45.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.44.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.45.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -333,10 +333,10 @@ sbom:
     version: 1.18.42
     licenses: MIT
   - name: mockito-core
-    version: 5.21.0
+    version: 5.22.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.21.0
+    version: 5.22.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
