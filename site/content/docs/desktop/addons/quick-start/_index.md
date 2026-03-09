@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: 54.0.0
+    version: 55.0.0
 ---
 
 # Quick Start
@@ -24,7 +24,9 @@ Please be aware that you should only attack applications that you have been spec
 ### URL to attack
 
 This is the URL of the application you wish to attack, starting with 'http://' or 'https://'.  
-ZAP must be able to access this URL for the attack to proceed.
+ZAP must be able to access this URL for the attack to proceed.   
+
+ZAP will crawl from the URL specified but will remove a trailing slash from the URL before starting to attack. This is because https://example.com/test/ is treated as a leaf node internally, which would mean that ZAP would not attack URLs like https://example.com/test/1 etc.
 
 ### Use traditional spider
 

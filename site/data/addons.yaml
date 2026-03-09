@@ -853,9 +853,9 @@
   status: release
   infoUrl: /docs/desktop/addons/quick-start/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v54/quickstart-release-54.zap
-  date: 2026-03-02
-  version: 54
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v55/quickstart-release-55.zap
+  date: 2026-03-09
+  version: 55
 - id: reflect
   name: Reflect
   description: Finds reflected parameters

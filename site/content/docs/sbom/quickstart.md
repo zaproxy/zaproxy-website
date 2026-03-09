@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: '54'
+    version: '55'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v54/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v55/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -249,10 +249,10 @@ sbom:
     version: 9.13.3
     licenses: LGPL-2.1-or-later
   - name: flyway-core
-    version: 12.0.2
+    version: 12.0.3
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 12.0.2
+    version: 12.0.3
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -341,14 +341,23 @@ sbom:
   - name: jackson-bom
     version: 2.21.1
     licenses: Apache-2.0
+  - name: jackson-bom
+    version: 3.0.4
+    licenses: Apache-2.0
   - name: jackson-core
     version: 2.21.1
+    licenses: Apache-2.0
+  - name: jackson-core
+    version: 3.0.4
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
     version: 2.21.1
+    licenses: Apache-2.0
+  - name: jackson-databind
+    version: 3.0.4
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
     version: 2.21.1
@@ -465,10 +474,10 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: mockito-core
-    version: 5.21.0
+    version: 5.22.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.21.0
+    version: 5.22.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
@@ -613,7 +622,7 @@ sbom:
     version: 3.6.0
     licenses: BSD-3-Clause
   - name: selenium
-    version: 15.45.0
+    version: 15.46.0
     licenses: ''
   - name: selenium-api
     version: 4.41.0
