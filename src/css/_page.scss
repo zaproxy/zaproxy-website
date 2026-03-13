@@ -22,7 +22,7 @@ a {
 }
 
 .bullet-list li {
-  margin-bottom: 0.6 rem;
+  margin-bottom: 0.6rem;
 }
 
 .bullet-list a {
@@ -30,10 +30,11 @@ a {
   text-decoration: none;
 }
 
+
 table {
   display: inline-block;
-  width: auto !important; 
-  max-width: 100%;   
+  width: auto !important;
+  max-width: 100%;
   overflow-x: auto;
   border-collapse: collapse;
 
@@ -41,7 +42,7 @@ table {
     border: solid 2px #eee;
 
     td, th {
-      padding:4px 8px;
+      padding: 4px 8px;
     }
   }
 }
@@ -50,18 +51,18 @@ table {
   table-layout: fixed;
 }
 
-table.table-fixed h5 { 
+table.table-fixed h5 {
   margin-bottom: 0px;
 }
 
 th {
   border-bottom: solid 3px var(--grey-light);
   padding: 4px 8px;
-  background:  var(--grey-light);
+  background: var(--grey-light);
 }
 
 th.sortable {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 td {
@@ -143,7 +144,7 @@ $alert-colors: (
   padding: 0.8rem 1rem;
   background: rgba(0, 0, 0, 0.05);
   font-size: 1rem;
-  
+
   p {
     margin: 0;
   }
