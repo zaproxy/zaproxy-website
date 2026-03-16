@@ -210,3 +210,9 @@ denispodgurskii:
   picture: /img/authors/denis-podgurskii_400x400.png
   twitter: pentestkit
   is_core: false
+
+milton:
+  name: Milton Smith
+  picture: /img/authors/milton_400x400.jpg
+  twitter: javamuffinztx
+  is_core: false
