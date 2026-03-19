@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.43.0
+    version: 0.44.0
 ---
 
 # Report Generation
