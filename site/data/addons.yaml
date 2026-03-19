@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.35.0/authhelper-beta-0.35.0.zap
-  date: 2026-03-02
-  version: 0.35.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.36.0/authhelper-beta-0.36.0.zap
+  date: 2026-03-19
+  version: 0.36.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -180,9 +180,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.39.0/commonlib-release-1.39.0.zap
-  date: 2025-12-15
-  version: 1.39.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.40.0/commonlib-release-1.40.0.zap
+  date: 2026-03-19
+  version: 1.40.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -709,9 +709,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.25.0/network-beta-0.25.0.zap
-  date: 2025-12-15
-  version: 0.25.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.26.0/network-beta-0.26.0.zap
+  date: 2026-03-19
+  version: 0.26.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -741,9 +741,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/openapi-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v52/openapi-beta-52.zap
-  date: 2026-02-11
-  version: 52
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v53/openapi-beta-53.zap
+  date: 2026-03-19
+  version: 53
 - id: packpentester
   name: 'Collection: Pentester Pack'
   description: A collection of add-ons ideal for pentesters
@@ -883,9 +883,9 @@
   status: release
   infoUrl: /docs/desktop/addons/replacer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v21/replacer-release-21.zap
-  date: 2025-12-15
-  version: 21
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/replacer-v22/replacer-release-22.zap
+  date: 2026-03-19
+  version: 22
 - id: reports
   name: Report Generation
   description: Official ZAP Reports.
@@ -893,9 +893,9 @@
   status: release
   infoUrl: /docs/desktop/addons/report-generation/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.43.0/reports-release-0.43.0.zap
-  date: 2025-12-15
-  version: 0.43.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.44.0/reports-release-0.44.0.zap
+  date: 2026-03-19
+  version: 0.44.0
 - id: requester
   name: Requester
   description: Allows to manually edit and send messages.

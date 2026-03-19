@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: replacer
-    version: 21.0.0
+    version: 22.0.0
 ---
 
 # Replacer
@@ -32,6 +32,10 @@ A description that allows you to identify the rule.
 
 A regular expression to match the URL of the message, if empty the rule applies to all messages.  
 For example, allows to restrict the rules to certain domains when providing authentication credentials.
+
+### Method
+
+An HTTP method to match (e.g., GET, POST, PUT, DELETE). If empty, the rule applies to all HTTP methods.
 
 ### Match Type
 
