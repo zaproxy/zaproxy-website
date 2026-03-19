@@ -581,6 +581,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/highlighter-v8/highlighter-alpha-8.zap
   date: 2021-10-07
   version: 8
+- id: httpsInfo
+  name: HTTPS Info
+  description: Displays HTTPS configuration information.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/https-info/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v14/httpsInfo-alpha-14.zap
+  date: 2026-03-19
+  version: 14
 - id: hud
   name: HUD - Heads Up Display
   description: Display information from ZAP in browser.
