@@ -94,7 +94,7 @@ potential vulnerabilities. It supports the following fields:
 
 ##  Simple example
 
-The [`ExampleSimplePassiveScanRule`](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleSimplePassiveScanRule.java) class implements a very simple passive
+The [`ExampleSimplePassiveScanRule`](https://github.com/zaproxy/addon-java/blob/main/src/main/java/com/github/youruser/zap/javaexample/ExampleSimplePassiveScanRule.java) class implements a very simple passive
 scan rule. As you will see, it just raises an alert randomly, so it isn't of any practical use. However it does demonstrate a couple of useful
 features:  
   
@@ -113,7 +113,7 @@ Note that the `pluginId` needs to be unique across all active and passive scan r
 
 ##  File based example
 
-The [`ExampleFilePassiveScanRule`](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/java/org/zaproxy/zap/extension/pscanrulesAlpha/ExampleFilePassiveScanRule.java) class implements a
+The [`ExampleFilePassiveScanRule`](https://github.com/zaproxy/addon-java/blob/main/src/main/java/com/github/youruser/zap/javaexample/ExampleFilePassiveScanRule.java) class implements a
 slightly more complex passive scan rule. In this case it reads in a set of strings from a [configuration file](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrulesAlpha/src/main/zapHomeFiles/txt/example-pscan-file.txt) and checks for their presence in
 the response. It could also use hardcoded strings, but the advantage of the approach taken is that a knowledgeable user could manually edit the
 file to meet their requirement.  
