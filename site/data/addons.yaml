@@ -588,9 +588,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/https-info/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v14/httpsInfo-alpha-14.zap
-  date: 2026-03-19
-  version: 14
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v15/httpsInfo-alpha-15.zap
+  date: 2026-03-27
+  version: 15
 - id: hud
   name: HUD - Heads Up Display
   description: Display information from ZAP in browser.

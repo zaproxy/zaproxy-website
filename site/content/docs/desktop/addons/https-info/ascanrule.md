@@ -35,7 +35,6 @@ Raised when DeepViolet's TLS risk scoring identifies one or more security issues
 
 
 The alert includes the risk score, letter grade, detailed findings with rule IDs, and the full configuration report.
-
 Latest code: [HttpsConfigScanRule.java](https://github.com/zaproxy/zap-extensions/tree/main/addOns/httpsInfo/src/main/java/org/zaproxy/zap/extension/httpsinfo/HttpsConfigScanRule.java)   
 Alert ID: [10205](/docs/alerts/10205/).
 
