@@ -6,14 +6,10 @@ weight: 1
 cascade:
   addon:
     id: httpsInfo
-    version: 14.0.0
+    version: 15.0.0
 ---
 
 # HTTPS Info
-
-|                                                      |
-|------------------------------------------------------|
-| **Java 21 or later is required to use this add-on.** |
 
 
 The HTTPS Info add-on is accessed via the context menu within the Sites Tree or History table.
