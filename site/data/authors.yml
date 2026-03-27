@@ -216,3 +216,9 @@ milton:
   picture: /img/authors/milton_400x400.jpg
   twitter: javamuffinztx
   is_core: false
+
+seqrateam:
+  name: Seqra Team
+  picture: /img/authors/seqrateam_400x400.jpg
+  twitter: seqradev
+  is_core: false
