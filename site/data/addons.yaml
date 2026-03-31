@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.36.0/authhelper-beta-0.36.0.zap
-  date: 2026-03-19
-  version: 0.36.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.37.0/authhelper-beta-0.37.0.zap
+  date: 2026-03-31
+  version: 0.37.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.20.0/client-alpha-0.20.0.zap
-  date: 2025-12-15
-  version: 0.20.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.21.0/client-alpha-0.21.0.zap
+  date: 2026-03-31
+  version: 0.21.0
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
@@ -314,9 +314,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.17.0/exim-beta-0.17.0.zap
-  date: 2026-03-02
-  version: 0.17.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.18.0/exim-beta-0.18.0.zap
+  date: 2026-03-31
+  version: 0.18.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
@@ -588,9 +588,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/https-info/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v15/httpsInfo-alpha-15.zap
-  date: 2026-03-27
-  version: 15
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v16/httpsInfo-alpha-16.zap
+  date: 2026-03-31
+  version: 16
 - id: hud
   name: HUD - Heads Up Display
   description: Display information from ZAP in browser.
@@ -618,9 +618,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.2.0/insights-alpha-0.2.0.zap
-  date: 2026-03-02
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.3.0/insights-alpha-0.3.0.zap
+  date: 2026-03-31
+  version: 0.3.0
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such
@@ -823,9 +823,9 @@
   status: release
   infoUrl: /docs/desktop/addons/passive-scan-rules/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v71/pscanrules-release-71.zap
-  date: 2026-03-02
-  version: 71
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v72/pscanrules-release-72.zap
+  date: 2026-03-31
+  version: 72
 - id: pscanrulesAlpha
   name: Passive scanner rules (alpha)
   description: The alpha status Passive Scanner rules
@@ -933,9 +933,9 @@
   status: release
   infoUrl: /docs/desktop/addons/retire.js/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.54.0/retire-release-0.54.0.zap
-  date: 2026-02-24
-  version: 0.54.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.55.0/retire-release-0.55.0.zap
+  date: 2026-03-31
+  version: 0.55.0
 - id: reveal
   name: Reveal
   description: Show hidden fields and enable disabled fields
@@ -973,9 +973,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/scan-policies/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.7.0/scanpolicies-alpha-0.7.0.zap
-  date: 2025-12-15
-  version: 0.7.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.8.0/scanpolicies-alpha-0.8.0.zap
+  date: 2026-03-31
+  version: 0.8.0
 - id: scripts
   name: Script Console
   description: Supports all JSR 223 scripting languages
@@ -983,9 +983,9 @@
   status: release
   infoUrl: /docs/desktop/addons/script-console/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.17.0/scripts-release-45.17.0.zap
-  date: 2025-12-15
-  version: 45.17.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scripts-v45.18.0/scripts-release-45.18.0.zap
+  date: 2026-03-31
+  version: 45.18.0
 - id: selenium
   name: Selenium
   description: WebDriver provider and includes HtmlUnit browser
@@ -993,9 +993,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.45.0/selenium-release-15.45.0.zap
-  date: 2026-03-04
-  version: 15.45.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.46.0/selenium-release-15.46.0.zap
+  date: 2026-03-31
+  version: 15.46.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -1126,9 +1126,9 @@
   status: release
   infoUrl: /docs/desktop/addons/technology-detection/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.53.0/wappalyzer-release-21.53.0.zap
-  date: 2026-02-24
-  version: 21.53.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wappalyzer-v21.54.0/wappalyzer-release-21.54.0.zap
+  date: 2026-03-31
+  version: 21.54.0
 - id: webdriverlinux
   name: Linux WebDrivers
   description: Linux WebDrivers for Firefox and Chrome.
@@ -1176,6 +1176,6 @@
   status: beta
   infoUrl: /docs/desktop/addons/zest/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.12.0/zest-beta-48.12.0.zap
-  date: 2026-02-13
-  version: 48.12.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.13.0/zest-beta-48.13.0.zap
+  date: 2026-03-31
+  version: 48.13.0

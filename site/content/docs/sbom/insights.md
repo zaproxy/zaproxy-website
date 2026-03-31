@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: insights
-    version: 0.2.0
+    version: 0.3.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.2.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.3.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -105,7 +105,7 @@ sbom:
     version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.2.1
+    version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -123,7 +123,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.40.0
+    version: 1.41.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -252,28 +252,28 @@ sbom:
     version: '2.21'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.21.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.21.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.21.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.21.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.21.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.21.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.21.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -357,10 +357,10 @@ sbom:
     version: 1.18.42
     licenses: MIT
   - name: mockito-core
-    version: 5.21.0
+    version: 5.23.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.21.0
+    version: 5.23.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
@@ -411,7 +411,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.26.0
+    version: 0.27.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -457,7 +457,7 @@ sbom:
     version: 3.25.5
     licenses: BSD-3-Clause
   - name: reports
-    version: 0.44.0
+    version: 0.45.0
     licenses: ''
   - name: rsyntaxtextarea
     version: 3.6.0

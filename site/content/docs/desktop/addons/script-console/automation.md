@@ -35,12 +35,65 @@ Removes the specified script from ZAP.
 
 ## Action: run
 
-Runs the specified script to ZAP. The script must already be available in ZAP, for example added using the 'add' action.
+Runs the specified script in ZAP. The script must already be available in ZAP, for example added using the 'add' action.
 
 * type: mandatory, can be 'standalone' or 'targeted'
-* name: mandatory, the name of the script in ZAP
+* name: mandatory for single script run, the name of the script in ZAP (if both 'name' and 'chain' are specified, 'name' is ignored)
+* chain: optional for running multiple scripts in sequence, a list of script names (takes precedence over 'name' if both are specified)
 * engine: optional, can be used to override the default engine for the file extension
 * target: mandatory, if type is 'targeted', the target URL to be invoked for 'targeted' script
+* context: optional, the name of the context to use when running the script
+* user: optional, the name of the user when running the Zest standalone script or chain (requires context). See Script Chaining for authentication with chains.
+
+### Authentication
+
+
+If `user` is specified, the user is set on the Zest script.
+Authentication happens when the browser is actually launched during script execution (for example, when a `ZestClientLaunch` runs), not before scripts start.
+For chains, the execution path is the same for single-script and multi-script chains. Authentication might not occur if no browser launch is executed in that run.
+
+### Script Chaining
+
+
+The run action can execute one or more Zest standalone scripts in sequence using the `chain` parameter.
+This is useful for workflows that require several scripts to run in order.
+
+
+Chaining requires the Zest add-on to be installed. If it is not loaded or chain preparation fails, the job reports an error and the chain does not run.
+
+#### Requirements
+
+* All scripts in the chain must be Zest standalone scripts
+* All scripts must be added via "add" actions in the same plan (or already loaded in ZAP)
+* Script existence and type are validated at runtime, not during plan validation
+* If both `chain` and `name` are specified, `chain` is used and `name` is ignored (a warning is issued)
+* All window handles are expected/need to be the same (for the main window)
+* The first script must contain at least one browser launch (`ZestClientLaunch`)
+* Subsequent scripts reuse that browser (extra launch statements are disabled)
+* At the end of a successfully completed chain, all browser windows opened by the scripts are closed automatically
+
+#### Error Handling
+
+
+If chain preparation fails (e.g. Zest not loaded), the job reports an error and the chain does not run.
+If any script in the chain fails during execution, the job reports an error and stops; later scripts in the chain are not run.
+In this case, browser windows opened by the chain might not be closed immediately and are closed when ZAP shuts down.
+
+#### Example
+
+```
+  - type: script
+    parameters:
+      action: run
+      type: standalone
+      chain:
+        - access-script
+        - navigate-script
+        - perform-action-script
+      context: mycontext
+      user: testuser
+	
+```
 
 ## Action: loaddir
 
@@ -74,10 +127,13 @@ Not all of the parameters are valid for all of the actions, see above for detail
       action:                    # String: The executed action - available actions: add, remove, run, enable, disable
       type:                      # String: The type of the script
       engine:                    # String: The script engine to use - can be used to override the default engine for the file extension
-      name:                      # String: The name of the script, defaults to the file name
+      name:                      # String: The name of the script, defaults to the file name (for single script run; ignored if 'chain' is specified)
+      chain:                     # List: optional; script names to run in sequence (takes precedence over name if both specified)
       source:                    # String: The full or relative file path, must be readable
       inline:                    # String: The full script (may be multi-line) - supply this or 'source' not both
       target:                    # String: The URL to be invoked for "targeted" script type
+      context:                   # String: The name of the context to use when running the script (optional)
+      user:                      # String: The name of the user to use when running the Zest standalone script or chain (optional, requires context)
 	
 ```
 
