@@ -58,6 +58,9 @@ CWE-1275:
 CWE-1295:
   link: https://cwe.mitre.org/data/definitions/1295.html
 
+CWE-1321:
+  link: https://cwe.mitre.org/data/definitions/1321.html
+
 CWE-1336:
   link: https://cwe.mitre.org/data/definitions/1336.html
 
@@ -256,6 +259,9 @@ CWE-942:
 CWE-943:
   link: https://cwe.mitre.org/data/definitions/943.html
 
+CWE-95:
+  link: https://cwe.mitre.org/data/definitions/95.html
+
 CWE-97:
   link: https://cwe.mitre.org/data/definitions/97.html
 
@@ -296,7 +302,7 @@ OWASP_2017_A09:
   link: https://owasp.org/www-project-top-ten/2017/A9_2017-Using_Components_with_Known_Vulnerabilities.html
 
 OWASP_2021_A01:
-  link: https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+  link: 
 
 OWASP_2021_A02:
   link: https://owasp.org/Top10/A02_2021-Cryptographic_Failures/
@@ -314,13 +320,22 @@ OWASP_2021_A06:
   link: https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
 
 OWASP_2021_A08:
-  link: https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/
+  link: 
 
 OWASP_2021_A10:
   link: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
 
 OWASP_2023_API4:
   link: https://owasp.org/API-Security/editions/2023/en/0xa4-unrestricted-resource-consumption/
+
+OWASP_2025_A01:
+  link: 
+
+OWASP_2025_A04:
+  link: https://owasp.org/Top10/2025/A04_2025-Cryptographic_Failures/
+
+OWASP_2025_A05:
+  link: 
 
 PCI_DSS:
   link: https://www.zaproxy.org/docs/desktop/addons/common-library/alerttags/#compliance
@@ -357,6 +372,9 @@ SYSTEMIC:
 
 TEST_TIMING:
   link: 
+
+TOOL_PTK:
+  link: https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/
 
 WSTG-v42-APIT-01:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL
