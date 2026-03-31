@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: scanpolicies
-    version: 0.7.0
+    version: 0.8.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.7.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/scanpolicies-v0.8.0/bom.json
   components:
   - name: asm
     version: '9.7'
@@ -30,7 +30,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: biz.aQute.bnd.annotation
-    version: 7.1.0
+    version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: caffeine
     version: 3.0.5
@@ -105,10 +105,10 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flatlaf-swingx
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: google-java-format
     version: 1.27.0
@@ -134,9 +134,6 @@ sbom:
   - name: java-semver
     version: 0.10.2
     licenses: MIT
-  - name: javac
-    version: 9+181-r4173-1
-    licenses: GPL-2.0-with-classpath-exception
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
@@ -225,7 +222,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.17.0-SNAPSHOT
+    version: 2.17.0
     licenses: Apache-2.0
 ---
 

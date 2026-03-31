@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: httpsInfo
-    version: '15'
+    version: '16'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v15/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/httpsInfo-v16/bom.json
   components:
   - name: DeepViolet
     version: 6.1.1
@@ -48,7 +48,7 @@ sbom:
     version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.2.1
+    version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -65,6 +65,9 @@ sbom:
   - name: checker-qual
     version: 3.43.0
     licenses: MIT
+  - name: commonlib
+    version: 1.41.0
+    licenses: ''
   - name: commons-beanutils
     version: 1.11.0
     licenses: Apache-2.0
@@ -72,10 +75,16 @@ sbom:
     version: 1.8.0
     licenses: Apache-2.0
   - name: commons-codec
+    version: 1.19.0
+    licenses: Apache-2.0
+  - name: commons-codec
     version: 1.20.0
     licenses: Apache-2.0
   - name: commons-collections
     version: 3.2.2
+    licenses: Apache-2.0
+  - name: commons-collections4
+    version: 4.5.0
     licenses: Apache-2.0
   - name: commons-configuration
     version: '1.10'
@@ -176,8 +185,32 @@ sbom:
   - name: j2objc-annotations
     version: 3.0.0
     licenses: Apache-2.0
+  - name: jackson-annotations
+    version: '2.21'
+    licenses: Apache-2.0
+  - name: jackson-bom
+    version: 2.21.2
+    licenses: Apache-2.0
+  - name: jackson-core
+    version: 2.21.2
+    licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
+    licenses: Apache-2.0
+  - name: jackson-databind
+    version: 2.21.2
+    licenses: Apache-2.0
+  - name: jackson-dataformat-xml
+    version: 2.21.2
+    licenses: Apache-2.0
+  - name: jackson-dataformat-yaml
+    version: 2.21.2
+    licenses: Apache-2.0
+  - name: jackson-datatype-jdk8
+    version: 2.21.2
+    licenses: Apache-2.0
+  - name: jackson-datatype-jsr310
+    version: 2.21.2
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -365,6 +398,9 @@ sbom:
   - name: slf4j-api
     version: 2.0.13
     licenses: MIT
+  - name: snakeyaml
+    version: '2.5'
+    licenses: Apache-2.0
   - name: snakeyaml-engine
     version: '2.8'
     licenses: Apache-2.0
@@ -374,12 +410,18 @@ sbom:
   - name: spotbugs-annotations
     version: 4.8.6
     licenses: LGPL-2.1-only
+  - name: stax2-api
+    version: 4.2.2
+    licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
   - name: testutils
     version: unspecified
     licenses: ''
+  - name: woodstox-core
+    version: 7.1.1
+    licenses: Apache-2.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
