@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ptk
-    version: 0.2.0
+    version: 0.3.0
 ---
 
 # OWASP PTK
@@ -32,5 +32,12 @@ OWASP PTK provides:
 * **Automation** - Add the PTK to browser automation systems like Selenium to get security insight while running tests
 * **Recording** - Macro and traffic recording with HAR file output
 
+## ZAP Alerts
+
+PTK will raise ZAP alerts for any issues it finds during a session. The full list of alerts raised by PTK is available at [https://www.zaproxy.org/alerttags/tool_ptk/](/alerttags/tool_ptk/).
+
 
 You can enable and disable OWASP PTK and other browser extensions via the Selenium Options page.
+
+
+See also: [OWASP PTK Options](/docs/desktop/addons/owasp-ptk/ptk-options/)
