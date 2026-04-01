@@ -19,10 +19,20 @@ date: "2026-04-01"
 authors:
     - denispodgurskii
 ---
+
 ## OWASP PTK findings to ZAP alerts demo
 
 {{<youtube uuid="m3YOB6JqS2c">}}
 
+---
+
+## What’s new in ZAP Add-on 0.3.0
+
+The add-on still pre-installs OWASP PTK into the browsers launched by ZAP (Chrome / Firefox / Edge), but it now adds:
+
+- **PTK → ZAP Alerts**: findings are surfaced into ZAP as Alerts (so they show up where ZAP users already live).
+- **Rule selection**: choose which PTK rule packs to run (**SAST**, **IAST**, **DAST**).
+- **Auto-start option**: optionally start PTK scanning automatically when the ZAP browser launches.
 
 OWASP PTK (PenTest Kit) turns your browser into a security testing platform. ZAP remains your traffic and context hub.
 
@@ -36,13 +46,49 @@ This means you can scan in the browser (where the session, SPA routing, and UI f
 
 ---
 
-## What’s new in ZAP Add-on 0.3.0
+### Why this matters: a huge upgrade for ZAP’s client-side capabilities
 
-The add-on still pre-installs OWASP PTK into the browsers launched by ZAP (Chrome / Firefox / Edge), but it now adds:
+This has a **huge impact on ZAP’s client-side capabilities**.
 
-- **PTK → ZAP Alerts**: findings are surfaced into ZAP as Alerts (so they show up where ZAP users already live).
-- **Rule selection**: choose which PTK rule packs to run (**SAST**, **IAST**, **DAST**).
-- **Auto-start option**: optionally start PTK scanning automatically when the ZAP browser launches.
+ZAP is excellent at what it can observe at the proxy layer: requests, responses, headers, parameters, server-side behavior, and classic active/passive scanning.
+
+But modern applications increasingly push risk into places the proxy can’t reliably see:
+
+- UI-driven flows that never trigger full page loads (SPA routing)
+- DOM updates and client-side rendering decisions
+- JavaScript sinks and dangerous patterns inside bundled/minified code
+- runtime behavior that only exists inside the browser’s execution context
+
+That’s where OWASP PTK helps. PTK runs **inside the browser**, so it can see client-side code and runtime signals directly — and with add-on **0.3.0** it can now report those findings back into ZAP as **native Alerts**.
+
+#### IAST: runtime signals during real user flows
+
+PTK IAST can surface issues that are hard or impossible to infer from traffic alone, because the proof is in *what the app did at runtime*:
+
+- DOM XSS-style behavior where the payload never comes back in the response, but is used unsafely in the browser runtime
+- risky data-flow patterns (tainted input reaching sensitive operations)
+- evidence that a dangerous sink was reached, even when server responses look “normal”
+
+From a proxy-only perspective, these can be invisible or ambiguous because the proxy doesn’t know what happened after the response was processed by JavaScript.
+
+#### SAST: analyze the JavaScript the browser actually loaded
+
+PTK SAST focuses on **inline and external scripts loaded by the page** — the real production bundles and third-party scripts your browser executed.
+
+This helps catch issues like:
+
+- dangerous sinks and patterns (`eval`, `Function`, unsafe `innerHTML`/template usage, etc.)
+- DOM injection patterns that don’t show up as reflected payloads in HTTP responses
+- risky client-side behaviors introduced by third-party scripts or production builds (even when you don’t have repo access)
+
+ZAP can capture the scripts as responses, but it’s not designed to statically analyze the client-side codebase that the browser actually assembled and executed. PTK is — and the results now land in ZAP as Alerts.
+
+#### Massive jump in alert coverage
+
+And the number of new alerts is a massive jump for us: ZAP now has **142** OWASP PTK–tagged alert types available.  
+You can browse the full list here: [OWASP PTK alert tags in ZAP](https://www.zaproxy.org/alerttags/tool_ptk/).
+
+Scan in the browser. Review in ZAP.
 
 ---
 
