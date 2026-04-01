@@ -1,5 +1,5 @@
 ---
-title: "OWASP PTK 9.8.0 + ZAP Add-on 0.3.0: PTK Findings as ZAP Alerts (Juice Shop Walkthrough)"
+title: "OWASP PTK Findings as ZAP Alerts (Juice Shop Walkthrough)"
 summary: >
   OWASP PTK 9.8.0 and the ZAP OWASP PTK add-on 0.3.0 now let ZAP display OWASP PTK findings directly as ZAP Alerts.
   This post shows how to install the add-on, choose which PTK rules to run (SAST / IAST / DAST), optionally auto-start scans on browser launch,
@@ -7,7 +7,6 @@ summary: >
 type: post
 tags:
 - blog
-- zap
 - owasp-ptk
 - dast
 - iast
@@ -26,7 +25,7 @@ authors:
 
 ---
 
-## What’s new in ZAP Add-on 0.3.0
+## What's new in the PTK Add-on 0.3.0
 
 The add-on still pre-installs OWASP PTK into the browsers launched by ZAP (Chrome / Firefox / Edge), but it now adds:
 
@@ -86,7 +85,7 @@ ZAP can capture the scripts as responses, but it’s not designed to statically 
 #### Massive jump in alert coverage
 
 And the number of new alerts is a massive jump for us: ZAP now has **142** OWASP PTK–tagged alert types available.  
-You can browse the full list here: [OWASP PTK alert tags in ZAP](https://www.zaproxy.org/alerttags/tool_ptk/).
+You can browse the full list here: [OWASP PTK alert tags in ZAP](/alerttags/tool_ptk/).
 
 Scan in the browser. Review in ZAP.
 
@@ -233,7 +232,7 @@ In this integration, you can choose the rule packs you want in ZAP’s Options, 
 ## OWASP PTK rules in ZAP
 See all the OWASP PTK rules that can be anbled for ZAP alerts:
 
-[OWASP PTK alert tags in ZAP](https://www.zaproxy.org/alerttags/tool_ptk/)
+[OWASP PTK alert tags in ZAP](/alerttags/tool_ptk/)
 
 ---
 
