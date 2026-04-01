@@ -241,7 +241,18 @@ See all the OWASP PTK rules that can be anbled for ZAP alerts:
 
 This is the first version of “PTK findings as ZAP Alerts”.
 
-If you have ideas for how to improve the alert mapping (naming, evidence fields, confidence, request linking), open an issue and let’s iterate.
+Next up, we’ll be working on **full automation**.
+
+The goal is to make PTK + ZAP feel like a single automated pipeline:
+
+- **Launch** a ZAP browser with PTK enabled
+- **Auto-start** the selected PTK engines/rules (DAST / IAST / SAST)
+- Run a **repeatable journey** (login, key flows, common actions) using recorded steps or scripted browser automation
+- **Wait for completion** / stop conditions (time budget, coverage, confidence thresholds)
+- **Stream results** into ZAP continuously as Alerts (not just at the end)
+- Produce a **clean, reproducible output** you can report on in ZAP (and re-run on every build)
+
+This is a big step for CI-style scanning: the same real browser session and the same UI flows, but automated and repeatable—while ZAP remains the place where findings are reviewed, filtered, and reported.
 
 ---
 
