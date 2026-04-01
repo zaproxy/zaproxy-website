@@ -265,5 +265,7 @@ This is a big step for CI-style scanning: the same real browser session and the 
 
 ## Links
 
-- **OWASP PTK (browser extension)**: https://github.com/DenisPodgurskii/pentestkit  
-- **ZAP OWASP PTK add-on**: https://github.com/DenisPodgurskii/ZAP_PTK
+- **OWASP PTK (browser extension repo)**: https://github.com/DenisPodgurskii/pentestkit  
+- **ZAP OWASP PTK add-on repo**: https://github.com/DenisPodgurskii/ZAP_PTK  
+- **ZAP Add-on docs: OWASP PTK**: https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/  
+- **ZAP Add-on docs: PTK Options**: https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/ptk-options/
