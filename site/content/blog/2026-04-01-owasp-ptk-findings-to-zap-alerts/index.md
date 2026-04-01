@@ -261,3 +261,9 @@ This is a big step for CI-style scanning: the same real browser session and the 
 - Start with conservative settings (rate/concurrency) on real environments.
 - Juice Shop is intentionally vulnerable — it’s perfect for demonstrating the workflow safely.
 
+---
+
+## Links
+
+- **OWASP PTK (browser extension)**: https://github.com/DenisPodgurskii/pentestkit  
+- **ZAP OWASP PTK add-on**: https://github.com/DenisPodgurskii/ZAP_PTK
