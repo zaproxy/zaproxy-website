@@ -19,6 +19,10 @@ date: "2026-04-01"
 authors:
     - denispodgurskii
 ---
+## OWASP PTK findings to ZAP alerts demo
+
+{{<youtube uuid="m3YOB6JqS2c">}}
+
 
 OWASP PTK (PenTest Kit) turns your browser into a security testing platform. ZAP remains your traffic and context hub.
 
@@ -180,6 +184,13 @@ In this integration, you can choose the rule packs you want in ZAP’s Options, 
 
 ---
 
+## OWASP PTK rules in ZAP
+See all the OWASP PTK rules that can be anbled for ZAP alerts:
+
+[OWASP PTK alert tags in ZAP](https://www.zaproxy.org/alerttags/tool_ptk/)
+
+---
+
 ## What’s next
 
 This is the first version of “PTK findings as ZAP Alerts”.
@@ -194,4 +205,3 @@ If you have ideas for how to improve the alert mapping (naming, evidence fields,
 - Start with conservative settings (rate/concurrency) on real environments.
 - Juice Shop is intentionally vulnerable — it’s perfect for demonstrating the workflow safely.
 
-[Watch the demo on OWASP PTK YouTube channel](https://youtu.be/m3YOB6JqS2c)
