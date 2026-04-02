@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.58.0/automation-beta-0.58.0.zap
-  date: 2025-12-15
-  version: 0.58.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.59.0/automation-beta-0.59.0.zap
+  date: 2026-04-02
+  version: 0.59.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -159,9 +159,9 @@
   status: release
   infoUrl: /docs/desktop/addons/call-home/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.20.0/callhome-release-0.20.0.zap
-  date: 2025-12-15
-  version: 0.20.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.21.0/callhome-release-0.21.0.zap
+  date: 2026-04-02
+  version: 0.21.0
 - id: client
   name: Client Side Integration
   description: Exposes client (browser) side information in ZAP using Firefox and
@@ -702,6 +702,16 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/2.7/maplocal-alpha-0.0.1.zap
   date: 2023-10-05
   version: 0.0.1
+- id: mcp
+  name: MCP Integration
+  description: An add-on that integrates MCP in ZAP.
+  author: ZAP Dev Team
+  status: alpha
+  infoUrl: ''
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.0.1/mcp-alpha-0.0.1.zap
+  date: 2026-04-02
+  version: 0.0.1
 - id: neonmarker
   name: Neonmarker
   description: Colors history table items based on tags
@@ -1023,9 +1033,9 @@
   status: release
   infoUrl: /docs/desktop/addons/spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.19.0/spider-release-0.19.0.zap
-  date: 2026-02-24
-  version: 0.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spider-v0.20.0/spider-release-0.20.0.zap
+  date: 2026-04-02
+  version: 0.20.0
 - id: spiderAjax
   name: Ajax Spider
   description: Allows you to spider sites that make heavy use of JavaScript using
@@ -1034,9 +1044,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.29.0/spiderAjax-release-23.29.0.zap
-  date: 2025-12-15
-  version: 23.29.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.30.0/spiderAjax-release-23.30.0.zap
+  date: 2026-04-02
+  version: 23.30.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
