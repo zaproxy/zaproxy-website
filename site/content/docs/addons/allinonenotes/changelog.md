@@ -1,0 +1,31 @@
+---
+# This page was automatically generated from the add-on's CHANGELOG.
+title: All In One Notes Add-on Changelog
+type: changelog
+weight: 1
+cascade:
+  addon:
+    id: allinonenotes
+    version: '2'
+---
+
+# Changelog
+All notable changes to this add-on will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [2] - 2021-10-07
+### Added
+- Add info and repo URLs.
+
+### Changed
+- Update minimum ZAP version to 2.11.0.
+- Update link to repository.
+- Maintenance changes.
+
+## [1] - 2019-06-17
+
+- First version.
+
+[2]: https://github.com/zaproxy/zap-extensions/releases/allinonenotes-v2
+[1]: https://github.com/zaproxy/zap-extensions/releases/allinonenotes-v1
