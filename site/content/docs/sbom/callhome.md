@@ -6,10 +6,10 @@ weight: 1
 cascade:
   addon:
     id: callhome
-    version: 0.20.0
+    version: 0.21.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.20.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/callhome-v0.21.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -45,7 +45,7 @@ sbom:
     version: '1.83'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.1.0
+    version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -129,10 +129,10 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flatlaf-swingx
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: google-java-format
     version: 1.27.0
@@ -179,9 +179,6 @@ sbom:
   - name: java-semver
     version: 0.10.2
     licenses: MIT
-  - name: javac
-    version: 9+181-r4173-1
-    licenses: GPL-2.0-with-classpath-exception
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
@@ -207,28 +204,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -252,10 +249,10 @@ sbom:
     version: 1.18.42
     licenses: MIT
   - name: mockito-core
-    version: 5.21.0
+    version: 5.23.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.21.0
+    version: 5.23.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
@@ -306,7 +303,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.25.0
+    version: 0.27.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -369,7 +366,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.17.0-SNAPSHOT
+    version: 2.17.0
     licenses: Apache-2.0
 ---
 

@@ -11,13 +11,14 @@ The Automation Framework has a GUI that is in the process of being developed.
 
 ## Automation Tab
 
-This tab allows you to create, load, edit and run automation jobs. It has 2 sub tabs.
+This tab allows you to create, load, edit and run automation jobs.
 
 
 A toolbar provides the following buttons:
 
 * New Plan... - this launches the New Plan dialog
 * Load Plan... - this allows you to load a plan from a yaml file
+* Load Plan from Clipboard - this allows you to load a plan from the contents of the clipboard
 * Save Plan - this saves the current plan to a yaml file
 * Run Plan - this runs the current plan
 * Stop Plan - this stops the current plan
@@ -28,9 +29,7 @@ A toolbar provides the following buttons:
 * Add Test... - this launches the Add Test dialog to add a test to the current job
 * Remove Test... - this removes the selected test from the current job
 
-### Plan sub-tab
-
-A graphical representation of the plan which also shows the state of the plan when it is run.  
+Below the toolbar, you can find a graphical representation of the plan which also shows the state of the plan when it is run.  
 You can edit any of the elements of the plan by double clicking on them.
 
 
@@ -39,9 +38,9 @@ You can also change the following general job options via the plan table:
 * Enabled - only jobs that are enabled will run.
 * Always Run - enabled jobs with this option will run even if the plan exits early.
 
-### Output sub-tab
+## Output
 
-Any output generated when you load or run the plan.
+Any output generated while loading or running the plan will appear in the Automation sub-tab of the Output tab.
 
 ## Future Plans
 
