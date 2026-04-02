@@ -15,7 +15,7 @@
     </tr>
     </thead>
     
-    {{ range .Pages }}
+    {{ range where .Site.RegularPages "Type" "sbom" }}
     <tr>
           <td>
             <a href="{{ .Permalink }}">{{ .Title }}</a>

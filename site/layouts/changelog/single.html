@@ -1,0 +1,26 @@
+{{ define "title" }}{{ .Site.Title }} &ndash; {{ .Title }}{{ end }}
+{{ define "main" }}
+{{ $addOn := index (where .Site.Data.addons "id" "==" $.Params.cascade.addon.id) 0 }}
+<style>
+  .changelog-content h1 { font-size: 1.5em; }
+  .changelog-content h2 { font-size: 1.25em; }
+  .changelog-content h3 { font-size: 1.1em; }
+  .changelog-content h4 { font-size: 1em; }
+  .changelog-content h5 { font-size: 0.9em; }
+  .changelog-content h6 { font-size: 0.85em; }
+</style>
+<section class="bolt-header">
+  <div class="wrapper py-20">
+    <h1 class="text--white">{{ .Title }}</h1>
+  </div>
+</section>
+<div class="wrapper py-20" data-kind="{{ .Kind }}">
+  <header class="breadcrumbs">
+    <a href="/docs/">Docs</a> &gt;
+    <a href="{{ $addOn.infoUrl }}">{{ $addOn.name }}</a> &gt;
+    Changelog
+  </header>
+  <br>
+  <main class="changelog-content">{{- .Content -}}</main>
+</div>
+{{ end }}
