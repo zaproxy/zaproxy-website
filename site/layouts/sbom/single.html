@@ -9,8 +9,8 @@
 <div class="wrapper py-20" data-kind="{{ .Kind }}">
   <header class="breadcrumbs">
     <a href="/docs/">Docs</a> &gt;
-    <a href="/docs/sbom/">SBOM</a> &gt;
-    <a href="/docs/sbom/{{ $addOn.id | lower }}">{{ $addOn.name }}</a>
+    <a href="{{ $addOn.infoUrl }}">{{ $addOn.name }}</a> &gt;
+    SBOM
   </header>
   <br>
   <p>This page contains a list of all the libraries involved in building version <code>{{ $addOn.version }}</code> of the
