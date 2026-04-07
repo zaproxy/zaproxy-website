@@ -1,0 +1,38 @@
+---
+# This page was automatically generated from the add-on's CHANGELOG.
+title: ViewState Add-on Changelog
+type: changelog
+weight: 1
+cascade:
+  addon:
+    id: viewstate
+    version: '3'
+---
+
+# Changelog
+All notable changes to this add-on will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [3] - 2021-10-07
+### Changed
+- Update minimum ZAP version to 2.11.0.
+- Maintenance changes.
+
+## [2] - 2020-07-07
+### Added
+- Add help.
+- Add info and repo URLs.
+
+### Changed
+- Update minimum ZAP version to 2.9.0.
+
+### Fixed
+- Fix memory leak.
+
+## 1 - 2016-09-14
+
+
+
+[3]: https://github.com/zaproxy/zap-extensions/releases/viewstate-v3
+[2]: https://github.com/zaproxy/zap-extensions/releases/viewstate-v2
