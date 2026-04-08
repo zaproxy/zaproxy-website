@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: webdrivermacos
-    version: '190'
+    version: '191'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v190/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v191/bom.json
   components:
   - name: asm
     version: '9.7'
@@ -32,7 +32,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: biz.aQute.bnd.annotation
-    version: 7.2.1
+    version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: caffeine
     version: 3.0.5
