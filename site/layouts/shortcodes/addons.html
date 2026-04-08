@@ -25,11 +25,11 @@
             {{end}}
             {{ $bomMdFilePath := print "docs/addons/" .id "/sbom.md" }}
             {{ if os.FileExists $bomMdFilePath }}
-            <a class="no-border" title="SBOM" href="/docs/addons/{{ .id }}/sbom/" target="_blank" rel="noopener noreferrer"><img alt="SBOM" src="/img/addons/sbom.png" /></a>
+            <a class="no-border" title="SBOM" href="/docs/addons/{{ .id | lower }}/sbom/" target="_blank" rel="noopener noreferrer"><img alt="SBOM" src="/img/addons/sbom.png" /></a>
             {{end}}
             {{ $changelogMdFilePath := print "docs/addons/" .id "/changelog.md" }}
             {{ if os.FileExists $changelogMdFilePath }}
-            <a class="no-border" title="Changelog" href="/docs/addons/{{ .id }}/changelog/"><img alt="Changelog" src="/img/addons/changelog.png" /></a>
+            <a class="no-border" title="Changelog" href="/docs/addons/{{ .id | lower }}/changelog/" target="_blank" rel="noopener noreferrer"><img alt="Changelog" src="/img/addons/changelog.png" /></a>
             {{end}}
             <br>
             {{ .description }}
