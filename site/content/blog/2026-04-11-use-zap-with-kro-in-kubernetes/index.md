@@ -139,26 +139,13 @@ With KRO, we use a `ResourceGraphDefinition` (RGD) manifest to create our custom
             af-plan.yaml: |
               env:
                 contexts:
-                - authentication:
-                    parameters: {}
-                    verification:
-                      method: response
-                      pollFrequency: 60
-                      pollUnits: seconds
+                - name: Default Context
                   excludePaths: ${"[" + schema.spec.zap.excludePaths.map(item, '"' + item + '"').join(", ") + "]"}
                   includePaths: ${"[" + schema.spec.zap.includePaths.map(item, '"' + item + '"').join(", ") + "]"}
-                  name: Default Context
-                  sessionManagement:
-                    method: cookie
-                    parameters: {}
-                  technology:
-                    exclude: []
                   urls: ${"[" + schema.spec.zap.urls.map(item, '"' + item + '"').join(", ") + "]"}
                 parameters:
                   failOnError: false
                   failOnWarning: false
-                  progressToStdout: true
-                vars: {}
               jobs:
               - name: openapi
                 parameters:
@@ -169,20 +156,14 @@ With KRO, we use a `ResourceGraphDefinition` (RGD) manifest to create our custom
               - name: activeScan
                 parameters:
                   context: Default Context
-                  maxAlertsPerRule: 0
-                  maxRuleDurationInMins: 0
-                  maxScanDurationInMins: 0
                   policy: ""
                   threadPerHost: 2
-                  user: ""
                 policyDefinition:
                   defaultStrength: medium
                   defaultThreshold: medium
-                  rules: []
                 type: activeScan
               - name: pdf-report
                 parameters:
-                  reportDescription: ""
                   reportDir: /zap/reports
                   reportTitle: ZAP Scanning Report
                   template: traditional-pdf
@@ -206,8 +187,6 @@ With KRO, we use a `ResourceGraphDefinition` (RGD) manifest to create our custom
                   template: sarif-json
                   reportDir: /zap/reports
                   reportTitle: ZAP Scanning Report
-                  reportDescription: ""
-                  displayReport: false
                 risks:
                 - low
                 - medium
@@ -217,7 +196,6 @@ With KRO, we use a `ResourceGraphDefinition` (RGD) manifest to create our custom
                 - medium
                 - high
                 - confirmed
-                sites: []
                 type: report
     ```
     - The ZAP Automation plan is getting saved as a ConfigMap, which we will later pass along to our ZAP workload.
