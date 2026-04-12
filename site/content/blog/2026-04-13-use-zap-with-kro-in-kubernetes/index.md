@@ -10,7 +10,7 @@ tags:
 - automation
 - docker
 - guest
-date: "2026-04-11"
+date: "2026-04-13"
 authors:
 - trevor
 ---
@@ -69,7 +69,7 @@ With KRO, we use a `ResourceGraphDefinition` (RGD) manifest to create our custom
     - `spec.schema.spec.zap.storageClassName` will be used in order to save the ZAP report in persistent storage. In my own cluster, I use a storage class that is saving the report to blob storage that is easy for me to access. Alternatively, you could set up the RGD using a ZAP script that sends the report elsewhere using HTTP. Or a sidecar container could be that watches for the ZAP report to appear and then sends that report elsewhere.
     - The rest of the `spec.schema.spec.zap` parameters will be used in the ZAP Automation Plan
 
-2. Next, will start setting up the `resources` section of the RGD. First, we add the defintions we need for deploying the main workload.
+2. Next, will start setting up the `resources` section of the RGD. First, we add the definitions we need for deploying the main workload.
 
     ```
     #spec:
