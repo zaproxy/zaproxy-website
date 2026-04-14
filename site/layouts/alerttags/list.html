@@ -35,6 +35,7 @@
     {{ end }}
 
    <div class="flex latest-versions">
+      {{ if eq .Title "Alerttags" }}
       <table data-sort-filter>
          <thead>
             <tr>
@@ -52,6 +53,30 @@
             {{ end }}
          </tbody>
       </table>
+      {{ else }}
+      <table data-sort-filter>
+         <thead>
+            <tr>
+               <th>ID</th>
+               <th>Alert</th>
+               <th data-suggest>Status</th>
+               <th data-suggest>Risk</th>
+               <th data-suggest>Type</th>
+            </tr>
+         </thead>
+         <tbody>
+            {{ range (.Pages.ByParam "alertindex") }}
+               <tr>
+                  <td><a href="{{ .Permalink }}">{{ .Params.alertid }}</a></td>
+                  <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+                  <td>{{ .Params.status }}</td>
+                  <td>{{ .Params.risk }}</td>
+                  <td>{{ .Params.alerttype }}</td>
+               </tr>
+            {{ end }}
+         </tbody>
+      </table>
+      {{ end }}
    </div>
   </div>
 {{ end }} 
