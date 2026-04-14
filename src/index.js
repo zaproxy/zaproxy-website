@@ -9,7 +9,7 @@ new BadgerAccordion(".js-badger-accordion", {
 
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
-      parent.removeChild(parent.firstChild);
+    parent.removeChild(parent.firstChild);
   }
 }
 
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   Array.from(document.querySelectorAll("[data-sort-filter]")).map(function(el) {
     const widget = {
       options: {},
-      filters: {}    
+      filters: {}
     };
 
     // Checks if row matches against filter
@@ -44,47 +44,47 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Create datalist that input can use for suggetions
     function setupDatalist(el, label, idx) {
-      widget.options[idx] = document.createElement('datalist');
-      widget.options[idx].setAttribute('id', 'opts_for_'  + label);
-      widget.options[idx]._options = []
+      widget.options[idx] = document.createElement("datalist");
+      widget.options[idx].setAttribute("id", "opts_for_"  + label);
+      widget.options[idx]._options = [];
       el.appendChild(widget.options[idx]);
     }
-  
+
     // Add input for filtering
     function addInput(el, label, idx) {
-      const input = document.createElement('input');
+      const input = document.createElement("input");
       input.addEventListener("change", function(e) {
         widget.filters[idx] = e.target.value;
         removeAllChildNodes(tbody);
-        rows.filter(isFilterMatch).map(r => {
-          tbody.appendChild(r.el)
+        rows.filter(isFilterMatch).map((r) => {
+          tbody.appendChild(r.el);
         });
       });
-      input.setAttribute('style', 'width:100%;display:block')
-      input.setAttribute('type', 'text');
-      input.setAttribute('name', 'filter_'  + label);
-      input.setAttribute('list', 'opts_for_'  + label);
+      input.setAttribute("style", "width:100%;display:block");
+      input.setAttribute("type", "text");
+      input.setAttribute("name", "filter_"  + label);
+      input.setAttribute("list", "opts_for_"  + label);
       el.appendChild(input);
     }
-    const tbody = el.querySelector('tbody');
-    const headings = Array.from(el.querySelectorAll('thead th')).map((el, idx) => {
+    const tbody = el.querySelector("tbody");
+    const headings = Array.from(el.querySelectorAll("thead th")).map((el, idx) => {
       const isSuggested = el.getAttribute("data-suggest") !== null;
       const label = el.innerText.toLowerCase();
-      el.appendChild(document.createElement('br'));
+      el.appendChild(document.createElement("br"));
       addInput(el, label, idx);
-      
+
       if (isSuggested) {
-        setupDatalist(el, label, idx);      
+        setupDatalist(el, label, idx);
       }
       return {idx, isSuggested, label};
     });
 
-    const rows = Array.from(el.querySelectorAll('tbody tr')).map(tr => {
-      const columns = Array.from(tr.querySelectorAll('td')).map((c, idx) => {
+    const rows = Array.from(el.querySelectorAll("tbody tr")).map((tr) => {
+      const columns = Array.from(tr.querySelectorAll("td")).map((c, idx) => {
         // For columns that match the index of the `data-suggest` headers
         // ... add the text value to options
         if (widget.options[idx]) {
-          widget.options[idx]._options.push(c.innerText)
+          widget.options[idx]._options.push(c.innerText);
         }
         return c.innerText;
       });
@@ -96,31 +96,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Go through options elements and populate lists with column aggregates
     // gathered in previous loop
-    Object.entries(widget.options).map(pair => {
+    Object.entries(widget.options).map((pair) => {
       const [idx, el] = pair;
       const opts = [...new Set(el._options)];
       opts.sort((a, b) => a.length - b.length);
-      opts.map(o => {
-        const ol = document.createElement('option');
+      opts.map((o) => {
+        const ol = document.createElement("option");
         ol.innerText = o;
         return ol;
-      }).map(ol => el.appendChild(ol));
+      }).map((ol) => el.appendChild(ol));
     });
   });
 
   function clearFilter(menu) {
     menu.classList.remove("is-filtering");
-    Array.from(menu.getElementsByTagName('li')).map(function(el) {
+    Array.from(menu.getElementsByTagName("li")).map(function(el) {
       el.classList.remove("tree-filter-match");
     });
-    Array.from(menu.getElementsByTagName('ul')).map(function(el) {
-     el.classList.remove("tree-branch-filter");
+    Array.from(menu.getElementsByTagName("ul")).map(function(el) {
+      el.classList.remove("tree-branch-filter");
     });
   }
 
   function applyFilter(menu, filter) {
     menu.classList.add("is-filtering");
-    Array.from(menu.getElementsByTagName('li')).map(function(el) {
+    Array.from(menu.getElementsByTagName("li")).map(function(el) {
       const text = el.textContent.toLowerCase();
       if (text.indexOf(filter) !== -1) {
         el.classList.add("tree-filter-match");
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function() {
         el.classList.remove("tree-filter-match");
       }
     });
-    Array.from(menu.getElementsByTagName('ul')).map(function(el) {
+    Array.from(menu.getElementsByTagName("ul")).map(function(el) {
       const text = el.textContent.toLowerCase();
 
       if (text.indexOf(filter) !== -1) {
@@ -150,8 +150,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  const menu = document.getElementById('primary-menu');
-  menu.querySelector('.toggler').addEventListener("click", function(e) {
+  const menu = document.getElementById("primary-menu");
+  menu.querySelector(".toggler").addEventListener("click", function(e) {
     e.preventDefault();
     menu.classList.toggle("in-search");
   });
@@ -159,9 +159,9 @@ document.addEventListener("DOMContentLoaded", function() {
   Array.from(document.querySelectorAll("[track-event]")).map((el) => {
     el.addEventListener("click", function(e) {
       e.preventDefault();
-      const [action, category, label] = el.getAttribute("track-event").split(".")
+      const [action, category, label] = el.getAttribute("track-event").split(".");
       if (window.ga === undefined) {
-        console.log("track-event", action, category, label);
+        //console.log("track-event", action, category, label);
       } else {
         ga("send", {
           hitType: "event",
@@ -176,27 +176,27 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 400);
     });
   });
-  
+
   // Sortable tables
   // Based on https://stackoverflow.com/questions/14267781/sorting-html-table-with-javascript
   const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
 
-  const comparer = (idx, asc) => (a, b) => ((v1, v2) => 
-      v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
-      )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+  const comparer = (idx, asc) => (a, b) => ((v1, v2) =>
+    v1 !== "" && v2 !== "" && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+  )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
 
-  document.querySelectorAll('th.sortable').forEach(th => th.addEventListener('click', (() => {
-      const table = th.closest('table');
-      Array.from(table.querySelectorAll('tr:nth-child(n+2)'))
-          .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
-          .forEach(tr => table.appendChild(tr) );
+  document.querySelectorAll("th.sortable").forEach((th) => th.addEventListener("click", (() => {
+    const table = th.closest("table");
+    Array.from(table.querySelectorAll("tr:nth-child(n+2)"))
+      .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+      .forEach((tr) => table.appendChild(tr));
   })));
 
   // Tables with hidden rows
-  document.querySelectorAll('input.togglehidetablerows').forEach(input => input.addEventListener('change', (() => {
-    const table = input.closest('table');
-    Array.from(table.querySelectorAll('tr.togglehide'))
-      .forEach(tr => tr.style.display = input.checked ? '' : 'none');
+  document.querySelectorAll("input.togglehidetablerows").forEach((input) => input.addEventListener("change", (() => {
+    const table = input.closest("table");
+    Array.from(table.querySelectorAll("tr.togglehide"))
+      .forEach((tr) => tr.style.display = input.checked ? "" : "none");
   })));
 
 });
