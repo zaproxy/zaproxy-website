@@ -1,46 +1,35 @@
 <section class="py-70">
   <div class="homepage-hero__wrapper wrapper" >
-      <div class="glide">
-        <div class="glide-track" data-glide-el="track">
-          <div class="glide__slides">
-          {{ range .Site.Data.homepage.hero.heroItems }}
-          <div class="homepage-hero__item flex glide__slide">
-            <div class="homepage-hero__item-content">
-              <hgroup class="flex fd-c mb-40">
-                <h1>{{ .headline }}</h1>
-                <h5 class="text--grey-medium">by 
-                  <a href="https://checkmarx.com/" aria-label="Checkmarx">
-                    <img height="30" align="top" src="/img/checkmarx.svg" alt="Checkmarx"/>
-                  </a>
-                </h5>
+    {{ range .Site.Data.homepage.hero.heroItems }}
+    <div class="homepage-hero__item flex">
+      <div class="homepage-hero__item-content">
+        <hgroup class="flex fd-c mb-40">
+          <h1>{{ .headline }}</h1>
+          <h5 class="text--grey-medium">by
+            <a href="https://checkmarx.com/" aria-label="Checkmarx">
+              <img height="30" align="top" src="/img/checkmarx.svg" alt="Checkmarx"/>
+            </a>
+          </h5>
 
-                <h2 class="on-sm-hide mt-20">
-                  {{ .subhead }}
-                  <span class="small-text">{{ .quote_source | markdownify }}</span>
-                </h2>
+          <h2 class="on-sm-hide mt-20">
+            {{ .subhead }}
+            <span class="small-text">{{ .quote_source | markdownify }}</span>
+          </h2>
 
-              </hgroup>
+        </hgroup>
 
-              <a href="/intro-video/" class="button button--blue">Intro Video</a>
-              <a href="/getting-started/" class="button button--blue">Quick Start Guide</a>
-              <a href="/download/" class="button button--orange">Download Now</a>
-            </div>
-            <div class="homepage-hero__item-image ml-40">
-                {{ $svg := (printf "%s%s" "svg/homepage/hero/" .image ) }}
-                {{ partial $svg .}}
-            </div>
-          </div>
-          {{ end }}
-          </div>
+        <a href="/intro-video/" class="button button--blue">Intro Video</a>
+        <a href="/getting-started/" class="button button--blue">Quick Start Guide</a>
+        <a href="/download/" class="button button--orange">Download Now</a>
       </div>
-      <div>
-            <h5><a href="/docs/zap-ownership/">ZAP is an independent Open Source project - learn more.</a></h5>
+      <div class="homepage-hero__item-image ml-40">
+          {{ $svg := (printf "%s%s" "svg/homepage/hero/" .image ) }}
+          {{ partial $svg .}}
       </div>
-      <div class="glide__bullets" data-glide-el="controls[nav]">
-        {{ range $index, $el := .Site.Data.homepage.hero.heroItems }}
-            <button class="glide__bullet" data-glide-dir="={{$index}}"></button>
-        {{ end }}
-      </div>
+    </div>
+    {{ end }}
+    <div>
+      <h5><a href="/docs/zap-ownership/">ZAP is an independent Open Source project - learn more.</a></h5>
     </div>
   </div>
 </section>

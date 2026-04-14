@@ -65,7 +65,6 @@
     "natives": "1.1.6"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.7.1",
     "postcss": "^8.5.9"
   }
 }
