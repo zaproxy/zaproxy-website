@@ -33,6 +33,50 @@ This job supports monitor tests.
       scopeCheck:                      # String: The scope check, either Flexible or Strict, default: Flexible
 ```
 
+## Job: export (Client Map)
+
+When the [Import/Export add-on](/docs/desktop/addons/import-export/) is installed, the Client Map can be exported via the standard `export` job using `source: clientmap` and `type: yaml`. The YAML produced by this job differs from the manual Client Map export, for example it includes `url` fields and omits `components`.
+
+```
+  - type: export            # Exports the Client Map
+    parameters:
+      context:            # String: Name of the context from which to export. Default: first context
+      type: yaml            # YAML is the only supported format for the Client Map
+      source: clientmap     # Export the Client Map
+      fileName:             # String: Name/path of the output file
+```
+
+An example of the YAML produced:
+
+```
+- node: "ClientMap"
+  children:
+  - node: "http://localhost:3000"
+    url: "http://localhost:3000/"
+    children:
+    - node: "/"
+      url: "http://localhost:3000/"
+      visited: false
+    - node: "/#"
+      url: "http://localhost:3000/#"
+      visited: false
+      children:
+      - node: "/"
+        url: "http://localhost:3000/#/"
+      - node: "/about"
+        url: "http://localhost:3000/#/about"
+      - node: "/contact"
+        url: "http://localhost:3000/#/contact"
+      - node: "/forgot-password"
+        url: "http://localhost:3000/#/forgot-password"
+      - node: "/login"
+        url: "http://localhost:3000/#/login"
+      - node: "/photo-wall"
+        url: "http://localhost:3000/#/photo-wall"
+      - node: "/register"
+        url: "http://localhost:3000/#/register"
+```
+
 ## Passive Scan Rules
 
 The Client [Passive Scan Rules](/docs/desktop/addons/client-side-integration/pscan/) can be set via the standard passiveScan-config job.

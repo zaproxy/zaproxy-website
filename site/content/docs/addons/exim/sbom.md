@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: exim
-    version: 0.18.0
+    version: 0.19.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.18.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.19.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -35,19 +35,19 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.59.0
+    version: 0.60.0
     licenses: ''
   - name: bcmail-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.2.3

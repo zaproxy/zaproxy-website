@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: pscanrules
-    version: '72'
+    version: '73'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v72/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v73/bom.json
   components:
   - name: ST4
     version: 4.3.4
@@ -47,16 +47,16 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.2.3

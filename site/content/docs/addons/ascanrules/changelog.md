@@ -6,13 +6,19 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '80'
+    version: '81'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [81] - 2026-04-14
+### Changed
+- Maintenance changes.
+- The scan rules now have new tags for the OWASP Top 10 2025, and API Top 10 2023.
+- Depends on an updated version of the Common Library add-on.
 
 ## [80] - 2026-03-02
 ### Added
@@ -686,6 +692,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[81]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v81
 [80]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v80
 [79]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v79
 [78]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v78

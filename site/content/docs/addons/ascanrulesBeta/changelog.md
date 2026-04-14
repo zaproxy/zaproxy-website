@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: '64'
+    version: '65'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [65] - 2026-04-14
+### Changed
+- Dependency update.
+- Maintenance changes.
+- The scan rules now have new tags for the OWASP Top 10 2025, and API Top 10 2023.
+- Depends on an updated version of the Common Library add-on.
+- The Possible Username Enumeration scan rule now includes example alert functionality for documentation generation purposes (Issue 6119).
 
 ## [64] - 2025-12-15
 ### Added
@@ -632,6 +640,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Updated to support new addon format
 
+[65]: https://github.com/zaproxy/zap-extensions/releases/ascanrulesBeta-v65
 [64]: https://github.com/zaproxy/zap-extensions/releases/ascanrulesBeta-v64
 [63]: https://github.com/zaproxy/zap-extensions/releases/ascanrulesBeta-v63
 [62]: https://github.com/zaproxy/zap-extensions/releases/ascanrulesBeta-v62

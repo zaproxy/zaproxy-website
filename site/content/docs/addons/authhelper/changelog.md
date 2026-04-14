@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.37.0
+    version: 0.38.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.38.0] - 2026-04-14
+### Fixed
+- Correct reported username/password fields' state in the Authentication Report.
 
 ## [0.37.0] - 2026-03-31
 ### Added
@@ -370,6 +374,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Support of authentication request identification and configuration.
 
+[0.38.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.38.0
 [0.37.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.37.0
 [0.36.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.36.0
 [0.35.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.35.0

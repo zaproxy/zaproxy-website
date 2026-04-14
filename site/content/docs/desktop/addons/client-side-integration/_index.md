@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.21.0
+    version: 0.22.0
 ---
 
 # Client Side Integration
@@ -119,6 +119,9 @@ Copies the Texts of the selected entries into the clipboard, separated by newlin
 ### Client History
 
 The Client History tab shows all of the client side events sent from the browser extension to ZAP.
+
+
+The toolbar has a ![clear history button](/docs/desktop/addons/client-side-integration/images/broom.png) button that allows you to clear the Client History, removing all entries from both the GUI and the session.
 
 
 In addition to the data displayed in the Client Details tab it also includes:

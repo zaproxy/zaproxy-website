@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: imagelocationscanner
-    version: 7.0.0
+    version: 8.0.0
 ---
 
 # Image Location and Privacy Scanner
