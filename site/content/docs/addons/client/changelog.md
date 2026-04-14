@@ -6,13 +6,23 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.21.0
+    version: 0.22.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.22.0] - 2026-04-14
+### Added
+- Persist Client History entries in the session.
+- Add a button in the Client History tab to clear the history from both the GUI and session.
+- Support exporting the Client Map via the Automation Framework export job (requires the Import/Export add-on).
+
+### Changed
+- Allow callback implementors to handle browsers closing.
+- Depend on Database add-on.
 
 ## [0.21.0] - 2026-03-31
 ### Added
@@ -197,6 +207,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.22.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.22.0
 [0.21.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.21.0
 [0.20.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.20.0
 [0.19.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.19.0

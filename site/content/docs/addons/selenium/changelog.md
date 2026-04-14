@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.46.0
+    version: 15.47.0
 ---
 
 # Changelog
@@ -14,6 +14,10 @@ All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [15.47.0] - 2026-04-14
+### Changed
+- Update Selenium to version 4.43.0.
 
 ## [15.46.0] - 2026-03-31
 ### Added
@@ -363,6 +367,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated to Selenium 2.45 and moved to release
 
+[15.47.0]: https://github.com/zaproxy/zap-extensions/releases/selenium-v15.47.0
 [15.46.0]: https://github.com/zaproxy/zap-extensions/releases/selenium-v15.46.0
 [15.45.0]: https://github.com/zaproxy/zap-extensions/releases/selenium-v15.45.0
 [15.44.0]: https://github.com/zaproxy/zap-extensions/releases/selenium-v15.44.0

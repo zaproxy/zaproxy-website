@@ -6,13 +6,18 @@ weight: 1
 cascade:
   addon:
     id: domxss
-    version: '23'
+    version: '24'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [24] - 2026-04-14
+### Changed
+- The scan rule now has new tags for the OWASP Top 10 2025.
+- Depends on an updated version of the Common Library add-on.
 
 ## [23] - 2025-12-15
 ### Changed
@@ -160,6 +165,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## 1 - 2015-08-24
 
 
+[24]: https://github.com/zaproxy/zap-extensions/releases/domxss-v24
 [23]: https://github.com/zaproxy/zap-extensions/releases/domxss-v23
 [22]: https://github.com/zaproxy/zap-extensions/releases/domxss-v22
 [21]: https://github.com/zaproxy/zap-extensions/releases/domxss-v21

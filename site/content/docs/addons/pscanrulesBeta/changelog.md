@@ -6,13 +6,19 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesBeta
-    version: '49'
+    version: '50'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [50] - 2026-04-14
+### Changed
+- The scan rules now have new tags for the OWASP Top 10 2025.
+- The Content Cacheability scan rule now includes alert tags for the 2021 and 2017 Top 10s.
+- Depends on an updated version of the Common Library add-on.
 
 ## [49] - 2026-02-17
 ### Changed
@@ -405,6 +411,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Updated to support new addon format
 
+[50]: https://github.com/zaproxy/zap-extensions/releases/pscanrulesBeta-v50
 [49]: https://github.com/zaproxy/zap-extensions/releases/pscanrulesBeta-v49
 [48]: https://github.com/zaproxy/zap-extensions/releases/pscanrulesBeta-v48
 [47]: https://github.com/zaproxy/zap-extensions/releases/pscanrulesBeta-v47

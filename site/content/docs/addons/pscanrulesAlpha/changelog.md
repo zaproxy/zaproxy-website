@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: '48'
+    version: '49'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [49] - 2026-04-14
+### Changed
+- Maintenance changes.
+- The scan rules now have new tags for the OWASP Top 10 2025.
+- The Fetch Metadata Request Headers scan rule now has alert tags for the Top 10 2021 and 2017.
+- The Full Path Disclosure scan rule now also has an alert tag for the 2017 Top 10.
+- Depends on an updated version of the Common Library add-on.
 
 ## [48] - 2025-12-15
 ### Changed
@@ -408,6 +416,7 @@ As well as Alert Refs where applicable (Issues 6119 & 7100).
 - Updated User Controlled Open Redirect, Cookie and Charset rules after testing with
 - http://www.testcases.org/watcher/ test pages.
 
+[49]: https://github.com/zaproxy/zap-extensions/releases/pscanrulesAlpha-v49
 [48]: https://github.com/zaproxy/zap-extensions/releases/pscanrulesAlpha-v48
 [47]: https://github.com/zaproxy/zap-extensions/releases/pscanrulesAlpha-v47
 [46]: https://github.com/zaproxy/zap-extensions/releases/pscanrulesAlpha-v46

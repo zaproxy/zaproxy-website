@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.18.0
+    version: 0.19.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.19.0] - 2026-04-14
+### Added
+- Support for add-on provided source exporters, allowing add-ons to provide new data sources for the export job (e.g. the Client Map via the Client Side Integration add-on).
+
+### Fixed
+- Save the context when saving the export job.
 
 ## [0.18.0] - 2026-03-31
 ### Added
@@ -153,6 +160,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First release.
 
+[0.19.0]: https://github.com/zaproxy/zap-extensions/releases/exim-v0.19.0
 [0.18.0]: https://github.com/zaproxy/zap-extensions/releases/exim-v0.18.0
 [0.17.0]: https://github.com/zaproxy/zap-extensions/releases/exim-v0.17.0
 [0.16.0]: https://github.com/zaproxy/zap-extensions/releases/exim-v0.16.0

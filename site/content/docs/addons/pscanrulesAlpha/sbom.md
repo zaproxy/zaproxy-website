@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: pscanrulesAlpha
-    version: '48'
+    version: '49'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v48/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrulesAlpha-v49/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -35,19 +35,19 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.1.0
+    version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -65,7 +65,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.40.0
+    version: 1.41.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -140,10 +140,10 @@ sbom:
     version: 3.0.1
     licenses: GNU Lesser Public License
   - name: flatlaf
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: flatlaf-swingx
-    version: 3.6.2
+    version: '3.7'
     licenses: Apache-2.0
   - name: google-java-format
     version: 1.27.0
@@ -182,31 +182,31 @@ sbom:
     version: 3.0.0
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: '2.20'
+    version: '2.21'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.20.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.20.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.20.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.20.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.20.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.20.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.20.1
+    version: 2.21.2
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -214,9 +214,6 @@ sbom:
   - name: java-semver
     version: 0.10.2
     licenses: MIT
-  - name: javac
-    version: 9+181-r4173-1
-    licenses: GPL-2.0-with-classpath-exception
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
@@ -242,28 +239,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.1
+    version: 6.0.3
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -287,10 +284,10 @@ sbom:
     version: 1.18.42
     licenses: MIT
   - name: mockito-core
-    version: 5.21.0
+    version: 5.23.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.21.0
+    version: 5.23.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
@@ -341,7 +338,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.25.0
+    version: 0.27.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -392,7 +389,7 @@ sbom:
     version: 1.7.36
     licenses: MIT
   - name: snakeyaml
-    version: '2.4'
+    version: '2.5'
     licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
@@ -416,7 +413,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: zap
-    version: 2.17.0-SNAPSHOT
+    version: 2.17.0
     licenses: Apache-2.0
 ---
 
