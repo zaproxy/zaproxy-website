@@ -27,7 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
   Array.from(document.querySelectorAll("[data-sort-filter]")).map(function(el) {
     const widget = {
       options: {},
-      filters: {}    
+      filters: {},
+      labels: {}
     };
 
     // Checks if row matches against filter
@@ -52,9 +53,17 @@ document.addEventListener("DOMContentLoaded", function() {
   
     // Add input for filtering
     function addInput(el, label, idx) {
+      widget.labels[idx] = label;
       const input = document.createElement('input');
       input.addEventListener("change", function(e) {
         widget.filters[idx] = e.target.value;
+        // Build URL params from widget state only — never from window.location
+        const params = new URLSearchParams();
+        Object.keys(widget.labels).forEach(function(i) {
+          if (widget.filters[i]) params.set(widget.labels[i], widget.filters[i]);
+        });
+        const qs = params.toString();
+        history.replaceState(null, '', qs ? '?' + qs : location.pathname);
         removeAllChildNodes(tbody);
         rows.filter(isFilterMatch).map(r => {
           tbody.appendChild(r.el)
@@ -65,18 +74,19 @@ document.addEventListener("DOMContentLoaded", function() {
       input.setAttribute('name', 'filter_'  + label);
       input.setAttribute('list', 'opts_for_'  + label);
       el.appendChild(input);
+      return input;
     }
     const tbody = el.querySelector('tbody');
     const headings = Array.from(el.querySelectorAll('thead th')).map((el, idx) => {
       const isSuggested = el.getAttribute("data-suggest") !== null;
       const label = el.innerText.toLowerCase();
       el.appendChild(document.createElement('br'));
-      addInput(el, label, idx);
-      
+      const input = addInput(el, label, idx);
+
       if (isSuggested) {
-        setupDatalist(el, label, idx);      
+        setupDatalist(el, label, idx);
       }
-      return {idx, isSuggested, label};
+      return {idx, isSuggested, label, input};
     });
 
     const rows = Array.from(el.querySelectorAll('tbody tr')).map(tr => {
@@ -106,6 +116,24 @@ document.addEventListener("DOMContentLoaded", function() {
         return ol;
       }).map(ol => el.appendChild(ol));
     });
+
+    // Apply any filters specified in the URL params.
+    // Only accept params whose names match known column labels (allowlist),
+    // and write values via the DOM text property — never via innerHTML.
+    const urlParams = new URLSearchParams(window.location.search);
+    headings.forEach(({idx, label, input}) => {
+      const value = urlParams.get(label);
+      if (value) {
+        input.value = value;        // safe DOM text property
+        widget.filters[idx] = value;
+      }
+    });
+    if (Object.keys(widget.filters).length > 0) {
+      removeAllChildNodes(tbody);
+      rows.filter(isFilterMatch).map(r => {
+        tbody.appendChild(r.el);
+      });
+    }
   });
 
   function clearFilter(menu) {
