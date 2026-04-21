@@ -157,6 +157,9 @@ CWE-352:
 CWE-359:
   link: https://cwe.mitre.org/data/definitions/359.html
 
+CWE-384:
+  link: https://cwe.mitre.org/data/definitions/384.html
+
 CWE-425:
   link: https://cwe.mitre.org/data/definitions/425.html
 
