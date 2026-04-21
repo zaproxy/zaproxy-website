@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: openapi
-    version: '54'
+    version: '55'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v54/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/openapi-v55/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -95,7 +95,7 @@ sbom:
     version: 25.0.2
     licenses: UPL-1.0
   - name: commonlib
-    version: 1.41.0
+    version: 1.42.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -470,7 +470,7 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.42
+    version: 1.18.44
     licenses: MIT
   - name: mailapi
     version: 1.6.2
@@ -632,7 +632,7 @@ sbom:
     version: 25.0.2
     licenses: UPL-1.0
   - name: rhino
-    version: 1.7.7.2
+    version: 1.7.15.1
     licenses: MPL-2.0
   - name: rsyntaxtextarea
     version: 3.6.0
@@ -674,7 +674,7 @@ sbom:
     version: 2.2.45
     licenses: Apache-2.0
   - name: swagger-compat-spec-parser
-    version: 1.0.75
+    version: 1.0.76
     licenses: Apache-2.0
   - name: swagger-core
     version: 1.6.16
@@ -689,7 +689,7 @@ sbom:
     version: 2.2.45
     licenses: Apache-2.0
   - name: swagger-parser
-    version: 1.0.75
+    version: 1.0.76
     licenses: Apache-2.0
   - name: swagger-parser
     version: 2.1.39
@@ -698,7 +698,7 @@ sbom:
     version: 2.1.39
     licenses: Apache-2.0
   - name: swagger-parser-safe-url-resolver
-    version: 1.0.75
+    version: 1.0.76
     licenses: Apache-2.0
   - name: swagger-parser-safe-url-resolver
     version: 2.1.39
