@@ -17,7 +17,7 @@ This is the full set of Insights currently supported:
 | insight.log.error            | Count of ZAP errors                           |      |      | Low    | Low  |
 | insight.log.warn             | Count of ZAP warnings                         |      |      | Low    | Low  |
 | insight.network.failure      | Percentage of network failures                |      | Msg  | Low    | Med  |
-| insight.auth.failure         | Percentage of authentication failures         | Yes  | Msg  | Low    | Med  |
+| insight.auth.failure         | Percentage of authentication failures         | Yes  | Msg  | Low    | High |
 | insight.code.Xxx             | Percentage of Xxx response codes              | Yes  | Msg  | Info   | Low  |
 | insight.response.slow        | Percentage of slow responses                  | Yes  | Msg  | Info   | Low  |
 | insight.endpoint.content.CCC | Percentage of responses with content-type CCC | Yes  |      | Info   | Info |
