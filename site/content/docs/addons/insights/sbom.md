@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: insights
-    version: 0.3.0
+    version: 0.4.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.3.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.4.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -38,7 +38,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.59.0
+    version: 0.60.0
     licenses: ''
   - name: batik-anim
     version: '1.19'
@@ -95,16 +95,16 @@ sbom:
     version: '1.19'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.2.3
@@ -125,7 +125,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.41.0
+    version: 1.42.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -356,7 +356,7 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.42
+    version: 1.18.44
     licenses: MIT
   - name: mockito-core
     version: 5.23.0
@@ -489,7 +489,7 @@ sbom:
     version: unspecified
     licenses: ''
   - name: thymeleaf
-    version: 3.1.3.RELEASE
+    version: 3.1.4.RELEASE
     licenses: Apache-2.0
   - name: unbescape
     version: 1.1.6.RELEASE
