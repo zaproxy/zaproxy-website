@@ -53,7 +53,7 @@
     "sass": "^1.99.0",
     "sass-loader": "^16.0.7",
     "style-loader": "^4.0.0",
-    "terser-webpack-plugin": "^5.4.0",
+    "terser-webpack-plugin": "^5.5.0",
     "toml": "^4.1.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.106.2",
@@ -65,6 +65,6 @@
     "natives": "1.1.6"
   },
   "dependencies": {
-    "postcss": "^8.5.10"
+    "postcss": "^8.5.12"
   }
 }
