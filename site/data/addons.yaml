@@ -1189,3 +1189,14 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/zest-v48.13.0/zest-beta-48.13.0.zap
   date: 2026-03-31
   version: 48.13.0
+
+- id: wstgmapper
+  name: WSTG Mapper
+  description: Maps ZAP alerts to OWASP WSTG 4.2 coverage with a persistent compliance dashboard.
+  author: Theodoros Vartamtzidis
+  status: alpha
+  infoUrl: /docs/desktop/addons/wstg-mapper/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/wstgmapper-v0.1.0/wstgmapper-alpha-0.1.0.zap
+  date: 2026-04-28
+  version: 0.1.0

@@ -222,3 +222,9 @@ seqrateam:
   picture: /img/authors/seqrateam_400x400.jpg
   twitter: seqradev
   is_core: false
+
+thehackydog:
+  name: Theodoros Vartamtzidis
+  picture: /img/authors/zap_400x400.png
+  twitter:
+  is_core: false
