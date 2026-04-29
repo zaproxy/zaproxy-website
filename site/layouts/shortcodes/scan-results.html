@@ -30,17 +30,20 @@
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
       {{ if $nolinks }}
       <td>{{ $test.path}}</td>
-      <td><a href="/docs/alerts/{{ $test.rule}}/">{{ $test.rule}}</a></td>
       {{ else }}
       <td><a href="{{ $data.url}}{{ $test.path}}">{{ $test.path}}</a></td>
-      <td><a href="/docs/alerts/{{ $test.rule}}/">{{ $test.rule}}</a></td>
       {{ end }}
+      {{ if eq $test.result "Broken" }}
+        <td><div class="scan-result-na">⚠️ No vuln</div></td>
+      {{ else }}
+        <td><a href="/docs/alerts/{{ $test.rule}}/">{{ $test.rule}}</a></td>
+      {{ end }} 
       {{ if eq $test.result "Pass" }} 
         <td><div class="scan-result-pass">&#10003; {{ $test.result}} </div></td>
         <td></td>
       {{ else if eq $test.result "Broken" }}
         <td></td>
-        <td><div class="scan-result-fail">⚠️ {{ $test.result}} </div></td>
+        <td></td>
       {{ else if eq $test.result "FAIL" }}
         <td></td>
         <td><div class="scan-result-fail">&#10060; {{ $test.result}} </div></td>

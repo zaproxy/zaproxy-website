@@ -9,6 +9,8 @@ It is available online at https://public-firing-range.appspot.com/ and the GitHu
 
 It does not appear to be being actively maintained and some of the tests no longer appear to work with modern browsers. 
 
+Tests which we are sure are no longer valid are marked: "⚠️ No vuln" - if you can prove otherwise then please let us know!
+
 Click on the Sections to see the full set of results, which also link to the online test page and the scan rule which should find the vulnerability.
 
 
