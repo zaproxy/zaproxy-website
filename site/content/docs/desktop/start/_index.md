@@ -3,12 +3,56 @@
 title: Getting Started
 type: userguide
 weight: 2
----
+---ou’re making changes in a project you don’t have write access to. Submitting a change will write it to a new branch in your fork S803305/zaproxy-website, so you can send a pull request.
+zaproxy-website/site/content/docs/desktop/start
+/
+_index.md
+in
+main
+
+Edit
+
+Preview
+Indent mode
+
+Spaces
+Indent size
+
+2
+Line wrap mode
+
+Soft wrap
+Editing _index.md file contents
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+
 
 # Getting Started
 
 
 The quickest way to get going with ZAP is to use the Quick Start add-on, which is installed by default.  
+Note: The Quick Start tab appears only when the Quick Start add-on is installed and enabled, so it may not always be visible in the sidebar.
 
 This allows you to enter a URL which ZAP will first spider
 and then [active scan](/docs/desktop/start/features/ascan/).  
