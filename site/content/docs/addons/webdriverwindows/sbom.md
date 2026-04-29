@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: webdriverwindows
-    version: '194'
+    version: '195'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v194/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v195/bom.json
   components:
   - name: asm
     version: '9.7'
