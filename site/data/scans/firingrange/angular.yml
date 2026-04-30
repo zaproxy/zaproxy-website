@@ -1,4 +1,4 @@
-section:  Angular-based XSSes DOM XSS
+section: Angular-based XSSes
 url: https://public-firing-range.appspot.com/angular
 details:
 - path: /angular_body/1.1.5
@@ -30,13 +30,13 @@ details:
   rule: 200002
 - path: /angular_body_attribute_ng/1.4.0
   result: Pass
-  rule: 200002
+  rule: 40012
 - path: /angular_body_attribute_non_ng/1.4.0
   result: Pass
-  rule: 200002
+  rule: 40012
 - path: /angular_body_attribute_non_ng_raw/1.4.0
   result: Pass
-  rule: 200002
+  rule: 40012
 - path: /angular_body_raw/1.4.0
   result: Pass
   rule: 200002
@@ -53,18 +53,18 @@ details:
   result: FAIL
   rule: 40012
 - path: /angular_cookie_parse/1.6.0
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 210000
 - path: /angular_form_parse/1.6.0
   result: FAIL
   rule: 40012
 - path: /angular_post_message_parse/1.6.0
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 210000
 - path: /angular_storage_parse/1.6.0
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 210000
 tests: 21
-passes: 15
-fails: 6
-score: 71%
+passes: 18
+fails: 3
+score: 86%

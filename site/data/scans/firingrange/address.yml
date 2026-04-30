@@ -1,36 +1,36 @@
-section:  Address DOM XSS
+section: Address DOM XSS
 url: https://public-firing-range.appspot.com/address
 details:
 - path: /URL/documentwrite
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /URLUnencoded/documentwrite
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /baseURI/documentwrite
   result: FAIL
   rule: 40012
 - path: /documentURI/documentwrite
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location/assign
   result: FAIL
   rule: 40012
 - path: /location/documentwrite
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location/documentwriteln
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location/eval
-  result: Pass
-  rule: 220003
+  result: FAIL
+  rule: 40012
 - path: /location/innerHtml
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location/rangeCreateContextualFragment
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location/replace
   result: FAIL
   rule: 40012
@@ -41,11 +41,11 @@ details:
   result: FAIL
   rule: 40012
 - path: /location.hash/documentwrite
+  result: Pass
+  rule: 210000
+- path: /location.hash/documentwriteln
   result: FAIL
   rule: 40012
-- path: /location.hash/documentwriteln
-  result: Pass
-  rule: 220000
 - path: /location.hash/eval
   result: FAIL
   rule: 40012
@@ -53,42 +53,42 @@ details:
   result: Pass
   rule: 210000
 - path: /location.hash/function
-  result: Pass
-  rule: 220003
+  result: FAIL
+  rule: 40012
 - path: /location.hash/inlineevent
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location.hash/innerHtml
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location.hash/jshref
   result: FAIL
   rule: 40012
 - path: /location.hash/onclickAddEventListener
-  result: Pass
-  rule: 220003
+  result: FAIL
+  rule: 40012
 - path: /location.hash/onclickSetAttribute
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location.hash/rangeCreateContextualFragment
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /location.hash/replace
   result: FAIL
   rule: 40012
 - path: /location.hash/setTimeout
-  result: Pass
-  rule: 220003
+  result: FAIL
+  rule: 40012
 - path: /locationhref/documentwrite
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /locationpathname/documentwrite
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 - path: /locationsearch/documentwrite
-  result: Pass
-  rule: 220000
+  result: FAIL
+  rule: 40012
 tests: 29
-passes: 20
-fails: 9
-score: 69%
+passes: 2
+fails: 27
+score: 7%
