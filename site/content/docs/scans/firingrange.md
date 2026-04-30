@@ -16,6 +16,10 @@ Click on the Sections to see the full set of results, which also link to the onl
 
 {{< scan-table >}}
 
+  {{< scan-results target= "firingrange" section="address">}}
+
+  {{< scan-results target= "firingrange" section="angular">}}
+
   {{< scan-results target= "firingrange" section="escape">}}
 
   {{< scan-results target= "firingrange" section="mixedcontent">}}

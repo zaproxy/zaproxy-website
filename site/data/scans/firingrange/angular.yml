@@ -1,0 +1,70 @@
+section:  Angular-based XSSes DOM XSS
+url: https://public-firing-range.appspot.com/angular
+details:
+- path: /angular_body/1.1.5
+  result: Pass
+  rule: 200002
+- path: /angular_body/1.2.0
+  result: Pass
+  rule: 200002
+- path: /angular_body/1.2.18
+  result: Pass
+  rule: 200002
+- path: /angular_body/1.2.19
+  result: Pass
+  rule: 200002
+- path: /angular_body/1.2.24
+  result: Pass
+  rule: 200002
+- path: /angular_body/1.4.0
+  result: Pass
+  rule: 200002
+- path: /angular_body/1.6.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_alt_symbols/1.4.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_alt_symbols_raw/1.6.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_attribute_ng/1.4.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_attribute_non_ng/1.4.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_attribute_non_ng_raw/1.4.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_raw/1.4.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_raw_escaped/1.4.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_raw_escaped_alt_symbols/1.4.0
+  result: Pass
+  rule: 200002
+- path: /angular_body_raw_post/1.6.0
+  result: FAIL
+  rule: 40012
+- path: /angular_body_raw_post/1.6.0
+  result: FAIL
+  rule: 40012
+- path: /angular_cookie_parse/1.6.0
+  result: FAIL
+  rule: 40012
+- path: /angular_form_parse/1.6.0
+  result: FAIL
+  rule: 40012
+- path: /angular_post_message_parse/1.6.0
+  result: FAIL
+  rule: 40012
+- path: /angular_storage_parse/1.6.0
+  result: FAIL
+  rule: 40012
+tests: 21
+passes: 15
+fails: 6
+score: 71%
