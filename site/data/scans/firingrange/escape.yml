@@ -11,73 +11,73 @@ details:
   result: Pass
   rule: 200002
 - path: /serverside/encodeUrl/attribute_name
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/attribute_quoted
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/attribute_script
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/attribute_singlequoted
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/attribute_unquoted
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/body
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/body_comment
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/css_import
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/css_style
   result: FAIL
   rule: 40012
 - path: /serverside/encodeUrl/css_style_font_value
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/css_style_value
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/head
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/href
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/js_assignment
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/js_comment
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/js_eval
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/js_quoted_string
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/js_singlequoted_string
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/js_slashquoted_string
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/tagname
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/encodeUrl/textarea
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/escapeHtml/attribute_name
   result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/attribute_quoted
-  result: Pass
+  result: Broken
   rule: 40012
 - path: /serverside/escapeHtml/attribute_script
   result: Pass
@@ -92,28 +92,28 @@ details:
   result: Broken
   rule: null
 - path: /serverside/escapeHtml/body_comment
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/escapeHtml/css_import
   result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/css_style
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/escapeHtml/css_style_font_value
   result: FAIL
   rule: 40012
 - path: /serverside/escapeHtml/css_style_value
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/escapeHtml/head
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/escapeHtml/href
-  result: FAIL
-  rule: 40012
+  result: Broken
+  rule: null
 - path: /serverside/escapeHtml/js_assignment
-  result: Pass
+  result: Broken
   rule: 40012
 - path: /serverside/escapeHtml/js_comment
   result: Pass
@@ -134,9 +134,9 @@ details:
   result: Pass
   rule: 40012
 - path: /serverside/escapeHtml/textarea
-  result: FAIL
-  rule: 40012
-tests: 44
-passes: 16
-fails: 28
-score: 36%
+  result: Broken
+  rule: null
+tests: 16
+passes: 14
+fails: 2
+score: 88%
