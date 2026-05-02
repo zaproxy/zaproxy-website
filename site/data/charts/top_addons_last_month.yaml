@@ -16,6 +16,6 @@
 - id: "accessControl"
 - id: "plugnhack"
 - id: "grpc"
+- id: "httpsInfo"
+- id: "communityScripts"
 - id: "ascanrulesAlpha"
-- id: "custompayloads"
-- id: "wappalyzer"
