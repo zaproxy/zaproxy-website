@@ -26,8 +26,8 @@
     "@babel/eslint-parser": "^7.28.6",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-    "@babel/preset-env": "^7.29.2",
-    "@babel/register": "^7.28.6",
+    "@babel/preset-env": "^7.29.3",
+    "@babel/register": "^7.29.3",
     "assets-webpack-plugin": "^7.1.1",
     "babel-loader": "^10.1.1",
     "badger-accordion": "^1.2.4",
@@ -65,6 +65,6 @@
     "natives": "1.1.6"
   },
   "dependencies": {
-    "postcss": "^8.5.12"
+    "postcss": "^8.5.13"
   }
 }
