@@ -7,6 +7,7 @@ summary: >
 type: post
 tags:
 - blog
+- owasp-ptk
 - browser
 - chrome
 - edge
