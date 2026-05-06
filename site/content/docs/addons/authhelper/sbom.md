@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: authhelper
-    version: 0.38.0
+    version: 0.39.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.38.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.39.0/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -137,10 +137,10 @@ sbom:
     version: 4.8.184
     licenses: MIT
   - name: client
-    version: 0.22.0
+    version: 0.23.0
     licenses: ''
   - name: commonlib
-    version: 1.41.0
+    version: 1.42.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -157,9 +157,6 @@ sbom:
   - name: commons-collections
     version: 3.2.2
     licenses: Apache-2.0
-  - name: commons-collections4
-    version: 4.5.0
-    licenses: Apache-2.0
   - name: commons-compress
     version: 1.26.2
     licenses: Apache-2.0
@@ -174,6 +171,9 @@ sbom:
     licenses: Apache-1.0
   - name: commons-io
     version: 2.21.0
+    licenses: Apache-2.0
+  - name: commons-io
+    version: 2.22.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -248,7 +248,7 @@ sbom:
     version: 2.42.0
     licenses: Apache-2.0
   - name: exim
-    version: 0.19.0
+    version: 0.20.0
     licenses: ''
   - name: ezmorph
     version: 1.0.6
@@ -275,10 +275,10 @@ sbom:
     version: 9.13.3
     licenses: LGPL-2.1-or-later
   - name: flyway-core
-    version: 12.4.0
+    version: 12.5.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 12.4.0
+    version: 12.5.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -374,13 +374,13 @@ sbom:
     version: '2.21'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-bom
     version: 3.1.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-core
     version: 3.1.1
@@ -389,22 +389,22 @@ sbom:
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-databind
     version: 3.1.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jakarta.inject-api
     version: 2.0.1
@@ -509,7 +509,7 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.42
+    version: 1.18.44
     licenses: MIT
   - name: metrics-core
     version: 3.0.2
@@ -669,7 +669,7 @@ sbom:
     version: 45.19.0
     licenses: ''
   - name: selenium
-    version: 15.47.0
+    version: 15.48.0
     licenses: ''
   - name: selenium-api
     version: 4.43.0
@@ -765,7 +765,7 @@ sbom:
     version: unspecified
     licenses: ''
   - name: thymeleaf
-    version: 3.1.4.RELEASE
+    version: 3.1.5.RELEASE
     licenses: Apache-2.0
   - name: unbescape
     version: 1.1.6.RELEASE

@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: ascanrulesAlpha
-    version: '56'
+    version: '57'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v56/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/ascanrulesAlpha-v57/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -68,10 +68,10 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: collections
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: commonlib
-    version: 1.41.0
+    version: 1.42.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -88,9 +88,6 @@ sbom:
   - name: commons-collections
     version: 3.2.2
     licenses: Apache-2.0
-  - name: commons-collections4
-    version: 4.5.0
-    licenses: Apache-2.0
   - name: commons-configuration
     version: '1.10'
     licenses: Apache-2.0
@@ -102,6 +99,9 @@ sbom:
     licenses: Apache-1.0
   - name: commons-io
     version: 2.21.0
+    licenses: Apache-2.0
+  - name: commons-io
+    version: 2.22.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -188,7 +188,7 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: icu4j
-    version: 25.0.2
+    version: 25.0.3
     licenses: Unicode/ICU License
   - name: j2objc-annotations
     version: 3.0.0
@@ -197,28 +197,28 @@ sbom:
     version: '2.21'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.21.2
+    version: 2.21.3
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -242,19 +242,19 @@ sbom:
     version: 0.9.2
     licenses: LGPL-2.1-only, EPL-1.0
   - name: jniutils
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: js
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0, MIT
   - name: js-community
-    version: 25.0.2
+    version: 25.0.3
     licenses: MIT, UPL-1.0
   - name: js-language
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0, MIT
   - name: js-scriptengine
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: json-lib
     version: '2.4'
@@ -308,7 +308,7 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.42
+    version: 1.18.44
     licenses: MIT
   - name: mockito-core
     version: 5.23.0
@@ -338,7 +338,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: nativeimage
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: netty-buffer
     version: 4.1.100.Final
@@ -404,13 +404,13 @@ sbom:
     version: 4.0.1
     licenses: MIT
   - name: polyglot
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: protobuf-java
     version: 3.25.5
     licenses: BSD-3-Clause
   - name: regex
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: rsyntaxtextarea
     version: 3.6.0
@@ -443,25 +443,25 @@ sbom:
     version: unspecified
     licenses: ''
   - name: truffle-api
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: truffle-compiler
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: truffle-runtime
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: woodstox-core
     version: 7.1.1
     licenses: Apache-2.0
   - name: word
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: xz
-    version: 25.0.2
+    version: 25.0.3
     licenses: UPL-1.0
   - name: zap
     version: 2.17.0

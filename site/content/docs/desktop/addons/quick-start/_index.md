@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: 55.0.0
+    version: 56.0.0
 ---
 
 # Quick Start
@@ -27,6 +27,10 @@ This is the URL of the application you wish to attack, starting with 'http://' o
 ZAP must be able to access this URL for the attack to proceed.   
 
 ZAP will crawl from the URL specified but will remove a trailing slash from the URL before starting to attack. This is because https://example.com/test/ is treated as a leaf node internally, which would mean that ZAP would not attack URLs like https://example.com/test/1 etc.
+
+### Scan Policy
+
+The scan policy to use when performing the active scan. Note that the policies will not be shown dynamically, any added/removed policies will be missing until a restart is done.
 
 ### Use traditional spider
 

@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: reports
-    version: 0.44.0
+    version: 0.45.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.45.0] - 2026-05-06
+### Fixed
+- The alert's systemic flag in JSON and XML reports now correctly reflects its state (Issue 9254).
+
+### Changed
+- Update dependency.
+- Formatted JavaScript files for consistency.
 
 ## [0.44.0] - 2026-03-19
 ### Added
@@ -376,6 +384,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.45.0]: https://github.com/zaproxy/zap-extensions/releases/reports-v0.45.0
 [0.44.0]: https://github.com/zaproxy/zap-extensions/releases/reports-v0.44.0
 [0.43.0]: https://github.com/zaproxy/zap-extensions/releases/reports-v0.43.0
 [0.42.0]: https://github.com/zaproxy/zap-extensions/releases/reports-v0.42.0
