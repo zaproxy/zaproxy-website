@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: ptk
-    version: 0.3.0
+    version: 0.4.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## 0.4.0
+### Added
+- Keep browsers open while scanning in automation mode
+- Help to explain how to set the options from the command line.
+
+### Changed
+- Options to save the rule settings by ID.
 
 ## 0.3.0
 ### Added
