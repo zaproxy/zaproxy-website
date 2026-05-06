@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: network
-    version: 0.26.0
+    version: 0.27.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.26.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.27.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -35,19 +35,19 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.2.1
+    version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -248,7 +248,7 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.42
+    version: 1.18.44
     licenses: MIT
   - name: mockito-core
     version: 5.23.0
