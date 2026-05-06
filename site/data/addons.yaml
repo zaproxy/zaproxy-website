@@ -863,9 +863,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/owasp-ptk/
   repoUrl: https://github.com/DenisPodgurskii/ZAP_PTK
-  downloadUrl: https://github.com/zaproxy-addons/ptk/releases/download/v0.3.0/ptk-alpha-0.3.0.zap
-  date: 2026-03-31
-  version: 0.3.0
+  downloadUrl: https://github.com/zaproxy-addons/ptk/releases/download/v0.4.0/ptk-alpha-0.4.0.zap
+  date: 2026-05-06
+  version: 0.4.0
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
