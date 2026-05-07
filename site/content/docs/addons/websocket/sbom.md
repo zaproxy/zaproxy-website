@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: websocket
-    version: '36'
+    version: '37'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v36/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v37/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -35,19 +35,19 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.83'
+    version: '1.84'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.2.1
+    version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -65,7 +65,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.40.0
+    version: 1.42.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -82,9 +82,6 @@ sbom:
   - name: commons-collections
     version: 3.2.2
     licenses: Apache-2.0
-  - name: commons-collections4
-    version: 4.5.0
-    licenses: Apache-2.0
   - name: commons-configuration
     version: '1.10'
     licenses: Apache-2.0
@@ -96,6 +93,9 @@ sbom:
     licenses: Apache-1.0
   - name: commons-io
     version: 2.21.0
+    licenses: Apache-2.0
+  - name: commons-io
+    version: 2.22.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -191,28 +191,28 @@ sbom:
     version: '2.21'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.21.1
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.21.1
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.21.1
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.21.1
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.21.1
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.21.1
+    version: 2.21.3
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.21.1
+    version: 2.21.3
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -290,13 +290,13 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.42
+    version: 1.18.44
     licenses: MIT
   - name: mockito-core
-    version: 5.21.0
+    version: 5.23.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.21.0
+    version: 5.23.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
@@ -347,7 +347,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.26.0
+    version: 0.28.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -386,7 +386,7 @@ sbom:
     version: 3.25.5
     licenses: BSD-3-Clause
   - name: requester
-    version: 7.10.0
+    version: 7.11.0
     licenses: ''
   - name: rgxgen
     version: '3.1'
