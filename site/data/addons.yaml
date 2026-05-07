@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.23.0/client-alpha-0.23.0.zap
-  date: 2026-05-06
-  version: 0.23.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.24.0/client-alpha-0.24.0.zap
+  date: 2026-05-07
+  version: 0.24.0
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
@@ -314,9 +314,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/import-export/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.19.0/exim-beta-0.19.0.zap
-  date: 2026-04-14
-  version: 0.19.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/exim-v0.20.0/exim-beta-0.20.0.zap
+  date: 2026-05-07
+  version: 0.20.0
 - id: fileupload
   name: FileUpload
   description: Detect File upload requests and scan them to find related vulnerabilities
