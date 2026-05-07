@@ -52,6 +52,16 @@ The Scope Check can be either:
 
 This tab allows you to define the options that control how the spider works.
 
+* **Number of Browser Windows to Open** - The number of browser windows the spider uses in parallel. More windows increases speed but uses more memory.
+* **Maximum Crawl Depth** - The maximum depth the spider will crawl to. 0 means unlimited.
+* **Maximum Children** - The maximum number of child nodes to add under any single node in the tree. 0 means unlimited.
+* **Initial Page Load Time** - The number of seconds to wait after the initial URL is loaded. Default: 5.
+* **Page Load Time** - The number of seconds to wait after each subsequent URL is loaded. Default: 1.
+* **Action Wait Time** - The number of seconds to wait after performing an action on the browser (e.g. opening a URL, clicking a button, submitting a form). Default: 0.
+* **Shutdown Time** - The number of seconds to wait for new events after the last action before the spider shuts down. Default: 5.
+* **Maximum Duration** - The maximum number of minutes the spider is allowed to run. 0 means unlimited.
+* **Logout Avoidance** - When enabled, the spider will avoid clicking elements that are likely to log the user out.
+
 ### Client Spider tab
 
 The Client Spider tab allows you start and monitor the Client Spider. It provides 3 sub tabs:

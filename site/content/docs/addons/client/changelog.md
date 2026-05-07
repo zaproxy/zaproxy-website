@@ -6,13 +6,23 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.23.0
+    version: 0.24.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.24.0] - 2026-05-07
+### Added
+- Client spider option "Action Wait Time".
+
+### Changed
+- Client map export to report the number of items exported.
+
+## Fixed
+- Client map export to export contexts defined with paths, e.g. like https://example.com/test/
 
 ## [0.23.0] - 2026-05-06
 ### Changed
@@ -211,6 +221,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.24.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.24.0
 [0.23.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.23.0
 [0.22.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.22.0
 [0.21.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.21.0

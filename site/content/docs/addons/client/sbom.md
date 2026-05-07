@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: client
-    version: 0.23.0
+    version: 0.24.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.23.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.24.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -449,7 +449,7 @@ sbom:
     version: 4.1.100.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.27.0
+    version: 0.28.0
     licenses: ''
   - name: objenesis
     version: '3.3'
