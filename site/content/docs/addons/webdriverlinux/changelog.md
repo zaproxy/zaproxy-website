@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: '195'
+    version: '196'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [196] - 2026-05-12
+### Changed
+- Update ChromeDriver to 148.0.7778.167.
 
 ## [195] - 2026-05-05
 ### Changed
@@ -818,6 +822,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First release: Firefox v0.13.0 Chrome v2.27
 
+[196]: https://github.com/zaproxy/zap-extensions/releases/webdriverlinux-v196
 [195]: https://github.com/zaproxy/zap-extensions/releases/webdriverlinux-v195
 [194]: https://github.com/zaproxy/zap-extensions/releases/webdriverlinux-v194
 [193]: https://github.com/zaproxy/zap-extensions/releases/webdriverlinux-v193
