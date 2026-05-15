@@ -2,14 +2,14 @@ section: Address DOM XSS
 url: https://public-firing-range.appspot.com/address
 details:
 - path: /URL/documentwrite
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /URLUnencoded/documentwrite
   result: Pass
-  rule: 210000
+  rule: 220000
 - path: /baseURI/documentwrite
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /documentURI/documentwrite
   result: FAIL
   rule: 40012
@@ -23,11 +23,11 @@ details:
   result: FAIL
   rule: 40012
 - path: /location/eval
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220003
 - path: /location/innerHtml
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location/rangeCreateContextualFragment
   result: FAIL
   rule: 40012
@@ -42,13 +42,13 @@ details:
   rule: 40012
 - path: /location.hash/documentwrite
   result: Pass
-  rule: 210000
+  rule: 220000
 - path: /location.hash/documentwriteln
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location.hash/eval
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220003
 - path: /location.hash/formaction
   result: Pass
   rule: 210000
@@ -56,8 +56,8 @@ details:
   result: FAIL
   rule: 40012
 - path: /location.hash/inlineevent
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location.hash/innerHtml
   result: FAIL
   rule: 40012
@@ -77,18 +77,18 @@ details:
   result: FAIL
   rule: 40012
 - path: /location.hash/setTimeout
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220003
 - path: /locationhref/documentwrite
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /locationpathname/documentwrite
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /locationsearch/documentwrite
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 tests: 29
-passes: 3
-fails: 26
-score: 10%
+passes: 14
+fails: 15
+score: 48%
