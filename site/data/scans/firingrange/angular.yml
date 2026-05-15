@@ -62,9 +62,9 @@ details:
   result: Pass
   rule: 210000
 - path: /angular_storage_parse/1.6.0
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 210000
 tests: 21
-passes: 17
-fails: 4
-score: 81%
+passes: 18
+fails: 3
+score: 86%
