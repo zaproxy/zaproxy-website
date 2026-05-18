@@ -11,17 +11,17 @@ details:
   result: Pass
   rule: 220000
 - path: /documentURI/documentwrite
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location/assign
   result: FAIL
   rule: 40012
 - path: /location/documentwrite
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location/documentwriteln
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location/eval
   result: Pass
   rule: 220003
@@ -29,8 +29,8 @@ details:
   result: Pass
   rule: 220000
 - path: /location/rangeCreateContextualFragment
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location/replace
   result: FAIL
   rule: 40012
@@ -53,26 +53,26 @@ details:
   result: Pass
   rule: 210000
 - path: /location.hash/function
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220003
 - path: /location.hash/inlineevent
   result: Pass
   rule: 220000
 - path: /location.hash/innerHtml
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location.hash/jshref
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 210000
 - path: /location.hash/onclickAddEventListener
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220003
 - path: /location.hash/onclickSetAttribute
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location.hash/rangeCreateContextualFragment
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220000
 - path: /location.hash/replace
   result: FAIL
   rule: 40012
@@ -89,6 +89,6 @@ details:
   result: Pass
   rule: 220000
 tests: 29
-passes: 14
-fails: 15
-score: 48%
+passes: 24
+fails: 5
+score: 83%
