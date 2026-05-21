@@ -709,9 +709,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.0.1/mcp-alpha-0.0.1.zap
-  date: 2026-04-02
-  version: 0.0.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.1.0/mcp-alpha-0.1.0.zap
+  date: 2026-05-21
+  version: 0.1.0
 - id: neonmarker
   name: Neonmarker
   description: Colors history table items based on tags
@@ -729,9 +729,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.27.0/network-beta-0.27.0.zap
-  date: 2026-05-06
-  version: 0.27.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.28.0/network-beta-0.28.0.zap
+  date: 2026-05-21
+  version: 0.28.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -1003,9 +1003,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.47.0/selenium-release-15.47.0.zap
-  date: 2026-04-14
-  version: 15.47.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.48.0/selenium-release-15.48.0.zap
+  date: 2026-05-21
+  version: 15.48.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
@@ -1044,9 +1044,9 @@
   status: release
   infoUrl: /docs/desktop/addons/ajax-spider/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.30.0/spiderAjax-release-23.30.0.zap
-  date: 2026-04-02
-  version: 23.30.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/spiderAjax-v23.31.0/spiderAjax-release-23.31.0.zap
+  date: 2026-05-21
+  version: 23.31.0
 - id: sqliplugin
   name: Advanced SQLInjection Scanner
   description: An advanced active injection bundle for SQLi (derived by SQLMap)
