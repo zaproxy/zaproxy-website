@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: MCP Tools
 type: userguide
-weight: 2
+weight: 3
 ---
 
 # MCP Tools

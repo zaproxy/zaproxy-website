@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: MCP Resources
 type: userguide
-weight: 4
+weight: 5
 ---
 
 # MCP Resources

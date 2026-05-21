@@ -2,12 +2,19 @@
 # This page was generated from the add-on.
 title: MCP Integration Options
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # MCP Integration Options
 
 This screen allows you to configure the [MCP Integration](/docs/desktop/addons/mcp-integration/) add-on.
+
+## Enable MCP Server
+
+When unchecked, the MCP HTTP listener is not started and the server is completely disabled. All other options are greyed out when the server is disabled.
+
+
+Default: disabled
 
 ## Port
 
@@ -59,3 +66,4 @@ Note: Enabling this option will increase the size of your session as every MCP r
 * [MCP Integration](/docs/desktop/addons/mcp-integration/) - Overview of the add-on
 * [Tools](/docs/desktop/addons/mcp-integration/mcp-tools/) - Available MCP tools
 * [Resources](/docs/desktop/addons/mcp-integration/mcp-resources/) - Available MCP resources
+* [Prompts](/docs/desktop/addons/mcp-integration/mcp-prompts/) - Available MCP prompts
