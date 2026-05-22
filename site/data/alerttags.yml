@@ -172,6 +172,9 @@ CWE-436:
 CWE-444:
   link: https://cwe.mitre.org/data/definitions/444.html
 
+CWE-451:
+  link: https://cwe.mitre.org/data/definitions/451.html
+
 CWE-472:
   link: https://cwe.mitre.org/data/definitions/472.html
 
