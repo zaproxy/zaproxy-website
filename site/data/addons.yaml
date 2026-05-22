@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.24.0/client-alpha-0.24.0.zap
-  date: 2026-05-07
-  version: 0.24.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.25.0/client-alpha-0.25.0.zap
+  date: 2026-05-22
+  version: 0.25.0
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
