@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: selenium
-    version: 15.48.0
+    version: 15.49.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.48.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.49.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -392,7 +392,7 @@ sbom:
     version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.28.0
+    version: 0.29.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -539,6 +539,9 @@ sbom:
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
   - name: testutils
+    version: unspecified
+    licenses: ''
+  - name: testutilscore
     version: unspecified
     licenses: ''
   - name: woodstox-core

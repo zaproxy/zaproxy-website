@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: client
-    version: 0.25.0
+    version: 0.26.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.25.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.26.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -185,10 +185,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 12.6.1
+    version: 12.6.2
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 12.6.1
+    version: 12.6.2
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -614,6 +614,9 @@ sbom:
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
   - name: testutils
+    version: unspecified
+    licenses: ''
+  - name: testutilscore
     version: unspecified
     licenses: ''
   - name: woodstox-core
