@@ -1,5 +1,9 @@
 section: Reflected JavaScript
 details:
+- path: lab_refer.html
+  notes: ''
+  rule:
+  result: FAIL
 - path: /backslash1
   notes: ''
   rule:
@@ -108,10 +112,6 @@ details:
   notes: 'Not Vulnerable'
   rule:
   result: Pass
-- path: /post1()
-  notes: ''
-  rule: 40012
-  result: Pass
 - path: /refer1
   notes: ''
   rule: 40012
@@ -136,9 +136,13 @@ details:
   notes: 'Not Vulnerable'
   rule:
   result: Pass
-tests: 34
-passes: 25
-fails: 7
+- path: /xyz/*http:/example.com
+  notes: ''
+  rule:
+  result: FAIL
+tests: 35
+passes: 24
+fails: 9
 fps: 3
 fns: 3
-score: 78%
+score: 73%
