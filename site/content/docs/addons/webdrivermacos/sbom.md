@@ -8,11 +8,14 @@ aliases:
 cascade:
   addon:
     id: webdrivermacos
-    version: '197'
+    version: '198'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v197/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v198/bom.json
   components:
+  - name: apiguardian-api
+    version: 1.1.2
+    licenses: Apache-2.0
   - name: asm
     version: '9.7'
     licenses: BSD-3-Clause
@@ -34,6 +37,12 @@ sbom:
   - name: biz.aQute.bnd.annotation
     version: 7.2.3
     licenses: (Apache-2.0 OR EPL-2.0)
+  - name: byte-buddy
+    version: 1.17.7
+    licenses: Apache-2.0
+  - name: byte-buddy-agent
+    version: 1.17.7
+    licenses: Apache-2.0
   - name: caffeine
     version: 3.0.5
     licenses: Apache-2.0
@@ -118,6 +127,15 @@ sbom:
   - name: guava
     version: 33.4.0-jre
     licenses: Apache-2.0
+  - name: hamcrest
+    version: '3.0'
+    licenses: BSD-3-Clause
+  - name: hamcrest-core
+    version: '3.0'
+    licenses: BSD-3-Clause
+  - name: hamcrest-library
+    version: '3.0'
+    licenses: BSD-3-Clause
   - name: harlib
     version: 1.1.3
     licenses: Apache-2.0
@@ -160,6 +178,30 @@ sbom:
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
+  - name: junit-bom
+    version: 6.1.0
+    licenses: EPL-2.0
+  - name: junit-jupiter
+    version: 6.1.0
+    licenses: EPL-2.0
+  - name: junit-jupiter-api
+    version: 6.1.0
+    licenses: EPL-2.0
+  - name: junit-jupiter-engine
+    version: 6.1.0
+    licenses: EPL-2.0
+  - name: junit-jupiter-params
+    version: 6.1.0
+    licenses: EPL-2.0
+  - name: junit-platform-commons
+    version: 6.1.0
+    licenses: EPL-2.0
+  - name: junit-platform-engine
+    version: 6.1.0
+    licenses: EPL-2.0
+  - name: junit-platform-launcher
+    version: 6.1.0
+    licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
     licenses: Apache-2.0
@@ -178,6 +220,18 @@ sbom:
   - name: lombok
     version: 1.18.44
     licenses: MIT
+  - name: mockito-core
+    version: 5.23.0
+    licenses: MIT
+  - name: mockito-junit-jupiter
+    version: 5.23.0
+    licenses: MIT
+  - name: objenesis
+    version: '3.3'
+    licenses: Apache-2.0
+  - name: opentest4j
+    version: 1.3.0
+    licenses: Apache-2.0
   - name: org.jacoco.agent
     version: 0.8.12
     licenses: EPL-2.0
@@ -220,6 +274,9 @@ sbom:
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
+  - name: testutilscore
+    version: unspecified
+    licenses: ''
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
