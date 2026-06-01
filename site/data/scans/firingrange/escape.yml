@@ -10,6 +10,9 @@ details:
 - path: /js/html_escape
   result: Pass
   rule: 200002
+- path: /serverside/encodeUrl
+  result: FAIL
+  rule: 40012
 - path: /serverside/encodeUrl/attribute_name
   result: Broken
   rule: null
@@ -73,6 +76,9 @@ details:
 - path: /serverside/encodeUrl/textarea
   result: Broken
   rule: null
+- path: /serverside/escapeHtml
+  result: FAIL
+  rule: 40012
 - path: /serverside/escapeHtml/attribute_name
   result: Pass
   rule: 40012
@@ -136,7 +142,7 @@ details:
 - path: /serverside/escapeHtml/textarea
   result: Broken
   rule: null
-tests: 16
+tests: 18
 passes: 14
-fails: 2
-score: 88%
+fails: 4
+score: 78%
