@@ -7,23 +7,47 @@ details:
 - path: /contentsniffing/plaintext
   result: Pass
   rule: 40012
+- path: /escapedparameter/js_eventhandler_quoted
+  result: FAIL
+  rule: 40012
 - path: /escapedparameter/js_eventhandler_quoted/DOUBLE_QUOTED_ATTRIBUTE
   result: Pass
+  rule: 40012
+- path: /escapedparameter/js_eventhandler_singlequoted
+  result: FAIL
   rule: 40012
 - path: /escapedparameter/js_eventhandler_singlequoted/SINGLE_QUOTED_ATTRIBUTE
   result: Pass
   rule: 40012
+- path: /escapedparameter/js_eventhandler_unquoted
+  result: FAIL
+  rule: 40012
 - path: /escapedparameter/js_eventhandler_unquoted/UNQUOTED_ATTRIBUTE
   result: Pass
+  rule: 40012
+- path: /filteredcharsets/attribute_unquoted
+  result: FAIL
   rule: 40012
 - path: /filteredcharsets/attribute_unquoted/DoubleQuoteSinglequote
   result: Pass
   rule: 40012
+- path: /filteredcharsets/body
+  result: FAIL
+  rule: 40012
 - path: /filteredcharsets/body/SpaceDoubleQuoteSlashEquals
   result: Pass
   rule: 40012
+- path: /filteredstrings/body
+  result: FAIL
+  rule: 40012
+- path: /filteredstrings/body/caseInsensitive
+  result: FAIL
+  rule: 40012
 - path: /filteredstrings/body/caseInsensitive/script
   result: Pass
+  rule: 40012
+- path: /filteredstrings/body/caseSensitive
+  result: FAIL
   rule: 40012
 - path: /filteredstrings/body/caseSensitive/SCRIPT
   result: Pass
@@ -45,6 +69,9 @@ details:
   rule: 40012
 - path: /parameter/attribute_unquoted
   result: Pass
+  rule: 40012
+- path: /parameter/body
+  result: FAIL
   rule: 40012
 - path: /parameter/body/400
   result: Pass
@@ -124,6 +151,9 @@ details:
 - path: /parameter/title
   result: Pass
   rule: 40012
+- path: /url/a/;alert(987203);/
+  result: FAIL
+  rule: 40012
 - path: /url/css_import
   result: Pass
   rule: 40012
@@ -139,7 +169,7 @@ details:
 - path: /url/script_src
   result: Pass
   rule: 40012
-tests: 46
+tests: 56
 passes: 45
-fails: 1
-score: 98%
+fails: 11
+score: 80%
