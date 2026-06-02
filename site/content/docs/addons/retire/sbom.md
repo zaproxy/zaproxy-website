@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: retire
-    version: 0.58.0
+    version: 0.59.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.58.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.59.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -242,28 +242,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.0.3
+    version: 6.1.0
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.3
+    version: 6.1.0
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.3
+    version: 6.1.0
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.3
+    version: 6.1.0
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.3
+    version: 6.1.0
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.3
+    version: 6.1.0
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.3
+    version: 6.1.0
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.3
+    version: 6.1.0
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -314,34 +314,34 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: netty-buffer
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-codec
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-codec-http
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-codec-http2
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-common
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-handler
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-resolver
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-transport
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-transport-native-unix-common
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.28.0
+    version: 0.29.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -407,6 +407,9 @@ sbom:
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
   - name: testutils
+    version: unspecified
+    licenses: ''
+  - name: testutilscore
     version: unspecified
     licenses: ''
   - name: woodstox-core
