@@ -1,10 +1,10 @@
 {
-  "title": "News Pings by ZAP Run Type in April 2026",
-  "description": "The number of News pings from ZAP by run type in April 2026",
+  "title": "News Pings by ZAP Run Type in May 2026",
+  "description": "The number of News pings from ZAP by run type in May 2026",
   "data": [
     ["ZAPtype", "Count"],
-    ["cmdline", 5644890],
-    ["daemon", 3693736],
-    ["desktop", 481337]
+    ["cmdline", 5521007],
+    ["daemon", 2986467],
+    ["desktop", 485271]
   ]
 }
