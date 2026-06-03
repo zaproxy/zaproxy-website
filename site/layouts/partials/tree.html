@@ -20,6 +20,15 @@
     {{- $activeLink := $.root.Permalink }}
     {{- $className := "" }}
     {{- $deprecated := true }}
+    {{- $hasValidChildren := false }}
+    {{- $stat := os.Stat .path }}
+    {{- if $stat.IsDir }}
+        {{- range (readDir .path) }}
+            {{- if not (in .Name "image" | or (eq .Name "_index.md")) }}
+                {{- $hasValidChildren = true }}
+            {{- end }}
+        {{- end }}
+    {{- end }}
     {{- with $.root.Site.GetPage .url }}
         {{- if not .Params.deprecated }}
             {{- $deprecated = false }}
@@ -30,11 +39,19 @@
             {{- if eq $activeLink $branchLink  }}
                 {{- $className = "tree-active tree-branch-active" -}}
             {{- end -}}
-            <li data-depth="{{ $.depth }}" class="{{ $className }}">
+            {{- if $hasValidChildren }}
+            <li data-depth="{{ $.depth }}" class="tree-branch-item {{ $className }}">
+                <details {{ if in $activeLink $branchLink }}open{{ end }}>
+                    <summary><a href="{{ .Permalink }}">{{ .Title }}</a></summary>
+            {{- else }}
+            <li class="tree-leaf-item {{- if in $activeLink $branchLink }} tree-active{{ end }}"> 
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+            {{- end }}
         {{- end }}
     {{- end }}
     {{- if not $deprecated }}
+        {{- if $hasValidChildren }}
         <ul class="tree-branch">
         {{- range (readDir .path) }}
             {{- if in .Name "image" | or (eq .Name "_index.md") }}
@@ -48,7 +65,7 @@
                 {{- else }}
                     {{- with $.root.Site.GetPage $fullUrl }}
                         {{- $link := printf "%s" .Permalink }}  
-                        <li{{- if in $activeLink $link }} class="tree-active"{{ end }}> 
+                        <li class="tree-leaf-item{{- if in $activeLink $link }} tree-active{{ end }}"> 
                             <a href="{{ .Permalink }}">{{ .Title }}</a>
                         </li>
                     {{- end }}
@@ -56,6 +73,8 @@
             {{- end }}
         {{- end }}
         </ul>
+                </details>
     </li>
+        {{- end }}
     {{- end }}
 {{ end }}
