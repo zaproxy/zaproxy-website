@@ -20,6 +20,8 @@ Click on the Sections to see the full set of results, which also link to the onl
 
   {{< scan-results target= "firingrange" section="angular">}}
 
+  {{< scan-results target= "firingrange" section="dom">}}
+
   {{< scan-results target= "firingrange" section="escape">}}
 
   {{< scan-results target= "firingrange" section="mixedcontent">}}
@@ -29,6 +31,8 @@ Click on the Sections to see the full set of results, which also link to the onl
   {{< scan-results target= "firingrange" section="remoteinclude">}}
 
   {{< scan-results target= "firingrange" section="reverseclickjacking">}}
+
+  {{< scan-results target= "firingrange" section="urldom">}}
 
   {{< scan-results target= "firingrange" section="leakedcookie">}}
 
