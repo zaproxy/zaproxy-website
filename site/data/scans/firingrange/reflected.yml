@@ -46,6 +46,9 @@ details:
 - path: /parameter/attribute_unquoted
   result: Pass
   rule: 40012
+- path: /parameter/body
+  result: Pass
+  rule: 40012
 - path: /parameter/body/400
   result: Pass
   rule: 40012
@@ -59,9 +62,6 @@ details:
   result: Pass
   rule: 40012
 - path: /parameter/body/500
-  result: Pass
-  rule: 40012
-- path: /parameter/body
   result: Pass
   rule: 40012
 - path: /parameter/body_comment
