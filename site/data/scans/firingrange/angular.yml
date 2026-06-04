@@ -20,8 +20,8 @@ details:
   result: Pass
   rule: 200021
 - path: /angular_body/1.6.0
-  result: FAIL
-  rule: 200002
+  result: Pass
+  rule: 200021
 - path: /angular_body_alt_symbols/1.4.0
   result: Pass
   rule: 200021
@@ -62,6 +62,6 @@ details:
   result: Pass
   rule: 220004
 tests: 20
-passes: 18
-fails: 2
-score: 90%
+passes: 19
+fails: 1
+score: 95%
