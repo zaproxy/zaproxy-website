@@ -23,8 +23,8 @@ details:
   result: Pass
   rule: 220009
 - path: /location/hash/input.formaction
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220010
 - path: /location/hash/link.href
   result: Pass
   rule: 220009
@@ -32,17 +32,17 @@ details:
   result: Pass
   rule: 220009
 - path: /location/hash/param.code.value
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220010
 - path: /location/hash/param.movie.value
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220010
 - path: /location/hash/param.src.value
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220010
 - path: /location/hash/param.url.value
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220010
 - path: /location/hash/script.href
   result: Pass
   rule: 220009
@@ -68,8 +68,8 @@ details:
   result: Pass
   rule: 220009
 - path: /location/search/button.formaction
-  result: FAIL
-  rule: 40012
+  result: Pass
+  rule: 220010
 - path: /location/search/frame.src
   result: Pass
   rule: 220009
@@ -80,6 +80,6 @@ details:
   result: Pass
   rule: 220009
 tests: 26
-passes: 20
-fails: 6
-score: 77%
+passes: 26
+fails: 0
+score: 100%
