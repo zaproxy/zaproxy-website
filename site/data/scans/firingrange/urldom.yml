@@ -1,0 +1,85 @@
+section: URL-based DOM XSS
+url: https://public-firing-range.appspot.com/urldom
+details:
+- path: /location/hash/a.href
+  result: Pass
+  rule: 220009
+- path: /location/hash/base.href
+  result: Pass
+  rule: 220009
+- path: /location/hash/document.location
+  result: Pass
+  rule: 220002
+- path: /location/hash/embed.src
+  result: Pass
+  rule: 220009
+- path: /location/hash/fetch
+  result: Pass
+  rule: 210000
+- path: /location/hash/form.action
+  result: Pass
+  rule: 220009
+- path: /location/hash/iframe.src
+  result: Pass
+  rule: 220009
+- path: /location/hash/input.formaction
+  result: FAIL
+  rule: 40012
+- path: /location/hash/link.href
+  result: Pass
+  rule: 220009
+- path: /location/hash/object.data
+  result: Pass
+  rule: 220009
+- path: /location/hash/param.code.value
+  result: FAIL
+  rule: 40012
+- path: /location/hash/param.movie.value
+  result: FAIL
+  rule: 40012
+- path: /location/hash/param.src.value
+  result: FAIL
+  rule: 40012
+- path: /location/hash/param.url.value
+  result: FAIL
+  rule: 40012
+- path: /location/hash/script.href
+  result: Pass
+  rule: 220009
+- path: /location/hash/script.src
+  result: Pass
+  rule: 220009
+- path: /location/hash/script.src.partial_domain
+  result: Pass
+  rule: 220009
+- path: /location/hash/script.src.partial_path
+  result: Pass
+  rule: 220009
+- path: /location/hash/script.src.partial_query
+  result: Pass
+  rule: 220009
+- path: /location/hash/window.open
+  result: Pass
+  rule: 220002
+- path: /location/hash/xhr.open
+  result: Pass
+  rule: 220006
+- path: /location/search/area.href
+  result: Pass
+  rule: 220009
+- path: /location/search/button.formaction
+  result: FAIL
+  rule: 40012
+- path: /location/search/frame.src
+  result: Pass
+  rule: 220009
+- path: /location/search/location.assign
+  result: Pass
+  rule: 220002
+- path: /location/search/svg.a
+  result: Pass
+  rule: 220009
+tests: 26
+passes: 20
+fails: 6
+score: 77%
