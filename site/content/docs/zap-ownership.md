@@ -14,3 +14,6 @@ in [September 2023](/blog/2023-08-01-zap-is-joining-the-software-security-projec
 in order to obtain enough funding to keep maintaining and improving the software.
 
 The ZAP Team are still OWASP supporters and some of us are still OWASP Project leaders.
+
+If you see a reference to "OWASP ZAP" then you know that the source is out of date: feel free to point
+the culprits to the [N⛔WASP ZAP](/docs/nowaspzap/) page :grin:
