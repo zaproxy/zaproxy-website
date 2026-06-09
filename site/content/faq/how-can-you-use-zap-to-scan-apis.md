@@ -16,6 +16,7 @@ There are various options:
   * If your API uses GraphQL then you can explore it using the [GraphQL add-on](https://www.zaproxy.org/docs/desktop/addons/graphql-support/).
   * If your API has a WSDL then you can import it using the [SOAP add-on](https://www.zaproxy.org/docs/desktop/addons/soap-support/).
   * If you have a list of endpoint URLs then you can import these using the [Import files containing URLs add-on](/docs/desktop/addons/import-urls/).
+  * If your app exposes an MCP server then you can import it using the [MCP Integration add-on](/docs/desktop/addons/mcp-integration/).
   * If you have regression tests for you API then you can proxy these through ZAP
 
 The add-ons are available from the [ZAP Marketplace](/addons/).

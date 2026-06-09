@@ -50,6 +50,7 @@ If your app has an API definition then you are strongly recommended to import th
 ZAP supports:
 
 * [GraphQL](/docs/desktop/addons/graphql-support/)
+* [MCP](/docs/desktop/addons/mcp-integration/)
 * [OpenAPI](/docs/desktop/addons/openapi-support/)
 * [Postman](/docs/desktop/addons/postman-support/)
 * [SOAP](/docs/desktop/addons/soap-support/)
