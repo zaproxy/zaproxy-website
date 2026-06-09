@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: webdriverwindows
-    version: '201'
+    version: '202'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v201/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v202/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -35,7 +35,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: biz.aQute.bnd.annotation
-    version: 7.2.3
+    version: 7.3.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: byte-buddy
     version: 1.17.7
