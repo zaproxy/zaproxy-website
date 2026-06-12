@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: insights
-    version: 0.4.0
+    version: 0.5.0
 ---
 
 # Insights Add-on
@@ -34,4 +34,4 @@ A screen which allows you to configure the Insight [options](/docs/desktop/addon
 
 ## Reports
 
-Insights are available in the ZAP reports.
+Insights are available in the ZAP reports. When a scan is stopped by a High Level Insight (see [Exit Automation on High](/docs/desktop/addons/insights/insights-options/)), the report identifies the stopping insight.

@@ -8,11 +8,14 @@ aliases:
 cascade:
   addon:
     id: client
-    version: 0.26.0
+    version: 0.27.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.26.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.27.0/bom.json
   components:
+  - name: apfloat
+    version: 1.14.0
+    licenses: MIT
   - name: apiguardian-api
     version: 1.1.2
     licenses: Apache-2.0
@@ -53,13 +56,13 @@ sbom:
     version: '1.84'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.2.3
+    version: 7.3.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
     licenses: Apache-2.0
   - name: byte-buddy
-    version: 1.18.8
+    version: 1.18.10
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.18.8-jdk5
@@ -185,10 +188,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 12.6.2
+    version: 12.8.1
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 12.6.2
+    version: 12.8.1
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -272,16 +275,16 @@ sbom:
     version: '3.1'
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: '2.21'
+    version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-bom
     version: 3.1.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-core
     version: 3.1.1
@@ -290,22 +293,22 @@ sbom:
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-databind
     version: 3.1.1
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -337,6 +340,15 @@ sbom:
   - name: jgrapht-core
     version: 0.9.2
     licenses: LGPL-2.1-only, EPL-1.0
+  - name: jgrapht-core
+    version: 1.5.3
+    licenses: LGPL-2.1-only, Eclipse Public License (EPL) 2.0
+  - name: jgraphx
+    version: 3.4.1.3
+    licenses: JGraph Ltd - 3 clause BSD license
+  - name: jheaps
+    version: '0.14'
+    licenses: Apache-2.0
   - name: json-lib
     version: '2.4'
     licenses: Apache-2.0
@@ -530,7 +542,7 @@ sbom:
     version: 45.19.0
     licenses: ''
   - name: selenium
-    version: 15.49.0
+    version: 15.50.0
     licenses: ''
   - name: selenium-api
     version: 4.44.0
@@ -605,10 +617,10 @@ sbom:
     version: 4.8.6
     licenses: LGPL-2.1-only
   - name: sqlite-jdbc
-    version: 3.53.1.0
+    version: 3.53.2.0
     licenses: Apache-2.0
   - name: stax2-api
-    version: 4.2.2
+    version: 4.3.0
     licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
@@ -620,7 +632,7 @@ sbom:
     version: unspecified
     licenses: ''
   - name: woodstox-core
-    version: 7.1.1
+    version: 7.2.0
     licenses: Apache-2.0
   - name: xom
     version: 1.3.9
@@ -629,7 +641,7 @@ sbom:
     version: 2.17.0
     licenses: Apache-2.0
   - name: zest
-    version: 0.35.0
+    version: 0.36.0
     licenses: MPL-2.0
   - name: zest
     version: 48.14.0

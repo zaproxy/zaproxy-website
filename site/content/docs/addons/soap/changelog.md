@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: '30'
+    version: '31'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [31] - 2026-06-12
+### Changed
+- Update dependency.
+
+### Fixed
+- Fix SOAP requests generated from some WSDLs being incomplete. Requests now correctly include all fields defined in the schema, and requests are no longer broken by certain characters in element or attribute names and values.
 
 ## [30] - 2026-04-14
 ### Changed
@@ -215,6 +222,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version
 
+[31]: https://github.com/zaproxy/zap-extensions/releases/soap-v31
 [30]: https://github.com/zaproxy/zap-extensions/releases/soap-v30
 [29]: https://github.com/zaproxy/zap-extensions/releases/soap-v29
 [28]: https://github.com/zaproxy/zap-extensions/releases/soap-v28

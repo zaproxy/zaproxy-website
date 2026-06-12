@@ -23,6 +23,9 @@ will be stopped. Any jobs that are flagged as "always run" will still run.
 
 In all other cases ZAP will be stopped.
 
+
+The message reported on stop identifies the triggering insight (key, reason, site, value).
+
 ### Message Low Threshold %
 
 The low threshold used for insights related to messages, as a percentage of all messages sent.
