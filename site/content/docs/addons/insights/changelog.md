@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: insights
-    version: 0.4.0
+    version: 0.5.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.5.0] - 2026-06-12
+### Added
+- Report data now exposes `stoppingInsight` to make it explicit which insight caused a stop. The built-in report templates render the stopping insight when present.
+
+### Changed
+- The Automation Framework stop message now identifies the triggering insight (key, reason, site, value) instead of a generic string. The same details are appended to the daemon-mode exit reason.
 
 ## [0.4.0] - 2026-04-23
 ### Changed
@@ -35,6 +42,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.5.0]: https://github.com/zaproxy/zap-extensions/releases/insights-v0.5.0
 [0.4.0]: https://github.com/zaproxy/zap-extensions/releases/insights-v0.4.0
 [0.3.0]: https://github.com/zaproxy/zap-extensions/releases/insights-v0.3.0
 [0.2.0]: https://github.com/zaproxy/zap-extensions/releases/insights-v0.2.0

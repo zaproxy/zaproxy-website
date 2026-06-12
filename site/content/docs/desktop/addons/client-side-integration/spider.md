@@ -34,6 +34,8 @@ The spider can be invoked via:
 * "Tools / Client Spider" menu item
 * Automation Framework [spiderClient](/docs/desktop/addons/client-side-integration/automation/) job
 
+The default spider options can be set via the [Spider Options](/docs/desktop/addons/client-side-integration/spider-options/) panel.
+
 ### Client Spider dialog
 
 The dialog for starting the Client Spider provides 2 sub tabs:
@@ -43,24 +45,12 @@ The dialog for starting the Client Spider provides 2 sub tabs:
 This tab allows you to define what the spider will attempt to explore.
 
 
-The Scope Check can be either:
+The Scope Check controls how the spider handles out-of-scope resources — see the [Spider Options](/docs/desktop/addons/client-side-integration/spider-options/) for details.
 
-* `Strict` - enforces that all requests need to be in scope to be accessed.
-* `Flexible` - allows all requests to be accessed. This scope check has the side effect of allowing out of scope domains to be accessed, but not crawled.
 
 #### Options
 
-This tab allows you to define the options that control how the spider works.
-
-* **Number of Browser Windows to Open** - The number of browser windows the spider uses in parallel. More windows increases speed but uses more memory.
-* **Maximum Crawl Depth** - The maximum depth the spider will crawl to. 0 means unlimited.
-* **Maximum Children** - The maximum number of child nodes to add under any single node in the tree. 0 means unlimited.
-* **Initial Page Load Time** - The number of seconds to wait after the initial URL is loaded. Default: 5.
-* **Page Load Time** - The number of seconds to wait after each subsequent URL is loaded. Default: 1.
-* **Action Wait Time** - The number of seconds to wait after performing an action on the browser (e.g. opening a URL, clicking a button, submitting a form). Default: 0.
-* **Shutdown Time** - The number of seconds to wait for new events after the last action before the spider shuts down. Default: 5.
-* **Maximum Duration** - The maximum number of minutes the spider is allowed to run. 0 means unlimited.
-* **Logout Avoidance** - When enabled, the spider will avoid clicking elements that are likely to log the user out.
+This tab allows you to override the default options that control how the spider works. See the [Spider Options](/docs/desktop/addons/client-side-integration/spider-options/) for a description of each option.
 
 ### Client Spider tab
 

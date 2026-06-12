@@ -6,13 +6,26 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.26.0
+    version: 0.27.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.27.0] - 2026-06-12
+### Added
+- Client Spider Options panel.
+- Support for ZAP modes in the Client Spider.
+- Show Client Spider icon in the Sites tree.
+- More option API endpoints.
+
+### Changed
+- Change the Client Spider to crawl through page components (e.g. links) to reduce full page reloads, improving support for SPAs.
+
+### Fixed
+- Change the Client Spider to track all redirects while crawling.
 
 ## [0.26.0] - 2026-05-27
 ### Added
@@ -234,6 +247,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.27.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.27.0
 [0.26.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.26.0
 [0.25.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.25.0
 [0.24.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.24.0

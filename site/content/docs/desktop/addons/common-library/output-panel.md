@@ -22,3 +22,10 @@ Whenever new output is appended to any tab, a green dot will appear over the tab
 icon to indicate that there is new content.
 The green dot will disappear from the tab when the content is viewed, and from the output panel when new content
 from all tabs (including detached tabs) has been seen.
+
+
+To avoid performance issues, messages appended to the panel are modified if needed:
+
+* Messages longer than 25 million characters are truncated.
+* Lines longer than 15,000 characters are split.
+When a message is modified, a notice appears above the text area that can be dismissed by clicking the close button next to it.
