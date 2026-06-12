@@ -1,10 +1,215 @@
-section: All URLs
+section: Crawlground
 target: localhost:3456
-details: []
-tests: 0
-passes: 0
-standardPasses: 0
-ajaxPasses: 0
-clientPasses: 0
-fails: 0
-score: 0%
+details:
+  - path: /score/buttons/01-html-button
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/buttons/02-div-onclick
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/dynamic-content/01-fetch-injected
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: FAIL
+  - path: /score/dynamic-content/02-fetch-injected
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/dynamic-content/03-intersection-observer
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: Pass
+  - path: /score/dynamic-content/04-details-toggle
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/dynamic-content/05-sse-injected
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/dynamic-content/06-websocket-injected
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: FAIL
+  - path: /score/dynamic-content/07-load-more
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/forms/01-get-form
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/forms/02-post-form
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: Pass
+  - path: /score/forms/03-image-input
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: Pass
+  - path: /score/forms/04-select-field
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/forms/05-fetch-post
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/forms/06-radio-buttons
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: Pass
+  - path: /score/forms/07-checkboxes
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: Pass
+  - path: /score/forms/08-formaction-override
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/forms/09-js-form-submit
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/forms/10-multistep-wizard
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: FAIL
+  - path: /score/frames/01-iframe-srcdoc
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/frames/02-shadow-dom
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/js-events/01-mouseover-injected
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/js-events/02-onclick-prevent-default
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/js-events/03-focus-injected
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/js-events/04-css-hover-dropdown
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: Pass
+  - path: /score/js-events/05-multilevel-dropdown
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/js-events/06-dialog-modal
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: Pass
+  - path: /score/js-events/07-dblclick
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/js-events/08-keydown-enter
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/js-events/09-contextmenu
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/js-events/10-tab-panel
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/js-events/11-popover
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/links/01-anchor-href
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/links/02-js-built-href
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/links/03-noscript
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: FAIL
+  - path: /score/links/04-svg-anchor
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: FAIL
+  - path: /score/navigation/01-meta-refresh
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: FAIL
+  - path: /score/navigation/02-window-location-timeout
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: FAIL
+  - path: /score/navigation/03-history-push-state
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/navigation/04-hash-routing
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/navigation/05-window-replace
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: FAIL
+tests: 41
+passes: 30
+standardPasses: 15
+ajaxPasses: 20
+clientPasses: 22
+fails: 11
+score: 73%
