@@ -9,6 +9,9 @@ links:
   - name: 'Google Firing Range'
     link: firingrange
     desc: a test bed for automated web application security scanners (unmaintained)
+  - name: 'Crawlground'
+    link: crawlground
+    desc: a testbed for web crawlers with individual scored controls (maintained by the ZAP team)
   - name: 'Google Security Crawl Maze'
     link: crawlmaze
     desc: a comprehensive testbed for web security crawlers (maintained)
