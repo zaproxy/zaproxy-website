@@ -95,7 +95,7 @@ details:
     scheme: http
     standard: Pass
     ajax: FAIL
-    client: FAIL
+    client: Pass
   - path: /score/frames/01-iframe-srcdoc
     scheme: http
     standard: FAIL
@@ -210,6 +210,6 @@ tests: 41
 passes: 30
 standardPasses: 15
 ajaxPasses: 20
-clientPasses: 22
+clientPasses: 23
 fails: 11
 score: 73%
