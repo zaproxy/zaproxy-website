@@ -15,7 +15,7 @@ details:
   rule: 220009
 - path: /location/hash/fetch
   result: Pass
-  rule: 210000
+  rule: 220000
 - path: /location/hash/form.action
   result: Pass
   rule: 220009

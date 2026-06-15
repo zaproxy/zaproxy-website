@@ -33,7 +33,7 @@ details:
   rule: 220003
 - path: /toxicdom/document/cookie_set/innerHtml
   result: Pass
-  rule: 210000
+  rule: 220005
 - path: /toxicdom/document/referrer/documentWrite
   result: Pass
   rule: 220000
