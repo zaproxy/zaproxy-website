@@ -1,7 +1,8 @@
 <ol class="breadcrumbs">
-{{ range $index, $element := split .Permalink "/" }}
-    {{- $.Scratch.Add "path" $element }}
+{{ $.Scratch.Set "path" "/" }}
+{{ range $index, $element := split .RelPermalink "/" }}
     {{- if ne $element "" }}
+    {{- $.Scratch.Add "path" $element }}
     <li>
         {{- with $.Site.GetPage ( $.Scratch.Get "path") }}
         <a href='{{ .Permalink }}'>{{ .Title }}</a>

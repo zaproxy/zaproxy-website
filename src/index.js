@@ -144,6 +144,13 @@ document.addEventListener("DOMContentLoaded", function() {
     Array.from(menu.getElementsByTagName('ul')).map(function(el) {
      el.classList.remove("tree-branch-filter");
     });
+    Array.from(menu.getElementsByTagName('details')).map(function(el) {
+      if (el.parentElement.classList.contains('tree-branch-active')) {
+        el.setAttribute('open', '');
+      } else {
+        el.removeAttribute('open');
+      }
+    });
   }
 
   function applyFilter(menu, filter) {
@@ -152,6 +159,13 @@ document.addEventListener("DOMContentLoaded", function() {
       const text = el.textContent.toLowerCase();
       if (text.indexOf(filter) !== -1) {
         el.classList.add("tree-filter-match");
+        let parent = el.parentElement;
+        while (parent && parent !== menu) {
+          if (parent.tagName.toLowerCase() === 'details') {
+            parent.setAttribute('open', '');
+          }
+          parent = parent.parentElement;
+        }
       } else {
         el.classList.remove("tree-filter-match");
       }
@@ -226,5 +240,26 @@ document.addEventListener("DOMContentLoaded", function() {
     Array.from(table.querySelectorAll('tr.togglehide'))
       .forEach(tr => tr.style.display = input.checked ? '' : 'none');
   })));
+
+  // Auto-collapse siblings in tree menu
+  const treeMenus = document.querySelectorAll('.tree-menu');
+  treeMenus.forEach(menu => {
+    menu.addEventListener('click', (e) => {
+      const summary = e.target.closest('summary');
+      if (summary) {
+        const details = summary.parentElement;
+        if (!details.hasAttribute('open')) {
+          const ul = details.parentElement.parentElement;
+          if (ul) {
+            ul.querySelectorAll(':scope > li > details').forEach(sibling => {
+              if (sibling !== details) {
+                sibling.removeAttribute('open');
+              }
+            });
+          }
+        }
+      }
+    });
+  });
 
 });
