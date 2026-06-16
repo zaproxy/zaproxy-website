@@ -7,7 +7,7 @@ WORKDIR /app
 RUN npm install
 
 COPY .babelrc \
-    .eslintrc.yml \
+    eslint.config.mjs \
     .nvmrc \
     postcss.config.js \
     webpack.common.js \
