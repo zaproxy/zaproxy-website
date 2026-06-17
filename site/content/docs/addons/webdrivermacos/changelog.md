@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: webdrivermacos
-    version: '202'
+    version: '203'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [203] - 2026-06-16
+### Changed
+- Update ChromeDriver to 149.0.7827.155.
 
 ## [202] - 2026-06-11
 ### Changed
@@ -847,6 +851,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First release: Firefox v0.13.0 Chrome v2.27
 
+[203]: https://github.com/zaproxy/zap-extensions/releases/webdrivermacos-v203
 [202]: https://github.com/zaproxy/zap-extensions/releases/webdrivermacos-v202
 [201]: https://github.com/zaproxy/zap-extensions/releases/webdrivermacos-v201
 [200]: https://github.com/zaproxy/zap-extensions/releases/webdrivermacos-v200
