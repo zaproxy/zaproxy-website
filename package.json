@@ -23,7 +23,6 @@
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.29.7",
-    "@babel/eslint-parser": "^7.29.7",
     "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
     "@babel/preset-env": "^7.29.7",
@@ -36,8 +35,9 @@
     "cross-env": "^10.1.0",
     "css-loader": "^7.1.4",
     "css-minimizer-webpack-plugin": "^8.0.0",
-    "eslint": "^8.57.1",
+    "eslint": "^9.39.4",
     "eslint-plugin-import": "^2.32.0",
+    "globals": "^17.6.0",
     "exports-loader": "^5.0.0",
     "fancy-log": "^2.0.0",
     "file-loader": "^6.2.0",
