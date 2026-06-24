@@ -6,9 +6,9 @@ weight: 1
 cascade:
   addon:
     id: viewstate
-    version: 3.0.0
+    version: 4.0.0
 ---
 
 # ViewState
 
-Provides Request/Response panel views to decode and edit ASP/JSF ViewState.
+Provides Request/Response panel views to decode and edit ASP ViewState.
