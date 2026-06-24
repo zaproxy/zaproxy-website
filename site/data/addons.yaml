@@ -1109,16 +1109,6 @@
   downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tokengen-v16/tokengen-beta-16.zap
   date: 2025-12-15
   version: 16
-- id: treetools
-  name: TreeTools
-  description: Tools to add functionality to the tree view.
-  author: Carl Sampson
-  status: beta
-  infoUrl: /docs/desktop/addons/treetools/
-  repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/treetools-v8/treetools-beta-8.zap
-  date: 2021-10-07
-  version: 8
 - id: viewstate
   name: ViewState
   description: ASP ViewState Decoder and Editor

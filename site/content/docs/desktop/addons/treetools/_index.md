@@ -9,8 +9,4 @@ cascade:
     version: 8.0.0
 ---
 
-# TreeTools
-
-Provides tools/functionality to enhance the Sites tree.
-
-Adds a context menu item to the Sites tree to expand/collapse its nodes.
+This add-on has been superseded by the [Common Library](../common-library/) add-on.
