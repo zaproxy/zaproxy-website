@@ -1121,14 +1121,14 @@
   version: 8
 - id: viewstate
   name: ViewState
-  description: ASP/JSF ViewState Decoder and Editor
+  description: ASP ViewState Decoder and Editor
   author: Calum Hutton
   status: alpha
   infoUrl: /docs/desktop/addons/viewstate/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/viewstate-v3/viewstate-alpha-3.zap
-  date: 2021-10-07
-  version: 3
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/viewstate-v4/viewstate-alpha-4.zap
+  date: 2026-06-24
+  version: 4
 - id: wappalyzer
   name: Technology Detection
   description: Technology detection using various fingerprints and identifiers.
