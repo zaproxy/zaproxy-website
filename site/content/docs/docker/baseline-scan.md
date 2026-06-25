@@ -36,7 +36,7 @@ Options:
     -D secs           delay in seconds to wait for passive scanning 
     -i                default rules not in the config file to INFO
     -I                do not return failure on warning
-    -j                use the Ajax spider in addition to the traditional one
+    -j                use the modern spider in addition to the traditional one (default: Ajax spider)
     -l level          minimum level to show: PASS, IGNORE, INFO, WARN or FAIL, use with -s to hide example URLs
     -n context_file   context file which will be loaded prior to spidering the target
     -p progress_file  progress file which specifies issues that are being addressed
@@ -48,6 +48,8 @@ Options:
     --auto            use the automation framework if supported for the given parameters (this will become the default soon)
     --autooff         do not use the automation framework even if supported for the given parameters
     --plan-only       generate an automation framework plan but do not run it
+    --ajax-spider     use the Ajax spider when -j is specified (default) - currently only in the nightly and weekly images
+    --client-spider   use the Client spider instead of the Ajax spider when -j is specified - currently only in the nightly and weekly images
 ```
 To run it with no 'file' params use:
 ```
