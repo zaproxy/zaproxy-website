@@ -9,7 +9,7 @@ type: docker
 
 The ZAP full scan is a script that is available in the ZAP [Docker](../about/) images.
 
-It runs the ZAP spider against the specified target (by default with no time limit) followed by an optional ajax spider scan and then a full active scan before reporting the results.
+It runs the ZAP spider against the specified target (by default with no time limit) followed by an optional modern spider scan and then a full active scan before reporting the results.
 
 This means that the script does perform actual 'attacks' and can potentially run for a long period of time.
 
@@ -36,7 +36,7 @@ Options:
     -D                delay in seconds to wait for passive scanning 
     -i                default rules not in the config file to INFO
     -I                do not return failure on warning (post 2.9.0)
-    -j                use the Ajax spider in addition to the traditional one
+    -j                use the modern spider in addition to the traditional one (default: Ajax spider)
     -l level          minimum level to show: PASS, IGNORE, INFO, WARN or FAIL, use with -s to hide example URLs
     -n context_file   context file which will be loaded prior to scanning the target
     -p progress_file  progress file which specifies issues that are being addressed
@@ -45,6 +45,8 @@ Options:
     -U user           username to use for authenticated scans - must be defined in the given context file (post 2.9.0)
     -z zap_options    ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"
     --hook            path to python file that define your custom hooks
+    --ajax-spider     use the Ajax spider when -j is specified (default) - currently only in the nightly and weekly images
+    --client-spider   use the Client spider instead of the Ajax spider when -j is specified - currently only in the nightly and weekly images
 ```
 To run it with no 'file' params use:
 ```
