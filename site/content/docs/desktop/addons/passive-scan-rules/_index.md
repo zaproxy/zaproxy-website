@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 73.0.0
+    version: 74.0.0
 ---
 
 # Passive Scan Rules
@@ -430,7 +430,7 @@ Alert ID: [10040](/docs/alerts/10040/).
 ## Modern Web Application {#id-10109}
 
 This raises an informational alert if a site appears to be a modern web application.  
-It does not indicate any potential vulnerabilities but it could indicate that the ajax spider might be more effective at exploring this site compared to the traditional spider.
+It does not indicate any potential vulnerabilities but it could indicate that the modern spider might be more effective at exploring this site compared to the traditional spider.
 
 
 Latest code: [ModernAppDetectionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ModernAppDetectionScanRule.java)

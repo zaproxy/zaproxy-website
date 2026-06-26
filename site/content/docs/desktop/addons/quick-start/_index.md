@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: 56.0.0
+    version: 57.0.0
 ---
 
 # Quick Start
@@ -36,12 +36,19 @@ The scan policy to use when performing the active scan. Note that the policies w
 
 The traditional spider explores the application by finding links in HTML pages. It is very fast but cannot handle applications which make heavy use of JavaScript.
 
-### Use ajax spider
+### Use modern spider
 
-The ajax spider explores the application by launching the browser you have chosen and clicking on the links it finds. It is slower than the traditional spider but handles JavaScript well.  
-This option is only shown if the ajax spider add-on is installed. If it is not available then you can download and install it for free from the ZAP Marketplace.   
+The modern spider explores the application by launching the browser you have chosen and clicking on the links it finds. It is slower than the traditional spider but handles JavaScript well.  
+This option is only shown if at least one modern spider add-on is installed.   
 
-The options available are:
+Two modern spiders are available:
+
+* **Ajax Spider**: available if the Ajax Spider add-on is installed.
+* **Client Spider**: available if the Client Side Integration add-on is installed.
+
+When both are installed, a drop-down lets you choose which one to use. ZAP will remember the last spider and browser you chose when you restart it.   
+
+The conditional options available are:
 
 * Never: you will then need to use the traditional spider
 * If Modern: will run if ZAP identifies the target as a modern app - for this you need to use the traditional spider

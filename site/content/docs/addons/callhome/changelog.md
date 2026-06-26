@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: callhome
-    version: 0.20.0
+    version: 0.22.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.22.0] - 2026-06-26
+### Removed
+- Stop collecting "stats.auth.detect.session.*".
+
+## [0.21.0] - 2026-04-02
+### Added
+- MCP stats to telemetry.
 
 ## [0.20.0] - 2025-12-15
 ### Changed
@@ -131,6 +139,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version supports Check for Updates and News calls.
 
+[0.22.0]: https://github.com/zaproxy/zap-extensions/releases/callhome-v0.22.0
+[0.21.0]: https://github.com/zaproxy/zap-extensions/releases/callhome-v0.21.0
 [0.20.0]: https://github.com/zaproxy/zap-extensions/releases/callhome-v0.20.0
 [0.19.0]: https://github.com/zaproxy/zap-extensions/releases/callhome-v0.19.0
 [0.18.0]: https://github.com/zaproxy/zap-extensions/releases/callhome-v0.18.0

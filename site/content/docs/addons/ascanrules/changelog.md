@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '82'
+    version: '83'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [83] - 2026-06-26
+### Changed
+- Updated a reference link for the XSLT Injection scan rule.
 
 ## [82] - 2026-05-06
 ### Changed
@@ -702,6 +706,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[83]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v83
 [82]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v82
 [81]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v81
 [80]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v80
