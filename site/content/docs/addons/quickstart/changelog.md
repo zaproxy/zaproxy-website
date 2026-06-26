@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: '56'
+    version: '57'
 ---
 
 # Changelog
@@ -14,10 +14,13 @@ All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
+## [57] - 2026-06-26
+### Added
+- Option to select modern spider.
+
 ## [56] - 2026-05-06
 ### Added
 - Add Scan Policy option to the Automated Scan panel.
-
 
 ## [55] - 2026-03-09
 ### Fixed
@@ -311,6 +314,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[57]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v57
 [56]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v56
 [55]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v55
 [54]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v54
