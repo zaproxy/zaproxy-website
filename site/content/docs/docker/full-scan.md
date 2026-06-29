@@ -45,8 +45,8 @@ Options:
     -U user           username to use for authenticated scans - must be defined in the given context file (post 2.9.0)
     -z zap_options    ZAP command line options e.g. -z "-config aaa=bbb -config ccc=ddd"
     --hook            path to python file that define your custom hooks
-    --ajax-spider     use the Ajax spider when -j is specified (default) - currently only in the nightly and weekly images
-    --client-spider   use the Client spider instead of the Ajax spider when -j is specified - currently only in the nightly and weekly images
+    --ajax-spider     use the Ajax spider when -j is specified (default)
+    --client-spider   use the Client spider instead of the Ajax spider when -j is specified
 ```
 To run it with no 'file' params use:
 ```

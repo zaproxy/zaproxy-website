@@ -48,8 +48,8 @@ Options:
     --auto            use the automation framework if supported for the given parameters (this will become the default soon)
     --autooff         do not use the automation framework even if supported for the given parameters
     --plan-only       generate an automation framework plan but do not run it
-    --ajax-spider     use the Ajax spider when -j is specified (default) - currently only in the nightly and weekly images
-    --client-spider   use the Client spider instead of the Ajax spider when -j is specified - currently only in the nightly and weekly images
+    --ajax-spider     use the Ajax spider when -j is specified (default)
+    --client-spider   use the Client spider instead of the Ajax spider when -j is specified
 ```
 To run it with no 'file' params use:
 ```
