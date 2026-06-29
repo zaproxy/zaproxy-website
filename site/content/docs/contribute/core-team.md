@@ -23,7 +23,7 @@ In addition to making code contributions we are looking for people who:
 - Answer questions on any social platforms
 - Join in discussions with the rest of the Core Team
 
-We expect prospective Core Team members to start doing these things prior to being invited to join. Ideally they will join us in the weekly team meetings and IRC, but we understand that may be difficult depending on timezones and availability - we will do our best to work around such issues.
+We expect prospective Core Team members to start doing these things prior to being invited to join. Ideally they will join us in the weekly team meetings and Slack, but we understand that may be difficult depending on timezones and availability - we will do our best to work around such issues.
 
 ### Why join the ZAP Core Team?
 
