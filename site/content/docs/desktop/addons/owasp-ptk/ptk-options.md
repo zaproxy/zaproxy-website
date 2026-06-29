@@ -7,9 +7,43 @@ weight: 1
 
 # OWASP PTK Options
 
-## Active Scan
+The OWASP PTK Options dialog has three tabs: **Engines** , **Scan Rules** , and **Active Scan** .
 
-On the **Active Scan** tab, **Enable Active Scan Rule** controls whether the PTK active scan rule runs during ZAP active scans.
+## Engines Tab
+
+Controls where each PTK engine runs during a scan. Each engine (SAST, IAST, DAST) has an independent **Run Location** drop-down with three options:
+
+* **In the Client Spider** — the engine runs automatically whenever the ZAP Client Spider crawls a page. This is the default for SAST and IAST.
+* **In the PTK Active Scan Rule** — the engine runs as part of the PTK active scan rule. This is the default for DAST.
+* **Manually** — the engine is not triggered automatically; it only runs when invoked directly via the PTK API.
+
+## Scan Rules Tab
+
+The scan rules tree lists all available PTK rules grouped by engine (SAST, IAST, DAST) and module. Any rule that is enabled here will be available to PTK when it runs in the browser. Rules that are disabled will be ignored by PTK entirely.
+
+
+Hover over any node in the tree to see its internal ID, which is the value used in command-line
+configuration keys.
+
+### Use Recommended Defaults
+
+The **Use recommended defaults** checkbox at the top of the tab applies a curated set of rules suited to security testing of web applications in a developer or CI context. When checked, the checkboxes in the tree are greyed out to show the recommended state — you can still expand and collapse the tree to see which rules are included — but the individual rules cannot be changed while this mode is active.
+
+
+Some rules are excluded from the recommended set because they overlap with existing ZAP rules,
+or because they are more relevant to penetration testers than to developers.
+
+
+If you uncheck **Use recommended defaults**, the tree becomes fully editable starting from
+the recommended state. Any changes you make and save become your custom configuration.
+Rechecking the option reapplies the recommended state.
+
+
+This option is enabled by default for new installations.
+
+## Active Scan Tab
+
+**Enable Active Scan Rule** controls whether the PTK active scan rule runs during ZAP active scans.
 
 
 **Enable automated scanning (deprecated)** controls the older in-browser automated mode
@@ -19,13 +53,6 @@ When unchecked, PTK will still be active in the browser but no automated scannin
 
 **Browser** , **Action Wait Time (seconds)** , and **Number of Browser Windows to Open**
 apply to the PTK active scan rule. The default thread count is half the number of available processor cores.
-
-## Scan Rules
-
-On the **Scan Rules** tab, the scan rules tree lists all available PTK rules grouped by engine (DAST, IAST, SAST) and module. Any rule that is enabled here will be available to PTK when it runs in the browser. Rules that are disabled will be ignored by PTK entirely.
-
-
-All rules are enabled by default. Uncheck any rules you do not want PTK to use.
 
 ## Command-Line Configuration
 
@@ -37,11 +64,11 @@ ZAP rules in due course.
 
 ### Key format
 
-Configuration keys follow the hierarchy of the scan-rules tree:
-
-* `ptk.scanrules.`*ENGINE*`.enabled` — enable or disable an entire engine
+* `ptk.useRecommendedDefaults` — `true` to use the recommended rule set (default); `false` to use custom per-rule flags
+* `ptk.scanrules.`*ENGINE*`.enabled` — enable or disable an entire engine (only applied when `ptk.useRecommendedDefaults=false`)
 * `ptk.scanrules.`*ENGINE* `.`*moduleId*`.enabled` — enable or disable a module within an engine
 * `ptk.scanrules.`*ENGINE* `.`*moduleId* `.`*ruleId*`.enabled` — enable or disable a single rule
+* `ptk.engine.`*ENGINE*`.runLocation` — run location for an engine: `CLIENT_SPIDER`, `ACTIVE_SCAN_RULE`, or `MANUAL`
 * `ptk.activescan.rule.enabled` — enable or disable the PTK active scan rule
 * `ptk.automatedScanning.enabled` — enable or disable automated scanning (deprecated; use the active scan rule instead)
 * `ptk.activescan.browserId` — browser ID for the PTK active scan rule (see Selenium documentation for valid IDs)
@@ -52,34 +79,56 @@ Engine names are `SAST`, `IAST`, and `DAST`. Module and rule IDs can be found by
 
 ### Inheritance
 
-Settings are inherited from parent to child: a rule-level key overrides its module key, which overrides the engine key, which overrides the default of `true` (enabled). This means you can disable an entire engine with a single key and then selectively re-enable individual rules or modules.
+Scan-rule settings are inherited from parent to child: a rule-level key overrides its module key, which overrides the engine key, which overrides the default of `true` (enabled). This means you can disable an entire engine with a single key and then selectively re-enable individual rules or modules.
 
 ### Examples
 
-Disable all IAST and DAST rules, leaving only SAST active:
+Use the recommended rule set (the default):
 
 ```
-zap.sh -config ptk.scanrules.IAST.enabled=false \
+zap.sh -config ptk.useRecommendedDefaults=true
+```
+
+Disable recommended defaults and use fully custom per-rule flags:
+
+```
+zap.sh -config ptk.useRecommendedDefaults=false
+```
+
+Disable all IAST and DAST rules, leaving only SAST active (custom mode):
+
+```
+zap.sh -config ptk.useRecommendedDefaults=false \
+        -config ptk.scanrules.IAST.enabled=false \
         -config ptk.scanrules.DAST.enabled=false
 ```
 
-Disable a specific SAST module:
+Disable a specific SAST module (custom mode):
 
 ```
-zap.sh -config ptk.scanrules.SAST.dom-xss.enabled=false
+zap.sh -config ptk.useRecommendedDefaults=false \
+        -config ptk.scanrules.SAST.dom-xss.enabled=false
 ```
 
-Disable a single rule within a module:
+Disable a single rule within a module (custom mode):
 
 ```
-zap.sh -config ptk.scanrules.SAST.dom-xss.no-inner-outer-html.enabled=false
+zap.sh -config ptk.useRecommendedDefaults=false \
+        -config ptk.scanrules.SAST.dom-xss.no-inner-outer-html.enabled=false
 ```
 
-Disable all SAST rules except one:
+Disable all SAST rules except one (custom mode):
 
 ```
-zap.sh -config ptk.scanrules.SAST.enabled=false \
+zap.sh -config ptk.useRecommendedDefaults=false \
+        -config ptk.scanrules.SAST.enabled=false \
         -config ptk.scanrules.SAST.dom-xss.no-inner-outer-html.enabled=true
+```
+
+Run DAST in the Client Spider instead of the active scan rule:
+
+```
+zap.sh -config ptk.engine.DAST.runLocation=CLIENT_SPIDER
 ```
 
 Enable the PTK active scan rule:
@@ -105,6 +154,7 @@ zap.sh -config ptk.activescan.browserId=firefox-headless \
 For many options, use a properties file with `-configfile`:
 
 ```
+ptk.useRecommendedDefaults=false
 ptk.scanrules.IAST.enabled=false
 ptk.scanrules.DAST.enabled=false
 ptk.scanrules.SAST.dom-xss.no-inner-outer-html.enabled=false

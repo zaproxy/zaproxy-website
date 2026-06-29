@@ -860,12 +860,12 @@
   name: OWASP PTK
   description: Adds the OWASP PTK extension to browsers launched from ZAP.
   author: ZAP Dev Team
-  status: alpha
+  status: beta
   infoUrl: /docs/desktop/addons/owasp-ptk/
   repoUrl: https://github.com/DenisPodgurskii/ZAP_PTK
-  downloadUrl: https://github.com/zaproxy-addons/ptk/releases/download/v0.6.0/ptk-alpha-0.6.0.zap
-  date: 2026-06-14
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy-addons/ptk/releases/download/v0.7.0/ptk-beta-0.7.0.zap
+  date: 2026-06-29
+  version: 0.7.0
 - id: quickstart
   name: Quick Start
   description: Provides a tab which allows you to quickly test a target application
