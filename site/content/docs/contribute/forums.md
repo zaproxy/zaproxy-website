@@ -19,9 +19,9 @@ links:
     link: https://discord.com/invite/8ejQWfbb6p
     desc: join the ZAPCon Discord channel 
 
-  - name: 'IRC'
-    link: https://web.libera.chat/#zaproxy
-    desc: 'chat with core ZAP developers on the #zaproxy Libera Chat channel (European office hours usually best)' 
+  - name: 'Slack'
+    link: https://zaproxy.slack.com
+    desc: 'chat with core ZAP developers (European office hours usually best)' 
 
   - name: 'StackOverflow: ZAP'
     link: https://stackoverflow.com/questions/tagged/zap

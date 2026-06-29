@@ -172,4 +172,4 @@ cd ..
 
 We welcome any changes made by a Contributor following a review process. Prior to submission of a PR, please be aware: Contributions must adhere to the [Guidelines](https://github.com/zaproxy/zaproxy/blob/main/CONTRIBUTING.md#guidelines-for-pull-request-pr-submission-and-processing).
 	
-If you have any questions related to ZAP development, reach out on the [ZAP Developer group](https://groups.google.com/g/zaproxy-develop) or the [IRC channel](https://web.libera.chat/#zaproxy). 
+If you have any questions related to ZAP development, reach out on the [ZAP Developer group](https://groups.google.com/g/zaproxy-develop) or in #dev on  [slack](https://zaproxy.slack.com) ([Slack invite](https://www.zaproxy.org/slack/invite/)). 
