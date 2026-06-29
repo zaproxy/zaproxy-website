@@ -12,7 +12,8 @@ This area contains redirects to the various communications platforms or resource
 - [Slack](/slack/)
   - [Slack - Invite](/slack/invite)
 - [Twitter](/twitter/)
-- [IRC](/irc/)
+- [Bluesky](/bluesky/)
+- [Mastodon](/mastodon/)
 
 ### Resources:
 - [ZAP User Group](https://groups.google.com/forum/#!forum/zaproxy-users)
