@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.28.0
+    version: 0.29.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.29.0] - 2026-06-30
+### Changed
+- Use new functionality from the browser extension for crawling.
+- Fill text areas while crawling.
+
+### Fixed
+- Spider should finish when existingOnly option used with an empty Client Map. 
 
 ## [0.28.0] - 2026-06-26
 ### Added
@@ -260,6 +268,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.29.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.29.0
 [0.28.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.28.0
 [0.27.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.27.0
 [0.26.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.26.0
