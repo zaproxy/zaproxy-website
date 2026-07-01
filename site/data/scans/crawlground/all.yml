@@ -10,12 +10,12 @@ details:
     scheme: http
     standard: FAIL
     ajax: FAIL
-    client: FAIL
+    client: Pass
   - path: /score/dynamic-content/01-fetch-injected
     scheme: http
     standard: FAIL
     ajax: Pass
-    client: FAIL
+    client: Pass
   - path: /score/dynamic-content/02-fetch-injected
     scheme: http
     standard: FAIL
@@ -25,7 +25,7 @@ details:
     scheme: http
     standard: FAIL
     ajax: FAIL
-    client: Pass
+    client: FAIL
   - path: /score/dynamic-content/04-details-toggle
     scheme: http
     standard: FAIL
@@ -40,8 +40,23 @@ details:
     scheme: http
     standard: FAIL
     ajax: Pass
-    client: FAIL
+    client: Pass
   - path: /score/dynamic-content/07-load-more
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/dynamic-content/08-template-element
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/dynamic-content/09-infinite-scroll
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/dynamic-content/10-localstorage
     scheme: http
     standard: FAIL
     ajax: Pass
@@ -95,13 +110,33 @@ details:
     scheme: http
     standard: Pass
     ajax: FAIL
-    client: FAIL
+    client: Pass
+  - path: /score/forms/11-fetch-get
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/forms/12-xhr-post
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
   - path: /score/frames/01-iframe-srcdoc
     scheme: http
     standard: FAIL
     ajax: FAIL
     client: FAIL
   - path: /score/frames/02-shadow-dom
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/frames/03-iframe-src
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: Pass
+  - path: /score/frames/04-shadow-dom-closed
     scheme: http
     standard: FAIL
     ajax: FAIL
@@ -161,6 +196,21 @@ details:
     standard: FAIL
     ajax: Pass
     client: Pass
+  - path: /score/js-events/12-pointer-events
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: Pass
+  - path: /score/js-events/13-long-press
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+  - path: /score/js-events/14-custom-event
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
   - path: /score/links/01-anchor-href
     scheme: http
     standard: Pass
@@ -175,22 +225,37 @@ details:
     scheme: http
     standard: Pass
     ajax: FAIL
-    client: FAIL
+    client: Pass
   - path: /score/links/04-svg-anchor
     scheme: http
     standard: Pass
     ajax: FAIL
-    client: FAIL
+    client: Pass
+  - path: /score/links/05-target-blank
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/links/06-javascript-href
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+  - path: /score/links/07-image-map
+    scheme: http
+    standard: Pass
+    ajax: FAIL
+    client: Pass
   - path: /score/navigation/01-meta-refresh
     scheme: http
     standard: Pass
     ajax: Pass
-    client: FAIL
+    client: Pass
   - path: /score/navigation/02-window-location-timeout
     scheme: http
     standard: FAIL
     ajax: Pass
-    client: FAIL
+    client: Pass
   - path: /score/navigation/03-history-push-state
     scheme: http
     standard: FAIL
@@ -205,11 +270,31 @@ details:
     scheme: http
     standard: FAIL
     ajax: Pass
-    client: FAIL
-tests: 41
-passes: 30
-standardPasses: 15
-ajaxPasses: 20
-clientPasses: 22
-fails: 11
-score: 73%
+    client: Pass
+  - path: /score/navigation/06-http-redirect
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/navigation/07-base-href
+    scheme: http
+    standard: Pass
+    ajax: Pass
+    client: Pass
+  - path: /score/navigation/08-window-open
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: Pass
+  - path: /score/navigation/09-history-replace-state
+    scheme: http
+    standard: FAIL
+    ajax: Pass
+    client: Pass
+tests: 58
+passes: 44
+standardPasses: 21
+ajaxPasses: 30
+clientPasses: 44
+fails: 14
+score: 76%
