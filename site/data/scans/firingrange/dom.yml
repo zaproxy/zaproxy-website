@@ -30,7 +30,7 @@ details:
   rule: 220000
 - path: /toxicdom/document/cookie_set/eval
   result: Pass
-  rule: 220003
+  rule: 210001
 - path: /toxicdom/document/cookie_set/innerHtml
   result: Pass
   rule: 210000
@@ -39,7 +39,7 @@ details:
   rule: 220000
 - path: /toxicdom/document/referrer/eval
   result: Pass
-  rule: 220003
+  rule: 210001
 - path: /toxicdom/document/referrer/innerHtml
   result: Pass
   rule: 210000
@@ -48,13 +48,13 @@ details:
   rule: 220003
 - path: /toxicdom/external/localStorage/function/documentWrite
   result: Pass
-  rule: 220000
+  rule: 210017
 - path: /toxicdom/external/localStorage/function/eval
   result: Pass
-  rule: 220003
+  rule: 210018
 - path: /toxicdom/external/localStorage/function/innerHtml
   result: Pass
-  rule: 220000
+  rule: 210017
 - path: /toxicdom/external/localStorage/property/documentWrite
   result: Pass
   rule: 220000
@@ -63,13 +63,13 @@ details:
   rule: 220003
 - path: /toxicdom/external/sessionStorage/function/documentWrite
   result: Pass
-  rule: 220000
+  rule: 210017
 - path: /toxicdom/external/sessionStorage/function/eval
   result: Pass
-  rule: 220003
+  rule: 210018
 - path: /toxicdom/external/sessionStorage/function/innerHtml
   result: Pass
-  rule: 220000
+  rule: 210017
 - path: /toxicdom/external/sessionStorage/property/documentWrite
   result: Pass
   rule: 220000
@@ -78,10 +78,10 @@ details:
   rule: 220003
 - path: /toxicdom/localStorage/function/documentWrite
   result: Pass
-  rule: 220000
+  rule: 210000
 - path: /toxicdom/localStorage/function/eval
   result: Pass
-  rule: 220003
+  rule: 210001
 - path: /toxicdom/localStorage/function/innerHtml
   result: Pass
   rule: 210000
@@ -90,13 +90,13 @@ details:
   rule: 220000
 - path: /toxicdom/postMessage/complexMessageDocumentWriteEval
   result: Pass
-  rule: 220000
+  rule: 220008
 - path: /toxicdom/postMessage/documentWrite
   result: Pass
-  rule: 220000
+  rule: 220008
 - path: /toxicdom/postMessage/eval
   result: Pass
-  rule: 220000
+  rule: 220008
 - path: /toxicdom/postMessage/improperOriginValidationWithPartialStringComparison
   result: Pass
   rule: 220008
@@ -114,7 +114,7 @@ details:
   rule: 220000
 - path: /toxicdom/sessionStorage/function/eval
   result: Pass
-  rule: 220003
+  rule: 210001
 - path: /toxicdom/sessionStorage/function/innerHtml
   result: Pass
   rule: 210000
@@ -126,7 +126,7 @@ details:
   rule: 220000
 - path: /toxicdom/window/name/eval
   result: Pass
-  rule: 220003
+  rule: 210001
 - path: /toxicdom/window/name/innerHtml
   result: Pass
   rule: 210000
