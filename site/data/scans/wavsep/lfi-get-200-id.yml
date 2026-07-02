@@ -101,10 +101,10 @@ details:
   result: Pass
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case34-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
-  result: Pass
+  result: FAIL
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case35-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultInvalidInput-BackslashPathReq-Read.jsp
-  result: Pass
+  result: FAIL
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case36-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultEmptyInput-BackslashPathReq-Read.jsp
   result: Pass
@@ -206,6 +206,6 @@ details:
   result: Pass
   rule: 6
 tests: 52
-passes: 52
-fails: 0
-score: 100%
+passes: 50
+fails: 2
+score: 96%

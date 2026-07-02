@@ -203,9 +203,9 @@ details:
   result: Broken
   rule: 6
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case68-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
-  result: Pass
+  result: FAIL
   rule: 6
 tests: 52
-passes: 52
-fails: 0
-score: 100%
+passes: 51
+fails: 1
+score: 98%
