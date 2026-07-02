@@ -1,21 +1,21 @@
 {
-  "title": "News Pings by Container in May 2026",
-  "description": "The number of News pings from ZAP by container in May 2026",
+  "title": "News Pings by Container in June 2026",
+  "description": "The number of News pings from ZAP by container in June 2026",
   "data": [
     ["Container", "Count"],
-    ["zap2docker-stable", 5869255],
-    ["None", 2077143],
-    ["snapcraft", 668309],
-    ["zap2docker-bare", 164598],
-    ["zap2docker-weekly", 101588],
-    ["Unknown", 66113],
-    ["zap2docker-live", 37130],
-    ["flatpak", 4185],
-    ["zap2docker-stable.webswing", 3473],
-    ["topscan-zaproxy-2.17.0", 469],
-    ["conquest/zap-weekly", 386],
-    ["zap2docker-weekly.webswing", 89],
-    ["zap2docker-live.webswing", 4],
-    ["zap2docker-mmc", 3]
+    ["zap2docker-stable", 6047718],
+    ["None", 2083545],
+    ["snapcraft", 653516],
+    ["zap2docker-bare", 176079],
+    ["zap2docker-weekly", 107898],
+    ["Unknown", 69724],
+    ["zap2docker-live", 27156],
+    ["flatpak", 4384],
+    ["zap2docker-stable.webswing", 3314],
+    ["conquest/zap-weekly", 290],
+    ["topscan-zaproxy-2.17.0", 154],
+    ["zap2docker-weekly.webswing", 42],
+    ["zap-custom", 4],
+    ["zap2docker-bare-local", 2]
   ]
 }
