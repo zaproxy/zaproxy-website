@@ -2,14 +2,14 @@ section: Escaped XSS
 url: https://public-firing-range.appspot.com/escape
 details:
 - path: /js/encodeURIComponent
-  result: Pass
-  rule: 200002
+  result: FAIL
+  rule: 40012
 - path: /js/escape
-  result: Pass
-  rule: 200002
+  result: FAIL
+  rule: 40012
 - path: /js/html_escape
-  result: Pass
-  rule: 200002
+  result: FAIL
+  rule: 40012
 - path: /serverside/encodeUrl/attribute_name
   result: Broken
   rule: null
@@ -137,6 +137,6 @@ details:
   result: Broken
   rule: null
 tests: 16
-passes: 16
-fails: 0
-score: 100%
+passes: 13
+fails: 3
+score: 81%
