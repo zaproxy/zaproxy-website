@@ -122,11 +122,14 @@ To run a Quick Start Automated Scan :
 
 ZAP will proceed to crawl the web application with its spider and passively scan each page it finds. Then ZAP will use the active scanner to attack all of the discovered pages, functionality, and parameters.
 
-ZAP provides 2 spiders for crawling web applications, you can use either or both of them from this screen.
+ZAP provides 3 spiders for crawling web applications, you can use any of them from this screen.
 
-The traditional ZAP spider which discovers links by examining the HTML in responses from the web application. This spider is fast, but it is not always effective when exploring an AJAX web application that generates links using JavaScript.
+The traditional ZAP spider which discovers links by examining the HTML in responses from the web application. This spider is fast, but it is not always effective when exploring modern web applications that make heavy use of JavaScript.
 
-For AJAX applications, ZAP’s AJAX spider is likely to be more effective. This spider explores the web application by invoking browsers which then follow the links that have been generated. The AJAX spider is slower than the traditional spider and requires additional configuration for use in a “headless” environment.
+For modern applications you should use ZAP’s Client spider. This spider explores the web application by invoking browsers which then follow the links that have been generated. The Client spider is slower than the traditional spider but will be able to crawl most modern apps effectively.
+
+The screen also allows you to use the AJAX Spider, which is also designed to handle modern apps.
+However it is less effective than the newer Client spider, and so is no longer recommended in most cases.
 
 ZAP will passively scan all of the requests and responses proxied through it. So far ZAP has only carried out passive scans of your web application. Passive scanning does not change responses in any way and is considered safe. Scanning is also performed in a background thread to not slow down exploration. Passive scanning is good at finding some vulnerabilities and as a way to get a feel for the basic security state of a web application and locate where more investigation may be warranted.
 
