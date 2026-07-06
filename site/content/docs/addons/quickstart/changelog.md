@@ -6,13 +6,18 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: '57'
+    version: '58'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [58] - 2026-07-06
+### Changed
+- Maintenance changes.
+- Default to Client Spider for modern apps.
 
 ## [57] - 2026-06-26
 ### Added
@@ -314,6 +319,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[58]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v58
 [57]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v57
 [56]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v56
 [55]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v55

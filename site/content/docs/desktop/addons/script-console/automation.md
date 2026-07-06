@@ -44,6 +44,7 @@ Runs the specified script in ZAP. The script must already be available in ZAP, f
 * target: mandatory, if type is 'targeted', the target URL to be invoked for 'targeted' script
 * context: optional, the name of the context to use when running the script
 * user: optional, the name of the user when running the Zest standalone script or chain (requires context). See Script Chaining for authentication with chains.
+* failureLevel: optional, controls the Automation Framework progress level used when the script or chain execution fails: `info`, `warning`, or `error` (default: `error`).
 
 ### Authentication
 
@@ -76,7 +77,8 @@ Chaining requires the Zest add-on to be installed. If it is not loaded or chain 
 
 
 If chain preparation fails (e.g. Zest not loaded), the job reports an error and the chain does not run.
-If any script in the chain fails during execution, the job reports an error and stops; later scripts in the chain are not run.
+If any script in the chain fails during execution, the job stops and reports the failure at the level set by `failureLevel` (default: `error`); later scripts in the chain are not run.
+If the failure is reported as an `error`, the plan is considered failed. Using `warning` or `info` allows the plan to continue even when a script fails.
 In this case, browser windows opened by the chain might not be closed immediately and are closed when ZAP shuts down.
 
 #### Example
@@ -134,6 +136,7 @@ Not all of the parameters are valid for all of the actions, see above for detail
       target:                    # String: The URL to be invoked for "targeted" script type
       context:                   # String: The name of the context to use when running the script (optional)
       user:                      # String: The name of the user to use when running the Zest standalone script or chain (optional, requires context)
+      failureLevel:              # String: The progress level at which script execution failures are reported: info, warning, error (default: error)
 	
 ```
 

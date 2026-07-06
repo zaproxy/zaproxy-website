@@ -6,6 +6,14 @@ type: userguide
 
 # Traditional JSON Report
 
+### Sections
+
+| Section                            | ID                           |
+|:-----------------------------------|:-----------------------------|
+| Script Diagnostics                 | scriptdiagnostics            |
+| Screenshots for Script Diagnostics | scriptdiagnosticsscreenshots |
+| Output for Script Diagnostics      | scriptdiagnosticsoutput      |
+
 ### Sample
 
 ```
@@ -71,6 +79,8 @@ type: userguide
 
 ```
 
+#### Sequence Details Section
+
 The report can also include details of Sequences and related active scanning results, for example:
 
 ```
@@ -113,3 +123,9 @@ The report can also include details of Sequences and related active scanning res
       }
     ]
 ```
+
+### Script Diagnostics
+
+Section descriptions are documented in [Script
+Diagnostics in Traditional Reports](/docs/desktop/addons/report-generation/report-traditional-script-diagnostics/) . See [Traditional JSON Report
+with Requests and Responses](/docs/desktop/addons/report-generation/report-traditional-json-plus/) for structured examples.

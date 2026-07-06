@@ -8,13 +8,16 @@ type: userguide
 
 ### Sections
 
-| Section          | ID              |
-|:-----------------|:----------------|
-| Alert Count      | alertcount      |
-| Insights         | insights        |
-| Instance Count   | instancecount   |
-| Alert Details    | alertdetails    |
-| Sequence Details | sequencedetails |
+| Section                            | ID                           |
+|:-----------------------------------|:-----------------------------|
+| Alert Count                        | alertcount                   |
+| Insights                           | insights                     |
+| Instance Count                     | instancecount                |
+| Alert Details                      | alertdetails                 |
+| Sequence Details                   | sequencedetails              |
+| Script Diagnostics                 | scriptdiagnostics            |
+| Screenshots for Script Diagnostics | scriptdiagnosticsscreenshots |
+| Output for Script Diagnostics      | scriptdiagnosticsoutput      |
 
 ### Screenshot
 
@@ -29,3 +32,8 @@ If "Sequence Details" are included in the report. Both a summary section and det
 
 
 ![Sequences Details](/docs/desktop/addons/report-generation/images/report-traditional-html-sequence-details.png)
+
+### Script Diagnostics
+
+See [Script
+Diagnostics in Traditional Reports](/docs/desktop/addons/report-generation/report-traditional-script-diagnostics/) .

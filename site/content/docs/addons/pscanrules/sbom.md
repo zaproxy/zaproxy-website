@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: pscanrules
-    version: '74'
+    version: '75'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v74/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v75/bom.json
   components:
   - name: ST4
     version: 4.3.4
@@ -260,28 +260,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava

@@ -6,6 +6,14 @@ type: userguide
 
 # Traditional XML Report
 
+### Sections
+
+| Section                            | ID                           |
+|:-----------------------------------|:-----------------------------|
+| Script Diagnostics                 | scriptdiagnostics            |
+| Screenshots for Script Diagnostics | scriptdiagnosticsscreenshots |
+| Output for Script Diagnostics      | scriptdiagnosticsoutput      |
+
 ### Sample
 
 ```
@@ -61,3 +69,9 @@ type: userguide
                         <otherinfo>The other info</otherinfo>
 
 ```
+
+### Script Diagnostics
+
+Section descriptions are documented in [Script
+Diagnostics in Traditional Reports](/docs/desktop/addons/report-generation/report-traditional-script-diagnostics/) . See [Traditional XML Report
+with Requests and Responses](/docs/desktop/addons/report-generation/report-traditional-xml-plus/) for structured examples.

@@ -10,22 +10,14 @@ weight: 3
 This [add-on](/docs/desktop/addons/client-side-integration/) adds a Client Spider which is designed to explore modern web apps more effectively.
 
 
+The Client Spider is now the recommended option for automatically crawling modern web apps,
+as it out performs the older AJAX spider in all known cases.
+
 The Client Spider works in a similar way to the AJAX Spider but it has access to the DOM via the ZAP Browser Extension
 which means that it can find content which the AJAX Spider cannot find.
 
 
 The Client Spider supports all of the authentication options supported by ZAP, and will run any enabled Selenium scripts in the browsers that it launches.
-
-
-While it is still at an early stage we believe it is a more effective approach than the AJAX Spider.
-
-
-We will be focussing on improving the Client Spider and the current plan is for it to supersede the AJAX Spider
-as the recommended way of crawling modern web apps.
-
-
-We would appreciate feedback via the [ZAP User Group](https://groups.google.com/group/zaproxy-users)
-to let us know how effectively it works for you, especially in comparison with the AJAX Spider.
 
 
 The spider can be invoked via:

@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: spiderAjax
-    version: 23.31.0
+    version: 23.32.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [23.32.0] - 2026-07-06
+### Changed
+- Help to show that the Client Spider is now the recommended option for modern apps.
 
 ## [23.31.0] - 2026-05-21
 ### Added
@@ -396,6 +400,7 @@ By default it allows files with extension `.js` and `.css`.
 
 
 
+[23.32.0]: https://github.com/zaproxy/zap-extensions/releases/spiderAjax-v23.32.0
 [23.31.0]: https://github.com/zaproxy/zap-extensions/releases/spiderAjax-v23.31.0
 [23.30.0]: https://github.com/zaproxy/zap-extensions/releases/spiderAjax-v23.30.0
 [23.29.0]: https://github.com/zaproxy/zap-extensions/releases/spiderAjax-v23.29.0

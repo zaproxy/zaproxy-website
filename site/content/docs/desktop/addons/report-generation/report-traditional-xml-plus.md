@@ -6,6 +6,14 @@ type: userguide
 
 # Traditional XML Report with Requests and Responses
 
+### Sections
+
+| Section                            | ID                           |
+|:-----------------------------------|:-----------------------------|
+| Script Diagnostics                 | scriptdiagnostics            |
+| Screenshots for Script Diagnostics | scriptdiagnosticsscreenshots |
+| Output for Script Diagnostics      | scriptdiagnosticsoutput      |
+
 ### Sample
 
 ```
@@ -210,4 +218,58 @@ type: userguide
                                 </statistic>
                         </statistics>
         </OWASPZAPReport>                
+```
+
+Section descriptions are documented in [Script
+Diagnostics in Traditional Reports](/docs/desktop/addons/report-generation/report-traditional-script-diagnostics/) . The XML representation is shown below.
+
+#### Script Diagnostics Section
+
+When enabled, the report includes a `scriptDiagnostics` element containing `run` elements:
+
+```
+        <scriptDiagnostics>
+                <run>
+                        <created>2026-05-13T12:19:50.536360Z</created>
+                        <outcome>FAILED</outcome>
+                        <summary>Job: script Chain order: account_check -> nav failed.</summary>
+                        <scripts>
+                                { … }
+                        </scripts>
+                </run>
+        </scriptDiagnostics>
+```
+
+Each script in a run has an order, name, type, and `steps` element. Steps include the source statement index, line (element type), and `outputs` :
+
+```
+                <step>
+                        <sourceStepIndex>13</sourceStepIndex>
+                        <line>ZestClientElementClick</line>
+                        <outputs>
+                                <output>
+                                        <kind>ERROR</kind>
+                                        <message>…</message>
+                                </output>
+                        </outputs>
+                </step>
+```
+
+#### Output for Script Diagnostics
+
+For example:
+
+```
+                <output>
+                        <kind>OUTPUT</kind>
+                        <message>In example_script</message>
+                </output>
+```
+
+#### Screenshots for Script Diagnostics
+
+For example:
+
+```
+        <screenshot>…</screenshot>
 ```
