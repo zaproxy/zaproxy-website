@@ -125,7 +125,7 @@ See the help pages for the relevant jobs for more details.
 
 ### reportData : paramsData
 
-An instance of the [ParamsJobResultData](https://github.com/zaproxy/zap-extensions/tree/main/addOns/automation/src/main/java/org/zaproxy/addon/automation/jobs/ParamsJobResultData.java) class that provides methods for querying the parameters used by sites. This is included in the Automation add-on as a "data job" that does not provide any additional functionality.
+An instance of the [ParamsJobResultData](https://github.com/zaproxy/zap-extensions/tree/main/addOns/params/src/main/java/org/zaproxy/addon/params/automation/jobs/ParamsJobResultData.java) class that provides methods for querying the parameters used by sites. This is provided by the Params add-on as a "data job" that does not provide any additional functionality.
 
 ### stats
 

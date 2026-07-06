@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.20.0
+    version: 0.21.0
 ---
 
 # Import/Export
@@ -88,7 +88,7 @@ This add-on also exposes various ZAP API endpoints to facilitate programmatic us
 ### Actions
 
 * `exportSitesTree (filePath* )` Exports the Sites Tree in the Sites Tree YAML format.
-* `importHar (filePath* )` Imports a HAR file.
+* `importHar (filePath data )` Imports a HAR from a file or the given data.
 * `importModsec2Logs (filePath* )` Imports ModSecurity2 logs from the file with the given file system path.
 * `importUrls (filePath* )` Imports URLs (one per line) from the file with the given file system path.
 * `importZapLogs (filePath* )` Imports previously exported ZAP messages from the file with the given file system path.

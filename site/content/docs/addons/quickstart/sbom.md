@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: quickstart
-    version: '57'
+    version: '58'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v57/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v58/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -131,7 +131,7 @@ sbom:
     version: 3.0.5
     licenses: Apache-2.0
   - name: callhome
-    version: 0.22.0
+    version: 0.23.0
     licenses: ''
   - name: checker-qual
     version: 3.43.0
@@ -140,7 +140,7 @@ sbom:
     version: 4.8.184
     licenses: MIT
   - name: client
-    version: 0.28.0
+    version: 0.30.0
     licenses: ''
   - name: commonlib
     version: 1.43.0
@@ -452,28 +452,28 @@ sbom:
     version: 2.0.18
     licenses: MIT
   - name: junit-bom
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.1.0
+    version: 6.1.1
     licenses: EPL-2.0
   - name: kaitai-struct-runtime
     version: '0.11'
@@ -654,7 +654,7 @@ sbom:
     version: 3.6.0
     licenses: BSD-3-Clause
   - name: selenium
-    version: 15.51.0
+    version: 15.52.0
     licenses: ''
   - name: selenium-api
     version: 4.45.0

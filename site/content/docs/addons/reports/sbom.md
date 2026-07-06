@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: reports
-    version: 0.45.0
+    version: 0.46.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.45.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/reports-v0.46.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -38,7 +38,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.60.0
+    version: 0.61.0
     licenses: ''
   - name: batik-anim
     version: '1.19'
@@ -107,13 +107,16 @@ sbom:
     version: '1.84'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.2.3
+    version: 7.3.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.17.7
+    licenses: Apache-2.0
+  - name: byte-buddy
+    version: 1.18.10
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.17.7
@@ -125,7 +128,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.42.0
+    version: 1.43.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -248,37 +251,37 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: insights
-    version: 0.5.0
+    version: 0.6.0
     licenses: ''
   - name: j2objc-annotations
     version: 3.0.0
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: '2.21'
+    version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.21.3
+    version: 2.22.0
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -314,28 +317,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.0.3
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.0.3
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.0.3
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.0.3
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.0.3
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.0.3
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.0.3
+    version: 6.1.1
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.0.3
+    version: 6.1.1
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -389,34 +392,34 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: netty-buffer
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-codec
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-codec-http
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-codec-http2
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-common
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-handler
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-resolver
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-transport
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: netty-transport-native-unix-common
-    version: 4.1.100.Final
+    version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.27.0
+    version: 0.29.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -464,8 +467,11 @@ sbom:
   - name: rsyntaxtextarea
     version: 3.6.0
     licenses: BSD-3-Clause
+  - name: scripts
+    version: 45.19.0
+    licenses: ''
   - name: sequence
-    version: '10'
+    version: '11'
     licenses: ''
   - name: service
     version: 1.16.0
@@ -483,12 +489,15 @@ sbom:
     version: 4.8.6
     licenses: LGPL-2.1-only
   - name: stax2-api
-    version: 4.2.2
+    version: 4.3.0
     licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
   - name: testutils
+    version: unspecified
+    licenses: ''
+  - name: testutilscore
     version: unspecified
     licenses: ''
   - name: thymeleaf
@@ -498,7 +507,7 @@ sbom:
     version: 1.1.6.RELEASE
     licenses: Apache-2.0
   - name: woodstox-core
-    version: 7.1.1
+    version: 7.2.0
     licenses: Apache-2.0
   - name: xml-apis
     version: 1.4.01

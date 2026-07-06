@@ -8,17 +8,20 @@ type: userguide
 
 ### Sections
 
-| Section          | ID              |
-|:-----------------|:----------------|
-| Chart            | chart           |
-| Alert Count      | alertcount      |
-| Insights         | insights        |
-| Instance Count   | instancecount   |
-| Passing Rules    | passingrules    |
-| Alert Details    | alertdetails    |
-| Statistics       | statistics      |
-| Parameters       | params          |
-| Sequence Details | sequencedetails |
+| Section                            | ID                           |
+|:-----------------------------------|:-----------------------------|
+| Chart                              | chart                        |
+| Alert Count                        | alertcount                   |
+| Insights                           | insights                     |
+| Instance Count                     | instancecount                |
+| Passing Rules                      | passingrules                 |
+| Alert Details                      | alertdetails                 |
+| Statistics                         | statistics                   |
+| Parameters                         | params                       |
+| Sequence Details                   | sequencedetails              |
+| Script Diagnostics                 | scriptdiagnostics            |
+| Screenshots for Script Diagnostics | scriptdiagnosticsscreenshots |
+| Output for Script Diagnostics      | scriptdiagnosticsoutput      |
 
 ### Sequence Support
 
@@ -29,6 +32,11 @@ If "Sequence Details" are included in the report. Both a summary section and det
 
 
 ![Sequences Details](/docs/desktop/addons/report-generation/images/report-traditional-html-plus-sequence-details.png)
+
+### Script Diagnostics
+
+See [Script
+Diagnostics in Traditional Reports](/docs/desktop/addons/report-generation/report-traditional-script-diagnostics/) .
 
 ### Themes
 

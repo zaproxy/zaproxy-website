@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: spiderAjax
-    version: 23.31.0
+    version: 23.32.0
 ---
 
 # AJAX Spider
@@ -14,6 +14,10 @@ cascade:
 The AJAX Spider add-on integrates in ZAP a crawler of AJAX rich sites called
 Crawljax. You can use it to identify the pages of the targeted site. You can combine it
 with the (normal) spider for better results.
+
+
+Note that the AJAX spider is no longer the recommended option for crawling modern web apps,
+we now recommend that you use the Client Spider instead.
 
 
 The spider is configured using the [Options AJAX Spider screen](/docs/desktop/addons/ajax-spider/options/).

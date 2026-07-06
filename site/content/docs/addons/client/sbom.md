@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: client
-    version: 0.29.0
+    version: 0.30.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.29.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.30.0/bom.json
   components:
   - name: apfloat
     version: 1.14.0

@@ -8,11 +8,14 @@ type: userguide
 
 ### Sections
 
-| Section                    | ID              |
-|:---------------------------|:----------------|
-| Statistics                 | statistics      |
-| Sequence Details           | sequencedetails |
-| Automation Framework State | afstate         |
+| Section                            | ID                           |
+|:-----------------------------------|:-----------------------------|
+| Statistics                         | statistics                   |
+| Sequence Details                   | sequencedetails              |
+| Automation Framework State         | afstate                      |
+| Script Diagnostics                 | scriptdiagnostics            |
+| Screenshots for Script Diagnostics | scriptdiagnosticsscreenshots |
+| Output for Script Diagnostics      | scriptdiagnosticsoutput      |
 
 ### Sample
 
@@ -206,4 +209,66 @@ The report can also include Automation Framework errors and warnings, for exampl
         "Warning B"
     ]
 }
+```
+
+Section descriptions are documented in [Script
+Diagnostics in Traditional Reports](/docs/desktop/addons/report-generation/report-traditional-script-diagnostics/) . The JSON representation is shown below.
+
+#### Script Diagnostics Section
+
+When enabled, the report includes a `scriptDiagnostics` object containing a `runs` array:
+
+```
+	"scriptDiagnostics": {
+		"runs": [
+			{
+				"created": "2026-05-13T12:19:50.536360Z",
+				"outcome": "FAILED",
+				"summary": "Job: script Chain order: account_check -> nav failed.",
+				"scripts": [
+					{ … }
+				]
+			}
+		]
+	}
+```
+
+Each script in a run has an order, name, type, and `steps` array. Steps include the source statement index, line (element type), and `outputs` :
+
+```
+	{
+		"sourceStepIndex": 13,
+		"line": "ZestClientElementClick",
+		"outputs": [
+			{
+				"kind": "ERROR",
+				"message": "…"
+			}
+		]
+	}
+```
+
+#### Output for Script Diagnostics
+
+For example:
+
+```
+	{
+		"sourceStepIndex": 2,
+		"line": "ZestActionPrint",
+		"outputs": [
+			{
+				"kind": "OUTPUT",
+				"message": "In example_script"
+			}
+		]
+	}
+```
+
+#### Screenshots for Script Diagnostics
+
+For example:
+
+```
+	"screenshot": "…"
 ```
