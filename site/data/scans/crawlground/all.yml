@@ -165,7 +165,7 @@ details:
     scheme: http
     standard: FAIL
     ajax: FAIL
-    client: FAIL
+    client: Pass
   - path: /score/js-events/06-dialog-modal
     scheme: http
     standard: Pass
@@ -284,17 +284,22 @@ details:
   - path: /score/navigation/08-window-open
     scheme: http
     standard: FAIL
-    ajax: FAIL
+    ajax: Pass
     client: Pass
   - path: /score/navigation/09-history-replace-state
     scheme: http
     standard: FAIL
     ajax: Pass
     client: Pass
-tests: 58
-passes: 44
+  - path: /score/other/01-bot-detection-globals
+    scheme: http
+    standard: FAIL
+    ajax: FAIL
+    client: FAIL
+tests: 59
+passes: 45
 standardPasses: 21
-ajaxPasses: 30
-clientPasses: 44
+ajaxPasses: 31
+clientPasses: 45
 fails: 14
 score: 76%
