@@ -3,7 +3,7 @@ url: https://public-firing-range.appspot.com/mixedcontent
 details:
 - path: /
   result: Pass
-  rule: 10040
+  rules: [10040]
 tests: 1
 passes: 1
 fails: 0

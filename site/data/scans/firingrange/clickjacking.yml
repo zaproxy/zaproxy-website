@@ -3,10 +3,10 @@ url: https://public-firing-range.appspot.com/clickjacking
 details:
 - path: /clickjacking_csp_no_frame_ancestors
   result: Pass
-  rule: 10055
+  rules: [10055, 10020]
 - path: /clickjacking_xfo_allowall
   result: Pass
-  rule: 10020
+  rules: [10020]
 tests: 2
 passes: 2
 fails: 0
