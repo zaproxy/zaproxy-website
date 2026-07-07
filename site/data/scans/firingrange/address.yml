@@ -9,7 +9,7 @@ details:
   rules: [220000]
 - path: /baseURI/documentwrite
   result: Pass
-  rules: [210000, 220000]
+  rules: [220000]
 - path: /documentURI/documentwrite
   result: Pass
   rules: [220000]
@@ -33,10 +33,10 @@ details:
   rules: [220003]
 - path: /location.hash/inlineevent
   result: Pass
-  rules: [220005, 220000]
+  rules: [220000, 220005]
 - path: /location.hash/innerHtml
   result: Pass
-  rules: [220005, 220000]
+  rules: [220000, 220005]
 - path: /location.hash/jshref
   result: Pass
   rules: [220009]
@@ -69,7 +69,7 @@ details:
   rules: [220003]
 - path: /location/innerHtml
   result: Pass
-  rules: [210000, 220000]
+  rules: [220000]
 - path: /location/rangeCreateContextualFragment
   result: Pass
   rules: [220000, 220003]

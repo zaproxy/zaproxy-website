@@ -12,7 +12,7 @@ details:
   rules: [40012]
 - path: /parameter/script
   result: Pass
-  rules: [200023, 40012]
+  rules: [40012, 200023]
 - path: /script_hash.html
   result: Pass
   rules: [220009]
