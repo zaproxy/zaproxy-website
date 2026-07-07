@@ -16,27 +16,27 @@ Click on the Sections to see the full set of results, which also link to the onl
 
 {{< scan-table >}}
 
-  {{< scan-results2 target= "firingrange" section="address">}}
+  {{< scan-results target= "firingrange" section="address">}}
 
-  {{< scan-results2 target= "firingrange" section="angular">}}
+  {{< scan-results target= "firingrange" section="angular">}}
 
-  {{< scan-results2 target= "firingrange" section="dom">}}
+  {{< scan-results target= "firingrange" section="dom">}}
 
-  {{< scan-results2 target= "firingrange" section="escape">}}
+  {{< scan-results target= "firingrange" section="escape">}}
 
-  {{< scan-results2 target= "firingrange" section="mixedcontent">}}
+  {{< scan-results target= "firingrange" section="mixedcontent">}}
 
-  {{< scan-results2 target= "firingrange" section="reflected">}}
+  {{< scan-results target= "firingrange" section="reflected">}}
 
-  {{< scan-results2 target= "firingrange" section="remoteinclude">}}
+  {{< scan-results target= "firingrange" section="remoteinclude">}}
 
-  {{< scan-results2 target= "firingrange" section="reverseclickjacking">}}
+  {{< scan-results target= "firingrange" section="reverseclickjacking">}}
 
-  {{< scan-results2 target= "firingrange" section="urldom">}}
+  {{< scan-results target= "firingrange" section="urldom">}}
 
-  {{< scan-results2 target= "firingrange" section="leakedcookie">}}
+  {{< scan-results target= "firingrange" section="leakedcookie">}}
 
-  {{< scan-results2 target= "firingrange" section="clickjacking">}}
+  {{< scan-results target= "firingrange" section="clickjacking">}}
 
 {{< /scan-table >}}
 
