@@ -2,141 +2,109 @@ section: Escaped XSS
 url: https://public-firing-range.appspot.com/escape
 details:
 - path: /js/encodeURIComponent
-  result: Pass
-  rule: 200002
+  result: FAIL
 - path: /js/escape
-  result: Pass
-  rule: 200002
+  result: FAIL
 - path: /js/html_escape
-  result: Pass
-  rule: 200002
+  result: FAIL
 - path: /serverside/encodeUrl/attribute_name
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/attribute_quoted
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/attribute_script
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/attribute_singlequoted
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/attribute_unquoted
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/body
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/body_comment
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/css_import
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/css_style
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/css_style_font_value
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/css_style_value
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/head
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/href
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/js_assignment
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/js_comment
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/js_eval
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/js_quoted_string
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/js_singlequoted_string
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/js_slashquoted_string
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/tagname
   result: Broken
-  rule: null
 - path: /serverside/encodeUrl/textarea
   result: Broken
-  rule: null
 - path: /serverside/escapeHtml/attribute_name
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/attribute_quoted
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/attribute_script
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/attribute_singlequoted
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/attribute_unquoted
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/body
   result: Broken
-  rule: null
 - path: /serverside/escapeHtml/body_comment
   result: Broken
-  rule: null
 - path: /serverside/escapeHtml/css_import
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/css_style
   result: Broken
-  rule: null
 - path: /serverside/escapeHtml/css_style_font_value
   result: Broken
-  rule: null
 - path: /serverside/escapeHtml/css_style_value
   result: Broken
-  rule: null
 - path: /serverside/escapeHtml/head
   result: Broken
-  rule: null
 - path: /serverside/escapeHtml/href
   result: Broken
-  rule: null
 - path: /serverside/escapeHtml/js_assignment
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/js_comment
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/js_eval
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/js_quoted_string
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/js_singlequoted_string
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/js_slashquoted_string
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/tagname
   result: Pass
-  rule: 40012
+  rules: [40012]
 - path: /serverside/escapeHtml/textarea
   result: Broken
-  rule: null
 tests: 16
-passes: 16
-fails: 0
-score: 100%
+passes: 13
+fails: 3
+score: 81%

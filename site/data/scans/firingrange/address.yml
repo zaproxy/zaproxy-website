@@ -3,91 +3,91 @@ url: https://public-firing-range.appspot.com/address
 details:
 - path: /URL/documentwrite
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /URLUnencoded/documentwrite
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /baseURI/documentwrite
   result: Pass
-  rule: 220000
+  rules: [210000, 220000]
 - path: /documentURI/documentwrite
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /location.hash/assign
   result: Pass
-  rule: 220002
+  rules: [220002]
 - path: /location.hash/documentwrite
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /location.hash/documentwriteln
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /location.hash/eval
   result: Pass
-  rule: 220003
+  rules: [220003]
 - path: /location.hash/formaction
   result: Pass
-  rule: 220009
+  rules: [220009]
 - path: /location.hash/function
   result: Pass
-  rule: 220003
+  rules: [220003]
 - path: /location.hash/inlineevent
   result: Pass
-  rule: 220005
+  rules: [220005, 220000]
 - path: /location.hash/innerHtml
   result: Pass
-  rule: 220005
+  rules: [220005, 220000]
 - path: /location.hash/jshref
   result: Pass
-  rule: 220009
+  rules: [220009]
 - path: /location.hash/onclickAddEventListener
   result: Pass
-  rule: 220003
+  rules: [220003]
 - path: /location.hash/onclickSetAttribute
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /location.hash/rangeCreateContextualFragment
   result: Pass
-  rule: 220000
+  rules: [220000, 220003]
 - path: /location.hash/replace
   result: Pass
-  rule: 220002
+  rules: [220002]
 - path: /location.hash/setTimeout
   result: Pass
-  rule: 220003
+  rules: [220003]
 - path: /location/assign
   result: Pass
-  rule: 220002
+  rules: [220002]
 - path: /location/documentwrite
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /location/documentwriteln
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /location/eval
   result: Pass
-  rule: 220003
+  rules: [220003]
 - path: /location/innerHtml
   result: Pass
-  rule: 210000
+  rules: [210000, 220000]
 - path: /location/rangeCreateContextualFragment
   result: Pass
-  rule: 220000
+  rules: [220000, 220003]
 - path: /location/replace
   result: Pass
-  rule: 220002
+  rules: [220002]
 - path: /location/setTimeout
   result: Pass
-  rule: 220003
+  rules: [220003]
 - path: /locationhref/documentwrite
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /locationpathname/documentwrite
   result: Pass
-  rule: 220000
+  rules: [220000]
 - path: /locationsearch/documentwrite
   result: Pass
-  rule: 220000
+  rules: [220000]
 tests: 29
 passes: 29
 fails: 0

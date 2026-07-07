@@ -3,10 +3,10 @@ url: https://public-firing-range.appspot.com/leakedcookie
 details:
 - path: /leakedcookie
   result: Pass
-  rule: 10011
+  rules: [10011]
 - path: /leakedinresource
   result: Pass
-  rule: 10011
+  rules: [10011]
 tests: 2
 passes: 2
 fails: 0
