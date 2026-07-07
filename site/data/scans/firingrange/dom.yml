@@ -12,7 +12,7 @@ details:
   rules: [220003]
 - path: /eventtriggering/document/formSubmission/innerHtml
   result: Pass
-  rules: [220005, 220000]
+  rules: [220000, 220005]
 - path: /eventtriggering/document/inputTyping/documentWrite
   result: Pass
   rules: [220000]
@@ -33,7 +33,7 @@ details:
   rules: [210001, 210017, 220003]
 - path: /toxicdom/document/cookie_set/innerHtml
   result: Pass
-  rules: [210000, 210017, 220005, 220000]
+  rules: [210000, 210017, 220000, 220005]
 - path: /toxicdom/document/referrer/documentWrite
   result: Pass
   rules: [220000, 220002, 220009]
@@ -42,7 +42,7 @@ details:
   rules: [210001, 220002, 220003, 220009]
 - path: /toxicdom/document/referrer/innerHtml
   result: Pass
-  rules: [210000, 220005, 220000, 220002, 220009]
+  rules: [210000, 220000, 220002, 220005, 220009]
 - path: /toxicdom/external/localStorage/array/eval
   result: Pass
   rules: [220003]

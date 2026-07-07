@@ -13,8 +13,7 @@ details:
 - path: /angular_body/1.2.19
   result: FAIL
 - path: /angular_body/1.2.24
-  result: Pass
-  rules: [200021]
+  result: FAIL
 - path: /angular_body/1.4.0
   result: Pass
   rules: [200021]
@@ -46,10 +45,11 @@ details:
   result: Pass
   rules: [200021]
 - path: /angular_body_raw_post/1.6.0
-  result: FAIL
+  result: Pass
+  rules: [200021]
 - path: /angular_cookie_parse/1.6.0
   result: Pass
-  rules: [210017, 220004, 200021]
+  rules: [200021, 210017, 220004]
 - path: /angular_form_parse/1.6.0
   result: Pass
   rules: [220004]
@@ -58,7 +58,7 @@ details:
   rules: [220004]
 - path: /angular_storage_parse/1.6.0
   result: Pass
-  rules: [220004]
+  rules: [200021, 220004]
 tests: 20
 passes: 18
 fails: 2
