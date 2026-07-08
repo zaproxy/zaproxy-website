@@ -2,29 +2,29 @@ section: SQL Injection GET False Positives
 url: /SInjection-FalsePositives-GET/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case01-FalsePositiveInjectionInLogin-PsAndIv-500ErrorOnIvFailure.jsp
-  result: FAIL
-  rules: [40018]
+  rule: 40018
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case02-FalsePositiveInjectionInLogin-PsAndIv-500SyntaxErrorOnIvFailure.jsp
-  result: FAIL
-  rules: [40018]
+  rule: 40018
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case03-FalsePositiveInjectionInLogin-PsAndIv-200ErrorOnIvFailure.jsp
-  result: Pass
+  score: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case04-FalsePositiveInjectionInLogin-PsAndIv-200SyntaxErrorOnIvFailure.jsp
-  result: Pass
+  score: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case05-FalsePositiveInjectionInLogin-PsAndIv-Different200ValidOnIvFailure.jsp
-  result: Pass
+  score: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case06-FalsePositiveInjectionInLogin-HoneyPotNoSQL-Fake500SyntaxErrorOnIvFailure.jsp
-  result: FAIL
-  rules: [40018]
+  rule: 40018
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case07-FalsePositiveInjectionInLogin-PsAndIv-500ErrorOnUnrelatedSyntaxError.jsp
-  result: Pass
+  score: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case08-FalsePositiveInjectionInLogin-PsAndIv-200ErrorOnUnrelatedSyntaxError.jsp
-  result: Pass
+  score: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case09-FalsePositiveInjectionInUpdate-PsAndIv-Different200ValidOnIvFailure.jsp
-  result: Pass
+  score: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case10-FalsePositiveInjectionInUpdate-PsAndIv-Identical200Response.jsp
-  result: Pass
+  score: Fail
 tests: 10
-passes: 7
-fails: 3
-score: 70%
+passes: 3
+fails: 7
+score: 30%

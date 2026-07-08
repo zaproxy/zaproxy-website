@@ -2,17 +2,17 @@ section: DOM XSS GET Experimental
 url: /DXSS-Detection-Evaluation-GET-Experimental/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case01-InjectionDirectlyInToDomXssSinkEval.jsp
-  result: Pass
-  rules: [40026]
+  rule: 40026
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case02-InjectionDirectlyInToDomXssSinkLocation.jsp
-  result: Pass
-  rules: [40026]
+  rule: 40026
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case03-InjectionInToVariableBeingAssignedToDomXssSinkEval.jsp
-  result: Pass
-  rules: [40026]
+  rule: 40026
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case04-InjectionInToVariableBeingAssignedToDomXssSinkLocation.jsp
-  result: Pass
-  rules: [40026]
+  rule: 40026
+  score: Pass
 tests: 4
 passes: 4
 fails: 0

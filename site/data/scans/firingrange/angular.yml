@@ -2,64 +2,74 @@ section: Angular-based XSSes
 url: https://public-firing-range.appspot.com/angular
 details:
 - path: /angular_body/1.1.5
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body/1.2.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body/1.2.18
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body/1.2.19
-  result: FAIL
+  score: Fail
 - path: /angular_body/1.2.24
-  result: FAIL
+  rule: 200021
+  score: 50%
 - path: /angular_body/1.4.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body/1.6.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body_alt_symbols/1.4.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: 50%
 - path: /angular_body_alt_symbols_raw/1.6.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: 50%
 - path: /angular_body_attribute_ng/1.4.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body_attribute_non_ng/1.4.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body_attribute_non_ng_raw/1.4.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body_raw/1.4.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body_raw_escaped/1.4.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: 50%
 - path: /angular_body_raw_escaped_alt_symbols/1.4.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: Pass
 - path: /angular_body_raw_post/1.6.0
-  result: Pass
-  rules: [200021]
+  rule: 200021
+  score: 50%
 - path: /angular_cookie_parse/1.6.0
-  result: Pass
-  rules: [200021, 210017, 220004]
+  rule: 200021
+  score: Pass
+- path: /angular_cookie_parse/1.6.0
+  rule: 210017
+  score: Pass
+- path: /angular_cookie_parse/1.6.0
+  rule: 220004
+  score: Pass
 - path: /angular_form_parse/1.6.0
-  result: Pass
-  rules: [220004]
+  rule: 220004
+  score: Pass
 - path: /angular_post_message_parse/1.6.0
-  result: Pass
-  rules: [220004]
+  rule: 220004
+  score: Pass
 - path: /angular_storage_parse/1.6.0
-  result: Pass
-  rules: [200021, 220004]
+  rule: 200021
+  score: Pass
+- path: /angular_storage_parse/1.6.0
+  rule: 220004
+  score: Pass
 tests: 20
-passes: 18
-fails: 2
-score: 90%
+passes: 14
+fails: 1
+score: 82%
