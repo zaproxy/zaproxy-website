@@ -2,20 +2,23 @@ section: Remote Inclusion XSS
 url: https://public-firing-range.appspot.com/remoteinclude
 details:
 - path: /object_hash.html
-  result: Pass
-  rules: [220009]
+  rule: 220009
+  score: Pass
 - path: /parameter/object/application_x-shockwave-flash
-  result: Pass
-  rules: [40012]
+  rule: 40012
+  score: Pass
 - path: /parameter/object_raw
-  result: Pass
-  rules: [40012]
+  rule: 40012
+  score: Pass
 - path: /parameter/script
-  result: Pass
-  rules: [40012, 200023]
+  rule: 40012
+  score: Pass
+- path: /parameter/script
+  rule: 200023
+  score: Pass
 - path: /script_hash.html
-  result: Pass
-  rules: [220009]
+  rule: 220009
+  score: Pass
 tests: 5
 passes: 5
 fails: 0

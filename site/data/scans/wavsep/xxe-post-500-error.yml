@@ -2,38 +2,18 @@ section: XXE POST Error
 url: /XXE-POST-500Error
 details:
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case01-XXE-Injection-Entity-Example-WithErrors.jsp
-  result: FAIL
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case01-XXE-Injection-Entity-Example-WithErrors.jsp
-  result: Pass
-  rules: [90023]
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case01-XXE-Injection-Entity-Example-WithErrors.jsp
-  result: Pass
-  rules: [90023]
+  rule: 90023
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case02-XXE-Injection-Denial-of-Service-WithErrors.jsp
-  result: FAIL
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case02-XXE-Injection-Denial-of-Service-WithErrors.jsp
-  result: Pass
-  rules: [90023]
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case02-XXE-Injection-Denial-of-Service-WithErrors.jsp
-  result: Pass
-  rules: [90023]
+  rule: 90023
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case03-XXE-Injection-File-Disclosure-WithErrors.jsp
-  result: FAIL
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case03-XXE-Injection-File-Disclosure-WithErrors.jsp
-  result: Pass
-  rules: [90023]
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case03-XXE-Injection-File-Disclosure-WithErrors.jsp
-  result: Pass
-  rules: [90023]
+  rule: 90023
+  score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case04-XXE-Injection-SSRF-WithErrors.jsp
-  result: FAIL
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case04-XXE-Injection-SSRF-WithErrors.jsp
-  result: Pass
-  rules: [90023]
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case04-XXE-Injection-SSRF-WithErrors.jsp
-  result: Pass
-  rules: [90023]
-tests: 12
-passes: 8
-fails: 4
-score: 67%
+  rule: 90023
+  score: Pass
+tests: 4
+passes: 4
+fails: 0
+score: 100%

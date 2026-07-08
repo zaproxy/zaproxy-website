@@ -11,10 +11,10 @@
       <td><h5>{{ $data.score}}</h5></td>
     </tr>
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
-      <th style="width: 55%">Individual Tests</th>
-      <th style="width: 30%">Rules</th>
-      <th style="white-space: nowrap">Pass</th>
-      <th style="white-space: nowrap">Fail</th>
+      <th style="width: 60%">Individual Tests</th>
+      <th style="width: 15%">Rule</th>
+      <th style="width: 15%; white-space: nowrap">Score</th>
+      <th style="white-space: nowrap">Trend</th>
     </tr>
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
       {{ if $nolinks }}
@@ -22,9 +22,9 @@
       {{ else }}
       <td>Top Level: <a href="{{ $data.url}}/" id="section-{{ $section }}">{{ $data.url}}</a></td>
       {{ end }}
-      <td> </td>
-      <td align="center">{{ $data.passes}}</td>
-      <td align="center">{{ $data.fails}}</td>
+      <td></td>
+      <td align="center">{{ $data.passes}} Pass / {{ $data.fails}} Fail</td>
+      <td></td>
     </tr>
     {{ range $test := $data.details }}
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
@@ -33,25 +33,24 @@
       {{ else }}
       <td><a href="{{ $data.url}}{{ $test.path}}">{{ $test.path}}</a></td>
       {{ end }}
-      {{ if eq $test.result "Broken" }}
-        <td><div class="scan-result-na">⚠️ No vuln</div></td>
-      {{ else if eq $test.result "Pass" }}
-        <td>{{ range $test.rules }}<a href="/docs/alerts/{{ . }}/">{{ . }}</a> {{ end }}</td>
+      {{ if $test.rule }}
+        <td><a href="/docs/alerts/{{ $test.rule }}/">{{ $test.rule }}</a></td>
       {{ else }}
         <td></td>
       {{ end }}
-      {{ if eq $test.result "Pass" }}
-        <td style="white-space: nowrap"><div class="scan-result-pass">&#10003; {{ $test.result}} </div></td>
-        <td></td>
-      {{ else if eq $test.result "Broken" }}
-        <td></td>
-        <td></td>
-      {{ else if eq $test.result "FAIL" }}
-        <td></td>
-        <td style="white-space: nowrap"><div class="scan-result-fail">&#10060; {{ $test.result}} </div></td>
+      {{ if eq $test.score "Pass" }}
+        <td style="white-space: nowrap"><div class="scan-result-pass">&#10003; Pass</div></td>
+      {{ else if eq $test.score "Fail" }}
+        <td style="white-space: nowrap"><div class="scan-result-fail">&#10060; Fail</div></td>
+      {{ else }}
+        <td style="white-space: nowrap"><div class="scan-result-partial">{{ $test.score }}</div></td>
+      {{ end }}
+      {{ if eq $test.trend "up" }}
+        <td><span title="Previous: {{ $test.prev }}" style="color: green">&#x2191;</span></td>
+      {{ else if eq $test.trend "down" }}
+        <td><span title="Previous: {{ $test.prev }}" style="color: red">&#x2193;</span></td>
       {{ else }}
         <td></td>
-        <td style="white-space: nowrap"><div class="scan-result-fail">‼️ {{ $test.result}} </div></td>
       {{ end }}
     </tr>
     {{ end }}
