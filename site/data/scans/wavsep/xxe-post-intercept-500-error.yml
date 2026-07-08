@@ -8,6 +8,8 @@ details:
   result: Pass
   rules: [90023]
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-Intercept-500Error/Case02-XXE-Injection-Denial-of-Service-WithErrors.jsp
+  result: FAIL
+- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-Intercept-500Error/Case02-XXE-Injection-Denial-of-Service-WithErrors.jsp
   result: Pass
   rules: [90023]
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-Intercept-500Error/Case02-XXE-Injection-Denial-of-Service-WithErrors.jsp
@@ -19,8 +21,6 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-Intercept-500Error/Case03-XXE-Injection-File-Disclosure-WithErrors.jsp
   result: Pass
   rules: [90023]
-- path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-Intercept-500Error/Case04-XXE-Injection-SSRF-WithErrors.jsp
-  result: FAIL
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-Intercept-500Error/Case04-XXE-Injection-SSRF-WithErrors.jsp
   result: Pass
   rules: [90023]
