@@ -13,7 +13,8 @@ details:
 - path: /angular_body/1.2.19
   result: FAIL
 - path: /angular_body/1.2.24
-  result: FAIL
+  result: Pass
+  rules: [200021]
 - path: /angular_body/1.4.0
   result: Pass
   rules: [200021]
@@ -21,11 +22,9 @@ details:
   result: Pass
   rules: [200021]
 - path: /angular_body_alt_symbols/1.4.0
-  result: Pass
-  rules: [200021]
+  result: FAIL
 - path: /angular_body_alt_symbols_raw/1.6.0
-  result: Pass
-  rules: [200021]
+  result: FAIL
 - path: /angular_body_attribute_ng/1.4.0
   result: Pass
   rules: [200021]
@@ -39,14 +38,12 @@ details:
   result: Pass
   rules: [200021]
 - path: /angular_body_raw_escaped/1.4.0
-  result: Pass
-  rules: [200021]
+  result: FAIL
 - path: /angular_body_raw_escaped_alt_symbols/1.4.0
   result: Pass
   rules: [200021]
 - path: /angular_body_raw_post/1.6.0
-  result: Pass
-  rules: [200021]
+  result: FAIL
 - path: /angular_cookie_parse/1.6.0
   result: Pass
   rules: [200021, 210017, 220004]
@@ -60,6 +57,6 @@ details:
   result: Pass
   rules: [200021, 220004]
 tests: 20
-passes: 18
-fails: 2
-score: 90%
+passes: 15
+fails: 5
+score: 75%
