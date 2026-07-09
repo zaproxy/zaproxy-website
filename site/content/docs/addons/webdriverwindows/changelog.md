@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: webdriverwindows
-    version: '208'
+    version: '209'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [209] - 2026-07-08
+### Changed
+- Update ChromeDriver to 150.0.7871.114.
 
 ## [208] - 2026-07-07
 ### Changed
@@ -873,6 +877,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First release: Firefox v0.13.0 Chrome v2.27 IE 3.0.0
 
+[209]: https://github.com/zaproxy/zap-extensions/releases/webdriverwindows-v209
 [208]: https://github.com/zaproxy/zap-extensions/releases/webdriverwindows-v208
 [207]: https://github.com/zaproxy/zap-extensions/releases/webdriverwindows-v207
 [206]: https://github.com/zaproxy/zap-extensions/releases/webdriverwindows-v206
