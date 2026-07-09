@@ -34,8 +34,8 @@ details:
   - path: /score/dynamic-content/05-sse-injected
     scheme: http
     standard: FAIL
-    ajax: FAIL
-    client: FAIL
+    ajax: Pass
+    client: Pass
   - path: /score/dynamic-content/06-websocket-injected
     scheme: http
     standard: FAIL
@@ -114,7 +114,7 @@ details:
   - path: /score/forms/11-fetch-get
     scheme: http
     standard: FAIL
-    ajax: Pass
+    ajax: FAIL
     client: Pass
   - path: /score/forms/12-xhr-post
     scheme: http
@@ -297,9 +297,9 @@ details:
     ajax: FAIL
     client: FAIL
 tests: 59
-passes: 45
+passes: 46
 standardPasses: 21
 ajaxPasses: 31
-clientPasses: 45
-fails: 14
-score: 76%
+clientPasses: 46
+fails: 13
+score: 78%
