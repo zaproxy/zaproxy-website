@@ -6,7 +6,7 @@ details:
   score: Pass
 - path: /angular_body/1.2.0
   rule: 200021
-  score: Pass
+  score: 83%
 - path: /angular_body/1.2.18
   rule: 200021
   score: Pass
@@ -14,46 +14,46 @@ details:
   score: Fail
 - path: /angular_body/1.2.24
   rule: 200021
-  score: 50%
+  score: 67%
 - path: /angular_body/1.4.0
   rule: 200021
   score: Pass
 - path: /angular_body/1.6.0
   rule: 200021
-  score: Pass
+  score: 50%
 - path: /angular_body_alt_symbols/1.4.0
   rule: 200021
-  score: 50%
+  score: 33%
 - path: /angular_body_alt_symbols_raw/1.6.0
   rule: 200021
-  score: 50%
+  score: 67%
 - path: /angular_body_attribute_ng/1.4.0
   rule: 200021
-  score: Pass
+  score: 83%
 - path: /angular_body_attribute_non_ng/1.4.0
   rule: 200021
-  score: Pass
+  score: 83%
 - path: /angular_body_attribute_non_ng_raw/1.4.0
   rule: 200021
-  score: Pass
+  score: 83%
 - path: /angular_body_raw/1.4.0
   rule: 200021
-  score: Pass
+  score: 83%
 - path: /angular_body_raw_escaped/1.4.0
   rule: 200021
-  score: 50%
+  score: 67%
 - path: /angular_body_raw_escaped_alt_symbols/1.4.0
   rule: 200021
-  score: Pass
+  score: 33%
 - path: /angular_body_raw_post/1.6.0
   rule: 200021
-  score: 50%
+  score: 67%
 - path: /angular_cookie_parse/1.6.0
   rule: 200021
-  score: Pass
+  score: 83%
 - path: /angular_cookie_parse/1.6.0
   rule: 210017
-  score: Pass
+  score: 50%
 - path: /angular_cookie_parse/1.6.0
   rule: 220004
   score: Pass
@@ -61,15 +61,18 @@ details:
   rule: 220004
   score: Pass
 - path: /angular_post_message_parse/1.6.0
+  rule: 200021
+  score: 50%
+- path: /angular_post_message_parse/1.6.0
   rule: 220004
   score: Pass
 - path: /angular_storage_parse/1.6.0
   rule: 200021
-  score: Pass
+  score: 83%
 - path: /angular_storage_parse/1.6.0
   rule: 220004
   score: Pass
 tests: 20
-passes: 14
+passes: 7
 fails: 1
-score: 82%
+score: 75%
