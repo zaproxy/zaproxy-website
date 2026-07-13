@@ -3,7 +3,7 @@ url: /LFI-Detection-Evaluation-GET-302Redirect/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case01-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
-  score: Pass
+  score: 83%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case02-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
   score: Pass
@@ -158,6 +158,6 @@ details:
   rule: 6
   score: Pass
 tests: 52
-passes: 52
+passes: 51
 fails: 0
 score: 100%

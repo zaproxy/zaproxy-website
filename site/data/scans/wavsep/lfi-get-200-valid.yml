@@ -147,17 +147,17 @@ details:
   score: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case62-LFI-ContextStream-FilenameContext-BackslashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
-  score: 50%
+  score: 67%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case64-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   rule: 6
-  score: 50%
+  score: 83%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case66-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   rule: 6
-  score: 50%
+  score: 67%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case68-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
   rule: 6
   score: Pass
 tests: 52
 passes: 49
 fails: 0
-score: 97%
+score: 98%

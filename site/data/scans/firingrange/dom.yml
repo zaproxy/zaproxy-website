@@ -41,6 +41,9 @@ details:
   rule: 210017
   score: Pass
 - path: /toxicdom/document/cookie_set/eval
+  rule: 210018
+  score: 17%
+- path: /toxicdom/document/cookie_set/eval
   rule: 220003
   score: Pass
 - path: /toxicdom/document/cookie_set/innerHtml
@@ -96,7 +99,7 @@ details:
   score: Pass
 - path: /toxicdom/external/localStorage/function/documentWrite
   rule: 210017
-  score: Pass
+  score: 83%
 - path: /toxicdom/external/localStorage/function/documentWrite
   rule: 220000
   score: Pass
@@ -202,6 +205,9 @@ details:
 - path: /toxicdom/sessionStorage/function/innerHtml
   rule: 210000
   score: Pass
+- path: /toxicdom/sessionStorage/function/innerHtml
+  rule: 210017
+  score: 17%
 - path: /toxicdom/sessionStorage/function/innerHtml
   rule: 220000
   score: Pass
