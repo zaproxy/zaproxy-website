@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: scripts
-    version: 45.19.0
+    version: 45.20.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [45.20.0] - 2026-07-13
+### Added
+- GUI support for Zest script chains and failure level in the Automation Framework Script job dialog (via the Use Script Chain checkbox, and Chains tab).
+
+### Changed
+- Update dependency.
 
 ## [45.19.0] - 2026-07-06
 ### Added
@@ -451,6 +458,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[45.20.0]: https://github.com/zaproxy/zap-extensions/releases/scripts-v45.20.0
 [45.19.0]: https://github.com/zaproxy/zap-extensions/releases/scripts-v45.19.0
 [45.18.0]: https://github.com/zaproxy/zap-extensions/releases/scripts-v45.18.0
 [45.17.0]: https://github.com/zaproxy/zap-extensions/releases/scripts-v45.17.0

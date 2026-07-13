@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: quickstart
-    version: '58'
+    version: '59'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v58/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/quickstart-v59/bom.json
   components:
   - name: aopalliance
     version: '1.0'
@@ -140,7 +140,7 @@ sbom:
     version: 4.8.184
     licenses: MIT
   - name: client
-    version: 0.30.0
+    version: 0.31.0
     licenses: ''
   - name: commonlib
     version: 1.43.0
@@ -236,7 +236,7 @@ sbom:
     version: 2.42.0
     licenses: Apache-2.0
   - name: exim
-    version: 0.21.0
+    version: 0.22.0
     licenses: ''
   - name: ezmorph
     version: 1.0.6
@@ -263,10 +263,10 @@ sbom:
     version: 9.13.3
     licenses: LGPL-2.1-or-later
   - name: flyway-core
-    version: 12.9.0
+    version: 12.10.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 12.9.0
+    version: 12.10.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -362,13 +362,13 @@ sbom:
     version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 3.1.1
+    version: 3.1.4
     licenses: Apache-2.0
   - name: jackson-core
     version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-core
-    version: 3.1.1
+    version: 3.1.4
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
@@ -377,7 +377,7 @@ sbom:
     version: 2.22.0
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 3.1.1
+    version: 3.1.4
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
     version: 2.22.0
@@ -648,7 +648,7 @@ sbom:
     version: 0.7.0
     licenses: ''
   - name: reports
-    version: 0.46.0
+    version: 0.47.0
     licenses: ''
   - name: rsyntaxtextarea
     version: 3.6.0
@@ -732,7 +732,7 @@ sbom:
     version: 0.21.0
     licenses: ''
   - name: spiderAjax
-    version: 23.32.0
+    version: 23.33.0
     licenses: ''
   - name: spotbugs-annotations
     version: 4.8.6
@@ -786,7 +786,7 @@ sbom:
     version: 0.36.0
     licenses: MPL-2.0
   - name: zest
-    version: 48.14.0
+    version: 48.15.0
     licenses: ''
 ---
 

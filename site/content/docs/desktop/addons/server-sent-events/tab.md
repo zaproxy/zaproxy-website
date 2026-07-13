@@ -7,6 +7,7 @@ weight: 1
 
 # Server-Sent Events tab
 
+
 The Server-Sent Events tab displays all events from event streams.
 
 

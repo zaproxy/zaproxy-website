@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: bruteforce
-    version: '20'
+    version: '21'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [21] - 2026-07-13
+### Changed
+- Maintenance changes.
+
+### Fixed
+- Bug: tested the wrong condition when detecting "file not found" responses.
 
 ## [20] - 2025-12-15
 ### Changed
@@ -136,6 +143,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First release as an add-on, previously bundled with ZAP core.
 
+[21]: https://github.com/zaproxy/zap-extensions/releases/bruteforce-v21
 [20]: https://github.com/zaproxy/zap-extensions/releases/bruteforce-v20
 [19]: https://github.com/zaproxy/zap-extensions/releases/bruteforce-v19
 [18]: https://github.com/zaproxy/zap-extensions/releases/bruteforce-v18
