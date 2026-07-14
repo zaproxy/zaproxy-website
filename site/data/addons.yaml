@@ -180,9 +180,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.42.0/commonlib-release-1.42.0.zap
-  date: 2026-06-12
-  version: 1.42.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.43.0/commonlib-release-1.43.0.zap
+  date: 2026-07-14
+  version: 1.43.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -1003,9 +1003,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.52.0/selenium-release-15.52.0.zap
-  date: 2026-07-13
-  version: 15.52.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.53.0/selenium-release-15.53.0.zap
+  date: 2026-07-14
+  version: 15.53.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
