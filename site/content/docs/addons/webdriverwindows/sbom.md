@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: webdriverwindows
-    version: '209'
+    version: '210'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v209/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v210/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -179,28 +179,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
