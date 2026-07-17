@@ -350,10 +350,10 @@ OWASP_2021_A03:
   link: https://owasp.org/Top10/A03_2021-Injection/
 
 OWASP_2021_A04:
-  link: https://owasp.org/Top10/A04_2021-Insecure_Design/
+  link: 
 
 OWASP_2021_A05:
-  link: https://owasp.org/Top10/A05_2021-Security_Misconfiguration/
+  link: 
 
 OWASP_2021_A06:
   link: https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
@@ -374,7 +374,7 @@ OWASP_2025_A01:
   link: 
 
 OWASP_2025_A02:
-  link: https://owasp.org/Top10/2025/A02_2025-Security_Misconfiguration/
+  link: 
 
 OWASP_2025_A03:
   link: 
