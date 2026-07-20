@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: webdriverlinux
-    version: '210'
+    version: '211'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [211] - 2026-07-20
+### Changed
+- Update geckodriver to 0.37.1.
 
 ## [210] - 2026-07-16
 ### Changed
@@ -881,6 +885,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First release: Firefox v0.13.0 Chrome v2.27
 
+[211]: https://github.com/zaproxy/zap-extensions/releases/webdriverlinux-v211
 [210]: https://github.com/zaproxy/zap-extensions/releases/webdriverlinux-v210
 [209]: https://github.com/zaproxy/zap-extensions/releases/webdriverlinux-v209
 [208]: https://github.com/zaproxy/zap-extensions/releases/webdriverlinux-v208
