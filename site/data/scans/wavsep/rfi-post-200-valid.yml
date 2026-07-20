@@ -4,30 +4,48 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case01-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case02-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case03-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-AnyPathReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case04-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-AnyPathReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case05-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultFullInput-NoProtocolReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case06-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultInvalidInput-NoProtocolReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case07-RFI-UrlClass-FilenameContext-Unrestricted-HttpURL-DefaultEmptyInput-NoProtocolReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case08-RFI-UrlClass-FilenameContext-HttpInputValidation-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/RFI/RFI-Detection-Evaluation-POST-200Valid/Case09-RFI-UrlClass-FilenameContext-HttpInputRemoval-HttpURL-DefaultRelativeInput-AnyPathReq-Read.jsp
   rule: 7
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 9
 passes: 9
 fails: 0

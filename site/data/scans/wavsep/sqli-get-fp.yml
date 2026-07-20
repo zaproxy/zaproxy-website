@@ -3,28 +3,48 @@ url: /SInjection-FalsePositives-GET/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case01-FalsePositiveInjectionInLogin-PsAndIv-500ErrorOnIvFailure.jsp
   rule: 40018
-  score: Pass
+  score: 86%
+  trend: down
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case02-FalsePositiveInjectionInLogin-PsAndIv-500SyntaxErrorOnIvFailure.jsp
   rule: 40018
-  score: Pass
+  score: 86%
+  trend: down
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case03-FalsePositiveInjectionInLogin-PsAndIv-200ErrorOnIvFailure.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case04-FalsePositiveInjectionInLogin-PsAndIv-200SyntaxErrorOnIvFailure.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case05-FalsePositiveInjectionInLogin-PsAndIv-Different200ValidOnIvFailure.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case06-FalsePositiveInjectionInLogin-HoneyPotNoSQL-Fake500SyntaxErrorOnIvFailure.jsp
   rule: 40018
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case07-FalsePositiveInjectionInLogin-PsAndIv-500ErrorOnUnrelatedSyntaxError.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case08-FalsePositiveInjectionInLogin-PsAndIv-200ErrorOnUnrelatedSyntaxError.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case09-FalsePositiveInjectionInUpdate-PsAndIv-Different200ValidOnIvFailure.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case10-FalsePositiveInjectionInUpdate-PsAndIv-Identical200Response.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 tests: 10
-passes: 3
+passes: 1
 fails: 7
-score: 30%
+score: 27%

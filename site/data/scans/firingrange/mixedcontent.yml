@@ -4,6 +4,8 @@ details:
 - path: /
   rule: 10040
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 1
 passes: 1
 fails: 0

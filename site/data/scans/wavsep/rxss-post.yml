@@ -4,94 +4,158 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case01-Tag2HtmlPageScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case02-Tag2TagScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case03-Tag2TagStructure.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case04-Tag2HtmlComment.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case05-Tag2Frameset.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case06-Event2TagScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case07-Event2DoubleQuotePropertyScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case08-Event2SingleQuotePropertyScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case09-SrcProperty2TagStructure.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case10-Js2DoubleQuoteJsEventScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case11-Js2SingleQuoteJsEventScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case12-Js2JsEventScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case13-Vbs2DoubleQuoteVbsEventScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case14-Vbs2SingleQuoteVbsEventScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case15-Vbs2VbsEventScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case16-Js2ScriptSupportingProperty.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case17-Js2PropertyJsScopeDoubleQuoteDelimiter.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case18-Js2PropertyJsScopeSingleQuoteDelimiter.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case19-Js2PropertyJsScope.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case20-Vbs2PropertyVbsScopeDoubleQuoteDelimiter.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case21-Vbs2PropertyVbsScope.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case22-Js2ScriptTagDoubleQuoteDelimiter.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case23-Js2ScriptTagSingleQuoteDelimiter.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case24-Js2ScriptTag.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case25-Vbs2ScriptTagDoubleQuoteDelimiter.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case26-Vbs2ScriptTag.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case27-Js2ScriptTagOLCommentScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case28-Js2ScriptTagMLCommentScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case29-Vbs2ScriptTagOLCommentScope.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case30-Tag2HtmlPageScopeMultipleVulnerabilities.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case31-Tag2HtmlPageScopeDuringException.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST/Case32-Tag2HtmlPageScopeValidViewstateRequired.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 32
 passes: 27
 fails: 5

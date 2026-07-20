@@ -3,49 +3,81 @@ url: https://public-firing-range.appspot.com/escape
 details:
 - path: /js/encodeURIComponent
   score: Fail
+  trend: stable
+  prev: Fail
 - path: /js/escape
   score: Fail
+  trend: stable
+  prev: Fail
 - path: /js/html_escape
   score: Fail
+  trend: stable
+  prev: Fail
 - path: /serverside/escapeHtml/attribute_name
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/attribute_quoted
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/attribute_script
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/attribute_singlequoted
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/attribute_unquoted
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/css_import
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/js_assignment
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/js_comment
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/js_eval
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/js_quoted_string
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/js_singlequoted_string
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/js_slashquoted_string
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /serverside/escapeHtml/tagname
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 16
 passes: 13
 fails: 3
