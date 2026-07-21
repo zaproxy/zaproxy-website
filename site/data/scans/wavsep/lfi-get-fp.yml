@@ -4,21 +4,37 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case01-LFI-FalsePositive-Forward-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   rule: 6
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case02-LFI-FalsePositive-OpenRedirect-TextHtmlValidResponse-FilenameContext-Unrestricted-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   rule: 6
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case03-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-WhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case04-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-TraversalRemovalAndWhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case05-LFI-FalsePositive-ContextStream-TextHtmlValidResponse-FilenameContext-WhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case06-LFI-FalsePositive-ContextStream-TextHtmlValidResponse-FilenameContext-TraversalRemovalAndWhiteList-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case07-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-EnumerationResponseOnly-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-FalsePositives-GET/Case08-LFI-FalsePositive-FileClass-TextHtmlValidResponse-FilenameContext-InputNotUsed-OSPath-DefaultRelativeInput-NoPathReq-Read.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 tests: 8
 passes: 2
 fails: 6

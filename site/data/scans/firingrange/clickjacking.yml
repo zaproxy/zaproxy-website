@@ -4,12 +4,18 @@ details:
 - path: /clickjacking_csp_no_frame_ancestors
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /clickjacking_csp_no_frame_ancestors
   rule: 10055
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /clickjacking_xfo_allowall
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 2
 passes: 2
 fails: 0

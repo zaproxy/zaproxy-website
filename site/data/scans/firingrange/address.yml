@@ -4,102 +4,183 @@ details:
 - path: /URL/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /URLUnencoded/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /baseURI/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
+- path: /documentURI/documentwrite
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
 - path: /documentURI/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/assign
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/documentwriteln
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/formaction
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/function
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/inlineevent
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/inlineevent
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/jshref
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/onclickAddEventListener
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/onclickSetAttribute
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/rangeCreateContextualFragment
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/rangeCreateContextualFragment
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/replace
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location.hash/setTimeout
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/assign
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
+- path: /location/documentwrite
+  rule: 210000
+  score: 29%
+  trend: up
+  prev: Fail
 - path: /location/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/documentwriteln
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
+- path: /location/innerHtml
+  rule: 210000
+  score: 29%
+  trend: up
+  prev: Fail
 - path: /location/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/rangeCreateContextualFragment
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/rangeCreateContextualFragment
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/replace
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/setTimeout
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /locationhref/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /locationpathname/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /locationsearch/documentwrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 29
 passes: 29
 fails: 0

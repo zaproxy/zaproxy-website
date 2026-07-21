@@ -4,81 +4,133 @@ details:
 - path: /location/hash/a.href
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/base.href
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/document.location
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/embed.src
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/fetch
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/form.action
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/iframe.src
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/input.formaction
   rule: 220010
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/link.href
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/object.data
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/param.code.value
   rule: 220010
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/param.movie.value
   rule: 220010
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/param.src.value
   rule: 220010
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/param.url.value
   rule: 220010
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/script.href
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/script.src
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/script.src.partial_domain
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/script.src.partial_path
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/script.src.partial_query
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/window.open
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/hash/xhr.open
   rule: 220006
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/search/area.href
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/search/button.formaction
   rule: 220010
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/search/frame.src
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/search/location.assign
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /location/search/svg.a
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 26
 passes: 26
 fails: 0

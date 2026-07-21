@@ -4,21 +4,33 @@ details:
 - path: /object_hash.html
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/object/application_x-shockwave-flash
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/object_raw
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/script
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/script
   rule: 200023
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /script_hash.html
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 5
 passes: 5
 fails: 0

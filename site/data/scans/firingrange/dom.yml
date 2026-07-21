@@ -4,279 +4,478 @@ details:
 - path: /dompropagation/
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /eventtriggering/document/formSubmission/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /eventtriggering/document/formSubmission/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /eventtriggering/document/formSubmission/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /eventtriggering/document/formSubmission/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /eventtriggering/document/inputTyping/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /eventtriggering/document/inputTyping/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /eventtriggering/document/inputTyping/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /eventtriggering/document/inputTyping/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie_set/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie_set/eval
   rule: 210001
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie_set/eval
   rule: 210017
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie_set/eval
   rule: 210018
-  score: 17%
+  score: 14%
+  trend: stable
+  prev: 17%
 - path: /toxicdom/document/cookie_set/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie_set/innerHtml
   rule: 210000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie_set/innerHtml
   rule: 210017
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie_set/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/cookie_set/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
+- path: /toxicdom/document/referrer/documentWrite
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
 - path: /toxicdom/document/referrer/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/documentWrite
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/documentWrite
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/eval
   rule: 210001
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/eval
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/eval
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/innerHtml
   rule: 210000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/innerHtml
   rule: 220002
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/document/referrer/innerHtml
   rule: 220009
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/localStorage/array/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/localStorage/function/documentWrite
   rule: 210017
-  score: 83%
+  score: 86%
+  trend: stable
+  prev: 83%
 - path: /toxicdom/external/localStorage/function/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/localStorage/function/eval
   rule: 210018
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/localStorage/function/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/localStorage/function/innerHtml
   rule: 210017
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/localStorage/function/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/localStorage/function/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/localStorage/property/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/sessionStorage/array/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/sessionStorage/function/documentWrite
   rule: 210017
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/sessionStorage/function/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/sessionStorage/function/eval
   rule: 210018
-  score: Pass
+  score: 86%
+  trend: down
+  prev: Pass
 - path: /toxicdom/external/sessionStorage/function/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
+- path: /toxicdom/external/sessionStorage/function/innerHtml
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
 - path: /toxicdom/external/sessionStorage/function/innerHtml
   rule: 210017
-  score: Pass
+  score: 86%
+  trend: down
+  prev: Pass
 - path: /toxicdom/external/sessionStorage/function/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/sessionStorage/function/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/external/sessionStorage/property/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/localStorage/array/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/localStorage/function/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/localStorage/function/eval
   rule: 210001
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/localStorage/function/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/localStorage/function/innerHtml
   rule: 210000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/localStorage/function/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/localStorage/function/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/localStorage/property/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/postMessage/complexMessageDocumentWriteEval
   rule: 220008
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/postMessage/documentWrite
   rule: 220008
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/postMessage/eval
   rule: 220008
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/postMessage/improperOriginValidationWithPartialStringComparison
   rule: 220008
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/postMessage/improperOriginValidationWithRegExp
   rule: 220008
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/postMessage/innerHtml
   rule: 220008
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/sessionStorage/array/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/sessionStorage/function/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/sessionStorage/function/eval
   rule: 210001
   score: Pass
+  trend: stable
+  prev: Pass
+- path: /toxicdom/sessionStorage/function/eval
+  rule: 210018
+  score: 14%
+  trend: up
+  prev: Fail
 - path: /toxicdom/sessionStorage/function/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/sessionStorage/function/innerHtml
   rule: 210000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/sessionStorage/function/innerHtml
   rule: 210017
-  score: 17%
+  score: 29%
+  trend: up
+  prev: 17%
 - path: /toxicdom/sessionStorage/function/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/sessionStorage/function/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/sessionStorage/property/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/window/name/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/window/name/eval
   rule: 210001
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/window/name/eval
   rule: 210017
-  score: Pass
+  score: 86%
+  trend: down
+  prev: Pass
 - path: /toxicdom/window/name/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/window/name/innerHtml
   rule: 210000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/window/name/innerHtml
   rule: 210017
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/window/name/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdom/window/name/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/localStorage/array/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/localStorage/function/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/localStorage/function/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/localStorage/function/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/localStorage/function/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/localStorage/property/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/sessionStorage/array/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/sessionStorage/function/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/sessionStorage/function/eval
   rule: 220003
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/sessionStorage/function/innerHtml
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/sessionStorage/function/innerHtml
   rule: 220005
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /toxicdomscripts/sessionStorage/property/documentWrite
   rule: 220000
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 53
 passes: 53
 fails: 0

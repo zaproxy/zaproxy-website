@@ -4,14 +4,22 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case01-Tag2HtmlPageScope-StripScriptTag.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case02-Tag2HtmlPageScope-SecretVectorGET.jsp
   score: Fail
+  trend: stable
+  prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case03-Tag2HtmlPageScope-ConstantAntiCSRFToken.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/Reflected-XSS/RXSS-Detection-Evaluation-POST-Experimental/Case04-Tag2HtmlPageScope-ChangingAntiCSRFToken.jsp
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 4
 passes: 3
 fails: 1

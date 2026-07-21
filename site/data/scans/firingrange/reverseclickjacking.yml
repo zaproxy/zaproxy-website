@@ -3,36 +3,60 @@ url: https://public-firing-range.appspot.com/reverseclickjacking
 details:
 - path: /multipage/ParameterInFragment/InCallback/WithXFO/
   score: Fail
+  trend: stable
+  prev: Fail
 - path: /multipage/ParameterInFragment/InCallback/WithoutXFO/
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /multipage/ParameterInFragment/OtherParameter/WithXFO/
   score: Fail
+  trend: stable
+  prev: Fail
 - path: /multipage/ParameterInFragment/OtherParameter/WithoutXFO/
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /multipage/ParameterInQuery/InCallback/WithXFO/
   score: Fail
+  trend: stable
+  prev: Fail
 - path: /multipage/ParameterInQuery/InCallback/WithoutXFO/
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /multipage/ParameterInQuery/OtherParameter/WithXFO/
   score: Fail
+  trend: stable
+  prev: Fail
 - path: /multipage/ParameterInQuery/OtherParameter/WithoutXFO/
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /singlepage/ParameterInFragment/InCallback/
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /singlepage/ParameterInFragment/OtherParameter/
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /singlepage/ParameterInQuery/InCallback/
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /singlepage/ParameterInQuery/OtherParameter/
   rule: 10020
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 12
 passes: 8
 fails: 4

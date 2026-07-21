@@ -4,140 +4,232 @@ details:
 - path: /contentsniffing/json
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /contentsniffing/plaintext
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /escapedparameter/js_eventhandler_quoted/DOUBLE_QUOTED_ATTRIBUTE
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /escapedparameter/js_eventhandler_singlequoted/SINGLE_QUOTED_ATTRIBUTE
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /escapedparameter/js_eventhandler_unquoted/UNQUOTED_ATTRIBUTE
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /filteredcharsets/attribute_unquoted/DoubleQuoteSinglequote
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /filteredcharsets/body/SpaceDoubleQuoteSlashEquals
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /filteredstrings/body/caseInsensitive/script
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /filteredstrings/body/caseSensitive/SCRIPT
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /filteredstrings/body/caseSensitive/script
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/attribute_name
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/attribute_quoted
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/attribute_script
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/attribute_singlequoted
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/attribute_unquoted
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/body
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/body/400
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/body/401
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/body/403
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/body/404
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/body/500
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/body_comment
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/css_style
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/css_style_font_value
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/css_style_value
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/head
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/iframe_attribute_value
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/iframe_srcdoc
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/js_assignment
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/js_comment
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/js_eval
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/js_quoted_string
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/js_singlequoted_string
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/js_slashquoted_string
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/json
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/noscript
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/style_attribute_value
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/tagname
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/textarea
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/textarea_attribute_value
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /parameter/title
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /url/css_import
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /url/href
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /url/object_data
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /url/object_param
   score: Fail
+  trend: stable
+  prev: Fail
 - path: /url/script_src
   rule: 40012
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 46
 passes: 45
 fails: 1

@@ -4,9 +4,13 @@ details:
 - path: /leakedcookie
   rule: 10011
   score: Pass
+  trend: stable
+  prev: Pass
 - path: /leakedinresource
   rule: 10011
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 2
 passes: 2
 fails: 0

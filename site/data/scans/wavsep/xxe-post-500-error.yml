@@ -4,15 +4,23 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case01-XXE-Injection-Entity-Example-WithErrors.jsp
   rule: 90023
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case02-XXE-Injection-Denial-of-Service-WithErrors.jsp
   rule: 90023
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case03-XXE-Injection-File-Disclosure-WithErrors.jsp
   rule: 90023
   score: Pass
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/XXE/XXE-POST-500Error/Case04-XXE-Injection-SSRF-WithErrors.jsp
   rule: 90023
   score: Pass
+  trend: stable
+  prev: Pass
 tests: 4
 passes: 4
 fails: 0
