@@ -1,6 +1,11 @@
 ---
 
 services:
+  - name: 'Checkmarx DAST'
+    link: https://checkmarx.com/checkmarx-dast/
+    license: 'Commercial'
+    supporter: ZAP Sponsor
+
   - name: "Aikido"
     link: https://www.aikido.dev/
     license: 'Commercial, free option'
@@ -11,10 +16,6 @@ services:
 
   - name: 'Blacklock'
     link: https://blacklock.io/
-    license: 'Commercial'
-
-  - name: 'Checkmarx DAST'
-    link: https://checkmarx.com/checkmarx-dast/
     license: 'Commercial'
 
   - name: 'Cyber Tzar'
@@ -68,7 +69,6 @@ services:
   - name: 'NightVision'
     link: https://www.nightvision.net/
     license: 'Commercial'
-    supporter: ZAP Supporter
 
   - name: 'PatrOwl'
     link: https://patrowl.io/
