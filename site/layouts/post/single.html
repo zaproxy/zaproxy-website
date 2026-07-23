@@ -54,13 +54,15 @@
                   {{ end }}
                   {{ if $author.mastodon }}
                   <br />
-                  <!-- Extract Mastodon username (handle) from URL, handles any Mastodon instance -->
+                  <!-- Extract Mastodon username using regex. Matches standard format https://[instance]/@username.
+                       If URL doesn't match pattern, displays full URL as fallback. -->
                   <a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">@{{ $author.mastodon | replaceRE "https://[^/]+/@(.+)" "$1" }}</a>
                   {{ end }}
                   {{ if $author.bluesky }}
                   <br />
-                  <!-- Extract username from Bluesky URL -->
-                  <a class="author-bluesky" href="{{ $author.bluesky }}">@{{ $author.bluesky | strings.TrimPrefix "https://bsky.app/profile/" }}</a>
+                  <!-- Extract Bluesky username using regex. Matches standard format https://bsky.app/profile/[username].
+                       If URL doesn't match pattern, displays full URL as fallback. -->
+                  <a class="author-bluesky" href="{{ $author.bluesky }}">@{{ $author.bluesky | replaceRE "https://bsky\\.app/profile/(.+)" "$1" }}</a>
                   {{ end }}
                 </div>
               </section>
