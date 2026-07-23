@@ -2,24 +2,31 @@ zaproxy:
   name: ZAP by Checkmarx
   picture: /img/authors/zap_400x400.png
   twitter: zaproxy
+  mastodon: https://infosec.exchange/@zaproxy
+  bluesky: https://bsky.app/profile/zaproxy.org
   is_core: true
 
 simon:
   name: Simon Bennetts
   picture: /img/authors/simon-bennetts_400x400.jpg
   twitter: psiinon
+  mastodon: https://infosec.exchange/@psiinon
+  bluesky: https://bsky.app/profile/psiinon.bsky.social
   is_core: true
 
 ricardo:
   name: Ricardo
   picture: /img/authors/thc202_400x400.jpg
   twitter: thc202
+  mastodon: https://infosec.exchange/@thc202
   is_core: true
 
 thorin:
   name: Rick Mitchell
   picture: /img/authors/rick-mitchell_400x400.jpg
   twitter: kingthorin_rm
+  mastodon: https://infosec.exchange/@kingthorin_rm
+  bluesky: https://bsky.app/profile/kingthorin.bsky.social
   is_core: true
 
 aryangupta701:
@@ -32,6 +39,7 @@ akshath:
   name: Akshath Kothari
   picture: /img/authors/akshath-kothari_400x400.jpg
   twitter: ricekot_
+  bluesky: https://bsky.app/profile/ricekot.com
   is_core: true
 
 vitikasoni:
@@ -120,6 +128,7 @@ cabelo:
 njmulsqb:
   name: Najam Ul Saqib
   picture: /img/authors/njmulsqb_400x400.jpg
+  mastodon: https://infosec.exchange/@cybersoldier
   is_core: false
 
 zapbot:
@@ -143,6 +152,7 @@ yiannis:
   name: Yiannis Pavlosoglou
   picture: /img/authors/yiannis_400x400.jpg
   twitter: KibernaSecurity
+  mastodon: https://infosec.exchange/@yiannis
   is_core: false
 
 zoltan:
