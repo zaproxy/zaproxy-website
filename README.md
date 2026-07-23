@@ -173,6 +173,8 @@ Data that is shared across the site lives in `site/data/`. For example, a list o
 - name: 'Simon Bennetts'
   picture: 'https://pbs.twimg.com/profile_images/2186782633/simonbennetts2_400x400.jpg'
   twitter: '@psiinon'
+  mastodon: 'https://infosec.exchange/@psiinon'
+  bluesky: 'https://bsky.app/profile/psiinon.bsky.social'
   is_core: true
 
 - name: 'David Scrobonia'
@@ -190,7 +192,9 @@ Later, in the templates, you would reference that data & the template would rend
       </div>
       <div class="author-name col-4-5">
         {{ $author.name }}
-        <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">{{ $author.twitter }}</a>
+        {{ if $author.twitter }}<a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">{{ $author.twitter }}</a>{{ end }}
+        {{ if $author.mastodon }}<br /><a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">{{ $author.mastodon }}</a>{{ end }}
+        {{ if $author.bluesky }}<br /><a class="author-bluesky" href="{{ $author.bluesky }}">{{ $author.bluesky }}</a>{{ end }}
       </div>
     </section>
 {{ end }}
