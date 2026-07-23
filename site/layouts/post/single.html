@@ -55,14 +55,16 @@
                   {{ if $author.mastodon }}
                   <br />
                   <!-- Extract Mastodon username using regex. Matches standard format https://[instance]/@username.
+                       Uses [^/]+ to stop at first trailing slash, preventing username/ or username/posts.
                        If URL doesn't match pattern, displays full URL as fallback. -->
-                  <a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">@{{ $author.mastodon | replaceRE "https://[^/]+/@(.+)" "$1" }}</a>
+                  <a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">@{{ $author.mastodon | replaceRE "https://[^/]+/@([^/]+)" "$1" }}</a>
                   {{ end }}
                   {{ if $author.bluesky }}
                   <br />
                   <!-- Extract Bluesky username using regex. Matches standard format https://bsky.app/profile/[username].
+                       Uses [^/?]+ to stop at first trailing slash or query parameter, preventing username/ or username?param=value.
                        If URL doesn't match pattern, displays full URL as fallback. -->
-                  <a class="author-bluesky" href="{{ $author.bluesky }}">@{{ $author.bluesky | replaceRE "https://bsky\\.app/profile/(.+)" "$1" }}</a>
+                  <a class="author-bluesky" href="{{ $author.bluesky }}">@{{ $author.bluesky | replaceRE "https://bsky\\.app/profile/([^/?]+)" "$1" }}</a>
                   {{ end }}
                 </div>
               </section>
