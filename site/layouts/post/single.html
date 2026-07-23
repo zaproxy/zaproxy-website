@@ -54,11 +54,11 @@
                   {{ end }}
                   {{ if $author.mastodon }}
                   <br />
-                  <a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">{{ $author.mastodon }}</a>
+                  <a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">@{{ $author.mastodon | strings.TrimPrefix "https://infosec.exchange/@" }}</a>
                   {{ end }}
                   {{ if $author.bluesky }}
                   <br />
-                  <a class="author-bluesky" href="{{ $author.bluesky }}">{{ $author.bluesky }}</a>
+                  <a class="author-bluesky" href="{{ $author.bluesky }}">@{{ $author.bluesky | strings.TrimPrefix "https://bsky.app/profile/" }}</a>
                   {{ end }}
                 </div>
               </section>
