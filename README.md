@@ -193,7 +193,7 @@ Later, in the templates, you would reference that data & the template would rend
       <div class="author-name col-4-5">
         {{ $author.name }}
         {{ if $author.twitter }}<a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">@{{ $author.twitter }}</a>{{ end }}
-        {{ if $author.mastodon }}<br /><a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">@{{ $author.mastodon | strings.TrimPrefix "https://infosec.exchange/@" }}</a>{{ end }}
+        {{ if $author.mastodon }}<br /><a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">@{{ $author.mastodon | replaceRE "https://[^/]+/@(.+)" "$1" }}</a>{{ end }}
         {{ if $author.bluesky }}<br /><a class="author-bluesky" href="{{ $author.bluesky }}">@{{ $author.bluesky | strings.TrimPrefix "https://bsky.app/profile/" }}</a>{{ end }}
       </div>
     </section>

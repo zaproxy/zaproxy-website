@@ -54,8 +54,8 @@
                   {{ end }}
                   {{ if $author.mastodon }}
                   <br />
-                  <!-- Extract username from Mastodon URL. Assumes infosec.exchange domain; for other instances will show full URL -->
-                  <a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">@{{ $author.mastodon | strings.TrimPrefix "https://infosec.exchange/@" }}</a>
+                  <!-- Extract Mastodon username (handle) from URL, handles any Mastodon instance -->
+                  <a class="author-mastodon" rel="me" href="{{ $author.mastodon }}">@{{ $author.mastodon | replaceRE "https://[^/]+/@(.+)" "$1" }}</a>
                   {{ end }}
                   {{ if $author.bluesky }}
                   <br />
