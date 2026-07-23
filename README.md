@@ -172,14 +172,14 @@ Data that is shared across the site lives in `site/data/`. For example, a list o
 ---
 - name: 'Simon Bennetts'
   picture: 'https://pbs.twimg.com/profile_images/2186782633/simonbennetts2_400x400.jpg'
-  twitter: '@psiinon'
+  twitter: 'psiinon'
   mastodon: 'https://infosec.exchange/@psiinon'
   bluesky: 'https://bsky.app/profile/psiinon.bsky.social'
   is_core: true
 
 - name: 'David Scrobonia'
   picture: 'https://pbs.twimg.com/profile_images/1132029219876347904/FYA3rHRq_400x400.png'
-  twitter: '@david_scrobonia'
+  twitter: 'david_scrobonia'
   is_core: true
 ```
 
