@@ -114,7 +114,7 @@ details:
   - path: /score/forms/11-fetch-get
     scheme: http
     standard: FAIL
-    ajax: FAIL
+    ajax: Pass
     client: Pass
   - path: /score/forms/12-xhr-post
     scheme: http
@@ -169,7 +169,7 @@ details:
   - path: /score/js-events/06-dialog-modal
     scheme: http
     standard: Pass
-    ajax: FAIL
+    ajax: Pass
     client: Pass
   - path: /score/js-events/07-dblclick
     scheme: http
@@ -284,7 +284,7 @@ details:
   - path: /score/navigation/08-window-open
     scheme: http
     standard: FAIL
-    ajax: Pass
+    ajax: FAIL
     client: Pass
   - path: /score/navigation/09-history-replace-state
     scheme: http
@@ -299,7 +299,7 @@ details:
 tests: 59
 passes: 46
 standardPasses: 21
-ajaxPasses: 31
+ajaxPasses: 32
 clientPasses: 46
 fails: 13
 score: 78%
