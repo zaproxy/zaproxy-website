@@ -17,11 +17,6 @@ details:
   trend: stable
   prev: Pass
 - path: /documentURI/documentwrite
-  rule: 210000
-  score: 14%
-  trend: up
-  prev: Fail
-- path: /documentURI/documentwrite
   rule: 220000
   score: Pass
   trend: stable
@@ -117,11 +112,6 @@ details:
   trend: stable
   prev: Pass
 - path: /location/documentwrite
-  rule: 210000
-  score: 29%
-  trend: up
-  prev: Fail
-- path: /location/documentwrite
   rule: 220000
   score: Pass
   trend: stable
@@ -136,11 +126,6 @@ details:
   score: Pass
   trend: stable
   prev: Pass
-- path: /location/innerHtml
-  rule: 210000
-  score: 29%
-  trend: up
-  prev: Fail
 - path: /location/innerHtml
   rule: 220000
   score: Pass
