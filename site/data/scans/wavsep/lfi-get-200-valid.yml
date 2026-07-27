@@ -213,8 +213,8 @@ details:
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case50-LFI-ContextStream-FilenameContext-WindowsTraversalValidation-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   rule: 6
-  score: Pass
-  trend: stable
+  score: 86%
+  trend: down
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case52-LFI-ContextStream-FilenameContext-WindowsTraversalValidation-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
   rule: 6
@@ -223,8 +223,8 @@ details:
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case54-LFI-FileClass-FilenameContext-BackslashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
-  score: Pass
-  trend: stable
+  score: 86%
+  trend: down
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case56-LFI-FileClass-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   rule: 6
@@ -243,25 +243,25 @@ details:
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case62-LFI-ContextStream-FilenameContext-BackslashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
-  score: Pass
-  trend: up
-  prev: 67%
+  score: 86%
+  trend: down
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case64-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   rule: 6
   score: Pass
-  trend: up
-  prev: 83%
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case66-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   rule: 6
   score: 71%
   trend: stable
-  prev: 67%
+  prev: 71%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Valid/Case68-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-BackslashPathReq-Read.jsp
   rule: 6
-  score: 86%
+  score: 71%
   trend: down
-  prev: Pass
+  prev: 86%
 tests: 52
-passes: 50
+passes: 47
 fails: 0
-score: 99%
+score: 98%
