@@ -48,42 +48,26 @@
     </tr>
     {{ range $test := $data.details }} 
     <tr class="scan-{{ $section }}">
-      <td>{{ $test.title}}</a></td>
-      {{ if eq $test.rule_40012 "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_40012}} </div></td>
-      {{ else }}
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_40012}} </div></td>
-      {{ end }} 
-      {{ if eq $test.rule_40026 "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_40026}} </div></td>
-      {{ else }}
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_40026}} </div></td>
-      {{ end }} 
-      {{ if eq $test.rule_90025 "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_90025}} </div></td>
-      {{ else }}
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90025}} </div></td>
-      {{ end }} 
-      {{ if eq $test.rule_90019 "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_90019}} </div></td>
-      {{ else }}
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90019}} </div></td>
-      {{ end }} 
-      {{ if eq $test.rule_90035 "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_90035}} </div></td>
-      {{ else }}
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90035}} </div></td>
-      {{ end }} 
-      {{ if eq $test.rule_90036 "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.rule_90036}} </div></td>
-      {{ else }}
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.rule_90036}} </div></td>
-      {{ end }} 
-      {{ if eq $test.any "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.any}} </div></td>
-      {{ else }}
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.any}} </div></td>
-      {{ end }} 
+      <td>{{ $test.title}}</td>
+      {{ range $col := slice "rule_40012" "rule_40026" "rule_90025" "rule_90019" "rule_90035" "rule_90036" "any" }}
+      {{ $score := index $test $col }}
+      {{ $trend := index $test (printf "%s_trend" $col) }}
+      {{ $prev := index $test (printf "%s_prev" $col) }}
+      <td align="center" style="white-space: nowrap">
+        {{ if eq $score "Pass" }}
+          <span class="scan-result-pass">&#10003; Pass</span>
+        {{ else if or (eq $score "Fail") (eq $score "FAIL") }}
+          <span class="scan-result-fail">&#10060; Fail</span>
+        {{ else if $score }}
+          <span class="scan-result-partial">{{ $score }}</span>
+        {{ end }}
+        {{ if eq $trend "up" }}
+          <span title="Previous: {{ $prev }}" style="color: green">&#x2191;</span>
+        {{ else if eq $trend "down" }}
+          <span title="Previous: {{ $prev }}" style="color: red">&#x2193;</span>
+        {{ end }}
+      </td>
+      {{ end }}
     </tr>
     {{ end }}
     <tr>
