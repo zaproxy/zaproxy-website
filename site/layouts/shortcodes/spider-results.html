@@ -10,7 +10,7 @@
       <td align="center"><h5>{{ $data.score}}</h5></td>
     </tr>
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
-      <th style="width: 55%">Individual Tests</th>
+      <th style="width: 40%">Individual Tests</th>
       <th>Standard</th>
       <th>Ajax</th>
       <th>Client</th>
@@ -24,24 +24,50 @@
     {{ range $test := $data.details }} 
     <tr class="scan-{{ $section }}" {{ if ne $expand "true" }} style="display: none" {{ end }}>
       <td><a href="{{ $test.scheme}}://{{ $data.target}}{{ $test.path}}">{{ $test.path}}</a></td>
-      {{ if eq $test.standard "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.standard}} </div></td>
-      {{ else if eq $test.standard "Pass" }} 
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.standard}} </div></td>
-      {{ else }}
-        <td align="center"></td>
-      {{ end }} 
-      {{ if eq $test.ajax "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.ajax}} </div></td>
-      {{ else }}
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.ajax}} </div></td>
-      {{ end }} 
-      {{ if eq $test.client "FAIL" }} 
-        <td align="center"><div class="scan-result-fail">&#10060; {{ $test.client}} </div></td>
-      {{ else if eq $test.client "Pass" }} 
-        <td align="center"><div class="scan-result-pass">&#10003; {{ $test.client}} </div></td>
-      {{ else }}
-        <td align="center"></td>
-      {{ end }} 
+      {{/* Standard */}}
+      <td align="center" style="white-space: nowrap">
+        {{ if eq $test.standard "Pass" }}
+          <span class="scan-result-pass">&#10003; Pass</span>
+        {{ else if or (eq $test.standard "Fail") (eq $test.standard "FAIL") }}
+          <span class="scan-result-fail">&#10060; Fail</span>
+        {{ else if $test.standard }}
+          <span class="scan-result-partial">{{ $test.standard }}</span>
+        {{ end }}
+        {{ if eq $test.standard_trend "up" }}
+          <span title="Previous: {{ $test.standard_prev }}" style="color: green">&#x2191;</span>
+        {{ else if eq $test.standard_trend "down" }}
+          <span title="Previous: {{ $test.standard_prev }}" style="color: red">&#x2193;</span>
+        {{ end }}
+      </td>
+      {{/* Ajax */}}
+      <td align="center" style="white-space: nowrap">
+        {{ if eq $test.ajax "Pass" }}
+          <span class="scan-result-pass">&#10003; Pass</span>
+        {{ else if or (eq $test.ajax "Fail") (eq $test.ajax "FAIL") }}
+          <span class="scan-result-fail">&#10060; Fail</span>
+        {{ else if $test.ajax }}
+          <span class="scan-result-partial">{{ $test.ajax }}</span>
+        {{ end }}
+        {{ if eq $test.ajax_trend "up" }}
+          <span title="Previous: {{ $test.ajax_prev }}" style="color: green">&#x2191;</span>
+        {{ else if eq $test.ajax_trend "down" }}
+          <span title="Previous: {{ $test.ajax_prev }}" style="color: red">&#x2193;</span>
+        {{ end }}
+      </td>
+      {{/* Client */}}
+      <td align="center" style="white-space: nowrap">
+        {{ if eq $test.client "Pass" }}
+          <span class="scan-result-pass">&#10003; Pass</span>
+        {{ else if or (eq $test.client "Fail") (eq $test.client "FAIL") }}
+          <span class="scan-result-fail">&#10060; Fail</span>
+        {{ else if $test.client }}
+          <span class="scan-result-partial">{{ $test.client }}</span>
+        {{ end }}
+        {{ if eq $test.client_trend "up" }}
+          <span title="Previous: {{ $test.client_prev }}" style="color: green">&#x2191;</span>
+        {{ else if eq $test.client_trend "down" }}
+          <span title="Previous: {{ $test.client_prev }}" style="color: red">&#x2193;</span>
+        {{ end }}
+      </td>
     </tr>
     {{ end }}

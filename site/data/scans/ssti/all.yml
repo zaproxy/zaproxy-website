@@ -1,322 +1,868 @@
 section: All URLs
 details:
-- title: 'Jinja2 - Python'
+- title: Jinja2 - Python
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'Mako - Python'
+  any_trend: stable
+  any_prev: Pass
+- title: Mako - Python
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
   rule_90025: Pass
+  rule_90025_trend: stable
+  rule_90025_prev: Pass
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: '(Code eval) - Python'
+  any_trend: stable
+  any_prev: Pass
+- title: (Code eval) - Python
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: '(Code exec) - Python'
+  any_trend: stable
+  any_prev: Pass
+- title: (Code exec) - Python
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: 'Smarty - PHP'
+  any_trend: stable
+  any_prev: Pass
+- title: Smarty - PHP
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
   rule_90025: Pass
+  rule_90025_trend: stable
+  rule_90025_prev: Pass
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: 'Smarty (secure mode) - PHP'
+  any_trend: stable
+  any_prev: Pass
+- title: Smarty (secure mode) - PHP
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
   rule_90025: Pass
+  rule_90025_trend: stable
+  rule_90025_prev: Pass
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'Twig - PHP'
+  any_trend: stable
+  any_prev: Pass
+- title: Twig - PHP
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: '(Code eval) - PHP'
-  rule_40012: FAIL
-  rule_40026: FAIL
+  any_trend: stable
+  any_prev: Pass
+- title: (Code eval) - PHP
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
+  rule_40026: Fail
+  rule_40026_trend: stable
+  rule_40026_prev: Fail
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
   rule_90019: Pass
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
+  rule_90019_trend: stable
+  rule_90019_prev: Pass
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'FreeMarker - Java'
-  rule_40012: FAIL
+  any_trend: stable
+  any_prev: Pass
+- title: FreeMarker - Java
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'Velocity - Java'
-  rule_40012: FAIL
+  any_trend: stable
+  any_prev: Pass
+- title: Velocity - Java
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: 'Thymeleaf - Java '
-  rule_40012: FAIL
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'Jade - Nodejs'
+  any_trend: stable
+  any_prev: Pass
+- title: Jade - Nodejs
   rule_40012: Pass
-  rule_40026: FAIL
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
+  rule_40026: Fail
+  rule_40026_trend: stable
+  rule_40026_prev: Fail
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: 'Nunjucks - JavaScript'
+  any_trend: stable
+  any_prev: Pass
+- title: Nunjucks - JavaScript
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: 'doT - JavaScript'
+  any_trend: stable
+  any_prev: Pass
+- title: doT - JavaScript
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: 'Dust - JavaScript'
+  any_trend: stable
+  any_prev: Pass
+- title: Dust - JavaScript
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'EJS - JavaScript'
+  any_trend: stable
+  any_prev: Pass
+- title: EJS - JavaScript
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: '(Code eval) - JavaScript'
-  rule_40012: FAIL
-  rule_40026: FAIL
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
-  any: FAIL
-- title: 'VueJs - JavaScript'
-  rule_40012: FAIL
+  any_trend: stable
+  any_prev: Pass
+- title: (Code eval) - JavaScript
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
+  rule_40026: Fail
+  rule_40026_trend: stable
+  rule_40026_prev: Fail
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
+  any: Fail
+  any_trend: stable
+  any_prev: Fail
+- title: VueJs - JavaScript
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'Slim - Ruby'
+  any_trend: stable
+  any_prev: Pass
+- title: Slim - Ruby
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: 'ERB - Ruby'
+  any_trend: stable
+  any_prev: Pass
+- title: ERB - Ruby
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: '(Code eval) - Ruby'
-  rule_40012: FAIL
+  any_trend: stable
+  any_prev: Pass
+- title: (Code eval) - Ruby
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'go - go'
+  any_trend: stable
+  any_prev: Pass
+- title: go - go
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'Input rendered in other location'
-  rule_40012: FAIL
-  rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
-  any: Pass
-- title: 'Rendering result not visible to attacker'
-  rule_40012: FAIL
-  rule_40026: FAIL
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
+  any_trend: stable
+  any_prev: Pass
+- title: Input rendered in other location
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
+  rule_40026: 57%
+  rule_40026_trend: down
+  rule_40026_prev: 86%
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
+  any: 57%
+  any_trend: down
+  any_prev: 86%
+- title: Rendering result not visible to attacker
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
+  rule_40026: Fail
+  rule_40026_trend: stable
+  rule_40026_prev: Fail
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: 'Input inserted in the middle of template code math operations'
-  rule_40012: FAIL
-  rule_40026: FAIL
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
+  any_trend: stable
+  any_prev: Pass
+- title: Input inserted in the middle of template code math operations
+  rule_40012: Fail
+  rule_40012_trend: stable
+  rule_40012_prev: Fail
+  rule_40026: Fail
+  rule_40026_trend: stable
+  rule_40026_prev: Fail
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: 'Non Vulnerable'
+  any_trend: stable
+  any_prev: Pass
+- title: Non Vulnerable
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: 'Input inserted in the middle of template code text'
+  any_trend: stable
+  any_prev: Pass
+- title: Input inserted in the middle of template code text
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
-  rule_90035: FAIL
-  rule_90036: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
+  rule_90035: Fail
+  rule_90035_trend: stable
+  rule_90035_prev: Fail
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: '{ } Python Eval'
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
   rule_90025: Pass
+  rule_90025_trend: stable
+  rule_90025_prev: Pass
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: '${ } Python Eval'
+  any_trend: stable
+  any_prev: Pass
+- title: ${ } Python Eval
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
   rule_90025: Pass
+  rule_90025_trend: stable
+  rule_90025_prev: Pass
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: '{{ }} Python Eval'
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: '<%= %> Python Eval ERB'
+  any_trend: stable
+  any_prev: Pass
+- title: <%= %> Python Eval ERB
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: '#{ } Python Eval'
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: '{{= }} Python Eval'
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: '{ } Ruby Eval'
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
   rule_90025: Pass
+  rule_90025_trend: stable
+  rule_90025_prev: Pass
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
-- title: '${ } Ruby Eval'
+  any_trend: stable
+  any_prev: Pass
+- title: ${ } Ruby Eval
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
   rule_90025: Pass
+  rule_90025_trend: stable
+  rule_90025_prev: Pass
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: '{{ }} Ruby Eval YBNE Nunjucks'
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-- title: '<%= %> Ruby Eval Erb'
+  any_trend: stable
+  any_prev: Pass
+- title: <%= %> Ruby Eval Erb
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: '#{ } Ruby Eval'
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
   rule_90036: Pass
+  rule_90036_trend: stable
+  rule_90036_prev: Pass
   any: Pass
+  any_trend: stable
+  any_prev: Pass
 - title: '{{= }} Ruby Eval'
   rule_40012: Pass
+  rule_40012_trend: stable
+  rule_40012_prev: Pass
   rule_40026: Pass
-  rule_90019: FAIL
-  rule_90025: FAIL
+  rule_40026_trend: stable
+  rule_40026_prev: Pass
+  rule_90025: Fail
+  rule_90025_trend: stable
+  rule_90025_prev: Fail
+  rule_90019: Fail
+  rule_90019_trend: stable
+  rule_90019_prev: Fail
   rule_90035: Pass
-  rule_90036: FAIL
+  rule_90035_trend: stable
+  rule_90035_prev: Pass
+  rule_90036: Fail
+  rule_90036_trend: stable
+  rule_90036_prev: Fail
   any: Pass
-score: 97%
+  any_trend: stable
+  any_prev: Pass
+score: 95%
 rule_40012_score: 29
-rule_40026_score: 34
-rule_90019_score: 1
+rule_40026_score: 33
 rule_90025_score: 7
+rule_90019_score: 1
 rule_90035_score: 27
 rule_90036_score: 18
-any_score: 38
+any_score: 37
