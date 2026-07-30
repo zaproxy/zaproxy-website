@@ -284,12 +284,12 @@ details:
   - path: /score/navigation/08-window-open
     scheme: http
     standard: FAIL
-    ajax: Pass
+    ajax: FAIL
     client: Pass
   - path: /score/navigation/09-history-replace-state
     scheme: http
     standard: FAIL
-    ajax: Pass
+    ajax: FAIL
     client: Pass
   - path: /score/other/01-bot-detection-globals
     scheme: http
@@ -299,7 +299,7 @@ details:
 tests: 59
 passes: 46
 standardPasses: 21
-ajaxPasses: 31
+ajaxPasses: 29
 clientPasses: 46
 fails: 13
 score: 78%
