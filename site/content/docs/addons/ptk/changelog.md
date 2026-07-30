@@ -6,13 +6,22 @@ weight: 1
 cascade:
   addon:
     id: ptk
-    version: 0.7.0
+    version: 0.8.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## 0.8.0 - 2026-07-29
+### Fixed
+- Bug which breaks sites using Akamai Bot Manager 
+- Ensure Top 10 alert tags have expected URLs.
+- Avoid false Selenium configuration warnings on a clean ZAP profile for Chromium headless browsers and the Firefox headless XPI.
+
+### Changed
+- Depends on the Common Library add-on.
 
 ## 0.7.0 - 2026-06-29
 ### Changed
