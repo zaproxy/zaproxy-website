@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: retire
-    version: 0.62.0
+    version: 0.63.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.62.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.63.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
