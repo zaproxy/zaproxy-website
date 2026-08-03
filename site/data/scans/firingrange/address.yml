@@ -2,6 +2,11 @@ section: Address DOM XSS
 url: https://public-firing-range.appspot.com/address
 details:
 - path: /URL/documentwrite
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
+- path: /URL/documentwrite
   rule: 220000
   score: Pass
   trend: stable
@@ -12,10 +17,20 @@ details:
   trend: stable
   prev: Pass
 - path: /baseURI/documentwrite
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
+- path: /baseURI/documentwrite
   rule: 220000
   score: Pass
   trend: stable
   prev: Pass
+- path: /documentURI/documentwrite
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
 - path: /documentURI/documentwrite
   rule: 220000
   score: Pass
@@ -112,6 +127,11 @@ details:
   trend: stable
   prev: Pass
 - path: /location/documentwrite
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
+- path: /location/documentwrite
   rule: 220000
   score: Pass
   trend: stable
@@ -126,6 +146,11 @@ details:
   score: Pass
   trend: stable
   prev: Pass
+- path: /location/innerHtml
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
 - path: /location/innerHtml
   rule: 220000
   score: Pass
@@ -152,10 +177,20 @@ details:
   trend: stable
   prev: Pass
 - path: /locationhref/documentwrite
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
+- path: /locationhref/documentwrite
   rule: 220000
   score: Pass
   trend: stable
   prev: Pass
+- path: /locationpathname/documentwrite
+  rule: 210000
+  score: 14%
+  trend: up
+  prev: Fail
 - path: /locationpathname/documentwrite
   rule: 220000
   score: Pass

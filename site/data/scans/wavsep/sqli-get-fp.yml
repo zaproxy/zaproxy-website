@@ -3,13 +3,13 @@ url: /SInjection-FalsePositives-GET/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case01-FalsePositiveInjectionInLogin-PsAndIv-500ErrorOnIvFailure.jsp
   rule: 40018
-  score: 86%
-  trend: stable
+  score: Pass
+  trend: up
   prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case02-FalsePositiveInjectionInLogin-PsAndIv-500SyntaxErrorOnIvFailure.jsp
   rule: 40018
-  score: 86%
-  trend: stable
+  score: Pass
+  trend: up
   prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-FalsePositives-GET/Case03-FalsePositiveInjectionInLogin-PsAndIv-200ErrorOnIvFailure.jsp
   score: Fail
@@ -45,6 +45,6 @@ details:
   trend: stable
   prev: Fail
 tests: 10
-passes: 1
+passes: 3
 fails: 7
-score: 27%
+score: 30%

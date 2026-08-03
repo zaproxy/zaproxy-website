@@ -249,8 +249,8 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Error/Case64-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   rule: 6
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Error/Case66-LFI-ContextStream-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   rule: 6
   score: Pass
