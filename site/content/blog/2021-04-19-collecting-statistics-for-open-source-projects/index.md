@@ -78,7 +78,7 @@ We also know that many users use ZAP in environments where either all outgoing c
 
 ### User Interactions
 
-Users can interact with us in a [large number of ways](/community/), including a set of GitHub issues, Google Groups, Slack channels, Discord, IRC, email, StackOverflow … the list goes on and on.
+Users can interact with us in a [large number of ways](/community/), including a set of GitHub issues, Google Groups, Slack channels, email, StackOverflow … the list goes on and on.
 
 We try to push most discussions to the ZAP User Group and so we collect statistics for this group as well. 
 Google Groups are actually a pain - there is no API for it and no easy way to collect statistics. 

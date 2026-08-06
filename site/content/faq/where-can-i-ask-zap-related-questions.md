@@ -25,7 +25,6 @@ via add-ons.
 The [Scripts Group](https://groups.google.com/group/zaproxy-scripts) is the
 best place for questions about extending ZAP using scripting.
 
-###  IRC
+###  Slack
 
-
-For more interaction you can also join the Libera Chat [#zaproxy](https://web.libera.chat/#zaproxy) channel which is where many of the ZAP core contributors hang out.
+For more interaction you can also join [ZAP's Slack](/slack/invite) workspace which is where many of the ZAP core contributors hang out. (Access directly via /slack/.)
