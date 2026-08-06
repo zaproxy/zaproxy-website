@@ -46,8 +46,11 @@
   url: https://github.com/zaproxy/zaproxy/issues/4812
   year: 2026
 - item: Expand gRPC support
-  status: ⌚ Planned
+  status: ⚡ In progress
   url: https://github.com/zaproxy/zaproxy/issues/7695
+  year: 2026
+- item: Improve Fuzzer
+  status: ⚡ In progress
   year: 2026
 
 - item: Improved Authentication Handling
