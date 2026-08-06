@@ -248,9 +248,9 @@ details:
   standard: Fail
   standard_trend: stable
   standard_prev: Fail
-  ajax: 57%
+  ajax: 71%
   ajax_trend: up
-  ajax_prev: 29%
+  ajax_prev: 57%
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -369,9 +369,9 @@ details:
   standard: Pass
   standard_trend: stable
   standard_prev: Pass
-  ajax: 14%
-  ajax_trend: up
-  ajax_prev: Fail
+  ajax: Fail
+  ajax_trend: down
+  ajax_prev: 14%
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -623,8 +623,8 @@ details:
   standard_trend: stable
   standard_prev: Fail
   ajax: 29%
-  ajax_trend: up
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: 29%
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -633,7 +633,7 @@ details:
   standard: Fail
   standard_trend: stable
   standard_prev: Fail
-  ajax: 43%
+  ajax: 29%
   ajax_trend: up
   ajax_prev: 14%
   client: Pass

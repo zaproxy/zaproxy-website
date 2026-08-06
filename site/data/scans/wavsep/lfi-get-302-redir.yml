@@ -29,18 +29,18 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case06-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultInvalidInput-AnyPathReq-Read.jsp
   rule: 6
   score: 86%
-  trend: down
-  prev: Pass
+  trend: stable
+  prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case07-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultEmptyInput-AnyPathReq-Read.jsp
   rule: 6
   score: 86%
-  trend: down
-  prev: Pass
+  trend: stable
+  prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case08-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultEmptyInput-AnyPathReq-Read.jsp
   rule: 6
   score: 86%
-  trend: down
-  prev: Pass
+  trend: stable
+  prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case09-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   rule: 6
   score: Pass
