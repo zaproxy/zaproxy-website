@@ -8,7 +8,7 @@ layout: links
 links:
   - name: 'Bar Charts'
     link: bar-charts/
-    desc: Including Check for Updates, Direct Downloads, Docker Pulls, and User Group Posts
+    desc: Including ZAP Starts, Direct Downloads, Docker Pulls, and User Group Posts
 
   - name: 'Pie Charts'
     link: pie-charts/
