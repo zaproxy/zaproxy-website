@@ -1,17 +1,17 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Network Add-on SBOM
+title: LLM Support Add-on SBOM
 type: sbom
 weight: 1
 aliases:
-- /docs/sbom/network/
+- /docs/sbom/llm/
 cascade:
   addon:
-    id: network
-    version: 0.29.0
+    id: llm
+    version: 0.0.1
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.29.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/llm-v0.0.1/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -25,17 +25,89 @@ sbom:
   - name: asm-tree
     version: '9.7'
     licenses: BSD-3-Clause
+  - name: attoparser
+    version: 2.0.7.RELEASE
+    licenses: Apache-2.0
   - name: auto-common
     version: 1.2.2
     licenses: Apache-2.0
   - name: auto-service-annotations
     version: 1.0.1
     licenses: Apache-2.0
-  - name: auto-service-annotations
-    version: 1.1.1
-    licenses: Apache-2.0
   - name: auto-value-annotations
     version: '1.9'
+    licenses: Apache-2.0
+  - name: automation
+    version: 0.61.0
+    licenses: ''
+  - name: azure-ai-openai
+    version: 1.0.0-beta.16
+    licenses: MIT
+  - name: azure-core
+    version: 1.55.3
+    licenses: MIT
+  - name: azure-core-http-netty
+    version: 1.15.11
+    licenses: MIT
+  - name: azure-json
+    version: 1.5.0
+    licenses: MIT
+  - name: azure-xml
+    version: 1.2.0
+    licenses: MIT
+  - name: batik-anim
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-awt-util
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-bridge
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-codec
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-constants
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-css
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-dom
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-ext
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-gvt
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-i18n
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-parser
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-script
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-shared-resources
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-svg-dom
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-svggen
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-transcoder
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-util
+    version: '1.19'
+    licenses: Apache-2.0
+  - name: batik-xml
+    version: '1.19'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
     version: '1.85'
@@ -56,7 +128,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: byte-buddy
-    version: 1.18.11
+    version: 1.17.7
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.17.7
@@ -67,11 +139,17 @@ sbom:
   - name: checker-qual
     version: 3.43.0
     licenses: MIT
+  - name: commonlib
+    version: 1.44.0
+    licenses: ''
   - name: commons-beanutils
     version: 1.11.0
     licenses: Apache-2.0
   - name: commons-beanutils
     version: 1.8.0
+    licenses: Apache-2.0
+  - name: commons-codec
+    version: 1.19.0
     licenses: Apache-2.0
   - name: commons-codec
     version: 1.20.0
@@ -90,6 +168,9 @@ sbom:
     licenses: Apache-1.0
   - name: commons-io
     version: 2.21.0
+    licenses: Apache-2.0
+  - name: commons-io
+    version: 2.22.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -118,9 +199,6 @@ sbom:
   - name: error_prone_annotations
     version: 2.42.0
     licenses: Apache-2.0
-  - name: error_prone_annotations
-    version: 2.47.0
-    licenses: Apache-2.0
   - name: error_prone_check_api
     version: 2.42.0
     licenses: Apache-2.0
@@ -133,9 +211,6 @@ sbom:
   - name: failureaccess
     version: 1.0.2
     licenses: Apache-2.0
-  - name: failureaccess
-    version: 1.0.3
-    licenses: Apache-2.0
   - name: findbugs-annotations
     version: 3.0.1
     licenses: GNU Lesser Public License
@@ -145,14 +220,17 @@ sbom:
   - name: flatlaf-swingx
     version: '3.7'
     licenses: Apache-2.0
+  - name: flying-saucer-core
+    version: 9.13.3
+    licenses: LGPL-2.1-or-later
+  - name: flying-saucer-pdf
+    version: 9.13.3
+    licenses: LGPL-2.1-or-later
   - name: google-java-format
     version: 1.27.0
     licenses: Apache-2.0
   - name: guava
     version: 33.4.0-jre
-    licenses: Apache-2.0
-  - name: guava
-    version: 33.6.0-jre
     licenses: Apache-2.0
   - name: hamcrest
     version: '3.0'
@@ -184,11 +262,32 @@ sbom:
   - name: j2objc-annotations
     version: 3.0.0
     licenses: Apache-2.0
-  - name: j2objc-annotations
-    version: '3.1'
+  - name: jackson-annotations
+    version: '2.22'
+    licenses: Apache-2.0
+  - name: jackson-bom
+    version: 2.22.1
+    licenses: Apache-2.0
+  - name: jackson-core
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
+    licenses: Apache-2.0
+  - name: jackson-databind
+    version: 2.22.1
+    licenses: Apache-2.0
+  - name: jackson-dataformat-xml
+    version: 2.22.1
+    licenses: Apache-2.0
+  - name: jackson-dataformat-yaml
+    version: 2.22.1
+    licenses: Apache-2.0
+  - name: jackson-datatype-jdk8
+    version: 2.22.1
+    licenses: Apache-2.0
+  - name: jackson-datatype-jsr310
+    version: 2.22.1
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -199,6 +298,9 @@ sbom:
   - name: javahelp
     version: 2.0.05
     licenses: GNU General Public License - Version 2 with the class path exception
+  - name: javassist
+    version: 3.29.0-GA
+    licenses: MPL-1.1, LGPL-2.1-only, Apache-2.0
   - name: javax.inject
     version: '1'
     licenses: Apache-2.0
@@ -220,6 +322,9 @@ sbom:
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
+  - name: jtokkit
+    version: 1.1.0
+    licenses: MIT
   - name: junit-bom
     version: 6.1.2
     licenses: EPL-2.0
@@ -244,6 +349,36 @@ sbom:
   - name: junit-platform-launcher
     version: 6.1.2
     licenses: EPL-2.0
+  - name: kaitai-struct-runtime
+    version: '0.11'
+    licenses: MIT
+  - name: langchain4j
+    version: 1.18.1
+    licenses: Apache-2.0
+  - name: langchain4j-anthropic
+    version: 1.18.1
+    licenses: Apache-2.0
+  - name: langchain4j-azure-open-ai
+    version: 1.18.1
+    licenses: Apache-2.0
+  - name: langchain4j-core
+    version: 1.18.1
+    licenses: Apache-2.0
+  - name: langchain4j-google-ai-gemini
+    version: 1.18.1
+    licenses: Apache-2.0
+  - name: langchain4j-http-client
+    version: 1.18.1
+    licenses: Apache-2.0
+  - name: langchain4j-http-client-jdk
+    version: 1.18.1
+    licenses: Apache-2.0
+  - name: langchain4j-ollama
+    version: 1.18.1
+    licenses: Apache-2.0
+  - name: langchain4j-open-ai
+    version: 1.18.1
+    licenses: Apache-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
     licenses: Apache-2.0
@@ -268,12 +403,24 @@ sbom:
   - name: lombok
     version: 1.18.44
     licenses: MIT
+  - name: mcp
+    version: 0.3.0
+    licenses: ''
   - name: mockito-core
     version: 5.23.0
     licenses: MIT
   - name: mockito-junit-jupiter
     version: 5.23.0
     licenses: MIT
+  - name: nanohttpd
+    version: 2.3.1
+    licenses: BSD-3-Clause
+  - name: nanohttpd-webserver
+    version: 2.3.1
+    licenses: BSD-3-Clause
+  - name: nanohttpd-websocket
+    version: 2.3.1
+    licenses: BSD-3-Clause
   - name: native-linux-x86_64
     version: 1.16.0
     licenses: Apache-2.0
@@ -287,68 +434,84 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: netty-buffer
-    version: 4.1.134.Final
+    version: 4.1.135.Final
     licenses: Apache-2.0
   - name: netty-codec
-    version: 4.1.134.Final
+    version: 4.1.135.Final
+    licenses: Apache-2.0
+  - name: netty-codec-dns
+    version: 4.1.112.Final
     licenses: Apache-2.0
   - name: netty-codec-http
-    version: 4.1.134.Final
+    version: 4.1.135.Final
     licenses: Apache-2.0
   - name: netty-codec-http2
-    version: 4.1.134.Final
+    version: 4.1.135.Final
+    licenses: Apache-2.0
+  - name: netty-codec-socks
+    version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-common
-    version: 4.1.134.Final
+    version: 4.1.135.Final
     licenses: Apache-2.0
   - name: netty-handler
-    version: 4.1.134.Final
+    version: 4.1.135.Final
+    licenses: Apache-2.0
+  - name: netty-handler-proxy
+    version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-resolver
-    version: 4.1.134.Final
+    version: 4.1.135.Final
+    licenses: Apache-2.0
+  - name: netty-resolver-dns
+    version: 4.1.112.Final
+    licenses: Apache-2.0
+  - name: netty-resolver-dns-classes-macos
+    version: 4.1.112.Final
+    licenses: Apache-2.0
+  - name: netty-resolver-dns-native-macos
+    version: 4.1.112.Final
+    licenses: Apache-2.0
+  - name: netty-tcnative-boringssl-static
+    version: 2.0.70.Final
+    licenses: Apache-2.0
+  - name: netty-tcnative-classes
+    version: 2.0.70.Final
     licenses: Apache-2.0
   - name: netty-transport
-    version: 4.1.134.Final
+    version: 4.1.135.Final
+    licenses: Apache-2.0
+  - name: netty-transport-classes-epoll
+    version: 4.1.118.Final
+    licenses: Apache-2.0
+  - name: netty-transport-classes-kqueue
+    version: 4.1.118.Final
+    licenses: Apache-2.0
+  - name: netty-transport-native-epoll
+    version: 4.1.118.Final
+    licenses: Apache-2.0
+  - name: netty-transport-native-kqueue
+    version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-transport-native-unix-common
-    version: 4.1.134.Final
+    version: 4.1.135.Final
     licenses: Apache-2.0
+  - name: network
+    version: 0.29.0
+    licenses: ''
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
-  - name: opentelemetry-api
-    version: 1.64.0
+  - name: ognl
+    version: 3.3.4
     licenses: Apache-2.0
-  - name: opentelemetry-common
-    version: 1.64.0
+  - name: opennlp-tools
+    version: 2.5.9
     licenses: Apache-2.0
-  - name: opentelemetry-context
-    version: 1.64.0
-    licenses: Apache-2.0
-  - name: opentelemetry-exporter-logging
-    version: 1.64.0
-    licenses: Apache-2.0
-  - name: opentelemetry-sdk
-    version: 1.64.0
-    licenses: Apache-2.0
-  - name: opentelemetry-sdk-common
-    version: 1.64.0
-    licenses: Apache-2.0
-  - name: opentelemetry-sdk-extension-autoconfigure
-    version: 1.64.0
-    licenses: Apache-2.0
-  - name: opentelemetry-sdk-extension-autoconfigure-spi
-    version: 1.64.0
-    licenses: Apache-2.0
-  - name: opentelemetry-sdk-logs
-    version: 1.64.0
-    licenses: Apache-2.0
-  - name: opentelemetry-sdk-metrics
-    version: 1.64.0
-    licenses: Apache-2.0
-  - name: opentelemetry-sdk-trace
-    version: 1.64.0
-    licenses: Apache-2.0
+  - name: openpdf
+    version: 2.0.5
+    licenses: GNU Lesser General Public License (LGPL), Version 2.1, Mozilla Public
+      License Version 2.0
   - name: opentest4j
     version: 1.3.0
     licenses: Apache-2.0
@@ -382,84 +545,75 @@ sbom:
   - name: protobuf-java
     version: 3.25.5
     licenses: BSD-3-Clause
+  - name: pscan
+    version: 0.7.0
+    licenses: ''
+  - name: reactive-streams
+    version: 1.0.4
+    licenses: MIT-0
+  - name: reactor-core
+    version: 3.4.41
+    licenses: Apache-2.0
+  - name: reactor-netty-core
+    version: 1.0.48
+    licenses: Apache-2.0
+  - name: reactor-netty-http
+    version: 1.0.48
+    licenses: Apache-2.0
+  - name: reports
+    version: 0.47.0
+    licenses: ''
   - name: rsyntaxtextarea
     version: 3.6.0
     licenses: BSD-3-Clause
-  - name: selenium-api
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-chrome-driver
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-chromium-driver
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-latest
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v148
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v149
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v150
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-edge-driver
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-firefox-driver
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-http
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-ie-driver
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-java
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-json
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-manager
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-os
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-remote-driver
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-safari-driver
-    version: 4.46.0
-    licenses: Apache-2.0
-  - name: selenium-support
-    version: 4.46.0
-    licenses: Apache-2.0
   - name: service
     version: 1.16.0
     licenses: Apache-2.0
   - name: slf4j-api
-    version: 1.7.36
+    version: 2.0.18
     licenses: MIT
-  - name: slf4j-api
-    version: 2.0.17
-    licenses: MIT
+  - name: snakeyaml
+    version: '2.5'
+    licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT
+  - name: spider
+    version: 0.21.0
+    licenses: ''
   - name: spotbugs-annotations
     version: 4.8.6
     licenses: LGPL-2.1-only
+  - name: stax2-api
+    version: 4.3.0
+    licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
+  - name: testutils
+    version: unspecified
+    licenses: ''
   - name: testutilscore
     version: unspecified
     licenses: ''
+  - name: thymeleaf
+    version: 3.1.5.RELEASE
+    licenses: Apache-2.0
+  - name: unbescape
+    version: 1.1.6.RELEASE
+    licenses: Apache-2.0
+  - name: woodstox-core
+    version: 7.2.0
+    licenses: Apache-2.0
+  - name: xml-apis
+    version: 1.4.01
+    licenses: Apache-2.0, SAX-PD, The W3C License
+  - name: xml-apis-ext
+    version: 1.3.04
+    licenses: Apache-2.0
+  - name: xmlgraphics-commons
+    version: '2.11'
+    licenses: Apache-2.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1

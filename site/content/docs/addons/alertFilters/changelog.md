@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: alertFilters
-    version: '26'
+    version: '27'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [27] - 2026-08-07
+### Added
+- Added an optional LLM extension for reviewing alerts.
+
+### Changed
+- Maintenance changes.
 
 ## [26] - 2025-12-15
 ### Changed
@@ -174,6 +181,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version
 
+[27]: https://github.com/zaproxy/zap-extensions/releases/alertFilters-v27
 [26]: https://github.com/zaproxy/zap-extensions/releases/alertFilters-v26
 [25]: https://github.com/zaproxy/zap-extensions/releases/alertFilters-v25
 [24]: https://github.com/zaproxy/zap-extensions/releases/alertFilters-v24

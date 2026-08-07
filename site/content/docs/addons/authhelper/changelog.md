@@ -6,13 +6,25 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.40.0
+    version: 0.41.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.41.0] - 2026-08-07
+### Added
+- Automation Framework `diagnostics` job to start and stop plan-level recording of authentication related diagnostics.
+
+### Changed
+- Update dependency.
+- Include the Zest statement index in the authentication diagnostics' steps.
+- Include Origin header when doing authentication verification.
+
+### Fixed
+- Handle exception while extracting session tokens.
 
 ## [0.40.0] - 2026-06-12
 ### Added
@@ -388,6 +400,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Support of authentication request identification and configuration.
 
+[0.41.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.41.0
 [0.40.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.40.0
 [0.39.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.39.0
 [0.38.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.38.0

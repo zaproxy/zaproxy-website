@@ -94,12 +94,40 @@ Get the passive scan queue status. Returns the number of HTTP records waiting to
 
 No parameters.
 
+## zap_get_history
+
+Get selected parts of a ZAP history entry. Prefer this over `zap://history/{id}` when response or request bodies may be large.
+
+
+Parameters:
+
+* `id` - history entry ID (e.g. `123`)
+* `fields` - optional list of `requestHeader`, `requestBody`, `responseHeader`, `responseBody` (defaults to both headers)
+* `body_offset` - optional start index into each included body (0-based; negative values count from the end)
+* `max_body_chars` - optional maximum characters per included body (default 4000)
+
+When a body field is included the result also provides `*Length`, `*Offset`, `*Returned`, and `*Truncated` metadata (e.g. `responseBodyTruncated`, `requestBodyTruncated`).
+
 ## zap_generate_report
 
 Generate a ZAP report. Use the `zap://report-templates` resource to discover available template names. Requires the reports add-on.
 
 
 Parameters: `file_path` - full path for the output file (e.g. `/tmp/report.html`), `template` - template config name (e.g. `traditional-html`), optionally `title` - report title
+
+## zap_list_resources
+
+List available ZAP MCP resources (URI, name, description). Useful for clients that only support tools; clients that support the resources capability can use `resources/list` instead.
+
+
+No parameters. Use `zap_read_resource` to read a listed resource.
+
+## zap_read_resource
+
+Read a ZAP MCP resource by URI. Use `zap_list_resources` to discover available URIs (including templates such as `zap://history/{id}`). Clients that support the resources capability can use `resources/read` instead.
+
+
+Parameters: `uri` - the resource URI (e.g. `zap://alerts` or `zap://history/123`)
 
 ## See Also
 

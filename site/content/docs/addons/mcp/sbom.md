@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: mcp
-    version: 0.2.0
+    version: 0.3.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.2.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.3.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -95,16 +95,16 @@ sbom:
     version: '1.19'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.3.0
@@ -125,10 +125,10 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: collections
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: commonlib
-    version: 1.42.0
+    version: 1.44.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -236,10 +236,10 @@ sbom:
     version: 9.13.3
     licenses: LGPL-2.1-or-later
   - name: flyway-core
-    version: 12.8.1
+    version: 13.1.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 12.8.1
+    version: 13.1.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -281,7 +281,7 @@ sbom:
     version: 3.0-24-g34c2ce5
     licenses: Apache-2.0
   - name: icu4j
-    version: 25.0.3
+    version: 25.2.4
     licenses: Unicode/ICU License
   - name: j2objc-annotations
     version: 3.0.0
@@ -290,37 +290,37 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 3.1.1
+    version: 3.1.5
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 3.1.1
+    version: 3.1.5
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 3.1.1
+    version: 3.1.5
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -353,19 +353,19 @@ sbom:
     version: 0.9.2
     licenses: LGPL-2.1-only, EPL-1.0
   - name: jniutils
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: js
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0, MIT
   - name: js-community
-    version: 25.0.3
+    version: 25.2.4
     licenses: MIT, UPL-1.0
   - name: js-language
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0, MIT
   - name: js-scriptengine
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: json-lib
     version: '2.4'
@@ -377,28 +377,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.1.0
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.1.0
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.1.0
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.1.0
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.1.0
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.1.0
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.1.0
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.1.0
+    version: 6.1.2
     licenses: EPL-2.0
   - name: kaitai-struct-runtime
     version: '0.11'
@@ -455,7 +455,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: nativeimage
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: netty-buffer
     version: 4.1.134.Final
@@ -528,7 +528,7 @@ sbom:
     version: 4.0.1
     licenses: MIT
   - name: polyglot
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: protobuf-java
     version: 3.25.5
@@ -537,10 +537,10 @@ sbom:
     version: 0.7.0
     licenses: ''
   - name: regex
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: reports
-    version: 0.46.0
+    version: 0.47.0
     licenses: ''
   - name: rsyntaxtextarea
     version: 3.6.0
@@ -564,7 +564,7 @@ sbom:
     version: 4.8.6
     licenses: LGPL-2.1-only
   - name: sqlite-jdbc
-    version: 3.53.2.0
+    version: 3.53.2.1
     licenses: Apache-2.0
   - name: stax2-api
     version: 4.3.0
@@ -582,13 +582,13 @@ sbom:
     version: 3.1.5.RELEASE
     licenses: Apache-2.0
   - name: truffle-api
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: truffle-compiler
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: truffle-runtime
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: unbescape
     version: 1.1.6.RELEASE
@@ -597,7 +597,7 @@ sbom:
     version: 7.2.0
     licenses: Apache-2.0
   - name: word
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: xml-apis
     version: 1.4.01
@@ -612,7 +612,7 @@ sbom:
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1
   - name: xz
-    version: 25.0.3
+    version: 25.2.4
     licenses: UPL-1.0
   - name: zap
     version: 2.17.0

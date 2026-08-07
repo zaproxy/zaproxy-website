@@ -6,13 +6,24 @@ weight: 1
 cascade:
   addon:
     id: fuzz
-    version: 13.16.0
+    version: 13.17.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [13.17.0] - 2026-08-07
+### Changed
+- Update minimum ZAP version to 2.17.0.
+- Update dependency.
+- Maintenance changes.
+- Formatted JavaScript files for consistency.
+- Rename payload replacement strategies to Cluster Bomb and Pitchfork in the UI and help (previously Depth First and Breadth First).
+
+### Fixed
+- Correct (breadth-first) Pitchfork payload replacement when fuzzing multiple locations.
 
 ## [13.16.0] - 2025-06-20
 ### Changed
@@ -235,6 +246,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[13.17.0]: https://github.com/zaproxy/zap-extensions/releases/fuzz-v13.17.0
 [13.16.0]: https://github.com/zaproxy/zap-extensions/releases/fuzz-v13.16.0
 [13.15.0]: https://github.com/zaproxy/zap-extensions/releases/fuzz-v13.15.0
 [13.14.0]: https://github.com/zaproxy/zap-extensions/releases/fuzz-v13.14.0
