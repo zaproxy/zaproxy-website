@@ -6,13 +6,22 @@ weight: 1
 cascade:
   addon:
     id: mcp
-    version: 0.2.0
+    version: 0.3.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.3.0] - 2026-08-07
+
+### Added
+- `zap_list_resources` and `zap_read_resource` tools for clients that only support tools (e.g. the LLM bridge).
+- `zap_get_history` tool to fetch selected history fields with body paging via `body_offset` / `max_body_chars`.
+
+### Changed
+- Maintenance changes.
 
 ## [0.2.0] - 2026-06-12
 ### Changed
@@ -37,6 +46,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version with initial resources, tools, and prompts.
 
+[0.3.0]: https://github.com/zaproxy/zap-extensions/releases/mcp-v0.3.0
 [0.2.0]: https://github.com/zaproxy/zap-extensions/releases/mcp-v0.2.0
 [0.1.0]: https://github.com/zaproxy/zap-extensions/releases/mcp-v0.1.0
 [0.0.1]: https://github.com/zaproxy/zap-extensions/releases/mcp-v0.0.1

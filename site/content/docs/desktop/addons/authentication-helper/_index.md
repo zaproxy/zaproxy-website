@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.40.0
+    version: 0.41.0
 ---
 
 # Authentication Helper
@@ -34,6 +34,7 @@ The features currently supported are:
 * [Header Based Session Management](/docs/desktop/addons/authentication-helper/session-header/)
 * [Verification Identification](/docs/desktop/addons/authentication-helper/verification-id/)
 * [Authentication Report (JSON)](/docs/desktop/addons/authentication-helper/auth-report-json/)
+* [Automation Framework Support](/docs/desktop/addons/authentication-helper/automation/)
 
 
 This add-on does not currently perform any exploring on its own - it relies upon requests being proxied through ZAP

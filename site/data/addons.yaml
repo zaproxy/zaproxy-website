@@ -17,9 +17,9 @@
   status: release
   infoUrl: /docs/desktop/addons/alert-filters/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v26/alertFilters-release-26.zap
-  date: 2025-12-15
-  version: 26
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v27/alertFilters-release-27.zap
+  date: 2026-08-07
+  version: 27
 - id: allinonenotes
   name: All In One Notes
   description: A simple extension to view all notes in one pane.
@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.40.0/authhelper-beta-0.40.0.zap
-  date: 2026-06-12
-  version: 0.40.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.41.0/authhelper-beta-0.41.0.zap
+  date: 2026-08-07
+  version: 0.41.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -356,9 +356,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/fuzzer/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.16.0/fuzz-beta-13.16.0.zap
-  date: 2025-06-20
-  version: 13.16.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/fuzz-v13.17.0/fuzz-beta-13.17.0.zap
+  date: 2026-08-07
+  version: 13.17.0
 - id: fuzzai
   name: FuzzAI Files
   description: FuzzAI files which can be used with the ZAP fuzzer!!!
@@ -692,6 +692,16 @@
   downloadUrl: https://github.com/levoai/levoai-zap-addon/releases/download/v0.3.0/levoai-zap-addon-alpha-0.3.0.zap
   date: 2024-07-10
   version: 0.3.0
+- id: llm
+  name: LLM Support
+  description: An add-on to leverage LLM within ZAP.
+  author: Abdessamad TEMMAR and the ZAP Core Team
+  status: alpha
+  infoUrl: /docs/desktop/addons/llm-support/
+  repoUrl: https://github.com/zaproxy/zap-extensions/
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/llm-v0.0.1/llm-alpha-0.0.1.zap
+  date: 2026-08-07
+  version: 0.0.1
 - id: maplocal
   name: Map Local
   description: Allows mapping of responses to content of a chosen local file.
@@ -707,11 +717,11 @@
   description: An add-on that integrates MCP in ZAP.
   author: ZAP Dev Team
   status: alpha
-  infoUrl: ''
+  infoUrl: /docs/desktop/addons/mcp-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.2.0/mcp-alpha-0.2.0.zap
-  date: 2026-06-12
-  version: 0.2.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.3.0/mcp-alpha-0.3.0.zap
+  date: 2026-08-07
+  version: 0.3.0
 - id: neonmarker
   name: Neonmarker
   description: Colors history table items based on tags
@@ -729,9 +739,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.28.0/network-beta-0.28.0.zap
-  date: 2026-05-21
-  version: 0.28.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.29.0/network-beta-0.29.0.zap
+  date: 2026-08-07
+  version: 0.29.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -1075,9 +1085,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/server-sent-events/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v14/sse-alpha-14.zap
-  date: 2026-07-13
-  version: 14
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v15/sse-alpha-15.zap
+  date: 2026-08-07
+  version: 15
 - id: svndigger
   name: SVN Digger Files
   description: SVN Digger files which can be used with ZAP forced browsing
@@ -1166,9 +1176,9 @@
   status: release
   infoUrl: /docs/desktop/addons/websockets/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v37/websocket-release-37.zap
-  date: 2026-05-07
-  version: 37
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/websocket-v38/websocket-release-38.zap
+  date: 2026-08-07
+  version: 38
 - id: zest
   name: Zest - Graphical Security Scripting Language
   description: A graphical security scripting language, ZAPs macro language on steroids

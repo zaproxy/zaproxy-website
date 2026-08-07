@@ -117,7 +117,8 @@ This section contains an array with the domains out of scope (context), that wer
 The [Browser Based](/docs/desktop/addons/authentication-helper/browser-auth/) and [Client Script](/docs/desktop/addons/authentication-helper/client-script/) authentication methods allow to record diagnostic data, which can be included in the Authentication Report, to help diagnose authentication problems.
 
 
-Diagnostic data can also be recorded with the [Authentication Tester Dialog](/docs/desktop/addons/authentication-helper/auth-tester/).
+Diagnostic data can also be recorded with the [Authentication Tester Dialog](/docs/desktop/addons/authentication-helper/auth-tester/)
+or the Automation Framework [diagnostics](/docs/desktop/addons/authentication-helper/automation/) job.
 
 
 The report will contain an array of diagnostic objects, one for each recorded authentication attempt. The diagnostic objet has the authentication method used, the name of the context and user, the script if Client Script Authentication, the Automation Framework plan, and each step performed during the authentication.

@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: sse
-    version: '14'
+    version: '15'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v14/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/sse-v15/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -35,16 +35,16 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.3.0
@@ -206,28 +206,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.1.1
+    version: 6.1.2
     licenses: EPL-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava

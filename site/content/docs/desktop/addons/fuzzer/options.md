@@ -34,7 +34,42 @@ If the number of errors exceed this limit, the fuzzer will stop its execution.
 
 ### Payload Replacement Strategy
 
-Rules defined to control the order that multiple payload lists are iterated.
+
+Controls how multiple payload lists are combined when you fuzz more than one location.  
+
+Locations are processed in **message location sort order**, not the order you added them in the Fuzz dialog.
+
+* **Cluster Bomb** - try every combination: the **last** fuzz location is cycled through all of its payloads before an earlier location advances.
+* **Pitchfork** - pair payloads by position: 1st with 1st, 2nd with 2nd, and so on. The fuzzer stops when the **shortest** payload list is used up.
+
+With a single fuzz location, both strategies produce the same order.
+
+Example setup (two locations, two payloads each):
+
+* **Location A** payloads: 1, 2
+* **Location B** payloads: a, b
+
+#### Cluster Bomb Example
+
+
+The last location (B) changes on every request. Location A changes only after B has used every payload.
+
+| Request | Location A | Location B |
+|---------|------------|------------|
+| 1       | 1          | a          |
+| 2       | 1          | b          |
+| 3       | 2          | a          |
+| 4       | 2          | b          |
+
+#### Pitchfork Example
+
+
+The same payload position is used in every location on each request (1st with 1st, then 2nd with 2nd, and so on).
+
+| Request | Location A | Location B |
+|---------|------------|------------|
+| 1       | 1          | a          |
+| 2       | 2          | b          |
 
 ### Concurrent Scanning Threads per Scan
 
