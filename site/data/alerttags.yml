@@ -341,31 +341,31 @@ OWASP_2017_A09:
   link: https://owasp.org/www-project-top-ten/2017/A9_2017-Using_Components_with_Known_Vulnerabilities.html
 
 OWASP_2021_A01:
-  link: https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+  link: https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/
 
 OWASP_2021_A02:
-  link: https://owasp.org/Top10/A02_2021-Cryptographic_Failures/
+  link: https://owasp.org/Top10/2021/A02_2021-Cryptographic_Failures/
 
 OWASP_2021_A03:
-  link: https://owasp.org/Top10/A03_2021-Injection/
+  link: https://owasp.org/Top10/2021/A03_2021-Injection/
 
 OWASP_2021_A04:
-  link: https://owasp.org/Top10/A04_2021-Insecure_Design/
+  link: https://owasp.org/Top10/2021/A04_2021-Insecure_Design/
 
 OWASP_2021_A05:
-  link: https://owasp.org/Top10/A05_2021-Security_Misconfiguration/
+  link: https://owasp.org/Top10/2021/A05_2021-Security_Misconfiguration/
 
 OWASP_2021_A06:
-  link: https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/
+  link: https://owasp.org/Top10/2021/A06_2021-Vulnerable_and_Outdated_Components/
 
 OWASP_2021_A07:
-  link: https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/
+  link: https://owasp.org/Top10/2021/A07_2021-Identification_and_Authentication_Failures/
 
 OWASP_2021_A08:
-  link: https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/
+  link: https://owasp.org/Top10/2021/A08_2021-Software_and_Data_Integrity_Failures/
 
 OWASP_2021_A10:
-  link: https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
+  link: https://owasp.org/Top10/2021/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
 
 OWASP_2023_API4:
   link: https://owasp.org/API-Security/editions/2023/en/0xa4-unrestricted-resource-consumption/
