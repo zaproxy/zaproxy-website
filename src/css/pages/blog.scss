@@ -22,6 +22,17 @@
         width: 40px;
         display: inline-block;
     }
+    .author-twitter,
+    .author-mastodon,
+    .author-bluesky {
+        svg {
+            width: 0.9em;
+            height: 0.9em;
+            vertical-align: -0.1em;
+            margin-right: 0.2em;
+            fill: currentColor;
+        }
+    }
 }
 
 main {
