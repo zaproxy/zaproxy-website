@@ -4,8 +4,8 @@ details:
 - path: /URL/documentwrite
   rule: 210000
   score: 14%
-  trend: up
-  prev: Fail
+  trend: stable
+  prev: 14%
 - path: /URL/documentwrite
   rule: 220000
   score: Pass
@@ -19,8 +19,8 @@ details:
 - path: /baseURI/documentwrite
   rule: 210000
   score: 14%
-  trend: up
-  prev: Fail
+  trend: stable
+  prev: 14%
 - path: /baseURI/documentwrite
   rule: 220000
   score: Pass
@@ -29,8 +29,8 @@ details:
 - path: /documentURI/documentwrite
   rule: 210000
   score: 14%
-  trend: up
-  prev: Fail
+  trend: stable
+  prev: 14%
 - path: /documentURI/documentwrite
   rule: 220000
   score: Pass
@@ -129,8 +129,8 @@ details:
 - path: /location/documentwrite
   rule: 210000
   score: 14%
-  trend: up
-  prev: Fail
+  trend: stable
+  prev: 14%
 - path: /location/documentwrite
   rule: 220000
   score: Pass
@@ -149,8 +149,8 @@ details:
 - path: /location/innerHtml
   rule: 210000
   score: 14%
-  trend: up
-  prev: Fail
+  trend: stable
+  prev: 14%
 - path: /location/innerHtml
   rule: 220000
   score: Pass
@@ -179,8 +179,8 @@ details:
 - path: /locationhref/documentwrite
   rule: 210000
   score: 14%
-  trend: up
-  prev: Fail
+  trend: stable
+  prev: 14%
 - path: /locationhref/documentwrite
   rule: 220000
   score: Pass
@@ -189,8 +189,8 @@ details:
 - path: /locationpathname/documentwrite
   rule: 210000
   score: 14%
-  trend: up
-  prev: Fail
+  trend: stable
+  prev: 14%
 - path: /locationpathname/documentwrite
   rule: 220000
   score: Pass
