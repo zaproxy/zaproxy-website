@@ -19,6 +19,23 @@
               Posted <span class="post-date">{{ .Date.Format "Monday January 2, 2006" }}</span>
               <span class="word-count fl-r"> {{ .WordCount }} Words </span>
             </section>
+            {{ $outdated := .Params.outdated }}
+            {{ if not $outdated }}{{ $outdated = dict }}{{ end }}
+            {{ if or (eq $outdated.notice true) (and (lt .Date (now.AddDate -5 0 0)) (ne $outdated.notice false)) }}
+            <blockquote class="alert alert-warning">
+              <p class="alert-heading">
+                ⚠️ {{ $outdated.title | default "Content may be outdated" }}
+              </p>
+              <div class="alert-content">
+                <p>
+                  {{ with $outdated.message }}{{ . | markdownify }}{{ else }}Features and functionality described here may no longer match modern ZAP.{{ end }}
+                  {{ if or $outdated.link (not $outdated.message) }}
+                  Check the <a href="{{ $outdated.link | default "/" }}">{{ $outdated.link_text | default "website" }}</a> before relying on this content.
+                  {{ end }}
+                </p>
+              </div>
+            </blockquote>
+            {{ end }}
             {{ .Content }}
           </main>
           <div class="next-content bg--blue-lightest p-10">
