@@ -28,4 +28,7 @@ It is covered in the video: [ZAP Chat 11 Automation Framework Part 5 - APIs](htt
       context:                         # String: Context to use when importing the OpenAPI definition, default: first context.
       user:                            # String: An optional user to use for authentication, must be defined in the env.
       targetUrl:                       # String: URL which overrides the target defined in the definition, default: null, the target will not be overridden
+      maxMessages:                     # Int: Maximum number of messages to import, default: 0, import all messages
 ```
+
+Note that redirects are followed when importing, so `maxMessages` is a soft limit and the number of messages stored may exceed the value set.

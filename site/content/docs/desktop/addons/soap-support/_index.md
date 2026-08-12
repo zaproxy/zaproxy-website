@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: 31.0.0
+    version: 32.0.0
 ---
 
 # SOAP Support
@@ -23,7 +23,9 @@ A menu item is added to the Import menu:
 
 * Import a WSDL File
 
-Operations to import a WSDL file from the local filesystem or from a URL are also available via the API.   
+The dialogue allows users to limit the number of messages imported. A value of `0` (the default) imports all messages. Redirects are followed when importing, so this is a soft limit.   
+
+Operations to import a WSDL file from the local filesystem or from a URL are also available as API actions (`importFile` / `importUrl`), including an optional `maxMessages` parameter.   
 
 **NOTE:** As of version 6 of this add-on, only encoded URLs are supported.
 

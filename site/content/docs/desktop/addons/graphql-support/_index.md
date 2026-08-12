@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.33.0
+    version: 0.34.0
 ---
 
 # GraphQL Support
@@ -21,6 +21,10 @@ The spider is supported on ZAP 2.10.0 and later.
 A menu item is added to the Import menu:
 
 * Import a GraphQL schema
+
+### Max Messages
+
+The dialogue allows users to limit the number of messages imported. A value of `0` (the default) imports all messages.
 
 ### Endpoint URL Format
 
@@ -48,8 +52,8 @@ The following operations are added to the API:
 
 ### Actions
 
-* importFile (endurl\*, file\*)
-* importUrl (endurl\*, url)
+* importFile (endurl\*, file\*, maxMessages)
+* importUrl (endurl\*, url, maxMessages)
 * setOptionArgsType (String\*)
 * setOptionMaxArgsDepth (Integer\*)
 * setOptionMaxQueryDepth (Integer\*)
@@ -58,7 +62,7 @@ The following operations are added to the API:
 * setOptionQuerySplitType (String\*)
 * setOptionRequestMethod (String\*)
 
-`endurl` supports the `Endpoint URL` format explained earlier. The definitions will be imported synchronously and any warnings will be returned.
+`endurl` supports the `Endpoint URL` format explained earlier. The optional `maxMessages` parameter limits the number of messages imported; omit or use `0` to import all. The definitions will be imported synchronously and any warnings will be returned.
 
 ## Command Line
 

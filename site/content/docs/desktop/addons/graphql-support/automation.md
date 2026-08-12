@@ -35,7 +35,14 @@ It is covered in the video: [ZAP Chat 11 Automation Framework Part 5 - APIs](htt
       requestMethod:                   # Enum [post_json, post_graphql, get]: The request method, default: post_json
       cycleDetectionMode:              # Enum [disabled, quick, exhaustive]: The cycle detection mode, default: quick
       maxCycleDetectionAlerts:         # Int: The maximum number of alerts to raise for detected cycles, default: 100
+      maxMessages:                     # Int: Maximum number of messages to import, default: 0, import all messages
 ```
+
+
+When `maxMessages` is set (greater than 0), [fingerprinting](/docs/desktop/addons/graphql-support/alerts/) and service method checks are skipped.
+
+
+This limit is soft: redirects are followed, so the number of messages persisted may exceed the configured value.
 
 ## See also
 

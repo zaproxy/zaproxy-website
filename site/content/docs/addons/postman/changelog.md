@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: postman
-    version: 0.9.0
+    version: 0.10.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.10.0] - 2026-08-12
+### Added
+- Allow users to limit the number of Postman messages to import (`maxMessages`). Ex: If testing authentication, access, etc.
+
+### Changed
+- Maintenance changes.
 
 ## [0.9.0] - 2025-12-15
 ### Changed
@@ -58,6 +65,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.10.0]: https://github.com/zaproxy/zap-extensions/releases/postman-v0.10.0
 [0.9.0]: https://github.com/zaproxy/zap-extensions/releases/postman-v0.9.0
 [0.8.0]: https://github.com/zaproxy/zap-extensions/releases/postman-v0.8.0
 [0.7.0]: https://github.com/zaproxy/zap-extensions/releases/postman-v0.7.0

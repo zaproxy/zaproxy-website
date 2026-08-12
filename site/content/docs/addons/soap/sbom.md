@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: soap
-    version: '31'
+    version: '32'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v31/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/soap-v32/bom.json
   components:
   - name: angus-activation
     version: 2.0.3
@@ -41,16 +41,16 @@ sbom:
     version: 0.61.0
     licenses: ''
   - name: bcmail-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.84'
+    version: '1.85'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.3.0
@@ -71,7 +71,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.42.0
+    version: 1.44.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -173,10 +173,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 12.8.1
+    version: 13.2.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 12.8.1
+    version: 13.2.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -239,37 +239,37 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 3.1.1
+    version: 3.1.5
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-core
-    version: 3.1.1
+    version: 3.1.5
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 3.1.1
+    version: 3.1.5
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.0
+    version: 2.22.1
     licenses: Apache-2.0
   - name: jakarta.activation-api
     version: 2.1.4
@@ -317,28 +317,28 @@ sbom:
     version: 3.0.2
     licenses: Apache-2.0
   - name: junit-bom
-    version: 6.1.0
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.1.0
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.1.0
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.1.0
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.1.0
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.1.0
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.1.0
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.1.0
+    version: 6.1.3
     licenses: EPL-2.0
   - name: kaitai-struct-runtime
     version: '0.11'
@@ -419,7 +419,7 @@ sbom:
     version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.29.0
+    version: 0.30.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -485,7 +485,7 @@ sbom:
     version: 4.8.6
     licenses: LGPL-2.1-only
   - name: sqlite-jdbc
-    version: 3.53.2.0
+    version: 3.53.2.1
     licenses: Apache-2.0
   - name: stax-ex
     version: 2.1.0

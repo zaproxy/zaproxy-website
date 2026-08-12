@@ -23,4 +23,8 @@ It is covered in the video: [ZAP Chat 11 Automation Framework Part 5 - APIs](htt
     parameters:
       wsdlFile:                        # String: Local file path of the WSDL, default: null, no definition will be imported
       wsdlUrl:                         # String: URL pointing to the WSDL, default: null, no definition will be imported
+      maxMessages:                     # Int: Maximum number of messages to import, default: 0, import all messages
 ```
+
+
+Redirects are followed when importing, so `maxMessages` is a soft limit — more messages may appear in the history if redirects occur.

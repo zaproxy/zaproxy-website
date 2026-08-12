@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: exim
-    version: 0.21.0
+    version: 0.22.0
 ---
 
 # Import/Export
@@ -36,7 +36,10 @@ Provides a context menu to save content of HTTP messages as XML.
 
 ### Import HAR (HTTP Archive File)
 
-An option to import messages from a HTTP Archive (HAR), available via the 'Import' menu. **Note** : The following modifications may be made when importing a HAR (HTTP Archive File):
+An option to import messages from a HTTP Archive (HAR), available via the 'Import' menu. Optionally select *Send Requests* to send the requests (following redirects) instead of importing the recorded responses. The Mode is enforced when sending the requests (and following redirections). The optional *Max Messages* field limits how many messages are imported; use `0` to import all.
+
+
+**Note**: The following modifications may be made when importing a HAR (HTTP Archive File):
 
 * Missing HTTP Version - If the message is missing the httpVersion attribute it will be set to "HTTP/1.1".
 * HTTP Version 3 - If the message has its httpVersion attribute set as "h3", "http/3", "http/3.0" it will be set to "HTTP/2".
@@ -88,7 +91,7 @@ This add-on also exposes various ZAP API endpoints to facilitate programmatic us
 ### Actions
 
 * `exportSitesTree (filePath* )` Exports the Sites Tree in the Sites Tree YAML format.
-* `importHar (filePath data )` Imports a HAR from a file or the given data.
+* `importHar (filePath data sendRequests maxMessages )` Imports a HAR from a file or the given data. If sendRequests is true the requests are sent (following redirects) instead of importing the recorded responses. The Mode is enforced when sending the requests (and following redirections). The optional maxMessages parameter limits the number of messages imported; omit or use 0 to import all.
 * `importModsec2Logs (filePath* )` Imports ModSecurity2 logs from the file with the given file system path.
 * `importUrls (filePath* )` Imports URLs (one per line) from the file with the given file system path.
 * `importZapLogs (filePath* )` Imports previously exported ZAP messages from the file with the given file system path.
