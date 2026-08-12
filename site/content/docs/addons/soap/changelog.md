@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: soap
-    version: '31'
+    version: '32'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [32] - 2026-08-12
+### Added
+- Allow users to limit the number of SOAP messages to import (`maxMessages`). Ex: If testing authentication, access, etc.
+
+### Changed
+- Maintenance changes.
 
 ## [31] - 2026-06-12
 ### Changed
@@ -222,6 +229,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version
 
+[32]: https://github.com/zaproxy/zap-extensions/releases/soap-v32
 [31]: https://github.com/zaproxy/zap-extensions/releases/soap-v31
 [30]: https://github.com/zaproxy/zap-extensions/releases/soap-v30
 [29]: https://github.com/zaproxy/zap-extensions/releases/soap-v29

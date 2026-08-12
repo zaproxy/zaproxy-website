@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: openapi
-    version: 57.0.0
+    version: 58.0.0
 ---
 
 # OpenAPI Support
@@ -25,6 +25,10 @@ A menu item is added to the Import menu:
 * Import an OpenAPI definition
 
 The dialogue allows overriding the server URL present in the OpenAPI definition (or specify one if not present) through the Target URL field. The import progress is shown in the progress tab.
+
+### Max Messages
+
+The dialogue allows users to limit the number of messages imported. A value of `0` (the default) imports all messages. Note that redirects are followed when importing, so this is a soft limit and the number of messages stored may exceed the value set.
 
 ### Context
 
@@ -56,10 +60,10 @@ Following some examples, overriding:
 
 The following operations are added to the API:
 
-* ACTION importFile (file, target, contextId, userId)
-* ACTION importUrl (url, hostOverride, contextId, userId)
+* ACTION importFile (file, target, contextId, userId, maxMessages)
+* ACTION importUrl (url, hostOverride, contextId, userId, maxMessages)
 
-Both `target` and `hostOverride` support the `Target URL` format explained earlier. The definitions will be imported synchronously and any warnings will be returned.
+Both `target` and `hostOverride` support the `Target URL` format explained earlier. The optional `maxMessages` parameter limits the number of messages imported; omit or use `0` to import all. The definitions will be imported synchronously and any warnings will be returned.
 
 ## Data Driven Nodes
 

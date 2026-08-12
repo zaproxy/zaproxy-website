@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: postman
-    version: 0.9.0
+    version: 0.10.0
 ---
 
 # Postman Support
@@ -23,12 +23,18 @@ A menu item is added to the Import menu:
 
 Any variables defined in the collection will be replaced with their values. Additionally, the dialog allows providing a comma-separated list of variables as key-value pairs in the format `key1=value1,key2=value2,...`, these variables will have precedence over the collection ones.
 
+### Max Messages
+
+The dialogue allows users to limit the number of messages imported. A value of `0` (the default) imports all messages. Note that redirects are followed when importing, so this is a soft limit and the number of messages stored may exceed the value set.
+
 ## API
 
 The following operations are added to the API:
 
-* ACTION importFile (file)
-* ACTION importUrl (url)
+* ACTION importFile (file, maxMessages)
+* ACTION importUrl (url, maxMessages)
+
+The optional `maxMessages` parameter limits the number of messages imported; omit or use `0` to import all.
 
 ## Command Line
 

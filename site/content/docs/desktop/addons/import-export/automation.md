@@ -18,7 +18,11 @@ The import job allows you to import HAR (HTTP Archive File), ModSecurity2 Logs, 
     parameters:
       type:                            # String: One of ['har', 'modsec2', 'url', 'zap_messages']
       fileName:                        # String: Name of the file containing the data
+      sendRequests:                    # Bool: If true and type is har, send the requests instead of importing recorded responses, default: false
+      maxMessages:                     # Int: Maximum number of messages to import (har), default: 0, import all messages
 ```
+
+When `sendRequests` is true, redirects are followed, so `maxMessages` is a soft limit — more HTTP requests may be made than the value specified. The Mode is enforced when sending the requests (and following redirections).
 
 ## Job: export
 
