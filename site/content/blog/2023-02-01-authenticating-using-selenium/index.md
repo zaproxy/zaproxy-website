@@ -11,6 +11,12 @@ tags:
 date: "2023-02-01"
 authors: 
     - simon
+outdated:
+    notice: true
+    title: "This approach has been superseded"
+    message: "The authentication approach described here has been superseded."
+    link: "/docs/authentication/"
+    link_text: "Authentication Decision Tree"
 ---
 
 ![ZAPbot selenium authentication](images/selenium-auth.png)

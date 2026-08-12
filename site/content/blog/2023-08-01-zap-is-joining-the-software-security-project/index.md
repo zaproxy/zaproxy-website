@@ -9,6 +9,10 @@ tags:
 date: "2023-08-01"
 authors:
     - simon
+outdated:
+    notice: true
+    title: "Historical content"
+    message: "This blog post has been kept for historical reasons. ZAP is now supported by Checkmarx and is not part of any foundation."
 ---
 I’m delighted to announce that ZAP is joining the new [Software Security Project](https://softwaresecurityproject.org/) (SSP) as one of the founding projects.
 
