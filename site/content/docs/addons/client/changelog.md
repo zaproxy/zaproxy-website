@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.30.0
+    version: 0.31.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.31.0] - 2026-08-14
+### Changed
+- Maintenance changes.
+- Include cause of invalid URL in error message of Client Spider job.
+- Updated Chrome and Firefox recorders to v0.2.1.
+- Check launched browsers can access the callback URL, and retry more often.
+- Updated Chrome and Firefox full extensions to v0.2.2.
 
 ## [0.30.0] - 2026-07-06
 ### Changed
@@ -278,6 +286,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.31.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.31.0
 [0.30.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.30.0
 [0.29.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.29.0
 [0.28.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.28.0
