@@ -3,14 +3,14 @@ url: https://public-firing-range.appspot.com/angular
 details:
 - path: /angular_body/1.1.5
   rule: 200021
-  score: Pass
-  trend: stable
-  prev: Pass
-- path: /angular_body/1.2.0
-  rule: 200021
   score: 86%
   trend: down
   prev: Pass
+- path: /angular_body/1.2.0
+  rule: 200021
+  score: Pass
+  trend: up
+  prev: 86%
 - path: /angular_body/1.2.18
   rule: 200021
   score: Pass
@@ -22,59 +22,59 @@ details:
   prev: Fail
 - path: /angular_body/1.2.24
   rule: 200021
-  score: 86%
-  trend: down
-  prev: Pass
+  score: Pass
+  trend: up
+  prev: 86%
 - path: /angular_body/1.4.0
+  rule: 200021
+  score: 43%
+  trend: down
+  prev: 71%
+- path: /angular_body/1.6.0
   rule: 200021
   score: 71%
   trend: up
   prev: 57%
-- path: /angular_body/1.6.0
-  rule: 200021
-  score: 57%
-  trend: up
-  prev: 43%
 - path: /angular_body_alt_symbols/1.4.0
   rule: 200021
-  score: 71%
-  trend: stable
+  score: 29%
+  trend: down
   prev: 71%
 - path: /angular_body_alt_symbols_raw/1.6.0
   rule: 200021
-  score: Pass
-  trend: up
-  prev: 57%
+  score: 57%
+  trend: down
+  prev: Pass
 - path: /angular_body_attribute_ng/1.4.0
   rule: 200021
-  score: 71%
-  trend: up
-  prev: 29%
+  score: 43%
+  trend: down
+  prev: 71%
 - path: /angular_body_attribute_non_ng/1.4.0
+  rule: 200021
+  score: 86%
+  trend: up
+  prev: 57%
+- path: /angular_body_attribute_non_ng_raw/1.4.0
   rule: 200021
   score: 57%
   trend: down
   prev: 86%
-- path: /angular_body_attribute_non_ng_raw/1.4.0
-  rule: 200021
-  score: 86%
-  trend: up
-  prev: 71%
 - path: /angular_body_raw/1.4.0
   rule: 200021
-  score: 57%
-  trend: down
-  prev: Pass
+  score: 71%
+  trend: up
+  prev: 57%
 - path: /angular_body_raw_escaped/1.4.0
   rule: 200021
-  score: 57%
-  trend: stable
+  score: 29%
+  trend: down
   prev: 57%
 - path: /angular_body_raw_escaped_alt_symbols/1.4.0
   rule: 200021
   score: 57%
-  trend: down
-  prev: Pass
+  trend: stable
+  prev: 57%
 - path: /angular_body_raw_post/1.6.0
   rule: 200021
   score: 43%
@@ -102,19 +102,14 @@ details:
   prev: Pass
 - path: /angular_post_message_parse/1.6.0
   rule: 200021
-  score: 29%
-  trend: up
-  prev: Fail
+  score: 14%
+  trend: down
+  prev: 29%
 - path: /angular_post_message_parse/1.6.0
   rule: 220004
   score: Pass
   trend: stable
   prev: Pass
-- path: /angular_storage_parse/1.6.0
-  rule: 200021
-  score: 14%
-  trend: up
-  prev: Fail
 - path: /angular_storage_parse/1.6.0
   rule: 220004
   score: Pass
@@ -123,4 +118,4 @@ details:
 tests: 20
 passes: 7
 fails: 1
-score: 75%
+score: 69%
