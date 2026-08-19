@@ -10,6 +10,10 @@ weight: 3
 
 Interactsh is an open-source solution for out-of-band data extraction.
 
+
+This add-on requires an Interactsh server running version 1.3.0 or later, which
+encrypts interactions using AES-CTR; earlier servers (AES-CFB) are not supported.
+
 ### Features
 
 * DNS/HTTP/SMTP Interaction support
