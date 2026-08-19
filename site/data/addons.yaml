@@ -749,9 +749,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/oast-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.24.0/oast-beta-0.24.0.zap
-  date: 2025-12-15
-  version: 0.24.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/oast-v0.25.0/oast-beta-0.25.0.zap
+  date: 2026-08-19
+  version: 0.25.0
 - id: onlineMenu
   name: Online menus
   description: ZAP Online menu items
