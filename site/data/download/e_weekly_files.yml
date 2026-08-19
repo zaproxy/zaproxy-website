@@ -2,5 +2,5 @@
 ---
 - name: Weekly Cross Platform Package
   id: cp-p
-  size: 322 MB
-  link: https://github.com/zaproxy/zaproxy/releases/download/w2026-08-11/ZAP_WEEKLY_D-2026-08-11.zip
+  size: 323 MB
+  link: https://github.com/zaproxy/zaproxy/releases/download/w2026-08-19/ZAP_WEEKLY_D-2026-08-19.zip
