@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: webdriverwindows
-    version: '218'
+    version: '219'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v218/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverwindows-v219/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
