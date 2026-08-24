@@ -4,18 +4,18 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case01-InjectionInView-Numeric-Blind-200ValidResponseWithDefaultOnException.jsp
   rule: 40018
   score: 71%
-  trend: down
-  prev: 86%
+  trend: stable
+  prev: 71%
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case02-InjectionInView-String-Blind-200ValidResponseWithDefaultOnException.jsp
   rule: 40018
   score: 71%
-  trend: down
-  prev: 86%
+  trend: stable
+  prev: 71%
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case03-InjectionInView-Date-Blind-200ValidResponseWithDefaultOnException.jsp
   rule: 40018
   score: 71%
-  trend: down
-  prev: 86%
+  trend: stable
+  prev: 71%
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Identical/Case04-InjectionInUpdate-Numeric-TimeDelayExploit-200Identical.jsp
   score: Fail
   trend: stable
