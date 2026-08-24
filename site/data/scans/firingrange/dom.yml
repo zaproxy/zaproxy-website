@@ -52,16 +52,6 @@ details:
   trend: stable
   prev: Pass
 - path: /toxicdom/document/cookie_set/documentWrite
-  rule: 210000
-  score: 14%
-  trend: stable
-  prev: 14%
-- path: /toxicdom/document/cookie_set/documentWrite
-  rule: 210017
-  score: 14%
-  trend: stable
-  prev: 14%
-- path: /toxicdom/document/cookie_set/documentWrite
   rule: 220000
   score: Pass
   trend: stable
@@ -178,9 +168,9 @@ details:
   prev: Pass
 - path: /toxicdom/external/localStorage/function/eval
   rule: 210018
-  score: Pass
-  trend: up
-  prev: 86%
+  score: 86%
+  trend: down
+  prev: Pass
 - path: /toxicdom/external/localStorage/function/eval
   rule: 220003
   score: Pass
@@ -233,14 +223,14 @@ details:
   prev: Pass
 - path: /toxicdom/external/sessionStorage/function/innerHtml
   rule: 210000
-  score: 14%
+  score: 29%
   trend: up
-  prev: Fail
+  prev: 14%
 - path: /toxicdom/external/sessionStorage/function/innerHtml
   rule: 210017
-  score: 86%
+  score: 71%
   trend: down
-  prev: Pass
+  prev: 86%
 - path: /toxicdom/external/sessionStorage/function/innerHtml
   rule: 220000
   score: Pass
@@ -263,13 +253,13 @@ details:
   prev: Pass
 - path: /toxicdom/localStorage/function/documentWrite
   rule: 210000
-  score: 14%
-  trend: stable
+  score: 29%
+  trend: up
   prev: 14%
 - path: /toxicdom/localStorage/function/documentWrite
   rule: 210017
-  score: 14%
-  trend: stable
+  score: 29%
+  trend: up
   prev: 14%
 - path: /toxicdom/localStorage/function/documentWrite
   rule: 220000
@@ -281,6 +271,11 @@ details:
   score: Pass
   trend: stable
   prev: Pass
+- path: /toxicdom/localStorage/function/eval
+  rule: 210018
+  score: 14%
+  trend: up
+  prev: Fail
 - path: /toxicdom/localStorage/function/eval
   rule: 220003
   score: Pass
@@ -364,8 +359,8 @@ details:
 - path: /toxicdom/sessionStorage/function/innerHtml
   rule: 210017
   score: 14%
-  trend: up
-  prev: Fail
+  trend: stable
+  prev: 14%
 - path: /toxicdom/sessionStorage/function/innerHtml
   rule: 220000
   score: Pass
@@ -381,16 +376,6 @@ details:
   score: Pass
   trend: stable
   prev: Pass
-- path: /toxicdom/window/name/documentWrite
-  rule: 210000
-  score: 14%
-  trend: up
-  prev: Fail
-- path: /toxicdom/window/name/documentWrite
-  rule: 210017
-  score: 14%
-  trend: up
-  prev: Fail
 - path: /toxicdom/window/name/documentWrite
   rule: 220000
   score: Pass

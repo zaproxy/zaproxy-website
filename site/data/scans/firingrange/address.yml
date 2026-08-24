@@ -112,11 +112,6 @@ details:
   trend: stable
   prev: Pass
 - path: /location/documentwrite
-  rule: 210000
-  score: 14%
-  trend: stable
-  prev: 14%
-- path: /location/documentwrite
   rule: 220000
   score: Pass
   trend: stable
@@ -131,11 +126,6 @@ details:
   score: Pass
   trend: stable
   prev: Pass
-- path: /location/innerHtml
-  rule: 210000
-  score: 14%
-  trend: stable
-  prev: 14%
 - path: /location/innerHtml
   rule: 220000
   score: Pass

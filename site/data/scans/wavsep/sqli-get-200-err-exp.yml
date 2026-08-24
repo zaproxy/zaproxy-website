@@ -4,8 +4,8 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Error-Experimental/Case01-InjectionInInsertValues-String-BinaryDeliberateRuntimeError-With200Errors.jsp
   rule: 40018
   score: 71%
-  trend: down
-  prev: 86%
+  trend: stable
+  prev: 71%
 tests: 1
 passes: 0
 fails: 0
