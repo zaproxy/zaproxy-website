@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.41.0/authhelper-beta-0.41.0.zap
-  date: 2026-08-07
-  version: 0.41.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.42.0/authhelper-beta-0.42.0.zap
+  date: 2026-08-26
+  version: 0.42.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -180,9 +180,9 @@
   status: release
   infoUrl: /docs/desktop/addons/common-library/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.43.0/commonlib-release-1.43.0.zap
-  date: 2026-07-14
-  version: 1.43.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/commonlib-v1.44.0/commonlib-release-1.44.0.zap
+  date: 2026-08-26
+  version: 1.44.0
 - id: communityScripts
   name: Community Scripts
   description: Useful ZAP scripts written by the ZAP community.
@@ -719,9 +719,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/mcp-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.3.0/mcp-alpha-0.3.0.zap
-  date: 2026-08-07
-  version: 0.3.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/mcp-v0.4.0/mcp-alpha-0.4.0.zap
+  date: 2026-08-26
+  version: 0.4.0
 - id: neonmarker
   name: Neonmarker
   description: Colors history table items based on tags

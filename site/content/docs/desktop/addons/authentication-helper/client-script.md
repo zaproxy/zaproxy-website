@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Client Script Authentication
 type: userguide
-weight: 5
+weight: 8
 ---
 
 # Client Script Authentication

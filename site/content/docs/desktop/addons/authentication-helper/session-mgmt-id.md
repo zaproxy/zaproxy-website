@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Session Management Identification
 type: userguide
-weight: 4
+weight: 11
 ---
 
 # Session Management Identification

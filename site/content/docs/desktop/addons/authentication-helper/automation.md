@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Authentication Helper Automation Framework Support
 type: userguide
-weight: 11
+weight: 6
 ---
 
 # Authentication Helper Automation Framework Support
