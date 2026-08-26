@@ -14,10 +14,10 @@ For more details of code contributions see: <https://www.openhub.net/p/zaproxy/c
 
 |   |                                                                                                                                   |
 |---|-----------------------------------------------------------------------------------------------------------------------------------|
-|   | Simon Bennetts ([@psiinon](https://twitter.com/psiinon)) - [Sponsor on GitHub](https://github.com/sponsors/psiinon)               |
-|   | thc202 - [Sponsor on GitHub](https://github.com/sponsors/thc202)                                                                  |
-|   | Rick Mitchell ([@kingthorin_rm](https://twitter.com/kingthorin_rm)) - [Sponsor on GitHub](https://github.com/sponsors/kingthorin) |
-|   | Akshath Kothari ([@ricekot_](https://twitter.com/ricekot_)) - [Sponsor on GitHub](https://github.com/sponsors/ricekot)            |
+|   | [Simon Bennetts](/docs/team/psiinon/) - Sponsored by Checkmarx               |
+|   | [Ricardo Pereira](/docs/team/thc202/) - Sponsored by Checkmarx               |
+|   | [Rick Mitchell](/docs/team/kingthorin/) - Sponsored by Checkmarx               |
+|   | [Akshath Kothari](/docs/team/ricekot/) - [Sponsor on GitHub](https://github.com/sponsors/ricekot)               |
 
 ## ZAP Extended Team
 
@@ -31,6 +31,7 @@ People who have made contributions to ZAP over the years, in alphabetical order:
 |   | Zuhair Abid ([@zuhairabid](https://github.com/zuhairabid))                                                            |
 |   | Bilal Achahbar                                                                                                        |
 |   | Tushar Aggarwal                                                                                                       |
+|   | Ibrahim AlJaafreh ([LinkedIn](https://www.linkedin.com/in/ibrahim-aljaafreh-glitch/)) - Cystack RedTeam               |
 |   | Amro Alolaqi                                                                                                          |
 |   | [Matthias Altmann](https://secf00tprint.github.io/blog) ([@secf00tprint](https://twitter.com/secf00tprint))           |
 |   | André Alves ([@andrealvesdev](https://twitter.com/andrealvesdev))                                                     |
