@@ -2,12 +2,14 @@
 # This page was generated from the add-on.
 title: Authentication Report - JSON
 type: userguide
+weight: 1
 ---
 
 # Authentication Report - JSON
 
-This is a specialized report which details how authentication handling worked for the given site.
+This is a specialized report which details how authentication handling worked for the given site. **Note** : In order to ensure the most helpful and realistic output users should ensure no other traffic is happening via ZAP at the same time that authentication diagnostics are being collected.
 
+## Web Scanning Usage
 
 You must specify the site you want the report for otherwise no data will be generated.
 
@@ -16,6 +18,10 @@ This report is designed to be run after attempting to access at least one authen
 authentication method set up correctly and with valid credentials.  
 
 Session handling and verification can be left as "autodetect" - this report will detail how effective that was.
+
+## API Scanning Usage
+
+The intended workflow is that an enabling diagnostics job be included, and an API definition import done with a limited number of messages. The report can then include the relevant summary and traffic details.
 
 ### Sections
 
@@ -38,20 +44,30 @@ Session handling and verification can be left as "autodetect" - this report will
 
 ### Summary
 
-The following summary items are used:
+Summary items fall into two categories:
 
-| Key                   | Passed | Description                     |
-|:----------------------|:-------|:--------------------------------|
-| auth.summary.auth     | false  | Authentication failed           |
-| auth.summary.auth     | true   | Authentication appeared to work |
-| auth.summary.password | false  | Password field not identified   |
-| auth.summary.password | true   | Password field identified       |
-| auth.summary.session  | false  | Session Handling not identified |
-| auth.summary.session  | true   | Session Handling identified     |
-| auth.summary.username | false  | Username field not identified   |
-| auth.summary.username | true   | Username field identified       |
-| auth.summary.verif    | false  | Verification URL not identified |
-| auth.summary.verif    | true   | Verification URL identified     |
+* **Pass/Fail items** : Use a boolean `passed` field to indicate success or failure.
+* **Value-based items** : Use a numeric `value` field (count) instead of `passed`.
+
+| Key                               | Passed      | Description                       |
+|:----------------------------------|:------------|:----------------------------------|
+| auth.summary.auth                 | false       | Authentication failed             |
+| auth.summary.auth                 | true        | Authentication appeared to work   |
+| auth.summary.password             | false       | Password field not identified     |
+| auth.summary.password             | true        | Password field identified         |
+| auth.summary.session              | false       | Session Handling not identified   |
+| auth.summary.session              | true        | Session Handling identified       |
+| auth.summary.username             | false       | Username field not identified     |
+| auth.summary.username             | true        | Username field identified         |
+| auth.summary.verif                | false       | Verification URL not identified   |
+| auth.summary.verif                | true        | Verification URL identified       |
+| auth.summary.connection_successes | Value Based | Responses received                |
+| auth.summary.connection_failures  | Value Based | Communication or network failures |
+
+
+The connection success and failure items use a numeric `value` instead of
+`passed`. These counts reflect the overall results of network requests made while diagnostics are enabled,
+including responses received and any network or communication failures.
 
 #### Failure Details
 
@@ -75,6 +91,10 @@ This is the [Automation Framework environment](/docs/desktop/addons/automation-f
 
 If you have set the Session Management or Verification to "autodetect" and ZAP successfully detected them then the
 environment will have been updated with the values that ZAP has detected.
+
+
+The environment reflects the context used for the report. If several contexts are available, ZAP uses the one most
+relevant to the report; otherwise the first context is included.
 
 ### Statistics
 

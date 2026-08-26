@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: commonlib
-    version: 1.43.0
+    version: 1.44.0
 ---
 
 # Changelog
@@ -14,6 +14,14 @@ All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.44.0] - 2026-08-26
+### Added
+- Add standard header for other add-ons to use.
+
+### Changed
+- Update dependencies.
+- Update alert tag URLs to avoid redirects.
 
 ## [1.43.0] - 2026-07-14
 ### Added
@@ -291,6 +299,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First version.
 
+[1.44.0]: https://github.com/zaproxy/zap-extensions/releases/commonlib-v1.44.0
 [1.43.0]: https://github.com/zaproxy/zap-extensions/releases/commonlib-v1.43.0
 [1.42.0]: https://github.com/zaproxy/zap-extensions/releases/commonlib-v1.42.0
 [1.41.0]: https://github.com/zaproxy/zap-extensions/releases/commonlib-v1.41.0
