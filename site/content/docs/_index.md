@@ -73,6 +73,10 @@ groups:
         link: /docs/constants/
         desc: defined in the ZAP codebase that are exposed via the API and/or scripts 
     
+      - name: 'Heads Up Display (HUD)'
+        link: /docs/hud/
+        desc: detailed information on the HUD
+    
       - name: 'Internal Events'
         link: /docs/internal-events/
         desc: detailed information on the internal events ZAP publishes 
