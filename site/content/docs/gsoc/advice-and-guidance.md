@@ -20,7 +20,7 @@ Don't worry if you can't see any suitable issues - just get in touch with us via
 [ZAP Developer Group](https://groups.google.com/group/zaproxy-develop) and we'll find something for you.
 
 Also get in touch with us to discuss potential projects - we are very happy to talk to you about potential projects,
-via email, irc, video calls - whatever works for you.
+via email, Slack, video calls - whatever works for you.
 
 We are also very happy to review project proposals before they are submitted - most of the successful GSoC proposals were
 reviewed by the ZAP team before their final submission.
