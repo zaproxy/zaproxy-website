@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: selenium
-    version: 15.54.0
+    version: 15.55.0
 ---
 
 # Changelog
@@ -14,6 +14,11 @@ All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [15.55.0] - 2026-09-01
+### Changed
+- Update HtmlUnit driver (Issue 9313).
+- Update Selenium to version 4.48.0.
 
 ## [15.54.0] - 2026-08-12
 ### Changed
@@ -396,6 +401,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Updated to Selenium 2.45 and moved to release
 
+[15.55.0]: https://github.com/zaproxy/zap-extensions/releases/selenium-v15.55.0
 [15.54.0]: https://github.com/zaproxy/zap-extensions/releases/selenium-v15.54.0
 [15.53.0]: https://github.com/zaproxy/zap-extensions/releases/selenium-v15.53.0
 [15.52.0]: https://github.com/zaproxy/zap-extensions/releases/selenium-v15.52.0

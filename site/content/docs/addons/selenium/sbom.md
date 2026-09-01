@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: selenium
-    version: 15.54.0
+    version: 15.55.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.54.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.55.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -50,7 +50,7 @@ sbom:
     version: '1.85'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.3.0
+    version: 7.4.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.16.0
@@ -68,7 +68,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.44.0
+    version: 1.45.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -98,9 +98,6 @@ sbom:
     version: '3.1'
     licenses: Apache-1.0
   - name: commons-io
-    version: 2.20.0
-    licenses: Apache-2.0
-  - name: commons-io
     version: 2.21.0
     licenses: Apache-2.0
   - name: commons-io
@@ -118,15 +115,15 @@ sbom:
   - name: commons-logging
     version: 1.3.5
     licenses: Apache-2.0
+  - name: commons-logging
+    version: 1.4.0
+    licenses: Apache-2.0
   - name: commons-text
     version: 1.14.0
     licenses: Apache-2.0
   - name: dataflow-errorprone
     version: 3.41.0-eisop1
     licenses: GNU General Public License, version 2 (GPL2), with the classpath exception
-  - name: dec
-    version: 0.1.2
-    licenses: MIT
   - name: error_prone_annotation
     version: 2.42.0
     licenses: Apache-2.0
@@ -185,25 +182,25 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-core-js
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-csp
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-cssparser
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-websocket-client
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-xpath
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit3-driver
-    version: 4.34.0
+    version: 4.47.0
     licenses: Apache-2.0
   - name: httpclient
     version: 4.5.14
@@ -236,28 +233,28 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -365,7 +362,7 @@ sbom:
     version: 1.16.0
     licenses: Apache-2.0
   - name: neko-htmlunit
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: netty-buffer
     version: 4.1.134.Final
@@ -470,58 +467,58 @@ sbom:
     version: 3.6.0
     licenses: BSD-3-Clause
   - name: selenium-api
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-devtools-latest
-    version: 4.47.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v149
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-devtools-v150
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-devtools-v151
-    version: 4.47.0
+    version: 4.48.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v152
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.47.0
+    version: 4.48.0
     licenses: Apache-2.0
   - name: service
     version: 1.16.0
