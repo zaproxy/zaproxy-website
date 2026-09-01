@@ -6,13 +6,18 @@ weight: 1
 cascade:
   addon:
     id: ptk
-    version: 0.8.0
+    version: 0.9.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## 0.9.0 - 2026-09-01
+### Changed
+- Update the bundled OWASP Penetration Testing Kit browser extensions to the signed 9.9.9 store artifacts.
+- Synchronize the ZAP DAST catalog and alert mappings with the DAST rulepack bundled in PTK 9.9.9.
 
 ## 0.8.0 - 2026-07-29
 ### Fixed
