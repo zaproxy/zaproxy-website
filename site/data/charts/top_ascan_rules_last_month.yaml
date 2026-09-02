@@ -2,240 +2,240 @@
 - id: 10104
   name: "User Agent Fuzzer"
   status: "release"
-  alerts: "42519677"
-  fps: 0.001
-  num: 329909
-  time: 37
+  alerts: "49236946"
+  fps: 0.0
+  num: 317856
+  time: 38
 
 - id: 10047
   name: "HTTPS Content Available via HTTP"
   status: "release"
-  alerts: "3418753"
-  fps: 0.001
-  num: 329925
-  time: 16
+  alerts: "1302648"
+  fps: 0.002
+  num: 335421
+  time: 14
 
 - id: 90026
   name: "SOAP Action Spoofing"
   status: "beta"
-  alerts: "1082882"
+  alerts: "1085055"
   fps: 0.0
-  num: 428919
+  num: 417348
   time: 4
-
-- id: 90027
-  name: "Cookie Slack Detector"
-  status: "beta"
-  alerts: "449730"
-  fps: 0.023
-  num: 36832
-  time: 21
-
-- id: 40018
-  name: "SQL Injection"
-  status: "release"
-  alerts: "429212"
-  fps: 41.847
-  num: 543317
-  time: 49
-
-- id: 40035
-  name: "Hidden File Found"
-  status: "release"
-  alerts: "427470"
-  fps: 0.019
-  num: 1008553
-  time: 14
-
-- id: 40025
-  name: "Proxy Disclosure"
-  status: "beta"
-  alerts: "425611"
-  fps: 0.018
-  num: 35197
-  time: 59
-
-- id: 10095
-  name: "Backup File Disclosure"
-  status: "beta"
-  alerts: "373733"
-  fps: 0.209
-  num: 37218
-  time: 44
 
 - id: 40040
   name: "CORS Header"
   status: "beta"
-  alerts: "261794"
+  alerts: "700203"
   fps: 0.0
-  num: 67361
-  time: 22
+  num: 71515
+  time: 20
 
-- id: 0
-  name: "Directory Browsing"
-  status: "release"
-  alerts: "216383"
-  fps: 0.005
-  num: 464571
-  time: 19
-
-- id: 90029
-  name: "SOAP XML Injection"
+- id: 40025
+  name: "Proxy Disclosure"
   status: "beta"
-  alerts: "209952"
-  fps: 0.005
-  num: 428904
-  time: 3
+  alerts: "586099"
+  fps: 0.0
+  num: 37223
+  time: 37
+
+- id: 40018
+  name: "SQL Injection"
+  status: "release"
+  alerts: "522771"
+  fps: 46.36
+  num: 548977
+  time: 58
+
+- id: 90027
+  name: "Cookie Slack Detector"
+  status: "beta"
+  alerts: "513624"
+  fps: 0.003
+  num: 38735
+  time: 7
+
+- id: 40035
+  name: "Hidden File Found"
+  status: "release"
+  alerts: "485282"
+  fps: 0.037
+  num: 1020476
+  time: 12
+
+- id: 10095
+  name: "Backup File Disclosure"
+  status: "beta"
+  alerts: "319621"
+  fps: 0.207
+  num: 39251
+  time: 46
 
 - id: 10058
   name: "GET for POST"
   status: "release"
-  alerts: "137931"
-  fps: 0.001
-  num: 425924
-  time: 4
-
-- id: 40012
-  name: "Cross Site Scripting (Reflected)"
-  status: "release"
-  alerts: "115543"
+  alerts: "205573"
   fps: 0.0
-  num: 485510
-  time: 24
+  num: 411041
+  time: 3
+
+- id: 90029
+  name: "SOAP XML Injection"
+  status: "beta"
+  alerts: "187247"
+  fps: 0.012
+  num: 417281
+  time: 6
+
+- id: 0
+  name: "Directory Browsing"
+  status: "release"
+  alerts: "180808"
+  fps: 0.006
+  num: 451461
+  time: 14
 
 - id: 90028
   name: "Insecure HTTP Method"
   status: "beta"
-  alerts: "111101"
-  fps: 0.005
-  num: 37074
-  time: 9
+  alerts: "95818"
+  fps: 0.0
+  num: 39274
+  time: 6
 
 - id: 40032
   name: ".htaccess Information Leak"
   status: "release"
-  alerts: "99157"
-  fps: 0.0
-  num: 429921
-  time: 5
-
-- id: 6
-  name: "Path Traversal"
-  status: "release"
-  alerts: "89424"
-  fps: 0.0
-  num: 477152
-  time: 71
+  alerts: "90420"
+  fps: 0.002
+  num: 413801
+  time: 6
 
 - id: 30001
   name: "Buffer Overflow"
   status: "release"
-  alerts: "71110"
-  fps: 0.0
-  num: 405423
-  time: 8
-
-- id: 10106
-  name: "HTTP Only Site"
-  status: "release"
-  alerts: "61199"
-  fps: 0.012
-  num: 351678
-  time: 2
-
-- id: 40029
-  name: "Trace.axd Information Leak"
-  status: "release"
-  alerts: "56293"
-  fps: 0.0
-  num: 428810
-  time: 7
-
-- id: 40034
-  name: ".env Information Leak"
-  status: "release"
-  alerts: "51617"
-  fps: 0.0
-  num: 428647
-  time: 5
-
-- id: 30002
-  name: "Format String Error"
-  status: "release"
-  alerts: "44655"
-  fps: 0.012
-  num: 382839
-  time: 8
-
-- id: 10205
-  name: "HTTPS Configuration"
-  status: "alpha"
-  alerts: "41726"
-  fps: 0.0
-  num: 30139
-  time: 18
-
-- id: 40024
-  name: "SQL Injection - SQLite (Time Based)"
-  status: "alpha"
-  alerts: "31303"
-  fps: 0.034
-  num: 124334
-  time: 11
-
-- id: 40038
-  name: "Bypassing 403"
-  status: "beta"
-  alerts: "28068"
-  fps: 0.182
-  num: 45496
-  time: 10
-
-- id: 43
-  name: "Source Code Disclosure - File Inclusion"
-  status: "beta"
-  alerts: "25174"
-  fps: 1.478
-  num: 60607
+  alerts: "82725"
+  fps: 0.115
+  num: 405177
   time: 6
+
+- id: 40012
+  name: "Cross Site Scripting (Reflected)"
+  status: "release"
+  alerts: "82437"
+  fps: 0.003
+  num: 487434
+  time: 29
+
+- id: 6
+  name: "Path Traversal"
+  status: "release"
+  alerts: "82285"
+  fps: 0.0
+  num: 481054
+  time: 94
 
 - id: 10051
   name: "Relative Path Confusion"
   status: "beta"
-  alerts: "24934"
+  alerts: "72792"
   fps: 0.0
-  num: 37474
+  num: 39613
+  time: 7
+
+- id: 10106
+  name: "HTTP Only Site"
+  status: "release"
+  alerts: "59039"
+  fps: 0.017
+  num: 358308
+  time: 1
+
+- id: 40034
+  name: ".env Information Leak"
+  status: "release"
+  alerts: "55029"
+  fps: 0.0
+  num: 412803
+  time: 6
+
+- id: 40029
+  name: "Trace.axd Information Leak"
+  status: "release"
+  alerts: "52694"
+  fps: 0.0
+  num: 413084
+  time: 6
+
+- id: 30002
+  name: "Format String Error"
+  status: "release"
+  alerts: "40299"
+  fps: 0.01
+  num: 381587
+  time: 8
+
+- id: 43
+  name: "Source Code Disclosure - File Inclusion"
+  status: "beta"
+  alerts: "39304"
+  fps: 0.884
+  num: 64140
+  time: 7
+
+- id: 40024
+  name: "SQL Injection - SQLite (Time Based)"
+  status: "alpha"
+  alerts: "36007"
+  fps: 0.007
+  num: 126053
+  time: 13
+
+- id: 40038
+  name: "Bypassing 403"
+  status: "beta"
+  alerts: "33684"
+  fps: 0.157
+  num: 43876
   time: 12
 
-- id: 40014
-  name: "Cross Site Scripting (Persistent)"
-  status: "release"
-  alerts: "16118"
+- id: 10205
+  name: "HTTPS Configuration"
+  status: "alpha"
+  alerts: "24562"
   fps: 0.0
-  num: 454096
-  time: 5
-
-- id: 40033
-  name: "NoSQL Injection - MongoDB"
-  status: "beta"
-  alerts: "15619"
-  fps: 2.174
-  num: 43670
-  time: 13
+  num: 23056
+  time: 10
 
 - id: 40008
   name: "Parameter Tampering"
   status: "release"
-  alerts: "15395"
+  alerts: "16158"
   fps: 0.0
-  num: 435606
-  time: 17
+  num: 423478
+  time: 22
 
-- id: 90017
-  name: "XSLT Injection"
+- id: 40026
+  name: "Cross Site Scripting (DOM Based)"
   status: "release"
-  alerts: "12965"
+  alerts: "15270"
   fps: 0.0
-  num: 485538
-  time: 14
+  num: 351548
+  time: 176
+
+- id: 40033
+  name: "NoSQL Injection - MongoDB"
+  status: "beta"
+  alerts: "14821"
+  fps: 1.711
+  num: 43501
+  time: 11
+
+- id: 30003
+  name: "Integer Overflow Error"
+  status: "beta"
+  alerts: "14352"
+  fps: 0.016
+  num: 44759
+  time: 25
 
