@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: webdrivermacos
-    version: '220'
+    version: '221'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v220/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v221/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
