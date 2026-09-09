@@ -436,6 +436,12 @@ TEST_TIMING:
 TOOL_PTK:
   link: https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/
 
+TOOL_PTK_ACTIVE_DEFAULT:
+  link: https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/#tool_ptk_active_default
+
+TOOL_PTK_PASSIVE_DEFAULT:
+  link: https://www.zaproxy.org/docs/desktop/addons/owasp-ptk/#tool_ptk_passive_default
+
 WSTG-v42-APIT-01:
   link: https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL
 
