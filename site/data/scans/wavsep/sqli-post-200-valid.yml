@@ -9,8 +9,8 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case02-InjectionInSearch-String-UnionExploit-WithDifferent200Responses.jsp
   rule: 40018
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp
   rule: 40018
   score: Pass

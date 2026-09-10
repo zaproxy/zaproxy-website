@@ -10,7 +10,7 @@ details:
   rule: 40018
   score: Pass
   trend: up
-  prev: 57%
+  prev: 71%
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp
   rule: 40018
   score: Pass

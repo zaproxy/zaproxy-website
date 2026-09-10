@@ -134,12 +134,12 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case27-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultEmptyInput-AnyPathReq-Read.jsp
   rule: 6
   score: 71%
-  trend: up
-  prev: 43%
+  trend: stable
+  prev: 71%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case28-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   rule: 6
-  score: Pass
-  trend: up
+  score: 86%
+  trend: stable
   prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case29-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultInvalidInput-NoPathReq-Read.jsp
   rule: 6
@@ -153,14 +153,14 @@ details:
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case31-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultFullInput-SlashPathReq-Read.jsp
   rule: 6
-  score: 71%
-  trend: down
-  prev: Pass
+  score: 86%
+  trend: stable
+  prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case32-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultInvalidInput-SlashPathReq-Read.jsp
   rule: 6
-  score: 71%
-  trend: down
-  prev: Pass
+  score: 86%
+  trend: stable
+  prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case33-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultEmptyInput-SlashPathReq-Read.jsp
   rule: 6
   score: 86%
@@ -178,9 +178,9 @@ details:
   prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case36-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultEmptyInput-BackslashPathReq-Read.jsp
   rule: 6
-  score: 71%
-  trend: down
-  prev: 86%
+  score: 86%
+  trend: up
+  prev: 71%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case38-LFI-FileClass-FilenameContext-BackslashTraversalValidation-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
   score: Pass
@@ -224,8 +224,8 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case54-LFI-FileClass-FilenameContext-BackslashTraversalRemoval-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-200Identical/Case56-LFI-FileClass-FilenameContext-WindowsTraversalRemoval-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   rule: 6
   score: Pass
@@ -262,6 +262,6 @@ details:
   trend: stable
   prev: Pass
 tests: 52
-passes: 43
+passes: 42
 fails: 0
-score: 96%
+score: 97%
