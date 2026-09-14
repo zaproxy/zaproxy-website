@@ -14,8 +14,8 @@ details:
 - path: /angular_body/1.2.18
   rule: 200021
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: /angular_body/1.2.19
   score: Fail
   trend: stable
@@ -23,48 +23,48 @@ details:
 - path: /angular_body/1.2.24
   rule: 200021
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: /angular_body/1.4.0
   rule: 200021
   score: Pass
-  trend: up
-  prev: 71%
+  trend: stable
+  prev: Pass
 - path: /angular_body/1.6.0
   rule: 200021
   score: Pass
-  trend: up
-  prev: 71%
+  trend: stable
+  prev: Pass
 - path: /angular_body_alt_symbols/1.4.0
   rule: 200021
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: /angular_body_alt_symbols_raw/1.6.0
   rule: 200021
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: /angular_body_attribute_ng/1.4.0
   rule: 200021
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: /angular_body_attribute_non_ng/1.4.0
   rule: 200021
   score: Pass
   trend: up
-  prev: 71%
+  prev: 86%
 - path: /angular_body_attribute_non_ng_raw/1.4.0
   rule: 200021
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: /angular_body_raw/1.4.0
   rule: 200021
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: /angular_body_raw_escaped/1.4.0
   rule: 200021
   score: Pass
@@ -73,13 +73,13 @@ details:
 - path: /angular_body_raw_escaped_alt_symbols/1.4.0
   rule: 200021
   score: Pass
-  trend: up
-  prev: 57%
+  trend: stable
+  prev: Pass
 - path: /angular_body_raw_post/1.6.0
   rule: 200021
   score: Pass
   trend: up
-  prev: 29%
+  prev: 86%
 - path: /angular_cookie_parse/1.6.0
   rule: 210017
   score: Pass

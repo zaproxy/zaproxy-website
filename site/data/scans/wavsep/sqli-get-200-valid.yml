@@ -10,7 +10,7 @@ details:
   rule: 40018
   score: Pass
   trend: up
-  prev: 71%
+  prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case03-InjectionInCalc-String-BooleanExploit-WithDifferent200Responses.jsp
   rule: 40018
   score: Pass
@@ -22,9 +22,9 @@ details:
   prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp
   rule: 40018
-  score: 86%
-  trend: down
-  prev: Pass
+  score: Pass
+  trend: up
+  prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp
   rule: 40018
   score: Pass
@@ -46,8 +46,8 @@ details:
   prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case10-InjectionInSearchOrderBy-Numeric-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp
   rule: 40018
-  score: Pass
-  trend: stable
+  score: 86%
+  trend: down
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case11-InjectionInView-Date-PermissionBypass-WithDifferent200Responses.jsp
   rule: 40018
@@ -57,8 +57,8 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case12-InjectionInSearch-Date-UnionExploit-WithDifferent200Responses.jsp
   rule: 40018
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-GET-200Valid/Case13-InjectionInCalc-Date-BooleanExploit-WithDifferent200Responses.jsp
   rule: 40018
   score: Pass
