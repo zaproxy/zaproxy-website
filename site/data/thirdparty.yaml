@@ -114,6 +114,11 @@ services_oss:
     link: https://github.com/banzaicloud/dast-operator
     license: 'Free, open source'
 
+  - name: 'MCP ZAP Server'
+    link: https://github.com/dtkmn/mcp-zap-server
+    license: 'Free, open source'
+    notes: 'MCP integration for agent-assisted ZAP scans and reports.'
+
   - name: 'Ostorlab'
     link: https://github.com/Ostorlab/ostorlab
     license: 'Free, open source'
