@@ -43,7 +43,7 @@ I would also like to work on the add-on's integration with the ZAP Automation Fr
 
 Have a play with this add-on and if you can think of anything it could do better then get in touch or open issues on GitHub!  
 [User Group](https://groups.google.com/group/zaproxy-users)
-[IRC](https://web.libera.chat/#zaproxy)
+[Slack](https://zaproxy.slack.com)
 
 ### Note
 An earlier version of this add-on was published on the ZAP Marketplace as "Param Miner". If you installed this add-on you will need to remove it manually - the name was changed to prevent it being confused with the Burp Suite add-on.
