@@ -1,0 +1,17 @@
+{{- /* Display author social media links */ -}}
+{{ $hasContent := false }}
+{{- if .twitter }}
+<a class="author-twitter" href="https://twitter.com/{{ .twitter }}">{{ partial "svg/social/twitter-team.svg" }} @{{ .twitter }}</a>
+{{ $hasContent = true }}
+{{- end }}
+{{- if .mastodon }}
+{{ $parts := split .mastodon "@" }}
+{{ $username := index $parts 0 }}
+{{ $instance := index $parts 1 }}
+{{ if $hasContent }}<br />{{ end }}<a class="author-mastodon" rel="me" href="https://{{ $instance }}/@{{ $username }}">{{ partial "svg/social/mastodon.svg" }} @{{ $username }}</a>
+{{ $hasContent = true }}
+{{- end }}
+{{- if .bluesky }}
+{{ if $hasContent }}<br />{{ end }}<a class="author-bluesky" href="https://bsky.app/profile/{{ .bluesky }}">{{ partial "svg/social/bluesky.svg" }} @{{ .bluesky }}</a>
+{{ $hasContent = true }}
+{{- end }}

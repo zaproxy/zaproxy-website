@@ -38,9 +38,7 @@
                   {{ else }}
                     {{ $name }}
                   {{ end }}
-                  {{ if $author.twitter }}
-                  <a class="author-twitter" href="https://twitter.com/{{ $author.twitter }}">@{{ $author.twitter }}</a>
-                  {{ end }}
+                  {{ partial "author-social-links" $author }}
                 </div>
               </section>
           {{ end }}
