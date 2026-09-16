@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: retire
-    version: 0.65.0
+    version: 0.66.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.65.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/retire-v0.66.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -38,16 +38,16 @@ sbom:
     version: 0.61.0
     licenses: ''
   - name: bcmail-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
     version: 7.4.0
