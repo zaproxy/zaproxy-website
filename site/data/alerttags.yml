@@ -20,28 +20,28 @@ CUSTOM_PAYLOADS:
   link: 
 
 CVE-2012-1823:
-  link: https://nvd.nist.gov/vuln/detail/CVE-2012-1823
+  link: https://nvd.nist.gov/vuln/detail/cve-2012-1823
 
 CVE-2014-0160:
-  link: https://nvd.nist.gov/vuln/detail/CVE-2014-0160
+  link: https://nvd.nist.gov/vuln/detail/cve-2014-0160
 
 CVE-2021-44228:
-  link: https://nvd.nist.gov/vuln/detail/CVE-2021-44228
+  link: https://nvd.nist.gov/vuln/detail/cve-2021-44228
 
 CVE-2021-45046:
-  link: https://nvd.nist.gov/vuln/detail/CVE-2021-45046
+  link: https://nvd.nist.gov/vuln/detail/cve-2021-45046
 
 CVE-2022-22965:
-  link: https://nvd.nist.gov/vuln/detail/CVE-2022-22965
+  link: https://nvd.nist.gov/vuln/detail/cve-2022-22965
 
 CVE-2022-42889:
-  link: https://nvd.nist.gov/vuln/detail/CVE-2022-42889
+  link: https://nvd.nist.gov/vuln/detail/cve-2022-42889
 
 CVE-2025-55182:
-  link: https://nvd.nist.gov/vuln/detail/CVE-2025-55182
+  link: https://nvd.nist.gov/vuln/detail/cve-2025-55182
 
 CVE-2025-66478:
-  link: https://nvd.nist.gov/vuln/detail/CVE-2025-66478
+  link: https://nvd.nist.gov/vuln/detail/cve-2025-66478
 
 CWE-1004:
   link: https://cwe.mitre.org/data/definitions/1004.html
