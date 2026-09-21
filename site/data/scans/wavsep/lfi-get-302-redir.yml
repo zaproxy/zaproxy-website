@@ -3,9 +3,9 @@ url: /LFI-Detection-Evaluation-GET-302Redirect/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case01-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
-  score: 71%
-  trend: down
-  prev: Pass
+  score: 86%
+  trend: up
+  prev: 71%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case02-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultFullInput-AnyPathReq-Read.jsp
   rule: 6
   score: Pass
@@ -19,12 +19,12 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case04-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultRelativeInput-AnyPathReq-Read.jsp
   rule: 6
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case05-LFI-FileClass-FilenameContext-Unrestricted-OSPath-DefaultInvalidInput-AnyPathReq-Read.jsp
   rule: 6
-  score: 86%
-  trend: stable
+  score: Pass
+  trend: up
   prev: 86%
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case06-LFI-FileClass-FilenameContext-Unrestricted-FileDirective-DefaultInvalidInput-AnyPathReq-Read.jsp
   rule: 6
@@ -139,8 +139,8 @@ details:
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case28-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultFullInput-NoPathReq-Read.jsp
   rule: 6
   score: Pass
-  trend: up
-  prev: 86%
+  trend: stable
+  prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/LFI/LFI-Detection-Evaluation-GET-302Redirect/Case29-LFI-ContextStream-FilenameContext-Unrestricted-OSPath-DefaultInvalidInput-NoPathReq-Read.jsp
   rule: 6
   score: Pass
@@ -262,6 +262,6 @@ details:
   trend: stable
   prev: Pass
 tests: 52
-passes: 50
+passes: 51
 fails: 0
-score: 99%
+score: 100%
