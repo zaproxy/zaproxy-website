@@ -6,13 +6,28 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: '75'
+    version: '76'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [76] - 2026-09-25
+### Changed
+- Content Security Policy scan rule analyzes all active CSP headers and META policies together using browser-style intersection (Issue 9403).
+- Update dependency.
+- Update reference to avoid redirect.
+- Updated help entries for the following scan rules, clarifying the data used to supplement their alerts for credit card related findings:
+  - Information Disclosure: Referrer
+  - PII Disclosure
+
+### Fixed
+- User Controllable HTML Element Attribute scan rule: reduce false positives for short parameter values in meta content checks (Issue 9461).
+
+### Removed
+- CSP "Header & Meta" alert (10055-12) is no longer raised.
 
 ## [75] - 2026-07-06
 ### Changed
@@ -701,6 +716,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[76]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v76
 [75]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v75
 [74]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v74
 [73]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v73
