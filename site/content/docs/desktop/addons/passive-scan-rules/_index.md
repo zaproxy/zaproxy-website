@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 75.0.0
+    version: 76.0.0
 ---
 
 # Passive Scan Rules
@@ -229,7 +229,7 @@ Alert ID: [10098](/docs/alerts/10098/).
 The Content Security Policy (CSP) passive scan rule parses and analyzes CSP headers and META definitions for potential misconfiguration or weakness. This rule leverages HtmlUnit's [htmlunit-csp](https://github.com/HtmlUnit/htmlunit-csp) library to perform it's parsing and assessment of CSPs.
 
 
-If a response has multiple CSPs they are analyzed individually, as there is no sure way to intersect/merge the policies and further different browsers have varying levels of CSP support and enforcement.
+If a response has multiple Content-Security-Policy headers or CSP META definitions, they are analyzed together using browser-style intersection: a resource is allowed only if every policy allows it.
 
 
 Latest code: [ContentSecurityPolicyScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ContentSecurityPolicyScanRule.java)
@@ -348,10 +348,7 @@ Alert ID: [10024](/docs/alerts/10024/).
 Identifies the existence of sensitive details within the Referrer header field of HTTP requests (this may include parameters, document names, directory names, etc.).
 
 
-Note: In the case of suspected credit card identifiers in the Referrer value, the potential credit card numbers are looked up against a Bank Identification
-Number List (BINList). If a match is found the alert is raised at High confidence and additional details are added to the 'Other Information' field in the alert,
-otherwise the alerts will have Medium confidence.
-See: [binlist-data](https://github.com/iannuttall/binlist-data) for more information.
+Note: For suspected credit card values see the [Common Library](/docs/desktop/addons/common-library/) add-on help (BIN List).
 
 
 Latest code: [InformationDisclosureReferrerScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/InformationDisclosureReferrerScanRule.java)
@@ -466,10 +463,7 @@ At MEDIUM and HIGH threshold, the following content types are evaluated:
 Image and CSS files are always ignored. Every other content type is evaluated at LOW threshold. Additionally at LOW threshold the entire HTML response is evaluated.
 
 
-Note: In the case of suspected credit card values, the potential credit card numbers are looked up against a Bank Identification Number List
-(BINList). If a match is found the alert is raised at High confidence and additional details are added to the 'Other Information' field in the
-alert, otherwise the alerts will have Medium confidence.
-See: [binlist-data](https://github.com/iannuttall/binlist-data) for more information.
+Note: For suspected credit card values see the [Common Library](/docs/desktop/addons/common-library/) add-on help (BIN List).
 
 
 Latest code: [PiiScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/PiiScanRule.java)
