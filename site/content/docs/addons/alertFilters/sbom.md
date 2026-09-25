@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: alertFilters
-    version: '27'
+    version: '28'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v27/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v28/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -53,22 +53,22 @@ sbom:
     version: 1.2.0
     licenses: MIT
   - name: bcmail-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.3.0
+    version: 7.4.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.17.7
@@ -83,7 +83,7 @@ sbom:
     version: 3.43.0
     licenses: MIT
   - name: commonlib
-    version: 1.44.0
+    version: 1.45.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -185,13 +185,13 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: httpclient5
-    version: 5.2.1
+    version: 5.6.4
     licenses: Apache-2.0
   - name: httpcore5
-    version: '5.2'
+    version: 5.4.3
     licenses: Apache-2.0
   - name: httpcore5-h2
-    version: '5.2'
+    version: 5.4.3
     licenses: Apache-2.0
   - name: ice4j
     version: 3.0-24-g34c2ce5
@@ -203,28 +203,28 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -253,6 +253,9 @@ sbom:
   - name: jspecify
     version: 1.0.0
     licenses: Apache-2.0
+  - name: jspecify
+    version: 1.0.1
+    licenses: Apache-2.0
   - name: jsr305
     version: 3.0.2
     licenses: Apache-2.0
@@ -260,61 +263,64 @@ sbom:
     version: 1.1.0
     licenses: MIT
   - name: junit-bom
-    version: 6.1.2
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-jupiter
-    version: 6.1.2
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-jupiter-api
-    version: 6.1.2
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-jupiter-engine
-    version: 6.1.2
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-jupiter-params
-    version: 6.1.2
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-platform-commons
-    version: 6.1.2
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-platform-engine
-    version: 6.1.2
+    version: 6.1.3
     licenses: EPL-2.0
   - name: junit-platform-launcher
-    version: 6.1.2
+    version: 6.1.3
     licenses: EPL-2.0
   - name: langchain4j
-    version: 1.18.1
+    version: 1.20.0
     licenses: Apache-2.0
   - name: langchain4j-anthropic
-    version: 1.18.1
+    version: 1.20.0
     licenses: Apache-2.0
   - name: langchain4j-azure-open-ai
-    version: 1.18.1
+    version: 1.20.0
     licenses: Apache-2.0
   - name: langchain4j-core
-    version: 1.18.1
+    version: 1.20.0
     licenses: Apache-2.0
   - name: langchain4j-google-ai-gemini
-    version: 1.18.1
+    version: 1.20.0
     licenses: Apache-2.0
   - name: langchain4j-http-client
-    version: 1.18.1
+    version: 1.20.0
     licenses: Apache-2.0
   - name: langchain4j-http-client-jdk
-    version: 1.18.1
+    version: 1.20.0
     licenses: Apache-2.0
   - name: langchain4j-ollama
-    version: 1.18.1
+    version: 1.20.0
     licenses: Apache-2.0
   - name: langchain4j-open-ai
-    version: 1.18.1
+    version: 1.20.0
+    licenses: Apache-2.0
+  - name: langchain4j-reactive-streaming
+    version: 1.20.0-beta30
     licenses: Apache-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
     licenses: Apache-2.0
   - name: llm
-    version: 0.0.1
+    version: 0.1.0
     licenses: ''
   - name: log4j-1.2-api
     version: 2.25.2
@@ -335,7 +341,7 @@ sbom:
     version: 1.18.44
     licenses: MIT
   - name: mcp
-    version: 0.3.0
+    version: 0.5.0
     licenses: ''
   - name: mockito-core
     version: 5.23.0
@@ -343,6 +349,9 @@ sbom:
   - name: mockito-junit-jupiter
     version: 5.23.0
     licenses: MIT
+  - name: mutiny-zero
+    version: 1.3.1
+    licenses: Apache-2.0
   - name: nanohttpd
     version: 2.3.1
     licenses: BSD-3-Clause
@@ -353,46 +362,46 @@ sbom:
     version: 2.3.1
     licenses: BSD-3-Clause
   - name: native-linux-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-osx-aarch64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-osx-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-windows-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: netty-buffer
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: netty-codec
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: netty-codec-dns
     version: 4.1.112.Final
     licenses: Apache-2.0
   - name: netty-codec-http
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: netty-codec-http2
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: netty-codec-socks
     version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-common
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: netty-handler
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: netty-handler-proxy
     version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-resolver
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: netty-resolver-dns
     version: 4.1.112.Final
@@ -410,7 +419,7 @@ sbom:
     version: 2.0.70.Final
     licenses: Apache-2.0
   - name: netty-transport
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: netty-transport-classes-epoll
     version: 4.1.118.Final
@@ -425,16 +434,16 @@ sbom:
     version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-transport-native-unix-common
-    version: 4.1.135.Final
+    version: 4.1.136.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.29.0
+    version: 0.30.0
     licenses: ''
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
   - name: opennlp-tools
-    version: 2.5.9
+    version: 2.5.11
     licenses: Apache-2.0
   - name: opentest4j
     version: 1.3.0
@@ -488,7 +497,7 @@ sbom:
     version: 3.6.0
     licenses: BSD-3-Clause
   - name: service
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: slf4j-api
     version: 2.0.18
