@@ -45,13 +45,29 @@ In a similar way some false positives may still be reasonable for ZAP to report 
 
 ### Implementation Details
 
-The following blog posts will help you get started with scan rules - they are a bit old but they are mostly still accurate:
+The following maintained example shows how a current scan rule and its focused test fit together. The blog posts below remain useful background, but their code examples are from 2014.
+
+#### Current Example: Web Cache Deception
+
+The [Web Cache Deception active scan rule](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/WebCacheDeceptionScanRule.java) lives in the `ascanrulesAlpha` add-on. Its [unit test](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/test/java/org/zaproxy/zap/extension/ascanrulesAlpha/WebCacheDeceptionScanRuleUnitTest.java) is a runnable example of testing an active rule against simulated HTTP responses: `WebCacheDeceptionScanRuleUnitTest` extends `ActiveScannerTest`, starts a local NanoHTTPD server, and checks both the requests sent by the rule and the alerts it raises.
+
+From the root of a clone of [`zaproxy/zap-extensions`](https://github.com/zaproxy/zap-extensions), run just that test with:
+
+```sh
+./gradlew :addOns:ascanrulesAlpha:test --tests 'org.zaproxy.zap.extension.ascanrulesAlpha.WebCacheDeceptionScanRuleUnitTest'
+```
+
+In Windows PowerShell, use the `gradlew.bat` wrapper. To run all tests in the add-on, omit the `--tests` option. Other rules may use different test fixtures; start with the unit test beside the rule you are changing.
+
+Before implementing a new rule, first check whether an existing rule or another ZAP component is a better fit. If that is unclear, discuss the proposal on the [ZAP Developer Group](https://groups.google.com/group/zaproxy-develop).
+
+The following blog posts are older background material:
 * [Hacking ZAP #3 - Passive scan rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/)
 * [Hacking ZAP #4 - Active scan rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/)
 
 All changes should be covered by unit tests - see [Verifying Your Changes](/docs/developer/verifying-your-changes/).
 
-For scan rules this means that you will need simulate a web server - most of the existing scan rule unit test already do this, so look at the existing tests to see how this can be done.
+For scan rules, tests usually simulate a web server. Follow the fixture and conventions used by the rule's own add-on, and update that add-on's changelog and English help when the change requires it.
 
 #### Number of Requests
 
