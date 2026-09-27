@@ -3,6 +3,9 @@
 <section class="bolt-header">
   <div class="wrapper py-20">
     <h1 class="text--white">{{ .Title }}</h1>
+    {{ with .OutputFormats.Get "RSS" }}
+      <p class="mt-10"><a class="text--white" href="{{ .RelPermalink }}">RSS feed</a></p>
+    {{ end }}
   </div>
 </section>
   <div class="wrapper py-70">
