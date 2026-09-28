@@ -3,11 +3,15 @@
 <section class="bolt-header">
   <div class="wrapper py-20">
     <h1 class="text--white">{{ .Title }}</h1>
-    {{ with .OutputFormats.Get "RSS" }}
-      <p class="mt-10"><a class="text--white" href="{{ .RelPermalink }}">RSS feed</a></p>
-    {{ end }}
   </div>
 </section>
+{{ with .OutputFormats.Get "RSS" }}
+  <div class="wrapper py-20">
+    <div class="breadcrumbs">
+      <a href="{{ .RelPermalink }}">RSS Feed</a>
+    </div>
+  </div>
+{{ end }}
   <div class="wrapper py-70">
       <div class="flex on-sm-stack">
         <div class="col-2-3 pr-30">
