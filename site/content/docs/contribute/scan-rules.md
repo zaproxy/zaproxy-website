@@ -45,19 +45,17 @@ In a similar way some false positives may still be reasonable for ZAP to report 
 
 ### Implementation Details
 
-The following maintained example shows how a current scan rule and its focused test fit together. The blog posts below remain useful background, but their code examples are from 2014.
+Start from the current [Alert Details](/docs/alerts/) page. Open the relevant alert and follow its **Source** link to the scan rule. Then find the corresponding test under that add-on's `src/test/java` directory. Following the links from the live alert page keeps the source location current if a rule moves between add-ons.
 
-#### Current Example: Web Cache Deception
+Active scan tests commonly use the shared [`ActiveScannerTestUtils` test helper](https://github.com/zaproxy/zap-extensions/blob/main/testutils/src/main/java/org/zaproxy/zap/testutils/ActiveScannerTestUtils.java). It starts a local HTTP test server and records the requests sent and alerts raised. Read the selected test's server setup and assertions to see how that rule is exercised with simulated responses; fixtures vary by rule.
 
-The [Web Cache Deception active scan rule](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/main/java/org/zaproxy/zap/extension/ascanrulesAlpha/WebCacheDeceptionScanRule.java) lives in the `ascanrulesAlpha` add-on. Its [unit test](https://github.com/zaproxy/zap-extensions/blob/main/addOns/ascanrulesAlpha/src/test/java/org/zaproxy/zap/extension/ascanrulesAlpha/WebCacheDeceptionScanRuleUnitTest.java) is a runnable example of testing an active rule against simulated HTTP responses: `WebCacheDeceptionScanRuleUnitTest` extends `ActiveScannerTest`, starts a local NanoHTTPD server, and checks both the requests sent by the rule and the alerts it raises.
-
-From the root of a clone of [`zaproxy/zap-extensions`](https://github.com/zaproxy/zap-extensions), run just that test with:
+From the root of a clone of [`zaproxy/zap-extensions`](https://github.com/zaproxy/zap-extensions), run a focused test:
 
 ```sh
-./gradlew :addOns:ascanrulesAlpha:test --tests 'org.zaproxy.zap.extension.ascanrulesAlpha.WebCacheDeceptionScanRuleUnitTest'
+./gradlew :addOns:ADDON_ID:test --tests 'package.TestClassName'
 ```
 
-In Windows PowerShell, use the `gradlew.bat` wrapper. To run all tests in the add-on, omit the `--tests` option. Other rules may use different test fixtures; start with the unit test beside the rule you are changing.
+Replace `ADDON_ID` with the add-on's Gradle project identifier and `package.TestClassName` with the fully qualified name of the test you found. In Windows PowerShell, use `gradlew.bat` with the same project and test arguments. To run all tests in the add-on, omit the `--tests` option.
 
 Before implementing a new rule, first check whether an existing rule or another ZAP component is a better fit. If that is unclear, discuss the proposal on the [ZAP Developer Group](https://groups.google.com/group/zaproxy-develop).
 
