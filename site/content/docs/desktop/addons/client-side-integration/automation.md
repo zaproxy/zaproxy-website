@@ -32,7 +32,21 @@ This job supports monitor tests.
       actionWaitTime:                  # Int: The time in seconds to wait after performing an action (e.g. clicking a button), default: 0
       shutdownTime:                    # Int: The time in seconds to wait after no activity before shutting down, default: 5
       scopeCheck:                      # String: The scope check, either Flexible or Strict, default: Flexible
+      logoutAvoidance:                 # Bool: When enabled, the spider will avoid clicking common logout elements, default: true
+      runOnlyIfModern:                 # Boolean: If true then the spider will only run if a "modern app" alert is raised, default: false
 ```
+
+If 'runOnlyIfModern' is set to 'True' then the [passiveScan-wait](/docs/desktop/addons/automation-framework/job-pscanwait/) job MUST be run before this one and the [Modern Web Application](/docs/alerts/10109/) rule installed and enabled. If either of those things are not done then the Client Spider will always run and a warning output. If they are both done and no "Modern Web Application" alert is raised then the assumption is made that this is a traditional app and therefore the Client Spider is not needed.
+
+## Job: spiderAjax (AJAX Spider add-on not installed)
+
+If the AJAX Spider add-on is not installed then this add-on also registers a `spiderAjax` job, which runs the [Client Spider](/docs/desktop/addons/client-side-integration/spider/) in its place, so that existing plans which use the AJAX Spider keep working. Only the parameters also supported by the `spiderClient` job (above) are applied; any AJAX Spider only parameters (for example `clickDefaultElems` or `randomInputs`) are ignored, and a warning is raised to say that the Client Spider is being used instead.
+
+
+If the AJAX Spider add-on is installed while ZAP is running then this add-on hands control of the `spiderAjax`
+job type back to it (and takes it back if the AJAX Spider add-on is later uninstalled). However, a plan that is already
+open in the Automation Framework tab at the time will keep using the Client Spider for any `spiderAjax` job
+it contains - close and reopen the plan (or reload the plan file) to pick up the AJAX Spider add-on's own job.
 
 ## Job: export (Client Map)
 

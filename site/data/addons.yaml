@@ -170,9 +170,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/client-side-integration/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.31.0/client-alpha-0.31.0.zap
-  date: 2026-08-14
-  version: 0.31.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.32.0/client-alpha-0.32.0.zap
+  date: 2026-10-02
+  version: 0.32.0
 - id: commonlib
   name: Common Library
   description: A common library, for use by other add-ons.
@@ -1013,9 +1013,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.56.0/selenium-release-15.56.0.zap
-  date: 2026-09-16
-  version: 15.56.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.57.0/selenium-release-15.57.0.zap
+  date: 2026-10-02
+  version: 15.57.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
