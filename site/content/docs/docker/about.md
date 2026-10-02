@@ -198,15 +198,26 @@ docker-machine ip <host>
 
 ### Scanning an app running on the host OS
 
-IP addresses like localhost and 127.0.0.1 cannot be used to access an app running on the host OS from within a docker container.
-To get around this you can use the following code to get an IP address that will work:
-```bash
-$(ip -f inet -o addr show docker0 | awk '{print $4}' | cut -d '/' -f 1)
+Inside a container, `localhost` and `127.0.0.1` refer to the container itself. To reach an app running on the host OS, use `host.docker.internal`. Docker Desktop provides this hostname automatically.
+
+With Docker Engine on Linux, map `host.docker.internal` to the host gateway. For example, save this as `compose.yaml`:
+
+```yaml
+services:
+  zap:
+    image: zaproxy/zap-weekly
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    command: zap-baseline.py -t http://host.docker.internal:10080
 ```
-For example:
+
+Run the scan with:
+
 ```bash
-docker run -t zaproxy/zap-weekly zap-baseline.py -t http://$(ip -f inet -o addr show docker0 | awk '{print $4}' | cut -d '/' -f 1):10080
+docker compose run --rm zap
 ```
+
+Replace `10080` with the port your app listens on. See [Docker Desktop networking](https://docs.docker.com/desktop/features/networking/networking-how-tos/) and [Docker Compose networking](https://docs.docker.com/compose/how-tos/networking/) for details.
 
 ### Scanning an app running in another Docker container
 
