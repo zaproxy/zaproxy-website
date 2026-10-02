@@ -34,7 +34,11 @@ ZAP will launch your chosen browser and record the Zest statements in the Script
 
 ## Recorder Advice and Guidance
 
-If you are going to use the recorded script for authentication then you need to make sure that the browser will be in the same state as when it is launched from ZAP.
+If you have any problems recording or replaying client side scripts then start by making sure that you have the latest version of the ZAP Recorder (if you have installed that) or the Client Side Integration (if you are launching the recording from ZAP).
+
+
+If you are going to use the recorded script for authentication then you need to make sure that the browser
+will be in the same state as when it is launched from ZAP.
 
 
 If the login URL is static then you can open that page before starting to record.  
@@ -53,3 +57,27 @@ application state.
 
 The 'buttons' on some modern web apps can be complicated HTML components that are sometimes hard to click on using automation.
 If your forms can be submitted using the RETURN key then that is often a better option to use when recording.
+
+
+Try recording the same script twice, making sure you perform exactly the same actions.
+Then diff the scripts - if they are significantly different then its possible that ZAP is using
+values to reference HTML elements that are not consistent.
+If that is the case then you may need to manually edit the script in order to use values which are consistent.
+
+## Recorder Diagnostics
+
+If you still have problems recording or replaying client side scripts then please report them to the ZAP team via a [new issue](https://github.com/zaproxy/zaproxy/issues/new?template=bug-report.yml).
+
+
+We will need to know:
+
+* The ZAP and add-on versions - Help / Support Info...
+* The browser extension version
+* The failing Zest statement, obfuscating anything sensitive
+* A detailed description of what you are doing, and what goes wrong
+* Whether the problem is consistent
+* Any relevant error messages
+* The HTML for the element that is causing problems:
+    * In your browser, right click the element and "Inspect"
+    * In the Dev Tools (Chrome, Edge) / Inspector (Firefox) right click the element
+    * Select "Copy" -\> "Copy outerHTML" / "Outer HTML"

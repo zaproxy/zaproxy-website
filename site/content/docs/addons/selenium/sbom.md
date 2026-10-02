@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: selenium
-    version: 15.56.0
+    version: 15.57.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.56.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.57.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -53,7 +53,7 @@ sbom:
     version: 7.4.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.18.13
@@ -206,16 +206,16 @@ sbom:
     version: 4.5.14
     licenses: Apache-2.0
   - name: httpclient5
-    version: 5.2.1
+    version: 5.6.4
     licenses: Apache-2.0
   - name: httpcore
     version: 4.4.16
     licenses: Apache-2.0
   - name: httpcore5
-    version: '5.2'
+    version: 5.4.3
     licenses: Apache-2.0
   - name: httpcore5-h2
-    version: '5.2'
+    version: 5.4.3
     licenses: Apache-2.0
   - name: httpmime
     version: 4.5.14
@@ -350,16 +350,16 @@ sbom:
     version: 2.3.1
     licenses: BSD-3-Clause
   - name: native-linux-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-osx-aarch64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-osx-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-windows-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: neko-htmlunit
     version: 5.4.0
@@ -521,7 +521,7 @@ sbom:
     version: 4.49.0
     licenses: Apache-2.0
   - name: service
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: slf4j-api
     version: 1.7.36

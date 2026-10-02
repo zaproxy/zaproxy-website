@@ -6,13 +6,30 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.31.0
+    version: 0.32.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.32.0] - 2026-10-02
+### Added
+- Stand in for the AJAX Spider's `spiderAjax` automation job and `ajaxSpider` API, using the Client Spider, when the AJAX Spider add-on is not installed.
+- Add `runOnlyIfModern` option to the `spiderClient` automation job, to only run the Client Spider if a "Modern Web Application" alert has been raised.
+- Details of diagnostics we need in order to fix client recording/replaying problems.
+
+### Changed
+- Updated Chrome and Firefox full extensions to v0.2.3.
+- Update the Client Spider clear action title capitalization (Issue 2000).
+- Depend on newer version of Selenium add-on.
+- Adjust log level to reduce log pollution.
+
+### Fixed
+- Respect spider and global exclusions (Issue 9439).
+- Execute Selenium scripts synchronously when the browser is launched (Issue 9472).
+- Address exceptions while handling browser extension events and when running the spider.
 
 ## [0.31.0] - 2026-08-14
 ### Changed
@@ -286,6 +303,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.32.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.32.0
 [0.31.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.31.0
 [0.30.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.30.0
 [0.29.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.29.0

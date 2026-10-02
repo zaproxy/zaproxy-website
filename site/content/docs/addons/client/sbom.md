@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: client
-    version: 0.31.0
+    version: 0.32.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.31.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.32.0/bom.json
   components:
   - name: apfloat
     version: 1.14.0
@@ -44,25 +44,28 @@ sbom:
     version: 0.61.0
     licenses: ''
   - name: bcmail-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.85'
+    version: '1.86'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.3.0
+    version: 7.4.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: byte-buddy
-    version: 1.18.11
+    version: 1.18.13
+    licenses: Apache-2.0
+  - name: byte-buddy
+    version: 1.18.14
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.17.7
@@ -77,7 +80,7 @@ sbom:
     version: 4.8.184
     licenses: MIT
   - name: commonlib
-    version: 1.44.0
+    version: 1.45.0
     licenses: ''
   - name: commons-beanutils
     version: 1.11.0
@@ -121,6 +124,9 @@ sbom:
   - name: commons-logging
     version: 1.3.5
     licenses: Apache-2.0
+  - name: commons-logging
+    version: 1.4.0
+    licenses: Apache-2.0
   - name: commons-text
     version: 1.14.0
     licenses: Apache-2.0
@@ -145,9 +151,6 @@ sbom:
   - name: datanucleus-rdbms
     version: 6.0.10
     licenses: Apache-2.0
-  - name: dec
-    version: 0.1.2
-    licenses: MIT
   - name: error_prone_annotation
     version: 2.42.0
     licenses: Apache-2.0
@@ -155,7 +158,7 @@ sbom:
     version: 2.42.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.47.0
+    version: 2.50.0
     licenses: Apache-2.0
   - name: error_prone_check_api
     version: 2.42.0
@@ -185,10 +188,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 13.2.0
+    version: 13.7.0
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 13.2.0
+    version: 13.7.0
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -200,7 +203,7 @@ sbom:
     version: 33.4.0-jre
     licenses: Apache-2.0
   - name: guava
-    version: 33.6.0-jre
+    version: 33.7.1-jre
     licenses: Apache-2.0
   - name: hamcrest
     version: '3.0'
@@ -224,40 +227,40 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-core-js
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-csp
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-cssparser
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-websocket-client
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit-xpath
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: htmlunit3-driver
-    version: 4.34.0
+    version: 4.47.0
     licenses: Apache-2.0
   - name: httpclient
     version: 4.5.14
     licenses: Apache-2.0
   - name: httpclient5
-    version: 5.2.1
+    version: 5.6.4
     licenses: Apache-2.0
   - name: httpcore
     version: 4.4.16
     licenses: Apache-2.0
   - name: httpcore5
-    version: '5.2'
+    version: 5.4.3
     licenses: Apache-2.0
   - name: httpcore5-h2
-    version: '5.2'
+    version: 5.4.3
     licenses: Apache-2.0
   - name: httpmime
     version: 4.5.14
@@ -275,37 +278,28 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.1
-    licenses: Apache-2.0
-  - name: jackson-bom
-    version: 3.1.5
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.1
-    licenses: Apache-2.0
-  - name: jackson-core
-    version: 3.1.5
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.1
-    licenses: Apache-2.0
-  - name: jackson-databind
-    version: 3.1.5
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.1
+    version: 2.22.2
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -419,19 +413,19 @@ sbom:
     version: 2.3.1
     licenses: BSD-3-Clause
   - name: native-linux-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-osx-aarch64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-osx-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: native-windows-x86_64
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: neko-htmlunit
-    version: 4.14.0
+    version: 5.4.0
     licenses: Apache-2.0
   - name: netty-buffer
     version: 4.1.134.Final
@@ -542,64 +536,64 @@ sbom:
     version: 45.21.0
     licenses: ''
   - name: selenium
-    version: 15.55.0
+    version: 15.57.0
     licenses: ''
   - name: selenium-api
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-devtools-latest
-    version: 4.47.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v149
-    version: 4.47.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v150
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-devtools-v151
-    version: 4.47.0
+    version: 4.49.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v152
+    version: 4.49.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v153
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.47.0
+    version: 4.49.0
     licenses: Apache-2.0
   - name: service
-    version: 1.16.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: slf4j-api
     version: 2.0.5
@@ -620,7 +614,7 @@ sbom:
     version: 4.8.6
     licenses: LGPL-2.1-only
   - name: sqlite-jdbc
-    version: 3.53.2.1
+    version: 3.53.4.0
     licenses: Apache-2.0
   - name: stax2-api
     version: 4.3.0
