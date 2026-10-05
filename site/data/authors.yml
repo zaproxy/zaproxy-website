@@ -140,6 +140,8 @@ zapbot:
 skyper:
   name: Paul-Emmanuel Raoul (a.k.a Skyper)
   picture: /img/authors/skyper_256x256.jpg
+  mastodon: Skyper@fosstodon.org
+  bluesky: skyper.eurosky.social
   is_core: false
 
 keindel:
