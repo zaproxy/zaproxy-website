@@ -29,9 +29,12 @@ The framework supports:
 
 * [environment](/docs/desktop/addons/automation-framework/environment/) - which defines all of the applications the plan can act on
 * [authentication](/docs/getting-further/authentication/authentication-methods/) - all of the authentication mechanisms supported by ZAP, including:
-  * [autodetect](/docs/desktop/addons/authentication-helper/) session management and verification
   * [browser](/docs/desktop/addons/authentication-helper/browser-auth/#automation-framework) authentication
   * [client](/docs/desktop/addons/authentication-helper/client-script/#automation-framework) script authentication
+  * [oauth2](/docs/desktop/addons/authentication-helper/auth2-auth/) authentication
+* [session management](/docs/getting-further/authentication/session-handling/) - all of the session management mechanisms supported by ZAP, including
+  * [autodetect](/docs/desktop/addons/authentication-helper/) session management and verification
+  * [headers](/docs/desktop/addons/authentication-helper/session-header/#automation-framework) session management
 * [Job Tests](/docs/desktop/addons/automation-framework/tests/) - which can be used to validate the outcome of jobs
 
 The full set of jobs currently supported by the framework and other add-ons are:
