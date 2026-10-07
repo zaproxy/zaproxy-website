@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: webdrivermacos
-    version: '226'
+    version: '227'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v226/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdrivermacos-v227/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -218,13 +218,13 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.44
+    version: 1.18.48
     licenses: MIT
   - name: mockito-core
-    version: 5.23.0
+    version: 5.24.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.23.0
+    version: 5.24.0
     licenses: MIT
   - name: objenesis
     version: '3.3'
