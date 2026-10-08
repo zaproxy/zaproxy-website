@@ -6,8 +6,10 @@ question: What type is your application?
 answers:
 - answer: 'Modern web based UI'
   link: ../modern-web-ui/
-- answer: 'API or Traditional web based UI'
+- answer: 'Traditional web based UI'
   link: ../token-based-authentication/
+- answer: 'API'
+  link: ../oauth2/
 ---
 Modern web apps make heavy use of JavaScript.
 

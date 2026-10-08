@@ -45,6 +45,10 @@ This method handles both [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTT
 and NTLM authentication.
 You will need to supply the hostname, port and realm. 
 
+### OAuth2.0 Authentication
+
+[OAuth2.0 Authentication](/docs/desktop/addons/authentication-helper/auth2-auth/) is ideal for APIs that use OAuth2.0, but is typically not suitable for web apps even if they use OAuth2.0 behind the scenes.
+
 ### Form-based Authentication
 
 > [!WARNING]
