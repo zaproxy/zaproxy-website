@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: 66.0.0
+    version: 67.0.0
 ---
 
 # Active Scan Rules - Beta
@@ -231,7 +231,7 @@ Alert ID: [40046](/docs/alerts/40046/).
 
 ## Text4shell (CVE-2022-42889) {#id-40047}
 
-This rule attempts to discover the Text4shell ([CVE-2022-42889](https://nvd.nist.gov/vuln/detail/CVE-2022-42889)) vulnerability. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions.
+This rule attempts to discover the Text4shell ([CVE-2022-42889](https://nvd.nist.gov/vuln/detail/cve-2022-42889)) vulnerability. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions.
 
 
 See also: [OAST](/docs/desktop/addons/oast-support/#alerts).

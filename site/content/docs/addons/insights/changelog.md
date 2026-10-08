@@ -6,13 +6,18 @@ weight: 1
 cascade:
   addon:
     id: insights
-    version: 0.5.0
+    version: 0.6.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.6.0] - 2026-10-08
+### Fixed
+- Correct Automation Framework `insights` job template loading.
+- MissingResourceException should no longer happen when loading the Insights add-on, and Alert Filters is not installed.
 
 ## [0.5.0] - 2026-06-12
 ### Added
@@ -42,6 +47,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.6.0]: https://github.com/zaproxy/zap-extensions/releases/insights-v0.6.0
 [0.5.0]: https://github.com/zaproxy/zap-extensions/releases/insights-v0.5.0
 [0.4.0]: https://github.com/zaproxy/zap-extensions/releases/insights-v0.4.0
 [0.3.0]: https://github.com/zaproxy/zap-extensions/releases/insights-v0.3.0

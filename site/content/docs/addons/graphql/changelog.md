@@ -6,13 +6,18 @@ weight: 1
 cascade:
   addon:
     id: graphql
-    version: 0.34.0
+    version: 0.35.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.35.0] - 2026-10-08
+### Changed
+- Simplify tab names in the Automation Framework job dialogue (Issue 9408).
+- Update dependency.
 
 ## [0.34.0] - 2026-08-12
 ### Added
@@ -263,6 +268,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) 
   - Import a GraphQL Schema
   - Generate Queries from an imported Schema
 
+[0.35.0]: https://github.com/zaproxy/zap-extensions/releases/graphql-v0.35.0
 [0.34.0]: https://github.com/zaproxy/zap-extensions/releases/graphql-v0.34.0
 [0.33.0]: https://github.com/zaproxy/zap-extensions/releases/graphql-v0.33.0
 [0.32.0]: https://github.com/zaproxy/zap-extensions/releases/graphql-v0.32.0

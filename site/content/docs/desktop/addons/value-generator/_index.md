@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: formhandler
-    version: 6.8.0
+    version: 6.9.0
 ---
 
 # Value Generator

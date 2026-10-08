@@ -6,13 +6,18 @@ weight: 1
 cascade:
   addon:
     id: alertFilters
-    version: '28'
+    version: '29'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [29] - 2026-10-08
+### Fixed
+- The tags stored for an alert are no longer lost when the alert is changed by an alert filter.
+- The alert tree is no longer updated twice when an alert is changed by an alert filter.
 
 ## [28] - 2026-09-25
 ### Fixed
@@ -186,6 +191,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version
 
+[29]: https://github.com/zaproxy/zap-extensions/releases/alertFilters-v29
 [28]: https://github.com/zaproxy/zap-extensions/releases/alertFilters-v28
 [27]: https://github.com/zaproxy/zap-extensions/releases/alertFilters-v27
 [26]: https://github.com/zaproxy/zap-extensions/releases/alertFilters-v26

@@ -6,13 +6,22 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.32.0
+    version: 0.33.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.33.0] - 2026-10-08
+### Changed
+- Maintenance changes.
+- Updated Chrome and Firefox full extensions to v0.2.4.
+
+### Fixed
+- Ensure the Client Spider stops when the maximum duration is exceeded when no new nodes/components are found (Related to Issue 9471).
+- Fix concurrency issue on browser shutdown.
 
 ## [0.32.0] - 2026-10-02
 ### Added
@@ -303,6 +312,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.33.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.33.0
 [0.32.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.32.0
 [0.31.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.31.0
 [0.30.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.30.0

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Report Templates
 type: userguide
-weight: 10
+weight: 11
 ---
 
 # Report Templates

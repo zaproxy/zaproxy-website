@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: formhandler
-    version: 6.8.0
+    version: 6.9.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [6.9.0] - 2026-10-08
+### Changed
+- Now depends on the params add-on (Issue 9210).
 
 ## [6.8.0] - 2025-12-15
 ### Changed
@@ -98,6 +102,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version
 
+[6.9.0]: https://github.com/zaproxy/zap-extensions/releases/formhandler-v6.9.0
 [6.8.0]: https://github.com/zaproxy/zap-extensions/releases/formhandler-v6.8.0
 [6.7.0]: https://github.com/zaproxy/zap-extensions/releases/formhandler-v6.7.0
 [6.6.0]: https://github.com/zaproxy/zap-extensions/releases/formhandler-v6.6.0

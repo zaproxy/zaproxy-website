@@ -6,13 +6,20 @@ weight: 1
 cascade:
   addon:
     id: quickstart
-    version: '59'
+    version: '60'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [60] - 2026-10-08
+### Changed
+- Default modern spider browser to Firefox headless.
+
+### Fixed
+- Persist the default browsers by ID instead of by (translatable) name, so the setting is restored correctly when ZAP is not running in English.
 
 ## [59] - 2026-07-13
 ### Added
@@ -326,6 +333,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[60]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v60
 [59]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v59
 [58]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v58
 [57]: https://github.com/zaproxy/zap-extensions/releases/quickstart-v57

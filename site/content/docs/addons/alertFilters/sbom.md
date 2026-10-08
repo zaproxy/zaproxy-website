@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: alertFilters
-    version: '28'
+    version: '29'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v28/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/alertFilters-v29/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -203,28 +203,28 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -287,34 +287,34 @@ sbom:
     version: 6.1.3
     licenses: EPL-2.0
   - name: langchain4j
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-anthropic
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-azure-open-ai
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-core
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-google-ai-gemini
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-http-client
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-http-client-jdk
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-ollama
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-open-ai
-    version: 1.20.0
+    version: 1.21.0
     licenses: Apache-2.0
   - name: langchain4j-reactive-streaming
-    version: 1.20.0-beta30
+    version: 1.21.0-beta31
     licenses: Apache-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -338,16 +338,16 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.44
+    version: 1.18.48
     licenses: MIT
   - name: mcp
     version: 0.5.0
     licenses: ''
   - name: mockito-core
-    version: 5.23.0
+    version: 5.24.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.23.0
+    version: 5.24.0
     licenses: MIT
   - name: mutiny-zero
     version: 1.3.1

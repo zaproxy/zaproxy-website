@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: insights
-    version: 0.5.0
+    version: 0.6.0
 ---
 
 # Insights Add-on

@@ -6,13 +6,18 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: '83'
+    version: '84'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [84] - 2026-10-08
+### Changed
+- Update references and CVE links to avoid redirects.
+- Adjust stop checks in the Path Traversal scan rule to terminate sooner.
 
 ## [83] - 2026-06-26
 ### Changed
@@ -538,14 +543,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## 31 - 2018-03-05
 
-- Issue 1852: Fix reflected XSS false negative with poor quality HTML filtering.<br/>
-- Issue 1640: Fix reflected XSS false negative with double decoded output.<br/>
-- Issue 2290: Fix SQLi false negative with ODBC error message.<br/>
+- Issue 1852: Fix reflected XSS false negative with poor quality HTML filtering.
+- Issue 1640: Fix reflected XSS false negative with double decoded output.
+- Issue 2290: Fix SQLi false negative with ODBC error message.
 
 ## 30 - 2018-02-06
 
-- Issue 1366: Allow SSI detection patterns to include new lines, and pre-check the original response for detection patterns to reduce false positives.<br/>
-- Issue 4168 and 4230: Pre-check the original response for detection patterns.<br/>
+- Issue 1366: Allow SSI detection patterns to include new lines, and pre-check the original response for detection patterns to reduce false positives.
+- Issue 4168 and 4230: Pre-check the original response for detection patterns.
 
 ## 29 - 2018-01-19
 
@@ -706,6 +711,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[84]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v84
 [83]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v83
 [82]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v82
 [81]: https://github.com/zaproxy/zap-extensions/releases/ascanrules-v81

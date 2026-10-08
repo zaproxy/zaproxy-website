@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: spiderAjax
-    version: 23.32.0
+    version: 23.33.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [23.33.0] - 2026-10-08
+### Changed
+- Maintenance changes.
+- Update dependency.
+- Include cause of invalid URL in error message of Ajax Spider job.
+- Clarify Automation Framework job behaviour when `clickDefaultElems` is false and no `elements` provided.
+- Depend on newer version of Selenium add-on.
 
 ## [23.32.0] - 2026-07-06
 ### Changed
@@ -400,6 +408,7 @@ By default it allows files with extension `.js` and `.css`.
 
 
 
+[23.33.0]: https://github.com/zaproxy/zap-extensions/releases/spiderAjax-v23.33.0
 [23.32.0]: https://github.com/zaproxy/zap-extensions/releases/spiderAjax-v23.32.0
 [23.31.0]: https://github.com/zaproxy/zap-extensions/releases/spiderAjax-v23.31.0
 [23.30.0]: https://github.com/zaproxy/zap-extensions/releases/spiderAjax-v23.30.0
