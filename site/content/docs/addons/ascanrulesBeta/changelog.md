@@ -6,13 +6,19 @@ weight: 1
 cascade:
   addon:
     id: ascanrulesBeta
-    version: '66'
+    version: '67'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [67] - 2026-10-08
+### Changed
+- Dependency update.
+- Maintenance changes.
+- Update references and CVE links to avoid redirects.
 
 ## [66] - 2026-05-06
 ### Changed
@@ -648,6 +654,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Updated to support new addon format
 
+[67]: https://github.com/zaproxy/zap-extensions/releases/ascanrulesBeta-v67
 [66]: https://github.com/zaproxy/zap-extensions/releases/ascanrulesBeta-v66
 [65]: https://github.com/zaproxy/zap-extensions/releases/ascanrulesBeta-v65
 [64]: https://github.com/zaproxy/zap-extensions/releases/ascanrulesBeta-v64

@@ -9,7 +9,7 @@ weight: 1
 
 
 This active scan rule runs once per host and performs HTTPS configuration analysis for sites using HTTPS.
-It skips HTTP sites entirely.
+It skips HTTP sites entirely. It is also skipped if an outbound proxy (HTTP or SOCKS) is enabled.
 
 ## Alerts
 

@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: groovy
-    version: 4.0.0
+    version: 5.0.0
 ---
 
 # Groovy Support
@@ -14,7 +14,7 @@ cascade:
 
 The Groovy Support add-on allows Groovy to be used for ZAP scripting and to run add-ons written in Groovy.  
 
-It's bundled Groovy 5.0 (5.0.3), core and all modules.
+It's bundled Groovy 6.0, core and all modules.
 
 ## Scripting
 

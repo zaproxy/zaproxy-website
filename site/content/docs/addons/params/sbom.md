@@ -1,17 +1,17 @@
 ---
 # This page was automatically generated from the add-on's SBOM.
-title: Token Generation and Analysis Add-on SBOM
+title: Params Add-on SBOM
 type: sbom
 weight: 1
 aliases:
-- /docs/sbom/tokengen/
+- /docs/sbom/params/
 cascade:
   addon:
-    id: tokengen
-    version: '17'
+    id: params
+    version: 0.1.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/tokengen-v17/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/params-v0.1.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -67,6 +67,9 @@ sbom:
   - name: checker-qual
     version: 3.43.0
     licenses: MIT
+  - name: commonlib
+    version: 1.45.0
+    licenses: ''
   - name: commons-beanutils
     version: 1.11.0
     licenses: Apache-2.0
@@ -90,6 +93,9 @@ sbom:
     licenses: Apache-1.0
   - name: commons-io
     version: 2.21.0
+    licenses: Apache-2.0
+  - name: commons-io
+    version: 2.22.0
     licenses: Apache-2.0
   - name: commons-lang
     version: '2.6'
@@ -205,8 +211,29 @@ sbom:
   - name: jackson-annotations
     version: '2.22'
     licenses: Apache-2.0
+  - name: jackson-bom
+    version: 2.22.3
+    licenses: Apache-2.0
+  - name: jackson-core
+    version: 2.22.3
+    licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
+    licenses: Apache-2.0
+  - name: jackson-databind
+    version: 2.22.3
+    licenses: Apache-2.0
+  - name: jackson-dataformat-xml
+    version: 2.22.3
+    licenses: Apache-2.0
+  - name: jackson-dataformat-yaml
+    version: 2.22.3
+    licenses: Apache-2.0
+  - name: jackson-datatype-jdk8
+    version: 2.22.3
+    licenses: Apache-2.0
+  - name: jackson-datatype-jsr310
+    version: 2.22.3
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -376,9 +403,6 @@ sbom:
   - name: org.osgi.service.serviceloader
     version: 1.0.0
     licenses: Apache-2.0
-  - name: params
-    version: 0.1.0
-    licenses: ''
   - name: pcollections
     version: 4.0.1
     licenses: MIT
@@ -397,6 +421,9 @@ sbom:
   - name: slf4j-api
     version: 1.7.36
     licenses: MIT
+  - name: snakeyaml
+    version: '2.5'
+    licenses: Apache-2.0
   - name: software-and-algorithms
     version: '1.0'
     licenses: MIT
@@ -406,6 +433,9 @@ sbom:
   - name: sqlite-jdbc
     version: 3.53.4.0
     licenses: Apache-2.0
+  - name: stax2-api
+    version: 4.3.0
+    licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
     licenses: Lesser General Public License (LGPL)
@@ -415,6 +445,9 @@ sbom:
   - name: testutilscore
     version: unspecified
     licenses: ''
+  - name: woodstox-core
+    version: 7.2.0
+    licenses: Apache-2.0
   - name: xom
     version: 1.3.9
     licenses: The GNU Lesser General Public License, Version 2.1

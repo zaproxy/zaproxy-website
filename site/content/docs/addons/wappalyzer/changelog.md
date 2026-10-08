@@ -6,13 +6,18 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.57.0
+    version: 21.58.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [21.58.0] - 2026-10-08
+### Changed
+- Updated with enthec upstream icon and pattern changes.
+- Dependency update.
 
 ## [21.57.0] - 2026-08-20
 ### Changed
@@ -485,6 +490,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - First version
 
 
+[21.58.0]: https://github.com/zaproxy/zap-extensions/releases/wappalyzer-v21.58.0
 [21.57.0]: https://github.com/zaproxy/zap-extensions/releases/wappalyzer-v21.57.0
 [21.56.0]: https://github.com/zaproxy/zap-extensions/releases/wappalyzer-v21.56.0
 [21.55.0]: https://github.com/zaproxy/zap-extensions/releases/wappalyzer-v21.55.0

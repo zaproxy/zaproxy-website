@@ -22,7 +22,16 @@ If recording is still on at plan finish, it is stopped and persisted automatical
   - type: diagnostics                  # Enable or disable plan-level diagnostics recording
     parameters:
       enabled:                         # Bool: If true, start diagnostics recording, default: false
+      type:                            # String: omit for whole-plan recording, or auth_on_failure / auth_failure_rolling to retain only failed authentication attempts
+      count:                           # Int: number of failures to retain, only used by auth_failure_rolling, default: 5
 ```
+
+
+By default (`type` omitted) the job records all traffic for the whole plan,
+as described above. Setting `type` to `auth_on_failure` or
+`auth_failure_rolling` switches to per-attempt recording instead: only failed authentication
+attempts are retained (successes are discarded), either just the latest one, or the last `count`
+of them. With `auth_on_failure`, to keep the overhead low, only the error step is recorded, with just its screenshot.
 
 
 Enabling both this job and `env` authentication diagnostics (browser/client

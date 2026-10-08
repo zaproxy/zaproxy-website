@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: groovy
-    version: 4.0.0
+    version: 5.0.0
 ---
 
 # Changelog
@@ -14,6 +14,13 @@ All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [5.0.0] - 2026-10-08
+### Changed
+- Update Groovy from 5 to 6.  
+  Existing Groovy scripts should work without issues,
+  but if you encounter problems, please refer to the following:
+  - [Groovy 6 Release Notes](https://groovy-lang.org/releasenotes/groovy-6.0.html#Groovy6.0-breaking)
 
 ## [4.0.0] - 2025-12-15
 ### Added
@@ -77,6 +84,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Initial Release
 
+[5.0.0]: https://github.com/zaproxy/zap-extensions/releases/groovy-v5.0.0
 [4.0.0]: https://github.com/zaproxy/zap-extensions/releases/groovy-v4.0.0
 [3.2.0]: https://github.com/zaproxy/zap-extensions/releases/groovy-v3.2.0
 [3.1.0]: https://github.com/zaproxy/zap-extensions/releases/groovy-v3.1.0

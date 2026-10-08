@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ascanrules
-    version: 83.0.0
+    version: 84.0.0
 ---
 
 # Active Scan Rules
@@ -270,7 +270,7 @@ Alert ID: [10047](/docs/alerts/10047/).
 
 ## Log4Shell (CVE-2021-44228 and CVE-2021-45046) {#id-40043}
 
-This rule attempts to discover the Log4Shell ([CVE-2021-44228](https://nvd.nist.gov/vuln/detail/CVE-2021-44228) and [CVE-2021-45046](https://nvd.nist.gov/vuln/detail/CVE-2021-45046)) vulnerabilities. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions. We recommend that this scan rule is used with header injection enabled for maximum coverage.
+This rule attempts to discover the Log4Shell ([CVE-2021-44228](https://nvd.nist.gov/vuln/detail/cve-2021-44228) and [CVE-2021-45046](https://nvd.nist.gov/vuln/detail/cve-2021-45046)) vulnerabilities. It relies on the OAST add-on to generate out-of-band payloads and verify DNS interactions. We recommend that this scan rule is used with header injection enabled for maximum coverage.
 
 
 See also: [OAST](/docs/desktop/addons/oast-support/#alerts).
@@ -319,7 +319,7 @@ Alert ID: [6](/docs/alerts/6/).
 This rule identifies servers running vulnerable versions of React Server Components with Next.js, which will allow remote attackers to execute arbitrary code.
 
 
-The rule is based on the PoC detailed on <https://slcyber.io/research-center/high-fidelity-detection-mechanism-for-rsc-next-js-rce-cve-2025-55182-cve-2025-66478/>.
+The rule is based on the PoC detailed on <https://www.slcyber.io/research/high-fidelity-detection-mechanism-for-rsc-next-js-rce-cve-2025-55182-cve-2025-66478>.
 
 
 It verifies that the server is running vulnerable React Server Components with Next.js, and that the remote code execution (RCE) vulnerability is present without causing any damage.

@@ -6,13 +6,25 @@ weight: 1
 cascade:
   addon:
     id: imagelocationscanner
-    version: '8'
+    version: '9'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [9] - 2026-10-08
+### Changed
+- Updated to Image Location and Privacy Scanner version 1.3; merged from [source](https://github.com/veggiespam/ImageLocationScanner)
+- Updated dependency Metadata Extractor to 2.21.0
+- Unified filtering of false positives, e.g., location or owner name is `-`
+
+### Added
+- Re-implemented support for XMP image tags, scan many common tags names for privacy leakage
+- Support for proprietary DJI Drone camera location & altitude
+- Scan additional basic Exif tags for privacy exposure
+- Now scan HEIC extension and mimetype
 
 ## [8] - 2026-04-14
 ### Changed
@@ -82,6 +94,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Promoted to beta and separated from the passive scan alpha add-on.
 
+[9]: https://github.com/zaproxy/zap-extensions/releases/imagelocationscanner-v9
 [8]: https://github.com/zaproxy/zap-extensions/releases/imagelocationscanner-v8
 [7]: https://github.com/zaproxy/zap-extensions/releases/imagelocationscanner-v7
 [6]: https://github.com/zaproxy/zap-extensions/releases/imagelocationscanner-v6
