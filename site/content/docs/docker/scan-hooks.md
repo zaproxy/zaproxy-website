@@ -73,6 +73,8 @@ See https://github.com/zaproxy/community-scripts/tree/main/other/scan-hooks
 - `zap_spider_wrap(unused)`
 - `zap_ajax_spider(zap, target, max_time)`
 - `zap_ajax_spider_wrap(unused)`
+- `zap_client_spider(zap, target, max_time)`
+- `zap_client_spider_wrap(unused)`
 - `zap_active_scan(zap, target, policy)`
 - `zap_active_scan_wrap(unused)`
 - `zap_get_alerts(zap, baseurl, blacklist, out_of_scope_dict)`
