@@ -7,7 +7,7 @@ successtags:
 - internal
 date: "2026-10-11"
 company:
-  link: https://sekona.ch
+  link: https://sekona.ch/
   logo: /images/sekona_logo_lockup_transparent.png
 ---
 
