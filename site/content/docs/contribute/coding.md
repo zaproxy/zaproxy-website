@@ -12,6 +12,9 @@ ZAP [Student Hall of Fame](/student-hall-of-fame/) to see how many students have
 
 You don't have to be a student of course, anyone who know is interested will be able to help us out with the ZAP code base.
 
+> [!IMPORTANT]
+> See the [Developing ZAP in the LLM Age](/blog/2026-10-13-developing-zap-in-the-llm-age/) for an update on using LLMs with the ZAP codebase.
+
 ### Getting Started
 
 You should start by becoming familiar with the ZAP Desktop app even if you plan to just help with automation - it is very difficult to improve something that you do not understand and the desktop is the best way to learn about the way ZAP works.
