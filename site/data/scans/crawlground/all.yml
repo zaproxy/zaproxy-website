@@ -248,9 +248,9 @@ details:
   standard: Fail
   standard_trend: stable
   standard_prev: Fail
-  ajax: 57%
+  ajax: 71%
   ajax_trend: up
-  ajax_prev: 43%
+  ajax_prev: 57%
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -362,8 +362,8 @@ details:
   ajax_trend: stable
   ajax_prev: Fail
   client: Pass
-  client_trend: up
-  client_prev: 86%
+  client_trend: stable
+  client_prev: Pass
 - path: /score/js-events/06-dialog-modal
   scheme: http
   standard: Pass
@@ -622,8 +622,8 @@ details:
   standard: Fail
   standard_trend: stable
   standard_prev: Fail
-  ajax: 57%
-  ajax_trend: stable
+  ajax: 86%
+  ajax_trend: up
   ajax_prev: 57%
   client: Pass
   client_trend: stable
@@ -633,9 +633,9 @@ details:
   standard: Fail
   standard_trend: stable
   standard_prev: Fail
-  ajax: 29%
-  ajax_trend: down
-  ajax_prev: 43%
+  ajax: 57%
+  ajax_trend: up
+  ajax_prev: 29%
   client: Pass
   client_trend: stable
   client_prev: Pass
