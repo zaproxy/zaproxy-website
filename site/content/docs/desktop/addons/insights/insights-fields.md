@@ -19,7 +19,7 @@ The following Levels are supported:
 * Medium: A more significant Insight which should be investigated ASAP. It potentially means that the scan is not working as expected
 * High: A very significant Insight which is highly likely to impact the scan effectiveness
 
-We recommend terminating a scan early and investigating if any Medium or High level Insights are reported.
+We recommend terminating a scan early and investigating if any High level Insights are reported, and double checking any Medium Insights ASAP.
 
 ### Reason
 
@@ -50,4 +50,4 @@ Indicates if the Insight is specific to a site (which will be specified). Otherw
 
 ### Thresholds
 
-Each Insight has a Low and High threshold, which is shown in the [insight list](/docs/desktop/addons/insights/insights-list/).
+Insights which use thresholds are compared against the Low and High thresholds set in the [options](/docs/desktop/addons/insights/insights-options/). The Level at which an Insight is reported when it exceeds each threshold is shown in the [insight list](/docs/desktop/addons/insights/insights-list/). Note that the threshold names (Low and High) are not the same as the Levels (Info, Low, Medium and High) - see [Thresholds and Levels](/docs/desktop/addons/insights/insights-list/) for a full explanation.

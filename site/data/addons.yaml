@@ -618,9 +618,9 @@
   status: alpha
   infoUrl: ''
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.6.0/insights-alpha-0.6.0.zap
-  date: 2026-10-08
-  version: 0.6.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.7.0/insights-alpha-0.7.0.zap
+  date: 2026-10-15
+  version: 0.7.0
 - id: invoke
   name: Invoke Applications
   description: Invoke external applications passing context related information such
@@ -699,9 +699,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/llm-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/llm-v0.0.1/llm-alpha-0.0.1.zap
-  date: 2026-08-07
-  version: 0.0.1
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/llm-v0.1.0/llm-alpha-0.1.0.zap
+  date: 2026-10-15
+  version: 0.1.0
 - id: maplocal
   name: Map Local
   description: Allows mapping of responses to content of a chosen local file.
@@ -1023,9 +1023,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.58.0/selenium-release-15.58.0.zap
-  date: 2026-10-08
-  version: 15.58.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.59.0/selenium-release-15.59.0.zap
+  date: 2026-10-15
+  version: 15.59.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.
