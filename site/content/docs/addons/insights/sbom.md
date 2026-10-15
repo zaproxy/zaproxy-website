@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: insights
-    version: 0.6.0
+    version: 0.7.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.6.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/insights-v0.7.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -38,7 +38,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.61.0
+    version: 0.62.0
     licenses: ''
   - name: batik-anim
     version: '1.19'
@@ -413,7 +413,7 @@ sbom:
     version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.30.0
+    version: 0.31.0
     licenses: ''
   - name: objenesis
     version: '3.3'
