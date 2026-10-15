@@ -94,7 +94,7 @@ arithmetic - reviewer time is the scarce resource, so spend less of it per chang
 - **Ideally end to end tests too.** Unit tests prove the pieces work; end to end tests prove
   the feature works in a real ZAP. For anything that can be exercised that way, include one.
 - **Preferably as Automation Framework plans.** The best end to end tests for ZAP are
-  [Automation Framework](/docs/desktop/automate/automation-framework/) plans that we can run
+  [Automation Framework](/docs/automate/automation-framework/) plans that we can run
   with little to no preparation - no manual setup, no special environment, no undocumented
   prerequisites. A plan we can drop in and run tells a reviewer far more, far faster, than a
   description of how you tested it manually.
