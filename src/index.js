@@ -31,12 +31,17 @@ document.addEventListener("DOMContentLoaded", function() {
       labels: {}
     };
 
-    // Checks if row matches against filter
+    // Checks if row matches against filter.
+    // Surround value with double quotes for exact match, e.g. "Passive".
     function isFilterMatch(row) {
       for (const index in widget.filters) {
         const filter = widget.filters[index].toLowerCase();
         const rowValue = row.columns[index].toLowerCase();
-        if (rowValue.indexOf(filter) === -1) {
+        if (filter.length >= 2 && filter.startsWith('"') && filter.endsWith('"')) {
+          if (rowValue !== filter.slice(1, -1)) {
+            return false;
+          }
+        } else if (rowValue.indexOf(filter) === -1) {
           return false;
         }
       }
