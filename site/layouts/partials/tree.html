@@ -1,41 +1,38 @@
 <section class="tree-menu">
-<input type="text" name="filter" data-tree-filter placeholder="Filter links" />
-<ul class="tree-root">
-{{- $here := .dir }}
-{{- range (readDir $here) }}
-    {{ if in .Name "image" }}
-    {{ else }}
-        {{- $fullPath := (printf "%s%s" $here .Name) }}
-        {{- $fullUrl := replace $fullPath "/content" "" }}
-        {{- $stat := os.Stat $fullPath }}
-        {{ if $stat.IsDir }}
-            {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" 1 }}
-        {{ end }}
-    {{ end }}
-{{- end -}}
-</ul>
+    <input type="text" name="filter" data-tree-filter placeholder="Filter links" />
+    <ul class="tree-root">
+        {{- $here := .dir }}
+        {{- range (readDir $here) }}
+            {{ if in .Name "image" | or (eq .Name "_index.md") }}
+            {{ else }}
+                {{- $fullPath := (printf "%s%s" $here .Name) }}
+                {{- $fullUrl := replace $fullPath "/content" "" }}
+                {{- $stat := os.Stat $fullPath }}
+                {{ if $stat.IsDir }}
+                    {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" 1 "expand" false }}
+                {{ end }}
+            {{ end }}
+        {{- end -}}
+    </ul>
 </section>
+
 {{ define "treemenu" }}
     {{ $nextDepth := add .depth 1 }}
     {{- $activeLink := $.root.Permalink }}
     {{- $className := "" }}
     {{- $deprecated := true }}
+    {{- $expand := .expand }}
     {{- with $.root.Site.GetPage .url }}
         {{- if not .Params.deprecated }}
             {{- $deprecated = false }}
             {{- $branchLink := .Permalink }}
-            {{- if in $activeLink $branchLink  }}
-                {{- $className = "tree-branch-active" -}}
-            {{ end }}
-            {{- if eq $activeLink $branchLink  }}
-                {{- $className = "tree-active tree-branch-active" -}}
-            {{- end -}}
             <li data-depth="{{ $.depth }}" class="{{ $className }}">
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
         {{- end }}
     {{- end }}
+
     {{- if not $deprecated }}
-        <ul class="tree-branch">
+        <ul class="tree-branch" style="display: none;"> <!-- Oculto por padrão -->
         {{- range (readDir .path) }}
             {{- if in .Name "image" | or (eq .Name "_index.md") }}
             {{- else }}
@@ -44,11 +41,11 @@
                 {{- $fullUrl = replace $fullUrl ".md" "" }}
                 {{- $stat := os.Stat $fullPath }}
                 {{- if $stat.IsDir }}
-                    {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" $nextDepth }}
+                    {{- template "treemenu" dict "path" $fullPath "url" $fullUrl "root" $.root "depth" $nextDepth "expand" false }}
                 {{- else }}
                     {{- with $.root.Site.GetPage $fullUrl }}
-                        {{- $link := printf "%s" .Permalink }}  
-                        <li{{- if in $activeLink $link }} class="tree-active"{{ end }}> 
+                        {{- $link := printf "%s" .Permalink }}
+                        <li{{- if in $activeLink $link }} class="tree-active"{{ end }}>
                             <a href="{{ .Permalink }}">{{ .Title }}</a>
                         </li>
                     {{- end }}
@@ -59,3 +56,41 @@
     </li>
     {{- end }}
 {{ end }}
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var treeItems = document.querySelectorAll('.tree-menu li');
+
+        treeItems.forEach(function(item) {
+            var timer;
+            var subTree = item.querySelector('.tree-branch');
+
+            if (subTree) {
+                item.addEventListener('mouseenter', function() {
+                    clearTimeout(timer);
+                    subTree.style.display = 'block';
+                });
+
+                item.addEventListener('mouseleave', function() {
+                    timer = setTimeout(function() {
+                        if (!item.matches(':hover') && !subTree.matches(':hover')) {
+                            subTree.style.display = 'none';
+                        }
+                    }, 5000);
+                });
+
+                subTree.addEventListener('mouseenter', function() {
+                    clearTimeout(timer);
+                });
+
+                subTree.addEventListener('mouseleave', function() {
+                    timer = setTimeout(function() {
+                        if (!item.matches(':hover') && !subTree.matches(':hover')) {
+                            subTree.style.display = 'none';
+                        }
+                    }, 5000);
+                });
+            }
+        });
+    });
+</script>
