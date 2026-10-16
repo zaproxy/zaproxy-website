@@ -45,13 +45,27 @@ In a similar way some false positives may still be reasonable for ZAP to report 
 
 ### Implementation Details
 
-The following blog posts will help you get started with scan rules - they are a bit old but they are mostly still accurate:
+Start from the current [Alert Details](/docs/alerts/) page. Open the relevant alert and follow its **Source** link to the scan rule. Then find the corresponding test under that add-on's `src/test/java` directory. Following the links from the live alert page keeps the source location current if a rule moves between add-ons.
+
+Active scan tests commonly use the shared [`ActiveScannerTestUtils` test helper](https://github.com/zaproxy/zap-extensions/blob/main/testutils/src/main/java/org/zaproxy/zap/testutils/ActiveScannerTestUtils.java). It starts a local HTTP test server and records the requests sent and alerts raised. Read the selected test's server setup and assertions to see how that rule is exercised with simulated responses; fixtures vary by rule.
+
+From the root of a clone of [`zaproxy/zap-extensions`](https://github.com/zaproxy/zap-extensions), run a focused test:
+
+```sh
+./gradlew :addOns:ADDON_ID:test --tests 'package.TestClassName'
+```
+
+Replace `ADDON_ID` with the add-on's Gradle project identifier and `package.TestClassName` with the fully qualified name of the test you found. In Windows PowerShell, use `gradlew.bat` with the same project and test arguments. To run all tests in the add-on, omit the `--tests` option.
+
+Before implementing a new rule, first check whether an existing rule or another ZAP component is a better fit. If that is unclear, discuss the proposal on the [ZAP Developer Group](https://groups.google.com/group/zaproxy-develop).
+
+The following blog posts are older background material:
 * [Hacking ZAP #3 - Passive scan rules](/blog/2014-04-03-hacking-zap-3-passive-scan-rules/)
 * [Hacking ZAP #4 - Active scan rules](/blog/2014-04-30-hacking-zap-4-active-scan-rules/)
 
 All changes should be covered by unit tests - see [Verifying Your Changes](/docs/developer/verifying-your-changes/).
 
-For scan rules this means that you will need simulate a web server - most of the existing scan rule unit test already do this, so look at the existing tests to see how this can be done.
+For scan rules, tests usually simulate a web server. Follow the fixture and conventions used by the rule's own add-on, and update that add-on's changelog and English help when the change requires it.
 
 #### Number of Requests
 
