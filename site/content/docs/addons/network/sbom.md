@@ -8,11 +8,14 @@ aliases:
 cascade:
   addon:
     id: network
-    version: 0.30.0
+    version: 0.31.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.30.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.31.0/bom.json
   components:
+  - name: annotations
+    version: 26.1.0
+    licenses: Apache-2.0
   - name: apiguardian-api
     version: 1.1.2
     licenses: Apache-2.0
@@ -152,7 +155,7 @@ sbom:
     version: 33.4.0-jre
     licenses: Apache-2.0
   - name: guava
-    version: 33.7.1-jre
+    version: 33.7.2-jre
     licenses: Apache-2.0
   - name: hamcrest
     version: '3.0'
@@ -389,58 +392,58 @@ sbom:
     version: 3.6.0
     licenses: BSD-3-Clause
   - name: selenium-api
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-devtools-latest
-    version: 4.50.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v152
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-devtools-v153
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-devtools-v154
-    version: 4.50.0
+    version: 4.51.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v155
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: service
     version: 1.23.0
