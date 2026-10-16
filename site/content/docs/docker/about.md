@@ -91,6 +91,11 @@ Many environments _also_ support the $PWD / ${PWD} _environment variable_.
 
 Finding working solutions for _all_ environments is outside the scope of this document.
 
+> [!NOTE]
+> **Windows Git Bash / MSYS users:** Git Bash automatically converts POSIX-style paths in arguments to Windows paths. This mangles the container side of the `-v host:/zap/wrk` mount, so the volume silently fails to mount and the scan reports:
+> `A file based option has been specified but the directory '/zap/wrk' is not mounted`.
+> Work around it by prefixing the container path with an extra slash (`//zap/wrk/`), setting `MSYS_NO_PATHCONVERSION=1` for the command, or simply running the `docker run` command from PowerShell or CMD instead.
+
 ### Packaged Scans
 All of the docker images (apart from the 'bare' one) provide a set of packaged scan scripts:
 
