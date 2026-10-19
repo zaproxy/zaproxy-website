@@ -22,8 +22,8 @@ details:
   prev: Fail
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case05-InjectionInSearchOrderBy-String-BinaryDeliberateRuntimeError-WithDifferent200Responses.jsp
   rule: 40018
-  score: Pass
-  trend: stable
+  score: 71%
+  trend: down
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/SQL-Injection/SInjection-Detection-Evaluation-POST-200Valid/Case06-InjectionInView-Numeric-PermissionBypass-WithDifferent200Responses.jsp
   rule: 40018
@@ -94,6 +94,6 @@ details:
   trend: stable
   prev: Fail
 tests: 19
-passes: 16
+passes: 15
 fails: 3
-score: 84%
+score: 83%
