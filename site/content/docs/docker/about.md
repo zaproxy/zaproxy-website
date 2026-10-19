@@ -92,6 +92,10 @@ Many environments _also_ support the $PWD / ${PWD} _environment variable_.
 Finding working solutions for _all_ environments is outside the scope of this document.
 
 ### Packaged Scans
+
+> [!WARNING]
+> The packaged scans expose the unauthenticated ZAP API to the host on which they are running. Do not expose the ZAP API port to any untrusted systems.
+
 All of the docker images (apart from the 'bare' one) provide a set of packaged scan scripts:
 
 * [Baseline Scan](../baseline-scan/) which runs the ZAP spider against the target for (by default) 1 minute followed by an optional ajax spider scan before reporting the results of the passive scanning.
