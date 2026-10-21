@@ -8,11 +8,14 @@ aliases:
 cascade:
   addon:
     id: client
-    version: 0.33.0
+    version: 0.34.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.33.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/client-v0.34.0/bom.json
   components:
+  - name: annotations
+    version: 26.1.0
+    licenses: Apache-2.0
   - name: apfloat
     version: 1.14.0
     licenses: MIT
@@ -41,7 +44,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.61.0
+    version: 0.62.0
     licenses: ''
   - name: bcmail-jdk18on
     version: '1.86'
@@ -63,6 +66,9 @@ sbom:
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.18.14
+    licenses: Apache-2.0
+  - name: byte-buddy
+    version: 1.18.15
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.17.7
@@ -185,10 +191,10 @@ sbom:
     version: '3.7'
     licenses: Apache-2.0
   - name: flyway-core
-    version: 13.9.0
+    version: 13.10.3
     licenses: Apache-2.0
   - name: flyway-database-hsqldb
-    version: 13.9.0
+    version: 13.10.3
     licenses: Apache-2.0
   - name: glassfish-corba-omgapi
     version: 4.2.2
@@ -200,7 +206,7 @@ sbom:
     version: 33.4.0-jre
     licenses: Apache-2.0
   - name: guava
-    version: 33.7.1-jre
+    version: 33.7.2-jre
     licenses: Apache-2.0
   - name: hamcrest
     version: '3.0'
@@ -452,7 +458,7 @@ sbom:
     version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.30.0
+    version: 0.32.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -533,61 +539,61 @@ sbom:
     version: 45.21.0
     licenses: ''
   - name: selenium
-    version: 15.58.0
+    version: 15.60.0
     licenses: ''
   - name: selenium-api
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-devtools-latest
-    version: 4.50.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v152
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-devtools-v153
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-devtools-v154
-    version: 4.50.0
+    version: 4.51.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v155
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.50.0
+    version: 4.51.0
     licenses: Apache-2.0
   - name: service
     version: 1.23.0
