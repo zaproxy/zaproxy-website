@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: pscanrules
-    version: '76'
+    version: '77'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v76/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v77/bom.json
   components:
   - name: ST4
     version: 4.3.4
@@ -182,16 +182,16 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit-csp
-    version: 5.5.0
+    version: 5.6.0
     licenses: Apache-2.0
   - name: httpclient5
-    version: 5.2.1
+    version: 5.6.4
     licenses: Apache-2.0
   - name: httpcore5
-    version: '5.2'
+    version: 5.4.3
     licenses: Apache-2.0
   - name: httpcore5-h2
-    version: '5.2'
+    version: 5.4.3
     licenses: Apache-2.0
   - name: ice4j
     version: 3.0-24-g34c2ce5
@@ -206,28 +206,28 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.2
+    version: 2.22.3
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -302,13 +302,13 @@ sbom:
     version: 2.25.2
     licenses: Apache-2.0
   - name: lombok
-    version: 1.18.44
+    version: 1.18.48
     licenses: MIT
   - name: mockito-core
-    version: 5.23.0
+    version: 5.24.0
     licenses: MIT
   - name: mockito-junit-jupiter
-    version: 5.23.0
+    version: 5.24.0
     licenses: MIT
   - name: nanohttpd
     version: 2.3.1
@@ -359,7 +359,7 @@ sbom:
     version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.30.0
+    version: 0.32.0
     licenses: ''
   - name: objenesis
     version: '3.3'

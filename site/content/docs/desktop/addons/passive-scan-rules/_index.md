@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 76.0.0
+    version: 77.0.0
 ---
 
 # Passive Scan Rules
@@ -546,6 +546,23 @@ Latest code: [XPoweredByHeaderInfoLeakScanRule.java](https://github.com/zaproxy/
 
 
 Alert ID: [10037](/docs/alerts/10037/).
+
+## Server Side Technology Version with Known Vulnerabilities {#id-20020}
+
+This checks response headers (typically "X-Powered-By" and "Server") for disclosed versions of server side technologies and compares them against lists of known vulnerabilities (CVEs) in those technologies, not in their extensions or plugins.  
+Each technology has its own alert type, which is only raised when that technology is enabled in the context the message belongs to (all are by default). One alert is raised per site, technology and disclosed version, with a risk based on the most severe vulnerability which applies, the vulnerabilities which apply listed by severity in the other info, and references linking to the details of each in the help. The confidence is lowered when the disclosed version is incomplete (e.g. "PHP/8.1" rather than "PHP/8.1.2"), or is older than any version listed in the advisories and is only assumed to be affected.  
+The lists of known vulnerabilities are bundled with the add-on and updated with each release.
+
+
+Alert types:
+
+* **20020-1: PHP Version with Known Vulnerabilities** - detects versions such as "PHP/8.1.2". The known vulnerabilities are generated from the [php-src security advisories](https://github.com/php/php-src/security/advisories), and are detailed in the [PHP Known Vulnerabilities](/docs/desktop/addons/passive-scan-rules/php-known-vulnerabilities/) help page.
+
+
+Latest code: [ServerSideVersionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ServerSideVersionScanRule.java)
+
+
+Alert ID: [20020](/docs/alerts/20020/).
 
 ## Session ID in URL Rewrite {#id-3}
 
