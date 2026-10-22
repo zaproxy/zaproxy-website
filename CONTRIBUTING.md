@@ -5,6 +5,9 @@ please read the [code of conduct](https://github.com/zaproxy/.github/blob/master
 
 ## Setup
 
+For a local Node.js setup, use the version specified in [`.nvmrc`](.nvmrc)
+before running `npm install`.
+
 ```sh
 $ git clone https://github.com/zaproxy/zaproxy-website
 $ cd zaproxy-website
