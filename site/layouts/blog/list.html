@@ -11,8 +11,9 @@
             {{ range .Pages }}
             <article class="blog-post-preview flex pt-40 pb-40">
               <div class="col-1-4">
+                {{ $anchor := .Params.previewImageAnchor | default "Smart" }}
                 {{ range first 1 (where (.Resources.ByType "image") ".Height" ">=" 240) }} 
-                  {{ $image := .Fill "300x300" }}
+                  {{ $image := .Fill (printf "300x300 %s" $anchor) }}
                   <img class="preview-image" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" />  
                 {{ end }}
              </div>
