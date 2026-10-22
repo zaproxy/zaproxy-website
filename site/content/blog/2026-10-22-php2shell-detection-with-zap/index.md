@@ -41,7 +41,7 @@ Server: Apache/2.4.41 (Ubuntu) PHP/7.4.3
 
 The new rule spots these versions and compares them against a list of known PHP vulnerabilities (CVEs).
 If the version is affected then ZAP raises a
-[PHP Version with Known Vulnerabilities](/docs/alerts/20020-1) alert.
+[PHP Version with Known Vulnerabilities](/docs/alerts/20020) alert.
 
 As this is a passive rule it just examines the responses that ZAP has already seen, so it does not send any extra
 requests. That means you will get these alerts when proxying, spidering, or importing APIs. 
