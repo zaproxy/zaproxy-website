@@ -30,6 +30,8 @@ jobs:
         cd zaproxy-website
         npm install
         npm run build
+      env:
+        HUGO_BASEURL: https://www.zaproxy.org/
     - name: Update Website
       uses: ./zaproxy-website/.github/actions/update-website
       with:
