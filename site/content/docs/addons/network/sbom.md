@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: network
-    version: 0.31.0
+    version: 0.32.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.31.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.32.0/bom.json
   components:
   - name: annotations
     version: 26.1.0
@@ -56,7 +56,7 @@ sbom:
     version: 7.4.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.18.14
@@ -281,16 +281,16 @@ sbom:
     version: 5.24.0
     licenses: MIT
   - name: native-linux-x86_64
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: native-osx-aarch64
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: native-osx-x86_64
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: native-windows-x86_64
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: netty-buffer
     version: 4.1.134.Final
@@ -446,7 +446,7 @@ sbom:
     version: 4.51.0
     licenses: Apache-2.0
   - name: service
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: slf4j-api
     version: 1.7.36
