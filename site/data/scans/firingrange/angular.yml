@@ -92,14 +92,19 @@ details:
   prev: Pass
 - path: /angular_form_parse/1.6.0
   rule: 200021
-  score: 14%
+  score: 29%
   trend: up
-  prev: Fail
+  prev: 14%
 - path: /angular_form_parse/1.6.0
   rule: 220004
   score: Pass
   trend: stable
   prev: Pass
+- path: /angular_post_message_parse/1.6.0
+  rule: 200021
+  score: 29%
+  trend: up
+  prev: Fail
 - path: /angular_post_message_parse/1.6.0
   rule: 220004
   score: Pass

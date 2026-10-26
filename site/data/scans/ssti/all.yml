@@ -4,8 +4,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -26,8 +26,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Pass
   rule_90025_trend: stable
@@ -48,8 +48,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -70,8 +70,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -92,8 +92,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Pass
   rule_90025_trend: stable
@@ -114,8 +114,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Pass
   rule_90025_trend: stable
@@ -136,8 +136,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -180,8 +180,8 @@ details:
   rule_40012: Fail
   rule_40012_trend: stable
   rule_40012_prev: Fail
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -195,15 +195,15 @@ details:
   rule_90036: Fail
   rule_90036_trend: stable
   rule_90036_prev: Fail
-  any: Pass
-  any_trend: stable
+  any: 86%
+  any_trend: down
   any_prev: Pass
 - title: Velocity - Java
   rule_40012: Fail
   rule_40012_trend: stable
   rule_40012_prev: Fail
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -217,15 +217,15 @@ details:
   rule_90036: Fail
   rule_90036_trend: stable
   rule_90036_prev: Fail
-  any: Pass
-  any_trend: stable
+  any: 86%
+  any_trend: down
   any_prev: Pass
 - title: 'Thymeleaf - Java '
   rule_40012: Fail
   rule_40012_trend: stable
   rule_40012_prev: Fail
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -239,8 +239,8 @@ details:
   rule_90036: Fail
   rule_90036_trend: stable
   rule_90036_prev: Fail
-  any: Pass
-  any_trend: stable
+  any: 86%
+  any_trend: down
   any_prev: Pass
 - title: Jade - Nodejs
   rule_40012: Pass
@@ -268,8 +268,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -290,8 +290,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -312,8 +312,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -334,8 +334,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -378,8 +378,8 @@ details:
   rule_40012: Fail
   rule_40012_trend: stable
   rule_40012_prev: Fail
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -400,8 +400,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -422,8 +422,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -444,8 +444,8 @@ details:
   rule_40012: Fail
   rule_40012_trend: stable
   rule_40012_prev: Fail
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -459,15 +459,15 @@ details:
   rule_90036: Fail
   rule_90036_trend: stable
   rule_90036_prev: Fail
-  any: Pass
-  any_trend: stable
+  any: 86%
+  any_trend: down
   any_prev: Pass
 - title: go - go
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -488,9 +488,9 @@ details:
   rule_40012: Fail
   rule_40012_trend: stable
   rule_40012_prev: Fail
-  rule_40026: Pass
-  rule_40026_trend: up
-  rule_40026_prev: 57%
+  rule_40026: 43%
+  rule_40026_trend: down
+  rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
   rule_90025_prev: Fail
@@ -503,9 +503,9 @@ details:
   rule_90036: Fail
   rule_90036_trend: stable
   rule_90036_prev: Fail
-  any: Pass
-  any_trend: up
-  any_prev: 57%
+  any: 43%
+  any_trend: down
+  any_prev: Pass
 - title: Rendering result not visible to attacker
   rule_40012: Fail
   rule_40012_trend: stable
@@ -554,8 +554,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -576,8 +576,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -598,8 +598,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Pass
   rule_90025_trend: stable
@@ -620,8 +620,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Pass
   rule_90025_trend: stable
@@ -642,8 +642,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -664,8 +664,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -686,8 +686,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -708,8 +708,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -730,8 +730,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Pass
   rule_90025_trend: stable
@@ -752,8 +752,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Pass
   rule_90025_trend: stable
@@ -774,8 +774,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -796,8 +796,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -818,8 +818,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -840,8 +840,8 @@ details:
   rule_40012: Pass
   rule_40012_trend: stable
   rule_40012_prev: Pass
-  rule_40026: Pass
-  rule_40026_trend: stable
+  rule_40026: 86%
+  rule_40026_trend: down
   rule_40026_prev: Pass
   rule_90025: Fail
   rule_90025_trend: stable
@@ -858,11 +858,11 @@ details:
   any: Pass
   any_trend: stable
   any_prev: Pass
-score: 97%
+score: 85%
 rule_40012_score: 29
-rule_40026_score: 34
+rule_40026_score: 0
 rule_90025_score: 7
 rule_90019_score: 1
 rule_90035_score: 27
 rule_90036_score: 18
-any_score: 38
+any_score: 33

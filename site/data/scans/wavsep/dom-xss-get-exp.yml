@@ -3,25 +3,25 @@ url: /DXSS-Detection-Evaluation-GET-Experimental/
 details:
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case01-InjectionDirectlyInToDomXssSinkEval.jsp
   rule: 40026
-  score: Pass
-  trend: stable
+  score: 86%
+  trend: down
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case02-InjectionDirectlyInToDomXssSinkLocation.jsp
   rule: 40026
-  score: Pass
-  trend: stable
+  score: 86%
+  trend: down
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case03-InjectionInToVariableBeingAssignedToDomXssSinkEval.jsp
   rule: 40026
-  score: Pass
-  trend: stable
+  score: 86%
+  trend: down
   prev: Pass
 - path: http://127.0.0.1:8080/wavsep/active/DOM-XSS/DXSS-Detection-Evaluation-GET-Experimental/Case04-InjectionInToVariableBeingAssignedToDomXssSinkLocation.jsp
   rule: 40026
-  score: Pass
-  trend: stable
+  score: 86%
+  trend: down
   prev: Pass
 tests: 4
-passes: 4
+passes: 0
 fails: 0
-score: 100%
+score: 86%
