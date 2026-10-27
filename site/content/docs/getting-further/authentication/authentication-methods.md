@@ -39,6 +39,36 @@ and runs the configured client side Zest script, which will typically have been 
 This is a good option for modern apps which have a more complex authentication flow than can be handled by 
 Browser Based Authentication.
 
+### Client Certificate Authentication
+
+Some applications use mutual TLS, where the client must present a certificate to the server.
+ZAP can use a client certificate held in a PKCS#12 file, or a PKCS#11 token, 
+which is configured via the Network add-on's [Client Certificates options](/docs/desktop/addons/network/options/clientcertificates/).
+Once the certificate is active ZAP will use it for all of the requests it sends.
+
+> [!NOTE]
+> Client certificates can be combined with any of the other authentication methods, 
+> for example if an application requires a client certificate as well as a login.
+
+This can be configured in the Automation Framework using the `configs` in the `env` section of the plan, for example:
+
+```yaml
+env:
+  contexts:
+  - name: "Client Cert App"
+    urls:
+    - "https://example.com"
+  configs:
+    network.clientCertificates.use: true
+    network.clientCertificates.pkcs12.file: "/path/to/client.p12"
+    network.clientCertificates.pkcs12.password: "${CERT_PASSWORD}"
+    network.clientCertificates.pkcs12.index: 0
+jobs:
+- type: spider
+  parameters:
+    context: "Client Cert App"
+```
+
 ### HTTP / NTLM Authentication
 
 This method handles both [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Authentication) 
