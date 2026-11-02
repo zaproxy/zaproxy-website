@@ -31,7 +31,7 @@ The framework supports:
 * [authentication](/docs/getting-further/authentication/authentication-methods/) - all of the authentication mechanisms supported by ZAP, including:
   * [browser](/docs/desktop/addons/authentication-helper/browser-auth/#automation-framework) authentication
   * [client](/docs/desktop/addons/authentication-helper/client-script/#automation-framework) script authentication
-  * [oauth2](/docs/desktop/addons/authentication-helper/auth2-auth/) authentication
+  * [oauth2](/docs/desktop/addons/authentication-helper/oauth2-auth/) authentication
 * [session management](/docs/getting-further/authentication/session-handling/) - all of the session management mechanisms supported by ZAP, including
   * [autodetect](/docs/desktop/addons/authentication-helper/) session management and verification
   * [headers](/docs/desktop/addons/authentication-helper/session-header/#automation-framework) session management
