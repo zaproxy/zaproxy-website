@@ -1,4 +1,8 @@
 ---
+- id: 40018
+  name: "SQL Injection"
+  status: "release"
+  type: "Active"
 - id: 10054
   name: "Cookie without SameSite Attribute"
   status: "release"
@@ -11,10 +15,6 @@
   name: "Session ID in URL Rewrite"
   status: "release"
   type: "Passive"
-- id: 40018
-  name: "SQL Injection"
-  status: "release"
-  type: "Active"
 - id: 10098
   name: "Cross-Domain Misconfiguration"
   status: "release"
@@ -27,14 +27,10 @@
   name: "X-Content-Type-Options Header Missing"
   status: "release"
   type: "Passive"
-- id: 10015
-  name: "Re-examine Cache-control Directives"
+- id: 100000
+  name: "An Error response code was returned by the server"
   status: "release"
-  type: "Passive"
-- id: 90033
-  name: "Loosely Scoped Cookie"
-  status: "release"
-  type: "Passive"
+  type: "Script Httpsender"
 - id: 10050
   name: "Retrieved from Cache"
   status: "release"
@@ -43,12 +39,24 @@
   name: "Session Management Response Identified"
   status: "beta"
   type: "Passive"
-- id: 10038
-  name: "Content Security Policy (CSP) Header Not Set"
+- id: 90033
+  name: "Loosely Scoped Cookie"
   status: "release"
   type: "Passive"
 - id: 10035
   name: "Strict-Transport-Security Header"
+  status: "release"
+  type: "Passive"
+- id: 10015
+  name: "Re-examine Cache-control Directives"
+  status: "release"
+  type: "Passive"
+- id: 10038
+  name: "Content Security Policy (CSP) Header Not Set"
+  status: "release"
+  type: "Passive"
+- id: 10036
+  name: "HTTP Server Response Header"
   status: "release"
   type: "Passive"
 - id: 10055
@@ -59,23 +67,15 @@
   name: "Cross-Domain JavaScript Source File Inclusion"
   status: "release"
   type: "Passive"
-- id: 10036
-  name: "HTTP Server Response Header"
-  status: "release"
-  type: "Passive"
 - id: 90004
   name: "Insufficient Site Isolation Against Spectre Vulnerability"
   status: "beta"
-  type: "Passive"
-- id: 10109
-  name: "Modern Web Application"
-  status: "release"
   type: "Passive"
 - id: 10062
   name: "PII Disclosure"
   status: "release"
   type: "Passive"
-- id: 10031
-  name: "User Controllable HTML Element Attribute (Potential XSS)"
-  status: "release"
-  type: "Passive"
+- id: 40040
+  name: "CORS Header"
+  status: "beta"
+  type: "Active"
