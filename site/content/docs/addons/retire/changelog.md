@@ -6,13 +6,17 @@ weight: 1
 cascade:
   addon:
     id: retire
-    version: 0.67.0
+    version: 0.68.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.68.0] - 2026-11-02
+### Changed
+- Updated with upstream retire.js pattern changes.
 
 ## [0.67.0] - 2026-10-16
 ### Changed
@@ -351,6 +355,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 - First release.
 
+[0.68.0]: https://github.com/zaproxy/zap-extensions/releases/retire-v0.68.0
 [0.67.0]: https://github.com/zaproxy/zap-extensions/releases/retire-v0.67.0
 [0.66.0]: https://github.com/zaproxy/zap-extensions/releases/retire-v0.66.0
 [0.65.0]: https://github.com/zaproxy/zap-extensions/releases/retire-v0.65.0
