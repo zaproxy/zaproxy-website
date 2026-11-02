@@ -2,240 +2,240 @@
 - id: 10104
   name: "User Agent Fuzzer"
   status: "release"
-  alerts: "48852830"
-  fps: 0.0
-  num: 306480
-  time: 51
+  alerts: "55992342"
+  fps: 0.001
+  num: 314031
+  time: 42
 
 - id: 10047
   name: "HTTPS Content Available via HTTP"
   status: "release"
-  alerts: "1312026"
-  fps: 0.003
-  num: 317934
-  time: 17
-
-- id: 40040
-  name: "CORS Header"
-  status: "beta"
-  alerts: "848140"
-  fps: 0.0
-  num: 81561
-  time: 20
-
-- id: 40025
-  name: "Proxy Disclosure"
-  status: "beta"
-  alerts: "701615"
-  fps: 0.0
-  num: 42020
-  time: 40
-
-- id: 90027
-  name: "Cookie Slack Detector"
-  status: "beta"
-  alerts: "673733"
-  fps: 0.003
-  num: 43528
-  time: 6
+  alerts: "1643072"
+  fps: 0.002
+  num: 332281
+  time: 16
 
 - id: 10095
   name: "Backup File Disclosure"
   status: "beta"
-  alerts: "599766"
-  fps: 0.084
-  num: 43238
-  time: 39
+  alerts: "877384"
+  fps: 0.039
+  num: 46075
+  time: 38
+
+- id: 40040
+  name: "CORS Header"
+  status: "beta"
+  alerts: "790333"
+  fps: 0.0
+  num: 84716
+  time: 20
+
+- id: 90027
+  name: "Cookie Slack Detector"
+  status: "beta"
+  alerts: "690262"
+  fps: 0.001
+  num: 46772
+  time: 7
 
 - id: 40018
   name: "SQL Injection"
   status: "release"
-  alerts: "501141"
-  fps: 48.53
-  num: 548838
-  time: 57
+  alerts: "689683"
+  fps: 149.28
+  num: 570320
+  time: 58
+
+- id: 40025
+  name: "Proxy Disclosure"
+  status: "beta"
+  alerts: "606097"
+  fps: 0.002
+  num: 44717
+  time: 33
 
 - id: 40035
   name: "Hidden File Found"
   status: "release"
-  alerts: "378023"
-  fps: 0.06
-  num: 1069567
-  time: 12
+  alerts: "382895"
+  fps: 0.087
+  num: 1504067
+  time: 11
 
 - id: 10058
   name: "GET for POST"
   status: "release"
-  alerts: "174160"
+  alerts: "178124"
   fps: 0.0
-  num: 400315
+  num: 412731
   time: 4
 
 - id: 90028
   name: "Insecure HTTP Method"
   status: "beta"
-  alerts: "160520"
-  fps: 0.0
-  num: 43824
-  time: 8
+  alerts: "175057"
+  fps: 0.009
+  num: 47513
+  time: 9
 
 - id: 0
   name: "Directory Browsing"
   status: "release"
-  alerts: "155638"
-  fps: 0.001
-  num: 449781
+  alerts: "149802"
+  fps: 0.0
+  num: 503761
   time: 12
 
 - id: 40012
   name: "Cross Site Scripting (Reflected)"
   status: "release"
-  alerts: "94171"
-  fps: 0.038
-  num: 482304
-  time: 29
-
-- id: 40032
-  name: ".htaccess Information Leak"
-  status: "release"
-  alerts: "80966"
-  fps: 0.002
-  num: 402326
-  time: 6
+  alerts: "109589"
+  fps: 0.023
+  num: 516094
+  time: 27
 
 - id: 6
   name: "Path Traversal"
   status: "release"
-  alerts: "78794"
+  alerts: "102916"
   fps: 0.0
-  num: 477671
-  time: 86
+  num: 512211
+  time: 81
 
-- id: 43
-  name: "Source Code Disclosure - File Inclusion"
-  status: "beta"
-  alerts: "73236"
-  fps: 0.464
-  num: 68190
-  time: 7
-
-- id: 40038
-  name: "Bypassing 403"
-  status: "beta"
-  alerts: "67734"
-  fps: 0.062
-  num: 51785
-  time: 10
-
-- id: 10106
-  name: "HTTP Only Site"
+- id: 40032
+  name: ".htaccess Information Leak"
   status: "release"
-  alerts: "62373"
-  fps: 0.032
-  num: 340703
-  time: 1
-
-- id: 90026
-  name: "SOAP Action Spoofing"
-  status: "beta"
-  alerts: "61345"
+  alerts: "101358"
   fps: 0.0
-  num: 406216
-  time: 4
+  num: 420028
+  time: 6
 
 - id: 30002
   name: "Format String Error"
   status: "release"
-  alerts: "59669"
-  fps: 0.011
-  num: 381293
-  time: 7
-
-- id: 10051
-  name: "Relative Path Confusion"
-  status: "beta"
-  alerts: "59587"
-  fps: 0.0
-  num: 44306
-  time: 10
-
-- id: 30001
-  name: "Buffer Overflow"
-  status: "release"
-  alerts: "56598"
-  fps: 0.019
-  num: 403971
+  alerts: "98903"
+  fps: 0.05
+  num: 382519
   time: 8
-
-- id: 40029
-  name: "Trace.axd Information Leak"
-  status: "release"
-  alerts: "53444"
-  fps: 0.0
-  num: 401255
-  time: 7
-
-- id: 40034
-  name: ".env Information Leak"
-  status: "release"
-  alerts: "50855"
-  fps: 0.0
-  num: 408619
-  time: 6
-
-- id: 40024
-  name: "SQL Injection - SQLite (Time Based)"
-  status: "alpha"
-  alerts: "41300"
-  fps: 0.014
-  num: 135416
-  time: 15
 
 - id: 10205
   name: "HTTPS Configuration"
   status: "alpha"
-  alerts: "26672"
+  alerts: "71899"
   fps: 0.0
-  num: 26746
-  time: 10
+  num: 29554
+  time: 12
 
-- id: 40045
-  name: "Spring4Shell"
-  status: "release"
-  alerts: "20947"
-  fps: 0.001
-  num: 348859
-  time: 18
+- id: 40038
+  name: "Bypassing 403"
+  status: "beta"
+  alerts: "68938"
+  fps: 0.07
+  num: 55461
+  time: 9
 
-- id: 40026
-  name: "Cross Site Scripting (DOM Based)"
+- id: 40034
+  name: ".env Information Leak"
   status: "release"
-  alerts: "19996"
+  alerts: "64963"
   fps: 0.0
-  num: 331568
-  time: 222
+  num: 450641
+  time: 5
 
-- id: 40014
-  name: "Cross Site Scripting (Persistent)"
+- id: 40029
+  name: "Trace.axd Information Leak"
   status: "release"
-  alerts: "18696"
-  fps: 0.057
-  num: 443076
+  alerts: "62651"
+  fps: 0.0
+  num: 415514
+  time: 7
+
+- id: 43
+  name: "Source Code Disclosure - File Inclusion"
+  status: "beta"
+  alerts: "59452"
+  fps: 0.654
+  num: 68558
   time: 6
+
+- id: 10051
+  name: "Relative Path Confusion"
+  status: "beta"
+  alerts: "57373"
+  fps: 0.0
+  num: 47625
+  time: 6
+
+- id: 90026
+  name: "SOAP Action Spoofing"
+  status: "beta"
+  alerts: "55742"
+  fps: 0.0
+  num: 426143
+  time: 4
+
+- id: 10106
+  name: "HTTP Only Site"
+  status: "release"
+  alerts: "42464"
+  fps: 0.167
+  num: 348562
+  time: 1
+
+- id: 30001
+  name: "Buffer Overflow"
+  status: "release"
+  alerts: "40197"
+  fps: 0.035
+  num: 404276
+  time: 7
+
+- id: 40024
+  name: "SQL Injection - SQLite (Time Based)"
+  status: "alpha"
+  alerts: "37647"
+  fps: 0.011
+  num: 152321
+  time: 11
 
 - id: 40033
   name: "NoSQL Injection - MongoDB"
   status: "beta"
-  alerts: "18556"
-  fps: 1.071
-  num: 56288
+  alerts: "36083"
+  fps: 0.547
+  num: 60893
   time: 10
+
+- id: 40014
+  name: "Cross Site Scripting (Persistent)"
+  status: "release"
+  alerts: "32844"
+  fps: 0.056
+  num: 446146
+  time: 5
+
+- id: 40026
+  name: "Cross Site Scripting (DOM Based)"
+  status: "release"
+  alerts: "18254"
+  fps: 0.0
+  num: 333601
+  time: 202
 
 - id: 20012
   name: "Anti-CSRF Tokens Check"
   status: "beta"
-  alerts: "17047"
-  fps: 0.061
-  num: 44215
-  time: 18
+  alerts: "17771"
+  fps: 0.077
+  num: 47546
+  time: 6
+
+- id: 40045
+  name: "Spring4Shell"
+  status: "release"
+  alerts: "16444"
+  fps: 0.01
+  num: 363160
+  time: 16
 
