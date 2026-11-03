@@ -78,9 +78,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/authentication-helper/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.43.0/authhelper-beta-0.43.0.zap
-  date: 2026-10-08
-  version: 0.43.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/authhelper-v0.44.0/authhelper-beta-0.44.0.zap
+  date: 2026-11-03
+  version: 0.44.0
 - id: authstats
   name: Authentication Statistics
   description: Records logged in/out statistics for all contexts in scope.
@@ -98,9 +98,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/automation-framework/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.61.0/automation-beta-0.61.0.zap
-  date: 2026-10-08
-  version: 0.61.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/automation-v0.62.0/automation-beta-0.62.0.zap
+  date: 2026-11-03
+  version: 0.62.0
 - id: beanshell
   name: BeanShell Console
   description: Provides a BeanShell Console
@@ -699,9 +699,9 @@
   status: alpha
   infoUrl: /docs/desktop/addons/llm-support/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/llm-v0.1.0/llm-alpha-0.1.0.zap
-  date: 2026-10-15
-  version: 0.1.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/llm-v0.2.0/llm-alpha-0.2.0.zap
+  date: 2026-11-03
+  version: 0.2.0
 - id: maplocal
   name: Map Local
   description: Allows mapping of responses to content of a chosen local file.
@@ -739,9 +739,9 @@
   status: beta
   infoUrl: /docs/desktop/addons/network/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.32.0/network-beta-0.32.0.zap
-  date: 2026-10-26
-  version: 0.32.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/network-v0.33.0/network-beta-0.33.0.zap
+  date: 2026-11-03
+  version: 0.33.0
 - id: oast
   name: OAST Support
   description: Allows you to exploit out-of-band vulnerabilities
@@ -1023,9 +1023,9 @@
   status: release
   infoUrl: /docs/desktop/addons/selenium/
   repoUrl: https://github.com/zaproxy/zap-extensions/
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.59.0/selenium-release-15.59.0.zap
-  date: 2026-10-15
-  version: 15.59.0
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.60.0/selenium-release-15.60.0.zap
+  date: 2026-11-03
+  version: 15.60.0
 - id: sequence
   name: Sequence
   description: Gives the possibility of defining a sequence of requests to be scanned.

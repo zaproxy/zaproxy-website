@@ -17,7 +17,7 @@ are raised which have the same risk level or greater.
 By default when ZAP is run with the `-cmd` and `-autorun` options then it will
 exit with a 1 if there are any errors, with a 2 if there are any warnings, and if everything is ok
 then it will exit with a 0.
-These values can be overriden by the `*ExitValue` options. The `*ExitValues` can be used together
+These values can be overridden by the `*ExitValue` options. The `*ExitValues` can be used together
 with the warn/errorLevel or completely independently of them.
 
 ## YAML

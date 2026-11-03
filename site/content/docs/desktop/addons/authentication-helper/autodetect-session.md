@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Auto-Detect Session Management
 type: userguide
-weight: 5
+weight: 6
 ---
 
 # Auto-Detect Session Management

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Authentication Tester Dialog
 type: userguide
-weight: 3
+weight: 4
 ---
 
 # Authentication Tester Dialog
@@ -27,6 +27,7 @@ The authentication method to use:
 
 * Browser Based - ZAP will try to identify and fill in the credentials automatically.
 * Client Script - ZAP will use the Client Script you have chosen to authenticate.
+* AI Assisted - an LLM will decide what to click, type or select on the login page, see [AI Assisted Authentication](/docs/desktop/addons/authentication-helper/ai-auth/) for more details.
 
 ### Client Script
 
@@ -47,13 +48,17 @@ The browser you choose will need to be installed and be able to be launched from
 
 ### Username
 
-The username to use for authentication - this will only be enabled if you have selected the "Browser Based" Auth Method.  
+The username to use for authentication - this will only be enabled if you have selected the "Browser Based" or "AI Assisted" Auth Method.  
 The username and password must be valid for the login to work.
 
 ### Password
 
-The password to use for authentication - this will only be enabled if you have selected the "Browser Based" Auth Method.  
+The password to use for authentication - this will only be enabled if you have selected the "Browser Based" or "AI Assisted" Auth Method.  
 The username and password must be valid for the login to work.
+
+### Hints
+
+Free-text guidance for the LLM, for non-obvious steps it cannot infer just by looking at the page - this will only be shown if you have selected the "AI Assisted" Auth Method, see [AI Assisted Authentication](/docs/desktop/addons/authentication-helper/ai-auth/) for more details.
 
 ### Time to Wait (seconds)
 
@@ -64,11 +69,13 @@ If the browser is closed before the application has loaded then ZAP may not be a
 
 The number of seconds to wait in-between each step, either the implicit steps (filling in the username field, then password, then submitting), or the ones specified on the Steps tab.  
 This can help if the target application is running too slowly and does not react in time to handle ZAP's input.  
-Setting this to 2 will have the same effect as the previous "Demo Mode".
+Setting this to 2 will have the same effect as the previous "Demo Mode".  
+This will only be enabled if you have selected the "Browser Based" Auth Method.
 
 ### Record Diagnostics
 
-Enables the recording of diagnostic data during the authentication. Refer to the [Authentication Report](/docs/desktop/addons/authentication-helper/auth-report-json/) for more details on the diagnostics.
+Enables the recording of diagnostic data during the authentication. Refer to the [Authentication Report](/docs/desktop/addons/authentication-helper/auth-report-json/) for more details on the diagnostics.  
+This is not currently supported by the "AI Assisted" Auth Method.
 
 ### Reset Button
 

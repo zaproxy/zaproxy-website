@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: OAuth2 Authentication
 type: userguide
-weight: 10
+weight: 11
 ---
 
 # OAuth2 Authentication

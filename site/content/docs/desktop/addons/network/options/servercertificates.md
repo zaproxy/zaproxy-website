@@ -27,7 +27,7 @@ In short words, every data send to and received from the server
 is encrypted/decrypted by using the original server's certificate
 inside ZAP. This way, ZAP knows the plain text.
 To establish a SSL protected session from you (your browser),
-ZAP is using it's own certificate. This is the one you can create.
+ZAP is using its own certificate. This is the one you can create.
 Every certificate created by ZAP will be signed for the same
 server name. In the example above, ZAP will create a certificate
 for the server's name `www.example.com`. This way, your browser
@@ -205,7 +205,7 @@ save it into a new .CER file (which is simple text as you see in the dialog).
 ## Issued Certificates {#issued_certificates}
 
 
-Each ZAP instance is using it's own root certificate. Of course, you can
+Each ZAP instance is using its own root certificate. Of course, you can
 import root certificates, to use them on multiple machines.
 When running, there will be sub-certificated created, each time an HTTPS
 resource is requested.
@@ -323,7 +323,7 @@ After successfully installation, you can check the certificate.
 ### Mozilla Firefox
 
 
-Firefox is using it's own certificate store. That's why you have to
+Firefox is using its own certificate store. That's why you have to
 import it twice, when you're using both browsers on Windows.
 Installation and late on validation is done in the same preferences dialog:
 

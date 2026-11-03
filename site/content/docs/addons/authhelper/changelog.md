@@ -6,13 +6,26 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.43.0
+    version: 0.44.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.44.0] - 2026-11-03
+### Added
+- AI Assisted Authentication
+- Record requests whose sending failed (for example DNS failure) in the diagnostics, with a synthetic response describing the failure reason, when the network add-on supports it.
+- Support for the Authentication Report with OAuth2.
+
+### Changed
+- The Authentication Tester dialog now remembers the last authentication method used and selects it by default next time it's opened.
+- With the `auth_on_failure` diagnostics type, the last step is also retained (with its screenshot), not just the error step.
+
+### Fixed
+- Handle cookies without a value in Header Based Session Management.
 
 ## [0.43.0] - 2026-10-08
 ### Added
@@ -427,6 +440,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Added
 - Support of authentication request identification and configuration.
 
+[0.44.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.44.0
 [0.43.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.43.0
 [0.42.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.42.0
 [0.41.0]: https://github.com/zaproxy/zap-extensions/releases/authhelper-v0.41.0

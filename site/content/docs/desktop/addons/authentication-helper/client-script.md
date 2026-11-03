@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Client Script Authentication
 type: userguide
-weight: 8
+weight: 9
 ---
 
 # Client Script Authentication
@@ -10,7 +10,8 @@ weight: 8
 This [add-on](/docs/desktop/addons/authentication-helper/) adds a new authentication type which uses a browser to login to the target website.
 
 
-This functionality leverages Zest scripts (which may have been recorded via the ZAP Browser Extension) to login.
+This functionality leverages Zest scripts (which may have been recorded via the ZAP Browser Extension, or generated automatically by
+[AI Assisted Authentication](/docs/desktop/addons/authentication-helper/ai-auth/)) to login.
 
 
 ## Automation Framework
