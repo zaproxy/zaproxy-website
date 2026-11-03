@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: authhelper
-    version: 0.43.0
+    version: 0.44.0
 ---
 
 # Authentication Helper
@@ -24,6 +24,7 @@ The add-on can be used in various ways:
 The features currently supported are:
 
 
+* [AI Assisted Authentication](/docs/desktop/addons/authentication-helper/ai-auth/)
 * [Authentication Report (JSON)](/docs/desktop/addons/authentication-helper/auth-report-json/)
 * [Authentication Request Identification](/docs/desktop/addons/authentication-helper/auth-req-id/)
 * [Authentication Tester](/docs/desktop/addons/authentication-helper/auth-tester/)

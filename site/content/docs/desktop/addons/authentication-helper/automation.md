@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Authentication Helper Automation Framework Support
 type: userguide
-weight: 6
+weight: 7
 ---
 
 # Authentication Helper Automation Framework Support
@@ -31,7 +31,7 @@ By default (`type` omitted) the job records all traffic for the whole plan,
 as described above. Setting `type` to `auth_on_failure` or
 `auth_failure_rolling` switches to per-attempt recording instead: only failed authentication
 attempts are retained (successes are discarded), either just the latest one, or the last `count`
-of them. With `auth_on_failure`, to keep the overhead low, only the error step is recorded, with just its screenshot.
+of them. With `auth_on_failure`, to limit the stored data, only the last step and the error step (if any) are recorded, without the page elements or browser storage.
 
 
 Enabling both this job and `env` authentication diagnostics (browser/client

@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Auto-Detect Authentication
 type: userguide
-weight: 4
+weight: 5
 ---
 
 # Auto-Detect Authentication

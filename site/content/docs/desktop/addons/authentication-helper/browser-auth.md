@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Browser Based Authentication
 type: userguide
-weight: 7
+weight: 8
 ---
 
 # Browser Based Authentication
