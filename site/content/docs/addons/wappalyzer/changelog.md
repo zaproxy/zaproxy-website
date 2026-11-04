@@ -6,13 +6,24 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.58.0
+    version: 21.59.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [21.59.0] - 2026-11-04
+### Changed
+- Updated with enthec upstream icon and pattern changes.
+- Simple DOM patterns are now only attempted against HTML responses, like DOM patterns.
+- HTML patterns are no longer attempted against JavaScript, CSS, or JSON responses.
+- Improved performance on large responses by parsing the response once per scan instead of once per technology.
+
+### Fixed
+- Typos in help content.
+- Match CSS patterns against the content of style elements instead of the whole response.
 
 ## [21.58.0] - 2026-10-08
 ### Changed
@@ -490,6 +501,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 - First version
 
 
+[21.59.0]: https://github.com/zaproxy/zap-extensions/releases/wappalyzer-v21.59.0
 [21.58.0]: https://github.com/zaproxy/zap-extensions/releases/wappalyzer-v21.58.0
 [21.57.0]: https://github.com/zaproxy/zap-extensions/releases/wappalyzer-v21.57.0
 [21.56.0]: https://github.com/zaproxy/zap-extensions/releases/wappalyzer-v21.56.0
