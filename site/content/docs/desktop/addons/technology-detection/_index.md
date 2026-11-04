@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: wappalyzer
-    version: 21.58.0
+    version: 21.59.0
 ---
 
 # Technology Detection
@@ -18,7 +18,7 @@ The Technology Detection add-on uses various patterns and finger prints to detec
 It works in a very similar way to the Wappalyzer browser add-ons with the following exceptions:
 
 * It does not use the 'Global JavaScript variables' as these are difficult to test without a 'full' browser
-* It does not not show the confidence - this is still todo
+* It does not show the confidence - this is still todo
 * It does not match technologies on the basis of DOM properties as some properties are set by JavaScript in the browser after the response has passed through ZAP
 * It allows you to see the 'evidence' used to detect the technologies
 
