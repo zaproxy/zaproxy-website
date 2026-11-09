@@ -18,8 +18,8 @@ details:
   standard_trend: stable
   standard_prev: Fail
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -150,8 +150,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -161,8 +161,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -194,8 +194,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -205,8 +205,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -238,8 +238,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -248,8 +248,8 @@ details:
   standard: Fail
   standard_trend: stable
   standard_prev: Fail
-  ajax: 86%
-  ajax_trend: stable
+  ajax: 71%
+  ajax_trend: down
   ajax_prev: 86%
   client: Pass
   client_trend: stable
@@ -293,8 +293,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -348,8 +348,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -359,19 +359,19 @@ details:
   standard_trend: stable
   standard_prev: Fail
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
-  client: 71%
-  client_trend: down
-  client_prev: 86%
+  ajax_trend: stable
+  ajax_prev: Fail
+  client: 86%
+  client_trend: up
+  client_prev: 71%
 - path: /score/js-events/06-dialog-modal
   scheme: http
   standard: Pass
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -436,8 +436,8 @@ details:
   standard_trend: stable
   standard_prev: Fail
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -491,8 +491,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -502,8 +502,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -535,8 +535,8 @@ details:
   standard_trend: stable
   standard_prev: Pass
   ajax: Fail
-  ajax_trend: down
-  ajax_prev: 14%
+  ajax_trend: stable
+  ajax_prev: Fail
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -623,8 +623,8 @@ details:
   standard_trend: stable
   standard_prev: Fail
   ajax: 57%
-  ajax_trend: down
-  ajax_prev: 86%
+  ajax_trend: stable
+  ajax_prev: 57%
   client: Pass
   client_trend: stable
   client_prev: Pass
@@ -634,8 +634,8 @@ details:
   standard_trend: stable
   standard_prev: Fail
   ajax: 43%
-  ajax_trend: down
-  ajax_prev: 86%
+  ajax_trend: stable
+  ajax_prev: 43%
   client: Pass
   client_trend: stable
   client_prev: Pass
