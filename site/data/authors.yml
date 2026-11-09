@@ -234,3 +234,9 @@ seqrateam:
   picture: /img/authors/seqrateam_400x400.jpg
   twitter: seqradev
   is_core: false
+
+davidaraujo:
+  name: David Araújo
+  picture: /img/authors/david-araujo.svg
+  link: https://davidjosearaujo.dev/
+  is_core: false
