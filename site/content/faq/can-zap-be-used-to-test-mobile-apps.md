@@ -5,7 +5,9 @@ category: Technologies Supported
 weight: 7
 ---
 
-Yes, see this video from ZAPCon 2021:
+Yes, the latest option is detailed on the blog: [Intercepting all Android traffic with ZAP](/blog/2026-11-10-intercepting-android-traffic/)
+
+Also, see this video from ZAPCon 2021:
 
 {{<youtube uuid="KWofjrHNNqs">}}
 
