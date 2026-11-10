@@ -13,6 +13,9 @@ Click on the Sections to see the full set of results, which include the path of 
 {{< benchmark-table >}}
 
   {{< benchmark-results target="benchmark" section="cmdi" nolinks=true >}}
+  {{< benchmark-results target="benchmark" section="sqli" nolinks=true >}}
+  {{< benchmark-results target="benchmark" section="xss" nolinks=true >}}
+  {{< benchmark-results target="benchmark" section="pathtraver" nolinks=true >}}
 
 {{< /benchmark-table >}}
 
