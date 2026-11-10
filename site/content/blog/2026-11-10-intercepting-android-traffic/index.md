@@ -19,7 +19,7 @@ authors:
 Testing Android apps with ZAP has always had two sticking points: getting the device to trust ZAP's
 certificate, and getting *all* of the app's traffic to go through ZAP, including from apps that ignore the system proxy.
 
-**[zaptun](/docs/desktop/addons/zaptun-adndroid-interception/)** is a ZAP add-on by [David Araújo](https://davidjosearaujo.dev/) that solves both. Pick a device in *Tools → Android Devices...*,
+**[zaptun](/docs/desktop/addons/zaptun-android-interception/)** is a ZAP add-on by [David Araújo](https://davidjosearaujo.dev/) that solves both. Pick a device in *Tools → Android Devices...*,
 click **Intercept**, and every TCP connection the device makes goes through ZAP. It works with Android emulators
 and rooted devices, and `adb`.
 The rest of this post is David's own write-up of how it works, starting with why this is hard in the first place.
