@@ -82,8 +82,24 @@
                 <strong>Tags</strong>
               </td>
               <td>
-              {{ range $tag := .Params.alerttags }}
-              	<a href="/alerttags/{{ lower $tag }}">{{ upper $tag }}</a><br>
+              {{ $tags := .Params.alerttags | default slice }}
+              {{ $limit := 10 }}
+              {{ if gt (len $tags) $limit }}
+                {{ range first $limit $tags }}
+                <a href="/alerttags/{{ lower . }}">{{ upper . }}</a><br>
+                {{ end }}
+                <details>
+                  <summary>Show all {{ len $tags }} tags</summary>
+                  <div style="max-height: 20em; overflow-y: auto; line-height: 1.8;">
+                  {{ range after $limit $tags }}
+                  <a href="/alerttags/{{ lower . }}" style="white-space: nowrap; margin-right: 0.6em;">{{ upper . }}</a>
+                  {{ end }}
+                  </div>
+                </details>
+              {{ else }}
+                {{ range $tags }}
+                <a href="/alerttags/{{ lower . }}">{{ upper . }}</a><br>
+                {{ end }}
               {{ end }}
               </td>
             </tr>
