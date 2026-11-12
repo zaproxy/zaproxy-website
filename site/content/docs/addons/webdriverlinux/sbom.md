@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: webdriverlinux
-    version: '233'
+    version: '234'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v233/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/webdriverlinux-v234/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
