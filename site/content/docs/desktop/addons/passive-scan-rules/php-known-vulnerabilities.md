@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: PHP Known Vulnerabilities
 type: userguide
-weight: 1
+weight: 2
 ---
 
 # PHP Known Vulnerabilities
@@ -12,6 +12,8 @@ This page lists the known vulnerabilities (CVEs) in PHP itself which the "PHP Ve
 
 The vulnerability details below are generated from the [php-src security
 advisories](https://github.com/php/php-src/security/advisories) when the add-on is built, so they are not translated. Vulnerabilities are listed most severe first.
+Versions marked as assumed to be affected are older than any version the advisory lists: older, end-of-life release
+branches rarely receive fixes, so they are presumed to be affected too.
 
 
 Last updated: 2026-10-22. Vulnerabilities listed: 63.
@@ -24,12 +26,12 @@ Last updated: 2026-10-22. Vulnerabilities listed: 63.
 PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. In some contexts, request memory is temporarily reachable before it is fully initialized. If any allocation fails at that point, PHP does not properly account for the early exit and leaves the request memory in an invalid state. The failed allocation does not need to be related to the invalid memory. The request shutdown procedure may then read or branch on it. Multiple OOM strategies...
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 9.2                                                                                                                                                                              |
-| Published:         | 2026-10-21                                                                                                                                                                       |
-| GHSA:              | GHSA-w8hw-w9fx-j79w                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.35 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.36 8.4.0 and later, before 8.4.27 8.5.0 and later, before 8.5.12 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 9.2                                                                                                                                                              |
+| Published:         | 2026-10-21                                                                                                                                                       |
+| GHSA:              | GHSA-w8hw-w9fx-j79w                                                                                                                                              |
+| Affected versions: | all versions before 8.2.35 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.36 8.4.0 and later, before 8.4.27 8.5.0 and later, before 8.5.12 |
 
 
 References:
@@ -49,12 +51,12 @@ References:
 PHP contains various global state, such as error, session, object and extension state that is retained by a worker but points to memory owned by one request. That state must be reset before the request memory is released. Some input, configuration, session and error handling operations run before normal initialization of the next request. They inadvertently access stale state not reset by the previous request before initialization has a chance to replace it, causing a use after free. A...
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 9.2                                                                                                                                                                              |
-| Published:         | 2026-10-21                                                                                                                                                                       |
-| GHSA:              | GHSA-6wmf-4rv5-p3rp                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.35 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.36 8.4.0 and later, before 8.4.27 8.5.0 and later, before 8.5.12 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 9.2                                                                                                                                                              |
+| Published:         | 2026-10-21                                                                                                                                                       |
+| GHSA:              | GHSA-6wmf-4rv5-p3rp                                                                                                                                              |
+| Affected versions: | all versions before 8.2.35 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.36 8.4.0 and later, before 8.4.27 8.5.0 and later, before 8.5.12 |
 
 
 References:
@@ -74,12 +76,12 @@ References:
 NOTE: There are undergoing reports regarding the command injection when executing the batch file, and several programming languages are coordinating the disclosure date. If you decide to not consider this as a vulnerability, please do not disclose this behavior until the end of February. If the coordinated disclosure is needed, please let me know.
 
 
-|                    |                                                                                                                                                  |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 9.4                                                                                                                                              |
-| Published:         | 2024-04-11                                                                                                                                       |
-| GHSA:              | GHSA-pc52-254m-w9w7                                                                                                                              |
-| Affected versions: | all versions before 8.1.28 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.18 8.3.0 and later, before 8.3.6 |
+|                    |                                                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 9.4                                                                                                                              |
+| Published:         | 2024-04-11                                                                                                                       |
+| GHSA:              | GHSA-pc52-254m-w9w7                                                                                                              |
+| Affected versions: | all versions before 8.1.28 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.18 8.3.0 and later, before 8.3.6 |
 
 
 References:
@@ -98,12 +100,12 @@ References:
 Buffer mismanagement in phar_dir_read() causes a buffer overflow and a buffer overread later.
 
 
-|                    |                                                                                     |
-|--------------------|-------------------------------------------------------------------------------------|
-| CVSS score:        | 9.4                                                                                 |
-| Published:         | 2023-08-05                                                                          |
-| GHSA:              | GHSA-jqcx-ccgc-xwhv                                                                 |
-| Affected versions: | all versions before 8.0.30 (assumed, older branches are not listed in the advisory) |
+|                    |                                                                     |
+|--------------------|---------------------------------------------------------------------|
+| CVSS score:        | 9.4                                                                 |
+| Published:         | 2023-08-05                                                          |
+| GHSA:              | GHSA-jqcx-ccgc-xwhv                                                 |
+| Affected versions: | all versions before 8.0.30 (assumed, not confirmed by the advisory) |
 
 
 References:
@@ -140,13 +142,13 @@ References:
 cleanup_xml_node() in the SOAP XML parser recurses once per XML nesting level with no depth limit. An unauthenticated attacker can post a SOAP request containing tens of thousands of nested elements to any SoapServer endpoint, exhaust the stack and crash the process. The same unbounded recursion exists in the SOAP value decoder and in the WSDL node search helper.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 7.5                                                                                                                                                                              |
-| Component:         | ext-soap                                                                                                                                                                         |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-rgrp-mwpx-f6rm                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 7.5                                                                                                                                                              |
+| Component:         | ext-soap                                                                                                                                                         |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-rgrp-mwpx-f6rm                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -166,12 +168,12 @@ References:
 php_pgsql_convert() is used to convert and escape user-provided parameters in pg_insert(), pg_update(), pg_select(), and pg_delete(). It does so using PQescapeStringConn() and then wraps the result in an escape string constant, E'...' (via php_pgsql_add_quotes()).
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Component:         | ext-pgsql                                                                                                                                                                       |
-| Published:         | 2026-07-30                                                                                                                                                                      |
-| GHSA:              | GHSA-7qpv-r5mr-78m4                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.33 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.33 8.4.0 and later, before 8.4.24 8.5.0 and later, before 8.5.9 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Component:         | ext-pgsql                                                                                                                                                       |
+| Published:         | 2026-07-30                                                                                                                                                      |
+| GHSA:              | GHSA-7qpv-r5mr-78m4                                                                                                                                             |
+| Affected versions: | all versions before 8.2.33 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.33 8.4.0 and later, before 8.4.24 8.5.0 and later, before 8.5.9 |
 
 
 References:
@@ -191,12 +193,12 @@ References:
 A call to bccomp() with attacker-supplied inputs can lead to an out-of-bounds write to either stack or heap memory. The bug occurs in bc_str2num() when the scale truncates a number whose trailing zeros are subsequently trimmed.
 
 
-|                    |                                                                                                                   |
-|--------------------|-------------------------------------------------------------------------------------------------------------------|
-| Component:         | ext-bcmath                                                                                                        |
-| Published:         | 2026-07-30                                                                                                        |
-| GHSA:              | GHSA-x692-q9x7-8c3f                                                                                               |
-| Affected versions: | all versions before 8.4.24 (assumed, older branches are not listed in the advisory) 8.5.0 and later, before 8.5.9 |
+|                    |                                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| Component:         | ext-bcmath                                                                                        |
+| Published:         | 2026-07-30                                                                                        |
+| GHSA:              | GHSA-x692-q9x7-8c3f                                                                               |
+| Affected versions: | all versions before 8.4.24 (assumed, not confirmed by the advisory) 8.5.0 and later, before 8.5.9 |
 
 
 References:
@@ -214,12 +216,12 @@ References:
 In php_stream_url_wrap_http_ex, when TLS crypto setup fails (via php_stream_xport_crypto_setup or php_stream_xport_crypto_enable), the stream is closed and reset to NULL. However, the subsequent peer name cleanup block unconditionally tries to reset the peer name. This is triggerable via a failure to validate the peer name or an expired certificate.
 
 
-|                    |                                                                                                                                                  |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 8.2                                                                                                                                              |
-| Published:         | 2026-07-02                                                                                                                                       |
-| GHSA:              | GHSA-mhmq-mmqj-2v39                                                                                                                              |
-| Affected versions: | all versions before 8.3.32 (assumed, older branches are not listed in the advisory) 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 8.2                                                                                                                              |
+| Published:         | 2026-07-02                                                                                                                       |
+| GHSA:              | GHSA-mhmq-mmqj-2v39                                                                                                              |
+| Affected versions: | all versions before 8.3.32 (assumed, not confirmed by the advisory) 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -238,13 +240,13 @@ References:
 Improper handling of NUL bytes during the preparation of Firebird SQL queries leads to sections of the of the query being dropped. NUL bytes can find their way into queries even under regular circumstances via PDO::quote().
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 9.2                                                                                                                                                                             |
-| Component:         | ext-pdo_firebird                                                                                                                                                                |
-| Published:         | 2026-05-07                                                                                                                                                                      |
-| GHSA:              | GHSA-w476-322c-wpvm                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.31 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 9.2                                                                                                                                                             |
+| Component:         | ext-pdo_firebird                                                                                                                                                |
+| Published:         | 2026-05-07                                                                                                                                                      |
+| GHSA:              | GHSA-w476-322c-wpvm                                                                                                                                             |
+| Affected versions: | all versions before 8.2.31 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -264,13 +266,13 @@ References:
 ext-soap supports deduplicating objects in the XML graph through id and href. When traversing the XML graph, ext-soap will remember all plain PHP objects using the hash map SOAP_GLOBAL(ref_map), where the pointer to the libxml2 node acts as a key, and the PHP object as a value. This happens in soap_add_xml_ref().
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 9.4                                                                                                                                                                             |
-| Component:         | ext-soap                                                                                                                                                                        |
-| Published:         | 2026-05-07                                                                                                                                                                      |
-| GHSA:              | GHSA-85c2-q967-79q5                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.31 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 9.4                                                                                                                                                             |
+| Component:         | ext-soap                                                                                                                                                        |
+| Published:         | 2026-05-07                                                                                                                                                      |
+| GHSA:              | GHSA-85c2-q967-79q5                                                                                                                                             |
+| Affected versions: | all versions before 8.2.31 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -290,13 +292,13 @@ References:
 Researcher: Nikita Sveshnikov (Positive Technologies)
 
 
-|                    |                                                                                                                   |
-|--------------------|-------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 8.2                                                                                                               |
-| Component:         | ext-dom                                                                                                           |
-| Published:         | 2026-05-07                                                                                                        |
-| GHSA:              | GHSA-4jhr-8w89-j733                                                                                               |
-| Affected versions: | all versions before 8.4.21 (assumed, older branches are not listed in the advisory) 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| CVSS score:        | 8.2                                                                                               |
+| Component:         | ext-dom                                                                                           |
+| Published:         | 2026-05-07                                                                                        |
+| GHSA:              | GHSA-4jhr-8w89-j733                                                                               |
+| Affected versions: | all versions before 8.4.21 (assumed, not confirmed by the advisory) 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -314,11 +316,11 @@ References:
 By connecting to a fake MySQL server or tampering with network packets and initiating a SQL Query, it is possible to abuse the function static enum_func_status php_mysqlnd_rset_field_read when parsing MySQL fields packets in order to include the rest of the heap content starting from the address of the cursor of the currently read buffer. Using PHP-FPM which stays alive between request, and between two different SQL query requests, as the previous buffer used to store received data from MySQL is...
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2024-11-21                                                                                                                                        |
-| GHSA:              | GHSA-h35g-vwh6-m678                                                                                                                               |
-| Affected versions: | all versions before 8.1.31 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2024-11-21                                                                                                                        |
+| GHSA:              | GHSA-h35g-vwh6-m678                                                                                                               |
+| Affected versions: | all versions before 8.1.31 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
 
 
 References:
@@ -337,11 +339,11 @@ References:
 An attacker can execute arbitrary PHP code on the remote server. This vulnerability affects the PHP built with Windows.
 
 
-|                    |                                                                                                                                                  |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2024-09-28                                                                                                                                       |
-| GHSA:              | GHSA-3qgc-jrrr-25jv                                                                                                                              |
-| Affected versions: | all versions before 8.1.29 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.20 8.3.0 and later, before 8.3.8 |
+|                    |                                                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2024-09-28                                                                                                                       |
+| GHSA:              | GHSA-3qgc-jrrr-25jv                                                                                                              |
+| Affected versions: | all versions before 8.1.29 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.20 8.3.0 and later, before 8.3.8 |
 
 
 References:
@@ -382,12 +384,12 @@ References:
 Certain inputs provided to mb_encode_mimeheader trigger an endless loop.
 
 
-|                    |                                                                                    |
-|--------------------|------------------------------------------------------------------------------------|
-| CVSS score:        | 7.5                                                                                |
-| Published:         | 2024-04-11                                                                         |
-| GHSA:              | GHSA-fjp9-9hwx-59fq                                                                |
-| Affected versions: | all versions before 8.3.6 (assumed, older branches are not listed in the advisory) |
+|                    |                                                                    |
+|--------------------|--------------------------------------------------------------------|
+| CVSS score:        | 7.5                                                                |
+| Published:         | 2024-04-11                                                         |
+| GHSA:              | GHSA-fjp9-9hwx-59fq                                                |
+| Affected versions: | all versions before 8.3.6 (assumed, not confirmed by the advisory) |
 
 
 References:
@@ -404,12 +406,12 @@ References:
 After working on the issue some days, we more and more come to the assumption, that the actual issue is lower in the stack than the Nextcloud Server's PHP code. We were able to isolate it to a few lines of plain PHP code (but seemling only after performing a "Nextcloud login")
 
 
-|                    |                                                                                     |
-|--------------------|-------------------------------------------------------------------------------------|
-| CVSS score:        | 8.6                                                                                 |
-| Published:         | 2023-08-05                                                                          |
-| GHSA:              | GHSA-3qrf-m4j2-pcrr                                                                 |
-| Affected versions: | all versions before 8.0.30 (assumed, older branches are not listed in the advisory) |
+|                    |                                                                     |
+|--------------------|---------------------------------------------------------------------|
+| CVSS score:        | 8.6                                                                 |
+| Published:         | 2023-08-05                                                          |
+| GHSA:              | GHSA-3qrf-m4j2-pcrr                                                 |
+| Affected versions: | all versions before 8.0.30 (assumed, not confirmed by the advisory) |
 
 
 References:
@@ -426,12 +428,12 @@ References:
 The request body parsing in PHP allows any unauthenticated attacker to consume a large amount of CPU time and trigger excessive logging.
 
 
-|                    |                                                                                                                                                  |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 7.5                                                                                                                                              |
-| Published:         | 2023-02-15                                                                                                                                       |
-| GHSA:              | GHSA-54hq-v5wp-fqgv                                                                                                                              |
-| Affected versions: | all versions before 8.0.28 (assumed, older branches are not listed in the advisory) 8.1.0 and later, before 8.1.16 8.2.0 and later, before 8.2.3 |
+|                    |                                                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 7.5                                                                                                                              |
+| Published:         | 2023-02-15                                                                                                                       |
+| GHSA:              | GHSA-54hq-v5wp-fqgv                                                                                                              |
+| Affected versions: | all versions before 8.0.28 (assumed, not confirmed by the advisory) 8.1.0 and later, before 8.1.16 8.2.0 and later, before 8.2.3 |
 
 
 References:
@@ -450,13 +452,13 @@ References:
 The SOAP HTTP client guards its response buffer growth with a check that relies on signed integer overflow, which is undefined behaviour and is not guaranteed to trigger. When the check is optimised away, a malicious SOAP server can make the client allocate a buffer far smaller than the data it then writes into it, producing a heap buffer overflow.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.5                                                                                                                                                                              |
-| Component:         | ext-soap                                                                                                                                                                         |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-cj93-vc83-wgqv                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.5                                                                                                                                                              |
+| Component:         | ext-soap                                                                                                                                                         |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-cj93-vc83-wgqv                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -476,12 +478,12 @@ References:
 On Windows, PHP's filesystem and stream APIs do not reject reserved device names such as CON, PRN, AUX, NUL, COM1 to COM9, LPT1 to LPT9, CONIN$ and CONOUT$ when they appear as a component of a path. An attacker-controlled filename therefore reaches CreateFileW() and opens a device instead of the regular file the application expected, which can block or hang the request and exhaust worker processes.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.9                                                                                                                                                                              |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-9f67-6fw4-hpfp                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.9                                                                                                                                                              |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-9f67-6fw4-hpfp                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -501,13 +503,13 @@ References:
 phar_tar_number() parses the octal size field of a TAR header into a uint32_t with no overflow check. The field is 11 octal digits wide and holds values up to 0x1FFFFFFFF, so a size above 0xFFFFFFFF silently wraps. The parser then skips the wrong number of data blocks and interprets attacker-controlled file content as the next TAR header, which lets a crafted archive inject entries that PharData reports and extracts as if they were genuine.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 4.0                                                                                                                                                                              |
-| Component:         | ext-phar                                                                                                                                                                         |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-j3wh-g957-2m85                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 4.0                                                                                                                                                              |
+| Component:         | ext-phar                                                                                                                                                         |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-j3wh-g957-2m85                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -527,13 +529,13 @@ References:
 When the http:// stream wrapper follows a redirect it forwards the user-supplied Authorization, Cookie and Proxy-Authorization headers unchanged, even when the redirect target is a different host, a different port, or a downgrade from HTTPS to HTTP. A server that can steer a redirect therefore receives credentials that were only meant for the original origin. This is the same class of issue that libcurl fixed in 7.58.0 (CVE-2018-1000007).
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 5.9                                                                                                                                                                              |
-| Component:         | ext-standard                                                                                                                                                                     |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-fpwc-w8rq-cr92                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 5.9                                                                                                                                                              |
+| Component:         | ext-standard                                                                                                                                                     |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-fpwc-w8rq-cr92                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -553,13 +555,13 @@ References:
 php_openssl_matches_wildcard_name() in ext/openssl/xp_ssl.c underflows the length argument passed to memchr() when a TLS server certificate presents a wildcard name whose literal characters are together longer than the hostname being verified. A malicious server presenting such a certificate makes the PHP client read up to SIZE_MAX bytes past the end of a heap allocation. The path is reachable from any default client stream, because verify_peer_name is enabled by default.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.5                                                                                                                                                                              |
-| Component:         | ext-openssl                                                                                                                                                                      |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-xr7j-rvgx-xq5p                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.5                                                                                                                                                              |
+| Component:         | ext-openssl                                                                                                                                                      |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-xr7j-rvgx-xq5p                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -579,13 +581,13 @@ References:
 The IPv6 branch of the FastCGI client access check compares only the first 12 bytes of a 16-byte IPv6 address, so listen.allowed_clients matches on a /96 prefix instead of the exact address. An attacker who can source an address sharing the first 96 bits with an allowed one passes the check and reaches the FastCGI endpoint.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.5                                                                                                                                                                              |
-| Component:         | PHP-FPM                                                                                                                                                                          |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-62xp-839h-2637                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.5                                                                                                                                                              |
+| Component:         | PHP-FPM                                                                                                                                                          |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-62xp-839h-2637                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -605,13 +607,13 @@ References:
 PHP's OpenSSL stream peer verification checks the certificate's subjectAltName entries first and, whenever no entry matches, falls back to the Common Name. RFC 6125 requires the CN to be ignored once the certificate presents any service identity, so a certificate carrying a non-matching DNS SAN was still accepted when its CN matched the requested peer_name. A certificate trusted by the client for one name can therefore be used to impersonate another.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 4.3                                                                                                                                                                              |
-| Component:         | ext-openssl                                                                                                                                                                      |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-vvx9-73fr-5jjx                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 4.3                                                                                                                                                              |
+| Component:         | ext-openssl                                                                                                                                                      |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-vvx9-73fr-5jjx                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -631,13 +633,13 @@ References:
 The convert.base64-encode, convert.quoted-printable-encode and convert.quoted-printable-decode stream filters accept a line-break-chars option whose length is tracked separately from the string itself. The filter constructors duplicate the value with pestrdup(), which stops at the first NUL byte, while keeping the original length. When the filter later emits a line break it copies the recorded length out of the truncated allocation, reading past its end and placing adjacent heap bytes into the...
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 5.9                                                                                                                                                                              |
-| Component:         | ext-standard                                                                                                                                                                     |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-88hq-2827-7pg6                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 5.9                                                                                                                                                              |
+| Component:         | ext-standard                                                                                                                                                     |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-88hq-2827-7pg6                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -657,13 +659,13 @@ References:
 When the HTTP stream wrapper follows a redirect and the response carries a Location header with an empty value, the redirect code reads one byte past the end of the heap buffer holding the location. The value of that out-of-bounds byte decides which redirect target is built, so a malicious server controls whether the client is sent to the host root or to the current directory.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 5.3                                                                                                                                                                              |
-| Component:         | ext-standard                                                                                                                                                                     |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-7875-c8px-7q5f                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 5.3                                                                                                                                                              |
+| Component:         | ext-standard                                                                                                                                                     |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-7875-c8px-7q5f                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -683,13 +685,13 @@ References:
 phar_get_link_source() in ext/phar/util.c recursively follows symbolic links in phar archives without any depth limit or cycle detection. A crafted tar-based phar archive containing circular symlinks causes unbounded recursion, exhausting the C stack and crashing the PHP process.
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 5.5                                                                                                                                                                             |
-| Component:         | ext-phar                                                                                                                                                                        |
-| Published:         | 2026-07-30                                                                                                                                                                      |
-| GHSA:              | GHSA-vc5h-9ppw-p5f3                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.33 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.33 8.4.0 and later, before 8.4.24 8.5.0 and later, before 8.5.9 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 5.5                                                                                                                                                             |
+| Component:         | ext-phar                                                                                                                                                        |
+| Published:         | 2026-07-30                                                                                                                                                      |
+| GHSA:              | GHSA-vc5h-9ppw-p5f3                                                                                                                                             |
+| Affected versions: | all versions before 8.2.33 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.33 8.4.0 and later, before 8.4.24 8.5.0 and later, before 8.5.9 |
 
 
 References:
@@ -709,12 +711,12 @@ References:
 Usate of AES-WRAP-PAD can result in memory corruption and abort of application.
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 4.8                                                                                                                                                                             |
-| Published:         | 2026-07-02                                                                                                                                                                      |
-| GHSA:              | GHSA-7jrw-539f-x6vr                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.32 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.32 8.4.0 and later, before 8.4.23 8.5.0 and later, before 8.5.8 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 4.8                                                                                                                                                             |
+| Published:         | 2026-07-02                                                                                                                                                      |
+| GHSA:              | GHSA-7jrw-539f-x6vr                                                                                                                                             |
+| Affected versions: | all versions before 8.2.32 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.32 8.4.0 and later, before 8.4.23 8.5.0 and later, before 8.5.8 |
 
 
 References:
@@ -734,13 +736,13 @@ References:
 A global buffer over-read exists in mbfl_name2encoding_ex() (ext/mbstring/libmbfl/mbfl/mbfl_encoding.c, line 352), called from mb_convert_encoding(...) and other mbstring functions, when parsing encoding names with embedded NUL bytes.
 
 
-|                    |                                                                                                                   |
-|--------------------|-------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.3                                                                                                               |
-| Component:         | ext-mbstring                                                                                                      |
-| Published:         | 2026-05-07                                                                                                        |
-| GHSA:              | GHSA-74r9-qxhc-fx53                                                                                               |
-| Affected versions: | all versions before 8.4.21 (assumed, older branches are not listed in the advisory) 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.3                                                                                               |
+| Component:         | ext-mbstring                                                                                      |
+| Published:         | 2026-05-07                                                                                        |
+| GHSA:              | GHSA-74r9-qxhc-fx53                                                                               |
+| Affected versions: | all versions before 8.4.21 (assumed, not confirmed by the advisory) 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -758,13 +760,13 @@ References:
 Improper sanitization of the request URI within the PHP-FPM status page allows an attacker to execute arbitrary JavaScript code (XSS) on the victims machine, possibly stealing cookies on insufficiently hardened systems, or stealing other sensitive data such as the information from the status page itself. An attacker does not require authentication or access to the /status endpoint in order to trigger XSS, but may simply visit a URI embedding the malicious code.
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 7.6                                                                                                                                                                             |
-| Component:         | PHP-FPM                                                                                                                                                                         |
-| Published:         | 2026-05-07                                                                                                                                                                      |
-| GHSA:              | GHSA-7qg2-v9fj-4mwv                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.31 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 7.6                                                                                                                                                             |
+| Component:         | PHP-FPM                                                                                                                                                         |
+| Published:         | 2026-05-07                                                                                                                                                      |
+| GHSA:              | GHSA-7qg2-v9fj-4mwv                                                                                                                                             |
+| Affected versions: | all versions before 8.2.31 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -784,12 +786,12 @@ References:
 Consider the following snippet within php_url_decode_ex() at ext/standard/url.c, called from PHPs urldecode() function:
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.3                                                                                                                                                                             |
-| Published:         | 2026-05-07                                                                                                                                                                      |
-| GHSA:              | GHSA-m8rr-4c36-8gq4                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.31 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.3                                                                                                                                                             |
+| Published:         | 2026-05-07                                                                                                                                                      |
+| GHSA:              | GHSA-m8rr-4c36-8gq4                                                                                                                                             |
+| Affected versions: | all versions before 8.2.31 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -809,13 +811,13 @@ References:
 SOAP_PERSISTENCE_SESSION allows to persist the SOAP handler object between requests using the session storage. Normally the object is immediately released after SoapServer::handle(), unless this setting is specified. This differentiation happens with the service-\>soap_class.persistence != SOAP_PERSISTENCE_SESSION check. soap.c fails to account for this flag in two places:
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.3                                                                                                                                                                             |
-| Component:         | ext-soap                                                                                                                                                                        |
-| Published:         | 2026-05-07                                                                                                                                                                      |
-| GHSA:              | GHSA-m33r-qmcv-p97q                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.31 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.3                                                                                                                                                             |
+| Component:         | ext-soap                                                                                                                                                        |
+| Published:         | 2026-05-07                                                                                                                                                      |
+| GHSA:              | GHSA-m33r-qmcv-p97q                                                                                                                                             |
+| Affected versions: | all versions before 8.2.31 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -835,13 +837,13 @@ References:
 to_zval_map() in ext/soap/php_encoding.c decodes apache:Map nodes. The \<key\> branch correctly guards against missing keys, but the \<value\> branch rechecks xmlKey instead of xmlValue:
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.3                                                                                                                                                                             |
-| Component:         | ext-soap                                                                                                                                                                        |
-| Published:         | 2026-05-07                                                                                                                                                                      |
-| GHSA:              | GHSA-hmxp-6pc4-f3vv                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.31 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.3                                                                                                                                                             |
+| Component:         | ext-soap                                                                                                                                                        |
+| Published:         | 2026-05-07                                                                                                                                                      |
+| GHSA:              | GHSA-hmxp-6pc4-f3vv                                                                                                                                             |
+| Affected versions: | all versions before 8.2.31 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -861,12 +863,12 @@ References:
 Product: PHP EXT/STANDARD Version: 8.6.0 CWE-ID: • CWE-524: Use of Cache Containing Sensitive Information • CAPEC-204: Lifting Sensitive Data Embedded in Cache CVSS vector v.4.0: 6.3 (AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N) Description: The application insufficiently controls access to information processed by the application data caching tool. As a result, an attacker can gain access to cached data. Mitigation: Restrict access to information processed by the application data...
 
 
-|                    |                                                                                                                                                                                                                |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.3                                                                                                                                                                                                            |
-| Published:         | 2025-12-18                                                                                                                                                                                                     |
-| GHSA:              | GHSA-3237-qqm7-mfv7                                                                                                                                                                                            |
-| Affected versions: | all versions before 8.1.34 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.30 8.3.0 and later, before 8.3.29 8.4.0 and later, before 8.4.16 8.5.0 and later, before 8.5.1 |
+|                    |                                                                                                                                                                                                |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.3                                                                                                                                                                                            |
+| Published:         | 2025-12-18                                                                                                                                                                                     |
+| GHSA:              | GHSA-3237-qqm7-mfv7                                                                                                                                                                            |
+| Affected versions: | all versions before 8.1.34 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.30 8.3.0 and later, before 8.3.29 8.4.0 and later, before 8.4.16 8.5.0 and later, before 8.5.1 |
 
 
 References:
@@ -887,12 +889,12 @@ References:
 If we were using a memory safe language we would "just" be limited to the DoS, but now we have heap corruption and all the joys of it. This bug has been in PHP since PHP 7.1.
 
 
-|                    |                                                                                                                                                                                                                |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.5                                                                                                                                                                                                            |
-| Published:         | 2025-12-18                                                                                                                                                                                                     |
-| GHSA:              | GHSA-h96m-rvf9-jgm2                                                                                                                                                                                            |
-| Affected versions: | all versions before 8.1.34 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.30 8.3.0 and later, before 8.3.29 8.4.0 and later, before 8.4.16 8.5.0 and later, before 8.5.1 |
+|                    |                                                                                                                                                                                                |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.5                                                                                                                                                                                            |
+| Published:         | 2025-12-18                                                                                                                                                                                     |
+| GHSA:              | GHSA-h96m-rvf9-jgm2                                                                                                                                                                            |
+| Affected versions: | all versions before 8.1.34 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.30 8.3.0 and later, before 8.3.29 8.4.0 and later, before 8.4.16 8.5.0 and later, before 8.5.1 |
 
 
 References:
@@ -913,12 +915,12 @@ References:
 Product: PHP Version: 8.5.0-DEV (CLI) CWE-ID: CWE-476: NULL Pointer Dereference CVSS vector v.4.0: 8.2 (AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N) Description: A NULL pointer dereference occurs when the application dereferences a pointer that it expects to be valid, but is NULL, typically causing a crash or exit. Exploitation conditions: An unauthorized user Mitigation: Explicitly check whether a NULL pointer exists before dereferencing it. Researcher: Aleksey Solovev (Positive...
 
 
-|                    |                                                                                                                                                                                                                |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 6.3                                                                                                                                                                                                            |
-| Published:         | 2025-12-18                                                                                                                                                                                                     |
-| GHSA:              | GHSA-8xr5-qppj-gvwj                                                                                                                                                                                            |
-| Affected versions: | all versions before 8.1.34 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.30 8.3.0 and later, before 8.3.29 8.4.0 and later, before 8.4.16 8.5.0 and later, before 8.5.1 |
+|                    |                                                                                                                                                                                                |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 6.3                                                                                                                                                                                            |
+| Published:         | 2025-12-18                                                                                                                                                                                     |
+| GHSA:              | GHSA-8xr5-qppj-gvwj                                                                                                                                                                            |
+| Affected versions: | all versions before 8.1.34 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.30 8.3.0 and later, before 8.3.29 8.4.0 and later, before 8.4.16 8.5.0 and later, before 8.5.1 |
 
 
 References:
@@ -939,11 +941,11 @@ References:
 Missing error checking could result in SQL injection and missing error handling could lead to crashes due to null pointer dereferences.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2025-07-03                                                                                                                                                                       |
-| GHSA:              | GHSA-hrwm-9436-5mv3                                                                                                                                                              |
-| Affected versions: | all versions before 8.1.33 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.29 8.3.0 and later, before 8.3.23 8.4.0 and later, before 8.4.10 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2025-07-03                                                                                                                                                       |
+| GHSA:              | GHSA-hrwm-9436-5mv3                                                                                                                                              |
+| Affected versions: | all versions before 8.1.33 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.29 8.3.0 and later, before 8.3.23 8.4.0 and later, before 8.4.10 |
 
 
 References:
@@ -963,12 +965,12 @@ References:
 If a SoapVar instance is created with a fully qualified name larger than 2G, this will cause a NULL pointer dereference resulting in a segmentation fault, leading to a denial of service.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 5.9                                                                                                                                                                              |
-| Published:         | 2025-07-03                                                                                                                                                                       |
-| GHSA:              | GHSA-453j-q27h-5p8x                                                                                                                                                              |
-| Affected versions: | all versions before 8.1.33 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.29 8.3.0 and later, before 8.3.23 8.4.0 and later, before 8.4.10 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 5.9                                                                                                                                                              |
+| Published:         | 2025-07-03                                                                                                                                                       |
+| GHSA:              | GHSA-453j-q27h-5p8x                                                                                                                                              |
+| Affected versions: | all versions before 8.1.33 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.29 8.3.0 and later, before 8.3.23 8.4.0 and later, before 8.4.10 |
 
 
 References:
@@ -988,11 +990,11 @@ References:
 Exception handler frees variables via cleanup_live_vars for termination. However, the subsequent php_request_shutdown performs reference counting on these variables using zend_gc_refcount(read) and zend_gc_delref(write), resulting in use-after-free. Since zend_mm_free_small stores metadata in freed memory chunks, this use-after-free vulnerability may allows manipulation of the Zend allocator through reference count behaviors.
 
 
-|                    |                                                                                                                   |
-|--------------------|-------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2025-03-13                                                                                                        |
-| GHSA:              | GHSA-rwp7-7vc6-8477                                                                                               |
-| Affected versions: | all versions before 8.3.19 (assumed, older branches are not listed in the advisory) 8.4.0 and later, before 8.4.5 |
+|                    |                                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| Published:         | 2025-03-13                                                                                        |
+| GHSA:              | GHSA-rwp7-7vc6-8477                                                                               |
+| Affected versions: | all versions before 8.3.19 (assumed, not confirmed by the advisory) 8.4.0 and later, before 8.4.5 |
 
 
 References:
@@ -1010,11 +1012,11 @@ References:
 The header parser of the http stream wrapper does not handle folded headers and passes incorrect MIME types to an attached stream notifier.
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2025-03-13                                                                                                                                                                      |
-| GHSA:              | GHSA-v8xr-gpvj-cx9g                                                                                                                                                             |
-| Affected versions: | all versions before 8.1.32 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2025-03-13                                                                                                                                                      |
+| GHSA:              | GHSA-v8xr-gpvj-cx9g                                                                                                                                             |
+| Affected versions: | all versions before 8.1.32 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
 
 
 References:
@@ -1034,11 +1036,11 @@ References:
 When requesting a HTTP resource using the DOM or SimpleXML extensions, the wrong content-type header is used to determine the charset when the requested resource performs a redirect.
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2025-03-13                                                                                                                                                                      |
-| GHSA:              | GHSA-p3x9-6h7p-cgfc                                                                                                                                                             |
-| Affected versions: | all versions before 8.1.32 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2025-03-13                                                                                                                                                      |
+| GHSA:              | GHSA-p3x9-6h7p-cgfc                                                                                                                                             |
+| Affected versions: | all versions before 8.1.32 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
 
 
 References:
@@ -1058,11 +1060,11 @@ References:
 This can allow issues in the application when parsing the array - e.g. application could consider it as a valid header or as a continuation of the previous one (currently folding header are misbehaving so there could be some logic for that in the application that could result in a security issue). So some sort of request smuggling could be possible in this case
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2025-03-13                                                                                                                                                                      |
-| GHSA:              | GHSA-pcmh-g36c-qc44                                                                                                                                                             |
-| Affected versions: | all versions before 8.1.32 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2025-03-13                                                                                                                                                      |
+| GHSA:              | GHSA-pcmh-g36c-qc44                                                                                                                                             |
+| Affected versions: | all versions before 8.1.32 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
 
 
 References:
@@ -1082,11 +1084,11 @@ References:
 Preventing authorization header to be sent.
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2025-03-13                                                                                                                                                                      |
-| GHSA:              | GHSA-hgf5-96fm-v528                                                                                                                                                             |
-| Affected versions: | all versions before 8.1.32 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2025-03-13                                                                                                                                                      |
+| GHSA:              | GHSA-hgf5-96fm-v528                                                                                                                                             |
+| Affected versions: | all versions before 8.1.32 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
 
 
 References:
@@ -1106,11 +1108,11 @@ References:
 The URI truncation might result in omitting some critical information (e.g. from the query) or even redirection to other resources. It could even result in DOS of the remote site if the trucated URL results in error.
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2025-03-13                                                                                                                                                                      |
-| GHSA:              | GHSA-52jp-hrpf-2jff                                                                                                                                                             |
-| Affected versions: | all versions before 8.1.32 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2025-03-13                                                                                                                                                      |
+| GHSA:              | GHSA-52jp-hrpf-2jff                                                                                                                                             |
+| Affected versions: | all versions before 8.1.32 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.28 8.3.0 and later, before 8.3.19 8.4.0 and later, before 8.4.5 |
 
 
 References:
@@ -1130,12 +1132,12 @@ References:
 A memory-related vulnerability in PHP’s filter handling system, particularly when processing input with convert.quoted-printable-decode filters, leads to a segmentation fault. This vulnerability is triggered through specific sequences of input data, causing PHP to crash. When exploited, it allows an attacker to extract a single byte of data from the heap or cause a DoS.
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 4.8                                                                                                                                               |
-| Published:         | 2024-11-21                                                                                                                                        |
-| GHSA:              | GHSA-r977-prxv-hc43                                                                                                                               |
-| Affected versions: | all versions before 8.1.31 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 4.8                                                                                                                               |
+| Published:         | 2024-11-21                                                                                                                        |
+| GHSA:              | GHSA-r977-prxv-hc43                                                                                                               |
+| Affected versions: | all versions before 8.1.31 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
 
 
 References:
@@ -1154,11 +1156,11 @@ References:
 Configuring a proxy in a stream context might allow for CRLF injection in URIs, resulting in HTTP request smuggling attacks.
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2024-11-21                                                                                                                                        |
-| GHSA:              | GHSA-c5f2-jwm7-mmq2                                                                                                                               |
-| Affected versions: | all versions before 8.1.31 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2024-11-21                                                                                                                        |
+| GHSA:              | GHSA-c5f2-jwm7-mmq2                                                                                                               |
+| Affected versions: | all versions before 8.1.31 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
 
 
 References:
@@ -1177,11 +1179,11 @@ References:
 The following code: https://github.com/php/php-src/blob/5070fbf1613015e351bc4629ac7997b26359320b/ext/pdo_firebird/firebird_driver.c#L805-L808
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2024-11-21                                                                                                                                        |
-| GHSA:              | GHSA-5hqh-c84r-qjcv                                                                                                                               |
-| Affected versions: | all versions before 8.1.31 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2024-11-21                                                                                                                        |
+| GHSA:              | GHSA-5hqh-c84r-qjcv                                                                                                               |
+| Affected versions: | all versions before 8.1.31 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
 
 
 References:
@@ -1200,11 +1202,11 @@ References:
 Uncontrolled long string inputs to ldap_escape on 32-bit systems can cause an integer overflow, resulting in an out-of-bounds write.
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2024-11-21                                                                                                                                        |
-| GHSA:              | GHSA-g665-fm4p-vhff                                                                                                                               |
-| Affected versions: | all versions before 8.1.31 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2024-11-21                                                                                                                        |
+| GHSA:              | GHSA-g665-fm4p-vhff                                                                                                               |
+| Affected versions: | all versions before 8.1.31 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.26 8.3.0 and later, before 8.3.14 |
 
 
 References:
@@ -1223,11 +1225,11 @@ References:
 This vulnerability is a bypass of CVE-2024-4577 when using a non-standard configuration of Windows codepages, only obtainable through the registry by pointing the ACP codepage to an OEM codepage. The required configuration is unlikely to occur in a real environment.
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2024-09-27                                                                                                                                        |
-| GHSA:              | GHSA-p99j-rfp4-xqvq                                                                                                                               |
-| Affected versions: | all versions before 8.1.30 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.24 8.3.0 and later, before 8.3.12 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2024-09-27                                                                                                                        |
+| GHSA:              | GHSA-p99j-rfp4-xqvq                                                                                                               |
+| Affected versions: | all versions before 8.1.30 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.24 8.3.0 and later, before 8.3.12 |
 
 
 References:
@@ -1246,12 +1248,12 @@ References:
 According to \<https://www.php.net/manual/en/security.cgi-bin.force-redirect.php\>, the configuration directive cgi.force_redirect prevents anyone from calling PHP directly with a URL like http://host.example/cgi-bin/php/secretdir/script.php. The default value of cgi.force_redirect is 1.
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 5.3                                                                                                                                               |
-| Published:         | 2024-09-27                                                                                                                                        |
-| GHSA:              | GHSA-94p6-54jq-9mwp                                                                                                                               |
-| Affected versions: | all versions before 8.1.30 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.24 8.3.0 and later, before 8.3.12 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 5.3                                                                                                                               |
+| Published:         | 2024-09-27                                                                                                                        |
+| GHSA:              | GHSA-94p6-54jq-9mwp                                                                                                               |
+| Affected versions: | all versions before 8.1.30 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.24 8.3.0 and later, before 8.3.12 |
 
 
 References:
@@ -1338,13 +1340,13 @@ References:
 The mysqlnd wire protocol parser reads fields out of server packets before checking that the packet still holds enough bytes for them. A malicious or compromised MySQL server can send a truncated packet and make the client read past the end of the packet buffer, which is undefined behaviour and can crash the process.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 3.1                                                                                                                                                                              |
-| Component:         | ext-mysqlnd                                                                                                                                                                      |
-| Published:         | 2026-09-24                                                                                                                                                                       |
-| GHSA:              | GHSA-r6x9-5r99-36j7                                                                                                                                                              |
-| Affected versions: | all versions before 8.2.34 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 3.1                                                                                                                                                              |
+| Component:         | ext-mysqlnd                                                                                                                                                      |
+| Published:         | 2026-09-24                                                                                                                                                       |
+| GHSA:              | GHSA-r6x9-5r99-36j7                                                                                                                                              |
+| Affected versions: | all versions before 8.2.34 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.35 8.4.0 and later, before 8.4.26 8.5.0 and later, before 8.5.11 |
 
 
 References:
@@ -1364,12 +1366,12 @@ References:
 The following PHP code triggers a segmentation fault due to a NULL pointer dereference:
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Component:         | ext-mbstring                                                                                                                                                                    |
-| Published:         | 2026-05-07                                                                                                                                                                      |
-| GHSA:              | GHSA-wm6j-2649-pv75                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.31 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Component:         | ext-mbstring                                                                                                                                                    |
+| Published:         | 2026-05-07                                                                                                                                                      |
+| GHSA:              | GHSA-wm6j-2649-pv75                                                                                                                                             |
+| Affected versions: | all versions before 8.2.31 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -1389,12 +1391,12 @@ References:
 Researcher: Aleksey Solovev (Positive Technologies)
 
 
-|                    |                                                                                                                                                                                 |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Component:         | ext-standard                                                                                                                                                                    |
-| Published:         | 2026-05-07                                                                                                                                                                      |
-| GHSA:              | GHSA-96wq-48vp-hh57                                                                                                                                                             |
-| Affected versions: | all versions before 8.2.31 (assumed, older branches are not listed in the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
+|                    |                                                                                                                                                                 |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Component:         | ext-standard                                                                                                                                                    |
+| Published:         | 2026-05-07                                                                                                                                                      |
+| GHSA:              | GHSA-96wq-48vp-hh57                                                                                                                                             |
+| Affected versions: | all versions before 8.2.31 (assumed, not confirmed by the advisory) 8.3.0 and later, before 8.3.31 8.4.0 and later, before 8.4.21 8.5.0 and later, before 8.5.6 |
 
 
 References:
@@ -1414,11 +1416,11 @@ References:
 fsockopen() doesn't regard hostname as well, hostname is terminated at the null byte. This can cause Server Side Request Forgery in general case.
 
 
-|                    |                                                                                                                                                                                  |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2025-07-03                                                                                                                                                                       |
-| GHSA:              | GHSA-3cr5-j632-f35r                                                                                                                                                              |
-| Affected versions: | all versions before 8.1.33 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.29 8.3.0 and later, before 8.3.23 8.4.0 and later, before 8.4.10 |
+|                    |                                                                                                                                                                  |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2025-07-03                                                                                                                                                       |
+| GHSA:              | GHSA-3cr5-j632-f35r                                                                                                                                              |
+| Affected versions: | all versions before 8.1.33 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.29 8.3.0 and later, before 8.3.23 8.4.0 and later, before 8.4.10 |
 
 
 References:
@@ -1438,12 +1440,12 @@ References:
 Erroneous parsing of multipart form data contained in an HTTP POST request could lead to legitimate data not being processed thus, violating data integrity.
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 3.1                                                                                                                                               |
-| Published:         | 2024-09-27                                                                                                                                        |
-| GHSA:              | GHSA-9pqp-7h25-4f32                                                                                                                               |
-| Affected versions: | all versions before 8.1.30 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.24 8.3.0 and later, before 8.3.12 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 3.1                                                                                                                               |
+| Published:         | 2024-09-27                                                                                                                        |
+| GHSA:              | GHSA-9pqp-7h25-4f32                                                                                                               |
+| Affected versions: | all versions before 8.1.30 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.24 8.3.0 and later, before 8.3.12 |
 
 
 References:
@@ -1462,12 +1464,12 @@ References:
 In PHP-FPM, when configured to catch workers output through catch_workers_output = yes configuration, it may be possible to pollute the final log with up to 4 characters from the FPM_STDIO_CMD_FLUSH macro, or remove up to 4 characters from the logs. Additionally, If PHP-FPM is configured to use a syslog, it seems that much more characters can be excluded from the logs, even though it has not been tested.
 
 
-|                    |                                                                                                                                                   |
-|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| CVSS score:        | 3.3                                                                                                                                               |
-| Published:         | 2024-09-27                                                                                                                                        |
-| GHSA:              | GHSA-865w-9rf3-2wh5                                                                                                                               |
-| Affected versions: | all versions before 8.1.30 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.24 8.3.0 and later, before 8.3.12 |
+|                    |                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| CVSS score:        | 3.3                                                                                                                               |
+| Published:         | 2024-09-27                                                                                                                        |
+| GHSA:              | GHSA-865w-9rf3-2wh5                                                                                                               |
+| Affected versions: | all versions before 8.1.30 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.24 8.3.0 and later, before 8.3.12 |
 
 
 References:
@@ -1486,11 +1488,11 @@ References:
 If a password stored with password_hash starts with a null byte (\\x00), testing a blank string as the password via password_verify will incorrectly return true.
 
 
-|                    |                                                                                                                                                  |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2024-04-11                                                                                                                                       |
-| GHSA:              | GHSA-h746-cjrr-wfmr                                                                                                                              |
-| Affected versions: | all versions before 8.1.28 (assumed, older branches are not listed in the advisory) 8.2.0 and later, before 8.2.18 8.3.0 and later, before 8.3.6 |
+|                    |                                                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2024-04-11                                                                                                                       |
+| GHSA:              | GHSA-h746-cjrr-wfmr                                                                                                              |
+| Affected versions: | all versions before 8.1.28 (assumed, not confirmed by the advisory) 8.2.0 and later, before 8.2.18 8.3.0 and later, before 8.3.6 |
 
 
 References:
@@ -1509,11 +1511,11 @@ References:
 The random byte generation function used in the SOAP HTTP Digest authentication code is not checked for failure. This can result in a stack information leak. Furthermore, there's an insufficient number of random bytes used.
 
 
-|                    |                                                                                                                                                  |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2023-06-12                                                                                                                                       |
-| GHSA:              | GHSA-76gg-c692-v2mw                                                                                                                              |
-| Affected versions: | all versions before 8.0.29 (assumed, older branches are not listed in the advisory) 8.1.0 and later, before 8.1.20 8.2.0 and later, before 8.2.7 |
+|                    |                                                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2023-06-12                                                                                                                       |
+| GHSA:              | GHSA-76gg-c692-v2mw                                                                                                              |
+| Affected versions: | all versions before 8.0.29 (assumed, not confirmed by the advisory) 8.1.0 and later, before 8.1.20 8.2.0 and later, before 8.2.7 |
 
 
 References:
@@ -1532,11 +1534,11 @@ References:
 Malformatted BCrypt hashes that include a $ within their salt part will trigger a buffer overread and may erroneously validate any password as valid.
 
 
-|                    |                                                                                                                                                  |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| Published:         | 2023-02-15                                                                                                                                       |
-| GHSA:              | GHSA-7fj2-8x79-rjf4                                                                                                                              |
-| Affected versions: | all versions before 8.0.28 (assumed, older branches are not listed in the advisory) 8.1.0 and later, before 8.1.16 8.2.0 and later, before 8.2.3 |
+|                    |                                                                                                                                  |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Published:         | 2023-02-15                                                                                                                       |
+| GHSA:              | GHSA-7fj2-8x79-rjf4                                                                                                              |
+| Affected versions: | all versions before 8.0.28 (assumed, not confirmed by the advisory) 8.1.0 and later, before 8.1.16 8.2.0 and later, before 8.2.3 |
 
 
 References:

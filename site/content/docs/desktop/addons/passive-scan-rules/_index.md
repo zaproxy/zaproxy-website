@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: 77.0.0
+    version: 78.0.0
 ---
 
 # Passive Scan Rules
@@ -550,13 +550,16 @@ Alert ID: [10037](/docs/alerts/10037/).
 ## Server Side Technology Version with Known Vulnerabilities {#id-20020}
 
 This checks response headers (typically "X-Powered-By" and "Server") for disclosed versions of server side technologies and compares them against lists of known vulnerabilities (CVEs) in those technologies, not in their extensions or plugins.  
-Each technology has its own alert type, which is only raised when that technology is enabled in the context the message belongs to (all are by default). One alert is raised per site, technology and disclosed version, with a risk based on the most severe vulnerability which applies, the vulnerabilities which apply listed by severity in the other info, and references linking to the details of each in the help. The confidence is lowered when the disclosed version is incomplete (e.g. "PHP/8.1" rather than "PHP/8.1.2"), or is older than any version listed in the advisories and is only assumed to be affected.  
+Each technology has its own alert type, which is only raised when that technology is enabled in the context the message belongs to (all are by default). One alert is raised per site, technology and disclosed version, with a risk based on the most severe vulnerability which applies, the vulnerabilities which apply listed by severity in the other info, and references linking to the details of each in the help. When the disclosed version is incomplete (e.g. "PHP/8.1" rather than "PHP/8.1.2") the vulnerabilities of every release with that version are listed, but as the version does not say which of them have been fixed a separate alert type is raised, at low risk and low confidence. The confidence is also lowered when the version is only assumed to be affected (for PHP, when it is older than any version listed in the advisories; for Apache HTTP Server, when the project lists it as only possibly affected), or when it appears to be a distribution package (e.g. "Apache/2.4.58 (Ubuntu)" or "PHP/7.4.3-4ubuntu2.19"), as distributions usually backport security fixes without changing the version.  
 The lists of known vulnerabilities are bundled with the add-on and updated with each release.
 
 
 Alert types:
 
 * **20020-1: PHP Version with Known Vulnerabilities** - detects versions such as "PHP/8.1.2". The known vulnerabilities are generated from the [php-src security advisories](https://github.com/php/php-src/security/advisories), and are detailed in the [PHP Known Vulnerabilities](/docs/desktop/addons/passive-scan-rules/php-known-vulnerabilities/) help page.
+* **20020-2: PHP Version with Possible Known Vulnerabilities** - raised instead of 20020-1 when the version is incomplete, e.g. "PHP/8.1".
+* **20020-3: Apache HTTP Server Version with Known Vulnerabilities** - detects versions such as "Apache/2.4.58" in the "Server" header. The known vulnerabilities are generated from the [Apache HTTP Server project's CVE records](https://httpd.apache.org/security/), and are detailed in the [Apache HTTP Server Known Vulnerabilities](/docs/desktop/addons/passive-scan-rules/apache-known-vulnerabilities/) help page.
+* **20020-4: Apache HTTP Server Version with Possible Known Vulnerabilities** - raised instead of 20020-3 when the version is incomplete, e.g. "Apache/2.4".
 
 
 Latest code: [ServerSideVersionScanRule.java](https://github.com/zaproxy/zap-extensions/blob/main/addOns/pscanrules/src/main/java/org/zaproxy/zap/extension/pscanrules/ServerSideVersionScanRule.java)

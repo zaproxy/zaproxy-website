@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: pscanrules
-    version: '77'
+    version: '78'
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v77/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/pscanrules-v78/bom.json
   components:
   - name: ST4
     version: 4.3.4
@@ -62,7 +62,7 @@ sbom:
     version: 7.4.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: byte-buddy
     version: 1.17.7
@@ -182,7 +182,7 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit-csp
-    version: 5.6.0
+    version: 5.7.0
     licenses: Apache-2.0
   - name: httpclient5
     version: 5.6.4
@@ -206,28 +206,28 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.3
+    version: 2.22.4
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.3
+    version: 2.22.4
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.3
+    version: 2.22.4
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.3
+    version: 2.22.4
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.3
+    version: 2.22.4
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.3
+    version: 2.22.4
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.3
+    version: 2.22.4
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -320,16 +320,16 @@ sbom:
     version: 2.3.1
     licenses: BSD-3-Clause
   - name: native-linux-x86_64
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: native-osx-aarch64
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: native-osx-x86_64
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: native-windows-x86_64
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: netty-buffer
     version: 4.1.134.Final
@@ -359,7 +359,7 @@ sbom:
     version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.32.0
+    version: 0.34.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -407,7 +407,7 @@ sbom:
     version: 3.6.0
     licenses: BSD-3-Clause
   - name: service
-    version: 1.23.0
+    version: 1.24.0
     licenses: Apache-2.0
   - name: slf4j-api
     version: 1.7.36
