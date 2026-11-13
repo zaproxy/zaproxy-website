@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: llm
-    version: 0.2.0
+    version: 0.3.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/llm-v0.2.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/llm-v0.3.0/bom.json
   components:
   - name: apiguardian-api
     version: 1.1.2
@@ -38,7 +38,7 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: automation
-    version: 0.62.0
+    version: 0.63.0
     licenses: ''
   - name: azure-ai-openai
     version: 1.0.0-beta.16
@@ -269,22 +269,13 @@ sbom:
     version: '2.22'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.1
-    licenses: Apache-2.0
-  - name: jackson-bom
     version: 2.22.4
-    licenses: Apache-2.0
-  - name: jackson-core
-    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-core
     version: 2.22.4
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
-    licenses: Apache-2.0
-  - name: jackson-databind
-    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-databind
     version: 2.22.4
@@ -297,9 +288,6 @@ sbom:
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
     version: 2.22.4
-    licenses: Apache-2.0
-  - name: jackson-datatype-jsr310
-    version: 2.22.1
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
     version: 2.22.4
@@ -371,34 +359,34 @@ sbom:
     version: '0.11'
     licenses: MIT
   - name: langchain4j
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-anthropic
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-azure-open-ai
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-core
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-google-ai-gemini
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-http-client
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-http-client-jdk
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-ollama
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-open-ai
-    version: 1.22.0
+    version: 1.23.0
     licenses: Apache-2.0
   - name: langchain4j-reactive-streaming
-    version: 1.22.0-beta32
+    version: 1.23.0-beta33
     licenses: Apache-2.0
   - name: listenablefuture
     version: 9999.0-empty-to-avoid-conflict-with-guava
@@ -461,34 +449,34 @@ sbom:
     version: 1.24.0
     licenses: Apache-2.0
   - name: netty-buffer
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: netty-codec
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: netty-codec-dns
     version: 4.1.112.Final
     licenses: Apache-2.0
   - name: netty-codec-http
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: netty-codec-http2
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: netty-codec-socks
     version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-common
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: netty-handler
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: netty-handler-proxy
     version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-resolver
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: netty-resolver-dns
     version: 4.1.112.Final
@@ -506,7 +494,7 @@ sbom:
     version: 2.0.70.Final
     licenses: Apache-2.0
   - name: netty-transport
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: netty-transport-classes-epoll
     version: 4.1.118.Final
@@ -521,10 +509,10 @@ sbom:
     version: 4.1.118.Final
     licenses: Apache-2.0
   - name: netty-transport-native-unix-common
-    version: 4.1.136.Final
+    version: 4.1.139.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.33.0
+    version: 0.34.0
     licenses: ''
   - name: objenesis
     version: '3.3'
@@ -533,7 +521,7 @@ sbom:
     version: 3.3.4
     licenses: Apache-2.0
   - name: opennlp-tools
-    version: 2.5.11
+    version: 2.5.12
     licenses: Apache-2.0
   - name: openpdf
     version: 2.0.5

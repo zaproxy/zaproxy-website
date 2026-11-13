@@ -6,13 +6,19 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: '77'
+    version: '78'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [78] - 2026-11-13
+### Changed
+- Maintenance changes.
+- Update dependency.
+- Server Side Technology Version with Known Vulnerabilities scan rule to also check for Apache HTTP Server versions against the httpd project's CVE records.
 
 ## [77] - 2026-10-22
 ### Added
@@ -723,6 +729,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[78]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v78
 [77]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v77
 [76]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v76
 [75]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v75
