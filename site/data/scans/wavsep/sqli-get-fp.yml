@@ -40,5 +40,5 @@ details:
   prev: Pass
 tests: 10
 passes: 7
-fails: 1
-score: 73%
+fails: 3
+score: 70%
