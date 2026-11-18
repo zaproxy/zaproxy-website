@@ -15,7 +15,7 @@ project's CVE records](https://httpd.apache.org/security/) when the add-on is bu
 Versions marked as assumed to be affected were listed by the project as only possibly affected.
 
 
-Last updated: 2026-11-12. Vulnerabilities listed: 290.
+Last updated: 2026-11-18. Vulnerabilities listed: 290.
 
 ## CVE-2026-119618 (Critical) {#cve-2026-119618}
 
