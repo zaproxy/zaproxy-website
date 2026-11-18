@@ -6,13 +6,24 @@ weight: 1
 cascade:
   addon:
     id: pscanrules
-    version: '78'
+    version: '79'
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [79] - 2026-11-18
+### Added
+- The Server Side Technology Version with Known Vulnerabilities scan rule now also detects nginx versions with known vulnerabilities.
+
+### Changed
+- The Content Security Policy scan rule now also reports a missing or wildcard `base-uri` directive.
+- Updated the Apache HTTP Server known vulnerabilities, and replaced non-breaking spaces in their descriptions.
+
+### Fixed
+- Viewstate scan rule: reduce false positives for IP addresses, no longer matching assembly version numbers (e.g. `Version=12.0.0.0`), invalid addresses (e.g. `999.999.999.999`) or parts of longer dotted number sequences.
 
 ## [78] - 2026-11-13
 ### Changed
@@ -729,6 +740,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
 
+[79]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v79
 [78]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v78
 [77]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v77
 [76]: https://github.com/zaproxy/zap-extensions/releases/pscanrules-v76
