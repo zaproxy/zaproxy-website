@@ -8,10 +8,10 @@ aliases:
 cascade:
   addon:
     id: selenium
-    version: 15.60.0
+    version: 15.61.0
 sbom:
   format: CycloneDX
-  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.60.0/bom.json
+  downloadUrl: https://github.com/zaproxy/zap-extensions/releases/download/selenium-v15.61.0/bom.json
   components:
   - name: annotations
     version: 26.1.0
@@ -41,25 +41,25 @@ sbom:
     version: '1.9'
     licenses: Apache-2.0
   - name: bcmail-jdk18on
-    version: '1.86'
+    version: '1.87'
     licenses: Bouncy Castle Licence
   - name: bcpkix-jdk18on
-    version: '1.86'
+    version: '1.87'
     licenses: Bouncy Castle Licence
   - name: bcprov-jdk18on
-    version: '1.86'
+    version: '1.87'
     licenses: Bouncy Castle Licence
   - name: bcutil-jdk18on
-    version: '1.86'
+    version: '1.87'
     licenses: Bouncy Castle Licence
   - name: biz.aQute.bnd.annotation
-    version: 7.4.0
+    version: 7.5.0
     licenses: (Apache-2.0 OR EPL-2.0)
   - name: brotli4j
     version: 1.24.0
     licenses: Apache-2.0
   - name: byte-buddy
-    version: 1.18.15
+    version: 1.18.17
     licenses: Apache-2.0
   - name: byte-buddy-agent
     version: 1.17.7
@@ -134,7 +134,7 @@ sbom:
     version: 2.42.0
     licenses: Apache-2.0
   - name: error_prone_annotations
-    version: 2.50.0
+    version: 2.52.0
     licenses: Apache-2.0
   - name: error_prone_check_api
     version: 2.42.0
@@ -167,7 +167,7 @@ sbom:
     version: 33.4.0-jre
     licenses: Apache-2.0
   - name: guava
-    version: 33.7.2-jre
+    version: 33.8.0-jre
     licenses: Apache-2.0
   - name: hamcrest
     version: '3.0'
@@ -185,25 +185,25 @@ sbom:
     version: 2.7.4
     licenses: HSQLDB License, a BSD open source license
   - name: htmlunit
-    version: 5.6.0
+    version: 5.7.0
     licenses: Apache-2.0
   - name: htmlunit-core-js
-    version: 5.6.0
+    version: 5.7.0
     licenses: Apache-2.0
   - name: htmlunit-csp
-    version: 5.6.0
+    version: 5.7.0
     licenses: Apache-2.0
   - name: htmlunit-cssparser
-    version: 5.6.0
+    version: 5.7.0
     licenses: Apache-2.0
   - name: htmlunit-websocket-client
-    version: 5.6.0
+    version: 5.7.0
     licenses: Apache-2.0
   - name: htmlunit-xpath
-    version: 5.6.0
+    version: 5.7.0
     licenses: Apache-2.0
   - name: htmlunit3-driver
-    version: 4.51.0
+    version: 4.52.0
     licenses: Apache-2.0
   - name: httpclient
     version: 4.5.14
@@ -233,31 +233,31 @@ sbom:
     version: '3.1'
     licenses: Apache-2.0
   - name: jackson-annotations
-    version: '2.22'
+    version: '2.23'
     licenses: Apache-2.0
   - name: jackson-bom
-    version: 2.22.4
+    version: 2.23.0
     licenses: Apache-2.0
   - name: jackson-core
-    version: 2.22.4
+    version: 2.23.0
     licenses: Apache-2.0
   - name: jackson-core-asl
     version: 1.9.13
     licenses: Apache-2.0
   - name: jackson-databind
-    version: 2.22.4
+    version: 2.23.0
     licenses: Apache-2.0
   - name: jackson-dataformat-xml
-    version: 2.22.4
+    version: 2.23.0
     licenses: Apache-2.0
   - name: jackson-dataformat-yaml
-    version: 2.22.4
+    version: 2.23.0
     licenses: Apache-2.0
   - name: jackson-datatype-jdk8
-    version: 2.22.4
+    version: 2.23.0
     licenses: Apache-2.0
   - name: jackson-datatype-jsr310
-    version: 2.22.4
+    version: 2.23.0
     licenses: Apache-2.0
   - name: java-diff-utils
     version: '4.12'
@@ -365,7 +365,7 @@ sbom:
     version: 1.24.0
     licenses: Apache-2.0
   - name: neko-htmlunit
-    version: 5.6.0
+    version: 5.7.0
     licenses: Apache-2.0
   - name: netty-buffer
     version: 4.1.134.Final
@@ -395,43 +395,43 @@ sbom:
     version: 4.1.134.Final
     licenses: Apache-2.0
   - name: network
-    version: 0.33.0
+    version: 0.34.0
     licenses: ''
   - name: objenesis
     version: '3.3'
     licenses: Apache-2.0
   - name: opentelemetry-api
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-common
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-context
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-exporter-logging
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-common
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-extension-autoconfigure
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-extension-autoconfigure-spi
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-logs
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-metrics
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentelemetry-sdk-trace
-    version: 1.67.0
+    version: 1.68.0
     licenses: Apache-2.0
   - name: opentest4j
     version: 1.3.0
@@ -470,58 +470,58 @@ sbom:
     version: 3.6.0
     licenses: BSD-3-Clause
   - name: selenium-api
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-chrome-driver
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-chromium-driver
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-devtools-latest
-    version: 4.52.0
-    licenses: Apache-2.0
-  - name: selenium-devtools-v154
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-devtools-v155
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-devtools-v156
-    version: 4.52.0
+    version: 4.53.0
+    licenses: Apache-2.0
+  - name: selenium-devtools-v157
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-edge-driver
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-firefox-driver
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-http
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-ie-driver
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-java
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-json
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-manager
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-os
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-remote-driver
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-safari-driver
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: selenium-support
-    version: 4.52.0
+    version: 4.53.0
     licenses: Apache-2.0
   - name: service
     version: 1.24.0
@@ -539,7 +539,7 @@ sbom:
     version: 4.8.6
     licenses: LGPL-2.1-only
   - name: stax2-api
-    version: 4.3.0
+    version: 4.3.1
     licenses: BSD-2-Clause
   - name: swingx-all
     version: 1.6.5-1
@@ -551,7 +551,7 @@ sbom:
     version: unspecified
     licenses: ''
   - name: woodstox-core
-    version: 7.2.0
+    version: 7.3.0
     licenses: Apache-2.0
   - name: xom
     version: 1.3.9
