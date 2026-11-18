@@ -13,8 +13,8 @@ The OWASP PTK Options dialog has three tabs: **Engines** , **Scan Rules** , and 
 
 Controls where each PTK engine runs during a scan. Each engine (SAST, IAST, DAST) has an independent **Run Location** drop-down with three options:
 
-* **In the Client Spider** — the engine runs automatically whenever the ZAP Client Spider crawls a page. This is the default for SAST and IAST.
-* **In the PTK Active Scan Rule** — the engine runs as part of the PTK active scan rule. This is the default for DAST.
+* **In the Client Spider** — the engine runs automatically whenever the ZAP Client Spider crawls a page. This is the default for SAST.
+* **In the PTK Active Scan Rule** — the engine runs as part of the PTK active scan rule. This is the default for DAST and IAST.
 * **Manually** — the engine is not triggered automatically; it only runs when invoked directly via the PTK API.
 
 ## Scan Rules Tab
@@ -25,7 +25,7 @@ The scan rules tree lists all available PTK rules grouped by engine (SAST, IAST,
 Hover over any node in the tree to see its internal ID, which is the value used in command-line
 configuration keys.
 
-### Use Recommended Defaults
+### Use Recommended Defaults {#userecommendeddefaults}
 
 The **Use recommended defaults** checkbox at the top of the tab applies a curated set of rules suited to security testing of web applications in a developer or CI context. When checked, the checkboxes in the tree are greyed out to show the recommended state — you can still expand and collapse the tree to see which rules are included — but the individual rules cannot be changed while this mode is active.
 
@@ -41,6 +41,9 @@ Rechecking the option reapplies the recommended state.
 
 This option is enabled by default for new installations.
 
+
+See [ZAP Alerts](/docs/desktop/addons/owasp-ptk/#tool_ptk_passive_default) for the alert tags associated with the recommended rule set.
+
 ## Active Scan Tab
 
 **Enable Active Scan Rule** controls whether the PTK active scan rule runs during ZAP active scans.
@@ -51,7 +54,7 @@ exposed via the PTK API (`mode:auto`). It is disabled while the active scan rule
 When unchecked, PTK will still be active in the browser but no automated scanning will take place.
 
 
-**Browser** , **Action Wait Time (seconds)** , and **Number of Browser Windows to Open**
+**Browser** , and **Number of Browser Windows to Open**
 apply to the PTK active scan rule. The default thread count is half the number of available processor cores.
 
 ## Command-Line Configuration
@@ -72,7 +75,6 @@ ZAP rules in due course.
 * `ptk.activescan.rule.enabled` — enable or disable the PTK active scan rule
 * `ptk.automatedScanning.enabled` — enable or disable automated scanning (deprecated; use the active scan rule instead)
 * `ptk.activescan.browserId` — browser ID for the PTK active scan rule (see Selenium documentation for valid IDs)
-* `ptk.activescan.actionWaitTime` — action wait time in seconds for the PTK active scan rule
 * `ptk.activescan.threadCount` — number of browser windows (threads) for the PTK active scan rule
 
 Engine names are `SAST`, `IAST`, and `DAST`. Module and rule IDs can be found by hovering over a node in the Options dialog tree — the tooltip shows the internal ID used in configuration keys.
@@ -143,11 +145,10 @@ Enable automated scanning (deprecated):
 zap.sh -config ptk.automatedScanning.enabled=true
 ```
 
-Configure the PTK active scan rule browser, action wait time, and thread count:
+Configure the PTK active scan rule browser, and thread count:
 
 ```
 zap.sh -config ptk.activescan.browserId=firefox-headless \
-        -config ptk.activescan.actionWaitTime=2 \
         -config ptk.activescan.threadCount=4
 ```
 

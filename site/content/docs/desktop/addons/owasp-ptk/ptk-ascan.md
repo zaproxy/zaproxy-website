@@ -15,4 +15,7 @@ It can be enabled via the [OWASP PTK Options](/docs/desktop/addons/owasp-ptk/ptk
 or via the command line: `-config ptk.activescan.rule.enabled=true`)
 
 
+If the scan is run as a user, PTK waits for each browser to be authenticated before it starts.
+
+
 See also: [OWASP PTK](/docs/desktop/addons/owasp-ptk/), [OWASP PTK Options](/docs/desktop/addons/owasp-ptk/ptk-options/)

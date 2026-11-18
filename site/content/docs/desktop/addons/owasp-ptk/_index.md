@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: ptk
-    version: 0.9.0
+    version: 0.11.0
 ---
 
 # OWASP PTK
@@ -35,6 +35,17 @@ OWASP PTK provides:
 ## ZAP Alerts
 
 PTK will raise ZAP alerts for any issues it finds during a session. The full list of alerts raised by PTK is available at [https://www.zaproxy.org/alerttags/tool_ptk/](/alerttags/tool_ptk/).
+
+
+All PTK alerts are tagged with **TOOL_PTK** . In addition, alerts raised by rules that are part of
+the [recommended rule set](/docs/desktop/addons/owasp-ptk/ptk-options/#userecommendeddefaults) are also tagged with one of:
+
+* **TOOL_PTK_PASSIVE_DEFAULT** — added to alerts raised by recommended SAST and IAST rules, which run passively (in the client spider).{#tool_ptk_passive_default}
+{#tool_ptk_passive_default}
+* **TOOL_PTK_ACTIVE_DEFAULT** — added to alerts raised by recommended DAST rules, which run as part of the PTK active scan rule.{#tool_ptk_active_default}
+{#tool_ptk_active_default}
+
+These tags make it easy to filter for the alerts that PTK raises by default, as opposed to those only raised when non-default (custom) rules have been enabled - see [OWASP PTK Options](/docs/desktop/addons/owasp-ptk/ptk-options/) for more details.
 
 
 You can enable and disable OWASP PTK and other browser extensions via the Selenium Options page.
