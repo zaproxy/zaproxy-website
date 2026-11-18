@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.34.0
+    version: 0.35.0
 ---
 
 # Client Side Integration

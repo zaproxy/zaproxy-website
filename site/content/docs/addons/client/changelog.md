@@ -6,13 +6,21 @@ weight: 1
 cascade:
   addon:
     id: client
-    version: 0.34.0
+    version: 0.35.0
 ---
 
 # Changelog
 All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+## [0.35.0] - 2026-11-18
+### Added
+- Notify when browser is ready, once everything that runs on browser launch (e.g. authentication) has completed.
+- Added method to get the user the scan is run as.
+
+### Fixed
+- Typos in help content.
 
 ## [0.34.0] - 2026-10-21
 ### Changed
@@ -317,6 +325,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - First version.
 
+[0.35.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.35.0
 [0.34.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.34.0
 [0.33.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.33.0
 [0.32.0]: https://github.com/zaproxy/zap-extensions/releases/client-v0.32.0
