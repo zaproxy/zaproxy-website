@@ -12,12 +12,12 @@ weight: 8
 People who have made significant enhancements to the latest releases.  
 For more details of code contributions see: <https://www.openhub.net/p/zaproxy/contributors>
 
-|   |                                                                                                                                   |
-|---|-----------------------------------------------------------------------------------------------------------------------------------|
-|   | [Simon Bennetts](/docs/team/psiinon/) - Sponsored by Checkmarx               |
-|   | [Ricardo Pereira](/docs/team/thc202/) - Sponsored by Checkmarx               |
-|   | [Rick Mitchell](/docs/team/kingthorin/) - Sponsored by Checkmarx               |
-|   | [Akshath Kothari](/docs/team/ricekot/) - [Sponsor on GitHub](https://github.com/sponsors/ricekot)               |
+|   |                                                                                                   |
+|---|---------------------------------------------------------------------------------------------------|
+|   | [Simon Bennetts](/docs/team/psiinon/) - Sponsored by Checkmarx                                    |
+|   | [Ricardo Pereira](/docs/team/thc202/) - Sponsored by Checkmarx                                    |
+|   | [Rick Mitchell](/docs/team/kingthorin/) - Sponsored by Checkmarx                                  |
+|   | [Akshath Kothari](/docs/team/ricekot/) - [Sponsor on GitHub](https://github.com/sponsors/ricekot) |
 
 ## ZAP Extended Team
 

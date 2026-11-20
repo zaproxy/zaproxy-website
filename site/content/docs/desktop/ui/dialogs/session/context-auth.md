@@ -66,6 +66,12 @@ If this regex pattern is specified and matches any string in the specified messa
 This controls how frequently ZAP will poll to see if a user is still authenticated. The integer will either represent the number of Requests that will be made before ZAP will poll again or the number of Seconds before it will poll again, depending on pulldown selected.  
 The option is only relevant if the "Poll the Specified URL" Verification Strategy has been selected.
 
+### Poll Request Method {#pollmethod}
+
+The HTTP method to use for the poll request (e.g. GET, POST). Custom methods can be typed directly into the field.  
+If left empty, ZAP will use POST if Poll Request POST Data is set, otherwise GET.  
+The option is only relevant if the "Poll the Specified URL" Verification Strategy has been selected.
+
 ### URL to Poll for Verification {#pollurl}
 
 This is the URL that ZAP will poll to see if a user is still authenticated.  
@@ -73,7 +79,7 @@ The option is only relevant if the "Poll the Specified URL" Verification Strateg
 
 ### Poll Request POST Data {#polldata}
 
-If supplied then this will be sent as a POST in the poll request. If it is empty then ZAP will make a GET request  
+If supplied then this will be sent as the body of the poll request.  
 The option is only relevant if the "Poll the Specified URL" Verification Strategy has been selected.
 
 ### Additional Poll Request Headers {#pollheaders}

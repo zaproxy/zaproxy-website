@@ -24,7 +24,7 @@ This allows you to manage the URLs which will be ignored by the scanner.
 
 ### Exclude from Spider
 
-This allows you to manage the URLs which will be ignored by the spiders (standard and AJAX).
+This allows you to manage the URLs which will be ignored by the spiders (standard and modern).
 
 ### Contexts
 
