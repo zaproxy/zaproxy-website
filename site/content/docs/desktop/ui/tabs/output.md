@@ -2,7 +2,7 @@
 # This page was generated from the add-on.
 title: Output tab
 type: userguide
-weight: 12
+weight: 11
 ---
 
 # Output tab
