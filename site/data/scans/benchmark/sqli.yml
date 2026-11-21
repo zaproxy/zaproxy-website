@@ -603,9 +603,9 @@ details:
   result: Pass
 - path: /sqli-01/BenchmarkTest00604
   vulnerable: true
-  reported: true
+  reported: false
   rule: 40018
-  result: Pass
+  result: FAIL
 - path: /sqli-01/BenchmarkTest00605
   vulnerable: false
   reported: false
@@ -833,9 +833,9 @@ details:
   result: Pass
 - path: /sqli-01/BenchmarkTest00926
   vulnerable: false
-  reported: false
+  reported: true
   rule: 40018
-  result: Pass
+  result: FAIL
 - path: /sqli-01/BenchmarkTest00927
   vulnerable: false
   reported: false
@@ -893,9 +893,9 @@ details:
   result: Pass
 - path: /sqli-02/BenchmarkTest00938
   vulnerable: false
-  reported: true
+  reported: false
   rule: 40018
-  result: FAIL
+  result: Pass
 - path: /sqli-02/BenchmarkTest00939
   vulnerable: false
   reported: false
@@ -2063,9 +2063,9 @@ details:
   result: Pass
 - path: /sqli-04/BenchmarkTest02096
   vulnerable: true
-  reported: false
+  reported: true
   rule: 40018
-  result: FAIL
+  result: Pass
 - path: /sqli-04/BenchmarkTest02097
   vulnerable: false
   reported: false
@@ -2398,9 +2398,9 @@ details:
   result: Pass
 - path: /sqli-05/BenchmarkTest02450
   vulnerable: false
-  reported: true
+  reported: false
   rule: 40018
-  result: FAIL
+  result: Pass
 - path: /sqli-05/BenchmarkTest02451
   vulnerable: true
   reported: true
@@ -2513,9 +2513,9 @@ details:
   result: Pass
 - path: /sqli-05/BenchmarkTest02544
   vulnerable: false
-  reported: false
+  reported: true
   rule: 40018
-  result: Pass
+  result: FAIL
 - path: /sqli-05/BenchmarkTest02545
   vulnerable: true
   reported: true
