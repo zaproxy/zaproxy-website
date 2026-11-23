@@ -9,136 +9,111 @@
 </section>
 <section class="wrapper py-70" data-kind="{{ .Kind }}">
   <article class="content single-default">
-    <form data-no-csrf class="p-20 bg--blue-lightest flex">
-      <input type="text" name="q" id="search-filter" placeholder="Search ..." class="fx-g-1" />
-      <button type="button" id="search-trigger" class="ml-10 search-button" >Search</button>
+    <form data-no-csrf id="search-form" class="p-20 bg--blue-lightest flex">
+      <input type="search" name="q" id="search-filter" placeholder="Search ..." class="fx-g-1" autocomplete="off" />
+      <button type="submit" id="search-trigger" class="ml-10 search-button" >Search</button>
     </form>
-    <br/>
+    <p id="search-status" aria-live="polite"></p>
     <main id="search-results"></main>
-    <script>
-      (function() {
-      let params = new URLSearchParams(window.location.search);
-      let query = params.get('q') || false;
-      let searchFor = () => {};
-      let idx;
-      let documents = [];
+    <button type="button" id="search-more" class="search-button" hidden>Load more results</button>
+    <script type="module">
+      const pageSize = 10;
+      const form = document.getElementById("search-form");
+      const filter = document.getElementById("search-filter");
+      const status = document.getElementById("search-status");
+      const results = document.getElementById("search-results");
+      const more = document.getElementById("search-more");
+      const template = document.getElementById("search-entry");
 
-      if (query) {
-    	  query = query.replaceAll('<', '&lt;').replaceAll('>', '&gt;');
+      let pagefind;
+      let current = [];
+      let shown = 0;
+      let latest = 0;
+
+      try {
+        pagefind = await import("/pagefind/pagefind.js");
+        await pagefind.init();
+      } catch (e) {
+        console.error("Failed to load the search index", e);
+        status.textContent = ["localhost", "127.0.0.1"].includes(location.hostname)
+          ? "The search index is not available, it is generated when the site is built (npm run build:pagefind)."
+          : "Search is currently unavailable, please try again later.";
       }
-      fetch('/search/index.json')
-        .then(function(response) {
-          return response.json();
-        })
-        .then(function(data) {
-          idx = lunr(function () {
-              this.ref('url');
-              this.field('title', { boost: 3});
-              this.field('keywords');
-              this.field('tags', { boost: 2 });
-              this.field('content');
-              this.metadataWhitelist = ['position']
 
-              documents = data.results.reduce((aggr, doc) => {
-                aggr[doc.url] = doc;
-                return aggr;
-              }, {})
-              
-              data.results.forEach(function (doc) {
-                this.add(doc)
-              }, this);
-            });
-
-            if (query) {
-              searchFor(query);
-            }
-        });
-      
-        function renderResult(result, tmpl, query) {
-          let cleaned = stripHtml(query);
-          let doc = documents[result.ref];
-          let clone = document.importNode(tmpl.content, true);
-          const summaryEl = clone.querySelector("[data-summary]");
-          clone.querySelector("[data-title]").textContent = doc.title;
-          clone.querySelector("[data-url]").setAttribute("href", doc.url);
-          const meta = result.matchData.metadata;
-          const keywords = Object.keys(meta);
-          let parts = doc.summary.replace(/\n/g, ' ').split(" ")
-            .map(t => {
-              return {
-                text: t,
-                match: keywords.some(k => t.toLowerCase().indexOf(k) !== -1),
-              };
-            });
-
-          const spans = [];
-          let prev = {};
-          let pointer = {
-            words: [],
-            match: false,
-          };
-        
-          while (parts.length) {
-            let word  = parts.shift();
-            if (word.match !== prev.match) {
-              spans.push(pointer);
-              pointer = {
-                words: [],
-                match: word.match,
-              };
-            }
-
-            pointer.words.push(word.text);
-            prev = word;
+      async function showMore() {
+        const searchId = latest;
+        // Prevent another batch from being requested until this one has been shown
+        more.disabled = true;
+        const batch = current.slice(shown, shown + pageSize);
+        let docs;
+        try {
+          docs = await Promise.all(batch.map((r) => r.data()));
+        } catch (e) {
+          console.error("Failed to load search results", e);
+          if (searchId === latest) {
+            status.textContent = "Failed to load the results, please try again.";
           }
-          spans.push(pointer);
-          spans.map(s => {
-            const phrase  = s.words.join(" ");
-            if (s.match) {
-              let el = document.createElement("SPAN");
-              el.innerText = phrase;
-              el.className = "match";
-              return el;
-            } else {
-              return document.createTextNode(phrase);
-            }
-          }).map(el => {
-            summaryEl.appendChild(el)
-          })
-          return clone;
+          return;
+        } finally {
+          more.disabled = false;
         }
-
-        function stripHtml(html){
-          var tmp = document.createElement("DIV");
-          tmp.innerHTML = html;
-          return tmp.textContent || tmp.innerText || "";
+        if (searchId !== latest) {
+          return;
         }
-   
-      document.addEventListener('DOMContentLoaded', function() {
-        searchFor = function (value) {
-          let nodes = idx.search(value).map(result => {
-            results.append(renderResult(result, template, value));
-          });
-        } 
+        shown += batch.length;
+        docs.forEach((doc) => {
+          const clone = document.importNode(template.content, true);
+          clone.querySelector("[data-title]").textContent = doc.meta.title || doc.url;
+          clone.querySelector("[data-url]").setAttribute("href", doc.url);
+          // Pagefind escapes the page content in excerpts and only adds <mark> elements
+          clone.querySelector("[data-summary]").innerHTML = doc.excerpt;
+          results.appendChild(clone);
+        });
+        more.hidden = shown >= current.length;
+      }
 
-        let template = document.querySelector('#search-entry');
-        let results = document.getElementById('search-results');
-        let filter = document.getElementById('search-filter');
-
+      async function searchFor(value) {
+        if (!pagefind) {
+          return;
+        }
+        const searchId = ++latest;
+        const query = value.trim();
+        const params = new URLSearchParams();
         if (query) {
-          filter.value = query;
+          params.set("q", query);
         }
-      
-        document.getElementById('search-trigger').addEventListener('click', function() {
-          results.innerHTML = "";
-          searchFor(filter.value);
-        });
+        const qs = params.toString();
+        history.replaceState(null, "", qs ? "?" + qs : location.pathname);
 
-        filter.addEventListener('change', function() {
-          idx.search(filter.value);
-        });
-      }, false);
-    })();
+        const search = query ? await pagefind.debouncedSearch(query, {}, 300) : null;
+        if (searchId !== latest) {
+          // A newer search has superseded this one
+          return;
+        }
+        results.innerHTML = "";
+        current = search ? search.results : [];
+        shown = 0;
+        if (!query) {
+          status.textContent = "";
+          more.hidden = true;
+          return;
+        }
+        status.textContent = current.length === 1 ? "1 result" : current.length + " results";
+        await showMore();
+      }
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        searchFor(filter.value);
+      });
+      filter.addEventListener("input", () => searchFor(filter.value));
+      more.addEventListener("click", showMore);
+
+      const query = new URLSearchParams(window.location.search).get("q");
+      if (query) {
+        filter.value = query;
+        searchFor(query);
+      }
     </script>
     <template id="search-entry">
       <article class="pt-40 pb-40 bdr-btm">
@@ -151,4 +126,3 @@
   </article>
 </section>
 {{ end }}
-
