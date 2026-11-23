@@ -81,6 +81,11 @@ details:
   trend: stable
   prev: Pass
 - path: /angular_cookie_parse/1.6.0
+  rule: 200021
+  score: 14%
+  trend: up
+  prev: Fail
+- path: /angular_cookie_parse/1.6.0
   rule: 210017
   score: Pass
   trend: stable
@@ -92,8 +97,8 @@ details:
   prev: Pass
 - path: /angular_form_parse/1.6.0
   rule: 200021
-  score: 43%
-  trend: stable
+  score: 29%
+  trend: down
   prev: 43%
 - path: /angular_form_parse/1.6.0
   rule: 220004
