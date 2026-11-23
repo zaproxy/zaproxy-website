@@ -1,0 +1,11 @@
+# Pagefind search index configuration, see https://pagefind.app/docs/config-options/
+# Navigation and other repeated elements which should not be indexed
+exclude_selectors:
+  - ".tree-menu"
+  - ".breadcrumbs"
+  - "#primary-sidebar"
+  - ".next-content"
+  - ".single-post .post-content > section.smaller-text"
+  - ".single-post .post-content > blockquote.alert-warning"
+  # Previews of child pages on list pages, these are indexed on the pages themselves
+  - ".blog-post-preview"

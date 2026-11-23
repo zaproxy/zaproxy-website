@@ -28,6 +28,7 @@ module.exports = merge(common, {
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: [
         "dist/**/*.js",
+        "!dist/pagefind/**",
         "dist/**/*.css",
         "site/content/webpack.json"
       ]}),

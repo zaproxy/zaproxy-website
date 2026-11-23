@@ -1,11 +1,8 @@
-  [data-summary] span {
-    display: inline;
-    word-break: break-all;  
-
+  [data-summary] mark {
+    background: #fff9b0;
+    color: inherit;
   }
 
-  [data-summary] .match {
-    display: inline-block;
-    margin:0 6px;
-    background: #fff9b0;
+  #search-more {
+    margin-top: 20px;
   }

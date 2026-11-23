@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
 
+{{- $indexed := and (not .Params.noindex) (in (slice "home" "page" "section") .Kind) }}
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -13,12 +14,14 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
+  {{- if $indexed }}
+  <meta data-pagefind-meta="title[content]" content="{{ or .Title .Params.name }}">
+  {{- end }}
   <title>{{ block "title" . }}{{ .Site.Title }}{{ if .Data.Title }} &ndash; {{ .Data.Title }}{{ end }}{{ end }}</title>
 
   <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Istok+Web|Open+Sans:400,700|Rubik&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js"></script>
   {{ if not .Site.BuildDrafts }}
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDLGW1172L"></script>
   <script>
@@ -37,7 +40,9 @@
 <div id="page-container">
  <div id="content-wrap">
   {{ block "header" . }}{{ partial "header" . }}{{end}}
+  <div{{ if $indexed }} data-pagefind-body{{ end }}>
   {{ block "main" . }}{{end}}
+  </div>
  </div>
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   {{ $script := .Site.Data.webpack.main }}

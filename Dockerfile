@@ -8,6 +8,7 @@ RUN npm install
 
 COPY .babelrc \
     eslint.config.mjs \
+    pagefind.yml \
     .nvmrc \
     postcss.config.js \
     webpack.common.js \
