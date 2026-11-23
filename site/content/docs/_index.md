@@ -39,6 +39,10 @@ groups:
         link: /docs/automate/
         desc: the various options for automating ZAP 
     
+      - name: 'AI Features'
+        link: /docs/ai-features/
+        desc: the AI / LLM features available in ZAP 
+    
       - name: 'Authentication Decision Tree'
         link: /docs/authentication/
         desc: the best place to start if you need ZAP to authenticate to your app 
