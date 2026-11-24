@@ -52,7 +52,7 @@ This is displayed on the bottom and is where useful information is displayed.
 |   | [Alerts tab](/docs/desktop/ui/tabs/alerts/)           | This shows the alerts raised on the application             |
 |   | [Active Scan tab](/docs/desktop/ui/tabs/ascan/)       | This shows the active scans                                 |
 |   | Spider tab                                            | This shows the URLs not yet visited                         |
-|   | [Params tab](/docs/desktop/ui/tabs/params/)           | This shows a summary of the parameters a site uses          |
+|   | Params tab                                            | This shows a summary of the parameters a site uses          |
 |   | [Output tab](/docs/desktop/ui/tabs/output/)           | This shows various informational messages                   |
 
 

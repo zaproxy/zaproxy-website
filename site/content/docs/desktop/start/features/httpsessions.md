@@ -30,7 +30,7 @@ in the [Options
 screen](/docs/desktop/ui/dialogs/options/httpsessions/) and are tokens that are, by default, automatically considered
 session tokens for any site (eg. phpsessid, jsessionid, etc). The site
 session tokens are a set of tokens for a particular site and are
-usually set up using the popup menus available in the [Params Tab](/docs/desktop/ui/tabs/params/).
+usually set up using the popup menus available in the Params Tab.
 
 
 This tool automatically detects, using the defined session tokens or
@@ -64,4 +64,3 @@ Options screen](/docs/desktop/ui/dialogs/options/httpsessions/).
 |   | [UI Overview](/docs/desktop/ui/)                                               | for an overview of the user interface |
 |   | [Features](/docs/desktop/start/features/)                                      | provided by ZAP                       |
 |   | [HTTP Sessions Options screen](/docs/desktop/ui/dialogs/options/httpsessions/) | for an overview of the tool's Options |
-|   | [Params Tab](/docs/desktop/ui/tabs/params/)                                    | for an overview of Params Tab         |
