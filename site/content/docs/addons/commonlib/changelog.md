@@ -6,7 +6,7 @@ weight: 1
 cascade:
   addon:
     id: commonlib
-    version: 1.44.0
+    version: 1.45.0
 ---
 
 # Changelog
@@ -14,6 +14,19 @@ All notable changes to this add-on will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.45.0] - 2026-11-26
+### Added
+- Initial Global Scan Policy Manager API.
+
+### Changed
+- Update dependencies.
+- Maintenance changes.
+- Updated Alert Tag and generic vulnerability links aligning with recent OWASP website changes.
+
+### Fixed
+- Honour the Max-Age attribute, which takes precedence over Expires, when checking if a cookie is expired (Issue 9560).
+- Fix Dice's coefficient implementation, previously strings differing only in their last character could be reported as fully similar (Issue 9568).
 
 ## [1.44.0] - 2026-08-26
 ### Added
@@ -299,6 +312,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First version.
 
+[1.45.0]: https://github.com/zaproxy/zap-extensions/releases/commonlib-v1.45.0
 [1.44.0]: https://github.com/zaproxy/zap-extensions/releases/commonlib-v1.44.0
 [1.43.0]: https://github.com/zaproxy/zap-extensions/releases/commonlib-v1.43.0
 [1.42.0]: https://github.com/zaproxy/zap-extensions/releases/commonlib-v1.42.0
