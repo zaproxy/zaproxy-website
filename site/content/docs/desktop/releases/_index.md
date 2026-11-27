@@ -12,6 +12,7 @@ The following releases have been made:
 
 |   |                                          |                                                                                                              |
 |---|------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+|   | [2.17.1](/docs/desktop/releases/2.17.1/) | security release                                                                                             |
 |   | [2.17.0](/docs/desktop/releases/2.17.0/) | bug fix and enhancement release                                                                              |
 |   | [2.16.1](/docs/desktop/releases/2.16.1/) | bug fix and minor enhancement release                                                                        |
 |   | [2.16.0](/docs/desktop/releases/2.16.0/) | bug fix and enhancement release                                                                              |

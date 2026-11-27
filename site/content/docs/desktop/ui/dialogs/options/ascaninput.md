@@ -13,6 +13,7 @@ This screen allows you to configure the [active scan](/docs/desktop/start/featur
 These are the elements that the active scanner will attack.  
 
 Scanning all of the elements supported will take longer, but not scanning some elements may cause some vulnerabilities to be missed.
+The default options attempt to balance this speed versus coverage concern.
 
 ### Injectable Targets
 
